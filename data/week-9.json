@@ -1567,7 +1567,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Expected values: -5→False, 0→False, 1→False, 2→True, 4→False, 5→True. Tests outside a restricted positive-integer domain require an explicitly agreed robustness policy."
+          "text": "Expected values: -5→False, 0→False, 1→False, 2→True, 4→False, 5→True."
         }
       ]
     },
