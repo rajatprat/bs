@@ -293,9 +293,9 @@
       "slug": "lecture-2-design-modularity",
       "title": "Look at the jobs inside the module",
       "paragraphs": [
-        "Functional cohesion: the parts work toward one clear result, such as calculating an order total.",
-        "Communicational cohesion: several jobs are grouped because they use the same data, such as viewing and updating a product record.",
-        "The inventory example is broad. Do not decide the category from the name alone. Ask what each part does and why the parts belong together."
+        "One well-defined result: functional cohesion. Example: every step contributes to calculating an order total.",
+        "Output from one stage becomes input to the next: sequential cohesion. Example: validate an order, calculate its total, then prepare its payment request.",
+        "Separate operations share a data structure: communicational cohesion. Example: independent operations read or update one product list."
       ],
       "anchor": "Compare All Five Cohesion Types"
     },

@@ -514,13 +514,16 @@
           "runs": []
         },
         {
+          "type": "note",
+          "text": "Terminology note: this chapter classifies the Inventory Management example as functional cohesion. A stricter function-level taxonomy may classify independent CRUD operations grouped around shared records as communicational cohesion. For a question referring to this chapter’s example, use functional; for a new example, classify the actual relationship among its operations."
+        },
+        {
           "type": "image",
           "src": "/images/week-5/image16.webp",
           "width": 1774,
           "height": 970,
           "caption": "Figure 16. Inventory functions cooperate to achieve one task.",
-          "alt": "Illustration: Section 2 · Design Modularity",
-          "qualityNote": "This is the chapter’s broad “manage inventory” example. Under a stricter taxonomy, independent CRUD operations on the same records may illustrate communicational cohesion; a single focused calculation is a clearer functional-cohesion example."
+          "alt": "Illustration: Section 2 · Design Modularity"
         },
         {
           "type": "heading",
@@ -636,8 +639,15 @@
         },
         {
           "type": "paragraph",
-          "text": "This is a conceptual comparison, not a numeric ranking formula. Functional cohesion is a particularly strong design goal. The distinction between sequential and procedural is important: sequential cohesion has data passing from one step to the next; procedural cohesion may only preserve order.",
-          "runs": []
+          "text": "Cohesion has a conventional strongest-to-weakest order. This is an ordinal design preference, not a numerical score."
+        },
+        {
+          "type": "note",
+          "text": "Strongest → weakest: Functional → Sequential → Communicational → Procedural → Temporal → Logical → Coincidental."
+        },
+        {
+          "type": "paragraph",
+          "text": "This chapter develops five of those categories: functional, sequential, communicational, procedural and coincidental. Their relative order is unchanged. Temporal groups activities by when they occur; logical groups similar kinds of activity, often selected by a control flag. Functional cohesion is strongest and coincidental cohesion is weakest in this conventional scale."
         },
         {
           "type": "image",
@@ -726,8 +736,12 @@
           "runs": []
         },
         {
-          "type": "note",
-          "text": "Classification caution: the inventory CRUD example illustrates a cohesive business responsibility. In stricter function-level cohesion taxonomies, operations grouped mainly because they share inventory data can be classified as communicational cohesion. Functional cohesion narrowly means all elements contribute to one well-defined function. State the classification convention before comparing examples."
+          "type": "paragraph",
+          "text": "Question: How is the Inventory Management example classified in this chapter?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Functional cohesion: view, add and delete support the stated goal of managing inventory."
         }
       ]
     },

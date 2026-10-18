@@ -3,6 +3,7 @@ import ReviewAddition from './ReviewAddition';
 import Diagram from './Diagram';
 import { headingId } from '../lib/course';
 export default function Blocks({ blocks, additions = [] }) { let questionNumber=0; return <div className="lesson-body">{blocks.map((b,i) => { const contentNode = (() => {
+if(b.type==='links') return <nav key={i} aria-label={b.text || 'Related lessons'} className="lesson-related"><ul>{b.links.map(link=><li key={link.href}><a href={link.href}>{link.text} →</a></li>)}</ul></nav>;
 if(b.type==='code') return <pre key={i} className="lesson-code" tabIndex={0}><code>{b.text}</code></pre>;
 if(b.type==='image') return <Diagram key={i} block={b}/>;
 if(b.type==='table' && b.rows.every(r=>r.length===1)) return <div key={i}>{b.rows.map((r,j)=><p className="note" key={j}>{r[0]}</p>)}</div>;

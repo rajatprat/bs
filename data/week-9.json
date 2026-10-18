@@ -488,13 +488,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "A prime number is an integer greater than 1 with exactly two positive divisors: 1 and itself. The expected results include is_prime(2)=True, is_prime(3)=True, is_prime(4)=False, is_prime(5)=True, and is_prime(1)=False.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "One straightforward implementation rejects values less than 2 and checks possible divisors from 2 up to the square root. For each input, identify which behavior the test is intended to exercise: early rejection, no divisor found, or a divisor found. Testing 5 alone cannot show that 4 is rejected.",
-          "runs": []
+          "text": "A prime is an integer greater than 1 with exactly two positive divisors: 1 and itself. The examples below assume integer inputs. Negative integers, 0 and 1 must return False."
         },
         {
           "type": "image",
@@ -505,13 +499,88 @@
           "alt": "Illustration: Testing is_prime(num)"
         },
         {
+          "type": "heading",
+          "text": "The illustrated implementation has a negative-input defect"
+        },
+        {
           "type": "paragraph",
-          "text": "For the illustrated implementation, prime numbers such as 2, 3, 5 and 7 return True; non-prime numbers such as 1, 4, 6 and 9 return False.",
-          "runs": []
+          "text": "The later coverage diagrams use the 0-or-1 guard and range(2, num) shown below. This version is useful for tracing the illustrated graph, but it is not correct for every integer."
+        },
+        {
+          "type": "code",
+          "text": "def illustrated_is_prime(num):\n    if num == 0 or num == 1:\n        return False\n    for i in range(2, num):\n        if num % i == 0:\n            return False\n    return True"
+        },
+        {
+          "type": "paragraph",
+          "text": "For num = -5, the guard is False and range(2, -5) is empty. The loop is skipped, so the function incorrectly returns True."
+        },
+        {
+          "type": "code",
+          "text": "assert illustrated_is_prime(-5) is False  # Fails: actual result is True"
+        },
+        {
+          "type": "heading",
+          "text": "Correct the guard"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reject every integer below 2. Keep the divisor-loop bounds unchanged here so that positive-input traces remain comparable with the diagrams."
+        },
+        {
+          "type": "code",
+          "text": "def is_prime(num):\n    if num < 2:\n        return False\n    for i in range(2, num):\n        if num % i == 0:\n            return False\n    return True"
+        },
+        {
+          "type": "heading",
+          "text": "Test each behavioral class"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Input class",
+              "Example",
+              "Expected"
+            ],
+            [
+              "Negative integer",
+              "-5",
+              "False"
+            ],
+            [
+              "Zero",
+              "0",
+              "False"
+            ],
+            [
+              "One",
+              "1",
+              "False"
+            ],
+            [
+              "Smallest prime",
+              "2",
+              "True"
+            ],
+            [
+              "Larger prime",
+              "3 and 5",
+              "True"
+            ],
+            [
+              "Composite integer",
+              "4 and 9",
+              "False"
+            ]
+          ]
+        },
+        {
+          "type": "code",
+          "text": "for value, expected in [(-5, False), (0, False), (1, False),\n                        (2, True), (3, True), (4, False),\n                        (5, True), (9, False)]:\n    assert is_prime(value) is expected"
         },
         {
           "type": "note",
-          "text": "Implementation distinction: the later coverage diagrams use the chapter loop range(2,num), so input 3 enters the loop. An optimized implementation checking only through the square root can skip the loop for 3. Do not transfer a path-coverage claim between these implementations."
+          "text": "Coverage and correctness are different. Tests can cover every path of the simplified graph and still miss the negative-input defect. The diagram’s original guard and the corrected guard must not be treated as identical implementations."
         }
       ]
     },
@@ -562,6 +631,10 @@
           "type": "paragraph",
           "text": "Also consider negative integers if the function accepts arbitrary integers. A test of is_prime(-5) should return False for the conventional mathematical definition. Inputs such as 2.5 or \"7\" require a separately stated type policy; do not invent expected behavior without a contract.",
           "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Connect this test to the defect: the original 0-or-1 guard returns True for -5. The corrected num < 2 guard returns False. Treat negative integers as a separate equivalence class."
         },
         {
           "type": "image",
@@ -733,6 +806,10 @@
       "slug": "branch-coverage-is-prime",
       "blocks": [
         {
+          "type": "note",
+          "text": "Trace the original illustrated implementation on this page. It rejects only 0 and 1; it does not correctly reject negative integers. The repaired implementation is shown in “Testing is_prime(num)”."
+        },
+        {
           "type": "paragraph",
           "text": "For the illustrated prime-checker, test 0 for early rejection, 2 for a skipped divisor loop, 3 for a loop iteration with no divisor, and 4 for a divisor-found return. Trace 4: it is not 0 or 1; the loop considers divisor 2; 4%2==0; the function returns False.",
           "runs": []
@@ -749,7 +826,7 @@
           "height": 1019,
           "caption": "",
           "alt": "Illustration: Branch Coverage: is_prime()",
-          "qualityNote": "The “3: loop runs” case assumes the chapter implementation range(2,num). It does not describe every optimized prime-checking algorithm."
+          "qualityNote": "Original illustrated implementation: range(2, num) makes input 3 enter the loop. Its 0-or-1 guard has a negative-input defect; the corrected guard is num < 2."
         },
         {
           "type": "paragraph",
@@ -762,6 +839,10 @@
       "title": "Testing Individual Conditions",
       "slug": "testing-individual-conditions",
       "blocks": [
+        {
+          "type": "note",
+          "text": "This page studies the compound 0-or-1 guard from the original illustrated implementation. The corrected prime checker uses the single comparison num < 2; it does not contain these two subconditions."
+        },
         {
           "type": "paragraph",
           "text": "Condition coverage examines individual Boolean subconditions. Let A be `num == 0` and B be `num == 1`. For num=0, A=True and B=False; for num=1, A=False and B=True; for num=2, both are False. A=True and B=True cannot occur for one integer.",
@@ -882,6 +963,10 @@
           "type": "paragraph",
           "text": "The four displayed paths form a basis for the simplified graph: 1–2–3, 1–2–4–7, 1–2–4–5–6, and 1–2–4–5–4–7. These are not every possible loop execution sequence.",
           "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Inputs 0, 2, 4 and 3 exercise the four displayed paths, but they do not expose the negative-input defect. Add -5 with expected False. Basis-path coverage is not proof that all outputs satisfy the specification."
         }
       ]
     },
@@ -889,6 +974,10 @@
       "title": "Cyclomatic Complexity",
       "slug": "cyclomatic-complexity",
       "blocks": [
+        {
+          "type": "note",
+          "text": "Original illustrated implementation: course graph = 4; counting the short-circuit OR conditions separately = 5. Corrected num < 2 implementation = 4 under either convention."
+        },
         {
           "type": "paragraph",
           "text": "Cyclomatic complexity is the number of linearly independent paths through a connected control-flow graph under the standard model. For a single-entry graph with D binary decisions, V(G)=D+1. In the simplified prime example, D=3 and V(G)=4.",
@@ -916,6 +1005,10 @@
           "type": "paragraph",
           "text": "Remember: For a connected graph, V(G)=E−N+2 is an alternative formula when entry/exit conventions are handled consistently.",
           "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The original implementation has one initial if, one loop decision and one divisibility if. Counting or as an additional short-circuit decision gives 1 + 1 + 1 + 1 + 1 = 5, including the base path. Replacing the compound guard with num < 2 removes that extra Boolean decision. For E−N+2, use a consistent CFG with return paths connected to a common exit."
         }
       ]
     },
@@ -1444,6 +1537,10 @@
           "type": "paragraph",
           "text": "Remember: Test prime, composite, smallest-prime and edge values separately.",
           "runs": []
+        },
+        {
+          "type": "code",
+          "text": "# Regression test for the corrected integer-input function:\ndef test_negative_integer_is_not_prime():\n    assert is_prime(-5) is False"
         }
       ]
     },
@@ -1453,13 +1550,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "A useful small prime-checking suite includes 5→True, 4→False, 2→True, 1→False, and 0→False. These check a normal prime, a composite, the smallest prime, and two values that must be rejected.",
-          "runs": []
+          "text": "For the corrected integer-input function, use -5→False, 0→False, 1→False, 2→True, 4→False and 5→True. These cover a negative integer, zero, one, the smallest prime, a composite and a larger prime."
         },
         {
           "type": "paragraph",
-          "text": "Further tests should include a larger composite such as 9, a larger prime such as 13, and negative integers if supported. A suite is a set of evidence about selected cases, not a mathematical proof that the algorithm works for all integers.",
-          "runs": []
+          "text": "The -5 case catches the defect in the original 0-or-1 guard. Add a larger composite such as 9 and a larger prime such as 13 too. Passing this suite is evidence for these cases, not proof of correctness for every integer."
         },
         {
           "type": "image",
@@ -1467,93 +1562,45 @@
           "width": 1670,
           "height": 1020,
           "caption": "",
-          "alt": "Illustration: Testing is_prime(): Important Cases"
+          "alt": "Illustration: Testing is_prime(): Important Cases",
+          "qualityNote": "The illustration shows the original non-negative cases. Add -5→False as a separate negative-integer class; it exposes the original guard’s defect."
         },
         {
           "type": "paragraph",
-          "text": "Expected values: 5→True, 4→False, 2→True, 1→False, 0→False. The 0 case can be a robustness check when the specified domain is positive integers.",
-          "runs": []
+          "text": "Expected values: -5→False, 0→False, 1→False, 2→True, 4→False, 5→True. Tests outside a restricted positive-integer domain require an explicitly agreed robustness policy."
         }
       ]
     },
     {
-      "title": "Integration and System Testing",
+      "title": "Integration and system testing: learning route",
       "slug": "integration-and-system-testing",
       "blocks": [
         {
-          "type": "heading",
-          "text": "Integration testing",
-          "runs": []
-        },
-        {
           "type": "paragraph",
-          "text": "After units are tested individually, integrate them and test their interactions. Focus on module interfaces, parameter passing, shared state and communication. A passing unit test does not guarantee a passing integration test.",
-          "runs": []
+          "text": "Use the earlier unit-versus-integration comparison for the basic distinction. Continue to the strategy chapter for big-bang, bottom-up, top-down, mixed integration, drivers, stubs and system testing. Then apply the ideas to the order–inventory scenario."
         },
         {
-          "type": "heading",
-          "text": "Big-bang integration",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Combine all modules at once and test the integrated system. It may be workable for a small system but makes defect localization difficult when many components are involved.",
-          "runs": []
-        },
-        {
-          "type": "heading",
-          "text": "Bottom-up integration",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Integrate lower-level modules into subsystems first, then combine subsystems upward. Test drivers may be needed to simulate higher-level callers.",
-          "runs": []
-        },
-        {
-          "type": "heading",
-          "text": "Top-down integration",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Start with higher-level modules and progressively add lower-level components. Stubs can replace not-yet-available lower-level dependencies.",
-          "runs": []
-        },
-        {
-          "type": "heading",
-          "text": "Incremental integration",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Integrate and test components in manageable steps. When a new failure appears, the most recently added interface is a useful place to investigate.",
-          "runs": []
-        },
-        {
-          "type": "heading",
-          "text": "System testing",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Test the complete integrated application against system requirements. Functional scenarios and nonfunctional qualities may both matter, depending on the specification.",
-          "runs": []
-        },
-        {
-          "type": "heading",
-          "text": "Acceptance testing",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Check whether the delivered product meets agreed customer acceptance criteria. This is different from testing individual internal functions.",
-          "runs": []
+          "type": "links",
+          "text": "Continue reading",
+          "links": [
+            {
+              "text": "Compare unit and integration tests",
+              "href": "/software-engineering/week-9/unit-vs-integration-testing/"
+            },
+            {
+              "text": "Study integration strategies and system testing",
+              "href": "/software-engineering/week-9/complete-lecture-coverage-integration-and-system-testing/"
+            },
+            {
+              "text": "Work through interface failures",
+              "href": "/software-engineering/week-9/integration-testing-purpose-and-typical-failures/"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Complete Section Coverage — Integration and System Testing",
+      "title": "Integration strategies and system testing",
       "slug": "complete-lecture-coverage-integration-and-system-testing",
       "blocks": [
         {
@@ -1633,6 +1680,14 @@
         },
         {
           "type": "heading",
+          "text": "Incremental integration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Integrate and test components in manageable steps. When a new failure appears, the most recently added interface is a useful starting point for investigation. Top-down, bottom-up and mixed strategies can all proceed incrementally."
+        },
+        {
+          "type": "heading",
           "text": "Drivers and stubs in integration testing",
           "runs": []
         },
@@ -1658,8 +1713,25 @@
         },
         {
           "type": "paragraph",
-          "text": "In the chapter, alpha testing is performed by a test team within the organization; beta testing involves a selected group of customers outside the organization; acceptance testing lets the customer determine whether the delivered software satisfies agreed requirements or user stories and should be accepted. These terms describe different testing contexts or purposes, not simply three levels of unit testing.",
-          "runs": []
+          "text": "Use the earlier alpha/beta and acceptance lessons for definitions. The later scenario applies all three to one seller portal."
+        },
+        {
+          "type": "links",
+          "text": "Continue reading",
+          "links": [
+            {
+              "text": "Alpha versus beta",
+              "href": "/software-engineering/week-9/alpha-vs-beta-testing/"
+            },
+            {
+              "text": "Acceptance criteria and tests",
+              "href": "/software-engineering/week-9/acceptance-testing/"
+            },
+            {
+              "text": "Apply all three in a worked scenario",
+              "href": "/software-engineering/week-9/alpha-beta-and-acceptance-testing-in-context/"
+            }
+          ]
         },
         {
           "type": "heading",
@@ -1728,8 +1800,21 @@
         },
         {
           "type": "paragraph",
-          "text": "For the simplified chapter graph of is_prime(), the decisions are the 0-or-1 check, the loop continuation, and the divisibility check. With three decisions in this connected single-entry representation, V(G)=D+1=4. Four basis paths can provide structural coverage targets; they do not enumerate every possible loop iteration count or establish correctness for all integers.",
-          "runs": []
+          "text": "The original illustrated prime checker has complexity 4 in the course’s simplified graph, or 5 when its short-circuit OR conditions are counted separately. The corrected num < 2 implementation has complexity 4. Use the dedicated lesson for the graph convention and the negative-input defect."
+        },
+        {
+          "type": "links",
+          "text": "Continue reading",
+          "links": [
+            {
+              "text": "Cyclomatic complexity conventions",
+              "href": "/software-engineering/week-9/cyclomatic-complexity/"
+            },
+            {
+              "text": "Original defect and corrected prime checker",
+              "href": "/software-engineering/week-9/testing-is-prime-num/"
+            }
+          ]
         },
         {
           "type": "heading",
@@ -2145,18 +2230,51 @@
       ]
     },
     {
-      "title": "Integration testing: purpose and typical failures",
+      "title": "Worked integration scenario: order and inventory",
       "slug": "integration-testing-purpose-and-typical-failures",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Integration testing combines modules and checks the contracts between them. Imagine an Order Service that calls Inventory Service to reserve products. The inventory function may work in isolation and the order function may work with a stub, yet their integration can fail if the order passes a product ID where inventory expects a product name, if quantities use different units, or if failures are ignored. Integration tests should use real collaborating components where feasible and validate data flow, call order, and failure handling.",
-          "runs": []
+          "text": "Apply integration testing to two real collaborators: Order Service and Inventory Service. Initial Notebook stock is 10. The Order Service accepts an order for 3 notebooks and calls Inventory.remove_stock(\"Notebook\", 3)."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Case",
+              "What to check"
+            ],
+            [
+              "Successful reservation",
+              "Order is confirmed and Notebook stock becomes 7."
+            ],
+            [
+              "Wrong identifier or unit",
+              "An ID/name mismatch or incompatible quantity unit is detected; the order is not falsely confirmed."
+            ],
+            [
+              "Insufficient stock or service failure",
+              "The order is not falsely confirmed. Verify the specified rejection, retry or rollback behavior."
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "Example integration scenario: initial Notebook stock 10. The Order Service accepts an order for 3 notebooks and calls Inventory.remove_stock(\"Notebook\",3). Expected: the order is confirmed and stock becomes 7. If the inventory service rejects the request, the order must not be falsely confirmed. The exact transaction or rollback rule must be defined in the system requirements.",
-          "runs": []
+          "text": "The transaction and recovery rules must come from the product requirements. Passing isolated unit tests does not establish these cross-module outcomes."
+        },
+        {
+          "type": "links",
+          "text": "Continue reading",
+          "links": [
+            {
+              "text": "Review the unit-versus-integration distinction",
+              "href": "/software-engineering/week-9/unit-vs-integration-testing/"
+            },
+            {
+              "text": "Review integration strategies",
+              "href": "/software-engineering/week-9/complete-lecture-coverage-integration-and-system-testing/"
+            }
+          ]
         }
       ]
     },
@@ -2305,18 +2423,55 @@
       ]
     },
     {
-      "title": "Alpha, beta and acceptance testing in context",
+      "title": "Worked scenario: alpha, beta and acceptance testing",
       "slug": "alpha-beta-and-acceptance-testing-in-context",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Alpha testing typically occurs in a controlled pre-release setting; beta testing involves selected external users in realistic conditions; acceptance testing checks agreed criteria for accepting the product. These are not identical to unit, integration, and system testing levels. They describe testing contexts or purposes, and their exact process varies by organization.",
-          "runs": []
+          "text": "Apply the earlier definitions to one seller portal. Classify each activity by its purpose and participants, then decide what evidence it provides."
         },
         {
-          "type": "paragraph",
-          "text": "Example: internal staff perform alpha testing on the seller portal; ten pilot sellers conduct beta testing and report confusing stock screens; the customer runs acceptance tests against agreed requirements such as “stock decreases after a confirmed order.” A beta report may reveal usability problems even if the formal acceptance scenarios pass.",
-          "runs": []
+          "type": "table",
+          "rows": [
+            [
+              "Activity",
+              "Classification",
+              "Evidence"
+            ],
+            [
+              "Internal staff exercise stock workflows in a controlled pre-release environment.",
+              "Alpha testing",
+              "Early workflow defects and usability observations."
+            ],
+            [
+              "Ten pilot sellers use a pre-release version with realistic catalogs and report confusing stock screens.",
+              "Beta testing",
+              "Feedback from external users under realistic conditions."
+            ],
+            [
+              "The customer checks the agreed criterion: stock decreases after a confirmed order.",
+              "Acceptance testing",
+              "Evidence for accepting the feature against that criterion."
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "A beta report can expose a usability problem even when the agreed acceptance scenario passes. One activity does not replace the others."
+        },
+        {
+          "type": "links",
+          "text": "Continue reading",
+          "links": [
+            {
+              "text": "Review alpha and beta definitions",
+              "href": "/software-engineering/week-9/alpha-vs-beta-testing/"
+            },
+            {
+              "text": "Review acceptance criteria",
+              "href": "/software-engineering/week-9/acceptance-testing/"
+            }
+          ]
         }
       ]
     },
