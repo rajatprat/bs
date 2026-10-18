@@ -38,3 +38,15 @@ The static website is generated in `out/`. Deploy that directory to a static hos
 Lesson routes are generated statically. Search covers all three subjects. Equations use KaTeX, and graphs support full-resolution viewing.
 
 Original documents, scratch files, conversion records, dependency directories, and generated build files are excluded from Git.
+
+## Cloudflare Workers deployment
+
+The repository includes `wrangler.jsonc` for the `bs` Worker. It serves the static website from `out/` and declares a compatibility date.
+
+In Workers Builds, use:
+
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Root directory: repository root
+
+The existing `npx wrangler deploy --assets ./out` command is also compatible with this configuration.
