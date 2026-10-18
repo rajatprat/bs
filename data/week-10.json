@@ -1,0 +1,3288 @@
+{
+  "subject": "Software Engineering",
+  "week": 10,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Week 10: Software Deployment and Monitoring",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Software Engineering | Complete self-study chapter",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "How to use this chapter"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter covers deployment, hosting, continuous integration, performance and monitoring:",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Deployment Environments and Strategies (Section 10.1)",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Deployment Hosting: Bare Metal, IaaS and PaaS (Section 10.2)",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Tutorial: Deploying on an IaaS provider (DigitalOcean)",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Tutorial: Deploying on a PaaS provider (Heroku)",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Continuous Integration (Section 10.3)",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Performance and Monitoring (Section 10.4)",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Most ideas are explained with one running example: a small online shop, built with Python’s Flask framework, that sells an orange T-shirt for ₹500. Whatever is being explained (a staging server, a cache, an A/B test), picture it happening to this shop.",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Two kinds of boxes appear throughout:",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Section point: something the chapter states directly. Expect these in quizzes and exams.",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Beyond the chapter: modern context or a deeper explanation that helps you understand the idea. It is useful, but the chapter version comes first.",
+      "runs": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where Week 10 fits in the software life cycle",
+      "slug": "where-week-10-fits-in-the-software-life-cycle",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In earlier weeks you followed the software development life cycle (SDLC) from requirements to design to development (frameworks, IDEs, debugging and code-analysis tools) to testing (unit testing up to whole-system testing). Week 10 covers what happens after the software has been built and tested:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Deployment means “placing” the software system so that its users can easily access it. A web application, for example, has to be hosted on a server somewhere so that users can reach it through a URL.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Monitoring means capturing and analysing information about the application while it runs: how users are using it, and whether there are performance problems, errors, timeouts and so on.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Deployment = making the built system accessible to its users. Monitoring = capturing and analysing an application’s execution information after it has been deployed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId21.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "The big picture of Week 10: develop and test the software, deploy it so real users can reach it, then monitor how it behaves and feed what you learn back into development.",
+          "alt": "Illustration: Where Week 10 fits in the software life cycle"
+        }
+      ]
+    },
+    {
+      "title": "Part 1 — Deployment Environments",
+      "slug": "part-1-deployment-environments",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is an environment?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: An environment is a system, or a set of systems, that executes a software application.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Developers write and test code, and an environment builds that code into something that runs and that users or other people can access. A software team usually works with four kinds of environment:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Development environment",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Testing environment",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Staging environment",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Production environment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Not every team has all four, but development, testing and production are almost always present. Staging is very common and strongly recommended. The code moves through the environments in this order:",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Development → Testing → Staging → Production",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId25.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "The four environments in order: 1. Development (write code), 2. Testing (find bugs), 3. Staging (rehearse the release on a copy of production), 4. Production (real users).",
+          "alt": "Illustration: Part 1 — Deployment Environments"
+        },
+        {
+          "type": "heading",
+          "text": "1.1 Development environment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The development environment is the local environment of an individual software developer: their own machine, with an IDE and whatever other tools they like to use.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In this environment the developer:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "writes code,",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "tests it (unit tests),",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "builds the code base to check that it compiles and works, and",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "commits the code to the shared code base kept in a version control system (such as Git).",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Two terms from the example diagrams are important:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Working copy: the developer’s own copy of the code base on their machine.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Mainline / master branch: the shared code base in version control that everybody commits to.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Before or while committing, the developer must check that their working copy does not clash (conflict) with changes other developers have already made to the mainline. Any conflicts must be resolved.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The development environment is also connected to a local database. The developer can freely read from and write to it without affecting the real data of the live system.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId29.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Development environment: a developer writes, runs, tests and builds code locally (with an IDE and a local database), then commits and pushes it to the shared repository’s main branch, which other developers also use.",
+          "alt": "Illustration: Part 1 — Deployment Environments"
+        },
+        {
+          "type": "paragraph",
+          "text": "Store example: a developer adds a “10% off” rule to the T-shirt shop on their laptop. They run it against a local database of fake orders, run the unit tests, and then commit to the shared repository.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "1.2 Testing environment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "When developers have written and unit-tested their code, the code in the shared repository is placed in the testing environment. Here, integration testing and system testing are carried out: the pieces written by different people are tested together, and then the system is tested as a whole.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId33.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Testing environment: code from the shared repository is deployed as a test build with its own test database, software tests are run, and bugs found (here in the cart) are reported back as defects.",
+          "alt": "Illustration: Part 1 — Deployment Environments"
+        },
+        {
+          "type": "paragraph",
+          "text": "If a test fails, the chapter describes this procedure:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The defective code is removed from the testing environment.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The module in which the failure occurred is identified.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The developer responsible for that module is identified and notified.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The code in the testing environment is rolled back to the previous working version.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The responsible developer fixes the bug in their own working copy and commits it to the shared code base again.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The fixed code reaches the testing environment in the next scheduled deployment.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "1.3 Staging environment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Once the code has been tested thoroughly, can it go straight to users? Usually it first goes to a staging environment.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: The staging environment is a pre-production environment. The chapter describes it as an exact remote replica. In practice, staging should reproduce the production properties relevant to the tests: software versions, configuration, integrations and representative data/load. Scale may differ; being remote is not what defines staging.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "Reflection: why not push directly to production?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Think about this before reading on. The chapter gives three reasons for having a staging environment.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Deployment is complicated and risky. Deploying involves many activities and configurations: installing libraries and packages, configuring them, running scripts (for example, initialising the database). The same is true when updating modules or adding features to a live application. If this is done directly in production and something goes wrong, the live system can crash and affect real users. Doing it first in staging, an exact replica, shows whether the installation and updates work. Successful rehearsal reduces release risk; it does not guarantee a safe production release.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Previewing new features. Staging is a good place to show new features to management, the sales or marketing team, or a client, without releasing them to everyone.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Performance and stress testing. Small performance experiments can run locally or in a testing environment. Production-scale conclusions require a representative workload and environment. Doing them in production would affect real users. Staging is production-like, so it is the right place to do them.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId37.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Without staging, a new version released directly to production can break the live site for real users. With staging, a bug (here in the cart) is found and fixed before release, and users get a working store.",
+          "alt": "Illustration: Part 1 — Deployment Environments"
+        },
+        {
+          "type": "paragraph",
+          "text": "Store example: the new discount rule works on the developer’s laptop. In staging, which has the same server software, configuration and database setup as production, the team finds that the cart page crashes because a library version differs. They fix it before any customer sees the error.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Staging should use realistic configuration but should not casually use real customer data such as payment details. Teams usually use test accounts, sandbox payment gateways and anonymised data.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "1.4 Production environment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The production environment, also called the live environment, is where the software actually runs for all its users. Users interact with it directly, and it holds real data.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId42.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "After tests pass and staging is verified, the application is deployed to the production environment, which serves real users. Monitoring the live system feeds performance information back to the team.",
+          "alt": "Illustration: Part 1 — Deployment Environments"
+        },
+        {
+          "type": "subheading",
+          "text": "What happens when a new feature is requested?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose the application is live and working, and the client asks for a new feature (a new user interface, say). The team goes through one more iteration of the life cycle: design, then development. Each developer modifies the code in their working copy, tests it and commits it to the shared code base, and the change passes through testing → staging → production again.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The last step, moving the new version from staging into production, needs care, because production is the system people are using right now. The move must be smooth. The planned way of doing it is called a deployment strategy.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Exam wording versus practice: “exact replica on a remote machine” is the teaching example description. The essential engineering aim is production-relevant fidelity and isolation. A rehearsal cannot eliminate all differences in real traffic, data or dependencies."
+        }
+      ]
+    },
+    {
+      "title": "Part 2 — Deployment Strategies",
+      "slug": "part-2-deployment-strategies",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Section point: Deployment strategies are ways of pushing code from the staging environment to the production environment. The chapter covers three: Blue/Green, Canary and Versioned deployment.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "2.1 Blue/Green deployment (Staged deployment)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Idea: create a new, separate production environment for the new version, without affecting the current one.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "How it works:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The Blue environment is the current live production environment. A router sends all users to it.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The new version is deployed to a second, identical production environment called Green. No users are sent there yet.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Green is tested thoroughly (integration testing and other testing).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The router switches all incoming requests from Blue to Green. Green is now live, and Blue sits idle.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId48.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "After the switch: the router now sends 100% of live traffic to GREEN (Version 2), which is monitored, while BLUE (Version 1) is kept on standby as a rollback option.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId51.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Before the switch: the router sends 100% of live traffic to BLUE (Version 1). GREEN (Version 2) has been deployed, tested and verified but receives no live traffic yet.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "paragraph",
+          "text": "Main advantage — easy rollback. If something goes wrong after the switch (errors, or the system crashes), the router simply sends users back to Blue, which is known to work.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId54.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Rollback: an issue is found in GREEN (Version 2), so the router sends 100% of traffic back to BLUE (Version 1) while the team investigates Green.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "paragraph",
+          "text": "Regular cycling. The two environments take turns. If Green is live now, the next update is pushed from staging to Blue, and then the router switches to Blue. Blue and Green keep alternating between “real (live)” and “previous version”.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Rollback by switching traffic is only instant if the old version can still work with the shared data. If the new version changed the database structure (for example, a new order format), the old version may be unable to read the new orders. Database changes therefore have to be planned to be backward-compatible. Keeping two full production environments also costs extra hardware.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId57.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Blue/Green summary — benefits: low-downtime release, rollback option, verify before switching; trade-offs: extra infrastructure, keeping both environments’ configuration aligned, and database compatibility between versions.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "heading",
+          "text": "2.2 Canary deployment (Phased rollout / Incremental rollout)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Idea: instead of sending all users to the new version at once, slowly roll out the change to a small subset of users first, and increase the share step by step.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The name comes from the “canary in a coal mine”: a small early warning before everyone is exposed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId61.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Canary deployment: the traffic router sends 95% of users to the stable Version 1 and 5% to the canary Version 2, which the team monitors closely.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "paragraph",
+          "text": "How are the users for the new version chosen? The chapter lists these options:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Randomly",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "By user profile or demographics",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "By region: if there are servers in different locations, roll out to one region first, check that it works properly there, then roll out to other regions incrementally.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId64.webp",
+          "width": 1400,
+          "height": 575,
+          "caption": "Canary traffic increases gradually: 5% canary traffic first, then 25%, then 100%, with performance checked before each step.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the canary group shows problems, the rollout is stopped and everyone goes back to the stable version.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId67.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Canary rollout in three stages: (1) the new version gets 5% of traffic; (2) monitoring shows a high error rate in the canary; (3) the rollout is stopped and 100% of traffic is sent back to the stable version.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "paragraph",
+          "text": "Drawback: you must manage multiple instances at once. Some users are on the old version and some on the new one, so both have to be run and supported at the same time.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "Blue/Green vs Canary at a glance",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId70.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Blue/Green switches all traffic between two environments at once; Canary starts with a small portion of traffic (e.g. 5%) and gradually increases it while monitoring response time and error rate.",
+          "alt": "Illustration: Part 2 — Deployment Strategies"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "",
+              "Blue/Green",
+              "Canary"
+            ],
+            [
+              "Who gets the new version",
+              "Everyone, all at once (after the switch)",
+              "A small subset first, then gradually more"
+            ],
+            [
+              "Number of live versions",
+              "One live, one idle standby",
+              "Two live at the same time"
+            ],
+            [
+              "Main advantage",
+              "Easy, fast rollback",
+              "Problems affect only a few users"
+            ],
+            [
+              "Main drawback",
+              "Needs a full duplicate environment",
+              "Must manage multiple instances at once"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "2.3 Versioned deployment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Idea: allow users to choose which version to use, and keep all versions alive.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "This is common in mobile apps (the chapter’s examples are Paytm and Instagram). You get a notification that an update is available:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "if you update, you are routed to the new version;",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "if you don’t, you continue on the previous version.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Drawback: the company has to maintain multiple versions, because not all users update regularly. Companies therefore announce that only certain versions are supported up to a given date, after which older versions stop receiving support.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Summary of Parts 1 and 2",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Topic",
+              "Key facts"
+            ],
+            [
+              "Development",
+              "Developer’s local machine, IDE, working copy, local DB; commit to mainline/master"
+            ],
+            [
+              "Testing",
+              "Integration and system testing; on failure: remove code, find module, notify developer, roll back"
+            ],
+            [
+              "Staging",
+              "Pre-production; production-like configuration and representative workload; release rehearsal, previews, performance/stress testing; chapter describes a remote exact replica"
+            ],
+            [
+              "Production",
+              "Live environment used by all real users"
+            ],
+            [
+              "Blue/Green",
+              "Separate new production environment; router switch; easy rollback; environments cycle"
+            ],
+            [
+              "Canary",
+              "Phased/incremental rollout to a subset (random, profile/demographics, region); drawback: multiple instances"
+            ],
+            [
+              "Versioned",
+              "Users choose version; all versions alive; drawback: maintaining many versions"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part 3 — Deployment Hosting",
+      "slug": "part-3-deployment-hosting",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is hosting?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Hosting is the infrastructure required to host (deploy) an application. Web applications are usually hosted on server systems, and clients access the application from the server.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: An important characteristic of hosting, especially for production, is that the system must be available all the time — 24 hours a day, throughout the year, with no unplanned downtime — and user data must be stored securely, because real users and real data are involved.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter compares three hosting options:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Bare metal servers",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Infrastructure-as-a-Service (IaaS)",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Platform-as-a-Service (PaaS)",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId78.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Where can we host a web application? Own server (you own and maintain the hardware), shared hosting (many websites share one server), cloud VM / IaaS (you get a virtual machine), cloud platform / PaaS (you deploy code, the platform manages runtime and infrastructure). Shared hosting is extra context; the chapter’s three options are bare metal, IaaS and PaaS.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "paragraph",
+          "text": "A helpful way to remember them is the stack drawn on the slides. Every hosted web application needs four layers:",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Server Hardware → Operating System → Web Server → Web Application",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The three options differ in how many of these layers you set up yourself.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "3.1 Bare metal servers",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "With bare metal you buy the actual server hardware and set up everything yourself: the operating system, the web server and the web application, which means all four layers.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "A server has the same basic parts as a desktop (CPU, motherboard, RAM, disk), but in much higher configurations and with server-specific features.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Servers come in compact forms such as rack servers and blade servers, so that many can be stacked in a rack.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Advantage: dedicated hardware control; performance depends on workload and configuration. The server is yours alone and is not shared with other applications or users.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Disadvantages:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Most expensive upfront. Servers can cost lakhs of rupees.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Time and effort to set up hardware, OS, web server and application.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Ongoing maintenance (time, effort and money), for example when a part fails and must be repaired.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId82.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Bare metal: the company owns the physical server, manages hardware maintenance, the operating system, software installation and network security itself, and serves the web application over the internet.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "heading",
+          "text": "3.2 Infrastructure-as-a-Service (IaaS)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An IaaS provider buys the server hardware, configures it, and rents you a part of that infrastructure for a fee.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section example: An IaaS provider has a server with an 8-core processor and 32 GB RAM. It slices this into 8 parts, and each part is a virtual machine (VM) with 1 core and 4 GB of memory. You get exclusive access to your VM, and on it you set up your web server, database and application.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In terms of the stack, the provider gives you the hardware (as a VM) with an operating system. You set up the web server and web application.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Examples: DigitalOcean, AWS, Linode.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId86.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Cloud provider model: the developer requests computing resources (compute, storage, database) over the internet, on demand, and the provider manages the physical infrastructure.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId89.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Inside an IaaS provider: the cloud provider’s physical server runs a hypervisor that creates virtual machines; the developer creates and configures a VM, which has its own virtual hardware, guest OS and application.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "paragraph",
+          "text": "What is a virtual machine? It is a “computer inside a computer”. Software called a hypervisor divides one physical machine’s CPU, memory, storage and networking among several isolated VMs, and each VM can run its own operating system.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId92.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Physical server vs virtual machines: on a physical server one operating system runs directly on the hardware; with virtualisation a hypervisor splits one machine’s hardware into several VMs, each with its own OS (Linux, Windows, Ubuntu).",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "paragraph",
+          "text": "Advantages:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Lower upfront purchase cost. Recurring charges, utilization, data transfer and operations determine the total cost; IaaS is not always cheaper over the full project lifetime.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "No physical-hardware maintenance for the customer. The customer still maintains the VM operating system, dependencies, application and configuration.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Disadvantages:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Each IaaS provider has its own set of configurations (CPU, memory options, etc.). You must learn them and check that they suit your application.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The infrastructure is shared by others, so performance may suffer compared with your own dedicated server.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId95.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Shared vs dedicated resources: on shared infrastructure several customers’ websites use the same CPU, RAM and storage; on a dedicated server one customer gets all of them. This is why performance on shared IaaS infrastructure may suffer.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "heading",
+          "text": "3.3 Platform-as-a-Service (PaaS)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A PaaS provider gives you the infrastructure and the software layer on which the web application is deployed. It manages the application runtime and related infrastructure. A database may require a separately provisioned managed service or add-on. You only supply configuration options (which web server, which database, and so on), and the PaaS deploys the application with minimal effort.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In terms of the stack, the provider handles hardware, OS and web server. You only provide the web application.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Examples: Heroku, Google App Engine.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Advantage: very easy to deploy. Give it your code and it takes care of setting up the web server, database server and so on.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Disadvantage: lack of control. You don’t know or control the underlying OS, hardware or configuration.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "3.4 Comparing the three options",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "",
+              "Bare Metal",
+              "IaaS",
+              "PaaS"
+            ],
+            [
+              "What you get",
+              "Physical server you own",
+              "A virtual machine (slice of a server)",
+              "A ready platform to run your app"
+            ],
+            [
+              "You set up",
+              "Hardware, OS, web server, app",
+              "Web server, database, app (on the VM)",
+              "Just the app (plus configuration)"
+            ],
+            [
+              "Examples",
+              "Your own rack/blade servers",
+              "DigitalOcean, AWS, Linode",
+              "Heroku, Google App Engine"
+            ],
+            [
+              "Advantage",
+              "Dedicated hardware control; workload-dependent performance",
+              "Lower upfront cost; provider maintains physical hardware",
+              "Very easy to deploy"
+            ],
+            [
+              "Disadvantage",
+              "Most expensive upfront, setup and maintenance effort",
+              "Provider-specific configurations; shared, so performance may suffer",
+              "Lack of control"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId100.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Who manages what: in IaaS (e.g. a DigitalOcean Droplet) the customer manages the OS, data and applications; in PaaS (e.g. Heroku) the provider also manages the OS and runtime; in SaaS (e.g. Gmail) the provider manages the entire application.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: The picture above also shows SaaS (Software-as-a-Service), which is not one of the three hosting options in the chapter. SaaS is finished software that you simply use, such as Gmail. It is included only to complete the “as-a-Service” family. Also note that cloud hosting is a shared responsibility: even on PaaS, you are still responsible for your application’s security, access control and data correctness.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The next two parts are the tutorials, which show IaaS and PaaS in practice. The picture below previews the difference between them.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId103.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "IaaS vs PaaS workflow: on DigitalOcean you create the VM, configure the OS, install dependencies and deploy the app yourself; on Heroku you prepare the app and push the code, and the platform builds and runs it.",
+          "alt": "Illustration: Part 3 — Deployment Hosting"
+        },
+        {
+          "type": "note",
+          "text": "Cost and availability: compare total cost over the intended period, not just purchase price. Neither bare metal nor a VM is automatically fastest or cheapest. Availability is a target with an agreed measurement period, not a promise of zero downtime. IaaS customers retain software-maintenance responsibilities."
+        }
+      ]
+    },
+    {
+      "title": "Part 4 — Tutorial: IaaS with DigitalOcean",
+      "slug": "part-4-tutorial-iaas-with-digitalocean",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "DigitalOcean is an IaaS provider. It gives you the hardware and the operating system on which to host your application.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Key term: Droplet",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: A Droplet is DigitalOcean’s term for a virtual machine.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The droplet shown in the chapter (it hosts the verisim web page) had 1 GB memory, 25 GB disk, and ran Ubuntu 18.04. From the dashboard you can monitor bandwidth, CPU usage, disk I/O and so on.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Creating a droplet, step by step",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId109.webp",
+          "width": 1400,
+          "height": 576,
+          "caption": "Creating a DigitalOcean Droplet: (1) click Create Droplet, (2) choose a region / data centre such as Bangalore, (3) choose the configuration — OS, CPU and RAM, (4) configure access (SSH authentication), (5) launch — the cloud VM is running.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Log in / sign up and create (or open) a project, giving it a name, description and purpose. Existing resources can be moved into it if needed.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Create a droplet.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Choose a region (data centre). The example chose Bangalore, the closest to the users. A closer data centre means lower latency, so pages respond faster.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Choose the operating system and version (e.g. Ubuntu).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Choose the droplet type / plan.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "A basic droplet is enough for simple applications such as blogs, discussion forums and small projects.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "CPU options: regular, or premium Intel/AMD.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Shared CPU vs dedicated CPU.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Plans range up to very large machines (around 256 GB RAM and multi-terabyte storage in the chapter). The price is calculated per month, starting from about $6/month at the time of the chapter. Extra storage can be added.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The three pictures below explain what you are choosing in step 5.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId112.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Choosing cloud computing resources: work out what the application needs (users, workload, data), choose CPU, RAM, storage and network, and match the plan to the workload — a small application needs less than a busy one.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId115.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "What the configuration means: CPU is processing power (executes instructions), RAM is working memory (active data such as sessions and pages being served), storage is persistent data (saved files and the database).",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId118.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Shared CPU vs dedicated CPU: with a shared CPU, several VMs take turns on the same processor cores; with a dedicated CPU, cores are reserved for your VM only — more predictable performance at a higher price.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Choose the authentication method:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "SSH key: connect securely from your own terminal; or",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Password.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Optional extras: enable monitoring and backups.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Create the droplet, then log in with the credentials you set.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Prices and plan names change over time. Treat the numbers as examples and check the provider’s current pricing page.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId121.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Choosing a cloud region: identify where your users are (India), choose a nearby data-centre region (Mumbai rather than Frankfurt), because distance increases network latency and therefore response time.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "heading",
+          "text": "Connecting to the droplet with SSH",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "SSH (Secure Shell) gives you an encrypted remote terminal on the droplet. With SSH-key authentication, the private key stays on your laptop and the matching public key is placed on the server. You then run commands on the droplet as if it were a computer in front of you, for example ssh root@<droplet-ip>.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId125.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "SSH connection: the developer’s laptop (SSH client, private key) authenticates to the DigitalOcean Droplet (public key) over an encrypted connection, and can then install software, configure the server and manage the application.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "heading",
+          "text": "Deploying the application on the droplet",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: After logging in to the droplet you deploy just as you would on your local system: check out the code (e.g. from GitHub), set up the web server and database server, and run the application. With IaaS, all of this is your job.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId129.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "The full IaaS lifecycle on DigitalOcean: create a droplet (choose region, CPU, RAM, storage), configure the server over SSH (OS, application setup, network and security), then monitor CPU, memory, disk and network usage.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter — what “setting it up” looks like for the Flask T-shirt shop:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Copy or clone the code (app.py, requirements.txt, templates/, static/) onto the droplet.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Install Python and the dependencies: pip install -r requirements.txt.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Run the app with a production application server such as Gunicorn, not Flask’s built-in development server, which is meant only for development.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Usually put a web proxy such as Nginx in front of Gunicorn to receive internet traffic and pass it to the app.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Open the right ports in the firewall (and ideally set up HTTPS).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Visit the public address in a browser and place a test order to verify that the site really works.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId132.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Deploying the Flask T-shirt store to a cloud VM: (1) prepare the application code, (2) connect to the VM with SSH, (3) install dependencies, run Gunicorn behind a web proxy and configure the firewall — the request path is Internet → Web Proxy → Gunicorn → Flask app, (4) verify that the website is accessible.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "paragraph",
+          "text": "When something does not work, check the layers one at a time:",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId135.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Troubleshooting a VM deployment: (1) application not running — check the process (e.g. Gunicorn stopped); (2) configuration problem — e.g. a missing module in requirements.txt; (3) connection problem — a firewall blocking the port; (4) read the logs, find the cause, fix it and verify.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        },
+        {
+          "type": "paragraph",
+          "text": "The droplet dashboard also shows live resource graphs. This is your first taste of monitoring, covered fully in Part 7.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId138.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "After deployment, monitor the VM: CPU, memory, disk and network graphs reveal problems such as high CPU usage, which you then inspect, investigate and act on.",
+          "alt": "Illustration: Part 4 — Tutorial: IaaS with DigitalOcean"
+        }
+      ]
+    },
+    {
+      "title": "Part 5 — Tutorial: PaaS with Heroku",
+      "slug": "part-5-tutorial-paas-with-heroku",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Heroku is a PaaS provider: it provides the entire platform (the infrastructure and an easy way to deploy). The tutorial deploys a very simple Flask application with one route that displays “Hello World”.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId143.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Running locally vs deployed on Heroku: locally, Flask’s development server runs the app at http://127.0.0.1:5000 for the developer only; after deployment, Heroku runs it on a cloud platform accessible over the internet.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "heading",
+          "text": "Overview of the steps",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId146.webp",
+          "width": 1400,
+          "height": 576,
+          "caption": "Deploying to Heroku: (1) create the Flask app, (2) prepare the files — requirements.txt and Procfile, (3) create the Heroku app, (4) push the code with git, which builds and deploys it, (5) the live web app is accessible to users.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "heading",
+          "text": "Step 1 — Prepare the application",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "(a) Create a virtual environment. This keeps the project’s packages separate, so they do not conflict with other packages on your system. Activate it. Running pip freeze at this point shows nothing installed.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "python -m venv venv\nsource venv/bin/activate   # Windows: venv\\Scripts\\activate\npip freeze                 # shows nothing yet",
+          "runs": [
+            {
+              "text": "python -m venv venv",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "source venv/bin/activate   # Windows: venv\\Scripts\\activate",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "pip freeze                 # shows nothing yet",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "(b) Install the needed modules: Flask and Gunicorn.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "pip install flask gunicorn",
+          "runs": [
+            {
+              "text": "pip install flask gunicorn",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Gunicorn is a Web Server Gateway Interface (WSGI) server. Heroku uses it to run Python web applications.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Installing these also pulls in some other packages they depend on. pip freeze now lists all the packages with their versions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "(c) Save the dependency list in requirements.txt.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "pip freeze > requirements.txt",
+          "runs": [
+            {
+              "text": "pip freeze > requirements.txt",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "requirements.txt is the list of packages (with version numbers) the project needs. Heroku reads it and installs exactly those packages and versions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "(d) Create the Procfile. The Procfile tells Heroku how to run the application. For this app it contains one line:",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "web: gunicorn app:app",
+          "runs": [
+            {
+              "text": "web: gunicorn app:app",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Read it as: “this is a web application; run it with the gunicorn server; in the file app.py there is a variable called app (the Flask object), and that is what must be run.”",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: requirements.txt (what to install) and the Procfile (how to run) are the two important settings you must prepare for Heroku.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId150.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "The two Heroku settings: requirements.txt lists the Python dependencies (Flask, gunicorn) — what to install; the Procfile (web: gunicorn app:app) is the startup command — how to run the app. Heroku installs the packages and starts the web process.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "heading",
+          "text": "Step 2 — Create an app on Heroku",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Sign up or log in on the Heroku website.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Click New → Create new app, give it a name and choose a region (the example chose Europe).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Heroku’s documentation on running Python apps (installing dependencies, the Procfile) is available online and was used to set up the app.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Step 3 — Deploy using the Heroku CLI and Git",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Heroku offers several ways to deploy. The tutorial uses the Heroku command-line interface (CLI):",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "heroku login                      # opens a browser to log in\ngit init                          # start a git repository\nheroku git:remote -a <app-name>   # add remote \"heroku\"\ngit add Procfile app.py requirements.txt\ngit commit -m \"initial commit\"\ngit push heroku master",
+          "runs": [
+            {
+              "text": "heroku login                      # opens a browser to log in",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git init                          # start a git repository",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "heroku git:remote -a <app-name>   # add remote \"heroku\"",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git add Procfile app.py requirements.txt",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git commit -m \"initial commit\"",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git push heroku master",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The key idea is that Heroku is the git remote. Instead of pushing to GitHub, you push your master branch to Heroku. Only the project files are added; the virtual-environment folder is not.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId155.webp",
+          "width": 1400,
+          "height": 575,
+          "caption": "Deploying to Heroku using Git: (1) local app with app.py, requirements.txt and Procfile, (2) commit changes to the local Git repository, (3) create the Heroku app and configure the Git remote, (4) git push heroku main triggers the build, (5) the application is live after a successful deployment.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pushing does two things: it uploads the code, and it starts the deployment. In the build output you can watch Heroku:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "install Python and pip,",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "install everything listed in requirements.txt,",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "read the Procfile, understand that this is a web application, and launch it.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Open the given URL in a browser and the app (“Hello World”) is live.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId158.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "What happens when a user opens the Heroku app: the browser sends an HTTP request → Heroku’s router passes it to the web process → Gunicorn (WSGI HTTP server, started by ‘web: gunicorn app:app’) hands it to the Flask application → the response travels back to the browser.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId161.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Heroku’s build–release–run lifecycle: Build (source code + requirements.txt → build artifact), Release (artifact + configuration such as environment variables), Run (Heroku starts the web process — Gunicorn running Flask — serving users over the internet).",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "heading",
+          "text": "Step 4 — The Heroku dashboard",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "On the Heroku website you can see that the build succeeded and the app is deployed. Heroku also provides:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Metrics: in the chapter these required adding a credit card.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Resources / add-ons: data stores, caching, content management and more.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId165.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "The Heroku dashboard: application overview (status Running), controls (Overview, Resources, Settings, Activity), and status checks — web process, recent release and logs.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the deployed app shows an error, the logs are the first place to look (in the dashboard, or with heroku logs --tail from the CLI).",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId168.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Troubleshooting on Heroku: (1) notice the problem — the store shows an application error, (2) check the application logs for the ERROR line, (3) identify the cause, fix the code, redeploy and verify.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "heading",
+          "text": "Step 5 — Deploying an update",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Updating is just the normal git commit process. For example, change the message to “Hello World new version”, then:",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "git status\ngit add app.py\ngit commit -m \"change the message\"\ngit push heroku master",
+          "runs": [
+            {
+              "text": "git status",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git add app.py",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git commit -m \"change the message\"",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "git push heroku master",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Heroku rebuilds and redeploys automatically. Refresh the browser to see the new version.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId172.webp",
+          "width": 1400,
+          "height": 636,
+          "caption": "Updating a Heroku app: (1) change the code, (2) commit and push to the Heroku Git remote, (3) Heroku builds, releases and runs the new version, (4) check the live application to verify the update.",
+          "alt": "Illustration: Part 5 — Tutorial: PaaS with Heroku"
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Other PaaS platforms, such as Google App Engine, follow a similar process.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Heroku ended its free plans in November 2022, and many newer projects name their default branch main instead of master (git push heroku main). The Heroku dashboard has also changed since the recording. The concepts (requirements file, Procfile, push-to-deploy) remain the same. Also, a PaaS instance’s local disk is temporary, so data such as customer orders must be stored in a database add-on, never in local files.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "IaaS vs PaaS — what you did in each tutorial",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Task",
+              "DigitalOcean (IaaS)",
+              "Heroku (PaaS)"
+            ],
+            [
+              "Machine",
+              "You choose region, OS, CPU/RAM plan",
+              "Platform decides"
+            ],
+            [
+              "Access",
+              "You SSH into the VM",
+              "You never log into a server"
+            ],
+            [
+              "Installing dependencies",
+              "You run the installs yourself",
+              "Heroku reads requirements.txt"
+            ],
+            [
+              "Starting the app",
+              "You configure web server/database and run it",
+              "Heroku reads the Procfile"
+            ],
+            [
+              "Deploying an update",
+              "You pull the new code and restart",
+              "git push heroku master"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Supplementary self-study exercise: a complete minimal app"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prerequisites: Python, Git, and (for the hosted steps) the Heroku CLI and an eligible Heroku account. Save this as app.py beside requirements.txt and Procfile. This is a Hello World deployment exercise, not a complete shop."
+        },
+        {
+          "type": "code",
+          "text": "from flask import Flask\n\napp = Flask(__name__)\n\n@app.get(\"/\")\ndef home():\n    return \"Hello World\", 200\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "Install Flask in an activated virtual environment, then run the local verification commands below. Expect HTTP status 200 and the response body Hello World. This test client does not expose a server to the internet."
+        },
+        {
+          "type": "code",
+          "text": "python -m pip install flask\npython -c \"from app import app; r=app.test_client().get('/'); print(r.status_code, r.get_data(as_text=True))\""
+        },
+        {
+          "type": "paragraph",
+          "text": "For the Linux-hosted Heroku process, add Gunicorn to requirements.txt and use Procfile: web: gunicorn app:app. Gunicorn is a Unix server; Windows learners can use Flask’s test client locally. Set the intended Python runtime according to the current provider documentation. If your local branch is main, push main; if it is master, push master. Verify a successful build, a running web process, the public response, and the logs; a successful Git push alone is insufficient."
+        },
+        {
+          "type": "paragraph",
+          "text": "Troubleshooting exercise: ModuleNotFoundError suggests a missing dependency or wrong environment; a failure to import app:app suggests a filename/object mismatch; HTTP 500 requires examining the application traceback. Explain which evidence distinguishes these cases before changing code."
+        }
+      ]
+    },
+    {
+      "title": "Part 6 — Continuous Integration (CI)",
+      "slug": "part-6-continuous-integration-ci",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CI?",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId178.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "What is Continuous Integration? Developers frequently push code to a shared Git repository; the CI pipeline automatically builds and tests every change; developers get quick feedback (checks passed or failed) and fix problems early.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Deployment is important but time-consuming. Code written by many people must be integrated, tested sufficiently and deployed correctly to the live environment without bugs. Doing all of this by hand for every change is slow and error-prone.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId181.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Without CI, developers integrate late: merge conflicts pile up, the application breaks and bugs are discovered late. With CI, each developer’s change goes through the pipeline (commit, build, test) frequently, so problems are found early.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Continuous Integration means integrating changes frequently into a shared mainline and automatically building and testing them. The chapter pipeline also automates deployment to a test/staging environment; that is an additional pipeline capability, not part of the minimum CI definition.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "The CI process (7 steps)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Three systems are involved:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Version Control System (VCS): stores the versions of the code.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous Integration server: automatically builds and tests the code.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Staging / Deployment server: where the code is finally deployed.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The steps, exactly as on the slide:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Developer commits code to the version control system (after writing and testing it locally).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The CI server pulls the new code after each commit.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The CI server builds and tests the code automatically, running unit and integration tests and checking for errors.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "If there are no errors, the CI server tells the staging/deployment server that the code is ready to deploy.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The deployment server pulls the code from the version control system.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The deployment server does one more round of building and testing, and deploys it.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The deployment server notifies the CI server that deployment is complete.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Building, testing, integrating and deploying are all automated with scripts and the CI server.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId185.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "The CI workflow, repeated for every code change: write code → commit and push to Git → automated build → automated unit and integration tests → feedback (pipeline passed or failed) → fix and repeat.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId188.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "A code commit triggers an automated pipeline: (1) the developer pushes code, (2) the repository detects the new commit and triggers the CI system, (3) the pipeline checks out the code, builds and tests it, and feedback (pass or fail) goes back to the developer to fix and repeat.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "heading",
+          "text": "Best practices for CI (7 practices)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Memorise these seven; the chapter summary lists exactly these.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Maintain a single source repository. Keep one mainline (master) branch, and most people should work on it most of the time. A few branches for trying new features or fixing bugs are fine.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Automate the build. A build involves compiling, copying and moving files, creating database schemas and so on. Build tools automate this once you write scripts with the correct configuration. The chapter’s examples: Ant and Gradle for Java, and “Builder” for Node.js.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId192.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Automating the build: when code is pushed, the CI build job installs dependencies, runs the build steps and checks the result — producing a build artifact if the build passes.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Make the build self-testing. Create automated tests that check a large part of the code base. A simple command should run the whole test suite, and when a test fails, a notification should be sent to the developer responsible for that module.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId195.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "A self-testing build: the CI test job runs unit tests (individual units of code) and integration tests (interactions between components) on the built application; if tests fail, the developer investigates, fixes the code and pushes again.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Commit to the main branch every day. Before committing, developers write code, write tests, build, check for errors and check for conflict errors, which happen when someone else has already modified the same parts of the code. - Infrequent commits → more chances of conflict errors. - Frequent commits encourage developers to break their work into very small chunks.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "5. Every commit should build the main branch on an integration server. The CI server monitors the repository. On every commit it pulls the new code, builds it, runs integration tests, and tells the committer whether everything works. If all tests pass, the build is successful. - Examples of CI servers: Jenkins and CruiseControl. (The chapter shows a CruiseControl dashboard listing recent builds, which passed or failed, how long they took and who made the changes.)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "6. Fix broken builds immediately. Fixing a broken build is the developers’ top priority. Restore a healthy mainline with a quick verified fix or by reverting the offending commit. The chapter illustrates reverting; merely redeploying an old build does not repair repository history.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "7. Automate deployment. Write scripts that deploy automatically, for example to the staging environment. This ensures that the latest code is always available in staging.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId198.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Pipeline passed vs pipeline failed: when all checks pass, a build artifact is produced and is ready for the next step; when a test fails, the developer investigates, fixes and retries — a broken build is fixed immediately.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "heading",
+          "text": "Reflection: what are the benefits of CI?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Think about benefits for end users, developers and the organisation before reading the chapter’s answer.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Reduces deployment time. Building, testing and deploying are automated with scripts and the integration server, which minimises the steps needing human intervention.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Avoids last-minute confusion and rush at release dates. Without CI, developers may not commit for weeks or months and then all commit just before a deadline, causing many conflicts. CI requires daily commits, so conflicts stay small.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Beneficial to users. An updated copy of the software is always available on the staging server, so users can see an initial prototype, and the sales or management team can give a demo at any time.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Beneficial to developers. Committing small pieces frequently pushes developers to write more efficient, modular code.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Drawback: the initial effort needed to set up the processes, set up the integration server and train people. In most cases the advantages far outweigh this.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId202.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Benefits of CI: find problems early through quick feedback, automate repeated build and test checks, integrate many developers’ changes frequently into a shared codebase, and prepare releases confidently.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Store example: three developers work on login, cart and payment. Each commits daily. Every commit triggers Jenkins to build the shop and run the tests. On Tuesday, a cart change breaks the “apply discount” test. Jenkins notifies the cart developer, the team reverts to the last good build, and the bug is fixed the same day instead of being discovered on release day.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Beyond the chapter: CI, Continuous Delivery and Continuous Deployment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "You will often see “CI/CD”. These three related terms are frequently confused:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous Integration (CI): every change is integrated into the mainline frequently and automatically built and tested.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous Delivery: goes further. Every change that passes the pipeline is kept ready to release, but a person makes the final decision to release it to production (a manual approval gate).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous Deployment: goes all the way. Every change that passes the automated checks is released to production automatically, with no manual approval.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The key difference between delivery and deployment is whether a human approves the release to production.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId206.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Continuous Delivery vs Continuous Deployment: in delivery, a release-ready build waits for a human release decision before production; in deployment, every change that passes build and test goes to production automatically with no separate manual approval.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId209.webp",
+          "width": 1400,
+          "height": 855,
+          "caption": "A complete CI/CD pipeline from code to production: code commit → build → test (continuous integration), then release-ready candidate → deploy → live production (continuous delivery/deployment).",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId212.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Continuous Integration automatically checks code changes (commit → build → test → feedback); Continuous Delivery keeps the software ready for release, with a release-approval gate before production.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId215.webp",
+          "width": 1400,
+          "height": 855,
+          "caption": "Continuous delivery’s release decision: (1) all checks pass and a release candidate is ready, (2) a person reviews the test results, release readiness and risk and approves or holds the release, (3) the approved version is deployed to production.",
+          "alt": "Illustration: Part 6 — Continuous Integration (CI)"
+        },
+        {
+          "type": "paragraph",
+          "text": "A passing CI build does not guarantee the application will work in production. It only means that the tests you wrote passed. This is why monitoring (next part) is still needed after deployment.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "A broken mainline can be restored by a quick verified fix or by reverting the offending change; reverting is not the only remedy. Prefer promoting the same tested build artifact to later environments instead of rebuilding independently and assuming the result is identical."
+        }
+      ]
+    },
+    {
+      "title": "Part 7 — Performance",
+      "slug": "part-7-performance",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once the code is deployed, we must make sure the application performs to an acceptable standard. The chapter covers three ways to improve performance:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Caching",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Task queues",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Making pages load and render quickly",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId220.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Slow website vs fast website: a slow store makes users wait, frustrates them and may make them leave; a fast store gives a quick response, happy users and smooth shopping.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "heading",
+          "text": "7.1 Caching",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Caching stores the results of common operations in memory, which reduces the load on servers. Instead of fetching data from the database every time, it is fetched from memory, which is faster.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "If the same queries run again and again, and the database has not changed, their results can be stored in memory and served from there.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId223.webp",
+          "width": 1400,
+          "height": 857,
+          "caption": "Without a cache, every request makes the application server query the database again (repeated work). With a cache: on a cache miss, the data is fetched from the database and stored; on a cache hit, the stored result is reused.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Two terms help here:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Cache hit: the data is found in the cache and is returned quickly.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Cache miss: the data is not in the cache, so it is fetched from the database (slower) and usually stored in the cache for next time.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Caching tools (chapter): Memcached and Redis. Both keep data in memory as key–value pairs, for example key product:101 → value ₹500.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId226.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Redis and Memcached — in-memory caching: the Flask application server checks the cache first; on a miss it fetches from the database and stores the result, on a hit it reuses the value from memory. Redis supports richer data structures; Memcached is simple key-value caching.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "subheading",
+          "text": "Levels of caching (chapter)",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId229.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "The three levels of caching: (1) browser cache — the browser reuses stored website files (CSS, JS, images); (2) server cache — the application server reuses stored data or pages; (3) database query cache — the database reuses results of recent unchanged queries.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Caching can happen at three levels:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Web browser cache. The browser keeps copies of previously visited pages. A fresh cached response can be reused without contacting the server. When revalidation is needed, validators such as ETag can check whether the response has changed.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Web server — page cache. The web server stores generated pages and can send a stored page to the client without going to the database.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Database — query cache. The database keeps the results of recent queries that have not changed, and returns them without re-running the query.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "The catch: stale data",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A cache is only useful while its data is still correct. If the admin changes the T-shirt price from ₹500 to ₹600 in the database but the cache still holds ₹500, customers see the wrong price. The cache has become stale. This is why the chapter says caching works for queries where the database has not changed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId233.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Cache staleness and invalidation: (1) the cache matches the database (₹500), (2) the price is updated to ₹600 in the database but the cache still shows ₹500, (3) the stale entry is invalidated, fresh data is fetched and stored, so users see ₹600; a TTL (time-to-live) expiry also helps.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Two common fixes are invalidation (delete or refresh the cached entry whenever the underlying data changes) and TTL (time-to-live), where every cache entry expires automatically after a set time. Never put one user’s private data (like their cart or account page) in a shared cache that other users could receive.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "7.2 Task queues (asynchronous work queues)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "As a website grows, some tasks become resource- and time-consuming:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "sending emails or notifications to thousands of users;",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "bulk creating or updating database records. For example, deleting a user means deleting all data associated with that user.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "These tasks need not be done immediately. The user can be told that the task will be carried out, and notified later when it is complete.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "The problem with the normal request–response cycle",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Normally: the user sends a request (“send an email to my friend”) → the server processes it and actually sends the email → the server responds “email sent”. The user waits the whole time. For one email that is fine. For thousands, it is not scalable, because nobody can wait that long for a response.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "The solution: an asynchronous work queue",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: An asynchronous work queue executes tasks outside the normal HTTP request–response cycle. It consists of:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "a queue of jobs to be performed, along with their parameters, and",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "a pool of workers that take jobs from the queue and perform them.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The server just adds a job to the queue and responds to the user immediately. The workers do the slow work in the background.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId239.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Synchronous vs asynchronous: synchronously, the Flask server saves the order, sends the email, and only then confirms, so the customer waits; asynchronously, it saves the order, puts an email task in the task queue, responds immediately, and a background worker sends the email.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Why a pool of workers?",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Many workers share the work, so the jobs are finished in much less time than with a single worker.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "If you expect higher traffic than usual, you can dynamically increase the number of workers so jobs still finish quickly.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId242.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Task queue and worker pool: the application records the order and creates background jobs; jobs (Email A, B, C) wait in the task queue; several workers take jobs in parallel and send the confirmation emails.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: In Python, Celery (with Redis or RabbitMQ holding the queue) is a popular task-queue tool. Because a failed job may be retried, workers should be written so that running a job twice does no harm. For example, a retried email job should not send the customer two confirmation emails. Also save the order in the database before queuing its email.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "7.3 Loading and rendering pages quickly",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId247.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Where does website loading time go? (1) the browser sends a request, (2) it travels over the network, (3) the server processes it and generates a response, (4) HTML, CSS, JS and images are transferred back, (5) the browser renders the page. Total loading time is the sum of all these activities.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Web applications contain a lot of static content: HTML, CSS, JavaScript and images. These must load quickly.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Why does a few seconds matter?",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "User stress: the chapter shows research that the stress caused by mobile page delays is comparable to watching a horror movie. Even a few extra seconds of loading make us uncomfortable and agitated.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Business impact (chapter examples, worth remembering):",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "2016 — AliExpress made its site 30% faster → customer orders rose 10.5%.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "2006 — Google slowed its search results by half a second → user requests dropped 25%.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "Method 1 — Minify the code",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Minify = remove unnecessary whitespace and comments, and sometimes shorten names, while preserving program behaviour. Required separators and whitespace inside string values must be preserved. A minifier can also shorten names (such as parameter names). The code still does exactly the same thing; it is just smaller.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section example: a small JavaScript function that converts Fahrenheit to Celsius.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "// Before minification\nfunction fahrenheitToCelsius(fahrenheit) {\n    // convert the temperature\n    var celsius = (fahrenheit - 32) * 5 / 9;\n    return celsius;\n}\n\n// After minification\nfunction fahrenheitToCelsius(e){return 5*(e-32)/9}",
+          "runs": [
+            {
+              "text": "// Before minification",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "function fahrenheitToCelsius(fahrenheit) {",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    // convert the temperature",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    var celsius = (fahrenheit - 32) * 5 / 9;",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    return celsius;",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "}",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "// After minification",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "function fahrenheitToCelsius(e){return 5*(e-32)/9}",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "(The code above illustrates the idea; the chapter’s exact snippet came from DigitalOcean’s minify tool.) For the chapter’s small function, minifying saved about 41% of the size. Across a whole website this adds up to a large saving, so pages load faster.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId250.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Minification: readable HTML, CSS and JS with comments, whitespace and formatting go through a minifier, which removes unnecessary characters while keeping the intended behaviour, producing smaller files and less data to transfer.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "subheading",
+          "text": "Method 2 — Compress static pages",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Tools such as Gzip and Brotli compress web pages and other resources before sending them. The browser decompresses them on arrival, and the original content is restored exactly, because the compression is lossless.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId254.webp",
+          "width": 1400,
+          "height": 855,
+          "caption": "Gzip and Brotli: the web server compresses HTML, CSS and JS losslessly, the compressed response travels over the network (fewer bytes), and the browser decompresses it so the original content is restored and the site displays normally.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Minification vs compression: the two are different and are used together. Minification rewrites the code itself to remove unneeded characters. Compression encodes the bytes for transfer and is undone by the browser.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Other common techniques are sending images at the right size and in efficient formats (WebP, AVIF), loading the most important content first, and lazy-loading images further down the page (loading them only when the user scrolls to them). Do not lazy-load the main product image, because the user needs to see it immediately.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId257.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Optimising page loading and rendering: (1) reduce resource size (minify, compress), (2) load critical content first (HTML, main image, essential CSS) and delay what can wait, (3) optimise images (right size, WebP/AVIF, lazy load), (4) useful content appears sooner.",
+          "alt": "Illustration: Part 7 — Performance"
+        },
+        {
+          "type": "note",
+          "text": "Historical figures: the AliExpress, Google and user-stress statistics above are attributed to the chapter; their original studies have not been verified in this audit. Treat them as reported historical examples, not universal causal laws or current performance benchmarks."
+        }
+      ]
+    },
+    {
+      "title": "Part 8 — Monitoring",
+      "slug": "part-8-monitoring",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why monitor after deployment?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Even after thorough testing in the testing and staging environments, issues can still arise in the live environment. The application must therefore be constantly monitored once deployed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId263.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Application monitoring: the live application in production sends monitoring data (CPU, memory, requests, errors) to a dashboard; warning signs are detected; the team investigates and responds; monitoring continues over time.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "heading",
+          "text": "What to monitor (chapter)",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "CPU utilisation: how it behaves, especially at peak times.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Memory utilisation.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Storage: consumed vs free. If database-heavy activity fills the disk, nothing new can be added to the database, and users start getting errors.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Network bandwidth and latency. Latency is the time it takes for a user to get a response. Check periodically that it is not getting worse.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId267.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Monitoring CPU (processing load), memory (RAM consumption), storage (disk capacity used by application, log and database files) and network activity (incoming and outgoing data transfer) of the cloud VM running the shop.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId270.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "A monitoring dashboard: (1) in normal operation the metrics are within the expected range; (2) warning signs appear — CPU rising, slow responses, more errors; (3) the team investigates by comparing trends, inspecting logs and checking the application.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId273.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Responding to a failure: (1) monitoring raises an alert, (2) the team examines logs, metrics and health checks to find the root cause, (3) applies an appropriate fix — fix configuration, restart the service, or roll back the release, (4) verifies that the application works and keeps monitoring.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Monitoring data comes in three main forms. Metrics are numbers measured over time (CPU %, requests per second, error rate). Logs are records of individual events (“payment request failed at 10:42”). Traces follow a single request through all parts of the system. An alert tells you something is wrong; finding why still needs investigation.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Monitoring tools — 1: Reporting tools (Lighthouse)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Reporting tools generate reports. You give them a URL, and they:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "analyse the page’s resources,",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "give optimisation suggestions,",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "check metrics such as SEO and accessibility, and",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "calculate a performance score for the website.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Lighthouse is a tool provided by Google. The chapter describes it as a Google Chrome extension that you can install to check the performance scores of websites. The chapter demonstrates it on the verisim.tech website, showing metrics such as how long the page takes to load and the Speed Index.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId277.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Google Lighthouse: (1) open the page to audit, (2) run Lighthouse from Chrome DevTools, (3) read the report — Performance, Accessibility, Best Practices and SEO scores, key metrics and improvement opportunities, (4) make changes and measure again.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: Lighthouse today is built into Chrome DevTools (the “Lighthouse” tab), so no extension is needed, and it also runs inside Google’s PageSpeed Insights website. Google’s Core Web Vitals are LCP (Largest Contentful Paint, how fast the main content appears), INP (Interaction to Next Paint, how quickly the page responds to clicks) and CLS (Cumulative Layout Shift, how much the page jumps around while loading). A Lighthouse lab run measures LCP and CLS directly. INP needs real users clicking, so Lighthouse reports TBT (Total Blocking Time) as its stand-in for responsiveness, and INP is shown from real-user data in PageSpeed Insights. Scores vary slightly between runs, so compare several runs made under the same conditions.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Monitoring tools — 2: Understanding customer behaviour",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Monitoring is not only about servers. Another important reason to monitor is to understand how customers behave. These ideas belong to web analytics.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId281.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Web analytics: visitors browse, view and add products; the site records relevant events (page view, product click, add to cart) in a privacy-aware way; the analytics dashboard shows visitors, popular pages and shopping journeys; the team makes data-informed improvements and measures again.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter names three things to monitor.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "(a) Clickstreams",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Clickstreams answer the question: which sequences of pages do your users visit the most? A website offers many possible paths, and clickstream analysis shows which paths users actually take most often.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId284.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "User clickstream: Home page (page view) → Browse products (product click) → View product (product page view) → Add to cart → Checkout (checkout page view). The recorded sequence of actions helps the team understand the user journey.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "subheading",
+          "text": "(b) Think time / Dwell time",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Think time or dwell time is how long a typical user stays on a given page.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId288.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Dwell time and engagement: when a visitor arrives on a page, the time they spend and their interactions (scroll, click, add to cart) are recorded and analysed for engagement patterns.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Interpret dwell time carefully. A long time on a page might mean the user is interested, but it could also mean they are confused, or that they left the tab open and walked away.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "(c) Abandonment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An application has flows: sequences of steps that lead to a goal. The chapter’s example is a purchase flow:",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Product page → Buy Now → Add address → Add payment details → Pay",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Abandonment = the percentage of users who “abandon” a flow instead of completing it.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Completing the flow is the desired path for the business. Abandoning it partway means lost business from that customer, which is why abandonment is an important metric to monitor.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId292.webp",
+          "width": 1400,
+          "height": 854,
+          "caption": "Shopping cart abandonment: a user views the product, adds it to the cart, then leaves without buying. The shopping funnel (product view → add to cart → checkout → purchase) shows where users drop off; adding to cart does not mean a purchase.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked example (calculation): 200 users reach the cart page and start the purchase flow; 70 of them complete payment.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Users who abandoned = 200 − 70 = 130",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Abandonment rate = 130 ÷ 200 × 100 = 65%",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Completion rate = 70 ÷ 200 × 100 = 35% (the two always add up to 100%)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Analytics shows where users leave (for instance, many drop out at “Add payment”). It does not tell you why: high delivery charges, a confusing form or a failed payment are all possible causes that need investigation.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Analytics tools — Google Analytics",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Analytics tools work by embedding a small piece of JavaScript in every page of your website. This snippet contains a tracking code, and it sends information to the analytics tool each time the page is loaded. Google Analytics is the example. It shows metrics such as what happens after each interaction and where users drop off. To use it, you sign up for an account and insert the tracking code into your website.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId297.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "Google Analytics: visitors perform actions on the site; configured events (page_view, view_item, add_to_cart) are sent by the GA4 tag; Google Analytics 4 organises the measurement data; the team explores reports on page views, events, popular products and shopping journeys.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter: The current version is Google Analytics 4 (GA4), which records everything as events (for example page_view, view_item, add_to_cart, purchase). Analytics numbers are estimates, not perfect ground truth: ad-blockers, cookie-consent choices and tracking bugs can cause missing or duplicate events. Websites must also follow privacy rules about what they collect.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Monitoring for A/B testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose version A of your website has a problem. For example, abandonment is high. To fix it you create version B, with a new workflow or a better UI.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "How do you know whether B is actually better? The chapter’s answer is to:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Use a canary deployment (phased / incremental rollout), so that some users get version A and other users get version B.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Monitor both versions and check which one is better.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "“Better” can be measured as more traffic, more dwell time on a page, more sales, less abandonment, and so on.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Section point: Monitoring is useful for A/B testing: checking whether the new version of your application is better than the previous one. In the chapter, the A/B split is done using a canary-style incremental rollout.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId301.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "A/B testing: create two versions that differ in one element (e.g. the Add-to-Cart button), randomly assign visitors to Group A or Group B, measure the same outcome (add-to-cart rate) for both, and compare the results before deciding.",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beyond the chapter — A/B test vs canary, a useful distinction: The two often use the same mechanism (send some users to one version and others to another), but they answer different questions:",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "A canary deployment asks: “Is the new release healthy and safe enough to roll out to more users?” It watches errors, response times and crashes.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "An A/B test asks: “Which version leads to better user behaviour?” It watches sales, add-to-cart rate, abandonment and dwell time, usually with random assignment and enough users for the result to be reliable.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For the exam, remember the chapter’s statement that canary-style rollout can be used to run an A/B test. In practice, also remember that the goals differ.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-10/rId304.webp",
+          "width": 1400,
+          "height": 856,
+          "caption": "A/B testing vs canary deployment: A/B testing compares user outcomes between randomly assigned groups to evaluate a design change (“Which design performs better?”); canary deployment sends a small group to a new release and monitors errors and response time to reduce release risk (“Is the new release safe to expand?”).",
+          "alt": "Illustration: Part 8 — Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "Store example: the orange T-shirt page has high cart abandonment. The team builds version B with a one-page checkout and rolls it out to 10% of shoppers. After two weeks, B shows 48% abandonment against A’s 65%, with enough users in both groups to trust the difference. The team rolls B out to everyone.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Summary of Parts 7 and 8",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Topic",
+              "Key facts"
+            ],
+            [
+              "Caching",
+              "Store results of common operations in memory; reduces server load; Memcached, Redis; levels: browser, web server (page cache), database (query cache)"
+            ],
+            [
+              "Task queues",
+              "For time-consuming tasks (bulk emails, bulk DB updates); asynchronous, outside the HTTP request–response cycle; queue of jobs + parameters, pool of workers; workers can be increased dynamically"
+            ],
+            [
+              "Fast loading",
+              "Matters for users (stress) and business (AliExpress 30% faster → +10.5% orders; Google +0.5 s → −25% requests); minify code (~41% saved in example); compress with Gzip/Brotli"
+            ],
+            [
+              "What to monitor",
+              "CPU, memory, storage (consumed vs free), network bandwidth, latency"
+            ],
+            [
+              "Reporting tools",
+              "Lighthouse (Google): page resources, suggestions, SEO, accessibility, performance score"
+            ],
+            [
+              "Customer behaviour",
+              "Clickstreams (most common page sequences), think/dwell time (time on a page), abandonment (% who leave a flow)"
+            ],
+            [
+              "Analytics tools",
+              "JavaScript tracking code embedded in every page; e.g. Google Analytics"
+            ],
+            [
+              "A/B testing",
+              "Version A vs B rolled out via canary; monitor which is better (traffic, dwell time, sales, abandonment)"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Measurement caution: dwell time, time on page and load-test think time are related but distinct measurements. Define the event boundaries before comparing them. A/B conclusions require group sample counts, assignment method and uncertainty, not just two percentages or two weeks of elapsed time. Completion and abandonment add to 100% only when defined over the same cohort and observation window."
+        }
+      ]
+    },
+    {
+      "title": "Putting it all together — releasing a new checkout page",
+      "slug": "putting-it-all-together-releasing-a-new-checkout-page",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Here is the whole week in one story. The T-shirt shop wants a new, faster checkout page.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Development environment: a developer builds the new checkout on their laptop against a local database, runs unit tests and commits to the mainline every day.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous integration: each commit triggers the CI server (e.g. Jenkins), which pulls, builds and runs unit and integration tests. When one commit breaks a test, the team fixes the broken build immediately by reverting to the last good build.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Testing environment: integration and system testing of the whole shop.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Staging environment: a production-like pre-production system with documented differences. The team rehearses the deployment, runs a stress test for a sale day, and previews the new checkout to the marketing team.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Hosting: the shop runs on an IaaS VM (DigitalOcean droplet, set up over SSH) or on a PaaS (Heroku: requirements.txt + Procfile + git push).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Deployment strategy: canary. 5% of shoppers get the new checkout first, while the team watches for errors before increasing the share. (Blue/green would instead prepare a full new environment and switch the router all at once, with easy rollback.)",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Performance: product details are cached in Redis, order-confirmation emails go through a task queue, and CSS/JS are minified and compressed with Gzip/Brotli.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Monitoring: dashboards track CPU, memory, storage, bandwidth and latency, and Lighthouse checks page performance.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Customer behaviour and A/B testing: Google Analytics shows clickstreams, dwell time and abandonment in the checkout flow. The old and new checkouts are compared in an A/B test to confirm that the new one really reduces abandonment.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Practice questions with answers",
+      "slug": "practice-questions-with-answers",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Try each question before reading the answer.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q1. Which environment is described as “an exact replica of production, running on a remote machine”? Answer: The staging (pre-production) environment.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q2. Give the three reasons the chapter offers for using a staging environment. Answer: (1) Deployment involves many activities and configurations, and doing it directly in production could crash the live system and affect users. (2) To preview new features to management, sales/marketing or clients. (3) To do performance and stress testing without affecting real users.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q3. In the testing environment, what happens when a test fails? Answer: The defective code is removed, the failing module and its developer are identified and the developer is notified, the code is rolled back to the previous working version, and the developer fixes the bug in their working copy and recommits it for the next scheduled deployment.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q4. What is the main advantage of blue/green deployment? Answer: Easy rollback. If the new (green) environment has problems, the router sends users back to the old (blue) environment, which still works.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q5. What are the other names for canary deployment, and what is its drawback? Answer: Phased rollout or incremental rollout. Drawback: you must manage multiple instances (old and new versions) at once.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q6. Name three ways of selecting users for a canary rollout. Answer: Randomly; based on user profile or demographics; based on region.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q7. A mobile app keeps old versions running and lets users decide whether to update. Which strategy is this, and what is its drawback? Answer: Versioned deployment. Drawback: the company has to maintain multiple versions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q8. An IaaS provider has a server with an 8-core CPU and 32 GB RAM and slices it into 8 VMs. What does each VM get? Answer: 1 core and 4 GB of memory.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q9. Match each option with its advantage: Bare metal, IaaS, PaaS. Answer: Bare metal → dedicated hardware control; performance depends on workload and configuration; IaaS → lower upfront cost, with physical hardware maintained by the provider; PaaS → very easy to deploy.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q10. What is the main disadvantage of PaaS? Answer: Lack of control over the underlying OS, hardware and configuration.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q11. Classify each provider as IaaS or PaaS: DigitalOcean, Heroku, AWS (EC2), Google App Engine, Linode. Answer: IaaS: DigitalOcean, AWS, Linode. PaaS: Heroku, Google App Engine.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q12. What is a “Droplet”? Answer: DigitalOcean’s name for a virtual machine.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q13. Which two files must be prepared before deploying a Flask app to Heroku, and what does each do? Answer: requirements.txt lists the required packages and versions, which Heroku installs. The Procfile tells Heroku how to run the app (e.g. web: gunicorn app:app).",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q14. What is Gunicorn? Answer: A WSGI (Web Server Gateway Interface) server that Heroku uses to run Python web applications.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q15. In the Heroku tutorial, which command uploads the code and triggers deployment? Answer: git push heroku master. Heroku is set up as a git remote.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q16. List the seven best practices of continuous integration. Answer: (1) Maintain a single source repository; (2) automate the build; (3) make the build self-testing; (4) commit to the main branch every day; (5) every commit should build the main branch on an integration server; (6) fix broken builds immediately; (7) automate deployment.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q17. Why should developers commit every day? Answer: Infrequent commits increase the chance of conflict errors. Frequent commits encourage breaking work into small chunks, keep conflicts small, and avoid a last-minute rush before releases.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q18. How is a broken build fixed “immediately”? Answer: The chapter illustrates reverting the offending change to restore a known good mainline, then fixing the bug. A quick verified fix is another option; redeploying an old artifact alone does not repair the mainline.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q19. Name two CI servers and two build tools from the chapter. Answer: CI servers: Jenkins, CruiseControl. Build tools: Ant, Gradle (Java) and “Builder” (Node.js).",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q20. State one drawback of continuous integration. Answer: The initial effort to set up processes and the integration server, and to train people.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q21. Name the three levels at which caching can happen. Answer: Web browser cache, web server page cache, database query cache.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q22. Why is an asynchronous task queue used for sending emails to thousands of users? Answer: Doing it inside the normal request–response cycle would make the user wait far too long and does not scale. The job is put in a queue and a pool of workers processes it in the background, outside the HTTP request–response cycle. More workers can be added when traffic is high.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q23. What two things does an asynchronous work queue consist of? Answer: A queue of jobs (with their parameters) and a pool of workers.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q24. What does minification do, and how is it different from compression? Answer: Minification removes spaces, tabs, extra whitespace and comments (and can shorten names) from the code itself without changing behaviour. Compression (Gzip, Brotli) encodes the files into fewer bytes for transfer, and the browser decompresses them.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q25. According to the chapter, what happened when Google slowed search results by half a second in 2006? Answer: User requests dropped by 25%.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q26. List four things to monitor in a live application. Answer: CPU utilisation, memory utilisation, storage (consumed vs free), and network bandwidth and latency.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q27. What is latency? Answer: The time it takes for a user to get a response.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q28. What does Lighthouse report on? Answer: It analyses page resources, suggests optimisations, checks SEO and accessibility, and calculates a performance score.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q29. Define clickstream, dwell time and abandonment. Answer: Clickstream: the sequences of pages users visit, and which are most common. Dwell (think) time: how long a typical user stays on a given page. Abandonment: the percentage of users who leave a flow (e.g. a purchase) instead of completing it.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q30. 250 users start checkout and 100 complete the purchase. What is the abandonment rate? Answer: (250 − 100) ÷ 250 × 100 = 60%.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q31. How does an analytics tool such as Google Analytics collect data? Answer: A small JavaScript snippet containing a tracking code is embedded in every page. It sends information to the analytics tool each time a page loads.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q32. How does the chapter suggest running an A/B test, and what counts as “better”? Answer: Use a canary (phased/incremental) rollout so some users get version A and others version B, then monitor both. “Better” can mean more traffic, more dwell time, more sales or less abandonment.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q33 (Beyond the chapter). What is the difference between continuous delivery and continuous deployment? Answer: In continuous delivery, a person approves the release to production. In continuous deployment, every change that passes the automated checks is released to production automatically.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "Glossary",
+      "slug": "glossary",
+      "blocks": [
+        {
+          "type": "bullet-item",
+          "text": "Abandonment: percentage of users who start a flow (e.g. checkout) but do not complete it.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "A/B testing: showing version A to some users and version B to others, and comparing which performs better.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Bare metal server: physical server hardware that you buy and manage yourself.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Blue/Green deployment: two production environments; the router switches all users from the old (blue) to the new (green); easy rollback.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Build tool: software that automates compiling, copying files and creating schemas (Ant, Gradle).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Cache / cache hit / cache miss: a fast store of reusable results; a hit means the result was found there, a miss means it had to be fetched from the source.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Canary deployment: rolling out a new version gradually to a small subset of users first (phased/incremental rollout).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Clickstream: the sequence of pages a user visits.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous Integration (CI): frequent integration into a shared mainline, supported by automated builds and tests. Deployment automation is an additional delivery/deployment capability.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "CI server: a server that monitors the repository and automatically builds and tests each commit (Jenkins, CruiseControl).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Deployment: placing the software so that users can access it.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Deployment strategy: a planned way of moving code from staging to production.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Droplet: DigitalOcean’s name for a virtual machine.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Dwell time / think time: how long a user stays on a page.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Environment: a system (or set of systems) that executes a software application.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Gunicorn: a WSGI server used to run Python web apps (used by Heroku).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Gzip / Brotli: lossless compression for web resources.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Hosting: the infrastructure on which an application is deployed.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "IaaS (Infrastructure-as-a-Service): renting virtual machines from a provider (DigitalOcean, AWS, Linode).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Latency: the time taken for a user to receive a response.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Lighthouse: Google’s tool for auditing page performance, SEO and accessibility.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Mainline / master branch: the shared code base in version control.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Minification: removing unnecessary characters from code to make it smaller.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Monitoring: capturing and analysing an application’s execution information.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "PaaS (Platform-as-a-Service): a platform that runs your application for you (Heroku, Google App Engine).",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Procfile: a Heroku file stating how to start the app.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Production environment: the live environment used by real users.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "requirements.txt: a list of Python packages and versions needed by a project.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Rollback: returning to the previous working version.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "SSH: Secure Shell, an encrypted way to log in to a remote machine.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Staging environment: a pre-production environment that reproduces production characteristics needed for release validation; differences should be documented.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Task queue (asynchronous work queue): a queue of jobs processed by a pool of workers outside the request–response cycle.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Testing environment: where integration and system testing are done.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Tracking code: a JavaScript snippet that sends page-visit data to an analytics tool.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Versioned deployment: keeping all versions alive and letting users choose which to use.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Virtual machine (VM): a software-defined computer carved out of a physical server.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Working copy: a developer’s local copy of the code base.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

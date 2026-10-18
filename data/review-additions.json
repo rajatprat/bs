@@ -1,0 +1,391 @@
+{
+  "boxed": true,
+  "notes": [
+    {
+      "id": "review-01",
+      "week": 1,
+      "slug": "agile-approaches-and-practices",
+      "title": "What does BDD mean?",
+      "paragraphs": [
+        "BDD usually means Behaviour-Driven Development. This chapter calls it Behaviour-Driven Design. Keep the chapter wording in mind when studying for the course.",
+        "The simple idea: agree on examples of what the software should do, then use those examples to guide building and testing it."
+      ]
+    },
+    {
+      "id": "review-02",
+      "week": 1,
+      "slug": "testing-check-the-system-before-release",
+      "title": "One more testing level",
+      "paragraphs": [
+        "Unit testing checks one small part. Integration testing checks parts working together. System testing checks the whole application. Acceptance testing checks whether it meets the agreed user needs.",
+        "Regression testing means checking that a change has not broken something that worked before. It can be done at different testing levels."
+      ]
+    },
+    {
+      "id": "review-03",
+      "week": 1,
+      "slug": "fast-revision-can-you-explain-these",
+      "title": "Try one small example",
+      "paragraphs": [
+        "Question: A team expects users to change their minds after seeing the first version. Why might short iterations help?",
+        "Answer: Users can try a small version early. The team learns what to change before building too much. This does not remove the need to plan or test."
+      ]
+    },
+    {
+      "id": "review-04",
+      "week": 2,
+      "slug": "behaviour-driven-design-bdd",
+      "title": "BDD in simple words",
+      "paragraphs": [
+        "The common expansion is Behaviour-Driven Development. The chapter uses Behaviour-Driven Design. Both labels here point to discussing expected behaviour through examples.",
+        "Example: Given a seller has filled in valid product details, when they press Save, then the product appears in their catalogue."
+      ]
+    },
+    {
+      "id": "review-05",
+      "week": 2,
+      "slug": "reliability-robustness-and-other-quality-requirements",
+      "title": "Reliable does not just mean repeatable",
+      "paragraphs": [
+        "Reliability means the software keeps doing its required job under stated conditions over a stated time. Giving the same wrong answer every time is not reliability.",
+        "Correctness: the stock total is right. Reliability: the stock service keeps doing its job during the stated period. Robustness: a bad input gets a useful error instead of crashing the service."
+      ]
+    },
+    {
+      "id": "review-06",
+      "week": 2,
+      "slug": "what-is-an-srs",
+      "title": "Make a time requirement clear",
+      "paragraphs": [
+        "The 3-second and 5-second examples in this guide are separate examples. They do not have to use the same target.",
+        "For a real test, say when the clock starts and stops, how many users are active, and how much data is present. Also say whether the limit applies to every request or, for example, 95 out of 100 requests. Agree these details with the stakeholder."
+      ]
+    },
+    {
+      "id": "review-07",
+      "week": 2,
+      "slug": "the-user-story-template",
+      "title": "When is this story complete?",
+      "paragraphs": [
+        "Teaching example: As a seller, I want to add a product so that buyers can find it. Call this story CAT-01. For this example, the title is required and the price cannot be negative.",
+        "Passing example: Given valid details, when I save, then one product is stored and a success message appears.",
+        "Failing example: Given an empty title, when I save, then I see a title error, my other entries stay, and nothing is stored. These checks are acceptance criteria."
+      ]
+    },
+    {
+      "id": "review-08",
+      "week": 2,
+      "slug": "test-your-understanding",
+      "title": "Try one small example",
+      "paragraphs": [
+        "Question: Why is “the catalogue must be fast” a weak requirement?",
+        "Answer: “Fast” has no clear test. Agree a response-time target, the start and end of the measurement, and the test conditions. Then two testers can check the same thing."
+      ]
+    },
+    {
+      "id": "review-09",
+      "week": 3,
+      "slug": "design-heuristics-understanding",
+      "title": "Inspection and testing answer different questions",
+      "paragraphs": [
+        "Heuristic evaluation: an expert checks the interface against useful design rules. Usability testing: a representative user tries a task while we observe.",
+        "Example task: “Add one product.” Record whether the user succeeds, how long it takes, and where they get stuck. An expert finding suggests a problem; observing users helps show what actually happens."
+      ],
+      "anchor": "23. Two kinds of interface evaluation"
+    },
+    {
+      "id": "review-10",
+      "week": 3,
+      "slug": "design-heuristics-understanding",
+      "title": "The groups help us study",
+      "paragraphs": [
+        "This chapter groups rules under understanding, action and feedback. These are study groups, not the headings of Nielsen’s original list.",
+        "Examples: “show system status” matches visibility of system status; “recognition over recall” matches recognition rather than recall; “undo” relates to user control and freedom."
+      ],
+      "anchor": "27. Overview of heuristic groups"
+    },
+    {
+      "id": "review-11",
+      "week": 3,
+      "slug": "prototyping-techniques",
+      "title": "What did the prototype teach us?",
+      "paragraphs": [
+        "For CAT-01, suppose a user misses the Save button. Move it, then ask the user to try again. Record the problem, the change and what happened next.",
+        "A prototype helps us check the interaction. It does not yet explain how products are stored or how the code is organised. Week 5 covers those design decisions."
+      ],
+      "anchor": "15. Prototype, feedback and iteration"
+    },
+    {
+      "id": "review-12",
+      "week": 3,
+      "slug": "week-3-quick-revision",
+      "title": "Try one small example",
+      "paragraphs": [
+        "Question: An expert says a button is confusing. Have we proved users cannot use it?",
+        "Answer: No. We have a reason to investigate. Ask representative users to complete the task and observe what happens. Then improve the design and try again."
+      ]
+    },
+    {
+      "id": "review-13",
+      "week": 4,
+      "slug": "lecture-3-project-scheduling",
+      "title": "These two pictures use different assumptions",
+      "paragraphs": [
+        "The activity network shows which tasks must finish before other tasks start. The conceptual Gantt chart only illustrates bars, overlap and milestones. Do not treat it as the calendar version of that network.",
+        "For example, the Gantt chart starts UI and database work before component design finishes. The network does not allow that overlap. To make a real schedule, use one agreed task list and the same dependency rules in both views."
+      ],
+      "anchor": "Gantt chart: a calendar view"
+    },
+    {
+      "id": "review-14",
+      "week": 4,
+      "slug": "lecture-3-project-scheduling",
+      "title": "How to find spare time",
+      "paragraphs": [
+        "Use the small A–H network, not the Seller Portal network. Start at time 0. Tasks begin only after their predecessors finish. Assume enough people are available.",
+        "ES is earliest start; EF is earliest finish. LS and LF are the latest start and finish that keep the project on time. Float is spare time: LS minus ES. G has 2 units of spare time; the other tasks have none.",
+        "The project takes 12 units. Both A–C–E and B–D–F–H are critical paths."
+      ],
+      "anchor": "Critical path and resource constraints",
+      "rows": [
+        [
+          "Task",
+          "Duration",
+          "ES",
+          "EF",
+          "LS",
+          "LF",
+          "Float"
+        ],
+        [
+          "A",
+          "3",
+          "0",
+          "3",
+          "0",
+          "3",
+          "0"
+        ],
+        [
+          "B",
+          "2",
+          "0",
+          "2",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "C",
+          "4",
+          "3",
+          "7",
+          "3",
+          "7",
+          "0"
+        ],
+        [
+          "D",
+          "3",
+          "2",
+          "5",
+          "2",
+          "5",
+          "0"
+        ],
+        [
+          "E",
+          "5",
+          "7",
+          "12",
+          "7",
+          "12",
+          "0"
+        ],
+        [
+          "F",
+          "4",
+          "5",
+          "9",
+          "5",
+          "9",
+          "0"
+        ],
+        [
+          "G",
+          "2",
+          "5",
+          "7",
+          "7",
+          "9",
+          "2"
+        ],
+        [
+          "H",
+          "3",
+          "9",
+          "12",
+          "9",
+          "12",
+          "0"
+        ]
+      ]
+    },
+    {
+      "id": "review-15",
+      "week": 4,
+      "slug": "lecture-5-project-management-in-agile",
+      "title": "Section wording and the 2020 Scrum Guide",
+      "paragraphs": [
+        "The chapter keeps its older wording. The 2020 Guide names Product Owner, Scrum Master and Developers in one Scrum Team, typically ten or fewer people. A Sprint lasts one month or less.",
+        "Planning asks why the Sprint matters, what to do and how to do it. Its maximum is eight hours for a one-month Sprint; shorter Sprints usually need less time. The Daily Scrum lasts fifteen minutes. The three questions are not compulsory.",
+        "Sprint Goal = the purpose of this Sprint. Definition of Done = the quality conditions the work must meet. A tool’s “accepted” status is not a universal Scrum release rule."
+      ],
+      "anchor": "Quick recall"
+    },
+    {
+      "id": "review-16",
+      "week": 4,
+      "slug": "lecture-4-risk-management",
+      "title": "A risk needs an action",
+      "paragraphs": [
+        "Example: The payment service may be late. Owner: the integration lead. Warning sign: sandbox access is still missing on the agreed date.",
+        "Action now: request access early and test a sample call. If the delay happens: use a test substitute for development and agree a revised delivery plan. A risk score helps us choose what to watch; it does not solve the risk."
+      ],
+      "anchor": "Seller Portal risk table: allocate attention"
+    },
+    {
+      "id": "review-17",
+      "week": 4,
+      "slug": "lecture-6-pivotal-tracker-tutorial",
+      "title": "Practise the workflow without this tool",
+      "paragraphs": [
+        "This is a recorded tool example. You can learn the same workflow on paper: create “Add product”, add UI, storage and test tasks, order the work, then move it from planned to in progress to review.",
+        "For CAT-01, review the valid-details and empty-title checks from Week 2. If a check fails, fix the work and test again. Current availability of the demonstrated service has not been confirmed."
+      ],
+      "anchor": "Quick recall"
+    },
+    {
+      "id": "review-18",
+      "week": 4,
+      "slug": "week-4-quick-revision-and-self-check",
+      "title": "Try one small example",
+      "paragraphs": [
+        "Question: G has 2 units of float in the A–H network. Must the project finish late if G slips by 1 unit?",
+        "Answer: No, assuming nothing else changes. G can use 1 of its 2 spare units and still finish before H needs it. A delay on a zero-float task needs separate attention."
+      ]
+    },
+    {
+      "id": "review-19",
+      "week": 5,
+      "slug": "lecture-1-introduction-to-software-design",
+      "title": "Why seven functions become six components",
+      "paragraphs": [
+        "Week 4 estimates inventory editing and inventory tracking separately. Week 5 puts both inside Inventory Management.",
+        "An estimate divides up work. A component groups related responsibilities in the software. They do not have to match one for one; no inventory feature has been dropped.",
+        "CAT-01 belongs to Catalogue Management. It checks the title and price, then asks storage to save the product. Test it with the two acceptance examples from Week 2."
+      ],
+      "anchor": "Seller Portal: The Six Main Modules"
+    },
+    {
+      "id": "review-20",
+      "week": 5,
+      "slug": "lecture-2-design-modularity",
+      "title": "Look at the jobs inside the module",
+      "paragraphs": [
+        "Functional cohesion: the parts work toward one clear result, such as calculating an order total.",
+        "Communicational cohesion: several jobs are grouped because they use the same data, such as viewing and updating a product record.",
+        "The inventory example is broad. Do not decide the category from the name alone. Ask what each part does and why the parts belong together."
+      ],
+      "anchor": "Compare All Five Cohesion Types"
+    },
+    {
+      "id": "review-21",
+      "week": 5,
+      "slug": "lecture-3-object-oriented-design-basic-concepts",
+      "title": "Three different kinds of connection",
+      "paragraphs": [
+        "Association: objects have a structural link, such as an order linked to its customer. Dependency: one part uses another, such as a method calling a tax service. Realization: a class implements an interface’s promised operations.",
+        "Arrow reminder: dependency uses a dashed line with an open arrow. Interface realization uses a dashed line with a hollow triangle pointing to the interface. Inheritance uses a solid line with a hollow triangle pointing to the parent."
+      ],
+      "anchor": "Dependency: Interface Change Affects Class B"
+    },
+    {
+      "id": "review-22",
+      "week": 5,
+      "slug": "lecture-1-introduction-to-software-design",
+      "title": "One tiny internal design",
+      "paragraphs": [
+        "Inventory stores each product ID with its stock quantity. The reserveStock operation takes a product ID and a positive quantity.",
+        "Find the product. If it is missing or stock is too low, return an error and change nothing. Otherwise subtract the quantity. The rule is simple: stock must never go below zero.",
+        "Test: stock is 3; reserving 2 leaves 1. Reserving 4 must fail and leave 3. This example assumes one request at a time."
+      ],
+      "anchor": "Four Outcomes of the Design Process"
+    },
+    {
+      "id": "review-23",
+      "week": 5,
+      "slug": "lecture-4-unified-modeling-language-uml-diagrams",
+      "title": "A picture of code is not always runnable code",
+      "paragraphs": [
+        "Treat the generated snippet as an illustration unless a programming language and its types are supplied. In plain Python, the built-in names are str and float, not String and Float.",
+        "If you implement product prices, use decimal arithmetic or integer units such as paise, with an agreed rounding rule. Binary floating-point values can cause small rounding differences."
+      ],
+      "anchor": "From a UML Class Model to Code"
+    },
+    {
+      "id": "review-24",
+      "week": 5,
+      "slug": "lecture-5-verisim-comprehending-software-designs",
+      "title": "Some events do not change the state",
+      "paragraphs": [
+        "In this example, the correct PIN is needed for both commands. A wrong PIN leaves the state unchanged. With the correct PIN, Lock ends locked and Unlock ends unlocked—even if it was already in that state.",
+        "Test the unchanged cases too. Locking an already locked door should not unlock it. A wrong PIN should not change either starting state."
+      ],
+      "anchor": "Four Smart Door Outcomes",
+      "rows": [
+        [
+          "Starting state",
+          "Request",
+          "Correct PIN",
+          "Wrong PIN"
+        ],
+        [
+          "Locked",
+          "Lock",
+          "Locked",
+          "Locked"
+        ],
+        [
+          "Locked",
+          "Unlock",
+          "Unlocked",
+          "Locked"
+        ],
+        [
+          "Unlocked",
+          "Lock",
+          "Locked",
+          "Unlocked"
+        ],
+        [
+          "Unlocked",
+          "Unlock",
+          "Unlocked",
+          "Unlocked"
+        ]
+      ]
+    },
+    {
+      "id": "review-25",
+      "week": 5,
+      "slug": "lecture-5-verisim-comprehending-software-designs",
+      "title": "Try one small example",
+      "paragraphs": [
+        "Question: The door is unlocked. A user sends Unlock with the wrong PIN. What should happen?",
+        "Answer: It stays unlocked. The request is rejected, but rejection does not mean “lock the door”. It means “leave the existing state unchanged”."
+      ],
+      "anchor": "Quick revision and self-check"
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "subject": "Mathematical Foundation of Generative AI",
+  "subjectSlug": "mathematical-foundation-of-generative-ai",
+  "week": 1,
+  "part": 2,
+  "courseWeeks": [
+    1
+  ],
+  "base": "/mathematical-foundation-of-generative-ai/week-1/part-2/",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "PART 2 — From Convex Conjugates to Variational Optimization"
+    },
+    {
+      "type": "paragraph",
+      "text": "This continuation follows the remaining Week 1 chapter: expectations from samples, convex conjugates, optimization over functions, and the variational representation of f-divergence. Additional calculations are worked teaching examples, not additional syllabus topics."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Why we use expectations instead of unknown density formulas",
+      "slug": "why-we-use-expectations-instead-of-unknown-density-formulas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The chapter assumes that we can draw samples from the real-data distribution P_X and from the generator-induced distribution P_θ, even if neither density can be evaluated. For any integrable function h, E_P[h(X)] = ∫ h(x)p(x) dx. This is an exact mathematical identity. A finite-sample average is an estimate, not generally an equality."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image47.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 28. Integral as expectation.",
+          "alt": "Illustration: Why we use expectations instead of unknown density formulas"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image46.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 27. Expectation as weighted average.",
+          "alt": "Illustration: Why we use expectations instead of unknown density formulas"
+        },
+        {
+          "type": "paragraph",
+          "text": "Given independent identically distributed X₁,…,Xₙ drawn from P, the empirical estimate is (1/n) Σᵢ h(Xᵢ). Under the Law of Large Numbers assumptions (in particular, a finite expectation), it converges to E_P[h(X)] as n grows. Individual estimates fluctuate."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image21.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 29. Law of Large Numbers.",
+          "alt": "Illustration: Why we use expectations instead of unknown density formulas"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — estimate an unknown mean"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image22.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 30. Monte Carlo sample average.",
+          "alt": "Illustration: Why we use expectations instead of unknown density formulas"
+        },
+        {
+          "type": "list-item",
+          "text": "Observed samples: 2, 4, 3, 5, 6."
+        },
+        {
+          "type": "list-item",
+          "text": "Compute the sample average: (2+4+3+5+6)/5 = 4."
+        },
+        {
+          "type": "list-item",
+          "text": "Interpretation: 4 estimates the population mean. We cannot conclude that the population mean is exactly 4."
+        }
+      ]
+    },
+    {
+      "title": "Supremum and infimum: the language of optimization",
+      "slug": "supremum-and-infimum-the-language-of-optimization",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image23.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 31. Maximum versus supremum.",
+          "alt": "Illustration: Supremum and infimum: the language of optimization"
+        },
+        {
+          "type": "paragraph",
+          "text": "A maximum must be achieved by an element of the set. A supremum is the least upper bound and need not be achieved. Likewise, a minimum is attained; an infimum need not be."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — attained versus unattained"
+        },
+        {
+          "type": "list-item",
+          "text": "For A=[0,1], max A=1 and sup A=1 because 1 belongs to A."
+        },
+        {
+          "type": "list-item",
+          "text": "For B=(0,1), sup B=1, but max B does not exist because 1 is excluded."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image24.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 32. Minimum versus infimum.",
+          "alt": "Illustration: Supremum and infimum: the language of optimization"
+        },
+        {
+          "type": "list-item",
+          "text": "For C=(2,5), inf C=2, but min C does not exist because 2 is excluded."
+        }
+      ]
+    },
+    {
+      "title": "Convex conjugates: definition, optimization and geometry",
+      "slug": "convex-conjugates-definition-optimization-and-geometry",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image48.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 33. Quadratic conjugate optimization.",
+          "alt": "Illustration: Convex conjugates: definition, optimization and geometry"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a function f, its convex conjugate is f*(t) = supᵤ {t u − f(u)}, with the supremum taken over the domain of f. We fix t, vary u, and take the largest possible objective value. The conjugate is a new function of t. It is convex, even when f is not convex."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — conjugate of a quadratic"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image26.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 35. Quadratic conjugate solution.",
+          "alt": "Illustration: Convex conjugates: definition, optimization and geometry"
+        },
+        {
+          "type": "list-item",
+          "text": "Start with f(u)=u²/2 for all real u. Then f*(t)=supᵤ (t u−u²/2)."
+        },
+        {
+          "type": "list-item",
+          "text": "Differentiate with respect to u: d/du(tu−u²/2)=t−u. The stationary point is u=t."
+        },
+        {
+          "type": "list-item",
+          "text": "The second derivative is −1, so this is the unique maximum."
+        },
+        {
+          "type": "list-item",
+          "text": "Substitute u=t: f*(t)=t²−t²/2=t²/2."
+        },
+        {
+          "type": "list-item",
+          "text": "For t=2, the maximizing input is u=2 and the maximum value is f*(2)=2."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geometric interpretation: for convex differentiable f, a supporting line of slope t has the form y=t u−f*(t) when the supremum is attained. Its vertical intercept is −f*(t)."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image27.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 34. Supporting tangent geometry.",
+          "alt": "Illustration: Convex conjugates: definition, optimization and geometry"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — the conjugate used for KL divergence"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image49.webp",
+          "width": 1600,
+          "height": 974,
+          "caption": "Figure 36. KL convex conjugate.",
+          "alt": "Illustration: Convex conjugates: definition, optimization and geometry"
+        },
+        {
+          "type": "list-item",
+          "text": "Use f(u)=u ln u for u>0, extended continuously by f(0)=0; the optimization domain is u≥0."
+        },
+        {
+          "type": "list-item",
+          "text": "Form t u−u ln u. Its derivative for u>0 is t−(ln u+1)."
+        },
+        {
+          "type": "list-item",
+          "text": "Set it to zero: ln u=t−1, hence u=e^(t−1)."
+        },
+        {
+          "type": "list-item",
+          "text": "The objective is strictly concave on u>0 (second derivative −1/u)."
+        },
+        {
+          "type": "list-item",
+          "text": "Substitution gives f*(t)=e^(t−1)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Note the distinction between f(u)=u ln u, used in the KL f-divergence, and f*(t)=e^(t−1), its convex conjugate. They are different functions."
+        }
+      ]
+    },
+    {
+      "title": "Why the biconjugate representation matters",
+      "slug": "why-the-biconjugate-representation-matters",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image28.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 37. Biconjugate identity.",
+          "alt": "Illustration: Why the biconjugate representation matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a proper, convex, lower-semicontinuous function f, the biconjugate identity is f(u)=supₜ {t u−f*(t)}. This converts an expression involving f into an optimization over a scalar t. The conditions matter: the identity is not valid without qualification for every arbitrary function."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — recover the quadratic"
+        },
+        {
+          "type": "list-item",
+          "text": "Take f*(t)=t²/2."
+        },
+        {
+          "type": "list-item",
+          "text": "For a fixed u, maximize t u−t²/2 over t."
+        },
+        {
+          "type": "list-item",
+          "text": "Derivative with respect to t is u−t, so t=u."
+        },
+        {
+          "type": "list-item",
+          "text": "The maximum is u²−u²/2=u²/2=f(u)."
+        }
+      ]
+    },
+    {
+      "title": "Why the optimizing scalar becomes a function T(x)",
+      "slug": "why-the-optimizing-scalar-becomes-a-function-t-x",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image29.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "Figure 38. A scalar-valued function T.",
+          "alt": "Illustration: Why the optimizing scalar becomes a function T(x)"
+        },
+        {
+          "type": "paragraph",
+          "text": "In f-divergence the density ratio p(x)/q(x) depends on the location x. Therefore the optimizing scalar t can also depend on x. Write t=T(x), where T maps the data space X to the real numbers. T(x₁), T(x₂), and T(x₃) may be different, but they need not be."
+        },
+        {
+          "type": "paragraph",
+          "text": "The optimization variable is now an entire function T, not one fixed number. A function class 𝒯 is a collection of candidate functions. Restricting this class may make optimization more practical, but the supremum over a restricted class cannot exceed that over the full admissible class."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image30.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 40. Function class.",
+          "alt": "Illustration: Why the optimizing scalar becomes a function T(x)"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image31.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 39. Pointwise and function optimization.",
+          "alt": "Illustration: Why the optimizing scalar becomes a function T(x)"
+        }
+      ]
+    },
+    {
+      "title": "The variational representation of f-divergence",
+      "slug": "the-variational-representation-of-f-divergence",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image33.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Figure 43. Variational objective.",
+          "alt": "Illustration: The variational representation of f-divergence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let P be the real distribution and Q the model distribution. Under the standard regularity and admissibility assumptions, the variational f-divergence representation is D_f(P∥Q) = sup_T { E_P[T(X)] − E_Q[f*(T(X))] }. Here f is the generating convex function with f(1)=0, and f* is its convex conjugate."
+        },
+        {
+          "type": "paragraph",
+          "text": "The first expectation is taken over real samples P. The second is taken over generated samples Q. Crucially, the SAME T appears in both terms, and f* acts on T(X) only in the second expectation."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image50.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Figure 42. Real and generated samples.",
+          "alt": "Illustration: The variational representation of f-divergence"
+        },
+        {
+          "type": "paragraph",
+          "text": "How the formula arises: starting from D_f(P∥Q)=∫q(x)f(p(x)/q(x))dx, replace f(r) by supₜ {tr−f*(t)}. For each x the ratio r=p(x)/q(x) can select a value T(x). Under appropriate conditions permitting the supremum to be exchanged with integration, this yields sup_T ∫[p(x)T(x)−q(x)f*(T(x))]dx, equal to the displayed difference of expectations."
+        },
+        {
+          "type": "paragraph",
+          "text": "A restriction to 𝒯 gives sup_{T∈𝒯} J(T) ≤ D_f(P∥Q), where J(T)=E_P[T]−E_Q[f*(T)], provided 𝒯 is contained in the admissible function class. Equality is possible if 𝒯 is sufficiently expressive."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image32.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 41. Restricted function class.",
+          "alt": "Illustration: The variational representation of f-divergence"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — variational objective for KL"
+        },
+        {
+          "type": "list-item",
+          "text": "For f(u)=u ln u, the conjugate is f*(t)=e^(t−1)."
+        },
+        {
+          "type": "list-item",
+          "text": "Substitute into the general representation: KL(P∥Q)=sup_T { E_P[T(X)]−E_Q[e^(T(X)−1)] }."
+        },
+        {
+          "type": "list-item",
+          "text": "The inner optimization searches for a suitable scalar-valued function T."
+        },
+        {
+          "type": "list-item",
+          "text": "With a restricted function family, maximizing the same expression yields a lower bound, not automatically the exact KL divergence."
+        }
+      ]
+    },
+    {
+      "title": "Turning expectations into empirical objectives",
+      "slug": "turning-expectations-into-empirical-objectives",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image34.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Figure 44. Empirical sample-average objective.",
+          "alt": "Illustration: Turning expectations into empirical objectives"
+        },
+        {
+          "type": "paragraph",
+          "text": "For observed real samples x₁,…,xₙ and generated samples x̃₁,…,x̃ₘ, estimate J(T) by Ĵ(T)=(1/n)ΣᵢT(xᵢ)−(1/m)Σⱼf*(T(x̃ⱼ)). This is an empirical objective. For a fixed integrable T, sample averages approximate their corresponding expectations. Optimizing the empirical supremum introduces additional statistical considerations; do not assume the optimized estimate is automatically unbiased."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — evaluate a fixed empirical objective"
+        },
+        {
+          "type": "list-item",
+          "text": "Suppose the two real sample values of T are 1 and 3, giving average (1+3)/2=2."
+        },
+        {
+          "type": "list-item",
+          "text": "Suppose the two generated sample values of f*(T) are 0.8 and 1.2, giving average (0.8+1.2)/2=1."
+        },
+        {
+          "type": "list-item",
+          "text": "Then the empirical objective at this fixed T is Ĵ(T)=2−1=1."
+        },
+        {
+          "type": "list-item",
+          "text": "This is not automatically the supremum and is not automatically the true divergence."
+        }
+      ]
+    },
+    {
+      "title": "Week 1 synthesis",
+      "slug": "week-1-synthesis",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-2/image35.webp",
+          "width": 2149,
+          "height": 832,
+          "caption": "Figure 45. Week 1 mathematical journey.",
+          "alt": "Illustration: Week 1 synthesis"
+        },
+        {
+          "type": "paragraph",
+          "text": "Real samples reveal the data distribution indirectly. A generator turns random latent inputs into model samples. We want the model distribution to approach the real one, and f-divergences give mathematical comparisons. Convexity and convex conjugates transform divergence expressions into optimizations over functions, whose expectations can be estimated from samples."
+        }
+      ]
+    },
+    {
+      "title": "Revision questions with answers",
+      "slug": "revision-questions-with-answers",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Question 1 — What is the difference between maximum and supremum?"
+        },
+        {
+          "type": "list-item",
+          "text": "A maximum must belong to the set. A supremum is the least upper bound and may lie outside it."
+        },
+        {
+          "type": "heading",
+          "text": "Question 2 — What is f*(t) for f(u)=u²/2?"
+        },
+        {
+          "type": "list-item",
+          "text": "f*(t)=t²/2; the maximizing u equals t."
+        },
+        {
+          "type": "heading",
+          "text": "Question 3 — What is f*(t) for f(u)=u ln u?"
+        },
+        {
+          "type": "list-item",
+          "text": "f*(t)=e^(t−1), with u≥0 and natural logarithms."
+        },
+        {
+          "type": "heading",
+          "text": "Question 4 — Why introduce T(x)?"
+        },
+        {
+          "type": "list-item",
+          "text": "The density ratio depends on x, so the maximizing scalar can depend on x; a function represents these pointwise choices."
+        },
+        {
+          "type": "heading",
+          "text": "Question 5 — Which expectation uses generated samples?"
+        },
+        {
+          "type": "list-item",
+          "text": "The second term E_{P_θ}[f*(T(X))]."
+        },
+        {
+          "type": "heading",
+          "text": "Question 6 — Why does restricting 𝒯 produce a lower bound?"
+        },
+        {
+          "type": "list-item",
+          "text": "A supremum over a subset cannot exceed the supremum over the full admissible set."
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial note: Worked numerical examples and prerequisite detours are explanatory teaching additions. Figures 21 and 36 are reconstructed formula/diagram illustrations because the corresponding original image files were not present in the available working files."
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

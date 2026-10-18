@@ -1,0 +1,1797 @@
+{
+  "subject": "Software Engineering",
+  "week": 4,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Software Engineering",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "WEEK 4  |  SOFTWARE PROJECT MANAGEMENT",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Six sections  ·  Illustrated study material",
+      "runs": []
+    },
+    {
+      "type": "note",
+      "text": "How to study:  Read each topic first, then inspect its illustration. Section 2 contains a verified correction to the source COCOMO arithmetic. Illustrative figures are identified as examples, not measured project results.",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "Week 4 learning route"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Section",
+          "Topics",
+          "Illustrations"
+        ],
+        [
+          "1  Project Management Overview",
+          "Team coordination, estimation, scheduling, risk, configuration, Agile comparison",
+          "1–5"
+        ],
+        [
+          "2  Project Estimation Techniques",
+          "KLOC, person-month, empirical/heuristic, Delphi, COCOMO, adjustment",
+          "6–15"
+        ],
+        [
+          "3  Project Scheduling",
+          "WBS, activity network, Gantt, critical path, resources",
+          "16–22"
+        ],
+        [
+          "4  Risk Management",
+          "Technical, project, business risks; mitigation; probability × impact",
+          "23–30"
+        ],
+        [
+          "5  Project Management in Agile",
+          "Scrum roles/events, backlogs, story points, velocity",
+          "31–39"
+        ],
+        [
+          "6  Pivotal Tracker Tutorial",
+          "Stories, epics, icebox, lifecycle, acceptance, analytics",
+          "40–46"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrations and calculations: This guide contains 46 numbered illustrations. The COCOMO worked example and cost-driver adjustment are presented as editable calculation tables, not illustrations, so the formula and arithmetic can be checked directly.",
+      "runs": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "Section 1 · Project Management Overview",
+      "slug": "lecture-1-project-management-overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Software projects involve people, requirements, tools, dependencies and changing decisions. Building the code is only part of the job: somebody must coordinate the work so that the customer receives a usable system within agreed constraints.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Learning goals:  identify the project manager’s responsibilities; explain how the client and team coordinate; contrast Plan-and-Document and Agile approaches.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why a software project needs coordination",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine developing the Amazon Seller Portal. One developer builds catalogue screens, another defines the database, a tester plans verification, and a client changes a payment requirement. Without coordination, duplicated work, late decisions and incompatible components can prevent delivery even when individual developers are capable.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image1.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 1. Uncoordinated work compared with coordinated software delivery.",
+          "alt": "Illustration: Section 1 · Project Management Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Project management brings these activities together. A manager organizes responsibilities, establishes communication and makes the schedule visible, then watches for deviations and asks the team to take corrective action. Success requires coordinating the people and their work rather than merely instructing everyone to code faster.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Six responsibilities of the software project manager",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter identifies six core responsibilities: acting as the contact between clients and developers; forming and managing the team; scheduling work; estimating effort, size and cost; anticipating and managing risks; and configuration management. These responsibilities interact throughout the project.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image2.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 2. The manager connects six ongoing responsibilities.",
+          "alt": "Illustration: Section 1 · Project Management Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "For instance, if a new feature expands project size, estimates may change, tasks may shift on the schedule, the team may need a specialist, and the delivered configuration may need updating. That is why these are not six isolated stages.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Client communication and technical decisions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The manager represents the communication link between customers or stakeholders and the development team. Customer needs must be understood by developers, and implementation constraints or uncertainties must be communicated back to customers. The chapter sometimes describes the manager as acting as a product owner in this coordinating sense.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image3.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 3. Two-way exchange among stakeholders, manager and technical team.",
+          "alt": "Illustration: Section 1 · Project Management Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "When several technologies could solve the same problem, the manager need not make the choice alone. She may consult engineers familiar with the application and external experts to assess options before making a decision. This prevents a managerial guess from overruling relevant technical experience.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Important:  The Scrum Product Owner in Section 5 is a distinct named Scrum role; do not assume every project manager automatically fills it.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "From requirements to delivery",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "To prepare the project plan, identify major activities from the requirements, break each activity into assignable tasks, determine dependencies, estimate effort or time, and produce a schedule. During development, monitor task completion and adjust if a dependency is blocked or a new requirement appears.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image4.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 4. A high-level project workflow with continuous supporting management activities.",
+          "alt": "Illustration: Section 1 · Project Management Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Risk and configuration management continue alongside this work. Configuration management concerns assembling and controlling the versions, tools, documents and components needed for a usable system. For example, the team should know which database schema, payment integration and front-end release belong together when delivering the Seller Portal.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Plan-and-Document and Agile perspectives",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The Plan-and-Document perspective aims for predictability in budget and schedule through substantial upfront planning and documentation. It decomposes the work, estimates tasks and plans milestones before development. Changes can then be evaluated against that plan.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image5.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 5. Upfront planning contrasted with iterative planning and feedback.",
+          "alt": "Illustration: Section 1 · Project Management Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter contrasts this with Agile: customers review working software in frequent iterations, the team selects user stories for near-term development, and plans evolve using feedback and completed work. Agile still requires planning and coordination; it does not assume perfect cost and time predictions at project start. Both perspectives aim to deliver software, but obtain and update information differently.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick recall",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "A project manager is the contact point and coordination mechanism, not simply a supervisor.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Estimation, scheduling, risk and configuration management continue to influence one another.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Plan-and-Document emphasizes early predictability; Agile emphasizes iterative delivery and collaboration.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Section 2 · Project Estimation Techniques",
+      "slug": "lecture-2-project-estimation-techniques",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before committing to a contract or promising a delivery date, a software team must estimate the resources likely to be required. Every estimate depends on incomplete information; more detailed and reliable requirements usually improve its usefulness.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Learning goals:  distinguish size from effort and duration; explain expert judgement and Delphi; calculate nominal and adjusted COCOMO effort.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why estimation matters",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An estimate helps a company quote a tentative development cost, propose a schedule, decide team size and later compare actual progress with the plan. It also gives a customer a basis for assessing a bid. Estimation should take place before promises are made, not only after implementation begins.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image6.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 6. A project estimator produces effort, cost and scheduling information.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "Estimates are predictions, not guarantees. An SRS, component list and data from similar projects improve the evidence available to estimators. When requirements change, responsible management revisits the estimate rather than pretending the original number must remain correct.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "KLOC: software size is not effort",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Lines of Code (LOC) measure an estimate of program size. A KLOC is 1,000 lines of code, so a planned 4,000-line system corresponds to 4 KLOC. A size estimate is a model input; by itself it does not tell a manager how many engineers or how many calendar months will be needed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image7.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 7. KLOC counts estimated code, whereas effort measures work.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "The number of lines required for a feature can be difficult to predict early. The chapter suggests drawing on earlier similar modules, such as previously implemented customer-feedback features. Code size is therefore itself an estimate, and its uncertainty propagates into later calculations.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Person-months and the staffing illustration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A person-month (PM) is the amount of effort that one person contributes during a month of work. In the chapter’s simplified proportional example, 12 PM could correspond to 12 people for 1 month, 4 people for 3 months, or 2 people for 6 months.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image8.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 8. Three simplified ways of allocating 12 person-months of effort.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "Those are equal amounts of nominal effort, not necessarily equal real schedules. Dependencies, training, communication overhead and limited parallelism affect elapsed duration. Increasing team size does not automatically divide the completion time by the same factor. Always state whether a number refers to effort (PM) or calendar duration (months).",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Empirical estimation versus heuristic estimation",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In empirical estimation, experienced people compare the proposed project with earlier projects and use informed judgement. In heuristic estimation, a mathematical relationship models parameters such as software size, project category and effort. Both depend on assumptions and uncertain input.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image9.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 9. Experience-based and model-based approaches to effort estimation.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a familiar catalogue module, an expert may remember the effort required for a previous version. For a formula-based method such as COCOMO, the manager first estimates size and chooses model constants appropriate to the type of project. Neither method is inherently error-free, and organizations may combine them.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Expert judgement: decompose, estimate, combine",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An expert reads the requirements, identifies the major components, estimates each component using experience and then combines the estimates to obtain a project-level total. This produces a traceable estimate instead of a single unexplained guess.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image10.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 10. Expert judgement as a structured component-by-component procedure.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the Seller Portal, catalogue management, inventory, order tracking, payment tracking, sales tracking and customer feedback can be evaluated individually. The image contains hypothetical component estimates: they illustrate the technique and are not the reference COCOMO module figures. Separate estimates make it easier to revisit a single module when requirements change.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why one expert or a group can still be wrong",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Experts can make ordinary errors, become attached to a familiar technology, underestimate integration or testing, or assume the new application resembles an older one more closely than it actually does. The chapter also notes that competitive bidding may encourage overly optimistic estimates.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image11.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 11. Common sources of bias and missing information in expert estimates.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "Asking several experts helps reveal missing knowledge, but a face-to-face group can still be biased: senior or assertive people may dominate the discussion. A structured, anonymous method can reduce this influence; this motivates the Delphi technique.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Delphi estimation: anonymous repeated rounds",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A coordinator gives each expert the SRS and an estimation form. Each expert estimates independently and submits their result to the coordinator. The coordinator summarizes the responses without identifying their authors and distributes the summary back to the experts.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image12.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 12. Five-stage Delphi workflow; repeat rounds connect anonymous feedback to independent estimates.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "Experts review this anonymous feedback and can revise their estimates independently. Rounds repeat as needed; when the process concludes, the coordinator compiles the final estimate. The loop is Step 4 back to Step 2, not a loop from the final estimate. Delphi reduces direct pressure from senior or vocal group members, although it cannot eliminate every estimation error.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "COCOMO: the effort model",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The Constructive Cost Model (COCOMO), introduced by Barry Boehm in 1981, relates estimated effort to estimated source-code size. In the basic form presented in the chapter, Effort (PM) = a × (SIZE in KLOC)^b. Both a and b depend on project classification.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image13.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 13. The basic COCOMO formula and its units.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "Since SIZE is estimated before implementation, COCOMO is not a source of exact answers. The result describes effort in person-months, not elapsed duration. To turn PM into a simple labour-cost illustration, a manager multiplies person-month effort by a cost per person-month; full project costs may include additional expenses.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "COCOMO project types and coefficients",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Organic projects are comparatively familiar, well-understood applications developed by small, experienced teams. Semi-detached projects mix experience levels and may contain moderately unfamiliar requirements. Embedded projects are tightly coupled to hardware and stronger constraints.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image14.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 14. The three chapter categories: Organic, Semi-Detached and Embedded.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter gives different constants for each category. Do not select the project type based only on team size: the nature of the application, hardware and skills also matter. The Seller Portal is classified as semi-detached in the example, while the example notes that classification may depend on context.",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Category",
+              "Basic COCOMO effort formula",
+              "Typical description"
+            ],
+            [
+              "Organic",
+              "2.4 × KLOC^1.05",
+              "Familiar software; small experienced team"
+            ],
+            [
+              "Semi-detached",
+              "3.0 × KLOC^1.12",
+              "Mixed experience; moderately unfamiliar work"
+            ],
+            [
+              "Embedded",
+              "3.6 × KLOC^1.20",
+              "Closely coupled to hardware and constraints"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Seller Portal: estimate the size of seven modules",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter estimates seven Seller Portal functions separately, then sums them. The full example totals 4,000 lines of code, or 4 KLOC. It includes both inventory CRUD operations and inventory tracking as distinct functions; do not accidentally merge them.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image15.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 15. Seven module estimates totaling 4 KLOC.",
+          "alt": "Illustration: Section 2 · Project Estimation Techniques"
+        },
+        {
+          "type": "paragraph",
+          "text": "The figures are estimated LOC rather than actual code counts. For a new project, these numbers would normally be refined using requirements, designs and records from similar projects. The next calculation takes 4 KLOC and the semi-detached constants as inputs.",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Seller Portal module",
+              "Estimated LOC"
+            ],
+            [
+              "Catalogue add/edit/delete",
+              "300"
+            ],
+            [
+              "Inventory add/edit/delete",
+              "300"
+            ],
+            [
+              "Order tracking",
+              "1,000"
+            ],
+            [
+              "Payment tracking",
+              "800"
+            ],
+            [
+              "Inventory tracking",
+              "800"
+            ],
+            [
+              "Sales tracking",
+              "500"
+            ],
+            [
+              "Customer feedback",
+              "300"
+            ],
+            [
+              "TOTAL",
+              "4,000 = 4 KLOC"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "COCOMO worked example · verified arithmetic (calculation table)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The arithmetic below is evaluated explicitly. The formula and the project inputs are kept unchanged; the arithmetic is evaluated independently so students can reproduce it.",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Input / operation",
+              "Verified interpretation"
+            ],
+            [
+              "Project type",
+              "Semi-detached"
+            ],
+            [
+              "SIZE",
+              "4 KLOC"
+            ],
+            [
+              "Model formula",
+              "Effort = 3.0 × (KLOC)^1.12"
+            ],
+            [
+              "Substitution",
+              "Effort = 3.0 × 4^1.12"
+            ],
+            [
+              "Calculated initial effort",
+              "≈ 14.17 person-months"
+            ],
+            [
+              "Previously quoted effort",
+              "15.83 person-months (does not follow from the displayed formula)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "An incorrect calculation would state “3.0 × 4^1.12 = 15.83 PM.” Direct evaluation gives approximately 14.17 PM. The 15.83 PM result must be reported as a incorrect numerical results, not as a valid result of that expression.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Budget distinction:  At the chapter’s assumed ₹75,000 per person-month, a budget based on the verified unrounded effort is approximately ₹10.63 lakh. Rounding effort to 14 PM first produces ₹10.50 lakh. The original ₹12 lakh illustration came from 16 PM (the Previously quoted 15.83 PM rounded), not from the displayed formula.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "COCOMO cost drivers and effort adjustment · verified arithmetic (calculation table)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter next considers personnel, technical/product attributes and tools or practices. In intermediate COCOMO, ratings on 15 cost drivers produce multipliers; the slide uses four selected non-neutral drivers to simplify the demonstration. Multipliers above 1 raise the effort estimate, while those below 1 reduce it.",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Stage",
+              "Calculation"
+            ],
+            [
+              "Illustrated adjustment multipliers",
+              "1.40 × 1.08 × 1.13 × 0.95"
+            ],
+            [
+              "Product (unrounded)",
+              "1.623132"
+            ],
+            [
+              "Factor to 2 decimal places",
+              "≈ 1.62"
+            ],
+            [
+              "Adjusted effort using corrected nominal value",
+              "(3.0 × 4^1.12) × 1.623132 ≈ 23.00 PM"
+            ],
+            [
+              "Previously quoted adjusted effort",
+              "25.65 PM (built from the inconsistent 15.83 PM nominal value)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep full precision until the final step: rounding the nominal effort and adjustment factor too early changes the answer. This adjustment is still in person-months—not rupees and not calendar months. All values depend on the estimated 4 KLOC and assumed driver ratings; different project inputs would produce different results.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "About the calculation tables:  The nominal and adjusted COCOMO calculations are presented as editable tables. The Previously quoted 15.83 PM and 25.65 PM results are identified as incorrect numerical results, not as the outcomes of the displayed formula and multipliers.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter concludes that the best estimation approach depends on the organization, product and available experience. It cites a historical British Computer Society survey reported in A. Taylor (2000), in which 92% of surveyed managers relied on experience rather than formulas; this is a dated survey result, not a statement about today’s industry.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick recall",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "LOC and KLOC estimate size; PM estimates effort; neither directly measures calendar duration.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Expert judgement is practical but vulnerable to bias; Delphi uses anonymous repeated rounds.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Basic COCOMO constants vary by project type; verify arithmetic instead of copying numerical outputs blindly.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "The correctly evaluated semi-detached 4 KLOC example is approximately 14.17 PM, and with the four illustrated multipliers approximately 23.00 PM.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Worked checks · estimation",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Before applying a model, identify the unit of every number. For example, 4 KLOC is a size estimate; 14.17 PM is an effort estimate; ₹75,000/PM is a monetary rate. Multiplying estimated PM by a rate per PM gives an approximate labour cost, not an automatic project completion date.",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Method",
+              "Result"
+            ],
+            [
+              "Convert 4,000 LOC to KLOC",
+              "4,000 ÷ 1,000",
+              "4 KLOC"
+            ],
+            [
+              "Calculate basic semi-detached COCOMO effort",
+              "3.0 × 4^1.12",
+              "≈ 14.17 PM"
+            ],
+            [
+              "Calculate the four-driver EAF",
+              "1.40 × 1.08 × 1.13 × 0.95",
+              "1.623132"
+            ],
+            [
+              "Apply the adjustment to nominal effort",
+              "(3.0 × 4^1.12) × 1.623132",
+              "≈ 23.00 PM"
+            ],
+            [
+              "Price 14 PM at ₹75,000/PM",
+              "14 × ₹75,000",
+              "₹10.50 lakh"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Exam caution:  If the slide asks you to apply the formula, use the mathematically evaluated result. If asked what the chapter reports, explicitly distinguish 15.83 PM from the computed 14.17 PM. Do not present the two as equal.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Model terminology: COCOMO expands to Constructive Cost Model. The chapter’s empirical-versus-heuristic distinction describes experience-based versus formula-based approaches; COCOMO itself is also empirically calibrated. The four-multiplier calculation here is an illustrative sensitivity adjustment to the displayed basic effort, not a complete independently calibrated intermediate-COCOMO estimate."
+        }
+      ]
+    },
+    {
+      "title": "Section 3 · Project Scheduling",
+      "slug": "lecture-3-project-scheduling",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A project estimate says approximately how much work may be required. Scheduling decides the order in which activities can happen, when they should begin and end, and what resources can perform them.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Learning goals:  build a WBS; show dependencies in an activity network; interpret Gantt charts and critical paths.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "The eight scheduling activities",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter begins by identifying major activities, breaking them into tasks, determining dependencies, estimating each task’s duration, representing tasks in a diagram, assigning start and end dates, finding the critical path and finally allocating resources.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image16.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 16. The eight principal steps of project scheduling.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a planning cycle, not a guarantee that the first schedule never changes. A manager uses the schedule to check whether work is on track and to take corrective action when tasks are late or requirements change.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Work Breakdown Structure (WBS)",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A WBS is a hierarchy of the work that must be delivered. The root is the overall project; larger work packages divide into more detailed activities and finally into leaf tasks. The chapter describes leaf tasks as manageable units that can be assigned and scheduled, roughly two weeks of work in its teaching example.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image17.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 17. A general project-to-activity-to-task hierarchy.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "A WBS answers “What work exists?” rather than “Which work happens first?” Two boxes under different branches may still depend on one another; that dependency is represented separately in an activity network.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Seller Portal WBS example",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "At the root is the Seller Portal. The first branches include Requirement Gathering and Analysis, Design and Development. Requirements work includes gathering requirements and creating an SRS; design includes a component diagram, database schema and user interface; development includes catalogue, inventory and order-tracking modules.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image18.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 18. Seller Portal requirements, design and development decomposed into tasks.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "The team can assign owners and estimates to the leaf tasks. The image describes the work decomposition only—its connecting lines are parent-child relationships, not precedence constraints.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Transforming WBS leaves into an activity network",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An activity network is a directed graph whose nodes represent tasks and whose arrows represent dependencies. Start with leaf tasks already identified in the WBS; then ask which tasks require other outputs before they can start. This moves from a list of work to a feasible execution order.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image19.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 19. Work hierarchy versus task-dependency graph.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the Seller Portal, the component diagram comes before dependent design and development work, and catalogue management needs the relevant component design, database schema and UI. Some tasks can proceed in parallel; no arrow should be added merely because one box is drawn beside another.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Reading the Seller Portal activity network",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The activity network in the chapter gives illustrative task durations: component diagram 15, UI 30, database schema 10, catalogue management 15, inventory management 15, order tracking 25, payment tracking 40, sales tracking 30 and customer feedback 30. The diagram’s arrows—not a reader’s guess from horizontal position—determine precedence.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image20.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 20. The chapter’s nine-task Seller Portal dependency network.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "Catalogue management follows its design prerequisites. Inventory management follows catalogue management, and order tracking follows inventory management. Payment tracking, sales tracking and customer feedback can proceed in parallel after order tracking. If work is parallel, the branch durations are not simply added together as if they were sequential.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Gantt chart: a calendar view",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A Gantt chart places activities vertically and time horizontally. A bar’s location shows planned start and finish; its width represents task duration. Overlapping bars show work that may happen at the same time, and milestones mark important delivery points.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image21.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 21. Conceptual Gantt chart showing planned dates, overlap and milestones.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Gantt chart and activity network encode related but different information. The network makes logical dependencies visible; the Gantt chart makes calendar allocation and monitoring easier. In the Seller Portal, UI work and database schema can overlap, while catalogue, inventory and order tracking occur in the illustrated dependency order.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Critical path and resource constraints",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A critical path is a longest-duration path through the precedence network. If tasks along it are delayed without compensating action, the project finish date can move. More than one equally long critical path may exist. The diagram below deliberately uses an independent teaching network, not the Seller Portal durations.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image22.webp",
+          "width": 1672,
+          "height": 1018,
+          "caption": "Figure 22. Illustrative network with two critical paths and a shorter branch.",
+          "alt": "Illustration: Section 3 · Project Scheduling"
+        },
+        {
+          "type": "paragraph",
+          "text": "Two routes tie at 12 units: A(3)→C(4)→E(5), and B(2)→D(3)→F(4)→H(3). The B→D→G→H route totals 10 units; G is a non-critical branch, but its predecessor B/D and successor H still appear on a critical route. Resource constraints must be checked separately: a logically parallel task may not start if the same specialist is needed elsewhere.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick recall",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "WBS = what tasks exist; activity network = which tasks depend on which.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Gantt charts show when tasks happen, including parallel work and milestones.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Critical paths determine the longest dependency-limited completion duration; resources can cause further constraints.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Section 4 · Risk Management",
+      "slug": "lecture-4-risk-management",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A risk is a possible future unfavorable event. It is worth managing before it happens: after a problem has already caused a delay, the team is responding to an incident rather than anticipating a risk.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Learning goals:  distinguish types of software risk; identify appropriate mitigation; prioritize probability and impact.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why risks are harder to see in software",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter defines a project risk as an anticipated unfavorable event that may occur during development. Building a physical house has visible stages—foundation, framing and finishing—whereas a software application can look almost complete while hiding defects, poor integration or unstable third-party libraries.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image23.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 23. Anticipated obstacles in a software project versus visible construction progress.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "Examples include a syntax error that disrupts a larger system, vulnerable components, disagreements within the development team and unexpected delays. The project manager identifies, assesses, mitigates and continues monitoring such risks rather than assuming everything will go according to plan.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Three categories: technical, project and business",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Technical risks arise from engineering, requirements, architecture or implementation challenges. Project risks threaten execution through staffing, schedule, budget, resources or related non-technical constraints. Business risks affect whether the completed product creates the intended market or organizational value.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image24.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 24. Technical, project and business risk classifications.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "These categories overlap in their consequences but are useful for discussing ownership and mitigation. A third-party security flaw is technical; losing the only payment-gateway specialist is a personnel/project risk; building a product customers no longer want is a business risk.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Technical risk: misunderstood requirements",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "If the client asks for catalogue management but developers interpret the request as marketing campaign management, the software may function while still failing the actual requirement. Ambiguity or incompleteness in requirements can cause incorrect user interfaces, workflows and implemented features.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image25.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 25. Seller Portal before and after requirements clarification.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The mitigation described in the chapter is regular client communication and early prototypes. Demonstrate a small version, ask stakeholders whether it matches their needs, and refine before investing heavily in the wrong design. This reduces misunderstanding; it does not replace thorough testing.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Technical risk: external software components",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "External libraries, cloud services and vendor modules can be unreliable, incompatible, slow or vulnerable. Depending on a component transfers some work to another supplier, but it also creates a risk outside the team’s direct control.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image26.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 26. A component failure pathway with benchmark, inspection and suitability checks.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter recommends benchmarking candidate components and inspecting them periodically. A good engineering check also asks whether the component satisfies the required functionality, maintenance expectations and compatibility. Tests and inspections lower uncertainty; they cannot prove the absence of every future defect.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Project risks: slippage, missing expertise, staff departures",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "If milestones slip, a project manager can create smaller checkpoints, communicate the revised status promptly and use frequent iterations to reveal delay early. Missing domain knowledge—for example, unfamiliarity with an e-commerce payments process—can be addressed by experienced staff or selectively outsourcing relevant modules.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image27.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 27. Three project risks paired with practical mitigation techniques.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "Personnel shortfall occurs when key people leave or become unavailable. Cross-training and shared technical knowledge reduce dependence on one developer. The chapter uses the specialised payment-gateway module as an example where more than one trained person would help reduce continuity risk.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Business risks: competition and gold plating",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A business product can be completed successfully from an engineering viewpoint and still fail commercially if it is uncompetitive. Market research and comparison with other products help identify what users actually value and where meaningful gaps remain.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image28.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 28. Poor competitiveness and low-value extra functionality.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gold plating means adding attractive but unnecessary features that the customer has not requested. Extra widgets and reports can consume time, money and attention. Discuss them with the client and assess their costs against benefits before including them. Optional features are not automatically bad; adding unjustified extras is the risk.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Risk probability, impact and score",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The team first lists risks and estimates their likelihood. The chapter uses an impact scale of 1 negligible, 2 marginal, 3 critical and 4 catastrophic. For a consistent calculation, treat 60% likelihood as probability 0.60 rather than using the number 60 directly.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image29.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 29. Risk probability multiplied by the stated impact category.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The simple score is Probability × Impact. For a schedule slippage risk with P=0.60 and impact=3, the score is 1.8. This is a prioritization number under the chosen ordinal scale, not a percentage and not an expected rupee loss.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Seller Portal risk table: allocate attention",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter’s illustrative risk table gives schedule slippage P=60%, I=3; lack of experience P=60%, I=3; personnel shortfall P=40%, I=3; and database scale risk P=20%, I=2. Their scores are respectively 1.8, 1.8, 1.2 and 0.4.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image30.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 30. Risk scores sorted from highest to lowest, including a tie.",
+          "alt": "Illustration: Section 4 · Risk Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The first two risks are tied for top priority. Sorting helps the manager decide where to invest effort first, since no team can eliminate every possible future problem. Risk estimates should be discussed and updated as project conditions change.",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Risk",
+              "P",
+              "I",
+              "P × I"
+            ],
+            [
+              "Schedule slippage",
+              "0.60",
+              "3",
+              "1.8"
+            ],
+            [
+              "Lack of e-commerce experience",
+              "0.60",
+              "3",
+              "1.8"
+            ],
+            [
+              "Personnel shortfall",
+              "0.40",
+              "3",
+              "1.2"
+            ],
+            [
+              "Database cannot scale",
+              "0.20",
+              "2",
+              "0.4"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Quick recall",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "A risk is a possible future unfavorable event, not simply a defect already observed.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Identify the category, mitigation, likelihood and potential impact of each important risk.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Risk scores prioritize attention; they are not exact measurements of monetary loss.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Section 5 · Project Management in Agile",
+      "slug": "lecture-5-project-management-in-agile",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In Agile, software is built through short iterations, frequently one or two weeks in this chapter. At the end of an iteration, stakeholders inspect working functionality and the team plans the next increment with updated information.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Learning goals:  describe Scrum roles and events; explain product versus sprint backlogs; use story points and velocity responsibly.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Agile iterates and builds on earlier work",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A team begins with prioritized user stories, selects work for a short iteration, implements a working increment, demonstrates it to users and incorporates feedback when refining later priorities. A new iteration usually adds to the same product rather than rebuilding it from scratch.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image31.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 31. Repeated short iterations and progressively richer Seller Portal versions.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the Seller Portal, an early increment might support adding a catalogue item; later increments may add inventory, orders and reports. Customer feedback is repeated so the product increasingly reflects real needs. The working output provides stronger evidence than an unsupported prediction about the final delivery date.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Scrum team: Product Owner, Scrum Master, Development Team",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter describes a Scrum team of roughly four to nine people as a typical example. The Product Owner works with stakeholders and organizes work by value. The Scrum Master supports effective use of the Scrum process and helps remove obstacles. The Development Team includes whoever is required to deliver the increment—designers, programmers, testers and other specialists.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image32.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 32. Three collaborating Scrum roles, with a cross-functional development team.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "These are collaborating responsibilities, not a rigid chain of command. The Product Owner brings priorities; developers explain feasibility and constraints; the Scrum Master supports productive coordination. The phrase “Development Team” follows the terminology of the example.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Product Backlog versus Sprint Backlog",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The Product Backlog is the ordered list of user stories and other work potentially needed for the entire product. The Sprint Backlog is the selected work and plan for one sprint, not a copy of everything in the product backlog. The team may choose only a small subset that fits its anticipated capacity.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image33.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 33. A prioritized whole-product backlog feeding one sprint’s selected work.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the chapter’s Seller Portal example, stakeholders want catalogue and inventory functionality, but the developers cannot promise to implement every operation immediately. The team agrees to focus on adding a catalogue item and adding an inventory item first. Remaining stories still exist for later planning.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Sprint Planning asks what and how",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Sprint Planning involves the Product Owner, Scrum Master and Development Team. The two questions emphasized in the chapter are: “What work can get done in this sprint?” and “How will the chosen work get done?” The participants examine priority, complexity, available capacity and technical tasks before forming a feasible plan.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image34.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 34. Collaborative sprint planning, selected stories and team capacity.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter gives a planning guideline of approximately two hours per week of iteration. At the end of the meeting, the team has a Sprint Backlog and a shared objective. It is not simply a meeting in which one person assigns tasks without discussing feasibility.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Daily Scrum: progress and impediments",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "During the sprint, a short daily stand-up helps the team coordinate. The chapter uses three prompts: What did I work on yesterday? What am I working on today? What issues are blocking me? The point is to surface changing work and obstacles promptly.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image35.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 35. Daily coordination beside a small task board and a visible blocker.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "If a developer cannot test an order feature because they lack access to the test database, that blocker should be made visible. A To Do / In Progress / Done board helps colleagues see the current state, while the Scrum Master and team help unblock work. The meeting is not intended as a substitute for the actual implementation.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Sprint Review versus Sprint Retrospective",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "At Sprint Review, the team demonstrates the working product increment and obtains stakeholder feedback. For example, customers may request bulk catalogue editing after seeing the latest Seller Portal implementation. That feedback can affect the Product Backlog.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image36.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 36. Two different end-of-sprint meetings and their outcomes.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "At Sprint Retrospective, the team reflects on its own practices: what worked, which tools or collaboration patterns slowed them down, and what process change to try. Review focuses on product value and feedback; retrospective focuses on the way the team worked. Neither meeting should be mistaken for the other.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why story count alone is a weak estimate",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter first considers counting completed stories per sprint. If ten stories remained and a team always completed two per two-week sprint, simple arithmetic would suggest five sprints, or ten weeks. This relies on the unrealistic assumption that all stories require comparable effort.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image37.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 37. Two sprints with three stories each but different point totals.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "To express relative difficulty, the chapter uses a three-point illustrative scale: 1 straightforward, 2 medium and 3 very complex. Three 1-point stories total 3 points; three 3-point stories total 9 points. The number of stories is equal, but estimated complexity is not. Story points are relative estimates, not fixed hours.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Velocity: planning from completed points",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Velocity is the number of story points completed during an iteration. In the chapter’s Seller Portal example, “Add Catalogue Item” and “Add Inventory Item” carry 2 points each. If both are completed, that sprint’s observed velocity is 2 + 2 = 4 points.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image38.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 38. Illustrative historical velocity and planning a future sprint.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "The figure shows another purely illustrative historical sequence of 5, 7 and 6 completed points, averaging 6 points per sprint. This gives the team a planning reference for future sprint capacity. The next sprint’s actual result may differ; velocity is not a guarantee and should not be used to rank unrelated teams.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Agile and Plan-and-Document plan differently",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Plan-and-Document scheduling begins with a WBS, estimated durations, task dependencies, milestones and Gantt charts, then monitors actual work against the plan. Agile organizes prioritized stories into sprints and uses completed increments and observed velocity to adjust near-term planning.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image39.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 39. Comparative view of traditional scheduling and iterative Agile planning.",
+          "alt": "Illustration: Section 5 · Project Management in Agile"
+        },
+        {
+          "type": "paragraph",
+          "text": "Both approaches still manage scope, time, people and progress. The key distinction is when detailed commitments are made and how regularly plans are revised with feedback. The Seller Portal stays the same product in both examples; the planning mechanism changes.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick recall",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Scrum roles collaborate: Product Owner, Scrum Master and Development Team.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Product Backlog = ordered overall work; Sprint Backlog = selected current sprint work and plan.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Daily Scrum, Sprint Review and Retrospective have different purposes.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Velocity counts completed points per sprint; story count alone can be misleading.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Current Scrum context: the 2020 Scrum Guide describes one Scrum Team, typically ten or fewer people, with the accountabilities Product Owner, Scrum Master and Developers. Sprints last one month or less. Sprint Planning addresses why the sprint is valuable, what can be done and how; the Sprint Backlog contains the Sprint Goal, selected items and the delivery plan. Daily Scrum is a 15-minute event for Developers to inspect progress toward the Sprint Goal and adapt their plan; the three questions are optional. The chapter’s older names and 1–2-week examples remain useful for course revision."
+        }
+      ]
+    },
+    {
+      "title": "Section 6 · Pivotal Tracker Tutorial",
+      "slug": "lecture-6-pivotal-tracker-tutorial",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The final chapter demonstrates a project management tool called Pivotal Tracker. Its screenshots and menus represent the tool as taught in the illustrative demonstration; they should be studied as examples of Agile management concepts, not promises that the current live interface is identical.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Learning goals:  understand the tutorial workspace and Icebox; create and organize stories and epics; trace development, rejection and acceptance.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Set up a project and understand its workspace",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial begins by creating a project named “IIT Software Engineering Project.” It shows the current iteration or prioritized backlog, an Icebox of unprioritized ideas, the iteration-length setting and team membership. The example uses an iteration length of two weeks.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image40.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 40. Conceptual workspace with prioritized stories, Icebox and team members.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Icebox is a holding place for stories that are not yet selected or prioritized. The working backlog contains stories that the team has considered for near-term development. Team members can be invited so responsibility and progress are visible within the tool.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Create a feature story with tasks and links",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial creates a feature story such as “Add Catalogue Item.” It selects a feature type, assigns an illustrative 2 story points and priority, and adds a description, labels, optional source-code links or attachments, tasks and comments. Two example tasks are “Create and Review UI Screen” and “Create Catalogue Database Table.”",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image41.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 41. An illustrative feature-story form with points, tasks, owner, links and comments.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "A story records user-facing functionality; its tasks describe the concrete work required to implement it. An owner is responsible for progressing the assigned story. Saving a story records the plan—it does not mean implementation is finished, delivered or accepted.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Epics group related user stories",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An epic is a collection of related stories describing a broader area of functionality. The tutorial groups Add/Edit/View/Delete Catalogue Item stories under the Catalogue Management epic, while Add Inventory Item and Update Inventory Item belong to Inventory Management.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image42.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 42. Catalogue and inventory epics containing their related stories.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "An epic is not the same as a task checklist. A user story delivers a meaningful slice of capability, whereas a task may be a database table, UI implementation or testing step needed to complete the story. Grouping stories helps the team see progress across a larger feature.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Move ideas from Icebox to planned work",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A new idea such as Customer Feedback Feature may begin in the Icebox while the team prioritizes other work. Order Tracking can be placed in the backlog for later work. In the teaching example, the current iteration holds Add Catalogue Item (2 points) and Add Inventory Item (2 points).",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image43.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 43. Conceptual distinction among Icebox, prioritized work and selected iteration.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "Those two selected stories total 4 points. The tutorial demonstrates setting a velocity of 4 as a planning input. Treat that as an illustrative value: in actual project planning, observed completed work informs later expectations, and merely assigning 4 points does not guarantee completion.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Feature-story lifecycle: start through acceptance",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In the recorded tool demonstration, a feature story moves from Not Started to Started while a developer works on it. The developer documents work, completes tasks and marks the story Finished, then chooses Deliver to request Product Owner review.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image44.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 44. Delivered stories are reviewed; rejected work returns to development.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Product Owner checks the functionality, notes and links and can Accept or Reject. Acceptance records that the delivered story meets expectations. Rejection returns it for further development; the developer restarts work, corrects problems and submits it again. “Finished by developer” and “Accepted by Product Owner” are different milestones.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "When a delivered story is rejected",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter demonstrates the Product Owner rejecting “Add Catalogue Item” with feedback such as failing test cases and too many bugs. The developer reads the comments, fixes the implementation, retests the affected scenarios and delivers the story again.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image45.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 45. A rejection, repair, retest and redelivery cycle.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "The story should remain unaccepted until the Product Owner reviews the improved delivery. Comments, linked code and task history create an audit trail of what was attempted and what changed. This makes the tool valuable for team coordination rather than just counting checkboxes.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Analytics: improve the next iteration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial also discusses analytics including accepted stories, rejection rate, story cycle time and recent epics. The team can use these to ask whether stories are waiting too long for review, whether feedback commonly triggers rework or whether work is moving steadily.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-4/image46.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 46. Illustrative project analytics and feedback-informed iteration planning.",
+          "alt": "Illustration: Section 6 · Pivotal Tracker Tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "The figure contains labelled sample data and should not be interpreted as an actual project record. Analytics help teams identify trends and improve planning; they do not guarantee future velocity or quality. The tutorial’s broader lesson is that shared project status makes Agile work more visible to everyone.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick recall",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Icebox ideas are not the same as prioritized current-iteration stories.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Stories can carry types, points, labels, tasks, comments, code links and owners.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Epic = group of related stories; story = user-facing capability; task = implementation step.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Finish → Deliver → Product Owner accepts or rejects; rejected stories require rework.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Week 4 · Quick revision and self-check",
+      "slug": "week-4-quick-revision-and-self-check",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Key definitions",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Term",
+              "Meaning"
+            ],
+            [
+              "KLOC",
+              "1,000 lines of code; estimated software size"
+            ],
+            [
+              "Person-month",
+              "One person’s work over one month; effort, not elapsed time"
+            ],
+            [
+              "Delphi",
+              "Independent expert estimates and anonymous, coordinator-managed feedback over repeated rounds"
+            ],
+            [
+              "WBS",
+              "Hierarchical decomposition of a project into assignable tasks"
+            ],
+            [
+              "Activity network",
+              "Directed representation of dependencies among tasks"
+            ],
+            [
+              "Critical path",
+              "A longest-duration dependency path; there may be more than one"
+            ],
+            [
+              "Risk score",
+              "Probability (0 to 1) multiplied by impact category"
+            ],
+            [
+              "Product backlog",
+              "Ordered work for the product"
+            ],
+            [
+              "Sprint backlog",
+              "Selected sprint work and plan"
+            ],
+            [
+              "Velocity",
+              "Story points completed per iteration"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Exam-oriented conceptual distinctions",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Work amount versus time: 12 person-months is not the same as 12 calendar months.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "WBS versus dependency network: hierarchy alone does not tell you what must run first.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Risk category versus mitigation: identifying an issue is not the same as reducing its likelihood or impact.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Sprint Review versus Sprint Retrospective: feedback on product versus improvement of team process.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Stories versus story points: three stories can represent quite different amounts of effort.",
+          "runs": []
+        },
+        {
+          "type": "bullet-item",
+          "text": "Finished versus Accepted: developer completion is not Product Owner acceptance.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Five practice questions with answers",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "1. A system needs 5,000 LOC. What is its size?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: 5 KLOC. This estimates size, not person-month effort.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "2. An illustration shows 4 developers working for 3 months. What is the nominal effort?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: 4 × 3 = 12 person-months, assuming comparable full-time effort.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "3. A risk has P=40% and impact=3. What is its risk score?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: 0.40 × 3 = 1.2; it is neither 120% nor ₹1.2.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "4. A sprint completes stories worth 2, 1 and 3 points. What is observed velocity?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: 2 + 1 + 3 = 6 points for that sprint.",
+          "runs": []
+        },
+        {
+          "type": "subheading",
+          "text": "5. In Delphi, after anonymous summary feedback, which stage repeats?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: The experts independently submit revised estimates; the final estimate does not trigger the loop.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "COCOMO correction you can discuss with the example",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An incorrect calculation would state semi-detached effort as 3.0 × 4^1.12 = 15.83 PM. The formula evaluates to approximately 14.17 PM. Applying the four displayed cost-driver multipliers gives EAF = 1.623132 and corrected adjusted effort ≈ 23.00 PM. The chapter’s ₹12 lakh estimate is a cost illustration based on the reported (but arithmetically inconsistent) 15.83 PM rounded to 16 PM.",
+          "runs": []
+        }
+      ]
+    }
+  ]
+}

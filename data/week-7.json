@@ -1,0 +1,1926 @@
+{
+  "subject": "Software Engineering",
+  "week": 7,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Software Engineering",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "WEEK 7  |  SOFTWARE DEVELOPMENT",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Final Audited Edition  ·  Six learning modules  ·  69 illustrations",
+      "runs": []
+    },
+    {
+      "type": "note",
+      "text": "How to study: Read one short explanation, inspect the matching illustration, then test yourself using the review questions. Figure numbers follow the 01–69 figure sequence.",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "Week 7 learning route"
+    },
+    {
+      "type": "paragraph",
+      "text": "Figures 01–08: Introduction to Software Development. From requirements and design to code, programming environments, frameworks and web templates.",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Figures 09–28: Version Control Systems. How Git records history, how repositories communicate and how teams use branches, merging, fast-forwarding and rebasing.",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Figures 29–39: Issue Tracking and Code Review. How teams report problems, manage issues, review pull requests and collaborate on better code.",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Figures 40–52: Debugging. Find and explain faults with input manipulation, logging, tracing, profilers and Python pdb.",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Figures 53–60: Software Metrics. Use quantitative measurements as clues about complexity and maintainability, then combine them with human review.",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Figures 61–69: Writing Clean Code. Spot maintainability problems and refactor without changing the observable behaviour of a program.",
+      "runs": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "Module 1 · Introduction to Software Development",
+      "slug": "module-1-introduction-to-software-development",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goals: From requirements and design to code, programming environments, frameworks and web templates.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "From Design to Development",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Requirements describe what people need, interface designs show what users see, and software design describes how the parts fit together. Development turns those plans into a working system. In the Seller Portal example, a team builds features using the requirements and earlier design instead of starting to code without a plan.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image1.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 1. From Design to Development.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Understand the problem and design before turning the design into running code.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "What Happens When We Work with Code?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "When building software, we often write a piece of code, run it, observe what happened and improve it. A first attempt may produce the wrong output, or a useful new requirement may appear. This cycle is a simple picture of day-to-day coding practice; it is not a replacement for the full development process.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image2.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 2. What Happens When We Work with Code?",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Write → Run → Observe → Improve is a practical learning loop.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Development Environment: Write and Run",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A text editor is used to write and save source code, such as hello.py. The Python runtime then interprets that file and produces results. For example, writing print('Hello') in an editor does not display Hello by itself. Running the saved file with Python performs that action.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image3.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 3. Development Environment: Write and Run.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Writing code and executing code are different jobs.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "IDE: Extra Powers for Programmers",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An integrated development environment (IDE) collects helpful programming tools in one place. Syntax checking can point to mistakes. Find Usages shows where a name appears in a project. Rename Refactoring helps change a variable or function name across many files, reducing manual editing errors.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image4.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 4. IDE: Extra Powers for Programmers.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: An IDE makes development easier; the program still needs to be run and tested.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Frameworks: A Helpful Starter Kit",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A framework bundles useful patterns and reusable features. Rather than building every common facility from nothing, a developer follows the framework's structure and focuses on application-specific behavior. Frameworks are usually maintained by a development community, which releases fixes and improvements.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image5.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 5. Frameworks: A Helpful Starter Kit.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: A framework is a starter structure, not a finished application.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Flask: A Web App Framework",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Flask is a Python framework for building web applications. A browser sends an HTTP request, Flask routes it to the appropriate Python code, and a response comes back. This simplifies the basic request–response setup while leaving the programmer responsible for implementing the actual feature.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image6.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 6. Flask: A Web App Framework.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Browser request → Flask application → browser response.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Templates Build Web Pages",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A web template separates the page layout from the changing data. One template might describe where product names, prices and images go. The server combines that template with a set of data to render a page for the user. The same template can serve different products without copying the whole HTML layout.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image7.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 7. Templates Build Web Pages.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Template + data = a rendered page.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Developer Toolbox Recap",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software developers use several kinds of tools together: editors create source files; interpreters or compilers execute or prepare programs; IDEs support editing and navigation; frameworks provide reusable structure; debuggers help find faults; and Git maintains versions and supports collaboration.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image8.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 8. Developer Toolbox Recap.",
+          "alt": "Illustration: Module 1 · Introduction to Software Development"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Choose a tool according to the problem it solves.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision and self-check",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is different about an editor and an interpreter?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: The editor saves source code; the interpreter runs it.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is a framework?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: A reusable application structure and common features maintained by a development community.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does a web template do?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: Combines a reusable page layout with changing data.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Module 2 · Version Control Systems",
+      "slug": "module-2-version-control-systems",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goals: How Git records history, how repositories communicate and how teams use branches, merging, fast-forwarding and rebasing.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why Teams Need Version History",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "When different developers change the same application, an accidental defect can enter the code. Version history records earlier states so the team can understand what changed and can recover a stable version when necessary. This does not mean every new change is automatically correct.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image9.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 9. Why Teams Need Version History.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Keep history so mistakes can be investigated and earlier versions recovered.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Client-Specific Versions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A software product may share common features across customers while including some customer-specific work. Version control helps developers manage different lines of development and trace which changes belong where. Without a clear strategy, maintaining several versions can become confusing.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image10.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 10. Client-Specific Versions.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Share common work where appropriate and track customer-specific changes carefully.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "What Version Control Tracks",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Version control records meaningful snapshots, called commits, over time. For each change, a team can examine what files changed, who committed them and the change message. The history helps answer questions such as 'When was this feature added?' and 'What changed before the problem started?'.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image11.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 11. What Version Control Tracks.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: History is more useful when changes and commit messages are clear.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Centralised vs Distributed VCS",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In a centralised version-control system, a central server holds the shared history and clients depend heavily on that server. In distributed version control such as Git, each normal local clone has its own repository and history. Developers can make local commits, then exchange changes with a remote repository.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image12.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 12. Centralised vs Distributed VCS.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Git is distributed: local repositories contain commit history.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Three States of a Git File",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A Git file can be modified in your working directory, then placed in the staging area with git add, and then recorded in local history with git commit. The staging area lets you choose what goes into the next commit instead of automatically committing every file you edited.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image13.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 13. Three States of a Git File.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Working Directory → Staging Area → Local Repository.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Local Repository and Remote Repository",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The local repository belongs to a developer's computer; the remote repository is a shared location used for collaboration. git push publishes suitable local commits to the remote, while git pull brings remote changes into the current local branch and integrates them. Pulling may require resolving conflicts.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image14.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 14. Local Repository and Remote Repository.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Local and remote histories communicate, but are not automatically identical.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Start a Repository: Init or Clone",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Use git init when you have a new project folder and want Git to begin tracking it. Use git clone when an existing repository already lives elsewhere and you want a local copy. Both can lead to a local Git repository, but their starting situations are different.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image15.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 15. Start a Repository: Init or Clone.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: New folder: git init. Existing repository: git clone.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Git Add, Commit, Push",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A typical publishing sequence starts with files in the working directory. git add selects the changed content for staging; git commit records a local snapshot; git push sends appropriate local commits to a remote repository. The middle step matters: staging and committing are not the same as publishing.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image16.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 16. Git Add, Commit, Push.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: git add → git commit → git push; each command has a distinct purpose.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Git Pull Updates Local Work",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine Developer A pushes a change. Developer B's existing local copy does not automatically update. When B runs git pull, Git obtains and integrates remote updates into the current local branch. Git may report a conflict if B has incompatible local work.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image17.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 17. Git Pull Updates Local Work.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Pull before collaborating on shared code, and read any conflict message carefully.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Four Git Tools in a Developer Toolbox",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Four useful Git inspection commands help answer different questions. git status reports current file and staging states. git diff compares changes; with no arguments it normally shows unstaged changes. git log lists commits. git reset HEAD file is an older way to unstage a file while keeping its working-tree edits.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image18.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 18. Four Git Tools in a Developer Toolbox.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Inspect the state before modifying history or the staging area.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Branches Let Developers Work Independently",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A branch gives a name to a line of commits, so two developers can work independently. For example, master may hold the stable application while feature1 holds an unfinished feature. A feature commit does not magically appear in master; Git needs an operation that integrates the lines.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image19.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 19. Branches Let Developers Work Independently.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Branches separate ongoing work until the changes are deliberately integrated.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Merge Combines Work",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A merge combines development histories. If feature1 and master both have commits after their common ancestor, Git often creates a merge commit that has two parents. A simple diagram shows the branches meeting, but real merges may also require conflict resolution when overlapping edits disagree.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image20.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 20. Merge Combines Work.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Run git merge feature1 while checked out on the destination branch.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Urgent Issue Interrupts a Feature",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Sometimes a high-priority bug needs attention before a planned feature is done. Rather than mixing unfinished feature code into an emergency fix, create a separate issueP branch from the stable base, fix and test the bug, merge the fix, and return to feature1. The feature work stays on its own branch.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image21.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 21. Urgent Issue Interrupts a Feature.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: An urgent fix should not force unfinished feature code into production.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Feature Branch Starts at C2",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In the chapter example, the existing history is C0 → C1 → C2, and master points to C2. Creating feature1 at that moment makes feature1 point to the same C2. No new commit is required just to create the branch name; the two branches separate when new commits are made.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image22.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 22. Feature Branch Starts at C2.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: After branching, master and feature1 can initially point to the same commit.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Feature Commit C3 and Priority Commit C4",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Next, the feature branch receives commit C3, while the urgent issue branch receives a separate commit C4. Both descend from the common earlier work C2. The C3 feature work and the C4 urgent fix are independent until the team chooses to combine them.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image23.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 23. Feature Commit C3 and Priority Commit C4.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: C3 and C4 are siblings in the original branch history, not consecutive commits.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Merge Priority Fix Before Feature",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The urgent issueP fix can be merged into master first. In the simple picture, master has not moved since C2, so it can fast-forward directly to C4. The feature branch still points to C3. The priority fix is now on master without merging incomplete feature1 code.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image24.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 24. Merge Priority Fix Before Feature.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: A fast-forward moves the branch pointer when its current commit is an ancestor of the target.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Merge Feature After Priority Fix",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "After the priority fix is present on master at C4, the team can merge feature1 from C3. Because the histories diverged at C2, a normal merge can create C5 with C3 and C4 as parents. If the edits clash, the conflict must be resolved before the merge is completed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image25.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 25. Merge Feature After Priority Fix.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: For this scenario, C5 is the merge commit combining the feature and priority-fix histories.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Merge Conflicts: Resolve, Test, Merge",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A merge conflict occurs when Git cannot safely choose between competing changes. The developer must inspect the conflicting lines, decide what the program should do, edit the code and test it. Git does not automatically know the correct business logic even when it can detect the conflict.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image26.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 26. Merge Conflicts: Resolve, Test, Merge.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Detect → Resolve → Test → complete the merge.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Rebase: Why Feature Needs fun1()",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In the chapter example, feature1 was created before master received a useful function fun1(). That function is available on the updated master but not yet in the old feature branch history. Rebase can replay the feature commits onto the newer master history, making newer base code available to feature work.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image27.webp",
+          "width": 1500,
+          "height": 671,
+          "caption": "Figure 27. Rebase: Why Feature Needs fun1().",
+          "alt": "Illustration: Module 2 · Version Control Systems",
+          "qualityNote": "The right-hand panel is an analogy, not the complete rebased commit graph. The correct after-state is C4 → new feature commit, with master at C4 and feature1 at the new commit; see Figure 28."
+        },
+        {
+          "type": "note",
+          "text": "Remember: Rebase changes the commit ancestry; it is not just renaming a branch.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Git Rebase Replays Commits",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Before the rebase, feature1 has commit C3 based on C2, while master has advanced to C4. Running git rebase master from feature1 replays the feature change after C4, producing a new commit such as C5. Afterward, feature1 points to C5 but master still points to C4.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image28.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 28. Git Rebase Replays Commits.",
+          "alt": "Illustration: Module 2 · Version Control Systems"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Rebase rewrites commits on the current branch. Already-shared commits require care.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision and self-check",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Does git commit push changes to the remote?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: No. Commit saves local history; push publishes suitable commits.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Where does feature1 point immediately after it is created from C2?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: At C2, the same starting commit as master.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: After rebasing feature1 on C4, does master automatically move to the replayed commit?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: No. Only the feature branch moves in the illustrated rebase.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Git diagram convention: the arrows in these cartoons show development progressing from older commits to newer ones. Git commit objects themselves store references to their parents, toward older commits. After rebase, the replayed feature commit has a new identity; master stays at C4 until a later merge/fast-forward. Use Figure 28 for the complete after-state."
+        }
+      ]
+    },
+    {
+      "title": "Module 3 · Issue Tracking and Code Review",
+      "slug": "module-3-issue-tracking-and-code-review",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goals: How teams report problems, manage issues, review pull requests and collaborate on better code.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "A Bug Becomes a Trackable Issue",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A tester discovers that a Login button remains disabled even after credentials are entered. Writing down the defect as an issue allows the team to assign it, discuss it, attach evidence and see its progress. An unrecorded complaint is easy to forget; a ticket makes the work visible.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image29.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 29. A Bug Becomes a Trackable Issue.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Record a problem as an issue before the details disappear.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why Track Issues?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Issue tracking helps improve product quality, set priorities, preserve a history of problems, capture customer feedback and coordinate team discussion. Different issues can be open, under investigation, fixed or closed. An issue tracker complements version control; it does not replace Git commits.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image30.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 30. Why Track Issues?",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Tracking gives visibility to what needs attention, not just what code has changed.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "GitHub: Create a New Issue",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In a hosted repository such as GitHub, a contributor usually opens the Issues section and chooses New issue. They enter a useful title and description and then submit it. A clear issue tells others what went wrong and how to recognise the problem.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image31.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 31. GitHub: Create a New Issue.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Issues is for recording work; a pull request is for proposing code changes.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Writing a Useful Bug Report",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful bug report states the expected result, the actual result, simple steps to reproduce the problem and evidence such as a screenshot. For example: enter a username and password; the Login button should become available, but it stays disabled. Specific details are easier to debug than 'Login broken'.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image32.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 32. Writing a Useful Bug Report.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Expected + Actual + Steps + Evidence is a useful reporting pattern.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Assign, Label and Discuss an Issue",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An assignee identifies who is responsible for taking an issue forward. Labels such as bug categorise the work. Comments let testers, developers and other stakeholders discuss findings and progress on the same ticket. These fields are different; one ticket can have all three.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image33.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 33. Assign, Label and Discuss an Issue.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Assignment, classification and discussion make a ticket actionable.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Filter Open, Closed and My Issues",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A large project may contain many tickets. Filtering by Open, Closed or Assigned to Me helps someone find the relevant work. Open and Closed describe issue state, whereas Assigned to Me filters by responsibility. They are not three mutually exclusive Git branches.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image34.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 34. Filter Open, Closed and My Issues.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Use filters to see the work relevant to your next step.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "From Issue to Branch to Pull Request",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A developer can create a fix branch linked to an issue, make the required code change and open a pull request. The pull request proposes merging that branch into the target branch. Reviewers inspect the change before it is merged; references in the PR can link the code work back to the original issue.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image35.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 35. From Issue to Branch to Pull Request.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Issue → Fix Branch → Pull Request → Review → Merge.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Code Review: More Than Correctness",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Reviewing code means asking more than 'Does it run?'. The reviewer may also check correctness, readability, efficiency and maintainability. They can ask whether names are clear, the change is understandable and future developers will be able to modify it safely.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image36.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 36. Code Review: More Than Correctness.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Review is about code quality as well as passing tests.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Review Files Changed in a Pull Request",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The Files Changed view of a pull request shows differences between the older and proposed code. Red indicates removed lines and green indicates added lines. A reviewer can comment on a particular line and request a change rather than giving vague feedback about the whole project.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image37.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 37. Review Files Changed in a Pull Request.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: A focused, line-specific review comment is easier to act on.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Review Feedback to Merge and Close",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A pull request can move from open to review feedback, then approval and merge. If the PR fixes a linked issue, the issue can also be closed through a recognised closing reference or by a team member. Review and issue closing are related actions, not the same action.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image38.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 38. Review Feedback to Merge and Close.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Verify the change before closing the associated bug.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Pair Programming vs Code Review",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In pair programming, two people collaborate at one workstation while code is being written. The driver types and the navigator thinks about approach and quality; roles can switch. In code review, someone reviews a proposed change, usually after the code was written and submitted in a pull request.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image39.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 39. Pair Programming vs Code Review.",
+          "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Pair programming is live collaboration; code review examines a submitted change.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision and self-check",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Name four useful bug-report fields.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: Expected result, actual result, reproduction steps and evidence.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: How is a pull request different from an issue?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: An issue records a problem or task; a pull request proposes a code change for review.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Module 4 · Debugging",
+      "slug": "module-4-debugging",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goals: Find and explain faults with input manipulation, logging, tracing, profilers and Python pdb.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Error, Failure and Fault",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter distinguishes an error (a difference between intended and actual behaviour), a failure (an observable wrong result or exception) and a fault (the defect in the code responsible for the failure). For first_n_primes, returning [2,3] when [2,3,5] was expected exposes a failure; the bad increment placement is a fault.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image40.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 40. Error, Failure and Fault.",
+          "alt": "Illustration: Module 4 · Debugging",
+          "qualityNote": "The “Error” panel shows a discrepancy in the chapter’s terminology. Many testing references reserve error for a human mistake; failure is the observed wrong behaviour and fault/defect is its underlying flaw."
+        },
+        {
+          "type": "note",
+          "text": "Remember: Observed wrong output points you toward the responsible source-code defect.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Five Steps of Debugging",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter presents five practical debugging steps: reproduce the problem, find the cause, investigate a possible fix, implement the fix, and test the fix. Simply changing a line is not enough. You should be able to produce the original failure and show that the corrected program handles the same case.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image41.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 41. Five Steps of Debugging.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Reproduce → Find Cause → Investigate Fix → Implement Fix → Test Fix.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Logging: Leave Breadcrumbs",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Logging records helpful values or execution events while a program runs. Simple print statements can show which candidate number is being checked and what the prime flag contains. These messages provide a trail of breadcrumbs: they help identify where execution took an unexpected path.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image42.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 42. Logging: Leave Breadcrumbs.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Log the information needed to understand a bug, not every detail indefinitely.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Dump and Diff: Two Runs",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Dump and diff compares logs or program-state output from two executions, such as one correct run and one failing run. The first important difference often narrows the investigation. When the prime flag becomes False for 5 in the faulty run, the differing log gives a useful clue.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image43.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 43. Dump and Diff: Two Runs.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Compare two runs to locate the point where behavior begins to diverge.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Debugging with a Profiler",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A profiler reports which functions run most often and where a program spends execution time. This is especially useful when the application is slow. A function called many times is not necessarily defective, but frequency and duration help identify code worth investigating for performance.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image44.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 44. Debugging with a Profiler.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Profiling helps investigate runtime cost; debugging helps explain incorrect behavior.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Input Manipulation: First n Primes",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Input manipulation means deliberately trying different inputs and comparing results. For the first-n-primes problem, asking for two primes may work, while three or four produces too few values. The pattern suggests a counting error rather than an entirely broken primality test.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image45.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 45. Input Manipulation: First n Primes.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Try nearby and boundary inputs to understand when a failure appears.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Find the Misplaced Counter Increment",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The prime-counting variable i should count how many prime numbers were actually added to the result. In the faulty code it increments even when the candidate is not prime, so the loop reaches n too soon. Moving i += 1 inside the if prime block fixes the meaning of the counter.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image46.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 46. Find the Misplaced Counter Increment.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Increment the count only when a prime is appended.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Backward Debugging: Why Infinite Loop?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In the chapter's second bug, the program stops adding primes and its while-loop does not finish. Working backward from the nontermination reveals that i no longer increases, because prime remains False after a composite number. Resetting prime = True at the start of each candidate's loop iteration corrects the state.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image47.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 47. Backward Debugging: Why Infinite Loop?",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Trace the failure backward through variable and control dependencies.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Forward vs Backward Debugging",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Forward debugging starts from an event or starting state and follows the program until the bad state appears. Backward debugging starts from the wrong result and follows its dependencies toward the cause. The pictured short sum illustrates direction; the chapter's prime program provides the detailed worked example.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image48.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 48. Forward vs Backward Debugging.",
+          "alt": "Illustration: Module 4 · Debugging",
+          "qualityNote": "Backward reasoning starts from the observed result x=6 and follows dependencies back toward x=0. “Start State” under the left box names the program’s initial state, not the starting point of backward debugging."
+        },
+        {
+          "type": "note",
+          "text": "Remember: Forward follows execution; backward follows dependencies from the symptom.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Black-Box Debugging an API",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Sometimes a failure appears in an external API or library whose internal code is not available to you. You can still inspect the inputs you send, the responses you receive, public documentation, examples and observable behavior. This is a form of black-box investigation.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image49.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 49. Black-Box Debugging an API.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Work with the behavior you can observe and the contract the API promises.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Python PDB: Pause the Program",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Python's pdb debugger can pause execution at a selected line. The chapter demonstrates import pdb and pdb.set_trace() so a programmer can inspect the current state instead of running the whole program without stopping. A paused program is not necessarily a crashed program.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image50.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 50. Python PDB: Pause the Program.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: A breakpoint pauses execution so you can investigate.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "PDB Step and Next",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Two useful pdb commands are n (next) and s (step). Next executes the current line and stops at the next suitable line in the same function, normally stepping over calls. Step can enter a function call so you can inspect its internal statements.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image51.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 51. PDB Step and Next.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Use next to step over; use step to enter a called function.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "PDB: Inspect, Break, Continue",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Other pdb commands include p expression to print a variable or expression, b line to set a breakpoint at a line, and c to continue until another stopping point. In the chapter example, watching i, num and prime at a breakpoint reveals why a supposed prime is being skipped.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image52.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 52. PDB: Inspect, Break, Continue.",
+          "alt": "Illustration: Module 4 · Debugging"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Inspect variables, stop at important lines and continue when ready.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision and self-check",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why did the first prime counter stop too early?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: It incremented for every candidate instead of only for prime candidates.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why could the second prime program loop forever?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: The prime flag remained False, preventing the count from increasing.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is the difference between pdb n and s?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: n steps over a function call; s steps into it.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Terminology varies: the chapter uses “error” for an observed discrepancy. In common software-testing terminology, an error is a human mistake, a fault/defect is the resulting flaw, and a failure is incorrect behaviour when the flaw is executed. A fault need not cause a failure on every run."
+        }
+      ]
+    },
+    {
+      "title": "Module 5 · Software Metrics",
+      "slug": "module-5-software-metrics",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goals: Use quantitative measurements as clues about complexity and maintainability, then combine them with human review.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why Clean Code Matters",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Clean code is easier for team members to understand, easier to test and debug, and easier to maintain or extend later. A program that produces the right answer today can still create problems for the team if its structure is confusing or full of duplication.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image53.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 53. Why Clean Code Matters.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Correct behavior matters, but clear structure matters too.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quantitative Metrics vs Qualitative Review",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software quality can be examined with numbers and with human judgement. Metrics count properties such as lines, complexity and comments. Reviews look at clarity, naming and how easy the program is to understand. A single score cannot describe every important quality of a software design or implementation.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image54.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 54. Quantitative Metrics vs Qualitative Review.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Combine quantitative measurements with qualitative code review.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Cyclomatic Complexity: Decisions Plus One",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For the simple branching example in the chapter, cyclomatic complexity is the number of decision points plus one. A single if condition offers two execution paths, so its complexity is 1 + 1 = 2. More independent decisions usually make testing and understanding the code harder.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image55.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 55. Cyclomatic Complexity: Decisions Plus One.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: For a simple example: CC = decisions + 1.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "What Increases Cyclomatic Complexity?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Conditional statements and loop conditions add decision points. For a simplified count, each if, additional elif, for or while condition can add one decision. An else is the alternative path of an existing decision, not a new decision by itself. Radon's exact implementation may also account for other constructs.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image56.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 56. What Increases Cyclomatic Complexity?",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Count decisions, not merely the number of lines.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Radon Measures Prime-Function Complexity",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Radon is a Python tool for inspecting software metrics. The chapter runs it on a first_n_primes.py example and receives cyclomatic complexity 5 with an A rank, indicating low complexity for that function under Radon's grading rules. This is a property of one code block, not a final quality rating for the whole application.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image57.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 57. Radon Measures Prime-Function Complexity.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: The chapter's measured result is CC = 5, grade A.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Raw Metrics: LOC vs LLOC vs SLOC",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Raw metrics count several different properties. In the chapter example, LOC = 26 total physical lines, SLOC = 18 source lines, LLOC = 17 logical statements, Comments = 5 and Blank = 3. One statement can occupy multiple physical lines, so SLOC and LLOC need not match.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image58.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 58. Raw Metrics: LOC vs LLOC vs SLOC.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: 26 total lines = 18 source lines + 5 comment lines + 3 blank lines.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Halstead: Operators and Operands",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Halstead metrics classify parts of code as operators and operands. For the simple statement total = price + tax, '=' and '+' are operators, while total, price and tax are operands. The metrics distinguish unique tokens from total occurrences and use those counts to calculate further measures such as vocabulary and program length.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image59.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 59. Halstead: Operators and Operands.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Operators act on values; operands are the values or names being used.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Radon Checks a Flask Codebase",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter examines a Flask flashcard application organised into API, controllers and models. Radon can report complexity, raw counts and Halstead information across files or individual functions. The controller example has a 6% comment statistic; this number is from the chapter, not a recommended universal target.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image60.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 60. Radon Checks a Flask Codebase.",
+          "alt": "Illustration: Module 5 · Software Metrics"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Metrics are clues for investigation, not automatic proof that code is good or bad.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision and self-check",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is the example complexity with one simple if?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: 2: one decision plus one.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What were the raw counts shown in the chapter?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: LOC 26, SLOC 18, LLOC 17, comments 5, blanks 3.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Are metrics a complete measure of quality?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: No. Readability and human review still matter.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Module 6 · Writing Clean Code",
+      "slug": "module-6-writing-clean-code",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goals: Spot maintainability problems and refactor without changing the observable behaviour of a program.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "What Is a Code Smell?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A code smell is a warning sign that code may be difficult to understand, change or maintain. The program might still run and produce the expected output. Examples include repeated code, overly long functions and confusing comments. The chapter uses ideas from Robert C. Martin's Clean Code.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image61.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 61. What Is a Code Smell?",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: A smell suggests closer inspection; it is not necessarily a runtime failure.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Redundant Comments",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A comment that only repeats the exact code adds little value. For example, i++ followed by '// increment i by 1' tells the reader what the code already says. A good comment is more useful when it explains why a non-obvious rule, choice or constraint exists.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image62.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 62. Redundant Comments.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Explain intent and reasons, not an obvious operation.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Delete Commented-Out Code, Keep Git History",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Developers sometimes leave old code disabled inside comments. This can confuse readers and make maintenance difficult. If the project uses Git, an older implementation can normally be found in commit history, so unnecessary commented-out blocks can be removed while useful explanatory comments stay.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image63.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 63. Delete Commented-Out Code, Keep Git History.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Delete dead commented-out code; keep useful reasoning comments and Git history.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Functions Should Do One Thing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A function that authenticates users, checks products, sends emails and generates invoices has too many unrelated responsibilities. Breaking it into focused functions gives each one a clear job and makes testing simpler. This is the chapter's 'functions should do one thing' guideline.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image64.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 64. Functions Should Do One Thing.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Prefer small, cohesive functions with clear names.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Too Many Arguments and Flag Arguments",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A function call with too many arguments is easy to misunderstand and hard to maintain. A flag argument can also hide two unrelated behaviors in the same function. Depending on the program, grouping relevant information or providing clearly named functions can make the code easier to use.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image65.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 65. Too Many Arguments and Flag Arguments.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Think about simpler arguments and functions that communicate their purpose.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Dead Functions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A dead function is code no longer used in the normal application. Removing genuinely unused code can reduce clutter, but first verify that it is not called by a test, plugin, callback, framework or other dynamic entry point. Tools can help locate candidates; a human still needs to check.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image66.webp",
+          "width": 1500,
+          "height": 914,
+          "caption": "Figure 66. Dead Functions.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Verify that a function is unused before removing it.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "DRY: Do Not Repeat Yourself",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "DRY means Do Not Repeat Yourself. If the same calculation is copied into three places, one bug may require three fixes. A shared calculate_total helper can provide the same behavior to multiple modules. Reuse is useful when the behavior is truly the same, not just because the code looks similar.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image67.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 67. DRY: Do Not Repeat Yourself.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: One shared source of logic is easier to change consistently.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Boundary Cases and Explanatory Names",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Boundary behavior deserves attention: what happens at an empty input, the smallest accepted value or the maximum allowed value? The chapter also recommends explanatory names. The variable m hides its meaning, whereas thirty_day_months tells a reader why the list holds April, June, September and November.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image68.webp",
+          "width": 1500,
+          "height": 915,
+          "caption": "Figure 68. Boundary Cases and Explanatory Names.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Test edge cases and choose names that communicate meaning.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Refactoring: Improve Structure, Keep Behavior",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Refactoring improves the internal structure of code without changing its observable behavior. For example, a long but working routine can be divided into small well-named functions while tests check that results remain the same. Tools such as Pylint, flake8 and vulture can help find issues, but they do not automatically guarantee a safe refactor.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-7/image69.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 69. Refactoring: Improve Structure, Keep Behavior.",
+          "alt": "Illustration: Module 6 · Writing Clean Code"
+        },
+        {
+          "type": "note",
+          "text": "Remember: Better structure, same behavior: test before and after refactoring.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision and self-check",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Does a code smell always mean the program fails?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: No. The program may run correctly but be hard to maintain.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does DRY encourage?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: Avoid duplicating the same knowledge or logic across many places.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What must remain unchanged in a refactor?",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Answer: The program’s externally observable behaviour.",
+          "runs": []
+        }
+      ]
+    }
+  ]
+}

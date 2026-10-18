@@ -1,0 +1,2472 @@
+{
+  "subject": "Software Engineering",
+  "week": 9,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "SOFTWARE ENGINEERING",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "WEEK 9  |  SOFTWARE TESTING",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrated study guide • Simple explanations • Worked examples • Technical clarifications",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "What you will learn"
+    },
+    {
+      "type": "paragraph",
+      "text": "Testing motivation and terminology • black-box and white-box testing • branch, condition and path coverage • unit tests, stubs and drivers • pytest and inventory examples • test-driven development • integration and system testing.",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "How to use this guide"
+    },
+    {
+      "type": "paragraph",
+      "text": "Read each explanation, study the matching illustration, and try the short examples without looking at the answers. Where an image simplifies runtime behavior, the written note states the exact distinction.",
+      "runs": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "Why Do We Test Software?",
+      "slug": "why-do-we-test-software",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A software program is not correct merely because it runs without crashing. Testing means executing software with carefully selected inputs, observing what happens, and comparing it with what should happen. A defect (bug) is a problem in the program; a failure is incorrect behavior observed during execution. For example, a seller enters an order for two notebooks at ₹50 each. If the program charges ₹150 instead of ₹100, the observed result violates the requirement even though the website may appear to work.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Testing can reveal the presence of defects; it cannot prove that no defects exist. The goal is to reduce risk by checking important behavior, unusual inputs, and interactions. A test should have a clear expected result before execution so that the tester knows what constitutes success.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image1.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Why Do We Test Software?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Testing identifies failures before users encounter them. Even a small defect can have serious consequences. Testing can reveal defects but cannot guarantee the absence of all defects.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "One Small Bug, Big Consequences",
+      "slug": "one-small-bug-big-consequences",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Small mistakes can cause large downstream consequences. Suppose a payment system is required to charge ₹500 but accidentally charges ₹5,000. The mistake may affect the customer, accounting, refunds, support, and trust. Testing the amount calculation at the function level is useful, but integration tests must also verify that the calculated amount reaches the payment service unchanged.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A good test suite covers not just a happy path but also cases such as zero quantity, duplicate payment requests, failed payments, and network interruptions. The exact required behavior must come from the specification.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image2.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: One Small Bug, Big Consequences"
+        },
+        {
+          "type": "paragraph",
+          "text": "A price or quantity calculation bug can propagate into a wrong payment or order total. Compare observed outputs with the expected results.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Verification vs Validation",
+      "slug": "verification-vs-validation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Verification asks, “Are we building the product according to its specification?” Validation asks, “Does the product actually meet the user's needs?” These questions overlap but are not identical. A seller-portal design may correctly implement a requirement saying “show stock quantity” (verification), yet fail the seller's real need to receive a low-stock warning (validation).",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Reviews of requirements, designs, and code can support verification without running the software. User demonstrations and acceptance testing can support validation. Neither activity replaces the other.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image3.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Verification vs Validation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Verification asks whether the product follows its specification. Validation asks whether it meets users’ actual needs. Both are important.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "How Software Testing Works",
+      "slug": "how-software-testing-works",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A practical testing cycle starts by identifying a requirement and selecting a test case. Prepare the initial state and inputs; execute the program; record the actual output; compare it with the expected output; report a mismatch; fix the underlying defect; and rerun the failed test. Finally, rerun related tests to check for regression.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: initial stock 10, add 5, expected 15. If the actual value is 5, report the defect with the exact steps to reproduce it. After correction, retest the addition and also test adding zero, adding twice, and removing stock. A passing retest confirms the tested scenario, not every possible scenario.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image4.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: How Software Testing Works"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prepare a test, execute the program, compare actual and expected results, investigate failures, fix the defect, and rerun relevant tests.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "What Is a Test Case?",
+      "slug": "what-is-a-test-case",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A test case is a reproducible experiment with a purpose. It normally states the requirement, preconditions, test inputs, execution steps, expected result, and observed result. Example: Requirement: adding items increases cart count. Precondition: empty cart. Action: add two items. Expected: cart count 2. If the actual count is 2, the test passes; otherwise it fails.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Expected results should be established independently of the program output. Copying whatever the program produced into the “expected” field would make the test meaningless.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image5.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: What Is a Test Case?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter represents a test case as [I, S, R]: input data, the program state when the input is applied, and the expected result. The initial state matters.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Test case = [Input, State, Expected Result]. A test suite contains multiple such cases.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Test Case vs Test Suite",
+      "slug": "test-case-vs-test-suite",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A test suite is a collection of test cases selected to evaluate related behavior. A login suite might contain correct password, incorrect password, blank password, locked account, and expired session cases. A negative test passes when the system correctly rejects invalid input; the test itself does not fail simply because the login is rejected.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suites make execution repeatable and allow teams to run regression tests after changes. Their value depends on the relevance and quality of the included cases, not merely the number of tests.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image6.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Test Case vs Test Suite"
+        },
+        {
+          "type": "paragraph",
+          "text": "A test suite is a collection of test cases. A deliberately invalid input can be a successful negative test when the system rejects it as expected.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Random vs Planned Testing",
+      "slug": "random-vs-planned-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Random exploration can uncover surprising behavior, especially when the tester tries unusual sequences. Planned testing begins with requirements and deliberate coverage goals. For a quantity field restricted to 1–100, planned tests might include 1, 2, 50, 99, 100, 0, and 101. Exploration can then try rapid clicks, repeated requests, and unexpected navigation.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "These approaches complement each other. A structured test suite improves repeatability; exploratory testing helps discover risks the plan overlooked.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image7.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Random vs Planned Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Random tests can miss important behavior. Carefully selected cases cover meaningful classes, branches and boundaries.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Can We Test Every Input?",
+      "slug": "can-we-test-every-input",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If an input is an arbitrary string, there may be an enormous number of possible values. Even two integer inputs can create far more combinations than a team can reasonably execute. Exhaustive testing is therefore usually impractical, except for very small, bounded domains.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Instead, partition the domain into behaviorally meaningful groups, select representative values, emphasize boundaries, and prioritize high-risk behavior. For a 50–150 inclusive range, test 49, 50, 51, 149, 150, and 151. This increases confidence but does not guarantee absence of defects.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image44.webp",
+          "width": 1668,
+          "height": 1021,
+          "caption": "",
+          "alt": "Illustration: Can We Test Every Input?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Exhaustive testing is often impractical for large or unbounded input spaces. Select representative and boundary cases instead.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Levels of Software Testing",
+      "slug": "levels-of-software-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Testing levels describe the scope of what is being checked. Unit testing checks a small unit such as a function. Integration testing checks communication between combined units. System testing checks the complete system against system requirements. Acceptance testing checks whether the product meets agreed acceptance criteria and is suitable for the intended users.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: unit-test inventory.add_stock(); integration-test Order Service communicating with Inventory Service; system-test a complete customer order from checkout to stock update; acceptance-test the seller's agreed workflow. The levels complement one another because a function can work correctly alone yet fail when combined with others.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image42.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Levels of Software Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Unit testing checks individual units; integration testing checks interactions; system testing checks the integrated product; acceptance testing checks customer requirements.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Unit vs Integration Testing",
+      "slug": "unit-vs-integration-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A unit test isolates a small behavior: add_stock(10,5) should produce 15. An integration test asks whether two real components exchange information correctly: when the Order Service confirms an order, does the Inventory Service decrease the correct product's stock?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Integration failures include wrong field names, mismatched data types, inconsistent units, error handling gaps, and incorrect assumptions about call order. A green unit-test report does not establish that these interfaces work.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image8.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Unit vs Integration Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "A passing unit test does not establish that components communicate correctly. Integration testing looks for interface and interaction defects.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Alpha vs Beta Testing",
+      "slug": "alpha-vs-beta-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Alpha testing generally occurs in a controlled environment, often with internal testers or selected users before wider release. Beta testing exposes a pre-release product to a limited external user group in more realistic conditions. Their precise organization varies by project.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For a seller portal, alpha testers may try a scripted inventory workflow in a test environment. Beta sellers may use a pre-release version with realistic catalogs and report confusing screens or device-specific problems. Neither automatically means the product is production-ready.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image9.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Alpha vs Beta Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Alpha testing is typically performed in a controlled setting before broader release. Beta testing involves external users in realistic conditions.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Acceptance Testing",
+      "slug": "acceptance-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Acceptance testing evaluates the product against agreed business criteria. For a seller portal, an acceptance criterion might say: “A seller can add a product, record stock, and see the updated quantity on the dashboard.” An acceptance test should follow that criterion and produce a clear pass/fail result.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Acceptance tests are not necessarily identical to system tests: system testing can include performance and security properties, while acceptance testing focuses on whether agreed needs are met. The people performing acceptance tests depend on the project and agreement.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image10.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Acceptance Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Acceptance tests compare a completed feature or system with agreed customer requirements, such as managing products, viewing orders and tracking inventory.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Black-box Testing",
+      "slug": "black-box-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Black-box testing derives tests from observable behavior and requirements without needing to inspect source code. For min(x,y), inputs 5 and 8 should yield 5. The tester can also check 8 and 5, equal values, negative values, and permitted types.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The method does not claim that implementation is unknowable; it simply does not require implementation details to choose tests. Black-box tests are especially useful for requirement-level behavior and interface contracts.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image45.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Black-box Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Black-box tests are designed from externally observable behavior and specifications, without needing to inspect source code.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Equivalence Class Partitioning",
+      "slug": "equivalence-class-partitioning",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Equivalence class partitioning groups inputs expected to behave similarly. If a program accepts only positive stock quantities, one possible partition is negative values (invalid), zero (invalid or special, according to the requirement), and positive values (valid). Choose a representative from each group, then verify the stated behavior.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The classes are based on the specification, not just mathematical convenience. If the program distinguishes 1–100 from 101+, those need separate classes. Representative tests reduce redundancy but cannot establish correctness for every value in a class.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image11.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Equivalence Class Partitioning"
+        },
+        {
+          "type": "paragraph",
+          "text": "Partition inputs into classes expected to behave similarly. For negative, zero and positive inputs, examples such as −2, 0 and 4 can represent the three classes. Other values shown in a class are examples, not additional mandatory representatives.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Equivalence Classes for min(x, y)",
+      "slug": "equivalence-classes-for-min-x-y",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For min(x,y), the relationships x<y, x>y, and x=y form three useful input classes. Test (3,8) expecting 3; (9,4) expecting 4; and (5,5) expecting 5. The equality case is important because programmers often accidentally mishandle ties.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "These are behavioral classes for the example, not proof that all integer, float, or mixed-type inputs work. If the requirement includes negative values, add examples such as min(-3,2)=-3.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image46.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Equivalence Classes for min(x, y)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use x<y, x>y and x=y as three useful classes. Example cases: (3,8)→3; (9,4)→4; (5,5)→5.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Equality deserves a separate test: min(5,5)=5.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing is_prime(num)",
+      "slug": "testing-is-prime-num",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A prime number is an integer greater than 1 with exactly two positive divisors: 1 and itself. The expected results include is_prime(2)=True, is_prime(3)=True, is_prime(4)=False, is_prime(5)=True, and is_prime(1)=False.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "One straightforward implementation rejects values less than 2 and checks possible divisors from 2 up to the square root. For each input, identify which behavior the test is intended to exercise: early rejection, no divisor found, or a divisor found. Testing 5 alone cannot show that 4 is rejected.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image12.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Testing is_prime(num)"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the illustrated implementation, prime numbers such as 2, 3, 5 and 7 return True; non-prime numbers such as 1, 4, 6 and 9 return False.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Implementation distinction: the later coverage diagrams use the chapter loop range(2,num), so input 3 enters the loop. An optimized implementation checking only through the square root can skip the loop for 3. Do not transfer a path-coverage claim between these implementations."
+        }
+      ]
+    },
+    {
+      "title": "Boundary Value Analysis",
+      "slug": "boundary-value-analysis",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Boundary-value analysis targets values at and immediately around an input limit because off-by-one errors are common. If a quantity is valid from 50 through 150 inclusive, test 49 (invalid), 50 (valid), 51 (valid), 149 (valid), 150 (valid), and 151 (invalid).",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The words “inclusive” and “exclusive” matter. For 50 < x < 150, the expected results for 50 and 150 would change. Always read the specification before deciding which outcomes are correct.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image13.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Boundary Value Analysis"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the inclusive valid interval 50–150, test just outside and just inside each boundary: 49, 50, 51, 149, 150 and 151.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: A boundary test is valuable because < and <= errors often appear at the edge.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Boundary Cases for is_prime()",
+      "slug": "boundary-cases-for-is-prime",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The smallest prime is 2. Therefore, 0 and 1 must return False, while 2 and 3 return True. These values are important boundaries around the minimum permitted prime number.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Also consider negative integers if the function accepts arbitrary integers. A test of is_prime(-5) should return False for the conventional mathematical definition. Inputs such as 2.5 or \"7\" require a separately stated type policy; do not invent expected behavior without a contract.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image14.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Boundary Cases for is_prime()"
+        },
+        {
+          "type": "paragraph",
+          "text": "0 and 1 are not prime, while 2 and 3 are prime. If the stated input domain is positive integers, 0 is an extra robustness test.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Designing Black-box Tests",
+      "slug": "designing-black-box-tests",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A disciplined black-box test design procedure is: (1) read the requirement, (2) identify inputs, outputs and constraints, (3) form equivalence classes, (4) identify boundaries, and (5) write expected results. For a range checker, the equivalence classes might be below range, in range, and above range; the boundary cases are values next to the endpoints.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not combine unrelated examples as though they describe one requirement. If the equivalence-class picture uses positive/zero/negative and the boundary picture uses 50–150, treat them as two independent examples.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image15.webp",
+          "width": 1969,
+          "height": 891,
+          "caption": "",
+          "alt": "Illustration: Designing Black-box Tests"
+        },
+        {
+          "type": "paragraph",
+          "text": "Read requirements, identify inputs and expected outputs, partition input classes, then test boundaries. Different stages may use different examples.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "White-box Testing",
+      "slug": "white-box-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "White-box testing uses implementation details such as statements, decisions, branches, loops, and control flow to design tests. Consider an IF condition x>0. A test with x=5 takes the True branch; x=0 or x=-1 takes the False branch.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Inspecting a program's paths can expose untested logic, but it does not replace checking the requirement. A program can execute every branch and still calculate the wrong result.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image16.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: White-box Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "White-box testing examines internal logic and control flow. The True branch can pass through a loop while the False branch bypasses it. Follow the arrowheads rather than treating the two paths as simultaneous.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Black-box vs White-box Testing",
+      "slug": "black-box-vs-white-box-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Black-box and white-box testing answer different questions. Black-box: “Does min(5,8) return the required 5?” White-box: “Did our tests execute the True and False outcomes of the internal x<y decision?”",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A strong testing strategy uses both. Input/output checks can miss a dormant branch; branch coverage can miss incorrect requirements or wrong calculations that happen along a covered branch.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image47.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Black-box vs White-box Testing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Black-box testing uses observable input/output behavior; white-box testing uses code structure. A project may use both approaches.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Branch Coverage",
+      "slug": "branch-coverage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Branch coverage measures whether every possible outcome of each decision has been exercised at least once. For `if x < y: return x; else: return y`, use (3,8) to take True and (9,4) to take False. Both branch outcomes are then covered.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Coverage is a structural metric, not a correctness certificate. The function could still be wrong for equal inputs or for a branch containing an incorrect formula. For complex Boolean expressions, branch coverage can be achieved without every individual condition ever becoming True.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image17.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Branch Coverage"
+        },
+        {
+          "type": "paragraph",
+          "text": "Branch coverage requires both outcomes of a decision. For x<y, (3,8) takes True and (9,4) takes False.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Both branch outcomes must be executed; a test on just one side is insufficient.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing Both Branches of min(x, y)",
+      "slug": "testing-both-branches-of-min-x-y",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Trace each test rather than relying on the picture alone. For x=3, y=8, the comparison 3<8 is True and the function returns x=3. For x=9, y=4, 9<4 is False and the function returns y=4.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A separate equality test (5,5) is useful for behavior but does not create a third outcome of the Boolean decision. A Boolean `if` still has only True and False branches.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image18.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Testing Both Branches of min(x, y)"
+        },
+        {
+          "type": "paragraph",
+          "text": "min(3,8)=3 on the True branch; min(9,4)=4 on the False branch. These tests do not separately establish coverage of x=y.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Branch Coverage: is_prime()",
+      "slug": "branch-coverage-is-prime",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For the illustrated prime-checker, test 0 for early rejection, 2 for a skipped divisor loop, 3 for a loop iteration with no divisor, and 4 for a divisor-found return. Trace 4: it is not 0 or 1; the loop considers divisor 2; 4%2==0; the function returns False.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The meaning of each test depends on the exact loop bounds and implementation. Structural coverage must be assessed against the code actually used, not merely against a generic prime-checking idea.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image19.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Branch Coverage: is_prime()",
+          "qualityNote": "The “3: loop runs” case assumes the chapter implementation range(2,num). It does not describe every optimized prime-checking algorithm."
+        },
+        {
+          "type": "paragraph",
+          "text": "Input 0 takes an early False return; 2 skips the divisor loop; 3 enters the loop without finding a divisor; 4 finds divisor 2.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing Individual Conditions",
+      "slug": "testing-individual-conditions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Condition coverage examines individual Boolean subconditions. Let A be `num == 0` and B be `num == 1`. For num=0, A=True and B=False; for num=1, A=False and B=True; for num=2, both are False. A=True and B=True cannot occur for one integer.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Important Python detail: `A or B` uses short-circuit evaluation. When A is True, Python need not evaluate B. A truth table shows the mathematical values each subcondition would have, not necessarily every operand actually evaluated during execution. Distinguish condition truth-value coverage from actual evaluation traces.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image20.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Testing Individual Conditions",
+          "qualityNote": "These are mathematical truth values. With num=0, Python short-circuits the OR expression and does not evaluate its second comparison."
+        },
+        {
+          "type": "paragraph",
+          "text": "A: num==0 and B: num==1 have truth values (T,F) for 0, (F,T) for 1, and (F,F) for 2. Important: Python short-circuit OR may not evaluate B when A is already True. The illustration lists mathematical truth values, not necessarily executed evaluations.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Logical truth table ≠ record of operands actually evaluated in a short-circuit language.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Branch vs Condition Coverage",
+      "slug": "branch-vs-condition-coverage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For `num < 50 or num > 150`, define A as the left comparison and B as the right. Input 49 gives (True,False), so the overall result is True. Input 100 gives (False,False), so overall False. Input 200 gives (False,True), so overall True.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The pair 49 and 100 covers the overall decision's True and False branches but never makes B True. Adding 200 covers that missing condition outcome. The pair (True,True) is impossible for a single numeric num. Again, Python may skip evaluating B when A is True.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image21.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Branch vs Condition Coverage"
+        },
+        {
+          "type": "paragraph",
+          "text": "For num<50 OR num>150, 49 and 100 exercise True and False outcomes of the overall decision. Adding 200 makes the second condition True. Python short-circuit evaluation may skip the second operand for 49.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: A=True, B=True is impossible for this expression on a single integer.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Control-Flow Graph",
+      "slug": "control-flow-graph",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A control-flow graph (CFG) represents possible execution paths. Nodes usually represent basic blocks or program points; directed edges show where control may transfer. For a minimum function, Start leads to decision x<y; the True edge leads to Return x, and the False edge to Return y.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A return ends that function invocation; do not draw an additional executable statement after it. A CFG helps design branch tests and reason about independent paths, but it must accurately match the implementation.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image22.webp",
+          "width": 1670,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Control-Flow Graph"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nodes represent program points or basic blocks; directed edges represent possible transfers of control. Return nodes terminate their paths.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Independent Paths in is_prime()",
+      "slug": "independent-paths-in-is-prime",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For the illustrated seven-node graph, the four basis paths are P1: 1-2-3; P2: 1-2-4-7; P3: 1-2-4-5-6; and P4: 1-2-4-5-4-7. They respectively illustrate early rejection, zero loop iterations, divisor found, and a loop iteration that continues before eventually returning True.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A basis of independent paths is not a list of every execution sequence. Loops can execute repeatedly, producing additional sequences. Path feasibility also matters: each listed path must correspond to at least one possible input for the code's exact loop conditions.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image23.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Independent Paths in is_prime()"
+        },
+        {
+          "type": "paragraph",
+          "text": "The four displayed paths form a basis for the simplified graph: 1–2–3, 1–2–4–7, 1–2–4–5–6, and 1–2–4–5–4–7. These are not every possible loop execution sequence.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Cyclomatic Complexity",
+      "slug": "cyclomatic-complexity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cyclomatic complexity is the number of linearly independent paths through a connected control-flow graph under the standard model. For a single-entry graph with D binary decisions, V(G)=D+1. In the simplified prime example, D=3 and V(G)=4.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An alternative graph formula is V(G)=E-N+2 for one connected component (with the usual CFG conventions). Complexity is a guide to basis-path testing effort, not a measure of code quality by itself. Count the illustrated OR check as one decision node in this simplified chapter model.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image24.webp",
+          "width": 1670,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Cyclomatic Complexity"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the simplified connected, single-entry control-flow graph with three decision nodes, V(G)=D+1=3+1=4. The OR expression is treated as one decision node in this chapter example.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: For a connected graph, V(G)=E−N+2 is an alternative formula when entry/exit conventions are handled consistently.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Why Unit Testing Matters",
+      "slug": "why-unit-testing-matters",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Unit testing focuses on small pieces of behavior so defects are easier to locate. If inventory.add_stock() fails a test, the investigation can begin inside that function rather than the whole seller portal. Unit tests also support safe refactoring because they can detect changed behavior.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A passing unit suite cannot guarantee that components work together, that the user interface is usable, or that production performance is acceptable. These need additional testing levels.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image25.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Why Unit Testing Matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "Unit testing finds defects in individual functions or modules and helps localize them. It cannot guarantee that integration defects are eliminated.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Unit Testing During Development",
+      "slug": "unit-testing-during-development",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Unit tests can be written before, during, or after implementation. In one ordinary workflow, write a function, write tests, run them, fix a failure, and rerun. In test-driven development, the order is deliberately different: write a failing test first, implement enough code to pass, then refactor.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Automated tests should be deterministic where possible: the same input and controlled environment should produce the same result. Tests that depend on shared mutable state or external services can be unreliable unless carefully managed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image26.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Unit Testing During Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Developers can write and execute unit tests throughout implementation. The illustrated code–test–fix cycle is common, but not mandatory: TDD writes a failing test before implementation.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Unit Testing Environment",
+      "slug": "unit-testing-environment",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A unit-testing environment contains the unit under test, controlled inputs, expected results, assertions, and any required dependencies. Some tests use real lightweight dependencies; others replace expensive or unpredictable collaborators with test doubles.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: testing a stock calculator need not involve a real database. Testing a repository's SQL behavior may require a test database. The choice depends on what behavior the test is intended to verify. Isolation is useful, but it should not be confused with proof of integration.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image27.webp",
+          "width": 1670,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: Unit Testing Environment"
+        },
+        {
+          "type": "paragraph",
+          "text": "A unit test supplies controlled inputs, checks expected versus actual results, and handles dependencies using real components or suitable replacements. Not every test requires a database or network.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "What Is a Stub?",
+      "slug": "what-is-a-stub",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A stub stands in for a dependency called by the unit under test. If Order Service calls Payment Service, a stub payment service can return a predetermined success response, allowing Order Service behavior to be tested without a live payment gateway.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A stub supplies controlled behavior; it does not establish that the real Payment Service works. After unit testing, integration tests should check the real interface or a suitably realistic test environment. Do not confuse a stub with the test driver that initiates calls into the unit.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image28.webp",
+          "width": 1670,
+          "height": 1019,
+          "caption": "",
+          "alt": "Illustration: What Is a Stub?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A stub replaces a dependency called by the unit under test, often returning a predefined response. It is not the unit under test.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "What Is a Test Driver?",
+      "slug": "what-is-a-test-driver",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A test driver invokes the unit under test, supplies arguments, captures the result, and may compare it with an expected value. For example, a driver calls add(5,3), receives 8, and checks that 8 equals the expected result. Another test input, (10,7), would be a separate invocation expecting 17.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The driver is the caller; a stub is a replacement for a dependency the tested unit calls. A testing framework can play the role of a driver by discovering and executing test functions.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image29.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: What Is a Test Driver?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The driver invokes the unit under test. Here Input A (5,3) is selected, add(5,3) returns 8, and the result matches the expected 8. Input B is a separate, inactive test.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Do not confuse the driver (caller) with the stub (substitute callee).",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Python Unit Testing Tools",
+      "slug": "python-unit-testing-tools",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Python's built-in `unittest` module supports test cases, assertions, setup and teardown, and test runners. `pytest` is a separately installed third-party framework that supports plain test functions, rich assertion output, fixtures, and parameterization. You can choose either framework for a project; both need not be used together.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example pytest test: `def test_add(): assert add(2,3) == 5`. When the assertion is false, pytest reports a failure. Installing pytest normally uses `python -m pip install pytest`; running tests normally uses `python -m pytest`.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image30.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Python Unit Testing Tools"
+        },
+        {
+          "type": "paragraph",
+          "text": "unittest is part of Python’s standard library; pytest is a third-party testing framework. Either can execute automated tests and report failures.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "How pytest Finds Tests",
+      "slug": "how-pytest-finds-tests",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "By default, pytest looks for test files following patterns such as `test_*.py` or `*_test.py`, and collects functions named `test_*` (plus recognized test methods/classes). A file called inventory.py is application code and is not collected as a test module merely because it exists.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A practical project can contain inventory.py and test_inventory.py. Put `def test_add_stock(): ...` in the latter, then run `python -m pytest`. Pytest discovery can be customized, so these are default conventions rather than universal rules.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image31.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: How pytest Finds Tests"
+        },
+        {
+          "type": "paragraph",
+          "text": "By default, pytest discovers files named test_*.py (and *_test.py) and test_ functions. A regular application file is not automatically a test module solely because it contains code.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Understanding assert",
+      "slug": "understanding-assert",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An assertion checks a proposition. In Python, `assert actual == expected` succeeds silently when the expression is True; when False, it raises AssertionError. The equality operator is `==`; a single `=` performs assignment and is not valid in that comparison position.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: `actual=8; expected=10; assert actual == expected` raises AssertionError. In pytest, this is reported as a failed test. Assertions in application code should not be treated as a replacement for explicit input validation because Python can disable assert statements in optimized execution.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image32.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Understanding assert"
+        },
+        {
+          "type": "paragraph",
+          "text": "assert actual == expected checks a Boolean condition. If False, Python raises AssertionError. Use == for comparison, not =.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: In pytest, use assert result == expected; pytest reports assertion failures.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Seller Portal Inventory",
+      "slug": "seller-portal-inventory",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Consider a seller-portal inventory with Notebook=10, Pen=20, and Bag=5. A stock operation should identify the product, read its current quantity, apply a permitted change, and store the new quantity. Requirements must specify how to handle unknown products, negative additions, excessive removals, and concurrent updates.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The numbers are illustrative test data. They are not evidence about a real deployed seller portal. Use a fresh test inventory for each test so results do not depend on which test ran first.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image33.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Seller Portal Inventory"
+        },
+        {
+          "type": "paragraph",
+          "text": "The sample seller portal starts with Notebook=10, Pen=20 and Bag=5. These are illustrative quantities, not real inventory data.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing Inventory Addition",
+      "slug": "testing-inventory-addition",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with quantity 0. After add_stock(10), expect 10. After a second add_stock(10), expect 20. The key requirement is accumulation: `new_stock = old_stock + added_quantity`.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A single test of adding 10 to an empty inventory would not distinguish addition from replacement, because both could yield 10. The second addition is what exposes a replacement bug. Always test stateful operations with sequences that distinguish correct and incorrect implementations.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image34.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Testing Inventory Addition"
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting with 0, adding 10 produces 10; adding another 10 produces 20. The operation must accumulate stock, not overwrite it.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Stock after two additions = 0+10+10=20.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "A Unit Test Catches a Bug",
+      "slug": "a-unit-test-catches-a-bug",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Buggy code may use `stock = amount` instead of `stock += amount`. With starting stock 10 and an addition of 10, the buggy version yields 10; the correct version yields 20. A unit test expecting 20 fails against the buggy implementation and passes after correction.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "This is why a carefully selected test case matters more than a large number of repetitive tests. Choose cases that would behave differently under plausible defects. Retest related inventory behavior after fixing the code.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image43.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: A Unit Test Catches a Bug"
+        },
+        {
+          "type": "paragraph",
+          "text": "When initial stock is 10 and another 10 is added, the expected result is 20. An actual result of 10 indicates the implementation replaced stock instead of adding to it.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing Inventory Deletion",
+      "slug": "testing-inventory-deletion",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Removing stock should subtract from the current quantity, not overwrite it. Starting with 10 and removing 5 should leave 5. A good deletion suite also tests removing zero (if permitted), removing exactly the available quantity, attempting to remove too much, and unknown products.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For a rule prohibiting negative stock, the system should reject excessive removal without modifying the stored quantity. Tests should assert both the exception or error response and the unchanged stock afterward.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image35.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Testing Inventory Deletion",
+          "qualityNote": "The 10−5=5 arithmetic is correct, but it cannot distinguish subtraction from wrongly setting stock to the removal amount. Add the test 10−3=7."
+        },
+        {
+          "type": "paragraph",
+          "text": "Removing 5 from stock 10 leaves 5. Deletion decreases quantity and should not set stock equal to the amount removed.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Test-design trap: stock 10 minus 5 gives 5, which also matches the faulty implementation stock = removed_quantity. Use stock 10, remove 3, expect 7 to expose that replacement bug. Retain 10−5 as arithmetic illustration, not as sufficient defect detection."
+        }
+      ]
+    },
+    {
+      "title": "pytest Fixtures: Reusable Setup",
+      "slug": "pytest-fixtures-reusable-setup",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A pytest fixture prepares data or resources for tests that request it. For example, a fixture may return a fresh Inventory object containing 10 notebooks. Multiple test functions can request the fixture by naming it as a parameter.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "By default, pytest fixtures have function scope, so a new fixture instance is created for each test that requests it. Wider scopes such as module or session can share resources across tests. Shared mutable state can make tests order-dependent; choose scope deliberately and reset state when needed.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image36.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: pytest Fixtures: Reusable Setup"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fixtures provide setup data or resources to tests that request them. Whether a new object is created for each test depends on fixture scope; do not assume mutable state is always shared.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing Expected Exceptions",
+      "slug": "testing-expected-exceptions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Suppose stock is 10 and the business rule forbids removing more than available. Removing 20 should raise ValueError. In pytest, `with pytest.raises(ValueError): inventory.remove_stock(20)` passes if that exception is raised and fails if no matching exception occurs.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An expected error is correct application behavior, not a failed test. Also assert that stock remains 10 after the rejected operation. If the requirement specifies a different exception type, test that specified type instead.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image37.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Testing Expected Exceptions"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the inventory rule prohibits removing more than available, removing 20 from stock 10 should raise ValueError. A pytest.raises(ValueError) test passes when that expected exception occurs.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Example: with pytest.raises(ValueError): inventory.remove(20).",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Traditional Development vs TDD",
+      "slug": "traditional-development-vs-tdd",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In a code-first workflow, a developer may implement a feature and test it afterward. In TDD, the developer first writes a small automated test that fails for the expected reason, writes minimal code to make it pass, and improves the code while preserving the passing tests.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "These are illustrative workflows, not universal descriptions of every team. TDD proceeds incrementally: one small behavior at a time. It does not mean writing every test for the entire product before any implementation.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image38.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Traditional Development vs TDD"
+        },
+        {
+          "type": "paragraph",
+          "text": "The left side shows one common code-first workflow. TDD instead begins with a failing test, writes the minimum implementation, then improves the code. It does not mean writing all application tests before any code.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Red–Green–Refactor",
+      "slug": "red-green-refactor",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "RED: write a new test for a behavior that is not yet implemented and confirm that it fails for the intended reason. GREEN: write the simplest reasonable implementation that makes the test pass. REFACTOR: improve internal structure while keeping observable behavior and all tests passing. Then repeat.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A failing test due to a syntax error, import failure, or mistaken expected value is not a useful RED step. Refactoring is not an opportunity to silently change requirements; new behavior should first be described by a new test.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image39.webp",
+          "width": 1669,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Red–Green–Refactor"
+        },
+        {
+          "type": "paragraph",
+          "text": "RED: write a test that fails for the expected reason. GREEN: write the minimum code to make it pass. REFACTOR: improve structure while keeping tests green, then repeat.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Refactoring changes internal structure, not required external behavior.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Building is_prime() with TDD",
+      "slug": "building-is-prime-with-tdd",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Begin with a small requirement: is_prime(5) should return True. Write a test expressing that expectation, observe its failure against the unfinished implementation, implement enough correct behavior to pass, and refactor without breaking the test.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Then add new tests such as is_prime(4)==False and is_prime(1)==False. A naive implementation that returns True for every input would pass the first test but fail the later tests. TDD relies on gradually broadening the test suite to constrain behavior.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image40.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Building is_prime() with TDD"
+        },
+        {
+          "type": "paragraph",
+          "text": "A test expecting is_prime(5)==True can drive one increment of implementation. Passing this single test does not prove correctness for all prime and non-prime inputs.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember: Test prime, composite, smallest-prime and edge values separately.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing is_prime(): Important Cases",
+      "slug": "testing-is-prime-important-cases",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful small prime-checking suite includes 5→True, 4→False, 2→True, 1→False, and 0→False. These check a normal prime, a composite, the smallest prime, and two values that must be rejected.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Further tests should include a larger composite such as 9, a larger prime such as 13, and negative integers if supported. A suite is a set of evidence about selected cases, not a mathematical proof that the algorithm works for all integers.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-9/image41.webp",
+          "width": 1670,
+          "height": 1020,
+          "caption": "",
+          "alt": "Illustration: Testing is_prime(): Important Cases"
+        },
+        {
+          "type": "paragraph",
+          "text": "Expected values: 5→True, 4→False, 2→True, 1→False, 0→False. The 0 case can be a robustness check when the specified domain is positive integers.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Integration and System Testing",
+      "slug": "integration-and-system-testing",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Integration testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "After units are tested individually, integrate them and test their interactions. Focus on module interfaces, parameter passing, shared state and communication. A passing unit test does not guarantee a passing integration test.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Big-bang integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Combine all modules at once and test the integrated system. It may be workable for a small system but makes defect localization difficult when many components are involved.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Bottom-up integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Integrate lower-level modules into subsystems first, then combine subsystems upward. Test drivers may be needed to simulate higher-level callers.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Top-down integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with higher-level modules and progressively add lower-level components. Stubs can replace not-yet-available lower-level dependencies.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Incremental integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Integrate and test components in manageable steps. When a new failure appears, the most recently added interface is a useful place to investigate.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "System testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Test the complete integrated application against system requirements. Functional scenarios and nonfunctional qualities may both matter, depending on the specification.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Acceptance testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Check whether the delivered product meets agreed customer acceptance criteria. This is different from testing individual internal functions.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Complete Section Coverage — Integration and System Testing",
+      "slug": "complete-lecture-coverage-integration-and-system-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The following sections expand the material covered in the Integration and System Testing chapter. The seller-portal examples are teaching illustrations; they do not describe a deployed system.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Why test integration after unit testing?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A unit test checks a function or module in isolation. During integration, real modules communicate with one another. An interface can fail even when both modules pass their unit tests: the caller may send a price in rupees while the receiver expects paise, omit a required argument, misinterpret a return value, or rely on shared state that has not been initialized. Integration tests aim to reveal these interface and communication problems.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "When to begin integration testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Begin when the relevant modules have undergone unit testing and enough collaborating modules are available. It is not necessary to wait for every module in the application. Integrate in manageable steps, run the relevant tests, and investigate failures before adding more modules.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: Seller Portal modules",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose the Order Service asks Inventory Service to reserve 3 notebooks. Inventory reports 10 available. The integration test should verify that the request uses the correct product identifier and quantity, that 3 units are reserved, that the response is interpreted correctly, and that the order is not marked confirmed if reservation fails. A unit test of either service alone may not detect a mismatch in their interface.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Big-bang integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Combine all unit-tested modules in one step and then test the assembled system. Advantage: straightforward to organize for a small number of modules. Disadvantage: when a failure appears, the faulty interaction is difficult to isolate because many interfaces changed at once. The chapter cautions against using this approach for large multi-module systems.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Bottom-up integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with lower-level modules, integrate them into tested subsystems, and gradually combine subsystems upward. Example: test inventory storage with inventory rules first, then connect them to Order Service. Drivers can simulate higher-level callers while those callers are unavailable. In a pure bottom-up arrangement, stubs for lower-level dependencies are generally unnecessary because those dependencies are integrated first.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Top-down integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with the root or higher-level control module and progressively add its subordinate modules. Example: begin with Seller Portal workflow and Order Service; temporarily replace unavailable inventory or payment modules with stubs returning controlled responses. Drivers are usually not needed for the top-level entry point; stubs are commonly needed for lower-level modules not yet integrated.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Mixed (sandwich) integration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Combine top-down and bottom-up work, integrating modules when they become available and have been unit tested. For example, one team tests Inventory Service with its database adapter while another team tests the seller workflow with a temporary payment stub. Later, connect the tested subsystems and verify the real interactions. This mixed approach is explicitly covered in the chapter.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Drivers and stubs in integration testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A driver acts as a caller: it invokes a module, supplies inputs, and examines results. A stub stands in for a dependency called by the module under test and returns controlled responses. Bottom-up integration often uses drivers; top-down integration often uses stubs. They are test aids, not a requirement that every test use both.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "System testing: what changes?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "System testing examines the fully integrated system as a whole. It checks end-to-end behavior and system-level requirements, not only whether individual functions or interfaces work. A seller-portal scenario might be: sign in → add a product → update stock → place an order → verify inventory and order status. Functional requirements and nonfunctional requirements may both be assessed.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Alpha testing, beta testing and acceptance testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In the chapter, alpha testing is performed by a test team within the organization; beta testing involves a selected group of customers outside the organization; acceptance testing lets the customer determine whether the delivered software satisfies agreed requirements or user stories and should be accepted. These terms describe different testing contexts or purposes, not simply three levels of unit testing.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Smoke testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Smoke testing is a small, fast set of basic checks used to decide whether a build is stable enough for further testing. In the seller portal, a smoke test might check that login works, the product catalogue opens, and a product can be added. Passing smoke tests does not mean the system is fully tested; it means major basic functions are operational.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Performance testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Performance testing checks relevant nonfunctional behavior, such as response time, throughput, resource consumption, and performance under a specified workload. Example: measure whether a seller portal returns inventory search results within the agreed time when 100 concurrent users search. The actual workload and acceptable time must come from the system requirements; they are not universal constants.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Stress testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Stress testing deliberately pushes a system beyond its expected or designed operating capacity to observe failure behavior, robustness, and recovery. Example: submit a transaction volume greater than the planned database capacity and observe whether the portal slows down, rejects excess requests safely, or recovers after the load is reduced. Stress testing is one kind of performance-related testing; it is not identical to normal-load performance testing.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Quick comparison: integration vs system testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Integration testing asks: “Do these modules communicate correctly?” System testing asks: “Does the complete integrated product satisfy its requirements?” Both are needed because correct units do not automatically produce a correct integrated product.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: testing the minimum function",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For min(x, y), test x<y using (3,8) → 3; x>y using (9,4) → 4; and x=y using (5,5) → 5. The chapter includes a deliberately faulty implementation in which an else branch assigns x rather than y. The test (9,4) exposes that bug because the incorrect implementation returns 9 instead of 4. The equality case is also useful, but these three examples do not prove the function correct for every possible input.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Condition coverage and Python short-circuiting",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For A or B, a truth table describes the mathematical truth values of A and B. In Python, if A is True, B is not evaluated by the or operator. Thus the displayed condition truth values in the diagrams should not be mistaken for proof that both operands executed in every test. When testing coverage, distinguish the logical combinations from what the language actually evaluates.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Cyclomatic complexity and independent paths",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "For the simplified chapter graph of is_prime(), the decisions are the 0-or-1 check, the loop continuation, and the divisibility check. With three decisions in this connected single-entry representation, V(G)=D+1=4. Four basis paths can provide structural coverage targets; they do not enumerate every possible loop iteration count or establish correctness for all integers.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Fixture scope and isolation",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "pytest fixtures prepare values or resources for tests that request them. With the default function scope, each test invocation gets its own fixture execution. Wider scopes can share a resource. Do not assume every test shares one mutable inventory object; shared mutable state can make tests order-dependent unless deliberately controlled.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Expected exceptions and successful tests",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "If an inventory rule forbids removing 20 items when only 10 are available, raising ValueError is the intended behavior. A test using pytest.raises(ValueError) passes when that exception occurs inside the context. It fails if the expected exception is not raised; the application rejecting an invalid operation is not itself a failed test.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "TDD does not replace comprehensive testing",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Red–Green–Refactor repeats for small behavior increments: write a test that fails for the expected reason, implement the minimum needed to pass, and improve structure while keeping tests passing. Passing is_prime(5) checks one example only. Add non-primes, the smallest prime, 0 and 1 where appropriate, and other boundary cases as the specification requires.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Additional practice questions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "• A function passes its unit test but fails after connection to another module. Give two possible interface causes.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "• Compare big-bang, bottom-up, top-down, and mixed integration in terms of order and test aids.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "• Design three smoke tests for a seller portal. Explain why passing them is insufficient.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "• How does a stress test differ from a normal-load performance test?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "• Which test exposes the faulty min(x,y) else branch that returns x instead of y?",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Mini revision questions",
+      "slug": "mini-revision-questions",
+      "blocks": [
+        {
+          "type": "list-item",
+          "text": "What are I, S and R in a test case?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "Why can 100 random inputs still miss a bug?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "What is the difference between black-box and white-box test design?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "Why are 49, 50, 150 and 151 useful for a 50–150 valid range?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "Why can branch coverage differ from individual condition coverage?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "What is the difference between a test driver and a stub?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "When should pytest.raises(ValueError) be considered a passing test?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "What is the correct Red–Green–Refactor order?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "Why is one passing is_prime(5) test insufficient?",
+          "runs": []
+        },
+        {
+          "type": "list-item",
+          "text": "Why is integration testing necessary after unit testing?",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Suggested answers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 1: I is input, S is initial program state, and R is expected result."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 2: The samples may omit a boundary, rare state or defective branch."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 3: Black-box tests derive from external requirements; white-box tests use internal structure."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 4: 49/151 are just outside; 50/150 are accepted endpoints of the inclusive interval."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 5: The overall decision can take True and False without each subcondition taking both values; short-circuiting also affects evaluation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 6: A driver calls the unit; a stub replaces a dependency called by the unit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 7: When the expected exception is raised inside the raises context; no exception or an unrelated exception fails the test."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 8: Write an intentionally failing behaviour test, implement enough to pass, then refactor with tests green."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 9: A function returning True for every input would pass it. Include composites and boundaries."
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer 10: Individually correct modules may exchange wrong identifiers, units, parameters or error responses."
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "Complete Self-Study Lessons: Worked Code, Integration and System Testing",
+      "slug": "complete-self-study-lessons-worked-code-integration-and-system-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The following lessons extend the chapter concepts into fully worked examples. They are additional teaching explanations, teaching examples.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "A complete, testable inventory module",
+      "slug": "a-complete-testable-inventory-module",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We will use a small Python Inventory class throughout the rest of this chapter. It stores quantities in a dictionary. The constructor makes an independent copy of the starting data so tests do not accidentally share the same dictionary. add_stock increases the existing quantity. remove_stock rejects an excessive removal and preserves the current stock. These rules are explicit assumptions for this teaching example.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "class Inventory:\n    def __init__(self, initial=None):\n        self.stock = dict(initial or {})\n\n    def get_stock(self, product):\n        return self.stock.get(product, 0)\n\n    def add_stock(self, product, quantity):\n        if quantity < 0:\n            raise ValueError(\"Quantity cannot be negative\")\n        self.stock[product] = self.get_stock(product) + quantity\n\n    def remove_stock(self, product, quantity):\n        if quantity < 0:\n            raise ValueError(\"Quantity cannot be negative\")\n        if quantity > self.get_stock(product):\n            raise ValueError(\"Insufficient stock\")\n        self.stock[product] = self.get_stock(product) - quantity\n",
+          "runs": [
+            {
+              "text": "class Inventory:\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    def __init__(self, initial=None):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        self.stock = dict(initial or {})\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    def get_stock(self, product):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        return self.stock.get(product, 0)\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    def add_stock(self, product, quantity):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        if quantity < 0:\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "            raise ValueError(\"Quantity cannot be negative\")\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        self.stock[product] = self.get_stock(product) + quantity\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    def remove_stock(self, product, quantity):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        if quantity < 0:\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "            raise ValueError(\"Quantity cannot be negative\")\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        if quantity > self.get_stock(product):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "            raise ValueError(\"Insufficient stock\")\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        self.stock[product] = self.get_stock(product) - quantity\n",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Trace: Inventory({\"Notebook\":10}).add_stock(\"Notebook\",10) changes stock to 20. A later remove_stock(\"Notebook\",5) changes it to 15. Attempting to remove 20 from that state raises ValueError, leaving the stock at 15.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Example contract: these demonstrations assume non-negative initial stock and integer quantities. The sample checks negative updates but does not validate every type, initial value or concurrent update. It is a teaching class, not a production-safe inventory service."
+        }
+      ]
+    },
+    {
+      "title": "Unit tests with pytest",
+      "slug": "unit-tests-with-pytest",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Save the class in inventory.py. Put the following tests in test_inventory.py. A pytest fixture creates a fresh inventory for each test by default. Notice that each assertion checks one specific contract. The exception test also verifies that the failed operation did not change stock.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "import pytest\nfrom inventory import Inventory\n\n@pytest.fixture\ndef inventory():\n    return Inventory({\"Notebook\": 10})\n\ndef test_add_accumulates(inventory):\n    inventory.add_stock(\"Notebook\", 10)\n    assert inventory.get_stock(\"Notebook\") == 20\n\ndef test_remove_subtracts(inventory):\n    inventory.remove_stock(\"Notebook\", 3)\n    assert inventory.get_stock(\"Notebook\") == 7\n\ndef test_remove_too_many_raises(inventory):\n    with pytest.raises(ValueError):\n        inventory.remove_stock(\"Notebook\", 20)\n    assert inventory.get_stock(\"Notebook\") == 10\n",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Run `python -m pytest -v`. The first test catches a replacement-versus-addition bug; the second distinguishes subtraction from replacing stock with the removal amount; the third checks both the exception and the unchanged state. The fixture isolates the tests so execution order should not matter.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Faulty minimum function: find and fix the defect",
+      "slug": "faulty-minimum-function-find-and-fix-the-defect",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Consider a deliberately faulty implementation. Its else branch assigns x rather than y, so it fails whenever x>y. Students should predict the output before running the test.",
+          "runs": []
+        },
+        {
+          "type": "code",
+          "text": "def buggy_min(x, y):\n    if x < y:\n        return x\n    else:\n        return x  # BUG: should return y\n\ndef test_min_first_smaller():\n    assert buggy_min(3, 8) == 3\n\ndef test_min_second_smaller():\n    assert buggy_min(9, 4) == 4  # FAILS: actual is 9\n\ndef correct_min(x, y):\n    if x < y:\n        return x\n    return y\n",
+          "runs": [
+            {
+              "text": "def buggy_min(x, y):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    if x < y:\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        return x\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    else:\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        return x  # BUG: should return y\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "def test_min_first_smaller():\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    assert buggy_min(3, 8) == 3\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "def test_min_second_smaller():\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    assert buggy_min(9, 4) == 4  # FAILS: actual is 9\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "def correct_min(x, y):\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    if x < y:\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "        return x\n",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "    return y\n",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The first test passes and therefore does not reveal the defect. The second fails: the expected value is 4 but the actual value is 9. The equality test correct_min(5,5)==5 also passes. Two branch outcomes are not enough to prove correctness unless the outputs are checked.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Integration testing: purpose and typical failures",
+      "slug": "integration-testing-purpose-and-typical-failures",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Integration testing combines modules and checks the contracts between them. Imagine an Order Service that calls Inventory Service to reserve products. The inventory function may work in isolation and the order function may work with a stub, yet their integration can fail if the order passes a product ID where inventory expects a product name, if quantities use different units, or if failures are ignored. Integration tests should use real collaborating components where feasible and validate data flow, call order, and failure handling.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example integration scenario: initial Notebook stock 10. The Order Service accepts an order for 3 notebooks and calls Inventory.remove_stock(\"Notebook\",3). Expected: the order is confirmed and stock becomes 7. If the inventory service rejects the request, the order must not be falsely confirmed. The exact transaction or rollback rule must be defined in the system requirements.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Big-bang integration",
+      "slug": "big-bang-integration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In big-bang integration, developers combine many completed modules at once and then test their interaction. For a seller portal, Order, Inventory, Payment, and Notification services may all be connected before the first major integration run. The advantage is that the approach can be straightforward when the system is small. The disadvantage is difficult fault localization: a checkout failure may originate in several interfaces, and defects are discovered relatively late.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked trace: checkout fails after payment succeeds. To isolate the problem, inspect the Order→Payment request, Payment→Order response, Order→Inventory update, and notification event. The more components integrated simultaneously, the harder it may be to identify the first incorrect transfer.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Bottom-up integration",
+      "slug": "bottom-up-integration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Bottom-up integration begins with lower-level modules and combines progressively higher-level modules. First test Inventory Repository with the database; then Inventory Service with the repository; then Order Service with Inventory Service; finally the user-facing portal. If the top-level caller is not ready, a test driver can invoke the lower-level subsystem and provide inputs. This approach tests foundational components early but may delay testing of full user workflows.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: a driver calls Inventory Service.reserve(\"Notebook\",2) and checks that database stock changes from 10 to 8. Later, Order Service becomes the real caller and the driver is no longer needed for that integrated path.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Top-down integration",
+      "slug": "top-down-integration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Top-down integration starts with high-level control modules and gradually replaces temporary lower-level dependencies with real implementations. Begin with the Seller Portal interface and Order Service. If Inventory Service is unfinished, use a stub that returns a predetermined stock-available response. Then replace the stub with the real Inventory Service and run the same interaction tests. This exposes high-level workflows early, but stubs can hide real lower-level defects.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: a stub always reports \"stock available\" for Notebook. Checkout appears to work in the first test. After integrating the real inventory module, checkout with zero stock must be rejected. The original stub test did not establish the real stock-checking behavior.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Mixed (sandwich) integration",
+      "slug": "mixed-sandwich-integration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Mixed integration combines top-down and bottom-up work. A team can test the portal and Order Service using stubs while another team tests the database and Inventory Service using drivers. They integrate the two growing subsystems when the interface is ready. This may shorten feedback time in a larger system, but requires a clear interface contract and coordination. It is not a distinct testing level; it is an integration strategy.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Integration order example: (A) Portal→Order with Inventory Stub; (B) Inventory Service→Database with Driver; (C) Portal→Order→Real Inventory→Database. Re-run earlier tests after joining the two sides.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Choosing an integration strategy",
+      "slug": "choosing-an-integration-strategy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "No strategy is universally best. Big-bang is simple to organize but can make failures hard to locate. Bottom-up tests low-level services early and often uses drivers. Top-down validates high-level behavior early and often uses stubs. Mixed uses both directions and coordinates their eventual connection. Choose based on architecture, availability of modules, critical risks, and team workflow.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Self-check: If Payment Service is not ready but the checkout interface must be demonstrated, a stub is useful in a top-down integration. If the database and inventory logic are ready but the portal is not, a driver is useful in bottom-up integration.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "System testing: end-to-end behavior",
+      "slug": "system-testing-end-to-end-behavior",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "System testing evaluates the assembled product as a whole against system-level requirements. It is broader than checking one interface. A complete seller-portal scenario may start with seller login, product creation, stock entry, customer order, payment result, inventory update, and order-status display. Testers must verify each observable outcome and the consistency of the overall state.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked system test: Seller creates Notebook with stock 10. Customer orders 3. Payment is accepted. Expected: order status Confirmed, remaining stock 7, correct payment amount, and no duplicate order. Then simulate a failed payment: expected stock and order status depend on the specified reservation and rollback rules. Test both outcomes.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Smoke testing",
+      "slug": "smoke-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A smoke test is a short set of high-priority checks that determines whether a build is stable enough for deeper testing. After deployment, a smoke suite might check that the portal opens, login succeeds, product pages load, and a basic order can be submitted in a test environment. Smoke tests are broad and shallow: passing them means the build can proceed to more detailed tests, not that the entire product is correct.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: if the login page does not load, detailed checkout testing cannot proceed. The smoke suite catches this early and prevents wasting time on tests blocked by a broken build.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Performance testing",
+      "slug": "performance-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Performance testing evaluates response time, throughput, resource use, and stability under a specified workload. Requirements must define measurable targets. For example, “95% of inventory searches finish within 2 seconds with 200 concurrent users” is testable; “the website must be fast” is not precise enough. Results depend on hardware, dataset size, network, and workload.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked scenario: simulate 200 concurrent sellers checking stock. Record response-time distribution (including p95), requests per second, error rate, CPU and memory use. Compare with agreed thresholds. A good average can hide a poor slowest 5%, so report percentiles as well.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Stress testing",
+      "slug": "stress-testing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Stress testing deliberately pushes the system beyond normal or expected capacity to understand failure behavior and recovery. Increase load beyond the planned user count, restrict memory, or simulate dependency unavailability. Look for graceful error responses, data consistency, and recovery after the load decreases. Stress testing is related to performance testing but has a different emphasis: behavior at or beyond limits.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked scenario: gradually increase concurrent checkout attempts until the system reaches its capacity. Observe whether requests queue, fail cleanly, or corrupt inventory. After reducing load, verify that the service recovers and stock totals remain correct. The system need not maintain normal response time beyond its agreed capacity, but it should avoid unacceptable data loss.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Alpha, beta and acceptance testing in context",
+      "slug": "alpha-beta-and-acceptance-testing-in-context",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Alpha testing typically occurs in a controlled pre-release setting; beta testing involves selected external users in realistic conditions; acceptance testing checks agreed criteria for accepting the product. These are not identical to unit, integration, and system testing levels. They describe testing contexts or purposes, and their exact process varies by organization.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: internal staff perform alpha testing on the seller portal; ten pilot sellers conduct beta testing and report confusing stock screens; the customer runs acceptance tests against agreed requirements such as “stock decreases after a confirmed order.” A beta report may reveal usability problems even if the formal acceptance scenarios pass.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "A practical test-design worksheet",
+      "slug": "a-practical-test-design-worksheet",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For each feature, write: requirement ID, feature, initial state, input/action, expected output, test level, test type, and result. Example: REQ-INV-01, inventory addition, initial 10, add 10, expected 20, unit test, positive functional test. Then add negative and boundary cases. The worksheet prevents vague “tested successfully” claims and helps students reproduce failures.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Sample cases: (1) initial 10 + 10 → 20; (2) initial 10 - 5 → 5; (3) initial 10 - 20 → ValueError and stock 10; (4) 49 rejected by a 50–150 inclusive range; (5) 50 accepted; (6) 150 accepted; (7) 151 rejected.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Practice Problems with Worked Answers",
+      "slug": "practice-problems-with-worked-answers",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "1. A range accepts integers from 50 through 150 inclusive. Choose six boundary tests and outcomes.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: 49 invalid; 50 valid; 51 valid; 149 valid; 150 valid; 151 invalid. Values immediately inside and outside both endpoints help reveal off-by-one errors.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "2. For `if x<y: return x; else: return y`, what two tests cover both branches?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: (3,8) takes True and returns 3; (9,4) takes False and returns 4. Also test (5,5) for equality behavior even though it is not a third branch.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "3. Does 100% branch coverage prove correctness?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: No. Both branches can execute while a formula is wrong, requirements are misunderstood, or important data values are untested.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "4. What do inputs 49, 100 and 200 establish for `num<50 or num>150`?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: 49 makes A True, B False; 100 makes both False; 200 makes A False, B True. They cover both overall outcomes and each feasible individual condition outcome.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "5. Explain the difference between a stub and a driver.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: A stub replaces a dependency called by the unit under test; a driver calls the unit under test and supplies inputs. Top-down integration often uses stubs; bottom-up often uses drivers.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "6. What happens when pytest expects ValueError and the function raises it?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: The test passes. The application error is expected behavior. If no ValueError occurs, the test fails.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "7. Stock starts at 10. A program sets stock equal to 10 when adding 10. Why is this wrong?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: It replaces the existing stock instead of accumulating it. Correct stock is 20; a test of two additions catches the bug.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "8. Describe the Red–Green–Refactor cycle.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: RED: add a test and confirm it fails for the expected reason. GREEN: implement minimal behavior to pass. REFACTOR: improve code structure while keeping all tests green.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "9. Which integration strategy uses lower-level modules first?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Bottom-up integration. Drivers can simulate higher-level callers until those modules are integrated.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "10. Distinguish smoke, performance and stress tests.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Smoke: quick checks that a build is testable. Performance: measure speed, throughput and resource use under specified workloads. Stress: examine behavior and recovery beyond normal capacity.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "11. How many independent paths does the illustrated prime-checker have if it has three binary decisions?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Under the simplified single-entry connected graph model, V(G)=D+1=3+1=4.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "12. Why is an `is_prime(5)==True` test insufficient?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: A broken function that always returns True would pass. Add composites, 0, 1, 2 and further edge cases to distinguish correct behavior from plausible defects.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Editorial note: This expanded teaching material supplements the chapter-based guide with explanatory examples. Always use the course specification when it defines behavior differently from an illustrative example.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

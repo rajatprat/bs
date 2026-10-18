@@ -1,0 +1,731 @@
+{
+  "subject": "Mathematical Foundation of Generative AI",
+  "subjectSlug": "mathematical-foundation-of-generative-ai",
+  "week": 1,
+  "part": 1,
+  "courseWeeks": [
+    1
+  ],
+  "base": "/mathematical-foundation-of-generative-ai/week-1/part-1/",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Mathematical Foundations of Generative AI"
+    },
+    {
+      "type": "paragraph",
+      "text": "WEEK 1  |  PART 1: FOUNDATIONS TO DIVERGENCES"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrated student study guide • Section-aligned scope • Detailed explanations and solved practice"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learning route: Generative models → data distributions → generators → training objective → optimization → convexity → f-divergence → KL / JS / total variation."
+    }
+  ],
+  "sections": [
+    {
+      "title": "What are deep generative models?",
+      "slug": "what-are-deep-generative-models",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image19.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 01. Generative model families.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A generative model learns how to produce plausible new examples resembling data. The chapter introduces GANs, VAEs, denoising diffusion / score-based models, autoregressive language models, state-space models, and RL-based alignment for language models. The last is an alignment approach rather than a standalone generative architecture."
+        },
+        {
+          "type": "paragraph",
+          "text": "Examples: a text model produces a response conditioned on a prompt; an image model produces an image conditioned on a description; a speech generator can turn text into audio. These are examples of tasks, not a claim that one model can perform all of them."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image18.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 02. Generating text, images, and speech.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "heading",
+          "text": "Detour A — Data, random variables and dimensions (quick revision)"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image17.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 03. Retrieval versus generation.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A dataset is D = {x₁, …, xₙ}. Each xᵢ is one observed example. A sample can be represented as a vector in ℝᵈ; n counts examples, while d counts components per example. A 100×100 RGB image, flattened without compression, has 100×100×3 = 30,000 numerical components."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image16.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 04. Dataset and feature vectors.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A random vector X is a rule for producing a random data example. P_X denotes its probability distribution. The dataset contains observed draws; it does not give us the complete underlying distribution."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image15.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 05. Dimensions and data representations.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — sample count versus feature dimension"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Suppose there are 1,000 RGB images, each 20×20 pixels. Then n = 1,000."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Each flattened image has d = 20×20×3 = 1,200 entries."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. The data matrix, if samples are rows, has shape 1,000×1,200."
+        },
+        {
+          "type": "heading",
+          "text": "Detour B — What does i.i.d. mean? (quick revision)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The notation xᵢ i.i.d. ∼ P_X means each observation is modeled as an independent draw from the same distribution P_X. “Identically distributed” does NOT mean all observed values are equal. Independence is an assumption about the sampling mechanism."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image14.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 07. Independent and identically distributed samples.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "heading",
+          "text": "Practice — understanding the data notation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: A dataset contains 600 grayscale images, each 28 × 28 pixels. Find n and d. Solution: n = 600 observed examples; d = 28 × 28 = 784 numbers per flattened image. The data matrix has 600 rows and 784 columns if each image is stored as one row. Do not confuse the number of images with the dimension of an image."
+        },
+        {
+          "type": "heading",
+          "text": "Why samples do not tell us the exact density"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image13.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 06. Unknown distribution and observed samples.",
+          "alt": "Illustration: What are deep generative models?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine seeing 10 photographs of cats. You have seen 10 draws from a much larger range of possible cat photographs, not a complete table of their probabilities. Likewise, the data D = {x₁,…,xₙ} gives observations from P_X; it does not reveal a formula for p_X(x). This distinction is central to the example’s question: how can we compare distributions when the real density is unknown?"
+        }
+      ]
+    },
+    {
+      "title": "The core generative-modeling problem",
+      "slug": "the-core-generative-modeling-problem",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Given samples from an unknown P_X, our goal is to learn a mechanism that produces samples with a distribution close to P_X. The example’s setup assumes a parameterized model distribution P_θ, defines a discrepancy D(P_X ∥ P_θ), and optimizes the model parameters to reduce it."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image12.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 08. Generator from latent noise.",
+          "alt": "Illustration: The core generative-modeling problem"
+        },
+        {
+          "type": "paragraph",
+          "text": "θ* ∈ argmin_θ D(P_X ∥ P_θ)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here argmin returns parameter choices, not the smallest divergence value itself. We should not assume the optimum is reached or that training always succeeds."
+        },
+        {
+          "type": "heading",
+          "text": "Detour C — Gaussian noise and the generator (quick revision)"
+        },
+        {
+          "type": "paragraph",
+          "text": "A common starting point is z ∼ N(0,I): a standard multivariate Gaussian with zero mean vector and identity covariance. The neural generator maps latent noise to a synthetic sample:"
+        },
+        {
+          "type": "paragraph",
+          "text": "x̃ = g_θ(z),       z ∼ N(0,I)"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image15.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 09. Standard Gaussian latent input.",
+          "alt": "Illustration: The core generative-modeling problem"
+        },
+        {
+          "type": "paragraph",
+          "text": "The probability distribution of x̃ is induced by the random input z and the mapping g_θ. It is written P_θ. Sampling means drawing a fresh z and passing it through the trained generator."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image37.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 10. Real and generated distributions.",
+          "alt": "Illustration: The core generative-modeling problem"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — what changes when the generator changes?"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Let z ∼ N(0,1) and g_θ(z) = θ + z."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Then x̃ ∼ N(θ,1): changing θ shifts the generated distribution without changing the noise source."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. If the target were N(3,1), choosing θ = 3 would match this simplified target exactly. Real neural generators are far more complicated."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — turning latent randomness into data"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let Z take values −1 and +1, each with probability 1/2, and define g_θ(z) = θ + 2z. If θ = 3, the generator outputs 1 or 5, each with probability 1/2. Thus P_θ is a distribution over {1,5}. If θ changes to 4, the possible outputs become 2 and 6. This tiny example shows how a fixed source of randomness plus a parameterized mapping induces a model distribution."
+        },
+        {
+          "type": "heading",
+          "text": "Check yourself"
+        },
+        {
+          "type": "paragraph",
+          "text": "If g_θ(z) = θ + z and z ∈ {−1,+1} with equal probabilities, what does the model generate when θ = 10? Answer: 9 and 11, each with probability 1/2."
+        }
+      ]
+    },
+    {
+      "title": "Training and sampling are different",
+      "slug": "training-and-sampling-are-different",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "During training, we compare real-data samples with generated samples and use an objective to update θ. During ordinary sampling after training, θ stays fixed and new latent inputs produce new outputs. A comparison/update loop is a conceptual picture; it does not guarantee that every update reduces the divergence."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image10.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 12. Training versus sampling.",
+          "alt": "Illustration: Training and sampling are different"
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter asks four connected questions: How can we measure mismatch without knowing the true density? Which divergence should we choose? Which generator family should we use? How can we optimize the parameters? These are design questions, not compulsory sequential stages."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image1.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 15. Four questions in generative modeling.",
+          "alt": "Illustration: Training and sampling are different"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image9.webp",
+          "width": 2172,
+          "height": 828,
+          "caption": "Figure 11. Training aims to improve distribution match.",
+          "alt": "Illustration: Training and sampling are different"
+        }
+      ]
+    },
+    {
+      "title": "Detour D — Optimization, minimum and argmin (detailed)",
+      "slug": "detour-d-optimization-minimum-and-argmin-detailed",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image38.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 16. Generator learning loop.",
+          "alt": "Illustration: Detour D — Optimization, minimum and argmin (detailed)"
+        },
+        {
+          "type": "paragraph",
+          "text": "An objective is a number we want to make small (or large). A minimum is the smallest attained objective VALUE. An argmin is the INPUT, or set of inputs, where that value is attained. A supremum is the least upper bound and need not be attained; we will explore it in detail in Part 2."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image8.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 13. An optimization objective.",
+          "alt": "Illustration: Detour D — Optimization, minimum and argmin (detailed)"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — minimum versus argmin"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Take L(θ) = (θ − 2)² + 1. Since every square is nonnegative, L(θ) ≥ 1."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image7.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 14. Minimum versus argmin.",
+          "alt": "Illustration: Detour D — Optimization, minimum and argmin (detailed)"
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Equality holds only when θ − 2 = 0, so θ = 2."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Therefore min_θ L(θ) = 1, whereas argmin_θ L(θ) = {2}."
+        },
+        {
+          "type": "paragraph",
+          "text": "Practice: For L(t) = (t + 4)² + 7, find the minimum value and argmin. Answer: minimum 7; argmin {−4}."
+        },
+        {
+          "type": "heading",
+          "text": "Extra worked examples — the optimizer versus the optimum"
+        },
+        {
+          "type": "paragraph",
+          "text": "Example A: L(t) = (t + 1)² + 4. The square is at least zero, so min L = 4 at t = −1; argmin L = {−1}. Example B: L(t) = (t² − 1)². The minimum is 0, achieved at t = −1 and t = 1; argmin L = {−1,1}. One objective can have more than one minimizing input."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistake"
+        },
+        {
+          "type": "paragraph",
+          "text": "Writing argmin L = 4 for Example A confuses an input with an objective value. Another mistake is to assume that writing an optimization problem means a training algorithm has already solved it. The example states the goal; finding a practical algorithm is a separate question."
+        }
+      ]
+    },
+    {
+      "title": "Detour E — Convex functions (detailed)",
+      "slug": "detour-e-convex-functions-detailed",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image36.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Figure 18. Convex versus concave functions.",
+          "alt": "Illustration: Detour E — Convex functions (detailed)"
+        },
+        {
+          "type": "paragraph",
+          "text": "A function f defined on a convex domain is convex when its graph never rises above the straight chord joining two points of its graph. Formally, for any a,b in the domain and 0 ≤ λ ≤ 1:"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image39.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 17. Convex function and chord.",
+          "alt": "Illustration: Detour E — Convex functions (detailed)"
+        },
+        {
+          "type": "paragraph",
+          "text": "f(λa + (1−λ)b) ≤ λf(a) + (1−λ)f(b)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The left side is the function evaluated at the weighted-average input. The right side is the weighted average of the two function values. The direction ≤ is essential. A differentiable function with f″(x) ≥ 0 throughout an interval is convex there, when the second derivative exists."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image3.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 19. The convexity inequality.",
+          "alt": "Illustration: Detour E — Convex functions (detailed)"
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — verify convexity for f(x)=x²"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Choose a = −2, b = 2 and λ = 1/2. The weighted-average input is 0."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Left side: f(0) = 0. Right side: 0.5 f(−2) + 0.5 f(2) = 4. Thus 0 ≤ 4."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. This checks one example, not the entire definition. For a full proof, note λa²+(1−λ)b² − (λa+(1−λ)b)² = λ(1−λ)(a−b)² ≥ 0."
+        },
+        {
+          "type": "paragraph",
+          "text": "A counterexample to convexity is f(x)=−x². At a=−1, b=1 and λ=1/2, the convexity inequality would require 0≤−1, which is false. The earlier coordinate-incorrect Image 18 is intentionally omitted."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — checking the inequality numerically"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let f(x) = x², a = 1, b = 3 and λ = 1/4. The weighted input is (1/4)·1 + (3/4)·3 = 2.5. The left side is f(2.5) = 6.25. The right side is (1/4)f(1) + (3/4)f(3) = 0.25 + 6.75 = 7. Thus 6.25 ≤ 7, as required."
+        },
+        {
+          "type": "heading",
+          "text": "Why one example is not a proof"
+        },
+        {
+          "type": "paragraph",
+          "text": "A single successful substitution only checks the inequality at the chosen a, b and λ. Convexity requires the inequality for every allowed a, b and λ. The algebraic identity above proves this universally for f(x)=x²."
+        },
+        {
+          "type": "heading",
+          "text": "Quick exercise — a nonconvex example"
+        },
+        {
+          "type": "paragraph",
+          "text": "For f(x)=−x², take a=−1, b=1, λ=1/2. The left side is f(0)=0, but the right side is [f(−1)+f(1)]/2=−1. Since 0 ≤ −1 is false, f is not convex on ℝ. This is a valid counterexample: to disprove a universal claim, one failure is enough."
+        }
+      ]
+    },
+    {
+      "title": "Why convexity enters f-divergence",
+      "slug": "why-convexity-enters-f-divergence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The example introduces variational divergence minimization through f-divergences. Under the standard density-ratio formulation, let P and Q have densities p and q, and assume P is absolutely continuous with respect to Q. For a convex generating function f on nonnegative ratios, normalized by f(1)=0:"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image40.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 20. Convexity and divergence nonnegativity.",
+          "alt": "Illustration: Why convexity enters f-divergence"
+        },
+        {
+          "type": "paragraph",
+          "text": "D_f(P ∥ Q) = ∫ q(x) f(p(x)/q(x)) dx"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the calculations below, we first use discrete distributions with positive Q probabilities. At zero-probability outcomes, apply the standard limiting conventions rather than dividing by zero."
+        },
+        {
+          "type": "heading",
+          "text": "Why is D_f nonnegative?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Under Q, the density ratio R = p(X)/q(X) has expectation E_Q[R] = ∫p(x)dx = 1. Jensen’s inequality gives E_Q[f(R)] ≥ f(E_Q[R]) = f(1) = 0. Thus D_f(P ∥ Q) ≥ 0. Equality is guaranteed when P = Q; the converse needs stronger assumptions on f."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — discrete f-divergence example"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Let P = (3/4, 1/4), Q = (1/2, 1/2), and f(u) = u ln u."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Ratios are (3/2, 1/2). Then D_f(P∥Q) = (3/4)ln(3/2) + (1/4)ln(1/2)."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Numerically this is about 0.1308 nats, which is nonnegative."
+        },
+        {
+          "type": "heading",
+          "text": "Reading the f-divergence formula without skipping steps"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a discrete sample space, replace the integral by a sum: D_f(P∥Q) = Σᵢ qᵢ f(pᵢ/qᵢ). First choose the outcomes, then write the pᵢ and qᵢ values, calculate the ratios pᵢ/qᵢ, apply f to each ratio, multiply by qᵢ, and add. This is the same structure as the integral in the chapter, expressed as a small table of probabilities."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — a different convex f"
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose f(u) = (u−1)², P=(3/4,1/4) and Q=(1/2,1/2). The ratios are 1.5 and 0.5. Their f-values are (0.5)²=0.25 and (−0.5)²=0.25. Multiply each by its Q weight: (1/2)(0.25)+(1/2)(0.25)=0.25. This is an illustration of the general f-divergence calculation, not an additional named divergence for the syllabus."
+        },
+        {
+          "type": "heading",
+          "text": "Conditions and common errors"
+        },
+        {
+          "type": "paragraph",
+          "text": "The usual ratio formula requires care where q(x)=0; do not divide by zero. For introductory finite examples we use strictly positive Q probabilities. Also, the function f must satisfy f(1)=0 and the convexity condition. If P=Q, every ratio equals 1, so D_f(P∥P)=Σᵢ pᵢ f(1)=0."
+        },
+        {
+          "type": "heading",
+          "text": "A complete calculation recipe for finite distributions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 1 — Check that P and Q are probability distributions: each entry is nonnegative and each row sums to 1. Both must describe the same outcomes in the same order."
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 2 — For KL, compute the ratios pᵢ/qᵢ and then the contributions pᵢ ln(pᵢ/qᵢ). Sum the contributions. Use natural logarithms unless the question specifies another base."
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 3 — For JS, form mᵢ=(pᵢ+qᵢ)/2 for each outcome. Compute KL(P∥M) and KL(Q∥M) separately, then take their average."
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 4 — For total variation, compute |pᵢ−qᵢ| for each outcome, sum, and divide by two. There are no logarithms."
+        },
+        {
+          "type": "paragraph",
+          "text": "Final check — KL and JS are nonnegative; total variation lies between 0 and 1. A negative numerical KL usually signals an arithmetic error."
+        }
+      ]
+    },
+    {
+      "title": "Examples: KL, JS and total variation",
+      "slug": "examples-kl-js-and-total-variation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "KL divergence is generated by f(u)=u ln u (with f(0)=0 by continuity), giving D_KL(P∥Q)=∫p ln(p/q). KL generally changes when P and Q are swapped; it is not a metric."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image5.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 21. Divergence versus metric distance.",
+          "alt": "Illustration: Examples: KL, JS and total variation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Jensen–Shannon divergence is based on the mixture M=(P+Q)/2: JS(P,Q) = 1/2 KL(P∥M) + 1/2 KL(Q∥M). It is symmetric. A standard generating function for the corresponding f-divergence is f(u)=1/2[u ln(2u/(1+u)) + ln(2/(1+u))]."
+        },
+        {
+          "type": "paragraph",
+          "text": "Total variation is TV(P,Q)=1/2∫|p−q|. One generating function is f(u)=|u−1|/2. Different conventions sometimes absorb the factor 1/2, so always check the definition used."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — asymmetry of KL"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image41.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 22. Forward and reverse KL.",
+          "alt": "Illustration: Examples: KL, JS and total variation"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Let P=(0.9,0.1), Q=(0.5,0.5)."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. KL(P∥Q)=0.9 ln(1.8)+0.1 ln(0.2) ≈ 0.3681."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. KL(Q∥P)=0.5 ln(0.5/0.9)+0.5 ln(0.5/0.1) ≈ 0.5108. The values differ."
+        },
+        {
+          "type": "heading",
+          "text": "Fully worked example — KL divergence in both directions"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image42.webp",
+          "width": 1774,
+          "height": 970,
+          "caption": "Figure 23. KL for two coins.",
+          "alt": "Illustration: Examples: KL, JS and total variation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Take P=(0.8,0.2), Q=(0.5,0.5). Using natural logarithms, KL(P∥Q)=0.8 ln(0.8/0.5)+0.2 ln(0.2/0.5)=0.8 ln(1.6)+0.2 ln(0.4)≈0.1927 nats. Reverse the roles: KL(Q∥P)=0.5 ln(0.5/0.8)+0.5 ln(0.5/0.2)=0.5 ln(0.625)+0.5 ln(2.5)≈0.2231 nats. The log ratios and the probability weights both change, so the two directions need not agree."
+        },
+        {
+          "type": "heading",
+          "text": "Fully worked example — Jensen–Shannon divergence"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image43.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 24. Jensen–Shannon mixture.",
+          "alt": "Illustration: Examples: KL, JS and total variation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the same P=(0.8,0.2) and Q=(0.5,0.5). Step 1: form M=(P+Q)/2=(0.65,0.35). Step 2: KL(P∥M)=0.8 ln(0.8/0.65)+0.2 ln(0.2/0.35)≈0.0542. Step 3: KL(Q∥M)=0.5 ln(0.5/0.65)+0.5 ln(0.5/0.35)≈0.0472. Step 4: JS(P,Q)=(0.0542+0.0472)/2≈0.0507 nats. Swapping P and Q leaves M unchanged and merely swaps the two KL terms, so JS is symmetric."
+        },
+        {
+          "type": "heading",
+          "text": "Fully worked example — total variation"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image44.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 25. Total variation area.",
+          "alt": "Illustration: Examples: KL, JS and total variation"
+        },
+        {
+          "type": "paragraph",
+          "text": "For P=(0.8,0.2) and Q=(0.5,0.5), TV(P,Q)=1/2 (|0.8−0.5|+|0.2−0.5|)=1/2 (0.3+0.3)=0.3. The absolute values prevent positive and negative differences from canceling. Unlike KL and JS, the result here is not measured in nats."
+        },
+        {
+          "type": "heading",
+          "text": "How to recognize which formula to use"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-1/part-1/image45.webp",
+          "width": 1536,
+          "height": 1096,
+          "caption": "Figure 26. Four divergence comparisons.",
+          "alt": "Illustration: Examples: KL, JS and total variation"
+        },
+        {
+          "type": "paragraph",
+          "text": "KL: multiply each P probability by ln(P/Q) and add. JS: calculate the midpoint distribution M first, then average KL(P∥M) and KL(Q∥M). TV: take absolute differences, sum and multiply by 1/2. All three can compare the same P and Q, but their numerical answers are not interchangeable."
+        },
+        {
+          "type": "heading",
+          "text": "Practice with complete answers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question 1: P=(0.6,0.4), Q=(0.4,0.6). Find TV. Solution: TV=1/2(|0.6−0.4|+|0.4−0.6|)=0.2. Question 2: For the same P,Q, find KL(P∥Q). Solution: 0.6 ln(1.5)+0.4 ln(2/3)≈0.0811 nats. Question 3: Compute JS. M=(0.5,0.5), KL(P∥M)=0.6 ln(1.2)+0.4 ln(0.8)≈0.02014; KL(Q∥M) has the same value, so JS≈0.02014 nats."
+        },
+        {
+          "type": "heading",
+          "text": "Zero probabilities — careful calculation"
+        },
+        {
+          "type": "paragraph",
+          "text": "For discrete KL, the term with pᵢ=0 contributes 0 by the standard limiting convention, provided qᵢ>0. If pᵢ>0 but qᵢ=0, KL(P∥Q) is infinite. This explains why blindly entering ln(0) or dividing by zero on a calculator gives misleading results. For JS, the mixture M avoids this particular infinite-KL issue when comparing finite discrete distributions."
+        },
+        {
+          "type": "heading",
+          "text": "Exam-style solved example: all three on the same distributions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question. Let P=(0.75,0.25) and Q=(0.25,0.75). Find KL(P∥Q), KL(Q∥P), JS(P,Q), and TV(P,Q)."
+        },
+        {
+          "type": "paragraph",
+          "text": "KL(P∥Q)=0.75 ln(3)+0.25 ln(1/3)=(0.75−0.25)ln 3=0.5 ln 3≈0.5493 nats."
+        },
+        {
+          "type": "paragraph",
+          "text": "KL(Q∥P)=0.25 ln(1/3)+0.75 ln 3=0.5 ln 3≈0.5493 nats. Here the two directions happen to be equal; KL is not symmetric in general."
+        },
+        {
+          "type": "paragraph",
+          "text": "M=(0.5,0.5). KL(P∥M)=0.75 ln(1.5)+0.25 ln(0.5)≈0.1308. By symmetry of this particular example, KL(Q∥M) is the same. Hence JS(P,Q)≈0.1308 nats."
+        },
+        {
+          "type": "paragraph",
+          "text": "TV(P,Q)=1/2(|0.75−0.25|+|0.25−0.75|)=1/2(0.5+0.5)=0.5."
+        },
+        {
+          "type": "paragraph",
+          "text": "Takeaway: the same P and Q can give different numerical divergences; always use the formula named in the question."
+        }
+      ]
+    },
+    {
+      "title": "Check your understanding",
+      "slug": "check-your-understanding",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "• What is the difference between n and d in a dataset?"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Why does “identically distributed” not mean identical samples?"
+        },
+        {
+          "type": "paragraph",
+          "text": "• What distribution does x̃=g_θ(z) have, and what determines it?"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Why is argmin not the same object as a minimum value?"
+        },
+        {
+          "type": "paragraph",
+          "text": "• What is the correct direction of the convexity inequality?"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Which extra condition on f makes Jensen imply nonnegative f-divergence?"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Why can KL divergence fail to be a distance metric?"
+        },
+        {
+          "type": "paragraph",
+          "text": "About the examples: Numerical exercises and prerequisite detours are original teaching aids. They clarify chapter material rather than introducing new syllabus topics."
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

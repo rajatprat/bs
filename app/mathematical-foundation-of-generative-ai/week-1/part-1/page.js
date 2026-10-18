@@ -1,0 +1,5 @@
+import data from '../../../../data/genai-week-1-part-1.json';
+import WeekSections, {WeekStats} from '../../../../components/WeekSections';
+import Blocks from '../../../../components/Blocks';
+export const metadata={title:'Generative AI · Week 1 · Part 1'};
+export default function Part(){return <main id="main" className="week-page"><nav className="breadcrumbs"><a href="/">Subjects</a><span>/</span><a href="/mathematical-foundation-of-generative-ai/">{data.subject}</a><span>/</span><a href="/mathematical-foundation-of-generative-ai/week-1/">Week 1</a><span>/</span><span>Part 1</span></nav><div className="eyebrow">WEEK 01 / PART 01</div><h1>Foundations<br/><span>to divergences.</span></h1><p className="lead">From data distributions and neural generators to optimization, convexity, and comparing probability distributions.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Begin Part 1 →</a><section className="study-note"><Blocks blocks={data.intro.slice(3)}/></section><WeekSections data={data}/></main>}

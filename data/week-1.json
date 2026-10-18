@@ -1,0 +1,1036 @@
+{
+  "subject": "Software Engineering",
+  "week": 1,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Software Engineering",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "WEEK 1  |  Illustrated Learning Notes",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Simple English  •  Real examples  •  Fast revision",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "A compact guide to the seven Week 1 sections: from software components and requirements to Waterfall, Spiral and Agile. The main explanations follow the topic sequence.",
+      "runs": []
+    },
+    {
+      "type": "image",
+      "src": "/images/image1.webp",
+      "width": 1538,
+      "height": 1013,
+      "caption": "Week 1 at a glance: the major ideas and their connections."
+    },
+    {
+      "type": "heading",
+      "text": "How to study",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "First look at the picture. Then read the short explanation. Try the THINK question before reading further. Revise with the comparison and questions at the end.",
+      "runs": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "What is Software Engineering?",
+      "slug": "what-is-software-engineering",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In early software projects, good programmers often relied on personal experience. Over time, useful practices were written down and organized into software engineering.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Meaning  Software engineering is an organized way to plan, build, test, and improve software. It is much more than writing code.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The course studies three connected areas: (1) processes and practices, such as Waterfall and Agile; (2) tools used for requirements, planning, coding and testing; and (3) code organization and clean coding practices.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image2.webp",
+          "width": 1700,
+          "height": 634,
+          "caption": "The five main activities in the introductory software development process."
+        },
+        {
+          "type": "paragraph",
+          "text": "The sections encourage reflection questions and learning-by-doing. Their course project gives practice with the full software development lifecycle through weekly milestones.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Good software must solve a real need, not just contain working code.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Large software is built from components",
+      "slug": "large-software-is-built-from-components",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An online shopping website is not developed as one giant program all at once. Teams often add features gradually. At the beginning, they may not even know every feature that will be needed later.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Component (module)  One manageable part of a big system, such as login, stock management or payment.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image3.webp",
+          "width": 1650,
+          "height": 1016,
+          "caption": "An e-commerce system is divided into parts that work together."
+        },
+        {
+          "type": "paragraph",
+          "text": "Different teams can build different modules separately and integrate them later. A module can hide its internal code while providing an interface: the agreed way other modules ask it to do something.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "THINK  Does the Cart team need to understand every line of code in the Payment team? Why not?",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Two examples from the chapter",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Inventory management  Tracks the amount, location, price and mix of stock; purchasing patterns, seasons, logistics and analytics help decide what to keep available.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Umbrellas may be in greater demand during a rainy season. Stock planning may need to change. The chapter also mentions personalized homepages; recommendations are a related feature, not the same task as keeping stock records.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image4.webp",
+          "width": 1672,
+          "height": 1013,
+          "caption": "Warehouse stock, customer demand and related product recommendations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Payment gateway  A service that helps an online store securely request payment authorization and receive a result.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image5.webp",
+          "width": 1672,
+          "height": 1007,
+          "caption": "Payment authorization request (blue) and response (green). Approval does not mean money has already settled."
+        },
+        {
+          "type": "paragraph",
+          "text": "The store sends payment information to a gateway; the gateway communicates with payment providers/banks and sends the approval or failure result back. Payment authorization and final settlement of money are not necessarily the same event.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  A big system works because separately built modules can communicate and be integrated.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Requirement specification: decide WHAT to build",
+      "slug": "requirement-specification-decide-what-to-build",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before thinking about code or screens, ask: What problem are we trying to solve? Who needs this software? What should it do?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Requirement  An explicit goal or condition the completed system should meet. Requirements should match what clients need.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image6.webp",
+          "width": 1660,
+          "height": 1019,
+          "caption": "First understand users and their needs; then plan the feature."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  For Amazon Pay, the team might study other Amazon components and look at wallet apps such as Paytm and PhonePe before deciding on features such as adding money, paying bills and viewing transactions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "1.  Understand the problem and intended users.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "2.  Study existing components to see how the new feature must connect.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "3.  Look at similar software to learn what users expect.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "4.  Write clear goals (requirements) that everyone can agree on.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "A client is not always an outside customer",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Type of client",
+              "Section example",
+              "What the software must do"
+            ],
+            [
+              "External person",
+              "Bank customer",
+              "Show balance, transfer money"
+            ],
+            [
+              "Internal department",
+              "Company HR / employee portal",
+              "Make employee/team information available"
+            ],
+            [
+              "Another program",
+              "Online store using a payment gateway",
+              "Send payment requests and receive results"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/image7.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "A client may be an external customer, an internal department or even another software system."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ask not only WHO uses the system, but WHY and HOW. This mental picture of the intended user (user persona) should guide the team.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Requirements = goals the software must meet for its clients.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Software design: create the big picture",
+      "slug": "software-design-create-the-big-picture",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Suppose several developers start coding Amazon Pay without agreeing on the structure. Each person may choose different inputs, data formats or responsibilities. Their parts can fail when connected.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image8.webp",
+          "width": 1672,
+          "height": 994,
+          "caption": "Without a design, independently built code may not fit together."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Developer A changes a function from pay(amount) to pay(amount, currency). Developer B still calls pay(amount). Developer B's module may now fail. Agreeing on interfaces and coordinating changes prevents this confusion.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software design  The big-picture view showing the structure of the system, the major parts and how they fit together.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image9.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "A house blueprint is like the design plan for software."
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Requirements say WHAT is needed; design provides the structure for HOW it will be built.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Development: write code that fits together",
+      "slug": "development-write-code-that-fits-together",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "After design, developers implement the features in code. Large teams may work from different places and time zones. The chapter mentions GitHub as a tool for collaboration.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image10.webp",
+          "width": 1622,
+          "height": 1018,
+          "caption": "Developers collaborate through code, documentation and shared tools."
+        },
+        {
+          "type": "heading",
+          "text": "Why are documentation and interfaces important?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Documentation explains what a part of the code does. An interface defines available actions, the requests or inputs it accepts, and the answers or outputs it returns - without exposing every internal detail.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image11.webp",
+          "width": 1672,
+          "height": 988,
+          "caption": "Shopping Cart sends a request; Payment Service returns a result through an interface."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  The payment service can change its internal implementation, but if the agreed interface stays the same, the cart can still use it. A changed interface may require other modules to change too.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Team coding succeeds when developers share a clear design and precise interfaces.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Testing: check the system before release",
+      "slug": "testing-check-the-system-before-release",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Software that runs is not automatically correct. Testing checks whether it behaves as required. Bugs can waste money or cause serious failures, so checking software matters.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Historical context: earlier reports cited studies estimating U.S. software-error losses of $59.5 billion in 2002 and $1.1 trillion in 2016. These are historical estimates quoted by the chapter, not verified current figures.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image12.webp",
+          "width": 1672,
+          "height": 962,
+          "caption": "Three testing levels discussed in the chapter."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Testing",
+              "What it checks",
+              "Simple example"
+            ],
+            [
+              "Unit",
+              "One function/class in isolation",
+              "A balance calculator returns the right answer"
+            ],
+            [
+              "Integration",
+              "Several pieces working together",
+              "Cart sends correct payment data"
+            ],
+            [
+              "Acceptance",
+              "The application meets user requirements",
+              "Real users can complete a purchase"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Alpha testing vs Beta testing",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image13.webp",
+          "width": 1672,
+          "height": 994,
+          "caption": "Alpha: internal employees in a controlled setting. Beta: actual users in real use."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the chapter, alpha and beta are discussed under acceptance testing. Alpha testing aims to find problems before public release; beta testing checks how actual users experience the software in real situations.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Unit = one part; Integration = parts together; Acceptance = needs of real users.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Maintenance: software still needs care",
+      "slug": "maintenance-software-still-needs-care",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "After adequate testing the feature is rolled out, but work is not finished. Users may find rare failures, unexpected behavior or problems on certain browsers and devices.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image14.webp",
+          "width": 1661,
+          "height": 1019,
+          "caption": "Maintenance means monitoring usage, changing code and adding features."
+        },
+        {
+          "type": "paragraph",
+          "text": "1.  Monitor how users use the feature and where they encounter difficulties.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "2.  Fix defects or release upgrades/patches.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "3.  Add useful features as needs change.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  A payment feature may work during testing, but a button may fail in a particular browser. The team finds and fixes the problem after release.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image15.webp",
+          "width": 1634,
+          "height": 1018,
+          "caption": "The phases form the software development lifecycle (SDLC)."
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Maintenance includes monitoring, updates and new features - not only bug fixing.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Build and Fix: an early coding approach",
+      "slug": "build-and-fix-an-early-coding-approach",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In Build and Fix, a programmer forms a rough idea of the requirements, begins coding immediately and then changes the program whenever it does not meet expectations. The chapter describes this as a common early programming style.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image16.webp",
+          "width": 1400,
+          "height": 1152,
+          "caption": "Build and Fix: begin coding, find problems, patch the code and repeat."
+        },
+        {
+          "type": "paragraph",
+          "text": "As systems grow, repeated patches without a clear design become difficult to manage. Software engineering developed more organized practices and lifecycle models.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Fixing code repeatedly is not a substitute for planning a large project.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Waterfall: the Plan and Document approach",
+      "slug": "waterfall-the-plan-and-document-approach",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The Waterfall Model arranges major activities sequentially. Before coding, the team creates a detailed plan and documentation. Progress is measured against that plan.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image17.webp",
+          "width": 876,
+          "height": 1672,
+          "caption": "Waterfall: Requirements → Design → Development → Testing → Maintenance."
+        },
+        {
+          "type": "paragraph",
+          "text": "This adds discipline, clear milestones and written decisions. But if users only see the full system at the end, misunderstandings may stay hidden for a long time.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image18.webp",
+          "width": 1672,
+          "height": 996,
+          "caption": "The chapter illustrates long development and feedback arriving late."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Section example: 2 months for requirements + 3 for design + 4 for development + 3 for testing = 12 months. At release, the client says: \"This is not what I expected.\" Reworking the system can be costly.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Four problems emphasized in the chapter",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "1.  Late changes increase time and cost.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "2.  Clients may not know exactly what they want until they see software.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "3.  Designers may be unsure which technical design is feasible or easy to use.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "4.  One long cycle can delay feedback for many months (the chapter cites roughly 6–18 months as an example).",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The sequence shown is the simplified Waterfall model. It does not mean that a real project is physically unable to revisit an earlier phase.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Waterfall = plan and document the phases, with a risk of discovering problems late.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Prototype Model: show a simple sample early",
+      "slug": "prototype-model-show-a-simple-sample-early",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "To discover what clients really want, developers can first build a limited, working prototype. The customer tries it and gives feedback before the actual system is built.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image19.webp",
+          "width": 1672,
+          "height": 983,
+          "caption": "An early prototype helps the team understand requirements better."
+        },
+        {
+          "type": "paragraph",
+          "text": "Advantages  Useful when the exact solution or technical issues are unclear. Seeing a sample helps both the customer and the developer.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Limitations  The chapter describes a prototype that is usually discarded, so making it adds cost. It also may not reveal bugs or risks that appear later when the full system is built.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Not every prototype in software engineering must be discarded; this point describes the prototype model taught in this chapter.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  A prototype is a small working sample for early feedback, not the full product.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Spiral Model: refine through repeated rounds",
+      "slug": "spiral-model-refine-through-repeated-rounds",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The Spiral Model combines planned development with repeated customer feedback. The system grows over multiple iterations rather than being built fully in one long pass.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image20.webp",
+          "width": 1623,
+          "height": 1000,
+          "caption": "Spiral Model: the same four activities repeat as the product grows."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "In each iteration",
+              "What the team does"
+            ],
+            [
+              "1. Determine objectives",
+              "Set goals; list alternatives and constraints"
+            ],
+            [
+              "2. Evaluate risks",
+              "Compare alternatives and identify or resolve risks"
+            ],
+            [
+              "3. Develop and test",
+              "Build/test the next version and show it to the client"
+            ],
+            [
+              "4. Plan next iteration",
+              "Use feedback to plan the next round"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Requirements and documents can be refined during successive iterations. The chapter notes that even these rounds may be long, citing 6–24 months as an example - very different from short Scrum sprints.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Spiral = planned iterations + explicit risk evaluation + customer feedback.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Agile: working software, feedback and change",
+      "slug": "agile-working-software-feedback-and-change",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Many teams found long plan-and-document projects difficult to deliver on time and within budget. The chapter describes the Agile Manifesto, written in February 2001, as a lighter-weight response.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Historical context: earlier reports cited project studies covering roughly 1995–2013 and reports that 80–90% were late, over budget or abandoned. This is a historical claim presented in the chapter, not a current rate.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "The four values of the Agile Manifesto",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image21.webp",
+          "width": 1541,
+          "height": 1013,
+          "caption": "Four Agile values: people, working software, collaboration and change."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Value Agile emphasizes",
+              "Over (still valuable)"
+            ],
+            [
+              "Individuals and interactions",
+              "Processes and tools"
+            ],
+            [
+              "Working software",
+              "Comprehensive documentation"
+            ],
+            [
+              "Customer collaboration",
+              "Contract negotiation"
+            ],
+            [
+              "Responding to change",
+              "Following a plan"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Agile does NOT say that documentation, contracts, tools or plans are useless; it says the items in the first column deserve more emphasis.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Deliver useful parts, collect feedback, improve",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image22.webp",
+          "width": 1665,
+          "height": 1019,
+          "caption": "Small increments allow the customer to see progress and respond early."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  A wallet app might first let users view their balance, then add payment history and later add bill payments. Feedback from each working version helps decide what to change next.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Agile is a set of values; short releases and constant feedback are ways to apply those values.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Agile approaches and practices",
+      "slug": "agile-approaches-and-practices",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The chapter introduces three approaches. They share Agile values but organize work in different ways.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image23.webp",
+          "width": 1672,
+          "height": 1002,
+          "caption": "XP focuses on coding practices; Scrum organizes teamwork in short sprints."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Approach",
+              "Simple meaning"
+            ],
+            [
+              "Extreme Programming (XP)",
+              "Engineering practices such as pair programming, test-driven development and behavior-driven development"
+            ],
+            [
+              "Scrum",
+              "The team works in short iterations called sprints (about 1–2 weeks in this chapter)"
+            ],
+            [
+              "Kanban",
+              "Small work items are placed on a board so the team can see each item’s current state"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Five terms to recognize",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Term",
+              "Meaning in easy English"
+            ],
+            [
+              "Pair programming",
+              "Two developers work together on code"
+            ],
+            [
+              "Test-driven development (TDD)",
+              "Write a test for desired behavior before writing code to make it pass"
+            ],
+            [
+              "Behavior-driven development (BDD)",
+              "Describe expected software behavior in examples that guide development"
+            ],
+            [
+              "User story",
+              "A short statement of a user’s need"
+            ],
+            [
+              "Stand-up meeting",
+              "A short Scrum team meeting to coordinate work"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/image24.webp",
+          "width": 1672,
+          "height": 931,
+          "caption": "Three practices: pair programming, red-green-refactor TDD and behavior examples in BDD.",
+          "qualityNote": "Terminology correction: read “Behavior-Driven Design (BDD)” as the chapter label. The standard term is Behavior-Driven Development. The TDD cycle shown is Red → Green → Refactor."
+        },
+        {
+          "type": "heading",
+          "text": "Kanban: see work moving across a board",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A Kanban board makes unfinished and finished work visible. Teams move task cards through columns and can limit how many tasks are worked on at once.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image25.webp",
+          "width": 1672,
+          "height": 1004,
+          "caption": "Example Kanban workflow: To Do → In Progress → Testing → Done."
+        },
+        {
+          "type": "paragraph",
+          "text": "A typical Kanban board has “To Do → In Progress → Done” columns. The Scrum side of the illustration above also shows this useful way to visualize task status.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Agile is a philosophy, not just a checklist of Scrum meetings or coding practices.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Terminology: BDD normally means Behaviour-Driven Development. The teaching example and one illustration use “Design”; retain that as chapter wording, not the standard expansion. BDD uses concrete examples of expected behaviour, often Given–When–Then, to support shared understanding."
+        }
+      ]
+    },
+    {
+      "title": "How do we choose a development approach?",
+      "slug": "how-do-we-choose-a-development-approach",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The final chapter gives 10 questions. In its teaching heuristic, mostly YES answers suggest considering a Plan and Document approach; mostly NO answers suggest considering Agile.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/image26.webp",
+          "width": 1582,
+          "height": 1015,
+          "caption": "Broad comparison only: actual projects may mix techniques from both approaches."
+        },
+        {
+          "type": "image",
+          "src": "/images/image27.webp",
+          "width": 1672,
+          "height": 948,
+          "caption": "Requirements, customers, complexity, regulation and teamwork can influence which approach fits."
+        },
+        {
+          "type": "heading",
+          "text": "The 10 questions from the Week 1 slide",
+          "runs": []
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "#",
+              "Decision question"
+            ],
+            [
+              "1",
+              "Must specifications be fixed upfront?"
+            ],
+            [
+              "2",
+              "Are customers unavailable for much of the project?"
+            ],
+            [
+              "3",
+              "Is the system large?"
+            ],
+            [
+              "4",
+              "Is it very complex, for example real-time software?"
+            ],
+            [
+              "5",
+              "Will the product be used for a long lifetime?"
+            ],
+            [
+              "6",
+              "Are the available software tools poor or limited?"
+            ],
+            [
+              "7",
+              "Is the development team geographically distributed?"
+            ],
+            [
+              "8",
+              "Is the team in a documentation-oriented culture?"
+            ],
+            [
+              "9",
+              "Does the team have weak programming skills?"
+            ],
+            [
+              "10",
+              "Is the system heavily regulated?"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Important: These are the chapter’s broad rules of thumb, adapted from a textbook, not universal laws. Large, safety-critical or regulated products need strong verification, documentation and controls; that does not automatically rule out Agile practices. Team skills, tools and customer availability also matter.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  A bank may need extensive documentation for compliance. A shopping app with changing customer needs may benefit from frequent Agile releases. A real company may use both kinds of practices.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Pick an approach based on the client, the system and the team - not just a fashionable method.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "Fast revision: can you explain these?",
+      "slug": "fast-revision-can-you-explain-these",
+      "blocks": [
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Term",
+              "In one easy sentence"
+            ],
+            [
+              "Software engineering",
+              "Build software through organized activities and practices."
+            ],
+            [
+              "Component / module",
+              "One manageable part of a larger system."
+            ],
+            [
+              "Interface",
+              "Agreement on available actions, requests and responses."
+            ],
+            [
+              "Requirement",
+              "A goal or condition needed by a client."
+            ],
+            [
+              "Design",
+              "Big-picture structure before implementation."
+            ],
+            [
+              "Development",
+              "Code the features according to design and requirements."
+            ],
+            [
+              "Unit / Integration / Acceptance",
+              "One unit / linked units / user requirements."
+            ],
+            [
+              "Maintenance",
+              "Monitor, repair, upgrade, extend after release."
+            ],
+            [
+              "Build and Fix",
+              "Code first; patch whatever is wrong."
+            ],
+            [
+              "Waterfall",
+              "Sequential, planned and documented development."
+            ],
+            [
+              "Prototype",
+              "Limited working sample for early feedback."
+            ],
+            [
+              "Spiral",
+              "Repeated planning with risk checks and refinement."
+            ],
+            [
+              "Agile",
+              "Working increments, collaboration and response to change."
+            ],
+            [
+              "XP / Scrum / Kanban",
+              "Engineering practices / sprints / visual task tracking."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Five quick concept checks",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "1.  A payment function works alone but fails when called by the shopping cart. Which testing level is needed?  Answer: Integration testing.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "2.  An employee portal is built for a company’s HR department. Is the client external?  Answer: No, internal.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "3.  A developer changes a function’s input and another module breaks. Which agreement was changed?  Answer: Its interface.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "4.  A client cannot describe the screens they want. What can help them respond early?  Answer: A working prototype.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "5.  An iteration begins by listing options and evaluating possible failures. Which model makes risk evaluation explicit?  Answer: Spiral.",
+          "runs": []
+        }
+      ]
+    }
+  ]
+}

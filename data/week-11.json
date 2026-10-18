@@ -1,0 +1,1462 @@
+{
+  "subject": "Software Engineering",
+  "week": 11,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "SOFTWARE ENGINEERING",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Week 11 Study Guide",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Software Organizations  •  Communication, Collaboration & Productivity  •  What Makes a Great Software Engineer?",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "An illustrated, student-friendly self-study guide to software engineering",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "What you will learn"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Why software companies need many different roles—not just developers.",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "How communication, conceptual integrity, knowledge sharing, and collaboration affect team productivity.",
+      "runs": []
+    },
+    {
+      "type": "bullet-item",
+      "text": "Why great software engineers need coding competence, rational decisions, communication, and continuous learning.",
+      "runs": []
+    },
+    {
+      "type": "heading",
+      "text": "Study roadmap",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "PART A  •  Software organizations and professional roles (Topics 1–12)",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "PART B  •  Communication, collaboration and productivity (Topics 13–22)",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "PART C  •  What makes a great software engineer? (Topics 23–27)",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "END  •  Comparison tables, quick revision, practice questions and solutions",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Remember  |  Study tip: Read the example under each concept, then explain the illustration in your own words before moving on.",
+      "runs": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "PART A  |  SOFTWARE ORGANIZATIONS",
+      "slug": "part-a-software-organizations",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "1. The real purpose of a software company",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A software company does not exist only to produce code or to launch an application. Its purpose is to provide value to people who might use the software. The software is a means of achieving that purpose.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A technically impressive product that nobody needs or uses does not achieve this goal. Teams must therefore understand users, identify their problems, and check whether the proposed software helps them.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A seller portal becomes valuable when sellers can actually manage listings, orders, and payments more easily—not merely because the portal has many screens.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Always ask: “Whose problem does this solve, and how?”",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Why this matters — A feature list describes what software contains. User value describes what people can achieve with it. A team should keep checking that its features actually support the intended outcome.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image1.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 01 • Value matters more than simply building features.",
+          "alt": "Value matters more than simply building features."
+        },
+        {
+          "type": "heading",
+          "text": "2. Software development is a team effort",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software engineering involves more than the development lifecycle. It also requires communication and coordination among people who study the market, plan the product, design interactions, write code, sell the product, and support its users.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "These roles depend on each other. A decision made by one group can change the work of another group. This is why communication is a professional engineering skill, not an optional extra.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A new seller-requested feature may need product approval, a revised screen design, implementation, testing, and an updated support article.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image2.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 02 • Different roles contribute to one useful product.",
+          "alt": "Different roles contribute to one useful product."
+        },
+        {
+          "type": "heading",
+          "text": "3. Marketing: discover needs and opportunities",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The marketing team studies opportunities in the market: who the potential users are, what problems they face, and what kinds of solutions may be useful. Market research helps the company decide where it can provide value.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Marketing also promotes the company and communicates its products and services to an appropriate audience. It should understand the product well enough to communicate its real capabilities.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A team surveys small sellers and discovers that tracking stock across channels is difficult. This information can guide the product team.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image3.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 03 • Marketing explores user needs and potential markets.",
+          "alt": "Marketing explores user needs and potential markets."
+        },
+        {
+          "type": "heading",
+          "text": "4. Product manager: balance three needs",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The product manager works at the intersection of business, technology, and user experience. Business asks whether the product supports company goals and return on investment. Technology asks what is feasible, what systems are involved, and how much effort changes require. User experience asks whether people can use the product successfully.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "These needs can conflict. The product manager works with marketing, sales, designers, and engineers to make trade-offs. A product manager need not be the person writing code, but should understand enough technology to make informed decisions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A highly requested feature may be useful but too costly for the current release. The product manager may prioritize a simpler version first.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Product manager ≠ project manager. Product management balances what value to build; project management organizes delivery.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A useful trade-off — Imagine users want a sophisticated dashboard, but it would delay the release. The product manager brings together user value, development effort, and business priorities. The answer is not automatically “build everything” or “reject everything.”",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image4.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 04 • Product managers balance business, technology, and user experience.",
+          "alt": "Product managers balance business, technology, and user experience."
+        },
+        {
+          "type": "heading",
+          "text": "5. Designers: turn requirements into usable solutions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Designers focus on how users interact with the system and how requirements become practical solutions. They speak with users, create prototypes, collect feedback, and revise designs.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Design is not simply choosing attractive colours. It includes making workflows understandable, removing unnecessary effort, and ensuring the intended functionality is accessible.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A designer tests a seller’s “Add Product” screen with users, notices confusion about mandatory fields, and improves the layout.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Prototype versus finished software — A prototype helps people react to a proposed workflow before the whole application is implemented. Feedback at this stage may reveal confusing steps that would be expensive to change later.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image5.webp",
+          "width": 2048,
+          "height": 833,
+          "caption": "Illustration 05 • Talk to users, prototype, and revise.",
+          "alt": "Talk to users, prototype, and revise."
+        },
+        {
+          "type": "heading",
+          "text": "6. Software engineers: implement and collaborate",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software engineers work with others to implement requirements through code. In medium and large organizations, product direction is generally shaped by product managers and designers, while engineers implement and make technical decisions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "In startups and smaller teams, several roles may be combined. An engineer may also discuss user needs, make product choices, and help with design. The exact division of responsibility depends on the organization.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Role boundaries are illustrative. Engineers also contribute to discovering requirements, assessing user needs and shaping product trade-offs in larger organizations. Implementation does not mean blindly accepting an infeasible or unclear specification."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): An engineer develops the order-status API, checks that it matches the agreed requirements, and coordinates with the interface team.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image6.webp",
+          "width": 2048,
+          "height": 833,
+          "caption": "Illustration 06 • Requirements and designs become working features.",
+          "alt": "Requirements and designs become working features."
+        },
+        {
+          "type": "heading",
+          "text": "7. Engineering and project management",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Large projects need people who organize work, coordinate teams, prioritize tasks, plan schedules, and identify required resources. The chapter describes engineering managers or project managers in this coordination context.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The important idea is that someone must help information move across the team and ensure dependencies are managed. In practice, job titles and responsibilities may differ across organizations.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): If the payment module depends on a completed order module, the manager helps the teams agree on delivery order and timelines.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image7.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 07 • Coordination makes a complex project manageable.",
+          "alt": "Coordination makes a complex project manageable."
+        },
+        {
+          "type": "heading",
+          "text": "8. Sales: reach customers and return feedback",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The sales team works to bring the product to customers identified through market activity. Sales also learns what prospective and existing customers want.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "This feedback matters to the next product cycle. Requests, objections, and problems heard by sales can be passed to marketing, product management, design, and engineering. However, the sales team should not promise technically impossible or excessively costly features without consulting development.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A customer asks for offline order entry. Sales checks feasibility with the product and engineering teams before committing to it.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Feedback loop — Sales conversations do not end when a customer signs up. Repeated questions and feature requests can become inputs for later product decisions. The product team must still evaluate feasibility.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image8.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 08 • Sales connects customers with the product team.",
+          "alt": "Sales connects customers with the product team."
+        },
+        {
+          "type": "heading",
+          "text": "9. Customer support and escalation",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Customer support helps people who get stuck using the product. Help can be provided through documentation, FAQs, chat, email, or telephone.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Level-1 support typically addresses common questions and known problems. A difficult bug or unusual problem can be escalated to Level-2 or another specialist. Support also reports recurring defects and usability problems back to the product and engineering teams.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Support tiers differ by organization. Escalation should consider severity and impact as well as complexity: an urgent widespread failure may need immediate specialist or incident response rather than waiting through every tier."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): Level-1 explains how to reset a password. An unexpected login failure affecting many users is escalated for technical investigation.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Escalation in practice — A support agent first checks the known steps and available documentation. If the issue needs specialist investigation, the agent records enough details for the next support level rather than asking the customer to start from zero.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image9.webp",
+          "width": 2048,
+          "height": 833,
+          "caption": "Illustration 09 • Simple questions are handled first; complex issues are escalated.",
+          "alt": "Simple questions are handled first; complex issues are escalated."
+        },
+        {
+          "type": "heading",
+          "text": "10. Data scientists: turn data into insights",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Data scientists analyse information generated by users and different company teams. Their findings can reveal sales patterns, app-usage trends, and areas for improvement.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Data can reveal an association or a pattern, but does not by itself establish its cause. In the form-abandonment example, combine usage evidence with user research or a suitable experiment before concluding that form length caused the problem."
+        },
+        {
+          "type": "paragraph",
+          "text": "These insights help marketing, engineers, and product teams make better-informed choices about future releases or business direction.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): Usage data shows that sellers frequently abandon a long product-upload form. The team investigates whether the workflow should be simplified.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image10.webp",
+          "width": 2048,
+          "height": 833,
+          "caption": "Illustration 10 • Data can guide product and business decisions.",
+          "alt": "Data can guide product and business decisions."
+        },
+        {
+          "type": "heading",
+          "text": "11. Ethics and policy specialists",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software products often involve data, permissions, licensing, and risks of misuse. Ethics and policy specialists bring expertise from fields such as law, policy, and social sciences.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "They help shape terms of service, software licences, privacy policies, and decisions about responsible use. Their role is particularly important for systems handling large amounts of data or having significant potential for misuse.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A team building a data-intensive app seeks policy guidance before deciding what user information to collect and how to explain its use.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image11.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 11 • Privacy, licensing, and responsible use matter.",
+          "alt": "Privacy, licensing, and responsible use matter."
+        },
+        {
+          "type": "heading",
+          "text": "12. Many roles, one product",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "No single department can deliver customer value in isolation. Marketing discovers needs; product management balances priorities; design plans the interaction; engineering builds; sales reaches customers; support resolves problems; data analysis identifies patterns; and policy expertise helps address responsible use.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The central lesson of the first chapter is to consider other perspectives and collaborate rather than focusing only on your own assigned work.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Think of the software product as a shared responsibility, not a collection of isolated tasks.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Connecting the roles — A complaint about a confusing checkout screen might be reported by support, prioritized by product management, redesigned by UX, implemented by engineering, and explained to customers by sales. The same user problem crosses several roles.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image12.webp",
+          "width": 1672,
+          "height": 1018,
+          "caption": "Illustration 12 • Feedback and decisions connect all teams.",
+          "alt": "Feedback and decisions connect all teams."
+        }
+      ]
+    },
+    {
+      "title": "PART B  |  COMMUNICATION, COLLABORATION & PRODUCTIVITY",
+      "slug": "part-b-communication-collaboration-productivity",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "13. Communication preserves conceptual integrity",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Conceptual integrity means that people working on a product have a common understanding of what is being built and why. It becomes especially important when different teams develop different parts of the same system.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Clarification: shared understanding supports conceptual integrity, but the design must also remain coherent: terminology, behaviour and interfaces should fit together consistently. Sending the same message to everyone is not sufficient if the design still contains contradictory rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "Without frequent, systematic communication, teams may make different assumptions about requirements or interfaces. Each module might work by itself while the overall product fails to meet user needs.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): One team thinks “order completed” means payment received; another thinks it means goods delivered. Agreeing on the meaning before implementation prevents confusion.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Conceptual integrity = shared understanding of the product and its purpose.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "What goes wrong without a shared definition? — Two teams may each implement their own reasonable interpretation of a term. Their modules can pass individual tests but still disagree when connected. A written definition and a short discussion can prevent this.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image13.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 13 • A shared vision prevents incompatible assumptions.",
+          "alt": "A shared vision prevents incompatible assumptions."
+        },
+        {
+          "type": "heading",
+          "text": "14. Cross-disciplinary collaboration",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Engineers may build software for industries they do not know deeply. In such projects, domain experts are essential: they understand the real-world tasks, constraints, and language of the field.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Good collaboration requires an open mind. Engineers must listen to the domain expert, while also explaining technical constraints clearly. Neither side should assume that its own viewpoint is sufficient.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A hospital scheduling system needs clinicians to explain clinical workflows and engineers to explain what the software can reliably support.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Two kinds of expertise — Domain experts know how work happens in the real world; software engineers know how a software system can represent and support that work. Collaboration is successful when both perspectives shape the solution.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image14.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 14 • Domain experts and software engineers contribute different knowledge.",
+          "alt": "Domain experts and software engineers contribute different knowledge."
+        },
+        {
+          "type": "heading",
+          "text": "15. Teams must communicate continuously",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Communication should happen both within teams and across teams. It helps clarify requirements, coordinate interfaces, discover problems early, and keep everyone aligned.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Continuous communication means keeping people informed when it matters, not constant interruption. Record decisions and interface contracts, use asynchronous updates where appropriate, and protect focused work when no immediate coordination is needed."
+        },
+        {
+          "type": "paragraph",
+          "text": "An engineer who works quickly but ignores colleagues may create incompatible modules or implement the wrong functionality. Asking a short clarifying question can save substantial rework.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): Before developing the checkout screen, frontend and backend engineers agree on the API response and error cases.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image15.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 15 • Frontend, backend, and testing share the same blueprint.",
+          "alt": "Frontend, backend, and testing share the same blueprint."
+        },
+        {
+          "type": "heading",
+          "text": "16. Ways engineers communicate",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Engineers communicate by talking face to face, email, team chat, and meetings. Different channels suit different needs: a quick question may need a conversation, while a decision affecting many people should also be recorded for later reference.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter stresses that communication must be precise and unambiguous. The goal is not merely to send a message but to create the same understanding in the sender and receiver.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): Instead of “fix the order page,” write “show a validation message when quantity is zero and prevent order submission.”",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose a channel deliberately — A quick chat can clarify a small doubt. A meeting can resolve a disagreement among several teams. A written record is important when the outcome must remain available to future team members.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image16.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 16 • Different situations call for different communication channels.",
+          "alt": "Different situations call for different communication channels."
+        },
+        {
+          "type": "heading",
+          "text": "17. Listen, discuss, and decide",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "People can become attached to their own implementation ideas. Effective collaboration requires listening to alternatives and revising assumptions when new information arrives.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "When a requested feature is difficult, the team should discuss feasibility and cost rather than immediately agreeing or dismissing the request. This also helps marketing and sales describe the product accurately.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A salesperson asks for a complex real-time feature. The engineer explains the cost, and the group agrees on a smaller useful version.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image17.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 17 • Different perspectives can reveal a feasible solution.",
+          "alt": "Different perspectives can reveal a feasible solution."
+        },
+        {
+          "type": "heading",
+          "text": "18. Knowledge sharing reduces dependency",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Some knowledge is easy to discover using development tools, such as where a function is defined. Other knowledge is harder to recover, such as why a particular design choice was made.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "If that reasoning exists only in one developer’s memory, colleagues may wait for replies—or lose the knowledge entirely when the developer leaves. Archiving important decisions and explanations reduces this risk.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter also recommends rotating developers across projects and cross-training so that knowledge is shared by several people.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A developer records why a payment retry is limited. Later, a new teammate can read the decision rather than guess.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Knowledge versus information — Finding a function in source code is not the same as understanding why the team selected that design. Documenting the reasoning helps future engineers avoid repeating an old mistake.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image18.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 18 • Documented decisions remain available after team members move on.",
+          "alt": "Documented decisions remain available after team members move on."
+        },
+        {
+          "type": "heading",
+          "text": "19. Knowledge-sharing tools",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Issue trackers such as JIRA or Pivotal Tracker record issues, user stories, requirements, and the history of work. GitHub and project documentation help engineers understand code and libraries.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Tool names are examples from the teaching example. Study the functions—tracking work, preserving decisions and finding knowledge—rather than assuming that any named service or old interface remains available."
+        },
+        {
+          "type": "paragraph",
+          "text": "Team chat tools such as Slack support topic-specific channels and direct conversations. Q&A resources such as Stack Overflow help engineers find solutions to common technical problems.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The main point is not any particular brand. It is that information and decisions should be discoverable instead of trapped in individual conversations.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): When a bug returns months later, an issue tracker can show what was changed and why.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image19.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 19 • Issue trackers, documentation, chat, and Q&A resources.",
+          "alt": "Issue trackers, documentation, chat, and Q&A resources."
+        },
+        {
+          "type": "heading",
+          "text": "20. Productivity is more than lines of code",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Traditionally, productivity means the amount of work completed in a given time. In software engineering, counting lines of code does not adequately measure useful progress because software is a collaborative product.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An individual may finish many assigned tasks but reduce team productivity by ignoring requirements, failing to coordinate, or leaving others to repair integration problems.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Team productivity is therefore linked to delivering the intended system effectively, not simply writing code quickly.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A developer writes 1,000 lines of incompatible code; another writes 100 lines that solve the actual problem and integrate correctly. Line count alone cannot tell us who helped the team more.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Individual output versus team outcome — Finishing your own task is useful only when it contributes to the shared product. Integration, correct requirements, quality, and helping others can be more valuable than producing a large amount of code.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image20.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 20 • High individual output can still hurt the overall team.",
+          "alt": "High individual output can still hurt the overall team."
+        },
+        {
+          "type": "heading",
+          "text": "21. Tools can improve productivity",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Appropriate tools make work faster and easier to coordinate. An IDE helps navigate and edit code. An issue tracker shows both overall progress and individual tasks. Version control helps teams manage code changes. Documentation and chat make information easier to find and exchange.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Tools are useful because they support the work, not because simply installing more tools makes a team productive. People still need clear goals and good collaboration.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A team uses an issue tracker to see which feature is blocked and a version-control system to integrate an agreed fix.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image21.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 21 • IDEs, issue trackers, version control, documentation, and chat.",
+          "alt": "IDEs, issue trackers, version control, documentation, and chat."
+        },
+        {
+          "type": "heading",
+          "text": "22. Meetings can help team productivity",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Meetings, emails, and conversations may look like interruptions to an individual who wants uninterrupted coding time. However, from the team’s perspective, they can be necessary for resolving misunderstandings and maintaining a shared vision.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter does not claim that every meeting is useful. Its point is that coordination activities should not automatically be treated as wasted time. Effective communication helps teams build what the customer actually asked for.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A brief meeting resolves a disagreement about a requirement before two teams spend days implementing conflicting solutions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "When a meeting helps — A short meeting that settles an interface contract can save several days of rework. A meeting without a clear question or useful outcome may not help. The chapter argues for useful coordination, not meetings for their own sake.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image22.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Illustration 22 • Discuss, align, resolve, and plan.",
+          "alt": "Discuss, align, resolve, and plan.",
+          "qualityNote": "Read the title conditionally: purposeful meetings can improve team productivity by resolving coordination problems. More meetings do not automatically mean more productivity."
+        }
+      ]
+    },
+    {
+      "title": "PART C  |  WHAT MAKES A GREAT SOFTWARE ENGINEER?",
+      "slug": "part-c-what-makes-a-great-software-engineer",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "23. Four qualities of a great engineer",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter describes research based on interviews with experienced software engineers, with findings presented in the software engineering research community. The central message is that strong coding skills matter greatly, but they are not sufficient by themselves.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A great software engineer also makes sound decisions, builds shared understanding through effective communication, and keeps learning. These qualities reinforce each other: good decisions need information, information often comes from other people, and technical knowledge must remain current.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Competent coding is necessary, but great engineering includes judgment, teamwork, and learning.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "How the qualities work together — Good coding helps create reliable software. Sound decisions guide design choices. Communication ensures the team understands those choices. Continuous learning helps engineers respond when the tools or context change.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image23.webp",
+          "width": 1672,
+          "height": 1019,
+          "caption": "Illustration 23 • Coding, decisions, communication, and learning.",
+          "alt": "Coding, decisions, communication, and learning.",
+          "qualityNote": "These are the chapter’s four revision themes, not an exhaustive list of attributes from the cited engineering research."
+        },
+        {
+          "type": "heading",
+          "text": "24. Coding competence and engineering decisions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Competent coding includes producing clean, modular, reliable code and practising effective design principles. Good documentation and a good interface cannot compensate for software that is buggy or poor quality.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Engineers also make macro-level decisions, such as architecture, framework, and library choices, and micro-level decisions, such as which algorithm, data structure, or class design to use. Both types affect the final product.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Good judgment develops with experience, but the chapter emphasizes using a systematic decision process rather than relying only on intuition.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): Choosing a system architecture is a macro decision; choosing how to search a list inside one module is a micro decision.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "How the levels interact — A macro choice can limit or enable later micro choices. For example, a broad architecture affects which modules communicate, while an algorithm choice affects how one part of the system performs.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image24.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Illustration 24 • Macro choices shape systems; micro choices shape implementation.",
+          "alt": "Macro choices shape systems; micro choices shape implementation."
+        },
+        {
+          "type": "heading",
+          "text": "25. Rational decision-making: five steps",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Identify the decision to be made. State clearly what must be decided.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Identify alternatives. List plausible options instead of immediately choosing the first idea.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Consider potential outcomes. Think through the likely consequences of each option.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Evaluate for the given context. Compare those outcomes against the project’s needs and constraints.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "5. Make a decision. Choose the option best supported by the available information.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The process depends on gathering enough information. Engineers should ask others for help, listen to evidence, and remain willing to change an earlier opinion.",
+          "runs": []
+        },
+        {
+          "type": "note",
+          "text": "Decision follow-through: state assumptions and uncertainty, choose a time budget proportional to the risk, record the rationale, and revisit the decision when results or constraints change. A systematic process improves reasoning but cannot guarantee a correct outcome."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): A team must choose how to store frequently accessed product information. It lists options, considers complexity and expected usage, evaluates trade-offs for its current project, then decides. The chapter gives the process, not a universal best storage choice.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  The correct choice depends on context; the process matters more than a favourite tool.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked decision example — Decision: how should a small team record defects? Alternatives: a shared document or an issue tracker. Outcomes: a document is simple to start; a tracker can record ownership and status. Context: several developers work on many defects. Decision: use an issue tracker, and review whether it meets the team’s needs. This is an original teaching example, not a mandated tool choice.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image25.webp",
+          "width": 2043,
+          "height": 865,
+          "caption": "Illustration 25 • The chapter’s five-step rational decision process.",
+          "alt": "The chapter’s five-step rational decision process."
+        },
+        {
+          "type": "heading",
+          "text": "26. Communicate according to your audience",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Effective communication is more than speaking clearly. It means explaining ideas at a level the listener can understand while preserving the correct meaning.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "An engineer may need to explain the same issue to a non-technical user, a manager, and a technical colleague. The relevant details will differ. Avoid unnecessary jargon with non-technical listeners, but do not oversimplify so much that they form the wrong understanding.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Building shared understanding helps the team protect the product’s intended purpose.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): For a slow search feature: tell a user “results may take longer”; tell a manager “this affects response time and needs investigation”; tell an engineer which query or component needs profiling.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Same fact, different detail — The underlying problem must remain truthful in every explanation. A customer needs the practical impact; a manager needs the delivery or business impact; an engineer needs technical evidence for investigation.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image26.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Illustration 26 • Explain the same issue differently to different audiences.",
+          "alt": "Explain the same issue differently to different audiences."
+        },
+        {
+          "type": "heading",
+          "text": "27. Continuous learning and professional growth",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Software engineering changes quickly. Programming languages, development environments, collaboration methods, and tools evolve. Great engineers stay curious, ask how things work, and keep updating their knowledge.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The chapter suggests learning through blogs, websites and forums, discussions with others, conferences, and academic research papers. It mentions the International Conference on Software Engineering as a source of emerging research and ideas.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "The course ends by noting that organizations may use different tools and detailed processes. Once you understand the underlying concepts, you can adapt to different ways of working.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Example (illustrative): An engineer learns a new testing approach, tries it on a small feature, asks teammates for feedback, and adopts it when it proves useful.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Learning is not an activity that ends when a course ends.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Learning as a habit — Read a relevant technical discussion, test the idea in a small experiment, compare it with your project’s needs, and share what you learned. This connects individual learning back to team knowledge.",
+          "runs": []
+        },
+        {
+          "type": "image",
+          "src": "/images/week-11/image27.webp",
+          "width": 1671,
+          "height": 1019,
+          "caption": "Illustration 27 • Learn from blogs, communities, conferences, and research.",
+          "alt": "Learn from blogs, communities, conferences, and research."
+        }
+      ]
+    },
+    {
+      "title": "CONCEPT CHECK  |  ROLES AT A GLANCE",
+      "slug": "concept-check-roles-at-a-glance",
+      "blocks": [
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Role",
+              "Main contribution",
+              "Typical question"
+            ],
+            [
+              "Marketing",
+              "Understand market needs and communicate offerings",
+              "Who needs this and why?"
+            ],
+            [
+              "Product manager",
+              "Balance business, technology, and UX",
+              "What should we build?"
+            ],
+            [
+              "Designer",
+              "Create and test usable interactions",
+              "How will people use it?"
+            ],
+            [
+              "Software engineer",
+              "Implement and integrate working software",
+              "How should it work technically?"
+            ],
+            [
+              "Engineering/project coordination",
+              "Plan work and manage dependencies",
+              "How do teams deliver together?"
+            ],
+            [
+              "Sales",
+              "Reach customers and relay their feedback",
+              "What do customers ask for?"
+            ],
+            [
+              "Customer support",
+              "Help users and escalate complex issues",
+              "What is going wrong for users?"
+            ],
+            [
+              "Data scientist",
+              "Learn patterns from data",
+              "What can usage data tell us?"
+            ],
+            [
+              "Ethics/policy specialist",
+              "Address policy, privacy, licensing, responsible use",
+              "What rules and risks matter?"
+            ]
+          ]
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "CONCEPT CHECK  |  COMMON CONFUSIONS",
+      "slug": "concept-check-common-confusions",
+      "blocks": [
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Do not confuse",
+              "Correct distinction"
+            ],
+            [
+              "Product manager / project manager",
+              "Product priorities and value / coordination of project delivery."
+            ],
+            [
+              "Coding output / team productivity",
+              "Amount of code / useful, coordinated progress toward the product."
+            ],
+            [
+              "Communication / conceptual integrity",
+              "Exchanging information / achieving shared understanding of the product."
+            ],
+            [
+              "Macro / micro decisions",
+              "System-level choices / implementation-level choices."
+            ],
+            [
+              "Level-1 / Level-2 support",
+              "Common known issues / escalated specialist investigation."
+            ],
+            [
+              "Knowing the code / knowing the reason",
+              "Locating implementation / understanding the decision behind it."
+            ]
+          ]
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "WORKED CASE STUDY  |  A SELLER PORTAL TEAM",
+      "slug": "worked-case-study-a-seller-portal-team",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This is an original, illustrative scenario that connects ideas from all three sections. A team is building a seller portal. Sellers report that their stock numbers are often wrong after orders arrive.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 1 — Understand the value: The goal is not simply to add another screen; it is to help sellers maintain reliable stock information.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 2 — Involve the roles: Marketing and sales gather seller feedback; product management decides priority; designers check the workflow; engineers investigate the data flow; support collects recurring error reports.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 3 — Establish conceptual integrity: All teams agree exactly when stock is reserved, reduced, or restored after a cancelled order. They document the definitions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 4 — Make a rational decision: Engineers identify possible approaches, compare outcomes, evaluate them for current constraints, and decide with the product team.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 5 — Share knowledge: The decision, interface rules, and known issues are recorded in the team’s documentation and issue tracker.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Step 6 — Evaluate the outcome: The team checks whether the change actually reduces incorrect stock figures for sellers. Useful results—not code volume—indicate progress.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember  |  Try it yourself: Which of the six steps would fail if sales promised a fix before engineering checked feasibility? Explain why.",
+          "runs": []
+        }
+      ]
+    },
+    {
+      "title": "WEEK 11  |  QUICK REVISION",
+      "slug": "week-11-quick-revision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Company purpose — Deliver value to potential users.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Product manager — Balance business, technology, and user experience.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Designer — Turn requirements into usable solutions through user research and iteration.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Sales vs support — Sales reaches customers and gathers feedback; support helps users and escalates problems.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Conceptual integrity — Everyone shares an understanding of what is being built and why.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Knowledge sharing — Record decisions and distribute expertise to reduce bottlenecks.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Team productivity — Useful, coordinated outcomes—not simply lines of code.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Macro vs micro — Architecture/framework decisions vs algorithm/data-structure decisions.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Rational decision making — Identify decision → alternatives → outcomes → evaluate for context → decide.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Great engineer — Competent coding + good decisions + effective communication + continuous learning.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "PRACTICE QUESTIONS  |  TRY BEFORE READING THE ANSWERS",
+      "slug": "practice-questions-try-before-reading-the-answers",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Q1. Why is a software company’s purpose not simply “write software”?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Because software is a means to deliver value to users. Features alone are not useful if they do not solve a real need.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q2. What three perspectives does a product manager balance?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Business goals, technical feasibility/effort, and user experience.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q3. How do sales and customer support help future development?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: They report customer requests, common difficulties, and defects to product, design, and engineering teams.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q4. What is conceptual integrity?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: A common understanding across the team of what is being built and why.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q5. Why should an engineer consult a domain expert?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: The domain expert understands real-world workflows and constraints that the engineer may not know.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q6. What is the risk of undocumented specialized knowledge?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: The team may depend on one person, experience delays, or lose knowledge when that person leaves.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q7. Name two approaches to reducing knowledge dependency.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Document decisions; rotate developers or cross-train teammates.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q8. Why are lines of code a weak productivity measure?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: They do not reveal whether the code meets requirements, integrates with other modules, or helps the team deliver value.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q9. Are meetings always a waste of coding time?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: No. Meetings can help clarify requirements, align teams, and prevent costly rework; their usefulness depends on purpose and execution.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q10. What distinguishes macro and micro decisions?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Macro decisions concern architecture or framework choices; micro decisions concern implementation choices such as algorithms and data structures.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q11. Write the five rational decision-making steps.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Identify decision; identify alternatives; consider outcomes; evaluate for context; decide.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q12. How should an engineer explain the same problem to different audiences?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Adapt vocabulary and detail to the listener while preserving the correct meaning.",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Q13. Why is continuous learning important?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: Tools, technologies, and practices change; engineers must keep their knowledge current.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "SCENARIO PRACTICE  |  APPLY THE IDEAS",
+      "slug": "scenario-practice-apply-the-ideas",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Scenario A — Conflicting definitions",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Frontend treats “completed order” as paid, while backend treats it as delivered. What failed, and what should the team do?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suggested answer: Conceptual integrity failed. The teams should discuss the requirement, agree on a precise definition, document it, and align the implementation.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Scenario B — A promised feature",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "A salesperson promises an advanced feature without checking with engineering. Why is this risky?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suggested answer: The feature might be infeasible or costly. Sales, product, and engineering should discuss capability and effort before making commitments.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Scenario C — Key engineer leaves",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Only one developer knows why a critical module was designed a certain way. What should the team improve?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suggested answer: Document important decisions, maintain accessible knowledge-sharing tools, and distribute knowledge through cross-training or rotation.",
+          "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Scenario D — Choosing a library",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Two libraries could solve the same problem. How should a great engineer choose?",
+          "runs": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Suggested answer: Define the decision, identify alternatives, consider likely outcomes, evaluate them for the current project, and decide using adequate information.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "FINAL TAKEAWAY",
+      "slug": "final-takeaway",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Software engineering is not only about building code. It is about delivering useful software through coordinated roles, shared understanding, informed decisions, and continued learning. Strong technical ability and strong collaboration are complementary—not competing—skills.",
+          "runs": []
+        }
+      ],
+      "resource": true
+    }
+  ]
+}
