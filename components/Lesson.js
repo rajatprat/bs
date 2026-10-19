@@ -1,3 +1,4 @@
+import StatisticsBlocks from './StatisticsBlocks';
 import { additionsFor } from '../lib/review-additions';
 import Blocks from './Blocks';
 import AlgorithmsBlocks from './AlgorithmsBlocks';
@@ -25,7 +26,7 @@ export default function Lesson({ data, slug }) {
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><a href={subjectPath}>{data.subject}</a><span aria-hidden="true">/</span><a href={data.part ? `${subjectPath}week-${week}/` : base}>Week {week}</a>{data.part && <><span aria-hidden="true">/</span><a href={base}>Part {data.part}</a></>}</nav>
     <div className="eyebrow">{isResource(section) ? 'REVISION AND PRACTICE' : `SECTION ${String(index + 1).padStart(2, '0')} / ${studies.length}`}</div><h1>{section.title}</h1>
     {contents.length > 0 && <details className="lesson-contents" open={data.subjectSlug !== 'algorithms-in-data-science'}><summary>On this page <span>{contents.length} headings</span></summary><nav aria-label="On this page"><ol>{contents.map(item => <li key={item.id} className={item.nested ? 'nested' : ''}><a href={`#${item.id}`}>{item.text}</a></li>)}</ol></nav></details>}
-    {data.subjectSlug === 'algorithms-in-data-science' ? <AlgorithmsBlocks blocks={section.blocks}/> : data.subjectSlug === 'mathematical-foundation-of-generative-ai' ? <MathLesson blocks={section.blocks}/> : <Blocks blocks={section.blocks} additions={data.subjectSlug ? [] : additionsFor(week,slug,section.blocks)}/>}
+    {data.subjectSlug === 'statistics' ? <StatisticsBlocks blocks={section.blocks}/> : data.subjectSlug === 'algorithms-in-data-science' ? <AlgorithmsBlocks blocks={section.blocks}/> : data.subjectSlug === 'mathematical-foundation-of-generative-ai' ? <MathLesson blocks={section.blocks}/> : <Blocks blocks={section.blocks} additions={data.subjectSlug ? [] : additionsFor(week,slug,section.blocks)}/>}
     <a className="back-top" href="#main">Back to top ↑</a>
     <nav className="lesson-pagination" aria-label="Previous and next sections">
       {index > 0 ? <a href={base + sequence[index-1].slug + '/'}><small>PREVIOUS SECTION</small>{sequence[index-1].title}</a> : <a href={base}><small>START HERE</small>{data.part ? `Part ${data.part}` : `Week ${week}`} overview</a>}

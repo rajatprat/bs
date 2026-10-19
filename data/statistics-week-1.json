@@ -1,0 +1,1817 @@
+{
+  "subject": "Statistics",
+  "subjectSlug": "statistics",
+  "week": 1,
+  "courseWeeks": [
+    1
+  ],
+  "base": "/statistics/week-1/",
+  "illustrationCount": 0,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Oct 19, 2026 · @Rajat Goel"
+    },
+    {
+      "type": "heading",
+      "text": "Roadmap"
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide covers Module 1 of an 8-module plan that follows the GATE DA Probability & Statistics syllabus, not the much broader GATE Statistics (ST) paper."
+    },
+    {
+      "type": "bullet-item",
+      "text": "Random variables — foundations (this guide): sample space, random variable, PMF, CDF, interval probabilities"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Expectation and variance: mean, median, mode, E[g(X)], variance, standard deviation"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Discrete distributions: discrete uniform, Bernoulli, binomial, Poisson"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Continuous distributions: continuous uniform, exponential, normal, standard normal"
+    },
+    {
+      "type": "bullet-item",
+      "text": "t and chi-squared distributions: degrees of freedom, shapes, links to the normal"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Multiple random variables: joint, marginal, conditional distributions; independence; covariance, correlation"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Central Limit Theorem: sums and averages, normal approximation"
+    },
+    {
+      "type": "bullet-item",
+      "text": "Statistical inference: confidence intervals, z-, t- and chi-squared tests"
+    },
+    {
+      "type": "paragraph",
+      "text": "Counting, conditional probability and Bayes' theorem come in as prerequisites wherever needed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Syllabus trap: the DA syllabus lists Poisson among the continuous distributions. Poisson is discrete — it counts events (0, 1, 2, …). Answer exam questions by the mathematics, not by where the syllabus lists it."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Lesson 1 — Random variables, PMF and CDF",
+      "slug": "random-variables-pmf-and-cdf",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "1. What is a random variable?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A random variable is a function that assigns a real number to each outcome of a random experiment. It is not the experiment itself, and despite the name it is not a \"variable\" in the algebra sense."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example. Toss two fair coins. The sample space is:"
+        },
+        {
+          "type": "equation",
+          "tex": "S = \\{HH, HT, TH, TT\\}",
+          "text": "S = \\{HH, HT, TH, TT\\}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Define X = number of heads. X maps each outcome to a number:"
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Random variable: each of the four outcomes is mapped to a number of heads"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Outcome",
+              "Value of X"
+            ],
+            [
+              "HH",
+              "2"
+            ],
+            [
+              "HT",
+              "1"
+            ],
+            [
+              "TH",
+              "1"
+            ],
+            [
+              "TT",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Four outcomes collapse to three values, so X ∈ {0, 1, 2}. The set of values X can take is called its support. Two different outcomes (HT and TH) map to the same value — that is allowed, because a function can be many-to-one."
+        },
+        {
+          "type": "paragraph",
+          "text": "Discrete vs continuous. X is discrete when its support is finite or countable (heads, defects, arrivals). It is continuous when it can take any value in an interval (time, height, voltage). Discrete variables get a PMF; continuous ones get a PDF. Both have a CDF."
+        },
+        {
+          "type": "heading",
+          "text": "2. Probability Mass Function (PMF)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The PMF gives the probability that a discrete X takes each exact value: p(x) = P(X = x). For two fair, independent tosses each outcome has probability 1/4, so X = 1 (HT or TH) gets 1/2 — twice as likely as 0 or 2 heads."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: PMF of the number of heads: 1/4, 1/2, 1/4"
+        },
+        {
+          "type": "equation",
+          "tex": "p_X(x) = \\begin{cases} \\tfrac14 & x = 0 \\\\ \\tfrac12 & x = 1 \\\\ \\tfrac14 & x = 2 \\\\ 0 & \\text{otherwise} \\end{cases}",
+          "text": "p_X(x) = \\begin{cases} \\tfrac14 & x = 0 \\\\ \\tfrac12 & x = 1 \\\\ \\tfrac14 & x = 2 \\\\ 0 & \\text{otherwise} \\end{cases}"
+        },
+        {
+          "type": "paragraph",
+          "text": "A function is a valid PMF only if both hold:"
+        },
+        {
+          "type": "bullet-item",
+          "text": "p(x) ≥ 0 for every x"
+        },
+        {
+          "type": "bullet-item",
+          "text": "The probabilities over the support add to 1:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\sum_x p_X(x) = 1 \\qquad \\text{here: } \\tfrac14 + \\tfrac12 + \\tfrac14 = 1",
+          "text": "\\sum_x p_X(x) = 1 \\qquad \\text{here: } \\tfrac14 + \\tfrac12 + \\tfrac14 = 1"
+        },
+        {
+          "type": "paragraph",
+          "text": "The probability of any set A of values is the sum of p(x) over the values in A. Example: P(X is odd) = P(X = 1) = 1/2."
+        },
+        {
+          "type": "heading",
+          "text": "3. Cumulative Distribution Function (CDF)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The CDF accumulates probability up to and including x:"
+        },
+        {
+          "type": "equation",
+          "tex": "F_X(x) = P(X \\le x)",
+          "text": "F_X(x) = P(X \\le x)"
+        },
+        {
+          "type": "paragraph",
+          "text": "P(at most one head) = F(1) = P(X = 0) + P(X = 1) = 1/4 + 1/2 = 3/4."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: CDF of the number of heads as a step function: 0, 0.25, 0.75, 1"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "x",
+              "F(x)"
+            ],
+            [
+              "x < 0",
+              "0"
+            ],
+            [
+              "0 ≤ x < 1",
+              "0.25"
+            ],
+            [
+              "1 ≤ x < 2",
+              "0.75"
+            ],
+            [
+              "x ≥ 2",
+              "1"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Read the graph carefully. For a discrete X the CDF is a staircase. It is defined for every real x, not only 0, 1, 2 — e.g. F(1.7) = 0.75 and F(−3) = 0. At each jump the filled dot is on the upper step (the value includes the jump); the open dot marks the value just before it. Each jump height equals p(x) at that point."
+        },
+        {
+          "type": "paragraph",
+          "text": "Properties every CDF satisfies (GATE tests these):"
+        },
+        {
+          "type": "bullet-item",
+          "text": "0 ≤ F(x) ≤ 1"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Non-decreasing: if a < b then F(a) ≤ F(b)"
+        },
+        {
+          "type": "bullet-item",
+          "text": "F(x) → 0 as x → −∞ and F(x) → 1 as x → +∞"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Right-continuous (that is why the filled dot sits on the upper step)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Interval probabilities from the CDF — mind the endpoints for discrete X:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(a < X \\le b) = F(b) - F(a) \\qquad P(X = a) = F(a) - F(a^-) \\qquad P(X > a) = 1 - F(a)",
+          "text": "P(a < X \\le b) = F(b) - F(a) \\qquad P(X = a) = F(a) - F(a^-) \\qquad P(X > a) = 1 - F(a)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Check: P(0 < X ≤ 2) = F(2) − F(0) = 1 − 0.25 = 0.75, which is P(X=1) + P(X=2). ✔"
+        },
+        {
+          "type": "paragraph",
+          "text": "PMF vs CDF in one line: the PMF is the probability at a value; the CDF is the probability up to and including a value."
+        },
+        {
+          "type": "heading",
+          "text": "4. GATE-style numerical: find the missing constant"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question. P(X = x) = c(x + 1) for x = 0, 1, 2 and 0 otherwise. Find c, then P(X ≥ 1)."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Worked solution: c + 2c + 3c = 1 gives c = 1/6, and P(X ≥ 1) = 5/6"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Normalise. Total probability must be 1:"
+        },
+        {
+          "type": "equation",
+          "tex": "c(0+1) + c(1+1) + c(2+1) = 1 \\;\\Rightarrow\\; 6c = 1 \\;\\Rightarrow\\; c = \\tfrac16",
+          "text": "c(0+1) + c(1+1) + c(2+1) = 1 \\;\\Rightarrow\\; 6c = 1 \\;\\Rightarrow\\; c = \\tfrac16"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Write out the PMF. P(X=0) = 1/6, P(X=1) = 2/6, P(X=2) = 3/6."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Check non-negativity. All three are ≥ 0, so c = 1/6 gives a valid PMF. (In harder questions — e.g. P(X=x) = c(x − 1) — this check is what rules out a candidate value of c.)"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Answer the event. Use the complement, which is faster when the event covers most of the support:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(X \\ge 1) = 1 - P(X = 0) = 1 - \\tfrac16 = \\tfrac56",
+          "text": "P(X \\ge 1) = 1 - P(X = 0) = 1 - \\tfrac16 = \\tfrac56"
+        },
+        {
+          "type": "paragraph",
+          "text": "Method to memorise: normalise → list the PMF → check p(x) ≥ 0 → sum (or use the complement) for the event."
+        },
+        {
+          "type": "heading",
+          "text": "5. Practice questions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Try all five before reading the answers below."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q1. A fair coin is tossed three times; X = number of heads. P(X = 2) = ? (A) 1/8 (B) 2/8 (C) 3/8 (D) 1/2"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q2. P(X = x) = kx² for x = 1, 2, 3 (0 otherwise). Find k and P(X ≤ 2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q3. A discrete X has CDF F(x) = 0 for x < 1; 0.3 for 1 ≤ x < 3; 0.7 for 3 ≤ x < 5; 1 for x ≥ 5. Find P(X = 3), P(X < 3) and P(1 < X ≤ 5)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q4. For the two-coin X of this guide, find F(1.5) and F(−0.2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q5. Two fair dice are rolled; X = the larger of the two numbers. Find P(X = 3)."
+        },
+        {
+          "type": "subheading",
+          "text": "Answers"
+        },
+        {
+          "type": "bullet-item",
+          "text": "(C) 3/8. Outcomes with two heads: HHT, HTH, THH = 3 of 8."
+        },
+        {
+          "type": "bullet-item",
+          "text": "k = 1/14, P(X ≤ 2) = 5/14. k(1 + 4 + 9) = 1 → k = 1/14; then (1 + 4)/14."
+        },
+        {
+          "type": "bullet-item",
+          "text": "P(X = 3) = 0.4 (jump at 3: 0.7 − 0.3). P(X < 3) = 0.3 (strict <, so F just below 3). P(1 < X ≤ 5) = F(5) − F(1) = 1 − 0.3 = 0.7."
+        },
+        {
+          "type": "bullet-item",
+          "text": "F(1.5) = 0.75, F(−0.2) = 0. The CDF is flat between support points."
+        },
+        {
+          "type": "bullet-item",
+          "text": "5/36. P(X ≤ 3) = (3/6)² = 9/36 and P(X ≤ 2) = 4/36, so P(X = 3) = 9/36 − 4/36. This is the CDF-difference trick: it is often easier to find F first and take the jump."
+        },
+        {
+          "type": "heading",
+          "text": "6. Revision sheet"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Concept",
+              "Definition",
+              "Must-remember"
+            ],
+            [
+              "Random variable",
+              "Function from outcomes to real numbers",
+              "Many outcomes can map to one value"
+            ],
+            [
+              "Support",
+              "Set of values X can take",
+              "Two-coin X: {0, 1, 2}"
+            ],
+            [
+              "PMF",
+              "p(x) = P(X = x), discrete only",
+              "p(x) ≥ 0 and Σ p(x) = 1"
+            ],
+            [
+              "CDF",
+              "F(x) = P(X ≤ x), any X",
+              "Non-decreasing, 0 → 1, right-continuous"
+            ],
+            [
+              "Jump in CDF",
+              "F(a) − F(a⁻)",
+              "Equals P(X = a)"
+            ],
+            [
+              "Interval",
+              "P(a < X ≤ b)",
+              "F(b) − F(a)"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Treating HT and TH as one outcome — they are separate, each with probability 1/4."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Mixing ≤ and < for discrete X: P(X < 3) ≠ P(X ≤ 3) when P(X = 3) > 0."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Evaluating the CDF only at support points; it is defined (and flat) everywhere in between."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Forgetting to check p(x) ≥ 0 after solving for a constant."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Calling Poisson continuous because of the syllabus wording."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next: Module 2 — expectation and variance, built on the same two-coin PMF."
+        }
+      ]
+    },
+    {
+      "title": "Lesson 2 — Discrete vs Continuous Random Variables",
+      "slug": "lesson-2-discrete-vs-continuous-random-variables",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Infinitely many possible values does not make a random variable continuous. What matters is whether the values can be listed in a sequence (discrete) or fill a whole interval (continuous)."
+        },
+        {
+          "type": "heading",
+          "text": "7. Discrete does not mean finite"
+        },
+        {
+          "type": "paragraph",
+          "text": "A random variable is discrete when its possible values can be listed as a sequence — finite or countably infinite."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example. Toss a fair coin until the first head. X = number of tosses needed."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Tosses until the first head: P(X = k) = (1/2)^k, values 1, 2, 3, 4, … go on forever"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Outcome",
+              "X",
+              "P(X = x)"
+            ],
+            [
+              "H",
+              "1",
+              "1/2"
+            ],
+            [
+              "TH",
+              "2",
+              "1/4"
+            ],
+            [
+              "TTH",
+              "3",
+              "1/8"
+            ],
+            [
+              "TTTH",
+              "4",
+              "1/16"
+            ],
+            [
+              "…",
+              "…",
+              "…"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "X ∈ {1, 2, 3, …} has infinitely many values, but X can never be 2.5 or 3.78 — there are gaps between allowed values. So X is discrete. The first head on toss k needs k − 1 tails then a head:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(X = k) = \\left(\\tfrac12\\right)^{k-1} \\cdot \\tfrac12 = \\left(\\tfrac12\\right)^{k}, \\qquad k = 1, 2, 3, \\ldots",
+          "text": "P(X = k) = \\left(\\tfrac12\\right)^{k-1} \\cdot \\tfrac12 = \\left(\\tfrac12\\right)^{k}, \\qquad k = 1, 2, 3, \\ldots"
+        },
+        {
+          "type": "paragraph",
+          "text": "Is it a valid PMF? Every term is positive, and the infinite geometric series sums to 1:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\sum_{k=1}^{\\infty} \\left(\\tfrac12\\right)^k = \\frac{1/2}{1 - 1/2} = 1",
+          "text": "\\sum_{k=1}^{\\infty} \\left(\\tfrac12\\right)^k = \\frac{1/2}{1 - 1/2} = 1"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the geometric distribution (with p = 1/2). In general, for success probability p: P(X = k) = (1 − p)^(k−1) · p. It is a standard source of GATE questions on infinite sums."
+        },
+        {
+          "type": "heading",
+          "text": "8. Continuous random variables"
+        },
+        {
+          "type": "paragraph",
+          "text": "A random variable is continuous when it can take every real value in an interval, with no gaps between allowed values."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example. Y = waiting time for a bus, anywhere from 0 to 10 minutes, so Y ∈ [0, 10]. Between 2 and 3 alone, Y could be 2.5, 2.57, 2.5789, … — however far you zoom in, there are more possible values."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Bus waiting time: any real value between 0 and 10 minutes is possible"
+        },
+        {
+          "type": "paragraph",
+          "text": "This set of values is uncountable: unlike {1, 2, 3, …}, it cannot be listed as a sequence. That — not \"infinitely many\" — is what separates continuous from discrete."
+        },
+        {
+          "type": "paragraph",
+          "text": "Count vs measure. Counting things (customers, defects, tosses) gives discrete variables. Measuring things (time, length, weight) usually gives continuous ones. The word \"usually\" matters: an amount of money recorded to the paisa is discrete in strict terms, although it is often modelled as continuous."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Number of customers (counted) is discrete and uses a PMF; time between arrivals (measured) is continuous and uses a PDF"
+        },
+        {
+          "type": "paragraph",
+          "text": "Correction to this image: the right-hand bell-shaped curve is only a sketch. In the standard model, time between random arrivals follows an exponential distribution, whose PDF is highest at 0 and falls steadily — not a hump. You will meet it in Module 4."
+        },
+        {
+          "type": "heading",
+          "text": "9. The key GATE difference: points vs intervals"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a continuous variable, the probability of any single exact value is zero; only intervals carry probability, and that probability is the area under the density curve."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: For continuous Y, P(Y = 3) = 0 (a line has no area) but P(3 ≤ Y ≤ 5) > 0 (shaded area)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Property",
+              "Discrete",
+              "Continuous"
+            ],
+            [
+              "Example",
+              "Number of heads",
+              "Waiting time"
+            ],
+            [
+              "Possible values",
+              "Countable (finite or infinite)",
+              "A whole interval (uncountable)"
+            ],
+            [
+              "Infinitely many values possible?",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "Described by",
+              "PMF p(x)",
+              "PDF f(x)"
+            ],
+            [
+              "P(exactly one value)",
+              "Can be positive, e.g. P(X = 3) = 1/8",
+              "Always 0"
+            ],
+            [
+              "Probability of an event",
+              "Sum of p(x)",
+              "Area: integral of f(x)"
+            ],
+            [
+              "CDF shape",
+              "Staircase (jumps)",
+              "Smooth, no jumps"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Three consequences GATE tests:"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Endpoints don't matter for continuous Y. P(3 ≤ Y ≤ 5) = P(3 < Y < 5) = P(3 ≤ Y < 5). For discrete X they can differ (see Lesson 1, Q3)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Zero probability ≠ impossible. Waiting exactly 3.000… minutes can happen; it just carries no probability on its own."
+        },
+        {
+          "type": "bullet-item",
+          "text": "A PDF value is not a probability. f(y) is a density and can be greater than 1 (e.g. a uniform PDF on [0, 0.5] equals 2). Only areas are probabilities, so total area must be 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "We will derive the PDF and these area calculations properly in the next lesson."
+        },
+        {
+          "type": "heading",
+          "text": "10. Lesson 2 practice"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q1. A shop has X = number of customers arriving and Y = time between two arrivals. Which is correct? (A) Both discrete, since customers arrive one at a time (B) X discrete, Y continuous (C) Both continuous, since the number of customers can be arbitrarily large (D) X continuous, Y discrete"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q2. Discrete or continuous? (a) emails received in a day (b) a student's height (c) rolls of a die until the first six (d) proportion of defective items in a batch of 100"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q3. For X = tosses until the first head (fair coin), find P(X > 3) and P(X is even)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q4. P(X = k) = c(1/3)^k for k = 0, 1, 2, … Find c."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q5. Y is continuous and P(Y ≤ 4) = 0.6. Find P(Y < 4) and P(Y = 4)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q6. True or false: a PDF with f(2) = 1.5 cannot be valid."
+        },
+        {
+          "type": "subheading",
+          "text": "Answers"
+        },
+        {
+          "type": "bullet-item",
+          "text": "(B). X is a count with values 0, 1, 2, …; Y is a measured time that can be any non-negative real. (C) is the exact trap of this lesson: unbounded does not mean continuous."
+        },
+        {
+          "type": "bullet-item",
+          "text": "(a) discrete (b) continuous (c) discrete — infinitely many values but countable (d) discrete — only 0, 0.01, 0.02, …, 1 are possible, even though it is a fraction."
+        },
+        {
+          "type": "bullet-item",
+          "text": "P(X > 3) = 1/8: the first three tosses must all be tails, (1/2)³. P(X even) = 1/3: (1/4) + (1/16) + … = (1/4)/(1 − 1/4)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "c = 2/3. c · 1/(1 − 1/3) = 1 → c · 3/2 = 1. Note the sum starts at k = 0 here."
+        },
+        {
+          "type": "bullet-item",
+          "text": "P(Y < 4) = 0.6, P(Y = 4) = 0. The endpoint carries no probability."
+        },
+        {
+          "type": "bullet-item",
+          "text": "False. A density can exceed 1; only the total area must equal 1."
+        },
+        {
+          "type": "heading",
+          "text": "11. Lesson 2 revision sheet"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Discrete = values can be listed in a sequence (finite or countably infinite). Uses a PMF; probabilities are sums."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Continuous = values fill an interval (uncountable). Uses a PDF; probabilities are areas."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Test to apply: \"Is there a gap between one allowed value and the next?\" Yes → discrete. No → continuous."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Geometric (first success): P(X = k) = (1 − p)^(k−1) · p, k = 1, 2, …; and P(X > n) = (1 − p)^n."
+        },
+        {
+          "type": "subheading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Calling a variable continuous because it is unbounded or has infinitely many values."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Calling a proportion or average continuous when it comes from a finite count."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Adding a point probability like P(Y = 3) for continuous Y — it is always 0."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Treating f(y) as a probability, or rejecting a PDF because some f(y) > 1."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Worrying about ≤ vs < for continuous Y (it doesn't matter) but ignoring it for discrete X (it does)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next: Lesson 3 — PMF vs PDF in depth: why point probability is zero, computing areas, and the CDF of a continuous variable."
+        }
+      ]
+    },
+    {
+      "title": "Lesson 3 — Probability Density Function (PDF)",
+      "slug": "lesson-3-probability-density-function-pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A PDF does not give probabilities directly: it gives a density, and the probability of an interval is the area under the PDF over that interval."
+        },
+        {
+          "type": "heading",
+          "text": "12. Why we need a PDF: density = probability per unit"
+        },
+        {
+          "type": "paragraph",
+          "text": "For discrete X we can write P(X = 1) = 1/2 directly. For continuous Y every single value has probability 0 (Lesson 2), so a PMF would be zero everywhere. We need a function that tells us how probability is spread along the line — the probability density function f(y)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example. Y = bus waiting time, uniformly distributed on [0, 10] minutes: equal-length intervals are equally likely, so waiting 1–2 minutes is as likely as waiting 7–8 minutes. The total probability 1 is spread evenly over 10 minutes:"
+        },
+        {
+          "type": "equation",
+          "tex": "f_Y(y) = \\begin{cases} \\dfrac{1}{10} = 0.1 & 0 \\le y \\le 10 \\\\ 0 & \\text{otherwise} \\end{cases}",
+          "text": "f_Y(y) = \\begin{cases} \\dfrac{1}{10} = 0.1 & 0 \\le y \\le 10 \\\\ 0 & \\text{otherwise} \\end{cases}"
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Uniform(0, 10): density 0.1 per minute; 3–5 minutes gives 0.20, 3–3.5 minutes gives 0.05"
+        },
+        {
+          "type": "paragraph",
+          "text": "The height 0.1 is a rate: 0.1 probability per minute. Multiply by a width to get a probability:"
+        },
+        {
+          "type": "bullet-item",
+          "text": "3 to 5 minutes: 2 × 0.1 = 0.20"
+        },
+        {
+          "type": "bullet-item",
+          "text": "3 to 3.5 minutes: 0.5 × 0.1 = 0.05"
+        },
+        {
+          "type": "paragraph",
+          "text": "Same density, different widths, different probabilities. In general, for a small width Δy:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(y \\le Y \\le y + \\Delta y) \\approx f_Y(y)\\,\\Delta y",
+          "text": "P(y \\le Y \\le y + \\Delta y) \\approx f_Y(y)\\,\\Delta y"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is why density has units (per minute, per kg…), while probability has none."
+        },
+        {
+          "type": "heading",
+          "text": "13. Probability is area: interval vs single point"
+        },
+        {
+          "type": "paragraph",
+          "text": "The PDF's height at a point is not the probability of that point. For the uniform bus model, f(3) = 0.1 but P(Y = 3) = 0."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: f(3) = 0.1 but P(Y = 3) = 0; P(3 ≤ Y ≤ 5) = 2 × 0.1 = 0.2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Why the point probability is 0. Fix the start at 3 and shrink the end towards 3:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Interval",
+              "Width",
+              "Probability = width × 0.1"
+            ],
+            [
+              "3 to 5.5",
+              "2.5",
+              "0.25"
+            ],
+            [
+              "3 to 5",
+              "2",
+              "0.20"
+            ],
+            [
+              "3 to 3.5",
+              "0.5",
+              "0.05"
+            ],
+            [
+              "3 to 3.01",
+              "0.01",
+              "0.001"
+            ],
+            [
+              "3 to 3 (one point)",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "As the width goes to 0, the area goes to 0. In integral form, an integral over a single point is always zero:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(Y = 3) = \\int_3^3 f_Y(y)\\,dy = 0",
+          "text": "P(Y = 3) = \\int_3^3 f_Y(y)\\,dy = 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Image note: the left panel labels the point \"x = 3\" although the variable is Y; read it as y = 3."
+        },
+        {
+          "type": "heading",
+          "text": "14. PDF rules, PMF vs PDF, and the CDF link"
+        },
+        {
+          "type": "paragraph",
+          "text": "A function f is a valid PDF if and only if both hold:"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Non-negative: f(x) ≥ 0 for all x"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Total area 1:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1 \\qquad \\text{bus example: } \\int_0^{10} 0.1\\,dy = 0.1 \\times 10 = 1",
+          "text": "\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1 \\qquad \\text{bus example: } \\int_0^{10} 0.1\\,dy = 0.1 \\times 10 = 1"
+        },
+        {
+          "type": "paragraph",
+          "text": "There is no rule that f(x) ≤ 1. Uniform on [0, 0.5] has f = 2 everywhere on its range and is perfectly valid (area 0.5 × 2 = 1)."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: PMF assigns probability to a single value; a PDF is a density whose area gives probability"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "PMF",
+              "PDF"
+            ],
+            [
+              "Used for",
+              "Discrete RV",
+              "Continuous RV"
+            ],
+            [
+              "The function gives",
+              "Probability at each value",
+              "Density (probability per unit)"
+            ],
+            [
+              "Can exceed 1?",
+              "No",
+              "Yes"
+            ],
+            [
+              "P(X = a)",
+              "Can be positive",
+              "Always 0"
+            ],
+            [
+              "Probability of an event",
+              "Sum",
+              "Integral (area)"
+            ],
+            [
+              "Normalisation",
+              "Σ p(x) = 1",
+              "∫ f(x) dx = 1"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The CDF link (used constantly in GATE). The CDF of a continuous variable is the accumulated area, and the PDF is its derivative:"
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = \\int_{-\\infty}^{x} f(t)\\,dt, \\qquad f(x) = \\frac{dF(x)}{dx}, \\qquad P(a \\le X \\le b) = F(b) - F(a)",
+          "text": "F(x) = \\int_{-\\infty}^{x} f(t)\\,dt, \\qquad f(x) = \\frac{dF(x)}{dx}, \\qquad P(a \\le X \\le b) = F(b) - F(a)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bus example: F(y) = 0 for y < 0, y/10 for 0 ≤ y ≤ 10, and 1 for y > 10. Check: F(5) − F(3) = 0.5 − 0.3 = 0.2 ✔. Unlike the discrete staircase of Lesson 1, this CDF is a continuous ramp with no jumps — which is exactly why no single point has positive probability."
+        },
+        {
+          "type": "heading",
+          "text": "15. GATE numericals on PDFs"
+        },
+        {
+          "type": "subheading",
+          "text": "Example A — rectangular PDF"
+        },
+        {
+          "type": "paragraph",
+          "text": "f(x) = 0.2 for 0 ≤ x ≤ 5, and 0 otherwise. Find P(1 ≤ X ≤ 4). Options: (A) 0.2 (B) 0.4 (C) 0.6 (D) 0.8."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Check validity (area 5 × 0.2 = 1), then P(1 ≤ X ≤ 4) = 3 × 0.2 = 0.6"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Valid? f ≥ 0 and area = 5 × 0.2 = 1 ✔"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Area over [1, 4]: width 3 × height 0.2 = 0.6 → (C)"
+        },
+        {
+          "type": "subheading",
+          "text": "Example B — non-rectangular PDF with unknown k"
+        },
+        {
+          "type": "paragraph",
+          "text": "When the PDF is not flat, \"width × height\" fails; you must integrate. f(x) = kx for 0 ≤ x ≤ 2, and 0 otherwise. Find k, P(X ≤ 1) and P(X = 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Normalise:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\int_0^2 kx\\,dx = k\\left[\\frac{x^2}{2}\\right]_0^2 = 2k = 1 \\;\\Rightarrow\\; k = \\tfrac12",
+          "text": "\\int_0^2 kx\\,dx = k\\left[\\frac{x^2}{2}\\right]_0^2 = 2k = 1 \\;\\Rightarrow\\; k = \\tfrac12"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Check non-negativity: x/2 ≥ 0 on [0, 2] ✔"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Integrate over the event:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(X \\le 1) = \\int_0^1 \\frac{x}{2}\\,dx = \\left[\\frac{x^2}{4}\\right]_0^1 = \\tfrac14",
+          "text": "P(X \\le 1) = \\int_0^1 \\frac{x}{2}\\,dx = \\left[\\frac{x^2}{4}\\right]_0^1 = \\tfrac14"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Point probability: P(X = 1) = 0, even though f(1) = 0.5."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trap: [0, 1] is half the support, but the probability is only 1/4, not 1/2 — the density is low near 0 and high near 2. Half the width gives half the probability only for a uniform PDF."
+        },
+        {
+          "type": "paragraph",
+          "text": "Method to memorise: normalise (∫ f = 1) → check f ≥ 0 → integrate f over the event (or use F(b) − F(a)) → ignore endpoints."
+        },
+        {
+          "type": "heading",
+          "text": "16. Lesson 3 practice"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q1. Y ~ Uniform(0, 10). Find P(Y > 7) and P(2 < Y ≤ 2.5)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q2. f(x) = k for 2 ≤ x ≤ 6, 0 otherwise. Find k and P(X < 3)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q3. f(x) = 3 for 0 ≤ x ≤ 1/3, 0 otherwise. Is it a valid PDF? Find P(X = 0.1) and P(X ≤ 0.1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q4. f(x) = c(1 − x) for 0 ≤ x ≤ 1, 0 otherwise. Find c and P(X > 1/2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q5. f(x) = kx² for 0 ≤ x ≤ 3, 0 otherwise. Find k and P(1 ≤ X ≤ 2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q6. A continuous X has CDF F(x) = x² for 0 ≤ x ≤ 1 (0 below, 1 above). Find its PDF and P(0.5 < X ≤ 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q7. Which is a valid PDF? (A) f(x) = 2x on [0, 1] (B) f(x) = x − 1 on [0, 2] (C) f(x) = 1/2 on [0, 3]"
+        },
+        {
+          "type": "subheading",
+          "text": "Answers"
+        },
+        {
+          "type": "bullet-item",
+          "text": "0.3 and 0.05. Widths 3 and 0.5, each × 0.1."
+        },
+        {
+          "type": "bullet-item",
+          "text": "k = 1/4, P(X < 3) = 1/4. Width 4 × k = 1; then width 1 × 1/4."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Valid (3 ≥ 0, area (1/3) × 3 = 1 — a density above 1 is fine). P(X = 0.1) = 0, P(X ≤ 0.1) = 0.1 × 3 = 0.3."
+        },
+        {
+          "type": "bullet-item",
+          "text": "c = 2, P(X > 1/2) = 1/4. ∫₀¹ c(1 − x) dx = c/2 = 1. Then ∫ from 1/2 to 1 of 2(1 − x) dx = 2 × 1/8. (A triangle: the right half holds only a quarter of the area.)"
+        },
+        {
+          "type": "bullet-item",
+          "text": "k = 1/9, P(1 ≤ X ≤ 2) = 7/27. ∫₀³ kx² dx = 9k = 1. Then (1/9)(2³ − 1³)/3 = 7/27."
+        },
+        {
+          "type": "bullet-item",
+          "text": "f(x) = 2x on [0, 1]; P = 0.75. Differentiate F; then F(1) − F(0.5) = 1 − 0.25."
+        },
+        {
+          "type": "bullet-item",
+          "text": "(A). (B) is negative on [0, 1); (C) has total area 1.5, not 1."
+        },
+        {
+          "type": "heading",
+          "text": "17. Lesson 3 revision sheet"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Idea",
+              "Formula",
+              "Remember"
+            ],
+            [
+              "Valid PDF",
+              "f(x) ≥ 0 and ∫ f(x) dx = 1",
+              "f(x) may exceed 1"
+            ],
+            [
+              "Interval probability",
+              "P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx",
+              "= F(b) − F(a); endpoints don't matter"
+            ],
+            [
+              "Point probability",
+              "P(X = a) = 0",
+              "Not impossible, just zero probability"
+            ],
+            [
+              "Density meaning",
+              "P(x ≤ X ≤ x + Δx) ≈ f(x)Δx",
+              "Units: probability per unit"
+            ],
+            [
+              "Uniform(a, b)",
+              "f = 1/(b − a) on [a, b]",
+              "Probability = width/(b − a)"
+            ],
+            [
+              "CDF ↔ PDF",
+              "F(x) = ∫ f, f = F′",
+              "Continuous CDF has no jumps"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Reading f(a) as P(X = a)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Rejecting a PDF because some value is above 1."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using width × height when the PDF is not flat — integrate instead."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Assuming half the range means half the probability for a non-uniform PDF."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Forgetting to check f ≥ 0 after finding k."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next: Lesson 4 — Solving PDFs using integration."
+        }
+      ]
+    },
+    {
+      "title": "Lesson 4 — Solving PDFs Using Integration",
+      "slug": "lesson-4-solving-pdfs-using-integration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When a PDF's height changes along the range, probability is still area, but the area must be found by integration: P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx."
+        },
+        {
+          "type": "heading",
+          "text": "18. Changing density: why we integrate"
+        },
+        {
+          "type": "paragraph",
+          "text": "With a flat PDF, probability = width × height. With f(x) = 2x on [0, 1], the height changes with x, so there is no single height to multiply by."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "x",
+              "0",
+              "0.25",
+              "0.5",
+              "0.75",
+              "1"
+            ],
+            [
+              "f(x) = 2x",
+              "0",
+              "0.5",
+              "1.0",
+              "1.5",
+              "2.0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The density rises to the right, so equal-width intervals near 1 hold more probability than those near 0."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Constant height: rectangle area 2 × 0.1 = 0.2. Changing height: add thin strips, i.e. integrate"
+        },
+        {
+          "type": "paragraph",
+          "text": "Integration slices the region into very thin strips of width dx and height f(x), and adds their areas f(x)·dx:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(a \\le X \\le b) = \\int_a^b f(x)\\,dx",
+          "text": "P(a \\le X \\le b) = \\int_a^b f(x)\\,dx"
+        },
+        {
+          "type": "paragraph",
+          "text": "The one rule you need for most GATE PDFs is the power rule:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\ne -1), \\qquad \\int_a^b f(x)\\,dx = G(b) - G(a) \\text{ where } G' = f",
+          "text": "\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\ne -1), \\qquad \\int_a^b f(x)\\,dx = G(b) - G(a) \\text{ where } G' = f"
+        },
+        {
+          "type": "heading",
+          "text": "19. Worked numerical: f(x) = 2x"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question. f(x) = 2x for 0 ≤ x ≤ 1, 0 otherwise. Is it a valid PDF? Find P(0 ≤ X ≤ 0.5)."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: f(x) = 2x: P(0 ≤ X ≤ 0.5) = 0.25 by integration and by triangle area; total area = 1"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Validity. 2x ≥ 0 on [0, 1], and"
+        },
+        {
+          "type": "equation",
+          "tex": "\\int_0^1 2x\\,dx = \\left[x^2\\right]_0^1 = 1 - 0 = 1 \\;\\checkmark",
+          "text": "\\int_0^1 2x\\,dx = \\left[x^2\\right]_0^1 = 1 - 0 = 1 \\;\\checkmark"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Integrate over the event. The antiderivative of 2x is x²; evaluate at the upper limit minus the lower limit:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(0 \\le X \\le 0.5) = \\int_0^{0.5} 2x\\,dx = \\left[x^2\\right]_0^{0.5} = 0.25 - 0 = 0.25",
+          "text": "P(0 \\le X \\le 0.5) = \\int_0^{0.5} 2x\\,dx = \\left[x^2\\right]_0^{0.5} = 0.25 - 0 = 0.25"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Geometric check. The shaded region is a triangle with base 0.5 and height f(0.5) = 1: area = ½ × 0.5 × 1 = 0.25 ✔. (The image's \"Height =\" label is missing its value — it is 1.)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Observation. Half the range [0, 0.5] holds only 25% of the probability; the other half holds 75%. In general here P(X ≤ a) = a², so F(x) = x² on [0, 1] — the same CDF you met in Lesson 3, Q6."
+        },
+        {
+          "type": "paragraph",
+          "text": "f(1) = 2 is fine: density can exceed 1, only total area must be 1."
+        },
+        {
+          "type": "heading",
+          "text": "20. Support: where the distribution lives"
+        },
+        {
+          "type": "paragraph",
+          "text": "The support is the set of values X can actually take: a list of points for a discrete X, an interval (or union of intervals) where f > 0 for a continuous X."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Discrete support {0, 1, 2} vs continuous support [0, 1] for f(x) = 2x"
+        },
+        {
+          "type": "paragraph",
+          "text": "Why it matters in numericals: outside the support f = 0, so integrals only run over the part of the event that overlaps the support. Clip the limits first."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example with f(x) = x/2 on [0, 2]:"
+        },
+        {
+          "type": "bullet-item",
+          "text": "P(X ≤ 3) = ∫₀² (x/2) dx = 1 — the upper limit 3 is clipped to 2."
+        },
+        {
+          "type": "bullet-item",
+          "text": "P(−1 ≤ X ≤ 1) = ∫₀¹ (x/2) dx = 1/4 — the lower limit −1 is clipped to 0."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a piecewise PDF, split the integral at each break point and use the right formula on each piece (see Q7 below)."
+        },
+        {
+          "type": "paragraph",
+          "text": "On the image's footnote: f(0) = 0 does not exclude 0 from the support — it is the boundary of [0, 1]. For a continuous X this makes no difference to any probability, since single points carry zero probability."
+        },
+        {
+          "type": "heading",
+          "text": "21. GATE numerical: find k, then the probability"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question. f(x) = kx for 0 ≤ x ≤ 2, 0 otherwise. Find k and P(1 ≤ X ≤ 2). (Same PDF as Lesson 3, Example B — here we ask for the other half.)"
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Find k = 1/2 from total area 1; draw f(x) = x/2; P(1 ≤ X ≤ 2) = 3/4"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Total area = 1:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\int_0^2 kx\\,dx = k\\left[\\frac{x^2}{2}\\right]_0^2 = 2k = 1 \\;\\Rightarrow\\; k = \\tfrac12, \\qquad f(x) = \\tfrac{x}{2}",
+          "text": "\\int_0^2 kx\\,dx = k\\left[\\frac{x^2}{2}\\right]_0^2 = 2k = 1 \\;\\Rightarrow\\; k = \\tfrac12, \\qquad f(x) = \\tfrac{x}{2}"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Integrate over [1, 2]:"
+        },
+        {
+          "type": "equation",
+          "tex": "P(1 \\le X \\le 2) = \\int_1^2 \\frac{x}{2}\\,dx = \\left[\\frac{x^2}{4}\\right]_1^2 = 1 - \\tfrac14 = \\tfrac34",
+          "text": "P(1 \\le X \\le 2) = \\int_1^2 \\frac{x}{2}\\,dx = \\left[\\frac{x^2}{4}\\right]_1^2 = 1 - \\tfrac14 = \\tfrac34"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Cross-check: Lesson 3 found P(0 ≤ X ≤ 1) = 1/4, and 1/4 + 3/4 = 1 ✔. A second check: the green region is a trapezium with parallel sides 0.5 and 1 and width 1, area ½(0.5 + 1)(1) = 0.75 ✔."
+        },
+        {
+          "type": "paragraph",
+          "text": "Exam shortcut: when the question asks for most of the range, compute the small complement and subtract from 1."
+        },
+        {
+          "type": "heading",
+          "text": "22. Lesson 4 practice"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q1. f(x) = 3x² for 0 ≤ x ≤ 1, 0 otherwise. P(0 ≤ X ≤ 0.5) = ? (A) 0.125 (B) 0.25 (C) 0.375 (D) 0.50"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q2. For f(x) = 2x on [0, 1], find P(0.5 ≤ X ≤ 1) and P(0.25 ≤ X ≤ 0.75)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q3. f(x) = kx³ for 0 ≤ x ≤ 2. Find k and P(X ≤ 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q4. f(x) = k(2 − x) for 0 ≤ x ≤ 2. Find k and P(X ≤ 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q5. f(x) = x/2 on [0, 2]. Find P(X ≤ 3) and P(X > 2.5)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q6. Is f(x) = 6x(1 − x) on [0, 1] a valid PDF? If so, find P(X ≤ 1/2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q7. Piecewise PDF: f(x) = x for 0 ≤ x ≤ 1, f(x) = 2 − x for 1 < x ≤ 2, 0 otherwise. Find P(0.5 ≤ X ≤ 1.5)."
+        },
+        {
+          "type": "subheading",
+          "text": "Answers"
+        },
+        {
+          "type": "bullet-item",
+          "text": "(A) 0.125. ∫₀^0.5 3x² dx = [x³]₀^0.5 = 0.125. Trap: 0.375 is width × height at the right end (0.5 × f(0.5)), which overcounts because the curve is lower to the left."
+        },
+        {
+          "type": "bullet-item",
+          "text": "0.75 and 0.5. [x²] from 0.5 to 1 = 1 − 0.25; from 0.25 to 0.75 = 0.5625 − 0.0625."
+        },
+        {
+          "type": "bullet-item",
+          "text": "k = 1/4, P(X ≤ 1) = 1/16. ∫₀² kx³ dx = k·2⁴/4 = 4k = 1. Then (1/4)·(1⁴/4)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "k = 1/2, P(X ≤ 1) = 3/4. ∫₀² k(2 − x) dx = k(4 − 2) = 2k. Then ½[2x − x²/2]₀¹ = ½(1.5). Mirror image of f = x/2, so the answer flips from 1/4 to 3/4."
+        },
+        {
+          "type": "bullet-item",
+          "text": "1 and 0. Both events are clipped by the support [0, 2]."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Valid, P = 1/2. f ≥ 0 on [0, 1]; ∫ (6x − 6x²) dx = [3x² − 2x³]₀¹ = 1. At 1/2: 3/4 − 1/4 = 1/2 (the PDF is symmetric about 1/2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "0.75. Split at 1: ∫ from 0.5 to 1 of x dx = 0.375, plus ∫ from 1 to 1.5 of (2 − x) dx = 0.375. Geometric check: the whole triangle has area 1, and the two cut-off corner triangles each have area ½ × 0.5 × 0.5 = 0.125, so 1 − 0.25."
+        },
+        {
+          "type": "heading",
+          "text": "23. Lesson 4 revision sheet"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Find k: set ∫ over the support of f(x) dx = 1, solve for k."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Check f ≥ 0 on the whole support with that k."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Clip the event to the support, split at any piecewise break points."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Integrate: antiderivative at upper limit minus at lower limit."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Check: triangle or trapezium area for straight-line PDFs, or confirm complements add to 1."
+        },
+        {
+          "type": "subheading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using width × height on a sloping PDF."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Forgetting to divide by n + 1 in the power rule (∫ x³ dx = x⁴/4, not x⁴)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Integrating past the support instead of clipping the limits."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using one formula across a piecewise PDF instead of splitting."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Swapping the limits (lower − upper) and getting a negative \"probability\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next: Lesson 5 — The CDF of a continuous random variable."
+        }
+      ]
+    },
+    {
+      "title": "Lesson 5 — The CDF of a Continuous Random Variable",
+      "slug": "lesson-5-the-cdf-of-a-continuous-random-variable",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The CDF F(x) = P(X ≤ x) records the area under the PDF from the far left up to x. Integrate f to get F; differentiate F to get f."
+        },
+        {
+          "type": "heading",
+          "text": "24. What the CDF is: accumulated probability"
+        },
+        {
+          "type": "paragraph",
+          "text": "If you answer P(X ≤ 0.3), P(X ≤ 0.6) and P(X ≤ 0.9) one integral at a time, you repeat the same work. The CDF does it once, for every x:"
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = P(X \\le x)",
+          "text": "F(x) = P(X \\le x)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Capital F is the CDF; small f is the PDF. Picture walking left to right under f(x) = 2x and recording the area behind you: 0 at x = 0, 0.36 at x = 0.6, all of it (1) at x = 1."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: F(0.6) = area under f(x) = 2x from 0 to 0.6 = 0.36, i.e. 36% accumulated"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "x",
+              "0",
+              "0.3",
+              "0.5",
+              "0.6",
+              "0.9",
+              "1"
+            ],
+            [
+              "F(x) = x²",
+              "0",
+              "0.09",
+              "0.25",
+              "0.36",
+              "0.81",
+              "1"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Note f(0.6) = 1.2 is the height of the PDF, not a probability; F(0.6) = 0.36 is the probability."
+        },
+        {
+          "type": "heading",
+          "text": "25. From PDF to CDF: integrate"
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = \\int_{-\\infty}^{x} f(t)\\,dt",
+          "text": "F(x) = \\int_{-\\infty}^{x} f(t)\\,dt"
+        },
+        {
+          "type": "paragraph",
+          "text": "The dummy variable t keeps the moving integration variable separate from the upper limit x."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example. f(x) = 2x on [0, 1]."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Support is [0, 1]; there is no density below 0, so start the integral at 0."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Integrate for 0 ≤ x ≤ 1:"
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = \\int_0^x 2t\\,dt = \\left[t^2\\right]_0^x = x^2",
+          "text": "F(x) = \\int_0^x 2t\\,dt = \\left[t^2\\right]_0^x = x^2"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Fill in every region — the CDF is defined for all real x, and GATE marks you down for leaving regions out:"
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = \\begin{cases} 0 & x < 0 \\\\ x^2 & 0 \\le x \\le 1 \\\\ 1 & x > 1 \\end{cases}",
+          "text": "F(x) = \\begin{cases} 0 & x < 0 \\\\ x^2 & 0 \\le x \\le 1 \\\\ 1 & x > 1 \\end{cases}"
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: Integrate f(x) = 2x to get F(x) = x² on [0, 1], 0 to the left and 1 to the right"
+        },
+        {
+          "type": "paragraph",
+          "text": "Shape check: a straight rising PDF gives a curved CDF; the CDF is steepest where the PDF is tallest (near x = 1), because its slope is the PDF. The pieces join with no jumps: F = 0 at x = 0 and F = 1 at x = 1 from both sides."
+        },
+        {
+          "type": "heading",
+          "text": "26. Using the CDF: intervals and tails"
+        },
+        {
+          "type": "paragraph",
+          "text": "Once F is known, no more integration is needed — just plug in and subtract."
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: P(0.5 ≤ X ≤ 0.8) = F(0.8) − F(0.5) = 0.39; P(X > 0.6) = 1 − F(0.6) = 0.64"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Asked",
+              "Formula",
+              "With F(x) = x²"
+            ],
+            [
+              "P(X ≤ a)",
+              "F(a)",
+              "P(X ≤ 0.6) = 0.36"
+            ],
+            [
+              "P(a ≤ X ≤ b)",
+              "F(b) − F(a)",
+              "P(0.5 ≤ X ≤ 0.8) = 0.64 − 0.25 = 0.39"
+            ],
+            [
+              "P(X > a)",
+              "1 − F(a)",
+              "P(X > 0.6) = 1 − 0.36 = 0.64"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a continuous X, < and ≤ give the same answer, since P(X = a) = 0. So P(0.5 < X < 0.8) is also 0.39. (For a discrete X this is not true — recall Lesson 1, Q3.)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Values outside the support: P(X ≤ 1.7) = F(1.7) = 1 and P(X > −2) = 1 − F(−2) = 1. Read off the correct region of the piecewise CDF; don't plug 1.7 into x²."
+        },
+        {
+          "type": "heading",
+          "text": "27. From CDF back to PDF, and CDF properties"
+        },
+        {
+          "type": "paragraph",
+          "text": "Differentiate the CDF to recover the PDF (wherever F is differentiable):"
+        },
+        {
+          "type": "equation",
+          "tex": "f(x) = \\frac{dF(x)}{dx} \\qquad \\text{e.g. } \\frac{d}{dx}(x^2) = 2x \\text{ on } 0 < x < 1, \\text{ and } f = 0 \\text{ elsewhere}",
+          "text": "f(x) = \\frac{dF(x)}{dx} \\qquad \\text{e.g. } \\frac{d}{dx}(x^2) = 2x \\text{ on } 0 < x < 1, \\text{ and } f = 0 \\text{ elsewhere}"
+        },
+        {
+          "type": "note",
+          "text": "Illustration description: PDF and CDF linked by integration and differentiation; the CDF properties"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every CDF satisfies:"
+        },
+        {
+          "type": "bullet-item",
+          "text": "0 ≤ F(x) ≤ 1"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Non-decreasing"
+        },
+        {
+          "type": "bullet-item",
+          "text": "F(x) → 0 as x → −∞, and F(x) → 1 as x → +∞"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Right-continuous"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a continuous random variable the CDF is more than right-continuous: it is continuous everywhere, with no jumps. Image note: the open dot drawn at the origin of the CDF graph suggests a jump at x = 0. There is none — F(0) = 0 from both sides. Open and filled dots belong to discrete (staircase) CDFs, as in Lesson 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "Checking a proposed CDF (common GATE MCQ): test each property. F(x) = 1 − x on [0, 1] fails (decreasing). F(x) = 2x on [0, 1] fails (exceeds 1). F(x) = x² on [0, 1] with 0 below and 1 above passes."
+        },
+        {
+          "type": "heading",
+          "text": "28. Harder GATE patterns"
+        },
+        {
+          "type": "subheading",
+          "text": "A. Median and percentiles: solve F(m) = target"
+        },
+        {
+          "type": "paragraph",
+          "text": "The median m is the value with half the probability on each side: F(m) = 0.5. The p-th percentile solves F(x) = p/100."
+        },
+        {
+          "type": "paragraph",
+          "text": "For F(x) = x² on [0, 1]:"
+        },
+        {
+          "type": "equation",
+          "tex": "m^2 = 0.5 \\;\\Rightarrow\\; m = \\tfrac{1}{\\sqrt2} \\approx 0.707 \\qquad \\text{75th percentile: } x^2 = 0.75 \\Rightarrow x \\approx 0.866",
+          "text": "m^2 = 0.5 \\;\\Rightarrow\\; m = \\tfrac{1}{\\sqrt2} \\approx 0.707 \\qquad \\text{75th percentile: } x^2 = 0.75 \\Rightarrow x \\approx 0.866"
+        },
+        {
+          "type": "paragraph",
+          "text": "The median is above 0.5 because the density is piled up on the right."
+        },
+        {
+          "type": "subheading",
+          "text": "B. CDF of a piecewise PDF: carry the accumulated area forward"
+        },
+        {
+          "type": "paragraph",
+          "text": "Triangle PDF: f(x) = x on [0, 1], f(x) = 2 − x on [1, 2], 0 otherwise."
+        },
+        {
+          "type": "bullet-item",
+          "text": "0 ≤ x ≤ 1: F(x) = ∫₀ˣ t dt = x²/2. At x = 1, F = 1/2."
+        },
+        {
+          "type": "bullet-item",
+          "text": "1 ≤ x ≤ 2: start from the 1/2 already accumulated, then add the new piece:"
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = \\tfrac12 + \\int_1^x (2 - t)\\,dt = \\tfrac12 + \\left[2t - \\tfrac{t^2}{2}\\right]_1^x = 2x - \\tfrac{x^2}{2} - 1",
+          "text": "F(x) = \\tfrac12 + \\int_1^x (2 - t)\\,dt = \\tfrac12 + \\left[2t - \\tfrac{t^2}{2}\\right]_1^x = 2x - \\tfrac{x^2}{2} - 1"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Check the joins: F(1) = 2 − 0.5 − 1 = 0.5 ✔ and F(2) = 4 − 2 − 1 = 1 ✔."
+        },
+        {
+          "type": "equation",
+          "tex": "F(x) = \\begin{cases} 0 & x < 0 \\\\ x^2/2 & 0 \\le x \\le 1 \\\\ 2x - x^2/2 - 1 & 1 < x \\le 2 \\\\ 1 & x > 2 \\end{cases}",
+          "text": "F(x) = \\begin{cases} 0 & x < 0 \\\\ x^2/2 & 0 \\le x \\le 1 \\\\ 2x - x^2/2 - 1 & 1 < x \\le 2 \\\\ 1 & x > 2 \\end{cases}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The classic mistake is starting the second piece from 0 instead of from F(1) = 1/2. Check the join values every time."
+        },
+        {
+          "type": "heading",
+          "text": "29. Lesson 5 practice"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q1. A continuous X has CDF F(x) = x² for 0 ≤ x ≤ 1. P(X > 0.6) = ? (A) 0.36 (B) 0.40 (C) 0.64 (D) 0.60"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q2. f(x) = x/2 on [0, 2]. Write the full CDF, then find P(X ≤ 1.5) and P(X > 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q3. F(x) = x³ on [0, 1] (0 below, 1 above). Find the PDF and P(0.5 < X ≤ 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q4. For f(x) = 2x on [0, 1], find the median and the 75th percentile."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q5. Which can be a CDF on [0, 1] (0 below, 1 above)? (A) x² (B) 1 − x (C) 2x"
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q6. F(x) = 1 − e^(−2x) for x ≥ 0, 0 for x < 0. Find the PDF and P(X > 1)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q7. A continuous X has F(x) = kx² for 0 ≤ x ≤ 3, 0 below, 1 above. Find k, the PDF, and P(1 < X < 2)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "☐ Q8. For the triangle PDF of section 28B, find P(X ≤ 1.5) and the median."
+        },
+        {
+          "type": "subheading",
+          "text": "Answers"
+        },
+        {
+          "type": "bullet-item",
+          "text": "(C) 0.64. 1 − F(0.6) = 1 − 0.36. Option (A) is F(0.6) itself — the left tail, not the right."
+        },
+        {
+          "type": "bullet-item",
+          "text": "F = 0 (x < 0), x²/4 (0 ≤ x ≤ 2), 1 (x > 2). P(X ≤ 1.5) = 2.25/4 = 9/16; P(X > 1) = 1 − 1/4 = 3/4 (matches section 21)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "f(x) = 3x² on [0, 1]; P = 0.875. 1 − 0.5³ = 1 − 0.125."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Median ≈ 0.707, 75th percentile ≈ 0.866. Solve x² = 0.5 and x² = 0.75."
+        },
+        {
+          "type": "bullet-item",
+          "text": "(A). (B) decreases; (C) exceeds 1 for x > 0.5."
+        },
+        {
+          "type": "bullet-item",
+          "text": "f(x) = 2e^(−2x) for x ≥ 0; P(X > 1) = e^(−2) ≈ 0.135. This is the exponential distribution — you'll meet it in Module 4."
+        },
+        {
+          "type": "bullet-item",
+          "text": "k = 1/9, f(x) = 2x/9 on [0, 3], P = 1/3. Continuity at 3 forces k·9 = 1. Then (4 − 1)/9."
+        },
+        {
+          "type": "bullet-item",
+          "text": "P(X ≤ 1.5) = 0.875; median = 1. Second piece: 3 − 1.125 − 1 = 0.875. F(1) = 1/2, so the median is 1 (the PDF is symmetric about 1)."
+        },
+        {
+          "type": "heading",
+          "text": "30. Lesson 5 revision sheet"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Task",
+              "Do this"
+            ],
+            [
+              "PDF → CDF",
+              "F(x) = ∫ from −∞ to x of f(t) dt; write all regions (0 left of support, 1 right of it)"
+            ],
+            [
+              "CDF → PDF",
+              "f(x) = F′(x) inside the support, 0 outside"
+            ],
+            [
+              "P(X ≤ a)",
+              "F(a)"
+            ],
+            [
+              "P(a ≤ X ≤ b)",
+              "F(b) − F(a) (endpoints don't matter for continuous X)"
+            ],
+            [
+              "P(X > a)",
+              "1 − F(a)"
+            ],
+            [
+              "Median / percentile",
+              "Solve F(m) = 0.5 / F(x) = p"
+            ],
+            [
+              "Unknown constant in a CDF",
+              "Continuity at the support's ends (F reaches 1 at the right end)"
+            ],
+            [
+              "Piecewise PDF",
+              "Each new piece starts from the area already accumulated"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Answering a right-tail question with F(a) instead of 1 − F(a)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Plugging a value outside the support into the middle formula (F(1.7) = 1, not 1.7²)."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Writing only the middle piece of the CDF."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Restarting a piecewise CDF from 0 at the break point."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Confusing f(a) (height) with F(a) (probability)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next: Module 2 — Expectation and variance."
+        }
+      ]
+    }
+  ]
+}

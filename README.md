@@ -8,6 +8,8 @@ A Next.js learning library with illustrated lessons, worked examples, mathematic
 - Mathematical Foundation of Generative AI: Week 1 in two parts.
 - Algorithms in Data Science: Weeks 1 and 2.
 
+- Statistics: Random Variables, Lessons 1–5 from the supplied GATE DA study guide.
+
 ## Run locally
 
 Requires Node.js 20.9 or newer.

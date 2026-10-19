@@ -1,3 +1,4 @@
+import statistics from '../../data/statistics-week-1.json';
 import algorithms2 from '../../data/algorithms-week-2.json';
 import algorithms from '../../data/algorithms-week-1.json';
 import Search from '../../components/Search';
@@ -18,7 +19,7 @@ import { additionsFor } from '../../lib/review-additions';
 export const metadata = { title: 'Search course notes' };
 export default function Page() {
   const entries = [];
-  for (const data of [week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, algorithms, algorithms2]) {
+  for (const data of [week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, algorithms, algorithms2, statistics]) {
     for (const section of data.sections) {
       const base = (data.base || `/software-engineering/week-${data.week}/`) + section.slug + '/';
       const context = {subject: data.subject, subjectSlug: data.subjectSlug || 'software-engineering', part: data.part};
@@ -38,5 +39,5 @@ export default function Page() {
       });
     }
   }
-  return <main id="main" className="home search-page"><div className="eyebrow">YOUR LEARNING LIBRARY</div><h1>Search course notes.</h1><p className="lead">Find topics, explanations, figures, and revision questions across all three subjects.</p><Search entries={entries}/></main>;
+  return <main id="main" className="home search-page"><div className="eyebrow">YOUR LEARNING LIBRARY</div><h1>Search course notes.</h1><p className="lead">Find topics, explanations, figures, and revision questions across all four subjects.</p><Search entries={entries}/></main>;
 }

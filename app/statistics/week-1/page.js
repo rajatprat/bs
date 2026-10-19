@@ -1,0 +1,5 @@
+import data from '../../../data/statistics-week-1.json';
+import WeekSections from '../../../components/WeekSections';
+import StatisticsBlocks from '../../../components/StatisticsBlocks';
+export const metadata={title:'Statistics · Random variables'};
+export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs"><a href="/">Subjects</a><span>/</span><a href="/statistics/">Statistics</a><span>/</span><span>Random variables</span></nav><div className="eyebrow">MODULE 01 · WEEK 1</div><h1>Random variables.<br/><span>From mass to density.</span></h1><p className="lead">Five lessons from your GATE DA study guide, including worked numericals, practice answers, and revision sheets.</p><div className="pills"><span>5 lessons</span><span>Practice and answers</span><span>Revision sheets</span></div><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><section className="study-note"><StatisticsBlocks blocks={data.intro}/></section><WeekSections data={data}/></main>}
