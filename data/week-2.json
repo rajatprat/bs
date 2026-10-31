@@ -37,15 +37,18 @@
       "slug": "why-do-requirements-matter",
       "blocks": [
         {
+          "type": "note",
+          "text": "THINK  What are the disadvantages if we do not spend time and effort in identifying and documenting requirements? Pause and write down your responses before reading further."
+        },
+        {
           "type": "paragraph",
-          "text": "Before building software, the team must find out what people actually need. If developers make assumptions, they may build something different from what the customer expected. Fixing it later wastes time, effort and money.",
-          "runs": []
+          "text": "If we do not spend sufficient time and effort identifying and documenting requirements, there is a mismatch between what the user expects and what the developer builds. Time, effort and money are spent on something the customer did not ask for, changes are needed, there are more iterations, and development cost rises significantly."
         },
         {
           "type": "image",
           "src": "/images/week-2/image44.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Why do requirements matter?"
         },
@@ -59,14 +62,17 @@
         },
         {
           "type": "paragraph",
-          "text": "Example: A seller asks for “order tracking.” The developer might build only a delivered/not-delivered status, while the seller also needs to know where a parcel is and whether it was returned.",
-          "runs": []
+          "text": "Importance of requirement gathering and analysis is two-fold: (1) developers understand what customers want — how the software should look and behave; (2) customers come to an agreement that the developers' understanding matches what they expect. Otherwise cost, time and iterations increase."
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember, the customer is not always the end user — it can be an internal user or someone from a different team. First teams gather requirements, then analyse them, and only after that think about how to develop the software."
         },
         {
           "type": "image",
           "src": "/images/week-2/image45.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Why do requirements matter?"
         }
@@ -78,24 +84,23 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "A stakeholder is someone who uses, influences or is affected by the software. The customer paying for software may not be its main end user. We need different viewpoints.",
-          "runs": []
+          "text": "When a software system is introduced it influences different types of users — from your own organisation, other organisations or end users, with different roles and profiles. All these users are called stakeholders. We must understand their requirements in a broad, holistic manner before designing."
         },
         {
-          "type": "image",
-          "src": "/images/week-2/image47.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Who should we ask? Stakeholders and users"
+          "type": "note",
+          "text": "EXAMPLE  Amazon wants to develop a portal for sellers. Products which sellers list on the portal will be available for people to buy on Amazon."
         },
         {
           "type": "image",
           "src": "/images/week-2/image46.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Who should we ask? Stakeholders and users"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Amazon's Seller Portal and the people around it.",
+          "alt": "Amazon's Seller Portal and the people around it."
+        },
+        {
+          "type": "note",
+          "text": "THINK  Who are potential tertiary users of the Seller Portal? Pause and write down your responses before reading further."
         },
         {
           "type": "table",
@@ -107,20 +112,28 @@
             ],
             [
               "Primary",
-              "Frequent direct users",
-              "Independent sellers, company sales teams, authors/publishers"
+              "Frequent users of the system",
+              "Independent sellers; sales team of consumer companies (e.g. electronics – mobiles, computers); independent authors and publishers"
             ],
             [
               "Secondary",
-              "Use the system through someone else",
-              "A sales manager receives reports through a sales team"
+              "Do not directly use the system; use it through an intermediary",
+              "Sales managers who periodically check sales numbers, profits and margins through their sales team"
             ],
             [
               "Tertiary",
-              "Affected by or influence the system without directly using it",
-              "Buyers, banks and shipping/logistics companies"
+              "Do not use the software at all, but are affected by its introduction or influence its purchase",
+              "Logistics/shipping companies (deliver items to buyers); banks (timely transfer of money to sellers); buyers (what they buy depends on what sellers list)"
             ]
           ]
+        },
+        {
+          "type": "image",
+          "src": "/images/week-2/image47.webp",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Primary, secondary and tertiary users of the Seller Portal.",
+          "alt": "Primary, secondary and tertiary users of the Seller Portal."
         }
       ]
     },
@@ -130,45 +143,63 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "After collecting requirements, we should not directly begin coding. Check whether the statements are unclear, conflict with each other, or leave out necessary details.",
-          "runs": []
+          "text": "During requirements analysis, we analyse the gathered requirements to form a clear understanding of the exact customer requirements and to weed out any problems. Problems arise because requirements come from various stakeholders and different sources."
+        },
+        {
+          "type": "note",
+          "text": "THINK  What kind of problems or issues can arise from the gathered requirements? Pause and write down your responses before reading further."
+        },
+        {
+          "type": "heading",
+          "text": "Ambiguous requirements"
         },
         {
           "type": "paragraph",
-          "text": "Three ways requirements can go wrong (Seller Portal): AMBIGUOUS — “Manage inventory” can mean add products, change prices or delete products. Better: list each allowed action. INCONSISTENT — sellers request weekly payouts but the banking system permits them every two weeks. Discuss the constraint and agree on a feasible payout schedule. INCOMPLETE — “Track orders” does not say whether to show in-transit, delivered or returned orders. Ask which states the seller needs. These examples show why gathering is followed by analysis.",
-          "runs": []
-        },
-        {
-          "type": "image",
-          "src": "/images/week-2/image50.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Requirement analysis: spotting problems"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-2/image49.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Requirement analysis: spotting problems"
+          "text": "“Independent sellers need to manage their inventory”: manage could mean add a product, modify a price, delete products… Developers build based on their own interpretation, so we must ensure the idea of what is required is the same from the user’s and the developer’s perspective."
         },
         {
           "type": "image",
           "src": "/images/week-2/image48.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 905,
           "caption": "",
           "alt": "Illustration: Requirement analysis: spotting problems"
         },
         {
-          "type": "table",
-          "rows": [
-            [
-              "Remember  Ambiguous = unclear meaning. Inconsistent = two statements conflict. Incomplete = needed information is missing."
-            ]
-          ]
+          "type": "heading",
+          "text": "Inconsistent requirements"
+        },
+        {
+          "type": "paragraph",
+          "text": "Independent sellers want payment credited every week; the banking system allows only credit every two weeks. Developers must resolve this, e.g. tell sellers this is what can be provided; once people know the constraints, you can build."
+        },
+        {
+          "type": "image",
+          "src": "/images/week-2/image49.webp",
+          "width": 1672,
+          "height": 941,
+          "caption": "",
+          "alt": "Illustration: Requirement analysis: spotting problems"
+        },
+        {
+          "type": "heading",
+          "text": "Incomplete requirements"
+        },
+        {
+          "type": "paragraph",
+          "text": "Some aspects were overlooked because neither customer nor developer could imagine all details. “Track orders”: delivered orders, orders in transit, or returned orders? The developer needs this before proceeding."
+        },
+        {
+          "type": "image",
+          "src": "/images/week-2/image50.webp",
+          "width": 1672,
+          "height": 941,
+          "caption": "",
+          "alt": "Illustration: Requirement analysis: spotting problems"
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Analysis of requirements is essential to identify ambiguities, inconsistencies and incomplete requirements. Then we are in a better position to start designing the system."
         }
       ]
     },
@@ -178,14 +209,40 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Different techniques answer different questions. The example recommends combining techniques rather than depending on just one.",
-          "runs": []
+          "text": "Users identified for the Seller Portal: independent sellers, sales team/manager of companies, advertising department, logistics/shipping company manager, buyers, banks. How do we gather requirements from them?"
+        },
+        {
+          "type": "note",
+          "text": "THINK  You have been commissioned by Amazon to build the Seller Portal. How do we gather requirements from independent sellers, sales teams/managers, the advertising department, logistics/shipping managers, buyers and banks? Pause and write down your responses before reading further."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Technique"
+            ],
+            [
+              "Questionnaires"
+            ],
+            [
+              "Interviews"
+            ],
+            [
+              "Focus groups and workshops"
+            ],
+            [
+              "Naturalistic observations"
+            ],
+            [
+              "Studying documentation"
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-2/image51.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Five ways to gather requirements"
         },
@@ -193,28 +250,28 @@
           "type": "table",
           "rows": [
             [
-              "Method",
-              "Best used for"
+              "Technique",
+              "Purpose"
             ],
             [
-              "Questionnaire",
-              "Getting answers to specific questions from many people"
+              "Questionnaires",
+              "Answering specific questions"
             ],
             [
-              "Interview",
-              "Exploring issues, experiences and examples in detail"
+              "Interviews",
+              "Exploring issues"
             ],
             [
-              "Focus group",
-              "Hearing multiple viewpoints and finding disagreements"
+              "Focus groups",
+              "Collecting multiple viewpoints"
             ],
             [
-              "Naturalistic observation",
-              "Understanding real work in its natural setting"
+              "Naturalistic observations",
+              "Understanding context"
             ],
             [
               "Documentation",
-              "Finding procedures, regulations and standards"
+              "Procedures, regulations, standards"
             ]
           ]
         }
@@ -225,46 +282,58 @@
       "slug": "questionnaires-and-interviews",
       "blocks": [
         {
+          "type": "heading",
+          "text": "Questionnaires"
+        },
+        {
           "type": "paragraph",
-          "text": "A questionnaire is a set of prepared questions. It may use yes/no, multiple-choice or open-ended answers. It is useful when people are spread across many locations. Pilot-test it and also use another gathering method.",
-          "runs": []
+          "text": "A series of questions designed to elicit specific information from users. Answers can be yes/no, a choice from a set of answers, or a longer response/comment. Good for getting answers to specific questions from a large group of people, usually spread across a wide geographical area."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Send to sales team managers of several mobile companies: “What percentage of your inventory do you sell online?” “What are the main difficulties you encounter in selling your product online?”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Questionnaires should be used in conjunction with other techniques."
         },
         {
           "type": "image",
           "src": "/images/week-2/image52.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Questionnaires and interviews"
+          "width": 1536,
+          "height": 1024,
+          "caption": "A questionnaire sent to sales managers of several mobile companies.",
+          "alt": "A questionnaire sent to sales managers of several mobile companies."
+        },
+        {
+          "type": "heading",
+          "text": "Interviews"
         },
         {
           "type": "paragraph",
-          "text": "An interview is a conversation to understand a person’s work and problems. It can happen face-to-face, by phone or online.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Interview types: STRUCTURED uses the same prepared questions in a fixed order. UNSTRUCTURED begins with broad questions and follows interesting answers. SEMI-STRUCTURED prepares key questions but allows follow-ups. Example: ask a seller which platforms they use; if they say WhatsApp or Instagram, follow up about difficulties tracking orders and payments. Interviews explore problems that a questionnaire may miss.",
-          "runs": []
+          "text": "Asking someone a set of questions — face-to-face, telephonic or online. Classified as structured, unstructured or semi-structured depending on how rigorously the interviewer sticks to a prepared set of questions. Structured: a fixed set of questions. Unstructured: the interviewer does not know what questions to ask because they don't know what the user does or needs, so they ask broad questions and probe further based on responses."
         },
         {
           "type": "image",
           "src": "/images/week-2/image53.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Questionnaires and interviews"
         },
         {
           "type": "paragraph",
-          "text": "Example: A seller says they use WhatsApp and Instagram to sell items. Follow-up questions reveal problems in tracking orders, payments and stock. Those problems suggest useful software features.",
-          "runs": []
+          "text": "Getting people to explore issues; used early in requirement gathering to elicit scenarios."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Ask independent sellers “What other platforms do you use to sell your products? Advantages/disadvantages?” They may say WhatsApp, Instagram — easy to get customers, but tracking orders, payments, inventory and selling options is a huge overhead. Requirement: tracking orders, payments, inventory, selling options."
         },
         {
           "type": "image",
           "src": "/images/week-2/image54.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Questionnaires and interviews"
         }
@@ -275,41 +344,58 @@
       "slug": "focus-groups-observation-and-existing-documents",
       "blocks": [
         {
+          "type": "heading",
+          "text": "Focus groups"
+        },
+        {
           "type": "paragraph",
-          "text": "In a focus group, several stakeholders discuss requirements together. This helps reach agreement and also exposes disagreement. For example, a mobile sales manager may need launch-day sales while a furniture seller prefers a 30-day summary.",
-          "runs": []
+          "text": "Drawback of interviews: they offer only one perspective. Alternative: get a group of stakeholders to discuss issues and requirements. Advantages: gaining consensus (if different groups highlight the same issue, it is a key requirement) and highlighting areas of conflict or disagreement."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Sales team managers from different verticals — the mobile sales team wants the sales summary on launch day; furniture wants the sales summary of the last 30 days. Requirement: sales summary for a specific day or the last x days."
         },
         {
           "type": "image",
           "src": "/images/week-2/image55.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Focus groups, observation and existing documents"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Different verticals, different needs → sales summary for a specific day or the last x days.",
+          "alt": "Different verticals, different needs → sales summary for a specific day or the last x days."
+        },
+        {
+          "type": "heading",
+          "text": "Naturalistic observation"
         },
         {
           "type": "paragraph",
-          "text": "In naturalistic observation, an analyst watches people doing real work. This is sometimes called shadowing. It can uncover steps that users forget to describe in interviews.",
-          "runs": []
+          "text": "What people say is often different from what they do, and it is difficult to describe accurately how we do a task (e.g. how do buyers buy online?). So we spend time with stakeholders as they go about their day-to-day tasks, observing their work in its natural setting — shadowing a stakeholder, making notes, occasionally asking questions, but primarily observing."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  How people sell in physical shops — shopkeeper/customer recommendations and customer feedback. Requirements: recommendations for what other items to sell; getting timely customer feedback."
         },
         {
           "type": "image",
           "src": "/images/week-2/image56.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Focus groups, observation and existing documents"
         },
         {
+          "type": "heading",
+          "text": "Documentation"
+        },
+        {
           "type": "paragraph",
-          "text": "Existing documentation can reveal procedures, business rules and legal constraints. For a seller portal, banking rules can determine how seller bank accounts are added and how often money may be deposited.",
-          "runs": []
+          "text": "Procedures and rules for a task, steps involved in an activity, regulations governing a task. Example — bank regulations: How can you add sellers' bank accounts to your portal? How frequently can you deposit money to seller accounts? Also, practices of other online marketplaces."
         },
         {
           "type": "image",
           "src": "/images/week-2/image57.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Focus groups, observation and existing documents"
         }
@@ -320,22 +406,98 @@
       "slug": "practical-guidelines-and-sample-portal-features",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "Include all relevant stakeholders, combine methods, test a questionnaire or interview plan on a small group, and remain realistic about cost and time.",
-          "runs": []
+          "type": "heading",
+          "text": "Identified requirements"
         },
         {
           "type": "paragraph",
-          "text": "After requirement gathering, the Seller Portal could contain the following features. The next step is to specify exactly what each feature must do.",
-          "runs": []
+          "text": "After requirement gathering, the Seller Portal could contain the following features."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "#",
+              "Identified requirement"
+            ],
+            [
+              "1",
+              "Add/Edit/Delete catalogue"
+            ],
+            [
+              "2",
+              "Add/Edit/Delete inventory"
+            ],
+            [
+              "3",
+              "Track orders"
+            ],
+            [
+              "4",
+              "Track payments"
+            ],
+            [
+              "5",
+              "Track inventory"
+            ],
+            [
+              "6",
+              "Track sales – specific day, last x days"
+            ],
+            [
+              "7",
+              "Track customer feedback"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/week-2/image65.webp",
+          "width": 1536,
+          "height": 1024,
+          "caption": "Requirements identified for the Seller Portal",
+          "alt": "Requirements identified for the Seller Portal"
+        },
+        {
+          "type": "heading",
+          "text": "Basic requirement-gathering guidelines"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Guideline",
+              "Details"
+            ],
+            [
+              "Focus on identifying stakeholders' needs",
+              ""
+            ],
+            [
+              "Involve all stakeholder groups",
+              "Primary, secondary and tertiary — each has different needs"
+            ],
+            [
+              "Use a combination of data gathering techniques",
+              "Different techniques have different purposes"
+            ],
+            [
+              "Run a pilot session if possible",
+              "Ensure your data-gathering session is likely to go as planned (e.g. a questionnaire may have a missing question or wrong/missing options, and it is difficult to ask users to fill it again)"
+            ],
+            [
+              "Data gathering is expensive and time-consuming",
+              "Be pragmatic and make compromises"
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-2/image58.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Practical guidelines and sample portal features"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Basic requirement-gathering guidelines.",
+          "alt": "Basic requirement-gathering guidelines."
         }
       ]
     },
@@ -344,38 +506,44 @@
       "slug": "functional-versus-non-functional-requirements",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "The distinction is easy: functional requirements say what the system must do. Non-functional requirements say how well it must do its job or what quality or constraints it must meet.",
-          "runs": []
+          "type": "note",
+          "text": "EXAMPLE  Requirement 1: A seller can add/edit/delete their catalogue. Requirement 2: When a new product is added to the catalogue, the product should appear in the catalogue within 5 sec."
+        },
+        {
+          "type": "note",
+          "text": "THINK  Requirement 1: a seller can add/edit/delete their catalogue. Requirement 2: a newly added product should appear in the catalogue within 5 seconds. What is the difference between these two requirements? Pause and write down your responses before reading further."
         },
         {
           "type": "image",
           "src": "/images/week-2/image59.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Functional versus non-functional requirements"
         },
         {
-          "type": "table",
-          "rows": [
-            [
-              "Example  Functional: seller can add/edit/delete catalogue entries. Non-functional: after adding a product, the update appears within 5 seconds."
-            ]
-          ]
+          "type": "heading",
+          "text": "Functional requirements"
         },
         {
           "type": "paragraph",
-          "text": "A functional requirement often describes an input, an action and an expected output. This resembles a function that maps input to output.",
-          "runs": []
+          "text": "Captures a functionality required by the users from the system: the user performs actions/gives inputs and the system provides an appropriate output. Like a mathematical function f: I → O transforming an element of the input domain I to a value in the output O. Functional requirements should clearly describe each functionality the system supports, with its corresponding input and output data set."
         },
         {
           "type": "image",
           "src": "/images/week-2/image60.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Functional versus non-functional requirements"
+        },
+        {
+          "type": "heading",
+          "text": "Non-functional requirements"
+        },
+        {
+          "type": "paragraph",
+          "text": "Non-functional requirements essentially specify how the system should behave, not what the system should do. Requirement 2 cannot be expressed as accepting input and producing output."
         }
       ]
     },
@@ -384,28 +552,38 @@
       "slug": "reliability-robustness-and-other-quality-requirements",
       "blocks": [
         {
+          "type": "note",
+          "text": "THINK  What are some non-functional requirements for the Amazon Seller Portal? Pause and write down your responses before reading further."
+        },
+        {
           "type": "paragraph",
-          "text": "Reliability means the software performs its required functions without failure under stated conditions over a stated period. Consistently producing the same wrong result is not reliability. Robustness means it can handle unexpected situations or input without failing badly. These are related but not identical.",
-          "runs": []
+          "text": "Reliability is the extent to which a program behaves the same way over time in the same operating environment. E.g. the software should not crash often, otherwise users get frustrated; in the Seller Portal we must ensure the portal handles all operations, especially when the inventory changes based on buying and selling."
+        },
+        {
+          "type": "paragraph",
+          "text": "Robustness is the extent to which a program can recover from errors or unexpected input. E.g. a user gives garbage as input; in the Seller Portal the service must handle large numbers and high traffic."
         },
         {
           "type": "image",
           "src": "/images/week-2/image61.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Reliability, robustness and other quality requirements"
         },
         {
           "type": "paragraph",
-          "text": "Other non-functional requirements include performance, security, portability and interoperability. A quality requirement is stronger when it can be tested, such as “within 5 seconds” instead of “very fast.”",
-          "runs": []
+          "text": "When we specify reliability and robustness, we are ensuring the system behaves the way we intend — not specifying what the system should do. That is the key difference between functional and non-functional requirements."
+        },
+        {
+          "type": "paragraph",
+          "text": "Others: performance, portability, security, interoperability, etc."
         },
         {
           "type": "image",
           "src": "/images/week-2/image62.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Reliability, robustness and other quality requirements"
         }
@@ -417,21 +595,116 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SRS stands for Software Requirements Specification. In the Plan and Document approach, a system analyst works with the team and stakeholders to organise requirements into a structured document. It becomes a shared reference for what is to be built.",
-          "runs": []
+          "text": "In the Plan and Document perspective, requirement gathering and analysis is usually done by a system analyst, with other members of the software team. The analyst then organises the requirements in a Software Requirements Specification (SRS) document, which contains all the user requirements in a structured form."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Section",
+              "Content"
+            ],
+            [
+              "1 Introduction",
+              "1.1 Purpose; 1.2 Scope; 1.3 Definitions, acronyms and abbreviations; 1.4 References; 1.5 Overview"
+            ],
+            [
+              "2 Overall description",
+              "2.1 Product perspective; 2.2 Product functions; 2.3 User characteristics; 2.4 Constraints; 2.5 Assumptions and dependencies"
+            ],
+            [
+              "3 Specific requirements",
+              "Specific functional and non-functional requirements"
+            ],
+            [
+              "3.1 External interface requirements",
+              "User, hardware, software, communication interfaces"
+            ],
+            [
+              "3.1.1 User interfaces",
+              ""
+            ],
+            [
+              "3.1.2 Hardware interfaces",
+              ""
+            ],
+            [
+              "3.1.3 Software interfaces",
+              ""
+            ],
+            [
+              "3.1.4 Communication interfaces",
+              ""
+            ],
+            [
+              "3.2 System features",
+              "For each: introduction/purpose of feature; Stimulus/response sequence; associated functional requirements"
+            ],
+            [
+              "3.2.1 System feature 1",
+              ""
+            ],
+            [
+              "3.2.1.1 Introduction/purpose of feature",
+              ""
+            ],
+            [
+              "3.2.1.2 Stimulus/response sequence",
+              ""
+            ],
+            [
+              "3.2.1.3 Associated functional requirements",
+              ""
+            ],
+            [
+              "3.2.1.3.1 Functional requirement 1",
+              "…"
+            ],
+            [
+              "3.2.1.3.n Functional requirement n",
+              ""
+            ],
+            [
+              "3.2.2 System feature 2",
+              "…"
+            ],
+            [
+              "3.2.m System feature m",
+              ""
+            ],
+            [
+              "3.3 Performance requirements",
+              "Non-functional requirements"
+            ],
+            [
+              "3.4 Design constraints",
+              "Non-functional requirements"
+            ],
+            [
+              "3.5 Software system attributes",
+              "Non-functional requirements"
+            ],
+            [
+              "3.6 Other requirements",
+              "Non-functional requirements"
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "The sample SRS in the chapter includes Section 1 (Introduction: purpose, scope, definitions), Section 2 (Overall Description: users, functions, constraints and assumptions), and Section 3 (Specific Requirements). Within Section 3, Section 3.1 describes external interfaces, Section 3.2 describes system features, and later sections explain quality requirements. It is a guideline, not a fixed rule for every company.",
-          "runs": []
+          "text": "Sections 1 and 2 give a broad outline and description of the system. Section 3 contains specific functional and non-functional requirements; 3.3–3.6 cover non-functional requirements like performance and security."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a guideline; based on the organisation and context, modifications to the structure and content are possible."
         },
         {
           "type": "image",
           "src": "/images/week-2/image63.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: What is an SRS?"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Standard structure of an SRS document.",
+          "alt": "Standard structure of an SRS document."
         }
       ]
     },
@@ -440,35 +713,86 @@
       "slug": "what-kinds-of-interfaces-appear-in-an-srs",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "The four types are: user interface (screens and layouts), hardware interface (devices such as an ATM card reader), software interface (connections to other programs or databases), and communication interface (email, SMS or networks). For the seller portal, other databases and message services matter.",
-          "runs": []
+          "type": "heading",
+          "text": "External interface requirements (3.1)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Interface",
+              "Details"
+            ],
+            [
+              "User interfaces",
+              "Sample screen images, GUI standards, screen layout"
+            ],
+            [
+              "Hardware interfaces",
+              "Supported device types, nature of data and control interactions between software and hardware — e.g. ATM hardware, ATM card and ATM software"
+            ],
+            [
+              "Software interfaces",
+              "Connection to other software components — database, operating system, tools and libraries; e.g. the Seller Portal must interface with the Amazon buying-portal database"
+            ],
+            [
+              "Communication interfaces",
+              "E.g. email or SMS notification about orders — interface with an email server"
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-2/image64.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: What kinds of interfaces appear in an SRS?"
         },
         {
-          "type": "paragraph",
-          "text": "Each system feature can also be written as a heading, such as “Manage Catalogue,” “Track Payments,” “Track Sales,” or “Track Feedback,” followed by its detailed requirements.",
-          "runs": []
+          "type": "heading",
+          "text": "System features (3.2)"
         },
         {
           "type": "paragraph",
-          "text": "Mini SRS example — Section 3.2, System Feature: Manage Catalogue. Functional requirement: “An independent seller can add a product to the catalogue with its title, price and description.” A related non-functional condition could state: “After the seller adds a product, it appears in the catalogue within 5 seconds.” The first specifies what the system does; the second specifies a measurable response-time expectation. The SRS groups such statements under their features and quality requirements.",
-          "runs": []
+          "text": "Broad high-level functions, each with its functional requirements. For the Seller Portal:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "System feature"
+            ],
+            [
+              "Manage catalogue"
+            ],
+            [
+              "Manage inventory"
+            ],
+            [
+              "Track orders"
+            ],
+            [
+              "Track payments"
+            ],
+            [
+              "Track inventory"
+            ],
+            [
+              "Track sales – specific day, last x days"
+            ],
+            [
+              "Track customer feedback"
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-2/image65.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: What kinds of interfaces appear in an SRS?"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Requirements identified for the Seller Portal",
+          "alt": "Requirements identified for the Seller Portal"
         }
       ]
     },
@@ -477,17 +801,49 @@
       "slug": "why-use-an-srs",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "The customer and team review and agree on the SRS. It helps avoid late surprises, estimates cost and schedules, and provides a starting point for future upgrades. The drawback discussed in the chapter is that preparing and maintaining detailed documents takes substantial work, especially when needs change.",
-          "runs": []
+          "type": "note",
+          "text": "THINK  What are the advantages of maintaining an SRS document? Pause and write down your responses before reading further."
+        },
+        {
+          "type": "heading",
+          "text": "Advantages of an SRS"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Advantage",
+              "Explanation"
+            ],
+            [
+              "Forms an agreement between customers and developers",
+              "The SRS is given to customers, who read it, and after several iterations it is accepted; customers know what to expect and developers know what customers expect."
+            ],
+            [
+              "Reduces future reworks",
+              "Forces stakeholders to rigorously think about all requirements before design and development, reducing changes later."
+            ],
+            [
+              "Provides a basis for estimating costs and schedules",
+              "The size of the software is a function of all requirements; effort and cost are estimated from size, and the project manager creates a schedule from these estimates."
+            ],
+            [
+              "Facilitates future extensions",
+              "A basis for planning future enhancements."
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Drawback: A lot of documentation is required. This is fine if the requirements are fixed."
         },
         {
           "type": "image",
           "src": "/images/week-2/image66.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Why use an SRS?"
+          "height": 941,
+          "caption": "SRS advantages and its drawback.",
+          "alt": "SRS advantages and drawback: a lot of documentation is required; this is fine if requirements are fixed."
         }
       ]
     },
@@ -497,8 +853,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "In some projects, users are unsure what they want until they see working software. The Agile perspective encourages frequent discussions, small releases and refinement of requirements. The chapter introduces Behaviour-Driven Design (BDD) and user stories in this context.",
-          "runs": []
+          "text": "The SRS serves as an agreement between customers and developers. But in many projects customers are unsure of the requirements, and their understanding evolves over time. The Agile perspective addresses this: working closely and interacting frequently with stakeholders to develop and refine requirements, building a working prototype and refining it by adding features in sprints/iterations (typically every 2 weeks). In Agile we are basically in maintenance mode as soon as we have some requirements. The Agile lifecycle begins with Behaviour Driven Design."
         }
       ]
     },
@@ -508,25 +863,15 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "In this chapter, BDD means discussing what users expect the software to do before and during development, to reduce misunderstandings. Instead of describing internal code, talk about expected behavior and value.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "The example introduces user stories as lightweight statements of requirements in the Agile approach. They are refined through conversation and normally kept small enough to plan within an iteration of about 1–2 weeks.",
-          "runs": []
+          "text": "Behaviour Driven Design (BDD) asks questions about the behaviour of an application before and during development, so that stakeholders are less likely to miscommunicate. Requirements are still written down, but they are continuously refined to meet stakeholders' requirements and expectations. The BDD version of requirements is user stories, which take the place of the SRS in the Plan and Document perspective."
         },
         {
           "type": "image",
           "src": "/images/week-2/image67.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Behaviour-Driven Design (BDD)"
-        },
-        {
-          "type": "note",
-          "text": "Standard terminology: BDD means Behaviour-Driven Development. “Behaviour-Driven Design” is retained in this section title as the chapter’s wording. A user story states a need; concrete acceptance examples make the expected behaviour testable. For example: Given 10 notebooks in stock, When a seller adds 3, Then the displayed stock is 13."
+          "width": 1536,
+          "height": 1024,
+          "caption": "BDD: ask about behaviour, write user stories, build in sprints, refine continuously.",
+          "alt": "BDD: ask about behaviour, write user stories, build in sprints, refine continuously."
         }
       ]
     },
@@ -535,36 +880,38 @@
       "slug": "the-user-story-template",
       "blocks": [
         {
-          "type": "table",
-          "rows": [
-            [
-              "Template  As a [type of user], I want [an action], so that [a benefit or value]."
-            ]
-          ]
-        },
-        {
           "type": "paragraph",
-          "text": "The role says WHO needs it. The action says WHAT the person wants to do. The benefit explains WHY it matters. None of this requires knowing how developers will write the code.",
-          "runs": []
+          "text": "User stories are short, informal, plain-language descriptions of what a user wants to do within a software product, which is of value to them. They come from the Human Computer Interaction (HCI) community and are written on 3-inch by 5-inch (3×5) index cards. A user story is the smallest unit of work that can be done in 1 sprint (roughly 1–2 weeks)."
         },
         {
-          "type": "paragraph",
-          "text": "Complete example examples: “As an independent seller, I want to view my inventory, so that I can identify products that are low in stock.” “As an independent seller, I want to view customer feedback for each product, so that I can identify issues with my products.” Each has a user role, an action and a benefit.",
-          "runs": []
+          "type": "heading",
+          "text": "The role-feature-benefit pattern"
         },
         {
-          "type": "image",
-          "src": "/images/week-2/image69.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: The user-story template"
+          "type": "note",
+          "text": "As a [type of user], I want [an action], so that [a benefit/value]."
         },
         {
           "type": "image",
           "src": "/images/week-2/image68.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
+          "caption": "",
+          "alt": "Illustration: The user-story template"
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Feature: View inventory — As an independent seller, I want to view my inventory so that I can take stock of products which are low in number."
+        },
+        {
+          "type": "note",
+          "text": "EXAMPLE  Feature: Track customer feedback — As an independent seller, I want to view my customers' feedback for each product so that I can get a sense of pertinent issues in my products."
+        },
+        {
+          "type": "image",
+          "src": "/images/week-2/image69.webp",
+          "width": 1672,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: The user-story template"
         }
@@ -575,35 +922,53 @@
       "slug": "why-are-user-stories-useful",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "User stories are shorter than detailed SRS sections. They help customers and developers discuss the right features, prioritise them and change requirements after feedback.",
-          "runs": []
+          "type": "heading",
+          "text": "Benefits of user stories"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Benefit",
+              "Explanation"
+            ],
+            [
+              "Lightweight",
+              "Compared to SRS documentation."
+            ],
+            [
+              "Help plan and prioritise development",
+              "E.g. the client may want catalogue and inventory first, so the team tells customers “we will provide the View inventory feature in 2 weeks.”"
+            ],
+            [
+              "Concentrate on behaviour vs implementation",
+              "We do not tell customers how we will implement features, which reduces misunderstanding between stakeholders."
+            ],
+            [
+              "Conversation between users and the development team",
+              "This back-and-forth brings better, simpler, more valuable solutions."
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-2/image70.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: Why are user stories useful?"
         },
         {
-          "type": "paragraph",
-          "text": "Example: After asking to view customer ratings, the seller may realise they also want an email alert when a product gets a 1-star or 2-star review. The story can be refined through conversation.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Keep the follow-up request separate: “As an independent seller, I want an email alert when a product receives a 1- or 2-star rating, so that I can review possible issues quickly.” This is a proposed future-backlog story, not a hidden change to the current “view feedback” story. The team and customer can decide its priority in a later sprint.",
-          "runs": []
+          "type": "note",
+          "text": "EXAMPLE  When the Track customer feedback feature is shown, the client realises: 'I would also like to be notified by email about 1 or 2 star ratings of my product.' Such modifications are common in the Agile perspective, and user stories facilitate them."
         },
         {
           "type": "image",
           "src": "/images/week-2/image71.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Why are user stories useful?"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Conversation refines the story: email alerts for 1–2 star ratings.",
+          "alt": "Conversation refines the story: email alerts for 1–2 star ratings."
         }
       ]
     },
@@ -613,45 +978,44 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The chapter says a good user story should be SMART: Specific, Measurable, Achievable, Relevant and Timeboxed. These are five separate checks.",
-          "runs": []
-        },
-        {
-          "type": "image",
-          "src": "/images/week-2/image72.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: SMART user stories"
+          "text": "A good user story should be SMART: Specific, Measurable, Achievable, Relevant and Timeboxed."
         },
         {
           "type": "table",
           "rows": [
             [
-              "Check",
-              "Simple question"
+              "SMART",
+              "Meaning"
             ],
             [
               "Specific",
-              "Do we know exactly what should be implemented?"
+              "Know exactly what to implement"
             ],
             [
               "Measurable",
-              "Can we judge whether the result is correct?"
+              "Each story is testable: known expected results for some inputs"
             ],
             [
               "Achievable",
-              "Can it reasonably fit into an iteration?"
+              "Ideally implementable in one agile iteration (1–2 weeks), otherwise subdivide"
             ],
             [
               "Relevant",
-              "Does it provide value to at least one stakeholder?"
+              "Business value to one or more stakeholders"
             ],
             [
               "Timeboxed",
-              "Is there a limit for how long we will work on it?"
+              "Stop implementing a feature once the time budget is exceeded"
             ]
           ]
+        },
+        {
+          "type": "image",
+          "src": "/images/week-2/image72.webp",
+          "width": 1536,
+          "height": 1024,
+          "caption": "SMART user stories.",
+          "alt": "SMART user stories."
         }
       ]
     },
@@ -660,43 +1024,58 @@
       "slug": "smart-how-to-improve-a-story",
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "“Users can search” is vague. “Users can search products by title” is more specific. “The portal should be fast” is not measurable. “A newly added product must appear in 3 seconds” gives a measurable condition. These are separate teaching examples.",
-          "runs": []
+          "type": "heading",
+          "text": "Specific"
         },
         {
           "type": "paragraph",
-          "text": "A story that cannot fit in one short iteration should be broken into smaller pieces. For example, first show all inventory on one page; later add pagination and filters.",
-          "runs": []
+          "text": "Vague: “User can search for a product in the catalogue” → specific: “User can search for a product by title in the catalogue”."
+        },
+        {
+          "type": "heading",
+          "text": "Measurable"
         },
         {
           "type": "paragraph",
-          "text": "Achievable and Timeboxed in practice: If “View Inventory” is too large for a 1–2-week iteration, first implement a basic page listing products; add pagination and filters as later stories. If the time budget is exceeded, do not silently extend the sprint: discuss whether to split, reschedule or drop unfinished scope and revise the estimate. Relevance means each part should still deliver value to stakeholders.",
-          "runs": []
+          "text": "Not measurable: “The Seller portal should have good response time” → measurable: “When adding a product to the catalogue, the product should appear in the catalogue within 3 seconds”."
         },
         {
           "type": "image",
           "src": "/images/week-2/image73.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: SMART: how to improve a story"
         },
         {
-          "type": "paragraph",
-          "text": "Relevant means it solves a real stakeholder need. Ask “Why does the user need this?” and “So what value does it provide?”",
-          "runs": []
+          "type": "heading",
+          "text": "Achievable"
         },
         {
           "type": "paragraph",
-          "text": "If the allotted time ends, the chapter suggests considering whether to drop the story, split it or reschedule the unfinished portion. This is how the team respects the timebox rather than adding work indefinitely.",
-          "runs": []
+          "text": "“Feature 1: View inventory” → “Feature 1a: View all products in inventory in a single page” + “Feature 1b: Add pagination and filters”."
+        },
+        {
+          "type": "heading",
+          "text": "Relevant"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ask “Why is this feature needed?” and “So what?”"
+        },
+        {
+          "type": "heading",
+          "text": "Timeboxed"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the time budget is exceeded: give up, divide the story into smaller ones, or reschedule what is left according to a new estimate."
         },
         {
           "type": "image",
           "src": "/images/week-2/image74.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "",
           "alt": "Illustration: SMART: how to improve a story"
         }
@@ -707,17 +1086,28 @@
       "slug": "user-story-limits-and-choosing-an-approach",
       "blocks": [
         {
+          "type": "note",
+          "text": "THINK  What are drawbacks of user stories? Pause and write down your responses before reading further."
+        },
+        {
           "type": "paragraph",
-          "text": "Agile user stories depend on regular access to stakeholders, which may not always be possible. Very large or safety-critical systems may require detailed formal specification and documentation. Choose practices based on the nature of the project—not because one method is universally best.",
-          "runs": []
+          "text": "1. Continuous contact with customers may be difficult or too expensive — customers may not want to participate or may not be available at all times."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. May not scale to very large projects or safety-critical applications — these need extensive planning and documentation before implementation, and safety-critical applications have no room for errors or refinement."
+        },
+        {
+          "type": "note",
+          "text": "REMEMBER  Software development methodologies depend on the type of application you are building."
         },
         {
           "type": "image",
           "src": "/images/week-2/image75.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: User-story limits and choosing an approach"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Benefits and drawbacks of user stories.",
+          "alt": "Benefits and drawbacks of user stories."
         }
       ]
     },
@@ -729,36 +1119,72 @@
           "type": "table",
           "rows": [
             [
-              "Question",
-              "Short answer"
+              "Topic",
+              "Lecture summary"
             ],
             [
-              "What is requirement analysis?",
-              "Checking collected needs for ambiguity, inconsistency and incompleteness."
+              "Importance of requirements",
+              "Developers understand what customers want; customers agree the developers’ understanding matches their expectations."
             ],
             [
-              "Who are primary users?",
-              "People who use a system regularly and directly."
+              "Stakeholders",
+              "Users from your own organisation, other organisations or end users, with different roles and profiles, influenced by the software."
             ],
             [
-              "What is a focus group for?",
-              "Collecting viewpoints and finding disagreements in a group."
+              "Primary users",
+              "Frequent users of the system."
             ],
             [
-              "Functional vs non-functional?",
-              "What the system does versus how well it behaves."
+              "Secondary users",
+              "Do not directly use the system; use it through an intermediary."
             ],
             [
-              "What is SRS?",
-              "A structured specification of software requirements."
+              "Tertiary users",
+              "Do not use the software at all, but are affected by its introduction or influence the purchase."
             ],
             [
-              "User story pattern?",
-              "As a user, I want an action, so that I gain a benefit."
+              "Analysis problems",
+              "Ambiguous / inconsistent / incomplete requirements."
             ],
             [
-              "What is SMART?",
-              "Specific, Measurable, Achievable, Relevant, Timeboxed."
+              "5 gathering techniques",
+              "Questionnaires: answering specific questions; Interviews: exploring issues; Focus groups and workshops: collecting multiple viewpoints; Naturalistic observations: understanding context; Documentation: procedures, regulations, standards."
+            ],
+            [
+              "Functional vs non-functional",
+              "What the system should do (f: I → O) vs how the system should behave."
+            ],
+            [
+              "Reliability",
+              "Reliability is the extent to which a program behaves the same way over time in the same operating environment."
+            ],
+            [
+              "Robustness",
+              "Robustness is the extent to which a program can recover from errors or unexpected input."
+            ],
+            [
+              "SRS",
+              "System analyst organises user requirements into a structured Software Requirements Specification document."
+            ],
+            [
+              "SRS advantages and drawback",
+              "Agreement between customers and developers; reduces future reworks; basis for estimating costs and schedules; facilitates future extensions. Drawback: a lot of documentation is required; fine if requirements are fixed."
+            ],
+            [
+              "BDD",
+              "Behaviour Driven Design: ask about behaviour before and during development; continuously refine requirements through user stories."
+            ],
+            [
+              "User story",
+              "Short, informal, plain-language description of something of value to a user; 3×5 index cards; one sprint. The role-feature-benefit pattern: As a [type of user], I want [an action], so that [a benefit/value]."
+            ],
+            [
+              "SMART",
+              "Specific: Know exactly what to implement; Measurable: Each story is testable: known expected results for some inputs; Achievable: Ideally implementable in one agile iteration (1–2 weeks), otherwise subdivide; Relevant: Business value to one or more stakeholders; Timeboxed: Stop implementing a feature once the time budget is exceeded"
+            ],
+            [
+              "User story drawbacks",
+              "1. Continuous contact with customers may be difficult or too expensive — customers may not want to participate or may not be available at all times. 2. May not scale to very large projects or safety-critical applications — these need extensive planning and documentation before implementation, and safety-critical applications have no room for errors or refinement."
             ]
           ]
         }
@@ -795,8 +1221,7 @@
         },
         {
           "type": "list-item",
-          "text": "How could you divide “manage all inventory” into two smaller stories?",
-          "runs": []
+          "text": "How could you divide “View inventory” into smaller stories?"
         },
         {
           "type": "heading",
@@ -804,7 +1229,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Answer 1: Ask which order states are needed, who can see them, how often status updates, and what should happen for cancellations or returns."
+          "text": "Answer 1: Which orders to track: delivered, in transit, or returned?"
         },
         {
           "type": "paragraph",
@@ -812,11 +1237,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Answer 3: A performance/non-functional requirement; also specify workload, measurement start/end, and conditions for the five-second limit."
+          "text": "Answer 3: Non-functional — it specifies how the system should behave."
         },
         {
           "type": "paragraph",
-          "text": "Answer 4: Participants can challenge conflicting priorities and clarify misunderstandings together. The moderator must prevent one person dominating."
+          "text": "Answer 4: A focus group brings several stakeholders together, so it helps gain consensus and highlights areas of conflict or disagreement; an interview offers only one perspective."
         },
         {
           "type": "paragraph",
@@ -824,7 +1249,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Answer 6: For example, view existing stock and add stock as separate valuable stories. Specify permissions, expected outputs and error cases for each."
+          "text": "Answer 6: Feature 1a: View all products in inventory in a single page; Feature 1b: Add pagination and filters."
         }
       ]
     }

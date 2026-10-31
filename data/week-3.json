@@ -73,33 +73,32 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The chapter distinguishes practical task-oriented usability goals from more subjective user-experience goals. They are related, but they are not identical.",
-          "runs": []
+          "text": "Usability goals and user experience goals are related, but they are not identical."
         },
         {
           "type": "table",
           "rows": [
             [
               "Usability goals",
-              "User-experience goals"
+              "User experience goals"
             ],
             [
               "Effectiveness, Efficiency, Safety, Learnability, Memorability",
-              "Enjoyable, satisfying, motivating, helpful, frustrating, boring, etc."
+              "Positive emotions such as satisfying, enjoyable, fun, helpful, entertaining, motivating, emotionally fulfilling"
             ],
             [
-              "Focus on task performance and practical use",
-              "Focus on feelings and experience during use"
-            ],
-            [
-              "Usually easier to measure directly",
-              "Often more subjective and personal"
+              "Central while designing interactive systems",
+              "More subjective — how users experience the product from their own perspective, rather than how useful or productive it is from the system's perspective"
             ]
           ]
         },
         {
-          "type": "note",
-          "text": "Scope: the five usability goals listed here are the course’s chosen set, not an exhaustive universal taxonomy. A UI may also use speech, sound, touch or assistive technology; it is not limited to visual screens."
+          "type": "image",
+          "src": "/images/week-3/image41.webp",
+          "caption": "Usability goals (centre) and user experience goals (outer ring) — after Jennifer Preece.",
+          "alt": "Usability goals (centre) and user experience goals (outer ring) — after Jennifer Preece.",
+          "width": 1536,
+          "height": 1024
         }
       ]
     },
@@ -113,22 +112,24 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "Users first meet a software product through its interface. A system may have useful functionality, but if navigation, typography, colours and information hierarchy are confusing, people may still struggle or give up. Good interface design helps users notice the right actions and complete their goals with less frustration.",
-          "runs": []
+          "type": "note",
+          "text": "THINK  Can you think of experiences where you have been left frustrated by the user interface of a website or an app? Pause and write down your responses before reading further."
         },
         {
           "type": "paragraph",
-          "text": "Section connection: the example contrasts cluttered and well-organized web pages to show how layout, colours, navigation and readability change the overall experience.",
-          "runs": []
+          "text": "Most user stories require a user interface (UI) that implements the feature. The UI is the interaction point between the user and the system — web pages with buttons, text fields, navigation etc. The form of the product is what the user sees first, and only then its functionality; if the interface is not appealing or intuitive, users will reject it or find it extremely cumbersome. The key idea is to give the user a good experience: easy to use, easy to learn, not confusing."
+        },
+        {
+          "type": "paragraph",
+          "text": "What frustrates users: cluttered layout, no hierarchy, no navigation, poor typography, random use of colours, slow load time, too many ads, inconsistent colour scheme."
         },
         {
           "type": "image",
           "src": "/images/week-3/image1.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 1. Why interface design matters",
-          "alt": "Illustration: Introduction to Interaction Design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "What frustrates users vs a clean, well-organised UI.",
+          "alt": "What frustrates users vs a clean, well-organised UI."
         },
         {
           "type": "heading",
@@ -137,19 +138,17 @@
         },
         {
           "type": "paragraph",
-          "text": "A user interface (UI) is the part of software through which users interact, using visual, auditory, touch or other input/output mechanisms through which people give input and receive output. Buttons, menus, search bars, forms and navigation controls are part of the UI. The UI is not the whole software system; it is the layer through which the user communicates with the system.",
-          "runs": []
+          "text": "The UI is the interaction point between the user and the system."
         },
         {
           "type": "paragraph",
-          "text": "Example: a seller selects a report through menus, enters a date range in a form, and receives a sales report as output.",
-          "runs": []
+          "text": "In software companies, roles such as interaction designers and UX/UI developers look at these aspects. Interaction design means designing interactive products to support people in their everyday working lives."
         },
         {
           "type": "image",
           "src": "/images/week-3/image2.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 2. The user interface is the interaction point",
           "alt": "Illustration: Introduction to Interaction Design"
         },
@@ -159,20 +158,34 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "Interaction design involves four connected activities: identify needs, develop alternative designs, build interactive versions, and evaluate them. Evaluation often reveals problems or new ideas, so designers return to earlier steps and improve the design iteratively.",
-          "runs": []
+          "type": "table",
+          "rows": [
+            [
+              "Four activities of interaction design"
+            ],
+            [
+              "Identifying needs and requirements"
+            ],
+            [
+              "Developing alternative designs that meet those requirements"
+            ],
+            [
+              "Building interactive versions"
+            ],
+            [
+              "Evaluating"
+            ]
+          ]
         },
         {
           "type": "paragraph",
-          "text": "Remember the cycle: Identify Needs → Develop Alternative Designs → Build Interactive Versions → Evaluate.",
-          "runs": []
+          "text": "This is similar to the Agile process, because both keep the user at the centre of creating the product. Techniques for developing alternative designs include storyboarding and paper prototyping."
         },
         {
           "type": "image",
           "src": "/images/week-3/image3.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 3. Four activities of interaction design",
           "alt": "Illustration: Introduction to Interaction Design"
         },
@@ -183,21 +196,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Good design is not limited to software. Everyday objects also need clear controls, understandable labels and logical mapping between an action and its effect. The same design thinking applies to digital interfaces.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Revision idea: if a product is confusing, ask whether the problem is unclear labels, too many options, poor grouping, or an unexpected response.",
-          "runs": []
+          "text": "Ordinary everyday objects have gone through several rounds of discussion and deliberation to arrive at their final design. The illustration shows design decisions about a desk lamp, a drinking glass and a table."
         },
         {
           "type": "image",
           "src": "/images/week-3/image4.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 4. Design in everyday objects and software",
-          "alt": "Illustration: Introduction to Interaction Design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Everyday objects involve decisions about shape, stability, materials and construction.",
+          "alt": "Everyday objects involve decisions about shape, stability, materials and construction."
         }
       ]
     },
@@ -212,19 +219,42 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter introduces five usability goals: effectiveness, efficiency, safety, learnability and memorability. Together they help us judge whether a system is practical and usable for real people in real situations.",
-          "runs": []
+          "text": "Usability (ISO 9241-11): The extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use."
         },
         {
-          "type": "paragraph",
-          "text": "Quick meanings: effectiveness = complete the task; efficiency = do it with reasonable effort; safety = avoid harmful or unwanted outcomes; learnability = easy to learn; memorability = easy to remember later.",
-          "runs": []
+          "type": "table",
+          "rows": [
+            [
+              "Usability goal",
+              "Meaning"
+            ],
+            [
+              "Effectiveness",
+              "How good a system is at doing what it is supposed to do — is it capable of allowing people to learn well, carry out their work efficiently, access the information they need, buy the goods they want?"
+            ],
+            [
+              "Efficiency",
+              "The way a system supports users in carrying out their tasks — common tasks through a minimal number of steps; once learned, users can sustain a high level of productivity."
+            ],
+            [
+              "Safety",
+              "Protect users from dangerous conditions and undesirable situations; help users avoid unwanted actions accidentally and provide recovery from errors."
+            ],
+            [
+              "Learnability",
+              "How easy a system is to learn to use."
+            ],
+            [
+              "Memorability",
+              "How easy a system is to remember how to use, once learned — especially important for systems used infrequently; users shouldn’t have to relearn tasks after months away."
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-3/image5.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 5. Five usability goals",
           "alt": "Illustration: Usability Goals"
         },
@@ -235,21 +265,19 @@
         },
         {
           "type": "paragraph",
-          "text": "Effectiveness asks a simple question: can the user successfully complete the intended task? A system is ineffective if the user fails even though the underlying function exists.",
-          "runs": []
+          "text": "How good a system is at doing what it is supposed to do — is it capable of allowing people to learn well, carry out their work efficiently, access the information they need, buy the goods they want?"
         },
         {
-          "type": "paragraph",
-          "text": "Section example: a search interface should help the user find the required information, not distract them with clutter.",
-          "runs": []
+          "type": "note",
+          "text": "EXAMPLE  Google — minimal design with the main functionality (search) at the centre; Amazon — all necessary information (cost, delivery date, offers) on a single page, no need to scroll."
         },
         {
           "type": "image",
           "src": "/images/week-3/image6.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 6. Effectiveness: doing the intended task",
-          "alt": "Illustration: Usability Goals"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Effectiveness: search at the centre and necessary shopping information together.",
+          "alt": "Effectiveness: search at the centre and necessary shopping information together."
         },
         {
           "type": "heading",
@@ -258,21 +286,19 @@
         },
         {
           "type": "paragraph",
-          "text": "Efficiency asks how much time, effort or number of steps are needed to complete a task once the user knows what to do. Efficient interfaces reduce unnecessary repetition, but they do not remove necessary safety or confirmation steps.",
-          "runs": []
+          "text": "The way a system supports users in carrying out their tasks — common tasks through a minimal number of steps; once learned, users can sustain a high level of productivity."
         },
         {
-          "type": "paragraph",
-          "text": "Example: an online shopping site can save delivery information for returning users so checkout takes fewer actions.",
-          "runs": []
+          "type": "note",
+          "text": "EXAMPLE  Buying on Amazon — Buy Now → select delivery address → select payment method → buy; Amazon saves the delivery address and card details so returning users can buy quickly."
         },
         {
           "type": "image",
           "src": "/images/week-3/image7.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 7. Efficiency: reducing unnecessary effort",
-          "alt": "Illustration: Usability Goals"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Common tasks in a minimal number of steps.",
+          "alt": "Common tasks in a minimal number of steps."
         },
         {
           "type": "heading",
@@ -281,21 +307,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Safety means protecting users from harmful consequences. In some systems such as medical devices, poor design can create serious danger. Interfaces for such systems must make status, mode and confirmation very clear.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "The chapter mentions Therac-25 as a classic safety warning. This illustration is a conceptual teaching example, not a historical reconstruction.",
-          "runs": []
+          "text": "Two aspects of safety. First: protecting the user from dangerous conditions and undesirable situations — e.g. user interfaces of X-ray machines and chemical plants. Therac-25 was a radiation therapy machine, first of its kind, with a dual treatment mode, using software-based safety systems rather than hardware controls. One day the operator pressed X (X-ray mode) instead of E (electron mode); this led to excess radiation and the death of a patient."
         },
         {
           "type": "image",
           "src": "/images/week-3/image8.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 8. Safety in safety-critical systems",
-          "alt": "Illustration: Usability Goals"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Therac-25: pressing X instead of E.",
+          "alt": "Therac-25: pressing X instead of E."
         },
         {
           "type": "heading",
@@ -303,22 +323,20 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "Safety also matters in everyday applications. Destructive actions such as Delete should be clearly separated, properly labelled and difficult to trigger by accident.",
-          "runs": []
+          "type": "note",
+          "text": "THINK  Recall software applications that you have used. How have they reduced the risk of wrong keys being pressed or provided a means of recovery after errors? Pause and write down your responses before reading further."
         },
         {
           "type": "paragraph",
-          "text": "Example: Save and Delete placed too close together can easily cause mistakes.",
-          "runs": []
+          "text": "Second: helping users in any situation avoid carrying out unwanted actions accidentally — reduce the risk of wrong keys being pressed. Example: in document software the Save and Close buttons are far apart."
         },
         {
           "type": "image",
           "src": "/images/week-3/image9.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 9. Safety: avoid accidental actions",
-          "alt": "Illustration: Usability Goals"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Save and Close are placed far apart.",
+          "alt": "Save and Close are placed far apart."
         },
         {
           "type": "heading",
@@ -327,19 +345,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Even with good prevention, mistakes still happen. Good systems support recovery by providing Undo, Trash recovery, version history or ways to restore unsaved work.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "This complements prevention: first reduce errors, then help users recover if an error still occurs.",
-          "runs": []
+          "text": "Provide a means of recovery if users make errors: accidentally deleted a file → recover from trash; computer shut down while editing in Word → recovery options next time; Undo (Ctrl+Z); WhatsApp — delete a message sent by mistake."
         },
         {
           "type": "image",
           "src": "/images/week-3/image10.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 10. Safety: recovering from mistakes",
           "alt": "Illustration: Usability Goals"
         },
@@ -350,19 +362,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Learnability concerns how easy it is for a first-time or beginner user to understand the interface and become productive. Clear labels, visible actions, simple navigation and helpful hints improve learnability.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "A powerful application can still be hard to learn if it hides meaning behind cryptic icons or unexplained controls.",
-          "runs": []
+          "text": "How easy a system is to learn to use. People want to get started right away without much effort — e.g. Facebook, Instagram, WhatsApp, Amazon are learned without reading a manual."
         },
         {
           "type": "image",
           "src": "/images/week-3/image11.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 11. Learnability for new users",
           "alt": "Illustration: Usability Goals"
         },
@@ -372,22 +378,20 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "For more complicated activities, software may provide step-by-step tutorials, contextual hints and example demonstrations. These supports should help new users without slowing expert users too much.",
-          "runs": []
+          "type": "note",
+          "text": "THINK  What are ways in which you can help users learn how to use a complex system? Pause and write down your responses before reading further."
         },
         {
           "type": "paragraph",
-          "text": "The exact screenshots here are illustrative, but the design principle matches the chapter: teach difficult tasks gradually.",
-          "runs": []
+          "text": "For complex systems: Wizards — a step-by-step process that breaks a complex task into simpler tasks. Tours — highlight important areas or features of a page with lots of information, for new learners. Templates — provide defaults or structure for a specific type of task (e.g. a resume template), so you don't start from scratch."
         },
         {
           "type": "image",
           "src": "/images/week-3/image12.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 12. Learning more complex tasks",
-          "alt": "Illustration: Usability Goals"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Wizards, tours and templates.",
+          "alt": "Wizards, tours and templates."
         },
         {
           "type": "heading",
@@ -396,19 +400,21 @@
         },
         {
           "type": "paragraph",
-          "text": "Memorability asks whether a returning user can still remember how to use the system after a break. User experience (UX), in contrast, concerns how using the system feels: enjoyable, frustrating, motivating, satisfying and so on.",
-          "runs": []
+          "text": "How easy a system is to remember how to use, once learned — especially important for systems used infrequently; users shouldn’t have to relearn tasks after months away. Example: Microsoft Word — meaningful icons, command names and menu options help users remember where to find a tool."
         },
         {
           "type": "paragraph",
-          "text": "Important distinction: memorability is a usability goal, while enjoyable or satisfying use belongs to user-experience goals.",
-          "runs": []
+          "text": "Beyond usability, we want users to experience positive emotions — satisfying, enjoyable, fun, helpful, entertaining, motivating, emotionally fulfilling. These goals are more subjective and concern how users experience the product from their perspective."
+        },
+        {
+          "type": "paragraph",
+          "text": "Important distinction: memorability is a usability goal, while enjoyable or satisfying use belongs to user-experience goals."
         },
         {
           "type": "image",
           "src": "/images/week-3/image13.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 13. Memorability versus user experience",
           "alt": "Illustration: Usability Goals"
         }
@@ -424,20 +430,18 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "The first interface idea is not always the best one. If a team starts coding immediately and users later reject the interface, the cost of rework becomes high. Prototyping helps teams explore ideas more cheaply before committing to full implementation.",
-          "runs": []
+          "type": "note",
+          "text": "THINK  Are we ready to code once we know the needs and requirements? Why shouldn’t we code the UI right away? Pause and write down your responses before reading further."
         },
         {
           "type": "paragraph",
-          "text": "Main message: prototyping reduces expensive rework and allows earlier feedback.",
-          "runs": []
+          "text": "Initial design ideas might not be the best ones. Developing an interface takes time, money and effort (if users don't like it, you redesign from scratch). Prototypes let you quickly test on users, get feedback, iterate and pivot."
         },
         {
           "type": "image",
           "src": "/images/week-3/image14.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 14. Why not code the first design immediately?",
           "alt": "Illustration: Prototyping Techniques"
         },
@@ -448,19 +452,13 @@
         },
         {
           "type": "paragraph",
-          "text": "A prototype is an early representation of an idea. Teams create a prototype, show it to users, collect feedback, improve the design and repeat. This helps clarify requirements, explore alternatives and evaluate usability before full-scale development.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "A prototype is for learning and testing ideas; it is not automatically the final product.",
-          "runs": []
+          "text": "Prototypes answer questions and support designers in choosing between alternatives. Purpose: test out the technical feasibility of an idea; clarify vague requirements; user testing and evaluation."
         },
         {
           "type": "image",
           "src": "/images/week-3/image15.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 15. Prototype, feedback and iteration",
           "alt": "Illustration: Prototyping Techniques"
         },
@@ -471,26 +469,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Prototype fidelity refers to how closely a prototype resembles the intended final system. Early prototypes are often rough and easy to change; later ones may look and behave more like the final interface. Teams choose fidelity based on the questions they want to answer.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "The progression shown is typical, not compulsory. A team can move directly to the fidelity level that best fits the current design question.",
-          "runs": []
+          "text": "Prototypes differ by purpose, time of development and fidelity — how real the interface is compared to the final product. Storyboards and paper prototypes come early and don't resemble the final product much; digital mock-ups (e.g. Photoshop, PowerPoint) and interactive prototypes (e.g. a web app with fake data) move closer to it."
         },
         {
           "type": "image",
           "src": "/images/week-3/image16.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 16. Levels of prototype fidelity",
-          "alt": "Illustration: Prototyping Techniques"
-        },
-        {
-          "type": "paragraph",
-          "text": "The chapter further distinguishes three useful forms. A paper prototype is best for low-cost idea exploration. A digital mock-up helps stakeholders discuss visual appearance and screen structure. An interactive prototype helps test the user flow, because people can click through the interface even if the real backend is not connected yet.",
-          "runs": []
+          "width": 1536,
+          "height": 1024,
+          "caption": "Fidelity vs time — and what each prototype facilitates conversations about.",
+          "alt": "Fidelity vs time — and what each prototype facilitates conversations about."
         },
         {
           "type": "heading",
@@ -499,19 +486,13 @@
         },
         {
           "type": "paragraph",
-          "text": "A storyboard is a hand-drawn comic-like description of how a user would use a proposed system. It captures the user’s setting, the sequence of actions and the satisfaction or benefit achieved at the end.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "A storyboard focuses on the user’s context and task rather than exact screen details.",
-          "runs": []
+          "text": "A hand-drawn comic featuring Setting + Sequence + Satisfaction. Setting: people involved, environment, task being accomplished. Sequence: what steps are involved, what leads someone to use the app, what task is illustrated. Satisfaction: what motivates people to use the system, what it enables people to accomplish, what need it fills."
         },
         {
           "type": "image",
           "src": "/images/week-3/image17.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 17. Storyboard: setting, sequence, satisfaction",
           "alt": "Illustration: Prototyping Techniques"
         },
@@ -522,21 +503,36 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter uses Speak-Up, a virtual-reality presentation-practice concept, as a storyboard example. The story shows the user’s problem, the practice process, and the final confidence gained.",
-          "runs": []
+          "text": "A virtual reality tool to help give effective presentations: simulates a presentation setting, records audio during the presentation, and provides hints."
         },
         {
-          "type": "paragraph",
-          "text": "The value of a storyboard is that stakeholders can understand the idea even before detailed interface design exists.",
-          "runs": []
+          "type": "table",
+          "rows": [
+            [
+              "Storyboard element",
+              "Speak-Up"
+            ],
+            [
+              "Setting",
+              "He has a presentation on Monday and practises in front of a mirror, but on the day he is nervous."
+            ],
+            [
+              "Sequence",
+              "A friend recommends Speak-Up; he chooses the type of audience and records his audio; the system gives feedback and comments; he sends the recording to his mentor; a second round of practice."
+            ],
+            [
+              "Satisfaction",
+              "He presents confidently in front of a large audience."
+            ]
+          ]
         },
         {
           "type": "image",
           "src": "/images/week-3/image18.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 18. Storyboard example: Speak-Up",
-          "alt": "Illustration: Prototyping Techniques"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Speak-Up storyboard: setting, sequence, satisfaction.",
+          "alt": "Speak-Up storyboard: setting, sequence, satisfaction."
         },
         {
           "type": "heading",
@@ -545,21 +541,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Storyboards show tasks in context, help users and designers develop a shared understanding, and make it easy to discuss different ideas without committing to one exact interface too early.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Because they are cheap to change, storyboards are useful for early discussion and comparison of ideas.",
-          "runs": []
+          "text": "Emphasizes how the interface accomplishes a task (without specific details); avoids commitment to a particular user interface (the storyboard communicates the task without implementing the application or committing to a detailed UI); shared understanding among stakeholders."
         },
         {
           "type": "image",
           "src": "/images/week-3/image19.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 19. Benefits of storyboards",
-          "alt": "Illustration: Prototyping Techniques"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Benefits of storyboards.",
+          "alt": "Benefits of storyboards."
         },
         {
           "type": "heading",
@@ -568,19 +558,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Paper prototypes use sketches, paper widgets and manually swapped screens to simulate interaction. They are low-cost, easy to change and good for early feedback.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "The interaction is only simulated: when the user taps a paper button, a designer changes the paper screen.",
-          "runs": []
+          "text": "A hand-drawn interface using multiple pieces of paper for the different screens."
         },
         {
           "type": "image",
           "src": "/images/week-3/image20.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 20. How paper prototyping works",
           "alt": "Illustration: Prototyping Techniques"
         },
@@ -591,21 +575,19 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter gives an accessible digital-library example for deaf, hard-of-hearing and speech-impaired students. The paper prototype helps discuss layout, available resources and accessibility needs before coding.",
-          "runs": []
+          "text": "Online library for Deaf and Hard of Hearing (DHH) and speech-impaired students — books in Indian Sign Language (ISL) and speech therapy. The first screen is login; the user can be a student, teacher or parent; clicking an option shows the next screen; choosing ISL opens a drop-down to choose the language."
         },
         {
           "type": "paragraph",
-          "text": "This example also shows that paper prototyping can be used for serious and meaningful educational applications.",
-          "runs": []
+          "text": "Benefits: Easier than writing code for the UI; starts conversations about user interactions; elements can be changed immediately based on feedback."
         },
         {
           "type": "image",
           "src": "/images/week-3/image21.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 21. Accessible digital-library paper prototype",
-          "alt": "Illustration: Prototyping Techniques"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Paper screens show login, user type, resources and language selection.",
+          "alt": "Paper screens show login, user type, resources and language selection."
         },
         {
           "type": "heading",
@@ -614,19 +596,17 @@
         },
         {
           "type": "paragraph",
-          "text": "Paper prototypes are fast, low-fidelity and easy to modify. Digital mock-ups look polished and help discuss visual appearance, but may still be static. Interactive prototypes allow clickable flows and help test interaction, even though they may not yet have a real backend.",
-          "runs": []
+          "text": "Digital mock-ups use tools like PowerPoint, Photoshop or Figma and are closer to the final product; buttons and links can be clickable, and they can be shown to clients for feedback before moving to the final product."
         },
         {
-          "type": "paragraph",
-          "text": "Section extension: a paper prototype for the digital library can later become a digital mock-up in PowerPoint, Photoshop or Figma, and then an interactive prototype for user feedback.",
-          "runs": []
+          "type": "note",
+          "text": "Prototypes facilitate conversations: storyboards → user tasks; paper prototypes → user interactions; digital mock-ups → visual design; interactive prototypes → picky usability details."
         },
         {
           "type": "image",
           "src": "/images/week-3/image22.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 22. Paper prototype vs digital mock-up vs interactive prototype",
           "alt": "Illustration: Prototyping Techniques"
         }
@@ -642,20 +622,18 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "An interface can be evaluated with real users or by expert evaluators. Real-user testing shows how actual people behave; heuristic evaluation uses usability principles to inspect the design and identify likely problems.",
-          "runs": []
+          "type": "note",
+          "text": "THINK  What are ways in which you can evaluate the user interface of your prototype? Pause and write down your responses before reading further."
         },
         {
           "type": "paragraph",
-          "text": "The course organizes the heuristics into three groups: Understanding, Action and Feedback.",
-          "runs": []
+          "text": "Ways to evaluate a UI: assess with real users; critique from expert designers — but that can be subjective, so specific guidelines help. Heuristics are strategies derived from previous experiences with similar problems — rules of thumb/guidelines. The most widely used set is Jakob Nielsen's 10 design heuristics; Prof. Scott Klemmer grouped them into Understanding, Action and Feedback."
         },
         {
           "type": "image",
           "src": "/images/week-3/image23.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 23. Two kinds of interface evaluation",
           "alt": "Illustration: Design Heuristics — Understanding"
         },
@@ -666,19 +644,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Consistency means similar things should look, behave and be named in similar ways. Consistent layouts, button positions, fonts and terminology help users predict how the interface works.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Consistency does not mean every screen uses identical words for different tasks. Good consistency keeps style and structure stable while allowing labels such as Add Note, Add Task and Add Event.",
-          "runs": []
+          "text": "Consistent layout — colour, font etc. consistent across all screens; e.g. in your operating system the Yes/No and Minimize/Restore/Close buttons are placed consistently across windows. Consistent names — product and feature names the same throughout."
         },
         {
           "type": "image",
           "src": "/images/week-3/image24.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 24. Consistency",
           "alt": "Illustration: Design Heuristics — Understanding"
         },
@@ -689,19 +661,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Interfaces are easier to understand when they use familiar words and metaphors from the real world, such as cart, folder or wallet. These associations help users guess the meaning of a feature without long explanations.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "This heuristic is about reducing confusion by choosing terms and symbols people already recognize.",
-          "runs": []
+          "text": "Use words familiar to end users, not technical jargon — online shopping uses physical-store terms like checkout and shopping cart; paying online uses a 'mobile wallet' with actions like adding or removing money."
         },
         {
           "type": "image",
           "src": "/images/week-3/image25.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 25. Familiar language and metaphors",
           "alt": "Illustration: Design Heuristics — Understanding"
         },
@@ -712,19 +678,13 @@
         },
         {
           "type": "paragraph",
-          "text": "A clean design shows only the information and actions users actually need. Unnecessary buttons, banners and competing visual elements increase cognitive load and make important actions harder to notice.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Here, both screens show the same product information; only the interface design changes. That makes the comparison fair and keeps the lesson focused on visual hierarchy.",
-          "runs": []
+          "text": "Minimal and easy to understand. A cluttered design (many colours, fonts, images, no common theme) makes it hard to find information; a good design has clear navigation describing key features and consistent colours and fonts."
         },
         {
           "type": "image",
           "src": "/images/week-3/image26.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 26. Clean and functional design",
           "alt": "Illustration: Design Heuristics — Understanding"
         },
@@ -735,21 +695,15 @@
         },
         {
           "type": "paragraph",
-          "text": "The ten heuristics in Week 3 are grouped as follows: Understanding = consistency, familiar language and metaphors, clean and functional design. Action = freedom, flexibility, recognition over recall. Feedback = show status, prevent errors, support error recovery, provide help.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Use this figure as a revision map for the whole heuristics part of the week.",
-          "runs": []
+          "text": "Understanding = consistency, familiar language and metaphors, clean and functional design. Action = freedom, flexibility, recognition over recall. Feedback = show status, prevent errors, support error recovery, provide help."
         },
         {
           "type": "image",
           "src": "/images/week-3/image27.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 27. Overview of heuristic groups",
-          "alt": "Illustration: Design Heuristics — Understanding"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Design heuristics grouped into Understanding, Action and Feedback.",
+          "alt": "Design heuristics grouped into Understanding, Action and Feedback."
         }
       ]
     },
@@ -764,21 +718,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Freedom means users should be able to reverse actions, escape from unwanted states and explore without fear. Undo, Trash recovery and document history are common examples.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "This gives users confidence and reduces the risk of permanent harm from an accidental action.",
-          "runs": []
+          "text": "Deleted a file → recover from trash; documents → recovery options; Undo — Ctrl+Z."
         },
         {
           "type": "image",
           "src": "/images/week-3/image28.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 28. Freedom to undo or recover",
-          "alt": "Illustration: Design Heuristics — Action"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Undo an edit, restore a deleted file, or recover an unsaved document.",
+          "alt": "Undo an edit, restore a deleted file, or recover an unsaved document."
         },
         {
           "type": "heading",
@@ -787,19 +735,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Where reasonable, users should be able to inspect useful information without facing unnecessary restrictions. For example, seeing train routes or availability before login supports exploration, even if final booking still requires authentication.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "The point is not to remove all controls; it is to avoid unnecessary barriers early in the interaction.",
-          "runs": []
+          "text": "Platforms should let users explore key features — online shopping lets you look at products without signing in. In the lecture's earlier IRCTC example, users could not search for trains without logging in, restricting their freedom; the later example allows searching without logging in."
         },
         {
           "type": "image",
           "src": "/images/week-3/image29.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 29. Freedom to explore",
           "alt": "Illustration: Design Heuristics — Action"
         },
@@ -810,19 +752,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Flexibility means supporting different ways to complete the same task. Beginners often prefer visible menus; experienced users may prefer keyboard shortcuts or other efficient actions.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "A flexible interface supports both groups instead of forcing every user into one style.",
-          "runs": []
+          "text": "Flexibility means supporting different ways to complete the same task. New users use menus for cut/copy/paste in Microsoft Word or Google Docs; experts use keyboard shortcuts."
         },
         {
           "type": "image",
           "src": "/images/week-3/image30.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 30. Flexibility: beginner and expert methods",
           "alt": "Illustration: Design Heuristics — Action"
         },
@@ -833,19 +769,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Personalization occurs when the system adapts content automatically for a user. Customization occurs when the user explicitly chooses settings or categories. Both tailor the experience, but control comes from different directions.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Example: a social-media feed may be personalized by the system, whereas a news app category list may be customized by the user.",
-          "runs": []
+          "text": "Personalization occurs when the system adapts content automatically for a user. Customization occurs when the user explicitly chooses settings or categories. Example: personalization — social media; customization — news apps asking which topics."
         },
         {
           "type": "image",
           "src": "/images/week-3/image31.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 31. Personalization versus customization",
           "alt": "Illustration: Design Heuristics — Action"
         },
@@ -856,26 +786,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Recognition reduces memory load by making options visible. Recall requires the user to remember commands or steps from memory. For many people, recognition is easier and less error-prone.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "The chapter also mentions familiar icons. If icons are redesigned so heavily that they all look similar, recognition becomes harder even though the functionality is unchanged.",
-          "runs": []
+          "text": "Users have limited memory and find it easier to recognize something seen earlier — e.g. 'What is the capital of Spain?' vs 'Is Madrid the capital of Spain?'. Pre-GUI: moving a file in Linux needed mv temp.txt new_folder/; now: right-click on the file. Buttons and navigation should help users reach their goal: In the Google redesign example discussed in the lecture, the earlier product icons (e.g. Gmail's envelope shape) were easy to recognize; after the redesign all apps had the same colour and form, and many people found them hard to tell apart on small screens."
         },
         {
           "type": "image",
           "src": "/images/week-3/image32.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 32. Recognition over recall",
-          "alt": "Illustration: Design Heuristics — Action"
-        },
-        {
-          "type": "paragraph",
-          "text": "Extra chapter note: recognition also applies to familiar icons. If a company redesigns icons so that they all look too similar, users may struggle to recognize the right app quickly even though the functions are unchanged.",
-          "runs": []
+          "width": 1536,
+          "height": 1024,
+          "caption": "Recognition over recall: visible actions and distinguishable app icons.",
+          "alt": "Recall a file-move command versus recognise a menu action; distinct icons versus icons with a shared colour palette."
         }
       ]
     },
@@ -890,21 +809,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Users should always know what the system is doing. Loading indicators, download progress and save confirmations reduce uncertainty and help users decide whether to wait, continue or try again.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Blank screens or silent delays often make users think the system has stopped working.",
-          "runs": []
+          "text": "Keep users informed through appropriate feedback within a reasonable amount of time — loading status in browsers; how much time an action will take (e.g. a download)."
         },
         {
           "type": "image",
           "src": "/images/week-3/image33.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 33. Show system status",
-          "alt": "Illustration: Design Heuristics — Feedback"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Show loading status and the estimated time remaining.",
+          "alt": "Show loading status and the estimated time remaining."
         },
         {
           "type": "heading",
@@ -913,19 +826,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Feedback should also tell users what to do next and warn them before a likely problem occurs. After registration, the system can ask the user to verify email. Before cloud storage is full, it can provide an early warning.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Timely feedback prevents confusion and gives users a chance to act before failure.",
-          "runs": []
+          "text": "Provide next steps (form signup, email signup) and warnings in advance (e.g. Gmail storage running out → buy storage)."
         },
         {
           "type": "image",
           "src": "/images/week-3/image34.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 34. Give next steps and advance warnings",
           "alt": "Illustration: Design Heuristics — Feedback"
         },
@@ -936,19 +843,17 @@
         },
         {
           "type": "paragraph",
-          "text": "A strong interface prevents avoidable errors by constraining invalid choices. In a round-trip form, dates earlier than the chosen departure date can be disabled so the user never makes the wrong selection.",
-          "runs": []
+          "text": "Why do users make errors? We often blame the user, but aspects of the UI can lead users to make errors."
         },
         {
-          "type": "paragraph",
-          "text": "Prevention is usually better than showing an error after the fact.",
-          "runs": []
+          "type": "note",
+          "text": "EXAMPLE  In a flight booking form, the return date cannot be before the 19 July departure; earlier dates are greyed out."
         },
         {
           "type": "image",
           "src": "/images/week-3/image35.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 35. Prevent errors with helpful constraints",
           "alt": "Illustration: Design Heuristics — Feedback"
         },
@@ -959,21 +864,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Suggestions such as autocomplete help users choose likely intended options and avoid typing mistakes or poor guesses. They guide action before an error happens.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Suggestions should help, not force an inappropriate answer.",
-          "runs": []
+          "text": "Offer suggestions — e.g. typing 'usability' in the browser, search auto-suggest gives a list of options."
         },
         {
           "type": "image",
           "src": "/images/week-3/image36.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 36. Prevent errors with suggestions",
-          "alt": "Illustration: Design Heuristics — Feedback"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Typing usability produces suggestions that help users choose a query.",
+          "alt": "Typing usability produces suggestions that help users choose a query."
         },
         {
           "type": "heading",
@@ -982,21 +881,15 @@
         },
         {
           "type": "paragraph",
-          "text": "When an error occurs, the system should explain the problem in plain language, suggest a correction and offer an alternative such as trying another email address or contacting support.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Helpful error recovery reduces frustration and keeps users moving forward.",
-          "runs": []
+          "text": "Make the problem clear — on a signup form, clicking Sign Up with empty fields highlights each field in red. Provide a solution — a tooltip says to enter a valid email or mobile number. Provide an alternative — searching the misspelled 'Jacob Neilson', the search engine suggests the correct query."
         },
         {
           "type": "image",
           "src": "/images/week-3/image37.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 37. Support recovery after an error",
-          "alt": "Illustration: Design Heuristics — Feedback"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Make the problem clear, provide a solution, provide an alternative.",
+          "alt": "Make the problem clear, provide a solution, provide an alternative."
         },
         {
           "type": "heading",
@@ -1005,82 +898,32 @@
         },
         {
           "type": "paragraph",
-          "text": "Some help is broad and searchable, such as help-center articles. Other help is contextual, appearing beside a field or action exactly when the user needs it. Both forms are valuable in different situations.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Effective help is easy to access, relevant to the task and concise.",
-          "runs": []
+          "text": "Ensure help is easy to search — most tools have a Help menu with help topics, trainings, updates. Provide help in context — e.g. in the Moodle LMS 'add a new course' form, a help icon next to fields like course visibility explains them exactly where and when needed."
         },
         {
           "type": "image",
           "src": "/images/week-3/image38.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 38. Provide searchable and contextual help",
-          "alt": "Illustration: Design Heuristics — Feedback"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Searchable help and help beside the course-visibility field.",
+          "alt": "Searchable help and help beside the course-visibility field."
         },
         {
           "type": "heading",
-          "text": "39. Heuristic evaluation: before-and-after expert review",
+          "text": "39. Heuristic evaluation by experts",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Experts can inspect an interface using heuristic checklists, identify problems such as unclear navigation, missing progress indicators and poor error messages, and then compare the revised version after improvements are made.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "In this example, the Understanding and Feedback groups reveal the main issues; the Action group still remains part of the overall evaluation framework.",
-          "runs": []
-        },
-        {
-          "type": "image",
-          "src": "/images/week-3/image39.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 39. Heuristic evaluation: before-and-after expert review",
-          "alt": "Illustration: Design Heuristics — Feedback"
-        },
-        {
-          "type": "bullet-item",
-          "text": "Experts inspect the interface more than once rather than making only one quick pass.",
-          "runs": []
-        },
-        {
-          "type": "bullet-item",
-          "text": "They record violations of the heuristics, consolidate findings, and propose improvements.",
-          "runs": []
-        },
-        {
-          "type": "bullet-item",
-          "text": "After redesign, the updated interface should be checked again to confirm that the problems are truly improved.",
-          "runs": []
-        },
-        {
-          "type": "heading",
-          "text": "40. Heuristic evaluation process",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "A complete heuristic evaluation is a process: inspect the prototype, make multiple passes, record violations, consolidate findings, improve the interface and re-evaluate. It is an expert inspection technique that complements, but does not replace, testing with real users.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "This process explanation directly reflects the chapter discussion of expert evaluation.",
-          "runs": []
+          "text": "After the initial prototypes are ready, experts evaluate the interface: they do multiple passes through the prototype and produce a list of issues that violate the design heuristics. Collecting feedback from several experts helps fix multiple usability issues. The heuristics are also a self-check for designers."
         },
         {
           "type": "image",
           "src": "/images/week-3/image40.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 40. Heuristic evaluation process",
-          "alt": "Illustration: Design Heuristics — Feedback"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Experts do multiple passes and list heuristic violations",
+          "alt": "Experts do multiple passes and list heuristic violations"
         }
       ]
     },
@@ -1090,53 +933,63 @@
       "blocks": [
         {
           "type": "bullet-item",
-          "text": "Interaction design cycle: Identify needs → Develop alternatives → Build interactive versions → Evaluate → Improve.",
-          "runs": []
+          "text": "Interaction design cycle: Identify needs and requirements → Develop alternative designs → Build interactive versions → Evaluate."
         },
         {
           "type": "bullet-item",
-          "text": "Usability goals: Effectiveness, Efficiency, Safety, Learnability, Memorability.",
-          "runs": []
+          "text": "Usability (ISO 9241-11): The extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use."
         },
         {
           "type": "bullet-item",
-          "text": "User-experience goals are related but different: they describe how using the system feels.",
-          "runs": []
+          "text": "Usability goals: Effectiveness, Efficiency, Safety, Learnability, Memorability."
         },
         {
           "type": "bullet-item",
-          "text": "Storyboard = Setting + Sequence + Satisfaction.",
-          "runs": []
+          "text": "User experience goals: positive, subjective — satisfying, enjoyable, fun, helpful, entertaining, motivating, emotionally fulfilling."
         },
         {
           "type": "bullet-item",
-          "text": "Paper prototype: quick and cheap. Digital mock-up: visual appearance. Interactive prototype: test user flow.",
-          "runs": []
+          "text": "Learnability for complex tasks: Wizards, Tours, Templates."
         },
         {
           "type": "bullet-item",
-          "text": "Understanding heuristics: Consistency, Familiar Language and Metaphors, Clean and Functional Design.",
-          "runs": []
+          "text": "Safety: Therac-25 — the operator pressed X (X-ray mode) instead of E (electron mode); excess radiation led to the death of a patient. Save and Close buttons are placed far apart to prevent unwanted actions."
         },
         {
           "type": "bullet-item",
-          "text": "Action heuristics: Freedom, Flexibility, Recognition over Recall.",
-          "runs": []
+          "text": "Memorability: meaningful icons, command names and menu options in Microsoft Word help returning users remember where tools are."
         },
         {
           "type": "bullet-item",
-          "text": "Feedback heuristics: Show Status, Prevent Errors, Support Error Recovery, Provide Help.",
-          "runs": []
+          "text": "Storyboard = Setting + Sequence + Satisfaction."
         },
         {
           "type": "bullet-item",
-          "text": "Prevention stops errors earlier; recovery helps after an error occurs.",
-          "runs": []
+          "text": "Storyboard benefits: Emphasizes how the interface accomplishes a task (without specific details); avoids commitment to a particular user interface (the storyboard communicates the task without implementing the application or committing to a detailed UI); shared understanding among stakeholders."
         },
         {
           "type": "bullet-item",
-          "text": "Heuristic evaluation is an expert inspection method and should complement real-user testing.",
-          "runs": []
+          "text": "Paper prototype: a hand-drawn interface using multiple pieces of paper for different screens. Benefits: Easier than writing code for the UI; starts conversations about user interactions; elements can be changed immediately based on feedback."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Prototypes facilitate conversations: storyboards → user tasks; paper prototypes → user interactions; digital mock-ups → visual design; interactive prototypes → picky usability details."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Heuristics are adapted from Jakob Nielsen and grouped by Scott Klemmer into Understanding, Action and Feedback."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Understanding = consistency, familiar language and metaphors, clean and functional design. Action = freedom, flexibility, recognition over recall. Feedback = show status, prevent errors, support error recovery, provide help."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Error recovery: make the problem clear / provide a solution / provide an alternative."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Heuristic evaluation: experts do multiple passes through initial prototypes and list design-heuristic violations; feedback from several experts helps fix usability issues. Heuristics are also a self-check for designers."
         }
       ]
     }

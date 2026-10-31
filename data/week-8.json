@@ -74,7 +74,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Architecture is the big-picture organization of a software system. It identifies its components or modules, how they relate, and the properties of the components and their relationships. A class diagram can describe part of a system, but architecture asks a broader question: how do major parts work together?",
+          "text": "Software architecture is a way of organising your code: how classes/modules should be organised. It is like the architecture of a building, considering efficiency of space and functionality. It defines the software elements/modules, the relations among them, and the properties of both. This is the “big picture view” taken after design — modular/layered design and UML.",
           "runs": []
         },
         {
@@ -86,18 +86,18 @@
           "type": "image",
           "src": "/images/week-8/image32.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "height": 941,
+          "caption": "Four Software Architecture Styles",
+          "alt": "Four Software Architecture Styles"
         },
         {
           "type": "paragraph",
-          "text": "As a system grows, it becomes harder to reason about all its parts at once. Architecture makes responsibilities and interactions explicit. This helps teams change a component without unnecessarily changing every other component.",
+          "text": "Reflect on Google search versus a compiler. Their components interact differently.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: In a seller portal, the interface, order service, product data and payment service play different roles. The architecture determines how requests and data move among them.",
+          "text": "These patterns of information between components are called software architecture styles.",
           "runs": []
         },
         {
@@ -109,23 +109,18 @@
           "type": "image",
           "src": "/images/week-8/image33.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "height": 941,
+          "caption": "Client–Server Architecture",
+          "alt": "Client–Server Architecture"
         },
         {
           "type": "paragraph",
-          "text": "A client sends a request; a server processes it and returns a response. This style fits applications in which work is triggered by requests.",
+          "text": "In client–server architecture, data is transacted in response to requests.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A browser requests a product search; the server retrieves matching products and returns results.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: Client and server are roles in an interaction; a physical computer can sometimes perform both roles.",
+          "text": "Google search: the query goes to a server, which returns a response; this is predominantly how the Internet works.",
           "runs": []
         },
         {
@@ -136,24 +131,19 @@
         {
           "type": "image",
           "src": "/images/week-8/image34.webp",
-          "width": 1889,
-          "height": 920,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Pipe and Filter: A Compiler",
+          "alt": "Pipe and Filter: A Compiler"
         },
         {
           "type": "paragraph",
-          "text": "Information moves through a sequence of components (filters). Each filter transforms its input and passes the result onward through a pipe.",
+          "text": "Data is passed from component to component and transformed/filtered along the way.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A compiler transforms source code through successive processing stages toward an executable.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: The emphasis is on a sequence of transformations, not on request-response transactions.",
+          "text": "Compiler: source code → assembly code → executable file run by the OS.",
           "runs": []
         },
         {
@@ -165,26 +155,18 @@
           "type": "image",
           "src": "/images/week-8/image35.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image36.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "height": 941,
+          "caption": "Model–View–Controller",
+          "alt": "Model–View–Controller"
         },
         {
           "type": "paragraph",
-          "text": "MVC separates the model of the data, the user-facing view, and the controller that responds to actions and coordinates behavior. This is an architectural organization, not merely three arbitrary files.",
+          "text": "MVC separates views of the data from manipulations of the data. Model = the component that models the data for the service. In the Amazon Seller portal, these are the classes/objects that model the database tables.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: In a seller portal, product/order objects represent data (Model), a dashboard displays it (View), and the controller handles actions such as submitting a new product (Controller).",
+          "text": "View = GUI objects, the presentation layer and visual representation of the model; it retrieves data from the model and displays it. Controller = coordinates multiple views on the screen and helps users manipulate the model, e.g. filtering catalogue items by name.",
           "runs": []
         },
         {
@@ -196,23 +178,18 @@
           "type": "image",
           "src": "/images/week-8/image37.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "height": 941,
+          "caption": "Peer-to-Peer Architecture",
+          "alt": "Peer-to-Peer Architecture"
         },
         {
           "type": "paragraph",
-          "text": "In a peer-to-peer distributed system, participating nodes share resources with each other instead of relying on one central system to supervise every exchange.",
+          "text": "Peer-to-peer is a distributed application where systems form nodes and share resources. There is no centralised system monitoring all transactions.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A peer can obtain a shared resource from another peer.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: Peer-to-peer describes how participants interact; it does not guarantee that every implementation has no coordinating services at all.",
+          "text": "Nodes make processing power, disk storage etc. directly available to other nodes without central coordination.",
           "runs": []
         },
         {
@@ -224,18 +201,18 @@
           "type": "image",
           "src": "/images/week-8/image38.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "height": 941,
+          "caption": "Components, Connectors and Protocols",
+          "alt": "Components, Connectors and Protocols"
         },
         {
           "type": "paragraph",
-          "text": "A component is a unit with well-defined functionality. A connector is the mechanism that carries information or regulates interaction between components. A protocol is a set of agreed rules for communication.",
+          "text": "Component = well-defined functionality or behaviour, separate from other functionality, e.g. client software and server; browser and search-engine server. Connectors = code that transmits information between components and regulates their interaction.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A browser and web server are components; their network communication is a connector; HTTP defines rules for request and response messages.",
+          "text": "Protocol = a set of predefined rules describing how components interact; client and server must agree on the message format. The most common connectors are function calls and REST API calls.",
           "runs": []
         },
         {
@@ -249,17 +226,17 @@
             [
               "Component",
               "Who does the work?",
-              "Order service"
+              "Client software / Server"
             ],
             [
               "Connector",
               "How do parts interact?",
-              "Request/response communication"
+              "Function call, REST API call"
             ],
             [
               "Protocol",
               "What rules govern the exchange?",
-              "HTTP"
+              "Agreed message format"
             ]
           ]
         },
@@ -272,24 +249,35 @@
           "type": "image",
           "src": "/images/week-8/image39.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Software architecture"
+          "height": 941,
+          "caption": "Design Patterns, Design Smells and Refactoring",
+          "alt": "Design Patterns, Design Smells and Refactoring"
         },
         {
           "type": "paragraph",
-          "text": "A design pattern describes a reusable way to solve a recurring design problem in a particular context. A design smell is a warning that a design may become difficult to change or maintain. Refactoring improves internal structure while preserving intended observable behavior.",
+          "text": "Past solutions that experienced designers reused became standardised. A design pattern is a description of communicating objects and classes customised to solve a general design problem in a particular context. An anti-pattern is a pattern used incorrectly, or new code added along the way.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A very large class handling seller records, products and inventory is a smell. Separating responsibilities is a possible refactoring.",
+          "text": "Design smells are warning signs that your code may be heading towards an anti-pattern. SOLID guidelines help avoid design smells. Refactoring moves back to a good design: moving code between classes, creating new classes/modules, and removing classes that are not required.",
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "Remember: A pattern is not a rule to apply everywhere; its costs and benefits matter.",
-          "runs": []
+          "type": "heading",
+          "text": "Summary"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Styles: client-server, pipe and filter, peer-to-peer, MVC."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Design patterns: common patterns of organising code that have worked in the past."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Design smell: lack of proper design patterns."
         }
       ]
     },
@@ -299,32 +287,32 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SOLID is a set of object-oriented design guidelines intended to support understandability, modularity, high cohesion and loose coupling. The chapter introduces S = Single Responsibility, O = Open–Closed, L = Liskov Substitution, I = Interface Segregation, and D = Dependency Inversion.",
+          "text": "SOLID is a set of object-oriented principles for software design, conceptualised by Robert Martin (“Uncle Bob”), one of the founders of the Agile Manifesto. They make code easy to understand and modular, and support good cohesion and loose coupling. S = Single Responsibility, O = Open–Closed, L = Liskov Substitution, I = Interface Segregation, D = Dependency Inversion.",
           "runs": []
         },
         {
           "type": "image",
           "src": "/images/week-8/image1.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Why design quality matters",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Why Design Quality Matters",
+          "alt": "Why Design Quality Matters"
         },
         {
           "type": "image",
           "src": "/images/week-8/image2.webp",
           "width": 1671,
           "height": 1019,
-          "caption": "Figure — Contrast between poor and well-structured design",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Poor Design vs Good Design",
+          "alt": "Poor Design vs Good Design"
         },
         {
           "type": "image",
           "src": "/images/week-8/image3.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — Improving a design through refactoring",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Refactoring for Single Responsibility",
+          "alt": "Refactoring for Single Responsibility"
         },
         {
           "type": "heading",
@@ -333,42 +321,37 @@
         },
         {
           "type": "paragraph",
-          "text": "A class should have one clear responsibility or purpose. A useful way to test this is to ask whether unrelated changes would force you to edit the same class. The chapter begins with a Seller class mixing seller, product and inventory work, then separates those concerns.",
+          "text": "Every class should have a single responsibility/purpose. The original Seller class held seller ID, name, address and product, and had addSeller, deleteSeller, addProduct, and add/delete/view inventory.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: If inventory rules change, an Inventory class should be the main place affected; seller-profile code should not need unrelated edits.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: SRP is about cohesive responsibilities, not literally one method per class.",
+          "text": "Split it into Seller (seller details, addSeller, deleteSeller), Product, and Inventory (takes seller ID; products are added to the seller’s inventory). This lets Product change without major changes to Seller/Inventory, and makes mistakes easier to find because the code is isolated.",
           "runs": []
         },
         {
           "type": "image",
           "src": "/images/week-8/image4.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — A class overloaded with unrelated duties",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Seller Has Too Many Responsibilities",
+          "alt": "Seller Has Too Many Responsibilities"
         },
         {
           "type": "image",
           "src": "/images/week-8/image5.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — Separate seller, product and inventory responsibilities",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Separate Seller, Product and Inventory",
+          "alt": "Separate Seller, Product and Inventory"
         },
         {
           "type": "image",
           "src": "/images/week-8/image6.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — SRP at a glance",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Single Responsibility Principle",
+          "alt": "Single Responsibility Principle"
         },
         {
           "type": "heading",
@@ -377,17 +360,12 @@
         },
         {
           "type": "paragraph",
-          "text": "Software entities should be open for extension but closed for modification. In the chapter’s marketplace example, introducing clothing should not require repeatedly inserting clothing-specific logic into the existing general Product class. A stable contract and new specialized classes can accommodate new behavior.",
+          "text": "Software entities should be open for extension, closed for modification: extend behaviour, e.g. through subclasses, without modifying existing classes. Product has ID, name, type and cost. Adding size/colour and a new addProduct to Product violates OCP.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A product hierarchy can gain a ClothingProduct subtype while existing callers continue using the Product contract.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: OCP does not mean existing code is never changed; it means designing stable extension points where change is expected.",
+          "text": "Instead, create Clothing extending Product with size and colour. A Book subclass with author and publisher is added the same way.",
           "runs": []
         },
         {
@@ -395,40 +373,32 @@
           "src": "/images/week-8/image7.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — Initial product design",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Existing Product Design",
+          "alt": "Existing Product Design"
         },
         {
           "type": "image",
           "src": "/images/week-8/image8.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Extending a building without rebuilding the foundation",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Open–Closed Principle: Extend without Rebuilding",
+          "alt": "Open–Closed Principle: Extend without Rebuilding"
         },
         {
           "type": "image",
           "src": "/images/week-8/image9.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — Modify existing code versus extend behavior",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Open–Closed Principle: Modify vs Extend",
+          "alt": "Open–Closed Principle: Modify vs Extend"
         },
         {
           "type": "image",
           "src": "/images/week-8/image10.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — New product types through extension",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image11.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — OCP summary",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Extend Product with New Classes",
+          "alt": "Extend Product with New Classes"
         },
         {
           "type": "heading",
@@ -437,17 +407,17 @@
         },
         {
           "type": "paragraph",
-          "text": "If D is a subtype of B, an object of D should be usable wherever an object of B is expected without breaking the expected behavior. The chapter uses seller notifications: moving from email-only to multiple notification channels should preserve the behavior promised by the common notification contract.",
+          "text": "LSP applies to inheritance hierarchies. “Derived classes should be substitutable by their base class”: if D is a subtype of B, we can replace B with D without interrupting the behaviour of the program. The feature is to notify sellers about feedback on their product by email.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A function expecting a Notification object should be able to call send(message) on an EmailNotification or SMSNotification without special-case checks for the subtype.",
+          "text": "Abstract class FeedbackNotification has abstract notify(product, feedback, email); EmailNotification extends it. Adding SMSNotification breaks this: it needs a mobile number, not an email, so the derived method cannot substitute the base one.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Remember: LSP concerns behavioral compatibility, not merely having matching method names.",
+          "text": "Fix: remove email from the abstract notify(product, feedback). EmailNotification takes email in its constructor; SMSNotification takes mobile number and carrier in its constructor. Both implement notify(product, feedback).",
           "runs": []
         },
         {
@@ -455,40 +425,40 @@
           "src": "/images/week-8/image12.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — Original email-only notification design",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Original Email Notification Design",
+          "alt": "Original Email Notification Design"
         },
         {
           "type": "image",
           "src": "/images/week-8/image13.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — The risk of an incompatible replacement",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "The Substitution Problem: Email vs SMS",
+          "alt": "The Substitution Problem: Email vs SMS"
         },
         {
           "type": "image",
           "src": "/images/week-8/image14.webp",
           "width": 1671,
           "height": 1019,
-          "caption": "Figure — A shared notification contract",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "Shared FeedbackNotification Contract",
+          "alt": "Shared FeedbackNotification Contract"
         },
         {
           "type": "image",
           "src": "/images/week-8/image15.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Interchangeable implementations",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Interchangeable Notification Implementations",
+          "alt": "Interchangeable Notification Implementations"
         },
         {
           "type": "image",
           "src": "/images/week-8/image16.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Refactoring for behavioral substitutability",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Refactoring for Substitutability",
+          "alt": "Refactoring for Substitutability"
         },
         {
           "type": "heading",
@@ -497,17 +467,12 @@
         },
         {
           "type": "paragraph",
-          "text": "Do not force a client to depend on methods it does not need. In the chapter, a single DeliveryProcessing interface contains placeOrder, notifySeller, packageOrder and deliver. Physical books need all four actions; an e-book order does not need physical packaging or delivery. Split the contract into smaller, focused interfaces.",
+          "text": "An interface is a group of related methods with empty bodies; it specifies what, not how. Other classes implement it by implementing all its methods. Interface Segregation: “do not force any client to implement an interface which is irrelevant to them”. DeliveryProcessing defines placeOrder(), notifySeller(), packageOrder(), deliver(). An online/e-book order does not need packaging or delivery to an address, so the last two methods are irrelevant to it.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: PhysicalOrderProcessing can implement OrderProcessing, Packaging and PhysicalDelivery; OnlineOrderProcessing can implement only OrderProcessing. Digital access is handled separately as needed.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: The goal is focused client contracts, not splitting every method into its own interface.",
+          "text": "Split it into PhysicalDeliveryProcessing (placeOrder, notifySeller, packageOrder, deliver) and OnlineDeliveryProcessing (placeOrder, notifySeller, provideDownloadLink(Product p, String url)). Each client implements only the interface it needs.",
           "runs": []
         },
         {
@@ -515,56 +480,24 @@
           "src": "/images/week-8/image17.webp",
           "width": 1672,
           "height": 1019,
-          "caption": "Figure — A shared interface creates unnecessary obligations",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image18.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Why one interface does not suit every order",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "caption": "One Interface Forces Irrelevant Methods",
+          "alt": "One Interface Forces Irrelevant Methods"
         },
         {
           "type": "image",
           "src": "/images/week-8/image19.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Image 18A — physical worker needs physical fulfillment tools",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image20.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Image 18B — digital orders avoid physical fulfillment requirements",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image21.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Different clients need different operations",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image22.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Physical orders use ordering, packaging and delivery",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Do Not Force Unnecessary Methods",
+          "alt": "Do Not Force Unnecessary Methods"
         },
         {
           "type": "image",
           "src": "/images/week-8/image23.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Corrected three-interface UML design",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Interface Segregation: Before and After",
+          "alt": "Interface Segregation: Before and After"
         },
         {
           "type": "heading",
@@ -573,82 +506,61 @@
         },
         {
           "type": "paragraph",
-          "text": "High-level business logic should depend on abstractions rather than being tied to one concrete implementation. In the chapter, a Seller module that directly creates a BankAccount becomes difficult to extend when payment methods such as UPI or Paytm are added. A PaymentAccount interface allows multiple providers to implement the same payment contract.",
+          "text": "Prefer abstractions/interfaces over implementations; always associate classes with interfaces rather than actual implementations. A seller should receive payment for products sold. Seller has a BankAccount attribute with number, branch and balance. Adding Paytm, Google Pay or UPI would mean adding more attributes, so Seller is tightly coupled and the code gets complex.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: Seller receives a PaymentAccount object and calls payment(amount); the concrete provider supplies the implementation.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Remember: Dependency inversion is about the direction of source-code dependencies, not merely drawing an interface in the diagram.",
+          "text": "Fix: interface PaymentAccount with payment(); BankAccount, UPI, GooglePay and Paytm implement it; Seller is coupled to PaymentAccount. In main, create the chosen payment object (e.g. BankAccount, later UPI) and pass it to the seller.",
           "runs": []
         },
         {
           "type": "image",
           "src": "/images/week-8/image24.webp",
           "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Direct coupling to a concrete bank account",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "height": 941,
+          "caption": "Seller Tightly Coupled to BankAccount",
+          "alt": "Seller Tightly Coupled to BankAccount"
         },
         {
           "type": "image",
           "src": "/images/week-8/image25.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Why direct integrations become hard to maintain",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Every New Payment Option Changes Seller",
+          "alt": "Every New Payment Option Changes Seller"
         },
         {
           "type": "image",
           "src": "/images/week-8/image26.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Seller depends on the payment abstraction",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Depend on the PaymentAccount Interface",
+          "alt": "Depend on the PaymentAccount Interface"
         },
         {
           "type": "image",
           "src": "/images/week-8/image27.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Before and after using an abstract payment contract",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image28.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Reducing coupling by depending on an abstraction",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
-        },
-        {
-          "type": "image",
-          "src": "/images/week-8/image29.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Universal connector analogy",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Dependency Inversion in Code",
+          "alt": "Dependency Inversion in Code"
         },
         {
           "type": "image",
           "src": "/images/week-8/image30.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Visual memory aid for all five principles",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Remember SOLID",
+          "alt": "Remember SOLID"
         },
         {
           "type": "image",
           "src": "/images/week-8/image31.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure — Five short scenarios to identify the principle",
-          "alt": "Illustration: SOLID: five principles for maintainable object-oriented design"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Which SOLID Principle?",
+          "alt": "Which SOLID Principle?"
         },
         {
           "type": "heading",
@@ -675,17 +587,17 @@
             ],
             [
               "OCP",
-              "Every new type requires editing old conditionals",
+              "Adding a product type means editing the existing Product class",
               "Provide extension points"
             ],
             [
               "LSP",
-              "Subclass breaks callers’ expectations",
+              "Subclass cannot substitute the base method (e.g. notify needs email)",
               "Preserve base contract"
             ],
             [
               "ISP",
-              "Client implements irrelevant methods",
+              "Client must implement irrelevant methods (e-book: packageOrder, deliver)",
               "Split interfaces by client needs"
             ],
             [
@@ -694,6 +606,10 @@
               "Depend on an abstraction"
             ]
           ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Follow these principles to make code more efficient, maintainable and easy to understand; they recur in design patterns."
         }
       ]
     },
@@ -703,7 +619,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Creational patterns help manage object creation. The chapter focuses on Factory Method and Builder. Both can improve flexibility, but they solve different problems.",
+          "text": "Design patterns are descriptions of communicating objects and classes customised to solve a general design problem in a particular context. Elements: Problem — when and in what context to apply it; Solution — elements, relationships, responsibilities and collaborations, a template for many situations; Consequences — results, trade-offs and cost-benefit. Types: Creational — used during object creation; Structural — composition of classes/objects; Behavioural — how classes/objects interact and distribute responsibility.",
           "runs": []
         },
         {
@@ -714,25 +630,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image40.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Creational design patterns",
-          "qualityNote": "The picture uses notification creators, while the text uses courier creators. In both, creator subclasses override the factory method to return a product through a common interface; a mere switch statement is not the defining Factory Method structure."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Factory Method",
+          "alt": "Factory Method"
         },
         {
           "type": "paragraph",
-          "text": "Problem: a client must create a suitable object, such as a courier service, without hard-coding a concrete service everywhere. Factory Method moves the decision about which concrete product to instantiate into a factory method that supplies a common product interface. The client uses the interface rather than relying on a specific implementation.",
+          "text": "Feature: deliver a package using a courier service. Delivery has deliver(courier), and Courier is a class. Adding international couriers with a courierType if/else in deliver violates OCP. Factory pattern: replace direct object construction calls (the new operator) with calls to a special factory method.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A delivery application asks a courier creator for a Courier object. Different creators can produce different courier implementations.",
+          "text": "Make Delivery and Courier abstract. NationalCourier and InternationalCourier extend Courier. NationalDelivery and InternationalDelivery extend Delivery and implement createCourier(), returning NationalCourier / InternationalCourier. In main, create a delivery object d (e.g. InternationalDelivery), call d.createCourier(), and pass the result to d.deliver(). New types, e.g. a local courier, are just new classes.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Benefits from the chapter: supports SRP and OCP by separating creation from use and allowing new variants. Trade-off: more classes and subclasses can make the design harder to follow.",
+          "text": "Pros: SRP and OCP. Con: code may become more complicated because of many new subclasses, so decide based on context.",
           "runs": []
         },
         {
@@ -743,25 +658,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image41.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Creational design patterns",
-          "qualityNote": "The illustration builds a computer; the text builds a Book. Both illustrate stepwise construction. The chosen attributes are example-specific."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Builder Pattern",
+          "alt": "Builder Pattern"
         },
         {
           "type": "paragraph",
-          "text": "Problem: an object such as Book has mandatory fields plus several optional fields. Many constructor overloads lead to telescoping constructors, where argument lists become confusing and difficult to maintain. Builder moves step-by-step construction into a separate builder object.",
+          "text": "Book has mandatory ISBN, title and cost, and optional author, published and description. Many constructors for different combinations are telescoping constructors. Builder extracts object construction out of its own class into a separate builder object.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A Book requires title and ISBN but may optionally include author, edition and publisher. A builder collects chosen values before creating the Book.",
+          "text": "A static Builder class has the same fields, a Builder(isbn, title, cost) constructor, one method per optional field — author(), published(), description() — and build() returning the Book. Book keeps one constructor that takes the builder. Example: new Book.Builder(isbn, title, cost).author(..).published(..).description(..).build().",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Benefits described in the chapter: step-by-step construction with optional attributes and a more readable alternative to telescoping constructors. The builder introduces additional structure.",
+          "text": "Pros: construct objects step by step; SRP. Con: more complicated because of the new class and methods; skip it if there are not many optional parameters. The example is adapted from Joshua Bloch’s builder (Oracle Java Magazine).",
           "runs": []
         },
         {
@@ -772,20 +686,15 @@
         {
           "type": "image",
           "src": "/images/week-8/image42.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Creational design patterns",
-          "qualityNote": "This comparison uses notifications versus a computer; the text uses a courier versus a Book. Compare creation choice with construction steps."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Factory Method vs Builder",
+          "alt": "Factory Method vs Builder"
         },
         {
           "type": "paragraph",
-          "text": "Factory Method answers “Which concrete object should I create?” Builder answers “How do I assemble this object with many settings?” A courier selection is a natural factory example; an optional-field Book object is a natural builder example.",
+          "text": "Factory Method: courier creation — which object to create? Builder: Book construction — how to build the object step by step?",
           "runs": []
-        },
-        {
-          "type": "note",
-          "text": "Factory Method distinction: creator subclasses override a creation method that returns objects through a common product interface. A standalone function selecting classes with if/else is often called a simple factory; it is not by itself the classic Factory Method structure."
         }
       ]
     },
@@ -795,7 +704,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Structural patterns explain how to combine objects or classes while keeping their interactions manageable. The chapter covers Facade and Adapter.",
+          "text": "Structural patterns help assemble objects and classes into larger structures while keeping them flexible and efficient.",
           "runs": []
         },
         {
@@ -806,25 +715,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image43.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Structural design patterns",
-          "qualityNote": "The picture coordinates inventory/payment/packaging/delivery; the text uses order/notification/packaging/delivery. These are alternative subsystem examples, not an exact sequence specification."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Facade Pattern",
+          "alt": "Facade Pattern"
         },
         {
           "type": "paragraph",
-          "text": "Problem: after a buyer orders a product, the client must create an order, notify a seller, arrange packaging and arrange delivery. Requiring every client to know each object and the exact order of calls creates complexity. A Facade offers a simple high-level method that coordinates the subsystem.",
+          "text": "Problem: you must create several objects and perform several steps in the right order with the right parameters, using existing complicated library functions. Anyone reusing your code must know all of this. After a buyer places an order: create order, notify seller, prepare packaging, send for delivery — classes Order, Seller, Package, Delivery.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: OrderFacade.placeOrder(product, seller) internally delegates to order, notification, packaging and delivery services.",
+          "text": "Facade provides a simple interface to a library or complex set of classes: DeliveryFacade.deliver(...) creates the objects and calls them in order; the client calls only deliver.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Benefit: callers are isolated from subsystem complexity. Cost: the facade itself can become tightly coupled to many subsystem objects and difficult to maintain if it takes on too much responsibility. The example is simplified pseudocode.",
+          "text": "Pro: isolates code from other libraries’ and classes’ complexity. Con: the facade is tightly coupled to other objects, so maintenance is harder; any change in Order/Seller/Package/Delivery needs a change in DeliveryFacade.",
           "runs": []
         },
         {
@@ -835,25 +743,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image44.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Structural design patterns",
-          "qualityNote": "The picture uses convert(amount), while the text uses getPriceInRupees(). These are alternative target interfaces. A real currency contract must also define currency codes, rate timing and rounding."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Adapter Pattern",
+          "alt": "Adapter Pattern"
         },
         {
           "type": "paragraph",
-          "text": "Problem: one component expects data or methods in one form while an existing component supplies another. The chapter uses products priced in dollars or euros and a currency conversion service that does not directly match the Product interface. An adapter translates between the expected interface and the existing conversion component.",
+          "text": "Problem: some products cost dollars/euros and must be converted to rupees, but Product cannot directly use the existing ConversionCalculator library because its interface is incompatible and not under our control. The client calls the adapter’s method; the adapter calls the adaptee’s method, wrapping the object and hiding the incompatibility.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A product module expects getPriceInRupees(); an adapter calls the existing currency converter and returns the rupee amount.",
+          "text": "CostCalculatorAdapter takes a product, creates a ConversionCalculator and passes the cost. Product creates the adapter and gets the cost in rupees (example: $300).",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Adapter provides a compatible interface while retaining the existing conversion component.",
+          "text": "Pros: SRP — conversion code is separated from Product’s business logic; OCP — new adapters for other currencies. Con: overall code complexity increases, and it is unnecessary if you could change Product or access ConversionCalculator directly.",
           "runs": []
         },
         {
@@ -864,14 +771,14 @@
         {
           "type": "image",
           "src": "/images/week-8/image45.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Structural design patterns"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Facade vs Adapter",
+          "alt": "Facade vs Adapter"
         },
         {
           "type": "paragraph",
-          "text": "Facade simplifies access to a collection of operations; Adapter translates an incompatible interface into one the client expects. Facade hides complexity; Adapter bridges mismatch.",
+          "text": "Facade gives a simple interface to many classes; Adapter makes incompatible interfaces work together.",
           "runs": []
         }
       ]
@@ -882,7 +789,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Behavioral patterns deal with communication between objects and the distribution of responsibilities. The chapter presents Iterator, Observer and Strategy.",
+          "text": "Behavioural patterns handle effective communication and the assignment of responsibilities between objects.",
           "runs": []
         },
         {
@@ -893,25 +800,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image46.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Behavioral design patterns",
-          "qualityNote": "The picture traverses mixed products; the text traverses books. Both illustrate hiding collection storage behind traversal operations."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Iterator Pattern",
+          "alt": "Iterator Pattern"
         },
         {
           "type": "paragraph",
-          "text": "Problem: a client wants to visit every element in a list, queue, stack or tree, but should not need to know the internal representation. Iterator separates traversal behavior from the collection. The chapter refers to Java’s hasNext() and next() operations.",
+          "text": "Collections include lists, queues, stacks and trees of products, orders or deliveries. The client only wants to access elements, not know how they are stored. Separate element access into an iterator object. Java’s Iterator interface has hasNext(), returning true if there are more elements, and next(), returning the next element.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: A seller portal loops through all Book records using an iterator rather than manipulating the collection’s internal storage.",
+          "text": "Example: Book (ISBN, title, cost) in an ArrayList and in a LinkedList. Each collection implements hasNext/next and the client just iterates.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Benefits: traversal responsibility is separated and new traversal approaches may be added. Cost: a separate iterator can be unnecessary for very simple collections where language-level iteration already suffices.",
+          "text": "Pros: SRP; OCP through new iterator types. Con: overkill for simple collections such as arrays.",
           "runs": []
         },
         {
@@ -922,25 +828,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image47.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Behavioral design patterns",
-          "qualityNote": "The picture publishes order-status changes; the text publishes product launches. Both illustrate one subject notifying registered observers."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Observer Pattern",
+          "alt": "Observer Pattern"
         },
         {
           "type": "paragraph",
-          "text": "Problem: a set of buyers wants updates when a new product is launched. Instead of the product-launch logic manually contacting every buyer, a subject keeps a list of observers and notifies them when its state changes.",
+          "text": "Feature: notify a particular set of buyers when a new product launches, like YouTube channel subscriptions — only subscribers, not all users. Subject keeps a list of observers and notifies them automatically of changes.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: Buyers subscribe to product-launch notifications. When a new product is released, the subject sends updates to its registered observers.",
+          "text": "Subject provides register(), unregister(), notifyObservers(); notifyObservers() iterates and calls update().",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Core roles: Subject/Publisher stores the subscriber list; Observer/Subscriber defines the notification behavior. An observer can be added or removed without rewriting the publisher’s core workflow. This is a conceptual example.",
+          "text": "Observer is an interface/abstract class with update(). NormalUser and PrimeUser implement update(); a prime user also gets an extra-discount message.",
           "runs": []
         },
         {
@@ -951,25 +856,24 @@
         {
           "type": "image",
           "src": "/images/week-8/image48.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "",
-          "alt": "Illustration: Behavioral design patterns",
-          "qualityNote": "The picture swaps shipping-cost algorithms; the text swaps order-processing policies. Both illustrate interchangeable strategies behind a stable contract."
+          "width": 1536,
+          "height": 1024,
+          "caption": "Strategy Pattern — FIFOOrderDelivery is the shortened label for FirstInFirstOutOrderDelivery.",
+          "alt": "Strategy Pattern"
         },
         {
           "type": "paragraph",
-          "text": "Problem: the portal processes orders in different ways, such as first-in-first-out or priority-based processing. Large conditional blocks make it difficult to add new algorithms. Strategy extracts each algorithm into its own class and lets a context delegate work to a selected strategy.",
+          "text": "Feature: process orders by different strategies — first in first out, or priority (prime users first). Before: OrderManager has one method per strategy; adding a strategy means modifying the class, violating OCP. Strategy extracts each algorithm into its own class; the context delegates to a strategy object.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Example: OrderProcessor uses FIFOOrderStrategy or PriorityOrderStrategy through a common processing contract.",
+          "text": "Interface OrderDeliveryStrategy defines deliverOrders(). FirstInFirstOutOrderDelivery and PriorityOrderDelivery implement it; a new strategy is just a new class.",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Benefits: isolates algorithm details and supports adding strategies without changing the context’s main logic. Cost: more objects and abstraction; unnecessary when there is only one simple fixed algorithm.",
+          "text": "Pros: isolates algorithm implementation; OCP. Con: not required if only one or two algorithms will be used.",
           "runs": []
         },
         {
@@ -981,6 +885,14 @@
           "type": "paragraph",
           "text": "Observer broadcasts changes to subscribers. Strategy swaps the algorithm used to perform a task. Iterator moves through elements of a collection. All three are behavioral, but the reasons for using them are different.",
           "runs": []
+        },
+        {
+          "type": "heading",
+          "text": "Summary"
+        },
+        {
+          "type": "paragraph",
+          "text": "Patterns are templates/descriptions for organising objects and classes to solve general design problems in a context. There are about 23 patterns; the course covers a few. Weigh their benefits and drawbacks: patterns should not be used blindly, only when they give a benefit."
         }
       ]
     },
@@ -1027,12 +939,12 @@
               "Extend rather than edit stable core"
             ],
             [
-              "SMS subtype breaks a notification caller",
+              "SMSNotification cannot use notify(…, email)",
               "LSP",
               "Preserve substitution behavior"
             ],
             [
-              "E-book order must implement packageOrder()",
+              "E-book order forced to implement packageOrder() and deliver()",
               "ISP",
               "Avoid irrelevant interface methods"
             ],
@@ -1057,7 +969,7 @@
               "One simple entry point"
             ],
             [
-              "Convert a foreign price interface",
+              "Product cannot call ConversionCalculator directly",
               "Adapter",
               "Translate incompatible contracts"
             ],
@@ -1166,12 +1078,12 @@
         },
         {
           "type": "paragraph",
-          "text": "A legacy converter offers convert(value, from, to), but a module expects priceInRupees(). Which pattern?",
+          "text": "A product priced in dollars must get its cost in rupees from an existing ConversionCalculator it cannot call directly. Which pattern?",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Answer and reasoning: Adapter: translate the expected operation into the legacy converter’s interface.",
+          "text": "Answer and reasoning: Adapter (CostCalculatorAdapter): wraps the existing conversion library’s incompatible interface.",
           "runs": []
         },
         {
@@ -1181,12 +1093,12 @@
         },
         {
           "type": "paragraph",
-          "text": "A Book has two required and seven optional properties. Which creational pattern?",
+          "text": "A Book has mandatory ISBN, title and cost and optional author, published year and description. Which creational pattern?",
           "runs": []
         },
         {
           "type": "paragraph",
-          "text": "Answer and reasoning: Builder: avoid a large collection of telescoping constructors.",
+          "text": "Answer and reasoning: Builder: construct it step by step instead of using many telescoping constructors.",
           "runs": []
         },
         {
@@ -1257,12 +1169,7 @@
         },
         {
           "type": "bullet-item",
-          "text": "I can read the dashed UML realization arrow toward an interface.",
-          "runs": []
-        },
-        {
-          "type": "bullet-item",
-          "text": "I can explain why e-book orders should not implement physical packaging methods.",
+          "text": "I can explain why e-book orders should not implement packageOrder() and deliver() (split into Physical/OnlineDeliveryProcessing).",
           "runs": []
         },
         {

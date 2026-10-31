@@ -89,8 +89,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Imagine that the stakeholders have already described what the software must do. The team has written an SRS, prepared user stories, and explored the user interface. The next question is not simply 'Who starts coding first?' It is 'How will we organise the solution?' Software design converts requirements into a technical plan that developers can implement.",
-          "runs": []
+          "text": "Design is a way of organising the code you will implement and providing a structure to the software system."
         },
         {
           "type": "paragraph",
@@ -101,7 +100,7 @@
           "type": "image",
           "src": "/images/week-5/image1.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 1. The design plan bridges requirements and development.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
@@ -124,7 +123,7 @@
           "type": "image",
           "src": "/images/week-5/image2.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 2. The four deliverables of a software design.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
@@ -140,8 +139,7 @@
         },
         {
           "type": "paragraph",
-          "text": "High-level design, often called architecture, focuses on the major modules and their interfaces. For a Seller Portal, we can initially identify Catalogue, Inventory, and Orders without yet choosing every internal data representation. At this level, a designer asks which module owns each responsibility and what requests move between modules.",
-          "runs": []
+          "text": "Components and interfaces are the key elements of high-level software design, known as software architecture. Once the architecture is decided, we move to lower-level design details. The most popular notation for representing a high-level design is UML (Unified Modelling Language), which can describe different views — a user’s view, a functionality view, a messages view and so on."
         },
         {
           "type": "paragraph",
@@ -152,7 +150,7 @@
           "type": "image",
           "src": "/images/week-5/image3.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 3. Architecture shows modules; detailed design shows internal data and processing.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
@@ -163,8 +161,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A user story says what someone needs, not how the internal code should be arranged. In the chapter's Seller Portal example, an independent seller wants to see stock and monitor customers' feedback. The design translates those needs into related components such as Inventory Management and Customer Feedback.",
-          "runs": []
+          "text": "From requirements and user stories we identify common functionalities, group them into tasks, and these form components: Catalogue Management, Inventory Management, Payment Tracking, Order Tracking, Sales Tracking, Customer Feedback."
         },
         {
           "type": "paragraph",
@@ -175,7 +172,7 @@
           "type": "image",
           "src": "/images/week-5/image4.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 4. User stories are mapped to responsible modules.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
@@ -198,7 +195,7 @@
           "type": "image",
           "src": "/images/week-5/image5.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 5. Six major components used in the chapter’s Seller Portal example.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
@@ -209,19 +206,17 @@
         },
         {
           "type": "paragraph",
-          "text": "A good design must first be correct: the built system should meet its stated requirements. It should also be efficient, making reasonable use of time, memory, cost, and other resources. Efficiency does not require a fictional speed number; the appropriate target depends on the system and its constraints.",
-          "runs": []
+          "text": "Correctness — correctly implement all functionalities; ensured by capturing requirements that are not ambiguous, not conflicting and complete. Efficiency — resources (time, space, cost) managed well; choose the development framework according to the application (client-server vs mission-critical); an embedded system must work under limited memory."
         },
         {
           "type": "paragraph",
-          "text": "Maintainability means a developer can modify one part without unnecessarily disturbing many unrelated parts. Understandability means that another team member can follow the design and reason about its behavior. These qualities support one another: a beautifully divided system is not 'good' if it fails required features, and a working system can still be painful to maintain if its structure is confusing.",
-          "runs": []
+          "text": "Maintainability — easy to change; requirements change during design or after release (new requests, upgrades), and we don’t want to redesign the software from scratch. Understandability — everyone in the development team can follow the design; otherwise they can’t implement it, leading to bugs and higher development and maintenance costs."
         },
         {
           "type": "image",
           "src": "/images/week-5/image6.webp",
           "width": 1536,
-          "height": 1096,
+          "height": 1024,
           "caption": "Figure 6. Correctness, efficiency, maintainability and understandability.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
@@ -295,7 +290,7 @@
           "type": "image",
           "src": "/images/week-5/image7.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 7. Few necessary module links versus many tangled dependencies.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -318,7 +313,7 @@
           "type": "image",
           "src": "/images/week-5/image8.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 8. Coupling is between modules; cohesion is within a module.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -334,8 +329,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Suppose functions that belong to M3 have been scattered across M2, M4, and M5. To finish a single operation, the system must jump repeatedly between components. Even if the software runs, the design is awkward: ownership is unclear and one change can affect several files or teams.",
-          "runs": []
+          "text": "Many modules share information because functionality is spread across modules rather than grouped into one module. If M3’s required functions were all inside M3, it would not depend on M2, M4, M5."
         },
         {
           "type": "paragraph",
@@ -346,7 +340,7 @@
           "type": "image",
           "src": "/images/week-5/image9.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 9. Related functions are reorganised into clearer modules.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -369,7 +363,7 @@
           "type": "image",
           "src": "/images/week-5/image10.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 10. A simplified Seller Portal design with limited interactions.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -392,7 +386,7 @@
           "type": "image",
           "src": "/images/week-5/image11.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 11. Data coupling passes a simple parameter through an interface.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -420,7 +414,7 @@
           "type": "image",
           "src": "/images/week-5/image12.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 12. A control parameter selects a receiving module’s branch.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -436,14 +430,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Why is this risky? If one module changes the shared value unexpectedly, another module can observe a surprising state and behave differently. Debugging then requires understanding all potential readers and writers. Global shared state can be justified in some systems, but it creates stronger dependencies than passing the information required for a specific request.",
-          "runs": []
+          "text": "Other modules may also access the global variable; multiple concurrent changes can happen, leading to an unstable system. This type of coupling is generally not recommended."
         },
         {
           "type": "image",
           "src": "/images/week-5/image13.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 13. Common coupling uses a shared global flag.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -459,14 +452,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Such access makes changes especially fragile: refactoring an internal representation breaks the outside code that secretly relies on it. The preferred alternative is a defined public operation. The chapter treats content coupling as undesirable and notes that disciplined procedural or object-oriented designs try to prevent it.",
-          "runs": []
+          "text": "This rarely happens in procedural or object-oriented languages like Python and Java, because data and member functions are encapsulated into a single unit, so it rarely occurs in practice."
         },
         {
           "type": "image",
           "src": "/images/week-5/image14.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 14. Content coupling reaches into another module’s private internals.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -488,10 +480,10 @@
         {
           "type": "image",
           "src": "/images/week-5/image15.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 15. Four coupling mechanisms shown by their distinctive data access patterns.",
-          "alt": "Illustration: Section 2 · Design Modularity"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Four types of coupling between Seller and Inventory.",
+          "alt": "Four types of coupling between Seller and Inventory."
         },
         {
           "type": "note",
@@ -514,14 +506,10 @@
           "runs": []
         },
         {
-          "type": "note",
-          "text": "Terminology note: this chapter classifies the Inventory Management example as functional cohesion. A stricter function-level taxonomy may classify independent CRUD operations grouped around shared records as communicational cohesion. For a question referring to this chapter’s example, use functional; for a new example, classify the actual relationship among its operations."
-        },
-        {
           "type": "image",
           "src": "/images/week-5/image16.webp",
           "width": 1774,
-          "height": 970,
+          "height": 887,
           "caption": "Figure 16. Inventory functions cooperate to achieve one task.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -537,14 +525,13 @@
         },
         {
           "type": "paragraph",
-          "text": "The order matters because of the data flow. A list of function calls written on the same page does not by itself prove sequential cohesion. Ask whether the output of an earlier activity is actually needed by the next. The illustration makes this visible by carrying an order ticket and then an availability result through the stages.",
-          "runs": []
+          "text": "check_availability looks at the product and the inventory, so it does not really belong to order processing — it is placed here so the functions execute one after the other."
         },
         {
           "type": "image",
           "src": "/images/week-5/image17.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 17. Order processing stages use the previous stage’s output.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -560,8 +547,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Communicational cohesion is when the functions of a module all refer to, read, or update the same data structure. In the product example, Add, Edit, and Delete work with a shared Product List. Their connection is shared data.",
-          "runs": []
+          "text": "Communicational cohesion: instead of separate inventory or catalogue modules, a single product module where add/edit/delete of catalogue and inventory all update the same list of products."
         },
         {
           "type": "paragraph",
@@ -572,7 +558,7 @@
           "type": "image",
           "src": "/images/week-5/image18.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 18. Product-list operations share a common data structure.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -600,7 +586,7 @@
           "type": "image",
           "src": "/images/week-5/image19.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 19. A procedural sequence combines activities with different purposes.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -611,8 +597,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Coincidental cohesion is the weakest grouping in this set: a module contains functions that have no meaningful relationship. Imagine a junk-drawer module containing a calculator, payment operation, weather function, and login feature merely because they were convenient to place together.",
-          "runs": []
+          "text": "Coincidental cohesion: functions with meaningless relationships; an extreme type rarely seen in good designs."
         },
         {
           "type": "paragraph",
@@ -623,7 +608,7 @@
           "type": "image",
           "src": "/images/week-5/image20.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 20. Coincidental grouping has no unifying responsibility.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -639,23 +624,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Cohesion has a conventional strongest-to-weakest order. This is an ordinal design preference, not a numerical score."
-        },
-        {
-          "type": "note",
-          "text": "Strongest → weakest: Functional → Sequential → Communicational → Procedural → Temporal → Logical → Coincidental."
-        },
-        {
-          "type": "paragraph",
-          "text": "This chapter develops five of those categories: functional, sequential, communicational, procedural and coincidental. Their relative order is unchanged. Temporal groups activities by when they occur; logical groups similar kinds of activity, often selected by a control flag. Functional cohesion is strongest and coincidental cohesion is weakest in this conventional scale."
+          "text": "The course covers five types: functional (best), sequential, communicational, procedural and coincidental (worst)."
         },
         {
           "type": "image",
           "src": "/images/week-5/image21.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 21. Five forms of cohesion compared through their defining connections.",
-          "alt": "Illustration: Section 2 · Design Modularity"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Five types of cohesion with the Seller Portal examples.",
+          "alt": "Five types of cohesion with the Seller Portal examples."
         },
         {
           "type": "note",
@@ -669,19 +646,17 @@
         },
         {
           "type": "paragraph",
-          "text": "Modular design combines two choices: give each module a coherent responsibility (high cohesion) and minimise unnecessary dependencies among modules (low coupling). On the good-design side, modifying a module is mostly local because other modules use clear interfaces. On the difficult-design side, mixed responsibilities and tangled links multiply the ripple effects of a change.",
-          "runs": []
+          "text": "Modular — problem decomposed into modules with only limited interactions, so each module can be understood separately. High cohesion — functions of a module cooperate to perform a single objective. High coupling — function calls between two modules involve passing large chunks of shared data (not desirable)."
         },
         {
           "type": "paragraph",
-          "text": "The chapter summary slide contains an inconsistent reference to 'High Coupling'. Its earlier discussion, the reflection answer, and the overall principle support **high cohesion and low coupling**. The illustration and these notes follow the conceptually correct rule. Practical reminder: small focused modules are not enough if they communicate by changing each other's private internals.",
-          "runs": []
+          "text": "If coupling is high, cohesion is generally low and vice versa — so high/high and low/low (options A and D) are ruled out. Low cohesion (functions doing varied operations, making the module’s purpose hard to understand) with high coupling (lots of shared data) is not desirable. A good design has high cohesion and low coupling (option C)."
         },
         {
           "type": "image",
           "src": "/images/week-5/image22.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 22. High cohesion and low coupling are the modular design goal.",
           "alt": "Illustration: Section 2 · Design Modularity"
         },
@@ -766,8 +741,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Object-oriented design explains software as a collection of interacting objects. The chapter uses a trip to a supermarket: a customer selects Products such as bread, milk, or a shirt; places them in a Shopping Cart; receives an Order or Bill; and makes a Payment.",
-          "runs": []
+          "text": "Objects are the key building block; we imagine the working of software in terms of interacting objects, which usually represent tangible real-world entities."
         },
         {
           "type": "paragraph",
@@ -778,7 +752,7 @@
           "type": "image",
           "src": "/images/week-5/image23.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 23. Real-world objects along a supermarket shopping journey.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -801,7 +775,7 @@
           "type": "image",
           "src": "/images/week-5/image24.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 24. An object contains its state and its operations.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -817,14 +791,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Suppose a product's price must always remain non-negative. A public operation can validate proposed changes. If another object could freely overwrite the stored value, it might violate that rule. Encapsulation therefore supports correctness, maintainability, and information hiding. Remember that 'private' and 'public' become explicit notation when we draw a UML class box later.",
-          "runs": []
+          "text": "An advantage of decomposing a system into objects with data abstraction is that it divides the system into parts with high cohesion and low coupling: data variables and related methods are encapsulated together (high cohesion), and interaction between objects is minimised (low coupling)."
         },
         {
           "type": "image",
           "src": "/images/week-5/image25.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 25. Public methods mediate access to hidden object data.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -840,8 +813,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter's Product object has data such as name, type, size, colour, brand, and cost. These are attributes describing a particular product instance. Other possible information includes manufacturer or dimensions. Methods such as `add_product()`, `edit_product_details()`, and `delete_product()` describe operations associated with the simplified Product design.",
-          "runs": []
+          "text": "Product data members: name, type, size, colour, brand, about, manufacturer, dimensions, cost. Methods: add_product(), edit_product_details(), delete_product()."
         },
         {
           "type": "paragraph",
@@ -852,7 +824,7 @@
           "type": "image",
           "src": "/images/week-5/image26.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 26. Product data and operations organised together.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -875,7 +847,7 @@
           "type": "image",
           "src": "/images/week-5/image27.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 27. One Product class serves as a template for multiple objects.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -898,7 +870,7 @@
           "type": "image",
           "src": "/images/week-5/image28.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 28. Seller requests a service from Inventory.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -913,15 +885,10 @@
           "runs": []
         },
         {
-          "type": "paragraph",
-          "text": "The visual gives an intuitive idea of containment. In strict UML, composition also implies exclusive whole–part ownership and a related lifecycle: a part cannot simultaneously belong to multiple composite owners. A real e-commerce Product may survive removal from a Catalogue or appear in several catalogues, in which case an association or aggregation might model the domain more accurately. Treat this example as the chapter's simplified whole–part illustration, not as a claim about every production catalogue.",
-          "runs": []
-        },
-        {
           "type": "image",
           "src": "/images/week-5/image29.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 29. The black UML composition diamond belongs at the Catalogue end.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -949,7 +916,7 @@
           "type": "image",
           "src": "/images/week-5/image30.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 30. Specialised product classes inherit from the Product superclass.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
@@ -965,27 +932,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Dependency means one design element relies on another, so changes to the supplier can require changes in the client. The chapter gives the example of Class B implementing Interface A. At first both agree on operations such as `start()`. If Interface A changes its contract to `start(String mode)`, the old implementation in Class B must be updated to match.",
-          "runs": []
-        },
-        {
-          "type": "paragraph",
-          "text": "This update is work a developer must perform; it does not happen automatically. A general UML dependency is drawn with a dashed line and an open arrow pointing from the dependent client toward the supplier. Do not confuse the direction of *dependency* with the cause-and-effect story 'the interface changed, so B needs to change.' Interfaces and implementations have specialised UML notation, but this picture is illustrating the chapter's dependency principle.",
-          "runs": []
+          "text": "Class B implements Interface A; if A changes, B has to be changed — common in languages like Java."
         },
         {
           "type": "image",
           "src": "/images/week-5/image31.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 31. A changed interface contract can require an implementation update.",
-          "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts",
-          "qualityNote": "A class implementing an interface is formally a UML realization: dashed line with a hollow triangle toward the interface. The open arrow here illustrates a general dependency only."
-        },
-        {
-          "type": "note",
-          "text": "UML notation: The dependency arrow points toward the supplier.",
-          "runs": []
+          "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
         },
         {
           "type": "heading",
@@ -994,21 +949,23 @@
         },
         {
           "type": "paragraph",
-          "text": "Three recognition questions help you identify class relationships. 'Does A need help from B?' suggests association or use. 'Does A contain B as a part?' suggests a whole–part relationship such as composition or aggregation. 'Is A a kind of B?' suggests inheritance or generalisation.",
-          "runs": []
+          "text": "Association — A delegates to B / A needs help from B. Composition/Aggregation — B is a part of A / A contains B / A is a collection of Bs."
         },
         {
           "type": "paragraph",
-          "text": "Always think about the software domain before choosing a symbol. A Catalogue may reference Products without owning their entire lifecycle; that can matter when deciding between composition and a weaker relationship. A Book is a Product (inheritance), but a Seller is not a kind of Inventory just because it interacts with Inventory.",
-          "runs": []
+          "text": "Inheritance — A is a kind of B / A is a specialisation of B."
         },
         {
           "type": "image",
           "src": "/images/week-5/image32.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 32. Three simple recognition questions for class relationships.",
           "alt": "Illustration: Section 3 · Object-Oriented Design: Basic Concepts"
+        },
+        {
+          "type": "paragraph",
+          "text": "Communicating the design to other team members (and sometimes clients) is important — this is done by creating a model of the system, using UML."
         },
         {
           "type": "heading",
@@ -1083,14 +1040,13 @@
         },
         {
           "type": "paragraph",
-          "text": "A model is not the deployed application. It is deliberately simpler than the complete running system, showing the aspects important for a design decision. The chapter uses UML to discuss classes and their interactions, helping designers, developers, and testers reason from a common picture rather than separate assumptions.",
-          "runs": []
+          "text": "There are many UML diagrams; a subset is used to create the design model. This course focuses mainly on class and sequence diagrams, as they are the most commonly used."
         },
         {
           "type": "image",
           "src": "/images/week-5/image33.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 33. A UML model supports joint discussion of the proposed system.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1113,7 +1069,7 @@
           "type": "image",
           "src": "/images/week-5/image34.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 34. Structural organisation and dynamic message flow show different views.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1136,7 +1092,7 @@
           "type": "image",
           "src": "/images/week-5/image35.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 35. Standard three-compartment UML class notation with visibility symbols.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1164,7 +1120,7 @@
           "type": "image",
           "src": "/images/week-5/image36.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 36. Seller Portal classes, specialisations and relationships.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1192,7 +1148,7 @@
           "type": "image",
           "src": "/images/week-5/image37.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 37. State, activity, and interaction diagrams describe behaviour in different ways.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1215,7 +1171,7 @@
           "type": "image",
           "src": "/images/week-5/image38.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 38. Lifelines and arrows show time-ordered messages.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1243,7 +1199,7 @@
           "type": "image",
           "src": "/images/week-5/image39.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 39. Add Seller sequence with four participants and six messages.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1259,19 +1215,17 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter describes three uses for modelling. First, diagrams support communication and idea generation: people can discuss the same representation and uncover assumptions. Second, they guide developers by making the intended organisation and responsibilities explicit. Third, some models can support code generation when suitable tools and sufficiently detailed models are available.",
-          "runs": []
+          "text": "UML is a vehicle for communication and idea generation: key ideas like class names, some attributes and relationships let team members add classes or change relationships. It guides development of software: start with basic classes, then add attributes and member functions as development progresses."
         },
         {
           "type": "paragraph",
-          "text": "These are purposes, not guarantees. UML does not mean every line of production code will automatically appear, or that every project must create every diagram. Good modelling is useful when it saves misunderstanding, supports technical decisions, and gives a shared picture of what to build.",
-          "runs": []
+          "text": "There is a close correspondence with the implementation — every class in a model maps onto one or more classes in the code. Tools can generate code from detailed UML diagrams."
         },
         {
           "type": "image",
           "src": "/images/week-5/image40.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 40. Models help communicate, guide implementation, and sometimes generate skeletons.",
           "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
@@ -1287,17 +1241,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Generated code is only a starting point: methods may still need implementation, validation, tests, error handling, and integration. The chapter's essential point is that a model can communicate structure clearly enough to guide, or sometimes partly automate, implementation—not magically create a finished system from a picture.",
-          "runs": []
+          "text": "Don’t get bogged down by the details, the variety of diagrams or the notation — use UML as a thought tool to think about, reason about and engage with your design."
         },
         {
           "type": "image",
           "src": "/images/week-5/image41.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 41. Illustrative mapping from a class model to code.",
-          "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams",
-          "qualityNote": "The right-hand box is a schematic code skeleton, not runnable Python: UML types String/Float need language-appropriate equivalents such as str/float, and methods still need implementation."
+          "alt": "Illustration: Section 4 · Unified Modeling Language (UML) Diagrams"
         },
         {
           "type": "heading",
@@ -1372,14 +1324,13 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter uses an automated door-locking example. The focus is the *logical locked/unlocked state* after passcode verification, not a physical door swinging open. A simulated unlock request can succeed after the correct passcode is checked; if the code is wrong, the state does not change. The illustrations are learning representations, not a claim about a real commercial access-control device.",
-          "runs": []
+          "text": "The chapter uses an automated door-locking example. The focus is the locked/unlocked state after passcode verification."
         },
         {
           "type": "image",
           "src": "/images/week-5/image42.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 42. VeriSIM relates a class view and message view to a lock-state scenario.",
           "alt": "Illustration: Section 5 · VeriSIM: Comprehending Software Designs"
         },
@@ -1390,8 +1341,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The example automated door-locking system allows a user to register a passcode and then choose Lock or Unlock. A correctly entered passcode authorises the requested change of lock state. With an incorrect passcode, the system preserves the current state. If the lock is already locked and an incorrect Unlock is requested, it stays locked.",
-          "runs": []
+          "text": "1. If the passcode hasn’t been set yet, the user can register and enter a required passcode. 2. When the user chooses the lock option and enters the correct passcode, the door should lock; if the passcode is incorrect, the door remains unlocked. 3. When the user chooses the unlock option and enters the correct passcode, the door should unlock; if the passcode is incorrect, the door remains locked."
         },
         {
           "type": "paragraph",
@@ -1402,7 +1352,7 @@
           "type": "image",
           "src": "/images/week-5/image43.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 43. Door-lock requirements depend on both request and passcode validity.",
           "alt": "Illustration: Section 5 · VeriSIM: Comprehending Software Designs"
         },
@@ -1425,7 +1375,7 @@
           "type": "image",
           "src": "/images/week-5/image44.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 44. Incorrect PIN leaves the starting lock state unchanged.",
           "alt": "Illustration: Section 5 · VeriSIM: Comprehending Software Designs"
         },
@@ -1441,21 +1391,19 @@
         },
         {
           "type": "paragraph",
-          "text": "Class and sequence diagrams support different but complementary reasoning. A class diagram identifies elements such as Controller, Passcode, and Door, along with data such as `optionSelected` and `passcode` and operations such as `unlock()`. It helps us locate responsibility and state.",
-          "runs": []
+          "text": "Classes: Door (lock: bool; lock(), unlock()), Controller (optionSelected; setOption, register, lock, unlock, resetPasscode, inputPasscode), Passcode (passcode; setPasscode, getPasscode, checkPasscode)."
         },
         {
           "type": "paragraph",
-          "text": "A sequence diagram follows one scenario: User selects Unlock and enters a PIN, Controller checks the passcode, receives a valid result, and calls Door's `unlock()` operation. The diagram's time direction explains the order of interactions. Relating the two answers 'Where is this method defined?' and 'When is it invoked?'. That is the central connection VeriSIM is intended to make visible.",
-          "runs": []
+          "text": "Unlocking sequence: user selects Unlock → controller asks for the passcode → user enters it → controller calls checkPasscode → if true, Door.unlock() and “Door Unlocked”; if false, Door.lock() and “Incorrect Passcode”."
         },
         {
           "type": "image",
           "src": "/images/week-5/image45.webp",
-          "width": 1672,
-          "height": 1019,
-          "caption": "Figure 45. Static classes explain where state lives; messages explain what happens.",
-          "alt": "Illustration: Section 5 · VeriSIM: Comprehending Software Designs"
+          "width": 1536,
+          "height": 1024,
+          "caption": "Class diagram and sequence diagram for unlocking — automated door locking system",
+          "alt": "Class diagram and sequence diagram for unlocking — automated door locking system"
         },
         {
           "type": "note",
@@ -1474,14 +1422,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Notice the crucial intermediate condition: even in State 3, where the entered PIN matches, `lock = true` until E3 executes. In State 4, `lock = false` means the door is logically unlocked. This example teaches chronological reasoning: do not move the state update earlier than the event that causes it.",
-          "runs": []
+          "text": "The transitions correspond to messages in the sequence diagram; the variables in the states come from the class diagram. Constructing such state diagrams builds an integrated understanding of class and sequence diagrams. After E2 the passcode matches, but lock remains true until E3 executes."
         },
         {
           "type": "image",
           "src": "/images/week-5/image46.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 46. Four precise states trace a correct passcode and unlock request.",
           "alt": "Illustration: Section 5 · VeriSIM: Comprehending Software Designs"
         },
@@ -1509,7 +1456,7 @@
           "type": "image",
           "src": "/images/week-5/image47.webp",
           "width": 1672,
-          "height": 1019,
+          "height": 941,
           "caption": "Figure 47. VeriSIM proceeds through introduction, understanding, tracing, and reflection.",
           "alt": "Illustration: Section 5 · VeriSIM: Comprehending Software Designs"
         },
