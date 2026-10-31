@@ -49,7 +49,7 @@
           "src": "/images/week-2/image44.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Agreed requirements avoid mismatched expectations, repeated rework and wasted time and money.",
+          "caption": "Too little time on requirements leads to a mismatch between what the user expects and what the developer builds.",
           "alt": "Illustration: Why do requirements matter?"
         },
         {
@@ -73,7 +73,7 @@
           "src": "/images/week-2/image45.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Stakeholders gather, analyse and agree on requirements, using feedback for clarification before development.",
+          "caption": "Requirements are gathered from different kinds of users, then analysed and documented.",
           "alt": "Illustration: Why do requirements matter?"
         }
       ]
@@ -162,7 +162,7 @@
           "src": "/images/week-2/image48.webp",
           "width": 1672,
           "height": 905,
-          "caption": "“Manage inventory” is ambiguous until adding products, editing prices and deleting products are specified.",
+          "caption": "Ambiguous requirement: \"manage inventory\" can be read in several ways.",
           "alt": "Illustration: Requirement analysis: spotting problems"
         },
         {
@@ -178,7 +178,7 @@
           "src": "/images/week-2/image49.webp",
           "width": 1672,
           "height": 941,
-          "caption": "The seller’s weekly payment request conflicts with the bank’s two-week schedule and requires stakeholder agreement.",
+          "caption": "Inconsistent requirements: weekly payouts versus a bank that credits only every two weeks.",
           "alt": "Illustration: Requirement analysis: spotting problems"
         },
         {
@@ -194,7 +194,7 @@
           "src": "/images/week-2/image50.webp",
           "width": 1672,
           "height": 941,
-          "caption": "“Track orders” is incomplete until orders in transit, delivered orders and returned orders are specified.",
+          "caption": "Incomplete requirements: aspects that neither the customer nor the developer imagined.",
           "alt": "Illustration: Requirement analysis: spotting problems"
         },
         {
@@ -243,7 +243,7 @@
           "src": "/images/week-2/image51.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Requirements are gathered through questionnaires, interviews, focus groups, naturalistic observation and studying documentation.",
+          "caption": "Five techniques for gathering requirements.",
           "alt": "Illustration: Five ways to gather requirements"
         },
         {
@@ -318,7 +318,7 @@
           "src": "/images/week-2/image53.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Structured, unstructured and semi-structured interviews differ in their use of prepared questions and follow-up questions.",
+          "caption": "Interviews: asking someone a set of questions face-to-face, by phone or online.",
           "alt": "Illustration: Questionnaires and interviews"
         },
         {
@@ -334,7 +334,7 @@
           "src": "/images/week-2/image54.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Seller interviews reveal requirements for managing orders, tracking payments and managing inventory.",
+          "caption": "Example interview question for independent sellers about other platforms they use.",
           "alt": "Illustration: Questionnaires and interviews"
         }
       ]
@@ -380,7 +380,7 @@
           "src": "/images/week-2/image56.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Naturalistic observation of a shop reveals requirements for product recommendations and timely customer feedback.",
+          "caption": "Naturalistic observation: how selling and recommendations happen in physical shops.",
           "alt": "Illustration: Focus groups, observation and existing documents"
         },
         {
@@ -396,7 +396,7 @@
           "src": "/images/week-2/image57.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Bank regulations, business procedures and payment rules provide documented requirements for the Seller Portal.",
+          "caption": "Studying documentation: procedures, rules and regulations that govern a task.",
           "alt": "Illustration: Focus groups, observation and existing documents"
         }
       ]
@@ -518,7 +518,7 @@
           "src": "/images/week-2/image59.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Catalogue operations are functional requirements; displaying a new product within five seconds is a non-functional requirement.",
+          "caption": "Which requirement is functional and which is non-functional?",
           "alt": "Illustration: Functional versus non-functional requirements"
         },
         {
@@ -534,7 +534,7 @@
           "src": "/images/week-2/image60.webp",
           "width": 1672,
           "height": 941,
-          "caption": "A functional requirement maps inputs to outputs, illustrated by adding a product to the catalogue.",
+          "caption": "Functional requirement: the user gives inputs and the system produces the appropriate output.",
           "alt": "Illustration: Functional versus non-functional requirements"
         },
         {
@@ -568,7 +568,7 @@
           "src": "/images/week-2/image61.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Reliability concerns consistent behaviour over time; robustness concerns handling errors and unexpected input.",
+          "caption": "Robustness: how well a program recovers from errors or unexpected input.",
           "alt": "Illustration: Reliability, robustness and other quality requirements"
         },
         {
@@ -584,7 +584,7 @@
           "src": "/images/week-2/image62.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Performance, security, portability and interoperability are non-functional requirements.",
+          "caption": "Other non-functional requirements: performance, portability, security, interoperability.",
           "alt": "Illustration: Reliability, robustness and other quality requirements"
         }
       ]
@@ -746,7 +746,7 @@
           "src": "/images/week-2/image64.webp",
           "width": 1672,
           "height": 941,
-          "caption": "An SRS specifies external interfaces with users, hardware, other software and communication services.",
+          "caption": "External interfaces in an SRS: user, hardware, software and communication interfaces.",
           "alt": "Illustration: What kinds of interfaces appear in an SRS?"
         },
         {
@@ -896,7 +896,7 @@
           "src": "/images/week-2/image68.webp",
           "width": 1672,
           "height": 941,
-          "caption": "A user story states the user’s role, desired action and benefit: “As a…, I want…, so that…”.",
+          "caption": "User story template: As a [type of user], I want [an action] so that [a benefit].",
           "alt": "Illustration: The user-story template"
         },
         {
@@ -912,7 +912,7 @@
           "src": "/images/week-2/image69.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Seller user stories describe viewing inventory to identify low stock and viewing product feedback to identify issues.",
+          "caption": "Example user story: track customer feedback in the Seller Portal.",
           "alt": "Illustration: The user-story template"
         }
       ]
@@ -955,7 +955,7 @@
           "src": "/images/week-2/image70.webp",
           "width": 1672,
           "height": 941,
-          "caption": "User stories help prioritise development, with View Inventory planned before Track Customer Feedback in successive sprints.",
+          "caption": "User stories are lightweight and help plan and prioritise development.",
           "alt": "Illustration: Why are user stories useful?"
         },
         {
@@ -1044,7 +1044,7 @@
           "src": "/images/week-2/image73.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Specific and measurable stories name a product-search criterion and a three-second response-time target.",
+          "caption": "Measurable: replace \"good response time\" with a specific, testable time limit.",
           "alt": "Illustration: SMART: how to improve a story"
         },
         {
@@ -1076,7 +1076,7 @@
           "src": "/images/week-2/image74.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Achievable, relevant and timeboxed stories split work into manageable parts, explain its value and respect the sprint’s time budget.",
+          "caption": "Time-boxed: if the time budget is exceeded, give up, split the story or reschedule.",
           "alt": "Illustration: SMART: how to improve a story"
         }
       ]
@@ -1233,7 +1233,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Answer 2: Secondary in the chapter classification: the manager receives the output indirectly through the sales team."
+          "text": "Answer 2: Secondary in the lecture classification: the manager receives the output indirectly through the sales team."
         },
         {
           "type": "paragraph",

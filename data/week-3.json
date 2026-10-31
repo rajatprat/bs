@@ -68,41 +68,6 @@
   ],
   "sections": [
     {
-      "title": "Usability goals and user-experience goals",
-      "slug": "usability-goals-and-user-experience-goals",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Usability goals and user experience goals are related, but they are not identical."
-        },
-        {
-          "type": "table",
-          "rows": [
-            [
-              "Usability goals",
-              "User experience goals"
-            ],
-            [
-              "Effectiveness, Efficiency, Safety, Learnability, Memorability",
-              "Positive emotions such as satisfying, enjoyable, fun, helpful, entertaining, motivating, emotionally fulfilling"
-            ],
-            [
-              "Central while designing interactive systems",
-              "More subjective — how users experience the product from their own perspective, rather than how useful or productive it is from the system's perspective"
-            ]
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/images/week-3/image41.webp",
-          "caption": "Usability goals (centre) and user experience goals (outer ring) — after Jennifer Preece.",
-          "alt": "Usability goals (centre) and user experience goals (outer ring) — after Jennifer Preece.",
-          "width": 1536,
-          "height": 1024
-        }
-      ]
-    },
-    {
       "title": "Introduction to Interaction Design",
       "slug": "introduction-to-interaction-design",
       "blocks": [
@@ -205,6 +170,41 @@
           "height": 1024,
           "caption": "Everyday objects involve decisions about shape, stability, materials and construction.",
           "alt": "Everyday objects involve decisions about shape, stability, materials and construction."
+        }
+      ]
+    },
+    {
+      "title": "Usability goals and user-experience goals",
+      "slug": "usability-goals-and-user-experience-goals",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Usability goals and user experience goals are related, but they are not identical."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Usability goals",
+              "User experience goals"
+            ],
+            [
+              "Effectiveness, Efficiency, Safety, Learnability, Memorability",
+              "Positive emotions such as satisfying, enjoyable, fun, helpful, entertaining, motivating, emotionally fulfilling"
+            ],
+            [
+              "Central while designing interactive systems",
+              "More subjective — how users experience the product from their own perspective, rather than how useful or productive it is from the system's perspective"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/week-3/image41.webp",
+          "caption": "Usability goals (centre) and user experience goals (outer ring) — after Jennifer Preece.",
+          "alt": "Usability goals (centre) and user experience goals (outer ring) — after Jennifer Preece.",
+          "width": 1536,
+          "height": 1024
         }
       ]
     },

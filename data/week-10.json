@@ -9,16 +9,16 @@
     },
     {
       "type": "paragraph",
-      "text": "Software Engineering | Complete self-study chapter",
+      "text": "Software Engineering | Complete self-study lecture",
       "runs": []
     },
     {
       "type": "heading",
-      "text": "How to use this chapter"
+      "text": "How to use this lecture"
     },
     {
       "type": "paragraph",
-      "text": "This chapter covers deployment, hosting, continuous integration, performance and monitoring:",
+      "text": "This lecture covers deployment, hosting, continuous integration, performance and monitoring:",
       "runs": []
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "type": "bullet-item",
-      "text": "Section point: something the chapter states directly. Expect these in quizzes and exams.",
+      "text": "Section point: something the lecture states directly. Expect these in quizzes and exams.",
       "runs": []
     }
   ],
@@ -237,7 +237,7 @@
         },
         {
           "type": "paragraph",
-          "text": "If a test fails, the chapter describes this procedure:",
+          "text": "If a test fails, the lecture describes this procedure:",
           "runs": []
         },
         {
@@ -292,7 +292,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Think about this before reading on. The chapter gives three reasons for having a staging environment.",
+          "text": "Think about this before reading on. The lecture gives three reasons for having a staging environment.",
           "runs": []
         },
         {
@@ -359,7 +359,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Section point: Deployment strategies are ways of pushing code from the staging environment to the production environment. The chapter covers three: Blue/Green, Canary and Versioned deployment.",
+          "text": "Section point: Deployment strategies are ways of pushing code from the staging environment to the production environment. The lecture covers three: Blue/Green, Canary and Versioned deployment.",
           "runs": []
         },
         {
@@ -456,7 +456,7 @@
         },
         {
           "type": "paragraph",
-          "text": "How are the users for the new version chosen? The chapter lists these options:",
+          "text": "How are the users for the new version chosen? The lecture lists these options:",
           "runs": []
         },
         {
@@ -507,7 +507,7 @@
         },
         {
           "type": "paragraph",
-          "text": "This is common in mobile apps (the chapter’s examples are Paytm and Instagram). You get a notification that an update is available:",
+          "text": "This is common in mobile apps (the lecture’s examples are Paytm and Instagram). You get a notification that an update is available:",
           "runs": []
         },
         {
@@ -598,7 +598,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter compares three hosting options:",
+          "text": "The lecture compares three hosting options:",
           "runs": []
         },
         {
@@ -875,7 +875,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The droplet shown in the chapter (it hosts the verisim web page) had 1 GB memory, 25 GB disk, and ran Ubuntu 18.04. From the dashboard you can monitor bandwidth, CPU usage, disk I/O and so on.",
+          "text": "The droplet shown in the lecture (it hosts the verisim web page) had 1 GB memory, 25 GB disk, and ran Ubuntu 18.04. From the dashboard you can monitor bandwidth, CPU usage, disk I/O and so on.",
           "runs": []
         },
         {
@@ -933,7 +933,7 @@
         },
         {
           "type": "bullet-item",
-          "text": "Plans range up to very large machines (around 256 GB RAM and multi-terabyte storage in the chapter). The price is calculated per month, starting from about $6/month at the time of the chapter. Extra storage can be added.",
+          "text": "Plans range up to very large machines (around 256 GB RAM and multi-terabyte storage in the lecture). The price is calculated per month, starting from about $6/month at the time of the lecture. Extra storage can be added.",
           "runs": []
         },
         {
@@ -1313,7 +1313,7 @@
         },
         {
           "type": "bullet-item",
-          "text": "Metrics: in the chapter these required adding a credit card.",
+          "text": "Metrics: in the lecture these required adding a credit card.",
           "runs": []
         },
         {
@@ -1520,7 +1520,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Memorise these seven; the chapter summary lists exactly these.",
+          "text": "Memorise these seven; the lecture summary lists exactly these.",
           "runs": []
         },
         {
@@ -1530,7 +1530,7 @@
         },
         {
           "type": "paragraph",
-          "text": "2. Automate the build. A build involves compiling, copying and moving files, creating database schemas and so on. Build tools automate this once you write scripts with the correct configuration. The chapter’s examples: Ant and Gradle for Java, and “Builder” for Node.js.",
+          "text": "2. Automate the build. A build involves compiling, copying and moving files, creating database schemas and so on. Build tools automate this once you write scripts with the correct configuration. The lecture’s examples: Ant and Gradle for Java, and “Builder” for Node.js.",
           "runs": []
         },
         {
@@ -1561,7 +1561,7 @@
         },
         {
           "type": "paragraph",
-          "text": "5. Every commit should build the main branch on an integration server. The CI server monitors the repository. On every commit it pulls the new code, builds it, runs integration tests, and tells the committer whether everything works. If all tests pass, the build is successful. - Examples of CI servers: Jenkins and CruiseControl. (The chapter shows a CruiseControl dashboard listing recent builds, which passed or failed, how long they took and who made the changes.)",
+          "text": "5. Every commit should build the main branch on an integration server. The CI server monitors the repository. On every commit it pulls the new code, builds it, runs integration tests, and tells the committer whether everything works. If all tests pass, the build is successful. - Examples of CI servers: Jenkins and CruiseControl. (The lecture shows a CruiseControl dashboard listing recent builds, which passed or failed, how long they took and who made the changes.)",
           "runs": []
         },
         {
@@ -1589,7 +1589,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Think about benefits for end users, developers and the organisation before reading the chapter’s answer.",
+          "text": "Think about benefits for end users, developers and the organisation before reading the lecture’s answer.",
           "runs": []
         },
         {
@@ -1633,7 +1633,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Once the code is deployed, we must make sure the application performs to an acceptable standard. The chapter covers three ways to improve performance:",
+          "text": "Once the code is deployed, we must make sure the application performs to an acceptable standard. The lecture covers three ways to improve performance:",
           "runs": []
         },
         {
@@ -1697,7 +1697,7 @@
         },
         {
           "type": "subheading",
-          "text": "Levels of caching (chapter)",
+          "text": "Levels of caching (lecture)",
           "runs": []
         },
         {
@@ -1836,12 +1836,12 @@
         },
         {
           "type": "bullet-item",
-          "text": "User stress: the chapter shows research that the stress caused by mobile page delays is comparable to watching a horror movie. Even a few extra seconds of loading make us uncomfortable and agitated.",
+          "text": "User stress: the lecture shows research that the stress caused by mobile page delays is comparable to watching a horror movie. Even a few extra seconds of loading make us uncomfortable and agitated.",
           "runs": []
         },
         {
           "type": "bullet-item",
-          "text": "Business impact (chapter examples, worth remembering):",
+          "text": "Business impact (lecture examples, worth remembering):",
           "runs": []
         },
         {
@@ -1957,7 +1957,7 @@
         },
         {
           "type": "paragraph",
-          "text": "(The code above illustrates the idea; the chapter’s exact snippet came from DigitalOcean’s minify tool.) For the chapter’s small function, minifying saved about 41% of the size. Across a whole website this adds up to a large saving, so pages load faster.",
+          "text": "(The code above illustrates the idea; the lecture’s exact snippet came from DigitalOcean’s minify tool.) For the lecture’s small function, minifying saved about 41% of the size. Across a whole website this adds up to a large saving, so pages load faster.",
           "runs": []
         },
         {
@@ -2017,7 +2017,7 @@
         },
         {
           "type": "heading",
-          "text": "What to monitor (chapter)",
+          "text": "What to monitor (lecture)",
           "runs": []
         },
         {
@@ -2088,7 +2088,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Section point: Lighthouse is a tool provided by Google. The chapter describes it as a Google Chrome extension that you can install to check the performance scores of websites. The chapter demonstrates it on the verisim.tech website, showing metrics such as how long the page takes to load and the Speed Index.",
+          "text": "Section point: Lighthouse is a tool provided by Google. The lecture describes it as a Google Chrome extension that you can install to check the performance scores of websites. The lecture demonstrates it on the verisim.tech website, showing metrics such as how long the page takes to load and the Speed Index.",
           "runs": []
         },
         {
@@ -2119,7 +2119,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter names three things to monitor.",
+          "text": "The lecture names three things to monitor.",
           "runs": []
         },
         {
@@ -2165,7 +2165,7 @@
         },
         {
           "type": "paragraph",
-          "text": "An application has flows: sequences of steps that lead to a goal. The chapter’s example is a purchase flow:",
+          "text": "An application has flows: sequences of steps that lead to a goal. The lecture’s example is a purchase flow:",
           "runs": []
         },
         {
@@ -2221,7 +2221,7 @@
         },
         {
           "type": "paragraph",
-          "text": "How do you know whether B is actually better? The chapter’s answer is to:",
+          "text": "How do you know whether B is actually better? The lecture’s answer is to:",
           "runs": []
         },
         {
@@ -2241,7 +2241,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Section point: Monitoring is useful for A/B testing: checking whether the new version of your application is better than the previous one. In the chapter, the A/B split is done using a canary-style incremental rollout.",
+          "text": "Section point: Monitoring is useful for A/B testing: checking whether the new version of your application is better than the previous one. In the lecture, the A/B split is done using a canary-style incremental rollout.",
           "runs": []
         },
         {
@@ -2316,7 +2316,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Q2. Give the three reasons the chapter offers for using a staging environment. Answer: (1) Deployment involves many activities and configurations, and doing it directly in production could crash the live system and affect users. (2) To preview new features to management, sales/marketing or clients. (3) To do performance and stress testing without affecting real users.",
+          "text": "Q2. Give the three reasons the lecture offers for using a staging environment. Answer: (1) Deployment involves many activities and configurations, and doing it directly in production could crash the live system and affect users. (2) To preview new features to management, sales/marketing or clients. (3) To do performance and stress testing without affecting real users.",
           "runs": []
         },
         {
@@ -2401,7 +2401,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Q19. Name two CI servers and two build tools from the chapter. Answer: CI servers: Jenkins, CruiseControl. Build tools: Ant, Gradle (Java) and “Builder” (Node.js).",
+          "text": "Q19. Name two CI servers and two build tools from the lecture. Answer: CI servers: Jenkins, CruiseControl. Build tools: Ant, Gradle (Java) and “Builder” (Node.js).",
           "runs": []
         },
         {
@@ -2431,7 +2431,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Q25. According to the chapter, what happened when Google slowed search results by half a second in 2006? Answer: User requests dropped by 25%.",
+          "text": "Q25. According to the lecture, what happened when Google slowed search results by half a second in 2006? Answer: User requests dropped by 25%.",
           "runs": []
         },
         {
@@ -2461,7 +2461,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Q31. How does the chapter suggest running an A/B test, and what counts as “better”? Answer: Use a canary (phased/incremental) rollout so some users get version A and others version B, then monitor both. “Better” can mean more traffic, more dwell time, more sales or less abandonment.",
+          "text": "Q31. How does the lecture suggest running an A/B test, and what counts as “better”? Answer: Use a canary (phased/incremental) rollout so some users get version A and others version B, then monitor both. “Better” can mean more traffic, more dwell time, more sales or less abandonment.",
           "runs": []
         }
       ],

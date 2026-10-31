@@ -380,7 +380,7 @@
           "src": "/images/week-4/image14.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Figure 14. The three chapter categories: Organic, Semi-Detached and Embedded.",
+          "caption": "Figure 14. The three lecture categories: Organic, Semi-Detached and Embedded.",
           "alt": "Illustration: Section 2 · Project Estimation Techniques"
         },
         {
@@ -516,6 +516,10 @@
       "title": "Section 3 · Project Scheduling",
       "slug": "lecture-3-project-scheduling",
       "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Why a schedule matters: a schedule helps the project manager monitor the timely completion of each task, and take corrective action if the project falls behind."
+        },
         {
           "type": "heading",
           "text": "The eight scheduling activities"
@@ -659,7 +663,7 @@
           "src": "/images/week-4/image20.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Figure 20. The chapter’s nine-task Seller Portal dependency network.",
+          "caption": "Figure 20. The lecture’s nine-task Seller Portal dependency network.",
           "alt": "Illustration: Section 3 · Project Scheduling"
         },
         {
@@ -708,7 +712,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter defines a project risk as an anticipated unfavorable event that may occur during development. Building a physical house has visible stages—foundation, framing and finishing—whereas a software application can look almost complete while hiding defects, poor integration or unstable third-party libraries.",
+          "text": "The lecture defines a project risk as an anticipated unfavorable event that may occur during development. When a house is built, the construction manager can see every stage — foundation, slabs, frame, roofing, interiors, painting — and assess and control progress. Software is intangible, so it is difficult to control something we cannot see.",
           "runs": []
         },
         {
@@ -731,7 +735,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Technical risks are risks related to the technical aspects of the project, arising from the development team's insufficient knowledge about the product; they can occur at any stage — requirements, design, implementation, testing or maintenance. Project risks concern schedule, personnel and resources. Business risks concern competition and the value of the product."
+          "text": "Technical risks are risks related to the technical aspects of the project, arising from the development team's insufficient knowledge about the product; they can occur at any stage — requirements, design, implementation, testing or maintenance. Project risks occur due to problems in budget, schedule, personnel, resources and customer-related problems — all non-technical risks are project risks. Business risks are risks which can harm the business aspects of the software product."
         },
         {
           "type": "image",
@@ -748,7 +752,7 @@
         },
         {
           "type": "paragraph",
-          "text": "If the client asks for catalogue management but developers interpret the request as marketing campaign management, the software may function while still failing the actual requirement. Ambiguity or incompleteness in requirements can cause incorrect user interfaces, workflows and implemented features.",
+          "text": "The team may develop the wrong functions or user interfaces, mainly because the requirements received from the client are ambiguous or incomplete. Ambiguity or incompleteness in requirements can cause incorrect user interfaces, workflows and implemented features.",
           "runs": []
         },
         {
@@ -761,7 +765,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The mitigation described in the chapter is regular client communication and early prototypes. Demonstrate a small version, ask stakeholders whether it matches their needs, and refine before investing heavily in the wrong design."
+          "text": "The mitigation described in the lecture is regular client communication and early prototypes. Demonstrate a small version, ask stakeholders whether it matches their needs, and refine before investing heavily in the wrong design."
         },
         {
           "type": "heading",
@@ -805,7 +809,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Personnel shortfall occurs when key people leave or become unavailable. Cross-training and shared technical knowledge reduce dependence on one developer. The chapter uses the specialised payment-gateway module as an example where more than one trained person would help reduce continuity risk.",
+          "text": "Personnel shortfall occurs when key people leave or become unavailable. Cross-training and shared technical knowledge reduce dependence on one developer. The lecture uses the specialised payment-gateway module as an example where more than one trained person would help reduce continuity risk.",
           "runs": []
         },
         {
@@ -858,7 +862,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter’s illustrative risk table gives schedule slippage P=60%, I=3; lack of experience P=60%, I=3; personnel shortfall P=40%, I=3; and database scale risk P=20%, I=2. Their scores are respectively 1.8, 1.8, 1.2 and 0.4.",
+          "text": "The lecture’s illustrative risk table gives schedule slippage P=60%, I=3; lack of experience P=60%, I=3; personnel shortfall P=40%, I=3; and database scale risk P=20%, I=2. Their scores are respectively 1.8, 1.8, 1.2 and 0.4.",
           "runs": []
         },
         {
@@ -940,7 +944,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Software is developed in frequent iterations. The team works closely with customers, demonstrates working functionality and refines requirements."
+          "text": "Software is developed in iterations of typically 1–2 weeks; certain user stories are implemented in each iteration, and user stories are prioritized for the next iteration. The team works closely with customers, demonstrates working functionality and refines requirements."
         },
         {
           "type": "image",
@@ -953,6 +957,10 @@
         {
           "type": "heading",
           "text": "Scrum team and roles"
+        },
+        {
+          "type": "paragraph",
+          "text": "Scrum is one framework for organising development in the team. At its heart is the sprint — a short, time-boxed period when a Scrum team works to complete a set amount of work; the product is built in a series of sprints."
         },
         {
           "type": "paragraph",
@@ -1224,7 +1232,7 @@
         },
         {
           "type": "paragraph",
-          "text": "An epic is a collection of related stories describing a broader area of functionality. The tutorial groups Add/Edit/View/Delete Catalogue Item stories under the Catalogue Management epic, while Add Inventory Item and Update Inventory Item belong to Inventory Management.",
+          "text": "An epic is a collection of related stories describing a broader area of functionality. The tutorial groups Add/Edit/View/Delete Catalogue Item stories under the Catalogue Management epic, while Add Inventory Item is linked to the Inventory Management epic.",
           "runs": []
         },
         {
@@ -1286,7 +1294,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter demonstrates the Product Owner rejecting “Add Catalogue Item” with feedback such as failing test cases and too many bugs. The developer reads the comments, fixes the implementation, retests the affected scenarios and delivers the story again.",
+          "text": "The lecture demonstrates the Product Owner rejecting “Add Catalogue Item” with feedback such as failing test cases and too many bugs. The developer reads the comments, fixes the implementation, retests the affected scenarios and delivers the story again.",
           "runs": []
         },
         {

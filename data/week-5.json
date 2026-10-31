@@ -19,7 +19,7 @@
     },
     {
       "type": "note",
-      "text": "How to study: Read the explanation, study the corresponding cartoon or UML figure, then check your understanding at the end of each chapter. UML arrowheads, call directions and VeriSIM values have been preserved carefully.",
+      "text": "How to study: Read the explanation, study the corresponding cartoon or UML figure, then check your understanding at the end of each lecture. UML arrowheads, call directions and VeriSIM values have been preserved carefully.",
       "runs": []
     },
     {
@@ -79,7 +79,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Design begins after we understand the problem, but before implementation. This chapter asks what the design process produces and how we recognise a useful result.",
+          "text": "Design begins after we understand the problem, but before implementation. This lecture asks what the design process produces and how we recognise a useful result.",
           "runs": []
         },
         {
@@ -93,7 +93,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Think of building a house: requirements describe the rooms a family needs, while the architectural plan shows where those rooms connect. Similarly, software design identifies components, their responsibilities, and how they communicate. Design does not itself mean that the final software is already coded. It provides a structure that guides implementation and later maintenance.",
+          "text": "Similarly, software design identifies components, their responsibilities, and how they communicate. Design does not itself mean that the final software is already coded. It provides a structure that guides implementation and later maintenance.",
           "runs": []
         },
         {
@@ -111,7 +111,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The first chapter describes four outcomes of the design process. Components (often called modules) bring together related functions and data to perform a well-defined job. Interfaces specify how those components exchange requests, results, and information. Data structures organise what a component stores, such as a list of inventory items. Algorithms describe the steps that operate on that data.",
+          "text": "This lecture describes four outcomes of the design process. Components (often called modules) bring together related functions and data to perform a well-defined job. Interfaces specify how those components exchange requests, results, and information. Data structures organise what a component stores, such as a list of inventory items. Algorithms describe the steps that operate on that data.",
           "runs": []
         },
         {
@@ -183,7 +183,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The Seller Portal example organises its functionality into six major components: Catalogue Management, Inventory Management, Payment Tracking, Order Tracking, Sales Tracking, and Customer Feedback. Their responsibilities differ, but together they support the seller's workflow. For instance, Catalogue manages how products are presented, while Inventory tracks whether products are available.",
+          "text": "The Seller Portal example organises its functionality into six major components: Catalogue Management, Inventory Management, Payment Tracking, Order Tracking, Sales Tracking, and Customer Feedback. Their responsibilities differ, but together they support the seller's workflow.",
           "runs": []
         },
         {
@@ -196,7 +196,7 @@
           "src": "/images/week-5/image5.webp",
           "width": 1672,
           "height": 941,
-          "caption": "Figure 5. Six major components used in the chapter’s Seller Portal example.",
+          "caption": "Figure 5. Six major components used in the lecture’s Seller Portal example.",
           "alt": "Illustration: Section 1 · Introduction to Software Design"
         },
         {
@@ -278,7 +278,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Two systems can implement the same features yet have very different designs. In the chapter, both pictures have modules M1 to M5. The simpler diagram has relatively few links; the tangled diagram has many module-to-module calls and exchanges. A developer generally finds the simpler design easier to understand, debug, and change.",
+          "text": "Two systems can implement the same features yet have very different designs. In the lecture, both pictures have modules M1 to M5. The simpler diagram has relatively few links; the tangled diagram has many module-to-module calls and exchanges. A developer generally finds the simpler design easier to understand, debug, and change.",
           "runs": []
         },
         {
@@ -306,7 +306,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A helpful way to remember this is 'coupling is outside; cohesion is inside.' Ideally, modules have only the external dependencies they need, while the functions inside each module belong together. That is the reason the chapter repeatedly recommends high cohesion and low coupling for modular software.",
+          "text": "A helpful way to remember this is 'coupling is outside; cohesion is inside.' Ideally, modules have only the external dependencies they need, while the functions inside each module belong together. That is the reason the lecture repeatedly recommends high cohesion and low coupling for modular software.",
           "runs": []
         },
         {
@@ -351,7 +351,7 @@
         },
         {
           "type": "paragraph",
-          "text": "In the simplified Seller Portal, Product, Catalogue, Seller, and Inventory are different objects or functional units with relationships among them. A catalogue involves products; sellers work with catalogue and inventory information; catalogue and inventory may exchange information needed for stock-aware listings.",
+          "text": "In the simplified Seller Portal, Product, Catalogue, Seller, and Inventory are different objects or functional units with relationships among them. A catalogue is made of products, and the seller works with the catalogue and the inventory.",
           "runs": []
         },
         {
@@ -374,7 +374,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Data coupling occurs when one module calls another and supplies simple data values through parameters. In the chapter's example, Seller invokes `view_inventory(seller_id)` on Inventory. Only the seller identifier needed for the request is passed. The Inventory module then decides how to retrieve that seller's records.",
+          "text": "Data coupling occurs when one module calls another and supplies simple data values through parameters. In the lecture's example, Seller invokes `view_inventory(seller_id)` on Inventory. Only the seller identifier needed for the request is passed. The Inventory module then decides how to retrieve that seller's records.",
           "runs": []
         },
         {
@@ -402,7 +402,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Control coupling occurs when one module passes control information that tells another module which branch to execute. In the chapter example, Seller calls `perform_actions(OPERATION_FLAG)` and the receiver interprets 0 as View, 1 as Add, and 2 as Delete.",
+          "text": "Control coupling occurs when one module passes control information that tells another module which branch to execute. In the lecture example, Seller calls `perform_actions(OPERATION_FLAG)` and the receiver interprets 0 as View, 1 as Add, and 2 as Delete.",
           "runs": []
         },
         {
@@ -502,7 +502,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Notice the boundary: these functions belong together because they work toward the same objective, not simply because they run one after another. This is a desirable form of cohesion. If the Inventory module also carried unrelated authentication or weather calculations, the module's single purpose would become less clear.",
+          "text": "Notice the boundary: these functions belong together because they work toward the same objective, not simply because they run one after another. This is a desirable form of cohesion. If the Inventory module also carried unrelated functions such as login, the module's single purpose would become less clear.",
           "runs": []
         },
         {
@@ -520,7 +520,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Sequential cohesion means the result produced by one function becomes the input to the next function. The chapter's order-processing example runs `create_order()` → `check_availability()` → `place_order()`. One stage prepares information that the next stage consumes.",
+          "text": "Sequential cohesion means the result produced by one function becomes the input to the next function. The lecture's order-processing example runs `create_order()` → `check_availability()` → `place_order()`. One stage prepares information that the next stage consumes.",
           "runs": []
         },
         {
@@ -592,7 +592,7 @@
         },
         {
           "type": "heading",
-          "text": "Coincidental Cohesion: A Random Junk Drawer",
+          "text": "Coincidental Cohesion: Functions with No Meaningful Relationship",
           "runs": []
         },
         {
@@ -601,7 +601,7 @@
         },
         {
           "type": "paragraph",
-          "text": "There is no one objective, no shared logical data structure, and no essential processing chain. Such modules are hard to name accurately, explain, or maintain. The chapter's core warning is that arbitrary grouping is not modular design, even if the code is physically organised into different files.",
+          "text": "There is no one objective, no shared logical data structure, and no essential processing chain. Such modules are hard to name accurately, explain, or maintain. The lecture's core warning is that arbitrary grouping is not modular design, even if the code is physically organised into different files.",
           "runs": []
         },
         {
@@ -712,7 +712,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Question: How is the Inventory Management example classified in this chapter?"
+          "text": "Question: How is the Inventory Management example classified in this lecture?"
         },
         {
           "type": "paragraph",
@@ -745,7 +745,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Objects need not all be physical objects. A shopping cart or product may be tangible, while an Order is also a useful software entity that stores items and amounts. Thinking in objects encourages us to ask what information each object owns and what operations it should perform.",
+          "text": "Key objects when buying from a supermarket: products (bread, milk, shirt), the shopping cart, the order the cashier creates (a list of products and the total bill), and the payment (cash, credit card or debit card). In the same way, software objects represent real-world tangible entities. Thinking in objects encourages us to ask what information each object owns and what operations it should perform.",
           "runs": []
         },
         {
@@ -763,7 +763,7 @@
         },
         {
           "type": "paragraph",
-          "text": "An object bundles data and methods. Data stores the object's current properties, while methods are operations that work with the object's information or provide a useful service. A Product object, for example, could keep its name, type and price and provide add, edit, or delete operations in the simplified chapter model.",
+          "text": "An object bundles data and methods. Data stores the object's current properties, while methods are operations that work with the object's information or provide a useful service. A Product object, for example, could keep its name, type and price and provide add, edit, or delete operations in the simplified lecture model.",
           "runs": []
         },
         {
@@ -835,7 +835,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A class is a template used to create objects. The Product class describes a common set of attributes and operations, while each instance supplies its own values. A book may have the name 'Python 101', a shirt may be blue, and a set of headphones may be an electronics product.",
+          "text": "A class is a template used to create objects. The Product class describes a common set of attributes and operations, while each instance supplies its own values. For example, electronic items, clothes and food items are all objects of type Product.",
           "runs": []
         },
         {
@@ -881,7 +881,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Composition is a strong whole–part relationship in UML. The chapter illustrates it using a Catalogue that contains Products. In notation, the filled diamond sits at the whole end—Catalogue—and the line leads to the part—Product.",
+          "text": "Composition is a strong whole–part relationship in UML. The lecture illustrates it using a Catalogue that contains Products. In notation, the filled diamond sits at the whole end—Catalogue—and the line leads to the part—Product.",
           "runs": []
         },
         {
@@ -1113,7 +1113,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Read the line endings carefully. A hollow triangle pointing toward Product expresses inheritance. The filled diamond on the Catalogue side of the Product–Catalogue link expresses the chapter's composition example. The directed link between Catalogue and Seller expresses a navigable association as shown in the diagram. The image is a simplified teaching model, so application-specific design choices may be different in real systems.",
+          "text": "Read the line endings carefully. A hollow triangle pointing toward Product expresses inheritance. The filled diamond on the Catalogue side of the Product–Catalogue link expresses the lecture's composition example. The directed link between Catalogue and Seller expresses a navigable association as shown in the diagram. The image is a simplified teaching model, so application-specific design choices may be different in real systems.",
           "runs": []
         },
         {
@@ -1136,7 +1136,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A dynamic view can be represented in different ways. A state machine diagram describes how an object changes state in response to events. For instance, an Order might be New, then Packed, then Shipped. An activity diagram emphasises workflow steps—Pick, Pack, Dispatch. An interaction diagram emphasises messages exchanged among participating objects.",
+          "text": "A dynamic view can be represented in different ways. A state machine diagram describes how an object changes state in response to events.  An activity diagram models the flow of control among different activities in a workflow. An interaction diagram emphasises messages exchanged among participating objects.",
           "runs": []
         },
         {
@@ -1187,7 +1187,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter's 'Add Seller' sequence has four participants arranged left to right: User, Add Seller UI Screen, Controller, and `:Seller`. User enters seller details. The UI calls `addSeller(id,name,address)` on Controller. Controller forwards the operation to the Seller object. Success then returns from Seller to Controller, from Controller to UI, and finally the UI informs User that the seller details were added.",
+          "text": "The lecture's 'Add Seller' sequence has four participants arranged left to right: User, Add Seller UI Screen, Controller, and `:Seller`. User enters seller details. The UI calls `addSeller(id,name,address)` on Controller. Controller forwards the operation to the Seller object. Success then returns from Seller to Controller, from Controller to UI, and finally the UI informs User that the seller details were added.",
           "runs": []
         },
         {
@@ -1324,7 +1324,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter uses an automated door-locking example. The focus is the locked/unlocked state after passcode verification."
+          "text": "The lecture uses an automated door-locking example. The focus is the locked/unlocked state after passcode verification."
         },
         {
           "type": "image",
@@ -1345,7 +1345,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The user interface and keypad are only a way to express the request. The chapter is checking a simple logical rule: authentication affects whether the lock state changes. A request to Unlock must not be confused with physically opening the door; similarly Lock does not mean the door must swing shut.",
+          "text": "The user interface and keypad are only a way to express the request. The lecture is checking a simple logical rule: authentication affects whether the lock state changes. A request to Unlock must not be confused with physically opening the door; similarly Lock does not mean the door must swing shut.",
           "runs": []
         },
         {
@@ -1417,7 +1417,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Design tracing follows how internal state changes as events occur. In the chapter's correct-passcode scenario, the door starts locked and the registered system passcode is 1234. Initially `optionSelected = null`, `userInputPasscode = null`, and `lock = true`. Event E1 selects Unlock; this changes only `optionSelected`. Event E2 enters the correct `1234`; this updates `userInputPasscode`. Finally E3 performs the Unlock operation, changing `lock` from `true` to `false`.",
+          "text": "Design tracing follows how internal state changes as events occur. In the lecture's correct-passcode scenario, the door starts locked and the registered system passcode is 1234. Initially `optionSelected = null`, `userInputPasscode = null`, and `lock = true`. Event E1 selects Unlock; this changes only `optionSelected`. Event E2 enters the correct `1234`; this updates `userInputPasscode`. Finally E3 performs the Unlock operation, changing `lock` from `true` to `false`.",
           "runs": []
         },
         {
@@ -1449,7 +1449,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter indicates that challenges can be attempted in different orders. Reflection helps connect the diagrams to real behaviour: what changed, which event caused it, and which class or method was responsible? This is why active scenario tracing is more valuable than only looking at a static diagram and memorising its name.",
+          "text": "The lecture indicates that challenges can be attempted in different orders. Reflection helps connect the diagrams to real behaviour: what changed, which event caused it, and which class or method was responsible? This is why active scenario tracing is more valuable than only looking at a static diagram and memorising its name.",
           "runs": []
         },
         {

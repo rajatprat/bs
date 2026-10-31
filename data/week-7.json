@@ -622,7 +622,7 @@
         },
         {
           "type": "paragraph",
-          "text": "In the chapter example, the existing history is C0 → C1 → C2, and master points to C2. Creating feature1 at that moment makes feature1 point to the same C2. No new commit is required just to create the branch name; the two branches separate when new commits are made.",
+          "text": "In the lecture example, the existing history is C0 → C1 → C2, and master points to C2. Creating feature1 at that moment makes feature1 point to the same C2. No new commit is required just to create the branch name; the two branches separate when new commits are made.",
           "runs": []
         },
         {
@@ -1521,7 +1521,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Radon is a Python tool for inspecting software metrics. The chapter runs it on a first_n_primes.py example and receives cyclomatic complexity 5 with an A rank, indicating low complexity for that function under Radon's grading rules. This is a property of one code block, not a final quality rating for the whole application.",
+          "text": "Radon is a Python tool for inspecting software metrics. The lecture runs it on a first_n_primes.py example and receives cyclomatic complexity 5 with an A rank, indicating low complexity for that function under Radon's grading rules. This is a property of one code block, not a final quality rating for the whole application.",
           "runs": []
         },
         {
@@ -1534,7 +1534,7 @@
         },
         {
           "type": "note",
-          "text": "Remember: The chapter's measured result is CC = 5, grade A.",
+          "text": "Remember: The lecture's measured result is CC = 5, grade A.",
           "runs": []
         },
         {
@@ -1623,7 +1623,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Question: What were the raw counts shown in the chapter?",
+          "text": "Question: What were the raw counts shown in the lecture?",
           "runs": []
         },
         {
@@ -1659,7 +1659,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A code smell is a warning sign that code may be difficult to understand, change or maintain. The program might still run and produce the expected output. Examples include repeated code, overly long functions and confusing comments. The chapter uses ideas from Robert C. Martin's Clean Code.",
+          "text": "A code smell is a warning sign that code may be difficult to understand, change or maintain. The program might still run and produce the expected output. Examples include repeated code, overly long functions and confusing comments. The lecture uses ideas from Robert C. Martin's Clean Code.",
           "runs": []
         },
         {

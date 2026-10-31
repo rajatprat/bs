@@ -347,7 +347,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The central lesson of the first chapter is to consider other perspectives and collaborate rather than focusing only on your own assigned work.",
+          "text": "The central lesson of the first lecture is to consider other perspectives and collaborate rather than focusing only on your own assigned work.",
           "runs": []
         },
         {
@@ -455,7 +455,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter stresses that communication must be precise and unambiguous. The goal is not merely to send a message but to create the same understanding in the sender and receiver.",
+          "text": "The lecture stresses that communication must be precise and unambiguous. The goal is not merely to send a message but to create the same understanding in the sender and receiver.",
           "runs": []
         },
         {
@@ -506,7 +506,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter also recommends rotating developers across projects and cross-training so that knowledge is shared by several people.",
+          "text": "The lecture also recommends rotating developers across projects and cross-training so that knowledge is shared by several people.",
           "runs": []
         },
         {
@@ -669,7 +669,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Good judgment develops with experience, but the chapter emphasizes using a systematic decision process rather than relying only on intuition.",
+          "text": "Good judgment develops with experience, but the lecture emphasizes using a systematic decision process rather than relying only on intuition.",
           "runs": []
         },
         {
@@ -725,8 +725,8 @@
           "src": "/images/week-11/image25.webp",
           "width": 2043,
           "height": 865,
-          "caption": "Illustration 25 • The chapter’s five-step rational decision process.",
-          "alt": "The chapter’s five-step rational decision process."
+          "caption": "Illustration 25 • The lecture’s five-step rational decision process.",
+          "alt": "The lecture’s five-step rational decision process."
         },
         {
           "type": "heading",
@@ -768,7 +768,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The chapter suggests learning through blogs, websites and forums, discussions with others, conferences, and academic research papers. The International Conference on Software Engineering (ICSE) presents emerging research and ideas. ICSE also has a track on software engineering education.",
+          "text": "The lecture suggests learning through blogs, websites and forums, discussions with others, conferences, and academic research papers. The International Conference on Software Engineering (ICSE) presents emerging research and ideas. ICSE also has a track on software engineering education.",
           "runs": []
         },
         {
