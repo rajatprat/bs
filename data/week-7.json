@@ -1029,11 +1029,6 @@
           "alt": "Illustration: Module 3 · Issue Tracking and Code Review"
         },
         {
-          "type": "note",
-          "text": "Remember: Verify the change before closing the associated bug.",
-          "runs": []
-        },
-        {
           "type": "heading",
           "text": "Pair Programming vs Code Review",
           "runs": []
@@ -1157,11 +1152,6 @@
           "alt": "Illustration: Module 4 · Debugging"
         },
         {
-          "type": "note",
-          "text": "Remember: Log the information needed to understand a bug, not every detail indefinitely.",
-          "runs": []
-        },
-        {
           "type": "heading",
           "text": "Dump and Diff: Two Runs",
           "runs": []
@@ -1201,11 +1191,6 @@
           "height": 844,
           "caption": "Figure 43. Debugging with a Profiler.",
           "alt": "Illustration: Module 4 · Debugging"
-        },
-        {
-          "type": "note",
-          "text": "Remember: Profiling helps investigate runtime cost; debugging helps explain incorrect behavior.",
-          "runs": []
         },
         {
           "type": "heading",
