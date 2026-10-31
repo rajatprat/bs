@@ -1,6 +1,7 @@
-import CopyProtection from '../components/CopyProtection';
+import SiteHeader from '../components/SiteHeader';
 import 'katex/dist/katex.min.css';
 import './globals.css';
 import './algorithms-katex.css';
-export const metadata = { title: { default: 'BS Course Notes', template: '%s · BS Course Notes' }, description: 'Illustrated learning notes for Software Engineering, Mathematical Foundation of Generative AI, Algorithms in Data Science, and Statistics.' };
-export default function Layout({ children }) { return <html lang="en"><body><CopyProtection/><a className="skip" href="#main">Skip to content</a><header><a className="brand" href="/"><span className="mark">bs<span>.</span></span><span>Course notes</span></a><span className="header-note">A place to understand.</span><a className="header-search" href="/search/">Search notes</a><a className="header-link" href="/">Subjects</a></header>{children}<footer><span>BS Course Notes</span><span>Software Engineering · Generative AI · Algorithms · Statistics</span></footer></body></html>; }
+import './student-ui.css';
+export const metadata={title:{default:'BSNotes.in — Your student learning library',template:'%s · BSNotes.in'},description:'Made by a student. For students. Illustrated course notes, worked examples and revision for IIT Madras BS students.'};
+export default function Layout({children}){return <html lang="en"><body><a className="skip" href="#main">Skip to content</a><SiteHeader/>{children}<footer className="site-footer"><div><a href="/" className="footer-brand">BS<span>Notes</span>.in</a><p>Made by a student. For students.</p></div><nav aria-label="Footer navigation"><a href="/#subjects">Browse subjects</a><a href="/search/">Search notes</a></nav><span>Keep learning, one idea at a time.</span></footer></body></html>;}

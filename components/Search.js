@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
 const normalize = text => text.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+const hasTerm = (text, term) => term.length > 3 ? text.includes(term) : text.split(/[^a-z0-9]+/).includes(term);
 export default function Search({ entries }) {
   const [query, setQuery] = useState('');
   const [week, setWeek] = useState('all');
@@ -13,9 +14,9 @@ export default function Search({ entries }) {
     if (!terms.length) return [];
     return entries.filter(entry => (subject === 'all' || entry.subjectSlug === subject) && (week === 'all' || entry.week === Number(week))).map(entry => {
       const title = normalize(entry.title), lesson = normalize(entry.lesson), body = normalize(entry.text);
-      if (!terms.every(term => `${title} ${lesson} ${body}`.includes(term))) return null;
-      const score = terms.reduce((sum, term) => sum + (title.includes(term) ? 5 : 0) + (lesson.includes(term) ? 2 : 0) + (body.includes(term) ? 1 : 0), 0);
-      const position = Math.max(0, body.indexOf(terms.find(term => body.includes(term)) || ''));
+      if (!terms.every(term => hasTerm(`${title} ${lesson} ${body}`, term))) return null;
+      const score = terms.reduce((sum, term) => sum + (hasTerm(title, term) ? 5 : 0) + (hasTerm(lesson, term) ? 2 : 0) + (hasTerm(body, term) ? 1 : 0), 0);
+      const position = Math.max(0, body.indexOf(terms.find(term => hasTerm(body, term)) || ''));
       const start = Math.max(0, position - 70);
       const snippet = entry.text.trim().slice(start, start + 230);
       return { ...entry, score, snippet: `${start ? '…' : ''}${snippet}${entry.text.length > start + 230 ? '…' : ''}` };
