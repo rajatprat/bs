@@ -28,7 +28,7 @@ import genai from '../../data/genai-week-1-part-1.json';
 import genai2 from '../../data/genai-week-1-part-2.json';
 import { headingId } from '../../lib/course';
 import { additionsFor } from '../../lib/review-additions';
-export const metadata = { title: 'Search course notes' };
+export const metadata = {title:'Search course notes', robots:{index:false, follow:true}};
 export default function Page() {
   const entries = [];
   for (const data of [week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, algorithms, algorithms2, statistics, spg1, spg, spg3, spg4, spg5, spg6, spg7, spg8, spg9, spg10, spg11, spg12]) {

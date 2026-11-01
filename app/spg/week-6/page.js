@@ -1,4 +1,5 @@
+import {pageMetadata} from '../../../lib/seo';
 import data from '../../../data/spg-week-6.json';
 import WeekSections,{WeekStats} from '../../../components/WeekSections';
-export const metadata={title:'SPG Week 6 · Cross-cultural understanding and personal grooming'};
+export const metadata = pageMetadata("/spg/week-6/");
 export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span>/</span><a href="/spg/">SPG</a><span>/</span><span>Week 6</span></nav><div className="eyebrow">BSGN3001 · WEEK 6</div><h1>Understand cultures.<br/><span>Present yourself well.</span></h1><p className="lead">Explore cultural differences, cross-cultural intelligence, and personal grooming for the workplace.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><WeekSections data={data}/></main>}

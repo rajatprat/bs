@@ -1,4 +1,5 @@
+import {pageMetadata} from '../../../lib/seo';
 import data from '../../../data/spg-week-8.json';
 import WeekSections,{WeekStats} from '../../../components/WeekSections';
-export const metadata={title:'SPG Week 8 · Creativity and thinking skills'};
+export const metadata = pageMetadata("/spg/week-8/");
 export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span>/</span><a href="/spg/">SPG</a><span>/</span><span>Week 8</span></nav><div className="eyebrow">BSGN3001 · WEEK 8</div><h1>Explore new ideas.<br/><span>Think creatively.</span></h1><p className="lead">Explore the creative journey, build empathy, and practise the processes, tools, and attitudes that help ideas grow.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><WeekSections data={data}/></main>}

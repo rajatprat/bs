@@ -1,3 +1,4 @@
+import {siteUrl, jsonLd} from '../lib/seo';
 import SpgBlocks from './SpgBlocks';
 import StudyTools, { ReadingProgress } from './StudyTools';
 import StatisticsBlocks from './StatisticsBlocks';
@@ -23,7 +24,12 @@ export default function Lesson({ data, slug }) {
   const minutes = Math.max(1, Math.ceil(words / 200));
   const base = data.base || `/software-engineering/week-${week}/`;
   const navigation = <><SectionLinks sections={studies} week={week} current={slug} base={base}/>{extras.length > 0 && <><h3 className="resource-label">Revision and practice</h3><SectionLinks sections={extras} week={week} current={slug} base={base} resource/></>}</>;
-  return <><ReadingProgress/><div className={`reading-layout${data.subjectSlug === 'algorithms-in-data-science' ? ' algorithms-reading-layout' : ''}`}><aside className="course-sidebar">
+  const url = siteUrl + base + slug + '/';
+  const schema = {'@context':'https://schema.org','@graph':[
+    {'@type':'LearningResource',name:section.title,url,inLanguage:'en',isAccessibleForFree:true,learningResourceType:isResource(section)?'Revision notes':'Study notes',about:data.subject,description:`${section.title} — ${data.subject}, Week ${week}. Illustrated study notes and revision.`,publisher:{'@type':'Organization',name:'BSNotes.in',url:siteUrl}},
+    {'@type':'BreadcrumbList',itemListElement:[{name:'Subjects',item:siteUrl+'/'},{name:data.subject,item:siteUrl+subjectPath},{name:`Week ${week}`,item:siteUrl+base},{name:section.title,item:url}].map((item,i)=>({'@type':'ListItem',position:i+1,...item}))}
+  ]};
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(schema)}}/><ReadingProgress/><div className={`reading-layout${data.subjectSlug === 'algorithms-in-data-science' ? ' algorithms-reading-layout' : ''}`}><aside className="course-sidebar">
     <a className="back-week" href={base}>← {data.part ? `Part ${data.part}` : `Week ${week}`} overview</a><div className="eyebrow">{data.subject}</div><h2>Week {String(week).padStart(2, '0')}{data.part ? ` · Part ${data.part}` : ''}</h2>
     <div className="desktop-week-nav">{navigation}</div><details className="mobile-week-nav"><summary>Browse this week</summary>{navigation}</details>
   </aside><main id="main" className="lesson">

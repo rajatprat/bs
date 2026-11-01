@@ -1,0 +1,1226 @@
+{
+  "/": {
+    "title": "IIT Madras BS Notes: Subjects, Lessons & Revision",
+    "description": "Free student-made notes for IIT Madras BS students: SPG, Software Engineering, Algorithms in Data Science, Generative AI mathematics and Statistics."
+  },
+  "/spg/": {
+    "title": "Strategies for Professional Growth (SPG) Notes | IIT Madras BS",
+    "description": "Strategies for Professional Growth (SPG) study notes for IIT Madras BS students. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/software-engineering/": {
+    "title": "Software Engineering Notes | IIT Madras BS",
+    "description": "Software Engineering study notes for IIT Madras BS students. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/algorithms-in-data-science/": {
+    "title": "Algorithms in Data Science Notes | IIT Madras BS",
+    "description": "Algorithms in Data Science study notes for IIT Madras BS students. Probability bounds, random projections, dimensionality reduction and worked algorithm examples."
+  },
+  "/mathematical-foundation-of-generative-ai/": {
+    "title": "Mathematical Foundation of Generative AI Notes | IIT Madras BS",
+    "description": "Mathematical Foundation of Generative AI study notes for IIT Madras BS students. Convexity, probability distributions, divergences and optimization for generative AI."
+  },
+  "/statistics/": {
+    "title": "Statistics Notes",
+    "description": "Statistics study notes. Random variables, PMF, PDF, CDF and probability distributions with worked examples."
+  },
+  "/algorithms-in-data-science/week-2/": {
+    "title": "Algorithms in Data Science · Week 2 Notes | IIT Madras BS",
+    "description": "Algorithms in Data Science · Week 2: illustrated study notes, explanations and revision questions. Probability bounds, random projections, dimensionality reduction and worked algorithm examples."
+  },
+  "/algorithms-in-data-science/week-1/": {
+    "title": "Algorithms in Data Science · Week 1 Notes | IIT Madras BS",
+    "description": "Algorithms in Data Science · Week 1: illustrated study notes, explanations and revision questions. Probability bounds, random projections, dimensionality reduction and worked algorithm examples."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/": {
+    "title": "Generative AI · Complete Week 1 Notes | IIT Madras BS",
+    "description": "Generative AI · Complete Week 1: illustrated study notes, explanations and revision questions. Convexity, probability distributions, divergences and optimization for generative AI."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/": {
+    "title": "Generative AI · Week 1 · Part 2 Notes | IIT Madras BS",
+    "description": "Generative AI · Week 1 · Part 2: illustrated study notes, explanations and revision questions. Convexity, probability distributions, divergences and optimization for generative AI."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/": {
+    "title": "Generative AI · Week 1 · Part 1 Notes | IIT Madras BS",
+    "description": "Generative AI · Week 1 · Part 1: illustrated study notes, explanations and revision questions. Convexity, probability distributions, divergences and optimization for generative AI."
+  },
+  "/software-engineering/week-4/": {
+    "title": "Week 4 overview Notes | IIT Madras BS",
+    "description": "Week 4 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-3/": {
+    "title": "Week 3 overview Notes | IIT Madras BS",
+    "description": "Week 3 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-2/": {
+    "title": "Week 2 overview Notes | IIT Madras BS",
+    "description": "Week 2 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-5/": {
+    "title": "Week 5 overview Notes | IIT Madras BS",
+    "description": "Week 5 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-9/": {
+    "title": "Week 9 overview Notes | IIT Madras BS",
+    "description": "Week 9 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-7/": {
+    "title": "Week 7 overview Notes | IIT Madras BS",
+    "description": "Week 7 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-1/": {
+    "title": "Week 1 overview Notes | IIT Madras BS",
+    "description": "Week 1 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-8/": {
+    "title": "Week 8 overview Notes | IIT Madras BS",
+    "description": "Week 8 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-10/": {
+    "title": "Week 10 overview Notes | IIT Madras BS",
+    "description": "Week 10 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/software-engineering/week-11/": {
+    "title": "Week 11 overview Notes | IIT Madras BS",
+    "description": "Week 11 overview: illustrated study notes, explanations and revision questions. Requirements, Agile, software design, Git, testing, architecture and software project management."
+  },
+  "/spg/week-4/": {
+    "title": "SPG Week 4 · Leadership and personal growth Notes | IIT Madras BS",
+    "description": "SPG Week 4 · Leadership and personal growth: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-3/": {
+    "title": "SPG Week 3 · Workplace communication, presentations and reports Notes | IIT Madras BS",
+    "description": "SPG Week 3 · Workplace communication, presentations and reports: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-2/": {
+    "title": "SPG Week 2 · Communication and listening skills Notes | IIT Madras BS",
+    "description": "SPG Week 2 · Communication and listening skills: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-5/": {
+    "title": "SPG Week 5 · Emotional intelligence and conflict management Notes | IIT Madras BS",
+    "description": "SPG Week 5 · Emotional intelligence and conflict management: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-12/": {
+    "title": "SPG Week 12 · Personal and professional development Notes | IIT Madras BS",
+    "description": "SPG Week 12 · Personal and professional development: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-9/": {
+    "title": "SPG Week 9 · Cultivating a growth mindset Notes | IIT Madras BS",
+    "description": "SPG Week 9 · Cultivating a growth mindset: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-7/": {
+    "title": "SPG Week 7 · Fiscal and economic sense Notes | IIT Madras BS",
+    "description": "SPG Week 7 · Fiscal and economic sense: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-6/": {
+    "title": "SPG Week 6 · Cross-cultural understanding and personal grooming Notes | IIT Madras BS",
+    "description": "SPG Week 6 · Cross-cultural understanding and personal grooming: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-1/": {
+    "title": "SPG Week 1 · Teamwork and getting along Notes | IIT Madras BS",
+    "description": "SPG Week 1 · Teamwork and getting along: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-8/": {
+    "title": "SPG Week 8 · Creativity and thinking skills Notes | IIT Madras BS",
+    "description": "SPG Week 8 · Creativity and thinking skills: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-10/": {
+    "title": "SPG Week 10 · Systems thinking Notes | IIT Madras BS",
+    "description": "SPG Week 10 · Systems thinking: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/spg/week-11/": {
+    "title": "SPG Week 11 · Engineering sense Notes | IIT Madras BS",
+    "description": "SPG Week 11 · Engineering sense: illustrated study notes, explanations and revision questions. Teamwork, communication, leadership, emotional intelligence, creativity and professional development."
+  },
+  "/statistics/week-1/": {
+    "title": "Statistics · Random variables Notes",
+    "description": "Statistics · Random variables: illustrated study notes, explanations and revision questions. Random variables, PMF, PDF, CDF and probability distributions with worked examples."
+  },
+  "/algorithms-in-data-science/week-2/week-1-recap/": {
+    "title": "Week 1 recap | Algorithms in Data Science | IITM BS",
+    "description": "Week 1 recap explained in Algorithms in Data Science, Week 2. Conditions and notation; Key points to remember."
+  },
+  "/algorithms-in-data-science/week-2/prerequisite-toolkit/": {
+    "title": "Prerequisite toolkit | Algorithms in Data Science | IITM BS",
+    "description": "Prerequisite toolkit explained in Algorithms in Data Science, Week 2. Conditions and notation; 0.1 Rules for e and log; Worked example; 0.2 Same event, same."
+  },
+  "/algorithms-in-data-science/week-2/chernoff-bounds/": {
+    "title": "Chernoff bounds for projection error | Algorithms in Data Science | IITM BS",
+    "description": "Chernoff bounds for projection error explained in Algorithms in Data Science, Week 2. Conditions and notation; Step 0: recall the projection setup; Step 1: w."
+  },
+  "/algorithms-in-data-science/week-2/all-pairs-jl-guarantee/": {
+    "title": "Preserving all pairs: the final JL guarantee | Algorithms in Data Science | IITM BS",
+    "description": "Preserving all pairs: the final JL guarantee explained in Algorithms in Data Science, Week 2. Conditions and notation; Step 1: what we have so far; Step 2: t."
+  },
+  "/algorithms-in-data-science/week-2/svd-interpretation/": {
+    "title": "The SVD interpretation of random projection | Algorithms in Data Science | IITM BS",
+    "description": "The SVD interpretation of random projection explained in Algorithms in Data Science, Week 2. Conditions and notation; Step 1: any matrix = rotate · stretch ·."
+  },
+  "/algorithms-in-data-science/week-2/complete-jl-proof/": {
+    "title": "The complete JL proof | Algorithms in Data Science | IITM BS",
+    "description": "The complete JL proof explained in Algorithms in Data Science, Week 2. Conditions and notation; Using it in practice; Key points to remember."
+  },
+  "/algorithms-in-data-science/week-2/formula-summary/": {
+    "title": "Formula summary and practical checklist | Algorithms in Data Science | IITM BS",
+    "description": "Formula summary and practical checklist explained in Algorithms in Data Science, Week 2. Conditions and notation; Key points to remember."
+  },
+  "/algorithms-in-data-science/week-1/prerequisite-toolkit/": {
+    "title": "Prerequisite toolkit | Algorithms in Data Science | IITM BS",
+    "description": "Prerequisite toolkit explained in Algorithms in Data Science, Week 1. 0.1 Random variable, sample space, probability; 0.2 Expectation (the average) and linea."
+  },
+  "/algorithms-in-data-science/week-1/algorithms-at-scale/": {
+    "title": "Algorithms at scale | Algorithms in Data Science | IITM BS",
+    "description": "Algorithms at scale explained in Algorithms in Data Science, Week 1. Worked example: what \"scale\" means; Check yourself; Key points to remember."
+  },
+  "/algorithms-in-data-science/week-1/markov-s-inequality/": {
+    "title": "Markov’s inequality | Algorithms in Data Science | IITM BS",
+    "description": "Markov’s inequality explained in Algorithms in Data Science, Week 1. Conditions to check; Why \"concentration inequalities\"?; Reading the formula; Worked exam."
+  },
+  "/algorithms-in-data-science/week-1/chebyshev-s-inequality/": {
+    "title": "Chebyshev’s inequality | Algorithms in Data Science | IITM BS",
+    "description": "Chebyshev’s inequality explained in Algorithms in Data Science, Week 1. Conditions to check; Reading the formula; Worked example 1: exam scores; Worked examp."
+  },
+  "/algorithms-in-data-science/week-1/hoeffding-s-inequality/": {
+    "title": "Hoeffding’s inequality | Algorithms in Data Science | IITM BS",
+    "description": "Hoeffding’s inequality explained in Algorithms in Data Science, Week 1. Conditions to check; Reading the formula piece by piece; Worked example 1: fair coin."
+  },
+  "/algorithms-in-data-science/week-1/union-bound/": {
+    "title": "Union bound and event relationships | Algorithms in Data Science | IITM BS",
+    "description": "Union bound and event relationships explained in Algorithms in Data Science, Week 1. Worked example: die; Worked example: why this matters for JL; Worked exa."
+  },
+  "/algorithms-in-data-science/week-1/johnson-lindenstrauss-lemma/": {
+    "title": "Johnson–Lindenstrauss lemma | Algorithms in Data Science | IITM BS",
+    "description": "Johnson–Lindenstrauss lemma explained in Algorithms in Data Science, Week 1. Conditions to check; Reading it slowly; Check yourself; Key points to remember."
+  },
+  "/algorithms-in-data-science/week-1/random-linear-transformations/": {
+    "title": "Linear maps and the limits of exact preservation | Algorithms in Data Science | IITM BS",
+    "description": "Linear maps and the limits of exact preservation explained in Algorithms in Data Science, Week 1. Step 1: try the simplest kind of map, a matrix; Step 2: rot."
+  },
+  "/algorithms-in-data-science/week-1/gaussian-random-projections-and-why-we-scale/": {
+    "title": "Gaussian random projections and scaling | Algorithms in Data Science | IITM BS",
+    "description": "Gaussian random projections and scaling explained in Algorithms in Data Science, Week 1. Conditions to check; Step 1: the average of one output is 0; Step 2:."
+  },
+  "/algorithms-in-data-science/week-1/normalizing-the-gaussian-random-vector/": {
+    "title": "Measuring projection accuracy | Algorithms in Data Science | IITM BS",
+    "description": "Measuring projection accuracy explained in Algorithms in Data Science, Week 1. Conditions to check; Step 1: unbiased, the exercise solved; Step 2: name the b."
+  },
+  "/algorithms-in-data-science/week-1/completing-the-jl-proof/": {
+    "title": "Extension: completing the JL proof | Algorithms in Data Science | IITM BS",
+    "description": "Extension: completing the JL proof explained in Algorithms in Data Science, Week 1. Goal: make a large projection error unlikely; Step A: get an upper-tail b."
+  },
+  "/algorithms-in-data-science/week-1/one-page-formula-revision/": {
+    "title": "Formula summary and revision | Algorithms in Data Science | IITM BS",
+    "description": "Formula summary and revision explained in Algorithms in Data Science, Week 1. The whole week in five sentences; Key points to remember."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/why-we-use-expectations-instead-of-unknown-density-formulas/": {
+    "title": "Why we use expectations instead of unknown density formulas | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Why we use expectations instead of unknown density formulas explained in Mathematical Foundation of Generative AI, Week 1. Worked example — estimate an unkno."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/supremum-and-infimum-the-language-of-optimization/": {
+    "title": "Supremum and infimum: the language of optimization | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Supremum and infimum: the language of optimization explained in Mathematical Foundation of Generative AI, Week 1. Worked example — attained versus unattained."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/convex-conjugates-definition-optimization-and-geometry/": {
+    "title": "Convex conjugates: definition, optimization and geometry | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Convex conjugates: definition, optimization and geometry explained in Mathematical Foundation of Generative AI, Week 1. Worked example — conjugate of a quadr."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/why-the-biconjugate-representation-matters/": {
+    "title": "Why the biconjugate representation matters | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Why the biconjugate representation matters explained in Mathematical Foundation of Generative AI, Week 1. Worked example — recover the quadratic."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/why-the-optimizing-scalar-becomes-a-function-t-x/": {
+    "title": "Why the optimizing scalar becomes a function T(x) | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Why the optimizing scalar becomes a function T(x) explained in Mathematical Foundation of Generative AI, Week 1."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/the-variational-representation-of-f-divergence/": {
+    "title": "The variational representation of f-divergence | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "The variational representation of f-divergence explained in Mathematical Foundation of Generative AI, Week 1. Worked example — variational objective for KL."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/turning-expectations-into-empirical-objectives/": {
+    "title": "Turning expectations into empirical objectives | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Turning expectations into empirical objectives explained in Mathematical Foundation of Generative AI, Week 1. Worked example — evaluate a fixed empirical obj."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/week-1-synthesis/": {
+    "title": "Week 1 synthesis | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Week 1 synthesis explained in Mathematical Foundation of Generative AI, Week 1."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/revision-questions-with-answers/": {
+    "title": "Revision questions with answers | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Revision questions with answers explained in Mathematical Foundation of Generative AI, Week 1. Question 1 — What is the difference between maximum and suprem."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/what-are-deep-generative-models/": {
+    "title": "What are deep generative models? | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "What are deep generative models? explained in Mathematical Foundation of Generative AI, Week 1. Detour A — Data, random variables and dimensions (quick revis."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/the-core-generative-modeling-problem/": {
+    "title": "The core generative-modeling problem | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "The core generative-modeling problem explained in Mathematical Foundation of Generative AI, Week 1. Detour C — Gaussian noise and the generator (quick revisi."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/training-and-sampling-are-different/": {
+    "title": "Training and sampling are different | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Training and sampling are different explained in Mathematical Foundation of Generative AI, Week 1."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/detour-d-optimization-minimum-and-argmin-detailed/": {
+    "title": "Detour D — Optimization, minimum and argmin (detailed) | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Detour D — Optimization, minimum and argmin (detailed) explained in Mathematical Foundation of Generative AI, Week 1. Worked example — minimum versus argmin."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/detour-e-convex-functions-detailed/": {
+    "title": "Detour E — Convex functions (detailed) | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Detour E — Convex functions (detailed) explained in Mathematical Foundation of Generative AI, Week 1. Worked example — verify convexity for f(x)=x²; Worked e."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/why-convexity-enters-f-divergence/": {
+    "title": "Why convexity enters f-divergence | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Why convexity enters f-divergence explained in Mathematical Foundation of Generative AI, Week 1. Why is D_f nonnegative?; Worked example — discrete f-diverge."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/examples-kl-js-and-total-variation/": {
+    "title": "Examples: KL, JS and total variation | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Examples: KL, JS and total variation explained in Mathematical Foundation of Generative AI, Week 1. Worked example — asymmetry of KL; Fully worked example —."
+  },
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/check-your-understanding/": {
+    "title": "Check your understanding | Mathematical Foundation of Generative AI | IITM BS",
+    "description": "Check your understanding explained in Mathematical Foundation of Generative AI, Week 1."
+  },
+  "/software-engineering/week-4/lecture-1-project-management-overview/": {
+    "title": "Section 1 · Project Management Overview | Software Engineering | IITM BS",
+    "description": "Section 1 · Project Management Overview explained in Software Engineering, Week 4. Six responsibilities of the software project manager; Client communication."
+  },
+  "/software-engineering/week-4/lecture-2-project-estimation-techniques/": {
+    "title": "Section 2 · Project Estimation Techniques | Software Engineering | IITM BS",
+    "description": "Section 2 · Project Estimation Techniques explained in Software Engineering, Week 4. Why estimation matters; Software size and person-months; Empirical estim."
+  },
+  "/software-engineering/week-4/lecture-3-project-scheduling/": {
+    "title": "Section 3 · Project Scheduling | Software Engineering | IITM BS",
+    "description": "Section 3 · Project Scheduling explained in Software Engineering, Week 4. The eight scheduling activities; Work Breakdown Structure (WBS); Seller Portal WBS."
+  },
+  "/software-engineering/week-4/lecture-4-risk-management/": {
+    "title": "Section 4 · Risk Management | Software Engineering | IITM BS",
+    "description": "Section 4 · Risk Management explained in Software Engineering, Week 4. Why risks are harder to see in software; Three categories: technical, project and busi."
+  },
+  "/software-engineering/week-4/lecture-5-project-management-in-agile/": {
+    "title": "Section 5 · Project Management in Agile | Software Engineering | IITM BS",
+    "description": "Section 5 · Project Management in Agile explained in Software Engineering, Week 4. Agile iterations; Scrum team and roles; Product backlog and sprint plannin."
+  },
+  "/software-engineering/week-4/lecture-6-pivotal-tracker-tutorial/": {
+    "title": "Section 6 · Pivotal Tracker Tutorial | Software Engineering | IITM BS",
+    "description": "Section 6 · Pivotal Tracker Tutorial explained in Software Engineering, Week 4. Set up a project and understand its workspace; Create a feature story with ta."
+  },
+  "/software-engineering/week-4/week-4-quick-revision-and-self-check/": {
+    "title": "Week 4 · Quick revision and self-check | Software Engineering | IITM BS",
+    "description": "Week 4 · Quick revision and self-check explained in Software Engineering, Week 4. Key definitions; Five practice questions with answers; 1. A system needs 5."
+  },
+  "/software-engineering/week-3/introduction-to-interaction-design/": {
+    "title": "Introduction to Interaction Design | Software Engineering | IITM BS",
+    "description": "Introduction to Interaction Design explained in Software Engineering, Week 3. 01. Why interface design matters; 02. The user interface is the interaction poi."
+  },
+  "/software-engineering/week-3/usability-goals-and-user-experience-goals/": {
+    "title": "Usability goals and user-experience goals | Software Engineering | IITM BS",
+    "description": "Usability goals and user-experience goals explained in Software Engineering, Week 3."
+  },
+  "/software-engineering/week-3/usability-goals/": {
+    "title": "Usability Goals | Software Engineering | IITM BS",
+    "description": "Usability Goals explained in Software Engineering, Week 3. 05. Five usability goals; 06. Effectiveness: doing the intended task; 07. Efficiency: reducing unn."
+  },
+  "/software-engineering/week-3/prototyping-techniques/": {
+    "title": "Prototyping Techniques | Software Engineering | IITM BS",
+    "description": "Prototyping Techniques explained in Software Engineering, Week 3. 14. Why not code the first design immediately?; 15. Prototype, feedback and iteration; 16."
+  },
+  "/software-engineering/week-3/design-heuristics-understanding/": {
+    "title": "Design Heuristics — Understanding | Software Engineering | IITM BS",
+    "description": "Design Heuristics — Understanding explained in Software Engineering, Week 3. 23. Two kinds of interface evaluation; 24. Consistency; 25. Familiar language an."
+  },
+  "/software-engineering/week-3/design-heuristics-action/": {
+    "title": "Design Heuristics — Action | Software Engineering | IITM BS",
+    "description": "Design Heuristics — Action explained in Software Engineering, Week 3. 28. Freedom to undo or recover; 29. Freedom to explore; 30. Flexibility: beginner and e."
+  },
+  "/software-engineering/week-3/design-heuristics-feedback/": {
+    "title": "Design Heuristics — Feedback | Software Engineering | IITM BS",
+    "description": "Design Heuristics — Feedback explained in Software Engineering, Week 3. 33. Show system status; 34. Give next steps and advance warnings; 35. Prevent errors."
+  },
+  "/software-engineering/week-3/week-3-quick-revision/": {
+    "title": "Week 3 — Quick Revision | Software Engineering | IITM BS",
+    "description": "Week 3 — Quick Revision explained in Software Engineering, Week 3."
+  },
+  "/software-engineering/week-2/why-do-requirements-matter/": {
+    "title": "Why do requirements matter? | Software Engineering | IITM BS",
+    "description": "Why do requirements matter? explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/who-should-we-ask-stakeholders-and-users/": {
+    "title": "Who should we ask? Stakeholders and users | Software Engineering | IITM BS",
+    "description": "Who should we ask? Stakeholders and users explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/requirement-analysis-spotting-problems/": {
+    "title": "Requirement analysis: spotting problems | Software Engineering | IITM BS",
+    "description": "Requirement analysis: spotting problems explained in Software Engineering, Week 2. Ambiguous requirements; Inconsistent requirements; Incomplete requirements."
+  },
+  "/software-engineering/week-2/five-ways-to-gather-requirements/": {
+    "title": "Five ways to gather requirements | Software Engineering | IITM BS",
+    "description": "Five ways to gather requirements explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/questionnaires-and-interviews/": {
+    "title": "Questionnaires and interviews | Software Engineering | IITM BS",
+    "description": "Questionnaires and interviews explained in Software Engineering, Week 2. Questionnaires; Interviews."
+  },
+  "/software-engineering/week-2/focus-groups-observation-and-existing-documents/": {
+    "title": "Focus groups, observation and existing documents | Software Engineering | IITM BS",
+    "description": "Focus groups, observation and existing documents explained in Software Engineering, Week 2. Focus groups; Naturalistic observation; Documentation."
+  },
+  "/software-engineering/week-2/practical-guidelines-and-sample-portal-features/": {
+    "title": "Practical guidelines and sample portal features | Software Engineering | IITM BS",
+    "description": "Practical guidelines and sample portal features explained in Software Engineering, Week 2. Identified requirements; Basic requirement-gathering guidelines."
+  },
+  "/software-engineering/week-2/functional-versus-non-functional-requirements/": {
+    "title": "Functional versus non-functional requirements | Software Engineering | IITM BS",
+    "description": "Functional versus non-functional requirements explained in Software Engineering, Week 2. Functional requirements; Non-functional requirements."
+  },
+  "/software-engineering/week-2/reliability-robustness-and-other-quality-requirements/": {
+    "title": "Reliability, robustness and other quality requirements | Software Engineering | IITM BS",
+    "description": "Reliability, robustness and other quality requirements explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/what-is-an-srs/": {
+    "title": "What is an SRS? | Software Engineering | IITM BS",
+    "description": "What is an SRS? explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/what-kinds-of-interfaces-appear-in-an-srs/": {
+    "title": "What kinds of interfaces appear in an SRS? | Software Engineering | IITM BS",
+    "description": "What kinds of interfaces appear in an SRS? explained in Software Engineering, Week 2. External interface requirements (3.1); System features (3.2)."
+  },
+  "/software-engineering/week-2/why-use-an-srs/": {
+    "title": "Why use an SRS? | Software Engineering | IITM BS",
+    "description": "Why use an SRS? explained in Software Engineering, Week 2. Advantages of an SRS."
+  },
+  "/software-engineering/week-2/plan-and-document-versus-agile-requirements/": {
+    "title": "Plan and Document versus Agile requirements | Software Engineering | IITM BS",
+    "description": "Plan and Document versus Agile requirements explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/behaviour-driven-design-bdd/": {
+    "title": "Behaviour-Driven Design (BDD) | Software Engineering | IITM BS",
+    "description": "Behaviour-Driven Design (BDD) explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/the-user-story-template/": {
+    "title": "The user-story template | Software Engineering | IITM BS",
+    "description": "The user-story template explained in Software Engineering, Week 2. The role-feature-benefit pattern."
+  },
+  "/software-engineering/week-2/why-are-user-stories-useful/": {
+    "title": "Why are user stories useful? | Software Engineering | IITM BS",
+    "description": "Why are user stories useful? explained in Software Engineering, Week 2. Benefits of user stories."
+  },
+  "/software-engineering/week-2/smart-user-stories/": {
+    "title": "SMART user stories | Software Engineering | IITM BS",
+    "description": "SMART user stories explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/smart-how-to-improve-a-story/": {
+    "title": "SMART: how to improve a story | Software Engineering | IITM BS",
+    "description": "SMART: how to improve a story explained in Software Engineering, Week 2. Specific; Measurable; Achievable; Relevant; Timeboxed."
+  },
+  "/software-engineering/week-2/user-story-limits-and-choosing-an-approach/": {
+    "title": "User-story limits and choosing an approach | Software Engineering | IITM BS",
+    "description": "User-story limits and choosing an approach explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/week-2-quick-revision/": {
+    "title": "Week 2 quick revision | Software Engineering | IITM BS",
+    "description": "Week 2 quick revision explained in Software Engineering, Week 2."
+  },
+  "/software-engineering/week-2/test-your-understanding/": {
+    "title": "Test your understanding | Software Engineering | IITM BS",
+    "description": "Test your understanding explained in Software Engineering, Week 2. Suggested answers and reasoning."
+  },
+  "/software-engineering/week-5/lecture-1-introduction-to-software-design/": {
+    "title": "Section 1 · Introduction to Software Design | Software Engineering | IITM BS",
+    "description": "Section 1 · Introduction to Software Design explained in Software Engineering, Week 5. From Requirements to Software Design; Four Outcomes of the Design Proc."
+  },
+  "/software-engineering/week-5/lecture-2-design-modularity/": {
+    "title": "Section 2 · Design Modularity | Software Engineering | IITM BS",
+    "description": "Section 2 · Design Modularity explained in Software Engineering, Week 5. Easy-to-Understand vs Tangled Module Designs; Coupling vs Cohesion: Outside vs Insid."
+  },
+  "/software-engineering/week-5/lecture-3-object-oriented-design-basic-concepts/": {
+    "title": "Section 3 · Object-Oriented Design: Basic Concepts | Software Engineering | IITM BS",
+    "description": "Section 3 · Object-Oriented Design: Basic Concepts explained in Software Engineering, Week 5. Supermarket Journey: Find the Objects; What Is Inside a Softwar."
+  },
+  "/software-engineering/week-5/lecture-4-unified-modeling-language-uml-diagrams/": {
+    "title": "Section 4 · Unified Modeling Language (UML) Diagrams | Software Engineering | IITM BS",
+    "description": "Section 4 · Unified Modeling Language (UML) Diagrams explained in Software Engineering, Week 5. UML: A Shared Blueprint Everyone Can Discuss; Structural View."
+  },
+  "/software-engineering/week-5/lecture-5-verisim-comprehending-software-designs/": {
+    "title": "Section 5 · VeriSIM: Comprehending Software Designs | Software Engineering | IITM BS",
+    "description": "Section 5 · VeriSIM: Comprehending Software Designs explained in Software Engineering, Week 5. What Is VeriSIM? Simulating a Design; Automated Door Locking:."
+  },
+  "/software-engineering/week-9/why-do-we-test-software/": {
+    "title": "Why Do We Test Software? | Software Engineering | IITM BS",
+    "description": "Why Do We Test Software? explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/one-small-bug-big-consequences/": {
+    "title": "Errors Can Crash Entire Systems | Software Engineering | IITM BS",
+    "description": "Errors Can Crash Entire Systems explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/verification-vs-validation/": {
+    "title": "Building the Right Thing vs Building It Right | Software Engineering | IITM BS",
+    "description": "Building the Right Thing vs Building It Right explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/how-software-testing-works/": {
+    "title": "Basic Activities in Testing | Software Engineering | IITM BS",
+    "description": "Basic Activities in Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/what-is-a-test-case/": {
+    "title": "What Is a Test Case? | Software Engineering | IITM BS",
+    "description": "What Is a Test Case? explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/test-case-vs-test-suite/": {
+    "title": "Test Case vs Test Suite | Software Engineering | IITM BS",
+    "description": "Test Case vs Test Suite explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/random-vs-planned-testing/": {
+    "title": "Why Design Test Cases? | Software Engineering | IITM BS",
+    "description": "Why Design Test Cases? explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/can-we-test-every-input/": {
+    "title": "Can We Test Every Input? | Software Engineering | IITM BS",
+    "description": "Can We Test Every Input? explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/levels-of-software-testing/": {
+    "title": "Levels of Software Testing | Software Engineering | IITM BS",
+    "description": "Levels of Software Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/unit-vs-integration-testing/": {
+    "title": "Unit vs Integration Testing | Software Engineering | IITM BS",
+    "description": "Unit vs Integration Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/alpha-vs-beta-testing/": {
+    "title": "Alpha vs Beta Testing | Software Engineering | IITM BS",
+    "description": "Alpha vs Beta Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/acceptance-testing/": {
+    "title": "Acceptance Testing | Software Engineering | IITM BS",
+    "description": "Acceptance Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/black-box-testing/": {
+    "title": "Black-box Testing | Software Engineering | IITM BS",
+    "description": "Black-box Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/equivalence-class-partitioning/": {
+    "title": "Equivalence Class Partitioning | Software Engineering | IITM BS",
+    "description": "Equivalence Class Partitioning explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/equivalence-classes-for-min-x-y/": {
+    "title": "Equivalence Classes for min(x, y) | Software Engineering | IITM BS",
+    "description": "Equivalence Classes for min(x, y) explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-is-prime-num/": {
+    "title": "Equivalence Classes for isPrime(num) | Software Engineering | IITM BS",
+    "description": "Equivalence Classes for isPrime(num) explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/boundary-value-analysis/": {
+    "title": "Boundary Value Analysis | Software Engineering | IITM BS",
+    "description": "Boundary Value Analysis explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/boundary-cases-for-is-prime/": {
+    "title": "Boundary Cases for is_prime() | Software Engineering | IITM BS",
+    "description": "Boundary Cases for is_prime() explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/designing-black-box-tests/": {
+    "title": "Designing Black-box Tests | Software Engineering | IITM BS",
+    "description": "Designing Black-box Tests explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/white-box-testing/": {
+    "title": "White-box Testing | Software Engineering | IITM BS",
+    "description": "White-box Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/black-box-vs-white-box-testing/": {
+    "title": "Black-box vs White-box Testing | Software Engineering | IITM BS",
+    "description": "Black-box vs White-box Testing explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/branch-coverage/": {
+    "title": "Branch Coverage | Software Engineering | IITM BS",
+    "description": "Branch Coverage explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-both-branches-of-min-x-y/": {
+    "title": "Testing Both Branches of min(x, y) | Software Engineering | IITM BS",
+    "description": "Testing Both Branches of min(x, y) explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/branch-coverage-is-prime/": {
+    "title": "Branch Coverage: is_prime() | Software Engineering | IITM BS",
+    "description": "Branch Coverage: is_prime() explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-individual-conditions/": {
+    "title": "Multiple Condition Coverage | Software Engineering | IITM BS",
+    "description": "Multiple Condition Coverage explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/branch-vs-condition-coverage/": {
+    "title": "Branch vs Multiple Condition Coverage | Software Engineering | IITM BS",
+    "description": "Branch vs Multiple Condition Coverage explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/control-flow-graph/": {
+    "title": "Control-Flow Graph | Software Engineering | IITM BS",
+    "description": "Control-Flow Graph explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/independent-paths-in-is-prime/": {
+    "title": "Independent Paths in is_prime() | Software Engineering | IITM BS",
+    "description": "Independent Paths in is_prime() explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/cyclomatic-complexity/": {
+    "title": "Cyclomatic Complexity | Software Engineering | IITM BS",
+    "description": "Cyclomatic Complexity explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/why-unit-testing-matters/": {
+    "title": "Why Unit Testing Matters | Software Engineering | IITM BS",
+    "description": "Why Unit Testing Matters explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/unit-testing-during-development/": {
+    "title": "Unit Testing During Development | Software Engineering | IITM BS",
+    "description": "Unit Testing During Development explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/unit-testing-environment/": {
+    "title": "Unit Testing Environment | Software Engineering | IITM BS",
+    "description": "Unit Testing Environment explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/what-is-a-stub/": {
+    "title": "What Is a Stub? | Software Engineering | IITM BS",
+    "description": "What Is a Stub? explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/what-is-a-test-driver/": {
+    "title": "What Is a Driver? | Software Engineering | IITM BS",
+    "description": "What Is a Driver? explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/python-unit-testing-tools/": {
+    "title": "Python Unit Testing Tools | Software Engineering | IITM BS",
+    "description": "Python Unit Testing Tools explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/how-pytest-finds-tests/": {
+    "title": "How pytest Finds Tests | Software Engineering | IITM BS",
+    "description": "How pytest Finds Tests explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/understanding-assert/": {
+    "title": "Understanding assert | Software Engineering | IITM BS",
+    "description": "Understanding assert explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/seller-portal-inventory/": {
+    "title": "Seller Portal Inventory | Software Engineering | IITM BS",
+    "description": "Seller Portal Inventory explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-inventory-addition/": {
+    "title": "Testing Inventory Addition | Software Engineering | IITM BS",
+    "description": "Testing Inventory Addition explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/a-unit-test-catches-a-bug/": {
+    "title": "A Unit Test Catches a Bug | Software Engineering | IITM BS",
+    "description": "A Unit Test Catches a Bug explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-inventory-deletion/": {
+    "title": "Testing Inventory Deletion | Software Engineering | IITM BS",
+    "description": "Testing Inventory Deletion explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/pytest-fixtures-reusable-setup/": {
+    "title": "pytest Fixtures: Reusable Setup | Software Engineering | IITM BS",
+    "description": "pytest Fixtures: Reusable Setup explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-expected-exceptions/": {
+    "title": "Testing Expected Exceptions | Software Engineering | IITM BS",
+    "description": "Testing Expected Exceptions explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/traditional-development-vs-tdd/": {
+    "title": "Traditional Development vs TDD | Software Engineering | IITM BS",
+    "description": "Traditional Development vs TDD explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/red-green-refactor/": {
+    "title": "Red–Green–Refactor | Software Engineering | IITM BS",
+    "description": "Red–Green–Refactor explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/building-is-prime-with-tdd/": {
+    "title": "Building is_prime() with TDD | Software Engineering | IITM BS",
+    "description": "Building is_prime() with TDD explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/testing-is-prime-important-cases/": {
+    "title": "Testing is_prime(): Important Cases | Software Engineering | IITM BS",
+    "description": "Testing is_prime(): Important Cases explained in Software Engineering, Week 9."
+  },
+  "/software-engineering/week-9/complete-lecture-coverage-integration-and-system-testing/": {
+    "title": "Integration and System Testing | Software Engineering | IITM BS",
+    "description": "Integration and System Testing explained in Software Engineering, Week 9. Integration testing; Big bang; Bottom up; Top down; Mixed integration; System testi."
+  },
+  "/software-engineering/week-9/mini-revision-questions/": {
+    "title": "Mini revision questions | Software Engineering | IITM BS",
+    "description": "Mini revision questions explained in Software Engineering, Week 9. Suggested answers."
+  },
+  "/software-engineering/week-9/practice-problems-with-worked-answers/": {
+    "title": "Practice Problems with Worked Answers | Software Engineering | IITM BS",
+    "description": "Practice Problems with Worked Answers explained in Software Engineering, Week 9. 1. Which boundary values should be checked for isPrime(num)?; 2. For min(x."
+  },
+  "/software-engineering/week-7/module-1-introduction-to-software-development/": {
+    "title": "Module 1 · Introduction to Software Development | Software Engineering | IITM BS",
+    "description": "Module 1 · Introduction to Software Development explained in Software Engineering, Week 7. From Design to Development; What Happens When We Work with Code?."
+  },
+  "/software-engineering/week-7/module-2-version-control-systems/": {
+    "title": "Module 2 · Version Control Systems | Software Engineering | IITM BS",
+    "description": "Module 2 · Version Control Systems explained in Software Engineering, Week 7. Why Teams Need Version History; Client-Specific Versions; What Version Control."
+  },
+  "/software-engineering/week-7/module-3-issue-tracking-and-code-review/": {
+    "title": "Module 3 · Issue Tracking and Code Review | Software Engineering | IITM BS",
+    "description": "Module 3 · Issue Tracking and Code Review explained in Software Engineering, Week 7. A Bug Becomes a Trackable Issue; Why Track Issues?; GitHub: Create a New."
+  },
+  "/software-engineering/week-7/module-4-debugging/": {
+    "title": "Module 4 · Debugging | Software Engineering | IITM BS",
+    "description": "Module 4 · Debugging explained in Software Engineering, Week 7. Error, Failure and Fault; Five Steps of Debugging; Logging: Leave Breadcrumbs; Dump and Diff:."
+  },
+  "/software-engineering/week-7/module-5-software-metrics/": {
+    "title": "Module 5 · Software Metrics | Software Engineering | IITM BS",
+    "description": "Module 5 · Software Metrics explained in Software Engineering, Week 7. Why Clean Code Matters; Quantitative Metrics vs Qualitative Review; Cyclomatic Complex."
+  },
+  "/software-engineering/week-7/module-6-writing-clean-code/": {
+    "title": "Module 6 · Writing Clean Code | Software Engineering | IITM BS",
+    "description": "Module 6 · Writing Clean Code explained in Software Engineering, Week 7. What Is a Code Smell?; Redundant Comments; Delete Commented-Out Code, Keep Git Histo."
+  },
+  "/software-engineering/week-1/what-is-software-engineering/": {
+    "title": "What is Software Engineering? | Software Engineering | IITM BS",
+    "description": "What is Software Engineering? explained in Software Engineering, Week 1. Three areas the course covers."
+  },
+  "/software-engineering/week-1/large-software-is-built-from-components/": {
+    "title": "Large software is built from components | Software Engineering | IITM BS",
+    "description": "Large software is built from components explained in Software Engineering, Week 1. Two examples from the lecture."
+  },
+  "/software-engineering/week-1/requirement-specification-decide-what-to-build/": {
+    "title": "Requirement specification: decide WHAT to build | Software Engineering | IITM BS",
+    "description": "Requirement specification: decide WHAT to build explained in Software Engineering, Week 1. A client is not always an outside customer."
+  },
+  "/software-engineering/week-1/software-design-create-the-big-picture/": {
+    "title": "Software design: create the big picture | Software Engineering | IITM BS",
+    "description": "Software design: create the big picture explained in Software Engineering, Week 1. Difficulties while adding new features."
+  },
+  "/software-engineering/week-1/development-write-code-that-fits-together/": {
+    "title": "Development: write code that fits together | Software Engineering | IITM BS",
+    "description": "Development: write code that fits together explained in Software Engineering, Week 1. Why are documentation and interfaces important?."
+  },
+  "/software-engineering/week-1/testing-check-the-system-before-release/": {
+    "title": "Testing: check the system before release | Software Engineering | IITM BS",
+    "description": "Testing: check the system before release explained in Software Engineering, Week 1. Alpha testing vs Beta testing."
+  },
+  "/software-engineering/week-1/maintenance-software-still-needs-care/": {
+    "title": "Maintenance: software still needs care | Software Engineering | IITM BS",
+    "description": "Maintenance: software still needs care explained in Software Engineering, Week 1."
+  },
+  "/software-engineering/week-1/build-and-fix-an-early-coding-approach/": {
+    "title": "Build and Fix: an early coding approach | Software Engineering | IITM BS",
+    "description": "Build and Fix: an early coding approach explained in Software Engineering, Week 1. Software lifecycle."
+  },
+  "/software-engineering/week-1/waterfall-the-plan-and-document-approach/": {
+    "title": "Waterfall: the Plan and Document approach | Software Engineering | IITM BS",
+    "description": "Waterfall: the Plan and Document approach explained in Software Engineering, Week 1. Four drawbacks of the waterfall model."
+  },
+  "/software-engineering/week-1/prototype-model-show-a-simple-sample-early/": {
+    "title": "Prototype Model: show a simple sample early | Software Engineering | IITM BS",
+    "description": "Prototype Model: show a simple sample early explained in Software Engineering, Week 1."
+  },
+  "/software-engineering/week-1/spiral-model-refine-through-repeated-rounds/": {
+    "title": "Spiral Model: refine through repeated rounds | Software Engineering | IITM BS",
+    "description": "Spiral Model: refine through repeated rounds explained in Software Engineering, Week 1."
+  },
+  "/software-engineering/week-1/agile-working-software-feedback-and-change/": {
+    "title": "Agile: working software, feedback and change | Software Engineering | IITM BS",
+    "description": "Agile: working software, feedback and change explained in Software Engineering, Week 1. 4 key principles; Iterative / incremental development."
+  },
+  "/software-engineering/week-1/agile-approaches-and-practices/": {
+    "title": "Agile approaches and practices | Software Engineering | IITM BS",
+    "description": "Agile approaches and practices explained in Software Engineering, Week 1. Agile practices; Kanban: see work moving across a board."
+  },
+  "/software-engineering/week-1/how-do-we-choose-a-development-approach/": {
+    "title": "How do we choose a development approach? | Software Engineering | IITM BS",
+    "description": "How do we choose a development approach? explained in Software Engineering, Week 1. A no answer suggests Agile; a yes suggests Plan and Document."
+  },
+  "/software-engineering/week-1/fast-revision-can-you-explain-these/": {
+    "title": "Fast revision: can you explain these? | Software Engineering | IITM BS",
+    "description": "Fast revision: can you explain these? explained in Software Engineering, Week 1. Eight quick concept checks."
+  },
+  "/software-engineering/week-8/software-architecture/": {
+    "title": "Software architecture | Software Engineering | IITM BS",
+    "description": "Software architecture explained in Software Engineering, Week 8. 1.1 Why architecture matters; 1.2 Client–server; 1.3 Pipe-and-filter; 1.4 Model–View–Control."
+  },
+  "/software-engineering/week-8/solid-five-principles-for-maintainable-object-oriented-design/": {
+    "title": "SOLID: five principles for maintainable object-oriented design | Software Engineering | IITM BS",
+    "description": "SOLID: five principles for maintainable object-oriented design explained in Software Engineering, Week 8. 2.1 S — Single Responsibility Principle (SRP); 2.2."
+  },
+  "/software-engineering/week-8/creational-design-patterns/": {
+    "title": "Creational design patterns | Software Engineering | IITM BS",
+    "description": "Creational design patterns explained in Software Engineering, Week 8. 3.1 Factory Method: choose what to create; 3.2 Builder: construct a complicated object."
+  },
+  "/software-engineering/week-8/structural-design-patterns/": {
+    "title": "Structural design patterns | Software Engineering | IITM BS",
+    "description": "Structural design patterns explained in Software Engineering, Week 8. 4.1 Facade: one simple entry point to a complex workflow; 4.2 Adapter: connect incompat."
+  },
+  "/software-engineering/week-8/behavioral-design-patterns/": {
+    "title": "Behavioral design patterns | Software Engineering | IITM BS",
+    "description": "Behavioral design patterns explained in Software Engineering, Week 8. 5.1 Iterator: traverse a collection without exposing storage; 5.2 Observer: notify inte."
+  },
+  "/software-engineering/week-8/choose-the-right-solution/": {
+    "title": "Choose the right solution | Software Engineering | IITM BS",
+    "description": "Choose the right solution explained in Software Engineering, Week 8."
+  },
+  "/software-engineering/week-8/lecture-based-revision-questions-and-reasoning/": {
+    "title": "Section-based revision questions and reasoning | Software Engineering | IITM BS",
+    "description": "Section-based revision questions and reasoning explained in Software Engineering, Week 8. Question 1; Question 2; Question 3; Question 4; Question 5; Questio."
+  },
+  "/software-engineering/week-8/final-revision-checklist/": {
+    "title": "Final revision checklist | Software Engineering | IITM BS",
+    "description": "Final revision checklist explained in Software Engineering, Week 8."
+  },
+  "/software-engineering/week-10/where-week-10-fits-in-the-software-life-cycle/": {
+    "title": "Where Week 10 fits in the software life cycle | Software Engineering | IITM BS",
+    "description": "Where Week 10 fits in the software life cycle explained in Software Engineering, Week 10."
+  },
+  "/software-engineering/week-10/part-1-deployment-environments/": {
+    "title": "Part 1 — Deployment Environments | Software Engineering | IITM BS",
+    "description": "Part 1 — Deployment Environments explained in Software Engineering, Week 10. What is an environment?; 1.1 Development environment; 1.2 Testing environment; 1."
+  },
+  "/software-engineering/week-10/part-2-deployment-strategies/": {
+    "title": "Part 2 — Deployment Strategies | Software Engineering | IITM BS",
+    "description": "Part 2 — Deployment Strategies explained in Software Engineering, Week 10. 2.1 Blue/Green deployment (Staged deployment); 2.2 Canary deployment (Phased rollo."
+  },
+  "/software-engineering/week-10/part-3-deployment-hosting/": {
+    "title": "Part 3 — Deployment Hosting | Software Engineering | IITM BS",
+    "description": "Part 3 — Deployment Hosting explained in Software Engineering, Week 10. What is hosting?; 3.1 Bare metal servers; 3.2 Infrastructure-as-a-Service (IaaS); 3.3."
+  },
+  "/software-engineering/week-10/part-4-tutorial-iaas-with-digitalocean/": {
+    "title": "Part 4 — Tutorial: IaaS with DigitalOcean | Software Engineering | IITM BS",
+    "description": "Part 4 — Tutorial: IaaS with DigitalOcean explained in Software Engineering, Week 10. Key term: Droplet; Creating a droplet, step by step; Connecting to the."
+  },
+  "/software-engineering/week-10/part-5-tutorial-paas-with-heroku/": {
+    "title": "Part 5 — Tutorial: PaaS with Heroku | Software Engineering | IITM BS",
+    "description": "Part 5 — Tutorial: PaaS with Heroku explained in Software Engineering, Week 10. Overview of the steps; Step 1 — Prepare the application; Step 2 — Create an a."
+  },
+  "/software-engineering/week-10/part-6-continuous-integration-ci/": {
+    "title": "Part 6 — Continuous Integration (CI) | Software Engineering | IITM BS",
+    "description": "Part 6 — Continuous Integration (CI) explained in Software Engineering, Week 10. Why CI?; The CI process (7 steps); Best practices for CI (7 practices); Refl."
+  },
+  "/software-engineering/week-10/part-7-performance/": {
+    "title": "Part 7 — Performance | Software Engineering | IITM BS",
+    "description": "Part 7 — Performance explained in Software Engineering, Week 10. 7.1 Caching; Levels of caching (lecture); 7.2 Task queues (asynchronous work queues); The pr."
+  },
+  "/software-engineering/week-10/part-8-monitoring/": {
+    "title": "Part 8 — Monitoring | Software Engineering | IITM BS",
+    "description": "Part 8 — Monitoring explained in Software Engineering, Week 10. Why monitor after deployment?; What to monitor (lecture); Monitoring tools — 1: Reporting too."
+  },
+  "/software-engineering/week-10/practice-questions-with-answers/": {
+    "title": "Practice questions with answers | Software Engineering | IITM BS",
+    "description": "Practice questions with answers explained in Software Engineering, Week 10."
+  },
+  "/software-engineering/week-10/glossary/": {
+    "title": "Glossary | Software Engineering | IITM BS",
+    "description": "Glossary explained in Software Engineering, Week 10."
+  },
+  "/software-engineering/week-11/part-a-software-organizations/": {
+    "title": "PART A  |  SOFTWARE ORGANIZATIONS | Software Engineering | IITM BS",
+    "description": "PART A  |  SOFTWARE ORGANIZATIONS explained in Software Engineering, Week 11. 1. The real purpose of a software company; 2. Software development is a team ef."
+  },
+  "/software-engineering/week-11/part-b-communication-collaboration-productivity/": {
+    "title": "PART B  |  COMMUNICATION, COLLABORATION & PRODUCTIVITY | Software Engineering | IITM BS",
+    "description": "PART B  |  COMMUNICATION, COLLABORATION & PRODUCTIVITY explained in Software Engineering, Week 11. 13. Communication preserves conceptual integrity; 14. Cros."
+  },
+  "/software-engineering/week-11/part-c-what-makes-a-great-software-engineer/": {
+    "title": "PART C  |  WHAT MAKES A GREAT SOFTWARE ENGINEER? | Software Engineering | IITM BS",
+    "description": "PART C  |  WHAT MAKES A GREAT SOFTWARE ENGINEER? explained in Software Engineering, Week 11. 23. Four qualities of a great engineer; 24. Coding competence an."
+  },
+  "/software-engineering/week-11/concept-check-roles-at-a-glance/": {
+    "title": "CONCEPT CHECK  |  ROLES AT A GLANCE | Software Engineering | IITM BS",
+    "description": "CONCEPT CHECK  |  ROLES AT A GLANCE explained in Software Engineering, Week 11."
+  },
+  "/software-engineering/week-11/concept-check-common-confusions/": {
+    "title": "CONCEPT CHECK  |  COMMON CONFUSIONS | Software Engineering | IITM BS",
+    "description": "CONCEPT CHECK  |  COMMON CONFUSIONS explained in Software Engineering, Week 11."
+  },
+  "/software-engineering/week-11/week-11-quick-revision/": {
+    "title": "WEEK 11  |  QUICK REVISION | Software Engineering | IITM BS",
+    "description": "WEEK 11  |  QUICK REVISION explained in Software Engineering, Week 11."
+  },
+  "/software-engineering/week-11/practice-questions-try-before-reading-the-answers/": {
+    "title": "PRACTICE QUESTIONS  |  TRY BEFORE READING THE ANSWERS | Software Engineering | IITM BS",
+    "description": "PRACTICE QUESTIONS  |  TRY BEFORE READING THE ANSWERS explained in Software Engineering, Week 11."
+  },
+  "/software-engineering/week-11/final-takeaway/": {
+    "title": "FINAL TAKEAWAY | Software Engineering | IITM BS",
+    "description": "FINAL TAKEAWAY explained in Software Engineering, Week 11."
+  },
+  "/spg/week-4/introduction-to-leadership/": {
+    "title": "Introduction to Leadership | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Introduction to Leadership explained in Strategies for Professional Growth (SPG), Week 4. Three parts of this week; What the professors said; Common leadersh."
+  },
+  "/spg/week-4/lead-yourself-values-spheres-choice/": {
+    "title": "Lead Yourself from Within — Values, Spheres and Choice | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Lead Yourself from Within — Values, Spheres and Choice explained in Strategies for Professional Growth (SPG), Week 4. Lesson 1: Uphold your core\nvalues; Less."
+  },
+  "/spg/week-4/lead-yourself-ownership-potential-invest/": {
+    "title": "Lead Yourself from Within — Ownership, Potential and Investing in Yourself | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Lead Yourself from Within — Ownership, Potential and Investing in Yourself explained in Strategies for Professional Growth (SPG), Week 4. Lesson\n4: Take resp."
+  },
+  "/spg/week-4/lead-yourself-to-lead-others-1/": {
+    "title": "Lead Yourself to Lead Others — Mindset, Time, One Thing, Communication, Emotions | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Lead Yourself to Lead Others — Mindset, Time, One Thing, Communication, Emotions explained in Strategies for Professional Growth (SPG), Week 4. Lesson 1: Cul."
+  },
+  "/spg/week-4/lead-yourself-to-lead-others-2/": {
+    "title": "Lead Yourself to Lead Others — Change, Conflict, Delegation, Collaboration | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Lead Yourself to Lead Others — Change, Conflict, Delegation, Collaboration explained in Strategies for Professional Growth (SPG), Week 4. Lesson 6: Embrace c."
+  },
+  "/spg/week-4/lead-others-to-lead-themselves/": {
+    "title": "Lead Others to Lead Themselves — Squirrel, Beaver and Goose | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Lead Others to Lead Themselves — Squirrel, Beaver and Goose explained in Strategies for Professional Growth (SPG), Week 4. 1.\nThe spirit of the squirrel: mak."
+  },
+  "/spg/week-4/week-4-quick-revision/": {
+    "title": "Week 4 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 4 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 4. Introduction; Part 1: Lead\nyourself from within (6 lessons); Part 2: L."
+  },
+  "/spg/week-3/why-and-whom-to-communicate/": {
+    "title": "Communication at Work — Why, Whom, Tone and Length | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Communication at Work — Why, Whom, Tone and Length explained in Strategies for Professional Growth (SPG), Week 3. School vs workplace; 1. Why communicate at."
+  },
+  "/spg/week-3/emails-manager-team-customer/": {
+    "title": "Emails, Your Manager, Your Team and Customers | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Emails, Your Manager, Your Team and Customers explained in Strategies for Professional Growth (SPG), Week 3. 5. Sending emails; Rule 1:\nCarefully decide the."
+  },
+  "/spg/week-3/presentation-setting-and-constraints/": {
+    "title": "Professional Presentation — Setting and Constraints | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Professional Presentation — Setting and Constraints explained in Strategies for Professional Growth (SPG), Week 3. Use an outline; Part 1: The\nsetting of a p."
+  },
+  "/spg/week-3/presentation-audience-and-illustrations/": {
+    "title": "Professional Presentation — Connecting, Illustrations and Summary | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Professional Presentation — Connecting, Illustrations and Summary explained in Strategies for Professional Growth (SPG), Week 3. Part 3: Connecting with\nyour."
+  },
+  "/spg/week-3/writing-a-report-why-and-purpose/": {
+    "title": "Writing a Report — Why It Matters and Why It Is Hard | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Writing a Report — Why It Matters and Why It Is Hard explained in Strategies for Professional Growth (SPG), Week 3. Why are writing skills\nimportant?; Why is."
+  },
+  "/spg/week-3/writing-a-report-structure-and-language/": {
+    "title": "Writing a Report — Structure and Language | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Writing a Report — Structure and Language explained in Strategies for Professional Growth (SPG), Week 3. Overall structure of a\nformal document; Beginning; M."
+  },
+  "/spg/week-3/week-3-quick-revision/": {
+    "title": "Week 3 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 3 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 3. Communication in a\nprofessional setting; Professional presentation; Wr."
+  },
+  "/spg/week-2/types-of-communication/": {
+    "title": "Types of Communication | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Types of Communication explained in Strategies for Professional Growth (SPG), Week 2. What is communication?; Seven pairs of communication types; The person."
+  },
+  "/spg/week-2/psychological-barriers/": {
+    "title": "Barriers to Communication — Psychological Barriers | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Barriers to Communication — Psychological Barriers explained in Strategies for Professional Growth (SPG), Week 2. Five kinds of barriers; What are psychologi."
+  },
+  "/spg/week-2/language-barriers/": {
+    "title": "Language Barriers | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Language Barriers explained in Strategies for Professional Growth (SPG), Week 2. A country of many languages; Story 1: one word, two meanings; Story 2: langu."
+  },
+  "/spg/week-2/cultural-barriers/": {
+    "title": "Cultural Barriers | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Cultural Barriers explained in Strategies for Professional Growth (SPG), Week 2. What is culture?; Example 1: the head nod in India; Example 2: direct and in."
+  },
+  "/spg/week-2/organisational-barriers/": {
+    "title": "Organisational Barriers | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Organisational Barriers explained in Strategies for Professional Growth (SPG), Week 2. Four points from the lecture slide; Problem 1: juniors are afraid to s."
+  },
+  "/spg/week-2/physical-barriers-activities/": {
+    "title": "Physical Barriers — Two Class Activities | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Physical Barriers — Two Class Activities explained in Strategies for Professional Growth (SPG), Week 2. Activity 1: pass the action down the line; Activity 2."
+  },
+  "/spg/week-2/tips-for-effective-communication/": {
+    "title": "Tips for Effective Communication | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Tips for Effective Communication explained in Strategies for Professional Growth (SPG), Week 2. What the students noticed; The professor’s lesson: the ABCs."
+  },
+  "/spg/week-2/ten-cs-of-communication/": {
+    "title": "The 10 C's of Communication | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The 10 C's of Communication explained in Strategies for Professional Growth (SPG), Week 2. 1. Clarity (Clear); 2. Conciseness (Concise); 3. Concreteness (Con."
+  },
+  "/spg/week-2/what-is-listening/": {
+    "title": "What is Listening? | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "What is Listening? explained in Strategies for Professional Growth (SPG), Week 2. Communication is not only speaking; What does listening mean?; Two ideas fr."
+  },
+  "/spg/week-2/listening-to-the-future/": {
+    "title": "Listening to the Future | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Listening to the Future explained in Strategies for Professional Growth (SPG), Week 2. What is “Listening to the Future”?; Don’t look at your watch; Listenin."
+  },
+  "/spg/week-2/week-2-quick-revision/": {
+    "title": "Week 2 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 2 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 2. Types of communication — 7 pairs; Five barriers; Tips for effective co."
+  },
+  "/spg/week-5/what-is-emotional-intelligence/": {
+    "title": "What is Emotional Intelligence? | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "What is Emotional Intelligence? explained in Strategies for Professional Growth (SPG), Week 5. What this week covers; What are emotions?; What is emotional\ni."
+  },
+  "/spg/week-5/the-6r-framework/": {
+    "title": "The 6R Framework for Emotional Resilience | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The 6R Framework for Emotional Resilience explained in Strategies for Professional Growth (SPG), Week 5. R1: Recognise; R2: Respect; R3: Rationalise; R4: Rel."
+  },
+  "/spg/week-5/goleman-five-principles/": {
+    "title": "Understanding Emotional Intelligence — Goleman's Five Principles | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Understanding Emotional Intelligence — Goleman's Five Principles explained in Strategies for Professional Growth (SPG), Week 5. Daniel\nGoleman’s five princip."
+  },
+  "/spg/week-5/what-is-conflict-management/": {
+    "title": "What is Conflict Management? — Types of Conflict | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "What is Conflict Management? — Types of Conflict explained in Strategies for Professional Growth (SPG), Week 5. Conflict is\nunavoidable — but it can be manag."
+  },
+  "/spg/week-5/conflict-management-styles/": {
+    "title": "Understanding Conflict Management — Five Styles | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Understanding Conflict Management — Five Styles explained in Strategies for Professional Growth (SPG), Week 5. Resilience of a soldier’s\nfamily; The five\ncon."
+  },
+  "/spg/week-5/ei-and-conflict-applied/": {
+    "title": "Emotional Intelligence and Conflict Management Applied | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Emotional Intelligence and Conflict Management Applied explained in Strategies for Professional Growth (SPG), Week 5. 1. “Heart of\nDepartment” — leading with."
+  },
+  "/spg/week-5/week-5-quick-revision/": {
+    "title": "Week 5 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 5 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 5. Emotional intelligence; The 6R framework; Goleman’s five principles; T."
+  },
+  "/spg/week-12/feed-your-mind/": {
+    "title": "Feed Your Mind — Books, Movies, Speeches and Lifelong Learning | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Feed Your Mind — Books, Movies, Speeches and Lifelong Learning explained in Strategies for Professional Growth (SPG), Week 12. Books the teacher recommends."
+  },
+  "/spg/week-12/use-what-you-learn/": {
+    "title": "Use What You Learn — Ice Stupas, Theme Parks and Shoes | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Use What You Learn — Ice Stupas, Theme Parks and Shoes explained in Strategies for Professional Growth (SPG), Week 12. The ice stupa; Two men at\nDisney World."
+  },
+  "/spg/week-12/failure-fear-and-panic/": {
+    "title": "Failure, Fear and the Panic Button | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Failure, Fear and the Panic Button explained in Strategies for Professional Growth (SPG), Week 12. Denial wastes time; Fear of failure; The panic button: amy."
+  },
+  "/spg/week-12/manage-stress-and-energy/": {
+    "title": "Manage Stress — Manage Your Energy | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Manage Stress — Manage Your Energy explained in Strategies for Professional Growth (SPG), Week 12. What is stress?; Three ways to manage stress; Nine practic."
+  },
+  "/spg/week-12/manage-time-and-rituals/": {
+    "title": "Manage Your Time and Build Rituals | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Manage Your Time and Build Rituals explained in Strategies for Professional Growth (SPG), Week 12. The six P’s of time; Why write a task list?; Prioritise wi."
+  },
+  "/spg/week-12/advice-from-a-career/": {
+    "title": "Advice From a Winding Career (Interview with Prof. Shiva) | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Advice From a Winding Career (Interview with Prof. Shiva) explained in Strategies for Professional Growth (SPG), Week 12. Who is Prof. Shiva\nSubramanian?; Le."
+  },
+  "/spg/week-12/lead-aim-higher-stay-honest/": {
+    "title": "Lead, Aim Higher, Stay Honest | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Lead, Aim Higher, Stay Honest explained in Strategies for Professional Growth (SPG), Week 12. 1. Learn to lead; 2. Aim higher; 3. Honesty is still the best\np."
+  },
+  "/spg/week-12/week-12-quick-revision/": {
+    "title": "Week 12 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 12 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 12. Feed your mind; Use what you learn; Failure, fear and panic; Manage."
+  },
+  "/spg/week-9/fixed-vs-growth-mindset/": {
+    "title": "Fixed vs Growth Mindset | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Fixed vs Growth Mindset explained in Strategies for Professional Growth (SPG), Week 9. What is a growth mindset?; Fixed vs growth: five\ndifferences; Three pe."
+  },
+  "/spg/week-9/zones-of-growth-and-rejection/": {
+    "title": "Four Zones of Growth and Handling Rejection | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Four Zones of Growth and Handling Rejection explained in Strategies for Professional Growth (SPG), Week 9. The four zones of growth; Handling rejection; Quic."
+  },
+  "/spg/week-9/end-negative-self-talk/": {
+    "title": "End Negative Self-Talk | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "End Negative Self-Talk explained in Strategies for Professional Growth (SPG), Week 9. The upside-down drawing\nactivity; Words are powerful; The ABRA method."
+  },
+  "/spg/week-9/benefits-of-failure-and-mouse-merchant/": {
+    "title": "The Benefits of Failure and the Mouse Merchant | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The Benefits of Failure and the Mouse Merchant explained in Strategies for Professional Growth (SPG), Week 9. Failure is a stepping stone; Knowing what can g."
+  },
+  "/spg/week-9/abundance-mindset-and-card-game/": {
+    "title": "Positive and Abundance Mindset — and the Growth Mindset Card Game | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Positive and Abundance Mindset — and the Growth Mindset Card Game explained in Strategies for Professional Growth (SPG), Week 9. Lack vs abundance; Five ways."
+  },
+  "/spg/week-9/the-4r-framework/": {
+    "title": "Reinvent Your Life — The 4R Framework | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Reinvent Your Life — The 4R Framework explained in Strategies for Professional Growth (SPG), Week 9. You are the architect of\nyour life; The 4R framework; 1."
+  },
+  "/spg/week-9/week-9-quick-revision/": {
+    "title": "Week 9 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 9 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 9. Fixed vs growth (Carol Dweck); Zones and rejection; End negative self-."
+  },
+  "/spg/week-7/wealth-mantra/": {
+    "title": "Introduction to Fiscal and Economic Sense — The Wealth Mantra | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Introduction to Fiscal and Economic Sense — The Wealth Mantra explained in Strategies for Professional Growth (SPG), Week 7. First things first; A. Look at l."
+  },
+  "/spg/week-7/money-stories-and-loans/": {
+    "title": "Money Stories — Compounding, and Good vs Bad Loans | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Money Stories — Compounding, and Good vs Bad Loans explained in Strategies for Professional Growth (SPG), Week 7. Your life map; The power of compounding; St."
+  },
+  "/spg/week-7/basics-of-personal-finance/": {
+    "title": "Basics of Personal Finance — The 9-Point Action Plan | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Basics of Personal Finance — The 9-Point Action Plan explained in Strategies for Professional Growth (SPG), Week 7. The human life cycle; The 9-point\naction."
+  },
+  "/spg/week-7/cash-flow-vs-life-span/": {
+    "title": "Cash Flow vs Life Span | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Cash Flow vs Life Span explained in Strategies for Professional Growth (SPG), Week 7. Three earning curves; Six\nthings to think about when building your port."
+  },
+  "/spg/week-7/returns-inflation-compounding/": {
+    "title": "Returns, Inflation and the Power of Compounding | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Returns, Inflation and the Power of Compounding explained in Strategies for Professional Growth (SPG), Week 7. Inflation: the silent killer; Inflation is not."
+  },
+  "/spg/week-7/indian-income-tax/": {
+    "title": "Indian Income Tax — 5 Heads and Two Regimes | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Indian Income Tax — 5 Heads and Two Regimes explained in Strategies for Professional Growth (SPG), Week 7. What is income tax?; The five heads (sources) of\ni."
+  },
+  "/spg/week-7/employee-vs-entrepreneur/": {
+    "title": "Employee vs Entrepreneur — Taking Calculated Risks | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Employee vs Entrepreneur — Taking Calculated Risks explained in Strategies for Professional Growth (SPG), Week 7. High risk, high reward; Plan vs reality; Yo."
+  },
+  "/spg/week-7/asset-allocation-and-investing/": {
+    "title": "Asset Allocation, Saving and Investing Options | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Asset Allocation, Saving and Investing Options explained in Strategies for Professional Growth (SPG), Week 7. Your personal balance sheet; Income statement:."
+  },
+  "/spg/week-7/week-7-quick-revision/": {
+    "title": "Week 7 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 7 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 7. Foundations; Money stories; 9-point action plan; Cash flow vs life spa."
+  },
+  "/spg/week-6/what-is-culture/": {
+    "title": "The Elements of Culture | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The Elements of Culture explained in Strategies for Professional Growth (SPG), Week 6. Say “yes” first, learn on the\nway; Why learn about other\ncultures?; Wh."
+  },
+  "/spg/week-6/stereotyping-ethnocentrism-parochialism/": {
+    "title": "Cross-cultural Understanding — Three Traps | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Cross-cultural Understanding — Three Traps explained in Strategies for Professional Growth (SPG), Week 6. First, admit what you\ndon’t understand; Did the Ped."
+  },
+  "/spg/week-6/cross-cultural-intelligence/": {
+    "title": "Cross-cultural Intelligence and the Four Stages | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Cross-cultural Intelligence and the Four Stages explained in Strategies for Professional Growth (SPG), Week 6. What is cross-cultural\nintelligence?; Cultural."
+  },
+  "/spg/week-6/dimensions-of-culture/": {
+    "title": "Dimensions of Culture | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Dimensions of Culture explained in Strategies for Professional Growth (SPG), Week 6. What is a dimension?; 1. Collective\nor individual (how we see our identi."
+  },
+  "/spg/week-6/dealing-with-cross-cultural-issues/": {
+    "title": "Dealing With Cross-cultural Issues | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Dealing With Cross-cultural Issues explained in Strategies for Professional Growth (SPG), Week 6. Case study: the doctor and\nthe nurse; Five strategies for\nc."
+  },
+  "/spg/week-6/personal-grooming/": {
+    "title": "Personal Grooming for the Workplace | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Personal Grooming for the Workplace explained in Strategies for Professional Growth (SPG), Week 6. What is personal grooming?; Grooming in the classroom; The."
+  },
+  "/spg/week-6/week-6-quick-revision/": {
+    "title": "Week 6 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 6 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 6. Culture; Three traps; Cross-cultural intelligence; Four dimensions of."
+  },
+  "/spg/week-1/outbound-training/": {
+    "title": "Outbound Training — Learning Teamwork Outdoors | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Outbound Training — Learning Teamwork Outdoors explained in Strategies for Professional Growth (SPG), Week 1. What is outbound training\n(OBT)?; The group eff."
+  },
+  "/spg/week-1/a-frame-and-caterpillar/": {
+    "title": "The A-Frame March and the Caterpillar Walk | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The A-Frame March and the Caterpillar Walk explained in Strategies for Professional Growth (SPG), Week 1. Activity 1: The A-frame march; Activity 2: The cate."
+  },
+  "/spg/week-1/what-is-teamwork/": {
+    "title": "What Is Teamwork, and Why Does It Matter? | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "What Is Teamwork, and Why Does It Matter? explained in Strategies for Professional Growth (SPG), Week 1. Don’t panic. Call your team.; Teamwork in the real w."
+  },
+  "/spg/week-1/clarity-commitment-communication/": {
+    "title": "The 10 C's of Teamwork — Clarity, Commitment, Communication | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The 10 C's of Teamwork — Clarity, Commitment, Communication explained in Strategies for Professional Growth (SPG), Week 1. The 10 C’s of teamwork; C1: Clarit."
+  },
+  "/spg/week-1/competence-collaboration-coordination/": {
+    "title": "The 10 C's — Competence, Collaboration, Coordination | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The 10 C's — Competence, Collaboration, Coordination explained in Strategies for Professional Growth (SPG), Week 1. C4: Competence; C5: Collaboration; C6: Co."
+  },
+  "/spg/week-1/connection-conflict-change/": {
+    "title": "The 10 C's — Connection, Conflict Resolution, Change Management | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The 10 C's — Connection, Conflict Resolution, Change Management explained in Strategies for Professional Growth (SPG), Week 1. C7: Connection; C8: Conflict r."
+  },
+  "/spg/week-1/continuous-improvement/": {
+    "title": "The 10th C — Continuous Improvement | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The 10th C — Continuous Improvement explained in Strategies for Professional Growth (SPG), Week 1. What is continuous\nimprovement?; Kaizen: the Japanese way."
+  },
+  "/spg/week-1/week-1-quick-revision/": {
+    "title": "Week 1 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 1 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 1. Outbound training (OBT); The activities; What is teamwork?; The 10 C’s."
+  },
+  "/spg/week-8/what-is-creativity/": {
+    "title": "What is Creativity? | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "What is Creativity? explained in Strategies for Professional Growth (SPG), Week 8. Rule number 1: everyone is\ncreative; The definition; Notebook exercises; W."
+  },
+  "/spg/week-8/the-creativity-journey/": {
+    "title": "The Creativity Journey | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The Creativity Journey explained in Strategies for Professional Growth (SPG), Week 8. From problem to solution; What is a problem?; What is a solution?; How."
+  },
+  "/spg/week-8/process-of-creativity/": {
+    "title": "The Process of Creativity | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "The Process of Creativity explained in Strategies for Professional Growth (SPG), Week 8. Watch how a team does it; The 7-step process of\ncreativity; What “re."
+  },
+  "/spg/week-8/tools-for-creativity/": {
+    "title": "Tools for Creativity | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Tools for Creativity explained in Strategies for Professional Growth (SPG), Week 8. Tool 1: Seeking information; Tool 2: Imagination; Imagination\nexercises (."
+  },
+  "/spg/week-8/attitudes-for-creativity/": {
+    "title": "Attitudes for Creativity | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Attitudes for Creativity explained in Strategies for Professional Growth (SPG), Week 8. Six willingness attitudes; Take inspiration\nfrom three creative peopl."
+  },
+  "/spg/week-8/week-8-quick-revision/": {
+    "title": "Week 8 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 8 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 8. What is creativity?; The creativity journey; Process of creativity (7\n."
+  },
+  "/spg/week-10/what-is-a-system/": {
+    "title": "Introduction to Systems Thinking — What is a System? | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Introduction to Systems Thinking — What is a System? explained in Strategies for Professional Growth (SPG), Week 10. The definition; A heap vs a system; What."
+  },
+  "/spg/week-10/examples-and-systems-view/": {
+    "title": "Examples of a System and the Systems View | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Examples of a System and the Systems View explained in Strategies for Professional Growth (SPG), Week 10. Example 1: IIT Madras as a\nsystem; Example 2: a cri."
+  },
+  "/spg/week-10/big-picture-and-consequences/": {
+    "title": "Becoming a Systems Thinker — The Big Picture and Consequences | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Becoming a Systems Thinker — The Big Picture and Consequences explained in Strategies for Professional Growth (SPG), Week 10. The 14 habits of a systems\nthin."
+  },
+  "/spg/week-10/mental-models-and-structure/": {
+    "title": "Mental Models, and How Structure Generates Behaviour | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Mental Models, and How Structure Generates Behaviour explained in Strategies for Professional Growth (SPG), Week 10. Habit:\nConsider how mental models affect."
+  },
+  "/spg/week-10/leverage-and-connections/": {
+    "title": "Don't Rush, Find the Leverage, Make Connections | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Don't Rush, Find the Leverage, Make Connections explained in Strategies for Professional Growth (SPG), Week 10. Habit\n1: Consider an issue fully; don’t jump."
+  },
+  "/spg/week-10/loops-delays-and-change/": {
+    "title": "Loops, Time Delays, Accumulations and Change Over Time | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Loops, Time Delays, Accumulations and Change Over Time explained in Strategies for Professional Growth (SPG), Week 10. Habit:\nSee the circular nature of caus."
+  },
+  "/spg/week-10/guidelines-and-14-habits/": {
+    "title": "Guidelines for Systems Thinking Practice — the 14 Habits | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Guidelines for Systems Thinking Practice — the 14 Habits explained in Strategies for Professional Growth (SPG), Week 10. The 14 habits of a systems\nthinker."
+  },
+  "/spg/week-10/week-10-quick-revision/": {
+    "title": "Week 10 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 10 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 10. What is a system?; Examples and the systems\nview; Habits of a\nsystem."
+  },
+  "/spg/week-11/what-is-engineering-sense/": {
+    "title": "Engineer and Engineering Sense | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Engineer and Engineering Sense explained in Strategies for Professional Growth (SPG), Week 11. Engineering is as old as\nhumans; What went wrong?; The habits."
+  },
+  "/spg/week-11/plan-estimate-audit/": {
+    "title": "Planning, Estimating and Technical Auditing | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Planning, Estimating and Technical Auditing explained in Strategies for Professional Growth (SPG), Week 11. Habit 1: Planning; Habit 2: Approximating and\nest."
+  },
+  "/spg/week-11/apply-cause-improve/": {
+    "title": "Apply What You Learn, Find the Cause, Make It Better | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Apply What You Learn, Find the Cause, Make It Better explained in Strategies for Professional Growth (SPG), Week 11. Habit 4: Where can I\napply what I learne."
+  },
+  "/spg/week-11/big-picture-abstraction-divide/": {
+    "title": "Big Picture, Abstraction, and Divide and Conquer | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Big Picture, Abstraction, and Divide and Conquer explained in Strategies for Professional Growth (SPG), Week 11. Habit 8: Big-picture thinking; Habit 9: Abst."
+  },
+  "/spg/week-11/classify-measure-associate-experiment/": {
+    "title": "Classify, Measure, Borrow Ideas, and Test Quickly | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Classify, Measure, Borrow Ideas, and Test Quickly explained in Strategies for Professional Growth (SPG), Week 11. Habit 11:\nClassify by function and form (ta."
+  },
+  "/spg/week-11/ideas-debriefing-mental-models/": {
+    "title": "Ideas, Debriefing, Mental Models and Perspectives | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Ideas, Debriefing, Mental Models and Perspectives explained in Strategies for Professional Growth (SPG), Week 11. Exchange ideas,\ncollaborate, and debrief; C."
+  },
+  "/spg/week-11/week-11-quick-revision/": {
+    "title": "Week 11 — Quick Revision | Strategies for Professional Growth (SPG) | IITM BS",
+    "description": "Week 11 — Quick Revision explained in Strategies for Professional Growth (SPG), Week 11. What is engineering sense?; The habits; From the discussions; Practi."
+  },
+  "/statistics/week-1/random-variables-pmf-and-cdf/": {
+    "title": "Lesson 1 — Random variables, PMF and CDF | Statistics",
+    "description": "Lesson 1 — Random variables, PMF and CDF explained in Statistics, Week 1. 1. What is a random variable?; 2. Probability Mass Function (PMF); 3. Cumulative Di."
+  },
+  "/statistics/week-1/lesson-2-discrete-vs-continuous-random-variables/": {
+    "title": "Lesson 2 — Discrete vs Continuous Random Variables | Statistics",
+    "description": "Lesson 2 — Discrete vs Continuous Random Variables explained in Statistics, Week 1. 7. Discrete does not mean finite; 8. Continuous random variables; 9. The."
+  },
+  "/statistics/week-1/lesson-3-probability-density-function-pdf/": {
+    "title": "Lesson 3 — Probability Density Function (PDF) | Statistics",
+    "description": "Lesson 3 — Probability Density Function (PDF) explained in Statistics, Week 1. 12. Why we need a PDF: density = probability per unit; 13. Probability is area."
+  },
+  "/statistics/week-1/lesson-4-solving-pdfs-using-integration/": {
+    "title": "Lesson 4 — Solving PDFs Using Integration | Statistics",
+    "description": "Lesson 4 — Solving PDFs Using Integration explained in Statistics, Week 1. 18. Changing density: why we integrate; 19. Worked numerical: f(x) = 2x; 20. Suppo."
+  },
+  "/statistics/week-1/lesson-5-the-cdf-of-a-continuous-random-variable/": {
+    "title": "Lesson 5 — The CDF of a Continuous Random Variable | Statistics",
+    "description": "Lesson 5 — The CDF of a Continuous Random Variable explained in Statistics, Week 1. 24. What the CDF is: accumulated probability; 25. From PDF to CDF: integr."
+  }
+}
