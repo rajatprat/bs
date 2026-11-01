@@ -1,0 +1,1183 @@
+{
+  "/software-engineering/week-4/": [
+    "/images/week-4/image1.webp"
+  ],
+  "/software-engineering/week-3/": [
+    "/images/week-3/image1.webp"
+  ],
+  "/software-engineering/week-2/": [
+    "/images/week-2/image44.webp"
+  ],
+  "/software-engineering/week-5/": [
+    "/images/week-5/image1.webp"
+  ],
+  "/software-engineering/week-9/": [
+    "/images/week-9/image1.webp"
+  ],
+  "/software-engineering/week-7/": [
+    "/images/week-7/image1.webp"
+  ],
+  "/software-engineering/week-1/": [
+    "/images/image1.webp"
+  ],
+  "/software-engineering/week-8/": [
+    "/images/week-8/image32.webp"
+  ],
+  "/software-engineering/week-10/": [
+    "/images/week-10/rId21.webp"
+  ],
+  "/software-engineering/week-11/": [
+    "/images/week-11/image1.webp"
+  ],
+  "/algorithms-in-data-science/week-2/chernoff-bounds/": [
+    "/images/algorithms-week-2/target.svg",
+    "/images/algorithms-week-2/why_chernoff.svg",
+    "/images/algorithms-week-2/taylor.svg",
+    "/images/algorithms-week-2/lambda.svg"
+  ],
+  "/algorithms-in-data-science/week-2/all-pairs-jl-guarantee/": [
+    "/images/algorithms-week-2/k_final.svg",
+    "/images/algorithms-week-2/any_pair.svg"
+  ],
+  "/algorithms-in-data-science/week-2/svd-interpretation/": [
+    "/images/algorithms-week-2/svd_ellipse.svg",
+    "/images/algorithms-week-2/singular_values.svg",
+    "/images/algorithms-week-2/coords.svg",
+    "/images/algorithms-week-2/random_directions.svg"
+  ],
+  "/algorithms-in-data-science/week-1/markov-s-inequality/": [
+    "/images/algorithms-week-1-updated/dice.svg",
+    "/images/algorithms-week-1-updated/markov_dice.svg"
+  ],
+  "/algorithms-in-data-science/week-1/chebyshev-s-inequality/": [
+    "/images/algorithms-week-1-updated/spread.svg",
+    "/images/algorithms-week-1-updated/bell_tails.svg",
+    "/images/algorithms-week-1-updated/chebyshev.svg"
+  ],
+  "/algorithms-in-data-science/week-1/hoeffding-s-inequality/": [
+    "/images/algorithms-week-1-updated/hoeffding.svg"
+  ],
+  "/algorithms-in-data-science/week-1/union-bound/": [
+    "/images/algorithms-week-1-updated/venn.svg"
+  ],
+  "/algorithms-in-data-science/week-1/johnson-lindenstrauss-lemma/": [
+    "/images/algorithms-week-1-updated/jl_k.svg"
+  ],
+  "/algorithms-in-data-science/week-1/random-linear-transformations/": [
+    "/images/algorithms-week-1-updated/rotation.svg",
+    "/images/algorithms-week-1-updated/shadow.svg"
+  ],
+  "/algorithms-in-data-science/week-1/gaussian-random-projections-and-why-we-scale/": [
+    "/images/algorithms-week-1-updated/dot_hist.svg",
+    "/images/algorithms-week-1-updated/ratio_k.svg"
+  ],
+  "/algorithms-in-data-science/week-1/completing-the-jl-proof/": [
+    "/images/algorithms-week-1-updated/tail_bound.svg",
+    "/images/algorithms-week-1-updated/jl_experiment.svg"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/why-we-use-expectations-instead-of-unknown-density-formulas/": [
+    "/images/generative-ai/week-1/part-2/image47.webp",
+    "/images/generative-ai/week-1/part-2/image46.webp",
+    "/images/generative-ai/week-1/part-2/image21.webp",
+    "/images/generative-ai/week-1/part-2/image22.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/supremum-and-infimum-the-language-of-optimization/": [
+    "/images/generative-ai/week-1/part-2/image23.webp",
+    "/images/generative-ai/week-1/part-2/image24.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/convex-conjugates-definition-optimization-and-geometry/": [
+    "/images/generative-ai/week-1/part-2/image48.webp",
+    "/images/generative-ai/week-1/part-2/image26.webp",
+    "/images/generative-ai/week-1/part-2/image27.webp",
+    "/images/generative-ai/week-1/part-2/image49.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/why-the-biconjugate-representation-matters/": [
+    "/images/generative-ai/week-1/part-2/image28.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/why-the-optimizing-scalar-becomes-a-function-t-x/": [
+    "/images/generative-ai/week-1/part-2/image29.webp",
+    "/images/generative-ai/week-1/part-2/image30.webp",
+    "/images/generative-ai/week-1/part-2/image31.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/the-variational-representation-of-f-divergence/": [
+    "/images/generative-ai/week-1/part-2/image33.webp",
+    "/images/generative-ai/week-1/part-2/image50.webp",
+    "/images/generative-ai/week-1/part-2/image32.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/turning-expectations-into-empirical-objectives/": [
+    "/images/generative-ai/week-1/part-2/image34.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-2/week-1-synthesis/": [
+    "/images/generative-ai/week-1/part-2/image35.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/what-are-deep-generative-models/": [
+    "/images/generative-ai/week-1/part-1/image19.webp",
+    "/images/generative-ai/week-1/part-1/image18.webp",
+    "/images/generative-ai/week-1/part-1/image17.webp",
+    "/images/generative-ai/week-1/part-1/image16.webp",
+    "/images/generative-ai/week-1/part-1/image15.webp",
+    "/images/generative-ai/week-1/part-1/image14.webp",
+    "/images/generative-ai/week-1/part-1/image13.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/the-core-generative-modeling-problem/": [
+    "/images/generative-ai/week-1/part-1/image12.webp",
+    "/images/generative-ai/week-1/part-1/image15.webp",
+    "/images/generative-ai/week-1/part-1/image37.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/training-and-sampling-are-different/": [
+    "/images/generative-ai/week-1/part-1/image10.webp",
+    "/images/generative-ai/week-1/part-1/image1.webp",
+    "/images/generative-ai/week-1/part-1/image9.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/detour-d-optimization-minimum-and-argmin-detailed/": [
+    "/images/generative-ai/week-1/part-1/image38.webp",
+    "/images/generative-ai/week-1/part-1/image8.webp",
+    "/images/generative-ai/week-1/part-1/image7.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/detour-e-convex-functions-detailed/": [
+    "/images/generative-ai/week-1/part-1/image36.webp",
+    "/images/generative-ai/week-1/part-1/image39.webp",
+    "/images/generative-ai/week-1/part-1/image3.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/why-convexity-enters-f-divergence/": [
+    "/images/generative-ai/week-1/part-1/image40.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-1/part-1/examples-kl-js-and-total-variation/": [
+    "/images/generative-ai/week-1/part-1/image5.webp",
+    "/images/generative-ai/week-1/part-1/image41.webp",
+    "/images/generative-ai/week-1/part-1/image42.webp",
+    "/images/generative-ai/week-1/part-1/image43.webp",
+    "/images/generative-ai/week-1/part-1/image44.webp",
+    "/images/generative-ai/week-1/part-1/image45.webp"
+  ],
+  "/software-engineering/week-4/lecture-1-project-management-overview/": [
+    "/images/week-4/image1.webp",
+    "/images/week-4/image2.webp",
+    "/images/week-4/image3.webp",
+    "/images/week-4/image4.webp",
+    "/images/week-4/image5.webp"
+  ],
+  "/software-engineering/week-4/lecture-2-project-estimation-techniques/": [
+    "/images/week-4/image6.webp",
+    "/images/week-4/image7.webp",
+    "/images/week-4/image8.webp",
+    "/images/week-4/image9.webp",
+    "/images/week-4/image10.webp",
+    "/images/week-4/image11.webp",
+    "/images/week-4/image12.webp",
+    "/images/week-4/image13.webp",
+    "/images/week-4/image14.webp",
+    "/images/week-4/image15.webp"
+  ],
+  "/software-engineering/week-4/lecture-3-project-scheduling/": [
+    "/images/week-4/image16.webp",
+    "/images/week-4/image18.webp",
+    "/images/week-4/image19.webp",
+    "/images/week-4/image20.webp",
+    "/images/week-4/image21.webp"
+  ],
+  "/software-engineering/week-4/lecture-4-risk-management/": [
+    "/images/week-4/image23.webp",
+    "/images/week-4/image24.webp",
+    "/images/week-4/image25.webp",
+    "/images/week-4/image26.webp",
+    "/images/week-4/image27.webp",
+    "/images/week-4/image28.webp",
+    "/images/week-4/image29.webp",
+    "/images/week-4/image30.webp"
+  ],
+  "/software-engineering/week-4/lecture-5-project-management-in-agile/": [
+    "/images/week-4/image31.webp",
+    "/images/week-4/image32.webp",
+    "/images/week-4/image33.webp",
+    "/images/week-4/image34.webp",
+    "/images/week-4/image35.webp",
+    "/images/week-4/image36.webp",
+    "/images/week-4/image37.webp",
+    "/images/week-4/image38.webp",
+    "/images/week-4/image39.webp"
+  ],
+  "/software-engineering/week-4/lecture-6-pivotal-tracker-tutorial/": [
+    "/images/week-4/image40.webp",
+    "/images/week-4/image41.webp",
+    "/images/week-4/image42.webp",
+    "/images/week-4/image43.webp",
+    "/images/week-4/image44.webp",
+    "/images/week-4/image45.webp",
+    "/images/week-4/image46.webp"
+  ],
+  "/software-engineering/week-3/introduction-to-interaction-design/": [
+    "/images/week-3/image1.webp",
+    "/images/week-3/image2.webp",
+    "/images/week-3/image3.webp",
+    "/images/week-3/image4.webp"
+  ],
+  "/software-engineering/week-3/usability-goals-and-user-experience-goals/": [
+    "/images/week-3/image41.webp"
+  ],
+  "/software-engineering/week-3/usability-goals/": [
+    "/images/week-3/image5.webp",
+    "/images/week-3/image6.webp",
+    "/images/week-3/image7.webp",
+    "/images/week-3/image8.webp",
+    "/images/week-3/image9.webp",
+    "/images/week-3/image10.webp",
+    "/images/week-3/image11.webp",
+    "/images/week-3/image12.webp",
+    "/images/week-3/image13.webp"
+  ],
+  "/software-engineering/week-3/prototyping-techniques/": [
+    "/images/week-3/image14.webp",
+    "/images/week-3/image15.webp",
+    "/images/week-3/image16.webp",
+    "/images/week-3/image17.webp",
+    "/images/week-3/image18.webp",
+    "/images/week-3/image19.webp",
+    "/images/week-3/image20.webp",
+    "/images/week-3/image21.webp",
+    "/images/week-3/image22.webp"
+  ],
+  "/software-engineering/week-3/design-heuristics-understanding/": [
+    "/images/week-3/image23.webp",
+    "/images/week-3/image24.webp",
+    "/images/week-3/image25.webp",
+    "/images/week-3/image26.webp",
+    "/images/week-3/image27.webp"
+  ],
+  "/software-engineering/week-3/design-heuristics-action/": [
+    "/images/week-3/image28.webp",
+    "/images/week-3/image29.webp",
+    "/images/week-3/image30.webp",
+    "/images/week-3/image31.webp",
+    "/images/week-3/image32.webp"
+  ],
+  "/software-engineering/week-3/design-heuristics-feedback/": [
+    "/images/week-3/image33.webp",
+    "/images/week-3/image34.webp",
+    "/images/week-3/image35.webp",
+    "/images/week-3/image36.webp",
+    "/images/week-3/image37.webp",
+    "/images/week-3/image38.webp",
+    "/images/week-3/image40.webp"
+  ],
+  "/software-engineering/week-2/why-do-requirements-matter/": [
+    "/images/week-2/image44.webp",
+    "/images/week-2/image45.webp"
+  ],
+  "/software-engineering/week-2/who-should-we-ask-stakeholders-and-users/": [
+    "/images/week-2/image46.webp",
+    "/images/week-2/image47.webp"
+  ],
+  "/software-engineering/week-2/requirement-analysis-spotting-problems/": [
+    "/images/week-2/image48.webp",
+    "/images/week-2/image49.webp",
+    "/images/week-2/image50.webp"
+  ],
+  "/software-engineering/week-2/five-ways-to-gather-requirements/": [
+    "/images/week-2/image51.webp"
+  ],
+  "/software-engineering/week-2/questionnaires-and-interviews/": [
+    "/images/week-2/image52.webp",
+    "/images/week-2/image53.webp",
+    "/images/week-2/image54.webp"
+  ],
+  "/software-engineering/week-2/focus-groups-observation-and-existing-documents/": [
+    "/images/week-2/image55.webp",
+    "/images/week-2/image56.webp",
+    "/images/week-2/image57.webp"
+  ],
+  "/software-engineering/week-2/practical-guidelines-and-sample-portal-features/": [
+    "/images/week-2/image65.webp",
+    "/images/week-2/image58.webp"
+  ],
+  "/software-engineering/week-2/functional-versus-non-functional-requirements/": [
+    "/images/week-2/image59.webp",
+    "/images/week-2/image60.webp"
+  ],
+  "/software-engineering/week-2/reliability-robustness-and-other-quality-requirements/": [
+    "/images/week-2/image61.webp",
+    "/images/week-2/image62.webp"
+  ],
+  "/software-engineering/week-2/what-is-an-srs/": [
+    "/images/week-2/image63.webp"
+  ],
+  "/software-engineering/week-2/what-kinds-of-interfaces-appear-in-an-srs/": [
+    "/images/week-2/image64.webp",
+    "/images/week-2/image65.webp"
+  ],
+  "/software-engineering/week-2/why-use-an-srs/": [
+    "/images/week-2/image66.webp"
+  ],
+  "/software-engineering/week-2/behaviour-driven-design-bdd/": [
+    "/images/week-2/image67.webp"
+  ],
+  "/software-engineering/week-2/the-user-story-template/": [
+    "/images/week-2/image68.webp",
+    "/images/week-2/image69.webp"
+  ],
+  "/software-engineering/week-2/why-are-user-stories-useful/": [
+    "/images/week-2/image70.webp",
+    "/images/week-2/image71.webp"
+  ],
+  "/software-engineering/week-2/smart-user-stories/": [
+    "/images/week-2/image72.webp"
+  ],
+  "/software-engineering/week-2/smart-how-to-improve-a-story/": [
+    "/images/week-2/image73.webp",
+    "/images/week-2/image74.webp"
+  ],
+  "/software-engineering/week-2/user-story-limits-and-choosing-an-approach/": [
+    "/images/week-2/image75.webp"
+  ],
+  "/software-engineering/week-5/lecture-1-introduction-to-software-design/": [
+    "/images/week-5/image1.webp",
+    "/images/week-5/image2.webp",
+    "/images/week-5/image3.webp",
+    "/images/week-5/image4.webp",
+    "/images/week-5/image5.webp",
+    "/images/week-5/image6.webp"
+  ],
+  "/software-engineering/week-5/lecture-2-design-modularity/": [
+    "/images/week-5/image7.webp",
+    "/images/week-5/image8.webp",
+    "/images/week-5/image9.webp",
+    "/images/week-5/image10.webp",
+    "/images/week-5/image11.webp",
+    "/images/week-5/image12.webp",
+    "/images/week-5/image13.webp",
+    "/images/week-5/image14.webp",
+    "/images/week-5/image15.webp",
+    "/images/week-5/image16.webp",
+    "/images/week-5/image17.webp",
+    "/images/week-5/image18.webp",
+    "/images/week-5/image19.webp",
+    "/images/week-5/image20.webp",
+    "/images/week-5/image21.webp",
+    "/images/week-5/image22.webp"
+  ],
+  "/software-engineering/week-5/lecture-3-object-oriented-design-basic-concepts/": [
+    "/images/week-5/image23.webp",
+    "/images/week-5/image24.webp",
+    "/images/week-5/image25.webp",
+    "/images/week-5/image26.webp",
+    "/images/week-5/image27.webp",
+    "/images/week-5/image28.webp",
+    "/images/week-5/image29.webp",
+    "/images/week-5/image30.webp",
+    "/images/week-5/image31.webp",
+    "/images/week-5/image32.webp"
+  ],
+  "/software-engineering/week-5/lecture-4-unified-modeling-language-uml-diagrams/": [
+    "/images/week-5/image33.webp",
+    "/images/week-5/image34.webp",
+    "/images/week-5/image35.webp",
+    "/images/week-5/image36.webp",
+    "/images/week-5/image37.webp",
+    "/images/week-5/image38.webp",
+    "/images/week-5/image39.webp",
+    "/images/week-5/image40.webp",
+    "/images/week-5/image41.webp"
+  ],
+  "/software-engineering/week-5/lecture-5-verisim-comprehending-software-designs/": [
+    "/images/week-5/image42.webp",
+    "/images/week-5/image43.webp",
+    "/images/week-5/image44.webp",
+    "/images/week-5/image45.webp",
+    "/images/week-5/image46.webp",
+    "/images/week-5/image47.webp"
+  ],
+  "/software-engineering/week-9/why-do-we-test-software/": [
+    "/images/week-9/image1.webp"
+  ],
+  "/software-engineering/week-9/one-small-bug-big-consequences/": [
+    "/images/week-9/image2.webp"
+  ],
+  "/software-engineering/week-9/verification-vs-validation/": [
+    "/images/week-9/image3.webp"
+  ],
+  "/software-engineering/week-9/how-software-testing-works/": [
+    "/images/week-9/image4.webp"
+  ],
+  "/software-engineering/week-9/what-is-a-test-case/": [
+    "/images/week-9/image5.webp"
+  ],
+  "/software-engineering/week-9/test-case-vs-test-suite/": [
+    "/images/week-9/image6.webp"
+  ],
+  "/software-engineering/week-9/random-vs-planned-testing/": [
+    "/images/week-9/image7.webp"
+  ],
+  "/software-engineering/week-9/can-we-test-every-input/": [
+    "/images/week-9/image44.webp"
+  ],
+  "/software-engineering/week-9/levels-of-software-testing/": [
+    "/images/week-9/image42.webp"
+  ],
+  "/software-engineering/week-9/unit-vs-integration-testing/": [
+    "/images/week-9/image8.webp"
+  ],
+  "/software-engineering/week-9/alpha-vs-beta-testing/": [
+    "/images/week-9/image9.webp"
+  ],
+  "/software-engineering/week-9/acceptance-testing/": [
+    "/images/week-9/image10.webp"
+  ],
+  "/software-engineering/week-9/black-box-testing/": [
+    "/images/week-9/image45.webp"
+  ],
+  "/software-engineering/week-9/equivalence-class-partitioning/": [
+    "/images/week-9/image11.webp"
+  ],
+  "/software-engineering/week-9/equivalence-classes-for-min-x-y/": [
+    "/images/week-9/image46.webp"
+  ],
+  "/software-engineering/week-9/testing-is-prime-num/": [
+    "/images/week-9/image12.webp"
+  ],
+  "/software-engineering/week-9/boundary-value-analysis/": [
+    "/images/week-9/image13.webp"
+  ],
+  "/software-engineering/week-9/boundary-cases-for-is-prime/": [
+    "/images/week-9/image14.webp"
+  ],
+  "/software-engineering/week-9/designing-black-box-tests/": [
+    "/images/week-9/image15.webp"
+  ],
+  "/software-engineering/week-9/white-box-testing/": [
+    "/images/week-9/image16.webp"
+  ],
+  "/software-engineering/week-9/black-box-vs-white-box-testing/": [
+    "/images/week-9/image47.webp"
+  ],
+  "/software-engineering/week-9/branch-coverage/": [
+    "/images/week-9/image17.webp"
+  ],
+  "/software-engineering/week-9/testing-both-branches-of-min-x-y/": [
+    "/images/week-9/image18.webp"
+  ],
+  "/software-engineering/week-9/branch-coverage-is-prime/": [
+    "/images/week-9/image19.webp"
+  ],
+  "/software-engineering/week-9/testing-individual-conditions/": [
+    "/images/week-9/image20.webp"
+  ],
+  "/software-engineering/week-9/branch-vs-condition-coverage/": [
+    "/images/week-9/image21.webp"
+  ],
+  "/software-engineering/week-9/control-flow-graph/": [
+    "/images/week-9/image22.webp"
+  ],
+  "/software-engineering/week-9/independent-paths-in-is-prime/": [
+    "/images/week-9/image23.webp"
+  ],
+  "/software-engineering/week-9/cyclomatic-complexity/": [
+    "/images/week-9/image24.webp"
+  ],
+  "/software-engineering/week-9/why-unit-testing-matters/": [
+    "/images/week-9/image25.webp"
+  ],
+  "/software-engineering/week-9/unit-testing-during-development/": [
+    "/images/week-9/image26.webp"
+  ],
+  "/software-engineering/week-9/unit-testing-environment/": [
+    "/images/week-9/image27.webp"
+  ],
+  "/software-engineering/week-9/what-is-a-stub/": [
+    "/images/week-9/image28.webp"
+  ],
+  "/software-engineering/week-9/what-is-a-test-driver/": [
+    "/images/week-9/image29.webp"
+  ],
+  "/software-engineering/week-9/python-unit-testing-tools/": [
+    "/images/week-9/image30.webp"
+  ],
+  "/software-engineering/week-9/how-pytest-finds-tests/": [
+    "/images/week-9/image31.webp"
+  ],
+  "/software-engineering/week-9/understanding-assert/": [
+    "/images/week-9/image32.webp"
+  ],
+  "/software-engineering/week-9/seller-portal-inventory/": [
+    "/images/week-9/image33.webp"
+  ],
+  "/software-engineering/week-9/testing-inventory-addition/": [
+    "/images/week-9/image34.webp"
+  ],
+  "/software-engineering/week-9/a-unit-test-catches-a-bug/": [
+    "/images/week-9/image43.webp"
+  ],
+  "/software-engineering/week-9/testing-inventory-deletion/": [
+    "/images/week-9/image35.webp"
+  ],
+  "/software-engineering/week-9/pytest-fixtures-reusable-setup/": [
+    "/images/week-9/image36.webp"
+  ],
+  "/software-engineering/week-9/testing-expected-exceptions/": [
+    "/images/week-9/image37.webp"
+  ],
+  "/software-engineering/week-9/traditional-development-vs-tdd/": [
+    "/images/week-9/image38.webp"
+  ],
+  "/software-engineering/week-9/red-green-refactor/": [
+    "/images/week-9/image39.webp"
+  ],
+  "/software-engineering/week-9/building-is-prime-with-tdd/": [
+    "/images/week-9/image40.webp"
+  ],
+  "/software-engineering/week-9/testing-is-prime-important-cases/": [
+    "/images/week-9/image41.webp"
+  ],
+  "/software-engineering/week-7/module-1-introduction-to-software-development/": [
+    "/images/week-7/image1.webp",
+    "/images/week-7/image2.webp",
+    "/images/week-7/image3.webp",
+    "/images/week-7/image4.webp",
+    "/images/week-7/image5.webp",
+    "/images/week-7/image6.webp",
+    "/images/week-7/image7.webp",
+    "/images/week-7/image8.webp"
+  ],
+  "/software-engineering/week-7/module-2-version-control-systems/": [
+    "/images/week-7/image9.webp",
+    "/images/week-7/image10.webp",
+    "/images/week-7/image11.webp",
+    "/images/week-7/image12.webp",
+    "/images/week-7/image13.webp",
+    "/images/week-7/image14.webp",
+    "/images/week-7/image15.webp",
+    "/images/week-7/image16.webp",
+    "/images/week-7/image17.webp",
+    "/images/week-7/image18.webp",
+    "/images/week-7/image19.webp",
+    "/images/week-7/image20.webp",
+    "/images/week-7/image21.webp",
+    "/images/week-7/image22.webp",
+    "/images/week-7/image23.webp",
+    "/images/week-7/image24.webp",
+    "/images/week-7/image25.webp",
+    "/images/week-7/image26.webp",
+    "/images/week-7/image27.webp",
+    "/images/week-7/image28.webp"
+  ],
+  "/software-engineering/week-7/module-3-issue-tracking-and-code-review/": [
+    "/images/week-7/image29.webp",
+    "/images/week-7/image30.webp",
+    "/images/week-7/image31.webp",
+    "/images/week-7/image33.webp",
+    "/images/week-7/image34.webp",
+    "/images/week-7/image35.webp",
+    "/images/week-7/image36.webp",
+    "/images/week-7/image37.webp",
+    "/images/week-7/image38.webp",
+    "/images/week-7/image39.webp"
+  ],
+  "/software-engineering/week-7/module-4-debugging/": [
+    "/images/week-7/image40.webp",
+    "/images/week-7/image41.webp",
+    "/images/week-7/image42.webp",
+    "/images/week-7/image43.webp",
+    "/images/week-7/image44.webp",
+    "/images/week-7/image45.webp",
+    "/images/week-7/image46.webp",
+    "/images/week-7/image47.webp",
+    "/images/week-7/image48.webp",
+    "/images/week-7/image49.webp",
+    "/images/week-7/image50.webp",
+    "/images/week-7/image51.webp",
+    "/images/week-7/image52.webp"
+  ],
+  "/software-engineering/week-7/module-5-software-metrics/": [
+    "/images/week-7/image53.webp",
+    "/images/week-7/image54.webp",
+    "/images/week-7/image55.webp",
+    "/images/week-7/image56.webp",
+    "/images/week-7/image57.webp",
+    "/images/week-7/image58.webp",
+    "/images/week-7/image59.webp",
+    "/images/week-7/image60.webp"
+  ],
+  "/software-engineering/week-7/module-6-writing-clean-code/": [
+    "/images/week-7/image61.webp",
+    "/images/week-7/image62.webp",
+    "/images/week-7/image63.webp",
+    "/images/week-7/image64.webp",
+    "/images/week-7/image65.webp",
+    "/images/week-7/image66.webp",
+    "/images/week-7/image67.webp",
+    "/images/week-7/image68.webp",
+    "/images/week-7/image69.webp"
+  ],
+  "/software-engineering/week-1/what-is-software-engineering/": [
+    "/images/image2.webp"
+  ],
+  "/software-engineering/week-1/large-software-is-built-from-components/": [
+    "/images/image3.webp",
+    "/images/image4.webp",
+    "/images/image5.webp"
+  ],
+  "/software-engineering/week-1/requirement-specification-decide-what-to-build/": [
+    "/images/image6.webp",
+    "/images/image7.webp"
+  ],
+  "/software-engineering/week-1/software-design-create-the-big-picture/": [
+    "/images/image8.webp",
+    "/images/image29.webp",
+    "/images/image9.webp"
+  ],
+  "/software-engineering/week-1/development-write-code-that-fits-together/": [
+    "/images/image10.webp",
+    "/images/image11.webp"
+  ],
+  "/software-engineering/week-1/testing-check-the-system-before-release/": [
+    "/images/image12.webp",
+    "/images/image13.webp"
+  ],
+  "/software-engineering/week-1/maintenance-software-still-needs-care/": [
+    "/images/image14.webp",
+    "/images/image15.webp"
+  ],
+  "/software-engineering/week-1/build-and-fix-an-early-coding-approach/": [
+    "/images/image16.webp",
+    "/images/image30.webp"
+  ],
+  "/software-engineering/week-1/waterfall-the-plan-and-document-approach/": [
+    "/images/image17.webp",
+    "/images/image18.webp"
+  ],
+  "/software-engineering/week-1/prototype-model-show-a-simple-sample-early/": [
+    "/images/image19.webp"
+  ],
+  "/software-engineering/week-1/spiral-model-refine-through-repeated-rounds/": [
+    "/images/image20.webp",
+    "/images/image31.webp"
+  ],
+  "/software-engineering/week-1/agile-working-software-feedback-and-change/": [
+    "/images/image21.webp",
+    "/images/image28.webp",
+    "/images/image22.webp"
+  ],
+  "/software-engineering/week-1/agile-approaches-and-practices/": [
+    "/images/image23.webp",
+    "/images/image24.webp",
+    "/images/image25.webp"
+  ],
+  "/software-engineering/week-1/how-do-we-choose-a-development-approach/": [
+    "/images/image26.webp",
+    "/images/image27.webp"
+  ],
+  "/software-engineering/week-8/software-architecture/": [
+    "/images/week-8/image32.webp",
+    "/images/week-8/image33.webp",
+    "/images/week-8/image34.webp",
+    "/images/week-8/image35.webp",
+    "/images/week-8/image37.webp",
+    "/images/week-8/image38.webp",
+    "/images/week-8/image39.webp"
+  ],
+  "/software-engineering/week-8/solid-five-principles-for-maintainable-object-oriented-design/": [
+    "/images/week-8/image1.webp",
+    "/images/week-8/image2.webp",
+    "/images/week-8/image3.webp",
+    "/images/week-8/image4.webp",
+    "/images/week-8/image5.webp",
+    "/images/week-8/image6.webp",
+    "/images/week-8/image7.webp",
+    "/images/week-8/image8.webp",
+    "/images/week-8/image9.webp",
+    "/images/week-8/image10.webp",
+    "/images/week-8/image12.webp",
+    "/images/week-8/image13.webp",
+    "/images/week-8/image14.webp",
+    "/images/week-8/image15.webp",
+    "/images/week-8/image16.webp",
+    "/images/week-8/image17.webp",
+    "/images/week-8/image19.webp",
+    "/images/week-8/image23.webp",
+    "/images/week-8/image24.webp",
+    "/images/week-8/image25.webp",
+    "/images/week-8/image26.webp",
+    "/images/week-8/image27.webp",
+    "/images/week-8/image30.webp",
+    "/images/week-8/image31.webp"
+  ],
+  "/software-engineering/week-8/creational-design-patterns/": [
+    "/images/week-8/image40.webp",
+    "/images/week-8/image41.webp",
+    "/images/week-8/image42.webp"
+  ],
+  "/software-engineering/week-8/structural-design-patterns/": [
+    "/images/week-8/image43.webp",
+    "/images/week-8/image44.webp",
+    "/images/week-8/image45.webp"
+  ],
+  "/software-engineering/week-8/behavioral-design-patterns/": [
+    "/images/week-8/image46.webp",
+    "/images/week-8/image47.webp",
+    "/images/week-8/image48.webp"
+  ],
+  "/software-engineering/week-10/where-week-10-fits-in-the-software-life-cycle/": [
+    "/images/week-10/rId21.webp"
+  ],
+  "/software-engineering/week-10/part-1-deployment-environments/": [
+    "/images/week-10/rId25.webp",
+    "/images/week-10/rId29.webp",
+    "/images/week-10/rId33.webp",
+    "/images/week-10/rId37.webp",
+    "/images/week-10/rId42.webp"
+  ],
+  "/software-engineering/week-10/part-2-deployment-strategies/": [
+    "/images/week-10/rId51.webp",
+    "/images/week-10/rId48.webp",
+    "/images/week-10/rId54.webp",
+    "/images/week-10/rId61.webp",
+    "/images/week-10/rId64.webp",
+    "/images/week-10/rId70.webp",
+    "/images/week-10/new-versioned-deployment.webp"
+  ],
+  "/software-engineering/week-10/part-3-deployment-hosting/": [
+    "/images/week-10/rId78.webp",
+    "/images/week-10/rId82.webp",
+    "/images/week-10/rId92.webp",
+    "/images/week-10/rId100.webp",
+    "/images/week-10/rId103.webp"
+  ],
+  "/software-engineering/week-10/part-4-tutorial-iaas-with-digitalocean/": [
+    "/images/week-10/rId109.webp",
+    "/images/week-10/rId118.webp",
+    "/images/week-10/rId125.webp",
+    "/images/week-10/rId129.webp",
+    "/images/week-10/rId138.webp"
+  ],
+  "/software-engineering/week-10/part-5-tutorial-paas-with-heroku/": [
+    "/images/week-10/rId143.webp",
+    "/images/week-10/rId146.webp",
+    "/images/week-10/rId150.webp",
+    "/images/week-10/rId155.webp",
+    "/images/week-10/rId165.webp",
+    "/images/week-10/rId172.webp"
+  ],
+  "/software-engineering/week-10/part-6-continuous-integration-ci/": [
+    "/images/week-10/rId178.webp",
+    "/images/week-10/rId181.webp",
+    "/images/week-10/rId185.webp",
+    "/images/week-10/rId192.webp",
+    "/images/week-10/rId195.webp",
+    "/images/week-10/rId198.webp",
+    "/images/week-10/rId202.webp"
+  ],
+  "/software-engineering/week-10/part-7-performance/": [
+    "/images/week-10/rId220.webp",
+    "/images/week-10/rId223.webp",
+    "/images/week-10/rId226.webp",
+    "/images/week-10/rId229.webp",
+    "/images/week-10/rId239.webp",
+    "/images/week-10/rId242.webp",
+    "/images/week-10/rId250.webp",
+    "/images/week-10/rId254.webp"
+  ],
+  "/software-engineering/week-10/part-8-monitoring/": [
+    "/images/week-10/rId263.webp",
+    "/images/week-10/rId267.webp",
+    "/images/week-10/rId270.webp",
+    "/images/week-10/rId277.webp",
+    "/images/week-10/rId281.webp",
+    "/images/week-10/rId284.webp",
+    "/images/week-10/rId288.webp",
+    "/images/week-10/rId292.webp",
+    "/images/week-10/rId297.webp",
+    "/images/week-10/rId301.webp"
+  ],
+  "/software-engineering/week-11/part-a-software-organizations/": [
+    "/images/week-11/image1.webp",
+    "/images/week-11/image2.webp",
+    "/images/week-11/image3.webp",
+    "/images/week-11/image4.webp",
+    "/images/week-11/image5.webp",
+    "/images/week-11/image6.webp",
+    "/images/week-11/image7.webp",
+    "/images/week-11/image8.webp",
+    "/images/week-11/image9.webp",
+    "/images/week-11/image10.webp",
+    "/images/week-11/image11.webp",
+    "/images/week-11/image12.webp"
+  ],
+  "/software-engineering/week-11/part-b-communication-collaboration-productivity/": [
+    "/images/week-11/image13.webp",
+    "/images/week-11/image14.webp",
+    "/images/week-11/image15.webp",
+    "/images/week-11/image16.webp",
+    "/images/week-11/image17.webp",
+    "/images/week-11/image18.webp",
+    "/images/week-11/image19.webp",
+    "/images/week-11/image20.webp",
+    "/images/week-11/image21.webp",
+    "/images/week-11/image22.webp"
+  ],
+  "/software-engineering/week-11/part-c-what-makes-a-great-software-engineer/": [
+    "/images/week-11/image23.webp",
+    "/images/week-11/image24.webp",
+    "/images/week-11/image25.webp",
+    "/images/week-11/image26.webp",
+    "/images/week-11/image27.webp"
+  ],
+  "/spg/week-4/introduction-to-leadership/": [
+    "/images/spg-week-4/img01-three-parts.webp",
+    "/images/spg-week-4/img02-leadership-challenges.webp"
+  ],
+  "/spg/week-4/lead-yourself-values-spheres-choice/": [
+    "/images/spg-week-4/img03-values-compass.webp",
+    "/images/spg-week-4/img04-spheres.webp"
+  ],
+  "/spg/week-4/lead-yourself-ownership-potential-invest/": [
+    "/images/spg-week-4/img05-victim-owner.webp",
+    "/images/spg-week-4/img06-strength-weakness.webp",
+    "/images/spg-week-4/img07-invest-in-yourself.webp"
+  ],
+  "/spg/week-4/lead-yourself-to-lead-others-1/": [
+    "/images/spg-week-4/img08-growth-mindset.webp",
+    "/images/spg-week-4/img09-time-energy.webp",
+    "/images/spg-week-4/img10-emotional-resilience.webp"
+  ],
+  "/spg/week-4/lead-yourself-to-lead-others-2/": [
+    "/images/spg-week-4/img11-embrace-change.webp",
+    "/images/spg-week-4/img12-inner-conflict.webp",
+    "/images/spg-week-4/img13-delegate.webp",
+    "/images/spg-week-4/img14-collaborative-leader.webp"
+  ],
+  "/spg/week-4/lead-others-to-lead-themselves/": [
+    "/images/spg-week-4/img15-gung-ho-animals.webp",
+    "/images/spg-week-4/img16-geese-v.webp",
+    "/images/spg-week-4/img17-lampshade.webp"
+  ],
+  "/spg/week-4/week-4-quick-revision/": [
+    "/images/spg-week-4/img18-week4-map.webp"
+  ],
+  "/spg/week-3/why-and-whom-to-communicate/": [
+    "/images/spg-week-3/img01-four-reasons.webp",
+    "/images/spg-week-3/img02-broken-chair.webp",
+    "/images/spg-week-3/img03-long-vs-short.webp"
+  ],
+  "/spg/week-3/emails-manager-team-customer/": [
+    "/images/spg-week-3/img04-recipients.webp",
+    "/images/spg-week-3/img05-email-structure.webp",
+    "/images/spg-week-3/img06-daily-report.webp",
+    "/images/spg-week-3/img07-customer-service.webp"
+  ],
+  "/spg/week-3/presentation-setting-and-constraints/": [
+    "/images/spg-week-3/img08-outline-tracker.webp",
+    "/images/spg-week-3/img09-constraints.webp"
+  ],
+  "/spg/week-3/presentation-audience-and-illustrations/": [
+    "/images/spg-week-3/img10-connect-audience.webp",
+    "/images/spg-week-3/img11-illustration-types.webp",
+    "/images/spg-week-3/img12-scale-person.webp"
+  ],
+  "/spg/week-3/writing-a-report-why-and-purpose/": [
+    "/images/spg-week-3/img13-why-write.webp",
+    "/images/spg-week-3/img14-purpose.webp"
+  ],
+  "/spg/week-3/writing-a-report-structure-and-language/": [
+    "/images/spg-week-3/img15-report-structure.webp",
+    "/images/spg-week-3/img16-language-rules.webp"
+  ],
+  "/spg/week-3/week-3-quick-revision/": [
+    "/images/spg-week-3/img17-week3-map.webp"
+  ],
+  "/spg/week-2/types-of-communication/": [
+    "/images/spg-week-2/img01-seven-pairs.webp",
+    "/images/spg-week-2/img02-thought-word-deed.webp"
+  ],
+  "/spg/week-2/psychological-barriers/": [
+    "/images/spg-week-2/img03-five-barriers.webp",
+    "/images/spg-week-2/img04-inner-chatter.webp",
+    "/images/spg-week-2/img05-distortion.webp"
+  ],
+  "/spg/week-2/language-barriers/": [
+    "/images/spg-week-2/img06-same-word.webp",
+    "/images/spg-week-2/img07-language-shield.webp"
+  ],
+  "/spg/week-2/cultural-barriers/": [
+    "/images/spg-week-2/img22-head-nod.webp",
+    "/images/spg-week-2/img23-context-cultures.webp"
+  ],
+  "/spg/week-2/organisational-barriers/": [
+    "/images/spg-week-2/img08-hierarchy.webp",
+    "/images/spg-week-2/img09-two-bosses.webp"
+  ],
+  "/spg/week-2/physical-barriers-activities/": [
+    "/images/spg-week-2/img10-action-relay.webp",
+    "/images/spg-week-2/img11-describe-draw.webp"
+  ],
+  "/spg/week-2/tips-for-effective-communication/": [
+    "/images/spg-week-2/img12-message-chain.webp",
+    "/images/spg-week-2/img13-scale.webp"
+  ],
+  "/spg/week-2/ten-cs-of-communication/": [
+    "/images/spg-week-2/img14-ten-cs-wheel.webp"
+  ],
+  "/spg/week-2/what-is-listening/": [
+    "/images/spg-week-2/img15-noise-in-head.webp",
+    "/images/spg-week-2/img16-passive-listening.webp",
+    "/images/spg-week-2/img17-active-listening.webp"
+  ],
+  "/spg/week-2/listening-to-the-future/": [
+    "/images/spg-week-2/img18-listening-future.webp",
+    "/images/spg-week-2/img19-busy-doctor.webp",
+    "/images/spg-week-2/img20-four-filters.webp"
+  ],
+  "/spg/week-2/week-2-quick-revision/": [
+    "/images/spg-week-2/img21-week2-map.webp"
+  ],
+  "/spg/week-5/what-is-emotional-intelligence/": [
+    "/images/spg-week-5/img01-head-and-heart.webp",
+    "/images/spg-week-5/img02-stimulus-response.webp"
+  ],
+  "/spg/week-5/the-6r-framework/": [
+    "/images/spg-week-5/img03-six-r.webp",
+    "/images/spg-week-5/img04-rationalise.webp",
+    "/images/spg-week-5/img05-amygdala-hijack.webp"
+  ],
+  "/spg/week-5/goleman-five-principles/": [
+    "/images/spg-week-5/img06-goleman-five.webp",
+    "/images/spg-week-5/img07-anger-to-motivation.webp"
+  ],
+  "/spg/week-5/what-is-conflict-management/": [
+    "/images/spg-week-5/img08-four-conflicts.webp"
+  ],
+  "/spg/week-5/conflict-management-styles/": [
+    "/images/spg-week-5/img09-five-styles.webp",
+    "/images/spg-week-5/img10-outcomes.webp"
+  ],
+  "/spg/week-5/ei-and-conflict-applied/": [
+    "/images/spg-week-5/img11-heart-of-department.webp",
+    "/images/spg-week-5/img12-customer-delight.webp",
+    "/images/spg-week-5/img13-assertive.webp"
+  ],
+  "/spg/week-5/week-5-quick-revision/": [
+    "/images/spg-week-5/img14-week5-map.webp"
+  ],
+  "/spg/week-12/feed-your-mind/": [
+    "/images/spg-week-12/img01-feed-your-mind.webp",
+    "/images/spg-week-12/img02-lifelong-learner.webp"
+  ],
+  "/spg/week-12/use-what-you-learn/": [
+    "/images/spg-week-12/img03-ice-stupa.webp",
+    "/images/spg-week-12/img04-two-visitors.webp",
+    "/images/spg-week-12/img05-shoe-sellers.webp"
+  ],
+  "/spg/week-12/failure-fear-and-panic/": [
+    "/images/spg-week-12/img06-panic-vs-pause.webp",
+    "/images/spg-week-12/img07-three-tools.webp"
+  ],
+  "/spg/week-12/manage-stress-and-energy/": [
+    "/images/spg-week-12/img08-energy-practices.webp",
+    "/images/spg-week-12/img09-muddy-water.webp"
+  ],
+  "/spg/week-12/manage-time-and-rituals/": [
+    "/images/spg-week-12/img10-eisenhower.webp",
+    "/images/spg-week-12/img11-one-three-five.webp"
+  ],
+  "/spg/week-12/advice-from-a-career/": [
+    "/images/spg-week-12/img12-no-one-watching.webp"
+  ],
+  "/spg/week-12/lead-aim-higher-stay-honest/": [
+    "/images/spg-week-12/img13-lamp-radius.webp"
+  ],
+  "/spg/week-12/week-12-quick-revision/": [
+    "/images/spg-week-12/img14-week12-map.webp"
+  ],
+  "/spg/week-9/fixed-vs-growth-mindset/": [
+    "/images/spg-week-9/img01-fixed-vs-growth.webp",
+    "/images/spg-week-9/img02-power-words.webp"
+  ],
+  "/spg/week-9/zones-of-growth-and-rejection/": [
+    "/images/spg-week-9/img03-four-zones.webp",
+    "/images/spg-week-9/img04-juggling.webp",
+    "/images/spg-week-9/img05-rejection.webp"
+  ],
+  "/spg/week-9/end-negative-self-talk/": [
+    "/images/spg-week-9/img06-upside-down.webp",
+    "/images/spg-week-9/img07-abra.webp"
+  ],
+  "/spg/week-9/benefits-of-failure-and-mouse-merchant/": [
+    "/images/spg-week-9/img08-stepping-stones.webp",
+    "/images/spg-week-9/img09-mouse-merchant.webp"
+  ],
+  "/spg/week-9/abundance-mindset-and-card-game/": [
+    "/images/spg-week-9/img10-abundance.webp",
+    "/images/spg-week-9/img11-reframe-cards.webp"
+  ],
+  "/spg/week-9/the-4r-framework/": [
+    "/images/spg-week-9/img12-4r.webp"
+  ],
+  "/spg/week-9/week-9-quick-revision/": [
+    "/images/spg-week-9/img13-week9-map.webp"
+  ],
+  "/spg/week-7/wealth-mantra/": [
+    "/images/spg-week-7/img01-wealth-mantra.webp"
+  ],
+  "/spg/week-7/money-stories-and-loans/": [
+    "/images/spg-week-7/img02-life-curve.webp",
+    "/images/spg-week-7/img03-good-bad-loans.webp"
+  ],
+  "/spg/week-7/basics-of-personal-finance/": [
+    "/images/spg-week-7/img04-nine-point-plan.webp",
+    "/images/spg-week-7/img05-risk-return.webp",
+    "/images/spg-week-7/img06-smart-goals.webp"
+  ],
+  "/spg/week-7/cash-flow-vs-life-span/": [
+    "/images/spg-week-7/img07-earning-curves.webp"
+  ],
+  "/spg/week-7/returns-inflation-compounding/": [
+    "/images/spg-week-7/img08-inflation.webp",
+    "/images/spg-week-7/img09-simple-vs-compound.webp"
+  ],
+  "/spg/week-7/indian-income-tax/": [
+    "/images/spg-week-7/img10-five-heads.webp"
+  ],
+  "/spg/week-7/employee-vs-entrepreneur/": [
+    "/images/spg-week-7/img11-time-money-energy.webp",
+    "/images/spg-week-7/img12-business-functions.webp"
+  ],
+  "/spg/week-7/asset-allocation-and-investing/": [
+    "/images/spg-week-7/img13-balance-sheet.webp",
+    "/images/spg-week-7/img05-risk-return.webp",
+    "/images/spg-week-7/img14-financial-freedom.webp"
+  ],
+  "/spg/week-7/week-7-quick-revision/": [
+    "/images/spg-week-7/img15-week7-map.webp"
+  ],
+  "/spg/week-6/what-is-culture/": [
+    "/images/spg-week-6/img01-three-differences.webp",
+    "/images/spg-week-6/img02-iceberg.webp"
+  ],
+  "/spg/week-6/stereotyping-ethnocentrism-parochialism/": [
+    "/images/spg-week-6/img03-pedestrian-dilemma.webp",
+    "/images/spg-week-6/img04-three-traps.webp"
+  ],
+  "/spg/week-6/cross-cultural-intelligence/": [
+    "/images/spg-week-6/img05-variables-of-culture.webp",
+    "/images/spg-week-6/img06-four-stages.webp"
+  ],
+  "/spg/week-6/dimensions-of-culture/": [
+    "/images/spg-week-6/img07-four-dimensions.webp"
+  ],
+  "/spg/week-6/dealing-with-cross-cultural-issues/": [
+    "/images/spg-week-6/img08-doctor-nurse.webp",
+    "/images/spg-week-6/img09-five-strategies.webp"
+  ],
+  "/spg/week-6/personal-grooming/": [
+    "/images/spg-week-6/img10-grooming-covers.webp",
+    "/images/spg-week-6/img11-three-rs.webp",
+    "/images/spg-week-6/img12-grooming-at-home.webp"
+  ],
+  "/spg/week-6/week-6-quick-revision/": [
+    "/images/spg-week-6/img13-week6-map.webp"
+  ],
+  "/spg/week-1/outbound-training/": [
+    "/images/spg-week-1/img01-group-effect.webp",
+    "/images/spg-week-1/img02-buddy-carry.webp",
+    "/images/spg-week-1/img03-three-rules.webp"
+  ],
+  "/spg/week-1/a-frame-and-caterpillar/": [
+    "/images/spg-week-1/img04-a-frame-march.webp",
+    "/images/spg-week-1/img05-caterpillar-walk.webp"
+  ],
+  "/spg/week-1/what-is-teamwork/": [
+    "/images/spg-week-1/img06-small-together.webp",
+    "/images/spg-week-1/img07-geese-v.webp"
+  ],
+  "/spg/week-1/clarity-commitment-communication/": [
+    "/images/spg-week-1/img08-ten-cs.webp",
+    "/images/spg-week-1/img09-cycle-uphill.webp"
+  ],
+  "/spg/week-1/competence-collaboration-coordination/": [
+    "/images/spg-week-1/img10-pit-crew.webp",
+    "/images/spg-week-1/img11-diverge-converge.webp",
+    "/images/spg-week-1/img12-dabbawala.webp"
+  ],
+  "/spg/week-1/continuous-improvement/": [
+    "/images/spg-week-1/img13-kaizen-steps.webp"
+  ],
+  "/spg/week-1/week-1-quick-revision/": [
+    "/images/spg-week-1/img14-week1-map.webp"
+  ],
+  "/spg/week-8/what-is-creativity/": [
+    "/images/spg-week-8/img01-everyone-creative.webp",
+    "/images/spg-week-8/img02-maslow.webp"
+  ],
+  "/spg/week-8/the-creativity-journey/": [
+    "/images/spg-week-8/img03-journey.webp",
+    "/images/spg-week-8/img04-empathy-walk.webp"
+  ],
+  "/spg/week-8/process-of-creativity/": [
+    "/images/spg-week-8/img05-shopping-cart.webp",
+    "/images/spg-week-8/img06-seven-steps.webp"
+  ],
+  "/spg/week-8/tools-for-creativity/": [
+    "/images/spg-week-8/img07-four-tools.webp",
+    "/images/spg-week-8/img08-curiosity.webp",
+    "/images/spg-week-8/img09-intersection.webp"
+  ],
+  "/spg/week-8/attitudes-for-creativity/": [
+    "/images/spg-week-8/img10-attitudes.webp",
+    "/images/spg-week-8/img11-inspiration.webp"
+  ],
+  "/spg/week-8/week-8-quick-revision/": [
+    "/images/spg-week-8/img12-week8-map.webp"
+  ],
+  "/spg/week-10/what-is-a-system/": [
+    "/images/spg-week-10/img01-three-parts.webp",
+    "/images/spg-week-10/img02-heap-vs-house.webp",
+    "/images/spg-week-10/img03-food-chain.webp",
+    "/images/spg-week-10/img04-blind-men.webp"
+  ],
+  "/spg/week-10/examples-and-systems-view/": [
+    "/images/spg-week-10/img05-dosa-chain.webp",
+    "/images/spg-week-10/img06-wolves.webp"
+  ],
+  "/spg/week-10/big-picture-and-consequences/": [
+    "/images/spg-week-10/img07-helicopter.webp",
+    "/images/spg-week-10/img08-cat-drop.webp"
+  ],
+  "/spg/week-10/mental-models-and-structure/": [
+    "/images/spg-week-10/img09-mental-models.webp",
+    "/images/spg-week-10/img10-structure.webp"
+  ],
+  "/spg/week-10/leverage-and-connections/": [
+    "/images/spg-week-10/img11-leverage.webp"
+  ],
+  "/spg/week-10/loops-delays-and-change/": [
+    "/images/spg-week-10/img12-feedback-loop.webp"
+  ],
+  "/spg/week-10/week-10-quick-revision/": [
+    "/images/spg-week-10/img13-week10-map.webp"
+  ],
+  "/spg/week-11/what-is-engineering-sense/": [
+    "/images/spg-week-11/img01-engineering-everywhere.webp"
+  ],
+  "/spg/week-11/plan-estimate-audit/": [
+    "/images/spg-week-11/img02-planning.webp",
+    "/images/spg-week-11/img03-estimate-rain.webp",
+    "/images/spg-week-11/img04-ball-audit.webp"
+  ],
+  "/spg/week-11/apply-cause-improve/": [
+    "/images/spg-week-11/img05-small-cut.webp",
+    "/images/spg-week-11/img06-mouse-evolution.webp",
+    "/images/spg-week-11/img07-ticketing.webp"
+  ],
+  "/spg/week-11/big-picture-abstraction-divide/": [
+    "/images/spg-week-11/img08-abstraction.webp",
+    "/images/spg-week-11/img09-tiny-steps.webp"
+  ],
+  "/spg/week-11/classify-measure-associate-experiment/": [
+    "/images/spg-week-11/img10-life-levers.webp",
+    "/images/spg-week-11/img11-associative.webp"
+  ],
+  "/spg/week-11/ideas-debriefing-mental-models/": [
+    "/images/spg-week-11/img12-debrief.webp"
+  ],
+  "/spg/week-11/week-11-quick-revision/": [
+    "/images/spg-week-11/img13-week11-map.webp"
+  ]
+}
