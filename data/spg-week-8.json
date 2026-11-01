@@ -1,0 +1,897 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 8,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-8/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "what-is-creativity",
+      "title": "What is Creativity?",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You’re stuck in an auto in a huge traffic\njam and getting late. So you pay the driver, get down, walk to the front\nof the jam, and take another auto from there. You just solved a problem\nin a new way. That means you are creative.</p>\n</blockquote>",
+          "text": "Start here You’re stuck in an auto in a huge traffic\njam and getting late. So you pay the driver, get down, walk to the front\nof the jam, and take another auto from there. You just solved a problem\nin a new way. That means you are creative."
+        },
+        {
+          "type": "html",
+          "html": "<p>This week is taught by <strong>Prof. Shiva Subramaniam</strong>, who\nhas taught creativity for about 30 years.</p>",
+          "text": "This week is taught by Prof. Shiva Subramaniam , who\nhas taught creativity for about 30 years."
+        },
+        {
+          "type": "heading",
+          "text": "Rule number 1: everyone is\ncreative"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>There is nobody in the world who is not creative.</strong>\nDon’t say “my sister is the creative one because she paints.”</li>\n<li>When you think, parts of your brain <strong>light up</strong>.\nThinking and creativity go together.</li>\n<li><strong>The only difference</strong> is the score. Some people are\nat <strong>4 out of 10</strong>, some at 6, some at 7. This course helps\nyou move up the scale.</li>\n</ul>",
+          "text": "There is nobody in the world who is not creative. Don’t say “my sister is the creative one because she paints.” When you think, parts of your brain light up .\nThinking and creativity go together. The only difference is the score. Some people are\nat 4 out of 10 , some at 6, some at 7. This course helps\nyou move up the scale."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Everyone can hit a tennis ball over\nthe net. Some people, like Federer and Nadal, play much better.\nCreativity is the same: everyone has it, and practice makes you\nbetter.</p>\n</blockquote>",
+          "text": "Everyday example Everyone can hit a tennis ball over\nthe net. Some people, like Federer and Nadal, play much better.\nCreativity is the same: everyone has it, and practice makes you\nbetter."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson 1: take up challenges.</strong> The professor had\nnever taught creativity without seeing his students face to face. He\nstill took up the challenge. <strong>Wanting to be creative</strong> is\nthe most important thing of all.</p>",
+          "text": "Lesson 1: take up challenges. The professor had\nnever taught creativity without seeing his students face to face. He\nstill took up the challenge. Wanting to be creative is\nthe most important thing of all."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img01-everyone-creative.webp",
+          "alt": "Everyone is creative",
+          "caption": "Everyone is creative; practice moves\nyou from 4/10 to 7/10."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Try this:</strong> look in the mirror and say, “I am a\ncreative person.” Then name <strong>four things</strong> you have done\nthat were creative. They don’t have to be big.</p>",
+          "text": "Try this: look in the mirror and say, “I am a\ncreative person.” Then name four things you have done\nthat were creative. They don’t have to be big."
+        },
+        {
+          "type": "heading",
+          "text": "The definition"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Creativity is bringing into existence something that did not\nexist before.</strong></p>\n</blockquote>",
+          "text": "Creativity is bringing into existence something that did not\nexist before."
+        },
+        {
+          "type": "html",
+          "html": "<p>This is the <strong>classic definition</strong>. Examples:</p>",
+          "text": "This is the classic definition . Examples:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>This lecture did not exist before. Now it does.</li>\n<li>You write a page on a blank sheet.</li>\n<li>You crumple paper into balls and juggle them.</li>\n</ul>",
+          "text": "This lecture did not exist before. Now it does. You write a page on a blank sheet. You crumple paper into balls and juggle them."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Don’t worry about originality yet.</strong> Even if someone\nalready made a chair or a mouse, <em>your</em> chair is still your\ncreation. This is <strong>personal creativity</strong>.</p>",
+          "text": "Don’t worry about originality yet. Even if someone\nalready made a chair or a mouse, your chair is still your\ncreation. This is personal creativity ."
+        },
+        {
+          "type": "subheading",
+          "text": "Notebook exercises"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Keep a <strong>creativity notebook</strong>. This is the start of\nyour creativity journey.</li>\n<li><strong>Draw your name</strong> instead of writing it. (Prof. Shiva\nmight draw a <strong>sheet</strong> of paper plus a hand waving “come\nhere”, which is “vaa” in Tamil: <em>Shee-vaa</em>.)</li>\n<li>At the end of the course, write <strong>your own definition</strong>\nof creativity.</li>\n</ol>",
+          "text": "Keep a creativity notebook . This is the start of\nyour creativity journey. Draw your name instead of writing it. (Prof. Shiva\nmight draw a sheet of paper plus a hand waving “come\nhere”, which is “vaa” in Tamil: Shee-vaa .) At the end of the course, write your own definition of creativity."
+        },
+        {
+          "type": "heading",
+          "text": "Why\nand when should you be creative? Maslow’s hierarchy of needs"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Abraham Maslow</strong> said all humans have five levels of\nneeds.</p>",
+          "text": "Abraham Maslow said all humans have five levels of\nneeds."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img02-maslow.webp",
+          "alt": "Maslow’s hierarchy of needs",
+          "caption": "Five levels of needs, from\nbasic needs at the bottom to self-actualisation at the top."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Level</th>\n<th>Need</th>\n<th>Examples from the lecture</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 (bottom)</td>\n<td><strong>Physiological</strong> (basic)</td>\n<td>Food, water, warmth, rest. We take jobs and build houses for\nthese.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Safety</strong></td>\n<td>Locks, a watchman, a government job with a pension</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Belongingness and love</strong></td>\n<td>Family, friends, WhatsApp groups. The fear of\n<strong>loneliness</strong> is one of our greatest fears. Social media\nis all about this need.</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Esteem</strong></td>\n<td>Prestige and a feeling of <strong>accomplishment</strong>: a new\ncar, a housewarming, your degree certificate</td>\n</tr>\n<tr>\n<td>5 (top)</td>\n<td><strong>Self-actualisation</strong></td>\n<td>Reaching your <strong>full potential</strong>, including creative\nwork and finding meaning. A friend of the professor left everything at\n35–40 to start a children’s home.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Level Need Examples from the lecture 1 (bottom) Physiological (basic) Food, water, warmth, rest. We take jobs and build houses for\nthese. 2 Safety Locks, a watchman, a government job with a pension 3 Belongingness and love Family, friends, WhatsApp groups. The fear of loneliness is one of our greatest fears. Social media\nis all about this need. 4 Esteem Prestige and a feeling of accomplishment : a new\ncar, a housewarming, your degree certificate 5 (top) Self-actualisation Reaching your full potential , including creative\nwork and finding meaning. A friend of the professor left everything at\n35–40 to start a children’s home."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the “top-end” car trap</strong> A car\nsalesman showed the professor the <strong>top-end</strong> model first\n(about ₹11.5 lakh). After that, the basic model felt disappointing, even\nthough it cost only about ₹5–6 lakh. This trick is called\n<strong>anchoring</strong>: the first number you see sets your\nexpectation. (In the end, he just repaired his old car.)</p>\n</blockquote>",
+          "text": "Lecture example — the “top-end” car trap A car\nsalesman showed the professor the top-end model first\n(about ₹11.5 lakh). After that, the basic model felt disappointing, even\nthough it cost only about ₹5–6 lakh. This trick is called anchoring : the first number you see sets your\nexpectation. (In the end, he just repaired his old car.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>So why be creative?</strong> Because you need creativity to\nmeet <strong>every</strong> level of need: to earn money for food, to\nkeep your family safe, to make friends and calm an angry parent, to win\nrespect, and to reach your potential.</p>",
+          "text": "So why be creative? Because you need creativity to\nmeet every level of need: to earn money for food, to\nkeep your family safe, to make friends and calm an angry parent, to win\nrespect, and to reach your potential."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>When should you be creative?</strong> Whenever you are trying\nto meet one of these needs, which means all the time.</p>",
+          "text": "When should you be creative? Whenever you are trying\nto meet one of these needs, which means all the time."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Read more:</strong> the <strong>Jonah complex</strong>\n(Maslow’s term for the fear of our own greatness), and Dale Carnegie’s\n<em>How to Win Friends and Influence People</em>.</p>",
+          "text": "Read more: the Jonah complex (Maslow’s term for the fear of our own greatness), and Dale Carnegie’s How to Win Friends and Influence People ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Everyone is creative; creativity means\nbringing into existence something that did not exist before, and we need\nit to meet every level of Maslow’s needs. <strong>Exam words:</strong>\neveryone is creative, classic definition of creativity, personal\ncreativity, Maslow’s hierarchy of needs, physiological, safety,\nbelongingness, esteem, self-actualisation, anchoring, Jonah complex.</p>",
+          "text": "In one line: Everyone is creative; creativity means\nbringing into existence something that did not exist before, and we need\nit to meet every level of Maslow’s needs. Exam words: everyone is creative, classic definition of creativity, personal\ncreativity, Maslow’s hierarchy of needs, physiological, safety,\nbelongingness, esteem, self-actualisation, anchoring, Jonah complex."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the classic definition of creativity?\n</summary>\nBringing into existence something that did not exist before.\n</details>",
+          "text": "What is the classic definition of creativity? Bringing into existence something that did not exist before."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName Maslow’s five needs from bottom to top.\n</summary>\nPhysiological, safety, belongingness and love, esteem,\nself-actualisation.\n</details>",
+          "text": "Name Maslow’s five needs from bottom to top. Physiological, safety, belongingness and love, esteem,\nself-actualisation."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nBuying a big car to show your success meets which need?\n</summary>\nEsteem (prestige, a feeling of accomplishment).\n</details>",
+          "text": "Buying a big car to show your success meets which need? Esteem (prestige, a feeling of accomplishment)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA salesman shows you the most expensive model first. What is this trick\ncalled?\n</summary>\nAnchoring.\n</details>",
+          "text": "A salesman shows you the most expensive model first. What is this trick\ncalled? Anchoring."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to the professor, what is the most important thing in\ncreativity?\n</summary>\nWillingness — wanting to be creative.\n</details>",
+          "text": "According to the professor, what is the most important thing in\ncreativity? Willingness — wanting to be creative."
+        }
+      ]
+    },
+    {
+      "slug": "the-creativity-journey",
+      "title": "The Creativity Journey",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Every creative journey is like a train\nride. It leaves the station called <strong>Problem</strong> and arrives\nat the station called <strong>Solution</strong>. If the train never\narrives, you can’t call it creativity.</p>\n</blockquote>",
+          "text": "Start here Every creative journey is like a train\nride. It leaves the station called Problem and arrives\nat the station called Solution . If the train never\narrives, you can’t call it creativity."
+        },
+        {
+          "type": "html",
+          "html": "<p>This course is not about art or pottery. It is about creativity in\n<strong>problem solving</strong>, which is where students use it\nmost.</p>",
+          "text": "This course is not about art or pottery. It is about creativity in problem solving , which is where students use it\nmost."
+        },
+        {
+          "type": "heading",
+          "text": "From problem to solution"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img03-journey.webp",
+          "alt": "The creativity journey",
+          "caption": "Creativity starts with a problem and\nends with a solution, and the journey never ends."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Creativity <strong>starts with a problem</strong> and <strong>ends\nwith a solution</strong>.</li>\n<li>You <strong>find</strong> the solution <strong>and\nimplement</strong> it. Only then can you call yourself creative.</li>\n<li>It is <strong>not a one-time thing</strong>. Every day might bring 5\nproblems and 3 solutions. <strong>The journey never ends.</strong></li>\n</ul>",
+          "text": "Creativity starts with a problem and ends\nwith a solution . You find the solution and\nimplement it. Only then can you call yourself creative. It is not a one-time thing . Every day might bring 5\nproblems and 3 solutions. The journey never ends."
+        },
+        {
+          "type": "heading",
+          "text": "What is a problem?"
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask yourself these questions:</p>",
+          "text": "Ask yourself these questions:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>The professor’s thoughts</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>What does a problem look like? How does it feel?</td>\n<td>You can’t touch it, but you <strong>feel</strong> it: anxious,\nfrustrated, sometimes joyful.</td>\n</tr>\n<tr>\n<td>What types of problems are there?</td>\n<td>Big, small, family, friends, water, buying a car… All of them fit\ninto <strong>Maslow’s</strong> needs.</td>\n</tr>\n<tr>\n<td>Why are some easy and some hard?</td>\n<td>It depends on the problem, the information you have, and other\npeople. Finding a pencil is easy. Ending poverty is very hard.</td>\n</tr>\n<tr>\n<td>How do we usually solve problems?</td>\n<td>There is no ready answer, but we do solve them, well or badly.</td>\n</tr>\n<tr>\n<td>When are you happy solving a problem?</td>\n<td>He is happy teaching this course, because he wants students to reach\nthe top.</td>\n</tr>\n<tr>\n<td>Which problems bore or irritate you?</td>\n<td>Housework; checking the gas and locks before going out; shuffling\ntwo cars in a narrow car park every day.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Question The professor’s thoughts What does a problem look like? How does it feel? You can’t touch it, but you feel it: anxious,\nfrustrated, sometimes joyful. What types of problems are there? Big, small, family, friends, water, buying a car… All of them fit\ninto Maslow’s needs. Why are some easy and some hard? It depends on the problem, the information you have, and other\npeople. Finding a pencil is easy. Ending poverty is very hard. How do we usually solve problems? There is no ready answer, but we do solve them, well or badly. When are you happy solving a problem? He is happy teaching this course, because he wants students to reach\nthe top. Which problems bore or irritate you? Housework; checking the gas and locks before going out; shuffling\ntwo cars in a narrow car park every day."
+        },
+        {
+          "type": "heading",
+          "text": "What is a solution?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A <strong>solution</strong> is the way to solve a problem.</li>\n<li><strong>Closure</strong> means the problem is actually finished.\nShuffling the cars is only solved when <strong>both cars</strong> are\nback in place.</li>\n<li>Most everyday solutions are <strong>copied from others</strong> or\ncome from <strong>past experience</strong> (“How did I solve this two\nyears ago?”). Copying from <strong>nature</strong> is called\n<strong>biomimicry</strong>.</li>\n<li>Some problems, like poverty, need <strong>extra creative\neffort</strong>.</li>\n</ul>",
+          "text": "A solution is the way to solve a problem. Closure means the problem is actually finished.\nShuffling the cars is only solved when both cars are\nback in place. Most everyday solutions are copied from others or\ncome from past experience (“How did I solve this two\nyears ago?”). Copying from nature is called biomimicry . Some problems, like poverty, need extra creative\neffort ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Creativity is a choice.</strong> When a problem or a\ncompetition comes up, be the <strong>first</strong> to say “I want to\nsolve it.” Don’t shy away.</p>\n</blockquote>",
+          "text": "Creativity is a choice. When a problem or a\ncompetition comes up, be the first to say “I want to\nsolve it.” Don’t shy away."
+        },
+        {
+          "type": "heading",
+          "text": "How to start your\njourney: look for problems"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Finding a good problem is the hardest part.</strong> Even top\nmanagers in the Tata group found it hard to name problems. Generating\nideas is easy; implementing them is harder; <strong>defining the problem\nis harder still</strong>.</p>",
+          "text": "Finding a good problem is the hardest part. Even top\nmanagers in the Tata group found it hard to name problems. Generating\nideas is easy; implementing them is harder; defining the problem\nis harder still ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Fall in love with problems:</strong> take care of them,\nunderstand them, listen to them.</p>",
+          "text": "Fall in love with problems: take care of them,\nunderstand them, listen to them."
+        },
+        {
+          "type": "subheading",
+          "text": "Way 1: Use ready-made\nproblem lists"
+        },
+        {
+          "type": "html",
+          "html": "<p>The <strong>United Nations Sustainable Development Goals (UN\nSDGs)</strong> list <strong>17</strong> goals, such as no poverty, zero\nhunger, good health, quality education, gender equality and clean water.\nPick one and start practising. You can also ask friends or your\norganisation, “Give me a problem to solve.”</p>",
+          "text": "The United Nations Sustainable Development Goals (UN\nSDGs) list 17 goals, such as no poverty, zero\nhunger, good health, quality education, gender equality and clean water.\nPick one and start practising. You can also ask friends or your\norganisation, “Give me a problem to solve.”"
+        },
+        {
+          "type": "subheading",
+          "text": "Way 2: Use empathy"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Empathy</strong> means putting yourself in someone else’s\nshoes and looking at the problem <strong>from their point of\nview</strong>. It is the <strong>easiest way to find problems</strong>,\nbecause problems belong to people.</p>",
+          "text": "Empathy means putting yourself in someone else’s\nshoes and looking at the problem from their point of\nview . It is the easiest way to find problems ,\nbecause problems belong to people."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img04-empathy-walk.webp",
+          "alt": "The empathy walk",
+          "caption": "Put on the “empathy hat” and you start to\nsee problems you never noticed."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the empathy walk at IIT Madras</strong>\nStudents go on an <strong>empathy walk</strong> around campus, wearing\nan imaginary “empathy hat”. At the campus hospital, one student sees a\n<strong>mother and her child</strong> in a long queue for the doctor.\nThere are 12 people ahead of them, and the child is getting\n<strong>hungry and cranky</strong>. The student imagines being that\nmother. Now a clear problem appears: <strong>“How can parents handle\nchildren’s hunger and crankiness while waiting in a queue?”</strong> The\ngoal at this stage is only to <strong>find</strong> the problem, not to\nsolve it yet.</p>\n</blockquote>",
+          "text": "Lecture example — the empathy walk at IIT Madras Students go on an empathy walk around campus, wearing\nan imaginary “empathy hat”. At the campus hospital, one student sees a mother and her child in a long queue for the doctor.\nThere are 12 people ahead of them, and the child is getting hungry and cranky . The student imagines being that\nmother. Now a clear problem appears: “How can parents handle\nchildren’s hunger and crankiness while waiting in a queue?” The\ngoal at this stage is only to find the problem, not to\nsolve it yet."
+        },
+        {
+          "type": "html",
+          "html": "<p>The hard part of empathy: you must <strong>stop being\nyourself</strong> and truly become the other person.</p>",
+          "text": "The hard part of empathy: you must stop being\nyourself and truly become the other person."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Creativity is a never-ending journey\nfrom problem to solution; find problems through lists like the UN SDGs\nor through empathy, and choose to solve them. <strong>Exam\nwords:</strong> creativity journey, problem, solution, closure,\nbiomimicry, creativity is a choice, fall in love with problems, UN SDGs\n(17 goals), empathy, empathy walk.</p>",
+          "text": "In one line: Creativity is a never-ending journey\nfrom problem to solution; find problems through lists like the UN SDGs\nor through empathy, and choose to solve them. Exam\nwords: creativity journey, problem, solution, closure,\nbiomimicry, creativity is a choice, fall in love with problems, UN SDGs\n(17 goals), empathy, empathy walk."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhere does the creativity journey start and end?\n</summary>\nIt starts with a problem and ends with a solution (found and\nimplemented).\n</details>",
+          "text": "Where does the creativity journey start and end? It starts with a problem and ends with a solution (found and\nimplemented)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “closure” mean?\n</summary>\nThe problem is fully solved and finished.\n</details>",
+          "text": "What does “closure” mean? The problem is fully solved and finished."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the two ways to look for problems given in the lecture?\n</summary>\nReady-made problem lists (like the 17 UN SDGs) and empathy.\n</details>",
+          "text": "What are the two ways to look for problems given in the lecture? Ready-made problem lists (like the 17 UN SDGs) and empathy."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is empathy?\n</summary>\nPutting yourself in someone else’s shoes and looking at the problem from\ntheir point of view.\n</details>",
+          "text": "What is empathy? Putting yourself in someone else’s shoes and looking at the problem from\ntheir point of view."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich is hardest: generating ideas, implementing them, or defining the\nproblem?\n</summary>\nDefining the problem.\n</details>",
+          "text": "Which is hardest: generating ideas, implementing them, or defining the\nproblem? Defining the problem."
+        }
+      ]
+    },
+    {
+      "slug": "process-of-creativity",
+      "title": "The Process of Creativity",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Cooking, driving, applying for a job:\neach has steps. Creativity does too. It is not a lightning bolt that\nstrikes your head. It is a step-by-step process anyone can follow.</p>\n</blockquote>",
+          "text": "Start here Cooking, driving, applying for a job:\neach has steps. Creativity does too. It is not a lightning bolt that\nstrikes your head. It is a step-by-step process anyone can follow."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Process</strong> means step by step. You already know the\nfirst step (find the problem) and the last step (the solution). This\npage fills in the middle.</p>",
+          "text": "Process means step by step. You already know the\nfirst step (find the problem) and the last step (the solution). This\npage fills in the middle."
+        },
+        {
+          "type": "heading",
+          "text": "Watch how a team does it"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — IDEO redesigns the shopping cart</strong>\nThe lecture shows a video of <strong>IDEO</strong>, the design company\nthat made the term <strong>design thinking</strong> popular. Their team\nredesigns a supermarket <strong>shopping cart</strong>.</p>\n<table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>What the team did</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Is there a problem?</td>\n<td>Yes — redesign the shopping cart.</td>\n</tr>\n<tr>\n<td>Are they collecting information?</td>\n<td>Yes — from security guards (carts get stolen), store managers and\nshoppers.</td>\n</tr>\n<tr>\n<td>Are they collaborating?</td>\n<td>Yes — they work as a team.</td>\n</tr>\n<tr>\n<td>Are they generating new ideas?</td>\n<td>Yes — lots of them.</td>\n</tr>\n<tr>\n<td>Are they making a prototype?</td>\n<td>Yes — they build a test model.</td>\n</tr>\n</tbody>\n</table>\n</blockquote>",
+          "text": "Lecture example — IDEO redesigns the shopping cart The lecture shows a video of IDEO , the design company\nthat made the term design thinking popular. Their team\nredesigns a supermarket shopping cart . Question What the team did Is there a problem? Yes — redesign the shopping cart. Are they collecting information? Yes — from security guards (carts get stolen), store managers and\nshoppers. Are they collaborating? Yes — they work as a team. Are they generating new ideas? Yes — lots of them. Are they making a prototype? Yes — they build a test model."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img05-shopping-cart.webp",
+          "alt": "A team redesigns a shopping cart",
+          "caption": "Collect information, share\nideas as a team, then build a prototype."
+        },
+        {
+          "type": "heading",
+          "text": "The 7-step process of\ncreativity"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img06-seven-steps.webp",
+          "alt": "The seven steps",
+          "caption": "Define, collect, redefine, generate,\ndesign, evaluate, implement."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What you do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Define the problem</strong></td>\n<td>Decide which problem you want to address. Don’t shy away.</td>\n</tr>\n<tr>\n<td><strong>2. Collect information</strong></td>\n<td>Understand the problem fully <strong>before</strong> you try to\nsolve it.</td>\n</tr>\n<tr>\n<td><strong>3. Redefine the problem</strong></td>\n<td>Use the information to make the problem sharper or more doable.</td>\n</tr>\n<tr>\n<td><strong>4. Generate ideas</strong></td>\n<td>Come up with many ideas to address the redefined problem.\n<strong>Don’t judge them yet.</strong></td>\n</tr>\n<tr>\n<td><strong>5. Design the solution</strong></td>\n<td>Choose an idea (because it is exciting or practical) and shape it\ninto a solution.</td>\n</tr>\n<tr>\n<td><strong>6. Evaluate feasibility and refine</strong></td>\n<td>Check what could go wrong, and fix each issue.</td>\n</tr>\n<tr>\n<td><strong>7. Implement the solution</strong></td>\n<td>Put it into action. <strong>Without implementation, there is no\ncreativity.</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What you do 1. Define the problem Decide which problem you want to address. Don’t shy away. 2. Collect information Understand the problem fully before you try to\nsolve it. 3. Redefine the problem Use the information to make the problem sharper or more doable. 4. Generate ideas Come up with many ideas to address the redefined problem. Don’t judge them yet. 5. Design the solution Choose an idea (because it is exciting or practical) and shape it\ninto a solution. 6. Evaluate feasibility and refine Check what could go wrong, and fix each issue. 7. Implement the solution Put it into action. Without implementation, there is no\ncreativity."
+        },
+        {
+          "type": "html",
+          "html": "<p>Skip any step, and you can’t call yourself creative.\n<strong>Creativity is discipline: step by step.</strong></p>",
+          "text": "Skip any step, and you can’t call yourself creative. Creativity is discipline: step by step."
+        },
+        {
+          "type": "subheading",
+          "text": "What “redefine” means:\nthe hunger example"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Problem:</strong> world hunger. It is too big to solve\ndirectly.</li>\n<li><strong>Information:</strong> about 100 million children go hungry;\n<strong>malnutrition</strong> means people don’t get enough nutrients\nfrom their food.</li>\n<li><strong>Redefined problem:</strong> “How can I <strong>add\nnutrients</strong> to the food people already eat?” This is a smaller\nproblem that you can actually work on.</li>\n</ul>",
+          "text": "Problem: world hunger. It is too big to solve\ndirectly. Information: about 100 million children go hungry; malnutrition means people don’t get enough nutrients\nfrom their food. Redefined problem: “How can I add\nnutrients to the food people already eat?” This is a smaller\nproblem that you can actually work on."
+        },
+        {
+          "type": "heading",
+          "text": "Full\nworked example: “I want my children to learn English”"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What the professor did</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. Define</td>\n<td>“I want my children to learn English.”</td>\n</tr>\n<tr>\n<td>2. Collect information</td>\n<td>They are 15 and 17. They love movies and like English. They have 3\nmonths’ holiday (April–June) and 15 days in December. He is willing to\nspend some money.</td>\n</tr>\n<tr>\n<td>3. Redefine</td>\n<td>“I want my children to <strong>fall in love with</strong> English.”\nThis leads to different ideas from just “learn English”.</td>\n</tr>\n<tr>\n<td>4. Generate ideas</td>\n<td>Watch English movies; read books; speak English at home; move to an\nEnglish-speaking neighbourhood; <strong>send them to\nEngland</strong>.</td>\n</tr>\n<tr>\n<td>5. Design</td>\n<td>He chooses “send them to England for a summer course”.</td>\n</tr>\n<tr>\n<td>6. Evaluate and refine</td>\n<td><strong>No money?</strong> Borrow from a bank or friends.\n<strong>Allergic to cold?</strong> Go in summer. <strong>Nowhere to\nstay?</strong> Call old colleagues living in England.</td>\n</tr>\n<tr>\n<td>7. Implement</td>\n<td>Book the course and the family stay, and put them on the plane.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What the professor did 1. Define “I want my children to learn English.” 2. Collect information They are 15 and 17. They love movies and like English. They have 3\nmonths’ holiday (April–June) and 15 days in December. He is willing to\nspend some money. 3. Redefine “I want my children to fall in love with English.”\nThis leads to different ideas from just “learn English”. 4. Generate ideas Watch English movies; read books; speak English at home; move to an\nEnglish-speaking neighbourhood; send them to\nEngland . 5. Design He chooses “send them to England for a summer course”. 6. Evaluate and refine No money? Borrow from a bank or friends. Allergic to cold? Go in summer. Nowhere to\nstay? Call old colleagues living in England. 7. Implement Book the course and the family stay, and put them on the plane."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Note:</strong> creativity has <strong>no guarantee of\nsuccess</strong>. Will they fall in love with English? He doesn’t know.\nBut he followed the process and implemented a solution.</p>",
+          "text": "Note: creativity has no guarantee of\nsuccess . Will they fall in love with English? He doesn’t know.\nBut he followed the process and implemented a solution."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example — cooking follows the same process</strong>\nProblem: “What’s for dinner?” → Collect information: open the fridge\n(dosa batter, fruit, vegetables) → Ideas: dosa, salad… → Choose, cook,\ntaste and adjust → Serve.</p>\n</blockquote>",
+          "text": "Everyday example — cooking follows the same process Problem: “What’s for dinner?” → Collect information: open the fridge\n(dosa batter, fruit, vegetables) → Ideas: dosa, salad… → Choose, cook,\ntaste and adjust → Serve."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Creativity follows 7 steps: define,\ncollect information, redefine, generate ideas, design, evaluate and\nrefine, implement. <strong>Exam words:</strong> process of creativity,\nIDEO, design thinking, prototype, define, collect information, redefine,\ngenerate ideas, design solution, evaluate feasibility, implement, no\nguarantee of success.</p>",
+          "text": "In one line: Creativity follows 7 steps: define,\ncollect information, redefine, generate ideas, design, evaluate and\nrefine, implement. Exam words: process of creativity,\nIDEO, design thinking, prototype, define, collect information, redefine,\ngenerate ideas, design solution, evaluate feasibility, implement, no\nguarantee of success."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nList the 7 steps of the process of creativity.\n</summary>\nDefine the problem, collect information, redefine the problem, generate\nideas, design the solution, evaluate feasibility and refine, implement.\n</details>",
+          "text": "List the 7 steps of the process of creativity. Define the problem, collect information, redefine the problem, generate\nideas, design the solution, evaluate feasibility and refine, implement."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat step comes right after collecting information?\n</summary>\nRedefining the problem.\n</details>",
+          "text": "What step comes right after collecting information? Redefining the problem."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich company made the term “design thinking” popular?\n</summary>\nIDEO.\n</details>",
+          "text": "Which company made the term “design thinking” popular? IDEO."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“World hunger” became “adding nutrients to food”. Which step is this?\n</summary>\nRedefining the problem.\n</details>",
+          "text": "“World hunger” became “adding nutrients to food”. Which step is this? Redefining the problem."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nDoes creativity guarantee success?\n</summary>\nNo. There is no guarantee of success, but you must still implement.\n</details>",
+          "text": "Does creativity guarantee success? No. There is no guarantee of success, but you must still implement."
+        }
+      ]
+    },
+    {
+      "slug": "tools-for-creativity",
+      "title": "Tools for Creativity",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> An architect had to build a big mall in\nAfrica without much air conditioning. His answer came from an unexpected\nplace: a termite mound. That is the power of a creativity tool.</p>\n</blockquote>",
+          "text": "Start here An architect had to build a big mall in\nAfrica without much air conditioning. His answer came from an unexpected\nplace: a termite mound. That is the power of a creativity tool."
+        },
+        {
+          "type": "html",
+          "html": "<p>The <strong>creativity canvas</strong> on the slide holds words like\ncuriosity, attitude, belief, inspiration, imagination and process. This\npage covers <strong>four tools</strong>:</p>",
+          "text": "The creativity canvas on the slide holds words like\ncuriosity, attitude, belief, inspiration, imagination and process. This\npage covers four tools :"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img07-four-tools.webp",
+          "alt": "Four tools of creativity",
+          "caption": "Seeking information, imagination,\ncuriosity and intersections."
+        },
+        {
+          "type": "heading",
+          "text": "Tool 1: Seeking information"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>You cannot solve what you do not understand.</strong></p>\n</blockquote>",
+          "text": "You cannot solve what you do not understand."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Get information <strong>before</strong> solving anything, even\nfamily problems.</li>\n<li><strong>Never</strong> jump to ideas as soon as you hear a\nproblem.</li>\n</ul>",
+          "text": "Get information before solving anything, even\nfamily problems. Never jump to ideas as soon as you hear a\nproblem."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Ways to get information</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Observation</strong></td>\n<td>Watch how people use something</td>\n</tr>\n<tr>\n<td><strong>Listening</strong></td>\n<td>Hear people’s complaints</td>\n</tr>\n<tr>\n<td><strong>Asking questions</strong></td>\n<td>“What bothers you about this?”</td>\n</tr>\n<tr>\n<td><strong>Secondary research</strong></td>\n<td>Googling, reading</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Ways to get information Example Observation Watch how people use something Listening Hear people’s complaints Asking questions “What bothers you about this?” Secondary research Googling, reading"
+        },
+        {
+          "type": "heading",
+          "text": "Tool 2: Imagination"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“Imagination is more important than knowledge. Knowledge is limited.\nImagination encircles the world.” — Albert Einstein</p>\n</blockquote>",
+          "text": "“Imagination is more important than knowledge. Knowledge is limited.\nImagination encircles the world.” — Albert Einstein"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Imagination</strong> is the ability to take your mind\n<strong>wherever you want, whenever you want</strong>. You can sit on\nthe moon, visit your grandfather’s old house, then jump into the future,\nall in a minute.</p>",
+          "text": "Imagination is the ability to take your mind wherever you want, whenever you want . You can sit on\nthe moon, visit your grandfather’s old house, then jump into the future,\nall in a minute."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>If something does not exist today, it is because it has not\nyet been imagined.</strong> Example: a housing shortage? Imagine\n<strong>living underwater</strong>, with fish outside your window.</p>\n</blockquote>",
+          "text": "If something does not exist today, it is because it has not\nyet been imagined. Example: a housing shortage? Imagine living underwater , with fish outside your window."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Set a context.</strong> Imagine <em>for</em> something (“I\nwant to imagine new housing”). Otherwise your thinking goes all over the\nplace.</p>",
+          "text": "Set a context. Imagine for something (“I\nwant to imagine new housing”). Otherwise your thinking goes all over the\nplace."
+        },
+        {
+          "type": "subheading",
+          "text": "Imagination\nexercises (write in your notebook)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Exercise</th>\n<th>The professor’s answer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A paper plane can deliver one message. What would it say, and to\nwhom?</td>\n<td>To all scientists working on the environment: “Please hurry up with\nyour solutions — we are in grave danger.”</td>\n</tr>\n<tr>\n<td>You can become an animal or bird for a day. Which one, and why?</td>\n<td>A <strong>lion</strong>, to find out if it really is the king of the\njungle.</td>\n</tr>\n<tr>\n<td>A statue comes alive. What would you talk about?</td>\n<td>He would ask the statue of the poet and freedom fighter\n<strong>Subramania Bharathi</strong> on the Chennai beach where his\ninspiration came from, and whether he wrote his poems in one flow.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Exercise The professor’s answer A paper plane can deliver one message. What would it say, and to\nwhom? To all scientists working on the environment: “Please hurry up with\nyour solutions — we are in grave danger.” You can become an animal or bird for a day. Which one, and why? A lion , to find out if it really is the king of the\njungle. A statue comes alive. What would you talk about? He would ask the statue of the poet and freedom fighter Subramania Bharathi on the Chennai beach where his\ninspiration came from, and whether he wrote his poems in one flow."
+        },
+        {
+          "type": "heading",
+          "text": "Tool 3: Curiosity"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“Curiosity is the fuel for discovery, inquiry and learning.”</p>\n</blockquote>",
+          "text": "“Curiosity is the fuel for discovery, inquiry and learning.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>Curiosity = <strong>seeking information</strong> + <strong>asking\nquestions</strong>. The more questions you ask, the more answers you\nget.</p>",
+          "text": "Curiosity = seeking information + asking\nquestions . The more questions you ask, the more answers you\nget."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Curiosity + imagination together:</strong> <strong>Leonardo\nda Vinci</strong> imagined a <strong>flying machine</strong> (around\n1488) and asked, “How does one fly?”</p>",
+          "text": "Curiosity + imagination together: Leonardo\nda Vinci imagined a flying machine (around\n1488) and asked, “How does one fly?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Try it:</strong> ask five questions about a tree near\nyou.</p>",
+          "text": "Try it: ask five questions about a tree near\nyou."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>How does it pull water up from the ground?</li>\n<li>How long do trees live?</li>\n<li>How does it use sunlight to grow?</li>\n<li>How does a seed become a fruit?</li>\n<li>How does it grow leaves again after shedding them?</li>\n</ul>",
+          "text": "How does it pull water up from the ground? How long do trees live? How does it use sunlight to grow? How does a seed become a fruit? How does it grow leaves again after shedding them?"
+        },
+        {
+          "type": "html",
+          "html": "<p>Now try a chair or your laptop. <em>Who invented the keyboard? How\nlong do laptops last?</em> You will start “seeing what is not seen”.</p>",
+          "text": "Now try a chair or your laptop. Who invented the keyboard? How\nlong do laptops last? You will start “seeing what is not seen”."
+        },
+        {
+          "type": "subheading",
+          "text": "Four dimensions of curiosity"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img08-curiosity.webp",
+          "alt": "Four dimensions of curiosity",
+          "caption": "Joyous exploration,\ndeprivation sensitivity, openness to people’s ideas, stress\ntolerance."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Dimension</th>\n<th>Meaning</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Joyous exploration</strong></td>\n<td>Pleasure from exploring and learning new things</td>\n<td>Enjoying finding out how trees work</td>\n</tr>\n<tr>\n<td><strong>Deprivation sensitivity</strong></td>\n<td>Noticing a <strong>gap</strong> in your knowledge and wanting to\nclose it; relief when it closes</td>\n<td>A thriller that never tells you who the murderer was would drive you\nmad</td>\n</tr>\n<tr>\n<td><strong>Openness to people’s ideas</strong></td>\n<td>Valuing different views; deliberately asking others for their\napproach</td>\n<td>“What is your view on this?”</td>\n</tr>\n<tr>\n<td><strong>Stress tolerance</strong></td>\n<td>Being willing to put up with the discomfort of the new, unfamiliar\nor uncertain</td>\n<td>Sitting on the edge of your seat for 2 hours to see the ending (the\nprofessor admits he skips to the last episode!)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Dimension Meaning Example Joyous exploration Pleasure from exploring and learning new things Enjoying finding out how trees work Deprivation sensitivity Noticing a gap in your knowledge and wanting to\nclose it; relief when it closes A thriller that never tells you who the murderer was would drive you\nmad Openness to people’s ideas Valuing different views; deliberately asking others for their\napproach “What is your view on this?” Stress tolerance Being willing to put up with the discomfort of the new, unfamiliar\nor uncertain Sitting on the edge of your seat for 2 hours to see the ending (the\nprofessor admits he skips to the last episode!)"
+        },
+        {
+          "type": "heading",
+          "text": "Tool 4: Intersections"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>When two ideas meet, a third idea is born.</strong> This idea\ncomes from <em>The Medici Effect</em> by <strong>Frans\nJohansson</strong>.</p>",
+          "text": "When two ideas meet, a third idea is born. This idea\ncomes from The Medici Effect by Frans\nJohansson ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Peter Café Sport, Horta, Portugal</strong>\nA café on an island where sailors from many countries meet before\ncrossing the Atlantic. One fisherman uses a hook. Another uses bait in a\nsack cloth, so unwanted fish can be thrown back unhurt. Put the two\nideas together, and a <strong>new kind of hook that doesn’t hurt the\nfish</strong> may be born.</p>\n</blockquote>",
+          "text": "Lecture example — Peter Café Sport, Horta, Portugal A café on an island where sailors from many countries meet before\ncrossing the Atlantic. One fisherman uses a hook. Another uses bait in a\nsack cloth, so unwanted fish can be thrown back unhurt. Put the two\nideas together, and a new kind of hook that doesn’t hurt the\nfish may be born."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the Eastgate Centre, Harare\n(Zimbabwe)</strong> Architect <strong>Mick Pearce</strong> had to build\nan office and shopping complex without heavy air conditioning. He had\nalso studied how <strong>termites</strong> keep their mounds cool: cool\nair enters at night and warm air leaves. He combined\n<strong>architecture + termite mounds</strong>. The building ventilates,\ncools and heats itself through natural means, saving a lot of\nenergy.</p>\n</blockquote>",
+          "text": "Lecture example — the Eastgate Centre, Harare\n(Zimbabwe) Architect Mick Pearce had to build\nan office and shopping complex without heavy air conditioning. He had\nalso studied how termites keep their mounds cool: cool\nair enters at night and warm air leaves. He combined architecture + termite mounds . The building ventilates,\ncools and heats itself through natural means, saving a lot of\nenergy."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img09-intersection.webp",
+          "alt": "Intersection: termites + architecture",
+          "caption": "Two different ideas\nmeet, and a new idea is born."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Copying nature to solve human problems</strong> like this is\ncalled <strong>biomimicry</strong>.</p>",
+          "text": "Copying nature to solve human problems like this is\ncalled biomimicry ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>More examples:</strong> pencil + eraser = a pencil with an\neraser on top. Camera + water (transparent) = a transparent camera.</p>",
+          "text": "More examples: pencil + eraser = a pencil with an\neraser on top. Camera + water (transparent) = a transparent camera."
+        },
+        {
+          "type": "subheading",
+          "text": "How to use intersections"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Ideas multiply when you <strong>break down associative\nbarriers</strong> (stop thinking “these two things are unrelated”) and\n<strong>step into the intersection</strong>.</li>\n<li><strong>Learn related-but-unusual subjects.</strong> A data science\nstudent can borrow ideas from <strong>cooking</strong> or\n<strong>gardening</strong> to solve a data problem.</li>\n<li>Keep questions in mind so you spot connections by chance\n(<strong>serendipity</strong>).</li>\n<li><strong>Be deliberately creative.</strong></li>\n</ul>",
+          "text": "Ideas multiply when you break down associative\nbarriers (stop thinking “these two things are unrelated”) and step into the intersection . Learn related-but-unusual subjects. A data science\nstudent can borrow ideas from cooking or gardening to solve a data problem. Keep questions in mind so you spot connections by chance\n( serendipity ). Be deliberately creative."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Four tools generate ideas: seek\ninformation first, imagine freely, stay curious, and combine different\nideas at intersections. <strong>Exam words:</strong> creativity canvas,\nseeking information, observation, secondary research, imagination,\ncontext, curiosity, joyous exploration, deprivation sensitivity,\nopenness to people’s ideas, stress tolerance, intersections, Medici\nEffect, Eastgate Centre, Mick Pearce, biomimicry, serendipity.</p>",
+          "text": "In one line: Four tools generate ideas: seek\ninformation first, imagine freely, stay curious, and combine different\nideas at intersections. Exam words: creativity canvas,\nseeking information, observation, secondary research, imagination,\ncontext, curiosity, joyous exploration, deprivation sensitivity,\nopenness to people’s ideas, stress tolerance, intersections, Medici\nEffect, Eastgate Centre, Mick Pearce, biomimicry, serendipity."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four ways to seek information.\n</summary>\nObservation, listening, asking questions, secondary research.\n</details>",
+          "text": "Name the four ways to seek information. Observation, listening, asking questions, secondary research."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWanting to know the end of a mystery film is which dimension of\ncuriosity?\n</summary>\nDeprivation sensitivity — noticing a gap in knowledge and wanting to\nclose it.\n</details>",
+          "text": "Wanting to know the end of a mystery film is which dimension of\ncuriosity? Deprivation sensitivity — noticing a gap in knowledge and wanting to\nclose it."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat idea did Mick Pearce combine with architecture?\n</summary>\nHow termites keep their mounds cool (natural ventilation).\n</details>",
+          "text": "What idea did Mick Pearce combine with architecture? How termites keep their mounds cool (natural ventilation)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “intersections” mean as a creativity tool?\n</summary>\nWhen two different ideas meet, a third new idea is born.\n</details>",
+          "text": "What does “intersections” mean as a creativity tool? When two different ideas meet, a third new idea is born."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy should you set a context when imagining?\n</summary>\nSo your thinking stays focused on the problem instead of going all over\nthe place.\n</details>",
+          "text": "Why should you set a context when imagining? So your thinking stays focused on the problem instead of going all over\nthe place."
+        }
+      ]
+    },
+    {
+      "slug": "attitudes-for-creativity",
+      "title": "Attitudes for Creativity",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A painter who sold almost nothing in his\nlifetime, yet painted every single day. A clerk who wrote one letter\nthat changed his life. What did they have in common? The right\nattitude.</p>\n</blockquote>",
+          "text": "Start here A painter who sold almost nothing in his\nlifetime, yet painted every single day. A clerk who wrote one letter\nthat changed his life. What did they have in common? The right\nattitude."
+        },
+        {
+          "type": "html",
+          "html": "<p>An <strong>attitude</strong> is a <strong>mental frame</strong> for\nlooking at something. You might have a great attitude for talking to\npeople but a poor one for hard work. Here is what you need for\ncreativity.</p>",
+          "text": "An attitude is a mental frame for\nlooking at something. You might have a great attitude for talking to\npeople but a poor one for hard work. Here is what you need for\ncreativity."
+        },
+        {
+          "type": "heading",
+          "text": "Six willingness attitudes"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img10-attitudes.webp",
+          "alt": "Attitudes for creativity",
+          "caption": "Willing to be creative, fail, be\nwrong, see other views, iterate, and love problems."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Attitude</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Willingness to be creative</strong></td>\n<td><strong>Wanting</strong> to be creative. When a problem appears, be\nthe first to raise your hand. Don’t say, “Just tell me how to do\nit.”</td>\n</tr>\n<tr>\n<td><strong>2. Willingness to fail</strong></td>\n<td>Creativity is <strong>not an exam</strong>. You might choose the\nwrong problem, the wrong idea, or implement badly. That’s okay. Not\nevery creative effort ends in success.</td>\n</tr>\n<tr>\n<td><strong>3. Willingness to be wrong</strong></td>\n<td>“I tried it, but I was wrong. What’s your view?” Then pick up the\nbetter view.</td>\n</tr>\n<tr>\n<td><strong>4. Willingness to see other perspectives</strong></td>\n<td>Comes naturally once you accept you might be wrong.</td>\n</tr>\n<tr>\n<td><strong>5. Willingness to iterate</strong></td>\n<td>Go <strong>back and forth</strong> between steps. If ideas don’t\ncome, go back and redefine the problem. If you can’t implement, go back\nto your ideas. The steps are not a one-way road.</td>\n</tr>\n<tr>\n<td><strong>6. Willingness to fall in love with problems</strong></td>\n<td>Care for the problem, don’t just tolerate it.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Attitude What it means 1. Willingness to be creative Wanting to be creative. When a problem appears, be\nthe first to raise your hand. Don’t say, “Just tell me how to do\nit.” 2. Willingness to fail Creativity is not an exam . You might choose the\nwrong problem, the wrong idea, or implement badly. That’s okay. Not\nevery creative effort ends in success. 3. Willingness to be wrong “I tried it, but I was wrong. What’s your view?” Then pick up the\nbetter view. 4. Willingness to see other perspectives Comes naturally once you accept you might be wrong. 5. Willingness to iterate Go back and forth between steps. If ideas don’t\ncome, go back and redefine the problem. If you can’t implement, go back\nto your ideas. The steps are not a one-way road. 6. Willingness to fall in love with problems Care for the problem, don’t just tolerate it."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Also needed:</strong></p>",
+          "text": "Also needed:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Patience</strong>, or willingness to tolerate\n<strong>delay</strong>. Ideas often come later, while you walk or\neat.</li>\n<li><strong>Perseverance</strong>: keep going.</li>\n<li>Reading about your problem.</li>\n<li><strong>Collaboration</strong>: working with others.</li>\n</ul>",
+          "text": "Patience , or willingness to tolerate delay . Ideas often come later, while you walk or\neat. Perseverance : keep going. Reading about your problem. Collaboration : working with others."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your app project idea fails in the\nfirst test. Willingness to fail means you don’t quit. Willingness to\niterate means you go back, collect more user feedback, redefine the\nproblem, and try a new idea.</p>\n</blockquote>",
+          "text": "Everyday example Your app project idea fails in the\nfirst test. Willingness to fail means you don’t quit. Willingness to\niterate means you go back, collect more user feedback, redefine the\nproblem, and try a new idea."
+        },
+        {
+          "type": "heading",
+          "text": "Take inspiration\nfrom three creative people"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img11-inspiration.webp",
+          "alt": "Three sources of inspiration",
+          "caption": "A painter’s easel, a march for\nfreedom, and a letter that changed a life."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Person</th>\n<th>What we learn</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Vincent van Gogh</strong> (Dutch painter)</td>\n<td>Encouraged by his brother <strong>Theo</strong>, he painted from\nmorning to night. He <strong>sold almost nothing</strong> in his\nlifetime and lived on his brother’s support, but kept painting anyway:\nfamous works like the <strong>Sunflowers</strong> series. Today his\npaintings are worth a fortune. <strong>Lesson: passion, not money, drove\nhis creativity.</strong> Read <em>Lust for Life</em> (a novel about his\nlife by Irving Stone).</td>\n</tr>\n<tr>\n<td><strong>Mahatma Gandhi</strong></td>\n<td>Creativity everywhere: the idea of <strong>satyagraha</strong>, the\n<strong>Salt March</strong>, even his simple clothes and the way he\nspoke. He used creativity to bring people behind a purpose.</td>\n</tr>\n<tr>\n<td><strong>Srinivasa Ramanujan</strong></td>\n<td>A clerk at the <strong>Madras Port Trust</strong>, poor, but doing\nmaths all the time and organising it neatly. He wrote a famous letter to\nthe English professor <strong>G. H. Hardy</strong>: <em>“Dear Sir, I beg\nto introduce myself to you as a clerk in the Accounts Department of the\nPort Trust Office at Madras…”</em> He pointed to his best result in a\nway that made Hardy want to read the papers. Hardy brought him to\nEngland. <strong>Lesson: do such good work that it speaks for\nyou.</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Person What we learn Vincent van Gogh (Dutch painter) Encouraged by his brother Theo , he painted from\nmorning to night. He sold almost nothing in his\nlifetime and lived on his brother’s support, but kept painting anyway:\nfamous works like the Sunflowers series. Today his\npaintings are worth a fortune. Lesson: passion, not money, drove\nhis creativity. Read Lust for Life (a novel about his\nlife by Irving Stone). Mahatma Gandhi Creativity everywhere: the idea of satyagraha , the Salt March , even his simple clothes and the way he\nspoke. He used creativity to bring people behind a purpose. Srinivasa Ramanujan A clerk at the Madras Port Trust , poor, but doing\nmaths all the time and organising it neatly. He wrote a famous letter to\nthe English professor G. H. Hardy : “Dear Sir, I beg\nto introduce myself to you as a clerk in the Accounts Department of the\nPort Trust Office at Madras…” He pointed to his best result in a\nway that made Hardy want to read the papers. Hardy brought him to\nEngland. Lesson: do such good work that it speaks for\nyou."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Fact note:</em> the professor says the letter was sent “in 1912,\nwhen he was 21–22”. Ramanujan actually sent it in <strong>January\n1913</strong>, when he was <strong>25</strong>.</p>",
+          "text": "Fact note: the professor says the letter was sent “in 1912,\nwhen he was 21–22”. Ramanujan actually sent it in January\n1913 , when he was 25 ."
+        },
+        {
+          "type": "heading",
+          "text": "The most\nimportant line: creativity is deliberate"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Creativity is a deliberate activity.</strong></p>\n</blockquote>",
+          "text": "Creativity is a deliberate activity."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Deliberate</strong> means <strong>on purpose</strong>.\nCreativity is not an idea that suddenly falls on your head. It is\nsolving a problem with <strong>dedication, discipline and\ndeliberateness</strong>.</p>",
+          "text": "Deliberate means on purpose .\nCreativity is not an idea that suddenly falls on your head. It is\nsolving a problem with dedication, discipline and\ndeliberateness ."
+        },
+        {
+          "type": "html",
+          "html": "<p>You should be able to say exactly where you are: “I’m in the\ninformation-collecting stage”, “I’m in the ideation stage”, “I’m in the\nimplementation stage”.</p>",
+          "text": "You should be able to say exactly where you are: “I’m in the\ninformation-collecting stage”, “I’m in the ideation stage”, “I’m in the\nimplementation stage”."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Creative people are willing to try,\nfail, be wrong, listen, iterate and love problems — and they create\ndeliberately. <strong>Exam words:</strong> attitude, willingness to be\ncreative, willingness to fail, willingness to be wrong, other\nperspectives, willingness to iterate, fall in love with problems,\npatience, perseverance, Vincent van Gogh, Mahatma Gandhi, Ramanujan, G.\nH. Hardy, creativity is deliberate.</p>",
+          "text": "In one line: Creative people are willing to try,\nfail, be wrong, listen, iterate and love problems — and they create\ndeliberately. Exam words: attitude, willingness to be\ncreative, willingness to fail, willingness to be wrong, other\nperspectives, willingness to iterate, fall in love with problems,\npatience, perseverance, Vincent van Gogh, Mahatma Gandhi, Ramanujan, G.\nH. Hardy, creativity is deliberate."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is an attitude, according to the professor?\n</summary>\nA mental frame for looking at something.\n</details>",
+          "text": "What is an attitude, according to the professor? A mental frame for looking at something."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYour ideas aren’t working, so you go back and redefine the problem.\nWhich attitude is this?\n</summary>\nWillingness to iterate.\n</details>",
+          "text": "Your ideas aren’t working, so you go back and redefine the problem.\nWhich attitude is this? Willingness to iterate."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy is “willingness to fail” important in creativity?\n</summary>\nCreativity is not an exam; you can choose the wrong problem, idea or\nimplementation, and not every effort ends in success.\n</details>",
+          "text": "Why is “willingness to fail” important in creativity? Creativity is not an exam; you can choose the wrong problem, idea or\nimplementation, and not every effort ends in success."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTo whom did Ramanujan write his famous letter?\n</summary>\nProfessor G. H. Hardy in England.\n</details>",
+          "text": "To whom did Ramanujan write his famous letter? Professor G. H. Hardy in England."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nComplete the professor’s key line: “Creativity is a ______ activity.”\n</summary>\nDeliberate.\n</details>",
+          "text": "Complete the professor’s key line: “Creativity is a ______ activity.” Deliberate."
+        }
+      ]
+    },
+    {
+      "slug": "week-8-quick-revision",
+      "title": "Week 8 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Creativity and thinking skills, all on\none page.</p>\n</blockquote>",
+          "text": "Start here Creativity and thinking skills, all on\none page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-8/img12-week8-map.webp",
+          "alt": "Week 8 at a glance",
+          "caption": "What creativity is, the journey, the\nprocess, the tools and the attitudes."
+        },
+        {
+          "type": "heading",
+          "text": "What is creativity?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Everyone is creative.</strong> We only differ in our score\n(4/10 vs 7/10), and practice raises it.</li>\n<li><strong>Definition:</strong> bringing into existence something that\ndid not exist before. Personal creativity counts.</li>\n<li><strong>Maslow’s needs:</strong> physiological → safety →\nbelongingness and love → esteem → self-actualisation. We need creativity\nat every level.</li>\n<li><strong>Anchoring:</strong> the first (high) price you see sets your\nexpectations.</li>\n</ul>",
+          "text": "Everyone is creative. We only differ in our score\n(4/10 vs 7/10), and practice raises it. Definition: bringing into existence something that\ndid not exist before. Personal creativity counts. Maslow’s needs: physiological → safety →\nbelongingness and love → esteem → self-actualisation. We need creativity\nat every level. Anchoring: the first (high) price you see sets your\nexpectations."
+        },
+        {
+          "type": "heading",
+          "text": "The creativity journey"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Problem → solution</strong>; it never ends. You must find\n<strong>and implement</strong> a solution.</li>\n<li><strong>Closure</strong> = the problem is fully solved. Most\nsolutions are copied from others or come from experience; copying nature\nis <strong>biomimicry</strong>.</li>\n<li><strong>Creativity is a choice.</strong> Fall in love with\nproblems.</li>\n<li><strong>Find problems through:</strong> the 17 <strong>UN\nSDGs</strong>, or <strong>empathy</strong> (the empathy walk: the mother\nin the hospital queue).</li>\n</ul>",
+          "text": "Problem → solution ; it never ends. You must find and implement a solution. Closure = the problem is fully solved. Most\nsolutions are copied from others or come from experience; copying nature\nis biomimicry . Creativity is a choice. Fall in love with\nproblems. Find problems through: the 17 UN\nSDGs , or empathy (the empathy walk: the mother\nin the hospital queue)."
+        },
+        {
+          "type": "heading",
+          "text": "Process of creativity (7\nsteps)"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Define</strong> the problem.</li>\n<li><strong>Collect</strong> information.</li>\n<li><strong>Redefine</strong> the problem (hunger → adding nutrients to\nfood).</li>\n<li><strong>Generate</strong> ideas.</li>\n<li><strong>Design</strong> the solution.</li>\n<li><strong>Evaluate</strong> feasibility and refine.</li>\n<li><strong>Implement.</strong></li>\n</ol>",
+          "text": "Define the problem. Collect information. Redefine the problem (hunger → adding nutrients to\nfood). Generate ideas. Design the solution. Evaluate feasibility and refine. Implement."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>IDEO</strong> shopping cart: information, collaboration,\nideas, prototype.</li>\n<li>Worked example: “children learn English” → “fall in love with\nEnglish” → summer course in England.</li>\n<li>There is no guarantee of success.</li>\n</ul>",
+          "text": "IDEO shopping cart: information, collaboration,\nideas, prototype. Worked example: “children learn English” → “fall in love with\nEnglish” → summer course in England. There is no guarantee of success."
+        },
+        {
+          "type": "heading",
+          "text": "Tools for creativity"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Tool</th>\n<th>Key point</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Seeking information</strong></td>\n<td>You can’t solve what you don’t understand: observe, listen, ask,\nresearch</td>\n</tr>\n<tr>\n<td><strong>Imagination</strong></td>\n<td>If it doesn’t exist, it hasn’t been imagined yet. Set a\ncontext.</td>\n</tr>\n<tr>\n<td><strong>Curiosity</strong></td>\n<td>Ask questions. Four dimensions: joyous exploration, deprivation\nsensitivity, openness to people’s ideas, stress tolerance</td>\n</tr>\n<tr>\n<td><strong>Intersections</strong></td>\n<td>Two ideas meet → a third is born (<em>Medici Effect</em>): Eastgate\nCentre (termites), Peter Café Sport</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Tool Key point Seeking information You can’t solve what you don’t understand: observe, listen, ask,\nresearch Imagination If it doesn’t exist, it hasn’t been imagined yet. Set a\ncontext. Curiosity Ask questions. Four dimensions: joyous exploration, deprivation\nsensitivity, openness to people’s ideas, stress tolerance Intersections Two ideas meet → a third is born ( Medici Effect ): Eastgate\nCentre (termites), Peter Café Sport"
+        },
+        {
+          "type": "heading",
+          "text": "Attitudes for creativity"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Willingness to:</strong> be creative, fail, be wrong, see\nother perspectives, iterate, fall in love with problems.</li>\n<li>Plus patience (tolerating delay) and perseverance.</li>\n<li><strong>Inspiration:</strong> Van Gogh (passion), Gandhi (purposeful\ncreativity), Ramanujan (a letter to Hardy; let your work speak).</li>\n<li><strong>Creativity is deliberate:</strong> dedication, discipline,\ndeliberateness.</li>\n</ul>",
+          "text": "Willingness to: be creative, fail, be wrong, see\nother perspectives, iterate, fall in love with problems. Plus patience (tolerating delay) and perseverance. Inspiration: Van Gogh (passion), Gandhi (purposeful\ncreativity), Ramanujan (a letter to Hardy; let your work speak). Creativity is deliberate: dedication, discipline,\ndeliberateness."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>A friend says, “I’m not creative, my sister is.” What is the\nprofessor’s first rule?\n</li></ol></summary>\nEveryone is creative; we only differ in degree.\n</details>",
+          "text": "A friend says, “I’m not creative, my sister is.” What is the\nprofessor’s first rule? Everyone is creative; we only differ in degree."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Which Maslow need does joining many WhatsApp groups reflect?\n</li></ol></summary>\nBelongingness and love.\n</details>",
+          "text": "Which Maslow need does joining many WhatsApp groups reflect? Belongingness and love."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Which step comes between “generate ideas” and “evaluate\nfeasibility”?\n</li></ol></summary>\nDesign the solution.\n</details>",
+          "text": "Which step comes between “generate ideas” and “evaluate\nfeasibility”? Design the solution."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>A student in the hospital queue imagines being the mother. Which\ntool for finding problems is this?\n</li></ol></summary>\nEmpathy.\n</details>",
+          "text": "A student in the hospital queue imagines being the mother. Which\ntool for finding problems is this? Empathy."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Valuing different views and asking others for their approach is\nwhich dimension of curiosity?\n</li></ol></summary>\nOpenness to people’s ideas.\n</details>",
+          "text": "Valuing different views and asking others for their approach is\nwhich dimension of curiosity? Openness to people’s ideas."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Pencil + eraser = pencil with an eraser. Which tool is this?\n</li></ol></summary>\nIntersections.\n</details>",
+          "text": "Pencil + eraser = pencil with an eraser. Which tool is this? Intersections."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Going back from implementation to choose a different idea shows\nwhich attitude?\n</li></ol></summary>\nWillingness to iterate.\n</details>",
+          "text": "Going back from implementation to choose a different idea shows\nwhich attitude? Willingness to iterate."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>What is the classic definition of creativity?\n</li></ol></summary>\nBringing into existence something that did not exist before.\n</details>",
+          "text": "What is the classic definition of creativity? Bringing into existence something that did not exist before."
+        }
+      ]
+    }
+  ]
+}

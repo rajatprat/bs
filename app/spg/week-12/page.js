@@ -1,0 +1,4 @@
+import data from '../../../data/spg-week-12.json';
+import WeekSections,{WeekStats} from '../../../components/WeekSections';
+export const metadata={title:'SPG Week 12 · Personal and professional development'};
+export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span>/</span><a href="/spg/">SPG</a><span>/</span><span>Week 12</span></nav><div className="eyebrow">BSGN3001 · WEEK 12</div><h1>Keep growing.<br/><span>Put learning into practice.</span></h1><p className="lead">Explore lifelong learning, stress and energy, time management, career advice, and purposeful professional growth.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><WeekSections data={data}/></main>}

@@ -1,0 +1,1096 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 12,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-12/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "feed-your-mind",
+      "title": "Feed Your Mind — Books, Movies, Speeches and Lifelong Learning",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your body becomes what you eat. Your mind\nis the same. It becomes what you <strong>read, watch, hear</strong>, and\nthe <strong>people</strong> you spend time with. So choose your mind’s\n“food” with care.</p>\n</blockquote>",
+          "text": "Start here Your body becomes what you eat. Your mind\nis the same. It becomes what you read, watch, hear , and\nthe people you spend time with. So choose your mind’s\n“food” with care."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img01-feed-your-mind.webp",
+          "alt": "What you feed your mind",
+          "caption": "Books, films, music and people all\nflow into the person you become."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“You are the books you read, the movies you watch, the music you\nlisten to, the people you spend time with, the conversations you engage\nin. Choose wisely what you feed your mind.”</p>\n</blockquote>",
+          "text": "“You are the books you read, the movies you watch, the music you\nlisten to, the people you spend time with, the conversations you engage\nin. Choose wisely what you feed your mind.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>We can’t always pick our surroundings. But most of the time we\n<strong>do</strong> have a choice, so pick places and people that help\nyou grow.</p>",
+          "text": "We can’t always pick our surroundings. But most of the time we do have a choice, so pick places and people that help\nyou grow."
+        },
+        {
+          "type": "heading",
+          "text": "Books the teacher recommends"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Book</th>\n<th>Author</th>\n<th>The big idea</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong><em>The 7 Habits of Highly Effective\nPeople</em></strong></td>\n<td>Stephen Covey</td>\n<td>Win <strong>inside</strong> yourself first, then win in the world\noutside.</td>\n</tr>\n<tr>\n<td><strong><em>How Will You Measure Your Life?</em></strong></td>\n<td>Clayton Christensen</td>\n<td>Look at life as a <strong>whole</strong>, not just career targets.\nHis Harvard classmates’ lives at reunions show the ups and downs.</td>\n</tr>\n<tr>\n<td><strong><em>Give and Take</em></strong></td>\n<td>Adam Grant</td>\n<td>Truly successful people are often <strong>givers</strong>, but smart\nones. Not giving blindly, not winning at any cost.</td>\n</tr>\n<tr>\n<td><strong><em>The Practice</em></strong></td>\n<td>Seth Godin</td>\n<td>Stop chasing perfection. Keep <strong>making and sharing</strong>\ncreative work.</td>\n</tr>\n<tr>\n<td><strong><em>One Minute for Yourself</em></strong></td>\n<td>Spencer Johnson</td>\n<td>Make time for <strong>your own</strong> happiness before trying to\nmake others happy.</td>\n</tr>\n<tr>\n<td><strong><em>Steal Like an Artist</em></strong></td>\n<td>Austin Kleon</td>\n<td>Nothing is fully original. <strong>Copy your heroes, give them\ncredit</strong>, practise, and your own style grows.</td>\n</tr>\n<tr>\n<td><strong><em>Thrive</em></strong></td>\n<td>Arianna Huffington</td>\n<td>Success is not only productivity. <strong>Well-being</strong> and\n<strong>wisdom</strong> matter too.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Book Author The big idea The 7 Habits of Highly Effective\nPeople Stephen Covey Win inside yourself first, then win in the world\noutside. How Will You Measure Your Life? Clayton Christensen Look at life as a whole , not just career targets.\nHis Harvard classmates’ lives at reunions show the ups and downs. Give and Take Adam Grant Truly successful people are often givers , but smart\nones. Not giving blindly, not winning at any cost. The Practice Seth Godin Stop chasing perfection. Keep making and sharing creative work. One Minute for Yourself Spencer Johnson Make time for your own happiness before trying to\nmake others happy. Steal Like an Artist Austin Kleon Nothing is fully original. Copy your heroes, give them\ncredit , practise, and your own style grows. Thrive Arianna Huffington Success is not only productivity. Well-being and wisdom matter too."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — “steal” the right way</strong> Great\nmusicians and sports stars also started by <strong>copying</strong>\ntheir heroes. The rule: <strong>say who inspired you</strong>, and don’t\ncopy forever. Over time, many inspirations mix into <strong>your own\nstyle</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — “steal” the right way Great\nmusicians and sports stars also started by copying their heroes. The rule: say who inspired you , and don’t\ncopy forever. Over time, many inspirations mix into your own\nstyle ."
+        },
+        {
+          "type": "heading",
+          "text": "Movies with life lessons"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Lesson</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong><em>The Karate Kid</em></strong></td>\n<td>A skill is for <strong>self-protection</strong>, not showing off.\nAvoid fights first.</td>\n</tr>\n<tr>\n<td><strong><em>Kung Fu Panda</em></strong></td>\n<td>A funny film full of wisdom. Po the panda finds the power\n<strong>already inside him</strong>.</td>\n</tr>\n<tr>\n<td><strong><em>The Lion King</em></strong></td>\n<td>Simba loses belief after his father dies. Friends help him\n<strong>find himself</strong> again.</td>\n</tr>\n<tr>\n<td><strong><em>Groundhog Day</em></strong></td>\n<td>The same day repeats again and again. When he <strong>changes his\nattitude</strong> and starts helping people, his life moves\nforward.</td>\n</tr>\n<tr>\n<td><strong><em>Forrest Gump</em></strong></td>\n<td>Keep going, whatever happens: <strong>persistence</strong> and\n<strong>self-belief</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Movie Lesson The Karate Kid A skill is for self-protection , not showing off.\nAvoid fights first. Kung Fu Panda A funny film full of wisdom. Po the panda finds the power already inside him . The Lion King Simba loses belief after his father dies. Friends help him find himself again. Groundhog Day The same day repeats again and again. When he changes his\nattitude and starts helping people, his life moves\nforward. Forrest Gump Keep going, whatever happens: persistence and self-belief ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — four ways to solve a conflict</strong> The\nteacher links <em>The Karate Kid</em> to an old Indian idea:\n<strong>sama, dana, bheda, danda</strong>.</p>\n<ol type=\"1\">\n<li><strong>Sama</strong>: talk it out peacefully.</li>\n<li><strong>Dana</strong>: give something in return.</li>\n<li><strong>Bheda</strong>: split the other side.</li>\n<li><strong>Danda</strong>: fight, <strong>only if nothing else\nworks</strong>. This works for arguments at work too, not just physical\nfights.</li>\n</ol>\n</blockquote>",
+          "text": "Lecture example — four ways to solve a conflict The\nteacher links The Karate Kid to an old Indian idea: sama, dana, bheda, danda . Sama : talk it out peacefully. Dana : give something in return. Bheda : split the other side. Danda : fight, only if nothing else\nworks . This works for arguments at work too, not just physical\nfights."
+        },
+        {
+          "type": "heading",
+          "text": "Speeches worth watching"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Speaker</th>\n<th>Where</th>\n<th>Big idea</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Steve Jobs</strong></td>\n<td>Stanford, 2005</td>\n<td>“Stay hungry, stay foolish.” You can only <strong>connect the dots\nlooking back</strong>. Even bad times add up later.</td>\n</tr>\n<tr>\n<td><strong>Randy Pausch</strong></td>\n<td>Carnegie Mellon, “The Last Lecture” (2007)</td>\n<td>Facing cancer, he spoke about chasing childhood dreams with\n<strong>grit</strong>. It later became a book.</td>\n</tr>\n<tr>\n<td><strong>J. K. Rowling</strong></td>\n<td>Harvard, 2008</td>\n<td>“The Fringe Benefits of Failure.” Rejections and hard times can lead\nto <strong>new worlds</strong>, through imagination.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Speaker Where Big idea Steve Jobs Stanford, 2005 “Stay hungry, stay foolish.” You can only connect the dots\nlooking back . Even bad times add up later. Randy Pausch Carnegie Mellon, “The Last Lecture” (2007) Facing cancer, he spoke about chasing childhood dreams with grit . It later became a book. J. K. Rowling Harvard, 2008 “The Fringe Benefits of Failure.” Rejections and hard times can lead\nto new worlds , through imagination."
+        },
+        {
+          "type": "heading",
+          "text": "Be a lifelong learner, and a\nmentor"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img02-lifelong-learner.webp",
+          "alt": "Learn and teach, all life long",
+          "caption": "Learn from everyone around\nyou, and teach what you know. Both make you grow."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Learning doesn’t stop at Class 12 or graduation.</li>\n<li>We learn from books, films and speeches, but <strong>most of all\nfrom people</strong>: everyday positive people around us, not just\nfamous ones.</li>\n<li><strong>Nature</strong> and <strong>people around you</strong> are\ngreat teachers. Keep watching and learning.</li>\n<li><strong>Teach too.</strong> When you mentor someone, you learn from\nthem as well. It’s “<strong>360-degree learning</strong>”.</li>\n</ul>",
+          "text": "Learning doesn’t stop at Class 12 or graduation. We learn from books, films and speeches, but most of all\nfrom people : everyday positive people around us, not just\nfamous ones. Nature and people around you are\ngreat teachers. Keep watching and learning. Teach too. When you mentor someone, you learn from\nthem as well. It’s “ 360-degree learning ”."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Choose good “food” for your mind\n(books, films, speeches, people), keep learning all your life, and share\nwhat you know. <strong>Exam words:</strong> feed your mind, Seven\nHabits, Give and Take (givers vs takers), Steal Like an Artist, Thrive,\nGroundhog Day, connect the dots, Last Lecture, Fringe Benefits of\nFailure, lifelong learner, mentor and mentee.</p>",
+          "text": "In one line: Choose good “food” for your mind\n(books, films, speeches, people), keep learning all your life, and share\nwhat you know. Exam words: feed your mind, Seven\nHabits, Give and Take (givers vs takers), Steal Like an Artist, Thrive,\nGroundhog Day, connect the dots, Last Lecture, Fringe Benefits of\nFailure, lifelong learner, mentor and mentee."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does <em>Steal Like an Artist</em> really ask you to do?\n</summary>\nLearn by copying the people who inspire you, give them credit, and keep\npractising until your own style grows.\n</details>",
+          "text": "What does Steal Like an Artist really ask you to do? Learn by copying the people who inspire you, give them credit, and keep\npractising until your own style grows."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat changes the hero’s life in <em>Groundhog Day</em>?\n</summary>\nHe changes his attitude and uses the repeating day to help people.\n</details>",
+          "text": "What changes the hero’s life in Groundhog Day ? He changes his attitude and uses the repeating day to help people."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did Steve Jobs mean by “connecting the dots”?\n</summary>\nYou can’t see how your experiences fit together in advance. Looking\nback, even the bad ones turn out to be useful.\n</details>",
+          "text": "What did Steve Jobs mean by “connecting the dots”? You can’t see how your experiences fit together in advance. Looking\nback, even the bad ones turn out to be useful."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy should a learner also become a mentor?\n</summary>\nTeaching others shares your knowledge, and you also learn from the\npeople you mentor.\n</details>",
+          "text": "Why should a learner also become a mentor? Teaching others shares your knowledge, and you also learn from the\npeople you mentor."
+        }
+      ]
+    },
+    {
+      "slug": "use-what-you-learn",
+      "title": "Use What You Learn — Ice Stupas, Theme Parks and Shoes",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> High up in Ladakh, there is plenty of\nsnow in winter. But in spring and early summer, when farmers need water,\nthe streams are nearly dry. Hundreds of villages faced this. The answer\ncame from a science lesson you learned in school.</p>\n</blockquote>",
+          "text": "Start here High up in Ladakh, there is plenty of\nsnow in winter. But in spring and early summer, when farmers need water,\nthe streams are nearly dry. Hundreds of villages faced this. The answer\ncame from a science lesson you learned in school."
+        },
+        {
+          "type": "heading",
+          "text": "The ice stupa"
+        },
+        {
+          "type": "html",
+          "html": "<p>Ladakh is <strong>cold, dry and rocky</strong>. You can’t easily dig\nponds or wells there. In summer some people even had to leave their\nvillages for a few months.</p>",
+          "text": "Ladakh is cold, dry and rocky . You can’t easily dig\nponds or wells there. In summer some people even had to leave their\nvillages for a few months."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The school science:</strong> a big block of ice melts\n<strong>slowly</strong>. A small piece melts fast. Why? A big block has\n<strong>less surface for its size</strong>, so it takes in heat more\nslowly. (That’s also why we <strong>spread hot food out</strong> to cool\nit faster.)</p>",
+          "text": "The school science: a big block of ice melts slowly . A small piece melts fast. Why? A big block has less surface for its size , so it takes in heat more\nslowly. (That’s also why we spread hot food out to cool\nit faster.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the Ice House in Chennai</strong> Near\nMarina Beach stands a building once called the <strong>Ice\nHouse</strong> (today <strong>Vivekananda House</strong>). In the 1800s,\nhuge blocks of ice came by <strong>ship</strong> all the way from\nAmerica and were stored there. Big blocks lasted for months.</p>\n</blockquote>",
+          "text": "Lecture example — the Ice House in Chennai Near\nMarina Beach stands a building once called the Ice\nHouse (today Vivekananda House ). In the 1800s,\nhuge blocks of ice came by ship all the way from\nAmerica and were stored there. Big blocks lasted for months."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The idea:</strong> engineer <strong>Sonam Wangchuk</strong>\npiped stream water up through a pipe so it sprayed out like a\n<strong>fountain</strong> in the freezing winter. The water froze\n<strong>layer by layer</strong> into a tall <strong>cone of\nice</strong>, called an <strong>ice stupa</strong>. In spring and summer\nit <strong>melts slowly</strong>, giving water just when farms need\nit.</p>",
+          "text": "The idea: engineer Sonam Wangchuk piped stream water up through a pipe so it sprayed out like a fountain in the freezing winter. The water froze layer by layer into a tall cone of\nice , called an ice stupa . In spring and summer\nit melts slowly , giving water just when farms need\nit."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img03-ice-stupa.webp",
+          "alt": "The ice stupa",
+          "caption": "Winter water is frozen into a tall cone. It\nmelts slowly and waters the fields in summer."
+        },
+        {
+          "type": "html",
+          "html": "<p>The character Phunsukh Wangdu in the film <em>3 Idiots</em> was\npartly inspired by him.</p>",
+          "text": "The character Phunsukh Wangdu in the film 3 Idiots was\npartly inspired by him."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The lesson:</strong> he didn’t need new science, just\n<strong>school science, used</strong>.</p>",
+          "text": "The lesson: he didn’t need new science, just school science, used ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the picture of a vegetable</strong> An old\nTamil saying: you can’t <strong>cook</strong> with a\n<strong>picture</strong> of a vegetable. In the same way, the lessons in\nthis course are useless unless you <strong>use</strong> them. Pick a\nfew, practise them, and turn them into <strong>habits</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the picture of a vegetable An old\nTamil saying: you can’t cook with a picture of a vegetable. In the same way, the lessons in\nthis course are useless unless you use them. Pick a\nfew, practise them, and turn them into habits ."
+        },
+        {
+          "type": "heading",
+          "text": "Two men at\nDisney World: the entrepreneurial mindset"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img04-two-visitors.webp",
+          "alt": "Two visitors, two mindsets",
+          "caption": "Same trip, different thinking:\none enjoys it, the other asks “What if we had this at home?”"
+        },
+        {
+          "type": "html",
+          "html": "<p>Long ago, two men from India visited Disney World in the USA. Both\nloved it.</p>",
+          "text": "Long ago, two men from India visited Disney World in the USA. Both\nloved it."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>The first</strong> came home and told everyone how much fun\nit was.</li>\n<li><strong>The second</strong> asked, “<strong>What if</strong> we had\ntheme parks in our country? People who can’t travel to the USA could\nenjoy them too.” He went on to build theme parks in India.</li>\n</ul>",
+          "text": "The first came home and told everyone how much fun\nit was. The second asked, “ What if we had\ntheme parks in our country? People who can’t travel to the USA could\nenjoy them too.” He went on to build theme parks in India."
+        },
+        {
+          "type": "html",
+          "html": "<p>This “<strong>what if?</strong>” thinking is the\n<strong>entrepreneurial mindset</strong>. You don’t need to own a\ncompany to have it.</p>",
+          "text": "This “ what if? ” thinking is the entrepreneurial mindset . You don’t need to own a\ncompany to have it."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Everyday example:</strong> you notice a slow process at work,\nthink of a better way and share it with your boss. If the idea is used,\nthe organisation grows, and so do you. As the saying goes, “<strong>Your\nattitude decides your altitude.</strong>”</p>",
+          "text": "Everyday example: you notice a slow process at work,\nthink of a better way and share it with your boss. If the idea is used,\nthe organisation grows, and so do you. As the saying goes, “ Your\nattitude decides your altitude. ”"
+        },
+        {
+          "type": "heading",
+          "text": "Two shoe sellers:\nscarcity vs abundance"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img05-shoe-sellers.webp",
+          "alt": "Two shoe sellers",
+          "caption": "Same barefoot village. One sees “no\nmarket”. The other sees “everyone is a customer”."
+        },
+        {
+          "type": "html",
+          "html": "<p>A shoe company sent two salespeople to a village. Nobody there wore\nshoes.</p>",
+          "text": "A shoe company sent two salespeople to a village. Nobody there wore\nshoes."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Salesperson</th>\n<th>Report</th>\n<th>Mindset</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>First</td>\n<td>“No one wears shoes. There’s no market.”</td>\n<td><strong>Scarcity</strong>: sees only problems</td>\n</tr>\n<tr>\n<td>Second</td>\n<td>“No one has shoes yet. <strong>Everyone</strong> can be our\ncustomer!”</td>\n<td><strong>Abundance</strong>: sees opportunity</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Salesperson Report Mindset First “No one wears shoes. There’s no market.” Scarcity : sees only problems Second “No one has shoes yet. Everyone can be our\ncustomer!” Abundance : sees opportunity"
+        },
+        {
+          "type": "html",
+          "html": "<p>The boss loved the second report. <strong>Scarcity or abundance? It’s\nyour choice.</strong></p>",
+          "text": "The boss loved the second report. Scarcity or abundance? It’s\nyour choice."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Use simple knowledge to solve real\nproblems, and look at every situation with a “what if?”, abundance\nmindset. <strong>Exam words:</strong> ice stupa, surface area, Ice\nHouse, use what you learn, entrepreneurial mindset, attitude and\naltitude, scarcity mindset, abundance mindset.</p>",
+          "text": "In one line: Use simple knowledge to solve real\nproblems, and look at every situation with a “what if?”, abundance\nmindset. Exam words: ice stupa, surface area, Ice\nHouse, use what you learn, entrepreneurial mindset, attitude and\naltitude, scarcity mindset, abundance mindset."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy does a big ice block last longer than small pieces?\n</summary>\nIt has less surface area for its size, so it takes in heat and melts\nmore slowly.\n</details>",
+          "text": "Why does a big ice block last longer than small pieces? It has less surface area for its size, so it takes in heat and melts\nmore slowly."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat problem did ice stupas solve?\n</summary>\nWater shortage in spring and summer in cold, dry Ladakh villages, by\nstoring winter water as ice.\n</details>",
+          "text": "What problem did ice stupas solve? Water shortage in spring and summer in cold, dry Ladakh villages, by\nstoring winter water as ice."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat made the second Disney World visitor different?\n</summary>\nHe asked “What if we had this at home?” and acted on it: the\nentrepreneurial mindset.\n</details>",
+          "text": "What made the second Disney World visitor different? He asked “What if we had this at home?” and acted on it: the\nentrepreneurial mindset."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“Nobody wears shoes, so everybody is a customer.” Which mindset is this?\n</summary>\nAbundance mindset.\n</details>",
+          "text": "“Nobody wears shoes, so everybody is a customer.” Which mindset is this? Abundance mindset."
+        }
+      ]
+    },
+    {
+      "slug": "failure-fear-and-panic",
+      "title": "Failure, Fear and the Panic Button",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You have a class in 30 minutes. It’s\nraining hard. You park your car and see the back lights won’t switch\noff. The battery will drain! Your heart races. What do you do? The\nanswer depends on whether you <strong>panic</strong> or\n<strong>pause</strong>.</p>\n</blockquote>",
+          "text": "Start here You have a class in 30 minutes. It’s\nraining hard. You park your car and see the back lights won’t switch\noff. The battery will drain! Your heart races. What do you do? The\nanswer depends on whether you panic or pause ."
+        },
+        {
+          "type": "heading",
+          "text": "Denial wastes time"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the promotion that didn’t come</strong> A\nyoung professor was sure he’d be promoted. Everyone thought so. One of\nthe interviewers was even his old friend. But he <strong>wasn’t\npromoted</strong>. He went into <strong>denial</strong>: “How can they\npick others and not me?” He spoke badly of the people who were promoted,\nand even of his friend. <strong>A whole year</strong> passed with\nnothing done. He was promoted the next time, but that year was lost.</p>\n</blockquote>",
+          "text": "Lecture example — the promotion that didn’t come A\nyoung professor was sure he’d be promoted. Everyone thought so. One of\nthe interviewers was even his old friend. But he wasn’t\npromoted . He went into denial : “How can they\npick others and not me?” He spoke badly of the people who were promoted,\nand even of his friend. A whole year passed with\nnothing done. He was promoted the next time, but that year was lost."
+        },
+        {
+          "type": "html",
+          "html": "<p>What should he have done? <strong>Accept it</strong>, find out what\nwas missing, and <strong>prepare better</strong>.</p>",
+          "text": "What should he have done? Accept it , find out what\nwas missing, and prepare better ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Know what’s in your control:</strong></p>",
+          "text": "Know what’s in your control:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>You control your <strong>preparation</strong> and\n<strong>effort</strong>.</li>\n<li>You don’t control the <strong>result</strong> once it’s out of your\nhands.</li>\n<li>If you’ve done your best, <strong>accept the result</strong> and\nlearn from it.</li>\n</ul>",
+          "text": "You control your preparation and effort . You don’t control the result once it’s out of your\nhands. If you’ve done your best, accept the result and\nlearn from it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Thomas Edison</strong> was asked about his many failed\nexperiments for the light bulb. His idea: each one wasn’t a failure, it\n<strong>taught him one more material that didn’t work</strong>. Every\nfailure brought success closer.</p>\n</blockquote>",
+          "text": "Thomas Edison was asked about his many failed\nexperiments for the light bulb. His idea: each one wasn’t a failure, it taught him one more material that didn’t work . Every\nfailure brought success closer."
+        },
+        {
+          "type": "heading",
+          "text": "Fear of failure"
+        },
+        {
+          "type": "html",
+          "html": "<p>We worry: “What if I fail the exam? What if I don’t get promoted?”\nToo much worry <strong>stops us from trying</strong> and steals our\njoy.</p>",
+          "text": "We worry: “What if I fail the exam? What if I don’t get promoted?”\nToo much worry stops us from trying and steals our\njoy."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Everyday example:</strong> fear of water can stop you\nlearning to swim. Face it, and you gain a skill that could <strong>save\nyour life</strong> one day.</p>",
+          "text": "Everyday example: fear of water can stop you\nlearning to swim. Face it, and you gain a skill that could save\nyour life one day."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Take <strong>calculated risks</strong>, ones you can manage.</li>\n<li>Don’t let one failure stay in your head. A cricket captain who keeps\nworrying about the last loss may lose the next match too.</li>\n</ul>",
+          "text": "Take calculated risks , ones you can manage. Don’t let one failure stay in your head. A cricket captain who keeps\nworrying about the last loss may lose the next match too."
+        },
+        {
+          "type": "heading",
+          "text": "The panic button: amygdala\nhijack"
+        },
+        {
+          "type": "html",
+          "html": "<p>When we panic, a small part of the brain called the\n<strong>amygdala</strong> takes over. The thinking part of the brain\n(the <strong>neocortex</strong>) switches off. We get only three\nchoices:</p>",
+          "text": "When we panic, a small part of the brain called the amygdala takes over. The thinking part of the brain\n(the neocortex ) switches off. We get only three\nchoices:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>F</th>\n<th>What it looks like</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Fight</strong></td>\n<td>Argue, shout, attack</td>\n</tr>\n<tr>\n<td><strong>Flight</strong></td>\n<td>Run away from the problem</td>\n</tr>\n<tr>\n<td><strong>Freeze</strong></td>\n<td>Get stuck, do nothing</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "F What it looks like Fight Argue, shout, attack Flight Run away from the problem Freeze Get stuck, do nothing"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is called an <strong>amygdala hijack</strong>. Decisions made in\npanic are often poor ones.</p>",
+          "text": "This is called an amygdala hijack . Decisions made in\npanic are often poor ones."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img06-panic-vs-pause.webp",
+          "alt": "Panic vs pause",
+          "caption": "In panic, the brain picks fight, flight or\nfreeze. A short pause lets the thinking brain come back."
+        },
+        {
+          "type": "heading",
+          "text": "Three ways to keep\nthe panic button far away"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img07-three-tools.webp",
+          "alt": "Three anti-panic tools",
+          "caption": "Dry run, pause, and chess\nmove."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Tool</th>\n<th>What you do</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Dry run</strong></td>\n<td>Practise the event <strong>before</strong> it happens, to catch\nproblems early</td>\n<td>Rehearsing a big event (did we keep water for the guest?); solving\n<strong>mock papers</strong> before an exam</td>\n</tr>\n<tr>\n<td><strong>2. Pause</strong></td>\n<td>Stop for a moment. Let your heartbeat slow down and let the thinking\nbrain return.</td>\n<td>Works for panic, anxiety <strong>and anger</strong></td>\n</tr>\n<tr>\n<td><strong>3. Chess move</strong></td>\n<td>Like in chess, think about the <strong>next few moves</strong>: who\nmight object, what could go wrong. Also ask: <strong>has this been done\nbefore?</strong></td>\n<td>His old director always asked these two questions</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Tool What you do Example 1. Dry run Practise the event before it happens, to catch\nproblems early Rehearsing a big event (did we keep water for the guest?); solving mock papers before an exam 2. Pause Stop for a moment. Let your heartbeat slow down and let the thinking\nbrain return. Works for panic, anxiety and anger 3. Chess move Like in chess, think about the next few moves : who\nmight object, what could go wrong. Also ask: has this been done\nbefore? His old director always asked these two questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — how the car story ended</strong> The\nteacher <strong>paused</strong>. With 15 minutes left, he thought: the\nlights need the <strong>battery</strong>. So he drove the car home,\n<strong>removed one battery wire</strong>, and took his scooter to\nclass, on time. The battery was saved and the mechanic could fix it\nlater.</p>\n</blockquote>",
+          "text": "Lecture example — how the car story ended The\nteacher paused . With 15 minutes left, he thought: the\nlights need the battery . So he drove the car home, removed one battery wire , and took his scooter to\nclass, on time. The battery was saved and the mechanic could fix it\nlater."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Accept results you can’t control and\nlearn from them, don’t let fear stop you, and beat panic with a dry run,\na pause, or a chess move. <strong>Exam words:</strong> denial, control\nvs no control, Edison’s experiments, fear of failure, calculated risk,\namygdala hijack, fight-flight-freeze, neocortex, dry run, pause, chess\nmove, precedent.</p>",
+          "text": "In one line: Accept results you can’t control and\nlearn from them, don’t let fear stop you, and beat panic with a dry run,\na pause, or a chess move. Exam words: denial, control\nvs no control, Edison’s experiments, fear of failure, calculated risk,\namygdala hijack, fight-flight-freeze, neocortex, dry run, pause, chess\nmove, precedent."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did the professor lose by staying in denial?\n</summary>\nA whole year in which he got nothing done.\n</details>",
+          "text": "What did the professor lose by staying in denial? A whole year in which he got nothing done."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat happens in an amygdala hijack?\n</summary>\nThe panic centre takes over, the thinking brain switches off, and we\nonly fight, flee or freeze.\n</details>",
+          "text": "What happens in an amygdala hijack? The panic centre takes over, the thinking brain switches off, and we\nonly fight, flee or freeze."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nSolving mock papers before an exam is which tool?\n</summary>\nA dry run.\n</details>",
+          "text": "Solving mock papers before an exam is which tool? A dry run."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat two questions make up the “chess move”?\n</summary>\nHas this been done before (is there a precedent)? And what could the\nnext moves or reactions be?\n</details>",
+          "text": "What two questions make up the “chess move”? Has this been done before (is there a precedent)? And what could the\nnext moves or reactions be?"
+        }
+      ]
+    },
+    {
+      "slug": "manage-stress-and-energy",
+      "title": "Manage Stress — Manage Your Energy",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A guitar string that’s too loose makes no\nmusic. Too tight, and it snaps. Stress is the same. <strong>A\nlittle</strong> stretches you and helps you grow. <strong>Too much for\ntoo long</strong> breaks you down.</p>\n</blockquote>",
+          "text": "Start here A guitar string that’s too loose makes no\nmusic. Too tight, and it snaps. Stress is the same. A\nlittle stretches you and helps you grow. Too much for\ntoo long breaks you down."
+        },
+        {
+          "type": "heading",
+          "text": "What is stress?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Every system has a natural state of <strong>order and\nbalance</strong>. When it is pushed <strong>away</strong> from that\nstate, we feel <strong>stress</strong>.</li>\n<li>We are made of <strong>mind, body and brain</strong>, all connected.\nStress in one part spreads to the others.</li>\n<li>We are also part of a <strong>bigger system</strong>: people,\nnature, the world. So stress can come from <strong>inside</strong> us or\n<strong>outside</strong> us.</li>\n<li><strong>Some stress is good.</strong> It pushes you out of your\ncomfort zone.</li>\n<li><strong>Too much, for too long,</strong> hurts your health,\nself-worth and performance.</li>\n<li>So treat the <strong>root cause</strong>, not just the\nsymptoms.</li>\n</ul>",
+          "text": "Every system has a natural state of order and\nbalance . When it is pushed away from that\nstate, we feel stress . We are made of mind, body and brain , all connected.\nStress in one part spreads to the others. We are also part of a bigger system : people,\nnature, the world. So stress can come from inside us or outside us. Some stress is good. It pushes you out of your\ncomfort zone. Too much, for too long, hurts your health,\nself-worth and performance. So treat the root cause , not just the\nsymptoms."
+        },
+        {
+          "type": "subheading",
+          "text": "Three ways to manage stress"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Manage your energy</strong> (this page)</li>\n<li><strong>Manage your time</strong> (next page)</li>\n<li><strong>Build rituals</strong> that join good habits together (next\npage)</li>\n</ol>",
+          "text": "Manage your energy (this page) Manage your time (next page) Build rituals that join good habits together (next\npage)"
+        },
+        {
+          "type": "heading",
+          "text": "Nine practices to manage\nyour energy"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img08-energy-practices.webp",
+          "alt": "Nine energy practices",
+          "caption": "Sleep, body clock, movement, food,\nbreath, meditation, journaling, gratitude and kindness all fill your\nenergy."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Practice</th>\n<th>What to do</th>\n<th>Why it helps</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Follow your body clock</strong></td>\n<td>Sleep, wake and eat at regular times, in step with sunrise and\nsunset</td>\n<td>Your body has a 24-hour clock (the <strong>circadian\nrhythm</strong>). Working with it is like <strong>rowing\ndownstream</strong>.</td>\n</tr>\n<tr>\n<td><strong>2. Sleep well</strong></td>\n<td>Enough deep sleep at regular times. The teacher suggests bed by\nabout 10 pm.</td>\n<td>The body <strong>repairs</strong> itself. The brain <strong>stores\nwhat you learned</strong> into long-term memory.</td>\n</tr>\n<tr>\n<td><strong>3. Move and exercise</strong></td>\n<td>Regular activity</td>\n<td>More energy and stamina; better blood flow; a healthier brain that\nkeeps learning at any age</td>\n</tr>\n<tr>\n<td><strong>4. Eat well</strong></td>\n<td>Fresh, seasonal, local food; less packaged and junk food; regular\nmeal times; chew well, <strong>no phone while eating</strong></td>\n<td>Food is fuel. Stress while eating disturbs digestion.</td>\n</tr>\n<tr>\n<td><strong>5. Breathe deeply</strong></td>\n<td>Breathe slowly into your belly, then breathe out fully, a few times\na day</td>\n<td>Calms you, clears your mind, boosts focus</td>\n</tr>\n<tr>\n<td><strong>6. Meditate</strong></td>\n<td>10–15 minutes daily; watch your thoughts without fighting them</td>\n<td>Clear, calm mind; better focus and creativity</td>\n</tr>\n<tr>\n<td><strong>7. Journal</strong></td>\n<td>Write whatever comes to mind, every day (morning or bedtime)</td>\n<td>Clears the mind, reduces overthinking, helps you understand your\nfeelings</td>\n</tr>\n<tr>\n<td><strong>8. Be grateful</strong></td>\n<td>Think about what you <strong>are, have and can do</strong>, not what\nyou lack</td>\n<td>Shifts your energy instantly; reminds you of your strengths</td>\n</tr>\n<tr>\n<td><strong>9. Be kind</strong></td>\n<td>Be kind to others, and <strong>first to yourself</strong></td>\n<td>Releases “feel-good” chemicals (oxytocin, serotonin). Even\n<strong>watching</strong> kindness lifts you.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Practice What to do Why it helps 1. Follow your body clock Sleep, wake and eat at regular times, in step with sunrise and\nsunset Your body has a 24-hour clock (the circadian\nrhythm ). Working with it is like rowing\ndownstream . 2. Sleep well Enough deep sleep at regular times. The teacher suggests bed by\nabout 10 pm. The body repairs itself. The brain stores\nwhat you learned into long-term memory. 3. Move and exercise Regular activity More energy and stamina; better blood flow; a healthier brain that\nkeeps learning at any age 4. Eat well Fresh, seasonal, local food; less packaged and junk food; regular\nmeal times; chew well, no phone while eating Food is fuel. Stress while eating disturbs digestion. 5. Breathe deeply Breathe slowly into your belly, then breathe out fully, a few times\na day Calms you, clears your mind, boosts focus 6. Meditate 10–15 minutes daily; watch your thoughts without fighting them Clear, calm mind; better focus and creativity 7. Journal Write whatever comes to mind, every day (morning or bedtime) Clears the mind, reduces overthinking, helps you understand your\nfeelings 8. Be grateful Think about what you are, have and can do , not what\nyou lack Shifts your energy instantly; reminds you of your strengths 9. Be kind Be kind to others, and first to yourself Releases “feel-good” chemicals (oxytocin, serotonin). Even watching kindness lifts you."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Circadian comes from Latin: <strong>circa</strong> (around) +\n<strong>dies</strong> (day), so “about a day”.</em></p>",
+          "text": "Circadian comes from Latin: circa (around) + dies (day), so “about a day”."
+        },
+        {
+          "type": "heading",
+          "text": "How to meditate: the muddy\nwater"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the jar of muddy water</strong> The Buddha\nshook a jar of muddy water. It stayed cloudy while he kept shaking it.\nWhen he <strong>set it down</strong>, the mud slowly\n<strong>settled</strong> and the water became clear. Our mind is the\nsame. <strong>Fighting</strong> our thoughts stirs them up. Leave them\nalone and they settle.</p>\n</blockquote>",
+          "text": "Lecture example — the jar of muddy water The Buddha\nshook a jar of muddy water. It stayed cloudy while he kept shaking it.\nWhen he set it down , the mud slowly settled and the water became clear. Our mind is the\nsame. Fighting our thoughts stirs them up. Leave them\nalone and they settle."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img09-muddy-water.webp",
+          "alt": "Muddy water settles",
+          "caption": "Stop shaking the jar and the mud\nsettles. Stop fighting your thoughts and the mind clears."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The key: be an observer.</strong> Imagine sitting on a\nbalcony watching <strong>clouds pass by</strong>. Do the same with your\nthoughts:</p>",
+          "text": "The key: be an observer. Imagine sitting on a\nbalcony watching clouds pass by . Do the same with your\nthoughts:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>No judging</strong>: not “good thought” or “bad\nthought”.</li>\n<li><strong>No holding on</strong>: don’t chase the nice thoughts.</li>\n<li><strong>No pushing away</strong>: don’t fight the unpleasant\nones.</li>\n</ul>",
+          "text": "No judging : not “good thought” or “bad\nthought”. No holding on : don’t chase the nice thoughts. No pushing away : don’t fight the unpleasant\nones."
+        },
+        {
+          "type": "html",
+          "html": "<p>Thoughts won’t vanish on day 1. Like any habit, it takes\n<strong>daily practice</strong>.</p>",
+          "text": "Thoughts won’t vanish on day 1. Like any habit, it takes daily practice ."
+        },
+        {
+          "type": "heading",
+          "text": "Journaling tip"
+        },
+        {
+          "type": "html",
+          "html": "<p>Don’t know what to write? Write “I don’t know what to write” again\nand again. Soon your pen <strong>takes over</strong>. There’s no right\nor wrong way. It’s your safe, private space.</p>",
+          "text": "Don’t know what to write? Write “I don’t know what to write” again\nand again. Soon your pen takes over . There’s no right\nor wrong way. It’s your safe, private space."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Some stress helps, too much harms;\nrefill your energy with good sleep, movement, food, breath, meditation,\njournaling, gratitude and kindness. <strong>Exam words:</strong> stress,\nnatural state of balance, internal and external factors, root cause,\ncircadian rhythm, sleep, mindful eating, deep breathing, meditation\n(non-judgment, non-attachment, non-resistance), journaling, gratitude,\nkindness, oxytocin, serotonin.</p>",
+          "text": "In one line: Some stress helps, too much harms;\nrefill your energy with good sleep, movement, food, breath, meditation,\njournaling, gratitude and kindness. Exam words: stress,\nnatural state of balance, internal and external factors, root cause,\ncircadian rhythm, sleep, mindful eating, deep breathing, meditation\n(non-judgment, non-attachment, non-resistance), journaling, gratitude,\nkindness, oxytocin, serotonin."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs all stress bad?\n</summary>\nNo. A little stress pushes you to grow. Too much for too long harms\nhealth and performance.\n</details>",
+          "text": "Is all stress bad? No. A little stress pushes you to grow. Too much for too long harms\nhealth and performance."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the circadian rhythm?\n</summary>\nYour body’s natural 24-hour clock, in step with day and night.\n</details>",
+          "text": "What is the circadian rhythm? Your body’s natural 24-hour clock, in step with day and night."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the muddy-water jar teach about meditation?\n</summary>\nFighting thoughts stirs the mind more. Leave them alone, just watch, and\nthe mind settles.\n</details>",
+          "text": "What does the muddy-water jar teach about meditation? Fighting thoughts stirs the mind more. Leave them alone, just watch, and\nthe mind settles."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGratitude means focusing on what?\n</summary>\nWhat you are, what you have and what you can do, not what you lack.\n</details>",
+          "text": "Gratitude means focusing on what? What you are, what you have and what you can do, not what you lack."
+        }
+      ]
+    },
+    {
+      "slug": "manage-time-and-rituals",
+      "title": "Manage Your Time and Build Rituals",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Everyone gets the same 24 hours, the\ntoppers and the people who are always late. The difference isn’t how\nmuch time they have. It’s <strong>how they plan, choose and use\nit</strong>.</p>\n</blockquote>",
+          "text": "Start here Everyone gets the same 24 hours, the\ntoppers and the people who are always late. The difference isn’t how\nmuch time they have. It’s how they plan, choose and use\nit ."
+        },
+        {
+          "type": "heading",
+          "text": "The six P’s of time"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>P</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Big Picture</strong></td>\n<td>What do you really want in 3, 5 or 10 years? What kind of\n<strong>person</strong> do you want to become? What are your\n<strong>values</strong>?</td>\n</tr>\n<tr>\n<td><strong>2. Prepare</strong></td>\n<td>Make <strong>weekly and daily task lists</strong>. Estimate the time\neach task needs. Set deadlines.</td>\n</tr>\n<tr>\n<td><strong>3. Prioritise</strong></td>\n<td>Decide what matters most: the Eisenhower matrix, the 80/20 rule, and\nlearning to say <strong>no</strong>.</td>\n</tr>\n<tr>\n<td><strong>4. Plan</strong></td>\n<td>Put tasks on your calendar at the right times of day. Add breaks, a\nlittle distraction time and some <strong>buffer</strong> time.</td>\n</tr>\n<tr>\n<td><strong>5. Be Productive</strong></td>\n<td><strong>Be consistent.</strong> Cut distractions, beat\nprocrastination, don’t multitask.</td>\n</tr>\n<tr>\n<td><strong>6. Perform</strong></td>\n<td>Just start. <strong>Progress, not perfection.</strong> Focus on the\nprocess.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "P What it means 1. Big Picture What do you really want in 3, 5 or 10 years? What kind of person do you want to become? What are your values ? 2. Prepare Make weekly and daily task lists . Estimate the time\neach task needs. Set deadlines. 3. Prioritise Decide what matters most: the Eisenhower matrix, the 80/20 rule, and\nlearning to say no . 4. Plan Put tasks on your calendar at the right times of day. Add breaks, a\nlittle distraction time and some buffer time. 5. Be Productive Be consistent. Cut distractions, beat\nprocrastination, don’t multitask. 6. Perform Just start. Progress, not perfection. Focus on the\nprocess."
+        },
+        {
+          "type": "subheading",
+          "text": "Why write a task list?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Tasks stop swimming around in your head, so your mind feels\n<strong>lighter</strong>.</li>\n<li>You <strong>sleep better</strong> if you list tomorrow’s tasks\nbefore bed.</li>\n<li>You don’t waste the morning figuring out what to do.</li>\n</ul>",
+          "text": "Tasks stop swimming around in your head, so your mind feels lighter . You sleep better if you list tomorrow’s tasks\nbefore bed. You don’t waste the morning figuring out what to do."
+        },
+        {
+          "type": "html",
+          "html": "<p>Sort tasks into <strong>big</strong> (hard, need full focus),\n<strong>medium</strong> (regular work) and <strong>small</strong> (easy,\nquick). Use paper, Google Calendar, Notion or any app.</p>",
+          "text": "Sort tasks into big (hard, need full focus), medium (regular work) and small (easy,\nquick). Use paper, Google Calendar, Notion or any app."
+        },
+        {
+          "type": "heading",
+          "text": "Prioritise with the\nEisenhower matrix"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img10-eisenhower.webp",
+          "alt": "The Eisenhower matrix",
+          "caption": "Sort every task by “urgent?” and\n“important?”, then act."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th></th>\n<th><strong>Urgent</strong></th>\n<th><strong>Not urgent</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Important</strong></td>\n<td><strong>1. Do it now</strong>: deadlines, emergencies</td>\n<td><strong>2. Schedule it</strong>: health, study, family, hobbies. Do\nthese regularly so they don’t become urgent.</td>\n</tr>\n<tr>\n<td><strong>Not important</strong></td>\n<td><strong>3. Delegate or automate</strong>: hand it off, use an\napp</td>\n<td><strong>4. Delete it</strong>: time-wasters, mindless scrolling</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Urgent Not urgent Important 1. Do it now : deadlines, emergencies 2. Schedule it : health, study, family, hobbies. Do\nthese regularly so they don’t become urgent. Not important 3. Delegate or automate : hand it off, use an\napp 4. Delete it : time-wasters, mindless scrolling"
+        },
+        {
+          "type": "html",
+          "html": "<p>Stephen Covey made this matrix popular, so it’s also called the\n<strong>Covey matrix</strong>.</p>",
+          "text": "Stephen Covey made this matrix popular, so it’s also called the Covey matrix ."
+        },
+        {
+          "type": "heading",
+          "text": "The 80/20 rule (Pareto\nprinciple)"
+        },
+        {
+          "type": "html",
+          "html": "<p>About <strong>20% of your efforts</strong> give <strong>80% of your\nresults</strong>. Find that 20% and spend most of your time there.</p>",
+          "text": "About 20% of your efforts give 80% of your\nresults . Find that 20% and spend most of your time there."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Study:</strong> focus first on the key concepts that give\nmost of the marks.</li>\n<li><strong>Habits:</strong> find the 1–3 habits that help you most and\n<strong>strengthen</strong> them. Find the 1–3 that hurt you most and\n<strong>drop</strong> them.</li>\n</ul>",
+          "text": "Study: focus first on the key concepts that give\nmost of the marks. Habits: find the 1–3 habits that help you most and strengthen them. Find the 1–3 that hurt you most and drop them."
+        },
+        {
+          "type": "heading",
+          "text": "Learn to say no"
+        },
+        {
+          "type": "html",
+          "html": "<p>Saying <strong>no</strong> to some things lets you say\n<strong>yes</strong> to what matters. Make a checklist.</p>",
+          "text": "Saying no to some things lets you say yes to what matters. Make a checklist."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Say <strong>yes</strong> if…</th>\n<th>Say <strong>no</strong> if…</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>It’s important or urgent (deadlines, assignments)</td>\n<td>You’re only saying yes out of <strong>fear of missing out</strong>\nor <strong>peer pressure</strong></td>\n</tr>\n<tr>\n<td>It matches your goals and values</td>\n<td>You’re trying to <strong>please</strong> or impress others</td>\n</tr>\n<tr>\n<td>It’s a healthy, productive habit</td>\n<td>It’s only instant fun with no real gain</td>\n</tr>\n<tr>\n<td>It energises and inspires you</td>\n<td>It drains you or makes you act like someone you’re not</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Say yes if… Say no if… It’s important or urgent (deadlines, assignments) You’re only saying yes out of fear of missing out or peer pressure It matches your goals and values You’re trying to please or impress others It’s a healthy, productive habit It’s only instant fun with no real gain It energises and inspires you It drains you or makes you act like someone you’re not"
+        },
+        {
+          "type": "heading",
+          "text": "Plan your day: the 1-3-5 rule"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img11-one-three-five.webp",
+          "alt": "The 1-3-5 rule",
+          "caption": "One big task when your energy is highest,\nthree medium ones, five small ones when energy is low."
+        },
+        {
+          "type": "html",
+          "html": "<p>Each day, pick <strong>1 big</strong> task, <strong>3 medium</strong>\ntasks and <strong>5 small</strong> tasks.</p>",
+          "text": "Each day, pick 1 big task, 3 medium tasks and 5 small tasks."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>High energy time</strong> → the <strong>big</strong>\ntask</li>\n<li><strong>Medium energy</strong> → <strong>medium</strong> tasks,\ngrouped together</li>\n<li><strong>Low energy</strong> → <strong>small</strong>, routine tasks,\ngrouped together</li>\n</ul>",
+          "text": "High energy time → the big task Medium energy → medium tasks,\ngrouped together Low energy → small , routine tasks,\ngrouped together"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Consistency is key:</strong> get <strong>1% better every\nday</strong> and in a year you’re about <strong>37 times</strong> better\n(1.01³⁶⁵ ≈ 37.8).</p>",
+          "text": "Consistency is key: get 1% better every\nday and in a year you’re about 37 times better\n(1.01³⁶⁵ ≈ 37.8)."
+        },
+        {
+          "type": "heading",
+          "text": "Build rituals"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>ritual</strong> is a routine done <strong>on purpose, with\nfull attention</strong>, because you know its value. It need not be\nreligious.</p>",
+          "text": "A ritual is a routine done on purpose, with\nfull attention , because you know its value. It need not be\nreligious."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Habit</th>\n<th>Ritual</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Done because you’re used to it</td>\n<td>Done because you <strong>want</strong> to and know\n<strong>why</strong></td>\n</tr>\n<tr>\n<td>Mind elsewhere</td>\n<td>Fully <strong>present</strong>, calm, enjoying each step</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Habit Ritual Done because you’re used to it Done because you want to and know why Mind elsewhere Fully present , calm, enjoying each step"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to build one:</strong></p>",
+          "text": "How to build one:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Pick the routine (morning, study, sleep, exercise,\njournaling…).</li>\n<li>Write down <strong>why</strong> it matters, and stick the note where\nyou can see it.</li>\n<li>List the <strong>steps</strong>.</li>\n<li>Gather what you need, and fix the <strong>time and\nplace</strong>.</li>\n<li>Set up the <strong>space</strong> so it puts you in the mood.</li>\n<li>Do it mindfully, keep it <strong>fun</strong>, and adjust as you\ngo.</li>\n</ol>",
+          "text": "Pick the routine (morning, study, sleep, exercise,\njournaling…). Write down why it matters, and stick the note where\nyou can see it. List the steps . Gather what you need, and fix the time and\nplace . Set up the space so it puts you in the mood. Do it mindfully, keep it fun , and adjust as you\ngo."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tiny changes → tiny gains → huge results over time.</strong>\nSpending 30–45 minutes on a wake-up ritual and a bedtime ritual can\nchange a lot.</p>",
+          "text": "Tiny changes → tiny gains → huge results over time. Spending 30–45 minutes on a wake-up ritual and a bedtime ritual can\nchange a lot."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> See the big picture, list and\nprioritise tasks, plan them to your energy, stay consistent, and turn\ngood routines into rituals. <strong>Exam words:</strong> six P’s (big\npicture, prepare, prioritise, plan, be productive, perform), task list,\nEisenhower/Covey matrix, Pareto 80/20, yes-no-maybe, 1-3-5 rule, buffer\ntime, progress not perfection, ritual.</p>",
+          "text": "In one line: See the big picture, list and\nprioritise tasks, plan them to your energy, stay consistent, and turn\ngood routines into rituals. Exam words: six P’s (big\npicture, prepare, prioritise, plan, be productive, perform), task list,\nEisenhower/Covey matrix, Pareto 80/20, yes-no-maybe, 1-3-5 rule, buffer\ntime, progress not perfection, ritual."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nImportant but not urgent: what do you do?\n</summary>\nSchedule it and do it regularly (quadrant 2), so it never becomes an\nemergency.\n</details>",
+          "text": "Important but not urgent: what do you do? Schedule it and do it regularly (quadrant 2), so it never becomes an\nemergency."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the 1-3-5 rule?\n</summary>\nEach day: 1 big task, 3 medium tasks, 5 small tasks, matched to your\nenergy levels.\n</details>",
+          "text": "What is the 1-3-5 rule? Each day: 1 big task, 3 medium tasks, 5 small tasks, matched to your\nenergy levels."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the Pareto principle say?\n</summary>\nAbout 20% of efforts produce about 80% of results, so focus on that\nvital 20%.\n</details>",
+          "text": "What does the Pareto principle say? About 20% of efforts produce about 80% of results, so focus on that\nvital 20%."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow is a ritual different from a habit?\n</summary>\nA ritual is done mindfully and on purpose, because you know its value,\nnot just out of habit.\n</details>",
+          "text": "How is a ritual different from a habit? A ritual is done mindfully and on purpose, because you know its value,\nnot just out of habit."
+        }
+      ]
+    },
+    {
+      "slug": "advice-from-a-career",
+      "title": "Advice From a Winding Career (Interview with Prof. Shiva)",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Hotel receptionist. Travel agent.\nComputer salesman. Lawyer. IT consultant. Nature-inspired design expert.\nThat’s <strong>one person’s</strong> career. A career doesn’t have to be\na straight line, and every turn can teach you something.</p>\n</blockquote>",
+          "text": "Start here Hotel receptionist. Travel agent.\nComputer salesman. Lawyer. IT consultant. Nature-inspired design expert.\nThat’s one person’s career. A career doesn’t have to be\na straight line, and every turn can teach you something."
+        },
+        {
+          "type": "heading",
+          "text": "Who is Prof. Shiva\nSubramanian?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Stage</th>\n<th>Role</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Front-office assistant at a big hotel (about 1.5 years)</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Travel agent (about 2 years)</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Selling computers (about 1 year)</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Lawyer at the Madras High Court</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Senior consultant at TCS</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Co-founder of <strong>Biomimicry Compass</strong>, a company started\nat IIT Madras</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Stage Role 1 Front-office assistant at a big hotel (about 1.5 years) 2 Travel agent (about 2 years) 3 Selling computers (about 1 year) 4 Lawyer at the Madras High Court 5 Senior consultant at TCS 6 Co-founder of Biomimicry Compass , a company started\nat IIT Madras"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Biomimicry</strong> means copying nature’s clever solutions.\nIf nature faced a problem like yours, find out <strong>how nature solved\nit</strong> and use the same idea.</p>",
+          "text": "Biomimicry means copying nature’s clever solutions.\nIf nature faced a problem like yours, find out how nature solved\nit and use the same idea."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 1: Don’t regret for\ntoo long"
+        },
+        {
+          "type": "html",
+          "html": "<p>His life had many setbacks, and the switch from law to TCS was a big\none.</p>",
+          "text": "His life had many setbacks, and the switch from law to TCS was a big\none."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>It’s natural to <strong>feel bad</strong> after missing a job, a\npromotion or money.</li>\n<li>Feel it for a while: stay home, watch films, read, meet\nfriends.</li>\n<li>Then <strong>get up and start again</strong>. Don’t spend years\nregretting.</li>\n</ul>",
+          "text": "It’s natural to feel bad after missing a job, a\npromotion or money. Feel it for a while: stay home, watch films, read, meet\nfriends. Then get up and start again . Don’t spend years\nregretting."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 2: His view on\nwork-life balance"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Shiva says that, when you’re young, you should <strong>give\nyour work almost everything</strong>. Doing well at work is how you\n<strong>take care of your family</strong>.</p>",
+          "text": "Prof. Shiva says that, when you’re young, you should give\nyour work almost everything . Doing well at work is how you take care of your family ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the house loan</strong> He wanted a ₹10\nlakh house. The company would lend only ₹3 lakh, and he had ₹2 lakh.\nBecause he had <strong>worked hard for three years and everyone liked\nhim</strong>, the HR head asked the chairman for <strong>₹5 lakh\nmore</strong>, and got it.</p>\n</blockquote>",
+          "text": "Lecture example — the house loan He wanted a ₹10\nlakh house. The company would lend only ₹3 lakh, and he had ₹2 lakh.\nBecause he had worked hard for three years and everyone liked\nhim , the HR head asked the chairman for ₹5 lakh\nmore , and got it."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note: this is <strong>his personal view</strong>, and he says\nmost people disagree. Many experts say very long hours over many years\ncan harm health. Decide your own balance. The lasting lesson is that\n<strong>good, reliable work builds trust</strong>, and trust opens\ndoors.</em></p>",
+          "text": "Note: this is his personal view , and he says\nmost people disagree. Many experts say very long hours over many years\ncan harm health. Decide your own balance. The lasting lesson is that good, reliable work builds trust , and trust opens\ndoors."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 3: Do it\nright when no one is watching"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Madhava (from Subroto Bagchi’s book <em>The\nProfessional</em>)</strong> Madhava lost his mother as a small child and\ngrew up in a Bangalore hospital. Later he took on a sad job: giving\n<strong>unclaimed bodies</strong> a proper burial. Every time, the grave\nhad to be <strong>deep enough</strong> and the <strong>right\nsize</strong>. Nobody checked his work. <strong>He never cut\ncorners.</strong></p>\n</blockquote>",
+          "text": "Lecture example — Madhava (from Subroto Bagchi’s book The\nProfessional ) Madhava lost his mother as a small child and\ngrew up in a Bangalore hospital. Later he took on a sad job: giving unclaimed bodies a proper burial. Every time, the grave\nhad to be deep enough and the right\nsize . Nobody checked his work. He never cut\ncorners."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img12-no-one-watching.webp",
+          "alt": "Doing it right when no one is watching",
+          "caption": "A true professional\ndoes the job properly even when no boss is around."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>A true professional does the job right even when no one is\nwatching.</strong> That is <strong>integrity</strong>.</p>",
+          "text": "A true professional does the job right even when no one is\nwatching. That is integrity ."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 4: Tips\nfor interviews and your first job"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In the interview:</strong></p>",
+          "text": "In the interview:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Talk about what you’re <strong>good at</strong>. Don’t worry about\nthe gaps.</li>\n<li>Employers want <strong>problem solvers</strong>. Solve a few real\nproblems (a money problem at home, settling a fight between friends) and\n<strong>share one example</strong>.</li>\n</ul>",
+          "text": "Talk about what you’re good at . Don’t worry about\nthe gaps. Employers want problem solvers . Solve a few real\nproblems (a money problem at home, settling a fight between friends) and share one example ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In your first 3–4 years:</strong></p>",
+          "text": "In your first 3–4 years:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Get involved:</strong> picnics, parties, events, training.\nVolunteer. He always offered to be the <strong>master of\nceremonies</strong>, so everyone knew him.</li>\n<li><strong>Show your talent:</strong> singing, dancing, anything. Don’t\nbe shy.</li>\n<li><strong>Help people:</strong> he drove colleagues to hospital and\nstayed with them.</li>\n<li><strong>Own problems.</strong> Try to solve them first. If you’re\nstuck, go to your manager with <strong>2–3 possible solutions</strong>,\nnot just the problem.</li>\n<li><strong>Act like an owner</strong> (an entrepreneur inside the\ncompany).</li>\n</ul>",
+          "text": "Get involved: picnics, parties, events, training.\nVolunteer. He always offered to be the master of\nceremonies , so everyone knew him. Show your talent: singing, dancing, anything. Don’t\nbe shy. Help people: he drove colleagues to hospital and\nstayed with them. Own problems. Try to solve them first. If you’re\nstuck, go to your manager with 2–3 possible solutions ,\nnot just the problem. Act like an owner (an entrepreneur inside the\ncompany)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Careers twist and turn, so don’t dwell\non regrets, do your work honestly even unseen, solve problems, and get\ninvolved like an owner. <strong>Exam words:</strong> biomimicry, don’t\nover-regret, work-life balance (his view), integrity, “when no one is\nwatching”, problem solver, get involved, take options to your manager,\nentrepreneur inside the organisation.</p>",
+          "text": "In one line: Careers twist and turn, so don’t dwell\non regrets, do your work honestly even unseen, solve problems, and get\ninvolved like an owner. Exam words: biomimicry, don’t\nover-regret, work-life balance (his view), integrity, “when no one is\nwatching”, problem solver, get involved, take options to your manager,\nentrepreneur inside the organisation."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is biomimicry?\n</summary>\nLearning from how nature solves problems and copying that method to\nsolve our own.\n</details>",
+          "text": "What is biomimicry? Learning from how nature solves problems and copying that method to\nsolve our own."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to the Madhava story, what is the mark of a true professional?\n</summary>\nDoing the job properly even when no one is watching.\n</details>",
+          "text": "According to the Madhava story, what is the mark of a true professional? Doing the job properly even when no one is watching."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat should you take to your manager when you can’t solve a problem?\n</summary>\nTwo or three possible solutions you’ve thought of, not just the problem.\n</details>",
+          "text": "What should you take to your manager when you can’t solve a problem? Two or three possible solutions you’ve thought of, not just the problem."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat do employers look for most, according to Prof. Shiva?\n</summary>\nProblem solvers.\n</details>",
+          "text": "What do employers look for most, according to Prof. Shiva? Problem solvers."
+        }
+      ]
+    },
+    {
+      "slug": "lead-aim-higher-stay-honest",
+      "title": "Lead, Aim Higher, Stay Honest",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Hang a bulb low and it lights a small\ncircle on the floor. Raise it higher and the circle of light grows. Your\nview of your workplace works the same way: <strong>the higher you aim,\nthe more you see.</strong></p>\n</blockquote>",
+          "text": "Start here Hang a bulb low and it lights a small\ncircle on the floor. Raise it higher and the circle of light grows. Your\nview of your workplace works the same way: the higher you aim,\nthe more you see."
+        },
+        {
+          "type": "html",
+          "html": "<p>The course ends with three pieces of advice, plus two bonus\npoints.</p>",
+          "text": "The course ends with three pieces of advice, plus two bonus\npoints."
+        },
+        {
+          "type": "heading",
+          "text": "1. Learn to lead"
+        },
+        {
+          "type": "html",
+          "html": "<p>A leader has to look after two things: the <strong>task</strong> and\nthe <strong>people</strong>.</p>",
+          "text": "A leader has to look after two things: the task and\nthe people ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Style</th>\n<th>Focus</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Task-oriented</strong></td>\n<td>Getting the work done</td>\n</tr>\n<tr>\n<td><strong>People-oriented</strong></td>\n<td>Caring for the team</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Style Focus Task-oriented Getting the work done People-oriented Caring for the team"
+        },
+        {
+          "type": "html",
+          "html": "<p>The teacher’s point: <strong>look after your people and they will\nlook after the task.</strong></p>",
+          "text": "The teacher’s point: look after your people and they will\nlook after the task."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Know your people <strong>professionally and\npersonally</strong>.</li>\n<li>Then you can put <strong>the right person in the right\njob</strong>.</li>\n<li>“Leadership is <strong>90% character</strong> and 10% everything\nelse.” (The lecture credits this to Shivaji.)</li>\n</ul>",
+          "text": "Know your people professionally and\npersonally . Then you can put the right person in the right\njob . “Leadership is 90% character and 10% everything\nelse.” (The lecture credits this to Shivaji.)"
+        },
+        {
+          "type": "heading",
+          "text": "2. Aim higher"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img13-lamp-radius.webp",
+          "alt": "Aim higher: the bulb and its circle of light",
+          "caption": "The higher the\nbulb, the wider the circle of light. Aim higher and you see\nmore."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Success is a journey, not a destination.</strong> When you\nreach one goal, the next one appears.</li>\n<li>The higher you rise, the <strong>higher the bar</strong>, and it can\nfeel lonely at the top.</li>\n<li><strong>Start now:</strong> if you’re an assistant manager, try to\nunderstand your <strong>boss’s boss’s</strong> problems. You’ll see the\n<strong>bigger picture</strong>.</li>\n<li><strong>Goal-setting research</strong> (psychologist <strong>Edwin\nLocke</strong>, late 1960s): clear, <strong>specific</strong> and\n<strong>difficult</strong> goals, once accepted, lead to <strong>better\nperformance</strong> than vague “do your best” goals.</li>\n<li>Aiming high <strong>cuts out noise</strong>: less time on gossip,\nmore on <strong>ideas</strong>.</li>\n</ul>",
+          "text": "Success is a journey, not a destination. When you\nreach one goal, the next one appears. The higher you rise, the higher the bar , and it can\nfeel lonely at the top. Start now: if you’re an assistant manager, try to\nunderstand your boss’s boss’s problems. You’ll see the bigger picture . Goal-setting research (psychologist Edwin\nLocke , late 1960s): clear, specific and difficult goals, once accepted, lead to better\nperformance than vague “do your best” goals. Aiming high cuts out noise : less time on gossip,\nmore on ideas ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“Great minds discuss <strong>ideas</strong>; average minds discuss\n<strong>events</strong>; small minds discuss\n<strong>people</strong>.”</p>\n</blockquote>",
+          "text": "“Great minds discuss ideas ; average minds discuss events ; small minds discuss people .”"
+        },
+        {
+          "type": "heading",
+          "text": "3. Honesty is still the best\npolicy"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Be honest <strong>with yourself</strong> and <strong>with the\nworld</strong>.</li>\n<li>Some offers look like <strong>lollipops</strong>: tempting now,\ntrouble later. Don’t grab them.</li>\n<li><strong>Honest people sleep well.</strong> Nothing heavy sits on\ntheir mind. A lie needs more lies to cover it, and that keeps you awake\nat night.</li>\n<li>Research on trust at work says <strong>honesty and openness</strong>\nare the biggest signs of <strong>integrity</strong>. Leaders who break\ntheir team’s trust end up with <strong>unhappy</strong> employees who\n<strong>want to leave</strong>.</li>\n</ul>",
+          "text": "Be honest with yourself and with the\nworld . Some offers look like lollipops : tempting now,\ntrouble later. Don’t grab them. Honest people sleep well. Nothing heavy sits on\ntheir mind. A lie needs more lies to cover it, and that keeps you awake\nat night. Research on trust at work says honesty and openness are the biggest signs of integrity . Leaders who break\ntheir team’s trust end up with unhappy employees who want to leave ."
+        },
+        {
+          "type": "heading",
+          "text": "Bonus: read between the lines"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Understand <strong>where you stand</strong> in relation to people\naround you.</li>\n<li>Learn to hear <strong>what isn’t said</strong>: the\n<strong>intention</strong> behind the words.</li>\n<li>It’s hard, but with practice you’ll “read the room” in any\ngroup.</li>\n</ul>",
+          "text": "Understand where you stand in relation to people\naround you. Learn to hear what isn’t said : the intention behind the words. It’s hard, but with practice you’ll “read the room” in any\ngroup."
+        },
+        {
+          "type": "heading",
+          "text": "Bonus: your role in India’s\ngrowth"
+        },
+        {
+          "type": "html",
+          "html": "<p>The teacher shows a <strong>Morgan Stanley</strong> report (2022)\npredicting fast growth for India, including a bigger share for\n<strong>manufacturing</strong>. His message: <strong>your\ngeneration</strong> has to carry this progress forward and help put the\ncountry in a “<strong>higher orbit</strong>”.</p>",
+          "text": "The teacher shows a Morgan Stanley report (2022)\npredicting fast growth for India, including a bigger share for manufacturing . His message: your\ngeneration has to carry this progress forward and help put the\ncountry in a “ higher orbit ”."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Lead by caring for people and building\ncharacter, keep aiming higher with clear goals, stay honest, read\nbetween the lines, and help your country grow. <strong>Exam\nwords:</strong> people-oriented vs task-oriented, right person for the\nright job, 90% character, success is a journey, goal-setting theory\n(Edwin Locke), specific and difficult goals, ideas vs events vs people,\nhonesty and integrity, trust, reading between the lines.</p>",
+          "text": "In one line: Lead by caring for people and building\ncharacter, keep aiming higher with clear goals, stay honest, read\nbetween the lines, and help your country grow. Exam\nwords: people-oriented vs task-oriented, right person for the\nright job, 90% character, success is a journey, goal-setting theory\n(Edwin Locke), specific and difficult goals, ideas vs events vs people,\nhonesty and integrity, trust, reading between the lines."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat do the bulb and its circle of light show?\n</summary>\nThe higher you aim (or rise), the bigger the picture you can see.\n</details>",
+          "text": "What do the bulb and its circle of light show? The higher you aim (or rise), the bigger the picture you can see."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did Edwin Locke find about goals?\n</summary>\nSpecific, difficult goals that people accept lead to better performance.\n</details>",
+          "text": "What did Edwin Locke find about goals? Specific, difficult goals that people accept lead to better performance."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy do honest people “sleep like a log”?\n</summary>\nThey carry no lies or worries about being caught, so their mind is\nlight.\n</details>",
+          "text": "Why do honest people “sleep like a log”? They carry no lies or worries about being caught, so their mind is\nlight."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “reading between the lines” mean?\n</summary>\nUnderstanding the real intention behind what people say, even what they\nleave unsaid.\n</details>",
+          "text": "What does “reading between the lines” mean? Understanding the real intention behind what people say, even what they\nleave unsaid."
+        }
+      ]
+    },
+    {
+      "slug": "week-12-quick-revision",
+      "title": "Week 12 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Personal and professional development,\nall on one page.</p>\n</blockquote>",
+          "text": "Start here Personal and professional development,\nall on one page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-12/img14-week12-map.webp",
+          "alt": "Week 12 at a glance",
+          "caption": "Feed your mind, use what you learn,\nstay calm, manage energy and time, work with integrity, and aim\nhigher."
+        },
+        {
+          "type": "heading",
+          "text": "Feed your mind"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>You become what you <strong>read, watch, hear</strong>, and the\n<strong>people</strong> you spend time with.</li>\n<li><strong>Books:</strong> <em>7 Habits</em> (Covey), <em>How Will You\nMeasure Your Life?</em> (Christensen), <em>Give and Take</em> (Grant),\n<em>The Practice</em> (Godin), <em>One Minute for Yourself</em>\n(Johnson), <em>Steal Like an Artist</em> (Kleon), <em>Thrive</em>\n(Huffington).</li>\n<li><strong>Movies:</strong> <em>Karate Kid</em>, <em>Kung Fu\nPanda</em>, <em>Lion King</em>, <em>Groundhog Day</em>, <em>Forrest\nGump</em>.</li>\n<li><strong>Speeches:</strong> Jobs (connect the dots), Pausch (Last\nLecture), Rowling (benefits of failure).</li>\n<li>Be a <strong>lifelong learner</strong> and a\n<strong>mentor</strong>.</li>\n</ul>",
+          "text": "You become what you read, watch, hear , and the people you spend time with. Books: 7 Habits (Covey), How Will You\nMeasure Your Life? (Christensen), Give and Take (Grant), The Practice (Godin), One Minute for Yourself (Johnson), Steal Like an Artist (Kleon), Thrive (Huffington). Movies: Karate Kid , Kung Fu\nPanda , Lion King , Groundhog Day , Forrest\nGump . Speeches: Jobs (connect the dots), Pausch (Last\nLecture), Rowling (benefits of failure). Be a lifelong learner and a mentor ."
+        },
+        {
+          "type": "heading",
+          "text": "Use what you learn"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Story</th>\n<th>Lesson</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Ice stupa (Sonam Wangchuk)</td>\n<td>School science, <strong>used</strong>, solves real problems</td>\n</tr>\n<tr>\n<td>Two men at Disney World</td>\n<td><strong>Entrepreneurial mindset</strong>: “What if we had this\nhere?”</td>\n</tr>\n<tr>\n<td>Two shoe sellers</td>\n<td><strong>Abundance</strong>, not scarcity</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Story Lesson Ice stupa (Sonam Wangchuk) School science, used , solves real problems Two men at Disney World Entrepreneurial mindset : “What if we had this\nhere?” Two shoe sellers Abundance , not scarcity"
+        },
+        {
+          "type": "heading",
+          "text": "Failure, fear and panic"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Denial</strong> wastes time. Accept what you can’t control\nand learn from it.</li>\n<li><strong>Edison:</strong> every failed try teaches you\nsomething.</li>\n<li>Fear of failure stops you from trying. Take <strong>calculated\nrisks</strong>.</li>\n<li><strong>Amygdala hijack</strong> → fight, flight or freeze.</li>\n<li>Anti-panic tools: <strong>dry run</strong>, <strong>pause</strong>,\n<strong>chess move</strong>.</li>\n</ul>",
+          "text": "Denial wastes time. Accept what you can’t control\nand learn from it. Edison: every failed try teaches you\nsomething. Fear of failure stops you from trying. Take calculated\nrisks . Amygdala hijack → fight, flight or freeze. Anti-panic tools: dry run , pause , chess move ."
+        },
+        {
+          "type": "heading",
+          "text": "Manage stress"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A little stress helps; too much for too long harms. Treat the\n<strong>root cause</strong>.</li>\n<li><strong>Energy:</strong> body clock, sleep, exercise, food, deep\nbreathing, meditation (just observe), journaling, gratitude,\nkindness.</li>\n<li><strong>Time, the six P’s:</strong> Big picture, Prepare,\nPrioritise, Plan, Be productive, Perform.</li>\n<li><strong>Eisenhower:</strong> do now, schedule, delegate, delete.\n<strong>80/20</strong> rule. Learn to say <strong>no</strong>.\n<strong>1-3-5</strong> rule.</li>\n<li><strong>Rituals:</strong> routines done mindfully and on\npurpose.</li>\n</ul>",
+          "text": "A little stress helps; too much for too long harms. Treat the root cause . Energy: body clock, sleep, exercise, food, deep\nbreathing, meditation (just observe), journaling, gratitude,\nkindness. Time, the six P’s: Big picture, Prepare,\nPrioritise, Plan, Be productive, Perform. Eisenhower: do now, schedule, delegate, delete. 80/20 rule. Learn to say no . 1-3-5 rule. Rituals: routines done mindfully and on\npurpose."
+        },
+        {
+          "type": "heading",
+          "text": "Career advice (Prof. Shiva)"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Don’t regret for too long.</li>\n<li><strong>Integrity:</strong> do it right when no one is watching\n(Madhava).</li>\n<li>Be a <strong>problem solver</strong>; take <strong>2–3\noptions</strong> to your manager.</li>\n<li><strong>Get involved</strong> in your first years; act like an\nowner.</li>\n</ul>",
+          "text": "Don’t regret for too long. Integrity: do it right when no one is watching\n(Madhava). Be a problem solver ; take 2–3\noptions to your manager. Get involved in your first years; act like an\nowner."
+        },
+        {
+          "type": "heading",
+          "text": "Closing advice"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Lead:</strong> care for people; character is most of\nleadership.</li>\n<li><strong>Aim higher:</strong> success is a journey; specific, hard\ngoals (Locke).</li>\n<li><strong>Stay honest;</strong> read between the lines; help India\ngrow.</li>\n</ul>",
+          "text": "Lead: care for people; character is most of\nleadership. Aim higher: success is a journey; specific, hard\ngoals (Locke). Stay honest; read between the lines; help India\ngrow."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>Which book says “copy your heroes, give credit, and your own style\nwill grow”?\n</li></ol></summary>\n<em>Steal Like an Artist</em> by Austin Kleon.\n</details>",
+          "text": "Which book says “copy your heroes, give credit, and your own style\nwill grow”? Steal Like an Artist by Austin Kleon."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Why does an ice stupa melt slowly?\n</li></ol></summary>\nIt is a huge mass of ice with little surface area for its size.\n</details>",
+          "text": "Why does an ice stupa melt slowly? It is a huge mass of ice with little surface area for its size."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>“No one wears shoes, so everyone can be a customer.” Which mindset?\n</li></ol></summary>\nAbundance mindset.\n</details>",
+          "text": "“No one wears shoes, so everyone can be a customer.” Which mindset? Abundance mindset."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>What are the three F’s of an amygdala hijack?\n</li></ol></summary>\nFight, flight and freeze.\n</details>",
+          "text": "What are the three F’s of an amygdala hijack? Fight, flight and freeze."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Which quadrant of the Eisenhower matrix should you delete?\n</li></ol></summary>\nNot urgent and not important.\n</details>",
+          "text": "Which quadrant of the Eisenhower matrix should you delete? Not urgent and not important."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Name the six P’s of time management.\n</li></ol></summary>\nBig picture, Prepare, Prioritise, Plan, Be productive, Perform.\n</details>",
+          "text": "Name the six P’s of time management. Big picture, Prepare, Prioritise, Plan, Be productive, Perform."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>What is the “true mark of a professional” in the Madhava story?\n</li></ol></summary>\nDoing the job properly when no one is watching.\n</details>",
+          "text": "What is the “true mark of a professional” in the Madhava story? Doing the job properly when no one is watching."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>Who proposed goal-setting theory, and what did it find?\n</li></ol></summary>\nEdwin Locke: specific, difficult goals that people accept lead to higher\nperformance.\n</details>",
+          "text": "Who proposed goal-setting theory, and what did it find? Edwin Locke: specific, difficult goals that people accept lead to higher\nperformance."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import data from '../../../data/spg-week-2.json';
+import WeekSections,{WeekStats} from '../../../components/WeekSections';
+export const metadata={title:'SPG Week 2 · Communication and listening skills'};
+export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span>/</span><a href="/spg/">SPG</a><span>/</span><span>Week 2</span></nav><div className="eyebrow">BSGN3001 · WEEK 2</div><h1>Communication and<br/><span>listening skills.</span></h1><p className="lead">Explore how messages travel, what gets in the way, and how thoughtful communication and listening help you grow.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><WeekSections data={data}/></main>}

@@ -1,0 +1,1120 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 1,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-1/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "outbound-training",
+      "title": "Outbound Training — Learning Teamwork Outdoors",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Two people sat in the same office for\nover a year and never spoke to each other. Their desks faced opposite\nways. Then they spent two days doing outdoor team games. By the end they\nwere laughing, shouting and cheering together. That’s the power of\n<strong>outbound training</strong>.</p>\n</blockquote>",
+          "text": "Start here Two people sat in the same office for\nover a year and never spoke to each other. Their desks faced opposite\nways. Then they spent two days doing outdoor team games. By the end they\nwere laughing, shouting and cheering together. That’s the power of outbound training ."
+        },
+        {
+          "type": "heading",
+          "text": "What is outbound training\n(OBT)?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Outbound training</strong> means learning\n<strong>teamwork</strong> through <strong>outdoor group\nactivities</strong>. You don’t just hear about teamwork. You\n<strong>do</strong> it, with your body, sweat and all.</p>",
+          "text": "Outbound training means learning teamwork through outdoor group\nactivities . You don’t just hear about teamwork. You do it, with your body, sweat and all."
+        },
+        {
+          "type": "html",
+          "html": "<p>Why? In any job, you must <strong>work with other people</strong>.\nYou need to:</p>",
+          "text": "Why? In any job, you must work with other people .\nYou need to:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>get along</strong> with them,</li>\n<li><strong>communicate</strong> well, and</li>\n<li>bring out the <strong>group effect</strong>.</li>\n</ul>",
+          "text": "get along with them, communicate well, and bring out the group effect ."
+        },
+        {
+          "type": "heading",
+          "text": "The group effect"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Paes and Bhupathi</strong> In\n<strong>singles</strong> tennis, Leander Paes and Mahesh Bhupathi were\nranked far from the top. When they played <strong>doubles\ntogether</strong>, they became the <strong>world’s No. 1 pair</strong>.\nTogether, they were much stronger than each of them alone.</p>\n</blockquote>",
+          "text": "Lecture example — Paes and Bhupathi In singles tennis, Leander Paes and Mahesh Bhupathi were\nranked far from the top. When they played doubles\ntogether , they became the world’s No. 1 pair .\nTogether, they were much stronger than each of them alone."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img01-group-effect.webp",
+          "alt": "The group effect",
+          "caption": "Alone, each player is good. Together, they\nbecome the best."
+        },
+        {
+          "type": "html",
+          "html": "<p>This is called <strong>synergy</strong>: the team’s result is\n<strong>more than the sum</strong> of each person’s effort.</p>",
+          "text": "This is called synergy : the team’s result is more than the sum of each person’s effort."
+        },
+        {
+          "type": "heading",
+          "text": "The buddy-carry activity"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — “Your buddy is injured”</strong> An IT\ncompany sent 80 staff for training. They were put in <strong>40\npairs</strong>. The trainer said: “Your buddy is injured and can’t walk.\nFirst aid is 50 metres away. Get your buddy there.” At first nobody knew\nwhat to do. Then some carried their partner on their\n<strong>shoulders</strong>, some <strong>piggyback</strong>, and they\nran. The running wasn’t the point. After two days, people who had never\nspoken were <strong>sitting together, joking and talking</strong>. They\nhad learned they could <strong>carry each other</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — “Your buddy is injured” An IT\ncompany sent 80 staff for training. They were put in 40\npairs . The trainer said: “Your buddy is injured and can’t walk.\nFirst aid is 50 metres away. Get your buddy there.” At first nobody knew\nwhat to do. Then some carried their partner on their shoulders , some piggyback , and they\nran. The running wasn’t the point. After two days, people who had never\nspoken were sitting together, joking and talking . They\nhad learned they could carry each other ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img02-buddy-carry.webp",
+          "alt": "Carry your buddy",
+          "caption": "When you carry a teammate, you build a\nbond that no meeting can."
+        },
+        {
+          "type": "heading",
+          "text": "What to watch for in a team\ntask"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Plan</strong></td>\n<td>Decide what to do before you start.</td>\n</tr>\n<tr>\n<td><strong>See the resources</strong></td>\n<td>Every <strong>person</strong> is a resource: someone tall and\nstrong, someone small and quick. You may find <strong>hidden\nskills</strong>.</td>\n</tr>\n<tr>\n<td><strong>Beat the clock</strong></td>\n<td>Like any project, you’re racing against <strong>time</strong>.</td>\n</tr>\n<tr>\n<td><strong>Mid-course correction</strong></td>\n<td>Fix the plan while you’re doing the task.</td>\n</tr>\n<tr>\n<td><strong>Help the slow ones</strong></td>\n<td>“A chain is only as strong as its <strong>weakest link</strong>.”\nGive a <strong>shoulder</strong> to whoever is struggling.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What it means Plan Decide what to do before you start. See the resources Every person is a resource: someone tall and\nstrong, someone small and quick. You may find hidden\nskills . Beat the clock Like any project, you’re racing against time . Mid-course correction Fix the plan while you’re doing the task. Help the slow ones “A chain is only as strong as its weakest link .”\nGive a shoulder to whoever is struggling."
+        },
+        {
+          "type": "heading",
+          "text": "Three rules for the day"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img03-three-rules.webp",
+          "alt": "Three rules: smile, balance, safety",
+          "caption": "Wear a smile, balance\nyour head and heart, and stay safe."
+        },
+        {
+          "type": "subheading",
+          "text": "1. You’re not fully\ndressed without a smile"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A smile shows <strong>energy</strong> and\n<strong>confidence</strong>.</li>\n<li>People who are confident, and have nothing to hide, smile\neasily.</li>\n<li>It’s hard to <strong>get angry</strong> while you’re smiling.</li>\n</ul>",
+          "text": "A smile shows energy and confidence . People who are confident, and have nothing to hide, smile\neasily. It’s hard to get angry while you’re smiling."
+        },
+        {
+          "type": "subheading",
+          "text": "2. Keep your head and heart\nin place"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Heart</strong> = feelings and excitement.\n<strong>Head</strong> = thinking and reasoning.</li>\n<li>In a contest, it’s natural to get excited. That’s fine, but\n<strong>keep thinking clearly</strong> too.</li>\n<li><strong>Balance</strong> energy with good sense.</li>\n</ul>",
+          "text": "Heart = feelings and excitement. Head = thinking and reasoning. In a contest, it’s natural to get excited. That’s fine, but keep thinking clearly too. Balance energy with good sense."
+        },
+        {
+          "type": "subheading",
+          "text": "3. Safety first"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Physical safety:</strong> keep your body balanced. If you\ncan’t do something, put both feet (and hands) down and get stable.</li>\n<li><strong>Mental safety:</strong> don’t mock or shout at a teammate\nwho couldn’t do something. <strong>A hurt from the tongue heals slower\nthan a cut.</strong></li>\n</ul>",
+          "text": "Physical safety: keep your body balanced. If you\ncan’t do something, put both feet (and hands) down and get stable. Mental safety: don’t mock or shout at a teammate\nwho couldn’t do something. A hurt from the tongue heals slower\nthan a cut."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Outbound training teaches teamwork by\ndoing: plan, use everyone’s strengths, help the weakest, and stay\nsmiling, balanced and safe. <strong>Exam words:</strong> outbound\ntraining (OBT), group effect, synergy, buddy pair, resources, time\nconstraint, mid-course correction, weakest link, smile, head and heart,\nsafety first, mental injury.</p>",
+          "text": "In one line: Outbound training teaches teamwork by\ndoing: plan, use everyone’s strengths, help the weakest, and stay\nsmiling, balanced and safe. Exam words: outbound\ntraining (OBT), group effect, synergy, buddy pair, resources, time\nconstraint, mid-course correction, weakest link, smile, head and heart,\nsafety first, mental injury."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the “group effect”?\n</summary>\nA team together achieves more than the members could separately, like\nPaes and Bhupathi becoming No. 1 as a doubles pair.\n</details>",
+          "text": "What is the “group effect”? A team together achieves more than the members could separately, like\nPaes and Bhupathi becoming No. 1 as a doubles pair."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did the buddy-carry activity really build?\n</summary>\nBonding and trust. People who had never spoken started talking and\nlaughing together.\n</details>",
+          "text": "What did the buddy-carry activity really build? Bonding and trust. People who had never spoken started talking and\nlaughing together."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy help the slowest team member?\n</summary>\nA team is only as strong as its weakest link.\n</details>",
+          "text": "Why help the slowest team member? A team is only as strong as its weakest link."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the two kinds of safety?\n</summary>\nPhysical safety (stay balanced, avoid injury) and mental safety (don’t\nhurt a teammate with your words).\n</details>",
+          "text": "What are the two kinds of safety? Physical safety (stay balanced, avoid injury) and mental safety (don’t\nhurt a teammate with your words)."
+        }
+      ]
+    },
+    {
+      "slug": "a-frame-and-caterpillar",
+      "title": "The A-Frame March and the Caterpillar Walk",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Picture a tall wooden frame shaped like\nthe letter <strong>A</strong>. One teammate stands on its crossbar, high\nabove the ground. Four others hold ropes tied to the top. The frame can\nonly “walk” if <strong>every rope</strong> is pulled at the right\nmoment. If one person slips, the person on top wobbles.</p>\n</blockquote>",
+          "text": "Start here Picture a tall wooden frame shaped like\nthe letter A . One teammate stands on its crossbar, high\nabove the ground. Four others hold ropes tied to the top. The frame can\nonly “walk” if every rope is pulled at the right\nmoment. If one person slips, the person on top wobbles."
+        },
+        {
+          "type": "heading",
+          "text": "Activity 1: The A-frame march"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img04-a-frame-march.webp",
+          "alt": "The A-frame march",
+          "caption": "One person rides the frame. Four\nrope-holders pull in turn so the frame “walks” one leg at a\ntime."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A team of about <strong>six</strong> gets one A-shaped bamboo\nframe.</li>\n<li>One person stands on the <strong>crossbar</strong>.</li>\n<li>Teammates hold <strong>ropes</strong> pulling in <strong>four\ndirections</strong> (front, back, left, right).</li>\n<li>By tilting and swinging the frame, they make it <strong>step\nforward</strong>, leg by leg.</li>\n<li><strong>Finish rule:</strong> <strong>both legs</strong> of the\nframe must cross the finish line.</li>\n</ul>",
+          "text": "A team of about six gets one A-shaped bamboo\nframe. One person stands on the crossbar . Teammates hold ropes pulling in four\ndirections (front, back, left, right). By tilting and swinging the frame, they make it step\nforward , leg by leg. Finish rule: both legs of the\nframe must cross the finish line."
+        },
+        {
+          "type": "heading",
+          "text": "Activity 2: The caterpillar\nwalk"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img05-caterpillar-walk.webp",
+          "alt": "The caterpillar walk",
+          "caption": "Everyone stands on the same two\nplanks. If you don’t move together, nobody moves."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The whole team stands on <strong>two long planks</strong>, one foot\non each, in a line.</li>\n<li>To move, <strong>everyone</strong> must lift the <strong>same\nfoot</strong> at the <strong>same time</strong>.</li>\n<li>One person out of step, and the whole “caterpillar” stops.</li>\n</ul>",
+          "text": "The whole team stands on two long planks , one foot\non each, in a line. To move, everyone must lift the same\nfoot at the same time . One person out of step, and the whole “caterpillar” stops."
+        },
+        {
+          "type": "heading",
+          "text": "What the players said"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>What they noticed</th>\n<th>The lesson</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“If one person loosened the rope, the middle person couldn’t\nbalance.”</td>\n<td><strong>Everyone’s effort</strong> matters.</td>\n</tr>\n<tr>\n<td>“We had different opinions, but we combined them into one\nplan.”</td>\n<td><strong>Listen</strong>, then <strong>agree</strong> on one\nway.</td>\n</tr>\n<tr>\n<td>“The other team finished first, but we didn’t give up.”</td>\n<td>Aim to <strong>finish the task</strong>, not just to win.</td>\n</tr>\n<tr>\n<td>“We chose the lightest person to stand on the frame.”</td>\n<td><strong>Pick the right person</strong> for each role.</td>\n</tr>\n<tr>\n<td>“There was no single leader. It was a flat team.”</td>\n<td><strong>Shared leadership</strong> can work.</td>\n</tr>\n<tr>\n<td>The rider first struggled. Instead of being replaced, she said,\n“I’ll learn and do it,” and she did.</td>\n<td><strong>Willingness to learn</strong> beats giving up.</td>\n</tr>\n<tr>\n<td>“I didn’t even look at the other team. I was fully focused.”</td>\n<td>Be <strong>fully immersed</strong>. No distractions.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "What they noticed The lesson “If one person loosened the rope, the middle person couldn’t\nbalance.” Everyone’s effort matters. “We had different opinions, but we combined them into one\nplan.” Listen , then agree on one\nway. “The other team finished first, but we didn’t give up.” Aim to finish the task , not just to win. “We chose the lightest person to stand on the frame.” Pick the right person for each role. “There was no single leader. It was a flat team.” Shared leadership can work. The rider first struggled. Instead of being replaced, she said,\n“I’ll learn and do it,” and she did. Willingness to learn beats giving up. “I didn’t even look at the other team. I was fully focused.” Be fully immersed . No distractions."
+        },
+        {
+          "type": "heading",
+          "text": "Lessons from the faculty\nbriefing"
+        },
+        {
+          "type": "subheading",
+          "text": "1. Understand the task clearly"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Arjuna and the bird’s eye</strong> In the\nMahabharata, the teacher Drona asks his students what they see when they\naim at a wooden bird. Others say “the tree, the branch, the bird”.\nArjuna says, “<strong>I see only the eye of the bird.</strong>” Be that\n<strong>sharp</strong> about your goal.</p>\n</blockquote>",
+          "text": "Lecture example — Arjuna and the bird’s eye In the\nMahabharata, the teacher Drona asks his students what they see when they\naim at a wooden bird. Others say “the tree, the branch, the bird”.\nArjuna says, “ I see only the eye of the bird. ” Be that sharp about your goal."
+        },
+        {
+          "type": "subheading",
+          "text": "2. Know and use your resources"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Resources are <strong>materials</strong> and\n<strong>people</strong>.</li>\n<li>Know each person’s <strong>strengths and weaknesses</strong>, then\ngive out roles <strong>wisely</strong>.</li>\n<li>Who stands on the crossbar? Who pulls the ropes?</li>\n</ul>",
+          "text": "Resources are materials and people . Know each person’s strengths and weaknesses , then\ngive out roles wisely . Who stands on the crossbar? Who pulls the ropes?"
+        },
+        {
+          "type": "subheading",
+          "text": "3. Share the vision"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>OBT has <strong>no named leader</strong>. Even a senior manager runs\nalongside a new joiner. <strong>All are equal.</strong></li>\n<li>As the task goes on, <strong>someone emerges</strong> to\ncoordinate.</li>\n<li>That person must make sure <strong>everyone knows the\ngoal</strong>.</li>\n</ul>",
+          "text": "OBT has no named leader . Even a senior manager runs\nalongside a new joiner. All are equal. As the task goes on, someone emerges to\ncoordinate. That person must make sure everyone knows the\ngoal ."
+        },
+        {
+          "type": "subheading",
+          "text": "4. Review and correct"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Stop now and then to check progress.</li>\n<li>Change roles, give someone a <strong>rest</strong>, swap people,\nlike geese changing their leader.</li>\n</ul>",
+          "text": "Stop now and then to check progress. Change roles, give someone a rest , swap people,\nlike geese changing their leader."
+        },
+        {
+          "type": "subheading",
+          "text": "5. Planning time is never\nwasted"
+        },
+        {
+          "type": "html",
+          "html": "<p>Everyone gives ideas. The leader weighs them and picks <strong>one\nplan</strong>.</p>",
+          "text": "Everyone gives ideas. The leader weighs them and picks one\nplan ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Your idea wasn’t chosen?</strong> Drop it. Carry out the\nchosen plan <strong>with full energy, as if it were your own\nidea.</strong> That’s how a team wins.</p>",
+          "text": "Your idea wasn’t chosen? Drop it. Carry out the\nchosen plan with full energy, as if it were your own\nidea. That’s how a team wins."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The core aim of OBT:</strong> channel everyone’s\n<strong>energy</strong> towards the organisation’s goals.</p>",
+          "text": "The core aim of OBT: channel everyone’s energy towards the organisation’s goals."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Team tasks need a clear goal, the right\nperson in each role, a shared vision, regular course correction, and\nfull support for the final plan. <strong>Exam words:</strong> A-frame\nmarch, caterpillar walk, coordination, flat hierarchy, immersion, Arjuna\nand the bird’s eye, resource allocation, leaderless group, emerging\nleader, shared vision, course correction, planning, commit to the final\nplan.</p>",
+          "text": "In one line: Team tasks need a clear goal, the right\nperson in each role, a shared vision, regular course correction, and\nfull support for the final plan. Exam words: A-frame\nmarch, caterpillar walk, coordination, flat hierarchy, immersion, Arjuna\nand the bird’s eye, resource allocation, leaderless group, emerging\nleader, shared vision, course correction, planning, commit to the final\nplan."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn the A-frame march, why does every rope matter?\n</summary>\nIf one person loosens their rope, the person on the crossbar loses\nbalance and the frame can’t move.\n</details>",
+          "text": "In the A-frame march, why does every rope matter? If one person loosens their rope, the person on the crossbar loses\nbalance and the frame can’t move."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does Arjuna’s answer teach about teamwork?\n</summary>\nBe very clear and focused about the goal.\n</details>",
+          "text": "What does Arjuna’s answer teach about teamwork? Be very clear and focused about the goal."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYour idea wasn’t picked by the team. What should you do?\n</summary>\nDrop it and carry out the chosen plan fully, as if it were your own.\n</details>",
+          "text": "Your idea wasn’t picked by the team. What should you do? Drop it and carry out the chosen plan fully, as if it were your own."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWho leads in OBT?\n</summary>\nNo one is named. Everyone is equal, and a coordinator emerges during the\ntask.\n</details>",
+          "text": "Who leads in OBT? No one is named. Everyone is equal, and a coordinator emerges during the\ntask."
+        }
+      ]
+    },
+    {
+      "slug": "what-is-teamwork",
+      "title": "What Is Teamwork, and Why Does It Matter?",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> One ant can’t scare anything. One crab is\neasy to push around. But in the lecture videos, when ants, crabs and\npenguins <strong>joined together</strong>, they chased away much bigger\nenemies. Small and weak alone, strong together.</p>\n</blockquote>",
+          "text": "Start here One ant can’t scare anything. One crab is\neasy to push around. But in the lecture videos, when ants, crabs and\npenguins joined together , they chased away much bigger\nenemies. Small and weak alone, strong together."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>TEAM = Together Everyone Achieves More.</strong></p>",
+          "text": "TEAM = Together Everyone Achieves More."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img06-small-together.webp",
+          "alt": "Small and strong together",
+          "caption": "Alone, an ant is tiny. Together,\nants carry a giant leaf and even bridge a gap with their\nbodies."
+        },
+        {
+          "type": "heading",
+          "text": "Don’t panic. Call your team."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>When danger or <strong>uncertainty</strong> comes, everyone feels\n<strong>fear</strong>. That’s human.</li>\n<li>The first rule: <strong>don’t panic</strong>. Stay in control.</li>\n<li>Alone, each creature panicked. Once friends joined in, they\n<strong>won</strong>.</li>\n</ul>",
+          "text": "When danger or uncertainty comes, everyone feels fear . That’s human. The first rule: don’t panic . Stay in control. Alone, each creature panicked. Once friends joined in, they won ."
+        },
+        {
+          "type": "heading",
+          "text": "Teamwork in the real world"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Example</th>\n<th>What happened</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Workers’ unions</strong></td>\n<td>After the Industrial Revolution, factory workers had few rights.\nThey <strong>joined together</strong>, chose leaders, and raised fair\ndemands with owners.</td>\n</tr>\n<tr>\n<td><strong>Diversity and inclusion</strong></td>\n<td>For years, people talked about welcoming all cultures and genders at\nwork, but rules didn’t change. Groups of leaders <strong>kept pushing\ntogether</strong> and changed policies. Today most big companies have\nthem.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Example What happened Workers’ unions After the Industrial Revolution, factory workers had few rights.\nThey joined together , chose leaders, and raised fair\ndemands with owners. Diversity and inclusion For years, people talked about welcoming all cultures and genders at\nwork, but rules didn’t change. Groups of leaders kept pushing\ntogether and changed policies. Today most big companies have\nthem."
+        },
+        {
+          "type": "heading",
+          "text": "Lessons from geese"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img07-geese-v.webp",
+          "alt": "Geese in a V",
+          "caption": "Geese fly in a V: each bird gets lift from the one ahead, and the\nleader keeps changing."
+        },
+        {
+          "type": "html",
+          "html": "<p>When geese migrate, they fly in a <strong>V shape</strong>. The\nlecture draws these lessons:</p>",
+          "text": "When geese migrate, they fly in a V shape . The\nlecture draws these lessons:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>What the geese do</th>\n<th>Team lesson</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Each bird gets <strong>lift</strong> from the bird ahead, so the\nflock flies farther</td>\n<td>Working together takes <strong>less effort</strong> than working\nalone</td>\n</tr>\n<tr>\n<td>A goose that leaves the V <strong>struggles</strong> to keep up</td>\n<td>Stay with the team</td>\n</tr>\n<tr>\n<td>The <strong>lead bird changes</strong> when it gets tired</td>\n<td><strong>Share leadership</strong> and the hard work</td>\n</tr>\n<tr>\n<td>Birds behind <strong>honk</strong> to cheer the leader</td>\n<td><strong>Encourage</strong> each other</td>\n</tr>\n<tr>\n<td>If one falls sick, others stay with it</td>\n<td><strong>Care</strong> for teammates</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "What the geese do Team lesson Each bird gets lift from the bird ahead, so the\nflock flies farther Working together takes less effort than working\nalone A goose that leaves the V struggles to keep up Stay with the team The lead bird changes when it gets tired Share leadership and the hard work Birds behind honk to cheer the leader Encourage each other If one falls sick, others stay with it Care for teammates"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>The lift effect is real. Scientists have measured energy savings\nin birds flying in a V. The “honking to cheer” and “staying with the\nsick bird” parts come from a popular motivational story and haven’t been\nproven, but the lessons still hold.</em></p>",
+          "text": "The lift effect is real. Scientists have measured energy savings\nin birds flying in a V. The “honking to cheer” and “staying with the\nsick bird” parts come from a popular motivational story and haven’t been\nproven, but the lessons still hold."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Nature is full of teamwork:</strong> cells form tissues,\ntissues form organs, organs form systems. Planets move together in the\nsolar system. The result is <strong>order, balance and\nharmony</strong>.</p>",
+          "text": "Nature is full of teamwork: cells form tissues,\ntissues form organs, organs form systems. Planets move together in the\nsolar system. The result is order, balance and\nharmony ."
+        },
+        {
+          "type": "heading",
+          "text": "Why teamwork matters"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A team brings together <strong>different skills</strong>, so members\n<strong>complete</strong> each other.</li>\n<li>Together you create <strong>synergy</strong>, which sparks\n<strong>new ideas</strong> and creativity.</li>\n<li><strong>Higher morale:</strong> you cheer, help, teach and even\n<strong>challenge</strong> each other.</li>\n<li><strong>Shared leadership</strong> and shared goals.</li>\n<li>Better communication, <strong>healthy</strong> disagreement, less\nwaste of time and money.</li>\n<li>A <strong>happier workplace</strong> with more job\nsatisfaction.</li>\n</ul>",
+          "text": "A team brings together different skills , so members complete each other. Together you create synergy , which sparks new ideas and creativity. Higher morale: you cheer, help, teach and even challenge each other. Shared leadership and shared goals. Better communication, healthy disagreement, less\nwaste of time and money. A happier workplace with more job\nsatisfaction."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“If you want to walk fast, walk alone. If you want to walk far, walk\ntogether.” <em>(Often credited to Ratan Tata; it’s actually an old\nAfrican proverb that he liked to quote.)</em></p>\n</blockquote>",
+          "text": "“If you want to walk fast, walk alone. If you want to walk far, walk\ntogether.” (Often credited to Ratan Tata; it’s actually an old\nAfrican proverb that he liked to quote.)"
+        },
+        {
+          "type": "heading",
+          "text": "Put people where they shine"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — matching roles to strengths</strong> In one\ncompany, all middle managers had the <strong>same mixed duties</strong>.\nNobody was excelling or enjoying the work. One-on-one talks showed three\nkinds of people:</p>\n<ul>\n<li>Some loved <strong>creative</strong> work.</li>\n<li>Some were great with <strong>numbers</strong> but not with\npeople.</li>\n<li>Some were great with <strong>people</strong> but not with numbers.\nWhen roles were <strong>matched to strengths</strong>, people became\nhappier and their work got much better.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — matching roles to strengths In one\ncompany, all middle managers had the same mixed duties .\nNobody was excelling or enjoying the work. One-on-one talks showed three\nkinds of people: Some loved creative work. Some were great with numbers but not with\npeople. Some were great with people but not with numbers.\nWhen roles were matched to strengths , people became\nhappier and their work got much better."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Together Everyone Achieves More: teams\nbring different strengths together, share leadership and care for each\nother, just like geese in a V. <strong>Exam words:</strong> TEAM, don’t\npanic, unions, diversity and inclusion, V formation, uplift, rotating\nleadership, encouragement, empathy, synergy, complementary skills,\nmorale, “walk far, walk together”, align roles with strengths.</p>",
+          "text": "In one line: Together Everyone Achieves More: teams\nbring different strengths together, share leadership and care for each\nother, just like geese in a V. Exam words: TEAM, don’t\npanic, unions, diversity and inclusion, V formation, uplift, rotating\nleadership, encouragement, empathy, synergy, complementary skills,\nmorale, “walk far, walk together”, align roles with strengths."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does TEAM stand for?\n</summary>\nTogether Everyone Achieves More.\n</details>",
+          "text": "What does TEAM stand for? Together Everyone Achieves More."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy does a goose that leaves the V struggle?\n</summary>\nIt loses the lift from the bird in front, so it has to work harder.\n</details>",
+          "text": "Why does a goose that leaves the V struggle? It loses the lift from the bird in front, so it has to work harder."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName two benefits of teamwork.\n</summary>\nAny two: complementary skills, synergy, new ideas, higher morale, shared\nleadership, better communication, a happier workplace, saved time and\ncosts.\n</details>",
+          "text": "Name two benefits of teamwork. Any two: complementary skills, synergy, new ideas, higher morale, shared\nleadership, better communication, a happier workplace, saved time and\ncosts."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat fixed the managers’ problem in the lecture example?\n</summary>\nGiving each person a role that matched their strengths (creative,\nnumbers or people).\n</details>",
+          "text": "What fixed the managers’ problem in the lecture example? Giving each person a role that matched their strengths (creative,\nnumbers or people)."
+        }
+      ]
+    },
+    {
+      "slug": "clarity-commitment-communication",
+      "title": "The 10 C's of Teamwork — Clarity, Commitment, Communication",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A trekker leaves his phone on a hilltop\ncafé table. He asks a helper boy, “Can you go and <strong>have a\nlook</strong> at my phone? Take my <strong>cycle</strong>.” Fifteen\nminutes later the boy returns, panting. “Sir, I saw it. It’s there.”\n“Then where is it?!” “You said <strong>look</strong>, not\n<strong>bring</strong>. And I can’t ride a cycle, so I pushed it up the\nhill.” Two small gaps in clarity cost a lot of time.</p>\n</blockquote>",
+          "text": "Start here A trekker leaves his phone on a hilltop\ncafé table. He asks a helper boy, “Can you go and have a\nlook at my phone? Take my cycle .” Fifteen\nminutes later the boy returns, panting. “Sir, I saw it. It’s there.”\n“Then where is it?!” “You said look , not bring . And I can’t ride a cycle, so I pushed it up the\nhill.” Two small gaps in clarity cost a lot of time."
+        },
+        {
+          "type": "heading",
+          "text": "The 10 C’s of teamwork"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img08-ten-cs.webp",
+          "alt": "The 10 C’s",
+          "caption": "Ten habits that make a team work."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>#</th>\n<th>C</th>\n<th>#</th>\n<th>C</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Clarity</strong></td>\n<td>6</td>\n<td><strong>Coordination</strong></td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Commitment</strong></td>\n<td>7</td>\n<td><strong>Connection</strong></td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Communication</strong></td>\n<td>8</td>\n<td><strong>Conflict resolution</strong></td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Competence</strong></td>\n<td>9</td>\n<td><strong>Change management</strong></td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Collaboration</strong></td>\n<td>10</td>\n<td><strong>Continuous improvement</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# C # C 1 Clarity 6 Coordination 2 Commitment 7 Connection 3 Communication 8 Conflict resolution 4 Competence 9 Change management 5 Collaboration 10 Continuous improvement"
+        },
+        {
+          "type": "heading",
+          "text": "C1: Clarity"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Clarity</strong> comes first. Everyone must clearly know:</p>",
+          "text": "Clarity comes first. Everyone must clearly know:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>the organisation’s <strong>vision</strong>, <strong>purpose</strong>\nand <strong>values</strong>,</li>\n<li>their <strong>own role</strong> and how it helps the <strong>big\npicture</strong>,</li>\n<li><strong>each teammate’s</strong> abilities and limits.</li>\n</ul>",
+          "text": "the organisation’s vision , purpose and values , their own role and how it helps the big\npicture , each teammate’s abilities and limits."
+        },
+        {
+          "type": "html",
+          "html": "<p>When people see why their work matters, they feel\n<strong>ownership</strong>, stay <strong>motivated</strong> and are less\nlikely to quit.</p>",
+          "text": "When people see why their work matters, they feel ownership , stay motivated and are less\nlikely to quit."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the soldier at the end of the line</strong>\nIn a war, the front can stretch for miles. Orders must reach <strong>the\nlast soldier</strong> clearly. He must know what to do in every\nsituation.</p>\n</blockquote>",
+          "text": "Lecture example — the soldier at the end of the line In a war, the front can stretch for miles. Orders must reach the\nlast soldier clearly. He must know what to do in every\nsituation."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The ABC of communication:</strong> <strong>A</strong>ccuracy,\n<strong>B</strong>revity (keep it short), <strong>C</strong>larity.</p>",
+          "text": "The ABC of communication: A ccuracy, B revity (keep it short), C larity."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Back to the phone story:</strong> the trekker gave unclear\norders (“look”, not “bring”) and didn’t know his teammate\n<strong>couldn’t ride a cycle</strong>. Clear instructions are like a\ncomputer program: “Do this. If yes, then that. If not, this.”</p>",
+          "text": "Back to the phone story: the trekker gave unclear\norders (“look”, not “bring”) and didn’t know his teammate couldn’t ride a cycle . Clear instructions are like a\ncomputer program: “Do this. If yes, then that. If not, this.”"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img09-cycle-uphill.webp",
+          "alt": "Unclear instructions",
+          "caption": "“Take my cycle” doesn’t help if your\nteammate can’t ride one."
+        },
+        {
+          "type": "heading",
+          "text": "C2: Commitment"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Commitment</strong> means a deep promise to make things\nhappen, and going the <strong>extra mile</strong>. It starts with your\n<strong>promise to yourself</strong>.</p>",
+          "text": "Commitment means a deep promise to make things\nhappen, and going the extra mile . It starts with your promise to yourself ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — saving one run</strong> A fielder dives and\nstops the ball at the boundary. Two others back him up with quick\nthrows. They save <strong>one run</strong>. In a close match, every run\ncounts. That’s commitment.</p>\n</blockquote>",
+          "text": "Lecture example — saving one run A fielder dives and\nstops the ball at the boundary. Two others back him up with quick\nthrows. They save one run . In a close match, every run\ncounts. That’s commitment."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What builds commitment?</strong></p>",
+          "text": "What builds commitment?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Shared</strong> vision and goals.</li>\n<li><strong>Clear roles:</strong> who does what, when, why and with\nwhom.</li>\n<li><strong>Clear agreements</strong> inside the team on outcomes,\ndeadlines and deliverables, so nobody has to guess what others\nexpect.</li>\n<li><strong>Valuing</strong> teammates and cheering them on, like the\ngeese.</li>\n</ul>",
+          "text": "Shared vision and goals. Clear roles: who does what, when, why and with\nwhom. Clear agreements inside the team on outcomes,\ndeadlines and deliverables, so nobody has to guess what others\nexpect. Valuing teammates and cheering them on, like the\ngeese."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — 100 missed calls</strong> A home helper had\npromised to always tell her employer by the night before if she couldn’t\ncome. Once she couldn’t get through, so she called <strong>100\ntimes</strong>. There was no written contract, but she kept her word,\nand people trusted her for it.</p>\n</blockquote>",
+          "text": "Lecture example — 100 missed calls A home helper had\npromised to always tell her employer by the night before if she couldn’t\ncome. Once she couldn’t get through, so she called 100\ntimes . There was no written contract, but she kept her word,\nand people trusted her for it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — “Sir, I knew you would come”</strong> In a\nfierce battle, a section commander saw one of his soldiers dying in a\nnearby trench. His senior said “Don’t go, it’s too risky.” He crawled\nacross anyway. The soldier died in his lap, saying, “<strong>Sir, I knew\nyou would come.</strong>” Commitment to your team can be that deep.</p>\n</blockquote>",
+          "text": "Lecture example — “Sir, I knew you would come” In a\nfierce battle, a section commander saw one of his soldiers dying in a\nnearby trench. His senior said “Don’t go, it’s too risky.” He crawled\nacross anyway. The soldier died in his lap, saying, “ Sir, I knew\nyou would come. ” Commitment to your team can be that deep."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Surface vs deep commitment:</strong></p>",
+          "text": "Surface vs deep commitment:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Surface</th>\n<th>Deep</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“I’ll do the project.”</td>\n<td>Who does what? By <strong>which date</strong>? What resources?</td>\n</tr>\n<tr>\n<td>“It’ll be done.”</td>\n<td>When do we meet next? Who <strong>owns</strong> each action?</td>\n</tr>\n<tr>\n<td>Assumes all goes to plan</td>\n<td>Has a <strong>backup plan</strong> if things go wrong</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Surface Deep “I’ll do the project.” Who does what? By which date ? What resources? “It’ll be done.” When do we meet next? Who owns each action? Assumes all goes to plan Has a backup plan if things go wrong"
+        },
+        {
+          "type": "heading",
+          "text": "C3: Communication"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Communication</strong> is at the heart of teamwork. Teams\nhave introverts, extroverts, talkers, listeners, and people still\nlearning the language. So:</p>",
+          "text": "Communication is at the heart of teamwork. Teams\nhave introverts, extroverts, talkers, listeners, and people still\nlearning the language. So:"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Create informal spaces.</strong> &gt; <strong>Lecture\nexample — TGIF</strong> &gt; Every Friday (“<strong>Thank God It’s\nFriday</strong>”), the whole project team met for games, fun and short\ntalks on hobbies or new technology. People got to know each other, so\nspeaking up in <strong>formal</strong> meetings became easy.</p>",
+          "text": "1. Create informal spaces. > Lecture\nexample — TGIF > Every Friday (“ Thank God It’s\nFriday ”), the whole project team met for games, fun and short\ntalks on hobbies or new technology. People got to know each other, so\nspeaking up in formal meetings became easy."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Make formal meetings welcoming.</strong> Everyone should\nfeel free to ask, share opinions and discuss.</p>",
+          "text": "2. Make formal meetings welcoming. Everyone should\nfeel free to ask, share opinions and discuss."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. Share knowledge.</strong> Build a <strong>knowledge\nbank</strong> of best practices, templates and lessons, and share it\n<strong>across teams</strong>.</p>",
+          "text": "3. Share knowledge. Build a knowledge\nbank of best practices, templates and lessons, and share it across teams ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>4. Follow the organisation’s standards.</strong> Learn how\nmeetings, minutes and client emails are done. In a small company with\nnone, <strong>set them up</strong> yourself.</p>",
+          "text": "4. Follow the organisation’s standards. Learn how\nmeetings, minutes and client emails are done. In a small company with\nnone, set them up yourself."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The key idea: psychological safety.</strong> Communication\nshould be <strong>open, honest and respectful</strong>, so everyone\nfeels safe to speak without fear of being judged.</p>",
+          "text": "The key idea: psychological safety. Communication\nshould be open, honest and respectful , so everyone\nfeels safe to speak without fear of being judged."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> First be clear about goals and roles,\nthen commit deeply with dates and backup plans, and communicate openly\nso everyone feels safe to speak. <strong>Exam words:</strong> 10 C’s,\nclarity, vision, purpose, values, ABC of communication (accuracy,\nbrevity, clarity), commitment, extra mile, mutual agreements, deep vs\nsurface commitment, communication, informal space, TGIF, knowledge\nrepository, psychological safety.</p>",
+          "text": "In one line: First be clear about goals and roles,\nthen commit deeply with dates and backup plans, and communicate openly\nso everyone feels safe to speak. Exam words: 10 C’s,\nclarity, vision, purpose, values, ABC of communication (accuracy,\nbrevity, clarity), commitment, extra mile, mutual agreements, deep vs\nsurface commitment, communication, informal space, TGIF, knowledge\nrepository, psychological safety."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat went wrong in the phone story?\n</summary>\nThe instruction was unclear (“have a look”, not “bring it”), and the\ntrekker didn’t know the helper couldn’t ride a cycle.\n</details>",
+          "text": "What went wrong in the phone story? The instruction was unclear (“have a look”, not “bring it”), and the\ntrekker didn’t know the helper couldn’t ride a cycle."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the ABC of communication stand for?\n</summary>\nAccuracy, Brevity, Clarity.\n</details>",
+          "text": "What does the ABC of communication stand for? Accuracy, Brevity, Clarity."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTurn “We’ll finish the report” into a deep commitment.\n</summary>\nExample: “Ravi drafts sections 1–2 by Tuesday 5 pm, Meena reviews by\nWednesday, and if data is late we use last month’s figures.”\n</details>",
+          "text": "Turn “We’ll finish the report” into a deep commitment. Example: “Ravi drafts sections 1–2 by Tuesday 5 pm, Meena reviews by\nWednesday, and if data is late we use last month’s figures.”"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is psychological safety?\n</summary>\nA safe, non-judgmental space where everyone can speak openly and\nhonestly without fear.\n</details>",
+          "text": "What is psychological safety? A safe, non-judgmental space where everyone can speak openly and\nhonestly without fear."
+        }
+      ]
+    },
+    {
+      "slug": "competence-collaboration-coordination",
+      "title": "The 10 C's — Competence, Collaboration, Coordination",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> In a car race, a car zooms into the pit\nlane. Within seconds, a crew changes <strong>all four tyres</strong> and\nfuels it up, and it’s gone. Each person has <strong>one job</strong> and\ndoes it perfectly. Nobody bumps into anyone. That’s competence,\ncollaboration and coordination in a few seconds.</p>\n</blockquote>",
+          "text": "Start here In a car race, a car zooms into the pit\nlane. Within seconds, a crew changes all four tyres and\nfuels it up, and it’s gone. Each person has one job and\ndoes it perfectly. Nobody bumps into anyone. That’s competence,\ncollaboration and coordination in a few seconds."
+        },
+        {
+          "type": "heading",
+          "text": "C4: Competence"
+        },
+        {
+          "type": "html",
+          "html": "<p>A team has <strong>many kinds of skills</strong>: technical, domain,\nleadership, managerial, soft skills and life skills.</p>",
+          "text": "A team has many kinds of skills : technical, domain,\nleadership, managerial, soft skills and life skills."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Different strengths <strong>fill each other’s gaps</strong>.</li>\n<li>Members <strong>learn</strong> from each other, which sparks\n<strong>creativity</strong>.</li>\n<li>Like the geese, each member <strong>leads themselves</strong>, owns\ntheir work, and plays <strong>for the team</strong>, not just for\nthemselves.</li>\n</ul>",
+          "text": "Different strengths fill each other’s gaps . Members learn from each other, which sparks creativity . Like the geese, each member leads themselves , owns\ntheir work, and plays for the team , not just for\nthemselves."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img10-pit-crew.webp",
+          "alt": "The pit crew",
+          "caption": "The right person, in the right role, doing the\nright work, the right way."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the race-car pit crew</strong> Each crew\nmember has <strong>one specific job</strong>, practised again and again.\nA slow pit stop can lose a race. <strong>Right person + right skills +\nright role + right place + right way = magic.</strong></p>\n</blockquote>",
+          "text": "Lecture example — the race-car pit crew Each crew\nmember has one specific job , practised again and again.\nA slow pit stop can lose a race. Right person + right skills +\nright role + right place + right way = magic."
+        },
+        {
+          "type": "heading",
+          "text": "C5: Collaboration"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Collaboration</strong> means working together to bring out\nideas, creativity and new solutions. It gives a team a big\n<strong>advantage</strong>.</p>",
+          "text": "Collaboration means working together to bring out\nideas, creativity and new solutions. It gives a team a big advantage ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to collaborate well:</strong></p>",
+          "text": "How to collaborate well:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The leader acts as a <strong>facilitator</strong> (a helper, not a\nboss) and builds <strong>psychological safety</strong>.</li>\n<li>Power is <strong>shared</strong>: shared vision, goals, leadership\nand credit, not strict top-down orders.</li>\n<li>Everyone gets an <strong>equal chance</strong> to speak, share and\npresent.</li>\n<li>It’s OK to <strong>take risks</strong> and <strong>make\nmistakes</strong>.</li>\n<li><strong>Icebreakers</strong> and informal events help people open\nup.</li>\n<li>Collaboration can happen <strong>inside</strong> a team,\n<strong>across</strong> teams, and with <strong>clients and\npartners</strong>. Online tools and clear processes help.</li>\n</ul>",
+          "text": "The leader acts as a facilitator (a helper, not a\nboss) and builds psychological safety . Power is shared : shared vision, goals, leadership\nand credit, not strict top-down orders. Everyone gets an equal chance to speak, share and\npresent. It’s OK to take risks and make\nmistakes . Icebreakers and informal events help people open\nup. Collaboration can happen inside a team, across teams, and with clients and\npartners . Online tools and clear processes help."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Sundar Pichai</strong> Google has many\nbrilliant engineers. Sundar Pichai is very skilled, but what helped make\nhim CEO was his ability to <strong>get experts to work\ntogether</strong>: listen to every view, then guide everyone to\n<strong>agreement</strong>. A leader is often “<strong>one among\nequals</strong>” who brings people together.</p>\n</blockquote>",
+          "text": "Lecture example — Sundar Pichai Google has many\nbrilliant engineers. Sundar Pichai is very skilled, but what helped make\nhim CEO was his ability to get experts to work\ntogether : listen to every view, then guide everyone to agreement . A leader is often “ one among\nequals ” who brings people together."
+        },
+        {
+          "type": "heading",
+          "text": "C6: Coordination"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img11-diverge-converge.webp",
+          "alt": "Diverge, then converge",
+          "caption": "Collaboration opens up many ideas.\nCoordination narrows them to one plan and makes it happen."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Collaboration</th>\n<th>Coordination</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Divergent</strong> thinking: open up</td>\n<td><strong>Convergent</strong> thinking: narrow down</td>\n</tr>\n<tr>\n<td>Bring out <strong>many ideas</strong></td>\n<td>Pick the <strong>one that works</strong> for all</td>\n</tr>\n<tr>\n<td></td>\n<td>Then plan: <strong>who</strong> does <strong>what</strong>,\n<strong>when</strong>, <strong>where</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Collaboration Coordination Divergent thinking: open up Convergent thinking: narrow down Bring out many ideas Pick the one that works for all Then plan: who does what , when , where"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Everyone should see <strong>their own</strong> and <strong>each\nother’s</strong> progress.</li>\n<li><strong>Peers help</strong> each other.</li>\n</ul>",
+          "text": "Everyone should see their own and each\nother’s progress. Peers help each other."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Mumbai’s dabbawalas</strong> About\n<strong>5,000 dabbawalas</strong> deliver home-cooked lunch boxes to\nabout <strong>2 lakh</strong> office workers in Mumbai every day, by\nbicycle, train and handcart, and very rarely get one wrong. It works\nbecause of <strong>clarity, commitment, communication, competence and\ncoordination</strong> together.</p>\n</blockquote>",
+          "text": "Lecture example — Mumbai’s dabbawalas About 5,000 dabbawalas deliver home-cooked lunch boxes to\nabout 2 lakh office workers in Mumbai every day, by\nbicycle, train and handcart, and very rarely get one wrong. It works\nbecause of clarity, commitment, communication, competence and\ncoordination together."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img12-dabbawala.webp",
+          "alt": "The dabbawala system",
+          "caption": "Home to train to office: thousands of\nlunch boxes, almost no mistakes."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — this very event</strong> The outdoor\ntraining needed the studio team, the Dean of Students’ office, faculty,\nstudents and helpers, all <strong>in sync</strong>. Coordination made it\na success.</p>\n</blockquote>",
+          "text": "Lecture example — this very event The outdoor\ntraining needed the studio team, the Dean of Students’ office, faculty,\nstudents and helpers, all in sync . Coordination made it\na success."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Mix complementary skills (competence),\nshare ideas freely and safely (collaboration), then narrow to one plan\nand execute it together (coordination). <strong>Exam words:</strong>\ncompetence, complementary strengths, skill gaps, pit crew,\ncollaboration, facilitator, psychological safety, shared leadership,\nicebreakers, Sundar Pichai, consensus, coordination, divergent vs\nconvergent thinking, dabbawalas.</p>",
+          "text": "In one line: Mix complementary skills (competence),\nshare ideas freely and safely (collaboration), then narrow to one plan\nand execute it together (coordination). Exam words: competence, complementary strengths, skill gaps, pit crew,\ncollaboration, facilitator, psychological safety, shared leadership,\nicebreakers, Sundar Pichai, consensus, coordination, divergent vs\nconvergent thinking, dabbawalas."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nCollaboration uses which kind of thinking? Coordination?\n</summary>\nCollaboration uses divergent thinking (many ideas). Coordination uses\nconvergent thinking (pick one and execute).\n</details>",
+          "text": "Collaboration uses which kind of thinking? Coordination? Collaboration uses divergent thinking (many ideas). Coordination uses\nconvergent thinking (pick one and execute)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does a pit crew teach about competence?\n</summary>\nThe right person with the right skills in the right role, doing the\nright work the right way.\n</details>",
+          "text": "What does a pit crew teach about competence? The right person with the right skills in the right role, doing the\nright work the right way."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to the lecture, what skill helped Sundar Pichai become\nGoogle’s CEO?\n</summary>\nGetting many experts to work together: listening to every view and\nbuilding agreement.\n</details>",
+          "text": "According to the lecture, what skill helped Sundar Pichai become\nGoogle’s CEO? Getting many experts to work together: listening to every view and\nbuilding agreement."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy are the dabbawalas a teamwork case study?\n</summary>\nThousands of people deliver lakhs of lunch boxes daily with very few\nmistakes, thanks to clarity, commitment, communication, competence and\ncoordination.\n</details>",
+          "text": "Why are the dabbawalas a teamwork case study? Thousands of people deliver lakhs of lunch boxes daily with very few\nmistakes, thanks to clarity, commitment, communication, competence and\ncoordination."
+        }
+      ]
+    },
+    {
+      "slug": "connection-conflict-change",
+      "title": "The 10 C's — Connection, Conflict Resolution, Change Management",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A scientist promised his children he’d\ntake them to an exhibition after work. He asked his boss to let him\nleave at 5:30. But he got lost in his work until 8 pm. He rushed home,\nexpecting angry faces. Instead, his wife calmly said, “Your boss came\nand took the children to the exhibition.”</p>\n</blockquote>",
+          "text": "Start here A scientist promised his children he’d\ntake them to an exhibition after work. He asked his boss to let him\nleave at 5:30. But he got lost in his work until 8 pm. He rushed home,\nexpecting angry faces. Instead, his wife calmly said, “Your boss came\nand took the children to the exhibition.”"
+        },
+        {
+          "type": "heading",
+          "text": "C7: Connection"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Connection</strong> means getting along in\n<strong>harmony</strong>, with <strong>respect, trust and\nunderstanding</strong>.</p>",
+          "text": "Connection means getting along in harmony , with respect, trust and\nunderstanding ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>It’s the base for <strong>open communication</strong>, good teamwork\nand commitment.</li>\n<li>Like geese, <strong>cheer</strong> each other on and\n<strong>support</strong> each other in good and bad times.</li>\n<li><strong>Value</strong> people, <strong>appreciate</strong> their\nwork, and <strong>celebrate</strong> wins together.</li>\n<li>Care about a teammate’s <strong>personal life</strong> too. A person\nwith a happy family works better.</li>\n</ul>",
+          "text": "It’s the base for open communication , good teamwork\nand commitment. Like geese, cheer each other on and support each other in good and bad times. Value people, appreciate their\nwork, and celebrate wins together. Care about a teammate’s personal life too. A person\nwith a happy family works better."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the boss who took the children</strong> In\nthe story above, the boss saw his colleague was too absorbed to leave on\ntime. So he <strong>took the children himself</strong>. He cared for the\nproject <strong>and</strong> for his colleague’s family. The lecture\nsays the boss was <strong>Dr. A. P. J. Abdul Kalam</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the boss who took the children In\nthe story above, the boss saw his colleague was too absorbed to leave on\ntime. So he took the children himself . He cared for the\nproject and for his colleague’s family. The lecture\nsays the boss was Dr. A. P. J. Abdul Kalam ."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note: this story is widely shared, but we couldn’t confirm it\nreally happened. Its lesson still stands.</em></p>",
+          "text": "Note: this story is widely shared, but we couldn’t confirm it\nreally happened. Its lesson still stands."
+        },
+        {
+          "type": "heading",
+          "text": "C8: Conflict resolution"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Conflict</strong> at work is normal: between teammates,\nbetween a lead and the team, or with a client. The lecture even says,\n“<strong>If there’s no conflict, something is seriously\nwrong.</strong>”</p>",
+          "text": "Conflict at work is normal: between teammates,\nbetween a lead and the team, or with a client. The lecture even says,\n“ If there’s no conflict, something is seriously\nwrong. ”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Where does conflict come from?</strong> A gap between what\nsomeone <strong>expected</strong> and what\n<strong>happened</strong>.</p>",
+          "text": "Where does conflict come from? A gap between what\nsomeone expected and what happened ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Preventing conflict:</strong></p>",
+          "text": "Preventing conflict:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Psychological safety</strong>: a safe, non-judgmental\nspace.</li>\n<li><strong>Open, honest, kind</strong> communication.</li>\n<li>Everyone feels <strong>valued</strong> and\n<strong>connected</strong>.</li>\n</ul>",
+          "text": "Psychological safety : a safe, non-judgmental\nspace. Open, honest, kind communication. Everyone feels valued and connected ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Resolving conflict:</strong></p>",
+          "text": "Resolving conflict:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Talk it out</strong> (have a dialogue).</li>\n<li><strong>Listen actively</strong> to find the <strong>root\ncause</strong>.</li>\n<li>Look for a <strong>win-win</strong> solution.</li>\n<li>If needed, a <strong>fair third person</strong> steps in and looks\nat both sides, keeping the organisation’s good in mind.</li>\n<li>Put the <strong>team’s goal</strong> above your own or your group’s\ninterest. <strong>Give and take.</strong></li>\n</ol>",
+          "text": "Talk it out (have a dialogue). Listen actively to find the root\ncause . Look for a win-win solution. If needed, a fair third person steps in and looks\nat both sides, keeping the organisation’s good in mind. Put the team’s goal above your own or your group’s\ninterest. Give and take."
+        },
+        {
+          "type": "subheading",
+          "text": "The “ABC” of dodging work\n(don’t do this!)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Letter</th>\n<th>Trick</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>A</strong>void</td>\n<td>Just don’t do the task.</td>\n</tr>\n<tr>\n<td><strong>B</strong>ypass</td>\n<td>Look busy with something else so the task never gets done.</td>\n</tr>\n<tr>\n<td><strong>C</strong>onfuse</td>\n<td>Stir up confusion or a fight so it drags on.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Letter Trick A void Just don’t do the task. B ypass Look busy with something else so the task never gets done. C onfuse Stir up confusion or a fight so it drags on."
+        },
+        {
+          "type": "html",
+          "html": "<p>The cure: be <strong>clear about your role</strong>,\n<strong>accept</strong> it, and <strong>do your part</strong>.</p>",
+          "text": "The cure: be clear about your role , accept it, and do your part ."
+        },
+        {
+          "type": "heading",
+          "text": "C9: Change management"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Change never stops</strong> at work.</p>",
+          "text": "Change never stops at work."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Kind of change</th>\n<th>Examples</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>In the company</strong></td>\n<td>Reorganisations, mergers, new strategy, new leaders</td>\n</tr>\n<tr>\n<td><strong>In the market</strong></td>\n<td>New competitors, new markets</td>\n</tr>\n<tr>\n<td><strong>In your role</strong></td>\n<td>Promotion, new project, new client, new city</td>\n</tr>\n<tr>\n<td><strong>In your work</strong></td>\n<td>New processes, new tools</td>\n</tr>\n<tr>\n<td><strong>In the world</strong></td>\n<td>9/11 (2001), the 2008 financial crisis, COVID-19</td>\n</tr>\n<tr>\n<td><strong>In your personal life</strong></td>\n<td>Good or bad life events that affect your work and team</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Kind of change Examples In the company Reorganisations, mergers, new strategy, new leaders In the market New competitors, new markets In your role Promotion, new project, new client, new city In your work New processes, new tools In the world 9/11 (2001), the 2008 financial crisis, COVID-19 In your personal life Good or bad life events that affect your work and team"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the yearly reorganisation</strong> In the\nteacher’s old company, there was a <strong>reorganisation every\nyear</strong>. The first time, it felt like the whole world was\nshifting. Later, the team <strong>adapted faster</strong> each time.</p>\n</blockquote>",
+          "text": "Lecture example — the yearly reorganisation In the\nteacher’s old company, there was a reorganisation every\nyear . The first time, it felt like the whole world was\nshifting. Later, the team adapted faster each time."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to manage change:</strong></p>",
+          "text": "How to manage change:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Expect resistance.</strong> People may resist or resent\nchange at first.</li>\n<li><strong>Communicate openly</strong> to stop rumours, worry and\nmisunderstanding.</li>\n<li><strong>Listen</strong>, ask questions, take\n<strong>feedback</strong>.</li>\n<li>Share the <strong>big picture</strong> and any new priorities\nregularly.</li>\n<li>Use people’s <strong>talents</strong>; let them help <strong>make\ndecisions</strong>.</li>\n<li>Have a written <strong>change plan</strong>, flexible for each kind\nof change.</li>\n<li><strong>Keep moving:</strong> tiny steps, big steps, but keep\ngoing.</li>\n</ul>",
+          "text": "Expect resistance. People may resist or resent\nchange at first. Communicate openly to stop rumours, worry and\nmisunderstanding. Listen , ask questions, take feedback . Share the big picture and any new priorities\nregularly. Use people’s talents ; let them help make\ndecisions . Have a written change plan , flexible for each kind\nof change. Keep moving: tiny steps, big steps, but keep\ngoing."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Build trust and care (connection),\ntreat conflict as normal and solve it by listening for win-win answers,\nand handle change with open talk and steady small steps. <strong>Exam\nwords:</strong> connection, mutual respect, trust, appreciation,\ncelebration, conflict resolution, expectation gap, root cause, win-win,\navoid-bypass-confuse, give and take, change management, reorganisation,\nresistance to change, change strategy.</p>",
+          "text": "In one line: Build trust and care (connection),\ntreat conflict as normal and solve it by listening for win-win answers,\nand handle change with open talk and steady small steps. Exam\nwords: connection, mutual respect, trust, appreciation,\ncelebration, conflict resolution, expectation gap, root cause, win-win,\navoid-bypass-confuse, give and take, change management, reorganisation,\nresistance to change, change strategy."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to the lecture, what is the source of most conflict?\n</summary>\nA difference between what someone expected and what actually happened.\n</details>",
+          "text": "According to the lecture, what is the source of most conflict? A difference between what someone expected and what actually happened."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “Avoid, Bypass, Confuse” describe?\n</summary>\nThree ways people dodge work they don’t want to do. The cure is\naccepting your role and doing your part.\n</details>",
+          "text": "What does “Avoid, Bypass, Confuse” describe? Three ways people dodge work they don’t want to do. The cure is\naccepting your role and doing your part."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName two steps to resolve a conflict.\n</summary>\nAny two: talk it out, listen actively, find the root cause, look for\nwin-win, bring in a fair third person, put team goals first.\n</details>",
+          "text": "Name two steps to resolve a conflict. Any two: talk it out, listen actively, find the root cause, look for\nwin-win, bring in a fair third person, put team goals first."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat should you expect first when a big change is announced?\n</summary>\nResistance. So communicate openly, listen and share the big picture.\n</details>",
+          "text": "What should you expect first when a big change is announced? Resistance. So communicate openly, listen and share the big picture."
+        }
+      ]
+    },
+    {
+      "slug": "continuous-improvement",
+      "title": "The 10th C — Continuous Improvement",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Get just <strong>1% better</strong> every\nday. It sounds tiny. But keep it up for a year and you’re about\n<strong>37 times better</strong> than when you started. Small daily\nsteps add up to huge change.</p>\n</blockquote>",
+          "text": "Start here Get just 1% better every\nday. It sounds tiny. But keep it up for a year and you’re about 37 times better than when you started. Small daily\nsteps add up to huge change."
+        },
+        {
+          "type": "heading",
+          "text": "What is continuous\nimprovement?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Continuous improvement</strong> means making <strong>small\nchanges every day</strong> to your work, products and processes. Over\ntime, these add up.</p>",
+          "text": "Continuous improvement means making small\nchanges every day to your work, products and processes. Over\ntime, these add up."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img13-kaizen-steps.webp",
+          "alt": "Tiny steps up",
+          "caption": "Climb one small step at a time: 1% a day\nbecomes about 37 times in a year."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Benefits:</strong></p>",
+          "text": "Benefits:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Better <strong>quality</strong> and <strong>efficiency</strong>, so\ncustomers are happier.</li>\n<li>Higher <strong>morale</strong> and <strong>commitment</strong>;\npeople see their own growth.</li>\n<li>A habit of <strong>learning, trying and growing</strong>, which\nleads to new ideas.</li>\n</ul>",
+          "text": "Better quality and efficiency , so\ncustomers are happier. Higher morale and commitment ;\npeople see their own growth. A habit of learning, trying and growing , which\nleads to new ideas."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The maths:</strong> 1.01³⁶⁵ ≈ <strong>37.8</strong>. So 1% a\nday gives about <strong>37 times</strong> improvement in a year (as\nJames Clear explains in <em>Atomic Habits</em>).</p>",
+          "text": "The maths: 1.01³⁶⁵ ≈ 37.8 . So 1% a\nday gives about 37 times improvement in a year (as\nJames Clear explains in Atomic Habits )."
+        },
+        {
+          "type": "heading",
+          "text": "Kaizen: the Japanese way"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Kaizen</strong> (Japanese): <strong>kai</strong> = change,\n<strong>zen</strong> = good. Together: “<strong>change for the\nbetter</strong>”.</p>",
+          "text": "Kaizen (Japanese): kai = change, zen = good. Together: “ change for the\nbetter ”."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Everyone</strong>, from the CEO to the newest worker, looks\nfor ways to improve.</li>\n<li>Japanese companies, especially <strong>car makers</strong>, used it\nto get <strong>very close to zero defects</strong>.</li>\n</ul>",
+          "text": "Everyone , from the CEO to the newest worker, looks\nfor ways to improve. Japanese companies, especially car makers , used it\nto get very close to zero defects ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the joke about defects</strong> A buyer\ntold a Japanese supplier, “We’ll accept a few defective parts per\nthousand.” The supplier didn’t understand why anyone would want defects,\nso he <strong>made a few faulty parts separately</strong> and packed\nthem with a note! It’s a joke, but it shows how seriously Japanese\nindustry took quality.</p>\n</blockquote>",
+          "text": "Lecture example — the joke about defects A buyer\ntold a Japanese supplier, “We’ll accept a few defective parts per\nthousand.” The supplier didn’t understand why anyone would want defects,\nso he made a few faulty parts separately and packed\nthem with a note! It’s a joke, but it shows how seriously Japanese\nindustry took quality."
+        },
+        {
+          "type": "heading",
+          "text": "How to do it"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Hold <strong>brainstorming</strong> sessions to find what to\nimprove.</li>\n<li>Use <strong>short cycles</strong> with <strong>feedback</strong>\nbuilt in, so you can <strong>correct course</strong> easily.</li>\n<li><strong>Break</strong> big problems into <strong>small\npieces</strong>. Give each to the right people.</li>\n<li>Keep <strong>upgrading your skills</strong> as the world\nchanges.</li>\n</ul>",
+          "text": "Hold brainstorming sessions to find what to\nimprove. Use short cycles with feedback built in, so you can correct course easily. Break big problems into small\npieces . Give each to the right people. Keep upgrading your skills as the world\nchanges."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — fixing an unhappy team</strong> A software\ncompany working for a big client faced complaints: staff were\n<strong>quitting</strong>, knowledge was being lost, and there were no\nnew ideas. There was no overnight fix. They formed <strong>small\ngroups</strong> to work on each problem. A survey asked staff what would\nmake them happier. Answers included <strong>new technologies</strong>,\n<strong>job rotation</strong>, <strong>less stressful projects</strong>,\nand <strong>fun Fridays</strong>. They acted on them <strong>one by\none</strong>. In about a year:</p>\n</blockquote>",
+          "text": "Lecture example — fixing an unhappy team A software\ncompany working for a big client faced complaints: staff were quitting , knowledge was being lost, and there were no\nnew ideas. There was no overnight fix. They formed small\ngroups to work on each problem. A survey asked staff what would\nmake them happier. Answers included new technologies , job rotation , less stressful projects ,\nand fun Fridays . They acted on them one by\none . In about a year:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Score (out of 5)</th>\n<th>Before</th>\n<th>After</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Employee satisfaction</strong></td>\n<td>3.6</td>\n<td><strong>4.1</strong></td>\n</tr>\n<tr>\n<td><strong>Customer satisfaction</strong></td>\n<td>3.9</td>\n<td><strong>4.2</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Score (out of 5) Before After Employee satisfaction 3.6 4.1 Customer satisfaction 3.9 4.2"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>Happier staff → better work → happier client.</p>\n</blockquote>",
+          "text": "Happier staff → better work → happier client."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Improve a little every day, as in\nKaizen, with feedback and small steps, and over time the results become\nhuge. <strong>Exam words:</strong> continuous improvement, compound\neffect, 1% better (≈ 37×), Atomic Habits, Kaizen (change for the\nbetter), zero defects, feedback loop, iterative process, brainstorming,\nupskilling, employee satisfaction.</p>",
+          "text": "In one line: Improve a little every day, as in\nKaizen, with feedback and small steps, and over time the results become\nhuge. Exam words: continuous improvement, compound\neffect, 1% better (≈ 37×), Atomic Habits, Kaizen (change for the\nbetter), zero defects, feedback loop, iterative process, brainstorming,\nupskilling, employee satisfaction."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does Kaizen mean?\n</summary>\n“Change for the better” (kai = change, zen = good).\n</details>",
+          "text": "What does Kaizen mean? “Change for the better” (kai = change, zen = good)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIf you improve 1% every day, how much better are you after a year?\n</summary>\nAbout 37 times better (1.01³⁶⁵ ≈ 37.8).\n</details>",
+          "text": "If you improve 1% every day, how much better are you after a year? About 37 times better (1.01³⁶⁵ ≈ 37.8)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow did the software company raise employee satisfaction?\n</summary>\nIt surveyed staff and made small changes one by one (job rotation, new\ntechnologies, fun Fridays), lifting the score from 3.6 to 4.1.\n</details>",
+          "text": "How did the software company raise employee satisfaction? It surveyed staff and made small changes one by one (job rotation, new\ntechnologies, fun Fridays), lifting the score from 3.6 to 4.1."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy break big problems into small pieces?\n</summary>\nBig problems can’t be solved overnight. Small steps by the right people\nadd up over time.\n</details>",
+          "text": "Why break big problems into small pieces? Big problems can’t be solved overnight. Small steps by the right people\nadd up over time."
+        }
+      ]
+    },
+    {
+      "slug": "week-1-quick-revision",
+      "title": "Week 1 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Teamwork and getting along, all on one\npage.</p>\n</blockquote>",
+          "text": "Start here Teamwork and getting along, all on one\npage."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-1/img14-week1-map.webp",
+          "alt": "Week 1 at a glance",
+          "caption": "From outdoor games to the 10 C’s of\nteamwork."
+        },
+        {
+          "type": "heading",
+          "text": "Outbound training (OBT)"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Learning teamwork by doing <strong>outdoor group\ntasks</strong>.</li>\n<li><strong>Group effect / synergy:</strong> Paes and Bhupathi, ordinary\nin singles, No. 1 as a doubles pair.</li>\n<li><strong>Buddy carry:</strong> strangers bonded after carrying each\nother.</li>\n<li><strong>Watch for:</strong> planning, using every person as a\nresource, the time limit, mid-course correction, helping the\n<strong>weakest link</strong>.</li>\n<li><strong>Three rules:</strong> wear a <strong>smile</strong>; balance\n<strong>head and heart</strong>; <strong>safety first</strong> (physical\nand mental).</li>\n</ul>",
+          "text": "Learning teamwork by doing outdoor group\ntasks . Group effect / synergy: Paes and Bhupathi, ordinary\nin singles, No. 1 as a doubles pair. Buddy carry: strangers bonded after carrying each\nother. Watch for: planning, using every person as a\nresource, the time limit, mid-course correction, helping the weakest link . Three rules: wear a smile ; balance head and heart ; safety first (physical\nand mental)."
+        },
+        {
+          "type": "heading",
+          "text": "The activities"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>A-frame march:</strong> one rider on the frame, four\nrope-holders; both legs must cross the line.</li>\n<li><strong>Caterpillar walk:</strong> everyone on two planks; move in\nstep or not at all.</li>\n<li><strong>Faculty lessons:</strong> clear goal (Arjuna and the bird’s\neye); know and allocate resources; share the vision; review and correct;\nplanning time is never wasted; back the final plan <strong>as if it were\nyour own</strong>.</li>\n</ul>",
+          "text": "A-frame march: one rider on the frame, four\nrope-holders; both legs must cross the line. Caterpillar walk: everyone on two planks; move in\nstep or not at all. Faculty lessons: clear goal (Arjuna and the bird’s\neye); know and allocate resources; share the vision; review and correct;\nplanning time is never wasted; back the final plan as if it were\nyour own ."
+        },
+        {
+          "type": "heading",
+          "text": "What is teamwork?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>TEAM</strong> = Together Everyone Achieves More.</li>\n<li>Small creatures together beat big ones. <strong>Don’t\npanic.</strong></li>\n<li>Unions and diversity and inclusion: change through\n<strong>togetherness</strong>.</li>\n<li><strong>Geese:</strong> uplift, rotating leader, honking\nencouragement, care.</li>\n<li>“Walk fast alone; walk far together.”</li>\n<li><strong>Match roles to strengths.</strong></li>\n</ul>",
+          "text": "TEAM = Together Everyone Achieves More. Small creatures together beat big ones. Don’t\npanic. Unions and diversity and inclusion: change through togetherness . Geese: uplift, rotating leader, honking\nencouragement, care. “Walk fast alone; walk far together.” Match roles to strengths."
+        },
+        {
+          "type": "heading",
+          "text": "The 10 C’s"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>C</th>\n<th>Key idea</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Clarity</strong></td>\n<td>Vision, role, teammates’ abilities; ABC: accuracy, brevity,\nclarity</td>\n</tr>\n<tr>\n<td><strong>Commitment</strong></td>\n<td>Go the extra mile; dates, owners, backup plans</td>\n</tr>\n<tr>\n<td><strong>Communication</strong></td>\n<td>Informal and formal spaces; knowledge sharing; psychological\nsafety</td>\n</tr>\n<tr>\n<td><strong>Competence</strong></td>\n<td>Complementary skills; the pit crew</td>\n</tr>\n<tr>\n<td><strong>Collaboration</strong></td>\n<td>Facilitator leader; shared power; diverge</td>\n</tr>\n<tr>\n<td><strong>Coordination</strong></td>\n<td>Converge; who, what, when, where; dabbawalas</td>\n</tr>\n<tr>\n<td><strong>Connection</strong></td>\n<td>Respect, trust, care, celebrate</td>\n</tr>\n<tr>\n<td><strong>Conflict resolution</strong></td>\n<td>Expectation gaps; listen, root cause, win-win</td>\n</tr>\n<tr>\n<td><strong>Change management</strong></td>\n<td>Expect resistance; communicate; tiny steps</td>\n</tr>\n<tr>\n<td><strong>Continuous improvement</strong></td>\n<td>Kaizen; 1% daily ≈ 37× a year</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "C Key idea Clarity Vision, role, teammates’ abilities; ABC: accuracy, brevity,\nclarity Commitment Go the extra mile; dates, owners, backup plans Communication Informal and formal spaces; knowledge sharing; psychological\nsafety Competence Complementary skills; the pit crew Collaboration Facilitator leader; shared power; diverge Coordination Converge; who, what, when, where; dabbawalas Connection Respect, trust, care, celebrate Conflict resolution Expectation gaps; listen, root cause, win-win Change management Expect resistance; communicate; tiny steps Continuous improvement Kaizen; 1% daily ≈ 37× a year"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>What is synergy?\n</li></ol></summary>\nWhen a team’s result is greater than the sum of what each member could\ndo alone.\n</details>",
+          "text": "What is synergy? When a team’s result is greater than the sum of what each member could\ndo alone."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>In the A-frame march, when does a team finish?\n</li></ol></summary>\nWhen both legs of the frame have crossed the finish line.\n</details>",
+          "text": "In the A-frame march, when does a team finish? When both legs of the frame have crossed the finish line."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Name the three OBT rules for the day.\n</li></ol></summary>\nWear a smile; keep your head and heart in balance; safety first.\n</details>",
+          "text": "Name the three OBT rules for the day. Wear a smile; keep your head and heart in balance; safety first."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>List all 10 C’s of teamwork.\n</li></ol></summary>\nClarity, commitment, communication, competence, collaboration,\ncoordination, connection, conflict resolution, change management,\ncontinuous improvement.\n</details>",
+          "text": "List all 10 C’s of teamwork. Clarity, commitment, communication, competence, collaboration,\ncoordination, connection, conflict resolution, change management,\ncontinuous improvement."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Which C uses divergent thinking, and which uses convergent thinking?\n</li></ol></summary>\nCollaboration is divergent; coordination is convergent.\n</details>",
+          "text": "Which C uses divergent thinking, and which uses convergent thinking? Collaboration is divergent; coordination is convergent."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>What does psychological safety mean?\n</li></ol></summary>\nA safe, non-judgmental space where everyone can speak openly.\n</details>",
+          "text": "What does psychological safety mean? A safe, non-judgmental space where everyone can speak openly."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>What are Avoid, Bypass and Confuse?\n</li></ol></summary>\nThree ways people dodge work they don’t want to do.\n</details>",
+          "text": "What are Avoid, Bypass and Confuse? Three ways people dodge work they don’t want to do."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>What does Kaizen mean?\n</li></ol></summary>\nChange for the better: small, continuous improvements by everyone.\n</details>",
+          "text": "What does Kaizen mean? Change for the better: small, continuous improvements by everyone."
+        }
+      ]
+    }
+  ]
+}

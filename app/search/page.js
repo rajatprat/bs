@@ -1,3 +1,15 @@
+import spg1 from '../../data/spg-week-1.json';
+import spg12 from '../../data/spg-week-12.json';
+import spg11 from '../../data/spg-week-11.json';
+import spg10 from '../../data/spg-week-10.json';
+import spg9 from '../../data/spg-week-9.json';
+import spg8 from '../../data/spg-week-8.json';
+import spg7 from '../../data/spg-week-7.json';
+import spg6 from '../../data/spg-week-6.json';
+import spg5 from '../../data/spg-week-5.json';
+import spg4 from '../../data/spg-week-4.json';
+import spg3 from '../../data/spg-week-3.json';
+import spg from '../../data/spg-week-2.json';
 import statistics from '../../data/statistics-week-1.json';
 import algorithms2 from '../../data/algorithms-week-2.json';
 import algorithms from '../../data/algorithms-week-1.json';
@@ -19,7 +31,7 @@ import { additionsFor } from '../../lib/review-additions';
 export const metadata = { title: 'Search course notes' };
 export default function Page() {
   const entries = [];
-  for (const data of [week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, algorithms, algorithms2, statistics]) {
+  for (const data of [week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, algorithms, algorithms2, statistics, spg1, spg, spg3, spg4, spg5, spg6, spg7, spg8, spg9, spg10, spg11, spg12]) {
     for (const section of data.sections) {
       const base = (data.base || `/software-engineering/week-${data.week}/`) + section.slug + '/';
       const context = {subject: data.subject, subjectSlug: data.subjectSlug || 'software-engineering', part: data.part};
@@ -39,5 +51,5 @@ export default function Page() {
       });
     }
   }
-  return <main id="main" className="home search-page"><div className="eyebrow">YOUR LEARNING LIBRARY</div><h1>Search course notes.</h1><p className="lead">Find topics, explanations, figures, and revision questions across all four subjects.</p><Search entries={entries}/></main>;
+  return <main id="main" className="home search-page"><div className="eyebrow">YOUR LEARNING LIBRARY</div><h1>Search course notes.</h1><p className="lead">Find topics, explanations, figures, and revision questions across all subjects.</p><Search entries={entries}/></main>;
 }

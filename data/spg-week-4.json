@@ -1,0 +1,1297 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 4,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-4/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "introduction-to-leadership",
+      "title": "Introduction to Leadership",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> When you point one finger at someone and\nsay “You do it!”, look at your hand. Three fingers are pointing back at\nyou. Leadership starts with <strong>you</strong>.</p>\n</blockquote>",
+          "text": "Start here When you point one finger at someone and\nsay “You do it!”, look at your hand. Three fingers are pointing back at\nyou. Leadership starts with you ."
+        },
+        {
+          "type": "heading",
+          "text": "Three parts of this week"
+        },
+        {
+          "type": "html",
+          "html": "<p>This week’s leadership lessons have <strong>three parts</strong>. All\nthree start with <strong>leading yourself</strong>.</p>",
+          "text": "This week’s leadership lessons have three parts . All\nthree start with leading yourself ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img01-three-parts.webp",
+          "alt": "Three parts of leadership",
+          "caption": "Lead yourself from within → Lead\nyourself to lead others → Lead others to lead themselves."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Part</th>\n<th>Lessons</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Lead yourself from within</strong></td>\n<td>Uphold your core values · Know your spheres of responsibility ·\nExercise your power of choice · Take responsibility/ownership for\nyourself · Play to your full potential · Invest in yourself</td>\n</tr>\n<tr>\n<td><strong>2. Lead yourself to lead others</strong></td>\n<td>Cultivate a growth mindset · Manage your time and energy · Focus on\nthe one thing · Communicate effectively and listen actively · Be\nemotionally resilient · Embrace change · Manage conflict · Delegate\neffectively · Be a collaborative leader</td>\n</tr>\n<tr>\n<td><strong>3. Lead others to lead themselves</strong></td>\n<td>Make work worthwhile and important · Put individuals in charge of\ntheir goals · Cheer each other on</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Part Lessons 1. Lead yourself from within Uphold your core values · Know your spheres of responsibility ·\nExercise your power of choice · Take responsibility/ownership for\nyourself · Play to your full potential · Invest in yourself 2. Lead yourself to lead others Cultivate a growth mindset · Manage your time and energy · Focus on\nthe one thing · Communicate effectively and listen actively · Be\nemotionally resilient · Embrace change · Manage conflict · Delegate\neffectively · Be a collaborative leader 3. Lead others to lead themselves Make work worthwhile and important · Put individuals in charge of\ntheir goals · Cheer each other on"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Leadership starts with leading\nyourself, then others, then helping others lead themselves. <strong>Exam\nwords:</strong> lead yourself from within, lead yourself to lead others,\nlead others to lead themselves.</p>",
+          "text": "In one line: Leadership starts with leading\nyourself, then others, then helping others lead themselves. Exam\nwords: lead yourself from within, lead yourself to lead others,\nlead others to lead themselves."
+        },
+        {
+          "type": "heading",
+          "text": "What the professors said"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lt Col Jayakumar:</strong> Leading yourself from within\nmatters at <strong>every level</strong> of a hierarchy. The lesson that\nstands out most is <strong>taking responsibility and ownership</strong>\nfor yourself.</p>",
+          "text": "Lt Col Jayakumar: Leading yourself from within\nmatters at every level of a hierarchy. The lesson that\nstands out most is taking responsibility and ownership for yourself."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Sivakumar:</strong></p>",
+          "text": "Prof. Sivakumar:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>When we point at others, more fingers point back at us. Leading\n<strong>starts with us</strong>. Once we are ready, a leader is\nborn.</li>\n<li>When you lead yourself, <strong>you become the example</strong>.\nThen it is easy to pass those qualities to others.</li>\n<li>Leading yourself from within also builds <strong>empathy</strong> —\nbeing sensitive to what others feel.</li>\n</ul>",
+          "text": "When we point at others, more fingers point back at us. Leading starts with us . Once we are ready, a leader is\nborn. When you lead yourself, you become the example .\nThen it is easy to pass those qualities to others. Leading yourself from within also builds empathy —\nbeing sensitive to what others feel."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Prasanna:</strong></p>",
+          "text": "Prof. Prasanna:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Don’t <strong>try</strong> to become a leader. First <strong>express\nyourself fully</strong> and <strong>become yourself</strong>. That\njourney makes you a complete leader.</li>\n<li>You can only lead others <strong>as far as you have led\nyourself</strong>.</li>\n<li><strong>“True leaders create more leaders,”</strong> not\nfollowers.</li>\n</ul>",
+          "text": "Don’t try to become a leader. First express\nyourself fully and become yourself . That\njourney makes you a complete leader. You can only lead others as far as you have led\nyourself . “True leaders create more leaders,” not\nfollowers."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Kartic:</strong> True leaders <strong>inspire</strong>\nothers to become leaders. They don’t chase followers — followers come\n<strong>automatically</strong>.</p>",
+          "text": "Prof. Kartic: True leaders inspire others to become leaders. They don’t chase followers — followers come automatically ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A class monitor who comes on time,\nstudies well and helps others doesn’t need to shout “Be quiet!” Students\ncopy what she does. She leads by being the example.</p>\n</blockquote>",
+          "text": "Everyday example A class monitor who comes on time,\nstudies well and helps others doesn’t need to shout “Be quiet!” Students\ncopy what she does. She leads by being the example."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Be the example first; true leaders\nbuild other leaders, not followers. <strong>Exam words:</strong> starts\nwith us, empathy, true leaders create more leaders.</p>",
+          "text": "In one line: Be the example first; true leaders\nbuild other leaders, not followers. Exam words: starts\nwith us, empathy, true leaders create more leaders."
+        },
+        {
+          "type": "heading",
+          "text": "Common leadership challenges"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img02-leadership-challenges.webp",
+          "alt": "Common leadership mistakes",
+          "caption": "Micromanaging, zero error\nsyndrome, responsibility without authority, unclear roles."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Challenge</th>\n<th>What happens</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Micromanaging</strong></td>\n<td>The leader keeps correcting every small thing.</td>\n<td><strong>Trust</strong> people to take responsibility and correct\nthemselves.</td>\n</tr>\n<tr>\n<td><strong>Zero error syndrome</strong></td>\n<td>The leader expects a <strong>perfect</strong> result with no error.\nSo they don’t <strong>delegate</strong>, or keep\n<strong>interfering</strong> after delegating.</td>\n<td>Delegate and let people work.</td>\n</tr>\n<tr>\n<td><strong>Responsibility without resources</strong></td>\n<td>People get a job but not the <strong>authority</strong> or\n<strong>resources</strong> to do it.</td>\n<td><strong>Empower</strong> them — give responsibility <strong>with\nauthority</strong>.</td>\n</tr>\n<tr>\n<td><strong>Unclear roles</strong></td>\n<td>Two people step on each other’s toes.</td>\n<td>The leader must define <strong>roles and responsibilities</strong>\nclearly, and create understanding where roles overlap.</td>\n</tr>\n<tr>\n<td><strong>Personal vs professional life</strong></td>\n<td>Problems at home affect work, and the other way round.</td>\n<td>Good leaders <strong>manage both</strong> well.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Challenge What happens What to do Micromanaging The leader keeps correcting every small thing. Trust people to take responsibility and correct\nthemselves. Zero error syndrome The leader expects a perfect result with no error.\nSo they don’t delegate , or keep interfering after delegating. Delegate and let people work. Responsibility without resources People get a job but not the authority or resources to do it. Empower them — give responsibility with\nauthority . Unclear roles Two people step on each other’s toes. The leader must define roles and responsibilities clearly, and create understanding where roles overlap. Personal vs professional life Problems at home affect work, and the other way round. Good leaders manage both well."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Trust people, give them authority,\ndefine roles, and don’t chase perfection. <strong>Exam words:</strong>\nmicromanaging, zero error syndrome, empower, authority, roles and\nresponsibilities.</p>",
+          "text": "In one line: Trust people, give them authority,\ndefine roles, and don’t chase perfection. Exam words: micromanaging, zero error syndrome, empower, authority, roles and\nresponsibilities."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the three parts of this week’s leadership lessons?\n</summary>\nLead yourself from within; lead yourself to lead others; lead others to\nlead themselves.\n</details>",
+          "text": "What are the three parts of this week’s leadership lessons? Lead yourself from within; lead yourself to lead others; lead others to\nlead themselves."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “zero error syndrome”?\n</summary>\nExpecting subordinates to give a perfect result with no error at all, so\nthe leader does not delegate, or keeps interfering after delegating.\n</details>",
+          "text": "What is “zero error syndrome”? Expecting subordinates to give a perfect result with no error at all, so\nthe leader does not delegate, or keeps interfering after delegating."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“True leaders create more <strong><em>, not </em></strong>.”\n</summary>\nLeaders; followers.\n</details>",
+          "text": "“True leaders create more , not .” Leaders; followers."
+        }
+      ]
+    },
+    {
+      "slug": "lead-yourself-values-spheres-choice",
+      "title": "Lead Yourself from Within — Values, Spheres and Choice",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> <em>“Go out and lead the world; but never\nforget to begin by leading yourself first at home. You can’t lead the\nenvironment if you can’t lead yourself in it.”</em> — Israelmore Ayivor\n(on the lecture slide)</p>\n</blockquote>",
+          "text": "Start here “Go out and lead the world; but never\nforget to begin by leading yourself first at home. You can’t lead the\nenvironment if you can’t lead yourself in it.” — Israelmore Ayivor\n(on the lecture slide)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Before you lead others, you must <strong>lead yourself</strong>. Part\n1 has <strong>six lessons</strong>. This page covers the first\nthree.</p>",
+          "text": "Before you lead others, you must lead yourself . Part\n1 has six lessons . This page covers the first\nthree."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 1: Uphold your core\nvalues"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Values</strong> are what is <strong>most important</strong>\nand <strong>meaningful</strong> to you. They are your principles, ideals\nand standards — an <strong>honour code</strong> you follow <strong>even\nwhen nobody is watching</strong>.</p>",
+          "text": "Values are what is most important and meaningful to you. They are your principles, ideals\nand standards — an honour code you follow even\nwhen nobody is watching ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Values shape your <strong>actions, behaviour, attitudes, decisions\nand choices</strong>. When you feel lost, they work like a\n<strong>guiding compass</strong>. They help you be your <strong>real,\nauthentic self</strong>.</p>",
+          "text": "Values shape your actions, behaviour, attitudes, decisions\nand choices . When you feel lost, they work like a guiding compass . They help you be your real,\nauthentic self ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Everyone’s values are different. They come from life experiences,\nfamily, the place you grew up, and what you want from life.</p>",
+          "text": "Everyone’s values are different. They come from life experiences,\nfamily, the place you grew up, and what you want from life."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Core values</strong> are the values that are\n<strong>non-negotiable</strong>. They inspire you to do <strong>what is\nright, not what is easy</strong>.</p>",
+          "text": "Core values are the values that are non-negotiable . They inspire you to do what is\nright, not what is easy ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Core values are <strong>non-negotiable</strong>.</li>\n<li>Core values are a <strong>guiding compass</strong> for individuals,\ngroups or organisations.</li>\n<li>Values guide <strong>thoughts, plans, decisions, choices,\nactions</strong>.</li>\n<li><strong>Clearly define</strong> the values of yourself, groups or\norganisation.</li>\n<li><strong>Uphold</strong> your core values — <strong>do not\ncompromise</strong> them.</li>\n</ul>",
+          "text": "Core values are non-negotiable . Core values are a guiding compass for individuals,\ngroups or organisations. Values guide thoughts, plans, decisions, choices,\nactions . Clearly define the values of yourself, groups or\norganisation. Uphold your core values — do not\ncompromise them."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img03-values-compass.webp",
+          "alt": "Core values as a compass",
+          "caption": "Core values work like a compass\nwhen you feel lost."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Lt Col Jayakumar’s three core\nvalues</strong></p>\n<ol type=\"1\">\n<li><strong>Honesty</strong> — there are no shades of grey. You are\neither honest or not.</li>\n<li><strong>Adaptability</strong> — in the army, he had to adapt to\ndeserts and high-altitude places. His hardest change was moving from the\narmy uniform to civilian life at IIT Madras.</li>\n<li><strong>Being responsible for his command</strong> — not just\nhimself. A young officer leads about 30 soldiers; later, 800–1,000.</li>\n</ol>\n<p><strong>The firing practice story (Kargil, around 1998–99):</strong>\nDuring artillery practice, an observer asked to “add 800” metres. The\nsafety officer said “drop 400” because shells might go over the hill. As\nofficer in charge, he said: <strong>“I am responsible — fire\n800.”</strong> Later, three shells landed near a village, and locals\ncomplained to the collector. He went himself to face them. Luckily,\nthere was little damage, and red flags had warned people. His lesson:\n<strong>know your job and boundaries, and stand by your\nsubordinates</strong> who acted in good faith.</p>\n</blockquote>",
+          "text": "Lecture example — Lt Col Jayakumar’s three core\nvalues Honesty — there are no shades of grey. You are\neither honest or not. Adaptability — in the army, he had to adapt to\ndeserts and high-altitude places. His hardest change was moving from the\narmy uniform to civilian life at IIT Madras. Being responsible for his command — not just\nhimself. A young officer leads about 30 soldiers; later, 800–1,000. The firing practice story (Kargil, around 1998–99): During artillery practice, an observer asked to “add 800” metres. The\nsafety officer said “drop 400” because shells might go over the hill. As\nofficer in charge, he said: “I am responsible — fire\n800.” Later, three shells landed near a village, and locals\ncomplained to the collector. He went himself to face them. Luckily,\nthere was little damage, and red flags had warned people. His lesson: know your job and boundaries, and stand by your\nsubordinates who acted in good faith."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar: no corruption</strong>\nCorruption is not only about money. If a teacher does not teach\nproperly, that is also <strong>corruption</strong>. So you must\n<strong>define</strong> your core values clearly.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar: no corruption Corruption is not only about money. If a teacher does not teach\nproperly, that is also corruption . So you must define your core values clearly."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Core values are your non-negotiable\ncompass — do what is right, not what is easy. <strong>Exam\nwords:</strong> values, core values, non-negotiable, guiding compass,\nauthentic self, honour code.</p>",
+          "text": "In one line: Core values are your non-negotiable\ncompass — do what is right, not what is easy. Exam\nwords: values, core values, non-negotiable, guiding compass,\nauthentic self, honour code."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 2: Know\nyour spheres of responsibility"
+        },
+        {
+          "type": "html",
+          "html": "<p>Know what is <strong>in your control</strong> and what is\n<strong>not</strong>. Then you can focus your energy where it has the\nmost effect. You save <strong>time, energy and mind space</strong>.</p>",
+          "text": "Know what is in your control and what is not . Then you can focus your energy where it has the\nmost effect. You save time, energy and mind space ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img04-spheres.webp",
+          "alt": "Three spheres: control, influence, concern",
+          "caption": "Sphere of\ncontrol (inside), sphere of influence (middle), sphere of concern\n(outside)."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Sphere</th>\n<th>What is in it</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Sphere of control</strong> (centre)</td>\n<td>Your <strong>mind, body, potential, time and energy</strong></td>\n<td>Focus here most. You can change these.</td>\n</tr>\n<tr>\n<td><strong>Sphere of influence</strong> (middle)</td>\n<td>People close to you — <strong>family, friends, peers</strong>, your\nstudents</td>\n<td>Outside your control. You can <strong>guide</strong> them when\nneeded; otherwise stay out.</td>\n</tr>\n<tr>\n<td><strong>Sphere of concern or interest</strong> (outside)</td>\n<td><strong>Other groups, the economy, world events</strong>, politics,\nwar</td>\n<td>Outside your control. Affects you indirectly. Find helpful ways to\nrespond — but spend <strong>the least time</strong> here.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Sphere What is in it What to do Sphere of control (centre) Your mind, body, potential, time and energy Focus here most. You can change these. Sphere of influence (middle) People close to you — family, friends, peers , your\nstudents Outside your control. You can guide them when\nneeded; otherwise stay out. Sphere of concern or interest (outside) Other groups, the economy, world events , politics,\nwar Outside your control. Affects you indirectly. Find helpful ways to\nrespond — but spend the least time here."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Stephen Covey</strong> (<em>The 7 Habits of Highly Effective\nPeople</em>): when you focus on your sphere of control, your\n<strong>sphere of impact grows</strong>.</p>",
+          "text": "Stephen Covey ( The 7 Habits of Highly Effective\nPeople ): when you focus on your sphere of control, your sphere of impact grows ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic</strong> We spend hours\narguing on WhatsApp about wars and politics. Can we change them?\nNo. That is our <strong>sphere of concern</strong>. What we\n<strong>can</strong> control: our body, mind, food, exercise, daily\nlearning, and how we use our <strong>time</strong> — the most precious\ngift. We wake up with about <strong>12 hours of productive\nenergy</strong>. How we use it is fully our choice.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic We spend hours\narguing on WhatsApp about wars and politics. Can we change them?\nNo. That is our sphere of concern . What we can control: our body, mind, food, exercise, daily\nlearning, and how we use our time — the most precious\ngift. We wake up with about 12 hours of productive\nenergy . How we use it is fully our choice."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar: be proactive</strong> Many\nstudents say, <strong>“Tell me what to do.”</strong> That hands control\nto someone else. Instead say, <strong>“I am doing this — do you think it\nis okay?”</strong> Now control stays with you. This is\n<strong>proactiveness</strong>, and proactive people become tomorrow’s\nleaders. (“Be proactive” is <strong>Habit 1</strong> in Covey’s\nbook.)</p>\n<p>He started <strong>intermittent fasting</strong>. People saw the\nchange in him. When he suggested it to others, they listened — because\nit started with him. His control <strong>grew his\ninfluence</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar: be proactive Many\nstudents say, “Tell me what to do.” That hands control\nto someone else. Instead say, “I am doing this — do you think it\nis okay?” Now control stays with you. This is proactiveness , and proactive people become tomorrow’s\nleaders. (“Be proactive” is Habit 1 in Covey’s\nbook.) He started intermittent fasting . People saw the\nchange in him. When he suggested it to others, they listened — because\nit started with him. His control grew his\ninfluence ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Kartic also shared Steve Jobs’s view: the iPhone came from\ndeciding what is <strong>best</strong> for the customer, not only asking\nwhat they want.</p>",
+          "text": "Prof. Kartic also shared Steve Jobs’s view: the iPhone came from\ndeciding what is best for the customer, not only asking\nwhat they want."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Spend most energy on what you control,\nsome on what you can influence, and little on the rest. <strong>Exam\nwords:</strong> sphere of control, sphere of influence, sphere of\nconcern, Stephen Covey, proactiveness.</p>",
+          "text": "In one line: Spend most energy on what you control,\nsome on what you can influence, and little on the rest. Exam\nwords: sphere of control, sphere of influence, sphere of\nconcern, Stephen Covey, proactiveness."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 3: Exercise your\npower of choice"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“We are product of neither nature nor nurture; we are a product\nof choice because there is always a space between stimulus and\nresponse.”</em> — Stephen R. Covey (on the slide)</p>\n</blockquote>",
+          "text": "“We are product of neither nature nor nurture; we are a product\nof choice because there is always a space between stimulus and\nresponse.” — Stephen R. Covey (on the slide)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Charles Duhigg (<em>Smarter Faster Better</em>): to motivate\nourselves, see our choices as <strong>affirmations of our values and\ngoals</strong>, not just as control.</p>",
+          "text": "Charles Duhigg ( Smarter Faster Better ): to motivate\nourselves, see our choices as affirmations of our values and\ngoals , not just as control."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide — you have the power of choice:</strong></p>",
+          "text": "From the slide — you have the power of choice:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>to say <strong>YES or NO</strong></li>\n<li>to <strong>explore</strong> possibilities and opportunities</li>\n<li>to <strong>seek support and help</strong></li>\n<li>to <strong>build a support system</strong></li>\n</ul>",
+          "text": "to say YES or NO to explore possibilities and opportunities to seek support and help to build a support system"
+        },
+        {
+          "type": "html",
+          "html": "<p>Choosing for yourself makes life <strong>peaceful and\nsatisfying</strong>. But every choice has <strong>consequences</strong>,\nso it also brings <strong>responsibility</strong>.</p>",
+          "text": "Choosing for yourself makes life peaceful and\nsatisfying . But every choice has consequences ,\nso it also brings responsibility ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Tapaswini (student)</strong> She was in the\ninter-IIT volleyball team, but had trouble sleeping all semester. At the\nfinal camp, she chose to <strong>leave the team</strong> and fix her\nsleep first. Her poor health would affect the <strong>whole\nteam</strong>. She was <strong>honest</strong> with herself and the team\n— a choice based on her values.</p>\n</blockquote>",
+          "text": "Lecture example — Tapaswini (student) She was in the\ninter-IIT volleyball team, but had trouble sleeping all semester. At the\nfinal camp, she chose to leave the team and fix her\nsleep first. Her poor health would affect the whole\nteam . She was honest with herself and the team\n— a choice based on her values."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar as Dean of\nStudents</strong> A dance team was sure to win, but one member was under\na <strong>disciplinary</strong> action and could not take part. The team\nbegged him. He went back to his <strong>core values</strong>:\n<strong>discipline and conduct matter more than winning</strong>. He\nsaid <strong>no</strong> — and explained why. Later, the students came\nback and said they understood. Saying no takes <strong>courage</strong>.\nExplaining the reason helps the other person accept it.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar as Dean of\nStudents A dance team was sure to win, but one member was under\na disciplinary action and could not take part. The team\nbegged him. He went back to his core values : discipline and conduct matter more than winning . He\nsaid no — and explained why. Later, the students came\nback and said they understood. Saying no takes courage .\nExplaining the reason helps the other person accept it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Friends invite you to a late movie\nthe night before your quiz. You can say yes or no. Either way, it is\n<strong>your</strong> choice — and your result.</p>\n</blockquote>",
+          "text": "Everyday example Friends invite you to a late movie\nthe night before your quiz. You can say yes or no. Either way, it is your choice — and your result."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> You always have a choice in how you\nrespond — and every choice brings responsibility. <strong>Exam\nwords:</strong> power of choice, stimulus and response, say yes or no,\nseek support, support system.</p>",
+          "text": "In one line: You always have a choice in how you\nrespond — and every choice brings responsibility. Exam\nwords: power of choice, stimulus and response, say yes or no,\nseek support, support system."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are core values?\n</summary>\nNon-negotiable values that guide your actions and decisions like a\ncompass and help you do what is right, not what is easy.\n</details>",
+          "text": "What are core values? Non-negotiable values that guide your actions and decisions like a\ncompass and help you do what is right, not what is easy."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nArguing online about a war in another country belongs to which sphere?\n</summary>\nThe sphere of concern (outside your control).\n</details>",
+          "text": "Arguing online about a war in another country belongs to which sphere? The sphere of concern (outside your control)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow can a student be proactive instead of saying “Tell me what to do”?\n</summary>\nBy saying “I am doing this — do you think it is okay?”, keeping control\nwith themselves.\n</details>",
+          "text": "How can a student be proactive instead of saying “Tell me what to do”? By saying “I am doing this — do you think it is okay?”, keeping control\nwith themselves."
+        }
+      ]
+    },
+    {
+      "slug": "lead-yourself-ownership-potential-invest",
+      "title": "Lead Yourself from Within — Ownership, Potential and Investing in Yourself",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You got poor marks. You can say “The\npaper was unfair, the teacher is bad.” Or you can say “What will I do\ndifferently next time?” The first is a <strong>victim</strong>. The\nsecond is an <strong>owner</strong>.</p>\n</blockquote>",
+          "text": "Start here You got poor marks. You can say “The\npaper was unfair, the teacher is bad.” Or you can say “What will I do\ndifferently next time?” The first is a victim . The\nsecond is an owner ."
+        },
+        {
+          "type": "html",
+          "html": "<p>This page covers lessons 4, 5 and 6 of “Lead yourself from\nwithin”.</p>",
+          "text": "This page covers lessons 4, 5 and 6 of “Lead yourself from\nwithin”."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson\n4: Take responsibility and ownership for yourself"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“There are two primary choices in life: to accept conditions as\nthey exist, or accept the responsibility for changing them.”</em> —\nDenis Waitley <em>“Nothing will ever change while you point the finger\nof blame. Out of responsibility comes possibility.”</em> — Lisa Villa\nProsen</p>\n</blockquote>",
+          "text": "“There are two primary choices in life: to accept conditions as\nthey exist, or accept the responsibility for changing them.” —\nDenis Waitley “Nothing will ever change while you point the finger\nof blame. Out of responsibility comes possibility.” — Lisa Villa\nProsen"
+        },
+        {
+          "type": "html",
+          "html": "<p>There is <strong>no single right choice</strong> for everyone. No two\nlives are the same. Listen to advice — but <strong>you</strong>\ndecide.</p>",
+          "text": "There is no single right choice for everyone. No two\nlives are the same. Listen to advice — but you decide."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>When you take total responsibility:</strong></p>",
+          "text": "When you take total responsibility:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>You <strong>stop playing the victim</strong>.</li>\n<li>You don’t <strong>blame</strong> anyone — not even yourself.</li>\n<li>If a choice isn’t working, <strong>explore other choices</strong>\nand make a new one.</li>\n<li>You don’t wait for someone else to fix it. You <strong>take the\ninitiative</strong>.</li>\n<li>You <strong>seek help</strong> and build a <strong>support\nsystem</strong>. Asking for help is a sign of <strong>strength</strong>,\nnot weakness.</li>\n</ul>",
+          "text": "You stop playing the victim . You don’t blame anyone — not even yourself. If a choice isn’t working, explore other choices and make a new one. You don’t wait for someone else to fix it. You take the\ninitiative . You seek help and build a support\nsystem . Asking for help is a sign of strength ,\nnot weakness."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img05-victim-owner.webp",
+          "alt": "Victim vs owner",
+          "caption": "A victim reacts and blames. An owner\ncreates, collaborates and stays calm."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>✗ Victim</th>\n<th>✓ Owner</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>React</td>\n<td>Create</td>\n</tr>\n<tr>\n<td>Compete, compare</td>\n<td>Collaborate, cooperate</td>\n</tr>\n<tr>\n<td>Win–lose</td>\n<td>Win–win</td>\n</tr>\n<tr>\n<td>Stressed, restless</td>\n<td>Cool, calm</td>\n</tr>\n<tr>\n<td>Self-pity, blame game</td>\n<td>Resourceful</td>\n</tr>\n<tr>\n<td>Expectations from others</td>\n<td>Explore opportunities and possibilities</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Victim ✓ Owner React Create Compete, compare Collaborate, cooperate Win–lose Win–win Stressed, restless Cool, calm Self-pity, blame game Resourceful Expectations from others Explore opportunities and possibilities"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Anirudha (student)</strong> He had to\nchoose between inter-IIT sports and academics. A\n<strong>counsellor</strong> did not decide for him. He helped Anirudha\nlist the <strong>pros and cons</strong>, so Anirudha\n<strong>owned</strong> the choice. His swimming team has <strong>no\ncoach</strong>. <strong>Seniors teach juniors</strong>, and juniors\nlater teach the next juniors. Everyone improves — a\n<strong>win–win</strong> built on <strong>collaboration</strong>. Good\ncaptains stay <strong>calm and cool</strong> and are <strong>creative,\nnot reactive</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Anirudha (student) He had to\nchoose between inter-IIT sports and academics. A counsellor did not decide for him. He helped Anirudha\nlist the pros and cons , so Anirudha owned the choice. His swimming team has no\ncoach . Seniors teach juniors , and juniors\nlater teach the next juniors. Everyone improves — a win–win built on collaboration . Good\ncaptains stay calm and cool and are creative,\nnot reactive ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Kartic</strong> shared a well-known prayer: <em>give me\nthe strength to change what I can, to accept what I cannot, and the\nwisdom to know the difference.</em></p>",
+          "text": "Prof. Kartic shared a well-known prayer: give me\nthe strength to change what I can, to accept what I cannot, and the\nwisdom to know the difference."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Sivakumar:</strong> Look inside the word\n<strong>“responsibility”</strong> — it contains\n<strong>response</strong>. Not “react-ability”. You can <strong>choose\nyour response</strong>. When you react, words come out that can’t be\ntaken back. When you choose your response, you can create a\n<strong>win–win</strong>.</p>",
+          "text": "Prof. Sivakumar: Look inside the word “responsibility” — it contains response . Not “react-ability”. You can choose\nyour response . When you react, words come out that can’t be\ntaken back. When you choose your response, you can create a win–win ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Stop blaming, own your choices, and\nchoose your response instead of reacting. <strong>Exam words:</strong>\nresponsibility, ownership, victim, owner, blame game, support system,\nresponse vs reaction, win–win.</p>",
+          "text": "In one line: Stop blaming, own your choices, and\nchoose your response instead of reacting. Exam words: responsibility, ownership, victim, owner, blame game, support system,\nresponse vs reaction, win–win."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 5: Play to your\nfull potential"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“Stop wasting time in playing a role or a concept. Instead learn\nto actualize yourself, your potential.”</em> — Bruce Lee</p>\n</blockquote>",
+          "text": "“Stop wasting time in playing a role or a concept. Instead learn\nto actualize yourself, your potential.” — Bruce Lee"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Put in your <strong>100%</strong>.</li>\n<li>Play to your <strong>strengths</strong>.</li>\n<li>Know your <strong>weaknesses</strong>.</li>\n<li>Be aware of the <strong>downsides of your strengths</strong> and the\n<strong>upsides of your weaknesses</strong>.</li>\n<li>Keep learning <strong>new skills</strong> and upgrading old\nones.</li>\n<li>Your potential is <strong>unlimited</strong> — be open to learning\nand growing.</li>\n</ul>",
+          "text": "Put in your 100% . Play to your strengths . Know your weaknesses . Be aware of the downsides of your strengths and the upsides of your weaknesses . Keep learning new skills and upgrading old\nones. Your potential is unlimited — be open to learning\nand growing."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img06-strength-weakness.webp",
+          "alt": "Strengths and weaknesses have two sides",
+          "caption": "An extrovert may\nmiss details; an introvert may listen deeply."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Siddharth (student)</strong> He led the\ninter-IIT <strong>case study</strong> team, with undergraduates and\npostgraduates. Instead of dictating, he <strong>asked</strong> each\nperson what they wanted to do and let them <strong>play to their\nstrengths</strong> — some at presentation, some at analysis. They also\nlearnt from each other. <strong>Flip side:</strong> being an\n<strong>extrovert</strong> gives confidence, but you may <strong>miss\ndetails</strong> others say. An <strong>introvert’s</strong> strength\ncan be <strong>listening</strong> carefully.</p>\n</blockquote>",
+          "text": "Lecture example — Siddharth (student) He led the\ninter-IIT case study team, with undergraduates and\npostgraduates. Instead of dictating, he asked each\nperson what they wanted to do and let them play to their\nstrengths — some at presentation, some at analysis. They also\nlearnt from each other. Flip side: being an extrovert gives confidence, but you may miss\ndetails others say. An introvert’s strength\ncan be listening carefully."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Prasanna</strong> She was an\nintrovert who feared public speaking. In meetings, she <strong>listened\nactively</strong>. With strong analytical skills, this helped her\n<strong>see the big picture</strong> and design solutions. Seniors\npointed out this strength to her. Her advice: play to your strengths;\ndon’t try too hard to turn every weakness into a strength. Know both —\nbut don’t get too attached to either. <strong>Stay open to\ngrowing.</strong></p>\n</blockquote>",
+          "text": "Lecture example — Prof. Prasanna She was an\nintrovert who feared public speaking. In meetings, she listened\nactively . With strong analytical skills, this helped her see the big picture and design solutions. Seniors\npointed out this strength to her. Her advice: play to your strengths;\ndon’t try too hard to turn every weakness into a strength. Know both —\nbut don’t get too attached to either. Stay open to\ngrowing."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Give 100%, use your strengths, and\nremember every strength has a downside and every weakness an upside.\n<strong>Exam words:</strong> full potential, strengths, weaknesses,\ndownsides of strengths, upsides of weaknesses.</p>",
+          "text": "In one line: Give 100%, use your strengths, and\nremember every strength has a downside and every weakness an upside. Exam words: full potential, strengths, weaknesses,\ndownsides of strengths, upsides of weaknesses."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 6: Invest in yourself"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“Investing in yourself is the best investment you will ever make.\nIt will not only improve your life, it will improve the lives of all\nthose around you.”</em> — Robin S. Sharma</p>\n</blockquote>",
+          "text": "“Investing in yourself is the best investment you will ever make.\nIt will not only improve your life, it will improve the lives of all\nthose around you.” — Robin S. Sharma"
+        },
+        {
+          "type": "html",
+          "html": "<p>Invest in your <strong>self-growth</strong>,\n<strong>self-care</strong> and <strong>self-worth</strong>.</p>",
+          "text": "Invest in your self-growth , self-care and self-worth ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img07-invest-in-yourself.webp",
+          "alt": "Invest in yourself",
+          "caption": "Self-growth, self-care,\nself-worth."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slides:</strong></p>",
+          "text": "From the slides:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Self-growth:</strong> keep a positive, growth mindset; keep\nlearning and creating.</li>\n<li><strong>Self-worth:</strong> value your inner potential, mind and\nbody — the <strong>personal capital</strong> you have built. Build your\nself-worth by working on <strong>limiting beliefs, fears, insecurities\nand self-doubt</strong>.</li>\n<li><strong>Self-love:</strong> accept and appreciate yourself; be kind\nto yourself; respect yourself; trust and believe in yourself.</li>\n</ul>",
+          "text": "Self-growth: keep a positive, growth mindset; keep\nlearning and creating. Self-worth: value your inner potential, mind and\nbody — the personal capital you have built. Build your\nself-worth by working on limiting beliefs, fears, insecurities\nand self-doubt . Self-love: accept and appreciate yourself; be kind\nto yourself; respect yourself; trust and believe in yourself."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Lovpreet (student)</strong> Busy with\nacademics and the CFI Raftaar team, he still fixes daily time to improve\nweak areas, like talking to people. He says: <strong>accept</strong>\nyourself with your mistakes, <strong>value your worth</strong>, and your\nworth grows as you learn.</p>\n</blockquote>",
+          "text": "Lecture example — Lovpreet (student) Busy with\nacademics and the CFI Raftaar team, he still fixes daily time to improve\nweak areas, like talking to people. He says: accept yourself with your mistakes, value your worth , and your\nworth grows as you learn."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar: the skipped\nexercises</strong> A colleague with joint pain was given exercises. He\nsaid he was “too busy” to do them — not seeing that skipping them would\nmake him <strong>less able</strong> to handle that busy work.\n<strong>Self-care</strong> is what lets you keep delivering.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar: the skipped\nexercises A colleague with joint pain was given exercises. He\nsaid he was “too busy” to do them — not seeing that skipping them would\nmake him less able to handle that busy work. Self-care is what lets you keep delivering."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic’s habits</strong></p>\n<ul>\n<li><strong>Body:</strong> a fitness group — walks, jogging, cycling,\nstretches on alternate days.</li>\n<li><strong>Mind:</strong> avoid negative, sensational media. Read\n<strong>inspiring</strong> content and share it with friends.</li>\n<li><strong>Self-love:</strong> he used to beat himself up over every\nresult. With experience and mentors, he learnt to <strong>accept and be\nkind to himself</strong>. You can’t be kind to others if you’re not kind\nto yourself. Accepting yourself is the biggest gift; others accepting\nyou is a bonus.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic’s habits Body: a fitness group — walks, jogging, cycling,\nstretches on alternate days. Mind: avoid negative, sensational media. Read inspiring content and share it with friends. Self-love: he used to beat himself up over every\nresult. With experience and mentors, he learnt to accept and be\nkind to himself . You can’t be kind to others if you’re not kind\nto yourself. Accepting yourself is the biggest gift; others accepting\nyou is a bonus."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Sivakumar:</strong> Many students attach\n<strong>failure</strong> to themselves. But <strong>the event is\ndifferent from the self</strong>. “I failed a test” is not “I am a\nfailure”. Work on self-doubt — often you find you <strong>can</strong>\ndo it.</p>",
+          "text": "Prof. Sivakumar: Many students attach failure to themselves. But the event is\ndifferent from the self . “I failed a test” is not “I am a\nfailure”. Work on self-doubt — often you find you can do it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your phone works only if you charge\nit. You work the same way. Sleep, exercise and learning are your\n“charging time” — not wasted time.</p>\n</blockquote>",
+          "text": "Everyday example Your phone works only if you charge\nit. You work the same way. Sleep, exercise and learning are your\n“charging time” — not wasted time."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Invest in your growth, care for your\nbody and mind, and value yourself — you are not your failures.\n<strong>Exam words:</strong> invest in yourself, self-growth, self-care,\nself-worth, self-love, limiting beliefs.</p>",
+          "text": "In one line: Invest in your growth, care for your\nbody and mind, and value yourself — you are not your failures. Exam words: invest in yourself, self-growth, self-care,\nself-worth, self-love, limiting beliefs."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich word is hidden inside “responsibility”, and what does it teach?\n</summary>\n“Response” — you can choose your response instead of reacting.\n</details>",
+          "text": "Which word is hidden inside “responsibility”, and what does it teach? “Response” — you can choose your response instead of reacting."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive one downside of being an extrovert mentioned in the lecture.\n</summary>\nYou may overlook or miss the finer details that others say.\n</details>",
+          "text": "Give one downside of being an extrovert mentioned in the lecture. You may overlook or miss the finer details that others say."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat three things should you invest in, according to lesson 6?\n</summary>\nSelf-growth, self-care and self-worth.\n</details>",
+          "text": "What three things should you invest in, according to lesson 6? Self-growth, self-care and self-worth."
+        }
+      ]
+    },
+    {
+      "slug": "lead-yourself-to-lead-others-1",
+      "title": "Lead Yourself to Lead Others — Mindset, Time, One Thing, Communication, Emotions",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> “You can only lead others as much as you\nhave led yourself.” Part 2 has <strong>nine lessons</strong>. This page\ncovers the first five.</p>\n</blockquote>",
+          "text": "Start here “You can only lead others as much as you\nhave led yourself.” Part 2 has nine lessons . This page\ncovers the first five."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 1: Cultivate a\ngrowth mindset"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Overcome <strong>adversity</strong> (hard times).</li>\n<li>Convert <strong>obstacles into opportunities</strong>.</li>\n<li>Nurture a <strong>positive mindset</strong>.</li>\n<li>Use <strong>words of power and positivity</strong>.</li>\n<li>Recreate your life so that it becomes a <strong>recreation</strong>\nin itself.</li>\n</ul>",
+          "text": "Overcome adversity (hard times). Convert obstacles into opportunities . Nurture a positive mindset . Use words of power and positivity . Recreate your life so that it becomes a recreation in itself."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img08-growth-mindset.webp",
+          "alt": "Fixed mindset vs growth mindset",
+          "caption": "“I only know this, so I\nwon’t try” vs “Let me learn, explore and partner.”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic: from board games to digital\ngames</strong> He designed <strong>board and card games</strong> and\nbelieved they were the best. He also believed “<strong>I cannot design\ndigital games</strong>”. So he didn’t even try to understand some\ncustomers’ problems. That is a <strong>fixed mindset</strong>. Weeks and\nmonths passed with no work.</p>\n<p>Then the <strong>pandemic</strong> came. People could not meet to\nplay board games. He was <strong>forced</strong> to go digital. First he\njust copied board games into digital form. Slowly he learnt that the two\nworlds are different.</p>\n<p>He also broke another belief: “<strong>I must do everything\nalone.</strong>” He started <strong>partnering</strong> with digital\ngame companies. A whole new world opened up.</p>\n<p><strong>His shift:</strong> from “I know it all, I want quick\nresults” → to “<strong>I am here to learn, explore and\npartner</strong>.” Now he works in a zone of <strong>learning and\npossibilities</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic: from board games to digital\ngames He designed board and card games and\nbelieved they were the best. He also believed “ I cannot design\ndigital games ”. So he didn’t even try to understand some\ncustomers’ problems. That is a fixed mindset . Weeks and\nmonths passed with no work. Then the pandemic came. People could not meet to\nplay board games. He was forced to go digital. First he\njust copied board games into digital form. Slowly he learnt that the two\nworlds are different. He also broke another belief: “ I must do everything\nalone. ” He started partnering with digital\ngame companies. A whole new world opened up. His shift: from “I know it all, I want quick\nresults” → to “ I am here to learn, explore and\npartner .” Now he works in a zone of learning and\npossibilities ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Fixed mindset</th>\n<th>Growth mindset</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“I can’t do that.”</td>\n<td>“I can learn that.”</td>\n</tr>\n<tr>\n<td>“I know it all.”</td>\n<td>“I am here to learn.”</td>\n</tr>\n<tr>\n<td>Do everything alone</td>\n<td>Partner with the right people</td>\n</tr>\n<tr>\n<td>Want fixed, quick results</td>\n<td>Explore possibilities</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Fixed mindset Growth mindset “I can’t do that.” “I can learn that.” “I know it all.” “I am here to learn.” Do everything alone Partner with the right people Want fixed, quick results Explore possibilities"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> A growth mindset turns “I can’t” into\n“I can learn” and obstacles into opportunities. <strong>Exam\nwords:</strong> growth mindset, fixed mindset, limiting belief,\nadversity, obstacles into opportunities.</p>",
+          "text": "In one line: A growth mindset turns “I can’t” into\n“I can learn” and obstacles into opportunities. Exam\nwords: growth mindset, fixed mindset, limiting belief,\nadversity, obstacles into opportunities."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 2: Manage your time\nand energy"
+        },
+        {
+          "type": "html",
+          "html": "<p>Time management alone is not enough. You must also manage your\n<strong>energy</strong>.</p>",
+          "text": "Time management alone is not enough. You must also manage your energy ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Create <strong>to-do lists</strong>.</li>\n<li><strong>Prioritise</strong> your work.</li>\n<li>Make it <strong>easy to get started</strong> and get it done.</li>\n<li><strong>Do what you love, and love what you do.</strong></li>\n<li>Be aware of <strong>energy and time drainers</strong> and\n<strong>energy boosters</strong>.</li>\n<li><strong>Monitor</strong> your energy levels.</li>\n<li><strong>Recharge</strong> your energy regularly — for balance,\nfocus, productivity and performance.</li>\n</ul>",
+          "text": "Create to-do lists . Prioritise your work. Make it easy to get started and get it done. Do what you love, and love what you do. Be aware of energy and time drainers and energy boosters . Monitor your energy levels. Recharge your energy regularly — for balance,\nfocus, productivity and performance."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img09-time-energy.webp",
+          "alt": "Manage time and energy",
+          "caption": "To-do list, easy start, energy\nboosters and a short rest to recharge."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar: “I don’t manage time, I\nmanage myself”</strong></p>\n<ul>\n<li><strong>To-do list:</strong> writing tasks on paper stops them from\nnagging his mind.</li>\n<li><strong>Prioritise:</strong> what is urgent, what is important.</li>\n<li><strong>Make it easy to start:</strong> he put his <strong>bike key\ninside the meeting file</strong>, so he couldn’t forget the file. When\nwriting a paper, he stops <strong>mid-sentence</strong>, so the next day\nhis mind wants to finish it — and he gets into flow.</li>\n<li><strong>Love what you do:</strong> many things are not in your\nhands, so train yourself to love the work you have.</li>\n<li><strong>Recharge:</strong> a <strong>45-minute nap</strong> (siesta)\nin the afternoon; <strong>meditation</strong> in the morning; a short\n<strong>stroll</strong> or a little <strong>music</strong> to break\nmonotony.</li>\n<li><strong>Track energy:</strong> use the fresh morning for\n<strong>creative work</strong>.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar: “I don’t manage time, I\nmanage myself” To-do list: writing tasks on paper stops them from\nnagging his mind. Prioritise: what is urgent, what is important. Make it easy to start: he put his bike key\ninside the meeting file , so he couldn’t forget the file. When\nwriting a paper, he stops mid-sentence , so the next day\nhis mind wants to finish it — and he gets into flow. Love what you do: many things are not in your\nhands, so train yourself to love the work you have. Recharge: a 45-minute nap (siesta)\nin the afternoon; meditation in the morning; a short stroll or a little music to break\nmonotony. Track energy: use the fresh morning for creative work ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Manage yourself — plan tasks, make\nstarting easy, and recharge your energy. <strong>Exam words:</strong>\nto-do list, prioritise, energy drainers, energy boosters, recharge, love\nwhat you do.</p>",
+          "text": "In one line: Manage yourself — plan tasks, make\nstarting easy, and recharge your energy. Exam words: to-do list, prioritise, energy drainers, energy boosters, recharge, love\nwhat you do."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 3: Focus on the one\nthing"
+        },
+        {
+          "type": "html",
+          "html": "<p>Gary Keller’s book <strong><em>The ONE Thing</em></strong> asks two\nquestions:</p>",
+          "text": "Gary Keller’s book The ONE Thing asks two\nquestions:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>What is the <strong>one thing</strong> I can do such that doing it\nmakes everything else <strong>easier or unnecessary</strong>?</li>\n<li>What must I do <strong>right now</strong> to be on the path to the\nbig picture — the <strong>bullseye</strong>?</li>\n</ol>",
+          "text": "What is the one thing I can do such that doing it\nmakes everything else easier or unnecessary ? What must I do right now to be on the path to the\nbig picture — the bullseye ?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Write down</strong> your goals, aspirations and dreams.</li>\n<li>Goals <strong>support one another</strong>, directly or\nindirectly.</li>\n<li>You will achieve your other goals to reach a <strong>big or\nlong-term goal</strong>.</li>\n</ul>",
+          "text": "Write down your goals, aspirations and dreams. Goals support one another , directly or\nindirectly. You will achieve your other goals to reach a big or\nlong-term goal ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar’s one thing: joy</strong>\nEverything he does, he asks: does it connect to <strong>joy</strong>?\nThen all goals line up behind it. Goal posts keep moving — after\ncracking JEE, there was the next goal. So don’t wait for the final\nmoment to be happy. <strong>Enjoy each step.</strong> His motto:\n<em>“Enjoy being with joy.”</em></p>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar’s one thing: joy Everything he does, he asks: does it connect to joy ?\nThen all goals line up behind it. Goal posts keep moving — after\ncracking JEE, there was the next goal. So don’t wait for the final\nmoment to be happy. Enjoy each step. His motto: “Enjoy being with joy.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Find your one thing, and let your other\ngoals line up behind it. <strong>Exam words:</strong> the one thing,\nGary Keller, goals support each other, bullseye.</p>",
+          "text": "In one line: Find your one thing, and let your other\ngoals line up behind it. Exam words: the one thing,\nGary Keller, goals support each other, bullseye."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 4:\nCommunicate effectively and listen actively"
+        },
+        {
+          "type": "html",
+          "html": "<p>Poor communication causes <strong>misunderstandings, lost\ninformation, rework</strong>, and wastes time, energy and money.</p>",
+          "text": "Poor communication causes misunderstandings, lost\ninformation, rework , and wastes time, energy and money."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Use <strong>words of power</strong>.</li>\n<li>Use <strong>body language</strong> and <strong>non-verbal\ncues</strong>.</li>\n<li><strong>Speak so others will listen.</strong></li>\n<li><strong>Listen actively.</strong></li>\n<li>Practise the power of <strong>silence and pause</strong>.</li>\n<li>Use the power of <strong>solitude</strong> (time alone) for creative\nideas.</li>\n</ul>",
+          "text": "Use words of power . Use body language and non-verbal\ncues . Speak so others will listen. Listen actively. Practise the power of silence and pause . Use the power of solitude (time alone) for creative\nideas."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Lt Col Jayakumar</strong></p>\n<ul>\n<li>Everything <strong>begins and ends with communication</strong> —\neven problems.</li>\n<li><strong>Vocabulary:</strong> he kept a 400-page register of new\nwords and looked them up in the dictionary.</li>\n<li><strong>Non-verbal:</strong> eyes speak; <strong>tone</strong> shows\nyour mood.</li>\n<li><strong>Hearing vs listening:</strong> hearing is general;\n<strong>listening</strong> is done <strong>on purpose</strong>,\nabsorbing everything. Active listening helps you learn and encourages\nthe speaker to share more.</li>\n<li><strong>Silence</strong> also communicates.</li>\n<li><strong>Don’t speak like a fast express train.</strong> Use\n<strong>pauses</strong>.</li>\n<li>To communicate a task well: (1) <strong>know your job</strong>, (2)\n<strong>know the other person’s job</strong>, (3) understand what\n<strong>both</strong> need to achieve. Then list the points and\nspeak.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Lt Col Jayakumar Everything begins and ends with communication —\neven problems. Vocabulary: he kept a 400-page register of new\nwords and looked them up in the dictionary. Non-verbal: eyes speak; tone shows\nyour mood. Hearing vs listening: hearing is general; listening is done on purpose ,\nabsorbing everything. Active listening helps you learn and encourages\nthe speaker to share more. Silence also communicates. Don’t speak like a fast express train. Use pauses . To communicate a task well: (1) know your job , (2) know the other person’s job , (3) understand what both need to achieve. Then list the points and\nspeak."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Sivakumar:</strong> There is a ladder: <strong>hearing\n→ listening → feeling → being immersed</strong>. Words are like\n<strong>pearls</strong> — string them well and you get a beautiful\n<strong>necklace</strong>.</p>",
+          "text": "Prof. Sivakumar: There is a ladder: hearing\n→ listening → feeling → being immersed . Words are like pearls — string them well and you get a beautiful necklace ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Choose strong words, use pauses and\nbody language, and truly listen. <strong>Exam words:</strong> words of\npower, non-verbal cues, active listening, hearing vs listening, silence,\npause, solitude.</p>",
+          "text": "In one line: Choose strong words, use pauses and\nbody language, and truly listen. Exam words: words of\npower, non-verbal cues, active listening, hearing vs listening, silence,\npause, solitude."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 5: Be emotionally\nresilient"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“Resilience is accepting your new reality, even if it’s less good\nthan the one you had before.”</em> — Elizabeth Edwards</p>\n</blockquote>",
+          "text": "“Resilience is accepting your new reality, even if it’s less good\nthan the one you had before.” — Elizabeth Edwards"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Emotional intelligence</strong> is the ability to understand\nand handle emotions — in yourself and in others. It builds\n<strong>self-awareness</strong> and <strong>empathy</strong>. Employers\nare often said to value <strong>EQ</strong> (emotional quotient)\n<strong>over IQ</strong>.</p>",
+          "text": "Emotional intelligence is the ability to understand\nand handle emotions — in yourself and in others. It builds self-awareness and empathy . Employers\nare often said to value EQ (emotional quotient) over IQ ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Identify</strong> and understand your emotions, their impact\nand their <strong>triggers</strong>.</li>\n<li><strong>Process and regulate</strong> unwanted emotions; become\n<strong>emotionally resilient</strong>.</li>\n<li><strong>Self-awareness</strong> helps you recognise, understand and\ninfluence <strong>others’</strong> emotions too.</li>\n</ul>",
+          "text": "Identify and understand your emotions, their impact\nand their triggers . Process and regulate unwanted emotions; become emotionally resilient . Self-awareness helps you recognise, understand and\ninfluence others’ emotions too."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img10-emotional-resilience.webp",
+          "alt": "Emotional resilience",
+          "caption": "Notice the emotion, pause, and choose\na calm response."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic</strong> In school and\ncollege, only <strong>IQ and marks</strong> seemed to matter. You worked\n<strong>alone</strong>. At work, you work in <strong>teams</strong>, and\nemotions affect everyone’s productivity. He used to get <strong>angry\nand frustrated</strong> quickly. With experience and\n<strong>mentors</strong>, he learnt to notice these emotions and come\nback to a <strong>calm</strong> state. Now his anger is <strong>less\nstrong and shorter</strong>. When calm, he asks: “What else can I do?” —\n<em>if plan A fails, there are 25 more letters.</em> <strong>How to\nbuild self-awareness:</strong> self-reflection,\n<strong>mentors</strong>, and daily habits like\n<strong>meditation</strong> and <strong>journaling</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic In school and\ncollege, only IQ and marks seemed to matter. You worked alone . At work, you work in teams , and\nemotions affect everyone’s productivity. He used to get angry\nand frustrated quickly. With experience and mentors , he learnt to notice these emotions and come\nback to a calm state. Now his anger is less\nstrong and shorter . When calm, he asks: “What else can I do?” — if plan A fails, there are 25 more letters. How to\nbuild self-awareness: self-reflection, mentors , and daily habits like meditation and journaling ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Sivakumar:</strong> People bring a leader both\n<strong>problems</strong> and <strong>happy news</strong>. A good leader\nbalances these very different emotions.</p>",
+          "text": "Prof. Sivakumar: People bring a leader both problems and happy news . A good leader\nbalances these very different emotions."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your teammate forgot his part of\nthe project. You feel angry. Instead of shouting in the group chat, you\nwait 10 minutes, then ask, “What happened? How can we finish it\ntogether?” That pause is emotional resilience.</p>\n</blockquote>",
+          "text": "Everyday example Your teammate forgot his part of\nthe project. You feel angry. Instead of shouting in the group chat, you\nwait 10 minutes, then ask, “What happened? How can we finish it\ntogether?” That pause is emotional resilience."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Notice your emotions, calm yourself,\nand understand others’ feelings — EQ often matters more than IQ.\n<strong>Exam words:</strong> emotional intelligence, EQ vs IQ,\nself-awareness, triggers, regulate emotions, emotional resilience,\njournaling.</p>",
+          "text": "In one line: Notice your emotions, calm yourself,\nand understand others’ feelings — EQ often matters more than IQ. Exam words: emotional intelligence, EQ vs IQ,\nself-awareness, triggers, regulate emotions, emotional resilience,\njournaling."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat fixed-mindset belief held Prof. Kartic back?\n</summary>\n“I cannot design digital games” (and “I must do everything alone”).\n</details>",
+          "text": "What fixed-mindset belief held Prof. Kartic back? “I cannot design digital games” (and “I must do everything alone”)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy did Prof. Sivakumar put his bike key inside the meeting file?\n</summary>\nTo make it easy to start and impossible to forget the file — “make it\neasy to get started”.\n</details>",
+          "text": "Why did Prof. Sivakumar put his bike key inside the meeting file? To make it easy to start and impossible to forget the file — “make it\neasy to get started”."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the difference between hearing and listening?\n</summary>\nHearing is general and passive; listening is done on purpose, absorbing\neverything the speaker says.\n</details>",
+          "text": "What is the difference between hearing and listening? Hearing is general and passive; listening is done on purpose, absorbing\neverything the speaker says."
+        }
+      ]
+    },
+    {
+      "slug": "lead-yourself-to-lead-others-2",
+      "title": "Lead Yourself to Lead Others — Change, Conflict, Delegation, Collaboration",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> New boss. New teammates. New city. New\nsoftware. At work, something is always changing. Can you lead others\nthrough change if you can’t handle it yourself?</p>\n</blockquote>",
+          "text": "Start here New boss. New teammates. New city. New\nsoftware. At work, something is always changing. Can you lead others\nthrough change if you can’t handle it yourself?"
+        },
+        {
+          "type": "html",
+          "html": "<p>This page covers lessons 6 to 9 of “Lead yourself to lead\nothers”.</p>",
+          "text": "This page covers lessons 6 to 9 of “Lead yourself to lead\nothers”."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 6: Embrace change"
+        },
+        {
+          "type": "html",
+          "html": "<p>Change is now <strong>constant</strong> and\n<strong>uncertain</strong> — the pandemic showed this.</p>",
+          "text": "Change is now constant and uncertain — the pandemic showed this."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Expect</strong> change — it is constant, unavoidable, and\nhappens everywhere: personal, professional, organisational, global.</li>\n<li><strong>Monitor</strong> change and <strong>prepare</strong> for\nit.</li>\n<li><strong>Adapt</strong> to change <strong>quickly</strong>.</li>\n<li><strong>Embrace</strong> the change and the experience — learn the\n<strong>lessons and insights</strong>.</li>\n</ul>",
+          "text": "Expect change — it is constant, unavoidable, and\nhappens everywhere: personal, professional, organisational, global. Monitor change and prepare for\nit. Adapt to change quickly . Embrace the change and the experience — learn the lessons and insights ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Other lessons help here: a <strong>growth mindset</strong>,\n<strong>emotional resilience</strong> and <strong>taking care of\nyourself</strong>.</p>",
+          "text": "Other lessons help here: a growth mindset , emotional resilience and taking care of\nyourself ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img11-embrace-change.webp",
+          "alt": "Embrace change",
+          "caption": "From student to employee to entrepreneur —\nevery step is a change."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic’s changes</strong></p>\n<ol type=\"1\">\n<li><strong>Student → corporate job:</strong> from working\n<strong>alone</strong> to working in <strong>teams</strong> with\ndifferent people, habits and likes.</li>\n<li><strong>In the company:</strong> every <strong>customer</strong> is\ndifferent; teammates, bosses and even the company head keep changing\n(sometimes through mergers).</li>\n<li><strong>Corporate → entrepreneur:</strong> a bigger change. No\nbrand, no HR, no finance team, no ready customers. <strong>You</strong>\nare the brand. You must keep <strong>networking</strong> and\n<strong>adapting</strong> fast.</li>\n</ol>\n<p>Change is painful, but if you <strong>reflect and learn</strong> from\nit, it becomes <strong>joyful</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic’s changes Student → corporate job: from working alone to working in teams with\ndifferent people, habits and likes. In the company: every customer is\ndifferent; teammates, bosses and even the company head keep changing\n(sometimes through mergers). Corporate → entrepreneur: a bigger change. No\nbrand, no HR, no finance team, no ready customers. You are the brand. You must keep networking and adapting fast. Change is painful, but if you reflect and learn from\nit, it becomes joyful ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lt Col Jayakumar:</strong> Change is the <strong>essence of\nlife</strong> — in your body, your thoughts, your environment, education\nand experience.</p>",
+          "text": "Lt Col Jayakumar: Change is the essence of\nlife — in your body, your thoughts, your environment, education\nand experience."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Expect change, prepare for it, adapt\nquickly, and learn from it. <strong>Exam words:</strong> embrace change,\nexpect, monitor, adapt, lessons and insights.</p>",
+          "text": "In one line: Expect change, prepare for it, adapt\nquickly, and learn from it. Exam words: embrace change,\nexpect, monitor, adapt, lessons and insights."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 7: Manage\nconflict (inside yourself first)"
+        },
+        {
+          "type": "html",
+          "html": "<p>This lesson is about conflict <strong>within yourself</strong>, and\nhow resolving it helps you lead others.</p>",
+          "text": "This lesson is about conflict within yourself , and\nhow resolving it helps you lead others."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What causes conflict inside us?</strong></p>",
+          "text": "What causes conflict inside us?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>conflict of <strong>values</strong></li>\n<li>conflict of <strong>expectations</strong></li>\n<li>conflict of <strong>perceptions and perspectives</strong></li>\n<li>conflict between your <strong>inner voice of wisdom</strong> and\nyour <strong>inner chatter</strong> (the critical noise in your\nhead)</li>\n</ul>",
+          "text": "conflict of values conflict of expectations conflict of perceptions and perspectives conflict between your inner voice of wisdom and\nyour inner chatter (the critical noise in your\nhead)"
+        },
+        {
+          "type": "html",
+          "html": "<p>These clutter the mind, drain energy, and make problems look bigger\nthan they are.</p>",
+          "text": "These clutter the mind, drain energy, and make problems look bigger\nthan they are."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide — how to manage it:</strong></p>",
+          "text": "From the slide — how to manage it:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Be clear on your <strong>core, non-negotiable values</strong>. Learn\nto <strong>say NO</strong>. <strong>Respect</strong> others’\nvalues.</li>\n<li>Understand your <strong>expectations of yourself</strong>. Drop\nunrealistic ones, or ones not aligned with your values and goals. With\nothers, turn expectations into <strong>clear agreements</strong>.</li>\n<li><strong>Reframe your lens</strong> — clear it of preconceived\nnotions and cognitive bias. Be open to <strong>diversity</strong>.\nListen to others.</li>\n<li><strong>Process</strong> your inner self-talk and inner critic.</li>\n<li><strong>Become your own inner coach.</strong> Remove everything not\naligned with your values and goals. Use words of power.</li>\n</ul>",
+          "text": "Be clear on your core, non-negotiable values . Learn\nto say NO . Respect others’\nvalues. Understand your expectations of yourself . Drop\nunrealistic ones, or ones not aligned with your values and goals. With\nothers, turn expectations into clear agreements . Reframe your lens — clear it of preconceived\nnotions and cognitive bias. Be open to diversity .\nListen to others. Process your inner self-talk and inner critic. Become your own inner coach. Remove everything not\naligned with your values and goals. Use words of power."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img12-inner-conflict.webp",
+          "alt": "Resolve conflict within to lead others",
+          "caption": "A calm mind creates\nspace to listen, so others feel safe and valued."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why it helps you lead:</strong> Resolving inner conflict\n<strong>creates space</strong> inside you. Then you:</p>",
+          "text": "Why it helps you lead: Resolving inner conflict creates space inside you. Then you:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>are more <strong>self-aware</strong>, <strong>present</strong> and\n<strong>empathetic</strong>;</li>\n<li><strong>listen actively</strong> and make the other person feel\n<strong>valued and respected</strong>;</li>\n<li>share <strong>leadership and ownership</strong> of solving the\nconflict;</li>\n<li>get to the <strong>root</strong> of the problem through healthy\ndialogue.</li>\n</ul>",
+          "text": "are more self-aware , present and empathetic ; listen actively and make the other person feel valued and respected ; share leadership and ownership of solving the\nconflict; get to the root of the problem through healthy\ndialogue."
+        },
+        {
+          "type": "html",
+          "html": "<p>This builds <strong>psychological safety</strong> — a safe,\n<strong>non-judgmental</strong> space at work. Then there is\n<strong>harmony, trust and reliability</strong>. It also helps you\n<strong>delegate</strong> and <strong>collaborate</strong>.</p>",
+          "text": "This builds psychological safety — a safe, non-judgmental space at work. Then there is harmony, trust and reliability . It also helps you delegate and collaborate ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Clear the conflict in your own mind\nfirst; then you can listen and help others resolve theirs. <strong>Exam\nwords:</strong> inner conflict, values, expectations, perceptions, inner\nchatter, inner coach, reframe your lens, psychological safety.</p>",
+          "text": "In one line: Clear the conflict in your own mind\nfirst; then you can listen and help others resolve theirs. Exam\nwords: inner conflict, values, expectations, perceptions, inner\nchatter, inner coach, reframe your lens, psychological safety."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 8: Delegate\neffectively"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Delegating</strong> means giving work to others and\n<strong>empowering</strong> them to do it. New managers find this hard —\nthey think, “It’s faster if I do it myself.”</p>",
+          "text": "Delegating means giving work to others and empowering them to do it. New managers find this hard —\nthey think, “It’s faster if I do it myself.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Pick team players not only for <strong>expertise and\ncredentials</strong> — also someone who is a <strong>team\nplayer</strong> and <strong>can lead themselves</strong>.</li>\n<li><strong>Mutual trust, respect, reliability and commitment</strong>\nare key.</li>\n<li><strong>Align</strong> the person’s vision, core values and goals\nwith the team and organisation.</li>\n<li><strong>Clearly define</strong> roles and responsibilities.</li>\n<li><strong>Empower</strong> the person and put <strong>them in\ncontrol</strong>.</li>\n<li>Ensure <strong>psychological safety</strong>.</li>\n</ul>",
+          "text": "Pick team players not only for expertise and\ncredentials — also someone who is a team\nplayer and can lead themselves . Mutual trust, respect, reliability and commitment are key. Align the person’s vision, core values and goals\nwith the team and organisation. Clearly define roles and responsibilities. Empower the person and put them in\ncontrol . Ensure psychological safety ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Trust, reliability and commitment must go <strong>both\nways</strong>.</p>",
+          "text": "Trust, reliability and commitment must go both\nways ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img13-delegate.webp",
+          "alt": "Delegate effectively",
+          "caption": "Pick the right person, define the role\nclearly, trust them and step back."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You lead a college fest team.\nInstead of doing posters, sponsors and stage yourself, you give posters\nto the best designer, sponsors to the best talker, and stage to the most\norganised person — with clear deadlines. Then you trust them and check\nin, not take over.</p>\n</blockquote>",
+          "text": "Everyday example You lead a college fest team.\nInstead of doing posters, sponsors and stage yourself, you give posters\nto the best designer, sponsors to the best talker, and stage to the most\norganised person — with clear deadlines. Then you trust them and check\nin, not take over."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Choose the right person, make roles\nclear, trust them and put them in control. <strong>Exam words:</strong>\ndelegate, empower, team player, mutual trust, roles and\nresponsibilities, psychological safety.</p>",
+          "text": "In one line: Choose the right person, make roles\nclear, trust them and put them in control. Exam words: delegate, empower, team player, mutual trust, roles and\nresponsibilities, psychological safety."
+        },
+        {
+          "type": "heading",
+          "text": "Lesson 9: Be a collaborative\nleader"
+        },
+        {
+          "type": "html",
+          "html": "<p>Today there is so much <strong>specialisation</strong> that leaders\nmust <strong>collaborate</strong> across teams, partners, clients and\nservice providers in many places.</p>",
+          "text": "Today there is so much specialisation that leaders\nmust collaborate across teams, partners, clients and\nservice providers in many places."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Be <strong>open, transparent, honest, non-judgmental</strong>.</li>\n<li><strong>Empower</strong> individuals to share and exchange\nideas.</li>\n<li>Give <strong>equal opportunity</strong> and access to resources to\nall.</li>\n<li>Let <strong>different (divergent) thinking</strong> and skills come\nout <strong>before</strong> converging on a decision.</li>\n<li><strong>Listen. Understand. Act.</strong></li>\n<li>Use <strong>collaborative tools</strong> and set up <strong>smooth\nprocesses</strong>.</li>\n</ul>",
+          "text": "Be open, transparent, honest, non-judgmental . Empower individuals to share and exchange\nideas. Give equal opportunity and access to resources to\nall. Let different (divergent) thinking and skills come\nout before converging on a decision. Listen. Understand. Act. Use collaborative tools and set up smooth\nprocesses ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Also needed: <strong>empathy</strong>, listening, open communication,\n<strong>shared vision, shared goals, shared leadership</strong>, and\n<strong>psychological safety</strong>.</p>",
+          "text": "Also needed: empathy , listening, open communication, shared vision, shared goals, shared leadership , and psychological safety ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Sundar Pichai, Google CEO</strong> Known\nfor <strong>collaborative leadership</strong>. He <strong>listens\nquietly</strong> to everyone <strong>before</strong> sharing his own\nview. He gives every member an <strong>equal chance</strong> to share\nideas. Then he <strong>converges</strong> on an idea that works for\neveryone.</p>\n</blockquote>",
+          "text": "Lecture example — Sundar Pichai, Google CEO Known\nfor collaborative leadership . He listens\nquietly to everyone before sharing his own\nview. He gives every member an equal chance to share\nideas. Then he converges on an idea that works for\neveryone."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img14-collaborative-leader.webp",
+          "alt": "Collaborative leader",
+          "caption": "Listen to everyone first, then bring\nideas together."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Listen to everyone, give equal chances,\nthen bring ideas together. <strong>Exam words:</strong> collaborative\nleader, transparent, equal opportunity, divergent thinking, converge,\nlisten–understand–act, shared vision.</p>",
+          "text": "In one line: Listen to everyone, give equal chances,\nthen bring ideas together. Exam words: collaborative\nleader, transparent, equal opportunity, divergent thinking, converge,\nlisten–understand–act, shared vision."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName two causes of conflict within ourselves.\n</summary>\nAny two: conflict of values, of expectations, of\nperceptions/perspectives, or between the inner voice of wisdom and inner\nchatter.\n</details>",
+          "text": "Name two causes of conflict within ourselves. Any two: conflict of values, of expectations, of\nperceptions/perspectives, or between the inner voice of wisdom and inner\nchatter."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nBesides expertise, what should you look for when choosing someone to\ndelegate to?\n</summary>\nSomeone who is a team player and can lead themselves.\n</details>",
+          "text": "Besides expertise, what should you look for when choosing someone to\ndelegate to? Someone who is a team player and can lead themselves."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did Sundar Pichai do before sharing his own opinion?\n</summary>\nHe listened actively and quietly to everyone else.\n</details>",
+          "text": "What did Sundar Pichai do before sharing his own opinion? He listened actively and quietly to everyone else."
+        }
+      ]
+    },
+    {
+      "slug": "lead-others-to-lead-themselves",
+      "title": "Lead Others to Lead Themselves — Squirrel, Beaver and Goose",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> What can a squirrel, a beaver and a goose\nteach a manager? Quite a lot, says the book <em>Gung Ho!</em></p>\n</blockquote>",
+          "text": "Start here What can a squirrel, a beaver and a goose\nteach a manager? Quite a lot, says the book Gung Ho!"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“Leadership is not about you; it’s about investing in the growth\nof others.”</em> — Ken Blanchard</p>\n</blockquote>",
+          "text": "“Leadership is not about you; it’s about investing in the growth\nof others.” — Ken Blanchard"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>True leaders create more leaders, not followers.</strong></p>",
+          "text": "True leaders create more leaders, not followers."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong><em>Gung Ho!</em></strong> is a book by <strong>Ken\nBlanchard</strong> (with Sheldon Bowles). It takes three leadership\nlessons from nature.</p>",
+          "text": "Gung Ho! is a book by Ken\nBlanchard (with Sheldon Bowles). It takes three leadership\nlessons from nature."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img15-gung-ho-animals.webp",
+          "alt": "Squirrel, beaver and goose",
+          "caption": "Spirit of the squirrel, way of\nthe beaver, gift of the goose."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Animal</th>\n<th>Lesson</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Spirit of the squirrel</strong></td>\n<td>Make work <strong>worthwhile and important</strong></td>\n</tr>\n<tr>\n<td><strong>Way of the beaver</strong></td>\n<td>Put individuals <strong>in charge of their goals</strong></td>\n</tr>\n<tr>\n<td><strong>Gift of the goose</strong></td>\n<td><strong>Cheer each other on</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Animal Lesson Spirit of the squirrel Make work worthwhile and important Way of the beaver Put individuals in charge of their goals Gift of the goose Cheer each other on"
+        },
+        {
+          "type": "heading",
+          "text": "1.\nThe spirit of the squirrel: make work worthwhile and important"
+        },
+        {
+          "type": "html",
+          "html": "<p>In autumn, squirrels <strong>gather nuts</strong> and store them for\n<strong>winter</strong>. They don’t see it as hard work. The work is\n<strong>worthwhile</strong> — without it, they would starve.\n<strong>All</strong> the squirrels work towards a <strong>shared common\ngoal</strong>.</p>",
+          "text": "In autumn, squirrels gather nuts and store them for winter . They don’t see it as hard work. The work is worthwhile — without it, they would starve. All the squirrels work towards a shared common\ngoal ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide — how to do this at work:</strong></p>",
+          "text": "From the slide — how to do this at work:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Help team members understand the vision and the big\npicture</strong></td>\n<td>Show how their work <strong>impacts the world</strong> and makes it\nbetter. Highlight <strong>social value</strong> beyond business value.\nThis builds <strong>intrinsic motivation</strong> (motivation from\ninside) and <strong>self-esteem</strong>.</td>\n</tr>\n<tr>\n<td><strong>Define 2–3 critical goals</strong></td>\n<td>Let team members define the <strong>remaining shared goals</strong>.\nEmpower them to take <strong>ownership</strong> and <strong>lead\nthemselves</strong>. <strong>Don’t manage them.</strong></td>\n</tr>\n<tr>\n<td><strong>Define non-negotiable values clearly</strong></td>\n<td>Values guide all plans, decisions and actions. <strong>Goals can be\nunmet, but values cannot be unmet.</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What to do Help team members understand the vision and the big\npicture Show how their work impacts the world and makes it\nbetter. Highlight social value beyond business value.\nThis builds intrinsic motivation (motivation from\ninside) and self-esteem . Define 2–3 critical goals Let team members define the remaining shared goals .\nEmpower them to take ownership and lead\nthemselves . Don’t manage them. Define non-negotiable values clearly Values guide all plans, decisions and actions. Goals can be\nunmet, but values cannot be unmet."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Siddharth’s social consulting\nteam</strong></p>\n<ul>\n<li><strong>Vision:</strong> at the start, he tells each member their\nexact role and how their work helps NGOs and society — not just\nbusiness.</li>\n<li><strong>Critical goal:</strong> deliver the client’s project\n<strong>within the semester</strong>. This cannot be compromised.</li>\n<li><strong>Shared goals:</strong> the team members work out the scope\nwith the client and take ownership. He <strong>doesn’t\nmicromanage</strong>.</li>\n<li><strong>Non-negotiable value:</strong> “matching the <strong>unmet\nneeds of society</strong> with <strong>affordable solutions</strong>”.\nThey take on a valuable project even if the client <strong>can’t\npay</strong>.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Siddharth’s social consulting\nteam Vision: at the start, he tells each member their\nexact role and how their work helps NGOs and society — not just\nbusiness. Critical goal: deliver the client’s project within the semester . This cannot be compromised. Shared goals: the team members work out the scope\nwith the client and take ownership. He doesn’t\nmicromanage . Non-negotiable value: “matching the unmet\nneeds of society with affordable solutions ”.\nThey take on a valuable project even if the client can’t\npay ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Show people why their work matters, set\na few key goals, and never compromise on values. <strong>Exam\nwords:</strong> spirit of the squirrel, worthwhile work, vision, big\npicture, critical goals, intrinsic motivation, non-negotiable\nvalues.</p>",
+          "text": "In one line: Show people why their work matters, set\na few key goals, and never compromise on values. Exam\nwords: spirit of the squirrel, worthwhile work, vision, big\npicture, critical goals, intrinsic motivation, non-negotiable\nvalues."
+        },
+        {
+          "type": "heading",
+          "text": "2.\nThe way of the beaver: put individuals in charge of their goals"
+        },
+        {
+          "type": "html",
+          "html": "<p>Beavers build <strong>dams</strong> — not from one big log, but\n<strong>one stick at a time</strong>. They chop trees with sharp teeth\nand use twigs, mud, grass and rocks of the <strong>right size</strong>.\nThey <strong>respect and trust</strong> each other,\n<strong>communicate</strong> and <strong>work together</strong>. Each\nbeaver <strong>knows what to do</strong>, sees the <strong>big\npicture</strong>, and does its part.</p>",
+          "text": "Beavers build dams — not from one big log, but one stick at a time . They chop trees with sharp teeth\nand use twigs, mud, grass and rocks of the right size .\nThey respect and trust each other, communicate and work together . Each\nbeaver knows what to do , sees the big\npicture , and does its part."
+        },
+        {
+          "type": "html",
+          "html": "<p>Beavers show the power of <strong>action, hard work, technical skill\nand strong work ethics</strong>.</p>",
+          "text": "Beavers show the power of action, hard work, technical skill\nand strong work ethics ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide — how to do this at work:</strong></p>",
+          "text": "From the slide — how to do this at work:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Create a playing field with clearly marked\nterritory</strong></td>\n<td>Define <strong>roles, responsibilities and rules</strong>. Then\n<strong>empower</strong> people.</td>\n</tr>\n<tr>\n<td><strong>Value team members</strong></td>\n<td><strong>Listen. Understand. Act.</strong> Respect their thoughts,\nfeelings, needs, goals, dreams. Act on them, and connect their goals to\nthe project.</td>\n</tr>\n<tr>\n<td><strong>Use their natural skills</strong></td>\n<td>Use each person’s natural skills — and <strong>challenge them to\nstretch</strong> beyond their abilities.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What to do Create a playing field with clearly marked\nterritory Define roles, responsibilities and rules . Then empower people. Value team members Listen. Understand. Act. Respect their thoughts,\nfeelings, needs, goals, dreams. Act on them, and connect their goals to\nthe project. Use their natural skills Use each person’s natural skills — and challenge them to\nstretch beyond their abilities."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — making this very course</strong> The\noverall structure and content of each module were fixed. Then each team\nmember (faculty and students) <strong>chose</strong> what to speak on\nand <strong>how</strong> to present it, in their own style. Everyone\ntook ownership, came prepared, played to their strengths, and stretched\nwhere it was hard. This is <strong>shared leadership, shared goals,\nshared vision and collaboration</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — making this very course The\noverall structure and content of each module were fixed. Then each team\nmember (faculty and students) chose what to speak on\nand how to present it, in their own style. Everyone\ntook ownership, came prepared, played to their strengths, and stretched\nwhere it was hard. This is shared leadership, shared goals,\nshared vision and collaboration ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Set clear roles and rules, value\npeople, use their strengths, then let them run. <strong>Exam\nwords:</strong> way of the beaver, clearly marked territory, roles and\nrules, value team members, natural skills, stretch.</p>",
+          "text": "In one line: Set clear roles and rules, value\npeople, use their strengths, then let them run. Exam\nwords: way of the beaver, clearly marked territory, roles and\nrules, value team members, natural skills, stretch."
+        },
+        {
+          "type": "heading",
+          "text": "3. The gift of the\ngoose: cheer each other on"
+        },
+        {
+          "type": "html",
+          "html": "<p>Geese fly in a <strong>V-shape</strong>. The <strong>lead\ngoose</strong> faces the most wind and gets tired. Its flapping\n<strong>lifts</strong> the geese behind, so they fly more easily. They\nfly up to <strong>5,000 miles</strong>, at <strong>40–70 miles per\nhour</strong>.</p>",
+          "text": "Geese fly in a V-shape . The lead\ngoose faces the most wind and gets tired. Its flapping lifts the geese behind, so they fly more easily. They\nfly up to 5,000 miles , at 40–70 miles per\nhour ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Along the way, they <strong>honk</strong> to encourage the leader to\nkeep going. When the lead goose is tired, it moves back, and\n<strong>another goose takes the lead</strong>.</p>",
+          "text": "Along the way, they honk to encourage the leader to\nkeep going. When the lead goose is tired, it moves back, and another goose takes the lead ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img16-geese-v.webp",
+          "alt": "Geese flying in a V and taking turns",
+          "caption": "The lead goose takes\nthe wind; others honk to cheer; they take turns leading."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide — how to do this at work:</strong></p>",
+          "text": "From the slide — how to do this at work:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Genuinely appreciate each person’s value</strong> and\ncontribution to shared goals</td>\n<td>Make it <strong>TRUE</strong>: <strong>T</strong>imely,\n<strong>R</strong>esponsive, <strong>U</strong>nconditional,\n<strong>E</strong>nthusiastic</td>\n</tr>\n<tr>\n<td><strong>Congratulate progress</strong> along the way, at\nmilestones</td>\n<td>Congratulations should be: <strong>Spontaneous</strong> (not\nprogrammed), <strong>Individual</strong> (not blanket),\n<strong>Specific</strong> (not general), <strong>Unique</strong> (not\ntraditional)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What to do Genuinely appreciate each person’s value and\ncontribution to shared goals Make it TRUE : T imely, R esponsive, U nconditional, E nthusiastic Congratulate progress along the way, at\nmilestones Congratulations should be: Spontaneous (not\nprogrammed), Individual (not blanket), Specific (not general), Unique (not\ntraditional)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Anirudha (swimming)</strong> Cheering is\nnot just a crowd in a stadium. It <strong>builds confidence and\nmorale</strong> in the team. Appreciate people <strong>throughout the\njourney</strong>, not only at the end. Small wins lead to bigger ones.\nCheering keeps the <strong>enthusiasm</strong> for the mission going. He\nlinked it to <strong>E = mc²</strong>: <strong>Enthusiasm</strong> comes\nfrom the <strong>Mission</strong>, multiplied by <strong>cash and\ncongratulations</strong> — the right reward for the right work.</p>\n</blockquote>",
+          "text": "Lecture example — Anirudha (swimming) Cheering is\nnot just a crowd in a stadium. It builds confidence and\nmorale in the team. Appreciate people throughout the\njourney , not only at the end. Small wins lead to bigger ones.\nCheering keeps the enthusiasm for the mission going. He\nlinked it to E = mc² : Enthusiasm comes\nfrom the Mission , multiplied by cash and\ncongratulations — the right reward for the right work."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your friend clears a tough coding\nround. Instead of a group “congrats all”, you message him: “Your graph\nsolution in round 2 was brilliant!” That is <strong>specific, individual\nand timely</strong> — the gift of the goose.</p>\n</blockquote>",
+          "text": "Everyday example Your friend clears a tough coding\nround. Instead of a group “congrats all”, you message him: “Your graph\nsolution in round 2 was brilliant!” That is specific, individual\nand timely — the gift of the goose."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Cheer people on throughout the journey\n— genuinely, personally and specifically. <strong>Exam words:</strong>\ngift of the goose, cheer each other on, TRUE (timely, responsive,\nunconditional, enthusiastic), spontaneous, individual, specific, unique,\nE = mc².</p>",
+          "text": "In one line: Cheer people on throughout the journey\n— genuinely, personally and specifically. Exam words: gift of the goose, cheer each other on, TRUE (timely, responsive,\nunconditional, enthusiastic), spontaneous, individual, specific, unique,\nE = mc²."
+        },
+        {
+          "type": "heading",
+          "text": "The lampshade:\nunderstand every person’s role"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lt Col Jayakumar</strong> compares a career to a\n<strong>lampshade</strong> in a factory.</p>",
+          "text": "Lt Col Jayakumar compares a career to a lampshade in a factory."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A worker at the <strong>lathe machine</strong> sees only the small\ncircle of light around his own work.</li>\n<li>As he grows into a <strong>supervisor</strong>, the lamp goes\n<strong>higher</strong>. Now he sees <strong>10 people</strong> working\nbelow him.</li>\n</ul>",
+          "text": "A worker at the lathe machine sees only the small\ncircle of light around his own work. As he grows into a supervisor , the lamp goes higher . Now he sees 10 people working\nbelow him."
+        },
+        {
+          "type": "html",
+          "html": "<p>Good companies make new managers spend time on the <strong>shop\nfloor</strong> during their <strong>orientation</strong>. A leader at\nany level should <strong>understand</strong> every person’s job — not to\n<strong>interfere</strong>, but to be <strong>able to do it</strong> and\nvalue it.</p>",
+          "text": "Good companies make new managers spend time on the shop\nfloor during their orientation . A leader at\nany level should understand every person’s job — not to interfere , but to be able to do it and\nvalue it."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img17-lampshade.webp",
+          "alt": "The lampshade view",
+          "caption": "The higher you rise, the wider you see —\nbut you should understand every job below."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Kartic’s closing:</strong> Leadership <strong>starts\nand ends with self-transformation</strong>, which then influences the\nworld around you.</p>",
+          "text": "Prof. Kartic’s closing: Leadership starts\nand ends with self-transformation , which then influences the\nworld around you."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Know every role in your team — not to\ninterfere, but to understand and value it.</p>",
+          "text": "In one line: Know every role in your team — not to\ninterfere, but to understand and value it."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nMatch each animal to its lesson.\n</summary>\nSquirrel — make work worthwhile and important. Beaver — put individuals\nin charge of their goals. Goose — cheer each other on.\n</details>",
+          "text": "Match each animal to its lesson. Squirrel — make work worthwhile and important. Beaver — put individuals\nin charge of their goals. Goose — cheer each other on."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“Goals can be unmet, but ___ cannot be unmet.”\n</summary>\nValues.\n</details>",
+          "text": "“Goals can be unmet, but ___ cannot be unmet.” Values."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does TRUE stand for in appreciating others?\n</summary>\nTimely, Responsive, Unconditional, Enthusiastic.\n</details>",
+          "text": "What does TRUE stand for in appreciating others? Timely, Responsive, Unconditional, Enthusiastic."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy do geese fly in a V-shape?\n</summary>\nThe lead goose’s flapping creates lift for the geese behind, making\nflying easier; they take turns leading and honk to encourage each other.\n</details>",
+          "text": "Why do geese fly in a V-shape? The lead goose’s flapping creates lift for the geese behind, making\nflying easier; they take turns leading and honk to encourage each other."
+        }
+      ]
+    },
+    {
+      "slug": "week-4-quick-revision",
+      "title": "Week 4 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> All 18 leadership lessons on one page.\nRead it twice before the quiz.</p>\n</blockquote>",
+          "text": "Start here All 18 leadership lessons on one page.\nRead it twice before the quiz."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-4/img18-week4-map.webp",
+          "alt": "Week 4 at a glance",
+          "caption": "Lead yourself → lead others → help\nothers lead themselves."
+        },
+        {
+          "type": "heading",
+          "text": "Introduction"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Three parts, all starting with <strong>you</strong>.</li>\n<li><strong>True leaders create more leaders</strong>, not followers;\nfollowers come automatically.</li>\n<li>Leading yourself builds <strong>empathy</strong> and makes you the\n<strong>example</strong>.</li>\n<li><strong>Challenges:</strong> micromanaging · <strong>zero error\nsyndrome</strong> (expecting perfection, so not delegating or\ninterfering) · responsibility <strong>without\nauthority/resources</strong> · unclear <strong>roles</strong> ·\nbalancing personal and professional life.</li>\n</ul>",
+          "text": "Three parts, all starting with you . True leaders create more leaders , not followers;\nfollowers come automatically. Leading yourself builds empathy and makes you the example . Challenges: micromanaging · zero error\nsyndrome (expecting perfection, so not delegating or\ninterfering) · responsibility without\nauthority/resources · unclear roles ·\nbalancing personal and professional life."
+        },
+        {
+          "type": "heading",
+          "text": "Part 1: Lead\nyourself from within (6 lessons)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Lesson</th>\n<th>Key points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Uphold your core values</strong></td>\n<td>Non-negotiable; a guiding compass; do what is right, not what is\neasy. Col: honesty, adaptability, responsibility for his command (“I am\nresponsible — fire 800”). Corruption isn’t only money — a teacher who\ndoesn’t teach is corrupt.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Know your spheres of responsibility</strong></td>\n<td><strong>Control</strong> (mind, body, potential, time, energy) →\n<strong>Influence</strong> (family, friends, peers) →\n<strong>Concern</strong> (other groups, economy, world events). Covey:\nfocus on control and your impact grows. Be <strong>proactive</strong>:\n“I’m doing this — is it okay?” not “Tell me what to do”.</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Exercise your power of choice</strong></td>\n<td>Space between stimulus and response (Covey). Choice to say yes/no,\nexplore, seek help, build a support system. Choices bring\nresponsibility. Dean’s “no” to a disciplined student — conduct over\nwinning.</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Take responsibility/ownership</strong></td>\n<td>Stop playing victim or blaming. Seek help = strength.\n<strong>Victim</strong> (react, compete, win–lose, blame) vs\n<strong>Owner</strong> (create, collaborate, win–win, calm,\nresourceful). Respons-ibility = choose your\n<strong>response</strong>.</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Play to your full potential</strong></td>\n<td>Put in 100%; play to strengths; know weaknesses; strengths have\ndownsides, weaknesses have upsides (extrovert may miss details;\nintrovert listens well).</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Invest in yourself</strong></td>\n<td>Self-growth, self-care, self-worth, self-love. The event is not the\nself — failing ≠ being a failure.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Lesson Key points 1 Uphold your core values Non-negotiable; a guiding compass; do what is right, not what is\neasy. Col: honesty, adaptability, responsibility for his command (“I am\nresponsible — fire 800”). Corruption isn’t only money — a teacher who\ndoesn’t teach is corrupt. 2 Know your spheres of responsibility Control (mind, body, potential, time, energy) → Influence (family, friends, peers) → Concern (other groups, economy, world events). Covey:\nfocus on control and your impact grows. Be proactive :\n“I’m doing this — is it okay?” not “Tell me what to do”. 3 Exercise your power of choice Space between stimulus and response (Covey). Choice to say yes/no,\nexplore, seek help, build a support system. Choices bring\nresponsibility. Dean’s “no” to a disciplined student — conduct over\nwinning. 4 Take responsibility/ownership Stop playing victim or blaming. Seek help = strength. Victim (react, compete, win–lose, blame) vs Owner (create, collaborate, win–win, calm,\nresourceful). Respons-ibility = choose your response . 5 Play to your full potential Put in 100%; play to strengths; know weaknesses; strengths have\ndownsides, weaknesses have upsides (extrovert may miss details;\nintrovert listens well). 6 Invest in yourself Self-growth, self-care, self-worth, self-love. The event is not the\nself — failing ≠ being a failure."
+        },
+        {
+          "type": "heading",
+          "text": "Part 2: Lead\nyourself to lead others (9 lessons)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Lesson</th>\n<th>Key points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Cultivate a growth mindset</strong></td>\n<td>Overcome adversity; obstacles → opportunities. Kartic: “I can’t do\ndigital games” → explored and partnered.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Manage time and energy</strong></td>\n<td>To-do lists; prioritise; make it easy to start (bike key in the\nfile; stop mid-sentence); love what you do; energy drainers vs boosters;\nrecharge (siesta, meditation, stroll). “I manage myself, not time.”</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Focus on the one thing</strong></td>\n<td>Gary Keller: one thing that makes everything else easier. Write\ngoals; goals support each other. Sivakumar’s one thing:\n<strong>joy</strong>.</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Communicate effectively &amp; listen actively</strong></td>\n<td>Words of power; body language; speak so others listen; listen\nactively; silence and pause; solitude. Hearing ≠ listening. Know your\njob, their job, and the shared goal.</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Be emotionally resilient</strong></td>\n<td>Emotional intelligence; EQ valued over IQ. Identify triggers;\nregulate emotions; self-awareness via reflection, mentors, meditation,\njournaling.</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Embrace change</strong></td>\n<td>Expect, monitor, adapt quickly, learn lessons. Student → corporate →\nentrepreneur.</td>\n</tr>\n<tr>\n<td>7</td>\n<td><strong>Manage conflict</strong></td>\n<td>Inner conflict: values, expectations, perceptions, inner chatter.\nSay NO; clear agreements; reframe your lens; be your own inner coach.\nCreates <strong>psychological safety</strong>.</td>\n</tr>\n<tr>\n<td>8</td>\n<td><strong>Delegate effectively</strong></td>\n<td>Pick team players who can lead themselves; mutual trust; align\nvalues; define roles; empower; psychological safety.</td>\n</tr>\n<tr>\n<td>9</td>\n<td><strong>Be a collaborative leader</strong></td>\n<td>Open, non-judgmental; equal opportunity; divergent thinking before\nconverging; listen–understand–act; tools and processes. Example:\n<strong>Sundar Pichai</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Lesson Key points 1 Cultivate a growth mindset Overcome adversity; obstacles → opportunities. Kartic: “I can’t do\ndigital games” → explored and partnered. 2 Manage time and energy To-do lists; prioritise; make it easy to start (bike key in the\nfile; stop mid-sentence); love what you do; energy drainers vs boosters;\nrecharge (siesta, meditation, stroll). “I manage myself, not time.” 3 Focus on the one thing Gary Keller: one thing that makes everything else easier. Write\ngoals; goals support each other. Sivakumar’s one thing: joy . 4 Communicate effectively & listen actively Words of power; body language; speak so others listen; listen\nactively; silence and pause; solitude. Hearing ≠ listening. Know your\njob, their job, and the shared goal. 5 Be emotionally resilient Emotional intelligence; EQ valued over IQ. Identify triggers;\nregulate emotions; self-awareness via reflection, mentors, meditation,\njournaling. 6 Embrace change Expect, monitor, adapt quickly, learn lessons. Student → corporate →\nentrepreneur. 7 Manage conflict Inner conflict: values, expectations, perceptions, inner chatter.\nSay NO; clear agreements; reframe your lens; be your own inner coach.\nCreates psychological safety . 8 Delegate effectively Pick team players who can lead themselves; mutual trust; align\nvalues; define roles; empower; psychological safety. 9 Be a collaborative leader Open, non-judgmental; equal opportunity; divergent thinking before\nconverging; listen–understand–act; tools and processes. Example: Sundar Pichai ."
+        },
+        {
+          "type": "heading",
+          "text": "Part 3:\nLead others to lead themselves (Gung Ho! — Ken Blanchard)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Animal</th>\n<th>Lesson</th>\n<th>Key points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Squirrel</strong></td>\n<td>Make work worthwhile and important</td>\n<td>Vision and big picture; social value → intrinsic motivation; define\n2–3 critical goals; non-negotiable values. <strong>Goals can be unmet;\nvalues cannot.</strong></td>\n</tr>\n<tr>\n<td><strong>Beaver</strong></td>\n<td>Put individuals in charge of their goals</td>\n<td>Playing field with clear territory (roles, rules); value members —\nlisten, understand, act; use natural skills and stretch them.</td>\n</tr>\n<tr>\n<td><strong>Goose</strong></td>\n<td>Cheer each other on</td>\n<td>Appreciation that is <strong>TRUE</strong> (timely, responsive,\nunconditional, enthusiastic); congratulations that are\n<strong>spontaneous, individual, specific, unique</strong>. E =\nmc².</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Animal Lesson Key points Squirrel Make work worthwhile and important Vision and big picture; social value → intrinsic motivation; define\n2–3 critical goals; non-negotiable values. Goals can be unmet;\nvalues cannot. Beaver Put individuals in charge of their goals Playing field with clear territory (roles, rules); value members —\nlisten, understand, act; use natural skills and stretch them. Goose Cheer each other on Appreciation that is TRUE (timely, responsive,\nunconditional, enthusiastic); congratulations that are spontaneous, individual, specific, unique . E =\nmc²."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lampshade:</strong> the higher you rise, the more you see —\nunderstand every job below you, but don’t interfere.</p>",
+          "text": "Lampshade: the higher you rise, the more you see —\nunderstand every job below you, but don’t interfere."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>“I will ask my manager to tell me exactly what to do.” Which lesson\ndoes this go against?\n</li></ol></summary>\nKnowing your spheres of responsibility / being proactive — it hands\ncontrol to someone else.\n</details>",
+          "text": "“I will ask my manager to tell me exactly what to do.” Which lesson\ndoes this go against? Knowing your spheres of responsibility / being proactive — it hands\ncontrol to someone else."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>A manager never delegates because he wants zero mistakes. What is\nthis called?\n</li></ol></summary>\nZero error syndrome.\n</details>",
+          "text": "A manager never delegates because he wants zero mistakes. What is\nthis called? Zero error syndrome."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Which sphere is your own time and energy in?\n</li></ol></summary>\nThe sphere of control.\n</details>",
+          "text": "Which sphere is your own time and energy in? The sphere of control."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>“Blame game, self-pity, expectations from others” describe which\nmindset?\n</li></ol></summary>\nThe victim mindset (opposite of owner).\n</details>",
+          "text": "“Blame game, self-pity, expectations from others” describe which\nmindset? The victim mindset (opposite of owner)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>A leader listens to everyone before sharing her view and then brings\nideas together. Which lesson is this?\n</li></ol></summary>\nBe a collaborative leader (example: Sundar Pichai).\n</details>",
+          "text": "A leader listens to everyone before sharing her view and then brings\nideas together. Which lesson is this? Be a collaborative leader (example: Sundar Pichai)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Which Gung Ho animal teaches “cheer each other on”?\n</li></ol></summary>\nThe goose.\n</details>",
+          "text": "Which Gung Ho animal teaches “cheer each other on”? The goose."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Which book asks “What is the one thing I can do such that everything\nelse becomes easier or unnecessary?”\n</li></ol></summary>\nThe ONE Thing by Gary Keller.\n</details>",
+          "text": "Which book asks “What is the one thing I can do such that everything\nelse becomes easier or unnecessary?” The ONE Thing by Gary Keller."
+        }
+      ]
+    }
+  ]
+}

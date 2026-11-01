@@ -1,0 +1,1001 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 9,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-9/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "fixed-vs-growth-mindset",
+      "title": "Fixed vs Growth Mindset",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A top-ranker joins IIT Madras and\nsuddenly feels like “a little fish lost in a big ocean”. Everyone seems\nsmarter. She hides in her comfort zone and tells herself, “My brain has\nreached its limit.” Years later, she teaches this course. What changed?\nHer <strong>mindset</strong>.</p>\n</blockquote>",
+          "text": "Start here A top-ranker joins IIT Madras and\nsuddenly feels like “a little fish lost in a big ocean”. Everyone seems\nsmarter. She hides in her comfort zone and tells herself, “My brain has\nreached its limit.” Years later, she teaches this course. What changed?\nHer mindset ."
+        },
+        {
+          "type": "html",
+          "html": "<p>This week is taught by four faculty members together:\n<strong>Prof. Kartic Vaidyanathan, Prof. Prasanna G, Lt Col Jayakumar\nand Prof. Sivakumar M S</strong>.</p>",
+          "text": "This week is taught by four faculty members together: Prof. Kartic Vaidyanathan, Prof. Prasanna G, Lt Col Jayakumar\nand Prof. Sivakumar M S ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“It is not the number of years you have spent in life, but how much\nlife you have given to those years.” — Prof. Sivakumar</p>\n</blockquote>",
+          "text": "“It is not the number of years you have spent in life, but how much\nlife you have given to those years.” — Prof. Sivakumar"
+        },
+        {
+          "type": "heading",
+          "text": "What is a growth mindset?"
+        },
+        {
+          "type": "html",
+          "html": "<p>The idea comes from the psychologist <strong>Carol Dweck</strong>.\nShe studied what makes people perform at their best.</p>",
+          "text": "The idea comes from the psychologist Carol Dweck .\nShe studied what makes people perform at their best."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>People who believe their talents can be <strong>developed</strong>\n(through hard work, good strategies and input from others) have a\n<strong>growth mindset</strong>. People who believe their talents are\n<strong>fixed</strong> (inborn gifts) have a <strong>fixed\nmindset</strong>. <em>(Based on Dweck’s article “What Having a ‘Growth\nMindset’ Actually Means”, Harvard Business Review.)</em></p>\n</blockquote>",
+          "text": "People who believe their talents can be developed (through hard work, good strategies and input from others) have a growth mindset . People who believe their talents are fixed (inborn gifts) have a fixed\nmindset . (Based on Dweck’s article “What Having a ‘Growth\nMindset’ Actually Means”, Harvard Business Review.)"
+        },
+        {
+          "type": "html",
+          "html": "<p>People with a growth mindset <strong>achieve more</strong>. They\nworry less about looking smart and put more energy into\n<strong>learning</strong>. In companies with a growth mindset, employees\nfeel more <strong>empowered</strong> and <strong>committed</strong>, and\nthere is more support for teamwork and new ideas.</p>",
+          "text": "People with a growth mindset achieve more . They\nworry less about looking smart and put more energy into learning . In companies with a growth mindset, employees\nfeel more empowered and committed , and\nthere is more support for teamwork and new ideas."
+        },
+        {
+          "type": "heading",
+          "text": "Fixed vs growth: five\ndifferences"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img01-fixed-vs-growth.webp",
+          "alt": "Fixed vs growth mindset",
+          "caption": "The same situations, seen through\ntwo different mindsets."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Situation</th>\n<th>✗ Fixed mindset</th>\n<th>✓ Growth mindset</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Challenges</strong></td>\n<td>Avoids them</td>\n<td>Embraces them</td>\n</tr>\n<tr>\n<td><strong>Setbacks</strong></td>\n<td>Gives up early</td>\n<td>Keeps going</td>\n</tr>\n<tr>\n<td><strong>Effort</strong></td>\n<td>Sees it as useless</td>\n<td>Sees it as the <strong>path to mastery</strong></td>\n</tr>\n<tr>\n<td><strong>Criticism</strong></td>\n<td>Ignores useful feedback; takes it personally</td>\n<td><strong>Learns</strong> from it</td>\n</tr>\n<tr>\n<td><strong>Others’ success</strong></td>\n<td>Feels <strong>threatened</strong> or jealous</td>\n<td>Finds <strong>lessons and inspiration</strong> in it</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Situation ✗ Fixed mindset ✓ Growth mindset Challenges Avoids them Embraces them Setbacks Gives up early Keeps going Effort Sees it as useless Sees it as the path to mastery Criticism Ignores useful feedback; takes it personally Learns from it Others’ success Feels threatened or jealous Finds lessons and inspiration in it"
+        },
+        {
+          "type": "heading",
+          "text": "Three personal stories"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic: “I had to be the best in\neverything”</strong> Early in life, he avoided challenges, gave up\neasily, and wanted to look smart. He took criticism as an attack\n<strong>on himself</strong>, not on his <strong>work</strong>, so it\nmade him angry and frustrated. He couldn’t stand others doing better.\nThis took a toll on his mental and physical health. With mentors and\nself-reflection, he changed:</p>\n<ul>\n<li>Performance is about the <strong>process</strong>, not just\nresults.</li>\n<li>Learn from setbacks.</li>\n<li>Success is the path to <strong>mastery</strong>, not winning every\ntime.</li>\n<li>Criticism is about the <strong>task</strong>, not the person.</li>\n<li>Get <strong>inspired</strong> by others’ success, not\nthreatened.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic: “I had to be the best in\neverything” Early in life, he avoided challenges, gave up\neasily, and wanted to look smart. He took criticism as an attack on himself , not on his work , so it\nmade him angry and frustrated. He couldn’t stand others doing better.\nThis took a toll on his mental and physical health. With mentors and\nself-reflection, he changed: Performance is about the process , not just\nresults. Learn from setbacks. Success is the path to mastery , not winning every\ntime. Criticism is about the task , not the person. Get inspired by others’ success, not\nthreatened."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Prasanna: the “brain freeze”</strong>\nAfter a top rank, she came to IIT Madras and felt clueless and out of\nplace. She built a <strong>comfort zone</strong>, avoided challenges,\nand told herself, “If I can’t do it right the first time, I can’t do it\nat all”, and “Engineering is not for me.” One day she realised that\nstaying in her comfort zone, ruled by fears and excuses, had given her\n<strong>nothing</strong>. That was her “moment of truth”. She saw that\n<strong>her happiness was her responsibility</strong> and that she had\nthe <strong>power of choice</strong>. She started exploring,\nexperimenting and making mistakes. She turned <strong>stumbling blocks\ninto stepping stones</strong> and used <strong>words of power and\npositivity</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Prasanna: the “brain freeze” After a top rank, she came to IIT Madras and felt clueless and out of\nplace. She built a comfort zone , avoided challenges,\nand told herself, “If I can’t do it right the first time, I can’t do it\nat all”, and “Engineering is not for me.” One day she realised that\nstaying in her comfort zone, ruled by fears and excuses, had given her nothing . That was her “moment of truth”. She saw that her happiness was her responsibility and that she had\nthe power of choice . She started exploring,\nexperimenting and making mistakes. She turned stumbling blocks\ninto stepping stones and used words of power and\npositivity ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Lt Col Jayakumar: the goal post</strong> In\nan outbound training (OBT) activity, students were told to run around a\ngoal post, “keeping it to your right”. Some went the wrong way and\nblocked others. <strong>Lesson:</strong> at work, follow the standard\nprocess (<strong>process compliance</strong>) even before you fully\nunderstand it. Asking “why” is good too. Later, you can suggest changes\nto improve the process.</p>\n</blockquote>",
+          "text": "Lecture example — Lt Col Jayakumar: the goal post In\nan outbound training (OBT) activity, students were told to run around a\ngoal post, “keeping it to your right”. Some went the wrong way and\nblocked others. Lesson: at work, follow the standard\nprocess ( process compliance ) even before you fully\nunderstand it. Asking “why” is good too. Later, you can suggest changes\nto improve the process."
+        },
+        {
+          "type": "heading",
+          "text": "Words change your mindset"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Sivakumar noticed that small word changes shift thinking:</p>",
+          "text": "Prof. Sivakumar noticed that small word changes shift thinking:"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img02-power-words.webp",
+          "alt": "Power words",
+          "caption": "Small changes in words create a big change in\nmindset."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Instead of…</th>\n<th>Say…</th>\n<th>Why it helps</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“Let’s <strong>divide</strong> the 10 people into two teams.”</td>\n<td>“Let’s <strong>group</strong> them into two teams.”</td>\n<td>Grouping brings people together; dividing splits them.</td>\n</tr>\n<tr>\n<td>“What is your course <strong>load</strong> next semester?”</td>\n<td>“I am <strong>offering</strong> a course next semester.”</td>\n<td>“Offering” feels like giving, not a burden.</td>\n</tr>\n<tr>\n<td>Being <strong>jealous</strong> of someone’s success</td>\n<td><strong>Appreciating</strong> their success</td>\n<td>To appreciate means to <em>increase the value</em> of something.\nWhen you appreciate others, you learn how they succeeded, and you grow\ntoo.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Instead of… Say… Why it helps “Let’s divide the 10 people into two teams.” “Let’s group them into two teams.” Grouping brings people together; dividing splits them. “What is your course load next semester?” “I am offering a course next semester.” “Offering” feels like giving, not a burden. Being jealous of someone’s success Appreciating their success To appreciate means to increase the value of something.\nWhen you appreciate others, you learn how they succeeded, and you grow\ntoo."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> A growth mindset believes ability can\nbe developed through effort, strategy and feedback, while a fixed\nmindset believes ability is fixed. <strong>Exam words:</strong> growth\nmindset, fixed mindset, Carol Dweck, embrace challenges, path to\nmastery, learn from criticism, inspiration from others’ success, comfort\nzone, power of choice, process compliance, words of power.</p>",
+          "text": "In one line: A growth mindset believes ability can\nbe developed through effort, strategy and feedback, while a fixed\nmindset believes ability is fixed. Exam words: growth\nmindset, fixed mindset, Carol Dweck, embrace challenges, path to\nmastery, learn from criticism, inspiration from others’ success, comfort\nzone, power of choice, process compliance, words of power."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWho developed the idea of growth mindset?\n</summary>\nPsychologist Carol Dweck.\n</details>",
+          "text": "Who developed the idea of growth mindset? Psychologist Carol Dweck."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow does a fixed mindset see effort?\n</summary>\nAs useless or pointless. A growth mindset sees effort as the path to\nmastery.\n</details>",
+          "text": "How does a fixed mindset see effort? As useless or pointless. A growth mindset sees effort as the path to\nmastery."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYour friend tops the class. How does a growth mindset react?\n</summary>\nFeels inspired and learns from their success instead of feeling\nthreatened.\n</details>",
+          "text": "Your friend tops the class. How does a growth mindset react? Feels inspired and learns from their success instead of feeling\nthreatened."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy is “appreciate” a powerful word, according to Prof. Sivakumar?\n</summary>\nTo appreciate means to increase the value; when you appreciate others’\nsuccess you also learn and grow.\n</details>",
+          "text": "Why is “appreciate” a powerful word, according to Prof. Sivakumar? To appreciate means to increase the value; when you appreciate others’\nsuccess you also learn and grow."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat was Prof. Prasanna’s “moment of truth”?\n</summary>\nRealising her comfort zone, fears and excuses had given her nothing, and\nthat her happiness was her responsibility.\n</details>",
+          "text": "What was Prof. Prasanna’s “moment of truth”? Realising her comfort zone, fears and excuses had given her nothing, and\nthat her happiness was her responsibility."
+        }
+      ]
+    },
+    {
+      "slug": "zones-of-growth-and-rejection",
+      "title": "Four Zones of Growth and Handling Rejection",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A first-year student joined every club\nand competition, won none, and wrote, “My life is a failure. I don’t\nbelong at IIT.” Two years later he was nearly the topper and won a\nhockey silver. A simple juggling game changed his thinking.</p>\n</blockquote>",
+          "text": "Start here A first-year student joined every club\nand competition, won none, and wrote, “My life is a failure. I don’t\nbelong at IIT.” Two years later he was nearly the topper and won a\nhockey silver. A simple juggling game changed his thinking."
+        },
+        {
+          "type": "heading",
+          "text": "The four zones of growth"
+        },
+        {
+          "type": "html",
+          "html": "<p>When you try something new, you move through <strong>four\nzones</strong>:</p>",
+          "text": "When you try something new, you move through four\nzones :"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img03-four-zones.webp",
+          "alt": "Four zones of growth",
+          "caption": "From the comfort zone, through fear\nand learning, to growth."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Zone</th>\n<th>How it feels</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Comfort zone</strong></td>\n<td>You feel <strong>safe</strong> and <strong>in control</strong>.\nNothing new happens here.</td>\n</tr>\n<tr>\n<td><strong>2. Fear zone</strong></td>\n<td>You lack <strong>self-confidence</strong>. You make excuses and\nworry about what others think.</td>\n</tr>\n<tr>\n<td><strong>3. Learning zone</strong></td>\n<td>You <strong>face challenges</strong> and solve problems. You learn\nnew skills, and your comfort zone grows bigger.</td>\n</tr>\n<tr>\n<td><strong>4. Growth zone</strong></td>\n<td>You find your <strong>purpose</strong>, set new goals and achieve\nthem.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Zone How it feels 1. Comfort zone You feel safe and in control .\nNothing new happens here. 2. Fear zone You lack self-confidence . You make excuses and\nworry about what others think. 3. Learning zone You face challenges and solve problems. You learn\nnew skills, and your comfort zone grows bigger. 4. Growth zone You find your purpose , set new goals and achieve\nthem."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note: the PDFs you have contain only the story part of this\nlecture (file “3.1”). The zone names above are the standard “zones of\ngrowth” model that the lecture title and story refer to. The story uses\nthe same words: “not safe”, “not in control”, “no learning”, “not\nhandling challenges”, “purpose”.</em></p>",
+          "text": "Note: the PDFs you have contain only the story part of this\nlecture (file “3.1”). The zone names above are the standard “zones of\ngrowth” model that the lecture title and story refer to. The story uses\nthe same words: “not safe”, “not in control”, “no learning”, “not\nhandling challenges”, “purpose”."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the juggling pencils</strong>\nProf. Sivakumar, then a guidance and counselling adviser, invited the\nstudent to his office. He threw pencils to him one after another: “Catch\nthis, catch this, catch this…” When the student <strong>missed\none</strong>, he panicked and missed the next, and the next: a\n<strong>downward spiral</strong>. That was exactly what had happened in\nhis IIT life: failure in one activity spread into failure in the others.\nThe tip: <strong>“If you miss one, it’s okay. Just focus on the\nnext.”</strong> The student started catching more. His lesson: “I should\nnot join everything. I will pick and choose.” Two years later, he wrote\nto say he was nearly the <strong>topper</strong> in his branch and had\nwon a <strong>silver in hockey</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the juggling pencils Prof. Sivakumar, then a guidance and counselling adviser, invited the\nstudent to his office. He threw pencils to him one after another: “Catch\nthis, catch this, catch this…” When the student missed\none , he panicked and missed the next, and the next: a downward spiral . That was exactly what had happened in\nhis IIT life: failure in one activity spread into failure in the others.\nThe tip: “If you miss one, it’s okay. Just focus on the\nnext.” The student started catching more. His lesson: “I should\nnot join everything. I will pick and choose.” Two years later, he wrote\nto say he was nearly the topper in his branch and had\nwon a silver in hockey ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img04-juggling.webp",
+          "alt": "Miss one, catch the next",
+          "caption": "Missing one catch doesn’t mean\nyou’ll miss them all. Focus on the next one."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> When you don’t feel safe or in control, you\ncan’t learn. Choose a few things, focus, and don’t let one failure\nspread into everything.</p>",
+          "text": "Lesson: When you don’t feel safe or in control, you\ncan’t learn. Choose a few things, focus, and don’t let one failure\nspread into everything."
+        },
+        {
+          "type": "heading",
+          "text": "Handling rejection"
+        },
+        {
+          "type": "html",
+          "html": "<p>Rejection happens to everyone: in interviews, promotions, project\nproposals, business deals and personal life.</p>",
+          "text": "Rejection happens to everyone: in interviews, promotions, project\nproposals, business deals and personal life."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Type of rejection</th>\n<th>What it looks like</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>External</strong></td>\n<td>Someone says <strong>“No”</strong></td>\n</tr>\n<tr>\n<td><strong>Internal</strong></td>\n<td>Your own <strong>limiting beliefs, fears and negative\nself-talk</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Type of rejection What it looks like External Someone says “No” Internal Your own limiting beliefs, fears and negative\nself-talk"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“If you are trying to avoid failure, you have already failed, because\nyou are not even trying.” — Prof. Kartic, summing up <strong>J. K.\nRowling’s</strong> famous Harvard speech</p>\n</blockquote>",
+          "text": "“If you are trying to avoid failure, you have already failed, because\nyou are not even trying.” — Prof. Kartic, summing up J. K.\nRowling’s famous Harvard speech"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Goal:</strong> turn <strong>resistance into\npersistence</strong>.</p>",
+          "text": "Goal: turn resistance into\npersistence ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic: the missing simulation\ngames</strong> A client wanted <strong>simulation games</strong>. He\noffered only board, card and some digital games, so the deal didn’t\nhappen. Instead of giving up, he asked himself, “Why am I limiting\nmyself?” He found <strong>partners</strong> who made simulation games.\nSix to eight months later, he contacted the same client, who still\nhadn’t found a supplier. The talks restarted. The deal finally failed\nbecause of the client’s budget, but he was happy. He had changed his\nmindset from “I must provide everything” to <strong>“I am part of an\necosystem that solves the client’s problem.”</strong></p>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic: the missing simulation\ngames A client wanted simulation games . He\noffered only board, card and some digital games, so the deal didn’t\nhappen. Instead of giving up, he asked himself, “Why am I limiting\nmyself?” He found partners who made simulation games.\nSix to eight months later, he contacted the same client, who still\nhadn’t found a supplier. The talks restarted. The deal finally failed\nbecause of the client’s budget, but he was happy. He had changed his\nmindset from “I must provide everything” to “I am part of an\necosystem that solves the client’s problem.”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Prasanna: fear of “no”</strong> When\nshe moved from a corporate job to coaching, she feared rejection so much\nthat she didn’t try her best to find clients. Then she shifted the focus\n<strong>from herself to the client</strong>: the value and the\ntransformation she could help create. Rejection lost its sting.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Prasanna: fear of “no” When\nshe moved from a corporate job to coaching, she feared rejection so much\nthat she didn’t try her best to find clients. Then she shifted the focus from herself to the client : the value and the\ntransformation she could help create. Rejection lost its sting."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Sivakumar: “Did you ask why he said\nno?”</strong> Students needed an electric vehicle for a solar-vehicle\ncompetition. They were too shy to ask the Dean of Students’ office. When\nthey finally asked, the answer was <strong>no</strong>, and they came\nback. He sent them back to ask: <strong>“Why?”</strong> Understanding\nthe reason behind a “no” helps you pitch better next time. They finally\nfound a vehicle elsewhere. <strong>Lesson:</strong> there will be\nrejection and resistance. <strong>Persist</strong>, understand the “no”,\nand grow.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Sivakumar: “Did you ask why he said\nno?” Students needed an electric vehicle for a solar-vehicle\ncompetition. They were too shy to ask the Dean of Students’ office. When\nthey finally asked, the answer was no , and they came\nback. He sent them back to ask: “Why?” Understanding\nthe reason behind a “no” helps you pitch better next time. They finally\nfound a vehicle elsewhere. Lesson: there will be\nrejection and resistance. Persist , understand the “no”,\nand grow."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Lt Col Jayakumar: “The answer is\nyes”</strong> In high-altitude posts like Drass and Kargil, soldiers\ndepend on air-dropped supplies. At the logistics headquarters, one\nmajor’s office had a sign whose first line read: <strong>“The answer is\nYES. Please ask me what you want.”</strong> Imagine working with that\nattitude instead of a habit of saying no.</p>\n</blockquote>",
+          "text": "Lecture example — Lt Col Jayakumar: “The answer is\nyes” In high-altitude posts like Drass and Kargil, soldiers\ndepend on air-dropped supplies. At the logistics headquarters, one\nmajor’s office had a sign whose first line read: “The answer is\nYES. Please ask me what you want.” Imagine working with that\nattitude instead of a habit of saying no."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to shift your focus during rejection:</strong></p>",
+          "text": "How to shift your focus during rejection:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Be <strong>curious</strong>. Explore and ask questions.</li>\n<li>Be open to learning.</li>\n<li>Be willing to fail and make mistakes. Every mistake teaches you a do\nor a don’t.</li>\n</ul>",
+          "text": "Be curious . Explore and ask questions. Be open to learning. Be willing to fail and make mistakes. Every mistake teaches you a do\nor a don’t."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img05-rejection.webp",
+          "alt": "Turning rejection into persistence",
+          "caption": "A “no” is the start of a\nquestion: why, and what next?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Move from the comfort zone through fear\nand learning into growth, and treat every “no” as a reason to ask why\nand persist. <strong>Exam words:</strong> four zones of growth, comfort\nzone, fear zone, learning zone, growth zone, downward spiral, external\nrejection, internal rejection, limiting beliefs, resistance into\npersistence, ecosystem.</p>",
+          "text": "In one line: Move from the comfort zone through fear\nand learning into growth, and treat every “no” as a reason to ask why\nand persist. Exam words: four zones of growth, comfort\nzone, fear zone, learning zone, growth zone, downward spiral, external\nrejection, internal rejection, limiting beliefs, resistance into\npersistence, ecosystem."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four zones of growth in order.\n</summary>\nComfort zone, fear zone, learning zone, growth zone.\n</details>",
+          "text": "Name the four zones of growth in order. Comfort zone, fear zone, learning zone, growth zone."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn which zone do you find your purpose and set new goals?\n</summary>\nThe growth zone.\n</details>",
+          "text": "In which zone do you find your purpose and set new goals? The growth zone."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did the juggling activity teach the student?\n</summary>\nIf you miss one, don’t panic — focus on the next; and don’t try to do\neverything at once.\n</details>",
+          "text": "What did the juggling activity teach the student? If you miss one, don’t panic — focus on the next; and don’t try to do\neverything at once."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the two types of rejection?\n</summary>\nExternal (someone says “no”) and internal (limiting beliefs, fears,\nnegative self-talk).\n</details>",
+          "text": "What are the two types of rejection? External (someone says “no”) and internal (limiting beliefs, fears,\nnegative self-talk)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAfter hearing “no”, what did Prof. Sivakumar tell the students to do?\n</summary>\nGo back and ask why — understand the “no” so you can pitch better and\npersist.\n</details>",
+          "text": "After hearing “no”, what did Prof. Sivakumar tell the students to do? Go back and ask why — understand the “no” so you can pitch better and\npersist."
+        }
+      ]
+    },
+    {
+      "slug": "end-negative-self-talk",
+      "title": "End Negative Self-Talk",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> “I can’t draw.” Many of us say this. Then\nturn the picture <strong>upside down</strong> and copy it line by line,\nand suddenly the drawing comes out better and calmer. The problem was\nnever your hand. It was the voice in your head.</p>\n</blockquote>",
+          "text": "Start here “I can’t draw.” Many of us say this. Then\nturn the picture upside down and copy it line by line,\nand suddenly the drawing comes out better and calmer. The problem was\nnever your hand. It was the voice in your head."
+        },
+        {
+          "type": "heading",
+          "text": "The upside-down drawing\nactivity"
+        },
+        {
+          "type": "html",
+          "html": "<p>Three students copied a drawing in two ways:</p>",
+          "text": "Three students copied a drawing in two ways:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>The normal way:</strong> look at the picture and copy\nit.</li>\n<li><strong>Upside down:</strong> turn the picture upside down and cover\nmost of it, so only a small strip shows. Copy that strip, then move\ndown.</li>\n</ol>",
+          "text": "The normal way: look at the picture and copy\nit. Upside down: turn the picture upside down and cover\nmost of it, so only a small strip shows. Copy that strip, then move\ndown."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img06-upside-down.webp",
+          "alt": "The upside-down drawing",
+          "caption": "Upside down, your brain stops\nsaying “this must look like a horse” and just draws lines."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Student</th>\n<th>What they said</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Tushar</strong> (said he “can’t draw”)</td>\n<td>First try: worried it looked like a donkey and kept “fixing” it.\nSecond try: noticed more details and felt <strong>more\npeaceful</strong>.</td>\n</tr>\n<tr>\n<td><strong>Anamika</strong> (good at drawing)</td>\n<td>Upside down felt strange, just lines and wiggles. She expected it to\ngo wrong, trusted the process, and it came out fine. <strong>“Doing\nsomething unconventional won’t always lead to a bad\nresult.”</strong></td>\n</tr>\n<tr>\n<td><strong>Anirudha</strong> (doesn’t feel creative)</td>\n<td>The second try was <strong>less stressful</strong>, because he saw\nlines, not “a horse that must be perfect”. He gained confidence that\nwith practice and the right method, he can improve.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Student What they said Tushar (said he “can’t draw”) First try: worried it looked like a donkey and kept “fixing” it.\nSecond try: noticed more details and felt more\npeaceful . Anamika (good at drawing) Upside down felt strange, just lines and wiggles. She expected it to\ngo wrong, trusted the process, and it came out fine. “Doing\nsomething unconventional won’t always lead to a bad\nresult.” Anirudha (doesn’t feel creative) The second try was less stressful , because he saw\nlines, not “a horse that must be perfect”. He gained confidence that\nwith practice and the right method, he can improve."
+        },
+        {
+          "type": "html",
+          "html": "<p>This activity comes from the book <strong><em>Drawing on the Right\nSide of the Brain</em></strong> by <strong>Betty Edwards</strong>. It\nbroke Prof. Prasanna’s belief that she couldn’t draw.</p>",
+          "text": "This activity comes from the book Drawing on the Right\nSide of the Brain by Betty Edwards . It\nbroke Prof. Prasanna’s belief that she couldn’t draw."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> When we stop judging (“this must be\nperfect”), the inner chatter quietens and creativity flows.</p>",
+          "text": "Lesson: When we stop judging (“this must be\nperfect”), the inner chatter quietens and creativity flows."
+        },
+        {
+          "type": "heading",
+          "text": "Words are powerful"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Ending negative self-talk</strong> clears your mind and opens\nup creativity. <strong>Words create</strong>, so use <strong>words of\npower and positivity</strong> in the present to create the future you\nwant.</p>",
+          "text": "Ending negative self-talk clears your mind and opens\nup creativity. Words create , so use words of\npower and positivity in the present to create the future you\nwant."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Prasanna also refers to a video by <strong>Jim Kwik</strong> on\nhow to stop negative self-talk: acknowledge the chatter, <strong>don’t\nfight it</strong>, let it go, and then align with your goals using\npositive words and actions.</p>",
+          "text": "Prof. Prasanna also refers to a video by Jim Kwik on\nhow to stop negative self-talk: acknowledge the chatter, don’t\nfight it , let it go, and then align with your goals using\npositive words and actions."
+        },
+        {
+          "type": "heading",
+          "text": "The ABRA method"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img07-abra.webp",
+          "alt": "The ABRA method",
+          "caption": "Acknowledge, Breathe, Release, Align."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>A — Acknowledge</strong></td>\n<td>Notice the chatter. <strong>Don’t fight</strong> your limitations or\nargue with them. <em>What you resist, persists.</em></td>\n</tr>\n<tr>\n<td><strong>B — Breathe</strong></td>\n<td>Breathe in <strong>what you want</strong>.</td>\n</tr>\n<tr>\n<td><strong>R — Release</strong></td>\n<td>Let go of <strong>what you don’t want</strong>: release your\nlimitations.</td>\n</tr>\n<tr>\n<td><strong>A — Align</strong></td>\n<td>Align with <strong>who you are</strong>, who you wish to become, and\nthe future you wish to create.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What to do A — Acknowledge Notice the chatter. Don’t fight your limitations or\nargue with them. What you resist, persists. B — Breathe Breathe in what you want . R — Release Let go of what you don’t want : release your\nlimitations. A — Align Align with who you are , who you wish to become, and\nthe future you wish to create."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Before a viva, your mind says,\n“I’ll blank out, I always do.” Acknowledge it: “Okay, I’m nervous.”\nBreathe in calm. Release “I always blank out.” Align: “I’ve prepared\nthese 5 topics. I’ll take one question at a time.”</p>\n</blockquote>",
+          "text": "Everyday example Before a viva, your mind says,\n“I’ll blank out, I always do.” Acknowledge it: “Okay, I’m nervous.”\nBreathe in calm. Release “I always blank out.” Align: “I’ve prepared\nthese 5 topics. I’ll take one question at a time.”"
+        },
+        {
+          "type": "heading",
+          "text": "Focus on the process, not\nthe result"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — M. S. Dhoni</strong> A journalist asked how\nhe stays so calm. Dhoni said he doesn’t focus on the\n<strong>result</strong>; he focuses on the <strong>process</strong>.\nWhen he sees a ball he can hit, he hits it.</p>\n</blockquote>",
+          "text": "Lecture example — M. S. Dhoni A journalist asked how\nhe stays so calm. Dhoni said he doesn’t focus on the result ; he focuses on the process .\nWhen he sees a ball he can hit, he hits it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the conference checklist</strong> In 2005,\nProf. Sivakumar had to organise a big conference: about\n<strong>300</strong> participants, many from abroad, to be opened by\nPresident <strong>A. P. J. Abdul Kalam</strong>. He was very tense. A\ncolleague sat him down for 15 minutes and <strong>listed</strong> every\ntask, with who would do it. Seeing the full list, his tension vanished.\nThe event ran “like clockwork”. <strong>Lesson:</strong> Worry grows in\nyour head. Writing a clear list turns it into steps.</p>\n</blockquote>",
+          "text": "Lecture example — the conference checklist In 2005,\nProf. Sivakumar had to organise a big conference: about 300 participants, many from abroad, to be opened by\nPresident A. P. J. Abdul Kalam . He was very tense. A\ncolleague sat him down for 15 minutes and listed every\ntask, with who would do it. Seeing the full list, his tension vanished.\nThe event ran “like clockwork”. Lesson: Worry grows in\nyour head. Writing a clear list turns it into steps."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Quieten negative self-talk with ABRA\n(acknowledge, breathe, release, align), use positive words, and focus on\nthe process, not the result. <strong>Exam words:</strong> negative\nself-talk, inner chatter, Drawing on the Right Side of the Brain, Betty\nEdwards, ABRA, acknowledge, breathe, release, align, what you resist\npersists, words of power, process over result.</p>",
+          "text": "In one line: Quieten negative self-talk with ABRA\n(acknowledge, breathe, release, align), use positive words, and focus on\nthe process, not the result. Exam words: negative\nself-talk, inner chatter, Drawing on the Right Side of the Brain, Betty\nEdwards, ABRA, acknowledge, breathe, release, align, what you resist\npersists, words of power, process over result."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy did the upside-down drawing feel easier?\n</summary>\nThe brain stopped judging it as “a horse that must be perfect” and just\nsaw lines, so there was less pressure and more attention to detail.\n</details>",
+          "text": "Why did the upside-down drawing feel easier? The brain stopped judging it as “a horse that must be perfect” and just\nsaw lines, so there was less pressure and more attention to detail."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does ABRA stand for?\n</summary>\nAcknowledge, Breathe, Release, Align.\n</details>",
+          "text": "What does ABRA stand for? Acknowledge, Breathe, Release, Align."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy shouldn’t you fight negative self-talk?\n</summary>\nBecause what you resist, persists. Acknowledge it, then let it go.\n</details>",
+          "text": "Why shouldn’t you fight negative self-talk? Because what you resist, persists. Acknowledge it, then let it go."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did Dhoni focus on instead of results?\n</summary>\nThe process.\n</details>",
+          "text": "What did Dhoni focus on instead of results? The process."
+        }
+      ]
+    },
+    {
+      "slug": "benefits-of-failure-and-mouse-merchant",
+      "title": "The Benefits of Failure and the Mouse Merchant",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A research student runs in: “Sir, the\nexperiment didn’t work!” The professor smiles: “Good! Now you have a\nquestion to ask — <strong>why</strong> didn’t it work?” Failure is just\ninformation.</p>\n</blockquote>",
+          "text": "Start here A research student runs in: “Sir, the\nexperiment didn’t work!” The professor smiles: “Good! Now you have a\nquestion to ask — why didn’t it work?” Failure is just\ninformation."
+        },
+        {
+          "type": "heading",
+          "text": "Failure is a stepping stone"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img08-stepping-stones.webp",
+          "alt": "Failures as stepping stones",
+          "caption": "Each “failed” attempt is one\nstep closer."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Example</th>\n<th>The reframe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Research scholars</strong></td>\n<td>“It didn’t work” becomes “Now I can ask why.” Failure gives you\n<strong>many questions</strong>, and questions lead to research.</td>\n</tr>\n<tr>\n<td><strong>Thomas Edison</strong></td>\n<td>Asked how he kept going after so many failures, he reportedly said\nhe never failed; each attempt showed one more material that\n<strong>won’t</strong> work. Thinking this way helped him develop a\npractical <strong>light bulb</strong>.</td>\n</tr>\n<tr>\n<td><strong>Glass half full or half empty</strong></td>\n<td>The same event can be seen as a failure or as <strong>new\nunderstanding</strong>. Life isn’t an exam.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Example The reframe Research scholars “It didn’t work” becomes “Now I can ask why.” Failure gives you many questions , and questions lead to research. Thomas Edison Asked how he kept going after so many failures, he reportedly said\nhe never failed; each attempt showed one more material that won’t work. Thinking this way helped him develop a\npractical light bulb . Glass half full or half empty The same event can be seen as a failure or as new\nunderstanding . Life isn’t an exam."
+        },
+        {
+          "type": "subheading",
+          "text": "Knowing what can go wrong\nis valuable"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Prasanna’s points:</p>",
+          "text": "Prof. Prasanna’s points:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Knowing <strong>what can go wrong</strong> while making a crispy\ndosa is as useful as knowing how to make it. The best recipe blogs list\ncommon mistakes and fixes.</li>\n<li>Software or a product is only as strong as its <strong>exception\nhandling</strong>. Testers <em>look for</em> failure points (unit,\nintegration, system, acceptance and stress testing) so they can be\nfixed.</li>\n</ul>",
+          "text": "Knowing what can go wrong while making a crispy\ndosa is as useful as knowing how to make it. The best recipe blogs list\ncommon mistakes and fixes. Software or a product is only as strong as its exception\nhandling . Testers look for failure points (unit,\nintegration, system, acceptance and stress testing) so they can be\nfixed."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the cake that became a pudding</strong> In\na creativity class, 10 teams baked cakes. Many didn’t look like cakes.\nThe teachers said, “<strong>Wow, you’ve made a nice pudding!</strong>”\nThe teams cheered up. It was the same result, reframed.</p>\n</blockquote>",
+          "text": "Lecture example — the cake that became a pudding In\na creativity class, 10 teams baked cakes. Many didn’t look like cakes.\nThe teachers said, “ Wow, you’ve made a nice pudding! ”\nThe teams cheered up. It was the same result, reframed."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — grading from 100</strong> Prof. Anand asked\na new question about marking: instead of starting at <strong>0</strong>\nand adding marks, why not start at <strong>100</strong> (“every student\ndeserves full marks”) and deduct for mistakes? It is the same work, but\na more positive view, and the final marks may even differ.</p>\n</blockquote>",
+          "text": "Lecture example — grading from 100 Prof. Anand asked\na new question about marking: instead of starting at 0 and adding marks, why not start at 100 (“every student\ndeserves full marks”) and deduct for mistakes? It is the same work, but\na more positive view, and the final marks may even differ."
+        },
+        {
+          "type": "subheading",
+          "text": "J. K. Rowling:\n“The Fringe Benefits of Failure”"
+        },
+        {
+          "type": "html",
+          "html": "<p>This lecture is named after <strong>J. K. Rowling’s</strong> famous\n<strong>Harvard speech (2008)</strong>, “The Fringe Benefits of Failure,\nand the Importance of Imagination”. Her main ideas:</p>",
+          "text": "This lecture is named after J. K. Rowling’s famous Harvard speech (2008) , “The Fringe Benefits of Failure,\nand the Importance of Imagination”. Her main ideas:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>It is <strong>impossible to live without failing</strong> at\nsomething, unless you live so carefully that you hardly live at all. And\nthat is a failure too.</li>\n<li>Failure strips away what is <strong>not essential</strong>, so you\ncan focus on what matters.</li>\n<li><strong>Imagination</strong> lets us dream up a better future, and\nalso lets us <strong>empathise</strong> with others.</li>\n</ul>",
+          "text": "It is impossible to live without failing at\nsomething, unless you live so carefully that you hardly live at all. And\nthat is a failure too. Failure strips away what is not essential , so you\ncan focus on what matters. Imagination lets us dream up a better future, and\nalso lets us empathise with others."
+        },
+        {
+          "type": "heading",
+          "text": "The Mouse Merchant story"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is an old Indian tale (from the <strong>Jataka tales</strong>):\nhow a poor young man became rich by <strong>making the most of whatever\nhe had</strong>.</p>",
+          "text": "This is an old Indian tale (from the Jataka tales ):\nhow a poor young man became rich by making the most of whatever\nhe had ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img09-mouse-merchant.webp",
+          "alt": "The mouse merchant",
+          "caption": "From one dead mouse to a fortune, one\nsmall step at a time."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The story in short:</strong></p>",
+          "text": "The story in short:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>A poor young man hears a wise man say that a smart person could\nbuild a fortune even from a <strong>dead mouse</strong> on the\nroad.</li>\n<li>He picks it up and sells it to a shopkeeper as <strong>food for a\ncat</strong>, earning one small coin.</li>\n<li>With the coin he buys <strong>jaggery</strong> and offers jaggery\nand water to tired <strong>flower-pickers</strong>. They thank him with\n<strong>flowers</strong>, which he sells.</li>\n<li>A storm wrecks a <strong>garden</strong> and leaves branches\neverywhere. He offers to <strong>clear it</strong> for free if he may\nkeep the <strong>wood</strong>, then sells the wood.</li>\n<li>He keeps spotting chances like these (for example, helping\ngrass-cutters, then using their grass when a horse dealer comes to\ntown), and step by step he becomes a <strong>rich\nmerchant</strong>.</li>\n</ol>",
+          "text": "A poor young man hears a wise man say that a smart person could\nbuild a fortune even from a dead mouse on the\nroad. He picks it up and sells it to a shopkeeper as food for a\ncat , earning one small coin. With the coin he buys jaggery and offers jaggery\nand water to tired flower-pickers . They thank him with flowers , which he sells. A storm wrecks a garden and leaves branches\neverywhere. He offers to clear it for free if he may\nkeep the wood , then sells the wood. He keeps spotting chances like these (for example, helping\ngrass-cutters, then using their grass when a horse dealer comes to\ntown), and step by step he becomes a rich\nmerchant ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What the students and teachers took from it:</strong></p>",
+          "text": "What the students and teachers took from it:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>“Where there is a will, there is a way.”</strong>\n(Anamika)</li>\n<li>Look at the <strong>positive side</strong>. If you only complain\nabout misfortune, you stay stuck. Misfortune is\n<strong>temporary</strong>. (Anamika)</li>\n<li><strong>Persistence and confidence:</strong> he must have faced\nfailures too, but he kept going and grabbed opportunities.\n(Aniruddha)</li>\n<li><strong>Spot hidden opportunities:</strong> the storm-damaged garden\nlooked like a problem, but the wood was an opportunity.\n(Prof. Sivakumar)</li>\n</ul>",
+          "text": "“Where there is a will, there is a way.” (Anamika) Look at the positive side . If you only complain\nabout misfortune, you stay stuck. Misfortune is temporary . (Anamika) Persistence and confidence: he must have faced\nfailures too, but he kept going and grabbed opportunities.\n(Aniruddha) Spot hidden opportunities: the storm-damaged garden\nlooked like a problem, but the wood was an opportunity.\n(Prof. Sivakumar)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — COVID as an opportunity</strong> When COVID\nstopped in-person workshops, a friend of Prof. Kartic moved online. She\nsaved hours of travel and met <strong>more</strong> clients, from all\nover the world. IIT Madras could also bring in alumni teachers from\nEngland and Singapore online, which wasn’t possible before. <strong>How\nwe look at a situation matters more than the situation\nitself.</strong></p>\n</blockquote>",
+          "text": "Lecture example — COVID as an opportunity When COVID\nstopped in-person workshops, a friend of Prof. Kartic moved online. She\nsaved hours of travel and met more clients, from all\nover the world. IIT Madras could also bring in alumni teachers from\nEngland and Singapore online, which wasn’t possible before. How\nwe look at a situation matters more than the situation\nitself."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Treat failure as a stepping stone and\ninformation, and, like the mouse merchant, make the most of whatever you\nhave. <strong>Exam words:</strong> fringe benefits of failure, J. K.\nRowling, reframe, stepping stone, Edison, exception handling,\nimagination, Mouse Merchant, Jataka tale, opportunity in adversity, half\nfull vs half empty.</p>",
+          "text": "In one line: Treat failure as a stepping stone and\ninformation, and, like the mouse merchant, make the most of whatever you\nhave. Exam words: fringe benefits of failure, J. K.\nRowling, reframe, stepping stone, Edison, exception handling,\nimagination, Mouse Merchant, Jataka tale, opportunity in adversity, half\nfull vs half empty."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhen an experiment fails, what does Prof. Sivakumar say is the good\nnews?\n</summary>\nNow you have a question to ask — why didn’t it work?\n</details>",
+          "text": "When an experiment fails, what does Prof. Sivakumar say is the good\nnews? Now you have a question to ask — why didn’t it work?"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow did Edison look at his many failed attempts?\n</summary>\nNot as failures, but as stepping stones — each showed one more material\nthat wouldn’t work.\n</details>",
+          "text": "How did Edison look at his many failed attempts? Not as failures, but as stepping stones — each showed one more material\nthat wouldn’t work."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn the Mouse Merchant story, what opportunity did the storm create?\n</summary>\nWood from the damaged garden, which he cleared and then sold.\n</details>",
+          "text": "In the Mouse Merchant story, what opportunity did the storm create? Wood from the damaged garden, which he cleared and then sold."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy is exception handling a good example of the value of failure?\n</summary>\nTesters deliberately look for failure points so the system can handle\nthem; knowing what can go wrong makes the product robust.\n</details>",
+          "text": "Why is exception handling a good example of the value of failure? Testers deliberately look for failure points so the system can handle\nthem; knowing what can go wrong makes the product robust."
+        }
+      ]
+    },
+    {
+      "slug": "abundance-mindset-and-card-game",
+      "title": "Positive and Abundance Mindset — and the Growth Mindset Card Game",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Is the glass half full or half empty?\nLook again: the other half is full of air, and above that is endless\nspace. If you see the whole picture, the glass is <strong>infinitely\nfull</strong>. So is your potential.</p>\n</blockquote>",
+          "text": "Start here Is the glass half full or half empty?\nLook again: the other half is full of air, and above that is endless\nspace. If you see the whole picture, the glass is infinitely\nfull . So is your potential."
+        },
+        {
+          "type": "heading",
+          "text": "Lack vs abundance"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Lack mindset</th>\n<th>Abundance mindset</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“I don’t have enough.”</td>\n<td>“I have all the resources I need to take the <strong>next\nstep</strong>.”</td>\n</tr>\n<tr>\n<td>Sees only what’s missing</td>\n<td>Lists everything available, and finds many ways forward</td>\n</tr>\n<tr>\n<td>“What’s in it for me?”</td>\n<td>“What can I <strong>give</strong>?”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Lack mindset Abundance mindset “I don’t have enough.” “I have all the resources I need to take the next\nstep .” Sees only what’s missing Lists everything available, and finds many ways forward “What’s in it for me?” “What can I give ?”"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Prasanna’s line, inspired by the Mouse Merchant:\n<strong><em>“You have all the resources you need at any instant of time\nto take the next step or action in your life.”</em></strong></p>",
+          "text": "Prof. Prasanna’s line, inspired by the Mouse Merchant: “You have all the resources you need at any instant of time\nto take the next step or action in your life.”"
+        },
+        {
+          "type": "heading",
+          "text": "Five ways to build an\nabundance mindset"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img10-abundance.webp",
+          "alt": "Building an abundance mindset",
+          "caption": "Curiosity, power words,\ngratitude, resourcefulness and giving."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Habit</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Be open and curious</strong></td>\n<td>About life and growth. Good or bad, ask what you can learn from\nit.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Use words of power and positivity</strong></td>\n<td>Focus on <strong>what you want</strong> (healthy, happy, productive,\ncreative, helpful), not on what went wrong. What you think and imagine\ntends to become real.</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Practise gratitude, and journal it</strong></td>\n<td>The <strong>opposite of gratitude is entitlement</strong>: thinking\nwe deserve everything. We take so much for granted: family, teachers,\nsupport staff, even this video shoot. Write it down; on hard days, your\njournal reminds you of the good.</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Be resourceful</strong></td>\n<td>Use <strong>all</strong> your resources. <strong>Internal\n(intangible):</strong> strengths, talents, gifts, habits, values,\nbeliefs, potential. <strong>External (tangible):</strong> money, time,\npeople, natural and man-made resources. Remember your “<strong>moments\nof greatness</strong>” and what helped you then.</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Give back</strong></td>\n<td>Share generously to make a difference. Many people helped us without\nexpecting anything back. Repay by <strong>paying it forward</strong>:\ntake from the universe in one form, give back to the universe in\nanother.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Habit What it means 1 Be open and curious About life and growth. Good or bad, ask what you can learn from\nit. 2 Use words of power and positivity Focus on what you want (healthy, happy, productive,\ncreative, helpful), not on what went wrong. What you think and imagine\ntends to become real. 3 Practise gratitude, and journal it The opposite of gratitude is entitlement : thinking\nwe deserve everything. We take so much for granted: family, teachers,\nsupport staff, even this video shoot. Write it down; on hard days, your\njournal reminds you of the good. 4 Be resourceful Use all your resources. Internal\n(intangible): strengths, talents, gifts, habits, values,\nbeliefs, potential. External (tangible): money, time,\npeople, natural and man-made resources. Remember your “ moments\nof greatness ” and what helped you then. 5 Give back Share generously to make a difference. Many people helped us without\nexpecting anything back. Repay by paying it forward :\ntake from the universe in one form, give back to the universe in\nanother."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the cycle lamp</strong> At the military\nacademy, cadets had to use a bicycle lamp after dark. One cadet rode\nwithout it: “Sir, there’s light all around — streetlights, moonlight!”\nThe instructor let the air out of both his tyres: “There’s air all\naround. Keep going!” <strong>Lesson:</strong> abundance is real, but for\nprofessional growth, <strong>still follow the rules</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the cycle lamp At the military\nacademy, cadets had to use a bicycle lamp after dark. One cadet rode\nwithout it: “Sir, there’s light all around — streetlights, moonlight!”\nThe instructor let the air out of both his tyres: “There’s air all\naround. Keep going!” Lesson: abundance is real, but for\nprofessional growth, still follow the rules ."
+        },
+        {
+          "type": "heading",
+          "text": "The Growth Mindset Card Game"
+        },
+        {
+          "type": "html",
+          "html": "<p>The faculty played a game based on <strong>UNO</strong>. You match a\ncard’s <strong>colour or number</strong> to discard it, and the first\nplayer with no cards wins. Some cards have a <strong>statement</strong>\nyou must respond to:</p>",
+          "text": "The faculty played a game based on UNO . You match a\ncard’s colour or number to discard it, and the first\nplayer with no cards wins. Some cards have a statement you must respond to:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Change it:</strong> turn a fixed-mindset statement into a\ngrowth-mindset one.</li>\n<li><strong>True or false.</strong></li>\n<li><strong>Fixed or growth?</strong></li>\n<li><strong>Fill in the blank.</strong></li>\n</ul>",
+          "text": "Change it: turn a fixed-mindset statement into a\ngrowth-mindset one. True or false. Fixed or growth? Fill in the blank."
+        },
+        {
+          "type": "html",
+          "html": "<p>There are also fun action cards: <strong>Go again</strong>,\n<strong>Rotate left/right</strong> (everyone passes their cards on),\n<strong>Free spy / change colour</strong>, and <strong>Take\n3</strong>.</p>",
+          "text": "There are also fun action cards: Go again , Rotate left/right (everyone passes their cards on), Free spy / change colour , and Take\n3 ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img11-reframe-cards.webp",
+          "alt": "Reframe the card",
+          "caption": "Turn fixed-mindset words into\ngrowth-mindset words."
+        },
+        {
+          "type": "subheading",
+          "text": "Reframes from the game"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Fixed-mindset statement</th>\n<th>Growth-mindset reframe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“I always get in trouble.”</td>\n<td>“I do get into trouble, but each time I learn to handle it\nbetter.”</td>\n</tr>\n<tr>\n<td>“I always mess things up.”</td>\n<td>“I make mistakes, but I learn from them.” (Prof. Kartic now\norganises his folders and tax planning better.)</td>\n</tr>\n<tr>\n<td>“I’m terrible at organising.”</td>\n<td>“I’m not good at organising <strong>yet</strong>, but I can improve\nwith practice.” (He went from leading 20 people to 300–400.)</td>\n</tr>\n<tr>\n<td>“I won’t try out for the play; I’ll forget my lines.”</td>\n<td>“That’s exactly why I should try. I’ll improve, and the prompters\nwill help.”</td>\n</tr>\n<tr>\n<td>“I’ll never have any friends.”</td>\n<td>The word <strong>“never”</strong> shows a fixed mindset. Reframe: “I\nwill find friends by talking to people and listening.”</td>\n</tr>\n<tr>\n<td>“I’m not going to play the game because I always lose.”</td>\n<td>“If I lose 10 times, I learn, and maybe I win the 11th.” Losing is\n<strong>learning</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Fixed-mindset statement Growth-mindset reframe “I always get in trouble.” “I do get into trouble, but each time I learn to handle it\nbetter.” “I always mess things up.” “I make mistakes, but I learn from them.” (Prof. Kartic now\norganises his folders and tax planning better.) “I’m terrible at organising.” “I’m not good at organising yet , but I can improve\nwith practice.” (He went from leading 20 people to 300–400.) “I won’t try out for the play; I’ll forget my lines.” “That’s exactly why I should try. I’ll improve, and the prompters\nwill help.” “I’ll never have any friends.” The word “never” shows a fixed mindset. Reframe: “I\nwill find friends by talking to people and listening.” “I’m not going to play the game because I always lose.” “If I lose 10 times, I learn, and maybe I win the 11th.” Losing is learning ."
+        },
+        {
+          "type": "subheading",
+          "text": "True or false? (the\nfaculty’s answers)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Statement</th>\n<th>Answer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Your brain grows, changes and gets smarter the more you challenge\nyourself.</td>\n<td><strong>True</strong></td>\n</tr>\n<tr>\n<td>Some people are just born lucky and get everything right the first\ntime.</td>\n<td><strong>False</strong>: the practice and persistence behind success\nare often hidden.</td>\n</tr>\n<tr>\n<td>It is not always easy to have a growth mindset.</td>\n<td>The Colonel said <strong>false</strong>: it is a matter of your own\nthinking. People at the top climbed step by step while others\nslept.</td>\n</tr>\n<tr>\n<td>Ignoring a problem will make it go away.</td>\n<td><strong>False</strong>: Prof. Sivakumar avoided public talks, and\nthe next invitation just came along.</td>\n</tr>\n<tr>\n<td>You believe you can do hard things.</td>\n<td><strong>True</strong>: ask “What can I do? What will I learn? What’s\nthe first step?”</td>\n</tr>\n<tr>\n<td>“I’m afraid I might mess up, but I’m going to try anyway.”</td>\n<td><strong>Growth mindset</strong></td>\n</tr>\n<tr>\n<td>“I can do tough things.”</td>\n<td><strong>Growth mindset</strong>: the Colonel’s commando course built\nup from 10 km to a <strong>40 km</strong> speed march carrying 30–35\nkg.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Statement Answer Your brain grows, changes and gets smarter the more you challenge\nyourself. True Some people are just born lucky and get everything right the first\ntime. False : the practice and persistence behind success\nare often hidden. It is not always easy to have a growth mindset. The Colonel said false : it is a matter of your own\nthinking. People at the top climbed step by step while others\nslept. Ignoring a problem will make it go away. False : Prof. Sivakumar avoided public talks, and\nthe next invitation just came along. You believe you can do hard things. True : ask “What can I do? What will I learn? What’s\nthe first step?” “I’m afraid I might mess up, but I’m going to try anyway.” Growth mindset “I can do tough things.” Growth mindset : the Colonel’s commando course built\nup from 10 km to a 40 km speed march carrying 30–35\nkg."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Fill in the blanks (faculty answers):</strong></p>",
+          "text": "Fill in the blanks (faculty answers):"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>“When I face a big problem, I often feel…” → “<strong>Wow, a\nchallenge for me to solve!</strong>”</li>\n<li>“One step closer to my dreams is…” → “sleeping a little less to read\nmore.”</li>\n<li>“I’d like to learn more about…” → “AI systems that can write.”</li>\n</ul>",
+          "text": "“When I face a big problem, I often feel…” → “ Wow, a\nchallenge for me to solve! ” “One step closer to my dreams is…” → “sleeping a little less to read\nmore.” “I’d like to learn more about…” → “AI systems that can write.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> An abundance mindset is curious, uses\npositive words, practises gratitude, uses every resource and gives back,\nand the card game trains you to reframe fixed words into growth words.\n<strong>Exam words:</strong> abundance mindset, lack mindset, words of\npower, gratitude journal, entitlement, internal vs external resources,\nmoments of greatness, pay it forward, growth mindset card game,\nreframe.</p>",
+          "text": "In one line: An abundance mindset is curious, uses\npositive words, practises gratitude, uses every resource and gives back,\nand the card game trains you to reframe fixed words into growth words. Exam words: abundance mindset, lack mindset, words of\npower, gratitude journal, entitlement, internal vs external resources,\nmoments of greatness, pay it forward, growth mindset card game,\nreframe."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the opposite of gratitude, according to Prof. Kartic?\n</summary>\nEntitlement — believing we deserve everything.\n</details>",
+          "text": "What is the opposite of gratitude, according to Prof. Kartic? Entitlement — believing we deserve everything."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive one internal and one external resource.\n</summary>\nInternal: strengths, talents, values, habits. External: money, time,\npeople, natural resources.\n</details>",
+          "text": "Give one internal and one external resource. Internal: strengths, talents, values, habits. External: money, time,\npeople, natural resources."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich word in “I will never have any friends” shows a fixed mindset?\n</summary>\n“Never”.\n</details>",
+          "text": "Which word in “I will never have any friends” shows a fixed mindset? “Never”."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTrue or false: some people are just born lucky and get everything right\nthe first time.\n</summary>\nFalse — the effort and persistence behind success are usually hidden.\n</details>",
+          "text": "True or false: some people are just born lucky and get everything right\nthe first time. False — the effort and persistence behind success are usually hidden."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “pay it forward” mean?\n</summary>\nInstead of repaying the person who helped you, you help someone else who\nneeds it.\n</details>",
+          "text": "What does “pay it forward” mean? Instead of repaying the person who helped you, you help someone else who\nneeds it."
+        }
+      ]
+    },
+    {
+      "slug": "the-4r-framework",
+      "title": "Reinvent Your Life — The 4R Framework",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A problem hits you. You panic, overthink,\nand it grows into a monster in your head. The 4R framework is a simple\nfour-step reset you can use every time.</p>\n</blockquote>",
+          "text": "Start here A problem hits you. You panic, overthink,\nand it grows into a monster in your head. The 4R framework is a simple\nfour-step reset you can use every time."
+        },
+        {
+          "type": "heading",
+          "text": "You are the architect of\nyour life"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Prasanna: <em>“Recreate your life so that it becomes a\nrecreation in itself.”</em></p>",
+          "text": "Prof. Prasanna: “Recreate your life so that it becomes a\nrecreation in itself.”"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Gift</th>\n<th>What it does</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mind</strong></td>\n<td>The creative space where you think, feel, imagine and plan</td>\n</tr>\n<tr>\n<td><strong>Body</strong></td>\n<td>A “super smart device” that turns your thoughts into words and\nactions, and feeds back what you experience</td>\n</tr>\n<tr>\n<td><strong>Brain</strong></td>\n<td>Links mind and body. What you put in your mind is like a\n<strong>program</strong>: the brain turns it into actions and\nresults.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Gift What it does Mind The creative space where you think, feel, imagine and plan Body A “super smart device” that turns your thoughts into words and\nactions, and feeds back what you experience Brain Links mind and body. What you put in your mind is like a program : the brain turns it into actions and\nresults."
+        },
+        {
+          "type": "html",
+          "html": "<p>So <strong>what you put in your mind matters</strong>. You have the\n<strong>power of choice</strong> to reinvent yourself every day. A\ngrowth mindset helps you keep what is essential and use imagination to\ndesign your future step by step. <strong>Enjoy the process. It’s a game\nof life — play it well.</strong></p>",
+          "text": "So what you put in your mind matters . You have the power of choice to reinvent yourself every day. A\ngrowth mindset helps you keep what is essential and use imagination to\ndesign your future step by step. Enjoy the process. It’s a game\nof life — play it well."
+        },
+        {
+          "type": "heading",
+          "text": "The 4R framework"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img12-4r.webp",
+          "alt": "The 4R framework",
+          "caption": "Recharge, Resource, Reframe, Refocus."
+        },
+        {
+          "type": "subheading",
+          "text": "1. ReCHARGE your mind and body"
+        },
+        {
+          "type": "html",
+          "html": "<p>When a problem hits, your <strong>energy drops</strong>. You worry,\npanic, overthink. So first, <strong>step back and recharge</strong>.</p>",
+          "text": "When a problem hits, your energy drops . You worry,\npanic, overthink. So first, step back and recharge ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Ways to recharge:</strong> meditation, emotional cleansing,\njournaling, gratitude, good food, sleep, exercise, breathwork, talking\nto someone, hobbies (books, movies, music, sports), and time in nature\n(the beach, a long drive, trekking).</p>",
+          "text": "Ways to recharge: meditation, emotional cleansing,\njournaling, gratitude, good food, sleep, exercise, breathwork, talking\nto someone, hobbies (books, movies, music, sports), and time in nature\n(the beach, a long drive, trekking)."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Prasanna’s go-to is <strong>meditation</strong>: <em>“A problem\nis only as big as the mind space you give it.”</em></p>",
+          "text": "Prof. Prasanna’s go-to is meditation : “A problem\nis only as big as the mind space you give it.”"
+        },
+        {
+          "type": "subheading",
+          "text": "2. ReSOURCE your potential"
+        },
+        {
+          "type": "html",
+          "html": "<p>In a crisis, we forget everything we have achieved. Self-doubt creeps\nin. So <strong>remember your personal capital</strong>:</p>",
+          "text": "In a crisis, we forget everything we have achieved. Self-doubt creeps\nin. So remember your personal capital :"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Expressed potential = <strong>personal capital</strong></th>\n<th>Potential <strong>yet to be shown</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Core values; strengths, talents, abilities, skills, habits; purpose,\nvision, mission; successes and achievements; lessons and insights;\nconnections</td>\n<td>Your goals, aspirations, dreams and the impact you want to make</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Expressed potential = personal capital Potential yet to be shown Core values; strengths, talents, abilities, skills, habits; purpose,\nvision, mission; successes and achievements; lessons and insights;\nconnections Your goals, aspirations, dreams and the impact you want to make"
+        },
+        {
+          "type": "html",
+          "html": "<p>Remembering what you’ve already overcome boosts your\n<strong>morale</strong>.</p>",
+          "text": "Remembering what you’ve already overcome boosts your morale ."
+        },
+        {
+          "type": "subheading",
+          "text": "3. ReVIEW and ReFRAME your\nstrategy"
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask yourself:</p>",
+          "text": "Ask yourself:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Mindset and beliefs:</strong> what shift do I need: fixed →\ngrowth, lack → abundance, negative → positive?</li>\n<li><strong>Words:</strong> which words fit the future I want?</li>\n<li><strong>Intentions and expectations:</strong> which ones do I need\nto rethink?</li>\n<li><strong>Possibilities and choices:</strong> what else could I\ntry?</li>\n<li><strong>Behaviours and habits:</strong> what needs an upgrade?</li>\n<li><strong>Short term vs long term:</strong> instant gratification, or\nlong-term benefit?</li>\n<li><strong>Impact on others:</strong> how does this affect people close\nto me? Does it make the world better?</li>\n<li><strong>Resources:</strong> what can I do myself\n(<strong>insource</strong>), and who or what can help\n(<strong>outsource</strong>: people, money, materials)?</li>\n</ul>",
+          "text": "Mindset and beliefs: what shift do I need: fixed →\ngrowth, lack → abundance, negative → positive? Words: which words fit the future I want? Intentions and expectations: which ones do I need\nto rethink? Possibilities and choices: what else could I\ntry? Behaviours and habits: what needs an upgrade? Short term vs long term: instant gratification, or\nlong-term benefit? Impact on others: how does this affect people close\nto me? Does it make the world better? Resources: what can I do myself\n( insource ), and who or what can help\n( outsource : people, money, materials)?"
+        },
+        {
+          "type": "subheading",
+          "text": "4. ReFOCUS to take inspired\naction"
+        },
+        {
+          "type": "html",
+          "html": "<p>Now <strong>act</strong>: with clarity of purpose and vision, an\nabundance mindset, empowering beliefs, powerful habits and rituals, and\nresourcefulness.</p>",
+          "text": "Now act : with clarity of purpose and vision, an\nabundance mindset, empowering beliefs, powerful habits and rituals, and\nresourcefulness."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tiny steps → tiny gains → compounding into big\nresults</strong> over time. <strong>Just go do it.</strong></p>",
+          "text": "Tiny steps → tiny gains → compounding into big\nresults over time. Just go do it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You fail a quiz.\n<strong>Recharge:</strong> take a walk and sleep well.\n<strong>Resource:</strong> “I cleared harder quizzes last term; I’m good\nat practice problems.” <strong>Reframe:</strong> “This shows which\ntopics I’m weak in” (fixed → growth). <strong>Refocus:</strong> solve 5\nproblems a day on those topics for two weeks.</p>\n</blockquote>",
+          "text": "Everyday example You fail a quiz. Recharge: take a walk and sleep well. Resource: “I cleared harder quizzes last term; I’m good\nat practice problems.” Reframe: “This shows which\ntopics I’m weak in” (fixed → growth). Refocus: solve 5\nproblems a day on those topics for two weeks."
+        },
+        {
+          "type": "heading",
+          "text": "Conclusion"
+        },
+        {
+          "type": "html",
+          "html": "<p>Lt Col Jayakumar’s parting thoughts:</p>",
+          "text": "Lt Col Jayakumar’s parting thoughts:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Look at what is coming; forget what has gone.</strong> That\nwas the juggling-pencils lesson.</li>\n<li><strong>Make the best of what you have.</strong> That was the Mouse\nMerchant lesson.</li>\n<li><strong>Keep smiling, and stay on top of the world.</strong></li>\n</ul>",
+          "text": "Look at what is coming; forget what has gone. That\nwas the juggling-pencils lesson. Make the best of what you have. That was the Mouse\nMerchant lesson. Keep smiling, and stay on top of the world."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> When a challenge hits, Recharge your\nenergy, Resource your potential, Review and Reframe your strategy, then\nRefocus and take inspired action. <strong>Exam words:</strong> 4R\nframework, recharge, resource, personal capital, review and reframe,\nrefocus, inspired action, tiny steps tiny gains, mind–body–brain, power\nof choice, recreate your life.</p>",
+          "text": "In one line: When a challenge hits, Recharge your\nenergy, Resource your potential, Review and Reframe your strategy, then\nRefocus and take inspired action. Exam words: 4R\nframework, recharge, resource, personal capital, review and reframe,\nrefocus, inspired action, tiny steps tiny gains, mind–body–brain, power\nof choice, recreate your life."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the 4Rs, in order?\n</summary>\nRecharge your mind and body; Resource your potential; Review and Reframe\nyour strategy; Refocus to take inspired action.\n</details>",
+          "text": "What are the 4Rs, in order? Recharge your mind and body; Resource your potential; Review and Reframe\nyour strategy; Refocus to take inspired action."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy recharge first?\n</summary>\nBecause a problem drains energy, and with low energy we panic and can’t\nthink clearly or solve problems well.\n</details>",
+          "text": "Why recharge first? Because a problem drains energy, and with low energy we panic and can’t\nthink clearly or solve problems well."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “personal capital”?\n</summary>\nYour expressed potential: values, strengths, skills, habits, purpose,\nachievements, lessons and connections.\n</details>",
+          "text": "What is “personal capital”? Your expressed potential: values, strengths, skills, habits, purpose,\nachievements, lessons and connections."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“A problem is only as big as the ______ you give it.”\n</summary>\nMind space.\n</details>",
+          "text": "“A problem is only as big as the ______ you give it.” Mind space."
+        }
+      ]
+    },
+    {
+      "slug": "week-9-quick-revision",
+      "title": "Week 9 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Cultivating a growth mindset, all on one\npage.</p>\n</blockquote>",
+          "text": "Start here Cultivating a growth mindset, all on one\npage."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-9/img13-week9-map.webp",
+          "alt": "Week 9 at a glance",
+          "caption": "Fixed vs growth, zones, rejection,\nself-talk, failure, abundance and 4R."
+        },
+        {
+          "type": "heading",
+          "text": "Fixed vs growth (Carol Dweck)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Fixed</th>\n<th>Growth</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Avoids challenges</td>\n<td>Embraces challenges</td>\n</tr>\n<tr>\n<td>Gives up early</td>\n<td>Persists through setbacks</td>\n</tr>\n<tr>\n<td>Effort is useless</td>\n<td>Effort is the path to mastery</td>\n</tr>\n<tr>\n<td>Ignores criticism</td>\n<td>Learns from criticism</td>\n</tr>\n<tr>\n<td>Threatened by others’ success</td>\n<td>Inspired by others’ success</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Fixed Growth Avoids challenges Embraces challenges Gives up early Persists through setbacks Effort is useless Effort is the path to mastery Ignores criticism Learns from criticism Threatened by others’ success Inspired by others’ success"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Power words:</strong> group (not divide), offering (not\nload), appreciate (not envy).</li>\n<li>Kartic: criticism is about the <strong>task</strong>, not the\nperson. Prasanna: from “brain freeze” to the <strong>power of\nchoice</strong>.</li>\n</ul>",
+          "text": "Power words: group (not divide), offering (not\nload), appreciate (not envy). Kartic: criticism is about the task , not the\nperson. Prasanna: from “brain freeze” to the power of\nchoice ."
+        },
+        {
+          "type": "heading",
+          "text": "Zones and rejection"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Four zones:</strong> comfort (safe, in control) → fear (no\nconfidence, excuses) → learning (face challenges, new skills) → growth\n(purpose, new goals).</li>\n<li><strong>Juggling pencils:</strong> miss one, focus on the next.\nDon’t do everything at once.</li>\n<li><strong>Rejection:</strong> external (“no”) and internal (limiting\nbeliefs, fear, self-talk). Turn <strong>resistance into\npersistence</strong>.</li>\n<li>Ask <strong>why</strong> the answer was no (solar vehicle). Become\npart of an <strong>ecosystem</strong> (simulation-game partners).\n“<strong>The answer is yes</strong>” (army logistics).</li>\n</ul>",
+          "text": "Four zones: comfort (safe, in control) → fear (no\nconfidence, excuses) → learning (face challenges, new skills) → growth\n(purpose, new goals). Juggling pencils: miss one, focus on the next.\nDon’t do everything at once. Rejection: external (“no”) and internal (limiting\nbeliefs, fear, self-talk). Turn resistance into\npersistence . Ask why the answer was no (solar vehicle). Become\npart of an ecosystem (simulation-game partners).\n“ The answer is yes ” (army logistics)."
+        },
+        {
+          "type": "heading",
+          "text": "End negative self-talk"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Upside-down drawing</strong> (Betty Edwards): no judgment\nmeans less stress and more detail.</li>\n<li><strong>ABRA:</strong> Acknowledge (don’t fight; what you resist\npersists) → Breathe in what you want → Release what you don’t want →\nAlign with who you want to be.</li>\n<li><strong>Process over result</strong> (Dhoni). <strong>Write the\nlist</strong> (the 2005 conference opened by Kalam).</li>\n</ul>",
+          "text": "Upside-down drawing (Betty Edwards): no judgment\nmeans less stress and more detail. ABRA: Acknowledge (don’t fight; what you resist\npersists) → Breathe in what you want → Release what you don’t want →\nAlign with who you want to be. Process over result (Dhoni). Write the\nlist (the 2005 conference opened by Kalam)."
+        },
+        {
+          "type": "heading",
+          "text": "Failure and the Mouse\nMerchant"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Failure = a <strong>stepping stone</strong> and a source of\nquestions (research scholars, Edison).</li>\n<li>Knowing what can go wrong = <strong>exception handling</strong>.\nCake → pudding. Grade down from 100.</li>\n<li><strong>J. K. Rowling’s</strong> Harvard speech: failure strips away\nthe inessential; imagination builds the future and empathy.</li>\n<li><strong>Mouse Merchant</strong> (Jataka tale): dead mouse → coin →\njaggery and water → flowers → wood from a storm-hit garden → fortune.\nMake the most of what you have; spot hidden opportunities.</li>\n<li><strong>COVID:</strong> online work saved travel and reached the\nworld.</li>\n</ul>",
+          "text": "Failure = a stepping stone and a source of\nquestions (research scholars, Edison). Knowing what can go wrong = exception handling .\nCake → pudding. Grade down from 100. J. K. Rowling’s Harvard speech: failure strips away\nthe inessential; imagination builds the future and empathy. Mouse Merchant (Jataka tale): dead mouse → coin →\njaggery and water → flowers → wood from a storm-hit garden → fortune.\nMake the most of what you have; spot hidden opportunities. COVID: online work saved travel and reached the\nworld."
+        },
+        {
+          "type": "heading",
+          "text": "Abundance mindset"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Half full? With air and space, the glass is <strong>infinitely\nfull</strong>.</li>\n<li><strong>Five habits:</strong> be open and curious; use words of\npower; gratitude journal (the opposite is <strong>entitlement</strong>);\nbe resourceful (internal and external); <strong>give back</strong> / pay\nit forward.</li>\n<li><strong>Card game</strong> (UNO-style): reframe “I always lose”,\n“I’ll never have friends” (the word <strong>never</strong>), “I’m\nterrible at organising” (add <strong>yet</strong>).</li>\n</ul>",
+          "text": "Half full? With air and space, the glass is infinitely\nfull . Five habits: be open and curious; use words of\npower; gratitude journal (the opposite is entitlement );\nbe resourceful (internal and external); give back / pay\nit forward. Card game (UNO-style): reframe “I always lose”,\n“I’ll never have friends” (the word never ), “I’m\nterrible at organising” (add yet )."
+        },
+        {
+          "type": "heading",
+          "text": "The 4R framework"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Recharge</strong> mind and body (meditation, sleep,\nnature…).</li>\n<li><strong>Resource</strong> your potential (personal capital).</li>\n<li><strong>Review and Reframe</strong> your strategy (mindset, words,\nhabits, resources).</li>\n<li><strong>Refocus</strong> to take inspired action (tiny steps, tiny\ngains).</li>\n</ol>",
+          "text": "Recharge mind and body (meditation, sleep,\nnature…). Resource your potential (personal capital). Review and Reframe your strategy (mindset, words,\nhabits, resources). Refocus to take inspired action (tiny steps, tiny\ngains)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>“I’m threatened when my teammate gets praised.” Fixed or growth\nmindset?\n</li></ol></summary>\nFixed mindset.\n</details>",
+          "text": "“I’m threatened when my teammate gets praised.” Fixed or growth\nmindset? Fixed mindset."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>In which zone do you lack confidence and make excuses?\n</li></ol></summary>\nThe fear zone.\n</details>",
+          "text": "In which zone do you lack confidence and make excuses? The fear zone."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>What does the second A in ABRA stand for?\n</li></ol></summary>\nAlign.\n</details>",
+          "text": "What does the second A in ABRA stand for? Align."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Which famous speech is the “fringe benefits of failure” from?\n</li></ol></summary>\nJ. K. Rowling’s 2008 Harvard commencement speech.\n</details>",
+          "text": "Which famous speech is the “fringe benefits of failure” from? J. K. Rowling’s 2008 Harvard commencement speech."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>What is the moral of the Mouse Merchant story?\n</li></ol></summary>\nMake the most of whatever you have; spot hidden opportunities and\npersist.\n</details>",
+          "text": "What is the moral of the Mouse Merchant story? Make the most of whatever you have; spot hidden opportunities and\npersist."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Which R comes right after Recharge?\n</li></ol></summary>\nResource your potential.\n</details>",
+          "text": "Which R comes right after Recharge? Resource your potential."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Add one word to make “I can’t code” a growth statement.\n</li></ol></summary>\n“I can’t code yet.”\n</details>",
+          "text": "Add one word to make “I can’t code” a growth statement. “I can’t code yet.”"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>Two types of rejection?\n</li></ol></summary>\nExternal (a “no”) and internal (limiting beliefs, fears, negative\nself-talk).\n</details>",
+          "text": "Two types of rejection? External (a “no”) and internal (limiting beliefs, fears, negative\nself-talk)."
+        }
+      ]
+    }
+  ]
+}

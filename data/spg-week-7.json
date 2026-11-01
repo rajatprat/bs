@@ -1,0 +1,1511 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 7,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-7/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "wealth-mantra",
+      "title": "Introduction to Fiscal and Economic Sense — The Wealth Mantra",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You will earn money for maybe 30–35\nyears. But you may live for 80–100 years. Who pays your bills for the\nother 50 years? This week is about the money skills most schools and\ncolleges never teach.</p>\n</blockquote>",
+          "text": "Start here You will earn money for maybe 30–35\nyears. But you may live for 80–100 years. Who pays your bills for the\nother 50 years? This week is about the money skills most schools and\ncolleges never teach."
+        },
+        {
+          "type": "html",
+          "html": "<p>This week is taught by <strong>Dr. A V Senthil</strong>, a guest\nfaculty member. “Fiscal and economic sense” simply means\n<strong>personal finance</strong>: how to earn, save, invest and grow\nyour money.</p>",
+          "text": "This week is taught by Dr. A V Senthil , a guest\nfaculty member. “Fiscal and economic sense” simply means personal finance : how to earn, save, invest and grow\nyour money."
+        },
+        {
+          "type": "heading",
+          "text": "First things first"
+        },
+        {
+          "type": "subheading",
+          "text": "A. Look at life in three\nparts"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Part</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Health</strong></td>\n<td>Your fitness. This is the <strong>most important</strong> of the\nthree.</td>\n</tr>\n<tr>\n<td><strong>Relationships</strong></td>\n<td>With yourself, with others, and how you talk to the people around\nyou.</td>\n</tr>\n<tr>\n<td><strong>Wealth</strong></td>\n<td>Money. We earn for only 20–35 years but may live to 100, so wealth\nmatters too.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Part What it means Health Your fitness. This is the most important of the\nthree. Relationships With yourself, with others, and how you talk to the people around\nyou. Wealth Money. We earn for only 20–35 years but may live to 100, so wealth\nmatters too."
+        },
+        {
+          "type": "subheading",
+          "text": "B. Make the best use of\nfour things"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Time:</strong> everyone, from the Prime Minister to you,\ngets only <strong>24 hours</strong> a day.</li>\n<li><strong>Energy:</strong> keep it at peak. That is why health\nmatters.</li>\n<li><strong>Resources:</strong> don’t waste them.</li>\n<li><strong>Money:</strong> don’t keep it <strong>idle</strong>. Save\nit, invest it and let it circulate.</li>\n</ul>",
+          "text": "Time: everyone, from the Prime Minister to you,\ngets only 24 hours a day. Energy: keep it at peak. That is why health\nmatters. Resources: don’t waste them. Money: don’t keep it idle . Save\nit, invest it and let it circulate."
+        },
+        {
+          "type": "heading",
+          "text": "The wealth mantra: four steps"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img01-wealth-mantra.webp",
+          "alt": "The wealth mantra",
+          "caption": "Money comes in, money goes out, what is\nsaved is invested, and investing gives a return."
+        },
+        {
+          "type": "subheading",
+          "text": "Step 1: Cash inflows (money\ncoming in)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Way</th>\n<th>How it works</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>You work for money</strong></td>\n<td>You give your <strong>time</strong> for a <strong>salary</strong>.\nThis uses your <strong>human capital</strong> (your skills). Most\ngraduates, perhaps 60–80%, start this way.</td>\n</tr>\n<tr>\n<td><strong>Money works for you</strong></td>\n<td>Your <strong>assets</strong> earn for you, for example interest,\nrent or dividends.</td>\n</tr>\n<tr>\n<td><strong>Gifts and inheritance</strong></td>\n<td>Money from family. <strong>Don’t count on this</strong>, because it\nis not in your control.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Way How it works You work for money You give your time for a salary .\nThis uses your human capital (your skills). Most\ngraduates, perhaps 60–80%, start this way. Money works for you Your assets earn for you, for example interest,\nrent or dividends. Gifts and inheritance Money from family. Don’t count on this , because it\nis not in your control."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Key point:</strong> keep improving your <strong>earning\nability</strong>.</p>",
+          "text": "Key point: keep improving your earning\nability ."
+        },
+        {
+          "type": "subheading",
+          "text": "Step 2: Cash outflows\n(money going out)"
+        },
+        {
+          "type": "html",
+          "html": "<p>What can you do with the money that comes in?</p>",
+          "text": "What can you do with the money that comes in?"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Hold</strong> it as cash.</li>\n<li><strong>Spend</strong> it. Many young people spend all of it.</li>\n<li><strong>Donate</strong> it. Some people give 10% of their income to\nsociety.</li>\n<li><strong>Invest</strong> it. People who built huge wealth did it\nmainly by <strong>investing</strong>.</li>\n</ol>",
+          "text": "Hold it as cash. Spend it. Many young people spend all of it. Donate it. Some people give 10% of their income to\nsociety. Invest it. People who built huge wealth did it\nmainly by investing ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Savings = cash inflows − cash outflows.</strong></p>",
+          "text": "Savings = cash inflows − cash outflows."
+        },
+        {
+          "type": "subheading",
+          "text": "Step 3: Investment options"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th></th>\n<th><strong>Lending</strong> (you get interest)</th>\n<th><strong>Ownership</strong> (you own a share)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>You control it</strong></td>\n<td>Lend to a friend (e.g. ₹1 lakh at 12%), or run a hire-purchase or\nleasing business</td>\n<td>Start a business: <strong>sole proprietorship</strong> (one person)\nor <strong>partnership</strong> (with friends); buy real estate (flats,\nplots)</td>\n</tr>\n<tr>\n<td><strong>Someone else controls it</strong> (when you have no time or\nexpertise)</td>\n<td>Savings account (about 3%), <strong>bank fixed deposit</strong>\n(about 6–8%), deposits with companies</td>\n<td><strong>Stock market</strong>, <strong>mutual funds</strong>,\n<strong>REITs</strong> (Real Estate Investment Trusts), <strong>angel\ninvesting</strong> in startups</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Lending (you get interest) Ownership (you own a share) You control it Lend to a friend (e.g. ₹1 lakh at 12%), or run a hire-purchase or\nleasing business Start a business: sole proprietorship (one person)\nor partnership (with friends); buy real estate (flats,\nplots) Someone else controls it (when you have no time or\nexpertise) Savings account (about 3%), bank fixed deposit (about 6–8%), deposits with companies Stock market , mutual funds , REITs (Real Estate Investment Trusts), angel\ninvesting in startups"
+        },
+        {
+          "type": "subheading",
+          "text": "Step 4: Return on investment\n(ROI)"
+        },
+        {
+          "type": "html",
+          "html": "<p>The purpose of investing is the <strong>return</strong>. Here the\n<strong>power of compounding</strong> works for you. You’ll learn more\nin the Returns page.</p>",
+          "text": "The purpose of investing is the return . Here the power of compounding works for you. You’ll learn more\nin the Returns page."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — books</strong> The lecturer mentions\n<em>Rich Dad Poor Dad</em> by <strong>Robert Kiyosaki</strong>, and\ninvestors like <strong>Warren Buffett</strong> who built wealth through\nstocks.</p>\n</blockquote>",
+          "text": "Lecture example — books The lecturer mentions Rich Dad Poor Dad by Robert Kiyosaki , and\ninvestors like Warren Buffett who built wealth through\nstocks."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Wealth mantra: bring money in, control\nwhat goes out, invest the savings, and earn a return. <strong>Exam\nwords:</strong> fiscal and economic sense, health–wealth–relationships,\nwealth mantra, cash inflows, cash outflows, human capital, lending,\nownership, ROI.</p>",
+          "text": "In one line: Wealth mantra: bring money in, control\nwhat goes out, invest the savings, and earn a return. Exam\nwords: fiscal and economic sense, health–wealth–relationships,\nwealth mantra, cash inflows, cash outflows, human capital, lending,\nownership, ROI."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the four steps of the wealth mantra?\n</summary>\nCash inflows, cash outflows, investment options, return on investment.\n</details>",
+          "text": "What are the four steps of the wealth mantra? Cash inflows, cash outflows, investment options, return on investment."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy should you not count on gifts and inheritance?\n</summary>\nBecause they are not in your control.\n</details>",
+          "text": "Why should you not count on gifts and inheritance? Because they are not in your control."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYou put money in a bank fixed deposit. Is this lending or ownership? Who\ncontrols it?\n</summary>\nLending; someone else (the bank) controls it.\n</details>",
+          "text": "You put money in a bank fixed deposit. Is this lending or ownership? Who\ncontrols it? Lending; someone else (the bank) controls it."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich of health, wealth and relationships is the most important?\n</summary>\nHealth.\n</details>",
+          "text": "Which of health, wealth and relationships is the most important? Health."
+        }
+      ]
+    },
+    {
+      "slug": "money-stories-and-loans",
+      "title": "Money Stories — Compounding, and Good vs Bad Loans",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A washerwoman who earned very little gave\nabout ₹1.3 crore to a university. A tennis champion who won about ₹200\ncrore went broke. The difference is not how much they earned. It is how\nthey handled it.</p>\n</blockquote>",
+          "text": "Start here A washerwoman who earned very little gave\nabout ₹1.3 crore to a university. A tennis champion who won about ₹200\ncrore went broke. The difference is not how much they earned. It is how\nthey handled it."
+        },
+        {
+          "type": "heading",
+          "text": "Your life map"
+        },
+        {
+          "type": "html",
+          "html": "<p>At this age, three questions keep coming up: <strong>What next? What\nmore? What else?</strong> A <strong>life map</strong> shows you where\nyou are and where you want to go.</p>",
+          "text": "At this age, three questions keep coming up: What next? What\nmore? What else? A life map shows you where\nyou are and where you want to go."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img02-life-curve.webp",
+          "alt": "Life is a bell curve",
+          "caption": "Degree, MBA, marriage, children, home\nloan, children’s education, retirement, empty nest."
+        },
+        {
+          "type": "html",
+          "html": "<p>Most lives follow a curve like a bell:</p>",
+          "text": "Most lives follow a curve like a bell:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Finish your degree (some do an MBA).</li>\n<li><strong>Career:</strong> about 70–80% take a job; a few start a\nbusiness.</li>\n<li>Get <strong>married</strong>, have <strong>children</strong>, take a\n<strong>home loan</strong>, pay for the <strong>children’s\neducation</strong>.</li>\n<li>Around 50–60: think about <strong>financial freedom</strong> and\n<strong>retirement</strong>.</li>\n<li>Children marry and move out. You and your spouse are alone: the\n<strong>empty nest</strong>.</li>\n</ol>",
+          "text": "Finish your degree (some do an MBA). Career: about 70–80% take a job; a few start a\nbusiness. Get married , have children , take a home loan , pay for the children’s\neducation . Around 50–60: think about financial freedom and retirement . Children marry and move out. You and your spouse are alone: the empty nest ."
+        },
+        {
+          "type": "html",
+          "html": "<p>You need to plan your money across this <strong>whole\njourney</strong>.</p>",
+          "text": "You need to plan your money across this whole\njourney ."
+        },
+        {
+          "type": "heading",
+          "text": "The power of compounding"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“Compound interest is the eighth wonder of the world. He who\nunderstands it, earns it; he who doesn’t, pays it.” <em>(The lecture\ncredits this to Albert Einstein. It is widely quoted, but there is no\nclear proof that Einstein said it.)</em></p>\n</blockquote>",
+          "text": "“Compound interest is the eighth wonder of the world. He who\nunderstands it, earns it; he who doesn’t, pays it.” (The lecture\ncredits this to Albert Einstein. It is widely quoted, but there is no\nclear proof that Einstein said it.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Compounding</strong> means your interest also earns interest.\nOver a long time, small amounts grow very large.</p>",
+          "text": "Compounding means your interest also earns interest.\nOver a long time, small amounts grow very large."
+        },
+        {
+          "type": "subheading",
+          "text": "Stories that show\ncompounding works"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Person</th>\n<th>What happened</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Warren Buffett</strong></td>\n<td>Started investing at about <strong>15</strong>, with about\n<strong>$6,000</strong>. By <strong>88</strong>, he was worth about\n<strong>$85 billion</strong>. Most of it came <strong>after age\n56</strong>. His regret: “I started late. I wish I had started at 10 or\n11.”</td>\n</tr>\n<tr>\n<td><strong>Oseola McCarty</strong> (USA)</td>\n<td>A <strong>washerwoman</strong> on a very low wage who saved small\namounts all her life. She gave about <strong>$150,000</strong> (around\n₹1.3 crore) to the University of Southern Mississippi for student\nscholarships. <strong>President Bill Clinton</strong> gave her the\n<strong>Presidential Citizens Medal</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Person What happened Warren Buffett Started investing at about 15 , with about $6,000 . By 88 , he was worth about $85 billion . Most of it came after age\n56 . His regret: “I started late. I wish I had started at 10 or\n11.” Oseola McCarty (USA) A washerwoman on a very low wage who saved small\namounts all her life. She gave about $150,000 (around\n₹1.3 crore) to the University of Southern Mississippi for student\nscholarships. President Bill Clinton gave her the Presidential Citizens Medal ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> Start early. If you are already 30 or 35,\ndon’t regret it. <strong>Start today.</strong></p>",
+          "text": "Lesson: Start early. If you are already 30 or 35,\ndon’t regret it. Start today."
+        },
+        {
+          "type": "subheading",
+          "text": "Stories that show\nearning is not enough"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Person</th>\n<th>What happened</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Boris Becker</strong> (tennis)</td>\n<td>Won about <strong>$25 million</strong> (about ₹200 crore) in prize\nmoney, yet went <strong>broke</strong>: his debts became bigger than his\nassets.</td>\n</tr>\n<tr>\n<td><strong>Michael Jackson</strong> (singer)</td>\n<td>Earned close to <strong>$2 billion</strong>, but died <strong>deep\nin debt</strong>.</td>\n</tr>\n<tr>\n<td><strong>Ranbaxy</strong> (founders Ranjit Singh and Gurbax Singh;\nthe name joins their names)</td>\n<td>The company was once valued at about <strong>$2.5 billion</strong>\n(about ₹20,000 crore). Even at 3% interest, that money would earn about\n<strong>₹600 crore a year</strong>. Still, the owners later got into\ntrouble.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Person What happened Boris Becker (tennis) Won about $25 million (about ₹200 crore) in prize\nmoney, yet went broke : his debts became bigger than his\nassets. Michael Jackson (singer) Earned close to $2 billion , but died deep\nin debt . Ranbaxy (founders Ranjit Singh and Gurbax Singh;\nthe name joins their names) The company was once valued at about $2.5 billion (about ₹20,000 crore). Even at 3% interest, that money would earn about ₹600 crore a year . Still, the owners later got into\ntrouble."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> Making money is one skill. <strong>Managing\nmoney</strong> is another. Who advises you, and how you build your\ninvestments, matters a lot.</p>",
+          "text": "Lesson: Making money is one skill. Managing\nmoney is another. Who advises you, and how you build your\ninvestments, matters a lot."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Wealth = Assets − Liabilities</strong> (what you own minus\nwhat you owe).</p>",
+          "text": "Wealth = Assets − Liabilities (what you own minus\nwhat you owe)."
+        },
+        {
+          "type": "heading",
+          "text": "Good loans and bad loans"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>liability</strong> is money you must pay back. Not all\nloans are bad.</p>",
+          "text": "A liability is money you must pay back. Not all\nloans are bad."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img03-good-bad-loans.webp",
+          "alt": "Good loans vs bad loans",
+          "caption": "Good loans help you grow. Bad loans\ndrain you."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✓ Good liabilities (help you grow)</th>\n<th>✗ Bad liabilities (drain your money)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A <strong>small, sensible education loan</strong> to upskill\nyourself</td>\n<td>A <strong>huge</strong> education loan you can’t finish (e.g. ₹50–60\nlakh borrowed to study abroad, then stuck)</td>\n</tr>\n<tr>\n<td>Borrowing to invest in a <strong>startup</strong>: it grows, or you\nlearn</td>\n<td><strong>Personal loan</strong>: about 2% a month = <strong>24% a\nyear</strong></td>\n</tr>\n<tr>\n<td>A <strong>home</strong> in both spouses’ names, with tax\nbenefits</td>\n<td><strong>Credit card</strong> debt: about 3% a month = <strong>36% a\nyear</strong></td>\n</tr>\n<tr>\n<td></td>\n<td>A <strong>car loan</strong>: a car is a <strong>depreciating\nasset</strong> (it loses value)</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Expensive gadgets</strong> (like the latest phone) bought on\na loan</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✓ Good liabilities (help you grow) ✗ Bad liabilities (drain your money) A small, sensible education loan to upskill\nyourself A huge education loan you can’t finish (e.g. ₹50–60\nlakh borrowed to study abroad, then stuck) Borrowing to invest in a startup : it grows, or you\nlearn Personal loan : about 2% a month = 24% a\nyear A home in both spouses’ names, with tax\nbenefits Credit card debt: about 3% a month = 36% a\nyear A car loan : a car is a depreciating\nasset (it loses value) Expensive gadgets (like the latest phone) bought on\na loan"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A phone costs ₹80,000 on EMI. If\nyou had invested that ₹80,000 instead, compounding could have grown it\nmany times over the years. The phone will be worth almost nothing in 4\nyears.</p>\n</blockquote>",
+          "text": "Everyday example A phone costs ₹80,000 on EMI. If\nyou had invested that ₹80,000 instead, compounding could have grown it\nmany times over the years. The phone will be worth almost nothing in 4\nyears."
+        },
+        {
+          "type": "heading",
+          "text": "You don’t have to\nstart a company to get rich"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>An <strong>employee</strong> can build great wealth. One early\n<strong>Infosys</strong> team member stayed an employee, became\n<strong>CEO</strong>, and became very wealthy.</li>\n<li>Warren Buffett <strong>invested</strong> his earnings.</li>\n<li>Oseola McCarty <strong>saved</strong> small amounts.</li>\n</ul>",
+          "text": "An employee can build great wealth. One early Infosys team member stayed an employee, became CEO , and became very wealthy. Warren Buffett invested his earnings. Oseola McCarty saved small amounts."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Your goal:</strong> have <strong>horizontal exposure</strong>\n(know a little about everything, including money) <strong>and</strong>\n<strong>vertical expertise</strong> (be an expert in your own field).\nGet <strong>professional</strong> advice. Don’t rely only on friends,\nrelatives or a bank salesperson.</p>",
+          "text": "Your goal: have horizontal exposure (know a little about everything, including money) and vertical expertise (be an expert in your own field).\nGet professional advice. Don’t rely only on friends,\nrelatives or a bank salesperson."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Start investing early and let\ncompounding work. Earning a lot is useless without managing it, and\nborrow only for things that help you grow. <strong>Exam words:</strong>\nlife map, empty nest, power of compounding, eighth wonder, wealth =\nassets − liabilities, good liability, bad liability, depreciating asset,\nhorizontal exposure, vertical expertise.</p>",
+          "text": "In one line: Start investing early and let\ncompounding work. Earning a lot is useless without managing it, and\nborrow only for things that help you grow. Exam words: life map, empty nest, power of compounding, eighth wonder, wealth =\nassets − liabilities, good liability, bad liability, depreciating asset,\nhorizontal exposure, vertical expertise."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat was Warren Buffett’s biggest regret?\n</summary>\nThat he started investing late (at about 15). He wished he had started\nat 10 or 11.\n</details>",
+          "text": "What was Warren Buffett’s biggest regret? That he started investing late (at about 15). He wished he had started\nat 10 or 11."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA credit card charges 3% a month. Roughly what is that per year?\n</summary>\nAbout 36% a year.\n</details>",
+          "text": "A credit card charges 3% a month. Roughly what is that per year? About 36% a year."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy is a car loan a bad liability?\n</summary>\nA car is a depreciating asset — it loses value over time while you keep\npaying interest.\n</details>",
+          "text": "Why is a car loan a bad liability? A car is a depreciating asset — it loses value over time while you keep\npaying interest."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat lesson do Boris Becker and Michael Jackson teach?\n</summary>\nEarning a lot is not enough; you must manage and invest money well.\n</details>",
+          "text": "What lesson do Boris Becker and Michael Jackson teach? Earning a lot is not enough; you must manage and invest money well."
+        }
+      ]
+    },
+    {
+      "slug": "basics-of-personal-finance",
+      "title": "Basics of Personal Finance — The 9-Point Action Plan",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> The lecturer calls this the <strong>most\nimportant</strong> lecture of the week. Nine simple habits, started at\n20, can carry you to financial freedom.</p>\n</blockquote>",
+          "text": "Start here The lecturer calls this the most\nimportant lecture of the week. Nine simple habits, started at\n20, can carry you to financial freedom."
+        },
+        {
+          "type": "heading",
+          "text": "The human life cycle"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Age</th>\n<th>Stage</th>\n<th>What happens to money</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>0–22</strong></td>\n<td><strong>Education</strong></td>\n<td>Mostly spending, little or no earning</td>\n</tr>\n<tr>\n<td><strong>22–60</strong> (about 38 years)</td>\n<td><strong>Earning years</strong></td>\n<td>Marriage, children, a house, children’s education and marriage. Most\n<strong>wealth is built up to about 50</strong>; after that, big\nexpenses start.</td>\n</tr>\n<tr>\n<td><strong>60+</strong> (30 or more years)</td>\n<td><strong>Post-retirement</strong> (“golden period”)</td>\n<td>Only <strong>cash outflows</strong>, no salary coming in. Focus on\n<strong>preserving</strong> and <strong>distributing</strong>\nwealth.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Age Stage What happens to money 0–22 Education Mostly spending, little or no earning 22–60 (about 38 years) Earning years Marriage, children, a house, children’s education and marriage. Most wealth is built up to about 50 ; after that, big\nexpenses start. 60+ (30 or more years) Post-retirement (“golden period”) Only cash outflows , no salary coming in. Focus on preserving and distributing wealth."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Warning:</strong> Because of automation, some people now lose\njobs at <strong>45–50</strong>. You may earn for only 25 years, then\nlive 30 or more years after that.</p>",
+          "text": "Warning: Because of automation, some people now lose\njobs at 45–50 . You may earn for only 25 years, then\nlive 30 or more years after that."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>When you are young:</strong> take <strong>calculated\nrisks</strong>. Avoid low-return insurance plans; a simple <strong>term\ninsurance</strong> plan is fine.</p>",
+          "text": "When you are young: take calculated\nrisks . Avoid low-return insurance plans; a simple term\ninsurance plan is fine."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — saving from 10 paisa</strong> An Indian\nsaver started at 19 (1968) and saved for 40 years. He began with\n<strong>10 paisa a day</strong>, then 50 paisa, ₹1, and later ₹5. In\ntotal he put in only about <strong>₹14,600</strong>. Because of\ncompounding, it grew to about <strong>₹10 lakh</strong>. <strong>Small\namounts + consistency + time + the right investment = big\nwealth.</strong></p>\n</blockquote>",
+          "text": "Lecture example — saving from 10 paisa An Indian\nsaver started at 19 (1968) and saved for 40 years. He began with 10 paisa a day , then 50 paisa, ₹1, and later ₹5. In\ntotal he put in only about ₹14,600 . Because of\ncompounding, it grew to about ₹10 lakh . Small\namounts + consistency + time + the right investment = big\nwealth."
+        },
+        {
+          "type": "heading",
+          "text": "The 9-point\naction plan for financial freedom"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img04-nine-point-plan.webp",
+          "alt": "The 9-point plan",
+          "caption": "Nine money habits, from saving first to\nchecking your old investments."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Habit</th>\n<th>Details from the lecture</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Save before you spend</strong></td>\n<td>Save first, then spend the rest. Save at least <strong>20%</strong>.\nSports people and actors earn for only 10–15 years, so they should save\nmuch more (even <strong>95%</strong>). Example: ₹100 a day × 20 days =\n₹2,000.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Keep an emergency fund</strong></td>\n<td><strong>3–6 months</strong> of expenses, in a fixed deposit or\nliquid mutual fund.</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Buy term insurance</strong></td>\n<td>Cover = about <strong>100 × monthly income</strong>. Salary ₹25,000\n→ cover ₹25 lakh, costing about ₹3,500 a year (₹10 a day) at age 24–25.\n<strong>No</strong> endowment or whole-life policies when young.</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Buy your own health insurance</strong></td>\n<td>Don’t rely only on your company’s policy; you may change jobs. It\ncosts about ₹4,000 a year when young. One hospital bill can be ₹2–10\nlakh.</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Diversify your assets</strong></td>\n<td>Don’t put all your eggs in one basket. Put at most\n<strong>20%</strong> (30% if very sure) of your net worth in your own\nbusiness. Net worth ₹10 lakh → at most ₹2–3 lakh in the business. Keep\n<strong>5–10% in cash</strong> for opportunities.</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Start investing for retirement early</strong></td>\n<td>You’ll have about 30 years of outflows with no salary.</td>\n</tr>\n<tr>\n<td>7</td>\n<td><strong>Do SIPs for future goals</strong></td>\n<td><strong>SIP = Systematic Investment Plan</strong>: invest a fixed\namount every month (₹100, ₹500, or more) in mutual funds.</td>\n</tr>\n<tr>\n<td>8</td>\n<td><strong>Plan taxes in April, not March</strong></td>\n<td>Plan at the start of the year. Example: <strong>ELSS</strong>\n(Equity Linked Savings Scheme) under Section 80C, about ₹12,500 a month\n= ₹1.5 lakh a year.</td>\n</tr>\n<tr>\n<td>9</td>\n<td><strong>Make sense of existing investments</strong></td>\n<td>Check nominations, bank details and addresses (see below).\n<strong>Write a will</strong> if you own assets.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Habit Details from the lecture 1 Save before you spend Save first, then spend the rest. Save at least 20% .\nSports people and actors earn for only 10–15 years, so they should save\nmuch more (even 95% ). Example: ₹100 a day × 20 days =\n₹2,000. 2 Keep an emergency fund 3–6 months of expenses, in a fixed deposit or\nliquid mutual fund. 3 Buy term insurance Cover = about 100 × monthly income . Salary ₹25,000\n→ cover ₹25 lakh, costing about ₹3,500 a year (₹10 a day) at age 24–25. No endowment or whole-life policies when young. 4 Buy your own health insurance Don’t rely only on your company’s policy; you may change jobs. It\ncosts about ₹4,000 a year when young. One hospital bill can be ₹2–10\nlakh. 5 Diversify your assets Don’t put all your eggs in one basket. Put at most 20% (30% if very sure) of your net worth in your own\nbusiness. Net worth ₹10 lakh → at most ₹2–3 lakh in the business. Keep 5–10% in cash for opportunities. 6 Start investing for retirement early You’ll have about 30 years of outflows with no salary. 7 Do SIPs for future goals SIP = Systematic Investment Plan : invest a fixed\namount every month (₹100, ₹500, or more) in mutual funds. 8 Plan taxes in April, not March Plan at the start of the year. Example: ELSS (Equity Linked Savings Scheme) under Section 80C, about ₹12,500 a month\n= ₹1.5 lakh a year. 9 Make sense of existing investments Check nominations, bank details and addresses (see below). Write a will if you own assets."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Three goals of personal finance:</strong></p>",
+          "text": "Three goals of personal finance:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>How will you <strong>protect</strong> yourself and your family?</li>\n<li>How will you plan and achieve <strong>future goals</strong> (like\nchildren’s education)?</li>\n<li>How will you plan for <strong>retirement</strong>, which means\n<strong>financial freedom</strong>?</li>\n</ol>",
+          "text": "How will you protect yourself and your family? How will you plan and achieve future goals (like\nchildren’s education)? How will you plan for retirement , which means financial freedom ?"
+        },
+        {
+          "type": "heading",
+          "text": "Asset classes: risk vs return"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img05-risk-return.webp",
+          "alt": "Risk and return of asset classes",
+          "caption": "Higher risk usually comes\nwith higher possible return."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Asset class</th>\n<th>Return (at the time of the lecture)</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Savings account / cash</strong></td>\n<td>About 3%</td>\n<td>Lowest risk, lowest return</td>\n</tr>\n<tr>\n<td><strong>Fixed income</strong> (FDs, bonds)</td>\n<td>About 6–8%</td>\n<td>Safe-ish, but taxed</td>\n</tr>\n<tr>\n<td><strong>Gold</strong></td>\n<td>Goes up and down</td>\n<td>Fell about 15% from its peak at the time of the lecture</td>\n</tr>\n<tr>\n<td><strong>Real estate</strong></td>\n<td>Can stay flat for years, then jump</td>\n<td>Fine to <strong>live in</strong>, but not a great\n<strong>investment</strong></td>\n</tr>\n<tr>\n<td><strong>Equity</strong> (shares)</td>\n<td>Highest risk, highest possible return</td>\n<td>Best for <strong>long-term</strong> goals</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Asset class Return (at the time of the lecture) Notes Savings account / cash About 3% Lowest risk, lowest return Fixed income (FDs, bonds) About 6–8% Safe-ish, but taxed Gold Goes up and down Fell about 15% from its peak at the time of the lecture Real estate Can stay flat for years, then jump Fine to live in , but not a great investment Equity (shares) Highest risk, highest possible return Best for long-term goals"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>92% of returns come from the right asset allocation.</strong>\nOnly 8% comes from which exact scheme you pick. So focus on the\n<strong>mix</strong>.</p>",
+          "text": "92% of returns come from the right asset allocation. Only 8% comes from which exact scheme you pick. So focus on the mix ."
+        },
+        {
+          "type": "heading",
+          "text": "SMART goals"
+        },
+        {
+          "type": "html",
+          "html": "<p>Investing without a plan takes you nowhere. Make every money goal\n<strong>SMART</strong>:</p>",
+          "text": "Investing without a plan takes you nowhere. Make every money goal SMART :"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img06-smart-goals.webp",
+          "alt": "SMART goals",
+          "caption": "Specific, Measurable, Attainable, Relevant,\nTime-bound."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Letter</th>\n<th>Meaning</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>S</strong>pecific</td>\n<td>A clear goal</td>\n<td>House, car, child’s marriage, yearly holiday</td>\n</tr>\n<tr>\n<td><strong>M</strong>easurable</td>\n<td>A number</td>\n<td>Retirement fund of ₹1 crore; child’s education ₹30 lakh</td>\n</tr>\n<tr>\n<td><strong>A</strong>ttainable</td>\n<td>Realistic for your income</td>\n<td>On ₹25,000 a month, ₹5 crore is not realistic (yet)</td>\n</tr>\n<tr>\n<td><strong>R</strong>elevant</td>\n<td>Matters to you</td>\n<td>Not “holiday homes in every city”</td>\n</tr>\n<tr>\n<td><strong>T</strong>ime-bound</td>\n<td>A deadline</td>\n<td>“Retire at 55”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Letter Meaning Example S pecific A clear goal House, car, child’s marriage, yearly holiday M easurable A number Retirement fund of ₹1 crore; child’s education ₹30 lakh A ttainable Realistic for your income On ₹25,000 a month, ₹5 crore is not realistic (yet) R elevant Matters to you Not “holiday homes in every city” T ime-bound A deadline “Retire at 55”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Remember:</strong> banks give home loans, car loans and\neducation loans. <strong>Nobody gives a loan for retirement.</strong>\n(If you own a house, a <strong>reverse mortgage</strong> is\npossible.)</p>",
+          "text": "Remember: banks give home loans, car loans and\neducation loans. Nobody gives a loan for retirement. (If you own a house, a reverse mortgage is\npossible.)"
+        },
+        {
+          "type": "heading",
+          "text": "What to do with your\nexisting investments"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Nominations:</strong> before marriage, usually parents;\nafter marriage, often your spouse.</li>\n<li><strong>Bank details:</strong> if you move abroad, convert your\naccount to an <strong>NRO</strong> account.</li>\n<li><strong>Addresses:</strong> update them everywhere (including\nAadhaar) when you move.</li>\n<li><strong>Link each investment to a goal:</strong> “This one is for\nretirement.”</li>\n<li><strong>Keep all documents together.</strong> The lecture says about\n<strong>₹16,000 crore</strong> lies unclaimed with banks and about\n<strong>₹18,000 crore</strong> with LIC, because families didn’t know\nabout the accounts or the details were wrong.</li>\n<li><strong>Share passwords and logins safely</strong> with family, so\nthey can access things if something happens to you.</li>\n<li>Know your <strong>CAGR</strong> (yearly growth rate). See the\nReturns page.</li>\n</ul>",
+          "text": "Nominations: before marriage, usually parents;\nafter marriage, often your spouse. Bank details: if you move abroad, convert your\naccount to an NRO account. Addresses: update them everywhere (including\nAadhaar) when you move. Link each investment to a goal: “This one is for\nretirement.” Keep all documents together. The lecture says about ₹16,000 crore lies unclaimed with banks and about ₹18,000 crore with LIC, because families didn’t know\nabout the accounts or the details were wrong. Share passwords and logins safely with family, so\nthey can access things if something happens to you. Know your CAGR (yearly growth rate). See the\nReturns page."
+        },
+        {
+          "type": "heading",
+          "text": "Don’ts"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Buy in a hurry at tax time (e.g. an insurance policy in March)</td>\n<td>Unplanned, emotional decisions</td>\n</tr>\n<tr>\n<td>Take advice from relatives or friends acting as agents</td>\n<td>Their age and risk level differ from yours</td>\n</tr>\n<tr>\n<td>Fall for every sales pitch from a bank relationship manager</td>\n<td>They have sales targets</td>\n</tr>\n<tr>\n<td>Chase the latest fad</td>\n<td>Bitcoin fell about 50% in 13 months at the time of the lecture</td>\n</tr>\n<tr>\n<td>Follow the herd</td>\n<td>“My friend bought a flat, so I will”</td>\n</tr>\n<tr>\n<td>Take too many loans early</td>\n<td>Keep total EMIs <strong>under 40% of take-home pay</strong></td>\n</tr>\n<tr>\n<td>Buy stocks on <strong>tips</strong></td>\n<td>“Buy this share, it will go up tomorrow” is gambling</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t Why Buy in a hurry at tax time (e.g. an insurance policy in March) Unplanned, emotional decisions Take advice from relatives or friends acting as agents Their age and risk level differ from yours Fall for every sales pitch from a bank relationship manager They have sales targets Chase the latest fad Bitcoin fell about 50% in 13 months at the time of the lecture Follow the herd “My friend bought a flat, so I will” Take too many loans early Keep total EMIs under 40% of take-home pay Buy stocks on tips “Buy this share, it will go up tomorrow” is gambling"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Save first, protect yourself with an\nemergency fund and insurance, diversify, invest monthly for SMART goals,\nand keep your papers in order. <strong>Exam words:</strong> human life\ncycle, 9-point action plan, emergency fund, term insurance, health\ninsurance, diversification, SIP, ELSS, Section 80C, asset allocation,\nSMART goals, nomination, NRO, EMI limit 40%.</p>",
+          "text": "In one line: Save first, protect yourself with an\nemergency fund and insurance, diversify, invest monthly for SMART goals,\nand keep your papers in order. Exam words: human life\ncycle, 9-point action plan, emergency fund, term insurance, health\ninsurance, diversification, SIP, ELSS, Section 80C, asset allocation,\nSMART goals, nomination, NRO, EMI limit 40%."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow much should you keep as an emergency fund?\n</summary>\n3 to 6 months of expenses.\n</details>",
+          "text": "How much should you keep as an emergency fund? 3 to 6 months of expenses."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYour monthly salary is ₹40,000. Using the lecture’s rule, how much term\ninsurance cover should you take?\n</summary>\n100 × ₹40,000 = ₹40 lakh.\n</details>",
+          "text": "Your monthly salary is ₹40,000. Using the lecture’s rule, how much term\ninsurance cover should you take? 100 × ₹40,000 = ₹40 lakh."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does SIP stand for?\n</summary>\nSystematic Investment Plan.\n</details>",
+          "text": "What does SIP stand for? Systematic Investment Plan."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTotal EMIs should not be more than what share of take-home pay?\n</summary>\n40%.\n</details>",
+          "text": "Total EMIs should not be more than what share of take-home pay? 40%."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the T in SMART stand for?\n</summary>\nTime-bound.\n</details>",
+          "text": "What does the T in SMART stand for? Time-bound."
+        }
+      ]
+    },
+    {
+      "slug": "cash-flow-vs-life-span",
+      "title": "Cash Flow vs Life Span",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A cricketer may earn the most at 25. A\nsoftware engineer may earn the most at 45. A doctor may earn the most at\n60. Same country, very different money stories. When you earn decides\nhow you should invest.</p>\n</blockquote>",
+          "text": "Start here A cricketer may earn the most at 25. A\nsoftware engineer may earn the most at 45. A doctor may earn the most at\n60. Same country, very different money stories. When you earn decides\nhow you should invest."
+        },
+        {
+          "type": "heading",
+          "text": "Three earning curves"
+        },
+        {
+          "type": "html",
+          "html": "<p>Your income is not the same every year. It rises, peaks, then\nfalls.</p>",
+          "text": "Your income is not the same every year. It rises, peaks, then\nfalls."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img07-earning-curves.webp",
+          "alt": "Three earning curves",
+          "caption": "Early peak (sports, YouTubers), middle\npeak (IT jobs), late peak (doctors, scientists)."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Curve</th>\n<th>Who</th>\n<th>Income peaks around</th>\n<th>Then</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Early</strong></td>\n<td>Sports people, actors, YouTubers and social-media creators</td>\n<td><strong>20s</strong> (starts at about 20)</td>\n<td>Falls after about 25–30</td>\n</tr>\n<tr>\n<td><strong>Middle</strong></td>\n<td>IT and corporate employees (who add a master’s or MBA)</td>\n<td><strong>45–50</strong></td>\n<td>Falls as family duties grow</td>\n</tr>\n<tr>\n<td><strong>Late</strong></td>\n<td>Doctors, research scientists, some professionals</td>\n<td><strong>55–65</strong> (may work till 70–75)</td>\n<td>Starts late, around 30</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Curve Who Income peaks around Then Early Sports people, actors, YouTubers and social-media creators 20s (starts at about 20) Falls after about 25–30 Middle IT and corporate employees (who add a master’s or MBA) 45–50 Falls as family duties grow Late Doctors, research scientists, some professionals 55–65 (may work till 70–75) Starts late, around 30"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Know which curve you are on.</strong> If your earning curve\nis <strong>long</strong>, you can take <strong>more risk</strong>.</p>",
+          "text": "Know which curve you are on. If your earning curve\nis long , you can take more risk ."
+        },
+        {
+          "type": "heading",
+          "text": "Six\nthings to think about when building your portfolio"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Know yourself:</strong> your curve, your stage, how you\nearn.</li>\n<li><strong>Investment options:</strong> a long time horizon means you\ncan take more risk, because higher risk can bring higher reward.</li>\n<li><strong>Diversification:</strong> don’t put everything in one\nbasket, including your own business.</li>\n<li><strong>Risk vs reward:</strong>\n<ul>\n<li>At 25, <strong>avoid</strong> endowment or whole-life policies; they\ndrain your cash. <strong>Don’t</strong> lock all your money in a big 3\nor 4 BHK flat.</li>\n<li>At 50–55, such safer products may make sense.</li>\n</ul></li>\n<li><strong>Timing:</strong> perfect timing is\n<strong>impossible</strong>. But if markets fall a lot (like during\nCOVID) and your horizon is 10–15 years, it can be a good time to invest.\nA one-year recession matters less over 15–20 years.</li>\n<li><strong>Role of your advisor:</strong> what does your advisor gain\nfrom what they sell you? Avoid <strong>herd mentality</strong>.</li>\n</ol>",
+          "text": "Know yourself: your curve, your stage, how you\nearn. Investment options: a long time horizon means you\ncan take more risk, because higher risk can bring higher reward. Diversification: don’t put everything in one\nbasket, including your own business. Risk vs reward: At 25, avoid endowment or whole-life policies; they\ndrain your cash. Don’t lock all your money in a big 3\nor 4 BHK flat. At 50–55, such safer products may make sense. Timing: perfect timing is impossible . But if markets fall a lot (like during\nCOVID) and your horizon is 10–15 years, it can be a good time to invest.\nA one-year recession matters less over 15–20 years. Role of your advisor: what does your advisor gain\nfrom what they sell you? Avoid herd mentality ."
+        },
+        {
+          "type": "heading",
+          "text": "What a typical portfolio\nlooks like"
+        },
+        {
+          "type": "html",
+          "html": "<p>The lecturer studied about 2,000–2,500 real portfolios:</p>",
+          "text": "The lecturer studied about 2,000–2,500 real portfolios:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Age</th>\n<th>What people usually hold</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Under 30</strong></td>\n<td>One <strong>apartment</strong> takes up about <strong>65%</strong>\nof everything (parents say “buy a flat”). The rest sits in savings, PF,\nFDs and insurance. Only about <strong>5%</strong> invest smartly.</td>\n</tr>\n<tr>\n<td><strong>30–50</strong></td>\n<td>The apartment’s share falls. <strong>Mutual funds</strong> and\n<strong>direct equity</strong> grow as salaries rise.</td>\n</tr>\n<tr>\n<td><strong>Above 50</strong></td>\n<td>Some <strong>gold</strong> is added (often for a daughter’s\nwedding). Mutual funds and others reach about 18%.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Age What people usually hold Under 30 One apartment takes up about 65% of everything (parents say “buy a flat”). The rest sits in savings, PF,\nFDs and insurance. Only about 5% invest smartly. 30–50 The apartment’s share falls. Mutual funds and direct equity grow as salaries rise. Above 50 Some gold is added (often for a daughter’s\nwedding). Mutual funds and others reach about 18%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The common regret at 50:</strong> “Direct equity gave the\nbest return, but I learned it too late.” Don’t repeat this. Give\n<strong>equity</strong> a place early. If you can’t manage shares\nyourself, use <strong>professional fund managers</strong> (mutual\nfunds).</p>",
+          "text": "The common regret at 50: “Direct equity gave the\nbest return, but I learned it too late.” Don’t repeat this. Give equity a place early. If you can’t manage shares\nyourself, use professional fund managers (mutual\nfunds)."
+        },
+        {
+          "type": "heading",
+          "text": "Make a yearly cash-flow plan"
+        },
+        {
+          "type": "html",
+          "html": "<p>Once a year, use either:</p>",
+          "text": "Once a year, use either:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>the <strong>calendar year</strong> (January–December), or</li>\n<li>the <strong>financial year</strong> (April–March), which India uses\nfor tax.</li>\n</ul>",
+          "text": "the calendar year (January–December), or the financial year (April–March), which India uses\nfor tax."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Step</th>\n<th>What to do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. <strong>Budget</strong></td>\n<td>List expected <strong>inflows</strong> (salary, interest, gifts) and\n<strong>outflows</strong> (EMIs, rent, living expenses).</td>\n</tr>\n<tr>\n<td>2. <strong>Actuals</strong></td>\n<td>At the end of each month, write what really happened.</td>\n</tr>\n<tr>\n<td>3. <strong>Stay positive</strong></td>\n<td>Inflows must be more than outflows.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step What to do 1. Budget List expected inflows (salary, interest, gifts) and outflows (EMIs, rent, living expenses). 2. Actuals At the end of each month, write what really happened. 3. Stay positive Inflows must be more than outflows."
+        },
+        {
+          "type": "html",
+          "html": "<p>“Cash flow is like blood. It has to keep flowing.” Even about ₹100 a\nday, invested every month from age 25 and left to compound, can grow to\ncrores by retirement.</p>",
+          "text": "“Cash flow is like blood. It has to keep flowing.” Even about ₹100 a\nday, invested every month from age 25 and left to compound, can grow to\ncrores by retirement."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Riya wants to be a doctor (late\ncurve). Arjun is a state-level cricketer (early curve). Arjun must save\nmost of what he earns in his 20s, because his income may drop by 30.\nRiya will earn later, so she should keep loans small and plan for a late\nstart.</p>\n</blockquote>",
+          "text": "Everyday example Riya wants to be a doctor (late\ncurve). Arjun is a state-level cricketer (early curve). Arjun must save\nmost of what he earns in his 20s, because his income may drop by 30.\nRiya will earn later, so she should keep loans small and plan for a late\nstart."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Know when your income will peak, invest\naccording to that, avoid locking everything in one flat, and track your\nbudget against actuals every month. <strong>Exam words:</strong> cash\nflow, life span, earning curve, time horizon, portfolio,\ndiversification, timing, herd mentality, budget, actuals, calendar year,\nfinancial year.</p>",
+          "text": "In one line: Know when your income will peak, invest\naccording to that, avoid locking everything in one flat, and track your\nbudget against actuals every month. Exam words: cash\nflow, life span, earning curve, time horizon, portfolio,\ndiversification, timing, herd mentality, budget, actuals, calendar year,\nfinancial year."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich group usually earns the most only after age 55?\n</summary>\nDoctors, research scientists and similar professionals.\n</details>",
+          "text": "Which group usually earns the most only after age 55? Doctors, research scientists and similar professionals."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nUnder age 30, what takes up about 65% of a typical portfolio?\n</summary>\nOne apartment (real estate).\n</details>",
+          "text": "Under age 30, what takes up about 65% of a typical portfolio? One apartment (real estate)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is India’s financial year?\n</summary>\nApril to March.\n</details>",
+          "text": "What is India’s financial year? April to March."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs perfect market timing possible?\n</summary>\nNo. But big market falls can be good buying times for long-term\ninvestors.\n</details>",
+          "text": "Is perfect market timing possible? No. But big market falls can be good buying times for long-term\ninvestors."
+        }
+      ]
+    },
+    {
+      "slug": "returns-inflation-compounding",
+      "title": "Returns, Inflation and the Power of Compounding",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your uncle says, “I made 48% on my flat\nin 5 years — almost 10% a year!” Did he really? And did he even beat\nrising prices? This page teaches you to check.</p>\n</blockquote>",
+          "text": "Start here Your uncle says, “I made 48% on my flat\nin 5 years — almost 10% a year!” Did he really? And did he even beat\nrising prices? This page teaches you to check."
+        },
+        {
+          "type": "heading",
+          "text": "Inflation: the silent killer"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Inflation</strong> means prices <strong>rise</strong> over\ntime. The same money buys <strong>less</strong>: your <strong>purchasing\npower</strong> falls.</p>",
+          "text": "Inflation means prices rise over\ntime. The same money buys less : your purchasing\npower falls."
+        },
+        {
+          "type": "html",
+          "html": "<p>Why does it happen? <strong>Too much money chasing too few\ngoods.</strong> When supply is short and people have lots of cash,\nprices go up.</p>",
+          "text": "Why does it happen? Too much money chasing too few\ngoods. When supply is short and people have lots of cash,\nprices go up."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Item</th>\n<th>Earlier</th>\n<th>Later</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 litre of milk</td>\n<td>₹25 (10 years ago)</td>\n<td>₹40–45</td>\n</tr>\n<tr>\n<td>1 litre of petrol</td>\n<td>₹60 (15 years ago)</td>\n<td>₹100</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Item Earlier Later 1 litre of milk ₹25 (10 years ago) ₹40–45 1 litre of petrol ₹60 (15 years ago) ₹100"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img08-inflation.webp",
+          "alt": "Inflation shrinks your money",
+          "caption": "The same ₹25,000 buys 250\nlitres of petrol at ₹100, but only 125 litres at ₹200."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the same salary, half the petrol</strong>\nSalary ₹25,000. Petrol at ₹100 a litre → you can buy <strong>250\nlitres</strong>. 15–20 years later, petrol is ₹200 → the same ₹25,000\nbuys only <strong>125 litres</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the same salary, half the petrol Salary ₹25,000. Petrol at ₹100 a litre → you can buy 250\nlitres . 15–20 years later, petrol is ₹200 → the same ₹25,000\nbuys only 125 litres ."
+        },
+        {
+          "type": "subheading",
+          "text": "Inflation is not all bad"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Good side</th>\n<th>Bad side</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Interest rates rise, so FDs pay more</td>\n<td>Loan interest also rises</td>\n</tr>\n<tr>\n<td>Salaries rise</td>\n<td>It costs more to make things</td>\n</tr>\n<tr>\n<td>It is a sign the economy (GDP) is growing</td>\n<td>Too much inflation hurts growth</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Good side Bad side Interest rates rise, so FDs pay more Loan interest also rises Salaries rise It costs more to make things It is a sign the economy (GDP) is growing Too much inflation hurts growth"
+        },
+        {
+          "type": "subheading",
+          "text": "How much is inflation in\nIndia?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Measured by the <strong>CPI (Consumer Price Index)</strong>.</li>\n<li>Long-term average: about <strong>6–7%</strong> a year.</li>\n<li><strong>Education</strong> inflation: about <strong>10%</strong>.\n<strong>Healthcare</strong> inflation: up to <strong>15%</strong>.</li>\n</ul>",
+          "text": "Measured by the CPI (Consumer Price Index) . Long-term average: about 6–7% a year. Education inflation: about 10% . Healthcare inflation: up to 15% ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the grocery bills</strong> The lecturer\nkept bills for groceries he donated to a care home in 2008, 2013 and\n2018. <strong>Moong dal:</strong> ₹50 (2008) → ₹90 (2013) → ₹92 (2018).\nThat is about <strong>12.5% a year</strong> for the first 5 years and\n<strong>6.3% a year</strong> over 10 years. Average food inflation came\nto about <strong>7.4%</strong>. During the pandemic (2018–2020), it went\nabove <strong>10%</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the grocery bills The lecturer\nkept bills for groceries he donated to a care home in 2008, 2013 and\n2018. Moong dal: ₹50 (2008) → ₹90 (2013) → ₹92 (2018).\nThat is about 12.5% a year for the first 5 years and 6.3% a year over 10 years. Average food inflation came\nto about 7.4% . During the pandemic (2018–2020), it went\nabove 10% ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why this matters:</strong> an FD gives 6–7%. After 20–30%\ntax, you keep about <strong>4–5%</strong>. Food inflation is about 7%.\nSo money in FDs is actually <strong>losing</strong> value.</p>",
+          "text": "Why this matters: an FD gives 6–7%. After 20–30%\ntax, you keep about 4–5% . Food inflation is about 7%.\nSo money in FDs is actually losing value."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Also:</em> bank deposits are insured only up to <strong>₹5\nlakh</strong> per bank, so don’t put all your money in one bank.</p>",
+          "text": "Also: bank deposits are insured only up to ₹5\nlakh per bank, so don’t put all your money in one bank."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Learn more for free:</strong> Investopedia (“what is\ninflation”) and Napkin Finance.</p>",
+          "text": "Learn more for free: Investopedia (“what is\ninflation”) and Napkin Finance."
+        },
+        {
+          "type": "heading",
+          "text": "Return on investment (ROI)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>ROI (%) = Net profit ÷ Cost of investment × 100</strong></p>",
+          "text": "ROI (%) = Net profit ÷ Cost of investment × 100"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Net profit</strong> = selling price − cost price − expenses −\ntaxes.</p>",
+          "text": "Net profit = selling price − cost price − expenses −\ntaxes."
+        },
+        {
+          "type": "html",
+          "html": "<p>Always check:</p>",
+          "text": "Always check:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Simple ROI</strong></li>\n<li><strong>Annualised return</strong> (the CAGR)</li>\n<li><strong>Benchmark return:</strong> did your fund manager beat the\nmarket index?</li>\n<li><strong>Post-tax real return:</strong> after tax\n<strong>and</strong> after inflation.</li>\n</ol>",
+          "text": "Simple ROI Annualised return (the CAGR) Benchmark return: did your fund manager beat the\nmarket index? Post-tax real return: after tax and after inflation."
+        },
+        {
+          "type": "subheading",
+          "text": "Active vs passive investing"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Passive</th>\n<th>Active</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>ETF (Exchange Traded Fund)</strong> or index fund: buys all\ncompanies in an index (Nifty 50, Nifty 100…) in the same proportion</td>\n<td>A <strong>fund manager</strong> picks the best stocks</td>\n</tr>\n<tr>\n<td>Low cost; you get the <strong>benchmark</strong> return</td>\n<td>Costs more; worth it only if the manager <strong>beats the\nbenchmark</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Passive Active ETF (Exchange Traded Fund) or index fund: buys all\ncompanies in an index (Nifty 50, Nifty 100…) in the same proportion A fund manager picks the best stocks Low cost; you get the benchmark return Costs more; worth it only if the manager beats the\nbenchmark"
+        },
+        {
+          "type": "heading",
+          "text": "Simple interest vs\ncompound interest"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img09-simple-vs-compound.webp",
+          "alt": "Simple vs compound",
+          "caption": "With compounding, the interest itself\nstarts earning interest."
+        },
+        {
+          "type": "html",
+          "html": "<p>₹100 at 10% a year:</p>",
+          "text": "₹100 at 10% a year:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Year</th>\n<th>Simple interest (interest on ₹100 only)</th>\n<th>Compound interest (interest on the growing total)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>₹110</td>\n<td>₹110</td>\n</tr>\n<tr>\n<td>2</td>\n<td>₹120</td>\n<td>₹121</td>\n</tr>\n<tr>\n<td>3</td>\n<td>₹130</td>\n<td>₹133.10</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Year Simple interest (interest on ₹100 only) Compound interest (interest on the growing total) 1 ₹110 ₹110 2 ₹120 ₹121 3 ₹130 ₹133.10"
+        },
+        {
+          "type": "html",
+          "html": "<p>The gap looks small at first, but over 20–30 years it becomes\nhuge.</p>",
+          "text": "The gap looks small at first, but over 20–30 years it becomes\nhuge."
+        },
+        {
+          "type": "heading",
+          "text": "CAGR: the true yearly growth"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>CAGR = Compounded Annual Growth Rate</strong>: the steady\nyearly rate that turns your start value into your end value.</p>",
+          "text": "CAGR = Compounded Annual Growth Rate : the steady\nyearly rate that turns your start value into your end value."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Mr. Vijay’s flat</strong> Mr. Vijay bought\na 15-year-old 2BHK in Chennai for <strong>₹1 crore</strong> in December\n2017. He sold it for <strong>₹1.5 crore</strong> in December 2022 (5\nyears). He paid <strong>₹2 lakh</strong> brokerage. (Tax is ignored\nhere.)</p>\n<ul>\n<li>Gain = ₹50 lakh − ₹2 lakh = <strong>₹48 lakh</strong> → simple ROI =\n<strong>48%</strong>.</li>\n<li>“Per year” the simple way: 48 ÷ 5 = <strong>9.6%</strong>. Most\npeople stop here.</li>\n<li><strong>CAGR:</strong> (148 ÷ 100)^(1/5) − 1 =\n<strong>8.16%</strong> a year.</li>\n</ul>\n<p>The real yearly return is <strong>8.16%</strong>, not 9.6%. That is\n1.44 points less, or about 15% lower. And 8% is barely above food\ninflation of 7%.</p>\n</blockquote>",
+          "text": "Lecture example — Mr. Vijay’s flat Mr. Vijay bought\na 15-year-old 2BHK in Chennai for ₹1 crore in December\n2017. He sold it for ₹1.5 crore in December 2022 (5\nyears). He paid ₹2 lakh brokerage. (Tax is ignored\nhere.) Gain = ₹50 lakh − ₹2 lakh = ₹48 lakh → simple ROI = 48% . “Per year” the simple way: 48 ÷ 5 = 9.6% . Most\npeople stop here. CAGR: (148 ÷ 100)^(1/5) − 1 = 8.16% a year. The real yearly return is 8.16% , not 9.6%. That is\n1.44 points less, or about 15% lower. And 8% is barely above food\ninflation of 7%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to calculate CAGR easily:</strong></p>",
+          "text": "How to calculate CAGR easily:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A free <strong>financial calculator app</strong> (TVM, Time Value of\nMoney): enter −100 (money out), 148 (money in), 5 years, compounding\nyearly, then press “rate” → <strong>8.16%</strong>.</li>\n<li>Or Google Sheets / Excel.</li>\n</ul>",
+          "text": "A free financial calculator app (TVM, Time Value of\nMoney): enter −100 (money out), 148 (money in), 5 years, compounding\nyearly, then press “rate” → 8.16% . Or Google Sheets / Excel."
+        },
+        {
+          "type": "heading",
+          "text": "XIRR: for SIPs with many\ndates"
+        },
+        {
+          "type": "html",
+          "html": "<p>With an <strong>SIP</strong>, you invest every month, on different\ndates. CAGR can’t handle many dates. Use <strong>XIRR</strong> (extended\ninternal rate of return) in Excel or Google Sheets.</p>",
+          "text": "With an SIP , you invest every month, on different\ndates. CAGR can’t handle many dates. Use XIRR (extended\ninternal rate of return) in Excel or Google Sheets."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — SIP returns</strong> Long-term SIPs in\nmutual funds gave the lecturer about <strong>15–21% a year</strong>\n(e.g. 19.74% for 2010–2015), much more than the flat’s 8.16%.</p>\n</blockquote>",
+          "text": "Lecture example — SIP returns Long-term SIPs in\nmutual funds gave the lecturer about 15–21% a year (e.g. 19.74% for 2010–2015), much more than the flat’s 8.16%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Do this for every asset you own:</strong> FDs, insurance,\nreal estate, mutual funds, shares. Use <strong>post-tax</strong>\nvalues.</p>",
+          "text": "Do this for every asset you own: FDs, insurance,\nreal estate, mutual funds, shares. Use post-tax values."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Inflation silently eats your money, so\nmeasure every investment by its CAGR (or XIRR for SIPs) after tax and\ninflation. <strong>Exam words:</strong> inflation, purchasing power,\nCPI, silent killer, ROI, net profit, CAGR, simple interest, compound\ninterest, ETF, passive vs active, benchmark, XIRR, post-tax real\nreturn.</p>",
+          "text": "In one line: Inflation silently eats your money, so\nmeasure every investment by its CAGR (or XIRR for SIPs) after tax and\ninflation. Exam words: inflation, purchasing power,\nCPI, silent killer, ROI, net profit, CAGR, simple interest, compound\ninterest, ETF, passive vs active, benchmark, XIRR, post-tax real\nreturn."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is inflation?\n</summary>\nA rise in prices over time, which means a fall in purchasing power.\n</details>",
+          "text": "What is inflation? A rise in prices over time, which means a fall in purchasing power."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n₹1 crore grows to ₹1.48 crore in 5 years. Simple yearly return vs CAGR?\n</summary>\nSimple: 48 ÷ 5 = 9.6% a year. CAGR: about 8.16% a year.\n</details>",
+          "text": "₹1 crore grows to ₹1.48 crore in 5 years. Simple yearly return vs CAGR? Simple: 48 ÷ 5 = 9.6% a year. CAGR: about 8.16% a year."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n₹100 at 10% compound interest for 2 years becomes how much?\n</summary>\n₹121.\n</details>",
+          "text": "₹100 at 10% compound interest for 2 years becomes how much? ₹121."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich formula do you use for an SIP with many investment dates?\n</summary>\nXIRR.\n</details>",
+          "text": "Which formula do you use for an SIP with many investment dates? XIRR."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy can an FD at 6.5% lose you money?\n</summary>\nAfter tax you may keep only 4–5%, while inflation is about 6–7%, so\npurchasing power falls.\n</details>",
+          "text": "Why can an FD at 6.5% lose you money? After tax you may keep only 4–5%, while inflation is about 6–7%, so\npurchasing power falls."
+        }
+      ]
+    },
+    {
+      "slug": "indian-income-tax",
+      "title": "Indian Income Tax — 5 Heads and Two Regimes",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> The government builds roads, power lines\nand highways. Where does the money come from? Partly from you, through\nincome tax. This page explains how it works, as taught in the\nlecture.</p>\n</blockquote>",
+          "text": "Start here The government builds roads, power lines\nand highways. Where does the money come from? Partly from you, through\nincome tax. This page explains how it works, as taught in the\nlecture."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Important:</strong> The lecture was recorded for the\nfinancial year <strong>2022–23</strong>. Tax rules change <strong>every\nyear</strong> with the Budget. Learn the lecture’s numbers for the exam,\nthen see the “Tax rules today” box at the end.</p>\n</blockquote>",
+          "text": "Important: The lecture was recorded for the\nfinancial year 2022–23 . Tax rules change every\nyear with the Budget. Learn the lecture’s numbers for the exam,\nthen see the “Tax rules today” box at the end."
+        },
+        {
+          "type": "heading",
+          "text": "What is income tax?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Income tax</strong> is a tax on what a person or business\nearns. The government uses it for things like roads, highways and\npower.</p>",
+          "text": "Income tax is a tax on what a person or business\nearns. The government uses it for things like roads, highways and\npower."
+        },
+        {
+          "type": "html",
+          "html": "<p>The lecture’s simple picture:</p>",
+          "text": "The lecture’s simple picture:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The first <strong>₹2.5 lakh</strong> of income: no tax.</li>\n<li>Above that: give a small share (like <strong>10%</strong>, i.e. ₹10\nof every ₹100).</li>\n<li>Above <strong>₹10 lakh</strong> (old regime): give\n<strong>30%</strong> (30 paise of every rupee).</li>\n</ul>",
+          "text": "The first ₹2.5 lakh of income: no tax. Above that: give a small share (like 10% , i.e. ₹10\nof every ₹100). Above ₹10 lakh (old regime): give 30% (30 paise of every rupee)."
+        },
+        {
+          "type": "heading",
+          "text": "The five heads (sources) of\nincome"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img10-five-heads.webp",
+          "alt": "Five heads of income",
+          "caption": "Salary, house property, capital gains,\nbusiness or profession, and other sources."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Head</th>\n<th>What it covers</th>\n<th>Note from the lecture</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Salaries</strong></td>\n<td>Pay from a job</td>\n<td>Comes with some tax benefits. Even owners of family companies (about\n90% of Indian companies are family-owned) take a salary. As a startup\nfounder, you can also be a salaried employee of your own company.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>House property</strong></td>\n<td>Income from houses you own</td>\n<td>Up to <strong>2</strong> homes can be self-occupied. From the\n<strong>3rd</strong> house, you pay tax as if it were rented out, even\nif it is locked and empty.</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Capital gains</strong></td>\n<td>Profit when you sell an asset for more than you paid</td>\n<td>E.g. a flat bought at ₹1 crore and sold at ₹1.48 crore; shares;\nmutual funds</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Business or profession</strong></td>\n<td>Income from your own work or firm</td>\n<td>Doctors, architects, accountants (profession); sole proprietorship\nor partnership (business)</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Other sources</strong></td>\n<td>Interest, dividends</td>\n<td>Some incomes are <strong>tax-free</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Head What it covers Note from the lecture 1 Salaries Pay from a job Comes with some tax benefits. Even owners of family companies (about\n90% of Indian companies are family-owned) take a salary. As a startup\nfounder, you can also be a salaried employee of your own company. 2 House property Income from houses you own Up to 2 homes can be self-occupied. From the 3rd house, you pay tax as if it were rented out, even\nif it is locked and empty. 3 Capital gains Profit when you sell an asset for more than you paid E.g. a flat bought at ₹1 crore and sold at ₹1.48 crore; shares;\nmutual funds 4 Business or profession Income from your own work or firm Doctors, architects, accountants (profession); sole proprietorship\nor partnership (business) 5 Other sources Interest, dividends Some incomes are tax-free"
+        },
+        {
+          "type": "heading",
+          "text": "Old regime\nvs new regime (as in the lecture, FY 2022–23)"
+        },
+        {
+          "type": "html",
+          "html": "<p>From FY 2020–21, the government brought in an <strong>optional new\ntax regime</strong> (under Section 115BAC): <strong>lower\nrates</strong>, but <strong>almost no deductions</strong>.</p>",
+          "text": "From FY 2020–21, the government brought in an optional new\ntax regime (under Section 115BAC): lower\nrates , but almost no deductions ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Annual income</th>\n<th><strong>Old regime</strong></th>\n<th><strong>New regime</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Up to ₹2.5 lakh</td>\n<td>Nil</td>\n<td>Nil</td>\n</tr>\n<tr>\n<td>₹2.5 – 5 lakh</td>\n<td>5%</td>\n<td>5%</td>\n</tr>\n<tr>\n<td>₹5 – 7.5 lakh</td>\n<td>20%</td>\n<td>10%</td>\n</tr>\n<tr>\n<td>₹7.5 – 10 lakh</td>\n<td>20%</td>\n<td>15%</td>\n</tr>\n<tr>\n<td>₹10 – 12.5 lakh</td>\n<td>30%</td>\n<td>20%</td>\n</tr>\n<tr>\n<td>₹12.5 – 15 lakh</td>\n<td>30%</td>\n<td>25%</td>\n</tr>\n<tr>\n<td>Above ₹15 lakh</td>\n<td>30%</td>\n<td>30%</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Annual income Old regime New regime Up to ₹2.5 lakh Nil Nil ₹2.5 – 5 lakh 5% 5% ₹5 – 7.5 lakh 20% 10% ₹7.5 – 10 lakh 20% 15% ₹10 – 12.5 lakh 30% 20% ₹12.5 – 15 lakh 30% 25% Above ₹15 lakh 30% 30%"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>In the old regime, senior citizens (60+) pay no tax up to ₹3 lakh,\nand super seniors (80+) up to ₹5 lakh.</li>\n<li><strong>Old regime = higher rates + deductions.</strong> For\nexample:\n<ul>\n<li><strong>Section 80C:</strong> up to ₹1.5 lakh,\ne.g. <strong>ELSS</strong> mutual funds (3-year lock-in).</li>\n<li><strong>Section 80D:</strong> health insurance.</li>\n<li><strong>Section 80CCD:</strong> another ₹50,000 for\n<strong>NPS</strong> (National Pension System).</li>\n</ul></li>\n<li><strong>New regime = lower rates, no such deductions.</strong></li>\n</ul>",
+          "text": "In the old regime, senior citizens (60+) pay no tax up to ₹3 lakh,\nand super seniors (80+) up to ₹5 lakh. Old regime = higher rates + deductions. For\nexample: Section 80C: up to ₹1.5 lakh,\ne.g. ELSS mutual funds (3-year lock-in). Section 80D: health insurance. Section 80CCD: another ₹50,000 for NPS (National Pension System). New regime = lower rates, no such deductions."
+        },
+        {
+          "type": "subheading",
+          "text": "Which one should\nyou choose? (the lecture’s rule)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>If you…</th>\n<th>Choose</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Can save about <strong>₹2.5 lakh a year</strong> (about ₹20,000 a\nmonth) through 80C, NPS, home loan and similar</td>\n<td><strong>Old regime</strong></td>\n</tr>\n<tr>\n<td>Won’t save that much, or plan to move abroad</td>\n<td><strong>New regime</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "If you… Choose Can save about ₹2.5 lakh a year (about ₹20,000 a\nmonth) through 80C, NPS, home loan and similar Old regime Won’t save that much, or plan to move abroad New regime"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tax planning is ethical. Tax evasion is unethical.</strong>\nTalk to a tax expert.</p>",
+          "text": "Tax planning is ethical. Tax evasion is unethical. Talk to a tax expert."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Tax rules today (not in the lecture — for real\nlife)</strong></p>\n<ul>\n<li>Since FY 2023–24, the <strong>new regime is the default</strong>.\nYou must choose the old regime if you want it.</li>\n<li>For FY 2025–26 and FY 2026–27, the new regime slabs are: up to ₹4\nlakh nil; ₹4–8 lakh 5%; ₹8–12 lakh 10%; ₹12–16 lakh 15%; ₹16–20 lakh\n20%; ₹20–24 lakh 25%; above ₹24 lakh 30%.</li>\n<li>A rebate makes income up to <strong>₹12 lakh</strong> tax-free under\nthe new regime. Salaried people also get a <strong>₹75,000</strong>\nstandard deduction.</li>\n<li>A new <strong>Income-tax Act, 2025</strong> replaces the 1961 Act,\nand many section numbers have changed.</li>\n<li>Always check the official website,\n<strong>incometax.gov.in</strong>, for the current year.</li>\n</ul>\n</blockquote>",
+          "text": "Tax rules today (not in the lecture — for real\nlife) Since FY 2023–24, the new regime is the default .\nYou must choose the old regime if you want it. For FY 2025–26 and FY 2026–27, the new regime slabs are: up to ₹4\nlakh nil; ₹4–8 lakh 5%; ₹8–12 lakh 10%; ₹12–16 lakh 15%; ₹16–20 lakh\n20%; ₹20–24 lakh 25%; above ₹24 lakh 30%. A rebate makes income up to ₹12 lakh tax-free under\nthe new regime. Salaried people also get a ₹75,000 standard deduction. A new Income-tax Act, 2025 replaces the 1961 Act,\nand many section numbers have changed. Always check the official website, incometax.gov.in , for the current year."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Income is taxed under five heads; the\nold regime has higher rates with deductions, the new regime has lower\nrates without them, so pick based on how much you save. <strong>Exam\nwords:</strong> income tax, five heads of income, salaries, house\nproperty, capital gains, business or profession, other sources, old\nregime, new regime, Section 115BAC, Section 80C, ELSS, Section 80D, NPS,\ntax planning vs tax evasion.</p>",
+          "text": "In one line: Income is taxed under five heads; the\nold regime has higher rates with deductions, the new regime has lower\nrates without them, so pick based on how much you save. Exam\nwords: income tax, five heads of income, salaries, house\nproperty, capital gains, business or profession, other sources, old\nregime, new regime, Section 115BAC, Section 80C, ELSS, Section 80D, NPS,\ntax planning vs tax evasion."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the five heads of income.\n</summary>\nSalaries, house property, capital gains, business or profession, and\nother sources.\n</details>",
+          "text": "Name the five heads of income. Salaries, house property, capital gains, business or profession, and\nother sources."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYou own 3 flats and keep the third one locked. Do you pay tax on it?\n</summary>\nYes. From the third house onwards, you pay tax as if it were rented out.\n</details>",
+          "text": "You own 3 flats and keep the third one locked. Do you pay tax on it? Yes. From the third house onwards, you pay tax as if it were rented out."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn the lecture’s table, what is the old-regime rate for income between\n₹5 lakh and ₹10 lakh?\n</summary>\n20%.\n</details>",
+          "text": "In the lecture’s table, what is the old-regime rate for income between\n₹5 lakh and ₹10 lakh? 20%."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to the lecture, when should you choose the old regime?\n</summary>\nWhen you can save about ₹2.5 lakh a year through deductions like 80C,\nNPS and home loan.\n</details>",
+          "text": "According to the lecture, when should you choose the old regime? When you can save about ₹2.5 lakh a year through deductions like 80C,\nNPS and home loan."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs tax planning ethical?\n</summary>\nYes. Tax planning is ethical; tax evasion is unethical.\n</details>",
+          "text": "Is tax planning ethical? Yes. Tax planning is ethical; tax evasion is unethical."
+        }
+      ]
+    },
+    {
+      "slug": "employee-vs-entrepreneur",
+      "title": "Employee vs Entrepreneur — Taking Calculated Risks",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Out of 100 new companies, only about 15\nare still alive after 3 years. Yet some of those 15 change the world.\nShould you take a job or start a business? There is no single right\nanswer. But there is a smart way to decide.</p>\n</blockquote>",
+          "text": "Start here Out of 100 new companies, only about 15\nare still alive after 3 years. Yet some of those 15 change the world.\nShould you take a job or start a business? There is no single right\nanswer. But there is a smart way to decide."
+        },
+        {
+          "type": "heading",
+          "text": "High risk, high reward"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Entrepreneurship</strong> = <strong>high risk, high\nreward.</strong></li>\n<li>Of <strong>100</strong> new companies, only about\n<strong>15</strong> survive <strong>36 months</strong>.</li>\n<li>Why do the rest fail? <strong>Cash-flow problems</strong>, no\ncustomers, changing technology, or wrong assumptions.</li>\n<li><strong>A middle path:</strong> join a startup as an\n<strong>employee</strong>, but <strong>think like an\nentrepreneur</strong>. You get some of the rewards with less risk.</li>\n</ul>",
+          "text": "Entrepreneurship = high risk, high\nreward. Of 100 new companies, only about 15 survive 36 months . Why do the rest fail? Cash-flow problems , no\ncustomers, changing technology, or wrong assumptions. A middle path: join a startup as an employee , but think like an\nentrepreneur . You get some of the rewards with less risk."
+        },
+        {
+          "type": "heading",
+          "text": "Plan vs reality"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Your plan</th>\n<th>Reality</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A smooth, straight road to your goal</td>\n<td>Ups and downs: speed breakers, a pandemic, a recession, climate\nchange…</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Your plan Reality A smooth, straight road to your goal Ups and downs: speed breakers, a pandemic, a recession, climate\nchange…"
+        },
+        {
+          "type": "html",
+          "html": "<p>Sometimes it’s a <strong>hockey stick</strong>: you dip first, then\nshoot up. But stay focused, and the end will be good.</p>",
+          "text": "Sometimes it’s a hockey stick : you dip first, then\nshoot up. But stay focused, and the end will be good."
+        },
+        {
+          "type": "heading",
+          "text": "Your three most valuable\nresources"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img11-time-money-energy.webp",
+          "alt": "Time, money and energy",
+          "caption": "At each age, you have some resources\nand lack others."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Age</th>\n<th>Time</th>\n<th>Money</th>\n<th>Energy</th>\n<th>Main worry</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Up to 25</strong></td>\n<td>✓</td>\n<td>✗</td>\n<td>✓</td>\n<td>Worry about <strong>money</strong></td>\n</tr>\n<tr>\n<td><strong>26–50</strong></td>\n<td>✗</td>\n<td>✓</td>\n<td>✓</td>\n<td>Worry about <strong>time</strong>; no time for loved ones</td>\n</tr>\n<tr>\n<td><strong>50–60</strong></td>\n<td>✗</td>\n<td>✓</td>\n<td>✗</td>\n<td><strong>Health</strong>: reading glasses, diabetes, BP</td>\n</tr>\n<tr>\n<td><strong>60–75</strong></td>\n<td>✓</td>\n<td>✓</td>\n<td>✗</td>\n<td>Can’t travel rough; need comfort</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Age Time Money Energy Main worry Up to 25 ✓ ✗ ✓ Worry about money 26–50 ✗ ✓ ✓ Worry about time ; no time for loved ones 50–60 ✗ ✓ ✗ Health : reading glasses, diabetes, BP 60–75 ✓ ✓ ✗ Can’t travel rough; need comfort"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lessons:</strong></p>",
+          "text": "Lessons:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Don’t start a business when your energy is low</strong> (for\nexample, after 60).</li>\n<li>People now live to 80–100. Don’t wait for\n<strong>inheritance</strong>: by the time you get it at 75, you won’t\nhave the energy to use it.</li>\n<li>At 20–25, you lack money, but <strong>good ideas can raise money\nquickly</strong>.</li>\n</ul>",
+          "text": "Don’t start a business when your energy is low (for\nexample, after 60). People now live to 80–100. Don’t wait for inheritance : by the time you get it at 75, you won’t\nhave the energy to use it. At 20–25, you lack money, but good ideas can raise money\nquickly ."
+        },
+        {
+          "type": "subheading",
+          "text": "Time"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Everyone has <strong>24 hours</strong>. Sleep <strong>6–8\nhours</strong> every day, not less than 6 and not more than 8, even on\nSunday. Don’t “catch up” sleep on weekends.</li>\n<li>An entrepreneur must be ready to work about <strong>16 hours a\nday</strong>. An employee who works that hard is very likely to reach\nthe top, even CEO.</li>\n<li><strong>Rule of 10,000 hours</strong> (Malcolm Gladwell,\n<em>Outliers</em>): about 10,000 hours of focused practice make you an\nexpert.</li>\n</ul>",
+          "text": "Everyone has 24 hours . Sleep 6–8\nhours every day, not less than 6 and not more than 8, even on\nSunday. Don’t “catch up” sleep on weekends. An entrepreneur must be ready to work about 16 hours a\nday . An employee who works that hard is very likely to reach\nthe top, even CEO. Rule of 10,000 hours (Malcolm Gladwell, Outliers ): about 10,000 hours of focused practice make you an\nexpert."
+        },
+        {
+          "type": "subheading",
+          "text": "Money"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Learning → Earning → Returning.</strong> Keep learning, and\nearning will follow. Then give back (through taxes, investing, helping\nsociety).</p>",
+          "text": "Learning → Earning → Returning. Keep learning, and\nearning will follow. Then give back (through taxes, investing, helping\nsociety)."
+        },
+        {
+          "type": "subheading",
+          "text": "Energy"
+        },
+        {
+          "type": "html",
+          "html": "<p>Power of the mind, good food, fresh air, positive thoughts, sleep,\nsupportive friends and family. <strong>Stay away from negative\npeople.</strong></p>",
+          "text": "Power of the mind, good food, fresh air, positive thoughts, sleep,\nsupportive friends and family. Stay away from negative\npeople."
+        },
+        {
+          "type": "heading",
+          "text": "What an\nentrepreneur must know: the 7 business functions"
+        },
+        {
+          "type": "html",
+          "html": "<p>You need <strong>vertical expertise</strong> (deep skill in your\nfield) <strong>and</strong> <strong>horizontal exposure</strong> (some\nknowledge of every business function):</p>",
+          "text": "You need vertical expertise (deep skill in your\nfield) and horizontal exposure (some\nknowledge of every business function):"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img12-business-functions.webp",
+          "alt": "Seven business functions",
+          "caption": "Marketing, sales, suppliers,\noperations, innovation, support, and leadership."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Function</th>\n<th>What you must understand</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. <strong>Marketing</strong></td>\n<td>Reaching customers: <strong>B2B</strong> (business to business),\n<strong>B2C</strong> (business to consumer), digital.\n<strong>High-margin</strong> products (e.g. stitching a designer blouse;\nconsulting).</td>\n</tr>\n<tr>\n<td>2. <strong>Sales</strong></td>\n<td>Selling your idea; <strong>pricing</strong>; product mix. Some\nthings are given <strong>free</strong> to build a platform (like\nAndroid).</td>\n</tr>\n<tr>\n<td>3. <strong>Suppliers</strong></td>\n<td>For manufacturing: tier 1, 2, 3 suppliers. Don’t depend on just one.\nControl the cost of goods.</td>\n</tr>\n<tr>\n<td>4. <strong>Operations</strong></td>\n<td>Remove non-value-added work. <strong>Span of control</strong> about\n<strong>1:7</strong> (one manager, about 7 people). Do it right the\nfirst time; rework is waste. Hire the right people.</td>\n</tr>\n<tr>\n<td>5. <strong>Innovation</strong></td>\n<td>Business models change every few years: Nokia → BlackBerry →\ntouchscreen phones. Protect ideas with <strong>patents</strong>\n(intellectual property). Be fast to market.</td>\n</tr>\n<tr>\n<td>6. <strong>Support</strong></td>\n<td>HR, finance, admin, security. Know <strong>ROA, ROE, ROCE</strong>\n(returns on assets, equity, capital employed), <strong>MIS</strong>\ndashboards, and the <strong>RACI</strong> matrix (Responsible,\nAccountable, Consulted, Informed).</td>\n</tr>\n<tr>\n<td>7. <strong>Leadership and management</strong></td>\n<td>In small and medium businesses, this <strong>can’t be\ndelegated</strong>. You need clarity, focus and insight.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Function What you must understand 1. Marketing Reaching customers: B2B (business to business), B2C (business to consumer), digital. High-margin products (e.g. stitching a designer blouse;\nconsulting). 2. Sales Selling your idea; pricing ; product mix. Some\nthings are given free to build a platform (like\nAndroid). 3. Suppliers For manufacturing: tier 1, 2, 3 suppliers. Don’t depend on just one.\nControl the cost of goods. 4. Operations Remove non-value-added work. Span of control about 1:7 (one manager, about 7 people). Do it right the\nfirst time; rework is waste. Hire the right people. 5. Innovation Business models change every few years: Nokia → BlackBerry →\ntouchscreen phones. Protect ideas with patents (intellectual property). Be fast to market. 6. Support HR, finance, admin, security. Know ROA, ROE, ROCE (returns on assets, equity, capital employed), MIS dashboards, and the RACI matrix (Responsible,\nAccountable, Consulted, Informed). 7. Leadership and management In small and medium businesses, this can’t be\ndelegated . You need clarity, focus and insight."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Keep learning:</strong> free online courses (Harvard offered\n67 free courses during the pandemic), YouTube, low-cost courses.\n<strong>Get a mentor or coach.</strong> Spend at least <strong>1% of\nyour income</strong> on upgrading yourself every year.</p>",
+          "text": "Keep learning: free online courses (Harvard offered\n67 free courses during the pandemic), YouTube, low-cost courses. Get a mentor or coach. Spend at least 1% of\nyour income on upgrading yourself every year."
+        },
+        {
+          "type": "heading",
+          "text": "Taking a calculated risk"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Don’t put all your money in the business.</strong> If you\nhave ₹100, risk only about ₹20. If you lose it, you still have ₹80 and\ncan recover in 2–3 years.</li>\n<li>Make sure your <strong>family can run the home</strong> for a while\nwithout your income.</li>\n<li><strong>Don’t start at 60:</strong> energy is too low. (The lecturer\nstarted his business at 45.)</li>\n<li><strong>Smart path:</strong> work for <strong>5–6 years</strong>,\nlearn how business works, find a real <strong>problem</strong> and a\n<strong>burning need</strong>, then start.</li>\n</ul>",
+          "text": "Don’t put all your money in the business. If you\nhave ₹100, risk only about ₹20. If you lose it, you still have ₹80 and\ncan recover in 2–3 years. Make sure your family can run the home for a while\nwithout your income. Don’t start at 60: energy is too low. (The lecturer\nstarted his business at 45.) Smart path: work for 5–6 years ,\nlearn how business works, find a real problem and a burning need , then start."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the employee who thought like an\nowner</strong> <strong>S. D. Shibulal</strong> was part of the early\n<strong>Infosys</strong> team. He stayed an employee for many years,\nlater became <strong>CEO</strong>, and built great wealth. You can be an\nemployee and still enjoy an entrepreneur’s rewards.</p>\n</blockquote>",
+          "text": "Lecture example — the employee who thought like an\nowner S. D. Shibulal was part of the early Infosys team. He stayed an employee for many years,\nlater became CEO , and built great wealth. You can be an\nemployee and still enjoy an entrepreneur’s rewards."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Entrepreneurship is high risk and high\nreward; build skills first, risk only part of your money, and start\nwhile your energy is high. <strong>Exam words:</strong>\nentrepreneurship, calculated risk, 15 of 100 survive 3 years,\ntime–money–energy, rule of 10,000 hours, learning–earning–returning,\nhorizontal exposure, vertical expertise, B2B, B2C, span of control,\npatents, RACI matrix, MIS.</p>",
+          "text": "In one line: Entrepreneurship is high risk and high\nreward; build skills first, risk only part of your money, and start\nwhile your energy is high. Exam words: entrepreneurship, calculated risk, 15 of 100 survive 3 years,\ntime–money–energy, rule of 10,000 hours, learning–earning–returning,\nhorizontal exposure, vertical expertise, B2B, B2C, span of control,\npatents, RACI matrix, MIS."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to the lecture, how many of 100 new companies survive 36\nmonths?\n</summary>\nAbout 15.\n</details>",
+          "text": "According to the lecture, how many of 100 new companies survive 36\nmonths? About 15."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAt up to age 25, which resource do you usually lack?\n</summary>\nMoney (you have time and energy).\n</details>",
+          "text": "At up to age 25, which resource do you usually lack? Money (you have time and energy)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the rule of 10,000 hours, and who wrote about it?\n</summary>\nAbout 10,000 hours of focused practice makes you an expert; Malcolm\nGladwell in “Outliers”.\n</details>",
+          "text": "What is the rule of 10,000 hours, and who wrote about it? About 10,000 hours of focused practice makes you an expert; Malcolm\nGladwell in “Outliers”."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIf you have ₹100, how much should you risk on a business?\n</summary>\nAbout ₹20 (20%), keeping ₹80 safe.\n</details>",
+          "text": "If you have ₹100, how much should you risk on a business? About ₹20 (20%), keeping ₹80 safe."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does RACI stand for?\n</summary>\nResponsible, Accountable, Consulted, Informed.\n</details>",
+          "text": "What does RACI stand for? Responsible, Accountable, Consulted, Informed."
+        }
+      ]
+    },
+    {
+      "slug": "asset-allocation-and-investing",
+      "title": "Asset Allocation, Saving and Investing Options",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Companies make a balance sheet every\nyear. So should you. If you don’t measure what you own and owe, you\ncan’t improve it.</p>\n</blockquote>",
+          "text": "Start here Companies make a balance sheet every\nyear. So should you. If you don’t measure what you own and owe, you\ncan’t improve it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Note:</strong> This lecture was recorded in <strong>November\n2022</strong>. Interest rates and some tax rules have changed since\nthen. See the “Changed since the lecture” box at the end.</p>\n</blockquote>",
+          "text": "Note: This lecture was recorded in November\n2022 . Interest rates and some tax rules have changed since\nthen. See the “Changed since the lecture” box at the end."
+        },
+        {
+          "type": "heading",
+          "text": "Your personal balance sheet"
+        },
+        {
+          "type": "html",
+          "html": "<p>Make one <strong>every year</strong> (31 December or 31 March). Check\nit every 3 or 6 months if you can.</p>",
+          "text": "Make one every year (31 December or 31 March). Check\nit every 3 or 6 months if you can."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img13-balance-sheet.webp",
+          "alt": "Assets minus liabilities = net worth",
+          "caption": "What you own minus\nwhat you owe is your net worth."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Personal assets (what you <strong>own</strong>)</th>\n<th>Personal liabilities (what you <strong>owe</strong>)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Cash, bank savings, FDs, PF, recurring deposits</td>\n<td>Loans (home, car, education)</td>\n</tr>\n<tr>\n<td>Investments: mutual funds, shares, NPS</td>\n<td><strong>Credit card</strong> dues</td>\n</tr>\n<tr>\n<td>Insurance cash or surrender value</td>\n<td>Personal debts</td>\n</tr>\n<tr>\n<td>Real estate (flats, plots, land)</td>\n<td>Insurance commitments</td>\n</tr>\n<tr>\n<td>Personal property (your own home)</td>\n<td>Real estate mortgages</td>\n</tr>\n<tr>\n<td>Loans you gave to others (<strong>loans receivable</strong>)</td>\n<td>Unpaid taxes</td>\n</tr>\n<tr>\n<td>Vehicles</td>\n<td>Vehicle loans</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Personal assets (what you own ) Personal liabilities (what you owe ) Cash, bank savings, FDs, PF, recurring deposits Loans (home, car, education) Investments: mutual funds, shares, NPS Credit card dues Insurance cash or surrender value Personal debts Real estate (flats, plots, land) Insurance commitments Personal property (your own home) Real estate mortgages Loans you gave to others ( loans receivable ) Unpaid taxes Vehicles Vehicle loans"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Net worth = Total assets − Total liabilities</strong></p>",
+          "text": "Net worth = Total assets − Total liabilities"
+        },
+        {
+          "type": "html",
+          "html": "<p>Each year, check:</p>",
+          "text": "Each year, check:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Current year savings</strong> = cash inflows − cash\noutflows.</li>\n<li><strong>Growth in net worth</strong>, in rupees and in %.</li>\n<li>Did it <strong>beat inflation</strong> (about 7%)? If not, see a\ncertified professional (e.g. SEBI-registered or CFP-certified).</li>\n<li>Your <strong>real rate of return</strong> (after inflation, taxes\nand expenses) must be <strong>positive</strong>.</li>\n</ul>",
+          "text": "Current year savings = cash inflows − cash\noutflows. Growth in net worth , in rupees and in %. Did it beat inflation (about 7%)? If not, see a\ncertified professional (e.g. SEBI-registered or CFP-certified). Your real rate of return (after inflation, taxes\nand expenses) must be positive ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Credit cards</strong> are powerful <strong>if</strong> you\npay the <strong>full</strong> bill before the due date. Paying only the\n“minimum due” leads to trouble.</p>",
+          "text": "Credit cards are powerful if you\npay the full bill before the due date. Paying only the\n“minimum due” leads to trouble."
+        },
+        {
+          "type": "subheading",
+          "text": "Income statement: four\nsimple rules"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Income &gt; Expenses:</strong> always spend less than you\nearn. Save for goals first.</li>\n<li><strong>Assets &gt; Liabilities:</strong> keep a positive net\nworth.</li>\n<li>Don’t lock everything in <strong>physical assets</strong> (like real\nestate).</li>\n<li>Focus on <strong>growth in net worth</strong>. After marriage, do\nthis <strong>together with your spouse</strong>.</li>\n</ol>",
+          "text": "Income > Expenses: always spend less than you\nearn. Save for goals first. Assets > Liabilities: keep a positive net\nworth. Don’t lock everything in physical assets (like real\nestate). Focus on growth in net worth . After marriage, do\nthis together with your spouse ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why bother?</strong> Measure → Monitor → Control → Direct.\nThat is how you make progress.</p>",
+          "text": "Why bother? Measure → Monitor → Control → Direct.\nThat is how you make progress."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — one year’s balance sheet</strong> House:\n100 → 110 (+10%). Car: 10 → 9 (−10%, a car loses value). Gold went up.\nSome shares and funds went <strong>down</strong> that year. Overall net\nworth: <strong>+5.3%</strong>. Bad years happen, even to Warren Buffett.\nLong-term investments usually bounce back.</p>\n</blockquote>",
+          "text": "Lecture example — one year’s balance sheet House:\n100 → 110 (+10%). Car: 10 → 9 (−10%, a car loses value). Gold went up.\nSome shares and funds went down that year. Overall net\nworth: +5.3% . Bad years happen, even to Warren Buffett.\nLong-term investments usually bounce back."
+        },
+        {
+          "type": "heading",
+          "text": "Investment options: quick\npointers"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Option</th>\n<th>Good points</th>\n<th>Watch out for</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Debt and hybrid mutual funds</strong></td>\n<td>A professional invests for you. Hybrid = equity + debt. Funds with\n<strong>65%+ in equity</strong> get equity taxation (lower).</td>\n<td>When interest rates rise, bond values fall. Past problems: Franklin\nTempleton, IL&amp;FS.</td>\n</tr>\n<tr>\n<td><strong>RBI bonds</strong></td>\n<td><strong>Very safe</strong>: backed by the government. Rate =\n<strong>NSC rate + 0.35%</strong> (about 7.1% then); 7-year term.</td>\n<td><strong>Taxable.</strong> At 30% tax, you keep about 5%, below 7%\ninflation. Good for <strong>retired</strong> people, in part.</td>\n</tr>\n<tr>\n<td><strong>Bank fixed deposits</strong></td>\n<td>Simple. Good for the <strong>emergency fund</strong>. Use\n<strong>laddering</strong>: FDs maturing in 1, 2 and 3 years.</td>\n<td>SBI and big banks paid about 6–6.5%; small finance banks about 8%,\nbut riskier. Banks have failed (Yes Bank, Lakshmi Vilas Bank, Global\nTrust Bank). Fully taxed.</td>\n</tr>\n<tr>\n<td><strong>Corporate deposits / bonds</strong></td>\n<td>Higher interest (7.5–8%). Some good ones exist (e.g. HDFC).</td>\n<td><strong>Capital can be lost</strong> (Reliance Capital). Many papers\nto manage.</td>\n</tr>\n<tr>\n<td><strong>Gold</strong></td>\n<td>Indian families love it. <strong>SGBs</strong> (Sovereign Gold\nBonds) also paid <strong>2.5%</strong> interest a year.</td>\n<td><strong>Max 10%</strong> of your assets. Gold at home has storage\nand safety costs. Gold has little “end use”; the lecturer also suggests\nsome <strong>silver</strong>.</td>\n</tr>\n<tr>\n<td><strong>Direct equity</strong> (shares)</td>\n<td>The biggest fortunes were made here.</td>\n<td>Needs time and knowledge.</td>\n</tr>\n<tr>\n<td><strong>Real estate</strong></td>\n<td>Can jump when a new airport, AIIMS or highway comes.</td>\n<td><strong>Not liquid</strong> (hard to sell fast). Can give 0% for\nyears.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Option Good points Watch out for Debt and hybrid mutual funds A professional invests for you. Hybrid = equity + debt. Funds with 65%+ in equity get equity taxation (lower). When interest rates rise, bond values fall. Past problems: Franklin\nTempleton, IL&FS. RBI bonds Very safe : backed by the government. Rate = NSC rate + 0.35% (about 7.1% then); 7-year term. Taxable. At 30% tax, you keep about 5%, below 7%\ninflation. Good for retired people, in part. Bank fixed deposits Simple. Good for the emergency fund . Use laddering : FDs maturing in 1, 2 and 3 years. SBI and big banks paid about 6–6.5%; small finance banks about 8%,\nbut riskier. Banks have failed (Yes Bank, Lakshmi Vilas Bank, Global\nTrust Bank). Fully taxed. Corporate deposits / bonds Higher interest (7.5–8%). Some good ones exist (e.g. HDFC). Capital can be lost (Reliance Capital). Many papers\nto manage. Gold Indian families love it. SGBs (Sovereign Gold\nBonds) also paid 2.5% interest a year. Max 10% of your assets. Gold at home has storage\nand safety costs. Gold has little “end use”; the lecturer also suggests\nsome silver . Direct equity (shares) The biggest fortunes were made here. Needs time and knowledge. Real estate Can jump when a new airport, AIIMS or highway comes. Not liquid (hard to sell fast). Can give 0% for\nyears."
+        },
+        {
+          "type": "subheading",
+          "text": "Keep some cash ready"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>cash</strong> portion lets you grab opportunities. Example:\nafter the <strong>2004 tsunami</strong>, coastal property prices in\nChennai fell. People with cash could buy cheaply.</p>",
+          "text": "A cash portion lets you grab opportunities. Example:\nafter the 2004 tsunami , coastal property prices in\nChennai fell. People with cash could buy cheaply."
+        },
+        {
+          "type": "subheading",
+          "text": "The equity universe"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img05-risk-return.webp",
+          "alt": "Risk ladder of investments",
+          "caption": "Equity carries the highest risk,\nand has the highest possible return."
+        },
+        {
+          "type": "html",
+          "html": "<p>Companies are grouped by size:</p>",
+          "text": "Companies are grouped by size:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Group</th>\n<th>Meaning</th>\n<th>Lecture examples</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Giant</strong></td>\n<td>The very biggest</td>\n<td>Reliance Industries, TCS, SBI</td>\n</tr>\n<tr>\n<td><strong>Large cap</strong></td>\n<td>Big, just below giant</td>\n<td>L&amp;T, ICICI Bank, Axis Bank</td>\n</tr>\n<tr>\n<td><strong>Mid cap</strong></td>\n<td>Medium-sized, growing</td>\n<td><em>(see note below)</em></td>\n</tr>\n<tr>\n<td><strong>Small cap</strong></td>\n<td>Emerging companies</td>\n<td><em>(see note below)</em></td>\n</tr>\n<tr>\n<td><strong>Micro cap</strong></td>\n<td>The smallest</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Group Meaning Lecture examples Giant The very biggest Reliance Industries, TCS, SBI Large cap Big, just below giant L&T, ICICI Bank, Axis Bank Mid cap Medium-sized, growing (see note below) Small cap Emerging companies (see note below) Micro cap The smallest"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note:</em> For mid caps the lecturer named Nestlé and Hindustan\nUnilever, and for small caps Paytm and Zomato. In reality, HUL and\nNestlé India are among India’s largest companies, and company sizes\nchange over time. Learn the categories, not these examples.</p>",
+          "text": "Note: For mid caps the lecturer named Nestlé and Hindustan\nUnilever, and for small caps Paytm and Zomato. In reality, HUL and\nNestlé India are among India’s largest companies, and company sizes\nchange over time. Learn the categories, not these examples."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to invest without picking shares yourself:</strong></p>",
+          "text": "How to invest without picking shares yourself:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Way</th>\n<th>Minimum (as in the lecture)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mutual fund</strong></td>\n<td>Even <strong>₹100</strong></td>\n</tr>\n<tr>\n<td><strong>ELSS</strong> (tax-saving mutual fund)</td>\n<td>Small amounts; Section 80C benefit</td>\n</tr>\n<tr>\n<td><strong>PMS</strong> (Portfolio Management Service)</td>\n<td><strong>₹50 lakh</strong></td>\n</tr>\n<tr>\n<td><strong>AIF</strong> (Alternative Investment Fund)</td>\n<td><strong>₹1 crore</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Way Minimum (as in the lecture) Mutual fund Even ₹100 ELSS (tax-saving mutual fund) Small amounts; Section 80C benefit PMS (Portfolio Management Service) ₹50 lakh AIF (Alternative Investment Fund) ₹1 crore"
+        },
+        {
+          "type": "heading",
+          "text": "Wrap-up: big-picture planning"
+        },
+        {
+          "type": "subheading",
+          "text": "Investment planning: four\nrisks"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Risk</th>\n<th>Meaning</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Liquidity risk</strong></td>\n<td>Can’t get cash when you need it</td>\n<td>Money stuck in a flat when you need fees for study abroad</td>\n</tr>\n<tr>\n<td><strong>Credit (safety) risk</strong></td>\n<td>The borrower doesn’t pay back</td>\n<td>Yes Bank bonds, Reliance Capital</td>\n</tr>\n<tr>\n<td><strong>Volatility risk</strong></td>\n<td>Values go up and down</td>\n<td>Markets in a recession</td>\n</tr>\n<tr>\n<td><strong>Concentration</strong></td>\n<td>Everything in one category</td>\n<td>Spread across <strong>physical</strong> and\n<strong>financial</strong> assets</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Risk Meaning Example Liquidity risk Can’t get cash when you need it Money stuck in a flat when you need fees for study abroad Credit (safety) risk The borrower doesn’t pay back Yes Bank bonds, Reliance Capital Volatility risk Values go up and down Markets in a recession Concentration Everything in one category Spread across physical and financial assets"
+        },
+        {
+          "type": "subheading",
+          "text": "Estate and legacy planning"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Make a will</strong> (or a trust). Without one, your assets\nare <strong>intestate</strong>: the law decides who gets them, by your\npersonal law (Hindu, Muslim, Christian, Parsi and so on).</li>\n<li>A <strong>settlement</strong> can make sure your spouse is cared for\nfirst.</li>\n<li>If you take <strong>foreign citizenship</strong>, you <strong>can’t\nown agricultural land</strong> in India.</li>\n<li>Some countries (UK, US) have <strong>inheritance tax</strong> or\nestate duty above a limit. India <strong>abolished wealth tax</strong>,\nbut rules may change.</li>\n</ul>",
+          "text": "Make a will (or a trust). Without one, your assets\nare intestate : the law decides who gets them, by your\npersonal law (Hindu, Muslim, Christian, Parsi and so on). A settlement can make sure your spouse is cared for\nfirst. If you take foreign citizenship , you can’t\nown agricultural land in India. Some countries (UK, US) have inheritance tax or\nestate duty above a limit. India abolished wealth tax ,\nbut rules may change."
+        },
+        {
+          "type": "subheading",
+          "text": "Regular\ncash flows: the meaning of financial freedom"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img14-financial-freedom.webp",
+          "alt": "Financial freedom",
+          "caption": "When income from your investments covers\nyour expenses, you are financially free."
+        },
+        {
+          "type": "html",
+          "html": "<p>Regular <strong>outflows</strong>: rent, credit card, insurance,\nschool fees. Regular <strong>inflows</strong> beyond salary: FD\ninterest, corporate deposits, <strong>rental income</strong>,\n<strong>dividends</strong>.</p>",
+          "text": "Regular outflows : rent, credit card, insurance,\nschool fees. Regular inflows beyond salary: FD\ninterest, corporate deposits, rental income , dividends ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Financial freedom = when income from your assets is more than\nyour expenses.</strong> Your money works for you, so you don’t\n<em>have</em> to work.</p>",
+          "text": "Financial freedom = when income from your assets is more than\nyour expenses. Your money works for you, so you don’t have to work."
+        },
+        {
+          "type": "subheading",
+          "text": "Health care"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Healthcare costs can rise <strong>10–15% a year</strong>. Start\ncover <strong>early</strong>; don’t depend only on your employer’s\npolicy.</li>\n<li>Layers: employer policy → base policy → <strong>top-up</strong> →\n<strong>super top-up</strong>.</li>\n<li>Check the <strong>exclusions</strong> (e.g. pregnancy).</li>\n<li><strong>Declare</strong> existing illnesses (BP, sugar).\nPre-existing diseases have a <strong>waiting period</strong> (4 years in\nthe lecture). Honest, claim-free years can earn a <strong>no-claim\nbonus</strong>.</li>\n</ul>",
+          "text": "Healthcare costs can rise 10–15% a year . Start\ncover early ; don’t depend only on your employer’s\npolicy. Layers: employer policy → base policy → top-up → super top-up . Check the exclusions (e.g. pregnancy). Declare existing illnesses (BP, sugar).\nPre-existing diseases have a waiting period (4 years in\nthe lecture). Honest, claim-free years can earn a no-claim\nbonus ."
+        },
+        {
+          "type": "subheading",
+          "text": "Personal taxes"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Clubbing:</strong> income from money put in a spouse’s or\nchild’s name may be added to <strong>your</strong> income.</li>\n<li><strong>HUF (Hindu Undivided Family):</strong> a separate tax unit;\nit can’t have salary income.</li>\n<li><strong>Gifts:</strong> from close relatives, any amount is\ntax-free. From others, gifts <strong>above ₹50,000</strong> a year are\ntaxable.</li>\n<li>Some <strong>annuity</strong> income can be tax-free.</li>\n</ul>",
+          "text": "Clubbing: income from money put in a spouse’s or\nchild’s name may be added to your income. HUF (Hindu Undivided Family): a separate tax unit;\nit can’t have salary income. Gifts: from close relatives, any amount is\ntax-free. From others, gifts above ₹50,000 a year are\ntaxable. Some annuity income can be tax-free."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Changed since the lecture (late 2022) — for real\nlife</strong></p>\n<ul>\n<li><strong>Debt mutual funds:</strong> the <strong>indexation</strong>\nbenefit was <strong>removed from April 2023</strong>. Gains are now\ntaxed at your slab rate.</li>\n<li><strong>Sovereign Gold Bonds:</strong> the government has\n<strong>stopped new issues</strong> (no new series since 2024). Old\nbonds still trade.</li>\n<li><strong>Health insurance:</strong> IRDAI cut the maximum waiting\nperiod for pre-existing diseases from <strong>4 years to 3\nyears</strong> (from April 2024).</li>\n<li>Interest rates on FDs and RBI bonds have changed. Check current\nrates before investing.</li>\n</ul>\n</blockquote>",
+          "text": "Changed since the lecture (late 2022) — for real\nlife Debt mutual funds: the indexation benefit was removed from April 2023 . Gains are now\ntaxed at your slab rate. Sovereign Gold Bonds: the government has stopped new issues (no new series since 2024). Old\nbonds still trade. Health insurance: IRDAI cut the maximum waiting\nperiod for pre-existing diseases from 4 years to 3\nyears (from April 2024). Interest rates on FDs and RBI bonds have changed. Check current\nrates before investing."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Make a yearly balance sheet, grow your\nnet worth faster than inflation, spread money across asset classes, and\nplan for liquidity, safety, health, taxes and a will. <strong>Exam\nwords:</strong> personal balance sheet, net worth, current year savings,\nreal rate of return, income statement, RBI bonds, FD laddering,\ncorporate deposits, SGB, giant / large / mid / small / micro cap, PMS,\nAIF, liquidity risk, credit risk, volatility risk, will, intestate,\nfinancial freedom, top-up, clubbing, HUF.</p>",
+          "text": "In one line: Make a yearly balance sheet, grow your\nnet worth faster than inflation, spread money across asset classes, and\nplan for liquidity, safety, health, taxes and a will. Exam\nwords: personal balance sheet, net worth, current year savings,\nreal rate of return, income statement, RBI bonds, FD laddering,\ncorporate deposits, SGB, giant / large / mid / small / micro cap, PMS,\nAIF, liquidity risk, credit risk, volatility risk, will, intestate,\nfinancial freedom, top-up, clubbing, HUF."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is net worth?\n</summary>\nTotal assets minus total liabilities.\n</details>",
+          "text": "What is net worth? Total assets minus total liabilities."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “financial freedom”, according to the lecture?\n</summary>\nWhen regular income from your investments (interest, rent, dividends) is\nmore than your expenses.\n</details>",
+          "text": "What is “financial freedom”, according to the lecture? When regular income from your investments (interest, rent, dividends) is\nmore than your expenses."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is FD laddering?\n</summary>\nSplitting money into FDs that mature at different times (e.g. 1, 2 and 3\nyears) instead of all on one date.\n</details>",
+          "text": "What is FD laddering? Splitting money into FDs that mature at different times (e.g. 1, 2 and 3\nyears) instead of all on one date."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat happens if you die without a will?\n</summary>\nYour assets are “intestate”; the law (based on your personal law)\ndecides who gets them.\n</details>",
+          "text": "What happens if you die without a will? Your assets are “intestate”; the law (based on your personal law)\ndecides who gets them."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the maximum share of assets the lecturer suggests for gold?\n</summary>\n10%.\n</details>",
+          "text": "What is the maximum share of assets the lecturer suggests for gold? 10%."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nReal estate’s biggest drawback as an investment?\n</summary>\nLow liquidity — it is hard to sell quickly, and returns can stay flat\nfor years.\n</details>",
+          "text": "Real estate’s biggest drawback as an investment? Low liquidity — it is hard to sell quickly, and returns can stay flat\nfor years."
+        }
+      ]
+    },
+    {
+      "slug": "week-7-quick-revision",
+      "title": "Week 7 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> All of the week’s personal-finance\nlessons on one page.</p>\n</blockquote>",
+          "text": "Start here All of the week’s personal-finance\nlessons on one page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-7/img15-week7-map.webp",
+          "alt": "Week 7 at a glance",
+          "caption": "Wealth mantra, 9-point plan, cash flows,\nreturns, tax, entrepreneurship and asset allocation."
+        },
+        {
+          "type": "heading",
+          "text": "Foundations"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Life has three parts: <strong>health</strong> (most important),\n<strong>wealth</strong>, <strong>relationships</strong>. Use time,\nenergy, resources and money well.</li>\n<li><strong>Wealth mantra:</strong> cash inflows → cash outflows →\ninvestment options → return on investment.</li>\n<li><strong>Inflows:</strong> you work for money (human capital,\nsalary); money works for you (assets); gifts and inheritance (don’t\ncount on these).</li>\n<li><strong>Outflows:</strong> hold, spend, donate, invest.</li>\n<li><strong>Investing:</strong> lending or ownership; you control it, or\nsomeone else does.</li>\n<li><strong>Wealth = assets − liabilities.</strong></li>\n</ul>",
+          "text": "Life has three parts: health (most important), wealth , relationships . Use time,\nenergy, resources and money well. Wealth mantra: cash inflows → cash outflows →\ninvestment options → return on investment. Inflows: you work for money (human capital,\nsalary); money works for you (assets); gifts and inheritance (don’t\ncount on these). Outflows: hold, spend, donate, invest. Investing: lending or ownership; you control it, or\nsomeone else does. Wealth = assets − liabilities."
+        },
+        {
+          "type": "heading",
+          "text": "Money stories"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Compounding</strong> is the “eighth wonder” (quote credited\nto Einstein).</li>\n<li><strong>Warren Buffett:</strong> $6,000 at 15 → about $85 billion by\n88; most of it after 56. Regret: started late.</li>\n<li><strong>Oseola McCarty:</strong> a washerwoman who gave $150,000 to\na university.</li>\n<li><strong>Boris Becker, Michael Jackson, Ranbaxy:</strong> earning a\nlot ≠ managing well.</li>\n<li><strong>Good liabilities:</strong> a small education loan, a\nstartup, a joint home. <strong>Bad:</strong> personal loan (24% a year),\ncredit card (36%), car loan, gadgets on EMI.</li>\n</ul>",
+          "text": "Compounding is the “eighth wonder” (quote credited\nto Einstein). Warren Buffett: $6,000 at 15 → about $85 billion by\n88; most of it after 56. Regret: started late. Oseola McCarty: a washerwoman who gave $150,000 to\na university. Boris Becker, Michael Jackson, Ranbaxy: earning a\nlot ≠ managing well. Good liabilities: a small education loan, a\nstartup, a joint home. Bad: personal loan (24% a year),\ncredit card (36%), car loan, gadgets on EMI."
+        },
+        {
+          "type": "heading",
+          "text": "9-point action plan"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Save before you spend (20%+). 2. Emergency fund (3–6 months). 3.\nTerm insurance (100 × monthly income). 4. Own health insurance. 5.\nDiversify (max 20–30% in your business; 5–10% cash). 6. Start retirement\ninvesting early. 7. SIPs for goals. 8. Tax planning in April (ELSS,\n80C). 9. Check nominations, addresses and documents, and write a\nwill.</li>\n</ol>",
+          "text": "Save before you spend (20%+). 2. Emergency fund (3–6 months). 3.\nTerm insurance (100 × monthly income). 4. Own health insurance. 5.\nDiversify (max 20–30% in your business; 5–10% cash). 6. Start retirement\ninvesting early. 7. SIPs for goals. 8. Tax planning in April (ELSS,\n80C). 9. Check nominations, addresses and documents, and write a\nwill."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>92%</strong> of returns come from asset allocation.</li>\n<li><strong>SMART</strong> goals: Specific, Measurable, Attainable,\nRelevant, Time-bound.</li>\n<li>Nobody gives a <strong>loan for retirement</strong>.</li>\n<li>Keep EMIs <strong>under 40%</strong> of take-home pay. Don’t buy\nstocks on tips or follow the herd.</li>\n</ul>",
+          "text": "92% of returns come from asset allocation. SMART goals: Specific, Measurable, Attainable,\nRelevant, Time-bound. Nobody gives a loan for retirement . Keep EMIs under 40% of take-home pay. Don’t buy\nstocks on tips or follow the herd."
+        },
+        {
+          "type": "heading",
+          "text": "Cash flow vs life span"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Three earning curves: <strong>early</strong> (sports, YouTubers),\n<strong>middle</strong> (IT, peaks at 45–50), <strong>late</strong>\n(doctors, peaks at 55–65).</li>\n<li><strong>Under 30:</strong> about 65% of a typical portfolio is\nlocked in one apartment. Common regret at 50: started equity too\nlate.</li>\n<li>Every month: <strong>budget vs actuals</strong>. India’s financial\nyear runs April–March.</li>\n</ul>",
+          "text": "Three earning curves: early (sports, YouTubers), middle (IT, peaks at 45–50), late (doctors, peaks at 55–65). Under 30: about 65% of a typical portfolio is\nlocked in one apartment. Common regret at 50: started equity too\nlate. Every month: budget vs actuals . India’s financial\nyear runs April–March."
+        },
+        {
+          "type": "heading",
+          "text": "Returns, inflation,\ncompounding"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Inflation</strong> = rising prices = falling purchasing\npower. “Too much money chasing too few goods.” It is measured by the\n<strong>CPI</strong>.</li>\n<li>India: about 6–7% overall; education about 10%; health up to\n15%.</li>\n<li><strong>ROI</strong> = net profit ÷ cost × 100.</li>\n<li><strong>CAGR</strong> example: ₹1 crore → ₹1.48 crore in 5 years.\nSimple 9.6% a year, but CAGR <strong>8.16%</strong>.</li>\n<li>Use <strong>XIRR</strong> for SIPs. <strong>ETF</strong> = passive\n(benchmark return); an active fund must beat the benchmark.</li>\n</ul>",
+          "text": "Inflation = rising prices = falling purchasing\npower. “Too much money chasing too few goods.” It is measured by the CPI . India: about 6–7% overall; education about 10%; health up to\n15%. ROI = net profit ÷ cost × 100. CAGR example: ₹1 crore → ₹1.48 crore in 5 years.\nSimple 9.6% a year, but CAGR 8.16% . Use XIRR for SIPs. ETF = passive\n(benchmark return); an active fund must beat the benchmark."
+        },
+        {
+          "type": "heading",
+          "text": "Income tax (lecture: FY\n2022–23)"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>5 heads:</strong> salaries, house property, capital gains,\nbusiness or profession, other sources.</li>\n<li><strong>Old regime:</strong> 5% / 20% / <strong>30% above ₹10\nlakh</strong>, with deductions (80C, 80D, NPS).</li>\n<li><strong>New regime:</strong> 5% steps up to <strong>30% above ₹15\nlakh</strong>, without deductions.</li>\n<li>Lecture’s rule: save about ₹2.5 lakh a year → old regime; otherwise\n→ new regime.</li>\n<li><em>Today:</em> the new regime is the default, and income up to ₹12\nlakh is effectively tax-free under it.</li>\n<li>Tax planning is ethical; evasion is not.</li>\n</ul>",
+          "text": "5 heads: salaries, house property, capital gains,\nbusiness or profession, other sources. Old regime: 5% / 20% / 30% above ₹10\nlakh , with deductions (80C, 80D, NPS). New regime: 5% steps up to 30% above ₹15\nlakh , without deductions. Lecture’s rule: save about ₹2.5 lakh a year → old regime; otherwise\n→ new regime. Today: the new regime is the default, and income up to ₹12\nlakh is effectively tax-free under it. Tax planning is ethical; evasion is not."
+        },
+        {
+          "type": "heading",
+          "text": "Employee vs entrepreneur"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>About <strong>15 of 100</strong> startups survive 3 years. High\nrisk, high reward.</li>\n<li><strong>Time, money, energy:</strong> young = time and energy, no\nmoney; 26–50 = money and energy, no time; 50+ = energy falls.</li>\n<li>Sleep 6–8 hours. Remember the <strong>10,000-hour rule</strong> and\nlearning → earning → returning.</li>\n<li><strong>7 business functions:</strong> marketing, sales, suppliers,\noperations, innovation, support, leadership.</li>\n<li>Risk only about <strong>20%</strong> of your money. Work 5–6 years\nfirst. Don’t start at 60.</li>\n</ul>",
+          "text": "About 15 of 100 startups survive 3 years. High\nrisk, high reward. Time, money, energy: young = time and energy, no\nmoney; 26–50 = money and energy, no time; 50+ = energy falls. Sleep 6–8 hours. Remember the 10,000-hour rule and\nlearning → earning → returning. 7 business functions: marketing, sales, suppliers,\noperations, innovation, support, leadership. Risk only about 20% of your money. Work 5–6 years\nfirst. Don’t start at 60."
+        },
+        {
+          "type": "heading",
+          "text": "Asset allocation"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Personal balance sheet</strong> every year: net worth =\nassets − liabilities. Beat inflation with a positive real return.</li>\n<li><strong>RBI bonds:</strong> safe but taxable. <strong>FDs:</strong>\nuse laddering, and keep deposits within ₹5 lakh insurance per bank.\n<strong>Corporate deposits:</strong> capital risk.\n<strong>Gold:</strong> max 10%. <strong>Real estate:</strong>\nilliquid.</li>\n<li>Equity sizes: giant, large, mid, small, micro. Ways in: mutual fund\n(₹100), PMS (₹50 lakh), AIF (₹1 crore).</li>\n<li><strong>Four risks:</strong> liquidity, credit, volatility,\nconcentration. Make a <strong>will</strong> (or your assets are\nintestate).</li>\n<li><strong>Financial freedom</strong> = income from assets is greater\nthan expenses.</li>\n</ul>",
+          "text": "Personal balance sheet every year: net worth =\nassets − liabilities. Beat inflation with a positive real return. RBI bonds: safe but taxable. FDs: use laddering, and keep deposits within ₹5 lakh insurance per bank. Corporate deposits: capital risk. Gold: max 10%. Real estate: illiquid. Equity sizes: giant, large, mid, small, micro. Ways in: mutual fund\n(₹100), PMS (₹50 lakh), AIF (₹1 crore). Four risks: liquidity, credit, volatility,\nconcentration. Make a will (or your assets are\nintestate). Financial freedom = income from assets is greater\nthan expenses."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>Which step of the wealth mantra comes right after “investment\noptions”?\n</li></ol></summary>\nReturn on investment.\n</details>",
+          "text": "Which step of the wealth mantra comes right after “investment\noptions”? Return on investment."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Monthly salary ₹30,000. Term cover by the lecture’s rule?\n</li></ol></summary>\n₹30 lakh (100 × monthly income).\n</details>",
+          "text": "Monthly salary ₹30,000. Term cover by the lecture’s rule? ₹30 lakh (100 × monthly income)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>A flat bought for ₹50 lakh is sold for ₹74 lakh after 5 years.\nSimple yearly return?\n</li></ol></summary>\nGain ₹24 lakh = 48%; 48 ÷ 5 = 9.6% a year (CAGR would be about 8.16%).\n</details>",
+          "text": "A flat bought for ₹50 lakh is sold for ₹74 lakh after 5 years.\nSimple yearly return? Gain ₹24 lakh = 48%; 48 ÷ 5 = 9.6% a year (CAGR would be about 8.16%)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>What does CPI measure?\n</li></ol></summary>\nInflation — the change in consumer prices.\n</details>",
+          "text": "What does CPI measure? Inflation — the change in consumer prices."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Rent from your third house that is kept locked — taxed under which\nhead?\n</li></ol></summary>\nIncome from house property (taxed as if rented out).\n</details>",
+          "text": "Rent from your third house that is kept locked — taxed under which\nhead? Income from house property (taxed as if rented out)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Which age group “worries about time”?\n</li></ol></summary>\n26–50 years.\n</details>",
+          "text": "Which age group “worries about time”? 26–50 years."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Which risk is it when you can’t sell an asset quickly for cash?\n</li></ol></summary>\nLiquidity risk.\n</details>",
+          "text": "Which risk is it when you can’t sell an asset quickly for cash? Liquidity risk."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>What does the A in SMART stand for?\n</li></ol></summary>\nAttainable.\n</details>",
+          "text": "What does the A in SMART stand for? Attainable."
+        }
+      ]
+    }
+  ],
+  "illustrationCount": 15
+}

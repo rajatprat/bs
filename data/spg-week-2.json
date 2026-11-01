@@ -1,0 +1,2096 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 2,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-2/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "types-of-communication",
+      "title": "Types of Communication",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Right now, as you read this line, you are talking to someone. Who? Yourself! That voice in your head is also communication.</p>\n</blockquote>",
+          "text": "Start here Right now, as you read this line, you are talking to someone. Who? Yourself! That voice in your head is also communication."
+        },
+        {
+          "type": "html",
+          "html": "<p>This week has four big parts:</p>",
+          "text": "This week has four big parts:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Types</strong> of communication</li>\n<li><strong>Barriers</strong> to communication (things that block a message)</li>\n<li>The <strong>10 C’s</strong> of communication</li>\n<li><strong>Tips</strong> for good communication and <strong>listening</strong></li>\n</ol>",
+          "text": "Types of communication Barriers to communication (things that block a message) The 10 C’s of communication Tips for good communication and listening"
+        },
+        {
+          "type": "heading",
+          "text": "What is communication?"
+        },
+        {
+          "type": "html",
+          "html": "<p>The word “communication” is used by everyone. But it is hard to define. Even experts do not agree on one definition.</p>",
+          "text": "The word “communication” is used by everyone. But it is hard to define. Even experts do not agree on one definition."
+        },
+        {
+          "type": "html",
+          "html": "<p>Most definitions say this:</p>",
+          "text": "Most definitions say this:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>We use <strong>symbols</strong> (words, signs, gestures) to pass on <strong>meaning</strong>.</li>\n<li>Communication is about the <strong>hidden</strong> meaning, not only what we see or hear.</li>\n<li>Our <strong>culture</strong> gives meaning to these symbols.</li>\n<li>It is a <strong>personal process</strong>. People exchange <strong>behaviour</strong> and <strong>information</strong>.</li>\n</ul>",
+          "text": "We use symbols (words, signs, gestures) to pass on meaning . Communication is about the hidden meaning, not only what we see or hear. Our culture gives meaning to these symbols. It is a personal process . People exchange behaviour and information ."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>(Source on the slide: Fred Luthans, Organizational Behavior.)</em></p>",
+          "text": "(Source on the slide: Fred Luthans, Organizational Behavior.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Communication means passing meaning from one person to another using symbols. <strong>Exam words:</strong> symbols, meaning, personal process, exchange of behaviour and information.</p>",
+          "text": "In one line: Communication means passing meaning from one person to another using symbols. Exam words: symbols, meaning, personal process, exchange of behaviour and information."
+        },
+        {
+          "type": "heading",
+          "text": "Seven pairs of communication types"
+        },
+        {
+          "type": "html",
+          "html": "<p>We communicate in different ways in different places. The lecture groups them into <strong>seven pairs</strong>.</p>",
+          "text": "We communicate in different ways in different places. The lecture groups them into seven pairs ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img01-seven-pairs.webp",
+          "alt": "Seven pairs of communication types",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Pair</th>\n<th>First type</th>\n<th>Second type</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Inner vs Outer</strong></td>\n<td><strong>Inner</strong> — thoughts, imagination and feelings inside you. Not spoken. This is your <strong>inner chatter</strong> (the talk in your head).</td>\n<td><strong>Outer</strong> — what you show through speech or action.</td>\n</tr>\n<tr>\n<td><strong>Personal vs Social</strong></td>\n<td><strong>Personal</strong> — with yourself, family, friends and dear ones.</td>\n<td><strong>Social</strong> — outside your personal space: community, society, people at work, the world.</td>\n</tr>\n<tr>\n<td><strong>Verbal vs Non-verbal</strong></td>\n<td><strong>Verbal</strong> — the spoken word.</td>\n<td><strong>Non-verbal</strong> — gestures, body language, facial expressions and <strong>paralingual</strong> cues (tone, pitch, speed of voice).</td>\n</tr>\n<tr>\n<td><strong>Written vs Oral</strong></td>\n<td><strong>Written</strong> — documents, agreements, reports, emails, messages.</td>\n<td><strong>Oral</strong> — spoken discussions and opinions.</td>\n</tr>\n<tr>\n<td><strong>Internal vs External</strong></td>\n<td><strong>Internal</strong> — inside the organisation: within a team or between teams.</td>\n<td><strong>External</strong> — with clients, vendors and teams outside the organisation.</td>\n</tr>\n<tr>\n<td><strong>Vertical vs Horizontal</strong></td>\n<td><strong>Vertical</strong> — up and down the hierarchy, between managers and team members.</td>\n<td><strong>Horizontal</strong> — between <strong>peers</strong> (people at the same level), in the same team or across teams.</td>\n</tr>\n<tr>\n<td><strong>Formal vs Informal</strong></td>\n<td><strong>Formal</strong> — has a fixed process. Meetings, reports, briefings, minutes of meetings, feedback, appraisals.</td>\n<td><strong>Informal</strong> — casual talks and chats over tea, coffee or lunch.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Pair First type Second type Inner vs Outer Inner — thoughts, imagination and feelings inside you. Not spoken. This is your inner chatter (the talk in your head). Outer — what you show through speech or action. Personal vs Social Personal — with yourself, family, friends and dear ones. Social — outside your personal space: community, society, people at work, the world. Verbal vs Non-verbal Verbal — the spoken word. Non-verbal — gestures, body language, facial expressions and paralingual cues (tone, pitch, speed of voice). Written vs Oral Written — documents, agreements, reports, emails, messages. Oral — spoken discussions and opinions. Internal vs External Internal — inside the organisation: within a team or between teams. External — with clients, vendors and teams outside the organisation. Vertical vs Horizontal Vertical — up and down the hierarchy, between managers and team members. Horizontal — between peers (people at the same level), in the same team or across teams. Formal vs Informal Formal — has a fixed process. Meetings, reports, briefings, minutes of meetings, feedback, appraisals. Informal — casual talks and chats over tea, coffee or lunch."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You message your friend “Bro, class cancelled!”. That is <strong>informal, written, horizontal</strong>. You email your course coordinator to ask for a re-exam. That is <strong>formal, written, vertical</strong>.</p>\n</blockquote>",
+          "text": "Everyday example You message your friend “Bro, class cancelled!”. That is informal, written, horizontal . You email your course coordinator to ask for a re-exam. That is formal, written, vertical ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> The same message changes shape based on who you talk to and where. <strong>Exam words:</strong> inner, outer, personal, social, verbal, non-verbal, written, oral, internal, external, vertical, horizontal, formal, informal.</p>",
+          "text": "In one line: The same message changes shape based on who you talk to and where. Exam words: inner, outer, personal, social, verbal, non-verbal, written, oral, internal, external, vertical, horizontal, formal, informal."
+        },
+        {
+          "type": "heading",
+          "text": "The person you talk to most is you"
+        },
+        {
+          "type": "html",
+          "html": "<p>One professor says the most important type is <strong>inner</strong> communication.</p>",
+          "text": "One professor says the most important type is inner communication."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The inner chatter never stops.</li>\n<li>If it is not calm or positive, you cannot listen well.</li>\n<li>You also cannot focus or talk well with others.</li>\n</ul>",
+          "text": "The inner chatter never stops. If it is not calm or positive, you cannot listen well. You also cannot focus or talk well with others."
+        },
+        {
+          "type": "html",
+          "html": "<p>So clear communication starts <strong>inside you</strong>. Then it moves to friends, society and the workplace.</p>",
+          "text": "So clear communication starts inside you . Then it moves to friends, society and the workplace."
+        },
+        {
+          "type": "heading",
+          "text": "Words are only a small part"
+        },
+        {
+          "type": "html",
+          "html": "<p>Communication is <strong>not only words</strong>. It is also:</p>",
+          "text": "Communication is not only words . It is also:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>your <strong>body language</strong></li>\n<li>your <strong>tone of voice</strong></li>\n<li>the <strong>expression</strong> on your face</li>\n</ul>",
+          "text": "your body language your tone of voice the expression on your face"
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor remembers that studies say <strong>50% or more</strong> of the effect comes from body language. Only about <strong>10–20%</strong> comes from the words.</p>",
+          "text": "The professor remembers that studies say 50% or more of the effect comes from body language. Only about 10–20% comes from the words."
+        },
+        {
+          "type": "html",
+          "html": "<p>For good communication, three things must <strong>match</strong>:</p>",
+          "text": "For good communication, three things must match :"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>what you <strong>think</strong></li>\n<li>what you <strong>feel</strong></li>\n<li>what you <strong>say</strong></li>\n</ol>",
+          "text": "what you think what you feel what you say"
+        },
+        {
+          "type": "html",
+          "html": "<p>Your body language is the <strong>action</strong> part. It must match too.</p>",
+          "text": "Your body language is the action part. It must match too."
+        },
+        {
+          "type": "html",
+          "html": "<p>The <strong>context</strong> also matters. Are you talking to your team or a client? To a senior or a peer? Is it formal or informal?</p>",
+          "text": "The context also matters. Are you talking to your team or a client? To a senior or a peer? Is it formal or informal?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A shopkeeper says “Welcome!” but does not look up from his phone. His words say welcome. His body says “go away”. You believe his body.</p>\n</blockquote>",
+          "text": "Everyday example A shopkeeper says “Welcome!” but does not look up from his phone. His words say welcome. His body says “go away”. You believe his body."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> People believe your body language and tone more than your words. <strong>Exam words:</strong> body language, tone of voice, facial expression, think–feel–speak alignment, context.</p>",
+          "text": "In one line: People believe your body language and tone more than your words. Exam words: body language, tone of voice, facial expression, think–feel–speak alignment, context."
+        },
+        {
+          "type": "heading",
+          "text": "Thought, Word and Deed"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img02-thought-word-deed.webp",
+          "alt": "Thought, word and deed triangle",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>Another professor adds three more ideas.</p>",
+          "text": "Another professor adds three more ideas."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. There are many more kinds of communication.</strong> It can be angry, friendly, encouraging, depressing, silent or noisy. But for study, we focus on the seven pairs.</p>",
+          "text": "1. There are many more kinds of communication. It can be angry, friendly, encouraging, depressing, silent or noisy. But for study, we focus on the seven pairs."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Thought, Word and Deed.</strong> In Sanskrit: <strong>Manasa, Vacha, Karmana</strong>. We talk to ourselves most of the time, silently or loudly.</p>",
+          "text": "2. Thought, Word and Deed. In Sanskrit: Manasa, Vacha, Karmana . We talk to ourselves most of the time, silently or loudly."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. Communication binds people together.</strong> It works for 2 people, 20 people or 200 people.</p>",
+          "text": "3. Communication binds people together. It works for 2 people, 20 people or 200 people."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the army</strong> Imagine 2 lakh soldiers spread over 100–120 km. An order from the top must reach the <strong>last soldier</strong>. If it does not reach him, the operation fails. This needs a lot of planning.</p>\n</blockquote>",
+          "text": "Lecture example — the army Imagine 2 lakh soldiers spread over 100–120 km. An order from the top must reach the last soldier . If it does not reach him, the operation fails. This needs a lot of planning."
+        },
+        {
+          "type": "html",
+          "html": "<p>As a professional, you must learn two things:</p>",
+          "text": "As a professional, you must learn two things:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>How to present yourself.</strong></li>\n<li><strong>How to write formal messages</strong> using the <strong>ABC</strong>:\n<ul>\n<li><strong>A — Accuracy</strong> (correct facts)</li>\n<li><strong>B — Brevity</strong> (short)</li>\n<li><strong>C — Clarity</strong> (easy to understand)</li>\n</ul></li>\n</ol>",
+          "text": "How to present yourself. How to write formal messages using the ABC : A — Accuracy (correct facts) B — Brevity (short) C — Clarity (easy to understand)"
+        },
+        {
+          "type": "html",
+          "html": "<p>This needs <strong>constant practice</strong>.</p>",
+          "text": "This needs constant practice ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Keep your thought, word and deed the same, and write with Accuracy, Brevity and Clarity. <strong>Exam words:</strong> Manasa, Vacha, Karmana, ABC, accuracy, brevity, clarity.</p>",
+          "text": "In one line: Keep your thought, word and deed the same, and write with Accuracy, Brevity and Clarity. Exam words: Manasa, Vacha, Karmana, ABC, accuracy, brevity, clarity."
+        },
+        {
+          "type": "heading",
+          "text": "Listening is part of communication"
+        },
+        {
+          "type": "html",
+          "html": "<p>The fourth professor says <strong>listening</strong> is the most important part.</p>",
+          "text": "The fourth professor says listening is the most important part."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>If no one is listening, speaking has no use.</li>\n<li>Even <strong>silence</strong> inside you is communication.</li>\n<li>A <strong>pause</strong> while speaking is also communication. It gives the listener time to understand.</li>\n</ul>",
+          "text": "If no one is listening, speaking has no use. Even silence inside you is communication. A pause while speaking is also communication. It gives the listener time to understand."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Without a listener, there is no communication. <strong>Exam words:</strong> listening, silence, pause.</p>",
+          "text": "In one line: Without a listener, there is no communication. Exam words: listening, silence, pause."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “inner” communication?\n</summary>\nThe thoughts, imagination and feelings inside you that you do not say out loud — your inner chatter.\n</details>",
+          "text": "What is “inner” communication? The thoughts, imagination and feelings inside you that you do not say out loud — your inner chatter."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does ABC stand for in formal writing?\n</summary>\nAccuracy, Brevity and Clarity.\n</details>",
+          "text": "What does ABC stand for in formal writing? Accuracy, Brevity and Clarity."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYou chat with a classmate in the canteen. Which type is this?\n</summary>\nInformal, oral and horizontal (you are both at the same level).\n</details>",
+          "text": "You chat with a classmate in the canteen. Which type is this? Informal, oral and horizontal (you are both at the same level)."
+        }
+      ]
+    },
+    {
+      "slug": "psychological-barriers",
+      "title": "Barriers to Communication — Psychological Barriers",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your friend is telling you something important. But your mind is thinking about tomorrow’s quiz. You nod, but you heard nothing. What blocked the message? Your own mind.</p>\n</blockquote>",
+          "text": "Start here Your friend is telling you something important. But your mind is thinking about tomorrow’s quiz. You nod, but you heard nothing. What blocked the message? Your own mind."
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>barrier</strong> is anything that stops a message from reaching the other person correctly.</p>",
+          "text": "A barrier is anything that stops a message from reaching the other person correctly."
+        },
+        {
+          "type": "heading",
+          "text": "Five kinds of barriers"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img03-five-barriers.webp",
+          "alt": "Five barriers to communication",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Psychological</strong> barriers — inside your mind</li>\n<li><strong>Language</strong> barriers</li>\n<li><strong>Cultural</strong> barriers</li>\n<li><strong>Organisational</strong> barriers</li>\n<li><strong>Physical</strong> barriers</li>\n</ol>",
+          "text": "Psychological barriers — inside your mind Language barriers Cultural barriers Organisational barriers Physical barriers"
+        },
+        {
+          "type": "html",
+          "html": "<p>This page covers the first one.</p>",
+          "text": "This page covers the first one."
+        },
+        {
+          "type": "heading",
+          "text": "What are psychological barriers?"
+        },
+        {
+          "type": "html",
+          "html": "<p>These barriers come from <strong>your own mind and feelings</strong>. The lecture slide lists six:</p>",
+          "text": "These barriers come from your own mind and feelings . The lecture slide lists six:"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Barrier</th>\n<th>Simple meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Inner chatter</strong></td>\n<td>The non-stop talk inside your head.</td>\n</tr>\n<tr>\n<td><strong>Preconceived notions</strong></td>\n<td>Ideas you formed <strong>before</strong> you knew the facts.</td>\n</tr>\n<tr>\n<td><strong>Cognitive bias</strong></td>\n<td>A habit of the mind that bends how you see things.</td>\n</tr>\n<tr>\n<td><strong>Lack of interest, attention or focus; boredom</strong></td>\n<td>Your mind is somewhere else.</td>\n</tr>\n<tr>\n<td><strong>Emotional state</strong> — fear, anxiety, anger</td>\n<td>Strong feelings that change how you speak or hear.</td>\n</tr>\n<tr>\n<td><strong>Limiting beliefs</strong></td>\n<td>Beliefs that hold you back, like “I can’t speak well.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Barrier Simple meaning Inner chatter The non-stop talk inside your head. Preconceived notions Ideas you formed before you knew the facts. Cognitive bias A habit of the mind that bends how you see things. Lack of interest, attention or focus; boredom Your mind is somewhere else. Emotional state — fear, anxiety, anger Strong feelings that change how you speak or hear. Limiting beliefs Beliefs that hold you back, like “I can’t speak well.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Psychological barriers are blocks created by our own thoughts and feelings. <strong>Exam words:</strong> inner chatter, preconceived notions, cognitive bias, lack of interest, emotional state, limiting beliefs.</p>",
+          "text": "In one line: Psychological barriers are blocks created by our own thoughts and feelings. Exam words: inner chatter, preconceived notions, cognitive bias, lack of interest, emotional state, limiting beliefs."
+        },
+        {
+          "type": "heading",
+          "text": "Inner chatter: 70,000 thoughts a day"
+        },
+        {
+          "type": "html",
+          "html": "<p>The mind makes about <strong>70,000 thoughts a day</strong> on average. That is its job.</p>",
+          "text": "The mind makes about 70,000 thoughts a day on average. That is its job."
+        },
+        {
+          "type": "html",
+          "html": "<p>But think about this. If your head is already full of thoughts, how can a <strong>new</strong> thought enter? When someone speaks to you, their message must fight with your own thoughts.</p>",
+          "text": "But think about this. If your head is already full of thoughts, how can a new thought enter? When someone speaks to you, their message must fight with your own thoughts."
+        },
+        {
+          "type": "html",
+          "html": "<p>Also, while someone is talking, your mind starts making <strong>new</strong> thoughts about the topic. These can block the rest of the message.</p>",
+          "text": "Also, while someone is talking, your mind starts making new thoughts about the topic. These can block the rest of the message."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img04-inner-chatter.webp",
+          "alt": "Inner chatter blocks the message",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>But inner chatter can also help.</strong> You can take the speaker’s idea like a <strong>seed</strong>. Then you grow your own new ideas from it. So you must know <strong>when</strong> it blocks you and <strong>when</strong> it helps you.</p>",
+          "text": "But inner chatter can also help. You can take the speaker’s idea like a seed . Then you grow your own new ideas from it. So you must know when it blocks you and when it helps you."
+        },
+        {
+          "type": "heading",
+          "text": "Most thoughts are not useful"
+        },
+        {
+          "type": "html",
+          "html": "<p>One professor says about <strong>80–90%</strong> of our thoughts are <strong>unproductive</strong> (not useful). They are mostly:</p>",
+          "text": "One professor says about 80–90% of our thoughts are unproductive (not useful). They are mostly:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>worries</strong> about the past</li>\n<li><strong>anxiety</strong> about the future</li>\n<li><strong>neutral</strong> memories of old events</li>\n</ul>",
+          "text": "worries about the past anxiety about the future neutral memories of old events"
+        },
+        {
+          "type": "html",
+          "html": "<p>Being <strong>aware</strong> of this gives you a <strong>choice</strong>. You can choose which thoughts to keep and which to drop. Practices like <strong>meditation</strong> help keep thoughts few and calm.</p>",
+          "text": "Being aware of this gives you a choice . You can choose which thoughts to keep and which to drop. Practices like meditation help keep thoughts few and calm."
+        },
+        {
+          "type": "heading",
+          "text": "Be in the present"
+        },
+        {
+          "type": "html",
+          "html": "<p>When you are <strong>fully involved</strong> in something, your thoughts drop to almost <strong>zero</strong>.</p>",
+          "text": "When you are fully involved in something, your thoughts drop to almost zero ."
+        },
+        {
+          "type": "html",
+          "html": "<p>When you are <strong>not</strong> interested, thoughts start running at full speed.</p>",
+          "text": "When you are not interested, thoughts start running at full speed."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the boring meeting</strong> You are in a meeting. The topic does not interest you. Your mind wanders. You miss what is said. But when you <strong>lead</strong> the discussion, or show real interest, you stay in the present.</p>\n</blockquote>",
+          "text": "Lecture example — the boring meeting You are in a meeting. The topic does not interest you. Your mind wanders. You miss what is said. But when you lead the discussion, or show real interest, you stay in the present."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Stay fully involved, and your inner chatter stops blocking the message. <strong>Exam words:</strong> unproductive thoughts, awareness, meditation, being in the present.</p>",
+          "text": "In one line: Stay fully involved, and your inner chatter stops blocking the message. Exam words: unproductive thoughts, awareness, meditation, being in the present."
+        },
+        {
+          "type": "heading",
+          "text": "Emotions: fear, anxiety and anger"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Fear.</strong> A student goes to a professor’s office. The student is afraid of saying something wrong. So the student may not say things clearly, or may even blabber. If the professor <strong>makes the student comfortable</strong>, the fear goes down.</p>",
+          "text": "Fear. A student goes to a professor’s office. The student is afraid of saying something wrong. So the student may not say things clearly, or may even blabber. If the professor makes the student comfortable , the fear goes down."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Anxiety or lack of interest.</strong> In class, some students keep checking WhatsApp. Why? Maybe they are not interested. Or they are anxious: “What if someone messaged me and gets angry if I don’t reply?”</p>",
+          "text": "Anxiety or lack of interest. In class, some students keep checking WhatsApp. Why? Maybe they are not interested. Or they are anxious: “What if someone messaged me and gets angry if I don’t reply?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Anger.</strong> When a teacher gets angry, the message comes out badly. The students do not receive it well. Some people <strong>freeze</strong> when angry. They only show <strong>that</strong> they are angry, not <strong>why</strong>.</p>",
+          "text": "Anger. When a teacher gets angry, the message comes out badly. The students do not receive it well. Some people freeze when angry. They only show that they are angry, not why ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The solution:</strong> be <strong>aware</strong> of your emotion. Notice “I am afraid” or “I am angry”. Then you can communicate better.</p>",
+          "text": "The solution: be aware of your emotion. Notice “I am afraid” or “I am angry”. Then you can communicate better."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You are angry because your roommate used your charger again. You shout, “You never listen!” He only hears the shouting. He never learns the real problem: you needed the charger for your exam.</p>\n</blockquote>",
+          "text": "Everyday example You are angry because your roommate used your charger again. You shout, “You never listen!” He only hears the shouting. He never learns the real problem: you needed the charger for your exam."
+        },
+        {
+          "type": "heading",
+          "text": "Summary: what goes wrong"
+        },
+        {
+          "type": "html",
+          "html": "<p>Emotions affect <strong>both</strong> people — the <strong>speaker</strong> and the <strong>listener</strong>.</p>",
+          "text": "Emotions affect both people — the speaker and the listener ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>When you speak:</strong> What you <strong>mean</strong> and what you <strong>say</strong> can be different. This is called <strong>distortion</strong>.</p>",
+          "text": "When you speak: What you mean and what you say can be different. This is called distortion ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>When you listen:</strong> Thoughts and emotions <strong>cloud</strong> your mind. You may <strong>assume</strong> things or <strong>judge</strong> the speaker. So the meaning you take can be completely different from what they meant.</p>",
+          "text": "When you listen: Thoughts and emotions cloud your mind. You may assume things or judge the speaker. So the meaning you take can be completely different from what they meant."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img05-distortion.webp",
+          "alt": "Distortion between what is meant and what is heard",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Strong emotions bend the message both when we speak and when we listen. <strong>Exam words:</strong> fear, anxiety, anger, distortion, assumptions, judgments, emotional state of speaker and listener.</p>",
+          "text": "In one line: Strong emotions bend the message both when we speak and when we listen. Exam words: fear, anxiety, anger, distortion, assumptions, judgments, emotional state of speaker and listener."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the five barriers to communication.\n</summary>\nPsychological, language, cultural, organisational and physical.\n</details>",
+          "text": "Name the five barriers to communication. Psychological, language, cultural, organisational and physical."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs inner chatter always bad?\n</summary>\nNo. It blocks new messages, but it can also help you grow your own ideas from what the speaker says. You must know when it blocks and when it helps.\n</details>",
+          "text": "Is inner chatter always bad? No. It blocks new messages, but it can also help you grow your own ideas from what the speaker says. You must know when it blocks and when it helps."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “distortion” in communication?\n</summary>\nWhen what you mean and what you actually say (or what the listener understands) become different.\n</details>",
+          "text": "What is “distortion” in communication? When what you mean and what you actually say (or what the listener understands) become different."
+        }
+      ]
+    },
+    {
+      "slug": "language-barriers",
+      "title": "Language Barriers",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> The same word can mean “talk” in one place and “tell a story” in another. One small word can confuse a friend — or even win a battle.</p>\n</blockquote>",
+          "text": "Start here The same word can mean “talk” in one place and “tell a story” in another. One small word can confuse a friend — or even win a battle."
+        },
+        {
+          "type": "heading",
+          "text": "A country of many languages"
+        },
+        {
+          "type": "html",
+          "html": "<p>India has many <strong>languages</strong>, <strong>dialects</strong> (local forms of a language) and <strong>accents</strong> (ways of saying words).</p>",
+          "text": "India has many languages , dialects (local forms of a language) and accents (ways of saying words)."
+        },
+        {
+          "type": "html",
+          "html": "<p>Today the world is also more connected. We travel and work with people from many countries and cultures. So language differences meet us everywhere.</p>",
+          "text": "Today the world is also more connected. We travel and work with people from many countries and cultures. So language differences meet us everywhere."
+        },
+        {
+          "type": "html",
+          "html": "<p>Old cultures like China and Europe also have many dialects. Many dialects can lead to <strong>confusion</strong>.</p>",
+          "text": "Old cultures like China and Europe also have many dialects. Many dialects can lead to confusion ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> When people speak different languages or dialects, the message can get lost. <strong>Exam words:</strong> language barrier, dialects, accents, diversity.</p>",
+          "text": "In one line: When people speak different languages or dialects, the message can get lost. Exam words: language barrier, dialects, accents, diversity."
+        },
+        {
+          "type": "heading",
+          "text": "Story 1: one word, two meanings"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img06-same-word.webp",
+          "alt": "Same word, two meanings",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>A professor had a friend from <strong>Sri Lanka</strong>. Both spoke Tamil.</p>",
+          "text": "A professor had a friend from Sri Lanka . Both spoke Tamil."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The friend used the word <strong>“kade”</strong> to mean <strong>talk</strong>. So “kade kade” meant <strong>“don’t talk”</strong>.</li>\n<li>In the professor’s Tamil, the word means <strong>tell a story</strong>. So “kade kade” sounded like <strong>“don’t tell a story”</strong> — or even “don’t cook up a story”.</li>\n</ul>",
+          "text": "The friend used the word “kade” to mean talk . So “kade kade” meant “don’t talk” . In the professor’s Tamil, the word means tell a story . So “kade kade” sounded like “don’t tell a story” — or even “don’t cook up a story”."
+        },
+        {
+          "type": "html",
+          "html": "<p>These meanings are very different. A small mix-up like this can hurt someone’s feelings. <strong>You may even lose a friend.</strong></p>",
+          "text": "These meanings are very different. A small mix-up like this can hurt someone’s feelings. You may even lose a friend."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Even within one language, the same word can mean different things to different people.</p>",
+          "text": "In one line: Even within one language, the same word can mean different things to different people."
+        },
+        {
+          "type": "heading",
+          "text": "Story 2: language used as a shield in war"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is a real story from the Lt Col professor’s time in <strong>Uri</strong> (near the Line of Control).</p>",
+          "text": "This is a real story from the Lt Col professor’s time in Uri (near the Line of Control)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What was his job?</strong> He was the <strong>observer</strong>. Three points made a triangle:</p>",
+          "text": "What was his job? He was the observer . Three points made a triangle:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>the <strong>target</strong> (enemy bunker, about 500–600 m away)</li>\n<li>the <strong>guns</strong> (10–15 km behind)</li>\n<li>the <strong>observer</strong> (him)</li>\n</ol>",
+          "text": "the target (enemy bunker, about 500–600 m away) the guns (10–15 km behind) the observer (him)"
+        },
+        {
+          "type": "html",
+          "html": "<p>He told the guns where to fire, using a <strong>radio set</strong>. Accuracy was very important. A small error of <strong>1 degree</strong> moves the shell about <strong>19 metres for every kilometre</strong>. Shells can also scatter <strong>100–400 metres</strong>.</p>",
+          "text": "He told the guns where to fire, using a radio set . Accuracy was very important. A small error of 1 degree moves the shell about 19 metres for every kilometre . Shells can also scatter 100–400 metres ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The problem.</strong> The enemy soldier in the bunker was smart. He was <strong>listening</strong> to the radio. He heard the numbers (map position, height, rounds) clearly. So he moved his troops to safety before each shell landed.</p>",
+          "text": "The problem. The enemy soldier in the bunker was smart. He was listening to the radio. He heard the numbers (map position, height, rounds) clearly. So he moved his troops to safety before each shell landed."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The solution.</strong> The professor knew a soldier at the command post who spoke his <strong>regional language</strong>. So he stopped saying the numbers in the usual way. He spoke in that regional language instead. The enemy could not understand. After two or three rounds of fire, the firing was stopped. The angry enemy soldier then started shouting on the radio — he knew he had been tricked!</p>",
+          "text": "The solution. The professor knew a soldier at the command post who spoke his regional language . So he stopped saying the numbers in the usual way. He spoke in that regional language instead. The enemy could not understand. After two or three rounds of fire, the firing was stopped. The angry enemy soldier then started shouting on the radio — he knew he had been tricked!"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img07-language-shield.webp",
+          "alt": "Language as a shield",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>Here, language was used <strong>on purpose</strong> as a barrier — for the enemy.</p>",
+          "text": "Here, language was used on purpose as a barrier — for the enemy."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Language can block understanding, and it can also be used to block on purpose.</p>",
+          "text": "In one line: Language can block understanding, and it can also be used to block on purpose."
+        },
+        {
+          "type": "heading",
+          "text": "Language: barrier or bridge?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Language can be a <strong>barrier</strong>.</li>\n<li>Language can also be an <strong>enabler</strong> (something that helps).</li>\n<li>It depends on <strong>how many languages you know</strong>.</li>\n</ul>",
+          "text": "Language can be a barrier . Language can also be an enabler (something that helps). It depends on how many languages you know ."
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor also says a diverse country needs a <strong>uniting factor</strong>. He notes that Indian states were divided <strong>mainly on the basis of language</strong>.</p>",
+          "text": "The professor also says a diverse country needs a uniting factor . He notes that Indian states were divided mainly on the basis of language ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A new student from another state joins your hostel. You speak your home language with friends in the corridor. He feels left out. When you switch to a language everyone knows, he joins the conversation. Same people — but now language is a bridge.</p>\n</blockquote>",
+          "text": "Everyday example A new student from another state joins your hostel. You speak your home language with friends in the corridor. He feels left out. When you switch to a language everyone knows, he joins the conversation. Same people — but now language is a bridge."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> The more languages you know, the more language becomes a bridge instead of a wall. <strong>Exam words:</strong> barrier, enabler, uniting factor, regional language.</p>",
+          "text": "In one line: The more languages you know, the more language becomes a bridge instead of a wall. Exam words: barrier, enabler, uniting factor, regional language."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the “kade” story teach?\n</summary>\nThe same word can mean different things to different speakers, even in the same language. This can cause misunderstanding and even hurt a friendship.\n</details>",
+          "text": "What does the “kade” story teach? The same word can mean different things to different speakers, even in the same language. This can cause misunderstanding and even hurt a friendship."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow did the professor stop the enemy from understanding his radio messages?\n</summary>\nHe spoke in a regional language that his own soldier at the command post understood, but the enemy did not.\n</details>",
+          "text": "How did the professor stop the enemy from understanding his radio messages? He spoke in a regional language that his own soldier at the command post understood, but the enemy did not."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs language only a barrier?\n</summary>\nNo. It can be a barrier or an enabler. Knowing more languages helps.\n</details>",
+          "text": "Is language only a barrier? No. It can be a barrier or an enabler. Knowing more languages helps."
+        }
+      ]
+    },
+    {
+      "slug": "cultural-barriers",
+      "title": "Cultural Barriers",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You ask a friend, “Shall we go?” He shakes his head side to side. Does it mean yes or no? It depends on where he grew up. That is a cultural barrier.</p>\n</blockquote>",
+          "text": "Start here You ask a friend, “Shall we go?” He shakes his head side to side. Does it mean yes or no? It depends on where he grew up. That is a cultural barrier."
+        },
+        {
+          "type": "heading",
+          "text": "What is culture?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Culture</strong> is passed down from one <strong>generation</strong> to the next. It gives people a way of <strong>seeing the world</strong> and <strong>understanding life</strong>.</p>",
+          "text": "Culture is passed down from one generation to the next. It gives people a way of seeing the world and understanding life ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Today, because of <strong>liberalisation</strong> (opening up of the economy) and <strong>globalisation</strong> (the world working together), offices have people from many cultures. This <strong>cultural diversity</strong> is good. But it can also create <strong>communication barriers</strong>.</p>",
+          "text": "Today, because of liberalisation (opening up of the economy) and globalisation (the world working together), offices have people from many cultures. This cultural diversity is good. But it can also create communication barriers ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> People from different cultures read the same message in different ways. <strong>Exam words:</strong> culture, generation, liberalisation, globalisation, cultural diversity.</p>",
+          "text": "In one line: People from different cultures read the same message in different ways. Exam words: culture, generation, liberalisation, globalisation, cultural diversity."
+        },
+        {
+          "type": "heading",
+          "text": "Example 1: the head nod in India"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img22-head-nod.webp",
+          "alt": "Head nod can mean different things",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>In some places, people move the head <strong>side to side</strong> for <strong>“no”</strong> and <strong>up and down</strong> for <strong>“yes”</strong>.</li>\n<li>In some other parts of India, people move the head <strong>side to side</strong> for <strong>both “yes” and “no”</strong>.\n<ul>\n<li>A <strong>slow</strong> side-to-side nod means <strong>“yes”</strong>.</li>\n<li>A <strong>fast</strong> side-to-side nod means <strong>“no”</strong>.</li>\n</ul></li>\n</ul>",
+          "text": "In some places, people move the head side to side for “no” and up and down for “yes” . In some other parts of India, people move the head side to side for both “yes” and “no” . A slow side-to-side nod means “yes” . A fast side-to-side nod means “no” ."
+        },
+        {
+          "type": "html",
+          "html": "<p>So the same gesture can mean opposite things.</p>",
+          "text": "So the same gesture can mean opposite things."
+        },
+        {
+          "type": "heading",
+          "text": "Example 2: direct and indirect styles"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Culture</th>\n<th>Style</th>\n<th>What can go wrong</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>German</strong></td>\n<td>Very <strong>direct</strong> and to the point. <strong>Direct eye contact</strong> is expected, especially in serious talks.</td>\n<td>An Indian used to an <strong>indirect</strong> style may find this <strong>rude</strong>.</td>\n</tr>\n<tr>\n<td><strong>Japanese</strong></td>\n<td>Usually <strong>indirect</strong>. Answers may be <strong>ambiguous</strong> (not clear) to keep <strong>harmony</strong>, avoid <strong>loss of face</strong> (embarrassment), or be polite.</td>\n<td>This is similar to the Indian style, which is often <strong>polite and indirect</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Culture Style What can go wrong German Very direct and to the point. Direct eye contact is expected, especially in serious talks. An Indian used to an indirect style may find this rude . Japanese Usually indirect . Answers may be ambiguous (not clear) to keep harmony , avoid loss of face (embarrassment), or be polite. This is similar to the Indian style, which is often polite and indirect ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Some cultures say things directly; others hint politely — and each can misread the other. <strong>Exam words:</strong> direct communication, indirect communication, eye contact, harmony, loss of face.</p>",
+          "text": "In one line: Some cultures say things directly; others hint politely — and each can misread the other. Exam words: direct communication, indirect communication, eye contact, harmony, loss of face."
+        },
+        {
+          "type": "heading",
+          "text": "High-context and low-context cultures"
+        },
+        {
+          "type": "html",
+          "html": "<p>Cultures differ in how much the <strong>context</strong> (the situation around the words) affects the meaning.</p>",
+          "text": "Cultures differ in how much the context (the situation around the words) affects the meaning."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img23-context-cultures.webp",
+          "alt": "High-context vs low-context",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>High-context cultures</strong> — for example <strong>China, Korea, Japan and Vietnam</strong>: - People rely a lot on <strong>non-verbal</strong> and <strong>subtle situational cues</strong>. - A person’s <strong>official status</strong>, <strong>place in society</strong> and <strong>reputation</strong> matter a lot. - <strong>What is not said</strong> can matter more than what is said.</p>",
+          "text": "High-context cultures — for example China, Korea, Japan and Vietnam : - People rely a lot on non-verbal and subtle situational cues . - A person’s official status , place in society and reputation matter a lot. - What is not said can matter more than what is said."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Low-context cultures</strong> — for example <strong>Europe and North America</strong>: - People rely mainly on <strong>spoken and written words</strong>. - <strong>Body language</strong> and <strong>formal titles</strong> are less important.</p>",
+          "text": "Low-context cultures — for example Europe and North America : - People rely mainly on spoken and written words . - Body language and formal titles are less important."
+        },
+        {
+          "type": "subheading",
+          "text": "Comparing the two styles"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Low context</th>\n<th>High context</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Prefer <strong>direct</strong> verbal interaction</td>\n<td>Prefer <strong>indirect</strong> verbal interaction</td>\n</tr>\n<tr>\n<td>Generally <strong>less</strong> skilled at reading non-verbal cues</td>\n<td>Generally <strong>more</strong> skilled at reading non-verbal cues</td>\n</tr>\n<tr>\n<td>Say <strong>“no” directly</strong></td>\n<td><strong>Talk around the point</strong>; avoid saying “no”</td>\n</tr>\n<tr>\n<td>Messages are <strong>highly structured</strong>, with details; stress the <strong>literal</strong> (exact word) meaning</td>\n<td>Messages are <strong>simple</strong>, sometimes <strong>ambiguous</strong>; understand <strong>visual</strong> messages easily</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Low context High context Prefer direct verbal interaction Prefer indirect verbal interaction Generally less skilled at reading non-verbal cues Generally more skilled at reading non-verbal cues Say “no” directly Talk around the point ; avoid saying “no” Messages are highly structured , with details; stress the literal (exact word) meaning Messages are simple , sometimes ambiguous ; understand visual messages easily"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your manager asks, “Can you finish this by tonight?” A <strong>low-context</strong> reply: “No, I can finish it by tomorrow noon.” A <strong>high-context</strong> reply: “Hmm… it’s a bit difficult… I’ll try.” — the real message is “probably not”, but it is never said.</p>\n</blockquote>",
+          "text": "Everyday example Your manager asks, “Can you finish this by tonight?” A low-context reply: “No, I can finish it by tomorrow noon.” A high-context reply: “Hmm… it’s a bit difficult… I’ll try.” — the real message is “probably not”, but it is never said."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> In low-context cultures the words carry the meaning; in high-context cultures the situation carries much of it. <strong>Exam words:</strong> high-context culture, low-context culture, non-verbal cues, situational cues, status, literal meaning, ambiguous.</p>",
+          "text": "In one line: In low-context cultures the words carry the meaning; in high-context cultures the situation carries much of it. Exam words: high-context culture, low-context culture, non-verbal cues, situational cues, status, literal meaning, ambiguous."
+        },
+        {
+          "type": "heading",
+          "text": "How to overcome cultural barriers"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Study</strong> other cultures properly.</li>\n<li><strong>Learn</strong> new cultural values.</li>\n<li><strong>Observe</strong> people, and <strong>accept</strong> their cultures.</li>\n<li>Develop <strong>open-mindedness</strong>.</li>\n<li>Understand the <strong>mannerisms</strong> (usual habits and gestures) of other people.</li>\n</ul>",
+          "text": "Study other cultures properly. Learn new cultural values. Observe people, and accept their cultures. Develop open-mindedness . Understand the mannerisms (usual habits and gestures) of other people."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Learn, observe and accept other cultures with an open mind. <strong>Exam words:</strong> open-mindedness, cultural values, mannerisms, acceptance.</p>",
+          "text": "In one line: Learn, observe and accept other cultures with an open mind. Exam words: open-mindedness, cultural values, mannerisms, acceptance."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn a high-context culture, what can matter more than what is said?\n</summary>\nWhat is not said — non-verbal and situational cues, status and reputation.\n</details>",
+          "text": "In a high-context culture, what can matter more than what is said? What is not said — non-verbal and situational cues, status and reputation."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich style says “no” directly: low-context or high-context?\n</summary>\nLow-context. High-context communicators talk around the point and avoid saying “no”.\n</details>",
+          "text": "Which style says “no” directly: low-context or high-context? Low-context. High-context communicators talk around the point and avoid saying “no”."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy might an Indian find German communication rude?\n</summary>\nGerman communication is very direct with direct eye contact, while many Indians are used to a polite, indirect style.\n</details>",
+          "text": "Why might an Indian find German communication rude? German communication is very direct with direct eye contact, while many Indians are used to a polite, indirect style."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive two ways to overcome cultural barriers.\n</summary>\nAny two: study other cultures, learn new cultural values, observe and accept other cultures, develop open-mindedness, understand people’s mannerisms.\n</details>",
+          "text": "Give two ways to overcome cultural barriers. Any two: study other cultures, learn new cultural values, observe and accept other cultures, develop open-mindedness, understand people’s mannerisms."
+        }
+      ]
+    },
+    {
+      "slug": "organisational-barriers",
+      "title": "Organisational Barriers",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You found a mistake in your team’s project. You know how to fix it. But your manager looks busy and serious. Will you speak up — or stay quiet?</p>\n</blockquote>",
+          "text": "Start here You found a mistake in your team’s project. You know how to fix it. But your manager looks busy and serious. Will you speak up — or stay quiet?"
+        },
+        {
+          "type": "html",
+          "html": "<p>An <strong>organisational barrier</strong> is a block that comes from <strong>how a company is set up</strong>.</p>",
+          "text": "An organisational barrier is a block that comes from how a company is set up ."
+        },
+        {
+          "type": "heading",
+          "text": "Four points from the lecture slide"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img08-hierarchy.webp",
+          "alt": "Hierarchy blocks the message",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Hierarchy</strong> can stop the free flow of communication. <em>(Hierarchy — levels of rank, like junior, team lead, manager, director.)</em></li>\n<li>A <strong>complex hierarchy</strong> or structure can cause <strong>miscommunication</strong> and <strong>distortion</strong>.</li>\n<li>Without <strong>proper communication channels</strong>, the <strong>quality</strong> and <strong>speed</strong> of work suffer.</li>\n<li><strong>Official channels</strong> and <strong>informal channels</strong> must be clearly separate. <em>(The informal channel is also called the <strong>grapevine</strong> — office gossip.)</em></li>\n</ol>",
+          "text": "Hierarchy can stop the free flow of communication. (Hierarchy — levels of rank, like junior, team lead, manager, director.) A complex hierarchy or structure can cause miscommunication and distortion . Without proper communication channels , the quality and speed of work suffer. Official channels and informal channels must be clearly separate. (The informal channel is also called the grapevine — office gossip.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> The way a company is arranged can block or bend messages. <strong>Exam words:</strong> hierarchy, complex structure, communication channels, official channel, informal channel, grapevine.</p>",
+          "text": "In one line: The way a company is arranged can block or bend messages. Exam words: hierarchy, complex structure, communication channels, official channel, informal channel, grapevine."
+        },
+        {
+          "type": "heading",
+          "text": "Problem 1: juniors are afraid to speak up"
+        },
+        {
+          "type": "html",
+          "html": "<p>In a hierarchy, team members may <strong>not feel comfortable</strong> talking to their seniors.</p>",
+          "text": "In a hierarchy, team members may not feel comfortable talking to their seniors."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>This is worse when <strong>something has gone wrong</strong>.</li>\n<li>People hide it because they are afraid.</li>\n<li>So information is <strong>not fully shared</strong>. This leads to <strong>misunderstanding</strong>.</li>\n</ul>",
+          "text": "This is worse when something has gone wrong . People hide it because they are afraid. So information is not fully shared . This leads to misunderstanding ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Juniors often look at seniors by their <strong>designation</strong> (job title). So even with a good idea, they <strong>hesitate</strong>. If they feel the manager may disagree, they may not speak at all.</p>",
+          "text": "Juniors often look at seniors by their designation (job title). So even with a good idea, they hesitate . If they feel the manager may disagree, they may not speak at all."
+        },
+        {
+          "type": "heading",
+          "text": "Problem 2: too many bosses"
+        },
+        {
+          "type": "html",
+          "html": "<p>In big organisations, the structure is not always clear.</p>",
+          "text": "In big organisations, the structure is not always clear."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>One person may report to <strong>many people</strong> or <strong>many teams</strong>.</li>\n<li>These extra reporting lines are called <strong>dotted lines</strong>.</li>\n<li>Information can get <strong>lost</strong> or <strong>distorted</strong> along the way.</li>\n</ul>",
+          "text": "One person may report to many people or many teams . These extra reporting lines are called dotted lines . Information can get lost or distorted along the way."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — two bosses in two countries</strong> One professor worked as a <strong>quality manager</strong> in a multinational company. - From the <strong>India operations</strong> side, he reported to a senior manager and a director in India. - From the <strong>function</strong> side (quality), he reported to a <strong>Vice President of Quality Assurance in the US</strong>.</p>\n<p>Sometimes the two bosses wanted different things. So he had to <strong>listen carefully</strong> to both. He kept in touch with both and <strong>got things clarified</strong>, so no misunderstanding grew.</p>\n</blockquote>",
+          "text": "Lecture example — two bosses in two countries One professor worked as a quality manager in a multinational company. - From the India operations side, he reported to a senior manager and a director in India. - From the function side (quality), he reported to a Vice President of Quality Assurance in the US . Sometimes the two bosses wanted different things. So he had to listen carefully to both. He kept in touch with both and got things clarified , so no misunderstanding grew."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img09-two-bosses.webp",
+          "alt": "Reporting to two bosses",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> When you report to many people, you must take charge of clearing up confusion.</p>",
+          "text": "In one line: When you report to many people, you must take charge of clearing up confusion."
+        },
+        {
+          "type": "heading",
+          "text": "What should you do?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The good news:</strong> More leaders now look <strong>beyond hierarchy</strong>. They want ideas from every level. This will grow in the coming years. Good managers keep their <strong>eyes and ears open</strong> for ideas and talent.</p>",
+          "text": "The good news: More leaders now look beyond hierarchy . They want ideas from every level. This will grow in the coming years. Good managers keep their eyes and ears open for ideas and talent."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Your part as a junior:</strong></p>",
+          "text": "Your part as a junior:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Go with an <strong>open mind</strong>.</li>\n<li>State your view <strong>properly</strong>, not forcefully.</li>\n<li>Use a simple structure: <strong>“X and Y is the problem. Z is a way to solve it. It is good for the team and the organisation.”</strong></li>\n<li>Take the <strong>initiative</strong> yourself — if you truly believe the idea is good.</li>\n</ul>",
+          "text": "Go with an open mind . State your view properly , not forcefully. Use a simple structure: “X and Y is the problem. Z is a way to solve it. It is good for the team and the organisation.” Take the initiative yourself — if you truly believe the idea is good."
+        },
+        {
+          "type": "html",
+          "html": "<p>Companies try to keep a <strong>flat structure</strong> (few levels). But the junior still has to <strong>speak up</strong>.</p>",
+          "text": "Companies try to keep a flat structure (few levels). But the junior still has to speak up ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> In a group project, the leader picked a topic you think is too big. Instead of complaining to others, you message the leader: “The topic is very big for 2 weeks. We could choose one part of it. Then we can finish on time.” That is speaking up the right way.</p>\n</blockquote>",
+          "text": "Everyday example In a group project, the leader picked a topic you think is too big. Instead of complaining to others, you message the leader: “The topic is very big for 2 weeks. We could choose one part of it. Then we can finish on time.” That is speaking up the right way."
+        },
+        {
+          "type": "heading",
+          "text": "Keep friendship and work separate"
+        },
+        {
+          "type": "html",
+          "html": "<p>A professor’s manager became a <strong>good friend</strong>. But they made sure the friendship did <strong>not</strong> change <strong>formal communication</strong>. All official information was shared properly, just like with everyone else.</p>",
+          "text": "A professor’s manager became a good friend . But they made sure the friendship did not change formal communication . All official information was shared properly, just like with everyone else."
+        },
+        {
+          "type": "html",
+          "html": "<p>Each <strong>role</strong> has its own <strong>responsibilities</strong>. Keep roles separate and fulfil each one.</p>",
+          "text": "Each role has its own responsibilities . Keep roles separate and fulfil each one."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Speak up with respect, clarify with every boss, and keep friendship apart from formal work. <strong>Exam words:</strong> open mind, initiative, flat structure, multiple reporting, clarification, roles and responsibilities.</p>",
+          "text": "In one line: Speak up with respect, clarify with every boss, and keep friendship apart from formal work. Exam words: open mind, initiative, flat structure, multiple reporting, clarification, roles and responsibilities."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy do juniors often stay quiet in a hierarchy?\n</summary>\nThey feel uncomfortable with seniors. They judge seniors by designation. They fear the senior will see their view in a wrong light. This is worse when something has gone wrong.\n</details>",
+          "text": "Why do juniors often stay quiet in a hierarchy? They feel uncomfortable with seniors. They judge seniors by designation. They fear the senior will see their view in a wrong light. This is worse when something has gone wrong."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the “grapevine”?\n</summary>\nThe informal communication channel in an organisation (like office gossip). It should be kept clearly separate from official channels.\n</details>",
+          "text": "What is the “grapevine”? The informal communication channel in an organisation (like office gossip). It should be kept clearly separate from official channels."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nThe quality manager had two bosses with different expectations. What did he do?\n</summary>\nHe listened carefully to both, stayed in constant touch, and got things clarified so misunderstandings did not arise.\n</details>",
+          "text": "The quality manager had two bosses with different expectations. What did he do? He listened carefully to both, stayed in constant touch, and got things clarified so misunderstandings did not arise."
+        }
+      ]
+    },
+    {
+      "slug": "physical-barriers-activities",
+      "title": "Physical Barriers — Two Class Activities",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Have you played “Chinese whispers” or “broken telephone”? A message passes from ear to ear. At the end, it is totally different. This lecture does the same thing — with actions and drawings.</p>\n</blockquote>",
+          "text": "Start here Have you played “Chinese whispers” or “broken telephone”? A message passes from ear to ear. At the end, it is totally different. This lecture does the same thing — with actions and drawings."
+        },
+        {
+          "type": "html",
+          "html": "<p>In this lecture, the professors run <strong>two activities</strong> outside and inside the class. Both show how a message gets <strong>distorted</strong> (changed) as it travels.</p>",
+          "text": "In this lecture, the professors run two activities outside and inside the class. Both show how a message gets distorted (changed) as it travels."
+        },
+        {
+          "type": "heading",
+          "text": "Activity 1: pass the action down the line"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img10-action-relay.webp",
+          "alt": "Action relay line",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How it works:</strong></p>",
+          "text": "How it works:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Students stand in a <strong>line</strong>, all facing away from the start.</li>\n<li>The professor shows a set of <strong>actions</strong> to the <strong>first</strong> person only. Then he leaves.</li>\n<li>The first person taps the next person and shows the actions.</li>\n<li>Each person passes it on, one by one.</li>\n<li>At the end, everyone compares the <strong>last</strong> action with the <strong>first</strong> one.</li>\n</ol>",
+          "text": "Students stand in a line , all facing away from the start. The professor shows a set of actions to the first person only. Then he leaves. The first person taps the next person and shows the actions. Each person passes it on, one by one. At the end, everyone compares the last action with the first one."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The original action was:</strong> A person wants to ride a <strong>motorcycle</strong>. It does not start. He gives it a <strong>hard kick</strong>. It starts. He rides away.</p>",
+          "text": "The original action was: A person wants to ride a motorcycle . It does not start. He gives it a hard kick . It starts. He rides away."
+        },
+        {
+          "type": "html",
+          "html": "<p>By the end of the line, the action had <strong>changed</strong>. Small changes at each step added up.</p>",
+          "text": "By the end of the line, the action had changed . Small changes at each step added up."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Each time a message is passed on, a little of it changes.</p>",
+          "text": "In one line: Each time a message is passed on, a little of it changes."
+        },
+        {
+          "type": "heading",
+          "text": "Activity 2: describe and draw"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img11-describe-draw.webp",
+          "alt": "Describe and draw activity",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>This activity tests two skills:</p>",
+          "text": "This activity tests two skills:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>the ability to <strong>describe</strong> something clearly</li>\n<li>the ability to <strong>listen</strong> and <strong>understand</strong> correctly</li>\n</ul>",
+          "text": "the ability to describe something clearly the ability to listen and understand correctly"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How it works:</strong></p>",
+          "text": "How it works:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>A volunteer, <strong>Anamika</strong>, sees a simple drawing. Others cannot see it.</li>\n<li>She has <strong>1 minute</strong> to describe it in words.</li>\n<li>Everyone else has <strong>1 minute</strong> to draw it.</li>\n<li><strong>No questions</strong> are allowed.</li>\n<li>All drawings are collected and compared.</li>\n</ol>",
+          "text": "A volunteer, Anamika , sees a simple drawing. Others cannot see it. She has 1 minute to describe it in words. Everyone else has 1 minute to draw it. No questions are allowed. All drawings are collected and compared."
+        },
+        {
+          "type": "html",
+          "html": "<p>The drawing had: a <strong>vertical line</strong>, a <strong>curved arrow</strong> on top, <strong>two leaves</strong> (one with a circle, one with a smiley face), an <strong>infinity symbol</strong>, and <strong>two joined stars</strong>.</p>",
+          "text": "The drawing had: a vertical line , a curved arrow on top, two leaves (one with a circle, one with a smiley face), an infinity symbol , and two joined stars ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What happened?</strong> Many drawings were close. But <strong>no two were the same</strong>. Leaves were on the wrong side. Stars were in different places. Sizes were very different.</p>",
+          "text": "What happened? Many drawings were close. But no two were the same . Leaves were on the wrong side. Stars were in different places. Sizes were very different."
+        },
+        {
+          "type": "html",
+          "html": "<p>The next page explains <strong>why</strong> — and how to do better.</p>",
+          "text": "The next page explains why — and how to do better."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Even a clear description gets understood in many different ways. <strong>Exam words:</strong> distortion, describing, listening, interpretation.</p>",
+          "text": "In one line: Even a clear description gets understood in many different ways. Exam words: distortion, describing, listening, interpretation."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat was the original action in the line activity?\n</summary>\nA person wants to ride a motorcycle. It does not start. He gives it a hard kick. It starts and he rides away.\n</details>",
+          "text": "What was the original action in the line activity? A person wants to ride a motorcycle. It does not start. He gives it a hard kick. It starts and he rides away."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich two skills does the describe-and-draw activity test?\n</summary>\nThe ability to describe something clearly, and the ability to listen and understand it correctly.\n</details>",
+          "text": "Which two skills does the describe-and-draw activity test? The ability to describe something clearly, and the ability to listen and understand it correctly."
+        }
+      ]
+    },
+    {
+      "slug": "tips-for-effective-communication",
+      "title": "Tips for Effective Communication",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Anamika described the drawing well. Everyone listened. Yet ten students made ten different drawings. Where did the message break? Let’s find out.</p>\n</blockquote>",
+          "text": "Start here Anamika described the drawing well. Everyone listened. Yet ten students made ten different drawings. Where did the message break? Let’s find out."
+        },
+        {
+          "type": "html",
+          "html": "<p>After the describe-and-draw activity, students shared what they learned.</p>",
+          "text": "After the describe-and-draw activity, students shared what they learned."
+        },
+        {
+          "type": "heading",
+          "text": "What the students noticed"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img12-message-chain.webp",
+          "alt": "Where the message breaks",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Detail is lost at every step.</strong> The message passes through four steps:</p>",
+          "text": "1. Detail is lost at every step. The message passes through four steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>The speaker <strong>understands</strong> the task.</li>\n<li>The speaker <strong>describes</strong> it.</li>\n<li>The listeners <strong>listen</strong>.</li>\n<li>The listeners <strong>act</strong> (draw).</li>\n</ol>",
+          "text": "The speaker understands the task. The speaker describes it. The listeners listen . The listeners act (draw)."
+        },
+        {
+          "type": "html",
+          "html": "<p>A little detail is lost at <strong>each</strong> step.</p>",
+          "text": "A little detail is lost at each step."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Everyone imagines it differently.</strong> The description was the same. But each person made their own version, like the leaves.</p>",
+          "text": "2. Everyone imagines it differently. The description was the same. But each person made their own version, like the leaves."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. Small details change the meaning.</strong> The big picture can be the same. But a few small details can make the message wrong.</p>",
+          "text": "3. Small details change the meaning. The big picture can be the same. But a few small details can make the message wrong."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>4. We assume things.</strong> Anamika said “left” and “right” correctly. But listeners <strong>assumed</strong> whose left and whose right.</p>",
+          "text": "4. We assume things. Anamika said “left” and “right” correctly. But listeners assumed whose left and whose right."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>5. The mind cannot hold long descriptions.</strong> Without seeing a picture, the mind fills in shapes from <strong>past experience</strong>. After a few sentences, it cannot keep up. <strong>Repeating</strong> the description helped.</p>",
+          "text": "5. The mind cannot hold long descriptions. Without seeing a picture, the mind fills in shapes from past experience . After a few sentences, it cannot keep up. Repeating the description helped."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>6. Clear while listening, confused later.</strong> Some felt clear while she spoke. But when drawing, they forgot: was the smiley on the left or the right?</p>",
+          "text": "6. Clear while listening, confused later. Some felt clear while she spoke. But when drawing, they forgot: was the smiley on the left or the right?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>7. More instructions, less imagination.</strong> - If you want an <strong>exact copy</strong>, give <strong>more</strong> instructions. - If you want <strong>creative</strong> ideas, give fewer instructions. Leave it to people’s imagination.</p>",
+          "text": "7. More instructions, less imagination. - If you want an exact copy , give more instructions. - If you want creative ideas, give fewer instructions. Leave it to people’s imagination."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>8. Asking questions helps.</strong> No questions were allowed. With a few questions, the drawings would be much better.</p>",
+          "text": "8. Asking questions helps. No questions were allowed. With a few questions, the drawings would be much better."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>9. The devil is in the details.</strong> The stars were at a slight <strong>angle</strong>. The smiley faces were at different <strong>levels</strong>. Tiny details like these matter.</p>",
+          "text": "9. The devil is in the details. The stars were at a slight angle . The smiley faces were at different levels . Tiny details like these matter."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>10. Using hands helps.</strong> One student remembered a chemistry teacher. He used his <strong>hands</strong> to show where each atom was. Students followed his hands and made a clear picture in their minds.</p>",
+          "text": "10. Using hands helps. One student remembered a chemistry teacher. He used his hands to show where each atom was. Students followed his hands and made a clear picture in their minds."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Messages break because of lost details, assumptions, weak memory and no chance to ask questions. <strong>Exam words:</strong> interpretation, assumptions, details, repetition, asking questions, gestures.</p>",
+          "text": "In one line: Messages break because of lost details, assumptions, weak memory and no chance to ask questions. Exam words: interpretation, assumptions, details, repetition, asking questions, gestures."
+        },
+        {
+          "type": "heading",
+          "text": "The professor’s lesson: the ABCs"
+        },
+        {
+          "type": "html",
+          "html": "<p>All these points come down to the <strong>ABCs of communication</strong>:</p>",
+          "text": "All these points come down to the ABCs of communication :"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>Letter</th>\n<th>Meaning</th>\n<th>In simple words</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>A</strong></td>\n<td><strong>Accuracy</strong></td>\n<td>Give correct and exact details.</td>\n</tr>\n<tr>\n<td><strong>B</strong></td>\n<td><strong>Brevity</strong></td>\n<td>Keep it short.</td>\n</tr>\n<tr>\n<td><strong>C</strong></td>\n<td><strong>Clarity</strong></td>\n<td>Make it easy to understand.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Letter Meaning In simple words A Accuracy Give correct and exact details. B Brevity Keep it short. C Clarity Make it easy to understand."
+        },
+        {
+          "type": "html",
+          "html": "<p>A good description should be so clear that people need to <strong>ask very few questions</strong>.</p>",
+          "text": "A good description should be so clear that people need to ask very few questions ."
+        },
+        {
+          "type": "heading",
+          "text": "Give size and scale"
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor shows a better way to describe the drawing:</p>",
+          "text": "The professor shows a better way to describe the drawing:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Give the <strong>total size</strong> first: “The whole figure is about <strong>4 cm</strong> long.”</li>\n<li>Give <strong>distances</strong>: “Come down <strong>1 cm</strong> from the top. There is a leaf on the left.”</li>\n<li>Give <strong>directions</strong> using a clock: “One point of the star is at the <strong>two o’clock</strong> direction.”</li>\n<li>Describe <strong>part by part</strong>, from top to bottom.</li>\n</ul>",
+          "text": "Give the total size first: “The whole figure is about 4 cm long.” Give distances : “Come down 1 cm from the top. There is a leaf on the left.” Give directions using a clock: “One point of the star is at the two o’clock direction.” Describe part by part , from top to bottom."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img13-scale.webp",
+          "alt": "Describe with scale and direction",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Scale</strong> is very important for <strong>engineers, architects, artists and painters</strong>. Look at any map. At the bottom, it shows a scale like <strong>1:50,000</strong>, or “<strong>1 cm = 1 km</strong>”. Engineering drawing also depends on scale.</p>",
+          "text": "Scale is very important for engineers, architects, artists and painters . Look at any map. At the bottom, it shows a scale like 1:50,000 , or “ 1 cm = 1 km ”. Engineering drawing also depends on scale."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You tell a friend, “My house is near the medical shop.” He gets lost. Instead: “From the main gate, walk <strong>200 metres</strong> straight. Turn <strong>left</strong> at the blue medical shop. Mine is the <strong>third</strong> house on the right.” He reaches easily. That is accuracy, brevity and clarity.</p>\n</blockquote>",
+          "text": "Everyday example You tell a friend, “My house is near the medical shop.” He gets lost. Instead: “From the main gate, walk 200 metres straight. Turn left at the blue medical shop. Mine is the third house on the right.” He reaches easily. That is accuracy, brevity and clarity."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Be accurate, brief and clear — and use size, distance and direction. <strong>Exam words:</strong> ABCs, accuracy, brevity, clarity, scale.</p>",
+          "text": "In one line: Be accurate, brief and clear — and use size, distance and direction. Exam words: ABCs, accuracy, brevity, clarity, scale."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the ABCs of communication?\n</summary>\nAccuracy, Brevity and Clarity.\n</details>",
+          "text": "What are the ABCs of communication? Accuracy, Brevity and Clarity."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYou want people to copy a design exactly. Should you give more or fewer instructions?\n</summary>\nMore instructions. Fewer instructions leave more room for imagination, which is good only when you want creative answers.\n</details>",
+          "text": "You want people to copy a design exactly. Should you give more or fewer instructions? More instructions. Fewer instructions leave more room for imagination, which is good only when you want creative answers."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy did the professor mention maps?\n</summary>\nTo show the importance of scale (like 1 cm = 1 km). Scale makes a description exact — important for engineers, architects and artists.\n</details>",
+          "text": "Why did the professor mention maps? To show the importance of scale (like 1 cm = 1 km). Scale makes a description exact — important for engineers, architects and artists."
+        }
+      ]
+    },
+    {
+      "slug": "ten-cs-of-communication",
+      "title": "The 10 C's of Communication",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your message is like food. Clear, short, correct, complete and served politely — people enjoy it. Miss one thing, and they push the plate away. The 10 C’s are your recipe.</p>\n</blockquote>",
+          "text": "Start here Your message is like food. Clear, short, correct, complete and served politely — people enjoy it. Miss one thing, and they push the plate away. The 10 C’s are your recipe."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img14-ten-cs-wheel.webp",
+          "alt": "The 10 C’s wheel",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>In the lecture, each student explained one C. Each C has: - what to <strong>avoid</strong> (bad) - what to <strong>do</strong> (good) - a <strong>bad example</strong> and a <strong>better example</strong></p>",
+          "text": "In the lecture, each student explained one C. Each C has: - what to avoid (bad) - what to do (good) - a bad example and a better example"
+        },
+        {
+          "type": "heading",
+          "text": "1. Clarity (Clear)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Be clear in your <strong>thoughts</strong> and your <strong>words</strong>. Know what you want to say.</p>",
+          "text": "Meaning: Be clear in your thoughts and your words . Know what you want to say."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Wordy sentences</td>\n<td>Clear thoughts and words</td>\n</tr>\n<tr>\n<td>Vague or confusing words</td>\n<td>Simple, common words</td>\n</tr>\n<tr>\n<td>No specific message</td>\n<td>A clear and specific message</td>\n</tr>\n<tr>\n<td>Hard to understand</td>\n<td>Easy to understand</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Wordy sentences Clear thoughts and words Vague or confusing words Simple, common words No specific message A clear and specific message Hard to understand Easy to understand"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “We considered the consequences of the existing policy on risk management strategies we employ with our Risk and Compliance department and updated them accordingly.” <strong>Better:</strong> “We updated Risk and Compliance policies.”</p>",
+          "text": "Bad: “We considered the consequences of the existing policy on risk management strategies we employ with our Risk and Compliance department and updated them accordingly.” Better: “We updated Risk and Compliance policies.”"
+        },
+        {
+          "type": "heading",
+          "text": "2. Conciseness (Concise)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Keep it <strong>short</strong>, clear and brief. Give only useful, <strong>relevant</strong> information.</p>",
+          "text": "Meaning: Keep it short , clear and brief. Give only useful, relevant information."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Long, wordy messages</td>\n<td>Short, clear, brief</td>\n</tr>\n<tr>\n<td>Repeated or extra words</td>\n<td>No extra words, no repetition</td>\n</tr>\n<tr>\n<td>Unnecessary, irrelevant information</td>\n<td>Only essential, relevant information</td>\n</tr>\n<tr>\n<td>Hard to understand, not appealing</td>\n<td>Easy to understand and appealing</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Long, wordy messages Short, clear, brief Repeated or extra words No extra words, no repetition Unnecessary, irrelevant information Only essential, relevant information Hard to understand, not appealing Easy to understand and appealing"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “Given that it is COVID, follow necessary precautions for COVID — wear mask and sanitise hands and follow social distancing to ensure all government regulations are followed without fail.” <strong>Better:</strong> “Mandatory Government Regulations for COVID: wear mask; sanitise hands; follow social distancing.”</p>",
+          "text": "Bad: “Given that it is COVID, follow necessary precautions for COVID — wear mask and sanitise hands and follow social distancing to ensure all government regulations are followed without fail.” Better: “Mandatory Government Regulations for COVID: wear mask; sanitise hands; follow social distancing.”"
+        },
+        {
+          "type": "heading",
+          "text": "3. Concreteness (Concrete)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Be <strong>specific</strong>. Use <strong>facts, figures, data and proof</strong>. Leave no room for wrong meaning.</p>",
+          "text": "Meaning: Be specific . Use facts, figures, data and proof . Leave no room for wrong meaning."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Vague, abstract, general talk</td>\n<td>Accurate, specific facts and figures</td>\n</tr>\n<tr>\n<td>No supporting data</td>\n<td>Specific data and proof</td>\n</tr>\n<tr>\n<td>Easy to misunderstand</td>\n<td>No room for misinterpretation</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Vague, abstract, general talk Accurate, specific facts and figures No supporting data Specific data and proof Easy to misunderstand No room for misinterpretation"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “The sales numbers of ABC team are on the low side. The numbers need to be raised.” <strong>Better:</strong> “The sales conversion rate of ABC team is below 40%. We need to aim for 50% or higher next quarter. Let us plan a strategy meet.”</p>",
+          "text": "Bad: “The sales numbers of ABC team are on the low side. The numbers need to be raised.” Better: “The sales conversion rate of ABC team is below 40%. We need to aim for 50% or higher next quarter. Let us plan a strategy meet.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line (C1–C3):</strong> Say it clearly, say it short, and back it with facts.</p>",
+          "text": "In one line (C1–C3): Say it clearly, say it short, and back it with facts."
+        },
+        {
+          "type": "heading",
+          "text": "4. Correctness (Correct)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> No <strong>spelling, grammar or punctuation</strong> mistakes. Use <strong>suitable</strong> language. Give <strong>correct</strong> data.</p>",
+          "text": "Meaning: No spelling, grammar or punctuation mistakes. Use suitable language. Give correct data."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Grammar, punctuation and spelling errors</td>\n<td>Correct grammar, punctuation and spelling</td>\n</tr>\n<tr>\n<td>Wrong language for the situation</td>\n<td>Right language for the situation</td>\n</tr>\n<tr>\n<td>Wrong or vague data, facts and figures</td>\n<td>Correct data, facts and figures</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Grammar, punctuation and spelling errors Correct grammar, punctuation and spelling Wrong language for the situation Right language for the situation Wrong or vague data, facts and figures Correct data, facts and figures"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “Subsequent to our <strong>conservation</strong> on monday I wanted to let you know that <strong>about 200–300</strong> people have registered for the conference.” <strong>Better:</strong> “Subsequent to our <strong>conversation</strong> on Monday, I wanted to let you know that <strong>200</strong> people have registered for the Data Science Conference.”</p>",
+          "text": "Bad: “Subsequent to our conservation on monday I wanted to let you know that about 200–300 people have registered for the conference.” Better: “Subsequent to our conversation on Monday, I wanted to let you know that 200 people have registered for the Data Science Conference.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>(Two mistakes fixed: the spelling “conservation” → “conversation”, and the vague “200–300” → the exact number.)</em></p>",
+          "text": "(Two mistakes fixed: the spelling “conservation” → “conversation”, and the vague “200–300” → the exact number.)"
+        },
+        {
+          "type": "heading",
+          "text": "5. Completeness (Complete)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Give <strong>all</strong> the information. Answer likely questions <strong>before</strong> people ask them.</p>",
+          "text": "Meaning: Give all the information. Answer likely questions before people ask them."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Missing information</td>\n<td>Complete and to the point</td>\n</tr>\n<tr>\n<td>Leaves people asking for more details</td>\n<td>Cover all data points</td>\n</tr>\n<tr>\n<td></td>\n<td>Add supporting information for likely questions</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Missing information Complete and to the point Leaves people asking for more details Cover all data points Add supporting information for likely questions"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “Monthly system shutdown for maintenance will happen tomorrow. Backup all your work.” <em>(People will ask: What time? How long?)</em> <strong>Better:</strong> “Monthly system shutdown for maintenance is at 2 p.m. on Sat, Feb 26th, 2022 for 30 minutes. Please backup all your work prior to that.”</p>",
+          "text": "Bad: “Monthly system shutdown for maintenance will happen tomorrow. Backup all your work.” (People will ask: What time? How long?) Better: “Monthly system shutdown for maintenance is at 2 p.m. on Sat, Feb 26th, 2022 for 30 minutes. Please backup all your work prior to that.”"
+        },
+        {
+          "type": "heading",
+          "text": "6. Consistency (Consistent)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Your messages and data should <strong>match</strong> each other over time. This builds <strong>credibility</strong> (trust).</p>",
+          "text": "Meaning: Your messages and data should match each other over time. This builds credibility (trust)."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Data and facts that don’t match</td>\n<td>Consistent, continuous messages and data</td>\n</tr>\n<tr>\n<td>No communication schedule</td>\n<td>A fixed communication schedule</td>\n</tr>\n<tr>\n<td>Talking only when there is a question, problem or fight</td>\n<td>Be proactive and responsive</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Data and facts that don’t match Consistent, continuous messages and data No communication schedule A fixed communication schedule Talking only when there is a question, problem or fight Be proactive and responsive"
+        },
+        {
+          "type": "html",
+          "html": "<p>If there is no regular update, team members may get <strong>old (outdated)</strong> information. This causes confusion.</p>",
+          "text": "If there is no regular update, team members may get old (outdated) information. This causes confusion."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong> Fix a <strong>communication schedule</strong>. For example, every <strong>Friday</strong> at a fixed time, send an update to all team members: what happened this week, key achievements, and targets.</p>",
+          "text": "Example: Fix a communication schedule . For example, every Friday at a fixed time, send an update to all team members: what happened this week, key achievements, and targets."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line (C4–C6):</strong> Get every fact right, leave nothing out, and keep messages regular and matching.</p>",
+          "text": "In one line (C4–C6): Get every fact right, leave nothing out, and keep messages regular and matching."
+        },
+        {
+          "type": "heading",
+          "text": "7. Confidence (Confident)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Express yourself <strong>freely</strong>. Be firm, <strong>assertive</strong> (sure and direct) and to the point. This is very important for <strong>leaders</strong>.</p>",
+          "text": "Meaning: Express yourself freely . Be firm, assertive (sure and direct) and to the point. This is very important for leaders ."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Trying too hard to impress or please</td>\n<td>Be yourself</td>\n</tr>\n<tr>\n<td>Nervous sounds like “err”, “umm”, “aah”</td>\n<td>Express freely and creatively</td>\n</tr>\n<tr>\n<td>Not prepared</td>\n<td>Be firm, assertive and to the point</td>\n</tr>\n<tr>\n<td></td>\n<td>Use words of power and positivity</td>\n</tr>\n<tr>\n<td></td>\n<td>Practise and prepare beforehand</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Trying too hard to impress or please Be yourself Nervous sounds like “err”, “umm”, “aah” Express freely and creatively Not prepared Be firm, assertive and to the point Use words of power and positivity Practise and prepare beforehand"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “I am… err… actually, I have… uhh… some important work… and need some leave.” <em>(nervous body language)</em> <strong>Better:</strong> “Ravi, I have some important personal work I need to attend to. I would like 2 days of leave on the 24th and 25th.”</p>",
+          "text": "Bad: “I am… err… actually, I have… uhh… some important work… and need some leave.” (nervous body language) Better: “Ravi, I have some important personal work I need to attend to. I would like 2 days of leave on the 24th and 25th.”"
+        },
+        {
+          "type": "heading",
+          "text": "8. Creativity (Creative)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Make your message <strong>interesting</strong>. A <strong>monotonous</strong> (flat, boring) talk puts people to sleep.</p>",
+          "text": "Meaning: Make your message interesting . A monotonous (flat, boring) talk puts people to sleep."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Monotonous, boring talk</td>\n<td>Use humour, wit, stories and quotes</td>\n</tr>\n<tr>\n<td></td>\n<td>Be creative and resourceful</td>\n</tr>\n<tr>\n<td></td>\n<td>Use creative aids to make the message simple and attractive</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Monotonous, boring talk Use humour, wit, stories and quotes Be creative and resourceful Use creative aids to make the message simple and attractive"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “Good morning everyone. My talk today is on how to make hay while the sun shines. The 5 steps to be followed are…” <strong>Better:</strong> “Good morning everyone! Once upon a time there were two friends, an ant and a cricket…”</p>",
+          "text": "Bad: “Good morning everyone. My talk today is on how to make hay while the sun shines. The 5 steps to be followed are…” Better: “Good morning everyone! Once upon a time there were two friends, an ant and a cricket…”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line (C7–C8):</strong> Speak with confidence, and make it interesting.</p>",
+          "text": "In one line (C7–C8): Speak with confidence, and make it interesting."
+        },
+        {
+          "type": "heading",
+          "text": "9. Courtesy (Courteous)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> Be <strong>polite</strong> and <strong>respectful</strong>, even when giving negative feedback.</p>",
+          "text": "Meaning: Be polite and respectful , even when giving negative feedback."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Rude, impolite words</td>\n<td>Be humble, sincere, enthusiastic, respectful, honest</td>\n</tr>\n<tr>\n<td>Low, negative, hurtful words</td>\n<td>Use words of positive energy</td>\n</tr>\n<tr>\n<td>Being too critical</td>\n<td>Be appreciative and tactful</td>\n</tr>\n<tr>\n<td>Passive aggressive talk</td>\n<td>Give constructive feedback</td>\n</tr>\n<tr>\n<td>Hidden insults</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Rude, impolite words Be humble, sincere, enthusiastic, respectful, honest Low, negative, hurtful words Use words of positive energy Being too critical Be appreciative and tactful Passive aggressive talk Give constructive feedback Hidden insults"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>(<strong>Passive aggressive</strong> — showing anger in an indirect, hidden way. <strong>Tactful</strong> — careful not to hurt others.)</em></p>",
+          "text": "( Passive aggressive — showing anger in an indirect, hidden way. Tactful — careful not to hurt others.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “This is not what it is supposed to be. You are always doing things wrong. Work on it again.” <strong>Better:</strong> “There is some rework that needs to be done. Let’s go through the work to see what changes need to be made.”</p>",
+          "text": "Bad: “This is not what it is supposed to be. You are always doing things wrong. Work on it again.” Better: “There is some rework that needs to be done. Let’s go through the work to see what changes need to be made.”"
+        },
+        {
+          "type": "heading",
+          "text": "10. Consideration (Considerate)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Meaning:</strong> <strong>Step into the other person’s shoes.</strong> Think about their <strong>feelings</strong>, mindset and point of view. The student called this the <strong>most important</strong> C — without it, communication becomes miscommunication.</p>",
+          "text": "Meaning: Step into the other person’s shoes. Think about their feelings , mindset and point of view. The student called this the most important C — without it, communication becomes miscommunication."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Avoid</th>\n<th>Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Ignoring the audience</td>\n<td>Consider the listener’s feelings, mindset and perspective</td>\n</tr>\n<tr>\n<td>Being self-centred</td>\n<td>Seek to understand; show <strong>empathy</strong></td>\n</tr>\n<tr>\n<td>Being harsh</td>\n<td><strong>Ask for feedback</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Avoid Do Ignoring the audience Consider the listener’s feelings, mindset and perspective Being self-centred Seek to understand; show empathy Being harsh Ask for feedback"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>(<strong>Empathy</strong> — understanding how another person feels.)</em></p>",
+          "text": "( Empathy — understanding how another person feels.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bad:</strong> “I really don’t care how. Make all the changes. Get this done asap.” <strong>Better:</strong> “Before we go through the changes that need to be made, I would like to understand what challenges you are facing.”</p>",
+          "text": "Bad: “I really don’t care how. Make all the changes. Get this done asap.” Better: “Before we go through the changes that need to be made, I would like to understand what challenges you are facing.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line (C9–C10):</strong> Be polite, and always think from the listener’s side.</p>",
+          "text": "In one line (C9–C10): Be polite, and always think from the listener’s side."
+        },
+        {
+          "type": "heading",
+          "text": "All 10 C’s at a glance"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>C</th>\n<th>One-line meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Clear</td>\n<td>Clear thoughts, simple words</td>\n</tr>\n<tr>\n<td>Concise</td>\n<td>Short; no extra words</td>\n</tr>\n<tr>\n<td>Concrete</td>\n<td>Specific facts and data</td>\n</tr>\n<tr>\n<td>Correct</td>\n<td>No errors; right data</td>\n</tr>\n<tr>\n<td>Complete</td>\n<td>All information; answer likely questions</td>\n</tr>\n<tr>\n<td>Consistent</td>\n<td>Matching, regular messages</td>\n</tr>\n<tr>\n<td>Confident</td>\n<td>Firm, prepared, no “umm”</td>\n</tr>\n<tr>\n<td>Creative</td>\n<td>Stories, humour, not boring</td>\n</tr>\n<tr>\n<td>Courteous</td>\n<td>Polite, positive, constructive</td>\n</tr>\n<tr>\n<td>Considerate</td>\n<td>Think from the listener’s side</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "C One-line meaning Clear Clear thoughts, simple words Concise Short; no extra words Concrete Specific facts and data Correct No errors; right data Complete All information; answer likely questions Consistent Matching, regular messages Confident Firm, prepared, no “umm” Creative Stories, humour, not boring Courteous Polite, positive, constructive Considerate Think from the listener’s side"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Asking your class group to pay for a farewell party: “Guys pay money for party pls” breaks many C’s. “Hi all! Farewell party is on <strong>Friday, 5 p.m.</strong> in the <strong>seminar hall</strong>. Please pay <strong>₹200</strong> to Priya by <strong>Wednesday</strong>. Thank you!” — this is <strong>clear, concise, concrete, complete and courteous</strong>.</p>\n</blockquote>",
+          "text": "Everyday example Asking your class group to pay for a farewell party: “Guys pay money for party pls” breaks many C’s. “Hi all! Farewell party is on Friday, 5 p.m. in the seminar hall . Please pay ₹200 to Priya by Wednesday . Thank you!” — this is clear, concise, concrete, complete and courteous ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Exam words:</strong> clarity, conciseness, concreteness, correctness, completeness, consistency, confidence, creativity, courtesy, consideration.</p>",
+          "text": "Exam words: clarity, conciseness, concreteness, correctness, completeness, consistency, confidence, creativity, courtesy, consideration."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“The sales numbers are low.” Which C is missing, and how do you fix it?\n</summary>\nConcreteness. Add specific data, e.g. “The conversion rate is below 40%. We need 50% or higher next quarter.”\n</details>",
+          "text": "“The sales numbers are low.” Which C is missing, and how do you fix it? Concreteness. Add specific data, e.g. “The conversion rate is below 40%. We need 50% or higher next quarter.”"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich C means “stepping into the other person’s shoes”?\n</summary>\nConsideration.\n</details>",
+          "text": "Which C means “stepping into the other person’s shoes”? Consideration."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“Shutdown tomorrow. Backup your work.” Which C is missing?\n</summary>\nCompleteness — it does not say what time or for how long.\n</details>",
+          "text": "“Shutdown tomorrow. Backup your work.” Which C is missing? Completeness — it does not say what time or for how long."
+        }
+      ]
+    },
+    {
+      "slug": "what-is-listening",
+      "title": "What is Listening?",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Many people think a good communicator is someone who speaks fluent English. But the people we love most are often the ones who <strong>listen</strong> to us. Listening is the hidden half of communication.</p>\n</blockquote>",
+          "text": "Start here Many people think a good communicator is someone who speaks fluent English. But the people we love most are often the ones who listen to us. Listening is the hidden half of communication."
+        },
+        {
+          "type": "heading",
+          "text": "Communication is not only speaking"
+        },
+        {
+          "type": "html",
+          "html": "<p>The world often thinks: - “He speaks great English, so he is a great communicator.” - “She speaks fluently, so she is a great communicator.”</p>",
+          "text": "The world often thinks: - “He speaks great English, so he is a great communicator.” - “She speaks fluently, so she is a great communicator.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>But there is something just as important: <strong>L-I-S-T-E-N-I-N-G</strong>. It is part of communication. Yet it is not taught in any school curriculum.</p>",
+          "text": "But there is something just as important: L-I-S-T-E-N-I-N-G . It is part of communication. Yet it is not taught in any school curriculum."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What happens when you become a good listener?</strong></p>",
+          "text": "What happens when you become a good listener?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>People <strong>respect</strong> you more.</li>\n<li>You build <strong>better relationships</strong>.</li>\n<li>People <strong>like</strong> you more.</li>\n<li>You can become a good <strong>friend</strong> and <strong>coach</strong>.</li>\n</ul>",
+          "text": "People respect you more. You build better relationships . People like you more. You can become a good friend and coach ."
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor shares a quote: <em>getting someone’s attention is the most sought-after luxury in the world.</em> If you give someone your attention by listening, they may be your friend for life.</p>",
+          "text": "The professor shares a quote: getting someone’s attention is the most sought-after luxury in the world. If you give someone your attention by listening, they may be your friend for life."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Think</strong> Why don’t people listen? Why don’t schools teach listening? Why don’t doctors, teachers and engineers — who need it most — listen well? Write down your answers. (The next page gives some reasons.)</p>\n</blockquote>",
+          "text": "Think Why don’t people listen? Why don’t schools teach listening? Why don’t doctors, teachers and engineers — who need it most — listen well? Write down your answers. (The next page gives some reasons.)"
+        },
+        {
+          "type": "heading",
+          "text": "What does listening mean?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Listening means paying attention to what the person is saying.</strong></p>",
+          "text": "Listening means paying attention to what the person is saying."
+        },
+        {
+          "type": "html",
+          "html": "<p>Pay attention to <strong>what</strong> they are trying to tell you — <strong>not</strong> their style, grammar or English.</p>",
+          "text": "Pay attention to what they are trying to tell you — not their style, grammar or English."
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask yourself: - Are they sharing <strong>sadness</strong> or <strong>happiness</strong>? - Are they showing <strong>disgust</strong>? - Are they telling you about a <strong>problem</strong>?</p>",
+          "text": "Ask yourself: - Are they sharing sadness or happiness ? - Are they showing disgust ? - Are they telling you about a problem ?"
+        },
+        {
+          "type": "html",
+          "html": "<p>Why did they come to <strong>you</strong>? They want a <strong>solution</strong>, your <strong>attention</strong>, or a <strong>shoulder to cry on</strong>. When you give them that, they value you deeply.</p>",
+          "text": "Why did they come to you ? They want a solution , your attention , or a shoulder to cry on . When you give them that, they value you deeply."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Listening is paying attention to what someone is really trying to tell you. <strong>Exam words:</strong> listening, paying attention, attention as a luxury.</p>",
+          "text": "In one line: Listening is paying attention to what someone is really trying to tell you. Exam words: listening, paying attention, attention as a luxury."
+        },
+        {
+          "type": "heading",
+          "text": "Two ideas from the slide"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img15-noise-in-head.webp",
+          "alt": "Reduce the noise in your head",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Reduce the noise in your head.</strong> Our head is full of noise all the time.</p>",
+          "text": "1. Reduce the noise in your head. Our head is full of noise all the time."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the hospital</strong> Your friend says, “My mother was admitted to hospital today.” A noisy mind hears only the word “hospital” and jumps in: “Which hospital? My mother was also in hospital 10 years ago…” That is the <strong>noise</strong> talking. You stopped listening to your friend. A quiet mind listens only to this: <strong>your friend’s mother is in hospital today.</strong> Nothing else matters right now.</p>\n</blockquote>",
+          "text": "Lecture example — the hospital Your friend says, “My mother was admitted to hospital today.” A noisy mind hears only the word “hospital” and jumps in: “Which hospital? My mother was also in hospital 10 years ago…” That is the noise talking. You stopped listening to your friend. A quiet mind listens only to this: your friend’s mother is in hospital today. Nothing else matters right now."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. See with your ears.</strong> We think ears are only for hearing. But when you listen well, you can “see” what the person is <strong>thinking and feeling</strong>.</p>",
+          "text": "2. See with your ears. We think ears are only for hearing. But when you listen well, you can “see” what the person is thinking and feeling ."
+        },
+        {
+          "type": "heading",
+          "text": "Type 1: Passive listening"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img16-passive-listening.webp",
+          "alt": "Passive listening",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Passive listening</strong> means listening <strong>without interrupting</strong>.</p>",
+          "text": "Passive listening means listening without interrupting ."
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Listen without interruption.</strong> Wait for the other person to finish. If you only stop interrupting, you are already a better listener.</li>\n<li><strong>Listen to the whole person.</strong> Do not listen only to words. Notice their <strong>voice</strong>, <strong>tone</strong> and <strong>body language</strong>. A raised voice saying “My mother is ill” also tells you: <em>I am in distress.</em></li>\n<li><strong>Acknowledge with small signals.</strong> Make sounds like “hmm”, “oh”, “I see”. Use <strong>gestures</strong> like <strong>nodding</strong>. This shows you are there.</li>\n<li><strong>When to use it:</strong> mostly when a person is <strong>very distressed</strong> (very upset or crying). They just want to pour their heart out. Interrupting them at that time is silly.</li>\n</ol>",
+          "text": "Listen without interruption. Wait for the other person to finish. If you only stop interrupting, you are already a better listener. Listen to the whole person. Do not listen only to words. Notice their voice , tone and body language . A raised voice saying “My mother is ill” also tells you: I am in distress. Acknowledge with small signals. Make sounds like “hmm”, “oh”, “I see”. Use gestures like nodding . This shows you are there. When to use it: mostly when a person is very distressed (very upset or crying). They just want to pour their heart out. Interrupting them at that time is silly."
+        },
+        {
+          "type": "html",
+          "html": "<p>Practise this with someone you often interrupt. After 3–4 times, they will say, “There is something different but nice about you.”</p>",
+          "text": "Practise this with someone you often interrupt. After 3–4 times, they will say, “There is something different but nice about you.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Passive listening = don’t interrupt, notice the whole person, and nod along. <strong>Exam words:</strong> passive listening, without interruption, whole person, voice, tone, body language, acknowledge, distressed.</p>",
+          "text": "In one line: Passive listening = don’t interrupt, notice the whole person, and nod along. Exam words: passive listening, without interruption, whole person, voice, tone, body language, acknowledge, distressed."
+        },
+        {
+          "type": "heading",
+          "text": "Type 2: Active listening"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img17-active-listening.webp",
+          "alt": "Active listening",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Active listening</strong> means you <strong>take part</strong> in the conversation.</p>",
+          "text": "Active listening means you take part in the conversation."
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Listen with animation and acknowledgement.</strong> Show interest. Say, “Wait, explain that to me again.”</li>\n<li><strong>Paraphrase for understanding.</strong> Say what they said <strong>in your own words</strong> and give it back to them.</li>\n<li><strong>Ask for clarification.</strong> Check small facts.</li>\n<li><strong>Ask questions.</strong> Learn more about the situation.</li>\n<li><strong>Mirror emotions.</strong> Show a matching feeling. If they are sad, look concerned — don’t look happy.</li>\n</ol>",
+          "text": "Listen with animation and acknowledgement. Show interest. Say, “Wait, explain that to me again.” Paraphrase for understanding. Say what they said in your own words and give it back to them. Ask for clarification. Check small facts. Ask questions. Learn more about the situation. Mirror emotions. Show a matching feeling. If they are sad, look concerned — don’t look happy."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — chest pain, not heart attack</strong> Friend: “My mother had slight chest pain this morning. We took her to hospital. The doctor is waiting for some results.” <strong>Paraphrase:</strong> “So your mother had a heart attack this morning?” Friend: “No, no — she had <strong>chest pain</strong>.” Now you have understood correctly. Paraphrasing caught the mistake. <strong>Clarify:</strong> “What time was she admitted — 6 o’clock or 6:30?” <strong>Ask questions:</strong> “Which doctor? Which hospital? How long has she had this pain?” <strong>Mirror emotion:</strong> look concerned. Put your <strong>phone on silent</strong>. Do not take calls.</p>\n</blockquote>",
+          "text": "Lecture example — chest pain, not heart attack Friend: “My mother had slight chest pain this morning. We took her to hospital. The doctor is waiting for some results.” Paraphrase: “So your mother had a heart attack this morning?” Friend: “No, no — she had chest pain .” Now you have understood correctly. Paraphrasing caught the mistake. Clarify: “What time was she admitted — 6 o’clock or 6:30?” Ask questions: “Which doctor? Which hospital? How long has she had this pain?” Mirror emotion: look concerned. Put your phone on silent . Do not take calls."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Listening is the best help you can offer anyone.</strong></p>",
+          "text": "Listening is the best help you can offer anyone."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Active listening = acknowledge, paraphrase, clarify, ask questions and mirror emotions. <strong>Exam words:</strong> active listening, animation, acknowledgement, paraphrase, clarification, asking questions, mirror emotions.</p>",
+          "text": "In one line: Active listening = acknowledge, paraphrase, clarify, ask questions and mirror emotions. Exam words: active listening, animation, acknowledgement, paraphrase, clarification, asking questions, mirror emotions."
+        },
+        {
+          "type": "heading",
+          "text": "Passive vs active — side by side"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Passive listening</th>\n<th>Active listening</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Listen without interrupting</td>\n<td>Take part with animation and acknowledgement</td>\n</tr>\n<tr>\n<td>Listen to the whole person: voice, tone, body language</td>\n<td>Paraphrase for understanding</td>\n</tr>\n<tr>\n<td>Acknowledge with sounds (“hmm”) and nodding</td>\n<td>Ask for clarification</td>\n</tr>\n<tr>\n<td>Used mostly when a person is very distressed</td>\n<td>Ask questions; mirror emotions</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Passive listening Active listening Listen without interrupting Take part with animation and acknowledgement Listen to the whole person: voice, tone, body language Paraphrase for understanding Acknowledge with sounds (“hmm”) and nodding Ask for clarification Used mostly when a person is very distressed Ask questions; mirror emotions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your friend says, “I failed the quiz.” <strong>Passive:</strong> you stay quiet, nod and let him speak. <strong>Active:</strong> “So you failed even after studying all night? Was it the last two weeks’ topics? That must feel bad.” You check facts and share his feeling.</p>\n</blockquote>",
+          "text": "Everyday example Your friend says, “I failed the quiz.” Passive: you stay quiet, nod and let him speak. Active: “So you failed even after studying all night? Was it the last two weeks’ topics? That must feel bad.” You check facts and share his feeling."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “reducing the noise in your head” mean?\n</summary>\nStopping your own thoughts and stories from taking over, so you hear only what the speaker is actually telling you.\n</details>",
+          "text": "What does “reducing the noise in your head” mean? Stopping your own thoughts and stories from taking over, so you hear only what the speaker is actually telling you."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is paraphrasing?\n</summary>\nPutting what the speaker said into your own words and saying it back to them, so they know you understood correctly.\n</details>",
+          "text": "What is paraphrasing? Putting what the speaker said into your own words and saying it back to them, so they know you understood correctly."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhen is passive listening mostly used?\n</summary>\nWhen a person is very distressed and just wants to pour their heart out.\n</details>",
+          "text": "When is passive listening mostly used? When a person is very distressed and just wants to pour their heart out."
+        }
+      ]
+    },
+    {
+      "slug": "listening-to-the-future",
+      "title": "Listening to the Future",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You walk into your manager’s room with a great idea. He keeps looking at his watch. How do you feel? Now imagine you are the manager one day. What will you do?</p>\n</blockquote>",
+          "text": "Start here You walk into your manager’s room with a great idea. He keeps looking at his watch. How do you feel? Now imagine you are the manager one day. What will you do?"
+        },
+        {
+          "type": "heading",
+          "text": "What is “Listening to the Future”?"
+        },
+        {
+          "type": "html",
+          "html": "<p>When people speak — about the past, the present or anything — they are really speaking about <strong>what they want</strong>. They talk about <strong>possibilities</strong> and <strong>solutions</strong>.</p>",
+          "text": "When people speak — about the past, the present or anything — they are really speaking about what they want . They talk about possibilities and solutions ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the upset boss</strong> Your boss is upset with you. You explain why you did what you did. You are not only defending yourself. You are really asking: <strong>“Give me a chance. Show me how to do better.”</strong></p>\n</blockquote>",
+          "text": "Lecture example — the upset boss Your boss is upset with you. You explain why you did what you did. You are not only defending yourself. You are really asking: “Give me a chance. Show me how to do better.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>So <strong>Listening to the Future</strong> means listening for what the speaker <strong>wants</strong> and <strong>hopes for</strong>.</p>",
+          "text": "So Listening to the Future means listening for what the speaker wants and hopes for ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img18-listening-future.webp",
+          "alt": "Listening to the future",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>From the slide, Listening to the Future means:</p>",
+          "text": "From the slide, Listening to the Future means:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Listen for what the speaker desires</strong> (wants).</li>\n<li><strong>Listen to help the speaker move forward.</strong></li>\n<li><strong>Help the speaker build hope and dreams.</strong></li>\n</ol>",
+          "text": "Listen for what the speaker desires (wants). Listen to help the speaker move forward. Help the speaker build hope and dreams."
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask yourself while listening: <strong>“What does this person really want from me?”</strong></p>",
+          "text": "Ask yourself while listening: “What does this person really want from me?”"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is <strong>especially important for leaders</strong>. Many leaders think they are too busy or too big to listen to employees. But leadership needs a lot of listening.</p>",
+          "text": "This is especially important for leaders . Many leaders think they are too busy or too big to listen to employees. But leadership needs a lot of listening."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Listening to the Future means hearing what the speaker wants and helping them move forward. <strong>Exam words:</strong> listening to the future, desires, move forward, hope and dreams, leaders.</p>",
+          "text": "In one line: Listening to the Future means hearing what the speaker wants and helping them move forward. Exam words: listening to the future, desires, move forward, hope and dreams, leaders."
+        },
+        {
+          "type": "heading",
+          "text": "Don’t look at your watch"
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor says one of the <strong>worst</strong> things you can do is <strong>look at your watch</strong> while someone is talking.</p>",
+          "text": "The professor says one of the worst things you can do is look at your watch while someone is talking."
+        },
+        {
+          "type": "html",
+          "html": "<p>If you are busy, say honestly: <strong>“I can’t give you full attention now. Please come back at 5 o’clock.”</strong> That is far better.</p>",
+          "text": "If you are busy, say honestly: “I can’t give you full attention now. Please come back at 5 o’clock.” That is far better."
+        },
+        {
+          "type": "heading",
+          "text": "Listening means respect"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>When you listen to someone, you show <strong>respect</strong>.</li>\n<li>Everyone wants to be <strong>respected</strong>, even more than accepted.</li>\n<li>Listening <strong>costs you nothing</strong>.</li>\n</ul>",
+          "text": "When you listen to someone, you show respect . Everyone wants to be respected , even more than accepted. Listening costs you nothing ."
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor’s tip: invite someone for coffee and <strong>just listen</strong>. They will think you are one of the best people they know.</p>",
+          "text": "The professor’s tip: invite someone for coffee and just listen . They will think you are one of the best people they know."
+        },
+        {
+          "type": "heading",
+          "text": "Can you listen to three people at once?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the busy doctor</strong> The professor took his sick mother to a famous doctor. She had chest pain. The doctor put the stethoscope on her chest. At the same time: - his <strong>mobile phone rang</strong>, and he talked on it; - <strong>another person</strong> walked in, and he talked to them too.</p>\n<p>Was he listening to the heartbeat, the phone or the visitor? <strong>Can anyone listen to three people at the same time?</strong></p>\n</blockquote>",
+          "text": "Lecture example — the busy doctor The professor took his sick mother to a famous doctor. She had chest pain. The doctor put the stethoscope on her chest. At the same time: - his mobile phone rang , and he talked on it; - another person walked in, and he talked to them too. Was he listening to the heartbeat, the phone or the visitor? Can anyone listen to three people at the same time?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img19-busy-doctor.webp",
+          "alt": "Doctor distracted by phone and visitor",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<p>Listening is very important in <strong>every profession</strong>:</p>",
+          "text": "Listening is very important in every profession :"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>doctors, lawyers, engineers, teachers</strong></li>\n<li><strong>parents</strong> and <strong>children</strong></li>\n<li><strong>nations</strong>, <strong>politicians</strong> and <strong>opposition parties</strong></li>\n<li>even <strong>nature</strong> — the environment cannot speak, but we can still “listen” to its distress</li>\n</ul>",
+          "text": "doctors, lawyers, engineers, teachers parents and children nations , politicians and opposition parties even nature — the environment cannot speak, but we can still “listen” to its distress"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Listening leads to understanding.</strong> And understanding is what the world needs.</p>",
+          "text": "Listening leads to understanding. And understanding is what the world needs."
+        },
+        {
+          "type": "heading",
+          "text": "Why don’t people listen? The four filters"
+        },
+        {
+          "type": "html",
+          "html": "<p>When someone speaks, we pass their words through <strong>filters</strong>. Filters block listening.</p>",
+          "text": "When someone speaks, we pass their words through filters . Filters block listening."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img20-four-filters.webp",
+          "alt": "Four listening filters",
+          "caption": ""
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Filter</th>\n<th>What it sounds like in your mind</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Dislike</strong></td>\n<td>“I don’t like this person, so I won’t listen.”</td>\n</tr>\n<tr>\n<td><strong>2. Cultural difference</strong></td>\n<td>“This person is from a culture I’m not fond of.”</td>\n</tr>\n<tr>\n<td><strong>3. Bias</strong></td>\n<td>“I already know this person is boring / not good.”</td>\n</tr>\n<tr>\n<td><strong>4. Different opinion or values</strong></td>\n<td>“I don’t agree with him, so I won’t listen.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Filter What it sounds like in your mind 1. Dislike “I don’t like this person, so I won’t listen.” 2. Cultural difference “This person is from a culture I’m not fond of.” 3. Bias “I already know this person is boring / not good.” 4. Different opinion or values “I don’t agree with him, so I won’t listen.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>If we <strong>remove these filters</strong> and see the other person simply as a <strong>human being</strong>, we can listen <strong>without bias</strong> — just to understand.</p>",
+          "text": "If we remove these filters and see the other person simply as a human being , we can listen without bias — just to understand."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Dislike, culture, bias and different opinions act as filters that stop us from listening. <strong>Exam words:</strong> filters, dislike, cultural difference, bias, different opinion, values.</p>",
+          "text": "In one line: Dislike, culture, bias and different opinions act as filters that stop us from listening. Exam words: filters, dislike, cultural difference, bias, different opinion, values."
+        },
+        {
+          "type": "heading",
+          "text": "Test yourself: the listening score"
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask people to rate their own listening out of 10. Most say <strong>8, 9 or 9.5</strong>.</p>",
+          "text": "Ask people to rate their own listening out of 10. Most say 8, 9 or 9.5 ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Then ask them to go home and ask <strong>someone who loves them</strong>. The answer is often <strong>3 or 4 out of 10</strong>!</p>",
+          "text": "Then ask them to go home and ask someone who loves them . The answer is often 3 or 4 out of 10 !"
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask yourself: Why do we not listen to the people we love? How can listening help my life?</p>",
+          "text": "Ask yourself: Why do we not listen to the people we love? How can listening help my life?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Tonight, ask a family member: “Out of 10, how good a listener am I?” Don’t argue with the answer. Just listen. That itself is your first practice.</p>\n</blockquote>",
+          "text": "Everyday example Tonight, ask a family member: “Out of 10, how good a listener am I?” Don’t argue with the answer. Just listen. That itself is your first practice."
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor also recommends watching the extra video given with this lecture.</p>",
+          "text": "The professor also recommends watching the extra video given with this lecture."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> We think we listen well, but people close to us often disagree — so keep improving your listening score.</p>",
+          "text": "In one line: We think we listen well, but people close to us often disagree — so keep improving your listening score."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the three points of “Listening to the Future”.\n</summary>\nListen for what the speaker desires; listen to help the speaker move forward; help the speaker build hope and dreams.\n</details>",
+          "text": "Name the three points of “Listening to the Future”. Listen for what the speaker desires; listen to help the speaker move forward; help the speaker build hope and dreams."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat should a busy leader do instead of looking at the watch?\n</summary>\nHonestly ask the person to come back later (for example at 5 o’clock), when they can give full attention.\n</details>",
+          "text": "What should a busy leader do instead of looking at the watch? Honestly ask the person to come back later (for example at 5 o’clock), when they can give full attention."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four filters that stop us from listening.\n</summary>\nNot liking the person, cultural difference, bias, and a different opinion or values.\n</details>",
+          "text": "Name the four filters that stop us from listening. Not liking the person, cultural difference, bias, and a different opinion or values."
+        }
+      ]
+    },
+    {
+      "slug": "week-2-quick-revision",
+      "title": "Week 2 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> 5 minutes before your quiz? Read this page. Every key idea of Week 2 is here in one place.</p>\n</blockquote>",
+          "text": "Start here 5 minutes before your quiz? Read this page. Every key idea of Week 2 is here in one place."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-2/img21-week2-map.webp",
+          "alt": "Week 2 at a glance",
+          "caption": ""
+        },
+        {
+          "type": "heading",
+          "text": "Types of communication — 7 pairs"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<thead>\n<tr>\n<th>Pair</th>\n<th>Remember it as</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Inner vs Outer</td>\n<td>In your head vs spoken or shown</td>\n</tr>\n<tr>\n<td>Personal vs Social</td>\n<td>Family and friends vs society and work</td>\n</tr>\n<tr>\n<td>Verbal vs Non-verbal</td>\n<td>Words vs body language, gestures, tone</td>\n</tr>\n<tr>\n<td>Written vs Oral</td>\n<td>Emails and reports vs spoken talk</td>\n</tr>\n<tr>\n<td>Internal vs External</td>\n<td>Inside the company vs clients and vendors</td>\n</tr>\n<tr>\n<td>Vertical vs Horizontal</td>\n<td>Up-down the hierarchy vs same-level peers</td>\n</tr>\n<tr>\n<td>Formal vs Informal</td>\n<td>Meetings, reports, appraisals vs tea-time chats</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Pair Remember it as Inner vs Outer In your head vs spoken or shown Personal vs Social Family and friends vs society and work Verbal vs Non-verbal Words vs body language, gestures, tone Written vs Oral Emails and reports vs spoken talk Internal vs External Inside the company vs clients and vendors Vertical vs Horizontal Up-down the hierarchy vs same-level peers Formal vs Informal Meetings, reports, appraisals vs tea-time chats"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Other key points</strong> - The person you talk to most is <strong>yourself</strong> (inner chatter). - <strong>Body language</strong> gives 50% or more of the effect; words only 10–20% (as quoted in the lecture). - <strong>Think, feel and say</strong> must match. - <strong>Thought, Word, Deed</strong> = <strong>Manasa, Vacha, Karmana</strong>. - Formal writing: <strong>ABC = Accuracy, Brevity, Clarity</strong>. - <strong>Listening</strong> is the most important part. Even <strong>silence</strong> and a <strong>pause</strong> communicate.</p>",
+          "text": "Other key points - The person you talk to most is yourself (inner chatter). - Body language gives 50% or more of the effect; words only 10–20% (as quoted in the lecture). - Think, feel and say must match. - Thought, Word, Deed = Manasa, Vacha, Karmana . - Formal writing: ABC = Accuracy, Brevity, Clarity . - Listening is the most important part. Even silence and a pause communicate."
+        },
+        {
+          "type": "heading",
+          "text": "Five barriers"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Psychological, Language, Cultural, Organisational, Physical.</strong></p>",
+          "text": "Psychological, Language, Cultural, Organisational, Physical."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Psychological barriers</strong> — inner chatter, preconceived notions, cognitive bias, lack of interest/attention/focus (boredom), emotional state (fear, anxiety, anger), limiting beliefs. - About <strong>70,000 thoughts a day</strong>; <strong>80–90%</strong> are unproductive. - Fully involved → thoughts near zero. Be in the <strong>present</strong>. - Emotions cause <strong>distortion</strong>: what I mean ≠ what I say ≠ what you hear.</p>",
+          "text": "Psychological barriers — inner chatter, preconceived notions, cognitive bias, lack of interest/attention/focus (boredom), emotional state (fear, anxiety, anger), limiting beliefs. - About 70,000 thoughts a day ; 80–90% are unproductive. - Fully involved → thoughts near zero. Be in the present . - Emotions cause distortion : what I mean ≠ what I say ≠ what you hear."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Language barriers</strong> — many languages, dialects and accents. - “Kade” story: same word, different meanings → can lose a friend. - Uri story: a regional language was used to <strong>block the enemy</strong> from understanding radio messages. - Language can be a <strong>barrier</strong> or an <strong>enabler</strong>.</p>",
+          "text": "Language barriers — many languages, dialects and accents. - “Kade” story: same word, different meanings → can lose a friend. - Uri story: a regional language was used to block the enemy from understanding radio messages. - Language can be a barrier or an enabler ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Cultural barriers</strong> — culture is passed down generations; globalisation brings cultural diversity at work. - Head nod: side to side can mean “no” in some places; in others, slow = “yes”, fast = “no”. - German style: direct, direct eye contact. Japanese and Indian styles: polite, indirect. - <strong>High-context</strong> (China, Korea, Japan, Vietnam): non-verbal and situational cues, status and reputation matter; what is not said matters. - <strong>Low-context</strong> (Europe, North America): meaning is in spoken and written words; say “no” directly; structured, literal messages. - Overcome: study other cultures, learn values, observe and accept, be open-minded, understand mannerisms.</p>",
+          "text": "Cultural barriers — culture is passed down generations; globalisation brings cultural diversity at work. - Head nod: side to side can mean “no” in some places; in others, slow = “yes”, fast = “no”. - German style: direct, direct eye contact. Japanese and Indian styles: polite, indirect. - High-context (China, Korea, Japan, Vietnam): non-verbal and situational cues, status and reputation matter; what is not said matters. - Low-context (Europe, North America): meaning is in spoken and written words; say “no” directly; structured, literal messages. - Overcome: study other cultures, learn values, observe and accept, be open-minded, understand mannerisms."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Organisational barriers</strong> - <strong>Hierarchy</strong> blocks free flow; juniors fear speaking up. - <strong>Complex structure</strong> and multiple reporting (<strong>dotted lines</strong>) → lost or distorted information. - No proper <strong>channels</strong> → poor quality and efficiency. - Keep <strong>official</strong> and <strong>informal (grapevine)</strong> channels separate. - Speak up with an open mind: “X and Y is the problem; Z can solve it.” - Keep <strong>friendship</strong> separate from <strong>formal</strong> communication.</p>",
+          "text": "Organisational barriers - Hierarchy blocks free flow; juniors fear speaking up. - Complex structure and multiple reporting ( dotted lines ) → lost or distorted information. - No proper channels → poor quality and efficiency. - Keep official and informal (grapevine) channels separate. - Speak up with an open mind: “X and Y is the problem; Z can solve it.” - Keep friendship separate from formal communication."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Physical barriers (activities)</strong> - <strong>Action relay:</strong> motorcycle that won’t start → hard kick → starts → rides away. The action changed down the line. - <strong>Describe and draw:</strong> 1 minute to describe, 1 minute to draw, no questions. No two drawings matched.</p>",
+          "text": "Physical barriers (activities) - Action relay: motorcycle that won’t start → hard kick → starts → rides away. The action changed down the line. - Describe and draw: 1 minute to describe, 1 minute to draw, no questions. No two drawings matched."
+        },
+        {
+          "type": "heading",
+          "text": "Tips for effective communication"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Detail is lost at each step: <strong>understand → describe → listen → act</strong>.</li>\n<li><strong>Assumptions</strong> (whose left? whose right?) cause errors.</li>\n<li>Small <strong>details</strong> matter. <strong>Repetition</strong>, <strong>questions</strong> and <strong>hand gestures</strong> help.</li>\n<li>Exact copy → <strong>more</strong> instructions. Creative ideas → <strong>fewer</strong> instructions.</li>\n<li><strong>ABCs: Accuracy, Brevity, Clarity.</strong></li>\n<li>Give <strong>size, distance, direction</strong> and <strong>scale</strong> (map: 1 cm = 1 km).</li>\n</ul>",
+          "text": "Detail is lost at each step: understand → describe → listen → act . Assumptions (whose left? whose right?) cause errors. Small details matter. Repetition , questions and hand gestures help. Exact copy → more instructions. Creative ideas → fewer instructions. ABCs: Accuracy, Brevity, Clarity. Give size, distance, direction and scale (map: 1 cm = 1 km)."
+        },
+        {
+          "type": "heading",
+          "text": "The 10 C’s"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Clear, Concise, Concrete, Correct, Complete, Consistent, Confident, Creative, Courteous, Considerate.</strong></p>",
+          "text": "Clear, Concise, Concrete, Correct, Complete, Consistent, Confident, Creative, Courteous, Considerate."
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable course table\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>C</th>\n<th>Key idea</th>\n<th>Quick example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Clear</td>\n<td>Simple, specific words</td>\n<td>“We updated Risk and Compliance policies.”</td>\n</tr>\n<tr>\n<td>Concise</td>\n<td>Short, no repetition</td>\n<td>COVID rules as 3 points</td>\n</tr>\n<tr>\n<td>Concrete</td>\n<td>Facts and data</td>\n<td>“Conversion below 40%; aim 50%+”</td>\n</tr>\n<tr>\n<td>Correct</td>\n<td>No errors, exact data</td>\n<td>“conversation”, “200 people”</td>\n</tr>\n<tr>\n<td>Complete</td>\n<td>Answer likely questions</td>\n<td>Shutdown: 2 p.m., Sat Feb 26, 30 minutes</td>\n</tr>\n<tr>\n<td>Consistent</td>\n<td>Regular, matching updates</td>\n<td>Weekly Friday update</td>\n</tr>\n<tr>\n<td>Confident</td>\n<td>Firm, prepared, no “umm”</td>\n<td>“Ravi… 2 days leave on 24th and 25th”</td>\n</tr>\n<tr>\n<td>Creative</td>\n<td>Stories, humour</td>\n<td>Ant and cricket story</td>\n</tr>\n<tr>\n<td>Courteous</td>\n<td>Polite, constructive</td>\n<td>“There is some rework that needs to be done…”</td>\n</tr>\n<tr>\n<td>Considerate</td>\n<td>Listener’s side, empathy</td>\n<td>“…understand what challenges you are facing”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "C Key idea Quick example Clear Simple, specific words “We updated Risk and Compliance policies.” Concise Short, no repetition COVID rules as 3 points Concrete Facts and data “Conversion below 40%; aim 50%+” Correct No errors, exact data “conversation”, “200 people” Complete Answer likely questions Shutdown: 2 p.m., Sat Feb 26, 30 minutes Consistent Regular, matching updates Weekly Friday update Confident Firm, prepared, no “umm” “Ravi… 2 days leave on 24th and 25th” Creative Stories, humour Ant and cricket story Courteous Polite, constructive “There is some rework that needs to be done…” Considerate Listener’s side, empathy “…understand what challenges you are facing”"
+        },
+        {
+          "type": "heading",
+          "text": "Listening"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Listening</strong> = paying attention to what someone is really trying to tell you.</li>\n<li><strong>Reduce the noise in your head</strong>; <strong>see with your ears</strong>.</li>\n<li><strong>Passive listening:</strong> no interruption; listen to the whole person (voice, tone, body language); acknowledge (“hmm”, nodding); used when someone is very distressed.</li>\n<li><strong>Active listening:</strong> animation and acknowledgement; <strong>paraphrase</strong>; ask for <strong>clarification</strong>; ask <strong>questions</strong>; <strong>mirror emotions</strong>.</li>\n<li><strong>Listening to the Future:</strong> listen for what the speaker desires; help them move forward; help them build hope and dreams.</li>\n<li><strong>Four filters:</strong> dislike, cultural difference, bias, different opinion or values.</li>\n<li>Self-rating: we say 9/10; loved ones say 3–4/10.</li>\n</ul>",
+          "text": "Listening = paying attention to what someone is really trying to tell you. Reduce the noise in your head ; see with your ears . Passive listening: no interruption; listen to the whole person (voice, tone, body language); acknowledge (“hmm”, nodding); used when someone is very distressed. Active listening: animation and acknowledgement; paraphrase ; ask for clarification ; ask questions ; mirror emotions . Listening to the Future: listen for what the speaker desires; help them move forward; help them build hope and dreams. Four filters: dislike, cultural difference, bias, different opinion or values. Self-rating: we say 9/10; loved ones say 3–4/10."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>An email has the right facts but uses 80 words where 15 would do. Which C is broken?\n</li></ol></summary>\nConciseness.\n</details>",
+          "text": "An email has the right facts but uses 80 words where 15 would do. Which C is broken? Conciseness."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>A manager says, “I don’t care how, just get it done asap.” Which C is missing?\n</li></ol></summary>\nConsideration (also courtesy). A better version: “Before we go through the changes, I would like to understand what challenges you are facing.”\n</details>",
+          "text": "A manager says, “I don’t care how, just get it done asap.” Which C is missing? Consideration (also courtesy). A better version: “Before we go through the changes, I would like to understand what challenges you are facing.”"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>You repeat a friend’s words back in your own words to check you understood. What is this called?\n</li></ol></summary>\nParaphrasing — part of active listening.\n</details>",
+          "text": "You repeat a friend’s words back in your own words to check you understood. What is this called? Paraphrasing — part of active listening."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>A team member reports to both a country head and a functional head abroad. Which barrier is this an example of?\n</li></ol></summary>\nOrganisational barrier (complex hierarchy / multiple reporting lines).\n</details>",
+          "text": "A team member reports to both a country head and a functional head abroad. Which barrier is this an example of? Organisational barrier (complex hierarchy / multiple reporting lines)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>“I won’t listen to him — his views are always boring.” Which listening filter is this?\n</li></ol></summary>\nBias.\n</details>",
+          "text": "“I won’t listen to him — his views are always boring.” Which listening filter is this? Bias."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>What do Manasa, Vacha and Karmana mean?\n</li></ol></summary>\nThought, Word and Deed.\n</details>",
+          "text": "What do Manasa, Vacha and Karmana mean? Thought, Word and Deed."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>A colleague never says “no” directly and expects you to understand from the situation. Which kind of culture is this typical of?\n</li></ol></summary>\nA high-context culture.\n</details>",
+          "text": "A colleague never says “no” directly and expects you to understand from the situation. Which kind of culture is this typical of? A high-context culture."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1240 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 5,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-5/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "what-is-emotional-intelligence",
+      "title": "What is Emotional Intelligence?",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Imagine a world with no emotions. No\nanger, no joy, no fear. We would be like robots. No movies, no web\nseries, no drama — no fun at all! Emotions make us human. This week is\nabout understanding and handling them.</p>\n</blockquote>",
+          "text": "Start here Imagine a world with no emotions. No\nanger, no joy, no fear. We would be like robots. No movies, no web\nseries, no drama — no fun at all! Emotions make us human. This week is\nabout understanding and handling them."
+        },
+        {
+          "type": "heading",
+          "text": "What this week covers"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>What <strong>emotional intelligence</strong> is, and its benefits at\nhome and at work</li>\n<li>The <strong>6R framework</strong> to build emotional resilience</li>\n<li>How emotional intelligence helps in <strong>managing\nconflict</strong> and making <strong>customers happy</strong></li>\n<li>Different <strong>types of conflict</strong> and <strong>conflict\nmanagement techniques</strong></li>\n</ul>",
+          "text": "What emotional intelligence is, and its benefits at\nhome and at work The 6R framework to build emotional resilience How emotional intelligence helps in managing\nconflict and making customers happy Different types of conflict and conflict\nmanagement techniques"
+        },
+        {
+          "type": "heading",
+          "text": "What are emotions?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Emotions are <strong>energy</strong>. They are\n<strong>normal</strong> — nothing is wrong with having them.</li>\n<li>Humans are the only beings who can <strong>think and feel</strong>,\nand also understand what they think and feel.</li>\n<li>Emotions are a <strong>response to stimuli</strong> (things that\nhappen to us). They carry a <strong>message</strong>: they tell you what\nyou are really feeling.</li>\n<li><strong>There are no good or bad emotions.</strong> Every emotion\nhas its place and value.</li>\n</ul>",
+          "text": "Emotions are energy . They are normal — nothing is wrong with having them. Humans are the only beings who can think and feel ,\nand also understand what they think and feel. Emotions are a response to stimuli (things that\nhappen to us). They carry a message : they tell you what\nyou are really feeling. There are no good or bad emotions. Every emotion\nhas its place and value."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“Emotional intelligence is not the opposite of intelligence; it\nis not the triumph of heart over head — it is the unique intersection of\nboth.”</em> (quote shared in the lecture)</p>\n</blockquote>",
+          "text": "“Emotional intelligence is not the opposite of intelligence; it\nis not the triumph of heart over head — it is the unique intersection of\nboth.” (quote shared in the lecture)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Emotions are normal messages from\ninside us — none of them is “good” or “bad”. <strong>Exam\nwords:</strong> emotions, stimuli, response, no good or bad\nemotions.</p>",
+          "text": "In one line: Emotions are normal messages from\ninside us — none of them is “good” or “bad”. Exam\nwords: emotions, stimuli, response, no good or bad\nemotions."
+        },
+        {
+          "type": "heading",
+          "text": "What is emotional\nintelligence?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Emotional intelligence (EI)</strong> means\n<strong>recognising, understanding and managing</strong> your own\nemotions <strong>and the emotions of others</strong>.</p>",
+          "text": "Emotional intelligence (EI) means recognising, understanding and managing your own\nemotions and the emotions of others ."
+        },
+        {
+          "type": "html",
+          "html": "<p>It is about <strong>how you respond</strong> to things happening\ninside you and around you. Your response creates emotions. Those\nemotions affect your <strong>thoughts, words, actions, behaviour and\nbody language</strong>.</p>",
+          "text": "It is about how you respond to things happening\ninside you and around you. Your response creates emotions. Those\nemotions affect your thoughts, words, actions, behaviour and\nbody language ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img01-head-and-heart.webp",
+          "alt": "Emotional intelligence: head and heart together",
+          "caption": "EI is where\nhead and heart meet — recognise, understand and manage emotions in\nyourself and others."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> EI is recognising, understanding and\nmanaging emotions — yours and others’. <strong>Exam words:</strong>\nemotional intelligence, recognise, understand, manage, self and\nothers.</p>",
+          "text": "In one line: EI is recognising, understanding and\nmanaging emotions — yours and others’. Exam words: emotional intelligence, recognise, understand, manage, self and\nothers."
+        },
+        {
+          "type": "heading",
+          "text": "Why build emotional\nintelligence?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Being aware of emotions, understanding them and managing them\nhelps you:</strong></p>",
+          "text": "Being aware of emotions, understanding them and managing them\nhelps you:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>increase <strong>self-awareness</strong></li>\n<li>show <strong>empathy</strong> towards others</li>\n<li><strong>communicate and listen</strong> well</li>\n<li>handle <strong>difficult situations</strong> and <strong>difficult\npeople</strong></li>\n<li><strong>solve problems</strong>, make <strong>better\ndecisions</strong> and <strong>resolve conflict</strong></li>\n</ul>",
+          "text": "increase self-awareness show empathy towards others communicate and listen well handle difficult situations and difficult\npeople solve problems , make better\ndecisions and resolve conflict"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Benefits for you:</strong></p>",
+          "text": "Benefits for you:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A healthy, strong relationship <strong>with yourself</strong> — you\nno longer wear <strong>masks</strong> to hide your real self.</li>\n<li>Better relationships <strong>with others</strong>.</li>\n<li><strong>Happiness and true freedom</strong> — you drop the heavy\n<strong>emotional baggage</strong> from the past.</li>\n<li>Good <strong>health and well-being</strong>.</li>\n</ul>",
+          "text": "A healthy, strong relationship with yourself — you\nno longer wear masks to hide your real self. Better relationships with others . Happiness and true freedom — you drop the heavy emotional baggage from the past. Good health and well-being ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Benefits at work:</strong></p>",
+          "text": "Benefits at work:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>stronger <strong>leadership</strong></li>\n<li>better <strong>stress management</strong></li>\n<li>healthy <strong>relationships</strong> with colleagues</li>\n<li>higher <strong>productivity and performance</strong></li>\n<li>greater <strong>job satisfaction</strong></li>\n</ul>",
+          "text": "stronger leadership better stress management healthy relationships with colleagues higher productivity and performance greater job satisfaction"
+        },
+        {
+          "type": "html",
+          "html": "<p>A high <strong>EQ</strong> (emotional quotient) is an\n<strong>asset</strong>. When companies hire, <strong>EQ often trumps\nIQ</strong>.</p>",
+          "text": "A high EQ (emotional quotient) is an asset . When companies hire, EQ often trumps\nIQ ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> EI makes you calmer, better with people\nand more valuable at work — EQ often matters more than IQ. <strong>Exam\nwords:</strong> self-awareness, empathy, emotional baggage, EQ, EQ\ntrumps IQ.</p>",
+          "text": "In one line: EI makes you calmer, better with people\nand more valuable at work — EQ often matters more than IQ. Exam\nwords: self-awareness, empathy, emotional baggage, EQ, EQ\ntrumps IQ."
+        },
+        {
+          "type": "heading",
+          "text": "The space between\nstimulus and response"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><em>“Between stimulus and response there is a space. In that space is\nour power to choose our response. In our response lies our growth and\nour freedom.”</em> — <strong>Viktor E. Frankl</strong></p>\n</blockquote>",
+          "text": "“Between stimulus and response there is a space. In that space is\nour power to choose our response. In our response lies our growth and\nour freedom.” — Viktor E. Frankl"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img02-stimulus-response.webp",
+          "alt": "The space between stimulus and response",
+          "caption": "Something happens →\na pause → you choose your response."
+        },
+        {
+          "type": "html",
+          "html": "<p>Something happens (the <strong>stimulus</strong>). Before you react,\nthere is a small <strong>space</strong>. In that space, <strong>you\nchoose</strong> how to respond. How you respond is <strong>within your\ncontrol</strong>.</p>",
+          "text": "Something happens (the stimulus ). Before you react,\nthere is a small space . In that space, you\nchoose how to respond. How you respond is within your\ncontrol ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A classmate makes fun of your\nanswer in class (stimulus). You feel hurt. In that small space, you can\nshout back — or smile, stay calm, and talk to him later. The choice is\nyours.</p>\n</blockquote>",
+          "text": "Everyday example A classmate makes fun of your\nanswer in class (stimulus). You feel hurt. In that small space, you can\nshout back — or smile, stay calm, and talk to him later. The choice is\nyours."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> You can’t always control what happens,\nbut you can choose how you respond. <strong>Exam words:</strong>\nstimulus, response, space, power to choose, Viktor Frankl.</p>",
+          "text": "In one line: You can’t always control what happens,\nbut you can choose how you respond. Exam words: stimulus, response, space, power to choose, Viktor Frankl."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nDefine emotional intelligence.\n</summary>\nRecognising, understanding and managing one’s own emotions and the\nemotions of others.\n</details>",
+          "text": "Define emotional intelligence. Recognising, understanding and managing one’s own emotions and the\nemotions of others."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAre there “bad” emotions?\n</summary>\nNo. There are no good or bad emotions; every emotion has its place and\nvalue.\n</details>",
+          "text": "Are there “bad” emotions? No. There are no good or bad emotions; every emotion has its place and\nvalue."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to Viktor Frankl, what lies in the space between stimulus and\nresponse?\n</summary>\nOur power to choose our response — and in our response lies our growth\nand freedom.\n</details>",
+          "text": "According to Viktor Frankl, what lies in the space between stimulus and\nresponse? Our power to choose our response — and in our response lies our growth\nand freedom."
+        }
+      ]
+    },
+    {
+      "slug": "the-6r-framework",
+      "title": "The 6R Framework for Emotional Resilience",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your heart beats fast before a\npresentation. Your mind goes blank. Your hands shake. Is something wrong\nwith you? No — your brain thinks it’s an emergency. The 6R framework\nhelps you take back control.</p>\n</blockquote>",
+          "text": "Start here Your heart beats fast before a\npresentation. Your mind goes blank. Your hands shake. Is something wrong\nwith you? No — your brain thinks it’s an emergency. The 6R framework\nhelps you take back control."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Emotional resilience</strong> is the ability to handle\nemotions and bounce back. The lecture gives a <strong>6-step\nframework</strong> to build it.</p>",
+          "text": "Emotional resilience is the ability to handle\nemotions and bounce back. The lecture gives a 6-step\nframework to build it."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img03-six-r.webp",
+          "alt": "The 6R framework",
+          "caption": "Recognise → Respect → Rationalise →\nRelease → Response-able → Resilient."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>R</th>\n<th>Name</th>\n<th>In one line</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Recognise</strong></td>\n<td>Name the emotion and find its trigger.</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Respect</strong></td>\n<td>Accept and honour the emotion — don’t hide it.</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Rationalise</strong></td>\n<td>Think it through; find the root cause.</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Release</strong></td>\n<td>Let go of the unwanted emotional energy.</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Response-able</strong></td>\n<td>Choose your response; avoid the amygdala hijack.</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Resilient</strong></td>\n<td>Make all this a daily habit and grow.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "R Name In one line 1 Recognise Name the emotion and find its trigger. 2 Respect Accept and honour the emotion — don’t hide it. 3 Rationalise Think it through; find the root cause. 4 Release Let go of the unwanted emotional energy. 5 Response-able Choose your response; avoid the amygdala hijack. 6 Resilient Make all this a daily habit and grow."
+        },
+        {
+          "type": "heading",
+          "text": "R1: Recognise"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Identify and recognise</strong> your emotions and their\n<strong>triggers</strong> (what caused them).</p>",
+          "text": "Identify and recognise your emotions and their triggers (what caused them)."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>As children, we don’t know our emotions well. As we grow, we start\nto notice them.</li>\n<li>Often we just <strong>ignore</strong>, <strong>suppress</strong> or\n<strong>bury</strong> them. That doesn’t help.</li>\n<li><strong>In yourself:</strong> notice your body language and body\n<strong>sensations</strong>.</li>\n<li><strong>In others:</strong> read their <strong>non-verbal</strong>\ncues and body language. Notice the difference between <strong>what is\nsaid</strong> and <strong>what is really meant or felt</strong>.</li>\n<li>Different people feel different emotions about the\n<strong>same</strong> person or situation, because of their past,\nbackground and personality.</li>\n</ul>",
+          "text": "As children, we don’t know our emotions well. As we grow, we start\nto notice them. Often we just ignore , suppress or bury them. That doesn’t help. In yourself: notice your body language and body sensations . In others: read their non-verbal cues and body language. Notice the difference between what is\nsaid and what is really meant or felt . Different people feel different emotions about the same person or situation, because of their past,\nbackground and personality."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Questions to ask yourself:</strong></p>",
+          "text": "Questions to ask yourself:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>What emotion am I feeling right now? What words describe it?</li>\n<li>What am I feeling in my body? Any pain, tightness — or lightness,\nrelaxation?</li>\n<li>How is my energy? <strong>Energised and empowered</strong> — or\n<strong>drained and depleted</strong>?</li>\n<li>How strong is this emotion, on a scale of <strong>1 to\n10</strong>?</li>\n</ul>",
+          "text": "What emotion am I feeling right now? What words describe it? What am I feeling in my body? Any pain, tightness — or lightness,\nrelaxation? How is my energy? Energised and empowered — or drained and depleted ? How strong is this emotion, on a scale of 1 to\n10 ?"
+        },
+        {
+          "type": "heading",
+          "text": "R2: Respect"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Honour and accept</strong> the emotion you are feeling. Every\nemotion has a <strong>message</strong> for you.</p>",
+          "text": "Honour and accept the emotion you are feeling. Every\nemotion has a message for you."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>We often <strong>pretend</strong> nothing happened, or\n<strong>deny</strong> what we feel. We push it under the carpet and hope\nit disappears.</li>\n<li>Instead, <strong>accept it and express it</strong>:\n<ul>\n<li>If you are angry, tell yourself: <strong>“I am feeling\nangry.”</strong></li>\n<li>If you are hurt, tell yourself: <strong>“I am feeling\nhurt.”</strong></li>\n</ul></li>\n<li>There are <strong>no good or bad emotions</strong>. Expressing them\nis better than carrying <strong>guilt, blame, shame or\nfear</strong>.</li>\n<li>Respecting your emotions <strong>releases pent-up\nenergy</strong>.</li>\n<li>When you respect <strong>your own</strong> emotions, you can respect\n<strong>others’</strong> emotions too.</li>\n</ul>",
+          "text": "We often pretend nothing happened, or deny what we feel. We push it under the carpet and hope\nit disappears. Instead, accept it and express it : If you are angry, tell yourself: “I am feeling\nangry.” If you are hurt, tell yourself: “I am feeling\nhurt.” There are no good or bad emotions . Expressing them\nis better than carrying guilt, blame, shame or\nfear . Respecting your emotions releases pent-up\nenergy . When you respect your own emotions, you can respect others’ emotions too."
+        },
+        {
+          "type": "heading",
+          "text": "R3: Rationalise"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Process</strong> your emotions instead of suppressing\nthem.</p>",
+          "text": "Process your emotions instead of suppressing\nthem."
+        },
+        {
+          "type": "html",
+          "html": "<p>Thoughts and emotions are <strong>closely connected</strong>. Past\nexperiences shape present thinking. Present thinking shapes emotions.\nTogether, they shape your future. Unresolved emotions become a\n<strong>tangled web</strong> that triggers more confusing feelings.</p>",
+          "text": "Thoughts and emotions are closely connected . Past\nexperiences shape present thinking. Present thinking shapes emotions.\nTogether, they shape your future. Unresolved emotions become a tangled web that triggers more confusing feelings."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to process:</strong></p>",
+          "text": "How to process:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Journaling</strong> (writing down your thoughts)</li>\n<li><strong>Talking</strong> to someone you trust — parent, grandparent,\nsibling, friend, spouse, mentor, coach, counsellor, manager</li>\n<li><strong>Meditation</strong>, time in <strong>nature</strong>,\n<strong>solitude</strong>, reflection</li>\n</ul>",
+          "text": "Journaling (writing down your thoughts) Talking to someone you trust — parent, grandparent,\nsibling, friend, spouse, mentor, coach, counsellor, manager Meditation , time in nature , solitude , reflection"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Clarifying questions:</strong></p>",
+          "text": "Clarifying questions:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>What <strong>thoughts</strong> (people, events, past experiences)\nare triggering this emotion?</li>\n<li>What is the <strong>worst</strong> that can happen? What am I\nimagining?</li>\n<li><strong>Reality check:</strong> how true are these thoughts —\n<strong>absolutely</strong> true or only <strong>conditionally</strong>\ntrue?</li>\n<li>What <strong>message</strong> is this emotion giving me? What need\nis it fulfilling?</li>\n<li>What do I choose to feel <strong>instead</strong>?</li>\n<li>How can I <strong>channel</strong> this energy so it works\n<strong>for</strong> me, not against me?</li>\n<li>Who do I need to <strong>apologise</strong> to? Who do I need to\n<strong>forgive</strong> — others, or <strong>myself</strong>?</li>\n</ul>",
+          "text": "What thoughts (people, events, past experiences)\nare triggering this emotion? What is the worst that can happen? What am I\nimagining? Reality check: how true are these thoughts — absolutely true or only conditionally true? What message is this emotion giving me? What need\nis it fulfilling? What do I choose to feel instead ? How can I channel this energy so it works for me, not against me? Who do I need to apologise to? Who do I need to forgive — others, or myself ?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img04-rationalise.webp",
+          "alt": "Rationalise: thoughts and emotions",
+          "caption": "Untangle the thoughts\nbehind the emotion with journaling, talking and reflection."
+        },
+        {
+          "type": "heading",
+          "text": "R4: Release"
+        },
+        {
+          "type": "html",
+          "html": "<p>When you pretend nothing happened, you <strong>bury</strong> the\nemotion inside. Buried emotional energy is <strong>unwanted\nbaggage</strong> that you carry around. It:</p>",
+          "text": "When you pretend nothing happened, you bury the\nemotion inside. Buried emotional energy is unwanted\nbaggage that you carry around. It:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>clouds</strong> your perception</li>\n<li>affects how you <strong>express</strong> yourself (free, emotional\nor restrained)</li>\n<li>affects your <strong>choices and decisions</strong></li>\n</ul>",
+          "text": "clouds your perception affects how you express yourself (free, emotional\nor restrained) affects your choices and decisions"
+        },
+        {
+          "type": "html",
+          "html": "<p>So, after rationalising, <strong>let go</strong> of unwanted\nemotional energy. Say: <strong>“I consciously and willingly let go and\nrelease this emotion.”</strong></p>",
+          "text": "So, after rationalising, let go of unwanted\nemotional energy. Say: “I consciously and willingly let go and\nrelease this emotion.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>Doing this <strong>daily</strong> frees up lots of <strong>energy,\nmind space and time</strong>.</p>",
+          "text": "Doing this daily frees up lots of energy,\nmind space and time ."
+        },
+        {
+          "type": "heading",
+          "text": "R5: Response-able"
+        },
+        {
+          "type": "html",
+          "html": "<p>Take <strong>responsibility</strong> for your emotions to improve\nyour <strong>response-ability</strong> — your ability to <strong>choose\nyour response</strong>. You are the <strong>boss</strong> of your mind,\nbody and brain.</p>",
+          "text": "Take responsibility for your emotions to improve\nyour response-ability — your ability to choose\nyour response . You are the boss of your mind,\nbody and brain."
+        },
+        {
+          "type": "subheading",
+          "text": "The amygdala hijack"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img05-amygdala-hijack.webp",
+          "alt": "Amygdala hijack",
+          "caption": "In about 6 seconds, panic takes over and\nthe thinking brain switches off. A pause can stop it."
+        },
+        {
+          "type": "html",
+          "html": "<p>When we <strong>overreact</strong> or <strong>freak out</strong>, the\nbrain can trigger an <strong>amygdala hijack</strong>. It is an old,\ninstinctive response: <strong>flight, fright, fight or\nfreeze</strong>.</p>",
+          "text": "When we overreact or freak out , the\nbrain can trigger an amygdala hijack . It is an old,\ninstinctive response: flight, fright, fight or\nfreeze ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>It happens in about <strong>6 seconds</strong>, but takes\n<strong>hours</strong> to recover from.</li>\n<li>The <strong>rational, logical</strong> part of the brain shuts down.\nDecision-making suffers.</li>\n<li><strong>Stress hormones</strong> flood the body. The whole body acts\nlike there is an <strong>emergency</strong>.</li>\n<li>Long ago, this saved us from <strong>wild animals</strong>. Today,\nthere is usually no such danger.</li>\n<li><strong>Repeated</strong> amygdala hijacks cause <strong>chronic\nstress</strong>, long-term <strong>anxiety</strong>, wear and tear of\nthe body, and harm <strong>health</strong>.</li>\n</ul>",
+          "text": "It happens in about 6 seconds , but takes hours to recover from. The rational, logical part of the brain shuts down.\nDecision-making suffers. Stress hormones flood the body. The whole body acts\nlike there is an emergency . Long ago, this saved us from wild animals . Today,\nthere is usually no such danger. Repeated amygdala hijacks cause chronic\nstress , long-term anxiety , wear and tear of\nthe body, and harm health ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Common triggers:</strong> for students — every assignment,\nsubmission or deadline. At work — deliverables, deadlines, public\nspeaking, presentations, meetings.</p>",
+          "text": "Common triggers: for students — every assignment,\nsubmission or deadline. At work — deliverables, deadlines, public\nspeaking, presentations, meetings."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Prasanna’s stage fear</strong> Early\nin her career, she was an <strong>introvert</strong> with huge\n<strong>stage fear</strong>. She had frequent panic attacks; her mind\nwould go blank. Many people feel the same. Instead of letting fear take\nover, she worked on it — <strong>rationalised</strong> the fear and took\n<strong>tiny steps</strong> forward to build resilience.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Prasanna’s stage fear Early\nin her career, she was an introvert with huge stage fear . She had frequent panic attacks; her mind\nwould go blank. Many people feel the same. Instead of letting fear take\nover, she worked on it — rationalised the fear and took tiny steps forward to build resilience."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to improve response-ability:</strong> meditation,\njournaling, deep reading, physical exercise.</p>",
+          "text": "How to improve response-ability: meditation,\njournaling, deep reading, physical exercise."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Ask yourself:</strong></p>",
+          "text": "Ask yourself:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>What triggers an amygdala hijack, panic, anxiety or stress in\nme?</li>\n<li>What does it feel like?</li>\n<li>What can I do differently <strong>in the first 6 seconds</strong>\nnext time? Take a <strong>pause</strong>, drink a glass of\n<strong>water</strong>, <strong>breathe</strong> in and out a few times,\nor <strong>walk away</strong> for a moment.</li>\n</ul>",
+          "text": "What triggers an amygdala hijack, panic, anxiety or stress in\nme? What does it feel like? What can I do differently in the first 6 seconds next time? Take a pause , drink a glass of water , breathe in and out a few times,\nor walk away for a moment."
+        },
+        {
+          "type": "heading",
+          "text": "R6: Resilient"
+        },
+        {
+          "type": "html",
+          "html": "<p>Becoming resilient is the <strong>whole process</strong> of the first\nfive Rs.</p>",
+          "text": "Becoming resilient is the whole process of the first\nfive Rs."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>From the slide:</strong></p>",
+          "text": "From the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Work towards greater <strong>self-knowledge</strong>.</li>\n<li><strong>Be kind to yourself.</strong> Don’t be hard on\nyourself.</li>\n<li><strong>Learn</strong> from your experiences. Carry the\n<strong>lessons</strong> forward, not the <strong>emotional\nbaggage</strong> — rationalise and release.</li>\n<li>Resilience <strong>can be built</strong>. It improves your\n<strong>mental, physical and social health</strong>.</li>\n</ul>",
+          "text": "Work towards greater self-knowledge . Be kind to yourself. Don’t be hard on\nyourself. Learn from your experiences. Carry the lessons forward, not the emotional\nbaggage — rationalise and release. Resilience can be built . It improves your mental, physical and social health ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Before your viva, your heart races\n(R1: “I’m nervous, it’s the viva”). You tell yourself it’s okay to be\nnervous (R2). You ask, “What’s the worst that can happen? I’ve studied”\n(R3). You breathe out the tension (R4). You drink water and pause before\nanswering (R5). Next viva, it’s easier (R6).</p>\n</blockquote>",
+          "text": "Everyday example Before your viva, your heart races\n(R1: “I’m nervous, it’s the viva”). You tell yourself it’s okay to be\nnervous (R2). You ask, “What’s the worst that can happen? I’ve studied”\n(R3). You breathe out the tension (R4). You drink water and pause before\nanswering (R5). Next viva, it’s easier (R6)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Recognise, respect, rationalise,\nrelease, respond — and you become resilient. <strong>Exam\nwords:</strong> 6R framework, recognise, respect, rationalise, release,\nresponse-able, resilient, triggers, amygdala hijack,\nflight-fright-fight-freeze, 6 seconds.</p>",
+          "text": "In one line: Recognise, respect, rationalise,\nrelease, respond — and you become resilient. Exam\nwords: 6R framework, recognise, respect, rationalise, release,\nresponse-able, resilient, triggers, amygdala hijack,\nflight-fright-fight-freeze, 6 seconds."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nList the 6 Rs in order.\n</summary>\nRecognise, Respect, Rationalise, Release, Response-able, Resilient.\n</details>",
+          "text": "List the 6 Rs in order. Recognise, Respect, Rationalise, Release, Response-able, Resilient."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is an amygdala hijack?\n</summary>\nAn instinctive flight-fright-fight-freeze response when we overreact; in\nabout 6 seconds the rational brain shuts down, stress hormones are\nreleased, and recovery takes hours.\n</details>",
+          "text": "What is an amygdala hijack? An instinctive flight-fright-fight-freeze response when we overreact; in\nabout 6 seconds the rational brain shuts down, stress hormones are\nreleased, and recovery takes hours."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat can you do in the first 6 seconds to avoid an amygdala hijack?\n</summary>\nTake a pause, drink a glass of water, breathe in and out a few times, or\nwalk away for a moment.\n</details>",
+          "text": "What can you do in the first 6 seconds to avoid an amygdala hijack? Take a pause, drink a glass of water, breathe in and out a few times, or\nwalk away for a moment."
+        }
+      ]
+    },
+    {
+      "slug": "goleman-five-principles",
+      "title": "Understanding Emotional Intelligence — Goleman's Five Principles",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A 19-year-old who didn’t finish his\ndegree on time. Night shifts at a hotel. Angry guests shouting at him.\nHow did he turn all that into a career as a trainer? Prof. Shiva\nSubramaniam tells his story.</p>\n</blockquote>",
+          "text": "Start here A 19-year-old who didn’t finish his\ndegree on time. Night shifts at a hotel. Angry guests shouting at him.\nHow did he turn all that into a career as a trainer? Prof. Shiva\nSubramaniam tells his story."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Shiva says the best way to learn emotional intelligence is\n<strong>from your own life</strong>. But first, the principles.</p>",
+          "text": "Prof. Shiva says the best way to learn emotional intelligence is from your own life . But first, the principles."
+        },
+        {
+          "type": "heading",
+          "text": "Daniel\nGoleman’s five principles of emotional intelligence"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img06-goleman-five.webp",
+          "alt": "Goleman’s five principles",
+          "caption": "Self-awareness, self-regulation,\nmotivation, empathy, social skills."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Principle</th>\n<th>Simple meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Self-awareness</strong></td>\n<td>Knowing what you feel and who you are.</td>\n</tr>\n<tr>\n<td><strong>Self-regulation</strong> (self-management)</td>\n<td>Controlling your emotions; not reacting wildly.</td>\n</tr>\n<tr>\n<td><strong>Motivation</strong> (passion)</td>\n<td>Using your emotions to push yourself towards a goal.</td>\n</tr>\n<tr>\n<td><strong>Empathy</strong></td>\n<td>Putting yourself in the other person’s shoes.</td>\n</tr>\n<tr>\n<td><strong>Social skills</strong></td>\n<td>Getting along with people.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Principle Simple meaning Self-awareness Knowing what you feel and who you are. Self-regulation (self-management) Controlling your emotions; not reacting wildly. Motivation (passion) Using your emotions to push yourself towards a goal. Empathy Putting yourself in the other person’s shoes. Social skills Getting along with people."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Goleman’s five principles:\nself-awareness, self-regulation, motivation, empathy and social skills.\n<strong>Exam words:</strong> Daniel Goleman, self-awareness,\nself-regulation, motivation, empathy, social skills.</p>",
+          "text": "In one line: Goleman’s five principles:\nself-awareness, self-regulation, motivation, empathy and social skills. Exam words: Daniel Goleman, self-awareness,\nself-regulation, motivation, empathy, social skills."
+        },
+        {
+          "type": "heading",
+          "text": "Story 1: Night shifts at\nthe Taj hotel"
+        },
+        {
+          "type": "html",
+          "html": "<p>At <strong>19</strong>, Prof. Shiva had not finished his graduation.\nHis friends had moved on; his family was upset. He told himself,\n<strong>“Get back in control of yourself.”</strong> He walked into the\n<strong>Taj Coromandel</strong> in Madras and got a job as a\n<strong>front office assistant</strong> — on <strong>night duty</strong>\n(9 p.m. to 6 a.m., often till 8 a.m.).</p>",
+          "text": "At 19 , Prof. Shiva had not finished his graduation.\nHis friends had moved on; his family was upset. He told himself, “Get back in control of yourself.” He walked into the Taj Coromandel in Madras and got a job as a front office assistant — on night duty (9 p.m. to 6 a.m., often till 8 a.m.)."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Self-awareness and self-regulation:</strong> Others mocked\nhim for working in a hotel while they studied chartered accountancy. He\nstayed proud of himself and balanced his emotions.</li>\n<li><strong>The power of a smile:</strong> A smile is a great\n<strong>leverage point</strong>. It <strong>disarms</strong> angry\npeople. He learnt to smile and greet guests with respect: “Good morning,\nsir.”</li>\n<li><strong>Empathy:</strong> Tired guests often\n<strong>shouted</strong> at him after long journeys. He did not shout\nback. He put himself in their shoes — they just wanted to reach their\nrooms and sleep.</li>\n<li><strong>The result:</strong> Many guests who shouted at first gave\nhim a <strong>big tip</strong> or a <strong>gift</strong> when they\nleft.</li>\n</ul>",
+          "text": "Self-awareness and self-regulation: Others mocked\nhim for working in a hotel while they studied chartered accountancy. He\nstayed proud of himself and balanced his emotions. The power of a smile: A smile is a great leverage point . It disarms angry\npeople. He learnt to smile and greet guests with respect: “Good morning,\nsir.” Empathy: Tired guests often shouted at him after long journeys. He did not shout\nback. He put himself in their shoes — they just wanted to reach their\nrooms and sleep. The result: Many guests who shouted at first gave\nhim a big tip or a gift when they\nleft."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lesson:</strong> Getting a job is not the end — it is the\n<strong>beginning</strong>. The work itself can be emotionally\ndraining.</p>\n</blockquote>",
+          "text": "Lesson: Getting a job is not the end — it is the beginning . The work itself can be emotionally\ndraining."
+        },
+        {
+          "type": "heading",
+          "text": "Story 2: The 10-hour train\njourney"
+        },
+        {
+          "type": "html",
+          "html": "<p>At another company, he wanted to become a <strong>trainer</strong>.\nHis seniors kept <strong>discouraging</strong> him. When a training\nprogramme was finally approved at the last minute, he had to travel in\nan <strong>unreserved</strong> compartment, <strong>standing for about\n10 hours</strong>.</p>",
+          "text": "At another company, he wanted to become a trainer .\nHis seniors kept discouraging him. When a training\nprogramme was finally approved at the last minute, he had to travel in\nan unreserved compartment, standing for about\n10 hours ."
+        },
+        {
+          "type": "html",
+          "html": "<p>He could have used his <strong>anger</strong> to quit. Instead, he\nused it as <strong>motivation</strong>: “I want to be a very good\ntrainer.” He became a trained <strong>presentation skills\ntrainer</strong>, and his life changed.</p>",
+          "text": "He could have used his anger to quit. Instead, he\nused it as motivation : “I want to be a very good\ntrainer.” He became a trained presentation skills\ntrainer , and his life changed."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lesson:</strong> Anger means <strong>what you expect is not\nhappening</strong>. Use that energy to make it happen.</p>\n</blockquote>",
+          "text": "Lesson: Anger means what you expect is not\nhappening . Use that energy to make it happen."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Conflict is everywhere</strong> — within yourself, with hotel\nguests, with your seniors. It will never leave you alone. Once you\n<strong>accept</strong> that conflict is always there, it becomes\n<strong>easier to handle</strong>. Problems start when we try to\n<strong>run away</strong> from it.</p>",
+          "text": "Conflict is everywhere — within yourself, with hotel\nguests, with your seniors. It will never leave you alone. Once you accept that conflict is always there, it becomes easier to handle . Problems start when we try to run away from it."
+        },
+        {
+          "type": "heading",
+          "text": "Story 3: The Indian cricket\nteam"
+        },
+        {
+          "type": "html",
+          "html": "<p>In <strong>2005</strong>, he worked with coach <strong>Greg\nChappell</strong> and the Indian cricket team on creative thinking.</p>",
+          "text": "In 2005 , he worked with coach Greg\nChappell and the Indian cricket team on creative thinking."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>The dropped player:</strong> Only <strong>11</strong> can\nplay; 7–8 are left out. A player who was dropped was <strong>jogging at\n6 a.m.</strong> He said, “Only 11 can play. My chance will come. I want\nto always be ready.” — <strong>self-awareness, self-regulation and\nmotivation</strong>.</li>\n<li><strong>Early to bed:</strong> Before a match, the <strong>best\nplayers</strong> had dinner at 8 and went to bed by 9 — even though they\ncould have stayed up late. That is\n<strong>self-regulation</strong>.</li>\n</ul>",
+          "text": "The dropped player: Only 11 can\nplay; 7–8 are left out. A player who was dropped was jogging at\n6 a.m. He said, “Only 11 can play. My chance will come. I want\nto always be ready.” — self-awareness, self-regulation and\nmotivation . Early to bed: Before a match, the best\nplayers had dinner at 8 and went to bed by 9 — even though they\ncould have stayed up late. That is self-regulation ."
+        },
+        {
+          "type": "heading",
+          "text": "Leaders: Gandhi and Ramanujan"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Mahatma Gandhi</strong> was thrown off a train in South\nAfrica. Most people would have given up. He used that anger to\n<strong>fight discrimination</strong> — turning emotion into\n<strong>motivation</strong>.</li>\n<li><strong>Srinivasa Ramanujan</strong>, from a very poor family,\nworked at the <strong>Madras Port Trust</strong> on a small salary. He\nkept doing maths anyway. He wrote a letter to <strong>Professor\nHardy</strong> in England, who brought him to England. There, Ramanujan\nhandled conflicts of <strong>food, weather, clothing and\nculture</strong> — and kept pursuing his passion.</li>\n</ul>",
+          "text": "Mahatma Gandhi was thrown off a train in South\nAfrica. Most people would have given up. He used that anger to fight discrimination — turning emotion into motivation . Srinivasa Ramanujan , from a very poor family,\nworked at the Madras Port Trust on a small salary. He\nkept doing maths anyway. He wrote a letter to Professor\nHardy in England, who brought him to England. There, Ramanujan\nhandled conflicts of food, weather, clothing and\nculture — and kept pursuing his passion."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img07-anger-to-motivation.webp",
+          "alt": "Turning hard moments into motivation",
+          "caption": "Anger, rejection or\nhardship can be turned into fuel for a goal."
+        },
+        {
+          "type": "heading",
+          "text": "Prof. Shiva’s advice"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Observe people</strong> — parents, teachers, everyone. Watch\nhow they handle emotions. <strong>Don’t judge</strong> — just\nlearn.</li>\n<li><strong>Read</strong> a lot about emotional intelligence and\nconflict management. <strong>Ask</strong> people how they handled hard\nsituations.</li>\n<li>You will <strong>make mistakes</strong>. That’s life.</li>\n<li><strong>Aim to teach</strong> these topics one day: “Whatever I\nlearn, I must teach.”</li>\n</ul>",
+          "text": "Observe people — parents, teachers, everyone. Watch\nhow they handle emotions. Don’t judge — just\nlearn. Read a lot about emotional intelligence and\nconflict management. Ask people how they handled hard\nsituations. You will make mistakes . That’s life. Aim to teach these topics one day: “Whatever I\nlearn, I must teach.”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You weren’t picked for the college\nfest core team. You can sulk — or, like the cricketer jogging at 6 a.m.,\nvolunteer anyway, learn the work, and be ready for next year.</p>\n</blockquote>",
+          "text": "Everyday example You weren’t picked for the college\nfest core team. You can sulk — or, like the cricketer jogging at 6 a.m.,\nvolunteer anyway, learn the work, and be ready for next year."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Learn EI from real life — stay aware,\ncontrol reactions, turn setbacks into motivation, and empathise.\n<strong>Exam words:</strong> smile as leverage point, empathy, anger as\nmotivation, conflict is always there, observe without judging.</p>",
+          "text": "In one line: Learn EI from real life — stay aware,\ncontrol reactions, turn setbacks into motivation, and empathise. Exam words: smile as leverage point, empathy, anger as\nmotivation, conflict is always there, observe without judging."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName Daniel Goleman’s five principles of emotional intelligence.\n</summary>\nSelf-awareness, self-regulation, motivation, empathy and social skills.\n</details>",
+          "text": "Name Daniel Goleman’s five principles of emotional intelligence. Self-awareness, self-regulation, motivation, empathy and social skills."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does anger really mean, according to Prof. Shiva?\n</summary>\nThat what you expect is not happening.\n</details>",
+          "text": "What does anger really mean, according to Prof. Shiva? That what you expect is not happening."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich principle did the dropped cricketer show by jogging at 6 a.m.?\n</summary>\nMainly motivation (with self-awareness and self-regulation) — staying\nready for his chance.\n</details>",
+          "text": "Which principle did the dropped cricketer show by jogging at 6 a.m.? Mainly motivation (with self-awareness and self-regulation) — staying\nready for his chance."
+        }
+      ]
+    },
+    {
+      "slug": "what-is-conflict-management",
+      "title": "What is Conflict Management? — Types of Conflict",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> “Follow your heart,” everyone says. But\nwhat if your heart says one thing and your head says another? That is a\nconflict — and it happens inside you before it ever happens with\nothers.</p>\n</blockquote>",
+          "text": "Start here “Follow your heart,” everyone says. But\nwhat if your heart says one thing and your head says another? That is a\nconflict — and it happens inside you before it ever happens with\nothers."
+        },
+        {
+          "type": "heading",
+          "text": "Conflict is\nunavoidable — but it can be managed"
+        },
+        {
+          "type": "html",
+          "html": "<p>With so much happening in the world and inside us, <strong>conflict\nis inevitable</strong>. But that doesn’t mean it can’t be\n<strong>managed</strong> or <strong>resolved</strong>. Conflict\nmanagement is a great <strong>life skill</strong>.</p>",
+          "text": "With so much happening in the world and inside us, conflict\nis inevitable . But that doesn’t mean it can’t be managed or resolved . Conflict\nmanagement is a great life skill ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What you gain when you manage conflict well:</strong></p>",
+          "text": "What you gain when you manage conflict well:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Benefit</th>\n<th>How</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Self-awareness</strong></td>\n<td>You understand yourself and others better.</td>\n</tr>\n<tr>\n<td><strong>Better communication and listening</strong></td>\n<td>You learn to explain your view and <strong>actively listen</strong>\nto find the root cause.</td>\n</tr>\n<tr>\n<td><strong>Saves time, money, mind space and energy</strong></td>\n<td>The focus moves to <strong>solving problems</strong>, not whining,\ncomplaining, blaming or playing victim.</td>\n</tr>\n<tr>\n<td><strong>Better relationships</strong></td>\n<td>Builds <strong>trust, confidence and reliability</strong>. People\ndiscuss instead of arguing.</td>\n</tr>\n<tr>\n<td><strong>Better work</strong></td>\n<td>Higher <strong>productivity, performance, innovation,\ncreativity</strong>, job satisfaction; lower <strong>attrition</strong>\n(people leaving).</td>\n</tr>\n<tr>\n<td><strong>Win–win</strong></td>\n<td>Solutions that work for all stakeholders.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Benefit How Self-awareness You understand yourself and others better. Better communication and listening You learn to explain your view and actively listen to find the root cause. Saves time, money, mind space and energy The focus moves to solving problems , not whining,\ncomplaining, blaming or playing victim. Better relationships Builds trust, confidence and reliability . People\ndiscuss instead of arguing. Better work Higher productivity, performance, innovation,\ncreativity , job satisfaction; lower attrition (people leaving). Win–win Solutions that work for all stakeholders."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Conflict can’t be avoided, but managing\nit builds trust, saves energy and creates win–win solutions.\n<strong>Exam words:</strong> conflict is inevitable, conflict\nmanagement, active listening, win–win, attrition.</p>",
+          "text": "In one line: Conflict can’t be avoided, but managing\nit builds trust, saves energy and creates win–win solutions. Exam words: conflict is inevitable, conflict\nmanagement, active listening, win–win, attrition."
+        },
+        {
+          "type": "heading",
+          "text": "Four types of conflict within\nus"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img08-four-conflicts.webp",
+          "alt": "Four types of inner conflict",
+          "caption": "Conflict of voices, values,\nperspective and expectations."
+        },
+        {
+          "type": "subheading",
+          "text": "1. Conflict of voices (head vs\nheart)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Two voices tell you to do two different things. It is a clash between\nyour <strong>inner chatter</strong> (noise) and your <strong>inner voice\nof wisdom</strong>.</p>",
+          "text": "Two voices tell you to do two different things. It is a clash between\nyour inner chatter (noise) and your inner voice\nof wisdom ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Inner chatter</strong> is your brain\n<strong>replaying</strong> past experiences — with old assumptions,\nopinions, judgments and beliefs. It starts automatically when something\n<strong>triggers</strong> it: an image, a word, a person or a\nsituation.</p>",
+          "text": "Inner chatter is your brain replaying past experiences — with old assumptions,\nopinions, judgments and beliefs. It starts automatically when something triggers it: an image, a word, a person or a\nsituation."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>You can choose to pause the replay.</strong> Ask:</p>",
+          "text": "You can choose to pause the replay. Ask:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>How important is this flashback <strong>right now</strong>?</li>\n<li>What do I <strong>need</strong> from it to move forward?</li>\n<li>If nothing — do I need to replay it again and again?</li>\n<li>What <strong>outcome</strong> am I looking for?</li>\n</ul>",
+          "text": "How important is this flashback right now ? What do I need from it to move forward? If nothing — do I need to replay it again and again? What outcome am I looking for?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tip:</strong> <strong>Journal</strong> daily. Writing down\nwhat’s in your head <strong>declutters</strong> your mind. A calm, clear\nmind makes <strong>better choices</strong>.</p>",
+          "text": "Tip: Journal daily. Writing down\nwhat’s in your head declutters your mind. A calm, clear\nmind makes better choices ."
+        },
+        {
+          "type": "subheading",
+          "text": "2. Conflict of values"
+        },
+        {
+          "type": "html",
+          "html": "<p>Your <strong>core values</strong> are your inner compass. When\nsomething doesn’t match them — a friend, a family member, a colleague,\nor even an <strong>organisation</strong> — conflict arises.</p>",
+          "text": "Your core values are your inner compass. When\nsomething doesn’t match them — a friend, a family member, a colleague,\nor even an organisation — conflict arises."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What to do:</strong></p>",
+          "text": "What to do:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Be clear on your values</strong> — your\nnon-negotiables.</li>\n<li>When values don’t match, <strong>don’t compromise</strong> them to\nplease or impress others. Respect your values <strong>and</strong>\ntheirs. Do what is <strong>right</strong>, not what is easy.</li>\n<li>With others, <strong>understand where they are coming from</strong>\nand look for <strong>common ground</strong>.</li>\n</ol>",
+          "text": "Be clear on your values — your\nnon-negotiables. When values don’t match, don’t compromise them to\nplease or impress others. Respect your values and theirs. Do what is right , not what is easy. With others, understand where they are coming from and look for common ground ."
+        },
+        {
+          "type": "html",
+          "html": "<p>When you join an organisation, check that <strong>your values\nmatch</strong> its values and vision.</p>",
+          "text": "When you join an organisation, check that your values\nmatch its values and vision."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Questions:</strong> What are each stakeholder’s concerns?\nWhat values are clashing? What options resolve this <strong>without\ncompromising</strong> our values? What would create a\n<strong>win–win</strong>?</p>",
+          "text": "Questions: What are each stakeholder’s concerns?\nWhat values are clashing? What options resolve this without\ncompromising our values? What would create a win–win ?"
+        },
+        {
+          "type": "subheading",
+          "text": "3. Conflict of perspective"
+        },
+        {
+          "type": "html",
+          "html": "<p>We all see the world through our own <strong>lens</strong>, shaped by\nour senses and past experiences. So <strong>perspectives</strong> and\n<strong>perceptions</strong> differ. Everyone is on their own\njourney.</p>",
+          "text": "We all see the world through our own lens , shaped by\nour senses and past experiences. So perspectives and perceptions differ. Everyone is on their own\njourney."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Ask:</strong> How is my lens different from theirs? What can\nwe <strong>learn</strong> from this? What <strong>possibilities</strong>\ncome from our differences?</p>",
+          "text": "Ask: How is my lens different from theirs? What can\nwe learn from this? What possibilities come from our differences?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Use your spheres of responsibility</strong> (from the\nleadership week): focus on your <strong>sphere of control</strong> and\n<strong>influence</strong>, not on what is beyond your control.</p>",
+          "text": "Use your spheres of responsibility (from the\nleadership week): focus on your sphere of control and influence , not on what is beyond your control."
+        },
+        {
+          "type": "subheading",
+          "text": "4. Conflict of expectations"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>You may not meet the <strong>expectations you set for\nyourself</strong>.</li>\n<li>Someone may have expectations <strong>of you</strong> — you try\nhard, then resent it; or you don’t even know their expectations.</li>\n<li>You may have expectations <strong>of someone else</strong> that they\ndon’t know about.</li>\n</ul>",
+          "text": "You may not meet the expectations you set for\nyourself . Someone may have expectations of you — you try\nhard, then resent it; or you don’t even know their expectations. You may have expectations of someone else that they\ndon’t know about."
+        },
+        {
+          "type": "html",
+          "html": "<p>Expectations are seen through each person’s <strong>lens</strong>, so\n<strong>no one can meet everyone’s expectations</strong>. Often it’s\nbest to accept that and let them be.</p>",
+          "text": "Expectations are seen through each person’s lens , so no one can meet everyone’s expectations . Often it’s\nbest to accept that and let them be."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>But with people close to you</strong> (family, friends), have\na <strong>clear conversation</strong>:</p>",
+          "text": "But with people close to you (family, friends), have\na clear conversation :"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>“What are your expectations of me? What’s the best and worst if I\ndon’t meet them?”</li>\n<li>“Here are my expectations of you. What’s the best and worst if you\ndon’t meet them?”</li>\n<li>Then explore a <strong>win–win</strong>.</li>\n</ul>",
+          "text": "“What are your expectations of me? What’s the best and worst if I\ndon’t meet them?” “Here are my expectations of you. What’s the best and worst if you\ndon’t meet them?” Then explore a win–win ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>At work</strong> (with a teammate or supervisor): sit down\nand convert expectations into <strong>clear agreements</strong> — tasks,\ndeliverables, deadlines and coordination points. Check they are\n<strong>specific, practical</strong> and <strong>aligned</strong> with\nyour values and the organisation’s goals. Drop expectations that serve\nno one.</p>",
+          "text": "At work (with a teammate or supervisor): sit down\nand convert expectations into clear agreements — tasks,\ndeliverables, deadlines and coordination points. Check they are specific, practical and aligned with\nyour values and the organisation’s goals. Drop expectations that serve\nno one."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your parents expect you to call\nevery evening; you expect them to trust you more. Nobody says it, so\nboth feel hurt. One honest talk — “Can we call every Sunday, and I’ll\nmessage daily?” — turns hidden expectations into a clear agreement.</p>\n</blockquote>",
+          "text": "Everyday example Your parents expect you to call\nevery evening; you expect them to trust you more. Nobody says it, so\nboth feel hurt. One honest talk — “Can we call every Sunday, and I’ll\nmessage daily?” — turns hidden expectations into a clear agreement."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Inner conflict comes from clashing\nvoices, values, perspectives and expectations — make them clear, and\ntalk them out. <strong>Exam words:</strong> conflict of voices, inner\nchatter, inner voice of wisdom, head vs heart, conflict of values,\nconflict of perspective, lens, conflict of expectations, clear\nagreements, journaling.</p>",
+          "text": "In one line: Inner conflict comes from clashing\nvoices, values, perspectives and expectations — make them clear, and\ntalk them out. Exam words: conflict of voices, inner\nchatter, inner voice of wisdom, head vs heart, conflict of values,\nconflict of perspective, lens, conflict of expectations, clear\nagreements, journaling."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four types of conflict discussed in this lecture.\n</summary>\nConflict of voices, conflict of values, conflict of perspective, and\nconflict of expectations.\n</details>",
+          "text": "Name the four types of conflict discussed in this lecture. Conflict of voices, conflict of values, conflict of perspective, and\nconflict of expectations."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “inner chatter”?\n</summary>\nThe brain automatically replaying past experiences with their\nassumptions, opinions, judgments and beliefs when something triggers it.\n</details>",
+          "text": "What is “inner chatter”? The brain automatically replaying past experiences with their\nassumptions, opinions, judgments and beliefs when something triggers it."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow should a conflict of expectations be handled at work?\n</summary>\nTalk it out and convert expectations into clear agreements — tasks,\ndeliverables, deadlines and coordination points — that are specific,\npractical and aligned with goals.\n</details>",
+          "text": "How should a conflict of expectations be handled at work? Talk it out and convert expectations into clear agreements — tasks,\ndeliverables, deadlines and coordination points — that are specific,\npractical and aligned with goals."
+        }
+      ]
+    },
+    {
+      "slug": "conflict-management-styles",
+      "title": "Understanding Conflict Management — Five Styles",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Two teammates want different designs for\nthe app. One refuses to budge. One gives up. One splits the difference.\nOne finds a better design that uses both ideas. Which one are you?</p>\n</blockquote>",
+          "text": "Start here Two teammates want different designs for\nthe app. One refuses to budge. One gives up. One splits the difference.\nOne finds a better design that uses both ideas. Which one are you?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lt Col Jayakumar</strong> explains conflict simply: conflict\nis mostly a <strong>difference in opinion</strong>, which comes from a\n<strong>difference in expectations</strong> between people.</p>",
+          "text": "Lt Col Jayakumar explains conflict simply: conflict\nis mostly a difference in opinion , which comes from a difference in expectations between people."
+        },
+        {
+          "type": "heading",
+          "text": "Resilience of a soldier’s\nfamily"
+        },
+        {
+          "type": "html",
+          "html": "<p>A soldier on the border faces <strong>loneliness</strong> and worries\nabout his family back home — children’s school admissions, getting an\nelectricity connection, and more. The family handles all this alone.</p>",
+          "text": "A soldier on the border faces loneliness and worries\nabout his family back home — children’s school admissions, getting an\nelectricity connection, and more. The family handles all this alone."
+        },
+        {
+          "type": "html",
+          "html": "<p>During the <strong>Kargil</strong> conflict, at the\n<strong>Uri</strong> post, he sent his <strong>last will</strong> home\n<strong>four times</strong>. Once, his family sent back a greeting card\nsigned by everyone: <em>“All the best. Don’t worry about us. Go ahead,\ndo your job and come back victorious.”</em></p>",
+          "text": "During the Kargil conflict, at the Uri post, he sent his last will home four times . Once, his family sent back a greeting card\nsigned by everyone: “All the best. Don’t worry about us. Go ahead,\ndo your job and come back victorious.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>He asks: <strong>who was more resilient</strong> — the soldier, or\nhis family at home?</p>",
+          "text": "He asks: who was more resilient — the soldier, or\nhis family at home?"
+        },
+        {
+          "type": "heading",
+          "text": "The five\nconflict management styles (Thomas–Kilmann)"
+        },
+        {
+          "type": "html",
+          "html": "<p>The slide shows the <strong>Thomas–Kilmann Conflict Mode Instrument\n(TKI)</strong>. It uses two axes:</p>",
+          "text": "The slide shows the Thomas–Kilmann Conflict Mode Instrument\n(TKI) . It uses two axes:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Assertiveness</strong> (vertical) — how much you push for\n<strong>your own</strong> concerns.</li>\n<li><strong>Cooperativeness</strong> (horizontal) — how much you care\nabout the <strong>other person’s</strong> concerns.</li>\n</ul>",
+          "text": "Assertiveness (vertical) — how much you push for your own concerns. Cooperativeness (horizontal) — how much you care\nabout the other person’s concerns."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img09-five-styles.webp",
+          "alt": "Five conflict styles on two axes",
+          "caption": "Assertiveness (up) vs\ncooperativeness (across): avoiding, competing, accommodating,\ncompromising, collaborating."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Style</th>\n<th>Position (0–9 scale)</th>\n<th>What it looks like</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Avoiding</strong></td>\n<td>Assertive 0, Cooperative 0</td>\n<td>Neither pushing nor helping. You <strong>avoid</strong> the\nconflict.</td>\n</tr>\n<tr>\n<td><strong>Competing</strong></td>\n<td>Assertive 9, Cooperative 0</td>\n<td>Fully assertive. No bargaining, no negotiation. <strong>Not\nbudging.</strong></td>\n</tr>\n<tr>\n<td><strong>Accommodating</strong></td>\n<td>Assertive 0, Cooperative 9</td>\n<td>Fully cooperative. <strong>Giving in</strong> — “No problem at\nall.”</td>\n</tr>\n<tr>\n<td><strong>Compromising</strong></td>\n<td>Assertive 5, Cooperative 5</td>\n<td>The <strong>middle road</strong>. Give and take — each side gives up\nsomething.</td>\n</tr>\n<tr>\n<td><strong>Collaborating</strong></td>\n<td>Assertive 9, Cooperative 9</td>\n<td><strong>The best.</strong> Studies the problem and the people, sees\nwhere things are going, and <strong>works together</strong>\nwholeheartedly.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Style Position (0–9 scale) What it looks like Avoiding Assertive 0, Cooperative 0 Neither pushing nor helping. You avoid the\nconflict. Competing Assertive 9, Cooperative 0 Fully assertive. No bargaining, no negotiation. Not\nbudging. Accommodating Assertive 0, Cooperative 9 Fully cooperative. Giving in — “No problem at\nall.” Compromising Assertive 5, Cooperative 5 The middle road . Give and take — each side gives up\nsomething. Collaborating Assertive 9, Cooperative 9 The best. Studies the problem and the people, sees\nwhere things are going, and works together wholeheartedly."
+        },
+        {
+          "type": "html",
+          "html": "<p>These styles are used in <strong>businesses</strong> and\n<strong>teams</strong> where people with similar goals must agree.</p>",
+          "text": "These styles are used in businesses and teams where people with similar goals must agree."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>The Colonel adds: one way to reduce conflict is <strong>not to expect\ntoo much</strong> — be happy with what you get and with the outcome of\nyour effort. That is close to <strong>compromising</strong>.</p>\n</blockquote>",
+          "text": "The Colonel adds: one way to reduce conflict is not to expect\ntoo much — be happy with what you get and with the outcome of\nyour effort. That is close to compromising ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Five styles — avoid, compete,\naccommodate, compromise, collaborate — and collaborating (9,9) is the\nbest. <strong>Exam words:</strong> Thomas–Kilmann (TKI), assertiveness,\ncooperativeness, avoiding, competing, accommodating, compromising,\ncollaborating.</p>",
+          "text": "In one line: Five styles — avoid, compete,\naccommodate, compromise, collaborate — and collaborating (9,9) is the\nbest. Exam words: Thomas–Kilmann (TKI), assertiveness,\ncooperativeness, avoiding, competing, accommodating, compromising,\ncollaborating."
+        },
+        {
+          "type": "heading",
+          "text": "How the armed forces\nresolve differences"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>The <strong>commander</strong> has a task. He calls his\n<strong>subordinate commanders</strong>.</li>\n<li>They do <strong>war gaming</strong> — like\n<strong>brainstorming</strong> in a company. Each subordinate shares\ntheir plan <strong>openly and freely</strong>.</li>\n<li>The commander studies all plans, possible events and resources, then\nissues an <strong>operation order</strong>.</li>\n<li>The commander takes <strong>responsibility</strong> for the chosen\nplan.</li>\n<li>Each subordinate must carry out the order <strong>as if it were\ntheir own plan</strong> — even if it is the <strong>opposite</strong> of\nwhat they suggested. <strong>“Myself becomes secondary; my team becomes\nprimary.”</strong></li>\n<li>The order must reach <strong>the last soldier</strong> on the\nground.</li>\n</ol>",
+          "text": "The commander has a task. He calls his subordinate commanders . They do war gaming — like brainstorming in a company. Each subordinate shares\ntheir plan openly and freely . The commander studies all plans, possible events and resources, then\nissues an operation order . The commander takes responsibility for the chosen\nplan. Each subordinate must carry out the order as if it were\ntheir own plan — even if it is the opposite of\nwhat they suggested. “Myself becomes secondary; my team becomes\nprimary.” The order must reach the last soldier on the\nground."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> In a group project, everyone shares\nideas in the meeting. The team picks one plan. Even if your idea wasn’t\nchosen, you now work on the chosen plan with full effort — not\nhalf-heartedly.</p>\n</blockquote>",
+          "text": "Everyday example In a group project, everyone shares\nideas in the meeting. The team picks one plan. Even if your idea wasn’t\nchosen, you now work on the chosen plan with full effort — not\nhalf-heartedly."
+        },
+        {
+          "type": "heading",
+          "text": "Three possible outcomes"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img10-outcomes.webp",
+          "alt": "Lose–lose, win–lose, win–win",
+          "caption": "Lose–lose, win–lose, and the\nbest: win–win."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Outcome</th>\n<th>What happens</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Lose–lose</strong></td>\n<td>Both sides are adamant and keep competing. It breaks down; nobody\ngains.</td>\n</tr>\n<tr>\n<td><strong>Win–lose</strong></td>\n<td>One side wins, one loses — based on who has the stronger case. Like\nsports: give your best, no hard feelings.</td>\n</tr>\n<tr>\n<td><strong>Win–win</strong></td>\n<td><strong>Both sides gain.</strong> The best outcome.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Outcome What happens Lose–lose Both sides are adamant and keep competing. It breaks down; nobody\ngains. Win–lose One side wins, one loses — based on who has the stronger case. Like\nsports: give your best, no hard feelings. Win–win Both sides gain. The best outcome."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the apartment complex</strong> Several\ngroups in an apartment complex wanted different things. An\n<strong>elderly couple</strong> gave everyone a <strong>patient\nhearing</strong> and acted as <strong>arbitrators</strong>. Through give\nand take, they resolved the issues — that was <strong>compromising\n(5,5)</strong>. But the <strong>best</strong> is <strong>collaborating\n(9,9)</strong>, where everyone wholeheartedly supports each other. That\nis how <strong>winning teams</strong> work.</p>\n</blockquote>",
+          "text": "Lecture example — the apartment complex Several\ngroups in an apartment complex wanted different things. An elderly couple gave everyone a patient\nhearing and acted as arbitrators . Through give\nand take, they resolved the issues — that was compromising\n(5,5) . But the best is collaborating\n(9,9) , where everyone wholeheartedly supports each other. That\nis how winning teams work."
+        },
+        {
+          "type": "heading",
+          "text": "Ask “So what?”"
+        },
+        {
+          "type": "html",
+          "html": "<p>When facing a problem, keep asking <strong>“So what?”</strong> to\nexplore each option and cut off the bad ones.</p>",
+          "text": "When facing a problem, keep asking “So what?” to\nexplore each option and cut off the bad ones."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — presentation vs family deadline</strong> It\nis 9 a.m. You must present a new project <strong>tomorrow at 9\na.m.</strong> You are <strong>unwell</strong>. A family member also\nneeds your help <strong>today</strong> for their own deadline.</p>\n<ul>\n<li><strong>Option 1:</strong> Forget your health and help them all day.\n<strong>So what?</strong> You’re exhausted and do badly tomorrow.</li>\n<li><strong>Option 2:</strong> Tell your manager your condition and ask\nto <strong>postpone</strong>. <strong>So what?</strong> It may be\npossible.</li>\n<li><strong>Worst case:</strong> It can’t be postponed. <strong>So\nwhat?</strong> Take medicine, <strong>ask a colleague for help</strong>,\nprepare overnight, present — then rest.</li>\n</ul>\n<p>By asking “so what?” again and again, you reach a workable\nanswer.</p>\n</blockquote>",
+          "text": "Lecture example — presentation vs family deadline It\nis 9 a.m. You must present a new project tomorrow at 9\na.m. You are unwell . A family member also\nneeds your help today for their own deadline. Option 1: Forget your health and help them all day. So what? You’re exhausted and do badly tomorrow. Option 2: Tell your manager your condition and ask\nto postpone . So what? It may be\npossible. Worst case: It can’t be postponed. So\nwhat? Take medicine, ask a colleague for help ,\nprepare overnight, present — then rest. By asking “so what?” again and again, you reach a workable\nanswer."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Aim for win–win, and keep asking “so\nwhat?” to test each option. <strong>Exam words:</strong> lose–lose,\nwin–lose, win–win, arbitrator, war gaming, operation order, “so\nwhat?”.</p>",
+          "text": "In one line: Aim for win–win, and keep asking “so\nwhat?” to test each option. Exam words: lose–lose,\nwin–lose, win–win, arbitrator, war gaming, operation order, “so\nwhat?”."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich conflict style is high on both assertiveness and cooperativeness?\n</summary>\nCollaborating (9,9).\n</details>",
+          "text": "Which conflict style is high on both assertiveness and cooperativeness? Collaborating (9,9)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA person who gives in completely to keep peace is using which style?\n</summary>\nAccommodating (assertive 0, cooperative 9).\n</details>",
+          "text": "A person who gives in completely to keep peace is using which style? Accommodating (assertive 0, cooperative 9)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the three possible outcomes of a conflict?\n</summary>\nLose–lose, win–lose and win–win.\n</details>",
+          "text": "What are the three possible outcomes of a conflict? Lose–lose, win–lose and win–win."
+        }
+      ]
+    },
+    {
+      "slug": "ei-and-conflict-applied",
+      "title": "Emotional Intelligence and Conflict Management Applied",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A professor became Head of his Department\n— and changed his title to “<strong>Heart</strong> of Department”. Why?\nBecause, he says, it’s the heart that connects people. This page shows\nEI in action at real workplaces.</p>\n</blockquote>",
+          "text": "Start here A professor became Head of his Department\n— and changed his title to “ Heart of Department”. Why?\nBecause, he says, it’s the heart that connects people. This page shows\nEI in action at real workplaces."
+        },
+        {
+          "type": "heading",
+          "text": "1. “Heart of\nDepartment” — leading with the heart"
+        },
+        {
+          "type": "html",
+          "html": "<p>When <strong>Prof. Sivakumar</strong> became <strong>HOD</strong>\n(Head of Department) of Applied Mechanics, he renamed it <strong>“Heart\nof Department”</strong> — and also <strong>“Heart on Duty”</strong>.</p>",
+          "text": "When Prof. Sivakumar became HOD (Head of Department) of Applied Mechanics, he renamed it “Heart\nof Department” — and also “Heart on Duty” ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Every person wants to <strong>grow</strong>, and also wants the\n<strong>department</strong> to grow. If people stop others from growing,\nthe department can’t grow. When people realise this, they start\n<strong>understanding each other</strong>.</li>\n<li><strong>Chai time:</strong> he started informal tea meetings with no\nagenda. People opened up, understood each other, and talked about the\ndepartment’s <strong>shared vision</strong>.</li>\n<li>People are different, but now they see <strong>variety as\nstrength</strong> — like a <strong>family</strong>.</li>\n</ul>",
+          "text": "Every person wants to grow , and also wants the department to grow. If people stop others from growing,\nthe department can’t grow. When people realise this, they start understanding each other . Chai time: he started informal tea meetings with no\nagenda. People opened up, understood each other, and talked about the\ndepartment’s shared vision . People are different, but now they see variety as\nstrength — like a family ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img11-heart-of-department.webp",
+          "alt": "Heart of Department",
+          "caption": "An open door, chai time and listening —\nleading with the heart."
+        },
+        {
+          "type": "subheading",
+          "text": "How he handles daily\nconflicts"
+        },
+        {
+          "type": "html",
+          "html": "<p>Every day brings challenges: a faculty member flares up, a scholar\nwants to change supervisor, students complain about lab problems.</p>",
+          "text": "Every day brings challenges: a faculty member flares up, a scholar\nwants to change supervisor, students complain about lab problems."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Lend your ears.</strong> Listen <strong>actively and with\nempathy</strong>. Just listening helps people move out of their\nemotional state and <strong>solve problems themselves</strong>.</li>\n<li><strong>Say “sorry”.</strong> He admits he’s not perfect. When he\nmakes a mistake, he says sorry — a “golden word”.</li>\n<li><strong>Keep the door open.</strong> His office door is always open,\nso people feel welcome.</li>\n<li><strong>Handle gossip wisely.</strong> When someone speaks badly of\nanother, he points out something <strong>good about both</strong>\npeople. This shows everyone contributes.</li>\n<li><strong>Shelve your ego.</strong> When people know your\n<strong>ego</strong> isn’t in front and you have <strong>no hidden\nagenda</strong>, they speak openly.</li>\n</ul>",
+          "text": "Lend your ears. Listen actively and with\nempathy . Just listening helps people move out of their\nemotional state and solve problems themselves . Say “sorry”. He admits he’s not perfect. When he\nmakes a mistake, he says sorry — a “golden word”. Keep the door open. His office door is always open,\nso people feel welcome. Handle gossip wisely. When someone speaks badly of\nanother, he points out something good about both people. This shows everyone contributes. Shelve your ego. When people know your ego isn’t in front and you have no hidden\nagenda , they speak openly."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>EQ vs IQ:</strong> He places <strong>EQ a notch above\nIQ</strong>. Prof. Prasanna adds that corporates now look for employees\nwith <strong>higher EQ</strong>.</p>",
+          "text": "EQ vs IQ: He places EQ a notch above\nIQ . Prof. Prasanna adds that corporates now look for employees\nwith higher EQ ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — sharing the loss</strong> In one company\nmaking losses, employees agreed to <strong>pay cuts</strong> so that\n<strong>nobody</strong> would lose their job. That came from strong\n<strong>emotional connection</strong> with each other.</p>\n</blockquote>",
+          "text": "Lecture example — sharing the loss In one company\nmaking losses, employees agreed to pay cuts so that nobody would lose their job. That came from strong emotional connection with each other."
+        },
+        {
+          "type": "heading",
+          "text": "2. Turning\ncustomer doubt into customer delight"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic’s “Knowledge Theme\nPark”</strong> Around <strong>2010</strong>, after the 2008 recession,\nmany people started leaving jobs. His team served a client of <strong>8\nyears</strong>. The client worried that <strong>new freshers</strong>\ndidn’t have enough knowledge.</p>\n<p>For months, the team showed <strong>PowerPoint decks</strong>,\nmetrics and test results. The client still wasn’t convinced.</p>\n<p><strong>Listening deeper</strong>, they found the real worry: the\nclient’s quality team needed to <strong>prove the value</strong> to\ntheir own business stakeholders.</p>\n<p>At a conference, Kartic saw <strong>games</strong> used to engage\nyoung employees. So they tried something risky: let the <strong>freshers\nthemselves</strong> create something creative — not slides — about the\ninsurance domain, and present it <strong>directly</strong> to the\nclient. They called it the <strong>“Knowledge Theme Park”</strong>.</p>\n<p>The client was <strong>delighted</strong>: “You have innovated\namazingly.” They saw the freshers’ knowledge\n<strong>first-hand</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic’s “Knowledge Theme\nPark” Around 2010 , after the 2008 recession,\nmany people started leaving jobs. His team served a client of 8\nyears . The client worried that new freshers didn’t have enough knowledge. For months, the team showed PowerPoint decks ,\nmetrics and test results. The client still wasn’t convinced. Listening deeper , they found the real worry: the\nclient’s quality team needed to prove the value to\ntheir own business stakeholders. At a conference, Kartic saw games used to engage\nyoung employees. So they tried something risky: let the freshers\nthemselves create something creative — not slides — about the\ninsurance domain, and present it directly to the\nclient. They called it the “Knowledge Theme Park” . The client was delighted : “You have innovated\namazingly.” They saw the freshers’ knowledge first-hand ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lessons:</strong></p>",
+          "text": "Lessons:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Active listening with empathy</strong> is the first and most\nimportant skill with customers.</li>\n<li><strong>Don’t fix every problem the standard way.</strong>\nUnderstand what <strong>each stakeholder</strong> really needs.</li>\n<li>Be <strong>open-minded</strong>; <strong>experiment</strong>. It\ntook about <strong>1.5 years</strong> of listening and trying.</li>\n<li>Numbers and slides don’t always convince — <strong>real human\nconnection</strong> does. This turned <strong>customer happiness into\ncustomer delight</strong>.</li>\n</ul>",
+          "text": "Active listening with empathy is the first and most\nimportant skill with customers. Don’t fix every problem the standard way. Understand what each stakeholder really needs. Be open-minded ; experiment . It\ntook about 1.5 years of listening and trying. Numbers and slides don’t always convince — real human\nconnection does. This turned customer happiness into\ncustomer delight ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img12-customer-delight.webp",
+          "alt": "From doubt to delight",
+          "caption": "Instead of slides, the freshers\nshowed their knowledge directly — and the client was delighted."
+        },
+        {
+          "type": "heading",
+          "text": "3. Two cultures, one thank-you\nemail"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the merger</strong> In the mid-2000s,\nProf. Kartic’s fast-paced <strong>startup</strong> merged with an older,\nslower, more <strong>stable</strong> company. Neither was right or wrong\n— they were just <strong>different cultures</strong>.</p>\n<p>Every meeting became a <strong>blame game</strong>. Middle managers\nwere <strong>sandwiched</strong> between both sides. This went on for\nmonths.</p>\n<p>Then he <strong>accepted</strong> that both sides were good people\ndoing their best. He listed the <strong>progress made</strong>, however\nsmall, and the <strong>efforts</strong> of the other side. He sent a\n<strong>thank-you email</strong> to the other company’s VP and director\nand his own director — with <strong>zero expectation</strong>.</p>\n<p>That email <strong>won hearts</strong> on both sides. It brought\n<strong>positivity</strong> back into the working relationship.</p>\n</blockquote>",
+          "text": "Lecture example — the merger In the mid-2000s,\nProf. Kartic’s fast-paced startup merged with an older,\nslower, more stable company. Neither was right or wrong\n— they were just different cultures . Every meeting became a blame game . Middle managers\nwere sandwiched between both sides. This went on for\nmonths. Then he accepted that both sides were good people\ndoing their best. He listed the progress made , however\nsmall, and the efforts of the other side. He sent a thank-you email to the other company’s VP and director\nand his own director — with zero expectation . That email won hearts on both sides. It brought positivity back into the working relationship."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> In hard times, <strong>look at what is\nworking</strong>, not only at what isn’t. A few words of\n<strong>appreciation</strong> can change everything. Don’t get so lost\nin <strong>results</strong> that you lose\n<strong>relationships</strong>.</p>",
+          "text": "Lesson: In hard times, look at what is\nworking , not only at what isn’t. A few words of appreciation can change everything. Don’t get so lost\nin results that you lose relationships ."
+        },
+        {
+          "type": "heading",
+          "text": "4. Lessons from Kung Fu\nPanda"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Kartic is a fan of the animated film <em>Kung Fu Panda</em>. He\ndraws four EI lessons from it:</p>",
+          "text": "Prof. Kartic is a fan of the animated film Kung Fu Panda . He\ndraws four EI lessons from it:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Scene in the film</th>\n<th>EI lesson</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>The panda dreams of becoming the Dragon Warrior with no skills —\njust <strong>fire in the belly</strong>.</td>\n<td>A <strong>burning ambition</strong> is the first skill, even when\nthe path is unknown.</td>\n</tr>\n<tr>\n<td>He cries that he’s useless. The Grand Master says he is\n<strong>clinging to the past or anxious about the future</strong>.</td>\n<td><strong>Be present.</strong> “Yesterday is history, tomorrow is a\nmystery” — focus on today.</td>\n</tr>\n<tr>\n<td>His teacher can’t train him — until he notices the panda is\nmotivated by <strong>snacks</strong>, and uses that.</td>\n<td>Everyone has <strong>different motivators</strong>. Leaders must\nfind each person’s trigger.</td>\n</tr>\n<tr>\n<td>The magic “Dragon Scroll” is <strong>empty</strong>. His father says\nthe secret ingredient of his noodles is <strong>nothing</strong> — it’s\nspecial because we believe it is.</td>\n<td><strong>“It’s all in the mind.”</strong> Drop fixed beliefs that\nsomething needs a special path.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Scene in the film EI lesson The panda dreams of becoming the Dragon Warrior with no skills —\njust fire in the belly . A burning ambition is the first skill, even when\nthe path is unknown. He cries that he’s useless. The Grand Master says he is clinging to the past or anxious about the future . Be present. “Yesterday is history, tomorrow is a\nmystery” — focus on today. His teacher can’t train him — until he notices the panda is\nmotivated by snacks , and uses that. Everyone has different motivators . Leaders must\nfind each person’s trigger. The magic “Dragon Scroll” is empty . His father says\nthe secret ingredient of his noodles is nothing — it’s\nspecial because we believe it is. “It’s all in the mind.” Drop fixed beliefs that\nsomething needs a special path."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Prasanna adds: much emotional turbulence comes from being\n<strong>stuck in the past</strong> and <strong>worrying about the\nfuture</strong>. Conflict <strong>starts within us</strong> first.</p>",
+          "text": "Prof. Prasanna adds: much emotional turbulence comes from being stuck in the past and worrying about the\nfuture . Conflict starts within us first."
+        },
+        {
+          "type": "heading",
+          "text": "5. Building EI in a workplace"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Prof. Sivakumar’s practices:</strong></p>",
+          "text": "Prof. Sivakumar’s practices:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Set an example</strong> — keep the door open.</li>\n<li><strong>Create safe spaces</strong> — some people can’t speak in big\nmeetings, so offer small groups or one-to-one talks.</li>\n<li>In meetings, let <strong>junior</strong> people speak\n<strong>first</strong>, before seniors.</li>\n<li><strong>Align</strong> department goals with people’s\n<strong>personal goals</strong>. This gives them\n<strong>belonging</strong>.</li>\n<li>Help people stuck in <strong>self-doubt</strong> after failure —\ntalk with them and explore options.</li>\n</ul>",
+          "text": "Set an example — keep the door open. Create safe spaces — some people can’t speak in big\nmeetings, so offer small groups or one-to-one talks. In meetings, let junior people speak first , before seniors. Align department goals with people’s personal goals . This gives them belonging . Help people stuck in self-doubt after failure —\ntalk with them and explore options."
+        },
+        {
+          "type": "subheading",
+          "text": "Psychological\nsafety: “If they don’t come to you, go to them”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — becoming Dean of Students</strong> As a\nstudent advisor, many students came to him with problems. When he became\n<strong>Dean</strong>, they suddenly <strong>stopped</strong> coming —\nthey saw <strong>power</strong>. So he <strong>went to them</strong> —\nvisiting every hostel. He emailed: <em>“I may be Dean, but I am also a\nfather, a brother, a son. If you have something to share, I am always\nthere.”</em> Within weeks, <strong>40–50 students</strong> came to\ntalk.</p>\n</blockquote>",
+          "text": "Lecture example — becoming Dean of Students As a\nstudent advisor, many students came to him with problems. When he became Dean , they suddenly stopped coming —\nthey saw power . So he went to them —\nvisiting every hostel. He emailed: “I may be Dean, but I am also a\nfather, a brother, a son. If you have something to share, I am always\nthere.” Within weeks, 40–50 students came to\ntalk."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson for leaders:</strong> People may hesitate to approach\nyou because of your position. A position is <strong>power to\nserve</strong>. <strong>Go to them.</strong></p>",
+          "text": "Lesson for leaders: People may hesitate to approach\nyou because of your position. A position is power to\nserve . Go to them."
+        },
+        {
+          "type": "heading",
+          "text": "6. Advice for team players"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Value every teammate’s strengths.</strong> Everyone has\npositives and negatives. <strong>“What you appreciate,\nappreciates.”</strong> <em>(Example: tennis players <strong>Leander Paes\nand Mahesh Bhupathi</strong> were world number one as a\n<strong>pair</strong> — far higher than as single players.)</em></li>\n<li><strong>Before going to your manager:</strong> understand the\nproblem, your role, and the team’s shared goals. Don’t go just to\n<strong>complain</strong> — go with a <strong>possible\nsolution</strong>.</li>\n<li><strong>Talk to the teammate directly first.</strong> If someone is\nlagging behind, tell them yourself. Don’t let it grow and then complain\nto the boss — you’ll lose a teammate. Go together and report the\n<strong>status</strong>, not “this person is the problem”.</li>\n<li><strong>Be assertive.</strong> Assertiveness means being\n<strong>firm</strong>, speaking with <strong>conviction</strong> and\nfollowing your values — <strong>not</strong> being rude or\ndisrespectful.</li>\n<li>EI is a <strong>lifelong practice</strong> — and remember,\n<strong>others are there to support you</strong>.</li>\n</ul>",
+          "text": "Value every teammate’s strengths. Everyone has\npositives and negatives. “What you appreciate,\nappreciates.” (Example: tennis players Leander Paes\nand Mahesh Bhupathi were world number one as a pair — far higher than as single players.) Before going to your manager: understand the\nproblem, your role, and the team’s shared goals. Don’t go just to complain — go with a possible\nsolution . Talk to the teammate directly first. If someone is\nlagging behind, tell them yourself. Don’t let it grow and then complain\nto the boss — you’ll lose a teammate. Go together and report the status , not “this person is the problem”. Be assertive. Assertiveness means being firm , speaking with conviction and\nfollowing your values — not being rude or\ndisrespectful. EI is a lifelong practice — and remember, others are there to support you ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img13-assertive.webp",
+          "alt": "Assertive, not aggressive",
+          "caption": "Talk to your teammate directly,\nfirmly and kindly — before going to the boss."
+        },
+        {
+          "type": "subheading",
+          "text": "Movie recommendations"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Sivakumar recommends animated films about emotions, such as\n<em>Inside Out</em>, and especially <em>Up</em> — where an old man must\n<strong>let go</strong> of his beloved house to save himself and others.\n<strong>Letting go</strong> is part of emotional intelligence.</p>",
+          "text": "Prof. Sivakumar recommends animated films about emotions, such as Inside Out , and especially Up — where an old man must let go of his beloved house to save himself and others. Letting go is part of emotional intelligence."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your project partner hasn’t sent\nhis part. Instead of complaining to the professor, you message him:\n“Hey, we need your section by Thursday to submit on time. Are you stuck?\nCan I help?” Firm, kind and direct — that’s assertive.</p>\n</blockquote>",
+          "text": "Everyday example Your project partner hasn’t sent\nhis part. Instead of complaining to the professor, you message him:\n“Hey, we need your section by Thursday to submit on time. Are you stuck?\nCan I help?” Firm, kind and direct — that’s assertive."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Listen, appreciate, keep the door open,\ngo to people, and speak up firmly but kindly. <strong>Exam\nwords:</strong> heart of department, active listening, empathy, “sorry”,\nego, customer delight, appreciation, be present, different motivators,\npsychological safety, power to serve, assertiveness, letting go.</p>",
+          "text": "In one line: Listen, appreciate, keep the door open,\ngo to people, and speak up firmly but kindly. Exam\nwords: heart of department, active listening, empathy, “sorry”,\nego, customer delight, appreciation, be present, different motivators,\npsychological safety, power to serve, assertiveness, letting go."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy did Prof. Sivakumar rename “Head of Department” to “Heart of\nDepartment”?\n</summary>\nBecause he believes it is the heart that connects people and brings them\ntogether to face challenges and grow.\n</details>",
+          "text": "Why did Prof. Sivakumar rename “Head of Department” to “Heart of\nDepartment”? Because he believes it is the heart that connects people and brings them\ntogether to face challenges and grow."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat turned the client’s doubt into delight in Prof. Kartic’s “Knowledge\nTheme Park” example?\n</summary>\nListening deeper to the real concern, then letting the freshers\ncreatively present their knowledge directly to the client instead of\nslides.\n</details>",
+          "text": "What turned the client’s doubt into delight in Prof. Kartic’s “Knowledge\nTheme Park” example? Listening deeper to the real concern, then letting the freshers\ncreatively present their knowledge directly to the client instead of\nslides."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the difference between assertive and rude?\n</summary>\nAssertive means firm, speaking with conviction and following your\nvalues; it is not rude, impolite or disrespectful.\n</details>",
+          "text": "What is the difference between assertive and rude? Assertive means firm, speaking with conviction and following your\nvalues; it is not rude, impolite or disrespectful."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did the Dean do when students stopped coming to him?\n</summary>\nHe went to them — visiting hostels and emailing that he was also a\nfather, brother and son, and always there to listen.\n</details>",
+          "text": "What did the Dean do when students stopped coming to him? He went to them — visiting hostels and emailing that he was also a\nfather, brother and son, and always there to listen."
+        }
+      ]
+    },
+    {
+      "slug": "week-5-quick-revision",
+      "title": "Week 5 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Emotional intelligence and conflict\nmanagement in one page.</p>\n</blockquote>",
+          "text": "Start here Emotional intelligence and conflict\nmanagement in one page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-5/img14-week5-map.webp",
+          "alt": "Week 5 at a glance",
+          "caption": "EI, the 6Rs, Goleman’s five principles,\ntypes of conflict, five styles, EI applied."
+        },
+        {
+          "type": "heading",
+          "text": "Emotional intelligence"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Emotions</strong> are normal energy and messages; <strong>no\ngood or bad emotions</strong>.</li>\n<li><strong>EI</strong> = recognising, understanding and managing\n<strong>your own and others’</strong> emotions.</li>\n<li>Benefits: self-awareness, empathy, communication, decisions,\nconflict resolution, freedom from <strong>emotional baggage</strong>,\nhealth, leadership, productivity, job satisfaction. <strong>EQ often\ntrumps IQ.</strong></li>\n<li><strong>Viktor Frankl:</strong> between stimulus and response there\nis a <strong>space</strong> — our power to choose our response.</li>\n</ul>",
+          "text": "Emotions are normal energy and messages; no\ngood or bad emotions . EI = recognising, understanding and managing your own and others’ emotions. Benefits: self-awareness, empathy, communication, decisions,\nconflict resolution, freedom from emotional baggage ,\nhealth, leadership, productivity, job satisfaction. EQ often\ntrumps IQ. Viktor Frankl: between stimulus and response there\nis a space — our power to choose our response."
+        },
+        {
+          "type": "heading",
+          "text": "The 6R framework"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>R</th>\n<th>Key idea</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Recognise</strong></td>\n<td>Name the emotion and its trigger; check body sensations, energy,\nintensity (1–10).</td>\n</tr>\n<tr>\n<td><strong>Respect</strong></td>\n<td>Accept and express: “I am feeling angry / hurt.” Respect yours →\nrespect others’.</td>\n</tr>\n<tr>\n<td><strong>Rationalise</strong></td>\n<td>Process through journaling, talking, meditation, nature. Ask: what\nthoughts trigger it? How true are they?</td>\n</tr>\n<tr>\n<td><strong>Release</strong></td>\n<td>Let go of buried emotional baggage daily.</td>\n</tr>\n<tr>\n<td><strong>Response-able</strong></td>\n<td>Choose your response. <strong>Amygdala hijack</strong>:\nflight–fright–fight–freeze in ~6 seconds; hours to recover. Pause,\nwater, breathe, walk away.</td>\n</tr>\n<tr>\n<td><strong>Resilient</strong></td>\n<td>Be kind to yourself; carry lessons, not baggage.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "R Key idea Recognise Name the emotion and its trigger; check body sensations, energy,\nintensity (1–10). Respect Accept and express: “I am feeling angry / hurt.” Respect yours →\nrespect others’. Rationalise Process through journaling, talking, meditation, nature. Ask: what\nthoughts trigger it? How true are they? Release Let go of buried emotional baggage daily. Response-able Choose your response. Amygdala hijack :\nflight–fright–fight–freeze in ~6 seconds; hours to recover. Pause,\nwater, breathe, walk away. Resilient Be kind to yourself; carry lessons, not baggage."
+        },
+        {
+          "type": "heading",
+          "text": "Goleman’s five principles"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Self-awareness · Self-regulation · Motivation · Empathy ·\nSocial skills.</strong></p>",
+          "text": "Self-awareness · Self-regulation · Motivation · Empathy ·\nSocial skills."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Taj hotel: smile disarms anger; empathy for tired guests.</li>\n<li>10-hour train journey: anger turned into\n<strong>motivation</strong>. Anger = what you expect isn’t\nhappening.</li>\n<li>Dropped cricketer jogging at 6 a.m.; best players asleep by 9\np.m.</li>\n<li>Gandhi and Ramanujan turned hardship into purpose.</li>\n<li>Conflict is always there — accept it, don’t run from it.</li>\n</ul>",
+          "text": "Taj hotel: smile disarms anger; empathy for tired guests. 10-hour train journey: anger turned into motivation . Anger = what you expect isn’t\nhappening. Dropped cricketer jogging at 6 a.m.; best players asleep by 9\np.m. Gandhi and Ramanujan turned hardship into purpose. Conflict is always there — accept it, don’t run from it."
+        },
+        {
+          "type": "heading",
+          "text": "Types of conflict (within us)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Type</th>\n<th>Key idea</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Voices</strong></td>\n<td>Inner chatter vs inner voice of wisdom (head vs heart). Pause the\nreplay; journal.</td>\n</tr>\n<tr>\n<td><strong>Values</strong></td>\n<td>Be clear on values; don’t compromise them; find common ground.</td>\n</tr>\n<tr>\n<td><strong>Perspective</strong></td>\n<td>Different lenses; learn from differences; use spheres of\ncontrol.</td>\n</tr>\n<tr>\n<td><strong>Expectations</strong></td>\n<td>Of yourself and others. Talk openly; turn them into clear\nagreements.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Type Key idea Voices Inner chatter vs inner voice of wisdom (head vs heart). Pause the\nreplay; journal. Values Be clear on values; don’t compromise them; find common ground. Perspective Different lenses; learn from differences; use spheres of\ncontrol. Expectations Of yourself and others. Talk openly; turn them into clear\nagreements."
+        },
+        {
+          "type": "heading",
+          "text": "Conflict management\nstyles (Thomas–Kilmann)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Style</th>\n<th>Assertive</th>\n<th>Cooperative</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Avoiding</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Competing</td>\n<td>9</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Accommodating</td>\n<td>0</td>\n<td>9</td>\n</tr>\n<tr>\n<td>Compromising</td>\n<td>5</td>\n<td>5</td>\n</tr>\n<tr>\n<td><strong>Collaborating (best)</strong></td>\n<td>9</td>\n<td>9</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Style Assertive Cooperative Avoiding 0 0 Competing 9 0 Accommodating 0 9 Compromising 5 5 Collaborating (best) 9 9"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Outcomes: <strong>lose–lose</strong>, <strong>win–lose</strong>,\n<strong>win–win</strong> (best).</li>\n<li>Army: war gaming → operation order → carry it out as your own; self\nbecomes secondary.</li>\n<li>Ask <strong>“So what?”</strong> to test options.</li>\n</ul>",
+          "text": "Outcomes: lose–lose , win–lose , win–win (best). Army: war gaming → operation order → carry it out as your own; self\nbecomes secondary. Ask “So what?” to test options."
+        },
+        {
+          "type": "heading",
+          "text": "EI applied"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Heart of Department:</strong> chai time, open door, active\nlistening, say sorry, shelve ego.</li>\n<li><strong>Knowledge Theme Park:</strong> listen deeper; freshers\npresented creatively → customer <strong>delight</strong>.</li>\n<li><strong>Merger thank-you email:</strong> appreciate what is\nworking.</li>\n<li><strong>Kung Fu Panda:</strong> fire in the belly; be present; find\neach person’s motivator; it’s all in the mind.</li>\n<li><strong>Psychological safety:</strong> if people don’t come to you,\n<strong>go to them</strong> (Dean visiting hostels).</li>\n<li><strong>Team players:</strong> “what you appreciate, appreciates”;\ntalk to teammates directly first; bring solutions, not complaints; be\n<strong>assertive</strong> (firm, not rude).</li>\n</ul>",
+          "text": "Heart of Department: chai time, open door, active\nlistening, say sorry, shelve ego. Knowledge Theme Park: listen deeper; freshers\npresented creatively → customer delight . Merger thank-you email: appreciate what is\nworking. Kung Fu Panda: fire in the belly; be present; find\neach person’s motivator; it’s all in the mind. Psychological safety: if people don’t come to you, go to them (Dean visiting hostels). Team players: “what you appreciate, appreciates”;\ntalk to teammates directly first; bring solutions, not complaints; be assertive (firm, not rude)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>“I am feeling angry.” Which R is this?\n</li></ol></summary>\nRespect — accepting and expressing the emotion.\n</details>",
+          "text": "“I am feeling angry.” Which R is this? Respect — accepting and expressing the emotion."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Your mind goes blank before a speech and your heart races. What is\nthis called?\n</li></ol></summary>\nAn amygdala hijack (flight–fright–fight–freeze).\n</details>",
+          "text": "Your mind goes blank before a speech and your heart races. What is\nthis called? An amygdala hijack (flight–fright–fight–freeze)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Two people each give up half of what they wanted. Which conflict\nstyle is this?\n</li></ol></summary>\nCompromising (5,5).\n</details>",
+          "text": "Two people each give up half of what they wanted. Which conflict\nstyle is this? Compromising (5,5)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Your heart says “do music”, your head says “do engineering”. Which\nconflict is this?\n</li></ol></summary>\nConflict of voices (head vs heart / inner chatter vs inner voice of\nwisdom).\n</details>",
+          "text": "Your heart says “do music”, your head says “do engineering”. Which\nconflict is this? Conflict of voices (head vs heart / inner chatter vs inner voice of\nwisdom)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Which of Goleman’s principles means putting yourself in someone\nelse’s shoes?\n</li></ol></summary>\nEmpathy.\n</details>",
+          "text": "Which of Goleman’s principles means putting yourself in someone\nelse’s shoes? Empathy."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>What is the best conflict outcome?\n</li></ol></summary>\nWin–win.\n</details>",
+          "text": "What is the best conflict outcome? Win–win."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import data from '../../../data/spg-week-11.json';
+import WeekSections,{WeekStats} from '../../../components/WeekSections';
+export const metadata={title:'SPG Week 11 · Engineering sense'};
+export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span>/</span><a href="/spg/">SPG</a><span>/</span><span>Week 11</span></nav><div className="eyebrow">BSGN3001 · WEEK 11</div><h1>Think like an engineer.<br/><span>Solve everyday problems.</span></h1><p className="lead">Practise planning, estimation, auditing, abstraction, experimentation, and reflection through everyday examples.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><WeekSections data={data}/></main>}

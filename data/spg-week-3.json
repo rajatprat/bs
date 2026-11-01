@@ -1,0 +1,1401 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 3,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-3/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "why-and-whom-to-communicate",
+      "title": "Communication at Work — Why, Whom, Tone and Length",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> For 15 years at school, you heard “Keep\nquiet!” and “Don’t talk to your neighbour in the exam!” Then on your\nfirst job day, your boss says, “We need you to communicate more.”\nStrange, right? This page explains why the rules change at work.</p>\n</blockquote>",
+          "text": "Start here For 15 years at school, you heard “Keep\nquiet!” and “Don’t talk to your neighbour in the exam!” Then on your\nfirst job day, your boss says, “We need you to communicate more.”\nStrange, right? This page explains why the rules change at work."
+        },
+        {
+          "type": "heading",
+          "text": "School vs workplace"
+        },
+        {
+          "type": "html",
+          "html": "<p>At school and college, you mostly work <strong>alone</strong>: you\nand your exam paper, you and your assignment. You are often told\n<strong>not</strong> to communicate.</p>",
+          "text": "At school and college, you mostly work alone : you\nand your exam paper, you and your assignment. You are often told not to communicate."
+        },
+        {
+          "type": "html",
+          "html": "<p>At work, you do a <strong>part</strong> of a project. Other people do\nother parts. So you must <strong>communicate well</strong> with the\npeople around you.</p>",
+          "text": "At work, you do a part of a project. Other people do\nother parts. So you must communicate well with the\npeople around you."
+        },
+        {
+          "type": "html",
+          "html": "<p>This lecture covers eight topics:</p>",
+          "text": "This lecture covers eight topics:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Why communicate at all?</li>\n<li>Whom to communicate to — and whom <strong>not</strong> to</li>\n<li>Tone of communication</li>\n<li>Length of communication</li>\n<li>Sending emails</li>\n<li>Communicating with your manager</li>\n<li>Communicating with the team you lead</li>\n<li>Communicating with a customer</li>\n</ol>",
+          "text": "Why communicate at all? Whom to communicate to — and whom not to Tone of communication Length of communication Sending emails Communicating with your manager Communicating with the team you lead Communicating with a customer"
+        },
+        {
+          "type": "html",
+          "html": "<p>For each one, the lecture shows <strong>what to do</strong> (✓,\ngreen) and <strong>what not to do</strong> (✗, red).</p>",
+          "text": "For each one, the lecture shows what to do (✓,\ngreen) and what not to do (✗, red)."
+        },
+        {
+          "type": "html",
+          "html": "<p>None of this is difficult. It needs the <strong>right\nattitude</strong> and a sense of what is correct.</p>",
+          "text": "None of this is difficult. It needs the right\nattitude and a sense of what is correct."
+        },
+        {
+          "type": "heading",
+          "text": "1. Why communicate at all?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img01-four-reasons.webp",
+          "alt": "Four reasons to communicate",
+          "caption": "Share your input, get credit\nfor your work, raise issues, provide feedback."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Reason</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Share your input</strong></td>\n<td>The company hired you for your <strong>knowledge and\nexperience</strong>, not to sit like a doll. In meetings, they want your\nideas — for example, why a new app is less popular than a\ncompetitor’s.</td>\n</tr>\n<tr>\n<td><strong>Get credit for your work</strong></td>\n<td>If you improved something, people should <strong>know it was\nyou</strong>. Later, when the company gives new responsibilities, they\nremember your work.</td>\n</tr>\n<tr>\n<td><strong>Raise issues</strong></td>\n<td>If something is wrong in how the team works, or you face a special\nproblem, you must <strong>speak up</strong> about it.</td>\n</tr>\n<tr>\n<td><strong>Provide feedback</strong></td>\n<td>Your seniors give you feedback. You also give feedback — even on\nyour own manager. This is called <strong>upward feedback</strong> (or\nupward appraisal), and it is <strong>confidential</strong>. If you lead\na team, you give them feedback too.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Reason What it means Share your input The company hired you for your knowledge and\nexperience , not to sit like a doll. In meetings, they want your\nideas — for example, why a new app is less popular than a\ncompetitor’s. Get credit for your work If you improved something, people should know it was\nyou . Later, when the company gives new responsibilities, they\nremember your work. Raise issues If something is wrong in how the team works, or you face a special\nproblem, you must speak up about it. Provide feedback Your seniors give you feedback. You also give feedback — even on\nyour own manager. This is called upward feedback (or\nupward appraisal), and it is confidential . If you lead\na team, you give them feedback too."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Communication happens every minute, not just on Friday\nafternoon.</strong> And people are always forming an\n<strong>impression</strong> of you from it, even without trying:</p>",
+          "text": "Communication happens every minute, not just on Friday\nafternoon. And people are always forming an impression of you from it, even without trying:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>“Ask her — she explains things very well.”</li>\n<li>“Give this report to him — he writes it perfectly.”</li>\n</ul>",
+          "text": "“Ask her — she explains things very well.” “Give this report to him — he writes it perfectly.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>When top management brings <strong>investors</strong> to visit, they\nchoose the people who communicate well to explain the work. So\ncommunication has <strong>big career effects</strong>.</p>",
+          "text": "When top management brings investors to visit, they\nchoose the people who communicate well to explain the work. So\ncommunication has big career effects ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Why is it hard?</strong> We are used to chatting with\nfriends, family and on social media. Some of those habits are\n<strong>not okay at work</strong>. You need an <strong>inner\nfilter</strong> that stops casual habits from coming into the\noffice.</p>\n</blockquote>",
+          "text": "Why is it hard? We are used to chatting with\nfriends, family and on social media. Some of those habits are not okay at work . You need an inner\nfilter that stops casual habits from coming into the\noffice."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> At work you communicate to share ideas,\nget credit, raise issues and give feedback — and people judge you by it.\n<strong>Exam words:</strong> share your input, get credit, raise issues,\nprovide feedback, upward feedback.</p>",
+          "text": "In one line: At work you communicate to share ideas,\nget credit, raise issues and give feedback — and people judge you by it. Exam words: share your input, get credit, raise issues,\nprovide feedback, upward feedback."
+        },
+        {
+          "type": "heading",
+          "text": "2. Whom to communicate\nto — and whom not to"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the broken chair at “Wheelderness”</strong>\nYou join <strong>Wheelderness</strong>, the world leader in\n<strong>tyres</strong>. On day one, one wheel of your office chair is\nbroken.</p>\n<p>✗ <strong>Wrong:</strong> Email the <strong>CEO</strong>: “How can\nthe world leader in tyres have a broken chair wheel?” This is rude and\nshows <strong>poor judgment</strong>.</p>\n<p>✓ <strong>Right:</strong> Quietly ask your neighbour or the person\nwho showed you your desk: “Whom should I report this to? Email, call, or\na <strong>ticketing system</strong>?” Then use that process.</p>\n</blockquote>",
+          "text": "Lecture example — the broken chair at “Wheelderness” You join Wheelderness , the world leader in tyres . On day one, one wheel of your office chair is\nbroken. ✗ Wrong: Email the CEO : “How can\nthe world leader in tyres have a broken chair wheel?” This is rude and\nshows poor judgment . ✓ Right: Quietly ask your neighbour or the person\nwho showed you your desk: “Whom should I report this to? Email, call, or\na ticketing system ?” Then use that process."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img02-broken-chair.webp",
+          "alt": "Broken chair: right and wrong way",
+          "caption": "Don’t email the CEO about\na broken chair. Ask, then use the right process."
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>ticketing system</strong> records your complaint with a\ndate and time. It goes to the right person. When the job is done, the\nticket is <strong>closed</strong>.</p>",
+          "text": "A ticketing system records your complaint with a\ndate and time. It goes to the right person. When the job is done, the\nticket is closed ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Using the right process shows that you are: -\n<strong>systematic</strong> - willing to spend a little time to\n<strong>learn the process</strong> - not someone who acts\n<strong>wildly</strong></p>",
+          "text": "Using the right process shows that you are: - systematic - willing to spend a little time to learn the process - not someone who acts wildly"
+        },
+        {
+          "type": "html",
+          "html": "<p>Remember: your communication is used to judge your\n<strong>judgment</strong> — “If I give this person a new situation, will\nthey act sensibly?”</p>",
+          "text": "Remember: your communication is used to judge your judgment — “If I give this person a new situation, will\nthey act sensibly?”"
+        },
+        {
+          "type": "html",
+          "html": "<p>Also decide whom <strong>not</strong> to contact. Sending a message\nto the wrong person <strong>wastes their time</strong>.</p>",
+          "text": "Also decide whom not to contact. Sending a message\nto the wrong person wastes their time ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Find the right person and the right\nprocess before you send a message. <strong>Exam words:</strong>\njudgment, right person, ticketing system, process.</p>",
+          "text": "In one line: Find the right person and the right\nprocess before you send a message. Exam words: judgment, right person, ticketing system, process."
+        },
+        {
+          "type": "heading",
+          "text": "3. Tone of communication:\npolite, please!"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Always be polite</strong>, whatever the situation.</p>",
+          "text": "Always be polite , whatever the situation."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example 1 — HR reply about housing</strong></p>",
+          "text": "Example 1 — HR reply about housing"
+        },
+        {
+          "type": "html",
+          "html": "<p>A new employee asks HR for help finding a place to stay in a new\ncity.</p>",
+          "text": "A new employee asks HR for help finding a place to stay in a new\ncity."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“We do not provide accommodation. See the local newspapers for\nvacancies.”</td>\n<td>“We regret that we are unable to provide accommodation to you.\nHowever, we will share a few relevant contacts with you. Please get in\ntouch with them to make suitable arrangements.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do “We do not provide accommodation. See the local newspapers for\nvacancies.” “We regret that we are unable to provide accommodation to you.\nHowever, we will share a few relevant contacts with you. Please get in\ntouch with them to make suitable arrangements.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>The first reply may be <strong>true</strong>, but it sounds\n<strong>dismissive</strong> (“That’s your problem”). The second gives\nthe same fact, politely, and <strong>helps</strong>.</p>",
+          "text": "The first reply may be true , but it sounds dismissive (“That’s your problem”). The second gives\nthe same fact, politely, and helps ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example 2 — a confusing message</strong></p>",
+          "text": "Example 2 — a confusing message"
+        },
+        {
+          "type": "html",
+          "html": "<p>Someone writes that your request will be solved “if documents are\nfound in order”, and you don’t understand.</p>",
+          "text": "Someone writes that your request will be solved “if documents are\nfound in order”, and you don’t understand."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“What do you mean by ‘if found in order’? Don’t you know how to\nwrite in simple language?”</td>\n<td>“I was unable to understand the message. I request you to please\nclarify what needs to be done.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do “What do you mean by ‘if found in order’? Don’t you know how to\nwrite in simple language?” “I was unable to understand the message. I request you to please\nclarify what needs to be done.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>The good reply is <strong>not even longer</strong>. It is just\npolite.</p>",
+          "text": "The good reply is not even longer . It is just\npolite."
+        },
+        {
+          "type": "html",
+          "html": "<p>Why does it matter? Managers get <strong>many</strong> emails. A\npolite message lets them reply <strong>without losing their\ncalm</strong>. Your work gets done and nobody is upset.</p>",
+          "text": "Why does it matter? Managers get many emails. A\npolite message lets them reply without losing their\ncalm . Your work gets done and nobody is upset."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your hostel warden replies late to\nyour leave request. Instead of “Why are you so slow?!”, write: “Sir, I\nhave not received a reply on my leave request yet. Could you please let\nme know the status?” Same request — but now he wants to help you.</p>\n</blockquote>",
+          "text": "Everyday example Your hostel warden replies late to\nyour leave request. Instead of “Why are you so slow?!”, write: “Sir, I\nhave not received a reply on my leave request yet. Could you please let\nme know the status?” Same request — but now he wants to help you."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Even a true fact sounds rude if it is\nsaid in a dismissive way — always be polite. <strong>Exam\nwords:</strong> polite tone, dismissive, professional.</p>",
+          "text": "In one line: Even a true fact sounds rude if it is\nsaid in a dismissive way — always be polite. Exam\nwords: polite tone, dismissive, professional."
+        },
+        {
+          "type": "heading",
+          "text": "4. Length of\ncommunication: be efficient"
+        },
+        {
+          "type": "html",
+          "html": "<p>At work, there is a lot of communication. So your message must be\n<strong>efficient</strong>. You are not writing a story.</p>",
+          "text": "At work, there is a lot of communication. So your message must be efficient . You are not writing a story."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t (long and wrong)</th>\n<th>✓ Do (short and right)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“As we all know, education forms one of the pillars of success. I\nhave been focussed on accumulating a good quality education… In\naddition, since I am also involved in an electric car project, this has\nrequired me to travel for a contest. The last date for the registration\nwas in the middle of the contest and I missed it <strong>for no fault of\nmine</strong>. <strong>The institute needs to have a flexible\npolicy</strong>… <strong>register me for the course now</strong>.”</td>\n<td>“I need to register for the course, but missed the last date due to\nan official activity at the same time. I request you to let me know the\nprocedure for late registration.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t (long and wrong) ✓ Do (short and right) “As we all know, education forms one of the pillars of success. I\nhave been focussed on accumulating a good quality education… In\naddition, since I am also involved in an electric car project, this has\nrequired me to travel for a contest. The last date for the registration\nwas in the middle of the contest and I missed it for no fault of\nmine . The institute needs to have a flexible\npolicy … register me for the course now .” “I need to register for the course, but missed the last date due to\nan official activity at the same time. I request you to let me know the\nprocedure for late registration.”"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img03-long-vs-short.webp",
+          "alt": "Long message vs short message",
+          "caption": "A long story hides the\nrequest. Two clear sentences get a quick reply."
+        },
+        {
+          "type": "html",
+          "html": "<p>What is wrong with the long one?</p>",
+          "text": "What is wrong with the long one?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Wasted build-up:</strong> “Education is a pillar of\nsuccess…” may be true, but it adds nothing to the request.</li>\n<li><strong>Blame game:</strong> “For no fault of mine” — blames the\ninstitute.</li>\n<li><strong>Preaching:</strong> “The institute needs a flexible policy”\n— as if you know better.</li>\n<li><strong>Blunt order:</strong> “Register me for the course now.”</li>\n</ul>",
+          "text": "Wasted build-up: “Education is a pillar of\nsuccess…” may be true, but it adds nothing to the request. Blame game: “For no fault of mine” — blames the\ninstitute. Preaching: “The institute needs a flexible policy”\n— as if you know better. Blunt order: “Register me for the course now.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>The short one says only: <strong>what happened</strong>,\n<strong>why</strong> (an official activity), and <strong>what you\nneed</strong>.</p>",
+          "text": "The short one says only: what happened , why (an official activity), and what you\nneed ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Say the issue and what you need in two\nor three clear sentences. <strong>Exam words:</strong> efficient\ncommunication, no build-up, no blaming, no preaching.</p>",
+          "text": "In one line: Say the issue and what you need in two\nor three clear sentences. Exam words: efficient\ncommunication, no build-up, no blaming, no preaching."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four reasons to communicate at work.\n</summary>\nShare your input, get credit for your work, raise issues, provide\nfeedback.\n</details>",
+          "text": "Name the four reasons to communicate at work. Share your input, get credit for your work, raise issues, provide\nfeedback."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn the Wheelderness example, what should you do about the broken chair?\n</summary>\nAsk a colleague whom to report it to and how (email, call or ticketing\nsystem), then use that process. Do not email the CEO.\n</details>",
+          "text": "In the Wheelderness example, what should you do about the broken chair? Ask a colleague whom to report it to and how (email, call or ticketing\nsystem), then use that process. Do not email the CEO."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat three mistakes did the long course-registration message make, apart\nfrom length?\n</summary>\nBlaming (“no fault of mine”), preaching (telling the institute to change\nits policy), and a blunt order (“register me now”).\n</details>",
+          "text": "What three mistakes did the long course-registration message make, apart\nfrom length? Blaming (“no fault of mine”), preaching (telling the institute to change\nits policy), and a blunt order (“register me now”)."
+        }
+      ]
+    },
+    {
+      "slug": "emails-manager-team-customer",
+      "title": "Emails, Your Manager, Your Team and Customers",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You can see the email ID of every person\nin your company — even the CEO’s. Does that mean you should copy them\nall? No! One wrong “To:” list can tell everyone that you have poor\njudgment.</p>\n</blockquote>",
+          "text": "Start here You can see the email ID of every person\nin your company — even the CEO’s. Does that mean you should copy them\nall? No! One wrong “To:” list can tell everyone that you have poor\njudgment."
+        },
+        {
+          "type": "heading",
+          "text": "5. Sending emails"
+        },
+        {
+          "type": "html",
+          "html": "<p>Email is one of the <strong>main ways</strong> to communicate at\nwork. Follow three rules.</p>",
+          "text": "Email is one of the main ways to communicate at\nwork. Follow three rules."
+        },
+        {
+          "type": "subheading",
+          "text": "Rule 1:\nCarefully decide the list of recipients"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Recipients</strong> are the people you send the email to.</p>",
+          "text": "Recipients are the people you send the email to."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Send the message to <strong>every higher authority</strong> whose\nemail ID you can find.</td>\n<td>Take the time to find the <strong>appropriate person</strong>, and\nsend it <strong>only to them</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do Send the message to every higher authority whose\nemail ID you can find. Take the time to find the appropriate person , and\nsend it only to them ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img04-recipients.webp",
+          "alt": "Choosing the right recipient",
+          "caption": "Wrong: send to everyone up to\nthe CEO. Right: find the one correct person."
+        },
+        {
+          "type": "html",
+          "html": "<p>Just because an email ID is easy to add does <strong>not</strong>\nmean it is correct to add it. Sending to everyone shows <strong>very\npoor judgment</strong>, and that impression <strong>sticks</strong> to\nyou.</p>",
+          "text": "Just because an email ID is easy to add does not mean it is correct to add it. Sending to everyone shows very\npoor judgment , and that impression sticks to\nyou."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — course registration problem</strong> A\nuniversity has many wings: research, academics, hostel, food,\nmaintenance and more. A course registration problem should go to the\n<strong>academic</strong> person who handles it — not to the hostel, not\nto the food team, and not straight to the director.</p>\n</blockquote>",
+          "text": "Lecture example — course registration problem A\nuniversity has many wings: research, academics, hostel, food,\nmaintenance and more. A course registration problem should go to the academic person who handles it — not to the hostel, not\nto the food team, and not straight to the director."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Escalation</strong> — if the right person does not reply: 1.\nWait some time. 2. Send a <strong>reminder</strong>. 3. If it is urgent,\nwrite to the <strong>next higher</strong> person: “Sir/Madam, I tried\nreaching X, but I am running out of time. I request you to please\nintervene.”</p>",
+          "text": "Escalation — if the right person does not reply: 1.\nWait some time. 2. Send a reminder . 3. If it is urgent,\nwrite to the next higher person: “Sir/Madam, I tried\nreaching X, but I am running out of time. I request you to please\nintervene.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>This shows you used <strong>good judgment</strong> first.</p>",
+          "text": "This shows you used good judgment first."
+        },
+        {
+          "type": "subheading",
+          "text": "Rule 2:\nFormal emails are not social media messages"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Use <strong>emojis</strong> and <strong>abbreviations</strong>\nfreely</td>\n<td>Write <strong>complete sentences</strong> and convey ideas\n<strong>without scope for misunderstanding</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do Use emojis and abbreviations freely Write complete sentences and convey ideas without scope for misunderstanding"
+        },
+        {
+          "type": "html",
+          "html": "<p>Complete sentences does <strong>not</strong> mean long paragraphs.\nWrite <strong>3–4 clear sentences</strong>, not 4–5 words with an\nemoji.</p>",
+          "text": "Complete sentences does not mean long paragraphs.\nWrite 3–4 clear sentences , not 4–5 words with an\nemoji."
+        },
+        {
+          "type": "subheading",
+          "text": "Rule 3: Formal\nemails need to be well structured"
+        },
+        {
+          "type": "html",
+          "html": "<p>Social media has made us <strong>impatient</strong>: 5-second videos,\nhalf-sentence messages. Don’t bring that habit into formal emails.</p>",
+          "text": "Social media has made us impatient : 5-second videos,\nhalf-sentence messages. Don’t bring that habit into formal emails."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(to the Dean) “Where can I get library card?”</td>\n<td>Dear Sir/Madam,<br/>I am new to campus and am unable to access the\nlibrary. Please let me know the procedure to get a library\ncard.<br/>Regards,<br/>Name and Roll number</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do (to the Dean) “Where can I get library card?” Dear Sir/Madam, I am new to campus and am unable to access the\nlibrary. Please let me know the procedure to get a library\ncard. Regards, Name and Roll number"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img05-email-structure.webp",
+          "alt": "Structure of a formal email",
+          "caption": "Greeting, situation, request,\nsign-off with your name."
+        },
+        {
+          "type": "html",
+          "html": "<p>A good email has: 1. a <strong>greeting</strong> (Dear Sir/Madam,\nDear Professor …) 2. your <strong>situation</strong> (why you are asking\n— “I am new to campus”) 3. your <strong>request</strong> (“Please let me\nknow the procedure…”) 4. a <strong>sign-off</strong> with your name and\nID (Regards, Name, Roll number)</p>",
+          "text": "A good email has: 1. a greeting (Dear Sir/Madam,\nDear Professor …) 2. your situation (why you are asking\n— “I am new to campus”) 3. your request (“Please let me\nknow the procedure…”) 4. a sign-off with your name and\nID (Regards, Name, Roll number)"
+        },
+        {
+          "type": "html",
+          "html": "<p>A one-line email without structure feels <strong>rude</strong>.</p>",
+          "text": "A one-line email without structure feels rude ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Send emails only to the right person,\nin complete sentences, with a greeting, situation, request and sign-off.\n<strong>Exam words:</strong> list of recipients, escalation, reminder,\ncomplete sentences, no emojis, well structured.</p>",
+          "text": "In one line: Send emails only to the right person,\nin complete sentences, with a greeting, situation, request and sign-off. Exam words: list of recipients, escalation, reminder,\ncomplete sentences, no emojis, well structured."
+        },
+        {
+          "type": "heading",
+          "text": "6. Communicating with your\nmanager"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Formal emails should stay formal.</strong></p>",
+          "text": "Formal emails should stay formal."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Fill messages with <strong>personal comments about people</strong>\n(“he is temperamental”, “she talks too much”)</td>\n<td>Give <strong>clear reports</strong> of <strong>work done</strong>\nand a <strong>projection</strong> of what to expect next</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do Fill messages with personal comments about people (“he is temperamental”, “she talks too much”) Give clear reports of work done and a projection of what to expect next"
+        },
+        {
+          "type": "html",
+          "html": "<p>Office communication is <strong>not for gossip</strong>. You are not\nthere to judge others.</p>",
+          "text": "Office communication is not for gossip . You are not\nthere to judge others."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the 4 o’clock report</strong> “As discussed\nyesterday, I tested our product at the setting we decided, one setting\nhigher and one setting lower. Please find the graph attached. It works\nwell at the decided and higher settings, but not at the lower setting.\n<strong>My plan for tomorrow:</strong> change two components that I\nbelieve are causing the problem, test again at the low setting, and\nupdate you.”</p>\n</blockquote>",
+          "text": "Lecture example — the 4 o’clock report “As discussed\nyesterday, I tested our product at the setting we decided, one setting\nhigher and one setting lower. Please find the graph attached. It works\nwell at the decided and higher settings, but not at the lower setting. My plan for tomorrow: change two components that I\nbelieve are causing the problem, test again at the low setting, and\nupdate you.”"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img06-daily-report.webp",
+          "alt": "A clear daily report",
+          "caption": "Today’s result, one graph, tomorrow’s\nplan."
+        },
+        {
+          "type": "html",
+          "html": "<p>A busy manager can read this in a minute and know exactly where\nthings stand.</p>",
+          "text": "A busy manager can read this in a minute and know exactly where\nthings stand."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Tell your manager what you did and what\nyou will do next — no personal comments. <strong>Exam words:</strong>\nformal, no personal comments, clear report, work done, projection.</p>",
+          "text": "In one line: Tell your manager what you did and what\nyou will do next — no personal comments. Exam words: formal, no personal comments, clear report, work done, projection."
+        },
+        {
+          "type": "heading",
+          "text": "7. Communicating with the\nteam you lead"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Believe that <strong>fiery</strong> (angry, harsh) messages make\npeople <strong>work better</strong></td>\n<td>Set <strong>clear expectations</strong> and\n<strong>deadlines</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do Believe that fiery (angry, harsh) messages make\npeople work better Set clear expectations and deadlines"
+        },
+        {
+          "type": "html",
+          "html": "<p>Some managers think being rude and scary makes people work harder. It\nmay work in the <strong>short run</strong>, because people fear losing\ntheir job. But in the <strong>long run</strong>, it\n<strong>damages</strong> the team and the organisation.</p>",
+          "text": "Some managers think being rude and scary makes people work harder. It\nmay work in the short run , because people fear losing\ntheir job. But in the long run , it damages the team and the organisation."
+        },
+        {
+          "type": "html",
+          "html": "<p>Instead, say clearly what you need and by when. For example: “Your\nreport was not clear. In two lines, tell me what you did today and what\nyou plan for tomorrow. Please send it within the next hour.”</p>",
+          "text": "Instead, say clearly what you need and by when. For example: “Your\nreport was not clear. In two lines, tell me what you did today and what\nyou plan for tomorrow. Please send it within the next hour.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Lead with clear expectations and\ndeadlines, not fear. <strong>Exam words:</strong> fiery messages, short\nterm vs long term, clear expectations, deadlines.</p>",
+          "text": "In one line: Lead with clear expectations and\ndeadlines, not fear. Exam words: fiery messages, short\nterm vs long term, clear expectations, deadlines."
+        },
+        {
+          "type": "heading",
+          "text": "8. Communicating with a\ncustomer"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Be the service you would like to see.</strong> Think of how\nyou feel as a customer — a late flight, a rude taxi driver, cold food,\ntorn cinema seats. You already know what good and bad service feels\nlike.</p>",
+          "text": "Be the service you would like to see. Think of how\nyou feel as a customer — a late flight, a rude taxi driver, cold food,\ntorn cinema seats. You already know what good and bad service feels\nlike."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Argue</strong> with the customer, since it is important to\n<strong>win</strong> arguments</td>\n<td>Be <strong>clear</strong> on what you can do for the customer, and\ndo it <strong>politely</strong>. Be <strong>careful what you\nwrite</strong>, since you are <strong>representing an\norganisation</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do Argue with the customer, since it is important to win arguments Be clear on what you can do for the customer, and\ndo it politely . Be careful what you\nwrite , since you are representing an\norganisation ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Show that you <strong>understand</strong> the customer’s problem.\nThis does not mean you blindly agree.</li>\n<li>If you cannot help, say sorry clearly. Some companies even let you\n<strong>suggest another option</strong>, even a competitor — it depends\non your <strong>organisation’s culture</strong>.</li>\n<li><strong>Never</strong> send rude, dismissive or abusive messages.\nThat is why customer calls are “recorded for quality purposes”.</li>\n</ul>",
+          "text": "Show that you understand the customer’s problem.\nThis does not mean you blindly agree. If you cannot help, say sorry clearly. Some companies even let you suggest another option , even a competitor — it depends\non your organisation’s culture . Never send rude, dismissive or abusive messages.\nThat is why customer calls are “recorded for quality purposes”."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img07-customer-service.webp",
+          "alt": "Be the service you would like to see",
+          "caption": "Don’t argue to win.\nUnderstand, be clear and polite."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Treat customers the way you like to be\ntreated, because you represent your organisation. <strong>Exam\nwords:</strong> be the service you would like to see, don’t argue, be\nclear, be polite, representing an organisation.</p>",
+          "text": "In one line: Treat customers the way you like to be\ntreated, because you represent your organisation. Exam\nwords: be the service you would like to see, don’t argue, be\nclear, be polite, representing an organisation."
+        },
+        {
+          "type": "heading",
+          "text": "Summary of the lecture"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Communication is about the message and about you.</strong>\n“My chair is broken” sent to the right person, the right way, also says:\ngood judgment, patient, does homework.</li>\n<li><strong>Your organisation is impacted by your\ncommunication.</strong> Companies work with many partners. Good\ncommunication gets the product out on time — and partners may even\npraise you to your CEO.</li>\n<li><strong>Your career is impacted by your communication.</strong>\nPeople remember: “Preety’s updates are always clear.”</li>\n</ol>",
+          "text": "Communication is about the message and about you. “My chair is broken” sent to the right person, the right way, also says:\ngood judgment, patient, does homework. Your organisation is impacted by your\ncommunication. Companies work with many partners. Good\ncommunication gets the product out on time — and partners may even\npraise you to your CEO. Your career is impacted by your communication. People remember: “Preety’s updates are always clear.”"
+        },
+        {
+          "type": "html",
+          "html": "<p>But communication cannot replace work. If someone (like “Rakesh”)\nwrites beautiful messages but does no real work, people find out.\n<strong>Do good work, and communicate it well.</strong></p>",
+          "text": "But communication cannot replace work. If someone (like “Rakesh”)\nwrites beautiful messages but does no real work, people find out. Do good work, and communicate it well."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “escalation” in email communication?\n</summary>\nIf the right person does not respond, you wait, send a reminder, and if\nurgent, write to the next higher person explaining that you tried the\nright person first.\n</details>",
+          "text": "What is “escalation” in email communication? If the right person does not respond, you wait, send a reminder, and if\nurgent, write to the next higher person explaining that you tried the\nright person first."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat should a report to your manager contain?\n</summary>\nA clear report of work done and a projection of what to expect next\n(your plan) — and no personal comments about people.\n</details>",
+          "text": "What should a report to your manager contain? A clear report of work done and a projection of what to expect next\n(your plan) — and no personal comments about people."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy are fiery messages a bad way to lead a team?\n</summary>\nThey may give short-term results through fear, but in the long run they\ndamage the team and the organisation.\n</details>",
+          "text": "Why are fiery messages a bad way to lead a team? They may give short-term results through fear, but in the long run they\ndamage the team and the organisation."
+        }
+      ]
+    },
+    {
+      "slug": "presentation-setting-and-constraints",
+      "title": "Professional Presentation — Setting and Constraints",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You prepared 20 minutes of slides. You\nwalk on stage. Your manager whispers, “The CEO has only 10 minutes now.”\nCan you still deliver your message? This page shows how to be ready.</p>\n</blockquote>",
+          "text": "Start here You prepared 20 minutes of slides. You\nwalk on stage. Your manager whispers, “The CEO has only 10 minutes now.”\nCan you still deliver your message? This page shows how to be ready."
+        },
+        {
+          "type": "html",
+          "html": "<p>You may do a lot of work at your desk — experiments, data, analysis.\nBut it all <strong>comes together in your presentation</strong>. It\ndecides how your organisation sees you.</p>",
+          "text": "You may do a lot of work at your desk — experiments, data, analysis.\nBut it all comes together in your presentation . It\ndecides how your organisation sees you."
+        },
+        {
+          "type": "heading",
+          "text": "Use an outline"
+        },
+        {
+          "type": "html",
+          "html": "<p>The lecture follows its own advice. It starts with an\n<strong>outline</strong> (a list of parts of the talk):</p>",
+          "text": "The lecture follows its own advice. It starts with an outline (a list of parts of the talk):"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Professional presentation — <strong>setting</strong></li>\n<li><strong>Constraints</strong></li>\n<li><strong>Connecting</strong> with your audience</li>\n<li><strong>Illustrations</strong></li>\n<li><strong>Summary</strong></li>\n</ol>",
+          "text": "Professional presentation — setting Constraints Connecting with your audience Illustrations Summary"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img08-outline-tracker.webp",
+          "alt": "Outline that shows where you are",
+          "caption": "Show the outline again\nduring the talk and highlight the current part."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Show the outline again</strong> at each new part, with the\ncurrent part highlighted. This tells the audience <strong>where you\nare</strong> in the talk.</p>",
+          "text": "Show the outline again at each new part, with the\ncurrent part highlighted. This tells the audience where you\nare in the talk."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Some packages show <strong>tabs at the top or bottom</strong> of\neach slide. This uses little space — good.</li>\n<li>A tab list on the <strong>side</strong> of the slide takes too much\nspace.</li>\n<li>The professor prefers <strong>not</strong> to show slide numbers —\npeople keep reading them and get distracted.</li>\n</ul>",
+          "text": "Some packages show tabs at the top or bottom of\neach slide. This uses little space — good. A tab list on the side of the slide takes too much\nspace. The professor prefers not to show slide numbers —\npeople keep reading them and get distracted."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Start with an outline and keep showing\nwhere you are in it. <strong>Exam words:</strong> outline, show\nprogress.</p>",
+          "text": "In one line: Start with an outline and keep showing\nwhere you are in it. Exam words: outline, show\nprogress."
+        },
+        {
+          "type": "heading",
+          "text": "Part 1: The\nsetting of a professional presentation"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>professional presentation</strong> happens in your\norganisation, in front of customers, to sell a product, or to get\nfunding.</p>",
+          "text": "A professional presentation happens in your\norganisation, in front of customers, to sell a product, or to get\nfunding."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Four points from the slide:</strong></p>",
+          "text": "Four points from the slide:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Point</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Primarily a “serious” activity</strong></td>\n<td>You can relax a little and tell a joke, but don’t overdo humour or\nmake fun of your own talk.</td>\n</tr>\n<tr>\n<td><strong>Likely you are being evaluated</strong></td>\n<td>For a promotion, by a customer or competition jury, or by investors.\nEven in a normal meeting, seniors are quietly judging: “Can this person\nlead the next project?”</td>\n</tr>\n<tr>\n<td><strong>Reporting a status</strong></td>\n<td>For example, a weekly meeting where you tell what happened.</td>\n</tr>\n<tr>\n<td><strong>Conveying an idea</strong></td>\n<td>You suggest a new direction and explain <strong>why</strong> it is a\ngood idea.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Point What it means Primarily a “serious” activity You can relax a little and tell a joke, but don’t overdo humour or\nmake fun of your own talk. Likely you are being evaluated For a promotion, by a customer or competition jury, or by investors.\nEven in a normal meeting, seniors are quietly judging: “Can this person\nlead the next project?” Reporting a status For example, a weekly meeting where you tell what happened. Conveying an idea You suggest a new direction and explain why it is a\ngood idea."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Four more points:</strong></p>",
+          "text": "Four more points:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Point</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>An event that can be repeated</strong></td>\n<td>The same talk may be given to your team, then to senior managers,\nthen to investors — with changes.</td>\n</tr>\n<tr>\n<td><strong>Structure based on organisation or event</strong></td>\n<td>Some companies fix the format: “Only 5 slides with these titles”, or\neven “One slide with four boxes”. Big events (like an off-site meeting)\nmay need a grand overview.</td>\n</tr>\n<tr>\n<td><strong>Interactive</strong></td>\n<td>Questions may come at the end, or you may say “Please interrupt me\nif anything is unclear.”</td>\n</tr>\n<tr>\n<td><strong>Specific audience each time</strong></td>\n<td>Your own team knows the graph — just give the result. Senior\nmanagement or the <strong>press</strong> need more explanation.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Point What it means An event that can be repeated The same talk may be given to your team, then to senior managers,\nthen to investors — with changes. Structure based on organisation or event Some companies fix the format: “Only 5 slides with these titles”, or\neven “One slide with four boxes”. Big events (like an off-site meeting)\nmay need a grand overview. Interactive Questions may come at the end, or you may say “Please interrupt me\nif anything is unclear.” Specific audience each time Your own team knows the graph — just give the result. Senior\nmanagement or the press need more explanation."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — same graph, different audience</strong> To\nyour own team: “At this value we got a good result.” Done. To the press\nand public: explain what the graph shows, what “line going up” means,\nand why it matters to them.</p>\n</blockquote>",
+          "text": "Lecture example — same graph, different audience To\nyour own team: “At this value we got a good result.” Done. To the press\nand public: explain what the graph shows, what “line going up” means,\nand why it matters to them."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> A professional presentation is serious,\noften evaluated, and must fit the event and the audience. <strong>Exam\nwords:</strong> serious activity, evaluated, reporting status, conveying\nan idea, repeated event, interactive, specific audience.</p>",
+          "text": "In one line: A professional presentation is serious,\noften evaluated, and must fit the event and the audience. Exam\nwords: serious activity, evaluated, reporting status, conveying\nan idea, repeated event, interactive, specific audience."
+        },
+        {
+          "type": "heading",
+          "text": "Part 2: Constraints"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Constraints</strong> are limits that shape your presentation.\nThere are two big ones.</p>",
+          "text": "Constraints are limits that shape your presentation.\nThere are two big ones."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img09-constraints.webp",
+          "alt": "Two constraints: audience and duration",
+          "caption": "Audience (seniority\nand purpose) and duration shape every presentation."
+        },
+        {
+          "type": "subheading",
+          "text": "Constraint 1:\nAudience — seniority and purpose"
+        },
+        {
+          "type": "html",
+          "html": "<p>Think about the audience’s <strong>background</strong>: business\npeople, investment bankers, general public, your technical team, senior\nmanagement, or school children?</p>",
+          "text": "Think about the audience’s background : business\npeople, investment bankers, general public, your technical team, senior\nmanagement, or school children?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Even school children differ. A <strong>rural</strong> school and a\n<strong>big-city</strong> school have different experiences. The same\ntopic needs different talks.</li>\n<li>Your audience <strong>invests time</strong> too. 50 people × half an\nhour = <strong>25 hours</strong> of total time. Don’t waste it.</li>\n<li>People won’t remember every slide. They remember <strong>one strong\npoint</strong> or an interesting story. Make sure that point is\nclear.</li>\n</ul>",
+          "text": "Even school children differ. A rural school and a big-city school have different experiences. The same\ntopic needs different talks. Your audience invests time too. 50 people × half an\nhour = 25 hours of total time. Don’t waste it. People won’t remember every slide. They remember one strong\npoint or an interesting story. Make sure that point is\nclear."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Seniority and purpose:</strong> Senior people may need\ninformation to <strong>make a decision</strong>. New employees may need\nyou to <strong>teach</strong> them. Being evaluated and teaching are\n<strong>very different purposes</strong>.</p>",
+          "text": "Seniority and purpose: Senior people may need\ninformation to make a decision . New employees may need\nyou to teach them. Being evaluated and teaching are very different purposes ."
+        },
+        {
+          "type": "subheading",
+          "text": "Constraint\n2: Duration — very important in a professional setting"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is perhaps the <strong>most important</strong> point.\nProfessionals are very <strong>time-conscious</strong>.</p>",
+          "text": "This is perhaps the most important point.\nProfessionals are very time-conscious ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>When you finish, <strong>nobody should feel you wasted their\ntime</strong>.</li>\n<li>You may be given 20 minutes, then told on stage “only 10 minutes”.\n<strong>Speaking faster is not the answer.</strong></li>\n<li>Know your work so well that you can <strong>quickly choose</strong>\nwhat to keep and what to drop.</li>\n<li>You should be able to explain your work in <strong>2, 5, 10 or 20\nminutes</strong>.</li>\n</ul>",
+          "text": "When you finish, nobody should feel you wasted their\ntime . You may be given 20 minutes, then told on stage “only 10 minutes”. Speaking faster is not the answer. Know your work so well that you can quickly choose what to keep and what to drop. You should be able to explain your work in 2, 5, 10 or 20\nminutes ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Respecting time is how you show <strong>respect</strong> for your\naudience.</p>",
+          "text": "Respecting time is how you show respect for your\naudience."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your friend asks, “How was your\ntrip?” In the lift, you say: “Amazing — saw the sea for the first time!”\n(10 seconds). Over dinner, you tell the whole story (20 minutes). Same\ntrip, different duration. Presentations work the same way.</p>\n</blockquote>",
+          "text": "Everyday example Your friend asks, “How was your\ntrip?” In the lift, you say: “Amazing — saw the sea for the first time!”\n(10 seconds). Over dinner, you tell the whole story (20 minutes). Same\ntrip, different duration. Presentations work the same way."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Fit your talk to who is listening and\nhow much time you have. <strong>Exam words:</strong> constraints,\naudience, seniority, purpose, duration, time-conscious.</p>",
+          "text": "In one line: Fit your talk to who is listening and\nhow much time you have. Exam words: constraints,\naudience, seniority, purpose, duration, time-conscious."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy should you repeat the outline slide during a talk?\n</summary>\nTo show the audience where you are in the presentation.\n</details>",
+          "text": "Why should you repeat the outline slide during a talk? To show the audience where you are in the presentation."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName two constraints on a professional presentation.\n</summary>\nAudience (seniority and purpose) and duration.\n</details>",
+          "text": "Name two constraints on a professional presentation. Audience (seniority and purpose) and duration."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYou are told your 20-minute slot is now 10 minutes. What should you NOT\ndo?\n</summary>\nJust speak faster. Instead, quickly choose the most important points and\ndrop the rest.\n</details>",
+          "text": "You are told your 20-minute slot is now 10 minutes. What should you NOT\ndo? Just speak faster. Instead, quickly choose the most important points and\ndrop the rest."
+        }
+      ]
+    },
+    {
+      "slug": "presentation-audience-and-illustrations",
+      "title": "Professional Presentation — Connecting, Illustrations and Summary",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A slide full of tiny text, read out word\nby word — everyone has suffered through one. This page shows how to\nconnect with your audience instead, and how to choose the right picture\nfor each message.</p>\n</blockquote>",
+          "text": "Start here A slide full of tiny text, read out word\nby word — everyone has suffered through one. This page shows how to\nconnect with your audience instead, and how to choose the right picture\nfor each message."
+        },
+        {
+          "type": "heading",
+          "text": "Part 3: Connecting with\nyour audience"
+        },
+        {
+          "type": "html",
+          "html": "<p>A presentation succeeds only if you <strong>relate</strong> to the\naudience and they relate to you.</p>",
+          "text": "A presentation succeeds only if you relate to the\naudience and they relate to you."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img10-connect-audience.webp",
+          "alt": "Ways to connect with your audience",
+          "caption": "Repeat a summary,\nseparate facts from opinions, pause for decisions, use familiar\nformats."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Repeat a summary slide from your previous\npresentation.</strong> In a weekly or fortnightly team meeting, start\nwith last time’s summary: “Two weeks ago we were here. Now let’s see\nwhat we did.” Everyone starts from the <strong>same point</strong>.</p>",
+          "text": "1. Repeat a summary slide from your previous\npresentation. In a weekly or fortnightly team meeting, start\nwith last time’s summary: “Two weeks ago we were here. Now let’s see\nwhat we did.” Everyone starts from the same point ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Separate facts from opinions.</strong> - A\n<strong>fact</strong> is <strong>data</strong> — for example, results of\na properly done vaccine test on 10,000 volunteers. - Comparing your\nvaccine with a competitor’s often includes your\n<strong>opinion</strong>. - Both are fine. Seniors often\n<strong>want</strong> your professional opinion. But <strong>tell them\nclearly</strong> which is fact and which is opinion. Then they know what\nis certain and where they are taking a chance.</p>",
+          "text": "2. Separate facts from opinions. - A fact is data — for example, results of\na properly done vaccine test on 10,000 volunteers. - Comparing your\nvaccine with a competitor’s often includes your opinion . - Both are fine. Seniors often want your professional opinion. But tell them\nclearly which is fact and which is opinion. Then they know what\nis certain and where they are taking a chance."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. Pause to enable decisions.</strong> In a professional\nsetting, you are trying to <strong>make a decision</strong> together.\nStop and say: “You have all the facts. Please discuss for a few minutes.\nThen I’ll share my view.”</p>",
+          "text": "3. Pause to enable decisions. In a professional\nsetting, you are trying to make a decision together.\nStop and say: “You have all the facts. Please discuss for a few minutes.\nThen I’ll share my view.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>4. Use familiar formats.</strong> Many companies give a\n<strong>template</strong> — headings, logo position, colours. It may\nfeel restrictive, but: - people from many backgrounds (management,\ntechnical, HR, assembly line) feel <strong>comfortable</strong> with a\nfamiliar layout; - managers can <strong>pick slides</strong> from many\ntalks to make a new one without reformatting.</p>",
+          "text": "4. Use familiar formats. Many companies give a template — headings, logo position, colours. It may\nfeel restrictive, but: - people from many backgrounds (management,\ntechnical, HR, assembly line) feel comfortable with a\nfamiliar layout; - managers can pick slides from many\ntalks to make a new one without reformatting."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>5. Explain what is being shown and how to understand\nit.</strong> Before showing a new kind of plot, explain it: “Green is\nthis, red is that. Where they meet, rain is likely in three days.” Then\nshow it for many cities. People connect much better.</p>",
+          "text": "5. Explain what is being shown and how to understand\nit. Before showing a new kind of plot, explain it: “Green is\nthis, red is that. Where they meet, rain is likely in three days.” Then\nshow it for many cities. People connect much better."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>6. Special effects can be distracting.</strong> Don’t make\nthings fly in from every side. Your talk need not be boring, but every\neffect should <strong>serve a purpose</strong>.</p>",
+          "text": "6. Special effects can be distracting. Don’t make\nthings fly in from every side. Your talk need not be boring, but every\neffect should serve a purpose ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>7. Avoid reading from a slide.</strong></p>",
+          "text": "7. Avoid reading from a slide."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>✗ Don’t</th>\n<th>✓ Do</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A slide full of long paragraphs, which you then read out</td>\n<td><strong>Three key bullet points</strong> in big font for each part.\nYou <strong>speak</strong> the details.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Don’t ✓ Do A slide full of long paragraphs, which you then read out Three key bullet points in big font for each part.\nYou speak the details."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Start from where people are, separate\nfacts from opinions, pause for decisions, and never read long text off a\nslide. <strong>Exam words:</strong> summary slide, facts vs opinions,\npause to enable decisions, familiar formats, special effects, reading\nfrom a slide.</p>",
+          "text": "In one line: Start from where people are, separate\nfacts from opinions, pause for decisions, and never read long text off a\nslide. Exam words: summary slide, facts vs opinions,\npause to enable decisions, familiar formats, special effects, reading\nfrom a slide."
+        },
+        {
+          "type": "heading",
+          "text": "Part 4: Illustrations"
+        },
+        {
+          "type": "html",
+          "html": "<p>Two tasks: <strong>choose the right type of illustration</strong>,\nand <strong>pay attention to details</strong>.</p>",
+          "text": "Two tasks: choose the right type of illustration ,\nand pay attention to details ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Types of illustration:</strong> tables, graphs, photographs,\ndrawings, schematics — and mixes of these on one slide.</p>",
+          "text": "Types of illustration: tables, graphs, photographs,\ndrawings, schematics — and mixes of these on one slide."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img11-illustration-types.webp",
+          "alt": "Choosing the right illustration",
+          "caption": "Table for exact values,\ngraph for trends, photo for realism, drawing or schematic to control\ncomplexity."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Type</th>\n<th>Best for</th>\n<th>Watch out for</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Table</strong></td>\n<td>Showing <strong>exact values</strong> (e.g. 3.6, 2.1)</td>\n<td>Keep the <strong>same number of decimal places</strong> in every\ncell. Give <strong>units</strong>.</td>\n</tr>\n<tr>\n<td><strong>Graph</strong></td>\n<td>Showing a <strong>trend</strong> (goes up, comes down, goes up\nagain) — a table can never show this shape</td>\n<td><strong>Label both axes</strong> with quantity and units, and add a\n<strong>caption</strong>. A graph cannot show exact values easily (39.3\nand 1297).</td>\n</tr>\n<tr>\n<td><strong>Photograph</strong></td>\n<td><strong>Realism</strong> — size, shape, space. Example: a fuel cell\nand hydrogen tank fitted on a cycle. Works for <strong>every</strong>\naudience.</td>\n<td>You need <strong>permission</strong> to use it.</td>\n</tr>\n<tr>\n<td><strong>Drawing</strong></td>\n<td>Ideas you cannot see in a photo — charges, properties, or two types\nof <strong>wind turbine</strong> (horizontal axis vs vertical axis)</td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Schematic</strong></td>\n<td>Showing <strong>layout</strong> of parts (e.g. an electric vehicle:\nmotor, battery, electronics) while <strong>controlling\ncomplexity</strong></td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Composite</strong></td>\n<td>Text + sample photo + equipment photo + graph on one slide, so\nseniors don’t lose track across slides</td>\n<td>—</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Type Best for Watch out for Table Showing exact values (e.g. 3.6, 2.1) Keep the same number of decimal places in every\ncell. Give units . Graph Showing a trend (goes up, comes down, goes up\nagain) — a table can never show this shape Label both axes with quantity and units, and add a caption . A graph cannot show exact values easily (39.3\nand 1297). Photograph Realism — size, shape, space. Example: a fuel cell\nand hydrogen tank fitted on a cycle. Works for every audience. You need permission to use it. Drawing Ideas you cannot see in a photo — charges, properties, or two types\nof wind turbine (horizontal axis vs vertical axis) — Schematic Showing layout of parts (e.g. an electric vehicle:\nmotor, battery, electronics) while controlling\ncomplexity — Composite Text + sample photo + equipment photo + graph on one slide, so\nseniors don’t lose track across slides —"
+        },
+        {
+          "type": "subheading",
+          "text": "Level of complexity"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>photograph</strong> of a space telescope shows too many\nthings — wires, arms, other parts. If you only want to talk about the\n<strong>solar panels</strong>, a simple <strong>drawing</strong> is\nbetter. In a drawing, you <strong>control</strong> what is shown.</p>",
+          "text": "A photograph of a space telescope shows too many\nthings — wires, arms, other parts. If you only want to talk about the solar panels , a simple drawing is\nbetter. In a drawing, you control what is shown."
+        },
+        {
+          "type": "subheading",
+          "text": "Importance of scale"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Scale of impact</strong> — help people feel the size of the\neffect:</p>",
+          "text": "Scale of impact — help people feel the size of the\neffect:"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — vaccine storage</strong> “One vaccine needs\n<strong>−50 °C</strong>; another is safe at <strong>0 °C</strong>” means\nlittle to the public. Say instead: “−50 °C storage exists in about\n<strong>1,000 places in the world</strong>. 0 °C storage exists in\n<strong>thousands of places in every city</strong>.” Now people see that\none vaccine can reach <strong>billions</strong>, the other very few.\n<em>(The numbers are the professor’s illustration.)</em></p>\n</blockquote>",
+          "text": "Lecture example — vaccine storage “One vaccine needs −50 °C ; another is safe at 0 °C ” means\nlittle to the public. Say instead: “−50 °C storage exists in about 1,000 places in the world . 0 °C storage exists in thousands of places in every city .” Now people see that\none vaccine can reach billions , the other very few. (The numbers are the professor’s illustration.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Scale of object</strong> — put a familiar thing next to\nit:</p>",
+          "text": "Scale of object — put a familiar thing next to\nit:"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img12-scale-person.webp",
+          "alt": "Scale with a person beside a wind turbine",
+          "caption": "Same turbine\ndrawing: a big person beside it means a small model; a tiny person means\na huge turbine."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>A wind turbine next to a <strong>full-size person</strong> looks like\na 1.5–2 m room model. The same turbine next to a <strong>tiny\nperson</strong> looks 15–20 m tall. Just adding a person shows the\nscale.</p>\n</blockquote>",
+          "text": "A wind turbine next to a full-size person looks like\na 1.5–2 m room model. The same turbine next to a tiny\nperson looks 15–20 m tall. Just adding a person shows the\nscale."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Pick the illustration that fits the\nmessage, keep it simple, and show scale. <strong>Exam words:</strong>\ntable, graph, photograph, drawing, schematic, composite, level of\ncomplexity, scale of impact, scale of object.</p>",
+          "text": "In one line: Pick the illustration that fits the\nmessage, keep it simple, and show scale. Exam words: table, graph, photograph, drawing, schematic, composite, level of\ncomplexity, scale of impact, scale of object."
+        },
+        {
+          "type": "heading",
+          "text": "Part 5: Summary"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Every</strong> professional presentation should end with a\n<strong>summary</strong> — even a one-slide talk should have a summary\nbox. Tell people: “Remember these three points.”</p>",
+          "text": "Every professional presentation should end with a summary — even a one-slide talk should have a summary\nbox. Tell people: “Remember these three points.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The lecture’s own summary:</strong> - Provide an\n<strong>outline</strong>. - <strong>Audience</strong> and\n<strong>duration</strong> are important constraints. -\n<strong>Connect</strong> with your audience: tailor to them, orient them\nwith previous work, enable decisions. - <strong>Illustration</strong>:\nchoice of illustration, pay attention to details, level of complexity,\nimportance of scale. - Make a <strong>summary</strong>.</p>",
+          "text": "The lecture’s own summary: - Provide an outline . - Audience and duration are important constraints. - Connect with your audience: tailor to them, orient them\nwith previous work, enable decisions. - Illustration :\nchoice of illustration, pay attention to details, level of complexity,\nimportance of scale. - Make a summary ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> In a group project viva, end with:\n“To sum up: (1) we built X, (2) it is 30% faster, (3) next we will test\nY.” Even if the examiner forgot the middle, they remember those three\nlines.</p>\n</blockquote>",
+          "text": "Everyday example In a group project viva, end with:\n“To sum up: (1) we built X, (2) it is 30% faster, (3) next we will test\nY.” Even if the examiner forgot the middle, they remember those three\nlines."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> End every talk with the few points\npeople must remember.</p>",
+          "text": "In one line: End every talk with the few points\npeople must remember."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nYou want to show that sales went up, down and up again over a year.\nTable or graph?\n</summary>\nGraph — it shows the trend. A table is better for exact values.\n</details>",
+          "text": "You want to show that sales went up, down and up again over a year.\nTable or graph? Graph — it shows the trend. A table is better for exact values."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy use a drawing instead of a photograph of a space telescope?\n</summary>\nTo control the level of complexity, showing only the parts you want to\ntalk about (like the solar panels).\n</details>",
+          "text": "Why use a drawing instead of a photograph of a space telescope? To control the level of complexity, showing only the parts you want to\ntalk about (like the solar panels)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow can you show that a wind turbine is very large?\n</summary>\nDraw a tiny person beside it to show the scale of the object.\n</details>",
+          "text": "How can you show that a wind turbine is very large? Draw a tiny person beside it to show the scale of the object."
+        }
+      ]
+    },
+    {
+      "slug": "writing-a-report-why-and-purpose",
+      "title": "Writing a Report — Why It Matters and Why It Is Hard",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You found a smarter way to make your\ncompany’s product. Months later, someone proudly tells you about “a new\nmethod someone in our company found”. It was yours — but nobody\nremembers. A written report would have saved your credit.</p>\n</blockquote>",
+          "text": "Start here You found a smarter way to make your\ncompany’s product. Months later, someone proudly tells you about “a new\nmethod someone in our company found”. It was yours — but nobody\nremembers. A written report would have saved your credit."
+        },
+        {
+          "type": "heading",
+          "text": "Why are writing skills\nimportant?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img13-why-write.webp",
+          "alt": "Why writing skills matter",
+          "caption": "A written report gives you\ncredit, keeps a record, and shapes company decisions."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Credit for your work.</strong> If you only\n<strong>tell</strong> people about your work, it spreads by <strong>word\nof mouth</strong>. Soon nobody remembers it was you. A\n<strong>document</strong> with your name on it gives you credit.</p>",
+          "text": "1. Credit for your work. If you only tell people about your work, it spreads by word\nof mouth . Soon nobody remembers it was you. A document with your name on it gives you credit."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Something to refer to later.</strong> After 5 days, people\nforget details. A properly saved document lets anyone check <strong>what\nwas done, what was decided, and why</strong>.</p>",
+          "text": "2. Something to refer to later. After 5 days, people\nforget details. A properly saved document lets anyone check what\nwas done, what was decided, and why ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. Shaping the policy of the organisation.</strong> Companies\ndecide: Start a new product line? Stop one? Speed one up? These\ndecisions are often based on <strong>reports</strong> written by\nengineers and scientists inside the company.</p>",
+          "text": "3. Shaping the policy of the organisation. Companies\ndecide: Start a new product line? Stop one? Speed one up? These\ndecisions are often based on reports written by\nengineers and scientists inside the company."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Reports give you credit, keep a record,\nand help the company decide. <strong>Exam words:</strong> credit for\nyour work, reference, shaping policy of organisation.</p>",
+          "text": "In one line: Reports give you credit, keep a record,\nand help the company decide. Exam words: credit for\nyour work, reference, shaping policy of organisation."
+        },
+        {
+          "type": "heading",
+          "text": "Why is formal writing\ndifficult?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Personal background.</strong> - We come from different\ncommunities, regions (urban/rural) and countries. - Our <strong>native\nlanguage</strong> may not be English. We <strong>think</strong> in our\nlanguage and <strong>translate</strong>. The result may not be the best\nway to say it in English. - In speech, we show politeness with\n<strong>tone and face</strong>. In writing, we only have\n<strong>words</strong>. - A reader may read your report <strong>15 days\nlater</strong>, in <strong>another country</strong>. You can’t see their\nface or fix confusion. So your writing must be clear on its own.</p>",
+          "text": "1. Personal background. - We come from different\ncommunities, regions (urban/rural) and countries. - Our native\nlanguage may not be English. We think in our\nlanguage and translate . The result may not be the best\nway to say it in English. - In speech, we show politeness with tone and face . In writing, we only have words . - A reader may read your report 15 days\nlater , in another country . You can’t see their\nface or fix confusion. So your writing must be clear on its own."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Lack of knowledge of expectations.</strong> Many people\nsimply <strong>don’t know</strong> what a formal document should look\nlike. This lecture fixes that.</p>",
+          "text": "2. Lack of knowledge of expectations. Many people\nsimply don’t know what a formal document should look\nlike. This lecture fixes that."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. “Poor” examples.</strong> We read newspapers, novels,\nmagazines, poems and sales brochures. They are good <strong>in their own\nway</strong> — but <strong>poor examples</strong> for formal\nwriting.</p>",
+          "text": "3. “Poor” examples. We read newspapers, novels,\nmagazines, poems and sales brochures. They are good in their own\nway — but poor examples for formal\nwriting."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the mystery novel</strong> A mystery novel\n<strong>hides</strong> the answer for 497 pages and reveals it in the\nlast 3. That is great for a novel. But a report for your CEO must\n<strong>never</strong> hide the key point. The CEO wants to decide\n<strong>this afternoon</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the mystery novel A mystery novel hides the answer for 497 pages and reveals it in the\nlast 3. That is great for a novel. But a report for your CEO must never hide the key point. The CEO wants to decide this afternoon ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Formal writing is hard because of\nlanguage and background, unclear expectations, and the wrong kind of\nreading examples. <strong>Exam words:</strong> personal background, lack\nof knowledge of expectations, “poor” examples.</p>",
+          "text": "In one line: Formal writing is hard because of\nlanguage and background, unclear expectations, and the wrong kind of\nreading examples. Exam words: personal background, lack\nof knowledge of expectations, “poor” examples."
+        },
+        {
+          "type": "heading",
+          "text": "How does one improve?"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Understand the purpose</strong> of formal writing.</li>\n<li><strong>Recognise the overall structure</strong> of a formal\ndocument. <em>(Next page.)</em></li>\n</ol>",
+          "text": "Understand the purpose of formal writing. Recognise the overall structure of a formal\ndocument. (Next page.)"
+        },
+        {
+          "type": "heading",
+          "text": "What is the purpose of\nformal writing?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img14-purpose.webp",
+          "alt": "Purpose of formal writing",
+          "caption": "Inform, persuade — and do both\nefficiently."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Purpose</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>To inform readers</strong></td>\n<td>Tell them <strong>what work was done</strong> — a survey, an\nanalysis, missing data found in 25 sources, etc.</td>\n</tr>\n<tr>\n<td><strong>To persuade readers</strong></td>\n<td>Help the organisation <strong>make a decision</strong>. “Based on my\nwork, I suggest we go this way.” If your analysis is good, seniors will\nfollow your advice — and be impressed.</td>\n</tr>\n<tr>\n<td><strong>To do the above efficiently</strong></td>\n<td>This is what makes writing <strong>formal</strong>. Novels and\nnewspapers don’t need to be efficient (newspapers even place ads between\nnews). Formal writing <strong>must</strong> be.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Purpose What it means To inform readers Tell them what work was done — a survey, an\nanalysis, missing data found in 25 sources, etc. To persuade readers Help the organisation make a decision . “Based on my\nwork, I suggest we go this way.” If your analysis is good, seniors will\nfollow your advice — and be impressed. To do the above efficiently This is what makes writing formal . Novels and\nnewspapers don’t need to be efficient (newspapers even place ads between\nnews). Formal writing must be."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A WhatsApp story about your weekend\ncan be long and fun. A leave application to your HOD must say\n<strong>dates, reason and request</strong> in a few lines. Same writer —\ndifferent purpose.</p>\n</blockquote>",
+          "text": "Everyday example A WhatsApp story about your weekend\ncan be long and fun. A leave application to your HOD must say dates, reason and request in a few lines. Same writer —\ndifferent purpose."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Formal writing informs and persuades —\nefficiently. <strong>Exam words:</strong> inform, persuade,\nefficiently.</p>",
+          "text": "In one line: Formal writing informs and persuades —\nefficiently. Exam words: inform, persuade,\nefficiently."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive the two reasons on the slide for why writing skills are important.\n</summary>\nCredit for your work, and shaping the policy of the organisation. (The\nlecture also says a written document is useful to refer to later.)\n</details>",
+          "text": "Give the two reasons on the slide for why writing skills are important. Credit for your work, and shaping the policy of the organisation. (The\nlecture also says a written document is useful to refer to later.)"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy are novels called “poor” examples for formal writing?\n</summary>\nThey are good in their own way, but they hide details or aim to\nentertain. Formal writing must give the key information clearly and\nefficiently.\n</details>",
+          "text": "Why are novels called “poor” examples for formal writing? They are good in their own way, but they hide details or aim to\nentertain. Formal writing must give the key information clearly and\nefficiently."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the three purposes of formal writing?\n</summary>\nTo inform readers, to persuade readers, and to do both efficiently.\n</details>",
+          "text": "What are the three purposes of formal writing? To inform readers, to persuade readers, and to do both efficiently."
+        }
+      ]
+    },
+    {
+      "slug": "writing-a-report-structure-and-language",
+      "title": "Writing a Report — Structure and Language",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your CEO opens your 40-page report. She\nreads only the first 4 lines before her next meeting. Will she know what\nyou found? On this page, you learn to put the most important thing\nfirst.</p>\n</blockquote>",
+          "text": "Start here Your CEO opens your 40-page report. She\nreads only the first 4 lines before her next meeting. Will she know what\nyou found? On this page, you learn to put the most important thing\nfirst."
+        },
+        {
+          "type": "heading",
+          "text": "Overall structure of a\nformal document"
+        },
+        {
+          "type": "html",
+          "html": "<p>Every formal document has a <strong>beginning</strong>, a\n<strong>middle</strong> and an <strong>ending</strong>.</p>",
+          "text": "Every formal document has a beginning , a middle and an ending ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img15-report-structure.webp",
+          "alt": "Beginning, middle and ending of a report",
+          "caption": "Beginning: title,\nsummary, introduction. Middle: details and strategy. Ending: summary and\nfuture perspective."
+        },
+        {
+          "type": "subheading",
+          "text": "Beginning"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Part</th>\n<th>What to write</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Title</strong></td>\n<td>Says what the document is about. Example: “Weather prediction using\na smaller set of variables”.</td>\n</tr>\n<tr>\n<td><strong>Summary</strong></td>\n<td>A short summary <strong>at the top</strong>, with your <strong>key\nresults</strong>. Don’t hide anything. Busy managers may read only this,\nso make it complete but short. This is where you <strong>show your\nefficiency</strong>.</td>\n</tr>\n<tr>\n<td><strong>Introduction</strong></td>\n<td>Just <strong>2–3 lines</strong> on <strong>why</strong> this work\nwas done. Someone may read your report <strong>years later</strong>,\nafter you have left. Without this, your work looks random.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Part What to write Title Says what the document is about. Example: “Weather prediction using\na smaller set of variables”. Summary A short summary at the top , with your key\nresults . Don’t hide anything. Busy managers may read only this,\nso make it complete but short. This is where you show your\nefficiency . Introduction Just 2–3 lines on why this work\nwas done. Someone may read your report years later ,\nafter you have left. Without this, your work looks random."
+        },
+        {
+          "type": "html",
+          "html": "<p>The higher a person is in the company, the less time they have. If\nyour top part is good, they will be <strong>truly\ndelighted</strong>.</p>",
+          "text": "The higher a person is in the company, the less time they have. If\nyour top part is good, they will be truly\ndelighted ."
+        },
+        {
+          "type": "subheading",
+          "text": "Middle — details and strategy"
+        },
+        {
+          "type": "html",
+          "html": "<p>Here you give your <strong>full work</strong> with <strong>all\ndetails</strong>. Don’t waste words, but don’t cut detail.</p>",
+          "text": "Here you give your full work with all\ndetails . Don’t waste words, but don’t cut detail."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — car parts</strong> The same car is sold in\n10 countries. Its steering column comes from 3 sources, tyres from 5,\nseats from 7, headlights from 2. Roads differ everywhere. Finding why\nsome cars fail is a complex analysis — and the middle of the report\nholds all those details.</p>\n</blockquote>",
+          "text": "Lecture example — car parts The same car is sold in\n10 countries. Its steering column comes from 3 sources, tyres from 5,\nseats from 7, headlights from 2. Roads differ everywhere. Finding why\nsome cars fail is a complex analysis — and the middle of the report\nholds all those details."
+        },
+        {
+          "type": "html",
+          "html": "<p>Choose a <strong>strategy</strong> to present the details:</p>",
+          "text": "Choose a strategy to present the details:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Strategy</th>\n<th>How it works</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Chronological</strong></td>\n<td>In <strong>time order</strong>: first this, then this</td>\n<td>How schools changed over the years</td>\n</tr>\n<tr>\n<td><strong>Spatial</strong></td>\n<td>By <strong>position</strong>: from outside to inside, top to\nbottom</td>\n<td>A product described from its outer parts to its core</td>\n</tr>\n<tr>\n<td><strong>Flow of a variable</strong></td>\n<td>Follow <strong>one quantity</strong> as it changes</td>\n<td>Following air <strong>pressure</strong> across places in a weather\nstudy</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Strategy How it works Example Chronological In time order : first this, then this How schools changed over the years Spatial By position : from outside to inside, top to\nbottom A product described from its outer parts to its core Flow of a variable Follow one quantity as it changes Following air pressure across places in a weather\nstudy"
+        },
+        {
+          "type": "html",
+          "html": "<p>Most people only use chronological. You have <strong>a\nchoice</strong>.</p>",
+          "text": "Most people only use chronological. You have a\nchoice ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Even if few people read the middle, make it <strong>solid</strong>.\nWhen someone checks, they should see that the work was done\nproperly.</p>",
+          "text": "Even if few people read the middle, make it solid .\nWhen someone checks, they should see that the work was done\nproperly."
+        },
+        {
+          "type": "subheading",
+          "text": "Ending — summary and\nfuture perspective"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Summary</strong> of the major conclusions.</li>\n<li><strong>Future perspective</strong>: what you\n<strong>recommend</strong> the company or your group should do\nnext.</li>\n</ul>",
+          "text": "Summary of the major conclusions. Future perspective : what you recommend the company or your group should do\nnext."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Beginning (title, summary,\nintroduction) → middle (details with a strategy) → ending (summary and\nfuture perspective). <strong>Exam words:</strong> beginning, middle,\nending, title, summary, introduction, chronological, spatial, flow of\nvariable, future perspective.</p>",
+          "text": "In one line: Beginning (title, summary,\nintroduction) → middle (details with a strategy) → ending (summary and\nfuture perspective). Exam words: beginning, middle,\nending, title, summary, introduction, chronological, spatial, flow of\nvariable, future perspective."
+        },
+        {
+          "type": "heading",
+          "text": "Language"
+        },
+        {
+          "type": "html",
+          "html": "<p>Language is your <strong>main tool</strong>. Six rules:</p>",
+          "text": "Language is your main tool . Six rules:"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img16-language-rules.webp",
+          "alt": "Language rules for reports",
+          "caption": "Correct word, simple words, no\nambiguity, fewer words, no arrogant phrases, define unusual\nterms."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. Use the correct word.</strong> <strong>Speed</strong> and\n<strong>velocity</strong> are different technical terms. Cricket\ncommentators say “bowled at <strong>130 kilometres</strong>” — but\nkilometres is distance. Speed is <strong>kilometres per hour</strong>.\nIn reports, no such shortcuts.</p>",
+          "text": "1. Use the correct word. Speed and velocity are different technical terms. Cricket\ncommentators say “bowled at 130 kilometres ” — but\nkilometres is distance. Speed is kilometres per hour .\nIn reports, no such shortcuts."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>2. Be clear — avoid complexity.</strong></p>",
+          "text": "2. Be clear — avoid complexity."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>✗ Complex</th>\n<th>✓ Simple</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>functionability</td>\n<td>function</td>\n</tr>\n<tr>\n<td>hitherto</td>\n<td>until now</td>\n</tr>\n<tr>\n<td>discretized</td>\n<td>discrete</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Complex ✓ Simple functionability function hitherto until now discretized discrete"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>3. Be clear — avoid ambiguity.</strong>\n<strong>Ambiguity</strong> means a sentence can have more than one\nmeaning.</p>",
+          "text": "3. Be clear — avoid ambiguity. Ambiguity means a sentence can have more than one\nmeaning."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“The patient has an irregular heartbeat and a weak pulse.\n<strong>This</strong> is a symptom of low blood pressure.” What does\n“<strong>this</strong>” mean — the heartbeat, the pulse, or both? The\nwriter knows, but the reader does not.</p>\n</blockquote>",
+          "text": "“The patient has an irregular heartbeat and a weak pulse. This is a symptom of low blood pressure.” What does\n“ this ” mean — the heartbeat, the pulse, or both? The\nwriter knows, but the reader does not."
+        },
+        {
+          "type": "html",
+          "html": "<p>You write with <strong>your</strong> knowledge, so you don’t notice\nthe gap. Practise <strong>catching</strong> words like “this” and “it”\nthat could point to many things.</p>",
+          "text": "You write with your knowledge, so you don’t notice\nthe gap. Practise catching words like “this” and “it”\nthat could point to many things."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>4. Be concise — read with the sole intent to cut\nwords.</strong> After writing, read the document <strong>once more, only\nto remove extra words</strong>.</p>",
+          "text": "4. Be concise — read with the sole intent to cut\nwords. After writing, read the document once more, only\nto remove extra words ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>✗ Wordy</th>\n<th>✓ Short</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>At this point in time</td>\n<td>now</td>\n</tr>\n<tr>\n<td>At that point in time</td>\n<td>then</td>\n</tr>\n<tr>\n<td>In light of the fact</td>\n<td>because</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "✗ Wordy ✓ Short At this point in time now At that point in time then In light of the fact because"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>5. Avoid arrogant phrases.</strong> “<strong>It is\nobvious</strong>” is arrogant. If it is obvious, why say it? If it is\nnot obvious to the reader, you are rubbing it in: “It is obvious to me,\nbut not to you.”</p>",
+          "text": "5. Avoid arrogant phrases. “ It is\nobvious ” is arrogant. If it is obvious, why say it? If it is\nnot obvious to the reader, you are rubbing it in: “It is obvious to me,\nbut not to you.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>6. Be familiar — define unusual terms.</strong> Every company\nhas its own terms. The <strong>first time</strong> you use one, add its\nmeaning in brackets. Don’t turn every few words into an\n<strong>abbreviation</strong> — the professor once saw a government\ndocument with <strong>pages</strong> of abbreviations.</p>",
+          "text": "6. Be familiar — define unusual terms. Every company\nhas its own terms. The first time you use one, add its\nmeaning in brackets. Don’t turn every few words into an abbreviation — the professor once saw a government\ndocument with pages of abbreviations."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Use the correct, simple, clear, short\nwords — and never sound arrogant. <strong>Exam words:</strong> correct\nword, speed vs velocity, avoid complexity, ambiguity, concise, arrogant\nphrases, define unusual terms, abbreviations.</p>",
+          "text": "In one line: Use the correct, simple, clear, short\nwords — and never sound arrogant. Exam words: correct\nword, speed vs velocity, avoid complexity, ambiguity, concise, arrogant\nphrases, define unusual terms, abbreviations."
+        },
+        {
+          "type": "heading",
+          "text": "Summary of the lecture"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Writing skills are important.</strong> They show what you\ndid, help the company decide, and record important work — for\nyears.</li>\n<li><strong>Formal writing can be challenging</strong> (background,\nexpectations, “poor” examples).</li>\n<li><strong>Recognise the purpose</strong> of a formal document: inform,\npersuade, efficiently.</li>\n<li><strong>Understand the structure</strong>: beginning, middle,\nending. You can adjust it to the situation.</li>\n<li><strong>Use appropriate language.</strong></li>\n</ul>",
+          "text": "Writing skills are important. They show what you\ndid, help the company decide, and record important work — for\nyears. Formal writing can be challenging (background,\nexpectations, “poor” examples). Recognise the purpose of a formal document: inform,\npersuade, efficiently. Understand the structure : beginning, middle,\nending. You can adjust it to the situation. Use appropriate language."
+        },
+        {
+          "type": "html",
+          "html": "<p>It feels painful at first. But after <strong>2–3 documents</strong>,\nit becomes natural — and your seniors will <strong>truly\nappreciate</strong> you.</p>",
+          "text": "It feels painful at first. But after 2–3 documents ,\nit becomes natural — and your seniors will truly\nappreciate you."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your project report on “College\ncanteen waste”: <strong>Summary:</strong> “We cut food waste by 30% by\nchanging plate sizes.” <strong>Introduction:</strong> “The canteen\nwastes about 40 kg of food daily.” <strong>Middle:</strong> what you\nmeasured, day by day. <strong>Ending:</strong> “Recommend smaller plates\nin all three canteens.” A reader gets the main result in the first\nline.</p>\n</blockquote>",
+          "text": "Everyday example Your project report on “College\ncanteen waste”: Summary: “We cut food waste by 30% by\nchanging plate sizes.” Introduction: “The canteen\nwastes about 40 kg of food daily.” Middle: what you\nmeasured, day by day. Ending: “Recommend smaller plates\nin all three canteens.” A reader gets the main result in the first\nline."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat goes in the beginning of a formal document?\n</summary>\nTitle, summary (with key results) and a short introduction.\n</details>",
+          "text": "What goes in the beginning of a formal document? Title, summary (with key results) and a short introduction."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the three strategies for presenting details in the middle.\n</summary>\nChronological, spatial, and flow of a variable.\n</details>",
+          "text": "Name the three strategies for presenting details in the middle. Chronological, spatial, and flow of a variable."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy is “It is obvious” called an arrogant phrase?\n</summary>\nIf it is obvious, saying it wastes time. If it is not obvious to the\nreader, it suggests the reader is less smart.\n</details>",
+          "text": "Why is “It is obvious” called an arrogant phrase? If it is obvious, saying it wastes time. If it is not obvious to the\nreader, it suggests the reader is less smart."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nRewrite “In light of the fact that” in one word.\n</summary>\nBecause.\n</details>",
+          "text": "Rewrite “In light of the fact that” in one word. Because."
+        }
+      ]
+    },
+    {
+      "slug": "week-3-quick-revision",
+      "title": "Week 3 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Quiz in 10 minutes? Every key idea of\nWeek 3 is on this page.</p>\n</blockquote>",
+          "text": "Start here Quiz in 10 minutes? Every key idea of\nWeek 3 is on this page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-3/img17-week3-map.webp",
+          "alt": "Week 3 at a glance",
+          "caption": "Week 3: communicate at work, present\nwell, write reports."
+        },
+        {
+          "type": "heading",
+          "text": "Communication in a\nprofessional setting"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why communicate:</strong> share your input · get credit for\nyour work · raise issues · provide feedback (including confidential\n<strong>upward feedback</strong> on your manager).</p>",
+          "text": "Why communicate: share your input · get credit for\nyour work · raise issues · provide feedback (including confidential upward feedback on your manager)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Whom to communicate to:</strong> find the <strong>right\nperson and process</strong>. Broken chair at “Wheelderness” → ask a\ncolleague, use the <strong>ticketing system</strong>; don’t email the\nCEO.</p>",
+          "text": "Whom to communicate to: find the right\nperson and process . Broken chair at “Wheelderness” → ask a\ncolleague, use the ticketing system ; don’t email the\nCEO."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tone:</strong> always <strong>polite</strong>. - ✗ “We do not\nprovide accommodation. See local newspapers.” → ✓ “We regret… we will\nshare a few relevant contacts…” - ✗ “Don’t you know how to write in\nsimple language?” → ✓ “I was unable to understand the message. I request\nyou to please clarify…”</p>",
+          "text": "Tone: always polite . - ✗ “We do not\nprovide accommodation. See local newspapers.” → ✓ “We regret… we will\nshare a few relevant contacts…” - ✗ “Don’t you know how to write in\nsimple language?” → ✓ “I was unable to understand the message. I request\nyou to please clarify…”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Length:</strong> be <strong>efficient</strong>. No build-up,\nno blaming, no preaching, no blunt orders. - ✓ “I need to register for\nthe course, but missed the last date due to an official activity… please\nlet me know the procedure for late registration.”</p>",
+          "text": "Length: be efficient . No build-up,\nno blaming, no preaching, no blunt orders. - ✓ “I need to register for\nthe course, but missed the last date due to an official activity… please\nlet me know the procedure for late registration.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Emails:</strong> - Carefully decide the <strong>list of\nrecipients</strong>; don’t copy every senior. Use\n<strong>escalation</strong> if needed. - <strong>Not social\nmedia</strong>: no emojis or loose abbreviations; complete sentences. -\n<strong>Well structured</strong>: greeting → situation → request →\nsign-off (name, roll number).</p>",
+          "text": "Emails: - Carefully decide the list of\nrecipients ; don’t copy every senior. Use escalation if needed. - Not social\nmedia : no emojis or loose abbreviations; complete sentences. - Well structured : greeting → situation → request →\nsign-off (name, roll number)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With your manager:</strong> stay formal; <strong>no personal\ncomments</strong>; give <strong>clear reports of work done and\nprojection</strong> of what’s next.</p>",
+          "text": "With your manager: stay formal; no personal\ncomments ; give clear reports of work done and\nprojection of what’s next."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With your team:</strong> fiery messages ✗ (short-term only);\n<strong>clear expectations and deadlines</strong> ✓.</p>",
+          "text": "With your team: fiery messages ✗ (short-term only); clear expectations and deadlines ✓."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With a customer:</strong> “<strong>Be the service you would\nlike to see</strong>.” Don’t argue to win; be clear and polite; you\n<strong>represent the organisation</strong>.</p>",
+          "text": "With a customer: “ Be the service you would\nlike to see .” Don’t argue to win; be clear and polite; you represent the organisation ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Summary:</strong> communication is about the <strong>message\nand about you</strong>; it affects your <strong>organisation</strong>\nand your <strong>career</strong>. But it can’t replace real work.</p>",
+          "text": "Summary: communication is about the message\nand about you ; it affects your organisation and your career . But it can’t replace real work."
+        },
+        {
+          "type": "heading",
+          "text": "Professional presentation"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Outline:</strong> setting → constraints → connecting →\nillustrations → summary. Re-show the outline to mark progress.</p>",
+          "text": "Outline: setting → constraints → connecting →\nillustrations → summary. Re-show the outline to mark progress."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Setting:</strong> serious activity · you are being evaluated\n· reporting a status · conveying an idea · an event that can be repeated\n· structure based on organisation or event · interactive · specific\naudience each time.</p>",
+          "text": "Setting: serious activity · you are being evaluated\n· reporting a status · conveying an idea · an event that can be repeated\n· structure based on organisation or event · interactive · specific\naudience each time."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Constraints:</strong> <strong>audience</strong> (seniority\nand purpose) and <strong>duration</strong> (very important; be ready to\ngive it in 2, 5, 10 or 20 minutes).</p>",
+          "text": "Constraints: audience (seniority\nand purpose) and duration (very important; be ready to\ngive it in 2, 5, 10 or 20 minutes)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Connecting with your audience:</strong> - Repeat a summary\nslide from your previous presentation - Separate <strong>facts</strong>\nfrom <strong>opinions</strong> - <strong>Pause</strong> to enable\ndecisions - Use <strong>familiar formats</strong> - Explain what is\nbeing shown and how to understand it - Special effects can be\n<strong>distracting</strong> - Don’t <strong>read from a slide</strong>\n— use a few key bullet points</p>",
+          "text": "Connecting with your audience: - Repeat a summary\nslide from your previous presentation - Separate facts from opinions - Pause to enable\ndecisions - Use familiar formats - Explain what is\nbeing shown and how to understand it - Special effects can be distracting - Don’t read from a slide — use a few key bullet points"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Illustrations:</strong> | Type | Use for | |—|—| | Table |\nexact values (same decimal places, units) | | Graph | trends (label\naxes, units, caption) | | Photograph | realism; connects with all\naudiences | | Drawing | ideas not visible in photos; control complexity\n| | Schematic | layout of parts without complexity |</p>",
+          "text": "Illustrations: | Type | Use for | |—|—| | Table |\nexact values (same decimal places, units) | | Graph | trends (label\naxes, units, caption) | | Photograph | realism; connects with all\naudiences | | Drawing | ideas not visible in photos; control complexity\n| | Schematic | layout of parts without complexity |"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Level of complexity:</strong> a drawing can hide unneeded\ndetail (solar panels vs full telescope photo).</li>\n<li><strong>Scale:</strong> scale of <strong>impact</strong> (−50 °C vs\n0 °C vaccine storage) and scale of <strong>object</strong> (person\nbeside wind turbine).</li>\n</ul>",
+          "text": "Level of complexity: a drawing can hide unneeded\ndetail (solar panels vs full telescope photo). Scale: scale of impact (−50 °C vs\n0 °C vaccine storage) and scale of object (person\nbeside wind turbine)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Always end with a summary.</strong></p>",
+          "text": "Always end with a summary."
+        },
+        {
+          "type": "heading",
+          "text": "Writing a report"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why writing matters:</strong> credit for your work ·\nreference for later · shaping the policy of the organisation.</p>",
+          "text": "Why writing matters: credit for your work ·\nreference for later · shaping the policy of the organisation."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why it is difficult:</strong> personal background (native\nlanguage, read later and far away) · lack of knowledge of expectations ·\n“<strong>poor</strong>” examples (novels hide the answer; reports must\nnot).</p>",
+          "text": "Why it is difficult: personal background (native\nlanguage, read later and far away) · lack of knowledge of expectations ·\n“ poor ” examples (novels hide the answer; reports must\nnot)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Purpose:</strong> <strong>inform</strong> readers ·\n<strong>persuade</strong> readers · do it\n<strong>efficiently</strong>.</p>",
+          "text": "Purpose: inform readers · persuade readers · do it efficiently ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Structure:</strong> | Part | Contents | |—|—| | Beginning |\nTitle · Summary (key results on top) · Introduction (2–3 lines on why) |\n| Middle | Details and strategy: <strong>chronological</strong>,\n<strong>spatial</strong>, <strong>flow of variable</strong> | | Ending |\nSummary and <strong>future perspective</strong> |</p>",
+          "text": "Structure: | Part | Contents | |—|—| | Beginning |\nTitle · Summary (key results on top) · Introduction (2–3 lines on why) |\n| Middle | Details and strategy: chronological , spatial , flow of variable | | Ending |\nSummary and future perspective |"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Language:</strong> - Correct word (<strong>speed vs\nvelocity</strong>; km vs km/h) - Avoid complexity (functionability →\nfunction; hitherto → until now; discretized → discrete) - Avoid\n<strong>ambiguity</strong> (“This is a symptom…” — this what?) - Be\nconcise (at this point in time → now; at that point in time → then; in\nlight of the fact → because) - Avoid arrogant phrases (“<strong>it is\nobvious</strong>”) - Define unusual terms and abbreviations</p>",
+          "text": "Language: - Correct word ( speed vs\nvelocity ; km vs km/h) - Avoid complexity (functionability →\nfunction; hitherto → until now; discretized → discrete) - Avoid ambiguity (“This is a symptom…” — this what?) - Be\nconcise (at this point in time → now; at that point in time → then; in\nlight of the fact → because) - Avoid arrogant phrases (“ it is\nobvious ”) - Define unusual terms and abbreviations"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>An employee emails the CEO about a broken chair. What does this\nshow?\n</li></ol></summary>\nPoor judgment. The right way is to find the correct person or ticketing\nprocess for office maintenance.\n</details>",
+          "text": "An employee emails the CEO about a broken chair. What does this\nshow? Poor judgment. The right way is to find the correct person or ticketing\nprocess for office maintenance."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>“Where can I get library card?” is sent to the Dean. What is\nmissing?\n</li></ol></summary>\nStructure: a greeting, the situation (“I am new to campus…”), a polite\nrequest, and a sign-off with name and roll number.\n</details>",
+          "text": "“Where can I get library card?” is sent to the Dean. What is\nmissing? Structure: a greeting, the situation (“I am new to campus…”), a polite\nrequest, and a sign-off with name and roll number."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Which illustration should you use to show exact values like 39.3 and\n1297?\n</li></ol></summary>\nA table.\n</details>",
+          "text": "Which illustration should you use to show exact values like 39.3 and\n1297? A table."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>In a presentation, why should you mark which points are facts and\nwhich are opinions?\n</li></ol></summary>\nSo the audience knows what is certain and where they are taking a chance\nwhen they make a decision.\n</details>",
+          "text": "In a presentation, why should you mark which points are facts and\nwhich are opinions? So the audience knows what is certain and where they are taking a chance\nwhen they make a decision."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Where in a report should the key results go?\n</li></ol></summary>\nIn the summary at the beginning, so busy readers see them first.\n</details>",
+          "text": "Where in a report should the key results go? In the summary at the beginning, so busy readers see them first."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Describing a product from its outer parts to its core is which\nstrategy?\n</li></ol></summary>\nSpatial.\n</details>",
+          "text": "Describing a product from its outer parts to its core is which\nstrategy? Spatial."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>What are the two constraints on a professional presentation?\n</li></ol></summary>\nAudience (seniority and purpose) and duration.\n</details>",
+          "text": "What are the two constraints on a professional presentation? Audience (seniority and purpose) and duration."
+        }
+      ]
+    }
+  ]
+}

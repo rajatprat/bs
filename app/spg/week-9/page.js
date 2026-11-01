@@ -1,0 +1,4 @@
+import data from '../../../data/spg-week-9.json';
+import WeekSections,{WeekStats} from '../../../components/WeekSections';
+export const metadata={title:'SPG Week 9 · Cultivating a growth mindset'};
+export default function Week(){return <main id="main" className="week-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span>/</span><a href="/spg/">SPG</a><span>/</span><span>Week 9</span></nav><div className="eyebrow">BSGN3001 · WEEK 9</div><h1>Grow through challenges.<br/><span>Keep learning.</span></h1><p className="lead">Explore growth mindsets, handle rejection, reframe self-talk, and learn from failure with practical frameworks.</p><WeekStats data={data}/><a className="primary" href={data.base+data.sections[0].slug+'/'}>Start Lesson 1 →</a><WeekSections data={data}/></main>}

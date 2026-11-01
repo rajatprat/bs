@@ -1,3 +1,4 @@
+import SpgBlocks from './SpgBlocks';
 import StudyTools, { ReadingProgress } from './StudyTools';
 import StatisticsBlocks from './StatisticsBlocks';
 import { additionsFor } from '../lib/review-additions';
@@ -29,7 +30,7 @@ export default function Lesson({ data, slug }) {
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><a href={subjectPath}>{data.subject}</a><span aria-hidden="true">/</span><a href={data.part ? `${subjectPath}week-${week}/` : base}>Week {week}</a>{data.part && <><span aria-hidden="true">/</span><a href={base}>Part {data.part}</a></>}</nav>
     <div className="eyebrow">{isResource(section) ? 'REVISION AND PRACTICE' : `SECTION ${String(index + 1).padStart(2, '0')} / ${studies.length}`}</div><h1>{section.title}</h1><StudyTools title={section.title} subject={data.subject} week={week} minutes={minutes} resource={!!isResource(section)}/>
     {contents.length > 0 && <details className="lesson-contents" open={contents.length <= 6 && data.subjectSlug !== 'algorithms-in-data-science'}><summary>On this page <span>{contents.length} headings</span></summary><nav aria-label="On this page"><ol>{contents.map(item => <li key={item.id} className={item.nested ? 'nested' : ''}><a href={`#${item.id}`}>{item.text}</a></li>)}</ol></nav></details>}
-    {data.subjectSlug === 'statistics' ? <StatisticsBlocks blocks={section.blocks}/> : data.subjectSlug === 'algorithms-in-data-science' ? <AlgorithmsBlocks blocks={section.blocks}/> : data.subjectSlug === 'mathematical-foundation-of-generative-ai' ? <MathLesson blocks={section.blocks}/> : <Blocks blocks={section.blocks} additions={data.subjectSlug ? [] : additionsFor(week,slug,section.blocks)}/>}
+    {data.subjectSlug === 'spg' ? <SpgBlocks blocks={section.blocks}/> : data.subjectSlug === 'statistics' ? <StatisticsBlocks blocks={section.blocks}/> : data.subjectSlug === 'algorithms-in-data-science' ? <AlgorithmsBlocks blocks={section.blocks}/> : data.subjectSlug === 'mathematical-foundation-of-generative-ai' ? <MathLesson blocks={section.blocks}/> : <Blocks blocks={section.blocks} additions={data.subjectSlug ? [] : additionsFor(week,slug,section.blocks)}/>}
     <StudyTools title={section.title} subject={data.subject} week={week} minutes={minutes} resource={!!isResource(section)} completionOnly/>
     <a className="back-top" href="#main">Back to top ↑</a>
     <nav className="lesson-pagination" aria-label="Previous and next sections">

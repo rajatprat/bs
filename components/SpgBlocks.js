@@ -1,0 +1,3 @@
+import Diagram from './Diagram';
+import {headingId} from '../lib/course';
+export default function SpgBlocks({blocks}) {return <div className="lesson-body spg-lesson">{blocks.map((b,i)=>b.type==='image'?<Diagram key={i} block={b}/>:b.type==='heading'||b.type==='subheading'?b.type==='heading'?<h2 key={i} id={headingId(b,i)} className="anchored-heading"><a href={'#'+headingId(b,i)}>{b.text}<span className="heading-link" aria-hidden="true"> #</span></a></h2>:<h3 key={i} id={headingId(b,i)} className="anchored-heading"><a href={'#'+headingId(b,i)}>{b.text}<span className="heading-link" aria-hidden="true"> #</span></a></h3>:<div key={i} dangerouslySetInnerHTML={{__html:b.html}}/>)}</div>}

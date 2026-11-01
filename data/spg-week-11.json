@@ -1,0 +1,924 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 11,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-11/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "what-is-engineering-sense",
+      "title": "Engineer and Engineering Sense",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Look around the room you’re sitting in.\nThe roof keeps out the sun and rain. The fan cools you. The internet\nbrings you this lecture. Can you find one thing an engineer has\n<strong>not</strong> touched? Engineering isn’t just a degree. It’s a\nway of thinking anyone can learn.</p>\n</blockquote>",
+          "text": "Start here Look around the room you’re sitting in.\nThe roof keeps out the sun and rain. The fan cools you. The internet\nbrings you this lecture. Can you find one thing an engineer has not touched? Engineering isn’t just a degree. It’s a\nway of thinking anyone can learn."
+        },
+        {
+          "type": "html",
+          "html": "<p>This week is taught mainly by <strong>Prof. Sivakumar M S</strong>,\nwith discussions with Prof. Kartic, Lt Col Jayakumar, Prof. Prasanna and\nProf. Shiva. Another name for engineering sense is <strong>“thinking\nwith hands”</strong>.</p>",
+          "text": "This week is taught mainly by Prof. Sivakumar M S ,\nwith discussions with Prof. Kartic, Lt Col Jayakumar, Prof. Prasanna and\nProf. Shiva. Another name for engineering sense is “thinking\nwith hands” ."
+        },
+        {
+          "type": "heading",
+          "text": "Engineering is as old as\nhumans"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Engineering was born from <strong>need</strong>: to change the\nenvironment for <strong>food, shelter and security</strong>.</li>\n<li>The driving force: the wish for a <strong>better, easier, more\ncomfortable life</strong>.</li>\n<li>Humans invented the <strong>wheel</strong>,\n<strong>farming</strong>, <strong>engines</strong>,\n<strong>weapons</strong>, <strong>computers</strong> and the\n<strong>internet</strong>.</li>\n<li><strong>Ancient Indian engineers had no degrees</strong>, yet they\nbuilt amazing things. They <strong>observed, studied and honed their\nskills</strong>.</li>\n</ul>",
+          "text": "Engineering was born from need : to change the\nenvironment for food, shelter and security . The driving force: the wish for a better, easier, more\ncomfortable life . Humans invented the wheel , farming , engines , weapons , computers and the internet . Ancient Indian engineers had no degrees , yet they\nbuilt amazing things. They observed, studied and honed their\nskills ."
+        },
+        {
+          "type": "heading",
+          "text": "What went wrong?"
+        },
+        {
+          "type": "html",
+          "html": "<p>The <strong>Industrial Revolution</strong> (about 200 years ago)\nbrought prosperity, stability and security. But it also made us\n<strong>compartmentalised</strong>: everyone is a specialist (heart\nspecialist, foot specialist…). We forget that <strong>the whole is more\nthan the sum of its parts</strong>.</p>",
+          "text": "The Industrial Revolution (about 200 years ago)\nbrought prosperity, stability and security. But it also made us compartmentalised : everyone is a specialist (heart\nspecialist, foot specialist…). We forget that the whole is more\nthan the sum of its parts ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Today we <strong>respect the degree</strong> more than <strong>real\nengineering ability</strong>.</li>\n<li>We are great at solving <strong>back-of-the-chapter\nproblems</strong>, but less ready for <strong>real-life\nproblems</strong>.</li>\n</ul>",
+          "text": "Today we respect the degree more than real\nengineering ability . We are great at solving back-of-the-chapter\nproblems , but less ready for real-life\nproblems ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Key idea:</strong> An <strong>engineer</strong> is not just a\ndegree holder. It is <strong>anyone who makes things happen</strong>:\nwho creates <strong>products, processes and services</strong> that make\nlife better. <strong>Engineering is a habit.</strong> Anyone can build\nit with practice.</p>\n</blockquote>",
+          "text": "Key idea: An engineer is not just a\ndegree holder. It is anyone who makes things happen :\nwho creates products, processes and services that make\nlife better. Engineering is a habit. Anyone can build\nit with practice."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img01-engineering-everywhere.webp",
+          "alt": "Engineering is everywhere",
+          "caption": "Almost everything around you was\nplanned and built by an engineer."
+        },
+        {
+          "type": "heading",
+          "text": "The habits of an engineer"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Sivakumar lists these habits (“a modest list, not complete”).\nThe next pages explain each one.</p>",
+          "text": "Prof. Sivakumar lists these habits (“a modest list, not complete”).\nThe next pages explain each one."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Habit</th>\n<th>Page</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Planning</strong></td>\n<td>2</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Approximating and estimating</strong></td>\n<td>2</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Technical auditing</strong> (what is conserved?)</td>\n<td>2</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Where can I apply what I learned?</strong></td>\n<td>3</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Cause and effect</strong> (root cause analysis)</td>\n<td>3</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>How can I make it better?</strong></td>\n<td>3</td>\n</tr>\n<tr>\n<td>7</td>\n<td><strong>Changing perspective</strong></td>\n<td>3</td>\n</tr>\n<tr>\n<td>8</td>\n<td><strong>Big-picture thinking</strong></td>\n<td>4</td>\n</tr>\n<tr>\n<td>9</td>\n<td><strong>Abstraction and detailing</strong></td>\n<td>4</td>\n</tr>\n<tr>\n<td>10</td>\n<td><strong>Divide and conquer</strong></td>\n<td>4</td>\n</tr>\n<tr>\n<td>11</td>\n<td><strong>Classifying (taxonomy)</strong></td>\n<td>5</td>\n</tr>\n<tr>\n<td>12</td>\n<td><strong>Dimensions, units and numbers</strong></td>\n<td>5</td>\n</tr>\n<tr>\n<td>13</td>\n<td><strong>Associative understanding of features</strong></td>\n<td>5</td>\n</tr>\n<tr>\n<td>14</td>\n<td><strong>Quick rough (“jugaad”) experiments</strong></td>\n<td>5</td>\n</tr>\n<tr>\n<td>+</td>\n<td>From the discussions: <strong>documenting, exchanging ideas,\ndebriefing, mental models, perspectives</strong></td>\n<td>2, 6</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Habit Page 1 Planning 2 2 Approximating and estimating 2 3 Technical auditing (what is conserved?) 2 4 Where can I apply what I learned? 3 5 Cause and effect (root cause analysis) 3 6 How can I make it better? 3 7 Changing perspective 3 8 Big-picture thinking 4 9 Abstraction and detailing 4 10 Divide and conquer 4 11 Classifying (taxonomy) 5 12 Dimensions, units and numbers 5 13 Associative understanding of features 5 14 Quick rough (“jugaad”) experiments 5 + From the discussions: documenting, exchanging ideas,\ndebriefing, mental models, perspectives 2, 6"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Engineering sense is a habit of making\nthings happen — planning, estimating, improving and solving real\nproblems — and anyone can learn it, degree or not. <strong>Exam\nwords:</strong> engineering sense, thinking with hands,\nfood–shelter–security, compartmentalised, the whole is more than the sum\nof its parts, engineering is a habit.</p>",
+          "text": "In one line: Engineering sense is a habit of making\nthings happen — planning, estimating, improving and solving real\nproblems — and anyone can learn it, degree or not. Exam\nwords: engineering sense, thinking with hands,\nfood–shelter–security, compartmentalised, the whole is more than the sum\nof its parts, engineering is a habit."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat need gave birth to engineering?\n</summary>\nThe need to change the environment for food, shelter and security — for\na better, easier, more comfortable life.\n</details>",
+          "text": "What need gave birth to engineering? The need to change the environment for food, shelter and security — for\na better, easier, more comfortable life."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAccording to Prof. Sivakumar, who is an engineer?\n</summary>\nAnyone who makes things happen — creates products, processes and\nservices for better living — not just a degree holder.\n</details>",
+          "text": "According to Prof. Sivakumar, who is an engineer? Anyone who makes things happen — creates products, processes and\nservices for better living — not just a degree holder."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat downside of the Industrial Revolution does the lecture mention?\n</summary>\nWe became compartmentalised into narrow specialists and lost the\ngeneral, whole view.\n</details>",
+          "text": "What downside of the Industrial Revolution does the lecture mention? We became compartmentalised into narrow specialists and lost the\ngeneral, whole view."
+        }
+      ]
+    },
+    {
+      "slug": "plan-estimate-audit",
+      "title": "Planning, Estimating and Technical Auditing",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> How much water did yesterday’s rain bring\nto Chennai? You don’t need a satellite. Put a tub on your terrace,\nmeasure the water in it, and multiply by the area of the city. That’s\nengineering sense: a quick, smart estimate.</p>\n</blockquote>",
+          "text": "Start here How much water did yesterday’s rain bring\nto Chennai? You don’t need a satellite. Put a tub on your terrace,\nmeasure the water in it, and multiply by the area of the city. That’s\nengineering sense: a quick, smart estimate."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 1: Planning"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Planning</strong> = arranging <strong>what</strong> tasks to\ndo, <strong>how</strong> to do them, and how to use\n<strong>resources</strong> well, to reach a goal\n<strong>safely</strong>, <strong>effectively</strong> and\n<strong>efficiently</strong>, in the right <strong>proportions</strong>\nand within a <strong>time limit</strong>.</p>",
+          "text": "Planning = arranging what tasks to\ndo, how to do them, and how to use resources well, to reach a goal safely , effectively and efficiently , in the right proportions and within a time limit ."
+        },
+        {
+          "type": "html",
+          "html": "<p>The word <strong>“engineer”</strong> comes from the Latin\n<em>ingenium</em> (cleverness). In old English, an “engine” could also\nmean a clever <strong>plan or plot</strong>, so planning sits at the\nvery root of engineering.</p>",
+          "text": "The word “engineer” comes from the Latin ingenium (cleverness). In old English, an “engine” could also\nmean a clever plan or plot , so planning sits at the\nvery root of engineering."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — building a table</strong> Even for a simple\ntable, you plan:</p>\n<ul>\n<li><strong>Materials:</strong> wooden planks, legs, nails, paint, in\nthe right quantity.</li>\n<li><strong>Tools:</strong> which tools; do I have them or must I get\nthem?</li>\n<li><strong>Place:</strong> where will I build it?</li>\n<li><strong>Transport:</strong> how will I bring the materials?</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — building a table Even for a simple\ntable, you plan: Materials: wooden planks, legs, nails, paint, in\nthe right quantity. Tools: which tools; do I have them or must I get\nthem? Place: where will I build it? Transport: how will I bring the materials?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img02-planning.webp",
+          "alt": "Planning a table",
+          "caption": "Even a small job needs a plan: materials,\ntools, place and transport."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Kartic: planning a large IT\naccount</strong> When Prof. Kartic took charge of a large account, the\nfirst 3–6 months felt like chaos. There were client work, internal teams\n(delivery excellence, innovation), escalations and staff leaving. His\nplanning steps:</p>\n<ol type=\"1\">\n<li><strong>Document</strong> everything and <strong>spot the\npatterns</strong> of work.</li>\n<li>Decide <strong>who is best at what</strong>.</li>\n<li>Give extra roles to <strong>small teams, not single\n“stars”</strong>, so work doesn’t stop if one person is away\n(<strong>de-risking</strong>).</li>\n<li>Set up <strong>monitoring</strong>: regular meetings to track\nprogress.</li>\n</ol>\n</blockquote>",
+          "text": "Lecture example — Prof. Kartic: planning a large IT\naccount When Prof. Kartic took charge of a large account, the\nfirst 3–6 months felt like chaos. There were client work, internal teams\n(delivery excellence, innovation), escalations and staff leaving. His\nplanning steps: Document everything and spot the\npatterns of work. Decide who is best at what . Give extra roles to small teams, not single\n“stars” , so work doesn’t stop if one person is away\n( de-risking ). Set up monitoring : regular meetings to track\nprogress."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>“Your plan may fail, but do not fail to plan.”</strong> Keep\na plan B and a plan C.</p>\n</blockquote>",
+          "text": "“Your plan may fail, but do not fail to plan.” Keep\na plan B and a plan C."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Use the right tools:</strong> you could turn a screw with a\nspoon, but a screwdriver is the right tool. Prof. Kartic first built\ngames from scratch, then switched to platforms with ready\n<strong>templates</strong> (like crossword templates), which made the\nwork much faster.</p>",
+          "text": "Use the right tools: you could turn a screw with a\nspoon, but a screwdriver is the right tool. Prof. Kartic first built\ngames from scratch, then switched to platforms with ready templates (like crossword templates), which made the\nwork much faster."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 2: Approximating and\nestimating"
+        },
+        {
+          "type": "html",
+          "html": "<p>Engineers want a quick <strong>ballpark figure</strong>: a number\nthat is close enough to be useful.</p>",
+          "text": "Engineers want a quick ballpark figure : a number\nthat is close enough to be useful."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the room</strong> A cube-shaped room\nmeasures <strong>2.05 m</strong> on each side.</p>\n<ul>\n<li><strong>Quick estimate:</strong> 2 × 2 × 2 = <strong>8\nm³</strong>.</li>\n<li><strong>More precise:</strong> 2.05 × 2.05 × 2.05 ≈ <strong>8.6\nm³</strong>. The quick 8 m³ is often good enough to decide things fast.\n<em>(Note: in the video the lecturer adds only 0.15 and gets 8.15 m³.\nThe correct value is about 8.6 m³.)</em></li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — the room A cube-shaped room\nmeasures 2.05 m on each side. Quick estimate: 2 × 2 × 2 = 8\nm³ . More precise: 2.05 × 2.05 × 2.05 ≈ 8.6\nm³ . The quick 8 m³ is often good enough to decide things fast. (Note: in the video the lecturer adds only 0.15 and gets 8.15 m³.\nThe correct value is about 8.6 m³.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the rain in Chennai</strong> Put a tub\noutside during rain. Next day, the water is <strong>3 cm</strong> deep.\nSo the rainfall was about 3 cm. <strong>Water received ≈ 3 cm × area of\nChennai.</strong> That gives a useful estimate.</p>\n</blockquote>",
+          "text": "Lecture example — the rain in Chennai Put a tub\noutside during rain. Next day, the water is 3 cm deep.\nSo the rainfall was about 3 cm. Water received ≈ 3 cm × area of\nChennai. That gives a useful estimate."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img03-estimate-rain.webp",
+          "alt": "Estimating the rain",
+          "caption": "Measure a little, multiply by the big\narea, and you have a good estimate."
+        },
+        {
+          "type": "html",
+          "html": "<p>Another example: after <strong>demonetisation</strong>, a friend\nasked how many rupees change hands in India each day. Look at one part\nof a city, then <strong>extrapolate</strong>.</p>",
+          "text": "Another example: after demonetisation , a friend\nasked how many rupees change hands in India each day. Look at one part\nof a city, then extrapolate ."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 3: Technical\nauditing: “What is conserved?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Technical auditing</strong> means checking what\n<strong>should</strong> balance, and asking where the difference went.\nIt is based on <strong>conservation</strong>: some quantities (energy,\nmass, money, people) can’t just disappear.</p>",
+          "text": "Technical auditing means checking what should balance, and asking where the difference went.\nIt is based on conservation : some quantities (energy,\nmass, money, people) can’t just disappear."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the bouncing ball</strong> Drop a ball from\n2 m. It bounces back <strong>lower</strong>. Energy is conserved, so\n<strong>where did the rest go?</strong> It became <strong>heat</strong>,\n<strong>sound</strong> and <strong>friction</strong> at impact.</p>\n</blockquote>",
+          "text": "Lecture example — the bouncing ball Drop a ball from\n2 m. It bounces back lower . Energy is conserved, so where did the rest go? It became heat , sound and friction at impact."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img04-ball-audit.webp",
+          "alt": "Where did the energy go?",
+          "caption": "The ball doesn’t come back as\nhigh. The “missing” energy went into heat and sound."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — cement + sand</strong> 1 bag of cement + 1\nbag of sand ≠ 2 bags of mix. Some cement fills the <strong>gaps</strong>\nbetween sand grains, so the <strong>volume</strong> is less. But the\n<strong>weight</strong> is the same, because <strong>weight is what’s\nconserved</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — cement + sand 1 bag of cement + 1\nbag of sand ≠ 2 bags of mix. Some cement fills the gaps between sand grains, so the volume is less. But the weight is the same, because weight is what’s\nconserved ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — hostel rooms and mess food</strong> As\nDean, Prof. Sivakumar used auditing for hostel occupancy: the number of\nrooms is fixed, so the count must balance. With Lt Col Jayakumar, he\naudited <strong>mess food waste</strong>: how much was cooked, served,\neaten and wasted. Plate waste went to a <strong>biogas plant</strong>;\nunserved food went to <strong>NGOs</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — hostel rooms and mess food As\nDean, Prof. Sivakumar used auditing for hostel occupancy: the number of\nrooms is fixed, so the count must balance. With Lt Col Jayakumar, he\naudited mess food waste : how much was cooked, served,\neaten and wasted. Plate waste went to a biogas plant ;\nunserved food went to NGOs ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — army operations (Lt Col Jayakumar)</strong>\nEvery day is an audit. For <strong>road opening and convoy\nprotection</strong>, the cook has tea ready at 4 a.m., the armoury\nopens, weapons are checked, vehicles are ready by 5:15, and the road is\ndeclared clear by 7 a.m. For an attack “by 0500 hours”, the commander\n<strong>works backwards</strong>: resources (own and borrowed), who does\nwhat, transport and fuel, ammunition (and when reserves may be used),\ntime, and <strong>environment</strong> (moonlight, rain). Afterwards:\n<strong>count the people and the stores</strong>. Training + maintenance\n+ inventory control keep a unit “fit for war at all times”.</p>\n</blockquote>",
+          "text": "Lecture example — army operations (Lt Col Jayakumar) Every day is an audit. For road opening and convoy\nprotection , the cook has tea ready at 4 a.m., the armoury\nopens, weapons are checked, vehicles are ready by 5:15, and the road is\ndeclared clear by 7 a.m. For an attack “by 0500 hours”, the commander works backwards : resources (own and borrowed), who does\nwhat, transport and fuel, ammunition (and when reserves may be used),\ntime, and environment (moonlight, rain). Afterwards: count the people and the stores . Training + maintenance\n+ inventory control keep a unit “fit for war at all times”."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Plan what, how and with which\nresources; make quick ballpark estimates; and audit what should be\nconserved to find where things went. <strong>Exam words:</strong>\nplanning, resources, de-risking, monitoring, “don’t fail to plan”, right\ntools, approximation, estimation, ballpark figure, extrapolate,\ntechnical auditing, conservation, debriefing.</p>",
+          "text": "In one line: Plan what, how and with which\nresources; make quick ballpark estimates; and audit what should be\nconserved to find where things went. Exam words: planning, resources, de-risking, monitoring, “don’t fail to plan”, right\ntools, approximation, estimation, ballpark figure, extrapolate,\ntechnical auditing, conservation, debriefing."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is planning, according to the lecture?\n</summary>\nArranging what tasks to do, how to do them, and how to use resources\noptimally to reach a goal effectively and efficiently within a time\nlimit.\n</details>",
+          "text": "What is planning, according to the lecture? Arranging what tasks to do, how to do them, and how to use resources\noptimally to reach a goal effectively and efficiently within a time\nlimit."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nRain fills a tub to 2 cm. How would you estimate the water a city\nreceived?\n</summary>\nMultiply 2 cm by the area of the city.\n</details>",
+          "text": "Rain fills a tub to 2 cm. How would you estimate the water a city\nreceived? Multiply 2 cm by the area of the city."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy don’t 1 bag of cement and 1 bag of sand make 2 bags of mix?\n</summary>\nCement fills the gaps between sand grains, so volume shrinks — but\nweight (what is conserved) stays the same.\n</details>",
+          "text": "Why don’t 1 bag of cement and 1 bag of sand make 2 bags of mix? Cement fills the gaps between sand grains, so volume shrinks — but\nweight (what is conserved) stays the same."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat question does technical auditing ask?\n</summary>\nWhat is conserved — and if it doesn’t balance, where did the difference\ngo?\n</details>",
+          "text": "What question does technical auditing ask? What is conserved — and if it doesn’t balance, where did the difference\ngo?"
+        }
+      ]
+    },
+    {
+      "slug": "apply-cause-improve",
+      "title": "Apply What You Learn, Find the Cause, Make It Better",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A plastic sheet is very hard to tear.\nMake one tiny cut with scissors, and it tears easily along that line.\nNow, where else could you use this trick? Notebooks with perforated\npages! That question, “where else can I use this?”, is an engineer’s\nhabit.</p>\n</blockquote>",
+          "text": "Start here A plastic sheet is very hard to tear.\nMake one tiny cut with scissors, and it tears easily along that line.\nNow, where else could you use this trick? Notebooks with perforated\npages! That question, “where else can I use this?”, is an engineer’s\nhabit."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 4: Where can I\napply what I learned?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img05-small-cut.webp",
+          "alt": "A small cut makes tearing easy",
+          "caption": "Learn a trick in one place,\nthen use it somewhere else."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>What was learned</th>\n<th>Where it was applied</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A small cut makes a plastic sheet easy to tear</td>\n<td><strong>Perforated</strong> notebook pages, snack packets with a\nnotch</td>\n</tr>\n<tr>\n<td>Rubbing stones together makes heat</td>\n<td>Early humans used it to make <strong>fire</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "What was learned Where it was applied A small cut makes a plastic sheet easy to tear Perforated notebook pages, snack packets with a\nnotch Rubbing stones together makes heat Early humans used it to make fire"
+        },
+        {
+          "type": "heading",
+          "text": "Habit 5:\nRelate cause to effect (root cause analysis)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Find the <strong>root cause</strong>. Then you can control the\n<strong>effect</strong>.</p>",
+          "text": "Find the root cause . Then you can control the effect ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — putting out a fire</strong> Fire needs\n<strong>oxygen</strong> (cause → burning). Throw a\n<strong>blanket</strong> over a small fire, and the little oxygen under\nit is used up, so the fire goes out. Knowing the cause tells you how to\nstop the effect.</p>\n</blockquote>",
+          "text": "Lecture example — putting out a fire Fire needs oxygen (cause → burning). Throw a blanket over a small fire, and the little oxygen under\nit is used up, so the fire goes out. Knowing the cause tells you how to\nstop the effect."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 6: How can I make it\nbetter?"
+        },
+        {
+          "type": "html",
+          "html": "<p>Humans are <strong>never satisfied</strong> with the first version.\nThe question <strong>“How can I make it better?”</strong> drives every\nimprovement.</p>",
+          "text": "Humans are never satisfied with the first version.\nThe question “How can I make it better?” drives every\nimprovement."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img06-mouse-evolution.webp",
+          "alt": "Evolution of the computer mouse",
+          "caption": "Each version solved a\nproblem of the one before."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the computer mouse</strong> Bulky first\nmouse → <strong>rolling-ball</strong> mouse (but the ball got stuck and\ndepended on the surface) → <strong>optical</strong> mouse →\n<strong>ergonomic</strong> mouse → <strong>gestures</strong>. Each step\nbegan by asking: where is the problem, and how can I fix it?</p>\n</blockquote>",
+          "text": "Lecture example — the computer mouse Bulky first\nmouse → rolling-ball mouse (but the ball got stuck and\ndepended on the surface) → optical mouse → ergonomic mouse → gestures . Each step\nbegan by asking: where is the problem, and how can I fix it?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — railway ticket booking\n(Prof. Kartic)</strong></p>\n<ol type=\"1\">\n<li><strong>1980s:</strong> only 1–2 big booking halls in a city (like\nChennai Central and Egmore), many long queues, tickets written by hand\nin ledgers. <strong>Half a day lost.</strong></li>\n<li><strong>Booking offices</strong> opened in different parts of the\ncity, saving travel time.</li>\n<li><strong>Chairs</strong> for waiting passengers, a kind thought\n(<strong>empathy</strong>) for senior citizens.</li>\n<li><strong>One single queue</strong> feeding all counters, so nobody\nhas to guess which queue is faster.</li>\n<li><strong>Online booking</strong>, plus <strong>licensed\nagents</strong> for people who aren’t tech-savvy, which also cut down\ncorruption.</li>\n<li><strong>Mobile app and SMS tickets</strong>: no paper, which is also\ngood for the environment.</li>\n</ol>\n</blockquote>",
+          "text": "Lecture example — railway ticket booking\n(Prof. Kartic) 1980s: only 1–2 big booking halls in a city (like\nChennai Central and Egmore), many long queues, tickets written by hand\nin ledgers. Half a day lost. Booking offices opened in different parts of the\ncity, saving travel time. Chairs for waiting passengers, a kind thought\n( empathy ) for senior citizens. One single queue feeding all counters, so nobody\nhas to guess which queue is faster. Online booking , plus licensed\nagents for people who aren’t tech-savvy, which also cut down\ncorruption. Mobile app and SMS tickets : no paper, which is also\ngood for the environment."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img07-ticketing.webp",
+          "alt": "From long queues to mobile tickets",
+          "caption": "Step-by-step\nimprovements made ticket booking easier for everyone."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Always ask:</strong> What struggles does the <strong>end\nuser</strong> face? How can I make it <strong>easier for\nthem</strong>?</p>",
+          "text": "Always ask: What struggles does the end\nuser face? How can I make it easier for\nthem ?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — games for teachers (Prof. Kartic)</strong>\nWhen the pandemic stopped his board-game workshops, Prof. Kartic moved\nto digital games. Teachers kept asking, “Can I use this for a test?” So,\nout of <strong>empathy</strong>, he chose platforms that also show\n<strong>analytics</strong> (who played, scores, difficulty of each\nquestion), while keeping the fun.</p>\n</blockquote>",
+          "text": "Lecture example — games for teachers (Prof. Kartic) When the pandemic stopped his board-game workshops, Prof. Kartic moved\nto digital games. Teachers kept asking, “Can I use this for a test?” So,\nout of empathy , he chose platforms that also show analytics (who played, scores, difficulty of each\nquestion), while keeping the fun."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 7: Change your\nperspective"
+        },
+        {
+          "type": "html",
+          "html": "<p>A solution rejected in the past may become the <strong>best\none</strong> when the situation changes.</p>",
+          "text": "A solution rejected in the past may become the best\none when the situation changes."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — DC power is back</strong> <strong>Edison’s\nDC</strong> power couldn’t travel far because too much was lost in the\ncables. <strong>Tesla’s AC</strong> could, so AC won. Today,\n<strong>solar panels</strong> produce <strong>DC</strong> power\n<strong>locally</strong>, close to where it is used. So DC systems are\nworth looking at again. (IIT Madras works on such DC electrification\nprojects.) <strong>Lesson:</strong> Don’t throw away old solutions.\nRe-check them from today’s perspective.</p>\n</blockquote>",
+          "text": "Lecture example — DC power is back Edison’s\nDC power couldn’t travel far because too much was lost in the\ncables. Tesla’s AC could, so AC won. Today, solar panels produce DC power locally , close to where it is used. So DC systems are\nworth looking at again. (IIT Madras works on such DC electrification\nprojects.) Lesson: Don’t throw away old solutions.\nRe-check them from today’s perspective."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Reuse what you learn in new places,\nfind root causes, keep asking “How can I make it better?”, and look\nagain at old solutions when the situation changes. <strong>Exam\nwords:</strong> apply learning, root cause analysis, cause and effect,\n“how can I make it better?”, continuous improvement, end-user empathy,\nchange of perspective, AC vs DC, decentralised solar power.</p>",
+          "text": "In one line: Reuse what you learn in new places,\nfind root causes, keep asking “How can I make it better?”, and look\nagain at old solutions when the situation changes. Exam\nwords: apply learning, root cause analysis, cause and effect,\n“how can I make it better?”, continuous improvement, end-user empathy,\nchange of perspective, AC vs DC, decentralised solar power."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy does a blanket put out a small fire?\n</summary>\nIt cuts off the oxygen supply (the cause of burning); once the oxygen\nunder it is used up, the fire stops.\n</details>",
+          "text": "Why does a blanket put out a small fire? It cuts off the oxygen supply (the cause of burning); once the oxygen\nunder it is used up, the fire stops."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName two improvements in railway ticket booking before online booking.\n</summary>\nAny two: booking offices across the city; chairs for waiting passengers;\na single queue feeding all counters.\n</details>",
+          "text": "Name two improvements in railway ticket booking before online booking. Any two: booking offices across the city; chairs for waiting passengers;\na single queue feeding all counters."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy are DC power systems being reconsidered today?\n</summary>\nSolar panels generate DC power locally, so long-distance transmission\n(AC’s advantage) matters less.\n</details>",
+          "text": "Why are DC power systems being reconsidered today? Solar panels generate DC power locally, so long-distance transmission\n(AC’s advantage) matters less."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat question drives continuous improvement?\n</summary>\n“How can I make it better?”\n</details>",
+          "text": "What question drives continuous improvement? “How can I make it better?”"
+        }
+      ]
+    },
+    {
+      "slug": "big-picture-abstraction-divide",
+      "title": "Big Picture, Abstraction, and Divide and Conquer",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You need to drive a nail into a wall but\nhave no hammer. Most people give up. An engineer asks, “What does a\nhammer actually <strong>do</strong>?” It creates an\n<strong>impact</strong>. Now a stone, a heavy book or a shoe heel can\nall do the job.</p>\n</blockquote>",
+          "text": "Start here You need to drive a nail into a wall but\nhave no hammer. Most people give up. An engineer asks, “What does a\nhammer actually do ?” It creates an impact . Now a stone, a heavy book or a shoe heel can\nall do the job."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 8: Big-picture thinking"
+        },
+        {
+          "type": "html",
+          "html": "<p>You met this in systems thinking. Look at the <strong>bird’s-eye\nview</strong>, then come back to the <strong>details</strong>, and go\nback and forth between them.</p>",
+          "text": "You met this in systems thinking. Look at the bird’s-eye\nview , then come back to the details , and go\nback and forth between them."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Type</th>\n<th>Question</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Spatial</strong> (space)</td>\n<td>What does the whole situation look like from above?</td>\n</tr>\n<tr>\n<td><strong>Temporal</strong> (time)</td>\n<td>What has happened, or will happen, over time?</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Type Question Spatial (space) What does the whole situation look like from above? Temporal (time) What has happened, or will happen, over time?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — four years at IIT (Prof. Shiva)</strong> On\nday 1, a new student misses home and hates the food. From the\n“helicopter”, he can see his whole four years: graduating and receiving\nhis degree on stage. The small daily troubles become easier to bear. The\nhelicopter also shows the <strong>bad</strong> future (failing, falling\nbehind), so he can <strong>correct</strong> course now by studying\nregularly.</p>\n</blockquote>",
+          "text": "Lecture example — four years at IIT (Prof. Shiva) On\nday 1, a new student misses home and hates the food. From the\n“helicopter”, he can see his whole four years: graduating and receiving\nhis degree on stage. The small daily troubles become easier to bear. The\nhelicopter also shows the bad future (failing, falling\nbehind), so he can correct course now by studying\nregularly."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — mechanical vs aeronautical</strong> Wanted\naeronautical engineering but got mechanical? A big-picture person sees\nhow closely they are <strong>connected</strong> (the same science and\nmaths) and can still follow an aeronautics passion as a mechanical\nengineer.</p>\n</blockquote>",
+          "text": "Lecture example — mechanical vs aeronautical Wanted\naeronautical engineering but got mechanical? A big-picture person sees\nhow closely they are connected (the same science and\nmaths) and can still follow an aeronautics passion as a mechanical\nengineer."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 9: Abstraction and\ndetailing"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img08-abstraction.webp",
+          "alt": "Abstraction: hammer → impact generator",
+          "caption": "Ask “why?” to go up\nto the principle. Ask “how?” to come down to a real tool."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Move</th>\n<th>Question to ask</th>\n<th>Hammer example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Abstraction</strong> (go up to the principle)</td>\n<td>**“Why** does it work?”</td>\n<td>A hammer is really an <strong>impact (impulse)\ngenerator</strong></td>\n</tr>\n<tr>\n<td><strong>Detailing</strong> (come down to a real thing)</td>\n<td>**“How** can I create an impact?”</td>\n<td>A hammer, a stone, a heavy book…</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Move Question to ask Hammer example Abstraction (go up to the principle) **“Why** does it work?” A hammer is really an impact (impulse)\ngenerator Detailing (come down to a real thing) **“How** can I create an impact?” A hammer, a stone, a heavy book…"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why it helps (Prof. Shiva):</strong></p>",
+          "text": "Why it helps (Prof. Shiva):"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>“What is an alternative to a hammer?” limits your thinking. “What\nelse can cause an impact?” opens it up.</li>\n<li>It builds <strong>confidence</strong>. Instead of “I don’t have a\nhammer, I’m stuck”, you think “What else can do the job?”</li>\n<li>In life: people often get depressed because they lack <em>one\nspecific thing</em>. Abstraction shows them <strong>other ways</strong>\nto reach the same goal.</li>\n</ul>",
+          "text": "“What is an alternative to a hammer?” limits your thinking. “What\nelse can cause an impact?” opens it up. It builds confidence . Instead of “I don’t have a\nhammer, I’m stuck”, you think “What else can do the job?” In life: people often get depressed because they lack one\nspecific thing . Abstraction shows them other ways to reach the same goal."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 10: Divide and conquer"
+        },
+        {
+          "type": "html",
+          "html": "<p>Break a <strong>big system or problem</strong> into smaller\n<strong>functions</strong> and <strong>sub-functions</strong>, solve\neach, and keep track of how they <strong>connect</strong>.</p>",
+          "text": "Break a big system or problem into smaller functions and sub-functions , solve\neach, and keep track of how they connect ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the printer</strong> A printer’s functions:\n<strong>paper feeding</strong>, <strong>ink/toner deposition</strong>,\n<strong>rollers</strong> carrying the paper… Each has sub-functions, and\ntogether they produce a printed page. Breaking a product down like this\nhelps you <strong>design</strong> it, or work out how an existing\nproduct works (<strong>reverse engineering</strong>).</p>\n</blockquote>",
+          "text": "Lecture example — the printer A printer’s functions: paper feeding , ink/toner deposition , rollers carrying the paper… Each has sub-functions, and\ntogether they produce a printed page. Breaking a product down like this\nhelps you design it, or work out how an existing\nproduct works ( reverse engineering )."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Historical example used in the lecture:</strong> the British\nused a <strong>“divide and rule”</strong> strategy, splitting Indian\nkingdoms against each other so they could control them one by one. The\nlesson here is only about the <em>method</em> of breaking big things\ninto parts.</p>\n</blockquote>",
+          "text": "Historical example used in the lecture: the British\nused a “divide and rule” strategy, splitting Indian\nkingdoms against each other so they could control them one by one. The\nlesson here is only about the method of breaking big things\ninto parts."
+        },
+        {
+          "type": "subheading",
+          "text": "Breaking big\ngoals into tiny steps (Prof. Prasanna)"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img09-tiny-steps.webp",
+          "alt": "Tiny steps to a big goal",
+          "caption": "A big goal becomes doable when you\nbreak it into small steps."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>“A journey of a thousand miles begins with a single step.”</li>\n<li>To climb Everest, know the goal, then <strong>plan small\nsteps</strong>.</li>\n<li>Small steps mean <strong>less stress</strong>: you can <strong>see\nyour progress</strong>.</li>\n<li>Mistakes are small, so <strong>course correction</strong> is\neasy.</li>\n<li>Methods like <strong>Kaizen, Lean and Six Sigma</strong> all work by\nbreaking big processes into small steps.</li>\n<li><strong>1% better each day</strong> → about <strong>37 times better\nin a year</strong> (1.01³⁶⁵ ≈ 37.8).</li>\n<li>An engineer building a house: foundation first, then one floor at a\ntime, and finally a beautiful building.</li>\n</ul>",
+          "text": "“A journey of a thousand miles begins with a single step.” To climb Everest, know the goal, then plan small\nsteps . Small steps mean less stress : you can see\nyour progress . Mistakes are small, so course correction is\neasy. Methods like Kaizen, Lean and Six Sigma all work by\nbreaking big processes into small steps. 1% better each day → about 37 times better\nin a year (1.01³⁶⁵ ≈ 37.8). An engineer building a house: foundation first, then one floor at a\ntime, and finally a beautiful building."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Switch between the big picture and the\ndetails, abstract a tool to its principle to find more options, and\nbreak big problems into small connected steps. <strong>Exam\nwords:</strong> big picture (spatial and temporal), abstraction,\ndetailing, why vs how questions, impact generator, divide and conquer,\nfunctions and sub-functions, reverse engineering, tiny steps, Kaizen, 1%\nbetter daily.</p>",
+          "text": "In one line: Switch between the big picture and the\ndetails, abstract a tool to its principle to find more options, and\nbreak big problems into small connected steps. Exam\nwords: big picture (spatial and temporal), abstraction,\ndetailing, why vs how questions, impact generator, divide and conquer,\nfunctions and sub-functions, reverse engineering, tiny steps, Kaizen, 1%\nbetter daily."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat question takes you from “hammer” to “impact generator”?\n</summary>\n“Why” (what is it really doing?). That is abstraction.\n</details>",
+          "text": "What question takes you from “hammer” to “impact generator”? “Why” (what is it really doing?). That is abstraction."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat question takes you from “impact generator” back to “hammer”?\n</summary>\n“How” (how can I create an impact?). That is detailing.\n</details>",
+          "text": "What question takes you from “impact generator” back to “hammer”? “How” (how can I create an impact?). That is detailing."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow much better do you get in a year if you improve 1% every day?\n</summary>\nAbout 37 times (1.01³⁶⁵ ≈ 37.8).\n</details>",
+          "text": "How much better do you get in a year if you improve 1% every day? About 37 times (1.01³⁶⁵ ≈ 37.8)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is reverse engineering?\n</summary>\nBreaking down an existing product into its functions and sub-functions\nto understand how it works.\n</details>",
+          "text": "What is reverse engineering? Breaking down an existing product into its functions and sub-functions\nto understand how it works."
+        }
+      ]
+    },
+    {
+      "slug": "classify-measure-associate-experiment",
+      "title": "Classify, Measure, Borrow Ideas, and Test Quickly",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your mother says, “Go and buy rice.” You\nask, “How many <strong>kilos</strong>?” — not milligrams, not tonnes.\nWithout thinking, you chose the right unit. Engineers do this on\npurpose, all the time.</p>\n</blockquote>",
+          "text": "Start here Your mother says, “Go and buy rice.” You\nask, “How many kilos ?” — not milligrams, not tonnes.\nWithout thinking, you chose the right unit. Engineers do this on\npurpose, all the time."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 11:\nClassify by function and form (taxonomy)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Taxonomy</strong> means naming and grouping things by what\nthey <strong>do</strong> (function) or how they <strong>look</strong>\n(form). A good name carries a lot of meaning.</p>",
+          "text": "Taxonomy means naming and grouping things by what\nthey do (function) or how they look (form). A good name carries a lot of meaning."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Word</th>\n<th>What it instantly tells you</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Lever</strong></td>\n<td>Effort, fulcrum, load → <strong>mechanical advantage</strong></td>\n</tr>\n<tr>\n<td><strong>Hammer</strong></td>\n<td>A tool for impact</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Word What it instantly tells you Lever Effort, fulcrum, load → mechanical advantage Hammer A tool for impact"
+        },
+        {
+          "type": "html",
+          "html": "<p>Engineering words have entered daily life too:\n<strong>leverage</strong>, <strong>gearing up</strong>, <strong>switch\non / switch off</strong>, <strong>electrifying</strong>, <strong>search\nengine</strong>, <strong>anchoring</strong>.</p>",
+          "text": "Engineering words have entered daily life too: leverage , gearing up , switch\non / switch off , electrifying , search\nengine , anchoring ."
+        },
+        {
+          "type": "subheading",
+          "text": "Levers in life (Prof. Shiva)"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img10-life-levers.webp",
+          "alt": "Levers in everyday life",
+          "caption": "A smile, a kind word or a\nwell-timed question can be a lever."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“Give me a lever long enough and I can move the world.” — often\ncredited to <strong>Archimedes</strong></p>\n</blockquote>",
+          "text": "“Give me a lever long enough and I can move the world.” — often\ncredited to Archimedes"
+        },
+        {
+          "type": "html",
+          "html": "<p>Levers are everywhere, if you look for them:</p>",
+          "text": "Levers are everywhere, if you look for them:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>In court (“courtcraft”):</strong> the judge’s mood, the time\nof day, a smile, a friendly word to the opposing lawyer before the\nhearing.</li>\n<li><strong>At home:</strong> your son comes home late. Instead of\ngetting angry, use the <strong>relationship</strong> as a lever and talk\ncalmly.</li>\n<li><strong>In coaching:</strong> a sudden <strong>bang on the\ntable</strong> or a change in <strong>voice tone</strong> is a cue to\nexplore the feeling behind it.</li>\n<li>A <strong>smile</strong>, a <strong>pat on the back</strong> and\n<strong>appreciation</strong> are all levers.</li>\n</ul>",
+          "text": "In court (“courtcraft”): the judge’s mood, the time\nof day, a smile, a friendly word to the opposing lawyer before the\nhearing. At home: your son comes home late. Instead of\ngetting angry, use the relationship as a lever and talk\ncalmly. In coaching: a sudden bang on the\ntable or a change in voice tone is a cue to\nexplore the feeling behind it. A smile , a pat on the back and appreciation are all levers."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 12: Dimensions,\nunits and numbers"
+        },
+        {
+          "type": "html",
+          "html": "<p>Engineers always ask, <strong>“How much? In what unit?”</strong></p>",
+          "text": "Engineers always ask, “How much? In what unit?”"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Situation</th>\n<th>Sensible unit</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Buying rice at a shop</td>\n<td><strong>kg</strong></td>\n</tr>\n<tr>\n<td>Rice stock in a mill’s godown</td>\n<td><strong>tonnes</strong></td>\n</tr>\n<tr>\n<td>“It’s very hot!”</td>\n<td>What’s the <strong>temperature</strong>?</td>\n</tr>\n<tr>\n<td>Distance between stars</td>\n<td><strong>light years</strong> (the distance light travels in one\nyear)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Situation Sensible unit Buying rice at a shop kg Rice stock in a mill’s godown tonnes “It’s very hot!” What’s the temperature ? Distance between stars light years (the distance light travels in one\nyear)"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Relate numbers to things you can picture.</strong> For\nexample, 1 tonne is about <strong>15 adults’</strong> weight.</li>\n<li>Old units came from the body: people measured a room by placing\n<strong>one foot after another</strong>. Later, units were\n<strong>standardised</strong> (foot, metre).</li>\n</ul>",
+          "text": "Relate numbers to things you can picture. For\nexample, 1 tonne is about 15 adults’ weight. Old units came from the body: people measured a room by placing one foot after another . Later, units were standardised (foot, metre)."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 13:\nAssociative understanding of features"
+        },
+        {
+          "type": "html",
+          "html": "<p>If you solved one problem, look for <strong>similar features</strong>\nin a new problem and <strong>reuse the method</strong>.</p>",
+          "text": "If you solved one problem, look for similar features in a new problem and reuse the method ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Solved here</th>\n<th>Same feature reused there</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Blowing air</strong> separates light husk from heavier\nrice</td>\n<td><strong>Cleaning cotton</strong> in the textile industry with\nair</td>\n</tr>\n<tr>\n<td>The thirsty <strong>crow</strong> drops pebbles into a pot to raise\nthe water level (stones <strong>displace</strong> water)</td>\n<td>Any problem where you raise a level by adding volume</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Solved here Same feature reused there Blowing air separates light husk from heavier\nrice Cleaning cotton in the textile industry with\nair The thirsty crow drops pebbles into a pot to raise\nthe water level (stones displace water) Any problem where you raise a level by adding volume"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img11-associative.webp",
+          "alt": "Borrowing a solution",
+          "caption": "Spot the common feature, and an old\nsolution solves a new problem."
+        },
+        {
+          "type": "heading",
+          "text": "Habit 14: Quick rough\n(“jugaad”) experiments"
+        },
+        {
+          "type": "html",
+          "html": "<p>When you have an idea but no lab to test it, do a <strong>quick,\nrough experiment</strong> first to check if it’s\n<strong>feasible</strong>.</p>",
+          "text": "When you have an idea but no lab to test it, do a quick,\nrough experiment first to check if it’s feasible ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the egg drop</strong> “Below what height\ncan I drop an egg without breaking it?” Drop a few eggs from small\nheights (say 2 cm) and see. You get a <strong>ballpark</strong> answer\nfast. <strong>Husk test:</strong> blow air on a handful of rice and\nhusk. Does the husk fly off? If yes, refine the idea further.</p>\n</blockquote>",
+          "text": "Lecture example — the egg drop “Below what height\ncan I drop an egg without breaking it?” Drop a few eggs from small\nheights (say 2 cm) and see. You get a ballpark answer\nfast. Husk test: blow air on a handful of rice and\nhusk. Does the husk fly off? If yes, refine the idea further."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note: the video transcript calls these “jugular experiments”. The\nintended word is almost certainly “jugaad”: a quick, low-cost\ntest.</em></p>",
+          "text": "Note: the video transcript calls these “jugular experiments”. The\nintended word is almost certainly “jugaad”: a quick, low-cost\ntest."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Name things by function, think in the\nright units and numbers, reuse solutions with similar features, and test\nideas first with quick rough experiments. <strong>Exam words:</strong>\ntaxonomy, classification by function and form, lever, leverage,\ncourtcraft, dimensions, units, light year, associative understanding of\nfeatures, husk and air, thirsty crow, rough (jugaad) experiments,\nfeasibility.</p>",
+          "text": "In one line: Name things by function, think in the\nright units and numbers, reuse solutions with similar features, and test\nideas first with quick rough experiments. Exam words: taxonomy, classification by function and form, lever, leverage,\ncourtcraft, dimensions, units, light year, associative understanding of\nfeatures, husk and air, thirsty crow, rough (jugaad) experiments,\nfeasibility."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich unit would a mill owner use for rice in a godown?\n</summary>\nTonnes.\n</details>",
+          "text": "Which unit would a mill owner use for rice in a godown? Tonnes."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nBlowing air to remove husk was reused for what?\n</summary>\nCleaning cotton in the textile industry.\n</details>",
+          "text": "Blowing air to remove husk was reused for what? Cleaning cotton in the textile industry."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the purpose of a rough (jugaad) experiment?\n</summary>\nTo quickly check whether an idea is feasible, before refining it with\nproper equipment.\n</details>",
+          "text": "What is the purpose of a rough (jugaad) experiment? To quickly check whether an idea is feasible, before refining it with\nproper equipment."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive one “lever” in everyday life from the lecture.\n</summary>\nA smile, appreciation, a pat on the back, the relationship, timing, body\nlanguage or voice tone.\n</details>",
+          "text": "Give one “lever” in everyday life from the lecture. A smile, appreciation, a pat on the back, the relationship, timing, body\nlanguage or voice tone."
+        }
+      ]
+    },
+    {
+      "slug": "ideas-debriefing-mental-models",
+      "title": "Ideas, Debriefing, Mental Models and Perspectives",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> In 1947, Indian troops were rushed to\ndefend Kashmir. They found a battery of guns ready to fire, but the gun\nsights had all been sent away for overhaul. Nobody had checked. A simple\n“before” and “after” audit could have saved precious time.</p>\n</blockquote>",
+          "text": "Start here In 1947, Indian troops were rushed to\ndefend Kashmir. They found a battery of guns ready to fire, but the gun\nsights had all been sent away for overhaul. Nobody had checked. A simple\n“before” and “after” audit could have saved precious time."
+        },
+        {
+          "type": "heading",
+          "text": "Exchange ideas,\ncollaborate, and debrief"
+        },
+        {
+          "type": "subheading",
+          "text": "Communities of practice"
+        },
+        {
+          "type": "html",
+          "html": "<p>Lt Col Jayakumar: in the army, soldiers on the ground <strong>log\ninformation in real time</strong>. Commanders <strong>review</strong> it\nweekly or monthly, discuss options (<strong>war gaming</strong>), and\ndecide where to put effort. Information flows <strong>down</strong> to\nthe last soldier, and <strong>feedback</strong> flows <strong>back\nup</strong>.</p>",
+          "text": "Lt Col Jayakumar: in the army, soldiers on the ground log\ninformation in real time . Commanders review it\nweekly or monthly, discuss options ( war gaming ), and\ndecide where to put effort. Information flows down to\nthe last soldier, and feedback flows back\nup ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Modern apartment life has <strong>no common space</strong> (no\nvillage pond, community hall or panchayat tree), yet residents share\nproblems like seepage, garbage and electricity. Such places need\n<strong>communities of practice</strong>: people coming together to\nsolve problems through ideas.</p>",
+          "text": "Modern apartment life has no common space (no\nvillage pond, community hall or panchayat tree), yet residents share\nproblems like seepage, garbage and electricity. Such places need communities of practice : people coming together to\nsolve problems through ideas."
+        },
+        {
+          "type": "subheading",
+          "text": "Debriefing"
+        },
+        {
+          "type": "html",
+          "html": "<p>After a task, look back: <strong>what went well, what went wrong,\nwhat to improve next time?</strong></p>",
+          "text": "After a task, look back: what went well, what went wrong,\nwhat to improve next time?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img12-debrief.webp",
+          "alt": "Debriefing after a task",
+          "caption": "After every task, look back\ntogether and improve the next one."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the landslide</strong> On one move, a\n<strong>landslide</strong> blocked the road. The troops had to carry\nstores on <strong>mules</strong>, but none had been requested, so\neveryone waited a full day. A good <strong>debrief</strong> makes sure\nthe next plan includes landslides and mules.</p>\n</blockquote>",
+          "text": "Lecture example — the landslide On one move, a landslide blocked the road. The troops had to carry\nstores on mules , but none had been requested, so\neveryone waited a full day. A good debrief makes sure\nthe next plan includes landslides and mules."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — <em>Slender Was the Thread</em></strong>\nThis book by <strong>Lt Gen L. P. Sen</strong> describes the 1947–48\nKashmir operations. Troops found an artillery battery to use, but its\n<strong>gun sights had been sent for overhaul</strong>, so the guns\ncouldn’t be aimed. It is a reminder to <strong>audit before and\nafter</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — Slender Was the Thread This book by Lt Gen L. P. Sen describes the 1947–48\nKashmir operations. Troops found an artillery battery to use, but its gun sights had been sent for overhaul , so the guns\ncouldn’t be aimed. It is a reminder to audit before and\nafter ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Everyday debrief:</strong> after an exam, a parent asks, “How\ndid you answer this question? You could have done it this way.” That is\na debrief too.</p>",
+          "text": "Everyday debrief: after an exam, a parent asks, “How\ndid you answer this question? You could have done it this way.” That is\na debrief too."
+        },
+        {
+          "type": "subheading",
+          "text": "Great minds discuss ideas"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>“Great minds discuss <strong>ideas</strong>, average minds discuss\n<strong>events</strong>, small minds discuss\n<strong>people</strong>.”</p>\n</blockquote>",
+          "text": "“Great minds discuss ideas , average minds discuss events , small minds discuss people .”"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Level</th>\n<th>On a film set (Lt Col Jayakumar’s example)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>People</strong></td>\n<td>Gossiping about what others wear or do</td>\n</tr>\n<tr>\n<td><strong>Events</strong></td>\n<td>The cameraman thinking about lights and props for the shot</td>\n</tr>\n<tr>\n<td><strong>Ideas</strong></td>\n<td>“Why don’t we group the actors and let them talk naturally?”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Level On a film set (Lt Col Jayakumar’s example) People Gossiping about what others wear or do Events The cameraman thinking about lights and props for the shot Ideas “Why don’t we group the actors and let them talk naturally?”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — watch at 2× speed</strong> Prof. Sivakumar\ndreaded spending 1 hour reviewing his own lecture video. A student said,\n“Sir, just watch it at 2× speed.” <strong>A simple idea saved half an\nhour.</strong> <strong>“You never know from whose mouth the pearls of\nwisdom will come.”</strong> So keep discussing ideas.</p>\n</blockquote>",
+          "text": "Lecture example — watch at 2× speed Prof. Sivakumar\ndreaded spending 1 hour reviewing his own lecture video. A student said,\n“Sir, just watch it at 2× speed.” A simple idea saved half an\nhour. “You never know from whose mouth the pearls of\nwisdom will come.” So keep discussing ideas."
+        },
+        {
+          "type": "heading",
+          "text": "Mental models"
+        },
+        {
+          "type": "html",
+          "html": "<p>We take in the world through our senses and build a\n<strong>simplified picture</strong> of it in our minds. Prof. Sivakumar\ncalls this the <strong>“cartoonery of the mind”</strong>.</p>",
+          "text": "We take in the world through our senses and build a simplified picture of it in our minds. Prof. Sivakumar\ncalls this the “cartoonery of the mind” ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Prof. Prasanna’s points</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Like <strong>local storage</strong> of web pages</td>\n<td>Saved in our own way for quick use</td>\n</tr>\n<tr>\n<td>They help us</td>\n<td>Focus, connect the dots faster, make decisions, forecast</td>\n</tr>\n<tr>\n<td>But they can <strong>block</strong> new thinking</td>\n<td>An old model can stop you from seeing new options</td>\n</tr>\n<tr>\n<td>So <strong>deconstruct and rebuild</strong> them often</td>\n<td>Throw out what no longer works; keep the mind uncluttered</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Prof. Prasanna’s points Like local storage of web pages Saved in our own way for quick use They help us Focus, connect the dots faster, make decisions, forecast But they can block new thinking An old model can stop you from seeing new options So deconstruct and rebuild them often Throw out what no longer works; keep the mind uncluttered"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the agarbatti stand</strong> Say\n“incense-stick stand” and you picture a small metal holder. Would you\nthink of a <strong>banana</strong>? You can stick incense into it.\nBreaking your mental model opens new possibilities.</p>\n</blockquote>",
+          "text": "Lecture example — the agarbatti stand Say\n“incense-stick stand” and you picture a small metal holder. Would you\nthink of a banana ? You can stick incense into it.\nBreaking your mental model opens new possibilities."
+        },
+        {
+          "type": "heading",
+          "text": "Changing perspectives"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Prof. Prasanna’s career</strong></p>\n<ul>\n<li><strong>First job:</strong> about money, a good company, a good\nlocation. Living alone as a paying guest (cooking, shopping, accounts)\ngave her a <strong>new respect for her parents</strong>.</li>\n<li><strong>Second job:</strong> she protected time for herself. Travel\naround the world <strong>broke many mental models</strong>.</li>\n<li>She once thought, “I only work well when someone tells me what to\ndo.” Later she wanted <strong>purpose and impact</strong>, quit her\nregular job, and became a life coach: “jumping off a cliff”.\n<strong>Perspectives keep changing, and that’s how we\ngrow.</strong></li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Prof. Prasanna’s career First job: about money, a good company, a good\nlocation. Living alone as a paying guest (cooking, shopping, accounts)\ngave her a new respect for her parents . Second job: she protected time for herself. Travel\naround the world broke many mental models . She once thought, “I only work well when someone tells me what to\ndo.” Later she wanted purpose and impact , quit her\nregular job, and became a life coach: “jumping off a cliff”. Perspectives keep changing, and that’s how we\ngrow."
+        },
+        {
+          "type": "heading",
+          "text": "Thinking\nlike a lawyer and an engineer (Prof. Shiva)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Skill</th>\n<th>Meaning</th>\n<th>Lecture example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Deconstruction</strong></td>\n<td>Dig into what actually happened</td>\n<td>A landlord said the tenant hadn’t paid rent for 5 months.\nCross-examination showed the tenant had <strong>asked for the bank\ndetails</strong> many times. The judge saw the <strong>intention to\npay</strong>, and the tenant stayed.</td>\n</tr>\n<tr>\n<td><strong>Deduction</strong></td>\n<td>Reach a firm conclusion from facts</td>\n<td>A witness says he saw a man on a road at night. The calendar shows\nit was a <strong>new-moon night</strong>, too dark to see. So the claim\nis false.</td>\n</tr>\n<tr>\n<td><strong>Induction</strong></td>\n<td>Reach a likely conclusion from signs</td>\n<td>“The clouds are dark, so it may rain.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Skill Meaning Lecture example Deconstruction Dig into what actually happened A landlord said the tenant hadn’t paid rent for 5 months.\nCross-examination showed the tenant had asked for the bank\ndetails many times. The judge saw the intention to\npay , and the tenant stayed. Deduction Reach a firm conclusion from facts A witness says he saw a man on a road at night. The calendar shows\nit was a new-moon night , too dark to see. So the claim\nis false. Induction Reach a likely conclusion from signs “The clouds are dark, so it may rain.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Connect all subjects:</strong> a doctor should also be\ncurious about engineering and literature. Look for the engineering in\ncooking, gardening, even Shakespeare.</p>",
+          "text": "Connect all subjects: a doctor should also be\ncurious about engineering and literature. Look for the engineering in\ncooking, gardening, even Shakespeare."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Share and debrief ideas openly, keep\nupgrading your mental models and perspectives, and use deconstruction,\ndeduction and induction to reason clearly. <strong>Exam words:</strong>\nexchange of ideas, collaboration, communities of practice, war gaming,\ndebriefing, “great minds discuss ideas”, mental models, cartoonery of\nthe mind, deconstruction, perspective, deduction, induction.</p>",
+          "text": "In one line: Share and debrief ideas openly, keep\nupgrading your mental models and perspectives, and use deconstruction,\ndeduction and induction to reason clearly. Exam words: exchange of ideas, collaboration, communities of practice, war gaming,\ndebriefing, “great minds discuss ideas”, mental models, cartoonery of\nthe mind, deconstruction, perspective, deduction, induction."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is debriefing?\n</summary>\nLooking back after a task to see what went well, what went wrong and\nwhat to improve next time.\n</details>",
+          "text": "What is debriefing? Looking back after a task to see what went well, what went wrong and\nwhat to improve next time."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat problem did the landslide example reveal?\n</summary>\nMules hadn’t been planned for, so everyone waited a full day — a debrief\nwould add this to future plans.\n</details>",
+          "text": "What problem did the landslide example reveal? Mules hadn’t been planned for, so everyone waited a full day — a debrief\nwould add this to future plans."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“It was a new-moon night, so he couldn’t have seen the man.” Deduction\nor induction?\n</summary>\nDeduction — a firm conclusion from facts.\n</details>",
+          "text": "“It was a new-moon night, so he couldn’t have seen the man.” Deduction\nor induction? Deduction — a firm conclusion from facts."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy should we deconstruct our mental models?\n</summary>\nOld models can block new thinking; rebuilding them keeps the mind clear\nand open to new options.\n</details>",
+          "text": "Why should we deconstruct our mental models? Old models can block new thinking; rebuilding them keeps the mind clear\nand open to new options."
+        }
+      ]
+    },
+    {
+      "slug": "week-11-quick-revision",
+      "title": "Week 11 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Engineering sense, all on one page.</p>\n</blockquote>",
+          "text": "Start here Engineering sense, all on one page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-11/img13-week11-map.webp",
+          "alt": "Week 11 at a glance",
+          "caption": "The habits that make an engineer, with\nor without a degree."
+        },
+        {
+          "type": "heading",
+          "text": "What is engineering sense?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Thinking with hands.</strong> Engineering was born from the\nneed for <strong>food, shelter and security</strong>.</li>\n<li><strong>Ancient engineers had no degrees.</strong> An engineer is\nanyone who <strong>makes things happen</strong>.</li>\n<li>The Industrial Revolution made us narrow\n<strong>specialists</strong>. Don’t forget the whole.</li>\n<li><strong>Engineering is a habit.</strong></li>\n</ul>",
+          "text": "Thinking with hands. Engineering was born from the\nneed for food, shelter and security . Ancient engineers had no degrees. An engineer is\nanyone who makes things happen . The Industrial Revolution made us narrow specialists . Don’t forget the whole. Engineering is a habit."
+        },
+        {
+          "type": "heading",
+          "text": "The habits"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Habit</th>\n<th>Key example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Planning</strong></td>\n<td>Building a table: materials, tools, place, transport. “Don’t fail to\nplan.”</td>\n</tr>\n<tr>\n<td><strong>Approximating and estimating</strong></td>\n<td>Room ≈ 8 m³; rain in a tub × area of the city</td>\n</tr>\n<tr>\n<td><strong>Technical auditing</strong></td>\n<td>Bouncing ball (energy → heat, sound); cement + sand (weight\nconserved); mess food waste; army road opening</td>\n</tr>\n<tr>\n<td><strong>Apply what you learn</strong></td>\n<td>Small cut → perforated pages; rubbing stones → fire</td>\n</tr>\n<tr>\n<td><strong>Cause and effect</strong></td>\n<td>Blanket cuts off oxygen → fire out</td>\n</tr>\n<tr>\n<td><strong>How can I make it better?</strong></td>\n<td>Computer mouse; railway ticketing (queues → app)</td>\n</tr>\n<tr>\n<td><strong>Change of perspective</strong></td>\n<td>AC beat DC, but local solar makes DC useful again</td>\n</tr>\n<tr>\n<td><strong>Big picture</strong></td>\n<td>Spatial and temporal; four years at IIT</td>\n</tr>\n<tr>\n<td><strong>Abstraction and detailing</strong></td>\n<td>Hammer = impact generator. <strong>Why</strong> goes up;\n<strong>how</strong> comes down</td>\n</tr>\n<tr>\n<td><strong>Divide and conquer</strong></td>\n<td>Printer functions; tiny steps; 1% daily ≈ 37× a year</td>\n</tr>\n<tr>\n<td><strong>Taxonomy</strong></td>\n<td>Lever → mechanical advantage; leverage in life</td>\n</tr>\n<tr>\n<td><strong>Units and numbers</strong></td>\n<td>kg vs tonnes; light years; 1 tonne ≈ 15 adults</td>\n</tr>\n<tr>\n<td><strong>Associative features</strong></td>\n<td>Air separates husk → cleans cotton; crow and pebbles</td>\n</tr>\n<tr>\n<td><strong>Rough (jugaad) experiments</strong></td>\n<td>Egg drop; husk test</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Habit Key example Planning Building a table: materials, tools, place, transport. “Don’t fail to\nplan.” Approximating and estimating Room ≈ 8 m³; rain in a tub × area of the city Technical auditing Bouncing ball (energy → heat, sound); cement + sand (weight\nconserved); mess food waste; army road opening Apply what you learn Small cut → perforated pages; rubbing stones → fire Cause and effect Blanket cuts off oxygen → fire out How can I make it better? Computer mouse; railway ticketing (queues → app) Change of perspective AC beat DC, but local solar makes DC useful again Big picture Spatial and temporal; four years at IIT Abstraction and detailing Hammer = impact generator. Why goes up; how comes down Divide and conquer Printer functions; tiny steps; 1% daily ≈ 37× a year Taxonomy Lever → mechanical advantage; leverage in life Units and numbers kg vs tonnes; light years; 1 tonne ≈ 15 adults Associative features Air separates husk → cleans cotton; crow and pebbles Rough (jugaad) experiments Egg drop; husk test"
+        },
+        {
+          "type": "heading",
+          "text": "From the discussions"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Planning a big account</strong> (Kartic): document, find\npatterns, assign roles, de-risk, monitor.</li>\n<li><strong>Auditing and debriefing</strong> (Jayakumar): before and\nafter; the landslide and mules; <em>Slender Was the Thread</em>.</li>\n<li><strong>Great minds discuss ideas</strong> (watch at 2× speed).</li>\n<li><strong>Mental models</strong> (Prasanna): local storage;\ndeconstruct and rebuild; the banana incense stand.</li>\n<li><strong>Perspective shifts</strong> in a career.</li>\n<li><strong>Deconstruction, deduction, induction</strong> (Shiva): the\nrent case; the new-moon night; dark clouds.</li>\n<li><strong>Levers in life:</strong> a smile, appreciation, timing.</li>\n</ul>",
+          "text": "Planning a big account (Kartic): document, find\npatterns, assign roles, de-risk, monitor. Auditing and debriefing (Jayakumar): before and\nafter; the landslide and mules; Slender Was the Thread . Great minds discuss ideas (watch at 2× speed). Mental models (Prasanna): local storage;\ndeconstruct and rebuild; the banana incense stand. Perspective shifts in a career. Deconstruction, deduction, induction (Shiva): the\nrent case; the new-moon night; dark clouds. Levers in life: a smile, appreciation, timing."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>A ball bounces back lower than it was dropped. Which habit asks\nwhere the energy went?\n</li></ol></summary>\nTechnical auditing.\n</details>",
+          "text": "A ball bounces back lower than it was dropped. Which habit asks\nwhere the energy went? Technical auditing."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Calling a hammer an “impact generator” is an example of what?\n</li></ol></summary>\nAbstraction.\n</details>",
+          "text": "Calling a hammer an “impact generator” is an example of what? Abstraction."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Which question leads you from a principle to a specific tool?\n</li></ol></summary>\n“How?” (detailing).\n</details>",
+          "text": "Which question leads you from a principle to a specific tool? “How?” (detailing)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>A notebook’s perforated pages come from which habit?\n</li></ol></summary>\nApplying what you learned (a small cut makes tearing easy).\n</details>",
+          "text": "A notebook’s perforated pages come from which habit? Applying what you learned (a small cut makes tearing easy)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Name one improvement that made railway queues fairer.\n</li></ol></summary>\nA single queue feeding all counters.\n</details>",
+          "text": "Name one improvement that made railway queues fairer. A single queue feeding all counters."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Breaking a printer into feeding, printing and roller functions is\ncalled what?\n</li></ol></summary>\nDivide and conquer (functions and sub-functions).\n</details>",
+          "text": "Breaking a printer into feeding, printing and roller functions is\ncalled what? Divide and conquer (functions and sub-functions)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Why did DC power become interesting again?\n</li></ol></summary>\nLocal solar generation produces DC near where it’s used.\n</details>",
+          "text": "Why did DC power become interesting again? Local solar generation produces DC near where it’s used."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>“Great minds discuss <strong><em>, average minds discuss\n</em></strong>, small minds discuss ___.”\n</li></ol></summary>\nIdeas; events; people.\n</details>",
+          "text": "“Great minds discuss , average minds discuss , small minds discuss ___.” Ideas; events; people."
+        }
+      ]
+    }
+  ]
+}

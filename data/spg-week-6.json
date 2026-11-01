@@ -1,0 +1,1278 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 6,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-6/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "what-is-culture",
+      "title": "The Elements of Culture",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> In your home, guests take off their\nslippers at the door. Nobody wrote this rule. Nobody taught it in\nschool. Yet everyone follows it. Where did it come from? That is what\nculture is about.</p>\n</blockquote>",
+          "text": "Start here In your home, guests take off their\nslippers at the door. Nobody wrote this rule. Nobody taught it in\nschool. Yet everyone follows it. Where did it come from? That is what\nculture is about."
+        },
+        {
+          "type": "heading",
+          "text": "Say “yes” first, learn on the\nway"
+        },
+        {
+          "type": "html",
+          "html": "<p>In 2003, Prof. Shiva Subramaniam was working at TCS. A friend in\n<strong>Amsterdam</strong> asked him to give a talk on how to do\nbusiness with India. He had never done anything like it. He still said\n<strong>yes</strong>.</p>",
+          "text": "In 2003, Prof. Shiva Subramaniam was working at TCS. A friend in Amsterdam asked him to give a talk on how to do\nbusiness with India. He had never done anything like it. He still said yes ."
+        },
+        {
+          "type": "html",
+          "html": "<p>The Dutch business people loved it. After that, he travelled from\ncountry to country giving talks on culture.</p>",
+          "text": "The Dutch business people loved it. After that, he travelled from\ncountry to country giving talks on culture."
+        },
+        {
+          "type": "html",
+          "html": "<p>His lesson for you:</p>",
+          "text": "His lesson for you:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>When someone asks you to do something new, <strong>say\nyes</strong>.</li>\n<li>At worst, you will do it badly. At best, you will <strong>grow in\nconfidence</strong>.</li>\n<li>Often, <strong>other people have more confidence in us</strong> than\nwe have in ourselves.</li>\n</ul>",
+          "text": "When someone asks you to do something new, say\nyes . At worst, you will do it badly. At best, you will grow in\nconfidence . Often, other people have more confidence in us than\nwe have in ourselves."
+        },
+        {
+          "type": "heading",
+          "text": "Why learn about other\ncultures?"
+        },
+        {
+          "type": "html",
+          "html": "<p>If you never leave your village, you may not need it. But even a\ntrader who travels 500 km must know what to do, and what not to do, in\nsomeone else’s house.</p>",
+          "text": "If you never leave your village, you may not need it. But even a\ntrader who travels 500 km must know what to do, and what not to do, in\nsomeone else’s house."
+        },
+        {
+          "type": "html",
+          "html": "<p>Today, many of us sit at home and work for clients in the US, Norway\nor Italy. If you understand their way of doing things, you grow faster\nas a person and at work. This makes you a <strong>global\ncitizen</strong>.</p>",
+          "text": "Today, many of us sit at home and work for clients in the US, Norway\nor Italy. If you understand their way of doing things, you grow faster\nas a person and at work. This makes you a global\ncitizen ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the notebook</strong> The professor asks\nevery learner to keep a <strong>notebook</strong> called “Being a Global\nCitizen”. Use a pen. Write your answers to every question in this week.\nKeep adding to it all your life.</p>\n</blockquote>",
+          "text": "Lecture example — the notebook The professor asks\nevery learner to keep a notebook called “Being a Global\nCitizen”. Use a pen. Write your answers to every question in this week.\nKeep adding to it all your life."
+        },
+        {
+          "type": "heading",
+          "text": "What is culture?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Culture</strong> is a set of <strong>shared beliefs, values,\nnorms and practices</strong> that belong to a group, an organisation or\nan institution.</p>",
+          "text": "Culture is a set of shared beliefs, values,\nnorms and practices that belong to a group, an organisation or\nan institution."
+        },
+        {
+          "type": "html",
+          "html": "<p>Think of 100 people in 5 groups of 20. Each group has its own shared\nrules:</p>",
+          "text": "Think of 100 people in 5 groups of 20. Each group has its own shared\nrules:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Group</th>\n<th>Its shared rule</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Remove your slippers before entering my house.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Stand up when you talk to an elder.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Give a firm handshake.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Never question elders.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Come on time when I call a meeting.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Group Its shared rule 1 Remove your slippers before entering my house. 2 Stand up when you talk to an elder. 3 Give a firm handshake. 4 Never question elders. 5 Come on time when I call a meeting."
+        },
+        {
+          "type": "html",
+          "html": "<p>People <strong>inside</strong> a group are similar. The\n<strong>groups</strong> are different from each other. Each group is a\nculture.</p>",
+          "text": "People inside a group are similar. The groups are different from each other. Each group is a\nculture."
+        },
+        {
+          "type": "subheading",
+          "text": "Three key ideas from the\nslide"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Passed down.</strong> We learn culture from earlier\ngenerations. My father told me, his father told him, and so on.</li>\n<li><strong>It works without thinking.</strong> It gives us common\nattitudes, codes of conduct and expectations. They guide us\n<strong>subconsciously</strong>. Even when a host says “keep your\nslippers on”, you still take them off.</li>\n<li><strong>Born into it, not born with it.</strong> No baby is born\nwith a culture. We are born <strong>into</strong> one. We slowly take it\nin from family and people around us. This is called\n<strong>socialisation</strong>.</li>\n</ol>",
+          "text": "Passed down. We learn culture from earlier\ngenerations. My father told me, his father told him, and so on. It works without thinking. It gives us common\nattitudes, codes of conduct and expectations. They guide us subconsciously . Even when a host says “keep your\nslippers on”, you still take them off. Born into it, not born with it. No baby is born\nwith a culture. We are born into one. We slowly take it\nin from family and people around us. This is called socialisation ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Culture is the set of shared beliefs,\nvalues, norms and practices of a group, passed down from generation to\ngeneration. <strong>Exam words:</strong> culture, shared beliefs,\nvalues, norms, practices, subconscious, born into it, socialisation,\nglobal citizen.</p>",
+          "text": "In one line: Culture is the set of shared beliefs,\nvalues, norms and practices of a group, passed down from generation to\ngeneration. Exam words: culture, shared beliefs,\nvalues, norms, practices, subconscious, born into it, socialisation,\nglobal citizen."
+        },
+        {
+          "type": "heading",
+          "text": "Notice the differences"
+        },
+        {
+          "type": "html",
+          "html": "<p>Think of a trip to another country, or even another state. India is a\ngreat place to learn this, because every state has its own food,\nfestivals and language.</p>",
+          "text": "Think of a trip to another country, or even another state. India is a\ngreat place to learn this, because every state has its own food,\nfestivals and language."
+        },
+        {
+          "type": "html",
+          "html": "<p>Write down three kinds of differences in your notebook:</p>",
+          "text": "Write down three kinds of differences in your notebook:"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img01-three-differences.webp",
+          "alt": "Three kinds of differences",
+          "caption": "Physical, sensory and cultural\ndifferences you notice in a new place."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Kind</th>\n<th>What to look for</th>\n<th>The professor’s example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Physical</strong></td>\n<td>Food, water, shops, streets</td>\n<td>In a US hotel, there was no water bottle. Reception said, “Drink\nfrom the tap.” Food was mostly a burger or sandwich. Shops were far\naway, so you need a car even for salt. In his busy area of Chennai, you\ncan buy everything for a wedding in 10 minutes.</td>\n</tr>\n<tr>\n<td><strong>Sensory</strong></td>\n<td>Sights, sounds, smells, climate, hygiene</td>\n<td>In a hotel in Sweden, it was so silent at night that he\n<strong>could not sleep</strong>. He turned on the TV at low volume and\nthen slept well.</td>\n</tr>\n<tr>\n<td><strong>Cultural</strong></td>\n<td>Customs, manners, beliefs, gestures, attitudes</td>\n<td>In Japan, people bow when they meet. In India, his mother scolds him\nfor sitting with one leg over the other. In the US or Italy, nobody\nminds.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Kind What to look for The professor’s example Physical Food, water, shops, streets In a US hotel, there was no water bottle. Reception said, “Drink\nfrom the tap.” Food was mostly a burger or sandwich. Shops were far\naway, so you need a car even for salt. In his busy area of Chennai, you\ncan buy everything for a wedding in 10 minutes. Sensory Sights, sounds, smells, climate, hygiene In a hotel in Sweden, it was so silent at night that he could not sleep . He turned on the TV at low volume and\nthen slept well. Cultural Customs, manners, beliefs, gestures, attitudes In Japan, people bow when they meet. In India, his mother scolds him\nfor sitting with one leg over the other. In the US or Italy, nobody\nminds."
+        },
+        {
+          "type": "heading",
+          "text": "Observe — don’t judge"
+        },
+        {
+          "type": "html",
+          "html": "<p>Learning about culture made the professor <strong>stop being\njudgmental</strong>.</p>",
+          "text": "Learning about culture made the professor stop being\njudgmental ."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>No culture is “better” or “worse”. Every culture has its own\nreasons.</li>\n<li>You <strong>don’t have to agree</strong> with another culture. You\ncan keep your own culture.</li>\n<li>Just <strong>observe</strong>, like a biologist looking closely at a\nleaf.</li>\n</ul>",
+          "text": "No culture is “better” or “worse”. Every culture has its own\nreasons. You don’t have to agree with another culture. You\ncan keep your own culture. Just observe , like a biologist looking closely at a\nleaf."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> A classmate from another state eats\nwith a spoon. You eat with your hand. Neither is wrong. Each of you just\nlearned a different way at home.</p>\n</blockquote>",
+          "text": "Everyday example A classmate from another state eats\nwith a spoon. You eat with your hand. Neither is wrong. Each of you just\nlearned a different way at home."
+        },
+        {
+          "type": "heading",
+          "text": "The iceberg principle"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img02-iceberg.webp",
+          "alt": "The iceberg of culture",
+          "caption": "Only a small part of culture is\nvisible. The reasons lie under the water."
+        },
+        {
+          "type": "html",
+          "html": "<p>Only about <strong>one-tenth</strong> of an iceberg is above the\nwater. About <strong>nine-tenths</strong> is hidden below. Culture is\nthe same.</p>",
+          "text": "Only about one-tenth of an iceberg is above the\nwater. About nine-tenths is hidden below. Culture is\nthe same."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Above the water (what you <strong>see</strong>)</th>\n<th>Below the water (what you <strong>don’t see</strong>)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Language</td>\n<td>Approach to work</td>\n</tr>\n<tr>\n<td>Food</td>\n<td>Priorities in life</td>\n</tr>\n<tr>\n<td>Dress</td>\n<td>Aggressiveness</td>\n</tr>\n<tr>\n<td>Customs</td>\n<td>Problem solving</td>\n</tr>\n<tr>\n<td></td>\n<td>Process improvement</td>\n</tr>\n<tr>\n<td></td>\n<td>Communication</td>\n</tr>\n<tr>\n<td></td>\n<td>Time</td>\n</tr>\n<tr>\n<td></td>\n<td>Privacy</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Above the water (what you see ) Below the water (what you don’t see ) Language Approach to work Food Priorities in life Dress Aggressiveness Customs Problem solving Process improvement Communication Time Privacy"
+        },
+        {
+          "type": "html",
+          "html": "<p>Most of the time, we <strong>judge</strong> a culture by what is\nabove the water. But the <strong>reasons</strong> for what we see are\nalways <strong>under</strong> the water.</p>",
+          "text": "Most of the time, we judge a culture by what is\nabove the water. But the reasons for what we see are\nalways under the water."
+        },
+        {
+          "type": "html",
+          "html": "<p>So if a dress in France looks strange to you, don’t say “this is not\nnice”. <strong>Dive under the water</strong> and find out\n<strong>why</strong> people dress that way.</p>",
+          "text": "So if a dress in France looks strange to you, don’t say “this is not\nnice”. Dive under the water and find out why people dress that way."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> We see only the top of a culture (food,\ndress, language); to understand it, look at the hidden part below\n(values, time, work, communication). <strong>Exam words:</strong>\niceberg principle, visible vs invisible culture, don’t judge,\nobserve.</p>",
+          "text": "In one line: We see only the top of a culture (food,\ndress, language); to understand it, look at the hidden part below\n(values, time, work, communication). Exam words: iceberg principle, visible vs invisible culture, don’t judge,\nobserve."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is culture, according to this course?\n</summary>\nA set of shared beliefs, values, norms and practices that belong to an\ninstitution, organisation or group.\n</details>",
+          "text": "What is culture, according to this course? A set of shared beliefs, values, norms and practices that belong to an\ninstitution, organisation or group."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“We are not born with a culture.” What does that mean?\n</summary>\nWe are born into a culture and slowly take it in from people around us.\nThis is called socialisation.\n</details>",
+          "text": "“We are not born with a culture.” What does that mean? We are born into a culture and slowly take it in from people around us.\nThis is called socialisation."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn the iceberg principle, name two things above the water and two below.\n</summary>\nAbove: language, food, dress, customs. Below: approach to work,\npriorities in life, time, privacy, communication, problem solving,\naggressiveness, process improvement.\n</details>",
+          "text": "In the iceberg principle, name two things above the water and two below. Above: language, food, dress, customs. Below: approach to work,\npriorities in life, time, privacy, communication, problem solving,\naggressiveness, process improvement."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs silence at night a physical, sensory or cultural difference?\n</summary>\nSensory, because it is about sounds.\n</details>",
+          "text": "Is silence at night a physical, sensory or cultural difference? Sensory, because it is about sounds."
+        }
+      ]
+    },
+    {
+      "slug": "stereotyping-ethnocentrism-parochialism",
+      "title": "Cross-cultural Understanding — Three Traps",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your brother hits a cyclist while driving\ntoo fast. The police ask you how fast he was going. Do you protect your\nbrother, or tell the truth? Your answer depends a lot on your\nculture.</p>\n</blockquote>",
+          "text": "Start here Your brother hits a cyclist while driving\ntoo fast. The police ask you how fast he was going. Do you protect your\nbrother, or tell the truth? Your answer depends a lot on your\nculture."
+        },
+        {
+          "type": "heading",
+          "text": "First, admit what you\ndon’t understand"
+        },
+        {
+          "type": "html",
+          "html": "<p>Think of a culture other than your own. Write down <strong>5 things\nyou don’t understand</strong> about it. Three or seven is also fine.</p>",
+          "text": "Think of a culture other than your own. Write down 5 things\nyou don’t understand about it. Three or seven is also fine."
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor’s own list:</p>",
+          "text": "The professor’s own list:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Why are weddings in Kerala done differently from weddings in Tamil\nNadu?</li>\n<li>Why do some rituals in Karnataka happen the way they do?</li>\n<li>Why do some offices abroad start at 7 a.m. in\n<strong>winter</strong>, when it is cold?</li>\n</ul>",
+          "text": "Why are weddings in Kerala done differently from weddings in Tamil\nNadu? Why do some rituals in Karnataka happen the way they do? Why do some offices abroad start at 7 a.m. in winter , when it is cold?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why do this?</strong> When you say “I don’t understand”, you\nbecome <strong>ready to listen and learn</strong>.</p>",
+          "text": "Why do this? When you say “I don’t understand”, you\nbecome ready to listen and learn ."
+        },
+        {
+          "type": "heading",
+          "text": "Did the Pedestrian Die?"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is a famous example from a cross-culture expert, <strong>Fons\nTrompenaars</strong>. He starts his workshops with it.</p>",
+          "text": "This is a famous example from a cross-culture expert, Fons\nTrompenaars . He starts his workshops with it."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the speeding brother</strong> Your brother\nis driving his new car. You sit next to him. He drives at <strong>70\nkm/h</strong> in a <strong>30 km/h</strong> zone. He hits a cyclist. The\npolice want you to say in court how fast he was driving. What will you\nsay?</p>\n</blockquote>",
+          "text": "Lecture example — the speeding brother Your brother\nis driving his new car. You sit next to him. He drives at 70\nkm/h in a 30 km/h zone. He hits a cyclist. The\npolice want you to say in court how fast he was driving. What will you\nsay?"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img03-pedestrian-dilemma.webp",
+          "alt": "Family first or law first?",
+          "caption": "The same question gets two\ndifferent answers in two different cultures."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Answer</th>\n<th>What they think of the other side</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“He was going at 30.” (protects the brother)</td>\n<td>“How can you go <strong>against your own family</strong>?”</td>\n</tr>\n<tr>\n<td>“He was going at 70.” (tells the truth)</td>\n<td>“How can you <strong>not obey the law</strong>?”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Answer What they think of the other side “He was going at 30.” (protects the brother) “How can you go against your own family ?” “He was going at 70.” (tells the truth) “How can you not obey the law ?”"
+        },
+        {
+          "type": "html",
+          "html": "<p>In the professor’s IIT classes, many students choose each answer.\nFrom a cross-culture view, <strong>neither side is wrong</strong>.</p>",
+          "text": "In the professor’s IIT classes, many students choose each answer.\nFrom a cross-culture view, neither side is wrong ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> Different cultures <strong>think\ndifferently</strong> about the <strong>same</strong> situation.</p>",
+          "text": "Lesson: Different cultures think\ndifferently about the same situation."
+        },
+        {
+          "type": "heading",
+          "text": "Trap 1: Stereotyping"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Stereotyping</strong> means using <strong>“mental\nfiles”</strong> from the past to understand new people. We compare them\nwith what we already know.</p>",
+          "text": "Stereotyping means using “mental\nfiles” from the past to understand new people. We compare them\nwith what we already know."
+        },
+        {
+          "type": "html",
+          "html": "<p>Examples: “People of that state only eat rice.” “Final-year students\nalways submit late.” “Second-year students are always on WhatsApp.”</p>",
+          "text": "Examples: “People of that state only eat rice.” “Final-year students\nalways submit late.” “Second-year students are always on WhatsApp.”"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Stereotypes can help</th>\n<th>Stereotypes become a problem</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>They <strong>simplify</strong> a new culture.</td>\n<td>When you <strong>refuse to let new information in</strong>.</td>\n</tr>\n<tr>\n<td>They are <strong>natural</strong> and can sort out confusion when\nused in a <strong>positive</strong> way.</td>\n<td>When you hold on to them even after real people prove them\nwrong.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Stereotypes can help Stereotypes become a problem They simplify a new culture. When you refuse to let new information in . They are natural and can sort out confusion when\nused in a positive way. When you hold on to them even after real people prove them\nwrong."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The problem is not that stereotypes exist. The problem is how\nyou use them.</strong></p>",
+          "text": "The problem is not that stereotypes exist. The problem is how\nyou use them."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You think, “People from the US are\nvery direct.” That helps you prepare. But then you meet an American\ncolleague who is very polite and slow to say no. If you still treat her\nas “direct”, you are misusing the stereotype.</p>\n</blockquote>",
+          "text": "Everyday example You think, “People from the US are\nvery direct.” That helps you prepare. But then you meet an American\ncolleague who is very polite and slow to say no. If you still treat her\nas “direct”, you are misusing the stereotype."
+        },
+        {
+          "type": "heading",
+          "text": "Trap 2: Ethnocentrism"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Ethnocentrism</strong> is the belief that <strong>my\nculture’s</strong> values, beliefs and norms are <strong>better</strong>\nthan other cultures’.</p>",
+          "text": "Ethnocentrism is the belief that my\nculture’s values, beliefs and norms are better than other cultures’."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>In a way, all of us are a little ethnocentric.</li>\n<li><strong>Stereotyping + ethnocentrism together</strong> are very\n<strong>destructive</strong>. “They are like this, and my way is\nbetter.”</li>\n<li><strong>No one set of beliefs, values and norms is better than\nanother.</strong></li>\n<li>We each have <strong>one set we are familiar with</strong>, so we\nfeel comfortable with it. That is all.</li>\n<li>Other ways of thinking and acting may be <strong>equally effective\nand valuable</strong>.</li>\n</ul>",
+          "text": "In a way, all of us are a little ethnocentric. Stereotyping + ethnocentrism together are very destructive . “They are like this, and my way is\nbetter.” No one set of beliefs, values and norms is better than\nanother. We each have one set we are familiar with , so we\nfeel comfortable with it. That is all. Other ways of thinking and acting may be equally effective\nand valuable ."
+        },
+        {
+          "type": "html",
+          "html": "<p>So don’t say “my culture is better”. Say “I am <strong>more\nfamiliar</strong> with my culture.”</p>",
+          "text": "So don’t say “my culture is better”. Say “I am more\nfamiliar with my culture.”"
+        },
+        {
+          "type": "heading",
+          "text": "Trap 3: Parochialism"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Parochialism</strong> means being <strong>very\nnarrow</strong> in outlook. You are <strong>not open</strong> to new\nviews. You look only at your <strong>local or regional</strong> world,\nnot the bigger picture.</p>",
+          "text": "Parochialism means being very\nnarrow in outlook. You are not open to new\nviews. You look only at your local or regional world,\nnot the bigger picture."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the football fan</strong> The professor\nsupports <strong>Manchester United</strong>. They lost 6–3 to another\nteam, which scored some beautiful goals. But he could not appreciate a\nsingle one, because his team was losing. “That is me being parochial,”\nhe says.</p>\n</blockquote>",
+          "text": "Lecture example — the football fan The professor\nsupports Manchester United . They lost 6–3 to another\nteam, which scored some beautiful goals. But he could not appreciate a\nsingle one, because his team was losing. “That is me being parochial,”\nhe says."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img04-three-traps.webp",
+          "alt": "Three traps",
+          "caption": "Stereotyping puts people in boxes.\nEthnocentrism says “mine is best”. Parochialism looks only at its own\ncorner."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Trap</th>\n<th>Simple meaning</th>\n<th>Sounds like</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Stereotyping</strong></td>\n<td>Putting a whole group in one box</td>\n<td>“They are all like that.”</td>\n</tr>\n<tr>\n<td><strong>Ethnocentrism</strong></td>\n<td>My culture is better</td>\n<td>“Our way is the right way.”</td>\n</tr>\n<tr>\n<td><strong>Parochialism</strong></td>\n<td>Too narrow to see other views</td>\n<td>“Only my team or my state matters.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Trap Simple meaning Sounds like Stereotyping Putting a whole group in one box “They are all like that.” Ethnocentrism My culture is better “Our way is the right way.” Parochialism Too narrow to see other views “Only my team or my state matters.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Avoid putting groups in boxes,\nbelieving your culture is superior, and seeing only your local world.\n<strong>Exam words:</strong> Did the Pedestrian Die, stereotyping,\nmental files, ethnocentrism, parochialism.</p>",
+          "text": "In one line: Avoid putting groups in boxes,\nbelieving your culture is superior, and seeing only your local world. Exam words: Did the Pedestrian Die, stereotyping,\nmental files, ethnocentrism, parochialism."
+        },
+        {
+          "type": "heading",
+          "text": "Four principles\nfor dealing with other cultures"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>People may not fit the stereotype.</strong> Not every\nAmerican, Japanese or Mexican behaves the same. Know the general\nculture, but keep your eyes open for the person in front of you.</li>\n<li><strong>Not every difference comes from culture.</strong> Two people\nfrom the same city can still see the world very differently.</li>\n<li><strong>Understand your own culture first.</strong> That gives you a\nbase to understand others. The professor suggests making a presentation\non India, because many of us don’t know our own country well.</li>\n<li><strong>There are no extremes, only gradations.</strong> A culture\nor a person is not “fully” one way. Think 6, 7 or 9 out of 10.</li>\n</ol>",
+          "text": "People may not fit the stereotype. Not every\nAmerican, Japanese or Mexican behaves the same. Know the general\nculture, but keep your eyes open for the person in front of you. Not every difference comes from culture. Two people\nfrom the same city can still see the world very differently. Understand your own culture first. That gives you a\nbase to understand others. The professor suggests making a presentation\non India, because many of us don’t know our own country well. There are no extremes, only gradations. A culture\nor a person is not “fully” one way. Think 6, 7 or 9 out of 10."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the “Did the Pedestrian Die?” example teach?\n</summary>\nDifferent cultures think differently about the same situation. One side\nputs family first; the other puts the law first. Neither is wrong.\n</details>",
+          "text": "What does the “Did the Pedestrian Die?” example teach? Different cultures think differently about the same situation. One side\nputs family first; the other puts the law first. Neither is wrong."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhen does a stereotype become a problem?\n</summary>\nWhen you refuse to let new information in, even after real people show\nthe stereotype is wrong.\n</details>",
+          "text": "When does a stereotype become a problem? When you refuse to let new information in, even after real people show\nthe stereotype is wrong."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“Our food is the best and theirs is strange.” Which trap is this?\n</summary>\nEthnocentrism — believing your own culture is better.\n</details>",
+          "text": "“Our food is the best and theirs is strange.” Which trap is this? Ethnocentrism — believing your own culture is better."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nRefusing to praise a great goal because it was scored against your team\nis an example of what?\n</summary>\nParochialism — being very narrow in outlook.\n</details>",
+          "text": "Refusing to praise a great goal because it was scored against your team\nis an example of what? Parochialism — being very narrow in outlook."
+        }
+      ]
+    },
+    {
+      "slug": "cross-cultural-intelligence",
+      "title": "Cross-cultural Intelligence and the Four Stages",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your company sends you to Los Angeles for\nfive years. Week 1: “Wow, this place is amazing!” Month 3: “I hate it\nhere, I want to go home.” Year 2: “Come, I’ll show you around.” Almost\neveryone goes through these same stages.</p>\n</blockquote>",
+          "text": "Start here Your company sends you to Los Angeles for\nfive years. Week 1: “Wow, this place is amazing!” Month 3: “I hate it\nhere, I want to go home.” Year 2: “Come, I’ll show you around.” Almost\neveryone goes through these same stages."
+        },
+        {
+          "type": "heading",
+          "text": "What is cross-cultural\nintelligence?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Cross-cultural intelligence</strong> means you:</p>",
+          "text": "Cross-cultural intelligence means you:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Understand the ways cultures can differ.</strong> The focus\nis on <strong>what</strong> the differences are, not\n<strong>why</strong> they exist.</li>\n<li><strong>Understand yourself.</strong> Who am I? What are my customs,\nbeliefs, values and norms? <strong>Why</strong> do I do things the way I\ndo?</li>\n<li><strong>Understand others.</strong></li>\n<li><strong>Value different points of view.</strong></li>\n<li><strong>Develop shared values, beliefs and norms</strong> with\npeople from other cultures.</li>\n</ol>",
+          "text": "Understand the ways cultures can differ. The focus\nis on what the differences are, not why they exist. Understand yourself. Who am I? What are my customs,\nbeliefs, values and norms? Why do I do things the way I\ndo? Understand others. Value different points of view. Develop shared values, beliefs and norms with\npeople from other cultures."
+        },
+        {
+          "type": "heading",
+          "text": "Cultural\nself-identity: three notebook questions"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>The professor’s answer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>In what ways are you a product of the culture you grew up\nin?</strong></td>\n<td>At his grandfather’s house, they ate a full lunch at 10 a.m. with no\nbreakfast. Then a light snack around 4 p.m., and dinner at 7 p.m. It was\nhard at first. Now he is used to it.</td>\n</tr>\n<tr>\n<td><strong>How does your background make it easier to work anywhere in\nthe world?</strong></td>\n<td>His school in Nashik had children from about 10 cultures. He grew up\nin an HAL township with people from many states, and every festival was\ncelebrated. So he feels he can get along anywhere.</td>\n</tr>\n<tr>\n<td><strong>How does your background hinder you?</strong></td>\n<td>He gets homesick after about 10 days. He misses rice, sambar and\nidli. He also finds it hard to imagine living at minus 20 degrees.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Question The professor’s answer In what ways are you a product of the culture you grew up\nin? At his grandfather’s house, they ate a full lunch at 10 a.m. with no\nbreakfast. Then a light snack around 4 p.m., and dinner at 7 p.m. It was\nhard at first. Now he is used to it. How does your background make it easier to work anywhere in\nthe world? His school in Nashik had children from about 10 cultures. He grew up\nin an HAL township with people from many states, and every festival was\ncelebrated. So he feels he can get along anywhere. How does your background hinder you? He gets homesick after about 10 days. He misses rice, sambar and\nidli. He also finds it hard to imagine living at minus 20 degrees."
+        },
+        {
+          "type": "html",
+          "html": "<p>Write your own answers. Don’t leave the page blank.</p>",
+          "text": "Write your own answers. Don’t leave the page blank."
+        },
+        {
+          "type": "heading",
+          "text": "Variables of culture"
+        },
+        {
+          "type": "html",
+          "html": "<p>Many layers shape a culture. They sit inside each other like boxes,\nwith the <strong>person</strong> at the centre.</p>",
+          "text": "Many layers shape a culture. They sit inside each other like boxes,\nwith the person at the centre."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img05-variables-of-culture.webp",
+          "alt": "Layers that shape culture",
+          "caption": "Outer layers (country and\nsociety) shape values, which shape attitudes, which shape how people\nbehave at work."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Layer</th>\n<th>What it includes</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>National variables</strong> (outer)</td>\n<td>Economic system, legal system, political system, physical situation,\ntechnological know-how</td>\n<td>Each country runs its economy and laws differently.</td>\n</tr>\n<tr>\n<td><strong>Sociocultural variables</strong></td>\n<td>Religion, education, language</td>\n<td>In India we say “plus two”. Another country’s school system may be\nvery different.</td>\n</tr>\n<tr>\n<td><strong>Cultural variables</strong></td>\n<td>Values, norms, beliefs</td>\n<td>My values may differ from yours.</td>\n</tr>\n<tr>\n<td><strong>Attitudes</strong></td>\n<td>Work, time, materialism, individualism, change</td>\n<td>Do I keep buying cars, or save for someone’s wedding or education?\nDo I think of only myself, or of a big family? Is time scarce or\nplentiful?</td>\n</tr>\n<tr>\n<td><strong>Individual and group job behaviour</strong> (centre)</td>\n<td>Motivation, commitment, productivity, ethics</td>\n<td>How do I behave at work? What drives me?</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Layer What it includes Example National variables (outer) Economic system, legal system, political system, physical situation,\ntechnological know-how Each country runs its economy and laws differently. Sociocultural variables Religion, education, language In India we say “plus two”. Another country’s school system may be\nvery different. Cultural variables Values, norms, beliefs My values may differ from yours. Attitudes Work, time, materialism, individualism, change Do I keep buying cars, or save for someone’s wedding or education?\nDo I think of only myself, or of a big family? Is time scarce or\nplentiful? Individual and group job behaviour (centre) Motivation, commitment, productivity, ethics How do I behave at work? What drives me?"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note: The slide comes from Gary Dessler’s book “Human Resource\nManagement”. The slide labels the attitudes box “National variables” a\nsecond time. The professor explains this layer as\n<strong>attitudes</strong>, so we use that word here.</em></p>",
+          "text": "Note: The slide comes from Gary Dessler’s book “Human Resource\nManagement”. The slide labels the attitudes box “National variables” a\nsecond time. The professor explains this layer as attitudes , so we use that word here."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> National, social and cultural layers\nshape our attitudes, and our attitudes shape how we behave at work.\n<strong>Exam words:</strong> cross-cultural intelligence, cultural\nself-identity, national variables, sociocultural variables, cultural\nvariables, attitudes, job behaviour.</p>",
+          "text": "In one line: National, social and cultural layers\nshape our attitudes, and our attitudes shape how we behave at work. Exam words: cross-cultural intelligence, cultural\nself-identity, national variables, sociocultural variables, cultural\nvariables, attitudes, job behaviour."
+        },
+        {
+          "type": "heading",
+          "text": "Four stages of\ndealing with a new culture"
+        },
+        {
+          "type": "html",
+          "html": "<p>Imagine you move to a new country for work. What goes on in your\nmind? Excitement? Fear? Most people pass through <strong>four\nstages</strong>.</p>",
+          "text": "Imagine you move to a new country for work. What goes on in your\nmind? Excitement? Fear? Most people pass through four\nstages ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img06-four-stages.webp",
+          "alt": "Four stages in a new culture",
+          "caption": "Elation, transition,\nunderstanding, integration."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Stage</th>\n<th>How it feels</th>\n<th>What you say</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Elation</strong></td>\n<td>Everything is <strong>new and exciting</strong>.</td>\n<td>“Wow! Look at that!” “I love this place!” “So many types of\nchocolate!” “I didn’t know you could drink water straight from the\ntap.”</td>\n</tr>\n<tr>\n<td><strong>2. Transition</strong></td>\n<td><strong>Frustration, confusion, dissatisfaction.</strong> You may\nwant to go home. This is the “complaining” stage.</td>\n<td>“The food is so bland. Haven’t they heard of spices?” “I don’t even\nknow how to flush.” “Why did that person laugh when I asked for a\nticket?” “I keep getting embarrassed.”</td>\n</tr>\n<tr>\n<td><strong>3. Understanding</strong></td>\n<td><strong>Familiarity grows.</strong> You start to feel at home.</td>\n<td>“I’m starting to understand the traffic rules.” “Baseball is a great\ngame. Let’s go this weekend.” “People here are polite. They don’t mind\nrepeating things if I ask.”</td>\n</tr>\n<tr>\n<td><strong>4. Integration</strong></td>\n<td>You <strong>accept the differences and adapt</strong>. Your old\nculture may even start to feel a little unfamiliar.</td>\n<td>“I love sushi.” “I’ll sign up for golf lessons on Friday.” “There\nmust be a reason for their obsession with time.”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Stage How it feels What you say 1. Elation Everything is new and exciting . “Wow! Look at that!” “I love this place!” “So many types of\nchocolate!” “I didn’t know you could drink water straight from the\ntap.” 2. Transition Frustration, confusion, dissatisfaction. You may\nwant to go home. This is the “complaining” stage. “The food is so bland. Haven’t they heard of spices?” “I don’t even\nknow how to flush.” “Why did that person laugh when I asked for a\nticket?” “I keep getting embarrassed.” 3. Understanding Familiarity grows. You start to feel at home. “I’m starting to understand the traffic rules.” “Baseball is a great\ngame. Let’s go this weekend.” “People here are polite. They don’t mind\nrepeating things if I ask.” 4. Integration You accept the differences and adapt . Your old\nculture may even start to feel a little unfamiliar. “I love sushi.” “I’ll sign up for golf lessons on Friday.” “There\nmust be a reason for their obsession with time.”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> You join a hostel in another state.\nFirst week: the new food and friends are exciting (elation). Second\nmonth: you miss home food and feel lost (transition). Fourth month: you\nknow the best canteen and the shortcuts (understanding). Final year: you\ngo home and miss the hostel food (integration).</p>\n</blockquote>",
+          "text": "Everyday example You join a hostel in another state.\nFirst week: the new food and friends are exciting (elation). Second\nmonth: you miss home food and feel lost (transition). Fourth month: you\nknow the best canteen and the shortcuts (understanding). Final year: you\ngo home and miss the hostel food (integration)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why this matters:</strong> When you know these stages, you\ncan <strong>tell which stage you are in</strong>. The bad feelings of\nthe transition stage are normal, and they pass.</p>",
+          "text": "Why this matters: When you know these stages, you\ncan tell which stage you are in . The bad feelings of\nthe transition stage are normal, and they pass."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> In a new culture we go from elation, to\ntransition (frustration), to understanding, to integration. <strong>Exam\nwords:</strong> elation, transition, understanding, integration.</p>",
+          "text": "In one line: In a new culture we go from elation, to\ntransition (frustration), to understanding, to integration. Exam\nwords: elation, transition, understanding, integration."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four stages of dealing with a different culture, in order.\n</summary>\nElation, transition, understanding, integration.\n</details>",
+          "text": "Name the four stages of dealing with a different culture, in order. Elation, transition, understanding, integration."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“Why did that person laugh at me? Everything here is so complicated!”\nWhich stage is this?\n</summary>\nTransition — the stage of frustration, confusion and dissatisfaction.\n</details>",
+          "text": "“Why did that person laugh at me? Everything here is so complicated!”\nWhich stage is this? Transition — the stage of frustration, confusion and dissatisfaction."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive two things cross-cultural intelligence includes.\n</summary>\nAny two of: understanding how cultures differ, understanding yourself,\nunderstanding others, valuing different points of view, developing\nshared values, beliefs and norms.\n</details>",
+          "text": "Give two things cross-cultural intelligence includes. Any two of: understanding how cultures differ, understanding yourself,\nunderstanding others, valuing different points of view, developing\nshared values, beliefs and norms."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich layer of culture includes values, norms and beliefs?\n</summary>\nCultural variables.\n</details>",
+          "text": "Which layer of culture includes values, norms and beliefs? Cultural variables."
+        }
+      ]
+    },
+    {
+      "slug": "dimensions-of-culture",
+      "title": "Dimensions of Culture",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> In India, students call their teacher\n“Sir”. In the US, students called the same professor “Shiva” on day one.\nWho is being rude? Nobody. They just sit at different points on a\n“dimension” of culture.</p>\n</blockquote>",
+          "text": "Start here In India, students call their teacher\n“Sir”. In the US, students called the same professor “Shiva” on day one.\nWho is being rude? Nobody. They just sit at different points on a\n“dimension” of culture."
+        },
+        {
+          "type": "heading",
+          "text": "What is a dimension?"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>dimension</strong> is a way in which one culture can be\n<strong>different</strong> from another.</p>",
+          "text": "A dimension is a way in which one culture can be different from another."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The key idea:</strong> When you understand the difference,\nyou understand how to deal with the other culture.</p>",
+          "text": "The key idea: When you understand the difference,\nyou understand how to deal with the other culture."
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor shows <strong>four dimensions</strong>. He uses India\nas the example, but he is clear: <strong>don’t judge other\ncultures</strong>. Love your own culture, and stay curious about\nothers.</p>",
+          "text": "The professor shows four dimensions . He uses India\nas the example, but he is clear: don’t judge other\ncultures . Love your own culture, and stay curious about\nothers."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img07-four-dimensions.webp",
+          "alt": "Four dimensions of culture",
+          "caption": "Collective or individual, equal\nor unequal, certainty or ambiguity, time scarce or time\nplentiful."
+        },
+        {
+          "type": "heading",
+          "text": "1. Collective\nor individual (how we see our identity)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Question:</strong> Do people see themselves as an\n<strong>individual</strong>, or as part of a <strong>group</strong>\n(family or organisation)?</p>",
+          "text": "Question: Do people see themselves as an individual , or as part of a group (family or organisation)?"
+        },
+        {
+          "type": "html",
+          "html": "<p>When the professor says “I am Shiva”, he immediately sees his father,\nmother, brother and sister. He cannot see himself apart from them. That\nis <strong>collective</strong>.</p>",
+          "text": "When the professor says “I am Shiva”, he immediately sees his father,\nmother, brother and sister. He cannot see himself apart from them. That\nis collective ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Collective</th>\n<th>Individual</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Extended family, loyalty, protection</td>\n<td>Responsible for <strong>self and immediate family</strong> only</td>\n</tr>\n<tr>\n<td>Identity comes from the <strong>social group</strong></td>\n<td>Identity is based on the <strong>individual</strong></td>\n</tr>\n<tr>\n<td>The group gives expertise, order, duty and security</td>\n<td>Values <strong>autonomy</strong>, variety, pleasure and personal\nfinancial security</td>\n</tr>\n<tr>\n<td><strong>Group decisions</strong></td>\n<td><strong>Individual decisions</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Collective Individual Extended family, loyalty, protection Responsible for self and immediate family only Identity comes from the social group Identity is based on the individual The group gives expertise, order, duty and security Values autonomy , variety, pleasure and personal\nfinancial security Group decisions Individual decisions"
+        },
+        {
+          "type": "subheading",
+          "text": "Language shows culture"
+        },
+        {
+          "type": "html",
+          "html": "<p>English uses one word, “uncle”, for many relations. Many Indian\nlanguages have a <strong>separate word for each relation</strong>. This\nshows that relationships matter a lot.</p>",
+          "text": "English uses one word, “uncle”, for many relations. Many Indian\nlanguages have a separate word for each relation . This\nshows that relationships matter a lot."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Relation</th>\n<th>English</th>\n<th>Hindi</th>\n<th>Tamil</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Father’s brother</td>\n<td>Uncle</td>\n<td>Chacha</td>\n<td>Chitappa</td>\n</tr>\n<tr>\n<td>Mother’s brother</td>\n<td>Uncle</td>\n<td>Mama</td>\n<td>Mama</td>\n</tr>\n<tr>\n<td>Sister’s son</td>\n<td>Nephew</td>\n<td>Bhanja</td>\n<td>Marumagan</td>\n</tr>\n<tr>\n<td>Brother’s son</td>\n<td>Nephew</td>\n<td>Bhatija</td>\n<td>Pillai</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Relation English Hindi Tamil Father’s brother Uncle Chacha Chitappa Mother’s brother Uncle Mama Mama Sister’s son Nephew Bhanja Marumagan Brother’s son Nephew Bhatija Pillai"
+        },
+        {
+          "type": "html",
+          "html": "<p><em>(Words as shown on the lecture slide.)</em></p>",
+          "text": "(Words as shown on the lecture slide.)"
+        },
+        {
+          "type": "subheading",
+          "text": "India is collective"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The <strong>family</strong> joins in decisions: the child’s name,\nthe school, and more.</li>\n<li>The family is part of <strong>weddings, funerals and other\nfunctions</strong>.</li>\n</ul>",
+          "text": "The family joins in decisions: the child’s name,\nthe school, and more. The family is part of weddings, funerals and other\nfunctions ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — how “Shiva Subramaniam” got his\nname</strong> His two grandfathers were named\n<strong>Sadashivan</strong> and <strong>Subramaniam</strong>. To please\nboth families, his parents joined the names: <strong>Shiva\nSubramaniam</strong>. Later, friends in Maharashtra shortened it to\n“Shiva”. His grandfather took a long time to accept the short name.</p>\n</blockquote>",
+          "text": "Lecture example — how “Shiva Subramaniam” got his\nname His two grandfathers were named Sadashivan and Subramaniam . To please\nboth families, his parents joined the names: Shiva\nSubramaniam . Later, friends in Maharashtra shortened it to\n“Shiva”. His grandfather took a long time to accept the short name."
+        },
+        {
+          "type": "subheading",
+          "text": "When the two meet"
+        },
+        {
+          "type": "html",
+          "html": "<p>An Indian meets someone new and asks: “Where are you from? How are\nyour parents? How many brothers and sisters?” It shows care.</p>",
+          "text": "An Indian meets someone new and asks: “Where are you from? How are\nyour parents? How many brothers and sisters?” It shows care."
+        },
+        {
+          "type": "html",
+          "html": "<p>In the more <strong>individual</strong> US culture, a colleague may\nskip all that. He is <strong>task-oriented</strong>: “Here is the job.\nDo it.” The Indian may feel hurt.</p>",
+          "text": "In the more individual US culture, a colleague may\nskip all that. He is task-oriented : “Here is the job.\nDo it.” The Indian may feel hurt."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What to do:</strong> Before getting into conflict, ask\n<strong>why</strong> the other culture behaves this way. Over coffee,\nyou can gently say, “It would be nice if you asked about my family.” And\nwhen he visits India, don’t push him with too many family questions.\nMeeting halfway like this creates <strong>cultural synergy</strong> (see\nthe next page).</p>",
+          "text": "What to do: Before getting into conflict, ask why the other culture behaves this way. Over coffee,\nyou can gently say, “It would be nice if you asked about my family.” And\nwhen he visits India, don’t push him with too many family questions.\nMeeting halfway like this creates cultural synergy (see\nthe next page)."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th></th>\n<th>Relationship-oriented</th>\n<th>Task-oriented</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Focus</td>\n<td>First make friends, then do the work</td>\n<td>Do the work; the relationship is less important</td>\n</tr>\n<tr>\n<td>Usually found in</td>\n<td>Collective cultures (India, Japan)</td>\n<td>Individual cultures (US)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Relationship-oriented Task-oriented Focus First make friends, then do the work Do the work; the relationship is less important Usually found in Collective cultures (India, Japan) Individual cultures (US)"
+        },
+        {
+          "type": "heading",
+          "text": "2. Equal or unequal (how\nwe see authority)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Question:</strong> Do people see <strong>everyone as\nequal</strong>? Or are some people “<strong>more equal</strong>” because\nof age, education or position?</p>",
+          "text": "Question: Do people see everyone as\nequal ? Or are some people “ more equal ” because\nof age, education or position?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Equal cultures</th>\n<th>Unequal cultures</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Call a teacher or boss by <strong>first name</strong></td>\n<td>Say “<strong>Sir</strong>” or “Madam”</td>\n</tr>\n<tr>\n<td>Everyone is treated the same</td>\n<td>Parents, bosses and teachers get special\n<strong>respect</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Equal cultures Unequal cultures Call a teacher or boss by first name Say “ Sir ” or “Madam” Everyone is treated the same Parents, bosses and teachers get special respect"
+        },
+        {
+          "type": "html",
+          "html": "<p>In India, parents are respected at home, bosses at work, and teachers\nat school. <strong>Indians accept the “unequal” dimension.</strong></p>",
+          "text": "In India, parents are respected at home, bosses at work, and teachers\nat school. Indians accept the “unequal” dimension."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the maths tutor</strong> A young tutor,\nabout 35–40, came early each morning to teach the professor’s children.\nHis mother, about 70, would <strong>stand up</strong> when the tutor\ncame in, because he was educated and taught her grandchildren. On the\ntutor’s last day, he <strong>touched her feet</strong>, because she was\nmuch older. Each respected the other, one for education and one for age.\nThat is the unequal dimension at work.</p>\n</blockquote>",
+          "text": "Lecture example — the maths tutor A young tutor,\nabout 35–40, came early each morning to teach the professor’s children.\nHis mother, about 70, would stand up when the tutor\ncame in, because he was educated and taught her grandchildren. On the\ntutor’s last day, he touched her feet , because she was\nmuch older. Each respected the other, one for education and one for age.\nThat is the unequal dimension at work."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> If you go to an “equal” culture as a senior\nleader and juniors call you by your first name, <strong>just\nsmile</strong>. They are not being rude. You know why they do it.</p>",
+          "text": "Lesson: If you go to an “equal” culture as a senior\nleader and juniors call you by your first name, just\nsmile . They are not being rude. You know why they do it."
+        },
+        {
+          "type": "heading",
+          "text": "3.\nCertainty or ambiguity (how we deal with the unknown)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Question:</strong> Does a culture want clear <strong>rules\nand structure</strong>? Or can it live comfortably with\n<strong>uncertainty</strong>?</p>",
+          "text": "Question: Does a culture want clear rules\nand structure ? Or can it live comfortably with uncertainty ?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Certainty</th>\n<th>Ambiguity</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“Everything should be rules.”</td>\n<td>“Rules are fine, but I can live without everything written\ndown.”</td>\n</tr>\n<tr>\n<td>Wants to know the exact office hours, salary and holidays</td>\n<td>Comfortable when things are not fully certain</td>\n</tr>\n<tr>\n<td>A bus at 6:10 must come at 6:10</td>\n<td>A bus at 6:15 instead of 6:10 is no big deal</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Certainty Ambiguity “Everything should be rules.” “Rules are fine, but I can live without everything written\ndown.” Wants to know the exact office hours, salary and holidays Comfortable when things are not fully certain A bus at 6:10 must come at 6:10 A bus at 6:15 instead of 6:10 is no big deal"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Indians constantly deal with ambiguity</strong>: traffic on\nthe road, and train and bus schedules. The professor finds Indian\ntraffic easy. At a roundabout with no signal, people slow down, signal\nto each other and pass.</p>",
+          "text": "Indians constantly deal with ambiguity : traffic on\nthe road, and train and bus schedules. The professor finds Indian\ntraffic easy. At a roundabout with no signal, people slow down, signal\nto each other and pass."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why?</strong> Cultures that <strong>depend on the\nmonsoon</strong> tend to be more comfortable with ambiguity. You never\nknow when the rain will come or how much will fall. So people learn to\nmanage with what they have.</p>",
+          "text": "Why? Cultures that depend on the\nmonsoon tend to be more comfortable with ambiguity. You never\nknow when the rain will come or how much will fall. So people learn to\nmanage with what they have."
+        },
+        {
+          "type": "heading",
+          "text": "4. Time is\nscarce or time is plentiful (how we see time)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Question:</strong> Is time <strong>scarce</strong> and\nprecious? Or is it <strong>plentiful</strong> and never runs out?</p>",
+          "text": "Question: Is time scarce and\nprecious? Or is it plentiful and never runs out?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Time is scarce</th>\n<th>Time is plentiful</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Time is <strong>linear</strong> (a straight line)</td>\n<td>Time is <strong>cyclical</strong> (it comes round again)</td>\n</tr>\n<tr>\n<td>Every minute must be <strong>accounted for</strong></td>\n<td><strong>Timeliness is an intent.</strong> “I’ll try to be on time,\nbut traffic happens.”</td>\n</tr>\n<tr>\n<td>There is <strong>only the present</strong>; everything is\nurgent</td>\n<td><strong>There is always a tomorrow</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Time is scarce Time is plentiful Time is linear (a straight line) Time is cyclical (it comes round again) Every minute must be accounted for Timeliness is an intent. “I’ll try to be on time,\nbut traffic happens.” There is only the present ; everything is\nurgent There is always a tomorrow"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>For Indians, time is plentiful.</strong> Weddings go on for\n3–4 days. Festivals last 10 days (like Durga Puja). Conversations and\nvisits go on and on, even at the open door after saying bye.</p>",
+          "text": "For Indians, time is plentiful. Weddings go on for\n3–4 days. Festivals last 10 days (like Durga Puja). Conversations and\nvisits go on and on, even at the open door after saying bye."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why?</strong> Cultures with <strong>lots of sunlight</strong>\nsee time as plentiful. Cultures with only a few hours of daylight must\nfinish everything quickly, so they see time as scarce.</p>",
+          "text": "Why? Cultures with lots of sunlight see time as plentiful. Cultures with only a few hours of daylight must\nfinish everything quickly, so they see time as scarce."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Careful:</strong> This dimension is <strong>not</strong>\nabout <strong>punctuality</strong>. Punctuality is a separate topic.\nThis is only about how a culture <strong>sees</strong> time. In some\ncountries you arrive exactly on time for a meeting, in some you arrive\nearly, and in some a little late is fine.</p>\n</blockquote>",
+          "text": "Careful: This dimension is not about punctuality . Punctuality is a separate topic.\nThis is only about how a culture sees time. In some\ncountries you arrive exactly on time for a meeting, in some you arrive\nearly, and in some a little late is fine."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Cultures differ on four dimensions:\ncollective or individual, equal or unequal, certainty or ambiguity, and\ntime scarce or time plentiful. <strong>Exam words:</strong> dimension,\ncollective, individual, relationship-oriented, task-oriented, equal,\nunequal, certainty, ambiguity, monsoon, time is scarce (linear), time is\nplentiful (cyclical).</p>",
+          "text": "In one line: Cultures differ on four dimensions:\ncollective or individual, equal or unequal, certainty or ambiguity, and\ntime scarce or time plentiful. Exam words: dimension,\ncollective, individual, relationship-oriented, task-oriented, equal,\nunequal, certainty, ambiguity, monsoon, time is scarce (linear), time is\nplentiful (cyclical)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the four dimensions of culture.\n</summary>\nCollective or individual; equal or unequal; certainty or ambiguity; time\nis scarce or time is plentiful.\n</details>",
+          "text": "Name the four dimensions of culture. Collective or individual; equal or unequal; certainty or ambiguity; time\nis scarce or time is plentiful."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy do monsoon cultures tend to be comfortable with ambiguity?\n</summary>\nBecause nobody knows when the rains will come or how much it will rain,\nso people learn to manage with uncertainty.\n</details>",
+          "text": "Why do monsoon cultures tend to be comfortable with ambiguity? Because nobody knows when the rains will come or how much it will rain,\nso people learn to manage with uncertainty."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“Time is cyclical; there is always a tomorrow.” Which view of time is\nthis?\n</summary>\nTime is plentiful.\n</details>",
+          "text": "“Time is cyclical; there is always a tomorrow.” Which view of time is\nthis? Time is plentiful."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs the time dimension about punctuality?\n</summary>\nNo. It is about how a culture sees time. Punctuality is a separate\ntopic.\n</details>",
+          "text": "Is the time dimension about punctuality? No. It is about how a culture sees time. Punctuality is a separate\ntopic."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nStudents call their teacher “Sir”. Which dimension does this show?\n</summary>\nEqual or unequal — this is the unequal side.\n</details>",
+          "text": "Students call their teacher “Sir”. Which dimension does this show? Equal or unequal — this is the unequal side."
+        }
+      ]
+    },
+    {
+      "slug": "dealing-with-cross-cultural-issues",
+      "title": "Dealing With Cross-cultural Issues",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A doctor gives clear instructions. The\nnurse nods. Then mistakes keep happening, and patients keep landing in\nemergencies. Nobody is lazy. Nobody is careless. The problem is\nculture.</p>\n</blockquote>",
+          "text": "Start here A doctor gives clear instructions. The\nnurse nods. Then mistakes keep happening, and patients keep landing in\nemergencies. Nobody is lazy. Nobody is careless. The problem is\nculture."
+        },
+        {
+          "type": "heading",
+          "text": "Case study: the doctor and\nthe nurse"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — cultural understanding and\ncreativity</strong> <strong>Situation:</strong> A large hospital in the\n<strong>USA</strong>. A doctor from <strong>Uruguay</strong>. A nurse\nfrom the <strong>Philippines</strong>. A machine is attached to every\npatient in intensive care, and there is a set way to run it.</p>\n<p><strong>What went wrong:</strong> The doctor explains the machine and\nleaves. Mistakes happen, and there are many last-minute emergencies. The\ndoctor is upset: “I told you how to do it. Why didn’t you?” The nurse\nsays <strong>nothing</strong>. Someone tells him she is making mistakes.\nHe asks, “Then why doesn’t she just tell me she doesn’t understand?”</p>\n<p><strong>Interpretation:</strong> The doctor comes from an\n<strong>equal</strong> culture. The nurse comes from an\n<strong>unequal</strong> culture. In her culture, you <strong>don’t\nquestion</strong> an older or more educated person. Even if you don’t\nunderstand, you <strong>keep quiet</strong>.</p>\n<p><strong>Synergistic solution:</strong> The doctor tells her,\n“<strong>It’s okay to ask me doubts.</strong>” The nurse says, “Doctor,\nmay I ask some doubts? I don’t mean any disrespect.”\n<strong>Both</strong> change a little and work it out together.</p>\n</blockquote>",
+          "text": "Lecture example — cultural understanding and\ncreativity Situation: A large hospital in the USA . A doctor from Uruguay . A nurse\nfrom the Philippines . A machine is attached to every\npatient in intensive care, and there is a set way to run it. What went wrong: The doctor explains the machine and\nleaves. Mistakes happen, and there are many last-minute emergencies. The\ndoctor is upset: “I told you how to do it. Why didn’t you?” The nurse\nsays nothing . Someone tells him she is making mistakes.\nHe asks, “Then why doesn’t she just tell me she doesn’t understand?” Interpretation: The doctor comes from an equal culture. The nurse comes from an unequal culture. In her culture, you don’t\nquestion an older or more educated person. Even if you don’t\nunderstand, you keep quiet . Synergistic solution: The doctor tells her,\n“ It’s okay to ask me doubts. ” The nurse says, “Doctor,\nmay I ask some doubts? I don’t mean any disrespect.” Both change a little and work it out together."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img08-doctor-nurse.webp",
+          "alt": "Doctor and nurse find a way",
+          "caption": "From silence to “Please ask me”\n— a synergistic solution."
+        },
+        {
+          "type": "heading",
+          "text": "Five strategies for\ncultural creativity"
+        },
+        {
+          "type": "html",
+          "html": "<p>This model is from Nancy J. Adler’s book <em>International Dimensions\nof Organizational Behavior</em>. It has two axes:</p>",
+          "text": "This model is from Nancy J. Adler’s book International Dimensions\nof Organizational Behavior . It has two axes:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Up:</strong> how much you follow <strong>my culture’s\nway</strong>.</li>\n<li><strong>Across:</strong> how much you follow <strong>their culture’s\nway</strong>.</li>\n</ul>",
+          "text": "Up: how much you follow my culture’s\nway . Across: how much you follow their culture’s\nway ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img09-five-strategies.webp",
+          "alt": "Five strategies",
+          "caption": "Avoidance, dominance, accommodation,\ncompromise and synergy."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Strategy</th>\n<th>My way</th>\n<th>Their way</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Cultural dominance</strong></td>\n<td>High</td>\n<td>Low</td>\n<td>“This is my culture. I won’t give it up.”</td>\n</tr>\n<tr>\n<td><strong>Cultural accommodation</strong></td>\n<td>Low</td>\n<td>High</td>\n<td>I adjust to the other culture.</td>\n</tr>\n<tr>\n<td><strong>Cultural compromise</strong></td>\n<td>Medium</td>\n<td>Medium</td>\n<td>Each side gives up something. Meet midway.</td>\n</tr>\n<tr>\n<td><strong>Cultural avoidance</strong></td>\n<td>Low</td>\n<td>Low</td>\n<td>Nobody talks about either culture. Ignore the difference.</td>\n</tr>\n<tr>\n<td><strong>Cultural synergy</strong></td>\n<td>High</td>\n<td>High</td>\n<td><strong>Both</strong> cultures are respected, and something new is\ncreated together.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Strategy My way Their way What it means Cultural dominance High Low “This is my culture. I won’t give it up.” Cultural accommodation Low High I adjust to the other culture. Cultural compromise Medium Medium Each side gives up something. Meet midway. Cultural avoidance Low Low Nobody talks about either culture. Ignore the difference. Cultural synergy High High Both cultures are respected, and something new is\ncreated together."
+        },
+        {
+          "type": "subheading",
+          "text": "One example for each"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Strategy</th>\n<th>Lecture example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Avoidance</strong></td>\n<td>A US company’s branch abroad. US rules gave health insurance only to\nthe employee’s <strong>wife</strong>. Local employees, from a\n<strong>collective</strong> culture, also claimed for their\n<strong>children</strong>. The company <strong>avoided</strong> the\nissue. It never raised a question and simply paid the bills.</td>\n</tr>\n<tr>\n<td><strong>Dominance</strong></td>\n<td>A local partner gives a US partner a small <strong>welcome\ngift</strong>. The American refuses: “Accepting gifts is like a bribe in\nour company.” The partner explains it is only a welcome gift. He still\nrefuses. He <strong>won’t budge</strong>.</td>\n</tr>\n<tr>\n<td><strong>Accommodation</strong></td>\n<td>A Western businessman goes to <strong>Japan</strong> to sign a\ncontract. Like India, Japan is <strong>relationship-oriented</strong>.\nFor about <strong>two weeks</strong> they only play golf and go out for\nmeals. His boss keeps asking, “Why haven’t you signed yet?” He\n<strong>adjusts</strong> to their way: build the relationship\nfirst.</td>\n</tr>\n<tr>\n<td><strong>Compromise</strong></td>\n<td>Teams from two countries (say, Italy and Mexico) take turns:\nmeetings in Mexico for two months, then in Italy for two months. They\n<strong>meet midway</strong>.</td>\n</tr>\n<tr>\n<td><strong>Synergy</strong></td>\n<td>The <strong>Uruguayan doctor and the Filipino nurse</strong>: he\ninvites questions, and she asks respectfully.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Strategy Lecture example Avoidance A US company’s branch abroad. US rules gave health insurance only to\nthe employee’s wife . Local employees, from a collective culture, also claimed for their children . The company avoided the\nissue. It never raised a question and simply paid the bills. Dominance A local partner gives a US partner a small welcome\ngift . The American refuses: “Accepting gifts is like a bribe in\nour company.” The partner explains it is only a welcome gift. He still\nrefuses. He won’t budge . Accommodation A Western businessman goes to Japan to sign a\ncontract. Like India, Japan is relationship-oriented .\nFor about two weeks they only play golf and go out for\nmeals. His boss keeps asking, “Why haven’t you signed yet?” He adjusts to their way: build the relationship\nfirst. Compromise Teams from two countries (say, Italy and Mexico) take turns:\nmeetings in Mexico for two months, then in Italy for two months. They meet midway . Synergy The Uruguayan doctor and the Filipino nurse : he\ninvites questions, and she asks respectfully."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Your team has one member who likes\ndetailed written plans (certainty) and one who likes to “figure it out\nas we go” (ambiguity). Synergy: write a short plan with a few key dates,\nand leave room for change. Both feel comfortable.</p>\n</blockquote>",
+          "text": "Everyday example Your team has one member who likes\ndetailed written plans (certainty) and one who likes to “figure it out\nas we go” (ambiguity). Synergy: write a short plan with a few key dates,\nand leave room for change. Both feel comfortable."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Connect it:</strong> This looks like the Thomas–Kilmann\nconflict styles from Week 5. There too, <strong>collaborating</strong>\n(high on both) was the best. Here, <strong>synergy</strong> is the\nbest.</p>",
+          "text": "Connect it: This looks like the Thomas–Kilmann\nconflict styles from Week 5. There too, collaborating (high on both) was the best. Here, synergy is the\nbest."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Of the five strategies — avoidance,\ndominance, accommodation, compromise and synergy — synergy, where both\ncultures win, is the best. <strong>Exam words:</strong> cultural\ndominance, cultural accommodation, cultural compromise, cultural\navoidance, cultural synergy, synergistic solution, Nancy Adler.</p>",
+          "text": "In one line: Of the five strategies — avoidance,\ndominance, accommodation, compromise and synergy — synergy, where both\ncultures win, is the best. Exam words: cultural\ndominance, cultural accommodation, cultural compromise, cultural\navoidance, cultural synergy, synergistic solution, Nancy Adler."
+        },
+        {
+          "type": "heading",
+          "text": "Books to read"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Book</th>\n<th>Author</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><em>Cultures and Organizations: Software of the Mind</em></td>\n<td><strong>Geert Hofstede</strong> (with Gert Jan Hofstede and Michael\nMinkov)</td>\n</tr>\n<tr>\n<td><em>Riding the Waves of Culture</em></td>\n<td><strong>Fons Trompenaars</strong> (with Charles Hampden-Turner); he\nalso wrote the “Did the Pedestrian Die?” example</td>\n</tr>\n<tr>\n<td><em>The Culture Map</em></td>\n<td><strong>Erin Meyer</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Book Author Cultures and Organizations: Software of the Mind Geert Hofstede (with Gert Jan Hofstede and Michael\nMinkov) Riding the Waves of Culture Fons Trompenaars (with Charles Hampden-Turner); he\nalso wrote the “Did the Pedestrian Die?” example The Culture Map Erin Meyer"
+        },
+        {
+          "type": "html",
+          "html": "<p>The professor especially recommends <em>The Culture Map</em>. Its\nonline tool lets you choose your country (say, India) and the country\nyou are going to (say, Argentina). It then shows you the\ndifferences.</p>",
+          "text": "The professor especially recommends The Culture Map . Its\nonline tool lets you choose your country (say, India) and the country\nyou are going to (say, Argentina). It then shows you the\ndifferences."
+        },
+        {
+          "type": "html",
+          "html": "<p><em>Note: In the video, the professor mixes up which book goes with\nwhich author. The table above follows the book covers on the\nslide.</em></p>",
+          "text": "Note: In the video, the professor mixes up which book goes with\nwhich author. The table above follows the book covers on the\nslide."
+        },
+        {
+          "type": "heading",
+          "text": "Closing advice"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>This week covers only the <strong>tip of the iceberg</strong>.</li>\n<li><strong>India itself</strong> is a “cross-cultural masterpiece”.\nStart learning here.</li>\n<li>Keep your <strong>notebook</strong> for life. Write your\nobservations, read the books, and keep learning.</li>\n</ul>",
+          "text": "This week covers only the tip of the iceberg . India itself is a “cross-cultural masterpiece”.\nStart learning here. Keep your notebook for life. Write your\nobservations, read the books, and keep learning."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy did the Filipino nurse not tell the doctor she didn’t understand?\n</summary>\nShe came from an unequal culture, where you don’t question an older or\nmore educated person. You keep quiet even if you don’t understand.\n</details>",
+          "text": "Why did the Filipino nurse not tell the doctor she didn’t understand? She came from an unequal culture, where you don’t question an older or\nmore educated person. You keep quiet even if you don’t understand."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich strategy is high on both “my culture’s way” and “their culture’s\nway”?\n</summary>\nCultural synergy.\n</details>",
+          "text": "Which strategy is high on both “my culture’s way” and “their culture’s\nway”? Cultural synergy."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA company ignores a cultural difference and just pays the bills. Which\nstrategy is this?\n</summary>\nCultural avoidance.\n</details>",
+          "text": "A company ignores a cultural difference and just pays the bills. Which\nstrategy is this? Cultural avoidance."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWho wrote “The Culture Map”?\n</summary>\nErin Meyer.\n</details>",
+          "text": "Who wrote “The Culture Map”? Erin Meyer."
+        }
+      ]
+    },
+    {
+      "slug": "personal-grooming",
+      "title": "Personal Grooming for the Workplace",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> First day at a five-star hotel. A\n19-year-old stands proudly at the front desk in a crisp white coat. The\nmanager walks in, looks at him and says, “Get out. Go and shave.” This\nis how Prof. Shiva learned what grooming really means.</p>\n</blockquote>",
+          "text": "Start here First day at a five-star hotel. A\n19-year-old stands proudly at the front desk in a crisp white coat. The\nmanager walks in, looks at him and says, “Get out. Go and shave.” This\nis how Prof. Shiva learned what grooming really means."
+        },
+        {
+          "type": "html",
+          "html": "<p>This lecture is a conversation between three people:\n<strong>Prof. Shiva Subramaniam</strong>, <strong>Prof. Sivakumar M\nS</strong> and <strong>Lt Col Jayakumar</strong>.</p>",
+          "text": "This lecture is a conversation between three people: Prof. Shiva Subramaniam , Prof. Sivakumar M\nS and Lt Col Jayakumar ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Nobody teaches grooming in college or at work. Everyone assumes you\nalready know it. Yet people <strong>judge us by it all the\ntime</strong>.</p>",
+          "text": "Nobody teaches grooming in college or at work. Everyone assumes you\nalready know it. Yet people judge us by it all the\ntime ."
+        },
+        {
+          "type": "heading",
+          "text": "What is personal grooming?"
+        },
+        {
+          "type": "html",
+          "html": "<p>It is <strong>not just looking good</strong>. How you\n<strong>look</strong> comes from your <strong>mind</strong>, from how\nyou choose to present yourself.</p>",
+          "text": "It is not just looking good . How you look comes from your mind , from how\nyou choose to present yourself."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Speaker</th>\n<th>Their meaning of grooming</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Lt Col Jayakumar</strong></td>\n<td>Parents groom a child, in body and in feelings. At work, it is how\nyou <strong>dress, appear, smile, speak and behave</strong> with people.\nIt is a kind of <strong>social adjustment</strong>: fitting into your\nsurroundings in a way society approves of.</td>\n</tr>\n<tr>\n<td><strong>Prof. Sivakumar</strong></td>\n<td>Grooming is linked to <strong>growth</strong> and to being\n<strong>accepted</strong>, by yourself and by others. It covers\nappearance, <strong>mannerisms</strong>, and how you treat others and\nyourself. You dress up for a wedding and behave very differently at a\nfuneral. You can keep your <strong>values</strong> and still\n<strong>respect</strong> others’ views. A <strong>smile</strong> works\nin every culture.</td>\n</tr>\n<tr>\n<td><strong>Prof. Shiva</strong></td>\n<td>Grooming often does <strong>not match your mood</strong>. At a\nhotel, you smile at a guest even on a bad day. Grooming also means\n<strong>empathy</strong>: thinking of how the other person will\nfeel.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Speaker Their meaning of grooming Lt Col Jayakumar Parents groom a child, in body and in feelings. At work, it is how\nyou dress, appear, smile, speak and behave with people.\nIt is a kind of social adjustment : fitting into your\nsurroundings in a way society approves of. Prof. Sivakumar Grooming is linked to growth and to being accepted , by yourself and by others. It covers\nappearance, mannerisms , and how you treat others and\nyourself. You dress up for a wedding and behave very differently at a\nfuneral. You can keep your values and still respect others’ views. A smile works\nin every culture. Prof. Shiva Grooming often does not match your mood . At a\nhotel, you smile at a guest even on a bad day. Grooming also means empathy : thinking of how the other person will\nfeel."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img10-grooming-covers.webp",
+          "alt": "What grooming covers",
+          "caption": "Appearance, smile, manners,\npunctuality and empathy."
+        },
+        {
+          "type": "heading",
+          "text": "Grooming in the classroom"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Sivakumar’s habits as a teacher for 35 years:</p>",
+          "text": "Prof. Sivakumar’s habits as a teacher for 35 years:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>When someone visits his office, he <strong>greets</strong> them\n(“Good morning”), makes them <strong>comfortable</strong>, gets them\nseated and <strong>listens</strong> eagerly.</li>\n<li>In class, he makes <strong>eye contact</strong> with every student,\nso each one feels welcome.</li>\n<li>He <strong>dresses properly</strong>. He would never teach in\nshorts. Students expect someone who will give them something\nuseful.</li>\n<li>He <strong>pauses</strong> to ask for feedback: “Have you\nunderstood? Any doubts?”</li>\n<li>Students remember him for his <strong>smile</strong>. It helps them\nfeel comfortable talking to him.</li>\n</ul>",
+          "text": "When someone visits his office, he greets them\n(“Good morning”), makes them comfortable , gets them\nseated and listens eagerly. In class, he makes eye contact with every student,\nso each one feels welcome. He dresses properly . He would never teach in\nshorts. Students expect someone who will give them something\nuseful. He pauses to ask for feedback: “Have you\nunderstood? Any doubts?” Students remember him for his smile . It helps them\nfeel comfortable talking to him."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Keywords:</strong> empathy, caring how others see you, your\nown dress code, making people comfortable.</p>",
+          "text": "Keywords: empathy, caring how others see you, your\nown dress code, making people comfortable."
+        },
+        {
+          "type": "heading",
+          "text": "The teacher as a potter"
+        },
+        {
+          "type": "html",
+          "html": "<p>Lt Col Jayakumar shares an old Hindi couplet. In English, its meaning\nis:</p>",
+          "text": "Lt Col Jayakumar shares an old Hindi couplet. In English, its meaning\nis:"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>A <strong>teacher is like a potter</strong>, and the student is the\npot. The potter keeps pointing out faults and <strong>taps the clay from\nthe outside</strong>. People passing by think he is being cruel. But\nthey can’t see that his <strong>other hand is inside</strong>, gently\n<strong>supporting</strong> the pot.</p>\n</blockquote>",
+          "text": "A teacher is like a potter , and the student is the\npot. The potter keeps pointing out faults and taps the clay from\nthe outside . People passing by think he is being cruel. But\nthey can’t see that his other hand is inside , gently supporting the pot."
+        },
+        {
+          "type": "html",
+          "html": "<p>Grooming, in the army or in a company, is about\n<strong>shaping</strong> people from many backgrounds into one team.\nThat is why companies like TCS and L&amp;T run <strong>induction\nprogrammes</strong>.</p>",
+          "text": "Grooming, in the army or in a company, is about shaping people from many backgrounds into one team.\nThat is why companies like TCS and L&T run induction\nprogrammes ."
+        },
+        {
+          "type": "heading",
+          "text": "The three Rs and the ABC"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img11-three-rs.webp",
+          "alt": "Three Rs and ABC",
+          "caption": "Right time, right place, right dress. Then\nbe accurate, brief and clear."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Right time</strong></td>\n<td>Be punctual.</td>\n</tr>\n<tr>\n<td><strong>Right place</strong></td>\n<td>Be where you should be. Suit the place you are in.</td>\n</tr>\n<tr>\n<td><strong>Right dress</strong></td>\n<td>Dress for the occasion.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Meaning Right time Be punctual. Right place Be where you should be. Suit the place you are in. Right dress Dress for the occasion."
+        },
+        {
+          "type": "html",
+          "html": "<p>“If you take care of time, place and dress, <strong>half the job is\ndone</strong>,” says the Colonel. The other half is your\n<strong>knowledge</strong>, and how you share it:</p>",
+          "text": "“If you take care of time, place and dress, half the job is\ndone ,” says the Colonel. The other half is your knowledge , and how you share it:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>A</strong>ccurate</td>\n<td>Get it right.</td>\n</tr>\n<tr>\n<td><strong>B</strong>rief</td>\n<td>Keep it short.</td>\n</tr>\n<tr>\n<td><strong>C</strong>lear</td>\n<td>Make it easy to understand.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Meaning A ccurate Get it right. B rief Keep it short. C lear Make it easy to understand."
+        },
+        {
+          "type": "subheading",
+          "text": "Why punctuality matters"
+        },
+        {
+          "type": "html",
+          "html": "<p>If you are late, you <strong>waste everyone else’s time</strong>. It\nshows you don’t respect it. If you are late, <strong>say sorry</strong>\nand explain briefly: “I’m sorry, I was held up.” Words like\n“<strong>sorry</strong>” and “<strong>excuse me</strong>” matter. Very\nfew people do this.</p>",
+          "text": "If you are late, you waste everyone else’s time . It\nshows you don’t respect it. If you are late, say sorry and explain briefly: “I’m sorry, I was held up.” Words like\n“ sorry ” and “ excuse me ” matter. Very\nfew people do this."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Right time, right place, right dress,\nthen be accurate, brief and clear. <strong>Exam words:</strong> personal\ngrooming, social adjustment, three Rs, ABC (accurate, brief, clear),\npunctuality, empathy.</p>",
+          "text": "In one line: Right time, right place, right dress,\nthen be accurate, brief and clear. Exam words: personal\ngrooming, social adjustment, three Rs, ABC (accurate, brief, clear),\npunctuality, empathy."
+        },
+        {
+          "type": "heading",
+          "text": "Every profession has its own\nrules"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — “Go and shave”</strong> At 19, Prof. Shiva\ngot a <strong>night-shift</strong> job at the front desk of the\n<strong>Taj</strong> hotel in Chennai. On day one, the manager walked in\nat 9:15 p.m. and said, “Get out from the counter. Go and shave.” He said\nhe had shaved. The manager said, “Don’t argue. Go.” He found a barber\nwho was closing his shop and got a shave. On day three, at 3 a.m., the\nsame manager saw his top button open. “This is not your house.\n<strong>Put on your buttons.</strong>” A week later the manager\nexplained: “The first person a guest sees is <strong>you</strong>, not\nthe managing director. A tired guest just off a long flight wants to see\na <strong>pleasant</strong> face. If you haven’t shaved or don’t smile,\nit shows you <strong>don’t care</strong> about him. You\n<strong>represent</strong> this hotel.”</p>\n</blockquote>",
+          "text": "Lecture example — “Go and shave” At 19, Prof. Shiva\ngot a night-shift job at the front desk of the Taj hotel in Chennai. On day one, the manager walked in\nat 9:15 p.m. and said, “Get out from the counter. Go and shave.” He said\nhe had shaved. The manager said, “Don’t argue. Go.” He found a barber\nwho was closing his shop and got a shave. On day three, at 3 a.m., the\nsame manager saw his top button open. “This is not your house. Put on your buttons. ” A week later the manager\nexplained: “The first person a guest sees is you , not\nthe managing director. A tired guest just off a long flight wants to see\na pleasant face. If you haven’t shaved or don’t smile,\nit shows you don’t care about him. You represent this hotel.”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> Every profession has its own rules. Find out\nwhat <strong>your</strong> profession expects. In hospitality, you can’t\nsay “my shift is over” when a guest walks in at 6:30. You stay and check\nthem in.</p>",
+          "text": "Lesson: Every profession has its own rules. Find out\nwhat your profession expects. In hospitality, you can’t\nsay “my shift is over” when a guest walks in at 6:30. You stay and check\nthem in."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — who sits in front</strong> Prof. Shiva’s\nfather worked at HAL (Hindustan Aeronautics Limited). One day, a manager\nwas giving his parents a lift. His father sat in front, and his mother\ngot in at the back. The manager <strong>refused to drive</strong>: “I am\nnot your driver. Your wife should sit in front.”</p>\n</blockquote>",
+          "text": "Lecture example — who sits in front Prof. Shiva’s\nfather worked at HAL (Hindustan Aeronautics Limited). One day, a manager\nwas giving his parents a lift. His father sat in front, and his mother\ngot in at the back. The manager refused to drive : “I am\nnot your driver. Your wife should sit in front.”"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the midnight call</strong> As an adviser,\nProf. Sivakumar got a call at 12:30 a.m. from a <strong>disturbed\nstudent</strong>. He went to meet the student at the bus stop and\n<strong>listened</strong>. That care is also part of grooming.</p>\n</blockquote>",
+          "text": "Lecture example — the midnight call As an adviser,\nProf. Sivakumar got a call at 12:30 a.m. from a disturbed\nstudent . He went to meet the student at the bus stop and listened . That care is also part of grooming."
+        },
+        {
+          "type": "heading",
+          "text": "How to build the mindset\nfor grooming"
+        },
+        {
+          "type": "html",
+          "html": "<p>You will move between jobs, cities and countries, and between a party\nand a funeral on the same day. How do you adjust?</p>",
+          "text": "You will move between jobs, cities and countries, and between a party\nand a funeral on the same day. How do you adjust?"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Learn from people around you.</strong> At a funeral, watch\nhow your parents speak and behave. At a doctor’s clinic, Prof. Sivakumar\ngot bored waiting and <strong>arranged the messy footwear</strong>\nneatly at the door. After that, everyone who came in placed their\nfootwear neatly too. <strong>Grooming begets grooming.</strong> It\nspreads like a ripple. Be a <strong>role model</strong>, or find\none.</li>\n<li><strong>Change your behaviour to suit the person.</strong> You speak\ndifferently to an elder, a child, a lady, your boss and your\njuniors.</li>\n<li><strong>Have a hunger to learn.</strong> Accept that there is always\nmore to learn: customs, traditions, <strong>table manners</strong> (many\nkinds of forks, spoons and glasses). Even the Colonel says he hasn’t\nlearned it all.</li>\n<li><strong>Mind the details.</strong>\n<ul>\n<li><strong>Handshake:</strong> not a crushing grip, not a weak, limp\none. It should feel <strong>warm</strong>. Adjust it for a child, an\nelderly person or a lady.</li>\n<li><strong>Be presentable</strong> from head to toe: shirt colour,\ntrousers, sleeve length, shoes, <strong>haircut, shave</strong>. In the\narmy, officers sometimes shave <strong>twice a day</strong>, at 4:30\na.m. for PT and again for an evening dinner.</li>\n<li><strong>Smile.</strong> “One smile and your job is done.”</li>\n</ul></li>\n<li><strong>Use structure.</strong> A <strong>shoe rack</strong> at the\ndoor tells guests to leave their footwear there without a word. A coat\nhanger works the same way. Structure guides behaviour.</li>\n</ol>",
+          "text": "Learn from people around you. At a funeral, watch\nhow your parents speak and behave. At a doctor’s clinic, Prof. Sivakumar\ngot bored waiting and arranged the messy footwear neatly at the door. After that, everyone who came in placed their\nfootwear neatly too. Grooming begets grooming. It\nspreads like a ripple. Be a role model , or find\none. Change your behaviour to suit the person. You speak\ndifferently to an elder, a child, a lady, your boss and your\njuniors. Have a hunger to learn. Accept that there is always\nmore to learn: customs, traditions, table manners (many\nkinds of forks, spoons and glasses). Even the Colonel says he hasn’t\nlearned it all. Mind the details. Handshake: not a crushing grip, not a weak, limp\none. It should feel warm . Adjust it for a child, an\nelderly person or a lady. Be presentable from head to toe: shirt colour,\ntrousers, sleeve length, shoes, haircut, shave . In the\narmy, officers sometimes shave twice a day , at 4:30\na.m. for PT and again for an evening dinner. Smile. “One smile and your job is done.” Use structure. A shoe rack at the\ndoor tells guests to leave their footwear there without a word. A coat\nhanger works the same way. Structure guides behaviour."
+        },
+        {
+          "type": "heading",
+          "text": "Grooming starts at home"
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Shiva practises grooming at home every day:</p>",
+          "text": "Prof. Shiva practises grooming at home every day:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>He says “<strong>thank you</strong>” to his wife when she serves him\nfood, and to the cook when the cook leaves.</li>\n<li>He says “<strong>sorry</strong>” when he interrupts his son, or when\nhe makes extra mess for the house help.</li>\n<li>He <strong>asks</strong>, not orders: “Is it okay for you to make\nsomething extra?”</li>\n<li>He puts on a <strong>decent shirt</strong> before opening the door\nfor a delivery person. He greets him: “Hello, how are you? Is it\nraining?”</li>\n<li>In Tamil Nadu, he has found that one magic question is “<strong>Have\nyou eaten?</strong>” People’s faces light up when you ask it.</li>\n</ul>",
+          "text": "He says “ thank you ” to his wife when she serves him\nfood, and to the cook when the cook leaves. He says “ sorry ” when he interrupts his son, or when\nhe makes extra mess for the house help. He asks , not orders: “Is it okay for you to make\nsomething extra?” He puts on a decent shirt before opening the door\nfor a delivery person. He greets him: “Hello, how are you? Is it\nraining?” In Tamil Nadu, he has found that one magic question is “ Have\nyou eaten? ” People’s faces light up when you ask it."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Personal grooming is about caring.</strong> Practise it at\nhome first, and it becomes part of you.</p>",
+          "text": "Personal grooming is about caring. Practise it at\nhome first, and it becomes part of you."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img12-grooming-at-home.webp",
+          "alt": "Grooming starts at home",
+          "caption": "Thank you, sorry, asking politely\nand dressing decently for visitors — practise at home first."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everyday example</strong> Before an online interview: wear a\nclean, plain shirt (right dress), join 5 minutes early (right time), sit\nin a quiet, tidy spot (right place), smile, and answer briefly and\nclearly (ABC).</p>\n</blockquote>",
+          "text": "Everyday example Before an online interview: wear a\nclean, plain shirt (right dress), join 5 minutes early (right time), sit\nin a quiet, tidy spot (right place), smile, and answer briefly and\nclearly (ABC)."
+        },
+        {
+          "type": "heading",
+          "text": "Final advice from the\nthree speakers"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Speaker</th>\n<th>Advice</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Lt Col Jayakumar</strong></td>\n<td><strong>Be aware</strong> of where you are and what you are doing.\nBe <strong>conscious</strong> of what others will think. Don’t be too\nloud, too gaudy or too colourful. Don’t seek the limelight. <strong>Be\nsober</strong> and give others space; don’t elbow them out. Keep a\n<strong>healthy competitive spirit</strong>. If someone hurts you,\nremember they may have problems you don’t know about.</td>\n</tr>\n<tr>\n<td><strong>Lt Col Jayakumar</strong></td>\n<td>Army officers are trained to fit in anywhere, from working with the\n<strong>gardener</strong> in the morning to a <strong>banquet with the\nPresident</strong> in the evening.</td>\n</tr>\n<tr>\n<td><strong>Prof. Sivakumar</strong></td>\n<td><strong>Fairness</strong> to yourself and others. Caring, receiving\nand pleasing. Grooming is a <strong>continuous</strong> process of\nlearning and correcting yourself.</td>\n</tr>\n<tr>\n<td><strong>Prof. Shiva</strong></td>\n<td><strong>Sincerity</strong>, because it comes from the heart and from\nyour intention. A <strong>sense of humour</strong>, including the\nability to <strong>laugh at yourself</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Speaker Advice Lt Col Jayakumar Be aware of where you are and what you are doing.\nBe conscious of what others will think. Don’t be too\nloud, too gaudy or too colourful. Don’t seek the limelight. Be\nsober and give others space; don’t elbow them out. Keep a healthy competitive spirit . If someone hurts you,\nremember they may have problems you don’t know about. Lt Col Jayakumar Army officers are trained to fit in anywhere, from working with the gardener in the morning to a banquet with the\nPresident in the evening. Prof. Sivakumar Fairness to yourself and others. Caring, receiving\nand pleasing. Grooming is a continuous process of\nlearning and correcting yourself. Prof. Shiva Sincerity , because it comes from the heart and from\nyour intention. A sense of humour , including the\nability to laugh at yourself ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Grooming is caring for others through\nhow you look, speak and act. Learn it from role models, practise it at\nhome, and keep improving. <strong>Exam words:</strong> grooming begets\ngrooming, role model, table manners, handshake, presentable, structure,\ncaring, awareness, sober, healthy competition, fairness, sincerity,\nsense of humour.</p>",
+          "text": "In one line: Grooming is caring for others through\nhow you look, speak and act. Learn it from role models, practise it at\nhome, and keep improving. Exam words: grooming begets\ngrooming, role model, table manners, handshake, presentable, structure,\ncaring, awareness, sober, healthy competition, fairness, sincerity,\nsense of humour."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the three Rs of grooming given by Lt Col Jayakumar?\n</summary>\nRight time, right place, right dress.\n</details>",
+          "text": "What are the three Rs of grooming given by Lt Col Jayakumar? Right time, right place, right dress."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does ABC stand for?\n</summary>\nAccurate, brief, clear.\n</details>",
+          "text": "What does ABC stand for? Accurate, brief, clear."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did the Taj manager teach Prof. Shiva by sending him to shave?\n</summary>\nThe guest sees the receptionist first. A well-groomed, smiling person\nshows the hotel cares about the guest. Every profession has its own\nrules.\n</details>",
+          "text": "What did the Taj manager teach Prof. Shiva by sending him to shave? The guest sees the receptionist first. A well-groomed, smiling person\nshows the hotel cares about the guest. Every profession has its own\nrules."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “grooming begets grooming” mean?\n</summary>\nGood behaviour spreads. When one person sets a good example (like\narranging footwear neatly), others copy it.\n</details>",
+          "text": "What does “grooming begets grooming” mean? Good behaviour spreads. When one person sets a good example (like\narranging footwear neatly), others copy it."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhere does Prof. Shiva say grooming should start?\n</summary>\nAt home — by saying thank you and sorry, asking politely, and caring for\neveryone in the house.\n</details>",
+          "text": "Where does Prof. Shiva say grooming should start? At home — by saying thank you and sorry, asking politely, and caring for\neveryone in the house."
+        }
+      ]
+    },
+    {
+      "slug": "week-6-quick-revision",
+      "title": "Week 6 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Cross-cultural understanding and personal\ngrooming, all on one page.</p>\n</blockquote>",
+          "text": "Start here Cross-cultural understanding and personal\ngrooming, all on one page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-6/img13-week6-map.webp",
+          "alt": "Week 6 at a glance",
+          "caption": "Culture, three traps, four stages, four\ndimensions, five strategies and grooming."
+        },
+        {
+          "type": "heading",
+          "text": "Culture"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Culture</strong> = shared <strong>beliefs, values, norms and\npractices</strong> of a group.</li>\n<li>It is passed down through generations and guides us\n<strong>subconsciously</strong>.</li>\n<li>We are <strong>born into</strong> a culture, not born with it. We\ntake it in through <strong>socialisation</strong>.</li>\n<li>Notice three kinds of differences: <strong>physical</strong> (food,\nwater, shops), <strong>sensory</strong> (sounds, smells, climate) and\n<strong>cultural</strong> (customs, manners, gestures).</li>\n<li><strong>Observe, don’t judge.</strong> You don’t have to agree with\nanother culture.</li>\n<li><strong>Iceberg principle:</strong> above the water we see\n<strong>language, food, dress, customs</strong>. Below it are\n<strong>work, priorities, time, privacy, communication, problem solving,\naggressiveness and process improvement</strong>.</li>\n</ul>",
+          "text": "Culture = shared beliefs, values, norms and\npractices of a group. It is passed down through generations and guides us subconsciously . We are born into a culture, not born with it. We\ntake it in through socialisation . Notice three kinds of differences: physical (food,\nwater, shops), sensory (sounds, smells, climate) and cultural (customs, manners, gestures). Observe, don’t judge. You don’t have to agree with\nanother culture. Iceberg principle: above the water we see language, food, dress, customs . Below it are work, priorities, time, privacy, communication, problem solving,\naggressiveness and process improvement ."
+        },
+        {
+          "type": "heading",
+          "text": "Three traps"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Trap</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Stereotyping</strong></td>\n<td>Using “mental files” to judge a group. Helpful if positive; harmful\nif you <strong>refuse new information</strong>.</td>\n</tr>\n<tr>\n<td><strong>Ethnocentrism</strong></td>\n<td>Believing <strong>my culture is better</strong>. Destructive when\ncombined with stereotyping.</td>\n</tr>\n<tr>\n<td><strong>Parochialism</strong></td>\n<td><strong>Narrow</strong> outlook; only local or regional.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Trap Meaning Stereotyping Using “mental files” to judge a group. Helpful if positive; harmful\nif you refuse new information . Ethnocentrism Believing my culture is better . Destructive when\ncombined with stereotyping. Parochialism Narrow outlook; only local or regional."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Did the Pedestrian Die?</strong> (Trompenaars): family first\nor law first? Cultures think differently, and neither is wrong.</li>\n<li><strong>Principles:</strong> people may not fit the stereotype; not\nevery difference is cultural; know your own culture first; there are\ngradations, not extremes.</li>\n</ul>",
+          "text": "Did the Pedestrian Die? (Trompenaars): family first\nor law first? Cultures think differently, and neither is wrong. Principles: people may not fit the stereotype; not\nevery difference is cultural; know your own culture first; there are\ngradations, not extremes."
+        },
+        {
+          "type": "heading",
+          "text": "Cross-cultural intelligence"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Understand how cultures <strong>differ</strong>, understand\n<strong>yourself</strong>, understand <strong>others</strong>,\n<strong>value</strong> other views, and build <strong>shared</strong>\nvalues.</li>\n<li><strong>Variables of culture</strong> (outside to inside): national\n→ sociocultural → cultural (values, norms, beliefs) → attitudes (work,\ntime, materialism, individualism, change) → job behaviour (motivation,\ncommitment, productivity, ethics).</li>\n<li><strong>Four stages:</strong> <strong>Elation</strong> (wow!) →\n<strong>Transition</strong> (frustration) →\n<strong>Understanding</strong> (familiar) → <strong>Integration</strong>\n(adapt).</li>\n</ul>",
+          "text": "Understand how cultures differ , understand yourself , understand others , value other views, and build shared values. Variables of culture (outside to inside): national\n→ sociocultural → cultural (values, norms, beliefs) → attitudes (work,\ntime, materialism, individualism, change) → job behaviour (motivation,\ncommitment, productivity, ethics). Four stages: Elation (wow!) → Transition (frustration) → Understanding (familiar) → Integration (adapt)."
+        },
+        {
+          "type": "heading",
+          "text": "Four dimensions of culture"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Dimension</th>\n<th>India</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Collective or individual</strong></td>\n<td><strong>Collective</strong>: family decides,\nrelationship-oriented</td>\n</tr>\n<tr>\n<td><strong>Equal or unequal</strong></td>\n<td><strong>Unequal</strong>: “Sir”, respect for parents, bosses,\nteachers</td>\n</tr>\n<tr>\n<td><strong>Certainty or ambiguity</strong></td>\n<td><strong>Ambiguity</strong>: traffic, bus timings; monsoon\ncultures</td>\n</tr>\n<tr>\n<td><strong>Time scarce or plentiful</strong></td>\n<td><strong>Plentiful</strong>: cyclical; long weddings and festivals;\nsunny cultures. <em>Not about punctuality.</em></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Dimension India Collective or individual Collective : family decides,\nrelationship-oriented Equal or unequal Unequal : “Sir”, respect for parents, bosses,\nteachers Certainty or ambiguity Ambiguity : traffic, bus timings; monsoon\ncultures Time scarce or plentiful Plentiful : cyclical; long weddings and festivals;\nsunny cultures. Not about punctuality."
+        },
+        {
+          "type": "heading",
+          "text": "Five strategies (Nancy Adler)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Strategy</th>\n<th>My way / Their way</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Avoidance</td>\n<td>Low / Low</td>\n<td>Insurance claims for children quietly paid</td>\n</tr>\n<tr>\n<td>Dominance</td>\n<td>High / Low</td>\n<td>Refusing a welcome gift</td>\n</tr>\n<tr>\n<td>Accommodation</td>\n<td>Low / High</td>\n<td>Two weeks of golf in Japan before the contract</td>\n</tr>\n<tr>\n<td>Compromise</td>\n<td>Medium / Medium</td>\n<td>Meetings alternate between Mexico and Italy</td>\n</tr>\n<tr>\n<td><strong>Synergy (best)</strong></td>\n<td>High / High</td>\n<td>Uruguayan doctor invites questions; Filipino nurse asks\npolitely</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Strategy My way / Their way Example Avoidance Low / Low Insurance claims for children quietly paid Dominance High / Low Refusing a welcome gift Accommodation Low / High Two weeks of golf in Japan before the contract Compromise Medium / Medium Meetings alternate between Mexico and Italy Synergy (best) High / High Uruguayan doctor invites questions; Filipino nurse asks\npolitely"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Books:</strong> Hofstede (<em>Cultures and\nOrganizations</em>), Trompenaars (<em>Riding the Waves of Culture</em>),\nErin Meyer (<em>The Culture Map</em>).</p>",
+          "text": "Books: Hofstede ( Cultures and\nOrganizations ), Trompenaars ( Riding the Waves of Culture ),\nErin Meyer ( The Culture Map )."
+        },
+        {
+          "type": "heading",
+          "text": "Personal grooming"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>More than looks: appearance, <strong>smile</strong>, manners,\n<strong>empathy</strong>, social adjustment.</li>\n<li><strong>Three Rs:</strong> right <strong>time</strong>, right\n<strong>place</strong>, right <strong>dress</strong>. Then\n<strong>ABC:</strong> accurate, brief, clear.</li>\n<li>Punctuality respects others’ time. If you are late, say\n<strong>sorry</strong>.</li>\n<li><strong>Taj story:</strong> shave, button up, smile. You\n<strong>represent</strong> the organisation.</li>\n<li><strong>Teacher as potter:</strong> points out faults from outside,\nsupports from inside.</li>\n<li><strong>Grooming begets grooming</strong> (footwear at the clinic).\nBe a <strong>role model</strong>.</li>\n<li>Hunger to learn: table manners, a <strong>warm handshake</strong>,\nbeing presentable, using <strong>structure</strong> (shoe rack).</li>\n<li><strong>Starts at home:</strong> thank you, sorry, asking politely.\n<strong>Grooming = caring.</strong></li>\n<li>Final words: awareness, be sober, healthy competition,\n<strong>fairness</strong>, <strong>sincerity</strong>, <strong>sense of\nhumour</strong>.</li>\n</ul>",
+          "text": "More than looks: appearance, smile , manners, empathy , social adjustment. Three Rs: right time , right place , right dress . Then ABC: accurate, brief, clear. Punctuality respects others’ time. If you are late, say sorry . Taj story: shave, button up, smile. You represent the organisation. Teacher as potter: points out faults from outside,\nsupports from inside. Grooming begets grooming (footwear at the clinic).\nBe a role model . Hunger to learn: table manners, a warm handshake ,\nbeing presentable, using structure (shoe rack). Starts at home: thank you, sorry, asking politely. Grooming = caring. Final words: awareness, be sober, healthy competition, fairness , sincerity , sense of\nhumour ."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>“We are born into a culture, not with it.” Which process helps us\ntake it in?\n</li></ol></summary>\nSocialisation.\n</details>",
+          "text": "“We are born into a culture, not with it.” Which process helps us\ntake it in? Socialisation."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>In the iceberg principle, is “approach to work” above or below the\nwater?\n</li></ol></summary>\nBelow the water — it is hidden.\n</details>",
+          "text": "In the iceberg principle, is “approach to work” above or below the\nwater? Below the water — it is hidden."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>“People from that city are all rude.” Which trap is this?\n</li></ol></summary>\nStereotyping.\n</details>",
+          "text": "“People from that city are all rude.” Which trap is this? Stereotyping."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Three months after moving abroad, you feel frustrated and want to go\nhome. Which stage are you in?\n</li></ol></summary>\nTransition.\n</details>",
+          "text": "Three months after moving abroad, you feel frustrated and want to go\nhome. Which stage are you in? Transition."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>A culture where people call their boss by first name sits on which\nside of which dimension?\n</li></ol></summary>\nThe “equal” side of the equal or unequal dimension.\n</details>",
+          "text": "A culture where people call their boss by first name sits on which\nside of which dimension? The “equal” side of the equal or unequal dimension."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Which strategy creates something new while respecting both cultures?\n</li></ol></summary>\nCultural synergy.\n</details>",
+          "text": "Which strategy creates something new while respecting both cultures? Cultural synergy."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>What are the three Rs of grooming?\n</li></ol></summary>\nRight time, right place, right dress.\n</details>",
+          "text": "What are the three Rs of grooming? Right time, right place, right dress."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>“Time is linear; every minute must be accounted for.” Which view of\ntime is this?\n</li></ol></summary>\nTime is scarce.\n</details>",
+          "text": "“Time is linear; every minute must be accounted for.” Which view of\ntime is this? Time is scarce."
+        }
+      ]
+    }
+  ]
+}

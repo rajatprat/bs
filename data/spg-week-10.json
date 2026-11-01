@@ -1,0 +1,1090 @@
+{
+  "subject": "Strategies for Professional Growth",
+  "subjectSlug": "spg",
+  "week": 10,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "base": "/spg/week-10/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "what-is-a-system",
+      "title": "Introduction to Systems Thinking — What is a System?",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Kill all the snakes in a forest because\n“snakes are bad”. Soon there are too many rats, the rats eat all the\ngrass, and the forest suffers. One small change, one big mess. Systems\nthinking teaches you to ask <strong>“What else will this\naffect?”</strong> before you act.</p>\n</blockquote>",
+          "text": "Start here Kill all the snakes in a forest because\n“snakes are bad”. Soon there are too many rats, the rats eat all the\ngrass, and the forest suffers. One small change, one big mess. Systems\nthinking teaches you to ask “What else will this\naffect?” before you act."
+        },
+        {
+          "type": "html",
+          "html": "<p>This week is taught by <strong>Prof. Shiva Subramaniam</strong>, with\nProf. Prasanna, Prof. Sivakumar, Lt Col Jayakumar and Prof. Kartic\nsharing habits.</p>",
+          "text": "This week is taught by Prof. Shiva Subramaniam , with\nProf. Prasanna, Prof. Sivakumar, Lt Col Jayakumar and Prof. Kartic\nsharing habits."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why learn it?</strong> We often feel upset because we\n<strong>don’t understand</strong> why things happen, or why people\nbehave the way they do. Systems thinking helps you\n<strong>understand</strong> the world. Prof. Shiva says the TCS leader\n<strong>F. C. Kohli</strong> told him in 1993 to learn it. He ignored\nthat advice for years, and now regrets it.</p>",
+          "text": "Why learn it? We often feel upset because we don’t understand why things happen, or why people\nbehave the way they do. Systems thinking helps you understand the world. Prof. Shiva says the TCS leader F. C. Kohli told him in 1993 to learn it. He ignored\nthat advice for years, and now regrets it."
+        },
+        {
+          "type": "heading",
+          "text": "The definition"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>A <strong>system</strong> is an <strong>interconnected</strong> set\nof <strong>elements</strong> that is coherently\n<strong>organised</strong> in a way that <strong>achieves\nsomething</strong> (a purpose).</p>\n</blockquote>",
+          "text": "A system is an interconnected set\nof elements that is coherently organised in a way that achieves\nsomething (a purpose)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Every system has three parts:</strong></p>",
+          "text": "Every system has three parts:"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img01-three-parts.webp",
+          "alt": "Three parts of a system",
+          "caption": "Elements, interconnections, and a\nfunction or purpose."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Part</th>\n<th>Meaning</th>\n<th>Example: the digestive system</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Elements</strong></td>\n<td>The parts</td>\n<td>Mouth, tongue, oesophagus, stomach, liver, intestines…</td>\n</tr>\n<tr>\n<td><strong>Interconnections</strong></td>\n<td>How the parts link and depend on each other</td>\n<td>Food passes from the mouth to the stomach to the intestines</td>\n</tr>\n<tr>\n<td><strong>Function / purpose</strong></td>\n<td>What the system achieves</td>\n<td>To digest food</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Part Meaning Example: the digestive system Elements The parts Mouth, tongue, oesophagus, stomach, liver, intestines… Interconnections How the parts link and depend on each other Food passes from the mouth to the stomach to the intestines Function / purpose What the system achieves To digest food"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Systems inside systems:</strong> the human body has the\ndigestive, nervous and circulatory systems. Each one <strong>interacts\nwith the others</strong> to keep you alive.</p>",
+          "text": "Systems inside systems: the human body has the\ndigestive, nervous and circulatory systems. Each one interacts\nwith the others to keep you alive."
+        },
+        {
+          "type": "heading",
+          "text": "A heap vs a system"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img02-heap-vs-house.webp",
+          "alt": "A heap vs a system",
+          "caption": "Remove a stone from a heap and nothing\nhappens. Remove a wall from a house and it falls."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Heap (not a system)</th>\n<th>House (a system)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A pile of 100 stones</td>\n<td>Walls, doors, windows, roof, foundation, all connected</td>\n</tr>\n<tr>\n<td>Remove one stone: still a heap, just 99 stones</td>\n<td>Remove the foundation or a wall: the house\n<strong>collapses</strong></td>\n</tr>\n<tr>\n<td><strong>Not affected</strong> when one part is removed</td>\n<td><strong>Affected</strong> when one element is removed</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Heap (not a system) House (a system) A pile of 100 stones Walls, doors, windows, roof, foundation, all connected Remove one stone: still a heap, just 99 stones Remove the foundation or a wall: the house collapses Not affected when one part is removed Affected when one element is removed"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Easy test:</strong> If removing one part changes the whole\nthing, it’s a <strong>system</strong>.</p>\n</blockquote>",
+          "text": "Easy test: If removing one part changes the whole\nthing, it’s a system ."
+        },
+        {
+          "type": "heading",
+          "text": "What is systems thinking?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Systems thinking</strong> is a <strong>holistic\napproach</strong> to understanding:</p>\n<ol type=\"1\">\n<li>how the <strong>elements</strong> of a system are\n<strong>connected</strong> to each other,</li>\n<li>how the system relates to <strong>larger systems</strong>, and</li>\n<li>how a <strong>change in one part affects the rest</strong>.</li>\n</ol>\n</blockquote>",
+          "text": "Systems thinking is a holistic\napproach to understanding: how the elements of a system are connected to each other, how the system relates to larger systems , and how a change in one part affects the rest ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the food chain</strong> In a jungle, the\nhawk, snake, bird, grasshopper, grass, mouse, owl, rabbit and fox are\nall connected. <strong>Remove the snakes</strong>, and the rats multiply\nand destroy the grass. Animals that depend on the grass suffer too. One\nmissing element affects the whole system. Many <strong>climate\nproblems</strong> happen because we remove elements without asking,\n“What will happen if I do this?”</p>\n</blockquote>",
+          "text": "Lecture example — the food chain In a jungle, the\nhawk, snake, bird, grasshopper, grass, mouse, owl, rabbit and fox are\nall connected. Remove the snakes , and the rats multiply\nand destroy the grass. Animals that depend on the grass suffer too. One\nmissing element affects the whole system. Many climate\nproblems happen because we remove elements without asking,\n“What will happen if I do this?”"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img03-food-chain.webp",
+          "alt": "The food chain",
+          "caption": "Everything in the food chain is connected.\nRemove one link and the whole chain is affected."
+        },
+        {
+          "type": "heading",
+          "text": "What can you use it for?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Examining problems</strong> in your family, campus or\nlife</li>\n<li><strong>Understanding</strong> situations and people</li>\n<li><strong>Diagnosing</strong> what is really wrong</li>\n</ul>",
+          "text": "Examining problems in your family, campus or\nlife Understanding situations and people Diagnosing what is really wrong"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the doctor</strong> Even for a headache, a\ngood doctor checks your blood pressure and weight, and asks about your\nsleep, food and exercise. Why? <strong>Everything is connected:</strong>\nLess walking → higher blood sugar → higher blood pressure → faster heart\nrate → more anxiety → even higher blood pressure. So the doctor treats\n<strong>the whole system</strong>, not just one part.</p>\n</blockquote>",
+          "text": "Lecture example — the doctor Even for a headache, a\ngood doctor checks your blood pressure and weight, and asks about your\nsleep, food and exercise. Why? Everything is connected: Less walking → higher blood sugar → higher blood pressure → faster heart\nrate → more anxiety → even higher blood pressure. So the doctor treats the whole system , not just one part."
+        },
+        {
+          "type": "heading",
+          "text": "The six blind men and the\nelephant"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img04-blind-men.webp",
+          "alt": "The blind men and the elephant",
+          "caption": "Each person touches one part\nand guesses wrong. Only the whole view shows the elephant."
+        },
+        {
+          "type": "html",
+          "html": "<p>Six blindfolded men each touch a different part of an elephant:</p>",
+          "text": "Six blindfolded men each touch a different part of an elephant:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Part touched</th>\n<th>What they guessed</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Tail</td>\n<td>A rope or snake</td>\n</tr>\n<tr>\n<td>Body</td>\n<td>A wall</td>\n</tr>\n<tr>\n<td>Ear</td>\n<td>A fan</td>\n</tr>\n<tr>\n<td>Leg</td>\n<td>A pillar or tree</td>\n</tr>\n<tr>\n<td>Trunk</td>\n<td>A snake</td>\n</tr>\n<tr>\n<td>Tusk</td>\n<td>A spear</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Part touched What they guessed Tail A rope or snake Body A wall Ear A fan Leg A pillar or tree Trunk A snake Tusk A spear"
+        },
+        {
+          "type": "html",
+          "html": "<p>Take off the blindfolds, and they see an\n<strong>elephant</strong>.</p>",
+          "text": "Take off the blindfolds, and they see an elephant ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> The whole is <strong>not just the sum of its\nparts</strong>. In life, we often see only one small part and jump to\nconclusions. Look at <strong>how the parts connect</strong> before you\ndecide.</p>",
+          "text": "Lesson: The whole is not just the sum of its\nparts . In life, we often see only one small part and jump to\nconclusions. Look at how the parts connect before you\ndecide."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> A system is elements + interconnections\n+ purpose; systems thinking looks at how parts connect, how systems link\nto bigger systems, and how one change affects everything. <strong>Exam\nwords:</strong> system, elements, interconnections, purpose, heap vs\nsystem, systems thinking, holistic approach, food chain,\ninterdependence, the whole is not the sum of its parts.</p>",
+          "text": "In one line: A system is elements + interconnections\n+ purpose; systems thinking looks at how parts connect, how systems link\nto bigger systems, and how one change affects everything. Exam\nwords: system, elements, interconnections, purpose, heap vs\nsystem, systems thinking, holistic approach, food chain,\ninterdependence, the whole is not the sum of its parts."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are the three parts of every system?\n</summary>\nElements, interconnections, and function or purpose.\n</details>",
+          "text": "What are the three parts of every system? Elements, interconnections, and function or purpose."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs a pile of books a heap or a system? Why?\n</summary>\nA heap — removing one book doesn’t change the pile; nothing depends on\nit.\n</details>",
+          "text": "Is a pile of books a heap or a system? Why? A heap — removing one book doesn’t change the pile; nothing depends on\nit."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the blind men and the elephant story teach?\n</summary>\nSeeing only one part leads to wrong conclusions; you must see how the\nparts connect into the whole.\n</details>",
+          "text": "What does the blind men and the elephant story teach? Seeing only one part leads to wrong conclusions; you must see how the\nparts connect into the whole."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy does a doctor ask about sleep and exercise for a headache?\n</summary>\nBecause the body is a system — sleep, sugar, blood pressure and stress\nare all connected.\n</details>",
+          "text": "Why does a doctor ask about sleep and exercise for a headache? Because the body is a system — sleep, sugar, blood pressure and stress\nare all connected."
+        }
+      ]
+    },
+    {
+      "slug": "examples-and-systems-view",
+      "title": "Examples of a System and the Systems View",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your masala dosa arrives 20 minutes late,\nand you’re annoyed. But behind that one dosa are a delivery rider,\npetrol pumps, a restaurant, a supply chain, farmers, the monsoon and the\ngovernment. Once you see the system, you get less angry.</p>\n</blockquote>",
+          "text": "Start here Your masala dosa arrives 20 minutes late,\nand you’re annoyed. But behind that one dosa are a delivery rider,\npetrol pumps, a restaurant, a supply chain, farmers, the monsoon and the\ngovernment. Once you see the system, you get less angry."
+        },
+        {
+          "type": "heading",
+          "text": "Example 1: IIT Madras as a\nsystem"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Elements (inside)</th>\n<th>Purpose</th>\n<th>Other systems it connects with</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Students, faculty, curriculum, classrooms, facilities, canteen,\nsecurity, staff, transport, flora and fauna, guest lecturers</td>\n<td>Higher education, research, helping young people find jobs,\nupgrading skills, inventing new technology</td>\n<td><strong>Government</strong>, <strong>parents</strong>,\n<strong>alumni</strong>, the city corporation (water, roads), transport\naround the campus</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Elements (inside) Purpose Other systems it connects with Students, faculty, curriculum, classrooms, facilities, canteen,\nsecurity, staff, transport, flora and fauna, guest lecturers Higher education, research, helping young people find jobs,\nupgrading skills, inventing new technology Government , parents , alumni , the city corporation (water, roads), transport\naround the campus"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Remove one element</strong>, and the system breaks:</p>",
+          "text": "Remove one element , and the system breaks:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>No students or no faculty → no IIT.</li>\n<li>No breakfast one day → students protest and miss classes.</li>\n<li>Cycle paths blocked → students can’t reach class.</li>\n</ul>",
+          "text": "No students or no faculty → no IIT. No breakfast one day → students protest and miss classes. Cycle paths blocked → students can’t reach class."
+        },
+        {
+          "type": "heading",
+          "text": "Example 2: a cricket\nmatch as a system"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Elements</th>\n<th>Purposes</th>\n<th>Connections</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Players, umpires, the stadium, fans, ticketing, rules, equipment,\npitch, sponsors, groundsmen, facilities</td>\n<td>To entertain; to show team spirit; to teach how to lose; to inspire\nyoung cricketers</td>\n<td>Umpires depend on players and rules; the match depends on fans; fans\ndepend on transport…</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Elements Purposes Connections Players, umpires, the stadium, fans, ticketing, rules, equipment,\npitch, sponsors, groundsmen, facilities To entertain; to show team spirit; to teach how to lose; to inspire\nyoung cricketers Umpires depend on players and rules; the match depends on fans; fans\ndepend on transport…"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — when fans disappeared</strong> During the\npandemic, many matches (and the IPL) were played <strong>without\nfans</strong>. Several teams said they didn’t perform as well.\nProf. Shiva has seen home crowds turn a 2–1 loss into a 3–2 win.\n<strong>Fans are an element too.</strong> Remove them, and the system\nbehaves differently.</p>\n</blockquote>",
+          "text": "Lecture example — when fans disappeared During the\npandemic, many matches (and the IPL) were played without\nfans . Several teams said they didn’t perform as well.\nProf. Shiva has seen home crowds turn a 2–1 loss into a 3–2 win. Fans are an element too. Remove them, and the system\nbehaves differently."
+        },
+        {
+          "type": "heading",
+          "text": "Example 3: one dosa, many\nsystems"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img05-dosa-chain.webp",
+          "alt": "Behind one dosa delivery",
+          "caption": "One delivered dosa depends on a\nlong chain of connected systems."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>You</strong> ← <strong>delivery rider</strong> (scooter →\npetrol → petrol pumps) ← <strong>restaurant</strong> (chef, cooks,\nstock) ← <strong>supply chain</strong> ← <strong>food\nproduction</strong> (rice, dal) ← <strong>farmer</strong> ←\n<strong>monsoon rain</strong>, <strong>fertiliser</strong>,\n<strong>government</strong> support and\n<strong>distribution</strong>.</p>",
+          "text": "You ← delivery rider (scooter →\npetrol → petrol pumps) ← restaurant (chef, cooks,\nstock) ← supply chain ← food\nproduction (rice, dal) ← farmer ← monsoon rain , fertiliser , government support and distribution ."
+        },
+        {
+          "type": "html",
+          "html": "<p>If any one link is affected, your dosa is late. <strong>“So many\nthings have to come together for one dosa to reach your\nhouse.”</strong></p>",
+          "text": "If any one link is affected, your dosa is late. “So many\nthings have to come together for one dosa to reach your\nhouse.”"
+        },
+        {
+          "type": "heading",
+          "text": "The systems view"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Everything is connected.</strong> All things in nature and in\nthe human world exist in <strong>one interconnected web</strong> of\nresources, energy, information and relationships. <strong>No problem or\nsolution exists in a silo.</strong></p>\n</blockquote>",
+          "text": "Everything is connected. All things in nature and in\nthe human world exist in one interconnected web of\nresources, energy, information and relationships. No problem or\nsolution exists in a silo."
+        },
+        {
+          "type": "html",
+          "html": "<p>So if you have a problem, several systems are causing it. To solve\nit, find <strong>which part of the system</strong> is really causing\nit.</p>",
+          "text": "So if you have a problem, several systems are causing it. To solve\nit, find which part of the system is really causing\nit."
+        },
+        {
+          "type": "subheading",
+          "text": "Video 1: How wolves change\nrivers"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — wolves in Yellowstone</strong> When\n<strong>wolves</strong> were brought back to Yellowstone National Park\n(USA) in 1995, they hunted deer and kept them away from some valleys.\nWithout deer over-grazing, <strong>trees and plants grew back</strong>.\nWith more plants, riverbanks became stronger, so the <strong>rivers\nchanged course</strong>. <strong>One small change, a few packs of\nwolves, changed the shape of the land.</strong></p>\n</blockquote>",
+          "text": "Lecture example — wolves in Yellowstone When wolves were brought back to Yellowstone National Park\n(USA) in 1995, they hunted deer and kept them away from some valleys.\nWithout deer over-grazing, trees and plants grew back .\nWith more plants, riverbanks became stronger, so the rivers\nchanged course . One small change, a few packs of\nwolves, changed the shape of the land."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img06-wolves.webp",
+          "alt": "How wolves change rivers",
+          "caption": "Wolves → fewer deer → more trees →\nstronger riverbanks → rivers change."
+        },
+        {
+          "type": "subheading",
+          "text": "Video 2: you are part of\nthe system too"
+        },
+        {
+          "type": "html",
+          "html": "<p>A short video shows everyday systems:</p>",
+          "text": "A short video shows everyday systems:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>The hot shower:</strong> hot water hits your hand, your\n<strong>nerves</strong> send a signal, your <strong>brain</strong> tells\nyour hand to turn the tap. The tap connects to the tank, the tank to a\nlake, the lake to a river, and the river to the\n<strong>monsoon</strong>.</li>\n<li><strong>The traffic jam:</strong> a driver is angry that traffic\nisn’t moving. Then he learns there’s an <strong>accident</strong> ahead.\n<strong>New information</strong> changes his behaviour, and his anger\ndrops.</li>\n<li><strong>The final shot:</strong> from above, one house holding a\nparty is connected to the family, water, transport, security and\ngovernment systems.</li>\n</ul>",
+          "text": "The hot shower: hot water hits your hand, your nerves send a signal, your brain tells\nyour hand to turn the tap. The tap connects to the tank, the tank to a\nlake, the lake to a river, and the river to the monsoon . The traffic jam: a driver is angry that traffic\nisn’t moving. Then he learns there’s an accident ahead. New information changes his behaviour, and his anger\ndrops. The final shot: from above, one house holding a\nparty is connected to the family, water, transport, security and\ngovernment systems."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> “Sometimes we forget that <strong>we are\npart of the system too</strong>.”</p>",
+          "text": "Lesson: “Sometimes we forget that we are\npart of the system too .”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Everything is connected, so look past\nthe single event (a late dosa, a traffic jam) to the whole web of\nsystems behind it. <strong>Exam words:</strong> systems view,\ninterconnected web, no problem exists in a silo, wolves of Yellowstone,\nfeedback, we are part of the system.</p>",
+          "text": "In one line: Everything is connected, so look past\nthe single event (a late dosa, a traffic jam) to the whole web of\nsystems behind it. Exam words: systems view,\ninterconnected web, no problem exists in a silo, wolves of Yellowstone,\nfeedback, we are part of the system."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName two systems that the IIT Madras system interacts with.\n</summary>\nAny two of: government, parents, alumni, city corporation, transport.\n</details>",
+          "text": "Name two systems that the IIT Madras system interacts with. Any two of: government, parents, alumni, city corporation, transport."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat happened to some teams when matches were played without fans?\n</summary>\nThey felt they didn’t perform as well — fans are an element of the\nsystem.\n</details>",
+          "text": "What happened to some teams when matches were played without fans? They felt they didn’t perform as well — fans are an element of the\nsystem."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow did wolves change rivers in Yellowstone?\n</summary>\nWolves reduced deer grazing, so plants and trees grew back,\nstrengthening riverbanks and changing the rivers’ course.\n</details>",
+          "text": "How did wolves change rivers in Yellowstone? Wolves reduced deer grazing, so plants and trees grew back,\nstrengthening riverbanks and changing the rivers’ course."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the “systems view” in one line?\n</summary>\nEverything is connected; no problem or solution exists in a silo.\n</details>",
+          "text": "What is the “systems view” in one line? Everything is connected; no problem or solution exists in a silo."
+        }
+      ]
+    },
+    {
+      "slug": "big-picture-and-consequences",
+      "title": "Becoming a Systems Thinker — The Big Picture and Consequences",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You failed an exam and feel your life is\nover. Your friend takes you up in a <strong>helicopter</strong>. From\n2,000 feet, you see your whole life: graduating at 22, a good job at 28,\na family, a home for your parents, travelling the world. The exam is\nstill important, but now it’s just one small dot.</p>\n</blockquote>",
+          "text": "Start here You failed an exam and feel your life is\nover. Your friend takes you up in a helicopter . From\n2,000 feet, you see your whole life: graduating at 22, a good job at 28,\na family, a home for your parents, travelling the world. The exam is\nstill important, but now it’s just one small dot."
+        },
+        {
+          "type": "heading",
+          "text": "The 14 habits of a systems\nthinker"
+        },
+        {
+          "type": "html",
+          "html": "<p>The <strong>Waters Center for Systems Thinking</strong> lists\n<strong>14 habits of a systems thinker</strong>. This week’s teachers\nexplain several of them (see the full list on the guidelines page). This\npage covers two: <strong>seeing the big picture</strong> and\n<strong>considering consequences</strong>.</p>",
+          "text": "The Waters Center for Systems Thinking lists 14 habits of a systems thinker . This week’s teachers\nexplain several of them (see the full list on the guidelines page). This\npage covers two: seeing the big picture and considering consequences ."
+        },
+        {
+          "type": "heading",
+          "text": "Habit: Seek to\nunderstand the big picture"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img07-helicopter.webp",
+          "alt": "The helicopter view",
+          "caption": "Go up in the helicopter to see the big\npicture, without losing the details."
+        },
+        {
+          "type": "html",
+          "html": "<p>A big-picture person sees <strong>both</strong> the <strong>narrow\npicture</strong> (the details) <strong>and</strong> the <strong>big\npicture</strong>. Both matter.</p>",
+          "text": "A big-picture person sees both the narrow\npicture (the details) and the big\npicture . Both matter."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Questions to ask:</strong></p>",
+          "text": "Questions to ask:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>How can I see the big picture <strong>without losing sight of\nimportant details</strong>?</li>\n<li>How can I <strong>widen the boundaries</strong> of my system?\n<ul>\n<li><strong>In space:</strong> “I’m not just in the mechanical\ndepartment. I’m connected to the whole campus.”</li>\n<li><strong>In time:</strong> “Where will I be in 2, 5, 10 years?”</li>\n</ul></li>\n<li>How much time should I spend understanding the larger system?</li>\n<li>Focus on what you <strong>can influence</strong>, not on what you\ncan’t.</li>\n</ul>",
+          "text": "How can I see the big picture without losing sight of\nimportant details ? How can I widen the boundaries of my system? In space: “I’m not just in the mechanical\ndepartment. I’m connected to the whole campus.” In time: “Where will I be in 2, 5, 10 years?” How much time should I spend understanding the larger system? Focus on what you can influence , not on what you\ncan’t."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the band</strong> A drummer in a marching\nband only hears his own beat. He can’t tell that someone five rows away\nmissed a beat. A person watching <strong>from the stands</strong> sees\nboth: the drummer doing well, and the one who slipped.</p>\n</blockquote>",
+          "text": "Lecture example — the band A drummer in a marching\nband only hears his own beat. He can’t tell that someone five rows away\nmissed a beat. A person watching from the stands sees\nboth: the drummer doing well, and the one who slipped."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — rainwater harvesting\n(Prof. Kartic)</strong> In the 1990s, Chennai flats were short of water.\nIt was easy to blame the government. But the <strong>big\npicture</strong> was different: the city got <strong>enough\nrain</strong> for everyone, and most of it was being <strong>lost as\nrun-off</strong> into drains. So rainwater harvesting was promoted, and\nlater made compulsory. Each building could do this <strong>within its\nown control</strong>, and well water improved quickly.</p>\n</blockquote>",
+          "text": "Lecture example — rainwater harvesting\n(Prof. Kartic) In the 1990s, Chennai flats were short of water.\nIt was easy to blame the government. But the big\npicture was different: the city got enough\nrain for everyone, and most of it was being lost as\nrun-off into drains. So rainwater harvesting was promoted, and\nlater made compulsory. Each building could do this within its\nown control , and well water improved quickly."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tip:</strong> Keep your “helicopter” parked outside your\nhouse. Whenever you’re stuck in the narrow picture, go up and look.</p>",
+          "text": "Tip: Keep your “helicopter” parked outside your\nhouse. Whenever you’re stuck in the narrow picture, go up and look."
+        },
+        {
+          "type": "heading",
+          "text": "Habit:\nConsider short-term, long-term and unintended consequences"
+        },
+        {
+          "type": "html",
+          "html": "<p>Every action, or non-action, has consequences:</p>",
+          "text": "Every action, or non-action, has consequences:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Type</th>\n<th>Meaning</th>\n<th>Prof. Shiva’s sugar example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Short-term</strong></td>\n<td>What happens right away</td>\n<td>Blood sugar goes up</td>\n</tr>\n<tr>\n<td><strong>Long-term</strong></td>\n<td>What happens later</td>\n<td>Kidneys may get damaged</td>\n</tr>\n<tr>\n<td><strong>Unintended</strong></td>\n<td>Side effects you didn’t plan, good or bad</td>\n<td>Can’t work → can’t earn → can’t buy things you want</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Type Meaning Prof. Shiva’s sugar example Short-term What happens right away Blood sugar goes up Long-term What happens later Kidneys may get damaged Unintended Side effects you didn’t plan, good or bad Can’t work → can’t earn → can’t buy things you want"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Unintended consequences can be positive too.</strong> You\nhelp an elderly person cross the road, and that kindness comes back to\nyou in a way you never expected.</p>",
+          "text": "Unintended consequences can be positive too. You\nhelp an elderly person cross the road, and that kindness comes back to\nyou in a way you never expected."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Questions to ask:</strong></p>",
+          "text": "Questions to ask:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>What are the unintended consequences of this action? What\n<strong>trade-offs</strong> should I consider?</li>\n<li>Can I accept <strong>short-term pain for long-term\ngain</strong>?</li>\n</ul>",
+          "text": "What are the unintended consequences of this action? What trade-offs should I consider? Can I accept short-term pain for long-term\ngain ?"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — Operation Cat Drop (the “Cats in Borneo”\nvideo)</strong> In the 1950s, <strong>DDT</strong> was sprayed in Borneo\nto kill malaria mosquitoes. It worked, but:</p>\n<ul>\n<li><strong>Lizards (geckos)</strong> ate the poisoned insects, and\n<strong>cats</strong> ate the lizards. Many cats died.</li>\n<li>With fewer cats, <strong>rats</strong> multiplied and brought the\nrisk of disease (typhus and plague).</li>\n<li>So cats were <strong>parachuted</strong> into villages:\n“<strong>Operation Cat Drop</strong>”. One “simple” fix caused a chain\nof unintended consequences.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — Operation Cat Drop (the “Cats in Borneo”\nvideo) In the 1950s, DDT was sprayed in Borneo\nto kill malaria mosquitoes. It worked, but: Lizards (geckos) ate the poisoned insects, and cats ate the lizards. Many cats died. With fewer cats, rats multiplied and brought the\nrisk of disease (typhus and plague). So cats were parachuted into villages:\n“ Operation Cat Drop ”. One “simple” fix caused a chain\nof unintended consequences."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img08-cat-drop.webp",
+          "alt": "Operation Cat Drop",
+          "caption": "DDT → poisoned lizards → cats die → rats\nmultiply → cats dropped in by parachute."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — outbound training at IIT Madras (Lt Col\nJayakumar)</strong></p>\n<ul>\n<li><strong>Short-term:</strong> students hated waking up at 5:30 a.m.;\na few twisted ankles.</li>\n<li><strong>Long-term:</strong> students from different departments\nbecame <strong>friends</strong>, gained <strong>confidence</strong>, and\nlearned to <strong>speak</strong> in front of 40 people.</li>\n<li><strong>Unintended:</strong> small injuries. Overall, it is\nremembered fondly.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — outbound training at IIT Madras (Lt Col\nJayakumar) Short-term: students hated waking up at 5:30 a.m.;\na few twisted ankles. Long-term: students from different departments\nbecame friends , gained confidence , and\nlearned to speak in front of 40 people. Unintended: small injuries. Overall, it is\nremembered fondly."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — “no hands, no legs, no tooth!”</strong> A\nboy learning to cycle shows off: “No hands!”, then “No legs!” — and then\nhe falls. “No tooth!” <strong>Short-term:</strong> a new skill.\n<strong>Long-term:</strong> he knows how to cycle.\n<strong>Unintended:</strong> a broken tooth.</p>\n</blockquote>",
+          "text": "Lecture example — “no hands, no legs, no tooth!” A\nboy learning to cycle shows off: “No hands!”, then “No legs!” — and then\nhe falls. “No tooth!” Short-term: a new skill. Long-term: he knows how to cycle. Unintended: a broken tooth."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> See both the details and the big\npicture (widen your view in space and time), and before acting, think\nabout short-term, long-term and unintended consequences. <strong>Exam\nwords:</strong> 14 habits of a systems thinker, Waters Center, big\npicture, narrow picture, boundaries in space and time, sphere of\ninfluence, short-term, long-term and unintended consequences, trade-off,\nOperation Cat Drop, rainwater harvesting.</p>",
+          "text": "In one line: See both the details and the big\npicture (widen your view in space and time), and before acting, think\nabout short-term, long-term and unintended consequences. Exam\nwords: 14 habits of a systems thinker, Waters Center, big\npicture, narrow picture, boundaries in space and time, sphere of\ninfluence, short-term, long-term and unintended consequences, trade-off,\nOperation Cat Drop, rainwater harvesting."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the “helicopter” stand for?\n</summary>\nRising above a problem to see the big picture — your whole life or the\nwhole system — while still caring about the details.\n</details>",
+          "text": "What does the “helicopter” stand for? Rising above a problem to see the big picture — your whole life or the\nwhole system — while still caring about the details."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the three types of consequences.\n</summary>\nShort-term, long-term, and unintended.\n</details>",
+          "text": "Name the three types of consequences. Short-term, long-term, and unintended."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nCan unintended consequences be positive?\n</summary>\nYes — they can be good or bad.\n</details>",
+          "text": "Can unintended consequences be positive? Yes — they can be good or bad."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn Borneo, why were cats dropped by parachute?\n</summary>\nDDT indirectly killed many cats (through poisoned lizards), so rats\nmultiplied; cats were brought in to control the rats.\n</details>",
+          "text": "In Borneo, why were cats dropped by parachute? DDT indirectly killed many cats (through poisoned lizards), so rats\nmultiplied; cats were brought in to control the rats."
+        }
+      ]
+    },
+    {
+      "slug": "mental-models-and-structure",
+      "title": "Mental Models, and How Structure Generates Behaviour",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You want to eat fewer snacks. But your\nsnack jars are transparent and sit right where you walk past ten times a\nday. You keep eating. Is it a lack of willpower, or is it the\n<strong>structure</strong> you built?</p>\n</blockquote>",
+          "text": "Start here You want to eat fewer snacks. But your\nsnack jars are transparent and sit right where you walk past ten times a\nday. You keep eating. Is it a lack of willpower, or is it the structure you built?"
+        },
+        {
+          "type": "heading",
+          "text": "Habit:\nConsider how mental models affect current reality and the future"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Mental models</strong> are the pictures and beliefs we build\nin our minds from what we sense and experience. When something triggers\nthem (a word, an image, a person, an event), they <strong>play\nback</strong> automatically.</p>",
+          "text": "Mental models are the pictures and beliefs we build\nin our minds from what we sense and experience. When something triggers\nthem (a word, an image, a person, an event), they play\nback automatically."
+        },
+        {
+          "type": "html",
+          "html": "<p>Mental models shape:</p>",
+          "text": "Mental models shape:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>how we <strong>react</strong> to things,</li>\n<li>our <strong>thinking and emotional patterns</strong>,</li>\n<li>how we <strong>solve problems</strong> and handle\n<strong>obstacles</strong>,</li>\n<li>how we manage <strong>conflict</strong>, and how we make\n<strong>decisions</strong>.</li>\n</ul>",
+          "text": "how we react to things, our thinking and emotional patterns , how we solve problems and handle obstacles , how we manage conflict , and how we make decisions ."
+        },
+        {
+          "type": "html",
+          "html": "<p>They also <strong>influence other people’s</strong> mental models,\nand the other way round.</p>",
+          "text": "They also influence other people’s mental models,\nand the other way round."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img09-mental-models.webp",
+          "alt": "Mental models are like lenses",
+          "caption": "The lens you look through\ndecides what you see."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the single parent who “couldn’t be\npromoted” (Prof. Prasanna)</strong> A single mother couldn’t travel for\nwork because she cared for her child and elderly parents. Over time she\ncame to believe: “Because I can’t travel, management doesn’t take me\nseriously.” In coaching, they questioned this: what\n<strong>assumptions</strong> and <strong>interpretations</strong> was it\nbased on? What <strong>conclusions</strong> had she jumped to without\nfull evidence? Much of it turned out to be her <strong>own\nperception</strong>. She <strong>replaced</strong> that model with one\nbuilt on the value she could create. Instead of asking managers “What\ncan you offer me?”, she went in saying, “Here’s what our group achieved,\nand here’s our roadmap.” The managers <strong>listened and supported\nher</strong>. It also freed up her <strong>mind space, energy and\ntime</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — the single parent who “couldn’t be\npromoted” (Prof. Prasanna) A single mother couldn’t travel for\nwork because she cared for her child and elderly parents. Over time she\ncame to believe: “Because I can’t travel, management doesn’t take me\nseriously.” In coaching, they questioned this: what assumptions and interpretations was it\nbased on? What conclusions had she jumped to without\nfull evidence? Much of it turned out to be her own\nperception . She replaced that model with one\nbuilt on the value she could create. Instead of asking managers “What\ncan you offer me?”, she went in saying, “Here’s what our group achieved,\nand here’s our roadmap.” The managers listened and supported\nher . It also freed up her mind space, energy and\ntime ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — “I am not creative”</strong> Prof. Prasanna\nbelieved from childhood that she wasn’t creative. In college, this\nstopped her from even trying. Only when she worked on that mental model,\n<strong>chipping away</strong> the parts that didn’t work and\n<strong>upgrading</strong> them, did she step out of her comfort\nzone.</p>\n</blockquote>",
+          "text": "Lecture example — “I am not creative” Prof. Prasanna\nbelieved from childhood that she wasn’t creative. In college, this\nstopped her from even trying. Only when she worked on that mental model, chipping away the parts that didn’t work and upgrading them, did she step out of her comfort\nzone."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Lesson:</strong> Mental models need regular <strong>review\nand upgrading</strong>. Look for <strong>internal causes</strong> before\nblaming others.</p>",
+          "text": "Lesson: Mental models need regular review\nand upgrading . Look for internal causes before\nblaming others."
+        },
+        {
+          "type": "heading",
+          "text": "Habit:\nRecognise that a system’s structure generates its behaviour"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Structures influence the behaviour of a system.</strong> If\nyou want to change how a system behaves, <strong>change its\nstructure</strong>.</p>\n</blockquote>",
+          "text": "Structures influence the behaviour of a system. If\nyou want to change how a system behaves, change its\nstructure ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Shiva calls this the habit that kept him awake at night. Three\nsimple lines contain so much truth.</p>",
+          "text": "Prof. Shiva calls this the habit that kept him awake at night. Three\nsimple lines contain so much truth."
+        },
+        {
+          "type": "subheading",
+          "text": "What counts as a “structure”?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Type of structure</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Physical</strong></td>\n<td>Buildings, furniture, a table between two people</td>\n</tr>\n<tr>\n<td><strong>Laws and policies</strong></td>\n<td>Government rules</td>\n</tr>\n<tr>\n<td><strong>Social</strong></td>\n<td>Traditions, routines, habits</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Type of structure Example Physical Buildings, furniture, a table between two people Laws and policies Government rules Social Traditions, routines, habits"
+        },
+        {
+          "type": "subheading",
+          "text": "Examples"
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img10-structure.webp",
+          "alt": "Structure shapes behaviour",
+          "caption": "Same person, different\nstructure, different behaviour."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Structure</th>\n<th>Behaviour it creates</th>\n<th>Change the structure…</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A <strong>table</strong> between you and an acquaintance at a\nrestaurant</td>\n<td>Distance; formal talk</td>\n<td><strong>Sit side by side</strong> to build closeness (recommended\nfor building relationships)</td>\n</tr>\n<tr>\n<td>Two large <strong>sofas</strong> right at the entrance of the living\nroom</td>\n<td>Guests stop there and don’t come further in</td>\n<td>Rearrange the room</td>\n</tr>\n<tr>\n<td><strong>WhatsApp</strong> first thing every morning</td>\n<td>30 minutes gone each day</td>\n<td>Remove that routine to be more productive</td>\n</tr>\n<tr>\n<td>Walking home past a <strong>sweet shop</strong></td>\n<td>Stopping for sweets while trying to lose weight</td>\n<td>Change your route</td>\n</tr>\n<tr>\n<td><strong>Transparent snack jars</strong> on view</td>\n<td>Eating snacks every time you pass</td>\n<td>Put them away in a cupboard</td>\n</tr>\n<tr>\n<td>Children behaving badly, or ignoring lessons</td>\n<td>Parents may have created a structure that signals “it’s okay”</td>\n<td>Parents change the signals and routines</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Structure Behaviour it creates Change the structure… A table between you and an acquaintance at a\nrestaurant Distance; formal talk Sit side by side to build closeness (recommended\nfor building relationships) Two large sofas right at the entrance of the living\nroom Guests stop there and don’t come further in Rearrange the room WhatsApp first thing every morning 30 minutes gone each day Remove that routine to be more productive Walking home past a sweet shop Stopping for sweets while trying to lose weight Change your route Transparent snack jars on view Eating snacks every time you pass Put them away in a cupboard Children behaving badly, or ignoring lessons Parents may have created a structure that signals “it’s okay” Parents change the signals and routines"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Key idea:</strong> Don’t blame people (or yourself) first.\nLook at the <strong>structure</strong> that produces the behaviour.</p>\n</blockquote>",
+          "text": "Key idea: Don’t blame people (or yourself) first.\nLook at the structure that produces the behaviour."
+        },
+        {
+          "type": "subheading",
+          "text": "Other examples\n(Prof. Prasanna)"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>How a couple <strong>interact</strong> at home shapes their\nchildren’s mental models and behaviour, which then shapes how the\nchildren behave outside.</li>\n<li>What happens <strong>at home</strong> affects work, and what happens\nat work affects home.</li>\n<li>In the <strong>solar system</strong>, if one planet were pulled out\nof place, the balance of the whole would be affected.</li>\n</ul>",
+          "text": "How a couple interact at home shapes their\nchildren’s mental models and behaviour, which then shapes how the\nchildren behave outside. What happens at home affects work, and what happens\nat work affects home. In the solar system , if one planet were pulled out\nof place, the balance of the whole would be affected."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Our mental models shape how we see and\nact, so keep upgrading them; and since structure drives behaviour,\nchange the structure to change the behaviour. <strong>Exam\nwords:</strong> mental models, assumptions, interpretations,\nconclusions, internal causes, structure generates behaviour, physical,\npolicy and social structures, routines, change the structure.</p>",
+          "text": "In one line: Our mental models shape how we see and\nact, so keep upgrading them; and since structure drives behaviour,\nchange the structure to change the behaviour. Exam\nwords: mental models, assumptions, interpretations,\nconclusions, internal causes, structure generates behaviour, physical,\npolicy and social structures, routines, change the structure."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat are mental models?\n</summary>\nPictures and beliefs we build in our minds from experience, which\nautomatically shape how we react, think, feel and decide.\n</details>",
+          "text": "What are mental models? Pictures and beliefs we build in our minds from experience, which\nautomatically shape how we react, think, feel and decide."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did the single parent’s coach help her question?\n</summary>\nThe assumptions, interpretations and conclusions behind her belief that\nmanagement didn’t take her seriously.\n</details>",
+          "text": "What did the single parent’s coach help her question? The assumptions, interpretations and conclusions behind her belief that\nmanagement didn’t take her seriously."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n“If you want to change behaviour, change the ______.”\n</summary>\nStructure.\n</details>",
+          "text": "“If you want to change behaviour, change the ______.” Structure."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive one example of a social structure.\n</summary>\nA routine, habit or tradition — e.g. checking WhatsApp first thing every\nmorning.\n</details>",
+          "text": "Give one example of a social structure. A routine, habit or tradition — e.g. checking WhatsApp first thing every\nmorning."
+        }
+      ]
+    },
+    {
+      "slug": "leverage-and-connections",
+      "title": "Don't Rush, Find the Leverage, Make Connections",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> In the middle of a seminar, the projector\nsuddenly dies, but the fans and lights still work. Everyone waits for an\nelectrician. One professor, who knows how the hall’s wiring works,\nsimply plugs the projector into another socket. The talk goes on. That’s\na <strong>leverage point</strong>.</p>\n</blockquote>",
+          "text": "Start here In the middle of a seminar, the projector\nsuddenly dies, but the fans and lights still work. Everyone waits for an\nelectrician. One professor, who knows how the hall’s wiring works,\nsimply plugs the projector into another socket. The talk goes on. That’s\na leverage point ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Prof. Sivakumar explains three habits.</p>",
+          "text": "Prof. Sivakumar explains three habits."
+        },
+        {
+          "type": "heading",
+          "text": "Habit\n1: Consider an issue fully; don’t jump to a quick conclusion"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Weigh the options</strong> and possible outcomes before you\ndecide.</li>\n<li>Hasty decisions lead to <strong>poor results</strong>.</li>\n<li>The <strong>tension</strong> while a problem is unsolved is what\npushes us into hasty decisions. Accept the tension; don’t let it rush\nyou.</li>\n<li>Once you decide, <strong>communicate it clearly</strong>.</li>\n<li>Sometimes a <strong>quick fix</strong> is truly needed. That’s fine,\nbut it should be rare.</li>\n</ul>",
+          "text": "Weigh the options and possible outcomes before you\ndecide. Hasty decisions lead to poor results . The tension while a problem is unsolved is what\npushes us into hasty decisions. Accept the tension; don’t let it rush\nyou. Once you decide, communicate it clearly . Sometimes a quick fix is truly needed. That’s fine,\nbut it should be rare."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the student who wanted a new\nsupervisor</strong> A research student asked to change his supervisor.\nAfter hearing his story, Prof. Sivakumar almost agreed. Then he stopped:\n“I’ve only heard <strong>one side</strong>.” He spoke to the supervisor,\ntook time to think, and then held a <strong>meeting with both</strong>,\nwhere the student showed his work so far. The real problem was\n<strong>poor communication</strong>: the supervisor had assumed the\nstudent wasn’t working. Once they talked, it was solved, without\nchanging supervisors.</p>\n</blockquote>",
+          "text": "Lecture example — the student who wanted a new\nsupervisor A research student asked to change his supervisor.\nAfter hearing his story, Prof. Sivakumar almost agreed. Then he stopped:\n“I’ve only heard one side .” He spoke to the supervisor,\ntook time to think, and then held a meeting with both ,\nwhere the student showed his work so far. The real problem was poor communication : the supervisor had assumed the\nstudent wasn’t working. Once they talked, it was solved, without\nchanging supervisors."
+        },
+        {
+          "type": "heading",
+          "text": "Habit\n2: Use the system’s structure to find leverage points"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>lever</strong> lets a small push lift a heavy load. A\n<strong>leverage point</strong> is a place in a system where a\n<strong>small change</strong> gives a <strong>big result</strong>. To\nfind one, you must <strong>understand how the system is\nbuilt</strong>.</p>",
+          "text": "A lever lets a small push lift a heavy load. A leverage point is a place in a system where a small change gives a big result . To\nfind one, you must understand how the system is\nbuilt ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img11-leverage.webp",
+          "alt": "A leverage point",
+          "caption": "A small action at the right point gives a\nbig result."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the projector and the three-phase\npower</strong> The hall had a <strong>three-phase</strong> power supply,\nand only one phase had failed. A colleague who knew this plugged the\nprojector into a socket on a <strong>working phase</strong>. The meeting\nwent on with almost no break. <strong>Understanding the structure showed\nhim the leverage point.</strong></p>\n</blockquote>",
+          "text": "Lecture example — the projector and the three-phase\npower The hall had a three-phase power supply,\nand only one phase had failed. A colleague who knew this plugged the\nprojector into a socket on a working phase . The meeting\nwent on with almost no break. Understanding the structure showed\nhim the leverage point."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the Leisure Time Activities Programme\n(LTAP)</strong> As Dean of Students, Prof. Sivakumar wanted IIT students\nto develop all-round, not just academically. After years of exam\npreparation, many had dropped hobbies. The team did a <strong>“time\naudit”</strong>: they mapped a typical student’s 24 hours (classes, mess\ntimings, hostel life, sleep, weekends) to find the <strong>free\ntime</strong>. They noticed students like a <strong>formal\nstructure</strong>, like a course. So they created structured programmes\n(fine arts, literary and cultural skills, personal growth) at the right\ntimes, with easy fees and easy payment. <strong>It is still running\ntoday.</strong></p>\n</blockquote>",
+          "text": "Lecture example — the Leisure Time Activities Programme\n(LTAP) As Dean of Students, Prof. Sivakumar wanted IIT students\nto develop all-round, not just academically. After years of exam\npreparation, many had dropped hobbies. The team did a “time\naudit” : they mapped a typical student’s 24 hours (classes, mess\ntimings, hostel life, sleep, weekends) to find the free\ntime . They noticed students like a formal\nstructure , like a course. So they created structured programmes\n(fine arts, literary and cultural skills, personal growth) at the right\ntimes, with easy fees and easy payment. It is still running\ntoday."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Questions to find leverage points:</strong></p>",
+          "text": "Questions to find leverage points:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>What <strong>works well</strong> in the system? What gives\n<strong>poor</strong> results?</li>\n<li>What does the system achieve <strong>overall</strong> (the big\npicture)?</li>\n<li>What <strong>small changes</strong> would improve the results a\nlot?</li>\n<li>How can the good results <strong>last</strong> a long time?</li>\n</ul>",
+          "text": "What works well in the system? What gives poor results? What does the system achieve overall (the big\npicture)? What small changes would improve the results a\nlot? How can the good results last a long time?"
+        },
+        {
+          "type": "heading",
+          "text": "Habit\n3: Make meaningful connections within and between systems"
+        },
+        {
+          "type": "html",
+          "html": "<p>A system is a set of connected parts. If an important connection\nbreaks, the system can <strong>collapse into a heap</strong>. So:</p>",
+          "text": "A system is a set of connected parts. If an important connection\nbreaks, the system can collapse into a heap . So:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Spot the connections</strong> within a system and between\ndifferent systems. They can be logical, functional, or cause-and-effect\nconnections.</li>\n<li><strong>Practise</strong> by drawing <strong>cause-and-effect\ndiagrams</strong> of systems around you. With practice, you begin to see\nconnections that aren’t obvious at first.</li>\n</ul>",
+          "text": "Spot the connections within a system and between\ndifferent systems. They can be logical, functional, or cause-and-effect\nconnections. Practise by drawing cause-and-effect\ndiagrams of systems around you. With practice, you begin to see\nconnections that aren’t obvious at first."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the plant</strong> Seed → plant → flower →\nfruit → seed. But the plant is also connected to <strong>bees and\nbutterflies</strong> (pollination), <strong>birds</strong> (spreading\nseeds), <strong>sun, water and wind</strong>, and even to <strong>pests\nand bad weather</strong>. A <strong>farmer</strong> must understand all\nthese connections to protect the crop and get good seeds.</p>\n</blockquote>",
+          "text": "Lecture example — the plant Seed → plant → flower →\nfruit → seed. But the plant is also connected to bees and\nbutterflies (pollination), birds (spreading\nseeds), sun, water and wind , and even to pests\nand bad weather . A farmer must understand all\nthese connections to protect the crop and get good seeds."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Transfer what you learn:</strong> if you understand the\nleverage points of one system, check whether a <strong>similar\nsystem</strong> has similar ones. This leads to\n<strong>innovation</strong>.</p>",
+          "text": "Transfer what you learn: if you understand the\nleverage points of one system, check whether a similar\nsystem has similar ones. This leads to innovation ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Learning is about connections too:</strong> sun, water and\nsoil help a seed grow; a teacher, books and a good learning space help a\nmind grow. We learn by <strong>observing others</strong> (thanks to\n“mirror neurons”), which builds better relationships and more\nhappiness.</p>",
+          "text": "Learning is about connections too: sun, water and\nsoil help a seed grow; a teacher, books and a good learning space help a\nmind grow. We learn by observing others (thanks to\n“mirror neurons”), which builds better relationships and more\nhappiness."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Don’t rush to conclusions, understand\nthe system’s structure to find small actions with big effects, and keep\npractising seeing connections within and between systems. <strong>Exam\nwords:</strong> consider an issue fully, hasty conclusion, leverage\npoint, leverage action, three-phase example, time audit, Leisure Time\nActivities Programme, cause-and-effect diagram, connections within and\nbetween systems, transfer of understanding.</p>",
+          "text": "In one line: Don’t rush to conclusions, understand\nthe system’s structure to find small actions with big effects, and keep\npractising seeing connections within and between systems. Exam\nwords: consider an issue fully, hasty conclusion, leverage\npoint, leverage action, three-phase example, time audit, Leisure Time\nActivities Programme, cause-and-effect diagram, connections within and\nbetween systems, transfer of understanding."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is a leverage point?\n</summary>\nA place in a system where a small change produces a big result.\n</details>",
+          "text": "What is a leverage point? A place in a system where a small change produces a big result."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow did the professor avoid a hasty decision about the student’s\nsupervisor?\n</summary>\nHe heard the supervisor’s side too, took time to think, then arranged a\nmeeting where both communicated — the real issue was poor communication.\n</details>",
+          "text": "How did the professor avoid a hasty decision about the student’s\nsupervisor? He heard the supervisor’s side too, took time to think, then arranged a\nmeeting where both communicated — the real issue was poor communication."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat was the “time audit” used for?\n</summary>\nMapping a student’s 24-hour day to find free time for the leisure\nactivities programme.\n</details>",
+          "text": "What was the “time audit” used for? Mapping a student’s 24-hour day to find free time for the leisure\nactivities programme."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow can you practise making connections?\n</summary>\nDraw cause-and-effect diagrams of systems around you, again and again.\n</details>",
+          "text": "How can you practise making connections? Draw cause-and-effect diagrams of systems around you, again and again."
+        }
+      ]
+    },
+    {
+      "slug": "loops-delays-and-change",
+      "title": "Loops, Time Delays, Accumulations and Change Over Time",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You’re hungry, so you eat. A few hours\nlater you’re hungry again. Cause and effect often run in\n<strong>circles</strong>, not straight lines. And sometimes the effect\nshows up much later than the cause.</p>\n</blockquote>",
+          "text": "Start here You’re hungry, so you eat. A few hours\nlater you’re hungry again. Cause and effect often run in circles , not straight lines. And sometimes the effect\nshows up much later than the cause."
+        },
+        {
+          "type": "heading",
+          "text": "Habit:\nSee the circular nature of cause and effect (feedback loops)"
+        },
+        {
+          "type": "html",
+          "html": "<p>In many systems, A causes B, and B in turn affects A. This is a\n<strong>feedback loop</strong>.</p>",
+          "text": "In many systems, A causes B, and B in turn affects A. This is a feedback loop ."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img12-feedback-loop.webp",
+          "alt": "A feedback loop",
+          "caption": "Cause and effect often go round in a\ncircle."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Example</th>\n<th>The loop</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Hunger</td>\n<td>Hungry → eat → full → hungry again</td>\n</tr>\n<tr>\n<td>Prof. Shiva’s health (page 1)</td>\n<td>Less walking → higher sugar → higher BP → anxiety → higher BP</td>\n</tr>\n<tr>\n<td>Rumours in an office</td>\n<td>A draft policy leaks → whispers spread → people react → leaders\nsense the reaction → the decision is shaped</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Example The loop Hunger Hungry → eat → full → hungry again Prof. Shiva’s health (page 1) Less walking → higher sugar → higher BP → anxiety → higher BP Rumours in an office A draft policy leaks → whispers spread → people react → leaders\nsense the reaction → the decision is shaped"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the king in disguise</strong> Old kings\nwould dress as common people and sit at tea shops to hear what people\nsaid about an idea. They used that <strong>feedback</strong> before\ntaking the final decision.</p>\n</blockquote>",
+          "text": "Lecture example — the king in disguise Old kings\nwould dress as common people and sit at tea shops to hear what people\nsaid about an idea. They used that feedback before\ntaking the final decision."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — words shape actions</strong> A child hangs\nfrom a bar. One passer-by says, “Very good, hold on tight!” Another\nsays, “Don’t — you’ll fall!” The brain grabs the word “fall”, and a fall\nbecomes more likely. <strong>“Great minds discuss ideas, average minds\ndiscuss events, small minds discuss people.”</strong> What we\n<strong>think</strong> becomes what we <strong>say</strong>, and what we\nsay becomes what we <strong>do</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — words shape actions A child hangs\nfrom a bar. One passer-by says, “Very good, hold on tight!” Another\nsays, “Don’t — you’ll fall!” The brain grabs the word “fall”, and a fall\nbecomes more likely. “Great minds discuss ideas, average minds\ndiscuss events, small minds discuss people.” What we think becomes what we say , and what we\nsay becomes what we do ."
+        },
+        {
+          "type": "html",
+          "html": "<p>Technology also evolves through loops of feedback and improvement.\nRadio went from a big box on the wall to a phone app; cameras went from\n36-photo film rolls to instant digital photos.</p>",
+          "text": "Technology also evolves through loops of feedback and improvement.\nRadio went from a big box on the wall to a phone app; cameras went from\n36-photo film rolls to instant digital photos."
+        },
+        {
+          "type": "heading",
+          "text": "Habit: Recognise the\nimpact of time delays"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Cause and effect are often far apart in time.</strong> A\nsystems thinker:</p>",
+          "text": "Cause and effect are often far apart in time. A\nsystems thinker:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>understands how long the <strong>“gestation period”</strong> will be\nbefore results show, and</li>\n<li><strong>tells people</strong> about the delay, so they don’t get\nanxious.</li>\n</ul>",
+          "text": "understands how long the “gestation period” will be\nbefore results show, and tells people about the delay, so they don’t get\nanxious."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — the new education policy</strong> It wasn’t\nbrought in overnight. Between the announcement and the final policy, the\npublic gave suggestions, committees and experts discussed them, and\nsocial media was full of debate. <strong>That delay helped shape a\nbetter policy.</strong></p>\n</blockquote>",
+          "text": "Lecture example — the new education policy It wasn’t\nbrought in overnight. Between the announcement and the final policy, the\npublic gave suggestions, committees and experts discussed them, and\nsocial media was full of debate. That delay helped shape a\nbetter policy."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Everyday example:</strong> you start exercising today, but\nyou see results only after weeks. Expect the delay; don’t quit after day\n3.</p>",
+          "text": "Everyday example: you start exercising today, but\nyou see results only after weeks. Expect the delay; don’t quit after day\n3."
+        },
+        {
+          "type": "heading",
+          "text": "Habit:\nPay attention to accumulations and their rates of change"
+        },
+        {
+          "type": "html",
+          "html": "<p>Some things <strong>build up (accumulate)</strong> or <strong>run\ndown</strong> over time. Notice <strong>what</strong> is accumulating\nand <strong>how fast</strong>.</p>",
+          "text": "Some things build up (accumulate) or run\ndown over time. Notice what is accumulating\nand how fast ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Example</th>\n<th>What accumulates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Elections</strong></td>\n<td>Candidates try to build up supporters and votes, from national\npolitics to housing-society elections</td>\n</tr>\n<tr>\n<td><strong>Factory inventory</strong></td>\n<td>Some items move fast and run out; others pile up as <strong>dead\nstock</strong>. Both are unhealthy. <strong>Just-in-time</strong> stock\ncontrol prevents unwanted build-up.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Example What accumulates Elections Candidates try to build up supporters and votes, from national\npolitics to housing-society elections Factory inventory Some items move fast and run out; others pile up as dead\nstock . Both are unhealthy. Just-in-time stock\ncontrol prevents unwanted build-up."
+        },
+        {
+          "type": "heading",
+          "text": "Habit:\nObserve how elements change over time (patterns and trends)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — rainwater harvesting, 20 years later\n(Prof. Kartic)</strong> The 1990s system worked well. But over 20\nyears:</p>\n<ul>\n<li>Cars increased, so the soil around the building was <strong>paved\nover</strong> and less rain soaked in.</li>\n<li>More concrete houses were built nearby, and more washing machines\nmeant more waste water.</li>\n<li>The groundwater became <strong>salty</strong>, and the city drains\nbegan to <strong>overflow</strong>. <strong>Lesson:</strong> a one-time\nfix isn’t enough. Systems change, so keep <strong>monitoring and\nrevising</strong>, and help everyone understand the bigger system.</li>\n</ul>\n</blockquote>",
+          "text": "Lecture example — rainwater harvesting, 20 years later\n(Prof. Kartic) The 1990s system worked well. But over 20\nyears: Cars increased, so the soil around the building was paved\nover and less rain soaked in. More concrete houses were built nearby, and more washing machines\nmeant more waste water. The groundwater became salty , and the city drains\nbegan to overflow . Lesson: a one-time\nfix isn’t enough. Systems change, so keep monitoring and\nrevising , and help everyone understand the bigger system."
+        },
+        {
+          "type": "heading",
+          "text": "Habits:\nTest assumptions, and check results by “successive approximation”"
+        },
+        {
+          "type": "html",
+          "html": "<p>Ask <strong>“What if…?”</strong>: Who else will be affected? What\nelse would change? Try something, <strong>observe</strong>,\n<strong>adjust</strong>, and try again.</p>",
+          "text": "Ask “What if…?” : Who else will be affected? What\nelse would change? Try something, observe , adjust , and try again."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — work from home after COVID\n(Prof. Kartic)</strong> <strong>Before COVID:</strong> long commutes;\noffices far from the city; companies needed to be near talent.\n<strong>During COVID:</strong> everyone worked from home, and companies\nand employees adapted. <strong>After COVID:</strong> no commute and\nlower office costs, <strong>but</strong> weaker team bonding and harder\nmonitoring. Companies are now <strong>testing options</strong>: “What if\npeople come to office <strong>twice a week</strong>?” “What if we rent\n<strong>workstations near employees’ homes</strong>?” They observe,\nfine-tune and try again. The likely result is a <strong>hybrid\nmodel</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — work from home after COVID\n(Prof. Kartic) Before COVID: long commutes;\noffices far from the city; companies needed to be near talent. During COVID: everyone worked from home, and companies\nand employees adapted. After COVID: no commute and\nlower office costs, but weaker team bonding and harder\nmonitoring. Companies are now testing options : “What if\npeople come to office twice a week ?” “What if we rent workstations near employees’ homes ?” They observe,\nfine-tune and try again. The likely result is a hybrid\nmodel ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Look for feedback loops, expect time\ndelays, watch what builds up and how fast, track how systems change over\ntime, and keep testing your assumptions. <strong>Exam words:</strong>\ncircular causality, feedback loop, time delay, gestation period,\naccumulation, rate of change, dead stock, just-in-time, patterns and\ntrends, test assumptions, “what if” questions, successive approximation,\nhybrid work.</p>",
+          "text": "In one line: Look for feedback loops, expect time\ndelays, watch what builds up and how fast, track how systems change over\ntime, and keep testing your assumptions. Exam words: circular causality, feedback loop, time delay, gestation period,\naccumulation, rate of change, dead stock, just-in-time, patterns and\ntrends, test assumptions, “what if” questions, successive approximation,\nhybrid work."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive a simple example of a feedback loop.\n</summary>\nHunger → eat → full → hungry again (or any circular cause-and-effect).\n</details>",
+          "text": "Give a simple example of a feedback loop. Hunger → eat → full → hungry again (or any circular cause-and-effect)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy should leaders communicate time delays?\n</summary>\nSo people know how long results will take and don’t get anxious waiting.\n</details>",
+          "text": "Why should leaders communicate time delays? So people know how long results will take and don’t get anxious waiting."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy did the rainwater harvesting system stop working as well over 20\nyears?\n</summary>\nConditions changed — paved surfaces, more construction, more water use,\nsalty groundwater, overloaded drains — so the system needed continuous\nmonitoring and revision.\n</details>",
+          "text": "Why did the rainwater harvesting system stop working as well over 20\nyears? Conditions changed — paved surfaces, more construction, more water use,\nsalty groundwater, overloaded drains — so the system needed continuous\nmonitoring and revision."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is “successive approximation”?\n</summary>\nTrying a solution, checking results, adjusting, and trying again until\nit works well.\n</details>",
+          "text": "What is “successive approximation”? Trying a solution, checking results, adjusting, and trying again until\nit works well."
+        }
+      ]
+    },
+    {
+      "slug": "guidelines-and-14-habits",
+      "title": "Guidelines for Systems Thinking Practice — the 14 Habits",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Systems thinking isn’t a subject you\nfinish. It’s a way of seeing that you build one habit at a time.\nProf. Shiva’s challenge: master <strong>one habit every 15\ndays</strong>, and in a year you’ll be one of the few true systems\nthinkers around.</p>\n</blockquote>",
+          "text": "Start here Systems thinking isn’t a subject you\nfinish. It’s a way of seeing that you build one habit at a time.\nProf. Shiva’s challenge: master one habit every 15\ndays , and in a year you’ll be one of the few true systems\nthinkers around."
+        },
+        {
+          "type": "heading",
+          "text": "The 14 habits of a systems\nthinker"
+        },
+        {
+          "type": "html",
+          "html": "<p>From the <strong>Waters Center for Systems Thinking</strong>. The\nhabits marked ✓ were explained in this week’s lectures.</p>",
+          "text": "From the Waters Center for Systems Thinking . The\nhabits marked ✓ were explained in this week’s lectures."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>#</th>\n<th>Habit</th>\n<th>Covered</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Seeks to understand the <strong>big picture</strong></td>\n<td>✓</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Observes how elements <strong>change over time</strong>, generating\npatterns and trends</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Recognises that a system’s <strong>structure generates its\nbehaviour</strong></td>\n<td>✓</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Identifies the <strong>circular nature</strong> of complex\ncause-and-effect relationships</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Makes meaningful <strong>connections</strong> within and between\nsystems</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Changes perspectives</strong> to increase understanding</td>\n<td></td>\n</tr>\n<tr>\n<td>7</td>\n<td>Surfaces and <strong>tests assumptions</strong></td>\n<td>✓</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Considers an issue fully and <strong>resists the urge to come to a\nquick conclusion</strong></td>\n<td>✓</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Considers how <strong>mental models</strong> affect current reality\nand the future</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Uses understanding of system structure to identify possible\n<strong>leverage actions</strong></td>\n<td>✓</td>\n</tr>\n<tr>\n<td>11</td>\n<td>Considers <strong>short-term, long-term and unintended\nconsequences</strong> of actions</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>12</td>\n<td>Pays attention to <strong>accumulations</strong> and their rates of\nchange</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>13</td>\n<td>Recognises the impact of <strong>time delays</strong> when exploring\ncause and effect</td>\n<td>✓</td>\n</tr>\n<tr>\n<td>14</td>\n<td><strong>Checks results</strong> and changes actions if needed:\n“successive approximation”</td>\n<td>✓</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "# Habit Covered 1 Seeks to understand the big picture ✓ 2 Observes how elements change over time , generating\npatterns and trends ✓ 3 Recognises that a system’s structure generates its\nbehaviour ✓ 4 Identifies the circular nature of complex\ncause-and-effect relationships ✓ 5 Makes meaningful connections within and between\nsystems ✓ 6 Changes perspectives to increase understanding 7 Surfaces and tests assumptions ✓ 8 Considers an issue fully and resists the urge to come to a\nquick conclusion ✓ 9 Considers how mental models affect current reality\nand the future ✓ 10 Uses understanding of system structure to identify possible leverage actions ✓ 11 Considers short-term, long-term and unintended\nconsequences of actions ✓ 12 Pays attention to accumulations and their rates of\nchange ✓ 13 Recognises the impact of time delays when exploring\ncause and effect ✓ 14 Checks results and changes actions if needed:\n“successive approximation” ✓"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What “mastering a habit” means:</strong> you\n<strong>follow</strong> it, <strong>remember</strong> it,\n<strong>use</strong> it, <strong>apply</strong> it, and\n<strong>teach</strong> it.</p>",
+          "text": "What “mastering a habit” means: you follow it, remember it, use it, apply it, and teach it."
+        },
+        {
+          "type": "heading",
+          "text": "Questions to ask yourself"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>Why it helps</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>How can I look <strong>beyond</strong> this problem, more\nbroadly?</td>\n<td>See the connections behind the event</td>\n</tr>\n<tr>\n<td>How could <strong>other people’s perspectives</strong> help me?</td>\n<td>You may be wrong, and you only find out by looking at others’\nviews</td>\n</tr>\n<tr>\n<td>How will my solution <strong>play out over the long\nrun</strong>?</td>\n<td>Think about consequences</td>\n</tr>\n<tr>\n<td>What <strong>unintended consequences</strong> might happen?</td>\n<td>Avoid “Operation Cat Drop” surprises</td>\n</tr>\n<tr>\n<td>How do my current actions <strong>limit</strong> me from seeing\nother options?</td>\n<td>Open up new choices</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Question Why it helps How can I look beyond this problem, more\nbroadly? See the connections behind the event How could other people’s perspectives help me? You may be wrong, and you only find out by looking at others’\nviews How will my solution play out over the long\nrun ? Think about consequences What unintended consequences might happen? Avoid “Operation Cat Drop” surprises How do my current actions limit me from seeing\nother options? Open up new choices"
+        },
+        {
+          "type": "heading",
+          "text": "Books to read"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Book</th>\n<th>Author</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong><em>The Fifth Discipline</em></strong></td>\n<td><strong>Peter Senge</strong>. “The book that completely changed my\nlife,” says Prof. Shiva.</td>\n</tr>\n<tr>\n<td><strong><em>Thinking in Systems</em></strong></td>\n<td><strong>Donella Meadows</strong>, an expert on systems thinking. A\nlittle harder to read.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Book Author The Fifth Discipline Peter Senge . “The book that completely changed my\nlife,” says Prof. Shiva. Thinking in Systems Donella Meadows , an expert on systems thinking. A\nlittle harder to read."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Also:</strong> the Waters Center for Systems Thinking website\n(habits and exercises), and simple online articles on systems\nthinking.</p>",
+          "text": "Also: the Waters Center for Systems Thinking website\n(habits and exercises), and simple online articles on systems\nthinking."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Prof. Shiva’s closing thought:</strong> “If there is one\nsubject that teaches <strong>wisdom</strong>, this is the one.” Look at\nyour own life and others’ lives as systems, and you will\n<strong>understand life better</strong>.</p>\n</blockquote>",
+          "text": "Prof. Shiva’s closing thought: “If there is one\nsubject that teaches wisdom , this is the one.” Look at\nyour own life and others’ lives as systems, and you will understand life better ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Practise the 14 habits one at a time,\nask broader questions, read Senge and Meadows, and use systems thinking\nto understand life wisely. <strong>Exam words:</strong> 14 habits of a\nsystems thinker, Waters Center for Systems Thinking, The Fifth\nDiscipline, Peter Senge, Thinking in Systems, Donella Meadows, other\nperspectives, wisdom.</p>",
+          "text": "In one line: Practise the 14 habits one at a time,\nask broader questions, read Senge and Meadows, and use systems thinking\nto understand life wisely. Exam words: 14 habits of a\nsystems thinker, Waters Center for Systems Thinking, The Fifth\nDiscipline, Peter Senge, Thinking in Systems, Donella Meadows, other\nperspectives, wisdom."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWho wrote “The Fifth Discipline”?\n</summary>\nPeter Senge.\n</details>",
+          "text": "Who wrote “The Fifth Discipline”? Peter Senge."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich organisation lists the 14 habits of a systems thinker?\n</summary>\nThe Waters Center for Systems Thinking.\n</details>",
+          "text": "Which organisation lists the 14 habits of a systems thinker? The Waters Center for Systems Thinking."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow does Prof. Shiva suggest you learn the habits?\n</summary>\nMaster one habit every 15 days — follow, remember, use, apply and teach\nit.\n</details>",
+          "text": "How does Prof. Shiva suggest you learn the habits? Master one habit every 15 days — follow, remember, use, apply and teach\nit."
+        }
+      ]
+    },
+    {
+      "slug": "week-10-quick-revision",
+      "title": "Week 10 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Systems thinking, all on one page.</p>\n</blockquote>",
+          "text": "Start here Systems thinking, all on one page."
+        },
+        {
+          "type": "image",
+          "src": "/images/spg-week-10/img13-week10-map.webp",
+          "alt": "Week 10 at a glance",
+          "caption": "Systems, examples, the systems view and\nthe habits of a systems thinker."
+        },
+        {
+          "type": "heading",
+          "text": "What is a system?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>System</strong> = <strong>elements + interconnections +\npurpose</strong> (digestive system: organs + links + digesting\nfood).</li>\n<li><strong>Heap vs system:</strong> remove a stone from a heap and\nnothing changes; remove a wall from a house and it falls.</li>\n<li><strong>Systems thinking</strong> = a <strong>holistic</strong>\napproach: how parts connect, how a system relates to larger systems, and\nhow one change affects the rest.</li>\n<li><strong>Food chain:</strong> kill the snakes, rats multiply, the\ngrass dies.</li>\n<li><strong>Doctor:</strong> treats the whole body because everything is\nconnected.</li>\n<li><strong>Blind men and the elephant:</strong> the whole is not the\nsum of its parts.</li>\n</ul>",
+          "text": "System = elements + interconnections +\npurpose (digestive system: organs + links + digesting\nfood). Heap vs system: remove a stone from a heap and\nnothing changes; remove a wall from a house and it falls. Systems thinking = a holistic approach: how parts connect, how a system relates to larger systems, and\nhow one change affects the rest. Food chain: kill the snakes, rats multiply, the\ngrass dies. Doctor: treats the whole body because everything is\nconnected. Blind men and the elephant: the whole is not the\nsum of its parts."
+        },
+        {
+          "type": "heading",
+          "text": "Examples and the systems\nview"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>IIT Madras</strong> (students, faculty, facilities; linked\nto government, parents, alumni).</li>\n<li><strong>Cricket match</strong> (fans are an element too).</li>\n<li><strong>Food delivery</strong> (rider → restaurant → supply chain →\nfarmer → monsoon).</li>\n<li><strong>Systems view:</strong> everything is connected; <strong>no\nproblem exists in a silo</strong>.</li>\n<li><strong>Wolves in Yellowstone</strong> changed the rivers.\n<strong>We are part of the system too</strong> (hot shower, traffic\njam).</li>\n</ul>",
+          "text": "IIT Madras (students, faculty, facilities; linked\nto government, parents, alumni). Cricket match (fans are an element too). Food delivery (rider → restaurant → supply chain →\nfarmer → monsoon). Systems view: everything is connected; no\nproblem exists in a silo . Wolves in Yellowstone changed the rivers. We are part of the system too (hot shower, traffic\njam)."
+        },
+        {
+          "type": "heading",
+          "text": "Habits of a\nsystems thinker (lecture examples)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Habit</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Big picture</strong></td>\n<td>Helicopter view of your life; the band; rainwater harvesting</td>\n</tr>\n<tr>\n<td><strong>Consequences</strong> (short, long, unintended)</td>\n<td>Sugar → kidneys → work; <strong>Operation Cat Drop</strong>;\noutbound training; “no tooth!”</td>\n</tr>\n<tr>\n<td><strong>Mental models</strong></td>\n<td>Single parent’s promotion belief; “I’m not creative”</td>\n</tr>\n<tr>\n<td><strong>Structure → behaviour</strong></td>\n<td>Table vs side-by-side; snack jars; WhatsApp routine; sweet shop on\nthe way home</td>\n</tr>\n<tr>\n<td><strong>Don’t rush to a conclusion</strong></td>\n<td>Student’s supervisor change: hear both sides</td>\n</tr>\n<tr>\n<td><strong>Leverage points</strong></td>\n<td>Projector on another phase; LTAP time audit</td>\n</tr>\n<tr>\n<td><strong>Connections</strong></td>\n<td>Plant ↔︎ bees, birds, sun, water; draw cause-and-effect diagrams</td>\n</tr>\n<tr>\n<td><strong>Feedback loops</strong></td>\n<td>Hunger cycle; office rumours; the king in disguise</td>\n</tr>\n<tr>\n<td><strong>Time delays</strong></td>\n<td>Education policy consultation</td>\n</tr>\n<tr>\n<td><strong>Accumulations</strong></td>\n<td>Votes; inventory, dead stock, just-in-time</td>\n</tr>\n<tr>\n<td><strong>Change over time</strong></td>\n<td>Rainwater system 20 years later</td>\n</tr>\n<tr>\n<td><strong>Test assumptions</strong></td>\n<td>Hybrid work: “What if 2 days in office?”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Habit Example Big picture Helicopter view of your life; the band; rainwater harvesting Consequences (short, long, unintended) Sugar → kidneys → work; Operation Cat Drop ;\noutbound training; “no tooth!” Mental models Single parent’s promotion belief; “I’m not creative” Structure → behaviour Table vs side-by-side; snack jars; WhatsApp routine; sweet shop on\nthe way home Don’t rush to a conclusion Student’s supervisor change: hear both sides Leverage points Projector on another phase; LTAP time audit Connections Plant ↔︎ bees, birds, sun, water; draw cause-and-effect diagrams Feedback loops Hunger cycle; office rumours; the king in disguise Time delays Education policy consultation Accumulations Votes; inventory, dead stock, just-in-time Change over time Rainwater system 20 years later Test assumptions Hybrid work: “What if 2 days in office?”"
+        },
+        {
+          "type": "heading",
+          "text": "Guidelines"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>14 habits</strong> (Waters Center). Master <strong>one every\n15 days</strong>.</li>\n<li>Ask: Beyond the problem? Others’ views? Long run? Unintended\neffects?</li>\n<li><strong>Books:</strong> <em>The Fifth Discipline</em> (Peter Senge);\n<em>Thinking in Systems</em> (Donella Meadows).</li>\n</ul>",
+          "text": "14 habits (Waters Center). Master one every\n15 days . Ask: Beyond the problem? Others’ views? Long run? Unintended\neffects? Books: The Fifth Discipline (Peter Senge); Thinking in Systems (Donella Meadows)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>What three things make up every system?\n</li></ol></summary>\nElements, interconnections, purpose.\n</details>",
+          "text": "What three things make up every system? Elements, interconnections, purpose."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Removing one part changes nothing. Heap or system?\n</li></ol></summary>\nHeap.\n</details>",
+          "text": "Removing one part changes nothing. Heap or system? Heap."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Which habit does “change the structure to change behaviour” belong\nto?\n</li></ol></summary>\nRecognising that a system’s structure generates its behaviour.\n</details>",
+          "text": "Which habit does “change the structure to change behaviour” belong\nto? Recognising that a system’s structure generates its behaviour."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>DDT → fewer cats → more rats. Which type of consequence is this?\n</li></ol></summary>\nUnintended consequence.\n</details>",
+          "text": "DDT → fewer cats → more rats. Which type of consequence is this? Unintended consequence."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Plugging the projector into a working phase is an example of what?\n</li></ol></summary>\nUsing system structure to find a leverage point.\n</details>",
+          "text": "Plugging the projector into a working phase is an example of what? Using system structure to find a leverage point."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Results of exercise appear only after weeks. Which habit helps you\nunderstand this?\n</li></ol></summary>\nRecognising the impact of time delays.\n</details>",
+          "text": "Results of exercise appear only after weeks. Which habit helps you\nunderstand this? Recognising the impact of time delays."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Which video showed how wolves changed the course of rivers?\n</li></ol></summary>\n“How Wolves Change Rivers” (Yellowstone National Park).\n</details>",
+          "text": "Which video showed how wolves changed the course of rivers? “How Wolves Change Rivers” (Yellowstone National Park)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>Name Prof. Shiva’s life-changing book on systems thinking.\n</li></ol></summary>\n“The Fifth Discipline” by Peter Senge.\n</details>",
+          "text": "Name Prof. Shiva’s life-changing book on systems thinking. “The Fifth Discipline” by Peter Senge."
+        }
+      ]
+    }
+  ]
+}
