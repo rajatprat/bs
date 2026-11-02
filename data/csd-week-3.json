@@ -1,0 +1,927 @@
+{
+  "subject": "Computer System Design",
+  "subjectSlug": "computer-system-design",
+  "week": 3,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computer-system-design/week-3/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "sop-circuits",
+      "title": "From SOP to a Circuit — Two-Level Logic",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Last week you turned a truth table into a\nSum of Products formula. This week you turn that formula into a real\ncircuit you could build on a breadboard. The good news:\n<strong>every</strong> SOP becomes the same simple shape, a row of AND\ngates feeding one OR gate.</p>\n</blockquote>",
+          "text": "Start here Last week you turned a truth table into a\nSum of Products formula. This week you turn that formula into a real\ncircuit you could build on a breadboard. The good news: every SOP becomes the same simple shape, a row of AND\ngates feeding one OR gate."
+        },
+        {
+          "type": "heading",
+          "text": "Quick recap: Σ notation"
+        },
+        {
+          "type": "html",
+          "html": "<p>Number the rows of the truth table 0, 1, 2… (the row’s binary value).\nThen just list the rows where F = 1:</p>",
+          "text": "Number the rows of the truth table 0, 1, 2… (the row’s binary value).\nThen just list the rows where F = 1:"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>F(A, B, C) = Σm(3, 4, 5, 6, 7)</strong> = m₃ + m₄ + m₅ + m₆ +\nm₇</p>",
+          "text": "F(A, B, C) = Σm(3, 4, 5, 6, 7) = m₃ + m₄ + m₅ + m₆ +\nm₇"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Order matters!</strong> Σm(…) only makes sense if everyone\nagrees which variable is the left bit. F(A, B, C) means A is the left\n(biggest) bit. Always keep the variables in the order given.</p>\n</blockquote>",
+          "text": "Order matters! Σm(…) only makes sense if everyone\nagrees which variable is the left bit. F(A, B, C) means A is the left\n(biggest) bit. Always keep the variables in the order given."
+        },
+        {
+          "type": "heading",
+          "text": "SOP → circuit: the recipe"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img01-sop-two-level.webp",
+          "alt": "SOP as a two-level circuit",
+          "caption": "Inverters make the barred\nletters, each AND gate makes one minterm, and one OR gate joins\nthem.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Put a <strong>NOT gate</strong> on any input that appears with a\nbar.</li>\n<li>Make one <strong>AND gate</strong> per product term.</li>\n<li>Feed all AND outputs into one <strong>OR gate</strong>.</li>\n</ol>",
+          "text": "Put a NOT gate on any input that appears with a\nbar. Make one AND gate per product term. Feed all AND outputs into one OR gate ."
+        },
+        {
+          "type": "html",
+          "html": "<p>This is called <strong>two-level logic</strong> (level 1: AND, level\n2: OR; the NOT gates don’t count as a level).</p>",
+          "text": "This is called two-level logic (level 1: AND, level\n2: OR; the NOT gates don’t count as a level)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong> Y = A̅B̅C̅ + AB̅C̅ + AB̅C needs 3 NOT gates, 3\nthree-input AND gates and 1 three-input OR gate.</p>",
+          "text": "Example: Y = A̅B̅C̅ + AB̅C̅ + AB̅C needs 3 NOT gates, 3\nthree-input AND gates and 1 three-input OR gate."
+        },
+        {
+          "type": "heading",
+          "text": "Canonical is NOT minimal"
+        },
+        {
+          "type": "html",
+          "html": "<p>The canonical SOP (all minterms) is <strong>correct</strong> but\noften <strong>wasteful</strong>.</p>",
+          "text": "The canonical SOP (all minterms) is correct but\noften wasteful ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Form</th>\n<th>Formula for Σm(3,4,5,6,7)</th>\n<th>Gates needed</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Canonical SOP</strong></td>\n<td>A̅BC + AB̅C̅ + AB̅C + ABC̅ + ABC</td>\n<td>5 ANDs (3-input) + 1 OR (5-input) + NOTs</td>\n</tr>\n<tr>\n<td><strong>Minimal SOP</strong></td>\n<td><strong>A + BC</strong></td>\n<td>1 AND + 1 OR</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Form Formula for Σm(3,4,5,6,7) Gates needed Canonical SOP A̅BC + AB̅C̅ + AB̅C + ABC̅ + ABC 5 ANDs (3-input) + 1 OR (5-input) + NOTs Minimal SOP A + BC 1 AND + 1 OR"
+        },
+        {
+          "type": "html",
+          "html": "<p>Both give the <strong>same truth table</strong>. Finding the small\none is called <strong>logic minimisation</strong>. You’ll do it with\nBoolean algebra now, and with <strong>K-maps</strong> in Week 5.</p>",
+          "text": "Both give the same truth table . Finding the small\none is called logic minimisation . You’ll do it with\nBoolean algebra now, and with K-maps in Week 5."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Check:</strong> A + BC is 1 when A = 1 (rows 4–7) or when B =\nC = 1 (rows 3 and 7). That’s rows 3, 4, 5, 6, 7 ✓.</p>",
+          "text": "Check: A + BC is 1 when A = 1 (rows 4–7) or when B =\nC = 1 (rows 3 and 7). That’s rows 3, 4, 5, 6, 7 ✓."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Any SOP becomes a two-level circuit\n(NOTs → ANDs → one OR), but the canonical form is usually much bigger\nthan the minimal one. <strong>Exam words:</strong> Σm notation, variable\norder, two-level logic, AND-OR circuit, canonical vs minimal, logic\nminimisation.</p>",
+          "text": "In one line: Any SOP becomes a two-level circuit\n(NOTs → ANDs → one OR), but the canonical form is usually much bigger\nthan the minimal one. Exam words: Σm notation, variable\norder, two-level logic, AND-OR circuit, canonical vs minimal, logic\nminimisation."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nF(A,B) = Σm(1, 2). Which rows are these, and what’s F?\n</summary>\n01 and 10 → F = A̅B + AB̅ (XOR).\n</details>",
+          "text": "F(A,B) = Σm(1, 2). Which rows are these, and what’s F? 01 and 10 → F = A̅B + AB̅ (XOR)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many AND gates does a canonical SOP with 5 minterms need?\n</summary>\n5 (one per minterm).\n</details>",
+          "text": "How many AND gates does a canonical SOP with 5 minterms need? 5 (one per minterm)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs the canonical form always the smallest?\n</summary>\nNo. “Canonical ≠ minimal”: it’s a standard form, usually not the\nsmallest.\n</details>",
+          "text": "Is the canonical form always the smallest? No. “Canonical ≠ minimal”: it’s a standard form, usually not the\nsmallest."
+        }
+      ]
+    },
+    {
+      "slug": "product-of-sums",
+      "title": "Product of Sums (POS) and Maxterms",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> SOP looks at the rows where the output is\n<strong>1</strong>. But what if the output is 1 almost everywhere, and 0\nin just two rows? Then it’s easier to describe the <strong>0s</strong>.\nThat’s the idea behind <strong>Product of Sums</strong>.</p>\n</blockquote>",
+          "text": "Start here SOP looks at the rows where the output is 1 . But what if the output is 1 almost everywhere, and 0\nin just two rows? Then it’s easier to describe the 0s .\nThat’s the idea behind Product of Sums ."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img13-list-the-zeros.webp",
+          "alt": "List the few zeros",
+          "caption": "If only 2 of 40 students are absent,\nlisting the absent ones is quicker. POS works the same way: it lists the\nfew 0-rows.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "The idea in one picture"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img02-sop-vs-pos.webp",
+          "alt": "SOP looks at 1s, POS looks at 0s",
+          "caption": "SOP builds F from the\n1-rows using ANDs then OR. POS builds F from the 0-rows using ORs then\nAND.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th></th>\n<th><strong>SOP</strong></th>\n<th><strong>POS</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Look at rows where F =</td>\n<td><strong>1</strong></td>\n<td><strong>0</strong></td>\n</tr>\n<tr>\n<td>Each row gives a</td>\n<td><strong>minterm</strong> (AND of literals)</td>\n<td><strong>maxterm</strong> (OR of literals)</td>\n</tr>\n<tr>\n<td>Then join them with</td>\n<td><strong>OR</strong> (+)</td>\n<td><strong>AND</strong> (·)</td>\n</tr>\n<tr>\n<td>Literal rule</td>\n<td>1 → A, 0 → A̅</td>\n<td><strong>0 → A, 1 → A̅</strong> (the opposite!)</td>\n</tr>\n<tr>\n<td>Short form</td>\n<td>Σm(…)</td>\n<td><strong>ΠM(…)</strong></td>\n</tr>\n<tr>\n<td>Circuit</td>\n<td>AND–OR</td>\n<td>OR–AND</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "SOP POS Look at rows where F = 1 0 Each row gives a minterm (AND of literals) maxterm (OR of literals) Then join them with OR (+) AND (·) Literal rule 1 → A, 0 → A̅ 0 → A, 1 → A̅ (the opposite!) Short form Σm(…) ΠM(…) Circuit AND–OR OR–AND"
+        },
+        {
+          "type": "heading",
+          "text": "How to write a maxterm"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Rule:</strong> for a row where F = 0, input <strong>0 → plain\nletter</strong>, input <strong>1 → barred letter</strong>, and\n<strong>OR</strong> them.</p>",
+          "text": "Rule: for a row where F = 0, input 0 → plain\nletter , input 1 → barred letter , and OR them."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>Maxterm</th>\n<th>Number</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>(A + B + C)</td>\n<td>M₀</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>(A + B̅ + C)</td>\n<td>M₂</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>(A̅ + B̅ + C)</td>\n<td>M₆</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B C Maxterm Number 0 0 0 (A + B + C) M₀ 0 1 0 (A + B̅ + C) M₂ 1 1 0 (A̅ + B̅ + C) M₆"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why the opposite rule?</strong> A maxterm must be <strong>0\nonly in its own row</strong>. An OR is 0 only when\n<strong>every</strong> literal is 0. In row 010, A + B̅ + C = 0 + 0 + 0 =\n0 ✓, and in any other row at least one literal is 1.</p>",
+          "text": "Why the opposite rule? A maxterm must be 0\nonly in its own row . An OR is 0 only when every literal is 0. In row 010, A + B̅ + C = 0 + 0 + 0 =\n0 ✓, and in any other row at least one literal is 1."
+        },
+        {
+          "type": "heading",
+          "text": "The POS recipe"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Find the rows where <strong>F = 0</strong>.</li>\n<li>Write the <strong>maxterm</strong> for each.</li>\n<li><strong>AND</strong> them all together.</li>\n</ol>",
+          "text": "Find the rows where F = 0 . Write the maxterm for each. AND them all together."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong> F = Σm(3, 4, 5, 6, 7), so F = 0 in rows 0,\n1, 2:</p>",
+          "text": "Example: F = Σm(3, 4, 5, 6, 7), so F = 0 in rows 0,\n1, 2:"
+        },
+        {
+          "type": "html",
+          "html": "<p>F = (A + B + C)(A + B + C̅)(A + B̅ + C) = <strong>ΠM(0, 1,\n2)</strong></p>",
+          "text": "F = (A + B + C)(A + B + C̅)(A + B̅ + C) = ΠM(0, 1,\n2)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why it works:</strong> in a 0-row, its own maxterm is 0, so\nthe whole AND is 0. In a 1-row, every maxterm is 1, so the AND is 1.</p>",
+          "text": "Why it works: in a 0-row, its own maxterm is 0, so\nthe whole AND is 0. In a 1-row, every maxterm is 1, so the AND is 1."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Another way to see it:</strong> POS of F = De Morgan applied\nto the SOP of F̅.</p>\n</blockquote>",
+          "text": "Another way to see it: POS of F = De Morgan applied\nto the SOP of F̅."
+        },
+        {
+          "type": "heading",
+          "text": "Conversions (very useful in\nMCQs)"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img03-sigma-pi-split.webp",
+          "alt": "Sigma and Pi split the rows",
+          "caption": "Σm lists the 1-rows. ΠM lists\nthe 0-rows. Together they cover every row exactly once.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>For a 3-variable function (rows 0–7):</p>",
+          "text": "For a 3-variable function (rows 0–7):"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>You have</th>\n<th>You want</th>\n<th>Do this</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>F = Σm(3,4,5,6,7)</td>\n<td>F as ΠM</td>\n<td>use the <strong>missing</strong> numbers</td>\n<td><strong>ΠM(0,1,2)</strong></td>\n</tr>\n<tr>\n<td>F = ΠM(0,1,2)</td>\n<td>F as Σm</td>\n<td>use the <strong>missing</strong> numbers</td>\n<td><strong>Σm(3,4,5,6,7)</strong></td>\n</tr>\n<tr>\n<td>F = Σm(3,4,5,6,7)</td>\n<td>F̅ as Σm</td>\n<td>use the <strong>missing</strong> numbers</td>\n<td>F̅ = <strong>Σm(0,1,2)</strong></td>\n</tr>\n<tr>\n<td>F = Σm(3,4,5,6,7)</td>\n<td>F̅ as ΠM</td>\n<td>keep the <strong>same</strong> numbers</td>\n<td>F̅ = <strong>ΠM(3,4,5,6,7)</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "You have You want Do this Example F = Σm(3,4,5,6,7) F as ΠM use the missing numbers ΠM(0,1,2) F = ΠM(0,1,2) F as Σm use the missing numbers Σm(3,4,5,6,7) F = Σm(3,4,5,6,7) F̅ as Σm use the missing numbers F̅ = Σm(0,1,2) F = Σm(3,4,5,6,7) F̅ as ΠM keep the same numbers F̅ = ΠM(3,4,5,6,7)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Memory trick:</strong> switching between <strong>Σ and\nΠ</strong> → use the <strong>other</strong> numbers. Switching <strong>F\n↔︎ F̅</strong> → also use the <strong>other</strong> numbers. Doing\n<strong>both</strong> → the <strong>same</strong> numbers.</p>",
+          "text": "Memory trick: switching between Σ and\nΠ → use the other numbers. Switching F\n↔︎ F̅ → also use the other numbers. Doing both → the same numbers."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> POS builds F from its 0-rows: each\n0-row gives a maxterm (0 → letter, 1 → barred), and the maxterms are\nANDed. Σm and ΠM use complementary row numbers. <strong>Exam\nwords:</strong> product of sums (POS), maxterm, ΠM notation, OR-AND\ncircuit, conjunctive normal form, complement of a function, Σ↔︎Π\nconversion.</p>",
+          "text": "In one line: POS builds F from its 0-rows: each\n0-row gives a maxterm (0 → letter, 1 → barred), and the maxterms are\nANDed. Σm and ΠM use complementary row numbers. Exam\nwords: product of sums (POS), maxterm, ΠM notation, OR-AND\ncircuit, conjunctive normal form, complement of a function, Σ↔︎Π\nconversion."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWrite the maxterm for row A=1, B=0, C=1.\n</summary>\n(A̅ + B + C̅), M₅.\n</details>",
+          "text": "Write the maxterm for row A=1, B=0, C=1. (A̅ + B + C̅), M₅."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nF(A,B,C) = Σm(0, 2, 6). Write F as ΠM.\n</summary>\nΠM(1, 3, 4, 5, 7).\n</details>",
+          "text": "F(A,B,C) = Σm(0, 2, 6). Write F as ΠM. ΠM(1, 3, 4, 5, 7)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nF = ΠM(2, 5). Write F̅ as Σm.\n</summary>\nF̅ = Σm(2, 5) (F is 0 exactly in rows 2 and 5, so F̅ is 1 there).\n</details>",
+          "text": "F = ΠM(2, 5). Write F̅ as Σm. F̅ = Σm(2, 5) (F is 0 exactly in rows 2 and 5, so F̅ is 1 there)."
+        }
+      ]
+    },
+    {
+      "slug": "universal-gates",
+      "title": "Universal Gates — Building Everything from NAND or NOR",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Imagine a LEGO box with only\n<strong>one</strong> kind of brick, yet you can still build anything.\nNAND gates are like that: with enough NAND gates, you can build NOT,\nAND, OR and every other circuit. Chip factories love this, because\nmaking one kind of gate again and again is cheap and fast.</p>\n</blockquote>",
+          "text": "Start here Imagine a LEGO box with only one kind of brick, yet you can still build anything.\nNAND gates are like that: with enough NAND gates, you can build NOT,\nAND, OR and every other circuit. Chip factories love this, because\nmaking one kind of gate again and again is cheap and fast."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img15-one-brick-every-circuit.webp",
+          "alt": "One brick, every circuit",
+          "caption": "Only NAND bricks: 1 brick makes\nNOT, 2 make AND, 3 make OR.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "What “universal” means"
+        },
+        {
+          "type": "html",
+          "html": "<p>A gate is <strong>universal</strong> if NOT, AND and OR (and so\n<strong>any</strong> circuit) can be built from it alone.\n<strong>NAND</strong> and <strong>NOR</strong> are both universal.</p>",
+          "text": "A gate is universal if NOT, AND and OR (and so any circuit) can be built from it alone. NAND and NOR are both universal."
+        },
+        {
+          "type": "heading",
+          "text": "Everything from NAND"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img04-nand-universal.webp",
+          "alt": "Gates made from NAND",
+          "caption": "NOT needs 1 NAND, AND needs 2, OR\nneeds 3, XOR needs 4.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Want</th>\n<th>How, using only 2-input NAND</th>\n<th>NAND gates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>NOT A</strong></td>\n<td>NAND(A, A)</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td><strong>A AND B</strong></td>\n<td>NAND, then a NOT made from NAND</td>\n<td><strong>2</strong></td>\n</tr>\n<tr>\n<td><strong>A OR B</strong></td>\n<td>NOT A, NOT B, then NAND them (De Morgan: (A̅·B̅)̅ = A + B)</td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td><strong>A XOR B</strong></td>\n<td>G1 = NAND(A,B); G2 = NAND(A,G1); G3 = NAND(B,G1); out =\nNAND(G2,G3)</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>A XNOR B</strong></td>\n<td>XOR, then NOT</td>\n<td><strong>5</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Want How, using only 2-input NAND NAND gates NOT A NAND(A, A) 1 A AND B NAND, then a NOT made from NAND 2 A OR B NOT A, NOT B, then NAND them (De Morgan: (A̅·B̅)̅ = A + B) 3 A XOR B G1 = NAND(A,B); G2 = NAND(A,G1); G3 = NAND(B,G1); out =\nNAND(G2,G3) 4 A XNOR B XOR, then NOT 5"
+        },
+        {
+          "type": "heading",
+          "text": "Everything from NOR"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Want</th>\n<th>How, using only 2-input NOR</th>\n<th>NOR gates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>NOT A</strong></td>\n<td>NOR(A, A)</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td><strong>A OR B</strong></td>\n<td>NOR, then NOT</td>\n<td><strong>2</strong></td>\n</tr>\n<tr>\n<td><strong>A AND B</strong></td>\n<td>NOT A, NOT B, then NOR them ((A̅ + B̅)̅ = A·B)</td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td><strong>A XNOR B</strong></td>\n<td>same 4-gate pattern as NAND-XOR, but with NORs</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>A XOR B</strong></td>\n<td>XNOR, then NOT</td>\n<td><strong>5</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Want How, using only 2-input NOR NOR gates NOT A NOR(A, A) 1 A OR B NOR, then NOT 2 A AND B NOT A, NOT B, then NOR them ((A̅ + B̅)̅ = A·B) 3 A XNOR B same 4-gate pattern as NAND-XOR, but with NORs 4 A XOR B XNOR, then NOT 5"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Notice the mirror:</strong> NAND makes AND cheap (2) and OR\nexpensive (3). NOR is the opposite. XOR is cheap with NAND (4); XNOR is\ncheap with NOR (4).</p>\n</blockquote>",
+          "text": "Notice the mirror: NAND makes AND cheap (2) and OR\nexpensive (3). NOR is the opposite. XOR is cheap with NAND (4); XNOR is\ncheap with NOR (4)."
+        },
+        {
+          "type": "html",
+          "html": "<p>All these counts were checked by a computer search over every\npossible circuit. They really are the minimum.</p>",
+          "text": "All these counts were checked by a computer search over every\npossible circuit. They really are the minimum."
+        },
+        {
+          "type": "heading",
+          "text": "Two-level circuits:\nAND-OR becomes NAND-NAND"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img05-and-or-to-nand-nand.webp",
+          "alt": "AND-OR to NAND-NAND",
+          "caption": "Replace every gate in an AND-OR circuit\nwith a NAND. The output stays exactly the same.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Rule 1:</strong> an <strong>AND–OR</strong> (SOP) circuit = a\n<strong>NAND–NAND</strong> circuit with the <strong>same shape</strong>.\nJust swap every gate for a NAND.</p>",
+          "text": "Rule 1: an AND–OR (SOP) circuit = a NAND–NAND circuit with the same shape .\nJust swap every gate for a NAND."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why?</strong> Put two “bubbles” (NOTs) on each wire between\nthe levels. Two NOTs cancel, so nothing changes. Then the AND + bubble\nbecomes NAND, and the bubbles + OR becomes NAND too (De Morgan).</p>",
+          "text": "Why? Put two “bubbles” (NOTs) on each wire between\nthe levels. Two NOTs cancel, so nothing changes. Then the AND + bubble\nbecomes NAND, and the bubbles + OR becomes NAND too (De Morgan)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Rule 2:</strong> an <strong>OR–AND</strong> (POS) circuit = a\n<strong>NOR–NOR</strong> circuit with the same shape.</p>",
+          "text": "Rule 2: an OR–AND (POS) circuit = a NOR–NOR circuit with the same shape."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Watch out for single letters.</strong> If a product term is\njust one letter (like A in A + BC), it needs a NAND used as an inverter\nin the NAND–NAND version.</p>\n<p>Example: A + BC → G1 = NAND(A, A) = A̅; G2 = NAND(B, C); out =\nNAND(G1, G2) → <strong>3 NAND gates</strong>.</p>\n</blockquote>",
+          "text": "Watch out for single letters. If a product term is\njust one letter (like A in A + BC), it needs a NAND used as an inverter\nin the NAND–NAND version. Example: A + BC → G1 = NAND(A, A) = A̅; G2 = NAND(B, C); out =\nNAND(G1, G2) → 3 NAND gates ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> NAND and NOR can each build every\ncircuit (NAND: NOT 1, AND 2, OR 3, XOR 4; NOR: NOT 1, OR 2, AND 3, XNOR\n4), and an AND–OR circuit turns into NAND–NAND just by swapping the\ngates. <strong>Exam words:</strong> universal gate, NAND-only, NOR-only,\nNAND–NAND realisation, NOR–NOR realisation, bubble pushing, De\nMorgan.</p>",
+          "text": "In one line: NAND and NOR can each build every\ncircuit (NAND: NOT 1, AND 2, OR 3, XOR 4; NOR: NOT 1, OR 2, AND 3, XNOR\n4), and an AND–OR circuit turns into NAND–NAND just by swapping the\ngates. Exam words: universal gate, NAND-only, NOR-only,\nNAND–NAND realisation, NOR–NOR realisation, bubble pushing, De\nMorgan."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many 2-input NAND gates make an OR gate?\n</summary>\n3.\n</details>",
+          "text": "How many 2-input NAND gates make an OR gate? 3."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many 2-input NOR gates make an XNOR (an equality checker)?\n</summary>\n4.\n</details>",
+          "text": "How many 2-input NOR gates make an XNOR (an equality checker)? 4."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAn SOP circuit is AND–OR. What do you get if you replace every gate with\nNAND?\n</summary>\nA NAND–NAND circuit that gives the same output.\n</details>",
+          "text": "An SOP circuit is AND–OR. What do you get if you replace every gate with\nNAND? A NAND–NAND circuit that gives the same output."
+        }
+      ]
+    },
+    {
+      "slug": "multilevel-and-timing",
+      "title": "Multilevel Logic and Timing Diagrams",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A room has <strong>three doors</strong>,\nwith a light switch at each one. Flip <strong>any</strong> switch and\nthe bulb should change: on to off, or off to on. How would you build\nthat circuit? You’ll solve it on this page, and you’ll learn to read the\n“wave pictures” (timing diagrams) that exams love.</p>\n</blockquote>",
+          "text": "Start here A room has three doors ,\nwith a light switch at each one. Flip any switch and\nthe bulb should change: on to off, or off to on. How would you build\nthat circuit? You’ll solve it on this page, and you’ll learn to read the\n“wave pictures” (timing diagrams) that exams love."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img14-three-doors-one-bulb.webp",
+          "alt": "One bulb, three switches",
+          "caption": "Flip any one switch and the bulb\nchanges. Keep this picture in mind; the answer is at the end of the\npage.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "Multilevel logic"
+        },
+        {
+          "type": "html",
+          "html": "<p>So far we’ve built <strong>two-level</strong> circuits (AND then OR).\nReal circuits often use <strong>more levels</strong>, because that can\nsave gates.</p>",
+          "text": "So far we’ve built two-level circuits (AND then OR).\nReal circuits often use more levels , because that can\nsave gates."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img06-multilevel.webp",
+          "alt": "A multilevel circuit",
+          "caption": "Y = (A + B)(C̅ + D) + E̅ uses three\nlevels of gates, but fewer gates than its two-level version.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong> Y = (A + B)·(C̅ + D) + E̅</p>",
+          "text": "Example: Y = (A + B)·(C̅ + D) + E̅"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Multilevel:</strong> 2 ORs → 1 AND → 1 OR (plus\ninverters).</li>\n<li><strong>Two-level SOP:</strong> multiply out → AC̅ + AD + BC̅ + BD +\nE̅. That’s 4 ANDs + one big 5-input OR. <strong>More gates.</strong></li>\n</ul>",
+          "text": "Multilevel: 2 ORs → 1 AND → 1 OR (plus\ninverters). Two-level SOP: multiply out → AC̅ + AD + BC̅ + BD +\nE̅. That’s 4 ANDs + one big 5-input OR. More gates."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trade-off:</strong> multilevel = <strong>fewer gates\n(cheaper)</strong> but more levels = <strong>slower</strong> (the signal\npasses through more gates).</p>",
+          "text": "Trade-off: multilevel = fewer gates\n(cheaper) but more levels = slower (the signal\npasses through more gates)."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img16-cooks-and-levels.webp",
+          "alt": "Cooks and levels",
+          "caption": "Five cooks working at once finish fast.\nThree cooks passing one plate along need fewer people but take longer.\nGates work the same way.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "Timing diagrams"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>timing diagram</strong> shows how signals change over\n<strong>time</strong>. Each signal is a line that is <strong>high\n(1)</strong> or <strong>low (0)</strong>.</p>",
+          "text": "A timing diagram shows how signals change over time . Each signal is a line that is high\n(1) or low (0) ."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img07-timing-diagram.webp",
+          "alt": "Reading a timing diagram",
+          "caption": "Cut the diagram into time slices.\nEach slice gives one row of the truth table.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "subheading",
+          "text": "How to turn a\ntiming diagram into a function"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Draw vertical lines wherever <strong>any</strong> input changes.\nThis cuts time into <strong>slices</strong>.</li>\n<li>In each slice, read every input (0 or 1) and the output.</li>\n<li>Write each slice as a <strong>row of a truth table</strong>.</li>\n<li>Rows that never appear are <strong>“don’t care”</strong> (you can\nchoose 0 or 1, whichever makes the circuit smaller).</li>\n<li>Simplify to get the function.</li>\n</ol>",
+          "text": "Draw vertical lines wherever any input changes.\nThis cuts time into slices . In each slice, read every input (0 or 1) and the output. Write each slice as a row of a truth table . Rows that never appear are “don’t care” (you can\nchoose 0 or 1, whichever makes the circuit smaller). Simplify to get the function."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example (from the slides):</strong></p>",
+          "text": "Example (from the slides):"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Slice</th>\n<th>x₁</th>\n<th>x₂</th>\n<th>f</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>2</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>3</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>4</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Slice x₁ x₂ f 1 0 0 1 2 0 1 1 3 1 0 0 4 1 1 1"
+        },
+        {
+          "type": "html",
+          "html": "<p>f = Σm(0, 1, 3) = x̅₁x̅₂ + x̅₁x₂ + x₁x₂ = <strong>x̅₁ + x₂</strong></p>",
+          "text": "f = Σm(0, 1, 3) = x̅₁x̅₂ + x̅₁x₂ + x₁x₂ = x̅₁ + x₂"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Check:</strong> x̅₁ + x₂ is 0 only when x₁ = 1 and x₂ = 0,\nwhich is slice 3 ✓.</p>",
+          "text": "Check: x̅₁ + x₂ is 0 only when x₁ = 1 and x₂ = 0,\nwhich is slice 3 ✓."
+        },
+        {
+          "type": "heading",
+          "text": "The three-switch light"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img08-three-switch-light.webp",
+          "alt": "Three switches, one bulb",
+          "caption": "Flip any one switch and the bulb\nchanges. That’s exactly what XOR does.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Think:</strong> flipping <strong>one</strong> switch must\n<strong>flip</strong> the bulb. Which gate flips its output when\n<strong>any one</strong> input flips? <strong>XOR!</strong></p>",
+          "text": "Think: flipping one switch must flip the bulb. Which gate flips its output when any one input flips? XOR!"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Bulb = X ⊕ Y ⊕ Z</strong> (on when an odd number of switches\nare up).</p>",
+          "text": "Bulb = X ⊕ Y ⊕ Z (on when an odd number of switches\nare up)."
+        },
+        {
+          "type": "html",
+          "html": "<p>With 2-input XOR gates: (X ⊕ Y) ⊕ Z → <strong>2 XOR\ngates</strong>.</p>",
+          "text": "With 2-input XOR gates: (X ⊕ Y) ⊕ Z → 2 XOR\ngates ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Multilevel circuits save gates but add\ndelay; to read a timing diagram, slice it where inputs change, make a\ntruth table, and simplify. Three switches controlling one bulb is a\n3-input XOR. <strong>Exam words:</strong> multilevel logic, gate levels,\ndelay vs cost, timing diagram, time slice, don’t care, parity, XOR.</p>",
+          "text": "In one line: Multilevel circuits save gates but add\ndelay; to read a timing diagram, slice it where inputs change, make a\ntruth table, and simplify. Three switches controlling one bulb is a\n3-input XOR. Exam words: multilevel logic, gate levels,\ndelay vs cost, timing diagram, time slice, don’t care, parity, XOR."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy use multilevel logic?\n</summary>\nIt usually needs fewer gates (cheaper), though the signal passes through\nmore levels (slower).\n</details>",
+          "text": "Why use multilevel logic? It usually needs fewer gates (cheaper), though the signal passes through\nmore levels (slower)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn a timing diagram, an input combination never appears. What is the\noutput for it?\n</summary>\nA don’t care: you can treat it as 0 or 1, whichever gives the simpler\ncircuit.\n</details>",
+          "text": "In a timing diagram, an input combination never appears. What is the\noutput for it? A don’t care: you can treat it as 0 or 1, whichever gives the simpler\ncircuit."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nFour switches, one bulb, any switch toggles it. Function? Gates?\n</summary>\nA ⊕ B ⊕ C ⊕ D, using 3 two-input XOR gates.\n</details>",
+          "text": "Four switches, one bulb, any switch toggles it. Function? Gates? A ⊕ B ⊕ C ⊕ D, using 3 two-input XOR gates."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-solve-week-3-questions",
+      "title": "How to Solve Week 3 Exam Questions",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 3 questions show up in\n<strong>every</strong> quiz and end-term paper. Most of them ask:\n<strong>“What is the minimum number of gates?”</strong> These are easy\nmarks once you know the steps. This page gives you a recipe for each\nquestion type, a worked example from a real paper, and practice\nquestions with answers.</p>\n</blockquote>",
+          "text": "Start here Week 3 questions show up in every quiz and end-term paper. Most of them ask: “What is the minimum number of gates?” These are easy\nmarks once you know the steps. This page gives you a recipe for each\nquestion type, a worked example from a real paper, and practice\nquestions with answers."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img09-gate-count-recipe.webp",
+          "alt": "The 4-step gate-count recipe",
+          "caption": "Most Week 3 questions follow\nthese four steps: simplify, check for a shortcut, build, then\ncount.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 1:\n“Minimum number of 2-input NAND (or NOR) gates”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “using only 2-input NAND gates, what is the\nminimum number…” (3 marks, answer is a number).</p>",
+          "text": "Spot it: “using only 2-input NAND gates, what is the\nminimum number…” (3 marks, answer is a number)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Simplify first.</strong> Use Boolean algebra (or a K-map\nlater) to get the smallest formula.</li>\n<li><strong>Is it a known gate?</strong> Use this table. Learn it by\nheart:</li>\n</ol>",
+          "text": "Simplify first. Use Boolean algebra (or a K-map\nlater) to get the smallest formula. Is it a known gate? Use this table. Learn it by\nheart:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Function</th>\n<th>NAND gates</th>\n<th>NOR gates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>NOT</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>AND</td>\n<td>2</td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td>OR</td>\n<td><strong>3</strong></td>\n<td>2</td>\n</tr>\n<tr>\n<td>NAND</td>\n<td>1</td>\n<td>4</td>\n</tr>\n<tr>\n<td>NOR</td>\n<td>4</td>\n<td>1</td>\n</tr>\n<tr>\n<td>XOR</td>\n<td><strong>4</strong></td>\n<td>5</td>\n</tr>\n<tr>\n<td>XNOR (equality)</td>\n<td>5</td>\n<td><strong>4</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Function NAND gates NOR gates NOT 1 1 AND 2 3 OR 3 2 NAND 1 4 NOR 4 1 XOR 4 5 XNOR (equality) 5 4"
+        },
+        {
+          "type": "html",
+          "html": "<ol start=\"3\" type=\"1\">\n<li><strong>Not a single gate?</strong> Write it as SOP (for NAND) or\nPOS (for NOR), then swap to NAND–NAND or NOR–NOR (page 03).</li>\n<li><strong>Look for shortcuts:</strong> a NAND output already gives you\na “free” NOT. Reuse a gate’s output in two places.</li>\n<li><strong>Count.</strong> Don’t forget the inverters made from NANDs\nor NORs.</li>\n</ol>",
+          "text": "Not a single gate? Write it as SOP (for NAND) or\nPOS (for NOR), then swap to NAND–NAND or NOR–NOR (page 03). Look for shortcuts: a NAND output already gives you\na “free” NOT. Reuse a gate’s output in two places. Count. Don’t forget the inverters made from NANDs\nor NORs."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> students count a NOT as “free”. In a NAND-only\ncircuit, <strong>every NOT is a NAND gate</strong> and must be\ncounted.</p>",
+          "text": "Trap: students count a NOT as “free”. In a NAND-only\ncircuit, every NOT is a NAND gate and must be\ncounted."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1, answer 4)</strong> F = (X̅ +\nY̅)(Z + W). Minimum 2-input NANDs?</p>\n<ul>\n<li>Notice X̅ + Y̅ = <strong>NAND(X, Y)</strong>. That’s 1 gate, and no\ninverters are needed!</li>\n<li>Then F = G1 · (Z + W) = G1·Z + G1·W.</li>\n<li>G2 = NAND(Z, G1), G3 = NAND(W, G1), F = NAND(G2, G3).</li>\n<li><strong>Total = 4 NAND gates.</strong> ✔ (Checked by a computer\nsearch: 3 is impossible.)</li>\n</ul>\n</blockquote>",
+          "text": "Worked example (2025 T2 Quiz 1, answer 4) F = (X̅ +\nY̅)(Z + W). Minimum 2-input NANDs? Notice X̅ + Y̅ = NAND(X, Y) . That’s 1 gate, and no\ninverters are needed! Then F = G1 · (Z + W) = G1·Z + G1·W. G2 = NAND(Z, G1), G3 = NAND(W, G1), F = NAND(G2, G3). Total = 4 NAND gates. ✔ (Checked by a computer\nsearch: 3 is impossible.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 4)</strong> “A 1-bit\ncomparator outputs 1 if A = B. Minimum 2-input NOR gates?”</p>\n<ul>\n<li>“1 if A = B” is <strong>XNOR</strong>.</li>\n<li>From the table: XNOR with NOR = <strong>4</strong>. ✔</li>\n</ul>\n</blockquote>",
+          "text": "Worked example (2026 T2 end-term, answer 4) “A 1-bit\ncomparator outputs 1 if A = B. Minimum 2-input NOR gates?” “1 if A = B” is XNOR . From the table: XNOR with NOR = 4 . ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Watch out: the answer can be 1 (2025 T2 Quiz 2 and 2026 T2\nend-term both had “1” as the answer)</strong> If the function simplifies\nto (A + B)̅, it <strong>is</strong> a NOR gate, so the answer is\n<strong>1</strong>. Always simplify first!</p>\n</blockquote>",
+          "text": "Watch out: the answer can be 1 (2025 T2 Quiz 2 and 2026 T2\nend-term both had “1” as the answer) If the function simplifies\nto (A + B)̅, it is a NOR gate, so the answer is 1 . Always simplify first!"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img10-four-nor-comparator.webp",
+          "alt": "Building XNOR from 4 NOR gates",
+          "caption": "A 1-bit equality checker\nbuilt from exactly 4 NOR gates.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Try these:</strong></p>",
+          "text": "Try these:"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nMinimum 2-input NAND gates for A + BC?\n</summary>\n<ol start=\"3\" type=\"1\">\n<li>G1 = NAND(A, A) = A̅, G2 = NAND(B, C), F = NAND(G1, G2).\n</li></ol></details>",
+          "text": "Minimum 2-input NAND gates for A + BC? G1 = NAND(A, A) = A̅, G2 = NAND(B, C), F = NAND(G1, G2)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nMinimum 2-input NAND gates for P̅ + Q?\n</summary>\n<ol start=\"2\" type=\"1\">\n<li>G1 = NAND(P, Q), F = NAND(P, G1). (Check: P = 1, Q = 0 gives G1 = 1,\nF = NAND(1, 1) = 0 ✓, and that’s the only row where P̅ + Q is 0.)\n</li></ol></details>",
+          "text": "Minimum 2-input NAND gates for P̅ + Q? G1 = NAND(P, Q), F = NAND(P, G1). (Check: P = 1, Q = 0 gives G1 = 1,\nF = NAND(1, 1) = 0 ✓, and that’s the only row where P̅ + Q is 0.)"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nMinimum 2-input NOR gates for an AND gate?\n</summary>\n<ol start=\"3\" type=\"1\">\n<li>NOT A, NOT B, then NOR them.\n</li></ol></details>",
+          "text": "Minimum 2-input NOR gates for an AND gate? NOT A, NOT B, then NOR them."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 2: Timing diagram →\nminimum gates"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> a picture of waves for A, B, C and Y, then\n“minimum 2-input XOR / NOR gates to make Y” (5 marks).</p>",
+          "text": "Spot it: a picture of waves for A, B, C and Y, then\n“minimum 2-input XOR / NOR gates to make Y” (5 marks)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Draw a vertical line every time <strong>any</strong> input\nchanges.</li>\n<li>In each slice, read A, B, C and Y. Write a truth table.</li>\n<li>Look for a pattern. <strong>Y = 1 when an odd number of inputs are\n1?</strong> Then it’s XOR.</li>\n<li>Find the function, then count gates using Type 1.</li>\n</ol>",
+          "text": "Draw a vertical line every time any input\nchanges. In each slice, read A, B, C and Y. Write a truth table. Look for a pattern. Y = 1 when an odd number of inputs are\n1? Then it’s XOR. Find the function, then count gates using Type 1."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img11-timing-to-xor.webp",
+          "alt": "Timing diagram to truth table",
+          "caption": "Cut the waves into slices;\neach slice is one row. Y is 1 when an odd number of inputs are 1, so Y =\nA ⊕ B ⊕ C.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (same idea as 2026 T2 Quiz 1, answer\n2)</strong> A changes slowly, B twice as fast, C fastest, so together\nthey count 000, 001, …, 111. Reading Y in the slices gives 0 1 1 0 1 0 0\n1.</p>\n<ul>\n<li>Y = 1 exactly when an <strong>odd</strong> number of inputs are 1,\nso <strong>Y = A ⊕ B ⊕ C</strong>.</li>\n<li>With 2-input XOR gates: (A ⊕ B) ⊕ C → <strong>2 gates.</strong>\n✔</li>\n</ul>\n</blockquote>",
+          "text": "Worked example (same idea as 2026 T2 Quiz 1, answer\n2) A changes slowly, B twice as fast, C fastest, so together\nthey count 000, 001, …, 111. Reading Y in the slices gives 0 1 1 0 1 0 0\n1. Y = 1 exactly when an odd number of inputs are 1,\nso Y = A ⊕ B ⊕ C . With 2-input XOR gates: (A ⊕ B) ⊕ C → 2 gates. ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> don’t count the slices. Count the\n<strong>distinct input patterns</strong>. A pattern that appears twice\nis still one row.</p>",
+          "text": "Trap: don’t count the slices. Count the distinct input patterns . A pattern that appears twice\nis still one row."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Quick patterns to recognise:</strong></p>",
+          "text": "Quick patterns to recognise:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Y looks like…</th>\n<th>Function</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 only when all inputs are 1</td>\n<td>AND</td>\n</tr>\n<tr>\n<td>0 only when all inputs are 0</td>\n<td>OR</td>\n</tr>\n<tr>\n<td>1 when an odd number of inputs are 1</td>\n<td>XOR</td>\n</tr>\n<tr>\n<td>1 when the inputs are equal</td>\n<td>XNOR</td>\n</tr>\n<tr>\n<td>the exact opposite of one input</td>\n<td>NOT</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Y looks like… Function 1 only when all inputs are 1 AND 0 only when all inputs are 0 OR 1 when an odd number of inputs are 1 XOR 1 when the inputs are equal XNOR the exact opposite of one input NOT"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: slices give x₁x₂ = 00 → 1, 01 → 1, 10 → 0, 11 → 1. Function?\nMinimum NANDs?\n</summary>\nf = x̅₁ + x₂ (0 only at 10). NAND count = 2: G1 = NAND(x₁, x₂), f =\nNAND(x₁, G1).\n</details>",
+          "text": "Try: slices give x₁x₂ = 00 → 1, 01 → 1, 10 → 0, 11 → 1. Function?\nMinimum NANDs? f = x̅₁ + x₂ (0 only at 10). NAND count = 2: G1 = NAND(x₁, x₂), f =\nNAND(x₁, G1)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 3: Σ ↔︎ Π conversion MCQs"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “F = Σm(…). Which of these is F?” with\noptions in ΠM form, or with F̅.</p>",
+          "text": "Spot it: “F = Σm(…). Which of these is F?” with\noptions in ΠM form, or with F̅."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write the list of all row numbers: 0 to 2ⁿ − 1.</li>\n<li>Change <strong>Σ ↔︎ Π</strong> → take the <strong>missing</strong>\nnumbers.</li>\n<li>Change <strong>F ↔︎ F̅</strong> → take the <strong>missing</strong>\nnumbers.</li>\n<li>Do <strong>both</strong> → keep the <strong>same</strong>\nnumbers.</li>\n</ol>",
+          "text": "Write the list of all row numbers: 0 to 2ⁿ − 1. Change Σ ↔︎ Π → take the missing numbers. Change F ↔︎ F̅ → take the missing numbers. Do both → keep the same numbers."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example</strong> F(A, B, C) = Σm(1, 2, 4, 7).\nThen:</p>\n<ul>\n<li>F = ΠM(0, 3, 5, 6)</li>\n<li>F̅ = Σm(0, 3, 5, 6)</li>\n<li>F̅ = ΠM(1, 2, 4, 7)</li>\n</ul>\n</blockquote>",
+          "text": "Worked example F(A, B, C) = Σm(1, 2, 4, 7).\nThen: F = ΠM(0, 3, 5, 6) F̅ = Σm(0, 3, 5, 6) F̅ = ΠM(1, 2, 4, 7)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> check how many variables there are. For 4\nvariables, rows go up to <strong>15</strong>, not 7.</p>",
+          "text": "Trap: check how many variables there are. For 4\nvariables, rows go up to 15 , not 7."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: F(A,B,C,D) = ΠM(0, 15). Write F as Σm.\n</summary>\nΣm(1, 2, 3, …, 14): every row except 0 and 15. That’s 14 minterms.\n</details>",
+          "text": "Try: F(A,B,C,D) = ΠM(0, 15). Write F as Σm. Σm(1, 2, 3, …, 14): every row except 0 and 15. That’s 14 minterms."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 4: Minimum number of\nliterals"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “Find the minimum number of literals in the\nSOP form…” (a <strong>literal</strong> = one letter, barred or not, each\ntime it appears).</p>",
+          "text": "Spot it: “Find the minimum number of literals in the\nSOP form…” (a literal = one letter, barred or not, each\ntime it appears)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> simplify fully, then count letters.</p>",
+          "text": "Steps: simplify fully, then count letters."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 1, answer 4)</strong> ab + a̅b̅c̅ +\na̅bc̅ = ab + a̅c̅(b̅ + b) ← take out a̅c̅ = ab + a̅c̅ ← because b̅ + b = 1\nLiterals: a, b, a̅, c̅ → <strong>4.</strong> ✔</p>\n</blockquote>",
+          "text": "Worked example (2026 T2 Quiz 1, answer 4) ab + a̅b̅c̅ +\na̅bc̅ = ab + a̅c̅(b̅ + b) ← take out a̅c̅ = ab + a̅c̅ ← because b̅ + b = 1\nLiterals: a, b, a̅, c̅ → 4. ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> count letters, not terms. “ab + a̅c̅” has 2\nterms but <strong>4</strong> literals.</p>",
+          "text": "Trap: count letters, not terms. “ab + a̅c̅” has 2\nterms but 4 literals."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: minimum literals in xy + xy̅ + x̅y?\n</summary>\nx + y → 2 literals. (xy + xy̅ = x, then x + x̅y = x + y.)\n</details>",
+          "text": "Try: minimum literals in xy + xy̅ + x̅y? x + y → 2 literals. (xy + xy̅ = x, then x + x̅y = x + y.)"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 5: “Three\nswitches, one bulb” (word problems)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> a story where <strong>any one\nchange</strong> flips the output.</p>",
+          "text": "Spot it: a story where any one\nchange flips the output."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> “any one flip flips the output” =\n<strong>XOR</strong> of all inputs. n inputs → <strong>n − 1</strong>\ntwo-input XOR gates.</p>",
+          "text": "Steps: “any one flip flips the output” = XOR of all inputs. n inputs → n − 1 two-input XOR gates."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: 5 switches control one bulb, any one toggles it. How many 2-input\nXOR gates?\n</summary>\n4.\n</details>",
+          "text": "Try: 5 switches control one bulb, any one toggles it. How many 2-input\nXOR gates? 4."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Simplify first, check the gate-count\ntable, watch for free NOTs from NAND/NOR, and read timing diagrams by\nslicing them into truth-table rows. <strong>Exam words:</strong> minimum\ngate count, 2-input NAND/NOR/XOR, universal gate, timing diagram,\nparity, literal, Σ↔︎Π conversion.</p>",
+          "text": "In one line: Simplify first, check the gate-count\ntable, watch for free NOTs from NAND/NOR, and read timing diagrams by\nslicing them into truth-table rows. Exam words: minimum\ngate count, 2-input NAND/NOR/XOR, universal gate, timing diagram,\nparity, literal, Σ↔︎Π conversion."
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy is XOR cheaper with NAND (4) than with NOR (5)?\n</summary>\nXOR is naturally an “OR of ANDs” (SOP), which fits NAND–NAND. With NOR\nyou build XNOR first (4), then need one more NOR to invert it (5).\n</details>",
+          "text": "Why is XOR cheaper with NAND (4) than with NOR (5)? XOR is naturally an “OR of ANDs” (SOP), which fits NAND–NAND. With NOR\nyou build XNOR first (4), then need one more NOR to invert it (5)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA circuit gives 1 when A = B. With only 2-input NAND gates, how many?\n</summary>\n5 (XNOR with NAND = XOR (4) + one NOT).\n</details>",
+          "text": "A circuit gives 1 when A = B. With only 2-input NAND gates, how many? 5 (XNOR with NAND = XOR (4) + one NOT)."
+        }
+      ]
+    },
+    {
+      "slug": "week-3-quick-revision",
+      "title": "Week 3 Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Ten minutes before the exam? Read this\npage. It has every Week 3 idea in one place, plus practice questions in\nthe exam’s style.</p>\n</blockquote>",
+          "text": "Start here Ten minutes before the exam? Read this\npage. It has every Week 3 idea in one place, plus practice questions in\nthe exam’s style."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-3/img12-week3-map.webp",
+          "alt": "Week 3 at a glance",
+          "caption": "Truth table → SOP or POS → two-level\ncircuit → NAND/NOR only → count the gates.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "The whole week in 8 lines"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>SOP → circuit:</strong> NOTs → one AND per term → one OR.\nThis is <strong>two-level logic</strong>.</li>\n<li><strong>Canonical ≠ minimal.</strong> Σm(3,4,5,6,7) = <strong>A +\nBC</strong>.</li>\n<li><strong>POS</strong> uses the <strong>0-rows</strong>. Each gives a\n<strong>maxterm</strong>: 0 → A, 1 → A̅, joined by OR. Then AND them\nall.</li>\n<li><strong>Σ ↔︎ Π</strong> → use the missing numbers. <strong>F ↔︎\nF̅</strong> → also the missing numbers. Both → the same numbers.</li>\n<li><strong>NAND and NOR are universal.</strong> Each one alone can\nbuild anything.</li>\n<li><strong>Gate counts:</strong> NAND: NOT 1, AND 2, OR 3, XOR 4, XNOR\n5. NOR: NOT 1, OR 2, AND 3, XNOR 4, XOR 5.</li>\n<li><strong>AND–OR = NAND–NAND</strong>, and <strong>OR–AND =\nNOR–NOR</strong> (same shape, swap the gates).</li>\n<li><strong>Timing diagram:</strong> slice wherever an input changes →\ntruth table → simplify. “Any one flip changes the output” =\n<strong>XOR</strong>.</li>\n</ol>",
+          "text": "SOP → circuit: NOTs → one AND per term → one OR.\nThis is two-level logic . Canonical ≠ minimal. Σm(3,4,5,6,7) = A +\nBC . POS uses the 0-rows . Each gives a maxterm : 0 → A, 1 → A̅, joined by OR. Then AND them\nall. Σ ↔︎ Π → use the missing numbers. F ↔︎\nF̅ → also the missing numbers. Both → the same numbers. NAND and NOR are universal. Each one alone can\nbuild anything. Gate counts: NAND: NOT 1, AND 2, OR 3, XOR 4, XNOR\n5. NOR: NOT 1, OR 2, AND 3, XNOR 4, XOR 5. AND–OR = NAND–NAND , and OR–AND =\nNOR–NOR (same shape, swap the gates). Timing diagram: slice wherever an input changes →\ntruth table → simplify. “Any one flip changes the output” = XOR ."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Mistake</th>\n<th>Correct way</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Using the SOP literal rule for maxterms</td>\n<td>Maxterm: <strong>0 → A, 1 → A̅</strong></td>\n</tr>\n<tr>\n<td>Treating a NOT as free in a NAND-only circuit</td>\n<td>Every NOT costs <strong>1 NAND</strong></td>\n</tr>\n<tr>\n<td>Counting gates before simplifying</td>\n<td><strong>Simplify first.</strong> The answer may be just 1</td>\n</tr>\n<tr>\n<td>Counting terms instead of literals</td>\n<td>“ab + a̅c̅” has <strong>4</strong> literals</td>\n</tr>\n<tr>\n<td>Forgetting rows go to 15 for 4 variables</td>\n<td>Rows = 0 to 2ⁿ − 1</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Mistake Correct way Using the SOP literal rule for maxterms Maxterm: 0 → A, 1 → A̅ Treating a NOT as free in a NAND-only circuit Every NOT costs 1 NAND Counting gates before simplifying Simplify first. The answer may be just 1 Counting terms instead of literals “ab + a̅c̅” has 4 literals Forgetting rows go to 15 for 4 variables Rows = 0 to 2ⁿ − 1"
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>F(A,B,C) = Σm(0, 1, 5). Write F as ΠM.\n</li></ol></summary>\nΠM(2, 3, 4, 6, 7).\n</details>",
+          "text": "F(A,B,C) = Σm(0, 1, 5). Write F as ΠM. ΠM(2, 3, 4, 6, 7)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Write the maxterm for row A=0, B=1, C=1.\n</li></ol></summary>\n(A + B̅ + C̅), M₃.\n</details>",
+          "text": "Write the maxterm for row A=0, B=1, C=1. (A + B̅ + C̅), M₃."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Minimum 2-input NAND gates for an OR gate?\n</li></ol></summary>\n3.\n</details>",
+          "text": "Minimum 2-input NAND gates for an OR gate? 3."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Minimum 2-input NOR gates for a 1-bit equality checker (1 when A =\nB)?\n</li></ol></summary>\n4 (it’s XNOR).\n</details>",
+          "text": "Minimum 2-input NOR gates for a 1-bit equality checker (1 when A =\nB)? 4 (it’s XNOR)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>F = (X̅ + Y̅)(Z + W). Minimum 2-input NAND gates?\n</li></ol></summary>\n<ol start=\"4\" type=\"1\">\n<li>G1 = NAND(X,Y) gives X̅ + Y̅ for free; G2 = NAND(Z,G1); G3 =\nNAND(W,G1); F = NAND(G2,G3).\n</li></ol></details>",
+          "text": "F = (X̅ + Y̅)(Z + W). Minimum 2-input NAND gates? G1 = NAND(X,Y) gives X̅ + Y̅ for free; G2 = NAND(Z,G1); G3 =\nNAND(W,G1); F = NAND(G2,G3)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Minimum literals in ab + a̅b̅c̅ + a̅bc̅?\n</li></ol></summary>\n4 (it simplifies to ab + a̅c̅).\n</details>",
+          "text": "Minimum literals in ab + a̅b̅c̅ + a̅bc̅? 4 (it simplifies to ab + a̅c̅)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>A timing diagram shows Y = 1 whenever an odd number of A, B, C are\n1. Minimum 2-input XOR gates?\n</li></ol></summary>\n2 (Y = A ⊕ B ⊕ C).\n</details>",
+          "text": "A timing diagram shows Y = 1 whenever an odd number of A, B, C are\n1. Minimum 2-input XOR gates? 2 (Y = A ⊕ B ⊕ C)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>True or false: an AND–OR circuit becomes a NOR–NOR circuit when you\nswap every gate for NOR.\n</li></ol></summary>\nFalse. AND–OR becomes <b>NAND–NAND</b>. It’s OR–AND that becomes\nNOR–NOR.\n</details>",
+          "text": "True or false: an AND–OR circuit becomes a NOR–NOR circuit when you\nswap every gate for NOR. False. AND–OR becomes NAND–NAND . It’s OR–AND that becomes\nNOR–NOR."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"9\" type=\"1\">\n<li>Why might a designer choose a multilevel circuit over a two-level\none?\n</li></ol></summary>\nIt usually needs fewer gates (cheaper and smaller), even though it is a\nbit slower.\n</details>",
+          "text": "Why might a designer choose a multilevel circuit over a two-level\none? It usually needs fewer gates (cheaper and smaller), even though it is a\nbit slower."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"10\" type=\"1\">\n<li>F = ΠM(2, 5). Write F̅ as Σm.\n</li></ol></summary>\nΣm(2, 5).\n</details>",
+          "text": "F = ΠM(2, 5). Write F̅ as Σm. Σm(2, 5)."
+        }
+      ]
+    }
+  ]
+}

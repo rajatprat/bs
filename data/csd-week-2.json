@@ -1,0 +1,973 @@
+{
+  "subject": "Computer System Design",
+  "subjectSlug": "computer-system-design",
+  "week": 2,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computer-system-design/week-2/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "truth-tables",
+      "title": "Describing a Circuit — Functional Specification and Truth Tables",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You’re playing tic-tac-toe. Can we build\na small electronic box that looks at the board and lights a <strong>red\nLED</strong> if X has won? Before building anything, we must say\n<strong>exactly</strong> what the box should do. That exact description\nis the first step of every circuit design.</p>\n</blockquote>",
+          "text": "Start here You’re playing tic-tac-toe. Can we build\na small electronic box that looks at the board and lights a red\nLED if X has won? Before building anything, we must say exactly what the box should do. That exact description\nis the first step of every circuit design."
+        },
+        {
+          "type": "heading",
+          "text": "Step 1: turn the problem\ninto 0s and 1s"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img01-tictactoe-bits.webp",
+          "alt": "Tic-tac-toe as bits",
+          "caption": "Each square becomes one bit: 1 if it\nhas an X, 0 if not.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>The board has 9 squares. Name them <strong>A₁₁, A₁₂, … A₃₃</strong>\n(row, column).</li>\n<li>For each square: <strong>Aᵢⱼ = 1</strong> if it holds an X,\n<strong>0</strong> otherwise.</li>\n<li><strong>Rule:</strong> X wins if all three squares in any\n<strong>row</strong>, <strong>column</strong> or\n<strong>diagonal</strong> are 1.</li>\n<li>Output <strong>W = 1</strong> means “X has won” (red LED on).</li>\n</ul>",
+          "text": "The board has 9 squares. Name them A₁₁, A₁₂, … A₃₃ (row, column). For each square: Aᵢⱼ = 1 if it holds an X, 0 otherwise. Rule: X wins if all three squares in any row , column or diagonal are 1. Output W = 1 means “X has won” (red LED on)."
+        },
+        {
+          "type": "html",
+          "html": "<p>Plain English (“X wins if they get three in a row”) can be\n<strong>unclear</strong>. Writing it in 0s and 1s makes it\n<strong>exact</strong>.</p>",
+          "text": "Plain English (“X wins if they get three in a row”) can be unclear . Writing it in 0s and 1s makes it exact ."
+        },
+        {
+          "type": "heading",
+          "text": "Two things to specify"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Specification</th>\n<th>Question it answers</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Functional specification</strong></td>\n<td><strong>What</strong> output for each input?</td>\n<td>W = 1 when X has three in a line</td>\n</tr>\n<tr>\n<td><strong>Timing specification</strong></td>\n<td><strong>How fast</strong> does the output change after an input\nchanges?</td>\n<td>The LED lights within a few nanoseconds</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Specification Question it answers Example Functional specification What output for each input? W = 1 when X has three in a line Timing specification How fast does the output change after an input\nchanges? The LED lights within a few nanoseconds"
+        },
+        {
+          "type": "heading",
+          "text": "What makes something a\n“function”?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Property</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Unique</strong></td>\n<td>Each input combination gives <strong>one</strong> output value</td>\n</tr>\n<tr>\n<td><strong>Unambiguous</strong></td>\n<td>The <strong>same</strong> input always gives the\n<strong>same</strong> output</td>\n</tr>\n<tr>\n<td><strong>No memory</strong></td>\n<td>The output depends only on the inputs <strong>right now</strong>,\nnot on what happened before</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Property Meaning Unique Each input combination gives one output value Unambiguous The same input always gives the same output No memory The output depends only on the inputs right now ,\nnot on what happened before"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img10-vending-function.webp",
+          "alt": "A function has no memory",
+          "caption": "Press B, get biscuits, every time.\nThe machine doesn’t remember who pressed before.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "Combinational vs sequential\nlogic"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img02-comb-vs-seq.webp",
+          "alt": "Combinational vs sequential",
+          "caption": "Combinational: output depends\nonly on the inputs right now. Sequential: it also remembers the\npast.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th></th>\n<th><strong>Combinational logic</strong></th>\n<th><strong>Sequential logic</strong> (later weeks)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Memory?</td>\n<td><strong>No</strong></td>\n<td><strong>Yes</strong>, it stores data</td>\n</tr>\n<tr>\n<td>Output depends on</td>\n<td><strong>Current</strong> inputs only</td>\n<td>Current inputs <strong>and</strong> past history</td>\n</tr>\n<tr>\n<td>Example</td>\n<td>Calculator’s adder</td>\n<td>A counter, your phone’s memory</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Combinational logic Sequential logic (later weeks) Memory? No Yes , it stores data Output depends on Current inputs only Current inputs and past history Example Calculator’s adder A counter, your phone’s memory"
+        },
+        {
+          "type": "html",
+          "html": "<p>Weeks 2–5 are about <strong>combinational</strong> logic. Sequential\nlogic comes from Week 7.</p>",
+          "text": "Weeks 2–5 are about combinational logic. Sequential\nlogic comes from Week 7."
+        },
+        {
+          "type": "heading",
+          "text": "The truth table"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>truth table</strong> lists <strong>every</strong> input\ncombination and the output for each one.</p>",
+          "text": "A truth table lists every input\ncombination and the output for each one."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>Output</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>…</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>…</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>…</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>…</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B Output 0 0 … 0 1 … 1 0 … 1 1 …"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How many rows?</strong> With <strong>n</strong> inputs there\nare <strong>2ⁿ</strong> rows (you learned this in Week 1).</p>",
+          "text": "How many rows? With n inputs there\nare 2ⁿ rows (you learned this in Week 1)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The catch:</strong> tic-tac-toe has 9 inputs, so 2⁹ =\n<strong>512 rows</strong>. Truth tables grow <strong>very fast</strong>\nas inputs increase:</p>",
+          "text": "The catch: tic-tac-toe has 9 inputs, so 2⁹ = 512 rows . Truth tables grow very fast as inputs increase:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Inputs</th>\n<th>Rows</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>4</td>\n</tr>\n<tr>\n<td>3</td>\n<td>8</td>\n</tr>\n<tr>\n<td>4</td>\n<td>16</td>\n</tr>\n<tr>\n<td>9</td>\n<td>512</td>\n</tr>\n<tr>\n<td>20</td>\n<td>over 1 million</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Inputs Rows 2 4 3 8 4 16 9 512 20 over 1 million"
+        },
+        {
+          "type": "html",
+          "html": "<p>That’s why we need a <strong>shorter</strong> way to describe\ncircuits: <strong>Boolean algebra</strong> (next pages).</p>",
+          "text": "That’s why we need a shorter way to describe\ncircuits: Boolean algebra (next pages)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> First describe the circuit exactly\n(functional and timing specification). A truth table lists all 2ⁿ input\nrows, but it grows too big too fast, so we also use Boolean algebra.\n<strong>Exam words:</strong> functional specification, timing\nspecification, function (unique, unambiguous, no memory), combinational\nlogic, sequential logic, truth table, 2ⁿ rows.</p>",
+          "text": "In one line: First describe the circuit exactly\n(functional and timing specification). A truth table lists all 2ⁿ input\nrows, but it grows too big too fast, so we also use Boolean algebra. Exam words: functional specification, timing\nspecification, function (unique, unambiguous, no memory), combinational\nlogic, sequential logic, truth table, 2ⁿ rows."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many rows does a truth table with 5 inputs have?\n</summary>\n2⁵ = 32.\n</details>",
+          "text": "How many rows does a truth table with 5 inputs have? 2⁵ = 32."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nDoes a combinational circuit have memory?\n</summary>\nNo. Its output depends only on the current inputs.\n</details>",
+          "text": "Does a combinational circuit have memory? No. Its output depends only on the current inputs."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTrue or false: “Sequential circuits do not use feedback loops, while\ncombinational circuits do.” (a past-paper question)\n</summary>\nFalse. It’s the other way round: sequential circuits use feedback to\nremember; combinational circuits have no feedback.\n</details>",
+          "text": "True or false: “Sequential circuits do not use feedback loops, while\ncombinational circuits do.” (a past-paper question) False. It’s the other way round: sequential circuits use feedback to\nremember; combinational circuits have no feedback."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the timing specification tell you?\n</summary>\nHow quickly the output responds after the inputs change.\n</details>",
+          "text": "What does the timing specification tell you? How quickly the output responds after the inputs change."
+        }
+      ]
+    },
+    {
+      "slug": "logic-gates",
+      "title": "Logic Gates — NOT, AND, OR and Friends",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A lift door should open only if\n<strong>the lift has stopped AND someone pressed the button</strong>. A\nfan should run if <strong>the switch is on OR the timer is on</strong>.\nA night lamp should glow when it is <strong>NOT bright</strong> outside.\nThese three words, AND, OR and NOT, are the basic building blocks of\nevery computer.</p>\n</blockquote>",
+          "text": "Start here A lift door should open only if the lift has stopped AND someone pressed the button . A\nfan should run if the switch is on OR the timer is on .\nA night lamp should glow when it is NOT bright outside.\nThese three words, AND, OR and NOT, are the basic building blocks of\nevery computer."
+        },
+        {
+          "type": "heading",
+          "text": "The three basic gates"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img03-basic-gates.webp",
+          "alt": "The basic gates",
+          "caption": "Each gate’s symbol, its rule, and its full\ntruth table.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Gate</th>\n<th>Written as</th>\n<th>Read as</th>\n<th>Output is 1 when…</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>NOT</strong></td>\n<td>A̅ (or A′)</td>\n<td>“not A”</td>\n<td>A is <strong>0</strong> (it flips the input)</td>\n</tr>\n<tr>\n<td><strong>AND</strong></td>\n<td>A · B (or AB)</td>\n<td>“A and B”</td>\n<td><strong>both</strong> A and B are 1</td>\n</tr>\n<tr>\n<td><strong>OR</strong></td>\n<td>A + B</td>\n<td>“A or B”</td>\n<td><strong>at least one</strong> of A, B is 1</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Gate Written as Read as Output is 1 when… NOT A̅ (or A′) “not A” A is 0 (it flips the input) AND A · B (or AB) “A and B” both A and B are 1 OR A + B “A or B” at least one of A, B is 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Careful:</strong> in Boolean algebra, <strong>+ means\nOR</strong>, not addition. So 1 + 1 = <strong>1</strong> (not 2).</p>",
+          "text": "Careful: in Boolean algebra, + means\nOR , not addition. So 1 + 1 = 1 (not 2)."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img11-daily-and-or-not.webp",
+          "alt": "AND, OR, NOT in daily life",
+          "caption": "Lift door: AND. Fan: OR. Night\nlamp: NOT.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "The other gates you’ll\nmeet (and in exams)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Gate</th>\n<th>Formula</th>\n<th>Output is 1 when…</th>\n<th>Memory trick</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>NAND</strong></td>\n<td>(A · B)̅</td>\n<td>NOT both are 1</td>\n<td>AND, then flip</td>\n</tr>\n<tr>\n<td><strong>NOR</strong></td>\n<td>(A + B)̅</td>\n<td><strong>both</strong> are 0</td>\n<td>OR, then flip</td>\n</tr>\n<tr>\n<td><strong>XOR</strong></td>\n<td>A ⊕ B</td>\n<td>the inputs are <strong>different</strong></td>\n<td>“one or the other, not both”</td>\n</tr>\n<tr>\n<td><strong>XNOR</strong></td>\n<td>(A ⊕ B)̅ = A ⊙ B</td>\n<td>the inputs are <strong>the same</strong></td>\n<td>an “equality checker”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Gate Formula Output is 1 when… Memory trick NAND (A · B)̅ NOT both are 1 AND, then flip NOR (A + B)̅ both are 0 OR, then flip XOR A ⊕ B the inputs are different “one or the other, not both” XNOR (A ⊕ B)̅ = A ⊙ B the inputs are the same an “equality checker”"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img04-more-gates.webp",
+          "alt": "More gates",
+          "caption": "NAND and NOR are AND and OR with a small circle\n(the flip) on the output. XOR adds an extra curve.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Full truth table for 2 inputs:</strong></p>",
+          "text": "Full truth table for 2 inputs:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>AND</th>\n<th>OR</th>\n<th>NAND</th>\n<th>NOR</th>\n<th>XOR</th>\n<th>XNOR</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B AND OR NAND NOR XOR XNOR 0 0 0 0 1 1 0 1 0 1 0 1 1 0 1 0 1 0 0 1 1 0 1 0 1 1 1 1 0 0 0 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Two useful facts (they come up a lot):</strong></p>",
+          "text": "Two useful facts (they come up a lot):"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>XOR with many inputs</strong> = 1 when an <strong>odd\nnumber</strong> of inputs are 1.</li>\n<li><strong>XNOR of two inputs</strong> = 1 when A = B. That’s a\n<strong>1-bit comparator</strong>.</li>\n</ul>",
+          "text": "XOR with many inputs = 1 when an odd\nnumber of inputs are 1. XNOR of two inputs = 1 when A = B. That’s a 1-bit comparator ."
+        },
+        {
+          "type": "heading",
+          "text": "Order of operations\n(precedence)"
+        },
+        {
+          "type": "html",
+          "html": "<p>What does W · X̅ + Y · Z mean? Just like × before + in normal\nmaths:</p>",
+          "text": "What does W · X̅ + Y · Z mean? Just like × before + in normal\nmaths:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>NOT</strong> first (highest)</li>\n<li>then <strong>AND</strong></li>\n<li>then <strong>OR</strong> (lowest)</li>\n</ol>",
+          "text": "NOT first (highest) then AND then OR (lowest)"
+        },
+        {
+          "type": "html",
+          "html": "<p>So W · X̅ + Y · Z = <strong>(W AND (NOT X)) OR (Y AND Z)</strong>.</p>",
+          "text": "So W · X̅ + Y · Z = (W AND (NOT X)) OR (Y AND Z) ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> NOT flips, AND needs all 1s, OR needs\nat least one 1. NAND and NOR are their flipped versions, XOR checks\n“different” and XNOR checks “same”. Order: NOT, then AND, then OR.\n<strong>Exam words:</strong> logic gate, NOT (inverter), AND, OR, NAND,\nNOR, XOR, XNOR, complement, precedence, bubble.</p>",
+          "text": "In one line: NOT flips, AND needs all 1s, OR needs\nat least one 1. NAND and NOR are their flipped versions, XOR checks\n“different” and XNOR checks “same”. Order: NOT, then AND, then OR. Exam words: logic gate, NOT (inverter), AND, OR, NAND,\nNOR, XOR, XNOR, complement, precedence, bubble."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn Boolean algebra, what is 1 + 1?\n</summary>\n1 (the + means OR).\n</details>",
+          "text": "In Boolean algebra, what is 1 + 1? 1 (the + means OR)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA = 1, B = 1. Give NAND, NOR, XOR, XNOR.\n</summary>\nNAND 0, NOR 0, XOR 0, XNOR 1.\n</details>",
+          "text": "A = 1, B = 1. Give NAND, NOR, XOR, XNOR. NAND 0, NOR 0, XOR 0, XNOR 1."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nThree inputs 1, 1, 1 go into an XOR. Output?\n</summary>\n1, because three is an odd number of 1s.\n</details>",
+          "text": "Three inputs 1, 1, 1 go into an XOR. Output? 1, because three is an odd number of 1s."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does A + B · C mean?\n</summary>\nA OR (B AND C). AND is done before OR.\n</details>",
+          "text": "What does A + B · C mean? A OR (B AND C). AND is done before OR."
+        }
+      ]
+    },
+    {
+      "slug": "boolean-algebra",
+      "title": "Boolean Algebra — The Rules",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> In school maths, you learned rules like a\n× 1 = a and a + 0 = a. They let you simplify long expressions. Boolean\nalgebra has its own rules for 0s and 1s. A simpler expression means\n<strong>fewer gates</strong>, so a <strong>cheaper, faster,\ncooler</strong> chip.</p>\n</blockquote>",
+          "text": "Start here In school maths, you learned rules like a\n× 1 = a and a + 0 = a. They let you simplify long expressions. Boolean\nalgebra has its own rules for 0s and 1s. A simpler expression means fewer gates , so a cheaper, faster,\ncooler chip."
+        },
+        {
+          "type": "heading",
+          "text": "Where the rules come from"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Axioms:</strong> basic facts we accept as true at the start\n(like “0 ≠ 1”).</li>\n<li><strong>Laws and theorems:</strong> rules we <strong>prove</strong>\nfrom the axioms, and then use to simplify.</li>\n</ul>",
+          "text": "Axioms: basic facts we accept as true at the start\n(like “0 ≠ 1”). Laws and theorems: rules we prove from the axioms, and then use to simplify."
+        },
+        {
+          "type": "heading",
+          "text": "The laws (with their “duals”)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Every law comes in a <strong>pair</strong>. In the second one (the\n<strong>dual</strong>), AND ↔︎ OR and 0 ↔︎ 1 are swapped.</p>",
+          "text": "Every law comes in a pair . In the second one (the dual ), AND ↔︎ OR and 0 ↔︎ 1 are swapped."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img05-laws-pairs.webp",
+          "alt": "Laws in pairs",
+          "caption": "Each law and its dual: swap AND with OR, and\n0 with 1.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Law</th>\n<th>OR version</th>\n<th>AND version (dual)</th>\n<th>In words</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Identity</strong></td>\n<td>X + 0 = X</td>\n<td>X · 1 = X</td>\n<td>0 doesn’t change an OR; 1 doesn’t change an AND</td>\n</tr>\n<tr>\n<td><strong>Null (domination)</strong></td>\n<td>X + 1 = 1</td>\n<td>X · 0 = 0</td>\n<td>OR with 1 is always 1; AND with 0 is always 0</td>\n</tr>\n<tr>\n<td><strong>Idempotent</strong></td>\n<td>X + X = X</td>\n<td>X · X = X</td>\n<td>Repeating doesn’t change anything</td>\n</tr>\n<tr>\n<td><strong>Involution</strong></td>\n<td>(X̅)̅ = X</td>\n<td></td>\n<td>Flip twice = original</td>\n</tr>\n<tr>\n<td><strong>Complement</strong></td>\n<td>X + X̅ = 1</td>\n<td>X · X̅ = 0</td>\n<td>Something OR its opposite = 1; AND = 0</td>\n</tr>\n<tr>\n<td><strong>Commutative</strong></td>\n<td>X + Y = Y + X</td>\n<td>X · Y = Y · X</td>\n<td>Order doesn’t matter</td>\n</tr>\n<tr>\n<td><strong>Associative</strong></td>\n<td>(X + Y) + Z = X + (Y + Z)</td>\n<td>(X · Y) · Z = X · (Y · Z)</td>\n<td>Brackets don’t matter</td>\n</tr>\n<tr>\n<td><strong>Distributive</strong></td>\n<td>X · (Y + Z) = XY + XZ</td>\n<td><strong>X + Y·Z = (X + Y)(X + Z)</strong></td>\n<td>The second one is <strong>new</strong>! It doesn’t work in normal\nmaths</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Law OR version AND version (dual) In words Identity X + 0 = X X · 1 = X 0 doesn’t change an OR; 1 doesn’t change an AND Null (domination) X + 1 = 1 X · 0 = 0 OR with 1 is always 1; AND with 0 is always 0 Idempotent X + X = X X · X = X Repeating doesn’t change anything Involution (X̅)̅ = X Flip twice = original Complement X + X̅ = 1 X · X̅ = 0 Something OR its opposite = 1; AND = 0 Commutative X + Y = Y + X X · Y = Y · X Order doesn’t matter Associative (X + Y) + Z = X + (Y + Z) (X · Y) · Z = X · (Y · Z) Brackets don’t matter Distributive X · (Y + Z) = XY + XZ X + Y·Z = (X + Y)(X + Z) The second one is new ! It doesn’t work in normal\nmaths"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Duality rule:</strong> if something is true, its dual is also\ntrue. To find the dual, swap <strong>AND ↔︎ OR</strong> and <strong>0 ↔︎\n1</strong>. <strong>Don’t</strong> change the variables or their\nbars.</p>",
+          "text": "Duality rule: if something is true, its dual is also\ntrue. To find the dual, swap AND ↔︎ OR and 0 ↔︎\n1 . Don’t change the variables or their\nbars."
+        },
+        {
+          "type": "heading",
+          "text": "Three\nsimplification shortcuts (use these a lot)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Theorem</th>\n<th>Rule</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Combining</strong></td>\n<td>X·Y + X·Y̅ = X</td>\n<td>X·(Y + Y̅) = X·1 = X</td>\n</tr>\n<tr>\n<td><strong>Absorption</strong></td>\n<td>X + X·Y = X</td>\n<td>X·(1 + Y) = X·1 = X</td>\n</tr>\n<tr>\n<td><strong>Elimination</strong></td>\n<td>(X + Y̅) · Y = X · Y</td>\n<td>XY + Y̅Y = XY + 0 = XY</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Theorem Rule Why Combining X·Y + X·Y̅ = X X·(Y + Y̅) = X·1 = X Absorption X + X·Y = X X·(1 + Y) = X·1 = X Elimination (X + Y̅) · Y = X · Y XY + Y̅Y = XY + 0 = XY"
+        },
+        {
+          "type": "heading",
+          "text": "How to prove a theorem"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example 1:</strong> prove X·Y + X·Y̅ = X</p>",
+          "text": "Example 1: prove X·Y + X·Y̅ = X"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Step</th>\n<th>Expression</th>\n<th>Law used</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>X · (Y + Y̅)</td>\n<td>Distributive</td>\n</tr>\n<tr>\n<td>2</td>\n<td>X · 1</td>\n<td>Complement</td>\n</tr>\n<tr>\n<td>3</td>\n<td>X</td>\n<td>Identity</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step Expression Law used 1 X · (Y + Y̅) Distributive 2 X · 1 Complement 3 X Identity"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example 2:</strong> prove X + X·Y = X</p>",
+          "text": "Example 2: prove X + X·Y = X"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Step</th>\n<th>Expression</th>\n<th>Law used</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>X·1 + X·Y</td>\n<td>Identity (X = X·1)</td>\n</tr>\n<tr>\n<td>2</td>\n<td>X · (1 + Y)</td>\n<td>Distributive</td>\n</tr>\n<tr>\n<td>3</td>\n<td>X · 1</td>\n<td>Null (1 + Y = 1)</td>\n</tr>\n<tr>\n<td>4</td>\n<td>X</td>\n<td>Identity</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step Expression Law used 1 X·1 + X·Y Identity (X = X·1) 2 X · (1 + Y) Distributive 3 X · 1 Null (1 + Y = 1) 4 X Identity"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Another way to check:</strong> fill in a truth table for both\nsides. If every row matches, they’re equal.</p>",
+          "text": "Another way to check: fill in a truth table for both\nsides. If every row matches, they’re equal."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Boolean laws (identity, null,\nidempotent, complement, distributive and more) come in dual pairs, and\nshortcuts like XY + XY̅ = X and X + XY = X make circuits smaller.\n<strong>Exam words:</strong> axiom, theorem, duality, identity, null,\nidempotent, involution, complement, commutative, associative,\ndistributive, combining, absorption, simplification.</p>",
+          "text": "In one line: Boolean laws (identity, null,\nidempotent, complement, distributive and more) come in dual pairs, and\nshortcuts like XY + XY̅ = X and X + XY = X make circuits smaller. Exam words: axiom, theorem, duality, identity, null,\nidempotent, involution, complement, commutative, associative,\ndistributive, combining, absorption, simplification."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWrite the dual of X + 0 = X.\n</summary>\nX · 1 = X.\n</details>",
+          "text": "Write the dual of X + 0 = X. X · 1 = X."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nSimplify A·B + A·B̅.\n</summary>\nA (combining theorem).\n</details>",
+          "text": "Simplify A·B + A·B̅. A (combining theorem)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nSimplify A + A·B·C.\n</summary>\nA (absorption: A·(1 + BC) = A).\n</details>",
+          "text": "Simplify A + A·B·C. A (absorption: A·(1 + BC) = A)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs X + Y·Z = (X + Y)(X + Z) true in Boolean algebra?\n</summary>\nYes, it’s the second distributive law (it doesn’t hold in normal\narithmetic).\n</details>",
+          "text": "Is X + Y·Z = (X + Y)(X + Z) true in Boolean algebra? Yes, it’s the second distributive law (it doesn’t hold in normal\narithmetic)."
+        }
+      ]
+    },
+    {
+      "slug": "de-morgans-laws",
+      "title": "De Morgan's Laws",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> “It’s <strong>not</strong> true that (I’m\nhungry <strong>or</strong> I’m tired)” means “I’m <strong>not</strong>\nhungry <strong>and</strong> I’m <strong>not</strong> tired.” When you\npush a NOT inside the brackets, OR turns into AND. That simple switch is\nDe Morgan’s Law, and it lets you rebuild any gate from other gates.</p>\n</blockquote>",
+          "text": "Start here “It’s not true that (I’m\nhungry or I’m tired)” means “I’m not hungry and I’m not tired.” When you\npush a NOT inside the brackets, OR turns into AND. That simple switch is\nDe Morgan’s Law, and it lets you rebuild any gate from other gates."
+        },
+        {
+          "type": "heading",
+          "text": "The two laws"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img06-demorgan-gates.webp",
+          "alt": "De Morgan’s laws with gates",
+          "caption": "A NOR gate does the same job as\nan AND gate with both inputs flipped. A NAND gate does the same job as\nan OR gate with both inputs flipped.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Law</th>\n<th>Formula</th>\n<th>In words</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1</strong></td>\n<td>(A + B)̅ = A̅ · B̅</td>\n<td>NOT (A OR B) = (NOT A) AND (NOT B)</td>\n</tr>\n<tr>\n<td><strong>2</strong></td>\n<td>(A · B)̅ = A̅ + B̅</td>\n<td>NOT (A AND B) = (NOT A) OR (NOT B)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Law Formula In words 1 (A + B)̅ = A̅ · B̅ NOT (A OR B) = (NOT A) AND (NOT B) 2 (A · B)̅ = A̅ + B̅ NOT (A AND B) = (NOT A) OR (NOT B)"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img12-not-inside.webp",
+          "alt": "Pushing the NOT inside",
+          "caption": "“Not (hungry or tired)” means “not\nhungry AND not tired”.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Recipe to “break the bar”:</strong> <strong>split the\nbar</strong> over each variable, and <strong>flip the sign</strong> (+ ↔︎\n·).</p>",
+          "text": "Recipe to “break the bar”: split the\nbar over each variable, and flip the sign (+ ↔︎\n·)."
+        },
+        {
+          "type": "html",
+          "html": "<p>It works for any number of variables:</p>",
+          "text": "It works for any number of variables:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>(A + B + C)̅ = A̅ · B̅ · C̅</li>\n<li>(A · B · C)̅ = A̅ + B̅ + C̅</li>\n</ul>",
+          "text": "(A + B + C)̅ = A̅ · B̅ · C̅ (A · B · C)̅ = A̅ + B̅ + C̅"
+        },
+        {
+          "type": "heading",
+          "text": "Check it with a truth table"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>A + B</th>\n<th>(A + B)̅</th>\n<th>A̅</th>\n<th>B̅</th>\n<th>A̅ · B̅</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td><strong>1</strong></td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td><strong>0</strong></td>\n<td>1</td>\n<td>0</td>\n<td><strong>0</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td><strong>0</strong></td>\n<td>0</td>\n<td>1</td>\n<td><strong>0</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td><strong>0</strong></td>\n<td>0</td>\n<td>0</td>\n<td><strong>0</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B A + B (A + B)̅ A̅ B̅ A̅ · B̅ 0 0 0 1 1 1 1 0 1 1 0 1 0 0 1 0 1 0 0 1 0 1 1 1 0 0 0 0"
+        },
+        {
+          "type": "html",
+          "html": "<p>The two bold columns match in every row, so the law is true.</p>",
+          "text": "The two bold columns match in every row, so the law is true."
+        },
+        {
+          "type": "heading",
+          "text": "What it means for circuits"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Gate</th>\n<th>Same as</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>NOR</strong> = (A + B)̅</td>\n<td><strong>AND</strong> with both inputs inverted</td>\n</tr>\n<tr>\n<td><strong>NAND</strong> = (A · B)̅</td>\n<td><strong>OR</strong> with both inputs inverted</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Gate Same as NOR = (A + B)̅ AND with both inputs inverted NAND = (A · B)̅ OR with both inputs inverted"
+        },
+        {
+          "type": "html",
+          "html": "<p>This is useful when you <strong>don’t have every type of\ngate</strong>. For example, a chip with only NAND gates can still build\nORs (more in Week 3).</p>",
+          "text": "This is useful when you don’t have every type of\ngate . For example, a chip with only NAND gates can still build\nORs (more in Week 3)."
+        },
+        {
+          "type": "heading",
+          "text": "Turning a whole function\naround"
+        },
+        {
+          "type": "html",
+          "html": "<p>F = A + B + C → F̅ = (A + B + C)̅ = <strong>A̅ · B̅ · C̅</strong></p>",
+          "text": "F = A + B + C → F̅ = (A + B + C)̅ = A̅ · B̅ · C̅"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>F says: <strong>at least one</strong> of A, B, C is 1.</li>\n<li>F̅ says: <strong>all</strong> of A, B, C are 0.</li>\n</ul>",
+          "text": "F says: at least one of A, B, C is 1. F̅ says: all of A, B, C are 0."
+        },
+        {
+          "type": "html",
+          "html": "<p>These are exact opposites, as expected.</p>",
+          "text": "These are exact opposites, as expected."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> To push a NOT through brackets, flip\nevery variable and swap AND ↔︎ OR. So NOR = AND of flipped inputs, and\nNAND = OR of flipped inputs. <strong>Exam words:</strong> De Morgan’s\nlaw, complement, break the bar, NAND equivalence, NOR equivalence,\nbubble pushing.</p>",
+          "text": "In one line: To push a NOT through brackets, flip\nevery variable and swap AND ↔︎ OR. So NOR = AND of flipped inputs, and\nNAND = OR of flipped inputs. Exam words: De Morgan’s\nlaw, complement, break the bar, NAND equivalence, NOR equivalence,\nbubble pushing."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nApply De Morgan: (X · Y̅)̅ = ?\n</summary>\nX̅ + Y (the bar over Y̅ cancels).\n</details>",
+          "text": "Apply De Morgan: (X · Y̅)̅ = ? X̅ + Y (the bar over Y̅ cancels)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA NOR gate is the same as an ___ gate with inverted inputs.\n</summary>\nAND.\n</details>",
+          "text": "A NOR gate is the same as an ___ gate with inverted inputs. AND."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nSimplify (A̅ + B̅)̅.\n</summary>\nA · B.\n</details>",
+          "text": "Simplify (A̅ + B̅)̅. A · B."
+        }
+      ]
+    },
+    {
+      "slug": "sum-of-products",
+      "title": "Sum of Products (SOP) and Minterms",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> You have a truth table, and you want a\nformula. Here’s the trick: look only at the rows where the output is\n<strong>1</strong>. Write a small “detector” for each of those rows,\nthen OR all the detectors together. That’s it. You’ve written a\n<strong>Sum of Products</strong>.</p>\n</blockquote>",
+          "text": "Start here You have a truth table, and you want a\nformula. Here’s the trick: look only at the rows where the output is 1 . Write a small “detector” for each of those rows,\nthen OR all the detectors together. That’s it. You’ve written a Sum of Products ."
+        },
+        {
+          "type": "heading",
+          "text": "A few words first"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Word</th>\n<th>Meaning</th>\n<th>Example (inputs A, B, C)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Complement</strong></td>\n<td>A variable with a bar</td>\n<td>A̅</td>\n</tr>\n<tr>\n<td><strong>Literal</strong></td>\n<td>A variable <strong>or</strong> its complement</td>\n<td>A, A̅, B, C̅</td>\n</tr>\n<tr>\n<td><strong>Implicant / product term</strong></td>\n<td>An AND of literals</td>\n<td>A·B̅, A̅·C</td>\n</tr>\n<tr>\n<td><strong>Minterm</strong></td>\n<td>An AND that has <strong>every</strong> input variable once</td>\n<td>A·B̅·C, A̅·B̅·C̅</td>\n</tr>\n<tr>\n<td><strong>Maxterm</strong></td>\n<td>An OR that has <strong>every</strong> input variable once</td>\n<td>(A + B̅ + C)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Word Meaning Example (inputs A, B, C) Complement A variable with a bar A̅ Literal A variable or its complement A, A̅, B, C̅ Implicant / product term An AND of literals A·B̅, A̅·C Minterm An AND that has every input variable once A·B̅·C, A̅·B̅·C̅ Maxterm An OR that has every input variable once (A + B̅ + C)"
+        },
+        {
+          "type": "heading",
+          "text": "How to write a minterm for a\nrow"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Rule:</strong> if the input is <strong>1</strong>, write the\n<strong>letter</strong>; if it’s <strong>0</strong>, write the letter\n<strong>with a bar</strong>.</p>",
+          "text": "Rule: if the input is 1 , write the letter ; if it’s 0 , write the letter with a bar ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>Minterm</th>\n<th>Number</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>A̅B̅C̅</td>\n<td>m₀</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>A̅BC</td>\n<td>m₃</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>AB̅C</td>\n<td>m₅</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>ABC</td>\n<td>m₇</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B C Minterm Number 0 0 0 A̅B̅C̅ m₀ 0 1 1 A̅BC m₃ 1 0 1 AB̅C m₅ 1 1 1 ABC m₇"
+        },
+        {
+          "type": "html",
+          "html": "<p>The <strong>number</strong> is just the row’s binary value (011 = 3,\nso m₃).</p>",
+          "text": "The number is just the row’s binary value (011 = 3,\nso m₃)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Each minterm is 1 in exactly one row</strong>: its own row.\nThat’s why it works as a “row detector”.</p>",
+          "text": "Each minterm is 1 in exactly one row : its own row.\nThat’s why it works as a “row detector”."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img13-row-detector.webp",
+          "alt": "A minterm is a row detector",
+          "caption": "A minterm is like a lock that\nopens for only one exact pattern.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "Sum of Products: the recipe"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img07-sop-from-table.webp",
+          "alt": "From truth table to SOP",
+          "caption": "Pick the rows where F = 1, write a\nminterm for each, and OR them together.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Find every row where <strong>F = 1</strong>.</li>\n<li>Write the <strong>minterm</strong> for each of those rows.</li>\n<li><strong>OR</strong> them all together.</li>\n</ol>",
+          "text": "Find every row where F = 1 . Write the minterm for each of those rows. OR them all together."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong></p>",
+          "text": "Example:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B C F 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 1 1 0 0 1 1 0 1 1 1 1 0 1 1 1 1 1"
+        },
+        {
+          "type": "html",
+          "html": "<p>F = A̅BC + AB̅C̅ + AB̅C + ABC̅ + ABC</p>",
+          "text": "F = A̅BC + AB̅C̅ + AB̅C + ABC̅ + ABC"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Short form (Σ notation):</strong> F(A,B,C) = <strong>Σm(3, 4,\n5, 6, 7)</strong>, the list of rows where F = 1.</p>",
+          "text": "Short form (Σ notation): F(A,B,C) = Σm(3, 4,\n5, 6, 7) , the list of rows where F = 1."
+        },
+        {
+          "type": "heading",
+          "text": "Why does SOP work?"
+        },
+        {
+          "type": "html",
+          "html": "<p>Take input A=1, B=0, C=1 (row 5). Only the minterm\n<strong>AB̅C</strong> becomes 1 (1·1·1). Every other minterm has at least\none 0 in it, so it’s 0. So F = 0 + … + 1 + … + 0 = <strong>1</strong>.\nCorrect!</p>",
+          "text": "Take input A=1, B=0, C=1 (row 5). Only the minterm AB̅C becomes 1 (1·1·1). Every other minterm has at least\none 0 in it, so it’s 0. So F = 0 + … + 1 + … + 0 = 1 .\nCorrect!"
+        },
+        {
+          "type": "html",
+          "html": "<p>For a row that’s <strong>not</strong> in the list,\n<strong>no</strong> minterm turns on, so F = 0. Correct again.</p>",
+          "text": "For a row that’s not in the list, no minterm turns on, so F = 0. Correct again."
+        },
+        {
+          "type": "heading",
+          "text": "Canonical form"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A <strong>truth table</strong> is the unique “signature” of a\nfunction, but it’s long.</li>\n<li>Many different expressions can give the <strong>same</strong> truth\ntable (and different gate circuits).</li>\n<li>A <strong>canonical (standard) form</strong>, like the full SOP of\nminterms, gives <strong>one standard</strong> expression for each\nfunction.</li>\n<li><strong>Every</strong> Boolean function can be written in SOP\nform.</li>\n</ul>",
+          "text": "A truth table is the unique “signature” of a\nfunction, but it’s long. Many different expressions can give the same truth\ntable (and different gate circuits). A canonical (standard) form , like the full SOP of\nminterms, gives one standard expression for each\nfunction. Every Boolean function can be written in SOP\nform."
+        },
+        {
+          "type": "html",
+          "html": "<p>SOP is a <strong>two-level</strong> circuit: a row of AND gates, then\none OR gate.</p>",
+          "text": "SOP is a two-level circuit: a row of AND gates, then\none OR gate."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> For each row where F = 1, write a\nminterm (letter for 1, barred letter for 0) and OR them together. That’s\nthe canonical Sum of Products, written short as Σm(…). <strong>Exam\nwords:</strong> literal, implicant, product term, minterm, maxterm, sum\nof products (SOP), Σm notation, canonical form, two-level logic.</p>",
+          "text": "In one line: For each row where F = 1, write a\nminterm (letter for 1, barred letter for 0) and OR them together. That’s\nthe canonical Sum of Products, written short as Σm(…). Exam\nwords: literal, implicant, product term, minterm, maxterm, sum\nof products (SOP), Σm notation, canonical form, two-level logic."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWrite the minterm for A=1, B=1, C=0. Which number is it?\n</summary>\nABC̅, m₆.\n</details>",
+          "text": "Write the minterm for A=1, B=1, C=0. Which number is it? ABC̅, m₆."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nF(A,B) is 1 only when A ≠ B. Write its SOP.\n</summary>\nF = A̅B + AB̅ (that’s XOR).\n</details>",
+          "text": "F(A,B) is 1 only when A ≠ B. Write its SOP. F = A̅B + AB̅ (that’s XOR)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many minterms does a 4-input function have in total?\n</summary>\n2⁴ = 16.\n</details>",
+          "text": "How many minterms does a 4-input function have in total? 2⁴ = 16."
+        }
+      ]
+    },
+    {
+      "slug": "exam-question-types",
+      "title": "How to Solve — Truth-Table Exam Questions",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Almost every Quiz 1 has these questions:\n“What’s the probability the output is 1?”, “For which inputs is f always\n1?”, “How many minterms?”, “Which gates should go in the empty boxes?”\nThey look different, but <strong>one tool solves them all: the truth\ntable.</strong></p>\n</blockquote>",
+          "text": "Start here Almost every Quiz 1 has these questions:\n“What’s the probability the output is 1?”, “For which inputs is f always\n1?”, “How many minterms?”, “Which gates should go in the empty boxes?”\nThey look different, but one tool solves them all: the truth\ntable."
+        },
+        {
+          "type": "heading",
+          "text": "Type 1: Probability\nthat the output is 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “Inputs are random. What’s the probability\nthat F = 1 (or 0)?”</p>",
+          "text": "Spot it: “Inputs are random. What’s the probability\nthat F = 1 (or 0)?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write the truth table: 2ⁿ rows.</li>\n<li>Work out F for every row.</li>\n<li><strong>Probability = (number of rows with F = 1) ÷\n2ⁿ</strong>.</li>\n</ol>",
+          "text": "Write the truth table: 2ⁿ rows. Work out F for every row. Probability = (number of rows with F = 1) ÷\n2ⁿ ."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img08-probability-example.webp",
+          "alt": "Probability from a truth table",
+          "caption": "F = (A XOR B) AND C. Only 2\nof the 8 rows give 1, so P(F = 1) = 2/8 = 0.25.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Worked example:</strong> F = (A ⊕ B) · C</p>",
+          "text": "Worked example: F = (A ⊕ B) · C"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>A ⊕ B</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B C A ⊕ B F 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 0 1 0 1 1 1 1 1 0 0 0 1 1 1 0 0"
+        },
+        {
+          "type": "html",
+          "html": "<p>2 ones out of 8 → <strong>P(F = 1) = 0.25</strong>, so P(F = 0) =\n0.75.</p>",
+          "text": "2 ones out of 8 → P(F = 1) = 0.25 , so P(F = 0) =\n0.75."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> read carefully whether they ask for\n<strong>logic 1</strong> or <strong>logic 0</strong>.</p>",
+          "text": "Trap: read carefully whether they ask for logic 1 or logic 0 ."
+        },
+        {
+          "type": "heading",
+          "text": "Type 2: For which inputs\nis f always 1?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> f(x, y, z) = Σm(1, 2, 4, 7). “Under which\ncondition is f <strong>always</strong> 1?”</p>",
+          "text": "Spot it: f(x, y, z) = Σm(1, 2, 4, 7). “Under which\ncondition is f always 1?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write each minterm in binary and count its 1s:</li>\n</ol>",
+          "text": "Write each minterm in binary and count its 1s:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Minterm</th>\n<th>Binary</th>\n<th>Number of 1s</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>001</td>\n<td>1</td>\n</tr>\n<tr>\n<td>2</td>\n<td>010</td>\n<td>1</td>\n</tr>\n<tr>\n<td>4</td>\n<td>100</td>\n<td>1</td>\n</tr>\n<tr>\n<td>7</td>\n<td>111</td>\n<td>3</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Minterm Binary Number of 1s 1 001 1 2 010 1 4 100 1 7 111 3"
+        },
+        {
+          "type": "html",
+          "html": "<ol start=\"2\" type=\"1\">\n<li>Look for a pattern: every one has an <strong>odd</strong> number of\n1s, and every odd-count row is in the list. So <strong>f = x ⊕ y ⊕\nz</strong> (3-input XOR).</li>\n<li>Check each option: <strong>every</strong> input combination that\nmatches the option must be in the list.\n<ul>\n<li>“Any odd number of inputs are 1” → rows 1, 2, 4, 7 → all in the list\n✓</li>\n<li>“Any even number of inputs are 1” → rows 0, 3, 5, 6 → none in the\nlist ✗</li>\n</ul></li>\n</ol>",
+          "text": "Look for a pattern: every one has an odd number of\n1s, and every odd-count row is in the list. So f = x ⊕ y ⊕\nz (3-input XOR). Check each option: every input combination that\nmatches the option must be in the list. “Any odd number of inputs are 1” → rows 1, 2, 4, 7 → all in the list\n✓ “Any even number of inputs are 1” → rows 0, 3, 5, 6 → none in the\nlist ✗"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap (from a real paper):</strong> in 2025 T2 Quiz 1, the\noptions for Σm(1,2,4,7) were “exactly one input is 1”, “all inputs are\n1”, “any two inputs are 0” and “even number of 1s”. The official answer\nwas “exactly one input is 1”, but “all inputs are 1” (row 7) and “any\ntwo inputs are 0” (same as exactly one 1) <strong>also</strong> always\ngive 1. So the question had more than one correct option. In the exam,\ntest <strong>every</strong> option against the list.</p>",
+          "text": "Trap (from a real paper): in 2025 T2 Quiz 1, the\noptions for Σm(1,2,4,7) were “exactly one input is 1”, “all inputs are\n1”, “any two inputs are 0” and “even number of 1s”. The official answer\nwas “exactly one input is 1”, but “all inputs are 1” (row 7) and “any\ntwo inputs are 0” (same as exactly one 1) also always\ngive 1. So the question had more than one correct option. In the exam,\ntest every option against the list."
+        },
+        {
+          "type": "heading",
+          "text": "Type 3: Count the minterms"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “F = 1 if and only if <strong>exactly\ntwo</strong> of the four inputs A, B, C, D are 0. How many minterms in\nits SOP?”</p>",
+          "text": "Spot it: “F = 1 if and only if exactly\ntwo of the four inputs A, B, C, D are 0. How many minterms in\nits SOP?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> count the input rows that match. Choosing\nwhich 2 of the 4 inputs are 0 = <strong>“4 choose 2”</strong> = (4 × 3)\n÷ 2 = <strong>6</strong>.</p>",
+          "text": "Steps: count the input rows that match. Choosing\nwhich 2 of the 4 inputs are 0 = “4 choose 2” = (4 × 3)\n÷ 2 = 6 ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Rows (inputs that are 0 in bold)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>00</strong>11, <strong>0</strong>1<strong>0</strong>1,\n<strong>0</strong>11<strong>0</strong>, 1<strong>00</strong>1,\n1<strong>0</strong>1<strong>0</strong>, 11<strong>00</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Rows (inputs that are 0 in bold) 00 11, 0 1 0 1, 0 11 0 , 1 00 1,\n1 0 1 0 , 11 00"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Answer: 6.</strong></p>",
+          "text": "Answer: 6."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Shortcut:</strong> “exactly k of n inputs” → <strong>C(n, k)\n= n! ÷ (k! (n−k)!)</strong>.</p>",
+          "text": "Shortcut: “exactly k of n inputs” → C(n, k)\n= n! ÷ (k! (n−k)!) ."
+        },
+        {
+          "type": "heading",
+          "text": "Type 4: Fill in the missing\ngates"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> a circuit with two empty boxes GT1 and GT2\nmust give <strong>Y = AB + BC + CA</strong>.</p>",
+          "text": "Spot it: a circuit with two empty boxes GT1 and GT2\nmust give Y = AB + BC + CA ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Look at the fixed part of the circuit. Here, GT1 takes A and B, then\nGT1 and C go into an AND, and that result is ORed with GT2’s\noutput.</li>\n<li>So Y = <strong>(GT1 of A, B) · C + (GT2 of A, B)</strong>.</li>\n<li>Try options until it matches. With <strong>GT1 = XOR</strong>,\n<strong>GT2 = AND</strong>: Y = C·(A ⊕ B) + AB.</li>\n<li>Check with a truth table: it equals AB + BC + CA in all 8 rows\n✓.</li>\n</ol>",
+          "text": "Look at the fixed part of the circuit. Here, GT1 takes A and B, then\nGT1 and C go into an AND, and that result is ORed with GT2’s\noutput. So Y = (GT1 of A, B) · C + (GT2 of A, B) . Try options until it matches. With GT1 = XOR , GT2 = AND : Y = C·(A ⊕ B) + AB. Check with a truth table: it equals AB + BC + CA in all 8 rows\n✓."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Answer: XOR, AND.</strong> (This was a real 2025 T3 end-term\nquestion.)</p>",
+          "text": "Answer: XOR, AND. (This was a real 2025 T3 end-term\nquestion.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>AB + BC + CA is the <strong>majority function</strong>: it’s 1 when\n<strong>at least two</strong> of the three inputs are 1. You’ll see it\nagain as the <strong>carry</strong> of a full adder (Week 5).</p>\n</blockquote>",
+          "text": "AB + BC + CA is the majority function : it’s 1 when at least two of the three inputs are 1. You’ll see it\nagain as the carry of a full adder (Week 5)."
+        },
+        {
+          "type": "heading",
+          "text": "Type 5: Trace a circuit\ngate by gate"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> write the output of <strong>each\ngate</strong> in order, from inputs to output. If some inputs are left\nas letters (like X), carry the letter through.</p>",
+          "text": "Steps: write the output of each\ngate in order, from inputs to output. If some inputs are left\nas letters (like X), carry the letter through."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tip:</strong> a chain of gates that each just\n<strong>flip</strong> the signal gives X̅ for an <strong>odd</strong>\nnumber of flips and X for an <strong>even</strong> number.</p>",
+          "text": "Tip: a chain of gates that each just flip the signal gives X̅ for an odd number of flips and X for an even number."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Try these"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>F = A · B + C. Probability that F = 1?\n</li></ol></summary>\nF = 1 when C = 1 (4 rows) or A = B = 1, C = 0 (1 more row) → 5/8 =\n0.625.\n</details>",
+          "text": "F = A · B + C. Probability that F = 1? F = 1 when C = 1 (4 rows) or A = B = 1, C = 0 (1 more row) → 5/8 =\n0.625."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>f = Σm(0, 3, 5, 6). Is f always 1 when an even number of inputs are\n1?\n</li></ol></summary>\nYes: 0 (000), 3 (011), 5 (101), 6 (110) all have an even number of 1s. f\n= XNOR-style even parity.\n</details>",
+          "text": "f = Σm(0, 3, 5, 6). Is f always 1 when an even number of inputs are\n1? Yes: 0 (000), 3 (011), 5 (101), 6 (110) all have an even number of 1s. f\n= XNOR-style even parity."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>F = 1 when exactly 3 of 5 inputs are 1. Number of minterms?\n</li></ol></summary>\nC(5,3) = 10.\n</details>",
+          "text": "F = 1 when exactly 3 of 5 inputs are 1. Number of minterms? C(5,3) = 10."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Probability that a 3-input majority function is 1?\n</li></ol></summary>\n4 rows (011, 101, 110, 111) of 8 → 0.5.\n</details>",
+          "text": "Probability that a 3-input majority function is 1? 4 rows (011, 101, 110, 111) of 8 → 0.5."
+        }
+      ]
+    },
+    {
+      "slug": "week-2-quick-revision",
+      "title": "Week 2 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 2 on one page: from a problem in\nwords to a Boolean formula.</p>\n</blockquote>",
+          "text": "Start here Week 2 on one page: from a problem in\nwords to a Boolean formula."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img09-week2-map.webp",
+          "alt": "Week 2 at a glance",
+          "caption": "Truth table → gates → Boolean laws → De\nMorgan → Sum of Products → exam tricks.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "Big ideas"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>First write a <strong>functional specification</strong> (what output\nfor each input) and a <strong>timing specification</strong> (how\nfast).</li>\n<li><strong>Combinational</strong> logic has no memory;\n<strong>sequential</strong> logic remembers (from Week 7).</li>\n<li>A <strong>truth table</strong> has <strong>2ⁿ rows</strong>. It gets\nhuge fast, so we use Boolean algebra.</li>\n<li><strong>Gates:</strong> NOT (flip), AND (all 1), OR (any 1), NAND,\nNOR, XOR (different / odd number of 1s), XNOR (same).</li>\n<li><strong>Precedence:</strong> NOT → AND → OR.</li>\n<li><strong>Laws come in dual pairs</strong> (swap + ↔︎ ·, 0 ↔︎ 1).\nShortcuts: <strong>XY + XY̅ = X</strong>, <strong>X + XY = X</strong>,\n<strong>X + YZ = (X + Y)(X + Z)</strong>.</li>\n<li><strong>De Morgan:</strong> (A + B)̅ = A̅B̅ and (AB)̅ = A̅ + B̅. NOR = AND\nwith flipped inputs; NAND = OR with flipped inputs.</li>\n<li><strong>SOP:</strong> for each row with F = 1, write a minterm (1 →\nletter, 0 → barred letter) and OR them. Short form\n<strong>Σm(…)</strong>.</li>\n</ul>",
+          "text": "First write a functional specification (what output\nfor each input) and a timing specification (how\nfast). Combinational logic has no memory; sequential logic remembers (from Week 7). A truth table has 2ⁿ rows . It gets\nhuge fast, so we use Boolean algebra. Gates: NOT (flip), AND (all 1), OR (any 1), NAND,\nNOR, XOR (different / odd number of 1s), XNOR (same). Precedence: NOT → AND → OR. Laws come in dual pairs (swap + ↔︎ ·, 0 ↔︎ 1).\nShortcuts: XY + XY̅ = X , X + XY = X , X + YZ = (X + Y)(X + Z) . De Morgan: (A + B)̅ = A̅B̅ and (AB)̅ = A̅ + B̅. NOR = AND\nwith flipped inputs; NAND = OR with flipped inputs. SOP: for each row with F = 1, write a minterm (1 →\nletter, 0 → barred letter) and OR them. Short form Σm(…) ."
+        },
+        {
+          "type": "heading",
+          "text": "Exam recipes"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>Method</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Probability F = 1</td>\n<td>(rows with F = 1) ÷ 2ⁿ</td>\n</tr>\n<tr>\n<td>When is f always 1?</td>\n<td>list the minterms in binary, find the pattern, test\n<strong>every</strong> option</td>\n</tr>\n<tr>\n<td>How many minterms for “exactly k of n”?</td>\n<td>C(n, k)</td>\n</tr>\n<tr>\n<td>Fill in the missing gates</td>\n<td>write Y with GT1 and GT2, test options with a truth table</td>\n</tr>\n<tr>\n<td>Trace a circuit</td>\n<td>write every gate’s output in order</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Question Method Probability F = 1 (rows with F = 1) ÷ 2ⁿ When is f always 1? list the minterms in binary, find the pattern, test every option How many minterms for “exactly k of n”? C(n, k) Fill in the missing gates write Y with GT1 and GT2, test options with a truth table Trace a circuit write every gate’s output in order"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>How many rows in a truth table with 6 inputs?\n</li></ol></summary>\n2⁶ = 64.\n</details>",
+          "text": "How many rows in a truth table with 6 inputs? 2⁶ = 64."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>A = 1, B = 0. Find AND, OR, NAND, NOR, XOR, XNOR.\n</li></ol></summary>\n0, 1, 1, 0, 1, 0.\n</details>",
+          "text": "A = 1, B = 0. Find AND, OR, NAND, NOR, XOR, XNOR. 0, 1, 1, 0, 1, 0."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Simplify X + X̅·Y.\n</li></ol></summary>\n(X + X̅)(X + Y) = X + Y.\n</details>",
+          "text": "Simplify X + X̅·Y. (X + X̅)(X + Y) = X + Y."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Apply De Morgan to (A + B̅ + C)̅.\n</li></ol></summary>\nA̅ · B · C̅.\n</details>",
+          "text": "Apply De Morgan to (A + B̅ + C)̅. A̅ · B · C̅."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Write F(A,B,C) = Σm(1, 6) as SOP.\n</li></ol></summary>\nA̅B̅C + ABC̅.\n</details>",
+          "text": "Write F(A,B,C) = Σm(1, 6) as SOP. A̅B̅C + ABC̅."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>P(output = 1) for F = A + B + C with random inputs?\n</li></ol></summary>\n7/8 = 0.875 (only 000 gives 0).\n</details>",
+          "text": "P(output = 1) for F = A + B + C with random inputs? 7/8 = 0.875 (only 000 gives 0)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>F = 1 when exactly one of four inputs is 1. Minterms?\n</li></ol></summary>\nC(4,1) = 4.\n</details>",
+          "text": "F = 1 when exactly one of four inputs is 1. Minterms? C(4,1) = 4."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>True or false: a decoder or a multiplexer is a sequential circuit.\n</li></ol></summary>\nFalse. Both are combinational (no memory). You’ll meet them in Week 4.\n</details>",
+          "text": "True or false: a decoder or a multiplexer is a sequential circuit. False. Both are combinational (no memory). You’ll meet them in Week 4."
+        }
+      ]
+    }
+  ]
+}

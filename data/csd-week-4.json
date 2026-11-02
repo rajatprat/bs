@@ -1,0 +1,1019 @@
+{
+  "subject": "Computer System Design",
+  "subjectSlug": "computer-system-design",
+  "week": 4,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computer-system-design/week-4/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "building-blocks-and-comparators",
+      "title": "Building Blocks and Equality Comparators",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Nobody builds a house one grain of sand\nat a time. Builders use <strong>bricks, doors and windows</strong>:\nready-made parts. Circuit designers work the same way. Instead of\nplacing every gate by hand, they use ready-made <strong>building\nblocks</strong> like comparators, decoders and multiplexers. This week\nyou meet the most common ones.</p>\n</blockquote>",
+          "text": "Start here Nobody builds a house one grain of sand\nat a time. Builders use bricks, doors and windows :\nready-made parts. Circuit designers work the same way. Instead of\nplacing every gate by hand, they use ready-made building\nblocks like comparators, decoders and multiplexers. This week\nyou meet the most common ones."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img13-ready-made-parts.webp",
+          "alt": "Ready-made parts",
+          "caption": "Bricks, doors and windows are ready-made\nparts for houses. Comparators, decoders and multiplexers are ready-made\nparts for circuits.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "What is a building block?"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>combinational building block</strong> is a group of gates\nthat does one common job. It usually has <strong>tens to hundreds of\ntransistors</strong>. (This size was once called <strong>MSI</strong>:\nMedium Scale Integration.)</p>",
+          "text": "A combinational building block is a group of gates\nthat does one common job. It usually has tens to hundreds of\ntransistors . (This size was once called MSI :\nMedium Scale Integration.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why use them?</strong> They <strong>hide the gate-level\ndetails</strong>. You only need to know <strong>what the block\ndoes</strong>, not how every gate inside is wired.</p>",
+          "text": "Why use them? They hide the gate-level\ndetails . You only need to know what the block\ndoes , not how every gate inside is wired."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img01-building-blocks.webp",
+          "alt": "The common building blocks",
+          "caption": "The five standard blocks in this\ncourse. Weeks 4 and 5 cover them one by one.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Block</th>\n<th>Its job in one line</th>\n<th>Week</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Comparator</strong></td>\n<td>Are two numbers equal?</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>Decoder</strong></td>\n<td>Turn an n-bit code into “exactly one line on”</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>Encoder</strong></td>\n<td>The opposite: turn “one line on” into a code</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>Multiplexer (MUX)</strong></td>\n<td>Pick one of many inputs and send it to the output</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>Full adder</strong></td>\n<td>Add bits</td>\n<td>5</td>\n</tr>\n<tr>\n<td><strong>PLA</strong></td>\n<td>A programmable AND–OR grid for any function</td>\n<td>5</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Block Its job in one line Week Comparator Are two numbers equal? 4 Decoder Turn an n-bit code into “exactly one line on” 4 Encoder The opposite: turn “one line on” into a code 4 Multiplexer (MUX) Pick one of many inputs and send it to the output 4 Full adder Add bits 5 PLA A programmable AND–OR grid for any function 5"
+        },
+        {
+          "type": "heading",
+          "text": "The 1-bit equality\ncomparator"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Question:</strong> are bits x and y the\n<strong>same</strong>?</p>",
+          "text": "Question: are bits x and y the same ?"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>x</th>\n<th>y</th>\n<th>x ⊕ y</th>\n<th>(x ⊕ y)̅ = equal?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "x y x ⊕ y (x ⊕ y)̅ = equal? 0 0 0 1 0 1 1 0 1 0 1 0 1 1 0 1"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>XOR</strong> gives 1 when the bits are\n<strong>different</strong>.</li>\n<li><strong>XNOR</strong> (XOR + NOT) gives 1 when the bits are\n<strong>equal</strong>.</li>\n</ul>",
+          "text": "XOR gives 1 when the bits are different . XNOR (XOR + NOT) gives 1 when the bits are equal ."
+        },
+        {
+          "type": "html",
+          "html": "<p>So a <strong>1-bit equality comparator is just an XNOR\ngate</strong>.</p>",
+          "text": "So a 1-bit equality comparator is just an XNOR\ngate ."
+        },
+        {
+          "type": "heading",
+          "text": "Comparing two N-bit numbers"
+        },
+        {
+          "type": "html",
+          "html": "<p>Two numbers are equal only if <strong>every pair of matching bits is\nequal</strong>.</p>",
+          "text": "Two numbers are equal only if every pair of matching bits is\nequal ."
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Put one <strong>XNOR</strong> on each bit pair (A₀ with B₀, A₁ with\nB₁, …).</li>\n<li><strong>AND</strong> all the XNOR outputs together.</li>\n</ol>",
+          "text": "Put one XNOR on each bit pair (A₀ with B₀, A₁ with\nB₁, …). AND all the XNOR outputs together."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img02-4bit-comparator.webp",
+          "alt": "4-bit equality comparator",
+          "caption": "Four XNORs check the four bit\npairs. The AND gate says “equal” only if all four agree.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — 11 vs 9</strong> A = 11 =\n<strong>1011</strong>, B = 9 = <strong>1001</strong></p>\n<table>\n<thead>\n<tr>\n<th>Bit</th>\n<th>3</th>\n<th>2</th>\n<th>1</th>\n<th>0</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>B</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>XNOR</td>\n<td>1</td>\n<td>1</td>\n<td><strong>0</strong></td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<p>One XNOR gives 0 (bit 1 differs), so the AND gives <strong>0</strong>\n→ <strong>A ≠ B</strong>.</p>\n</blockquote>",
+          "text": "Lecture example — 11 vs 9 A = 11 = 1011 , B = 9 = 1001 Bit 3 2 1 0 A 1 0 1 1 B 1 0 0 1 XNOR 1 1 0 1 One XNOR gives 0 (bit 1 differs), so the AND gives 0 → A ≠ B ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Everyday example:</strong> checking a 4-digit door lock code.\nThe lock opens only if <strong>every digit</strong> matches. One wrong\ndigit and it stays shut. That’s the AND of all the “digit matches”\nchecks.</p>",
+          "text": "Everyday example: checking a 4-digit door lock code.\nThe lock opens only if every digit matches. One wrong\ndigit and it stays shut. That’s the AND of all the “digit matches”\nchecks."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Building blocks are ready-made gate\ngroups. An equality comparator is one XNOR per bit, all ANDed together.\n<strong>Exam words:</strong> combinational building block, MSI,\ncomparator, equality comparator, XNOR, N-bit comparison.</p>",
+          "text": "In one line: Building blocks are ready-made gate\ngroups. An equality comparator is one XNOR per bit, all ANDed together. Exam words: combinational building block, MSI,\ncomparator, equality comparator, XNOR, N-bit comparison."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich single gate is a 1-bit equality comparator?\n</summary>\nXNOR (1 when both bits are equal).\n</details>",
+          "text": "Which single gate is a 1-bit equality comparator? XNOR (1 when both bits are equal)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many XNOR gates does an 8-bit equality comparator need?\n</summary>\n8 (one per bit pair), plus an AND to join them.\n</details>",
+          "text": "How many XNOR gates does an 8-bit equality comparator need? 8 (one per bit pair), plus an AND to join them."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA = 0110, B = 0110. What does the comparator output?\n</summary>\n<ol type=\"1\">\n<li>All four XNORs give 1, so the AND gives 1.\n</li></ol></details>",
+          "text": "A = 0110, B = 0110. What does the comparator output? All four XNORs give 1, so the AND gives 1."
+        }
+      ]
+    },
+    {
+      "slug": "decoders",
+      "title": "Decoders",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A hotel has 8 rooms and a 3-digit binary\nroom code. When the code <strong>101</strong> comes in, only\n<strong>room 5’s</strong> light should turn on, and every other light\nstays off. A circuit that does this is called a\n<strong>decoder</strong>: it turns a code into “exactly one line\non”.</p>\n</blockquote>",
+          "text": "Start here A hotel has 8 rooms and a 3-digit binary\nroom code. When the code 101 comes in, only room 5’s light should turn on, and every other light\nstays off. A circuit that does this is called a decoder : it turns a code into “exactly one line\non”."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img14-hotel-rooms.webp",
+          "alt": "One code, one room",
+          "caption": "The code 101 lights up exactly one room:\nroom 5. That’s what a decoder does.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "What a decoder does"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>n inputs</strong> → <strong>2ⁿ outputs</strong>.</li>\n<li>For each input pattern, <strong>exactly one output is 1</strong>,\nand all the rest are 0.</li>\n<li>The output that turns on is the one whose number matches the\ninput.</li>\n</ul>",
+          "text": "n inputs → 2ⁿ outputs . For each input pattern, exactly one output is 1 ,\nand all the rest are 0. The output that turns on is the one whose number matches the\ninput."
+        },
+        {
+          "type": "html",
+          "html": "<p>Names: a decoder with 2 inputs is a <strong>2:4 decoder</strong> (or\n2-to-4). With 3 inputs it’s a <strong>3:8 decoder</strong>. With 4\ninputs it’s a <strong>4:16 decoder</strong>.</p>",
+          "text": "Names: a decoder with 2 inputs is a 2:4 decoder (or\n2-to-4). With 3 inputs it’s a 3:8 decoder . With 4\ninputs it’s a 4:16 decoder ."
+        },
+        {
+          "type": "heading",
+          "text": "The 2:4 decoder"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img03-2to4-decoder.webp",
+          "alt": "2-to-4 decoder",
+          "caption": "Each output is one AND gate. Each AND gate\nis a minterm detector.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>D₀</th>\n<th>D₁</th>\n<th>D₂</th>\n<th>D₃</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td><strong>1</strong></td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td><strong>1</strong></td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B D₀ D₁ D₂ D₃ 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0 0 0 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Equations:</strong> D₀ = A̅B̅, D₁ = A̅B, D₂ = AB̅, D₃ = AB.</p>",
+          "text": "Equations: D₀ = A̅B̅, D₁ = A̅B, D₂ = AB̅, D₃ = AB."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Key idea:</strong> each decoder output <strong>is a\nminterm</strong>. Dₖ = mₖ.</p>",
+          "text": "Key idea: each decoder output is a\nminterm . Dₖ = mₖ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture example — A = 1, B = 0</strong> Input pattern 10 is\nthe number 2, so <strong>only D₂ = 1</strong>. The outputs are 0, 0, 1,\n0.</p>\n</blockquote>",
+          "text": "Lecture example — A = 1, B = 0 Input pattern 10 is\nthe number 2, so only D₂ = 1 . The outputs are 0, 0, 1,\n0."
+        },
+        {
+          "type": "heading",
+          "text": "Where decoders are used"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Memory addresses:</strong> the processor sends a row number;\na decoder switches on <strong>that one row</strong> of memory.</li>\n<li><strong>Instructions:</strong> the processor reads an instruction’s\n<strong>opcode</strong> (the part that says which operation); a decoder\nturns on the one circuit that does that operation.</li>\n</ul>",
+          "text": "Memory addresses: the processor sends a row number;\na decoder switches on that one row of memory. Instructions: the processor reads an instruction’s opcode (the part that says which operation); a decoder\nturns on the one circuit that does that operation."
+        },
+        {
+          "type": "heading",
+          "text": "A decoder can build ANY\nfunction"
+        },
+        {
+          "type": "html",
+          "html": "<p>Since every decoder output is a minterm, you can make any function of\nn variables:</p>",
+          "text": "Since every decoder output is a minterm, you can make any function of\nn variables:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Connect the variables to the decoder inputs.</li>\n<li>Find the minterms where F = 1.</li>\n<li><strong>OR</strong> those outputs together.</li>\n</ol>",
+          "text": "Connect the variables to the decoder inputs. Find the minterms where F = 1. OR those outputs together."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img04-decoder-plus-or.webp",
+          "alt": "Decoder plus OR makes any function",
+          "caption": "F = Σm(2, 3, 5, 6):\nconnect outputs D₂, D₃, D₅ and D₆ to one OR gate.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Lecture exercise — Y = A + B + C + D</strong> Y is 1 in every\nrow <strong>except</strong> row 0 (0000). So Y = D₁ + D₂ + … + D₁₅ (an\nOR of 15 outputs). <strong>Smarter:</strong> Y = <strong>NOT\nD₀</strong>. One inverter on D₀ does the same job.</p>\n</blockquote>",
+          "text": "Lecture exercise — Y = A + B + C + D Y is 1 in every\nrow except row 0 (0000). So Y = D₁ + D₂ + … + D₁₅ (an\nOR of 15 outputs). Smarter: Y = NOT\nD₀ . One inverter on D₀ does the same job."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trick:</strong> if F has <strong>many</strong> 1s, use the\n<strong>0s</strong> instead: F = NOT(OR of the 0-row outputs). That is a\nNOR gate.</p>",
+          "text": "Trick: if F has many 1s, use the 0s instead: F = NOT(OR of the 0-row outputs). That is a\nNOR gate."
+        },
+        {
+          "type": "heading",
+          "text": "Decoder delay"
+        },
+        {
+          "type": "html",
+          "html": "<p>Inside a decoder, each input goes through a <strong>NOT</strong> (for\nthe barred letters), then an <strong>AND</strong> gate. So the longest\npath is:</p>",
+          "text": "Inside a decoder, each input goes through a NOT (for\nthe barred letters), then an AND gate. So the longest\npath is:"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>delay = NOT delay + AND delay</strong></p>",
+          "text": "delay = NOT delay + AND delay"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img05-decoder-delay.webp",
+          "alt": "Decoder delay path",
+          "caption": "The slowest path: input → NOT → AND →\noutput.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>4:16 decoder with NOT = 1 ns and 4-input AND = 2 ns → 1 + 2 =\n<strong>3 ns</strong>.</li>\n<li>3:8 decoder built from NOT and <strong>2-input</strong> ANDs (all 1\nns): a 3-input AND needs <strong>two</strong> 2-input ANDs in a chain.\nSo 1 + 1 + 1 = <strong>3 ns</strong>.</li>\n</ul>",
+          "text": "4:16 decoder with NOT = 1 ns and 4-input AND = 2 ns → 1 + 2 = 3 ns . 3:8 decoder built from NOT and 2-input ANDs (all 1\nns): a 3-input AND needs two 2-input ANDs in a chain.\nSo 1 + 1 + 1 = 3 ns ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> A decoder has n inputs and 2ⁿ outputs;\nexactly one output is 1, and each output is a minterm, so decoder + OR\ngate can build any function. <strong>Exam words:</strong> decoder, 2:4,\n3:8, 4:16, one-hot output, minterm, memory address, opcode, decoder\ndelay.</p>",
+          "text": "In one line: A decoder has n inputs and 2ⁿ outputs;\nexactly one output is 1, and each output is a minterm, so decoder + OR\ngate can build any function. Exam words: decoder, 2:4,\n3:8, 4:16, one-hot output, minterm, memory address, opcode, decoder\ndelay."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many outputs does a 5-input decoder have?\n</summary>\n2⁵ = 32.\n</details>",
+          "text": "How many outputs does a 5-input decoder have? 2⁵ = 32."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA 3:8 decoder gets ABC = 110. Which output is 1?\n</summary>\nD₆ (110 = 6).\n</details>",
+          "text": "A 3:8 decoder gets ABC = 110. Which output is 1? D₆ (110 = 6)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nBuild F(A,B,C) = Σm(1, 7) with a 3:8 decoder. What do you add?\n</summary>\nOne 2-input OR gate joining D₁ and D₇.\n</details>",
+          "text": "Build F(A,B,C) = Σm(1, 7) with a 3:8 decoder. What do you add? One 2-input OR gate joining D₁ and D₇."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTrue or false: “In a decoder, exactly one output is 1 at any time.”\n</summary>\nTrue. (This exact statement appears in many past papers.)\n</details>",
+          "text": "True or false: “In a decoder, exactly one output is 1 at any time.” True. (This exact statement appears in many past papers.)"
+        }
+      ]
+    },
+    {
+      "slug": "encoders-and-priority-encoders",
+      "title": "Encoders and Priority Encoders",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A decoder turns a code into “one line\non”. An <strong>encoder</strong> does the <strong>opposite</strong>: it\nsees which line is on and gives back its number in binary. Think of a\nquiz-show buzzer panel: the player whose buzzer is pressed gets their\n<strong>seat number</strong> shown on the screen.</p>\n</blockquote>",
+          "text": "Start here A decoder turns a code into “one line\non”. An encoder does the opposite : it\nsees which line is on and gives back its number in binary. Think of a\nquiz-show buzzer panel: the player whose buzzer is pressed gets their seat number shown on the screen."
+        },
+        {
+          "type": "heading",
+          "text": "The encoder"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>2ⁿ inputs</strong> → <strong>n outputs</strong>.</li>\n<li>It assumes <strong>exactly one input is 1</strong> at a time, and\noutputs that input’s number in binary.</li>\n</ul>",
+          "text": "2ⁿ inputs → n outputs . It assumes exactly one input is 1 at a time, and\noutputs that input’s number in binary."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img06-decoder-vs-encoder.webp",
+          "alt": "Encoder is the opposite of a decoder",
+          "caption": "Decoder: code → one\nline on. Encoder: one line on → code.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "subheading",
+          "text": "The 4-to-2 encoder"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>I₃</th>\n<th>I₂</th>\n<th>I₁</th>\n<th>I₀</th>\n<th>Y₁</th>\n<th>Y₀</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "I₃ I₂ I₁ I₀ Y₁ Y₀ 0 0 0 1 0 0 0 0 1 0 0 1 0 1 0 0 1 0 1 0 0 0 1 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Equations:</strong> Y₁ = I₂ + I₃ and Y₀ = I₁ + I₃.</p>",
+          "text": "Equations: Y₁ = I₂ + I₃ and Y₀ = I₁ + I₃."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why?</strong> Y₁ is the “2s” bit. It is 1 for inputs 2 and 3.\nY₀ is the “1s” bit. It is 1 for inputs 1 and 3.</p>",
+          "text": "Why? Y₁ is the “2s” bit. It is 1 for inputs 2 and 3.\nY₀ is the “1s” bit. It is 1 for inputs 1 and 3."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The problem:</strong> what if <strong>two</strong> inputs are\n1 together, like I₁ and I₂? Then Y₁ = 1 and Y₀ = 1 → output 11 =\n<strong>3</strong>, which is <strong>wrong</strong>! Neither 1 nor 2 was\nchosen.</p>",
+          "text": "The problem: what if two inputs are\n1 together, like I₁ and I₂? Then Y₁ = 1 and Y₀ = 1 → output 11 = 3 , which is wrong ! Neither 1 nor 2 was\nchosen."
+        },
+        {
+          "type": "heading",
+          "text": "The priority encoder"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>priority encoder</strong> fixes this: if many inputs are 1,\nthe <strong>highest-numbered</strong> input <strong>wins</strong>. The\nlower ones are ignored.</p>",
+          "text": "A priority encoder fixes this: if many inputs are 1,\nthe highest-numbered input wins . The\nlower ones are ignored."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img15-priority-queue.webp",
+          "alt": "Priority: the highest wins",
+          "caption": "Three vehicles arrive together,\nbut the ambulance (highest priority) goes first. The lower ones must\nwait.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "subheading",
+          "text": "The 4-to-2 priority encoder"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>I₃</th>\n<th>I₂</th>\n<th>I₁</th>\n<th>I₀</th>\n<th>Y₁</th>\n<th>Y₀</th>\n<th>Winner</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>X</td>\n<td>X</td>\n<td>X</td>\n<td>1</td>\n<td>1</td>\n<td>3</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>X</td>\n<td>X</td>\n<td>1</td>\n<td>0</td>\n<td>2</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>X</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "I₃ I₂ I₁ I₀ Y₁ Y₀ Winner 1 X X X 1 1 3 0 1 X X 1 0 2 0 0 1 X 0 1 1 0 0 0 1 0 0 0"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>X = “don’t care”:</strong> it doesn’t matter whether that\ninput is 0 or 1, because a higher input has already won.</p>",
+          "text": "X = “don’t care”: it doesn’t matter whether that\ninput is 0 or 1, because a higher input has already won."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img07-priority-encoder.webp",
+          "alt": "Priority encoder truth table",
+          "caption": "Read the table from the top.\nThe first 1 you meet (the highest input) decides the output.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Equations:</strong></p>",
+          "text": "Equations:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Y₁ = I₃ + I₂</strong> (the winner is 2 or 3)</li>\n<li><strong>Y₀ = I₃ + I̅₂·I₁</strong> (the winner is 3, or it’s 1\n<em>and</em> input 2 is not on)</li>\n</ul>",
+          "text": "Y₁ = I₃ + I₂ (the winner is 2 or 3) Y₀ = I₃ + I̅₂·I₁ (the winner is 3, or it’s 1 and input 2 is not on)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why the I̅₂ in Y₀?</strong> If I₂ is on, input 2 wins, and 2 =\n10 has Y₀ = <strong>0</strong>. So I₁ can only set Y₀ when I₂ is\noff.</p>",
+          "text": "Why the I̅₂ in Y₀? If I₂ is on, input 2 wins, and 2 =\n10 has Y₀ = 0 . So I₁ can only set Y₀ when I₂ is\noff."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 10)</strong> Inputs\n(L₃, L₂, L₁, L₀) = (0, 1, 1, 1), with Y₁ = L₃ + L₂ and Y₀ = L₃ +\nL̅₂L₁.</p>\n<ul>\n<li>Y₁ = 0 + 1 = <strong>1</strong></li>\n<li>Y₀ = 0 + (0 · 1) = <strong>0</strong> (L₂ = 1, so L̅₂ = 0)</li>\n<li>Output = <strong>10</strong> (input 2 wins, as it’s the highest one\nthat is on) ✔</li>\n</ul>\n</blockquote>",
+          "text": "Worked example (2026 T2 end-term, answer 10) Inputs\n(L₃, L₂, L₁, L₀) = (0, 1, 1, 1), with Y₁ = L₃ + L₂ and Y₀ = L₃ +\nL̅₂L₁. Y₁ = 0 + 1 = 1 Y₀ = 0 + (0 · 1) = 0 (L₂ = 1, so L̅₂ = 0) Output = 10 (input 2 wins, as it’s the highest one\nthat is on) ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Everyday example:</strong> an ambulance, a bus and a car all\nreach a junction at the same time. The traffic police let the\n<strong>ambulance</strong> go first. It has the highest priority.</p>",
+          "text": "Everyday example: an ambulance, a bus and a car all\nreach a junction at the same time. The traffic police let the ambulance go first. It has the highest priority."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> An encoder turns “one line on” into its\nbinary number (2ⁿ → n); a priority encoder lets the highest active input\nwin when several are on. <strong>Exam words:</strong> encoder, 4-to-2\nencoder, priority encoder, highest priority, don’t care (X).</p>",
+          "text": "In one line: An encoder turns “one line on” into its\nbinary number (2ⁿ → n); a priority encoder lets the highest active input\nwin when several are on. Exam words: encoder, 4-to-2\nencoder, priority encoder, highest priority, don’t care (X)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many outputs does an 8-to-3 encoder have?\n</summary>\n3 (2³ = 8 inputs).\n</details>",
+          "text": "How many outputs does an 8-to-3 encoder have? 3 (2³ = 8 inputs)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n4-to-2 priority encoder, inputs I₃I₂I₁I₀ = 0011. Output?\n</summary>\n01 (input 1 is the highest one that is on).\n</details>",
+          "text": "4-to-2 priority encoder, inputs I₃I₂I₁I₀ = 0011. Output? 01 (input 1 is the highest one that is on)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nPlain 4-to-2 encoder (no priority), inputs I₂ and I₁ both on. What goes\nwrong?\n</summary>\nIt outputs 11 (= 3), which is neither of the active inputs.\n</details>",
+          "text": "Plain 4-to-2 encoder (no priority), inputs I₂ and I₁ both on. What goes\nwrong? It outputs 11 (= 3), which is neither of the active inputs."
+        }
+      ]
+    },
+    {
+      "slug": "multiplexers",
+      "title": "Multiplexers (MUX)",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A TV has many channels but <strong>one\nscreen</strong>. The remote’s channel number <strong>selects</strong>\nwhich channel reaches the screen. A <strong>multiplexer</strong> does\nexactly this with signals: many inputs, one output, and a\n<strong>select</strong> code that picks which input gets through.</p>\n</blockquote>",
+          "text": "Start here A TV has many channels but one\nscreen . The remote’s channel number selects which channel reaches the screen. A multiplexer does\nexactly this with signals: many inputs, one output, and a select code that picks which input gets through."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img16-tv-remote-mux.webp",
+          "alt": "TV remote as a multiplexer",
+          "caption": "Many channels, one screen. The\nselect number decides which input you see.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "What a multiplexer does"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>N data inputs</strong>, <strong>1 output</strong>.</li>\n<li><strong>log₂N select lines</strong> choose which input is sent to\nthe output.</li>\n</ul>",
+          "text": "N data inputs , 1 output . log₂N select lines choose which input is sent to\nthe output."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>MUX</th>\n<th>Data inputs</th>\n<th>Select lines</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2:1</td>\n<td>2</td>\n<td>1</td>\n</tr>\n<tr>\n<td>4:1</td>\n<td>4</td>\n<td>2</td>\n</tr>\n<tr>\n<td>8:1</td>\n<td>8</td>\n<td>3</td>\n</tr>\n<tr>\n<td>16:1</td>\n<td>16</td>\n<td>4</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "MUX Data inputs Select lines 2:1 2 1 4:1 4 2 8:1 8 3 16:1 16 4"
+        },
+        {
+          "type": "heading",
+          "text": "The 2:1 MUX"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>S</th>\n<th>Y</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>I₀</td>\n</tr>\n<tr>\n<td>1</td>\n<td>I₁</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "S Y 0 I₀ 1 I₁"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Equation:</strong> <strong>Y = S̅·I₀ + S·I₁</strong></p>",
+          "text": "Equation: Y = S̅·I₀ + S·I₁"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img08-2to1-mux.webp",
+          "alt": "2:1 multiplexer inside",
+          "caption": "Inside a 2:1 MUX: one NOT, two ANDs,\none OR. S = 0 lets I₀ through; S = 1 lets I₁ through.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "subheading",
+          "text": "2:1 MUX delay (an exam\nfavourite)"
+        },
+        {
+          "type": "html",
+          "html": "<p>The slowest path is <strong>S → NOT → AND → OR → Y</strong>.</p>",
+          "text": "The slowest path is S → NOT → AND → OR → Y ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>delay = NOT + AND + OR</strong></p>",
+          "text": "delay = NOT + AND + OR"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Gate delays</th>\n<th>MUX delay</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>NOT = 1, AND/OR = 2 ns</td>\n<td>1 + 2 + 2 = <strong>5 ns</strong> (2025 T2 Quiz 1)</td>\n</tr>\n<tr>\n<td>all gates 1 ns</td>\n<td>1 + 1 + 1 = <strong>3 ns</strong> (2025 T3 end-term)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Gate delays MUX delay NOT = 1, AND/OR = 2 ns 1 + 2 + 2 = 5 ns (2025 T2 Quiz 1) all gates 1 ns 1 + 1 + 1 = 3 ns (2025 T3 end-term)"
+        },
+        {
+          "type": "heading",
+          "text": "The 4:1 MUX"
+        },
+        {
+          "type": "html",
+          "html": "<p>The two select bits S₁S₀ form a number 0–3, and that input goes\nout.</p>",
+          "text": "The two select bits S₁S₀ form a number 0–3, and that input goes\nout."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>S₁</th>\n<th>S₀</th>\n<th>Y</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>I₀</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>I₁</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>I₂</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>I₃</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "S₁ S₀ Y 0 0 I₀ 0 1 I₁ 1 0 I₂ 1 1 I₃"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Y = S̅₁S̅₀·I₀ + S̅₁S₀·I₁ + S₁S̅₀·I₂ + S₁S₀·I₃</strong></p>",
+          "text": "Y = S̅₁S̅₀·I₀ + S̅₁S₀·I₁ + S₁S̅₀·I₂ + S₁S₀·I₃"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img09-4to1-mux.webp",
+          "alt": "4:1 multiplexer",
+          "caption": "Each select pattern opens exactly one gate.\nNotice: the select lines feed a decoder-like set of AND gates.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "A MUX can build any function"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Method 1: all variables on the select lines.</strong> An\nn-variable function needs a 2ⁿ:1 MUX. Put the truth-table output column\n(0s and 1s) on the data inputs.</p>",
+          "text": "Method 1: all variables on the select lines. An\nn-variable function needs a 2ⁿ:1 MUX. Put the truth-table output column\n(0s and 1s) on the data inputs."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Method 2: split on one variable (very useful for 2:1 MUX\nquestions).</strong> Pick a variable, say A, for the select line:</p>",
+          "text": "Method 2: split on one variable (very useful for 2:1 MUX\nquestions). Pick a variable, say A, for the select line:"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>F = A̅·(F when A = 0) + A·(F when A = 1)</strong></p>",
+          "text": "F = A̅·(F when A = 0) + A·(F when A = 1)"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img10-mux-shannon.webp",
+          "alt": "Splitting a function on one variable",
+          "caption": "Put A on the select\nline. Feed the “A = 0” half into I₀ and the “A = 1” half into\nI₁.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Example — F(X, Y, Z) = ΠM(0, 4) (2026 T2 Quiz 1, answer\n1)</strong> F = 0 only in rows 000 and 100, so F = <strong>Y +\nZ</strong>. Put Y on the select line: Y = 0 → F = Z; Y = 1 → F = 1.\n<strong>One</strong> 2:1 MUX: I₀ = Z, I₁ = 1, S = Y. ✔</p>\n</blockquote>",
+          "text": "Example — F(X, Y, Z) = ΠM(0, 4) (2026 T2 Quiz 1, answer\n1) F = 0 only in rows 000 and 100, so F = Y +\nZ . Put Y on the select line: Y = 0 → F = Z; Y = 1 → F = 1. One 2:1 MUX: I₀ = Z, I₁ = 1, S = Y. ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>NOT from a MUX:</strong> A̅ = MUX(S = A, I₀ = 1, I₁ = 0). It\ncosts <strong>one whole MUX</strong>.</p>",
+          "text": "NOT from a MUX: A̅ = MUX(S = A, I₀ = 1, I₁ = 0). It\ncosts one whole MUX ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> A multiplexer sends one of N inputs to\nthe output using log₂N select lines (2:1 MUX: Y = S̅I₀ + SI₁), and by\nsplitting on one variable at a time a MUX can build any function.\n<strong>Exam words:</strong> multiplexer, MUX, select lines, data\ninputs, 2:1, 4:1, MUX delay, function implementation, Shannon\nexpansion.</p>",
+          "text": "In one line: A multiplexer sends one of N inputs to\nthe output using log₂N select lines (2:1 MUX: Y = S̅I₀ + SI₁), and by\nsplitting on one variable at a time a MUX can build any function. Exam words: multiplexer, MUX, select lines, data\ninputs, 2:1, 4:1, MUX delay, function implementation, Shannon\nexpansion."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many select lines does a 32:1 MUX need?\n</summary>\n5 (2⁵ = 32).\n</details>",
+          "text": "How many select lines does a 32:1 MUX need? 5 (2⁵ = 32)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n2:1 MUX with I₀ = 0, I₁ = B and S = A. What is Y?\n</summary>\nY = A̅·0 + A·B = AB. It’s an AND gate!\n</details>",
+          "text": "2:1 MUX with I₀ = 0, I₁ = B and S = A. What is Y? Y = A̅·0 + A·B = AB. It’s an AND gate!"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n2:1 MUX with I₀ = B, I₁ = 1 and S = A. What is Y?\n</summary>\nY = A̅B + A = A + B. It’s an OR gate!\n</details>",
+          "text": "2:1 MUX with I₀ = B, I₁ = 1 and S = A. What is Y? Y = A̅B + A = A + B. It’s an OR gate!"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTrue or false: “A multiplexer selects one of several inputs and forwards\nit to a single output.”\n</summary>\nTrue.\n</details>",
+          "text": "True or false: “A multiplexer selects one of several inputs and forwards\nit to a single output.” True."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-solve-week-4-questions",
+      "title": "How to Solve Week 4 Exam Questions",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 4 questions come in six types:\ntrue/false facts, delay, “read this MUX circuit”, “read this decoder\ncircuit”, “minimum number of 2:1 MUXes”, and priority encoders. Every\npast paper has at least two of them. Learn the six recipes below and\nthese become sure marks.</p>\n</blockquote>",
+          "text": "Start here Week 4 questions come in six types:\ntrue/false facts, delay, “read this MUX circuit”, “read this decoder\ncircuit”, “minimum number of 2:1 MUXes”, and priority encoders. Every\npast paper has at least two of them. Learn the six recipes below and\nthese become sure marks."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 1: True/false facts (1\nmark each)"
+        },
+        {
+          "type": "html",
+          "html": "<p>These exact sentences keep coming back. Learn the answers.</p>",
+          "text": "These exact sentences keep coming back. Learn the answers."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Statement</th>\n<th>Answer</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“In a decoder, at any point, exactly one output is 1 and the rest\nare 0.”</td>\n<td><strong>True</strong></td>\n<td>Each input pattern turns on exactly one output.</td>\n</tr>\n<tr>\n<td>“A multiplexer selects one of several inputs and forwards it to a\nsingle output.”</td>\n<td><strong>True</strong></td>\n<td>That’s the definition.</td>\n</tr>\n<tr>\n<td>“A decoder performs the inverse operation of a multiplexer.”</td>\n<td><strong>True</strong> (official key)</td>\n<td>A MUX takes many lines into one. A decoder with an enable input\nsends one signal to one of many lines (this is a\n<strong>demultiplexer</strong>), which is the reverse. Strictly, a\ndecoder is the inverse of an <strong>encoder</strong>, but the exam’s\nanswer is True.</td>\n</tr>\n<tr>\n<td>“A decoder has n inputs and 2ⁿ outputs.”</td>\n<td><strong>True</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>“An encoder has 2ⁿ inputs and n outputs.”</td>\n<td><strong>True</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Statement Answer Why “In a decoder, at any point, exactly one output is 1 and the rest\nare 0.” True Each input pattern turns on exactly one output. “A multiplexer selects one of several inputs and forwards it to a\nsingle output.” True That’s the definition. “A decoder performs the inverse operation of a multiplexer.” True (official key) A MUX takes many lines into one. A decoder with an enable input\nsends one signal to one of many lines (this is a demultiplexer ), which is the reverse. Strictly, a\ndecoder is the inverse of an encoder , but the exam’s\nanswer is True. “A decoder has n inputs and 2ⁿ outputs.” True “An encoder has 2ⁿ inputs and n outputs.” True"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 2: Delay questions"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “NOT has delay … AND/OR have delay … what\nis the maximum delay of a 2×1 MUX / 3×8 decoder?”</p>",
+          "text": "Spot it: “NOT has delay … AND/OR have delay … what\nis the maximum delay of a 2×1 MUX / 3×8 decoder?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Draw (or picture) the block’s gates.</li>\n<li>Find the <strong>longest path</strong> from any input to the output,\ncounting gates <strong>in a chain</strong>.</li>\n<li><strong>Add</strong> the delays along that path. Gates side by side\ndon’t add up; only gates <strong>one after another</strong> do.</li>\n</ol>",
+          "text": "Draw (or picture) the block’s gates. Find the longest path from any input to the output,\ncounting gates in a chain . Add the delays along that path. Gates side by side\ndon’t add up; only gates one after another do."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img11-delay-paths.webp",
+          "alt": "Finding the longest path",
+          "caption": "The select line passes through\nNOT, then AND, then OR. That’s the longest path, so add those\nthree.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Block</th>\n<th>Longest path</th>\n<th>NOT 1, AND/OR 2</th>\n<th>All gates 1</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2:1 MUX</td>\n<td>NOT → AND → OR</td>\n<td><strong>5</strong></td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td>n:2ⁿ decoder (with n-input AND)</td>\n<td>NOT → AND</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>3:8 decoder (with <strong>2-input</strong> ANDs)</td>\n<td>NOT → AND → AND</td>\n<td>5</td>\n<td><strong>3</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Block Longest path NOT 1, AND/OR 2 All gates 1 2:1 MUX NOT → AND → OR 5 3 n:2ⁿ decoder (with n-input AND) NOT → AND 3 2 3:8 decoder (with 2-input ANDs) NOT → AND → AND 5 3"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 1, answer 3)</strong> A 4×16\ndecoder uses NOT (1 ns) and 4-input AND gates (2 ns). Longest path = NOT\n→ AND = 1 + 2 = <strong>3 ns</strong>. ✔</p>\n</blockquote>",
+          "text": "Worked example (2026 T2 Quiz 1, answer 3) A 4×16\ndecoder uses NOT (1 ns) and 4-input AND gates (2 ns). Longest path = NOT\n→ AND = 1 + 2 = 3 ns . ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> a 3-input AND made from 2-input ANDs takes\n<strong>two</strong> gate delays (AND(AND(A, B), C)).</p>",
+          "text": "Trap: a 3-input AND made from 2-input ANDs takes two gate delays (AND(AND(A, B), C))."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: NOT = 2 ns, AND = 3 ns, OR = 3 ns. Delay of a 2:1 MUX?\n</summary>\n2 + 3 + 3 = 8 ns.\n</details>",
+          "text": "Try: NOT = 2 ns, AND = 3 ns, OR = 3 ns. Delay of a 2:1 MUX? 2 + 3 + 3 = 8 ns."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 3: “What is F?” for a\nMUX circuit"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> a MUX box with things wired to I₀, I₁… and\nvariables on the select lines.</p>",
+          "text": "Spot it: a MUX box with things wired to I₀, I₁… and\nvariables on the select lines."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write a small table: one row for each select pattern (S₁S₀ = 00, 01,\n10, 11).</li>\n<li>In each row, write <strong>which signal</strong> reaches the\noutput.</li>\n<li>Turn the table into a formula (or spot the pattern).</li>\n<li><strong>Check every option</strong> by putting in values. Don’t\ntrust “looks similar”.</li>\n</ol>",
+          "text": "Write a small table: one row for each select pattern (S₁S₀ = 00, 01,\n10, 11). In each row, write which signal reaches the\noutput. Turn the table into a formula (or spot the pattern). Check every option by putting in values. Don’t\ntrust “looks similar”."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1). The official key is wrong\nhere!</strong> A 4×1 MUX has I₀ = X, I₁ = X̅, I₂ = X, I₃ = X̅, with S₁ = Y\nand S₀ = Z.</p>\n<table>\n<thead>\n<tr>\n<th>Y (S₁)</th>\n<th>Z (S₀)</th>\n<th>Output</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>I₀ = X</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>I₁ = X̅</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>I₂ = X</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>I₃ = X̅</td>\n</tr>\n</tbody>\n</table>\n<p>When Z = 0, F = X. When Z = 1, F = X̅. So <strong>F = X ⊕ Z</strong>\n(Y doesn’t matter at all).</p>\n<p>The official answer was X(Z̅ + YZ) + X̅Y̅Z. Test it at X = 1, Y = 1, Z =\n1: it gives <strong>1</strong>, but the circuit gives I₃ = X̅ =\n<strong>0</strong>. So that option is wrong, and the correct choice is\n<strong>“None of these”</strong>. (We checked all 8 rows by\ncomputer.)</p>\n</blockquote>",
+          "text": "Worked example (2025 T2 Quiz 1). The official key is wrong\nhere! A 4×1 MUX has I₀ = X, I₁ = X̅, I₂ = X, I₃ = X̅, with S₁ = Y\nand S₀ = Z. Y (S₁) Z (S₀) Output 0 0 I₀ = X 0 1 I₁ = X̅ 1 0 I₂ = X 1 1 I₃ = X̅ When Z = 0, F = X. When Z = 1, F = X̅. So F = X ⊕ Z (Y doesn’t matter at all). The official answer was X(Z̅ + YZ) + X̅Y̅Z. Test it at X = 1, Y = 1, Z =\n1: it gives 1 , but the circuit gives I₃ = X̅ = 0 . So that option is wrong, and the correct choice is “None of these” . (We checked all 8 rows by\ncomputer.)"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img12-read-mux-circuit.webp",
+          "alt": "Reading a MUX circuit",
+          "caption": "Fill one row per select pattern. Here\nthe output only follows Z, so F = X ⊕ Z.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 4: Decoder + OR circuit"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> a 3×8 decoder with some outputs (D₂, D₃, …)\nwired into an OR gate.</p>",
+          "text": "Spot it: a 3×8 decoder with some outputs (D₂, D₃, …)\nwired into an OR gate."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Write F = Σm(the connected output numbers).</strong> Follow\nevery wire carefully. Sometimes a wire bends and joins another\nline.</li>\n<li>Simplify F.</li>\n<li>Answer what is asked (gate count, MUX count, output for an\ninput…).</li>\n</ol>",
+          "text": "Write F = Σm(the connected output numbers). Follow\nevery wire carefully. Sometimes a wire bends and joins another\nline. Simplify F. Answer what is asked (gate count, MUX count, output for an\ninput…)."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 1, answer 3)</strong> D₂, D₃,\nD₅, D₆ go into the OR. So <strong>F(A, B, C) = Σm(2, 3, 5,\n6)</strong>.</p>\n<ul>\n<li>A = 0: rows 0–3 give 0, 0, 1, 1 → F = <strong>B</strong>.</li>\n<li>A = 1: rows 4–7 give 0, 1, 1, 0 → F = <strong>B ⊕ C</strong>.</li>\n</ul>\n<p>So F = B ⊕ AC. Minimum 2:1 MUXes (only muxes, no free inverters):\n<strong>3</strong>. One way: M1 = MUX(S=A, I₀=0, I₁=C) = AC; M2 =\nMUX(S=M1, I₀=1, I₁=0) = (AC)̅; F = MUX(S=B, I₀=M1, I₁=M2). ✔</p>\n</blockquote>",
+          "text": "Worked example (2026 T2 Quiz 1, answer 3) D₂, D₃,\nD₅, D₆ go into the OR. So F(A, B, C) = Σm(2, 3, 5,\n6) . A = 0: rows 0–3 give 0, 0, 1, 1 → F = B . A = 1: rows 4–7 give 0, 1, 1, 0 → F = B ⊕ C . So F = B ⊕ AC. Minimum 2:1 MUXes (only muxes, no free inverters): 3 . One way: M1 = MUX(S=A, I₀=0, I₁=C) = AC; M2 =\nMUX(S=M1, I₀=1, I₁=0) = (AC)̅; F = MUX(S=B, I₀=M1, I₁=M2). ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Same circuit in other papers:</strong></p>",
+          "text": "Same circuit in other papers:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>2025 T2 Quiz 1 asked: with XOR gates available, how many\n<strong>NAND</strong> gates? F = B ⊕ AC needs one XOR and one AND, and\nan AND costs <strong>2 NANDs</strong> → <strong>2</strong>.</li>\n<li>2025 T3 Quiz 1 asked: how many <strong>4:1</strong> MUXes? Answer\n<strong>1</strong>: S₁S₀ = AB, inputs 0, 1, C, C̅. This only works if\n<strong>C̅ is available</strong> for free. Using just muxes, you’d need a\nNOT too. Say this assumption in your rough work.</li>\n</ul>",
+          "text": "2025 T2 Quiz 1 asked: with XOR gates available, how many NAND gates? F = B ⊕ AC needs one XOR and one AND, and\nan AND costs 2 NANDs → 2 . 2025 T3 Quiz 1 asked: how many 4:1 MUXes? Answer 1 : S₁S₀ = AB, inputs 0, 1, C, C̅. This only works if C̅ is available for free. Using just muxes, you’d need a\nNOT too. Say this assumption in your rough work."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 5: Minimum number of 2:1\nMUXes"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “minimum number of 2:1 multiplexers to\nimplement F…”</p>",
+          "text": "Spot it: “minimum number of 2:1 multiplexers to\nimplement F…”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The rule the papers use:</strong> you get the variables and\nthe constants 0 and 1 for free. A <strong>NOT costs one MUX</strong>: A̅\n= MUX(S=A, I₀=1, I₁=0).</p>",
+          "text": "The rule the papers use: you get the variables and\nthe constants 0 and 1 for free. A NOT costs one MUX : A̅\n= MUX(S=A, I₀=1, I₁=0)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Simplify F first.</li>\n<li>Try each variable as the select line. Write <strong>F when it’s\n0</strong> and <strong>F when it’s 1</strong>.</li>\n<li>If both halves are just a variable, a constant, or 0/1 → <strong>1\nMUX</strong>.</li>\n<li>If a half needs a NOT or another function, build that half with more\nMUXes and add them up.</li>\n</ol>",
+          "text": "Simplify F first. Try each variable as the select line. Write F when it’s\n0 and F when it’s 1 . If both halves are just a variable, a constant, or 0/1 → 1\nMUX . If a half needs a NOT or another function, build that half with more\nMUXes and add them up."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img17-mux-gate-table.webp",
+          "alt": "Gates made from 2:1 MUXes",
+          "caption": "AND, OR and AB̅ need 1 MUX. NOT\nneeds 1. NAND, NOR, XOR and XNOR need 2.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Function</th>\n<th>2:1 MUXes</th>\n<th>How</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A·B</td>\n<td>1</td>\n<td>MUX(S=A, I₀=0, I₁=B)</td>\n</tr>\n<tr>\n<td>A + B</td>\n<td>1</td>\n<td>MUX(S=A, I₀=B, I₁=1)</td>\n</tr>\n<tr>\n<td>A̅</td>\n<td>1</td>\n<td>MUX(S=A, I₀=1, I₁=0)</td>\n</tr>\n<tr>\n<td>A ⊕ B</td>\n<td><strong>2</strong></td>\n<td>B̅ first, then MUX(S=A, I₀=B, I₁=B̅)</td>\n</tr>\n<tr>\n<td>A ⊙ B (XNOR)</td>\n<td><strong>2</strong></td>\n<td>B̅ first, then MUX(S=A, I₀=B̅, I₁=B)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Function 2:1 MUXes How A·B 1 MUX(S=A, I₀=0, I₁=B) A + B 1 MUX(S=A, I₀=B, I₁=1) A̅ 1 MUX(S=A, I₀=1, I₁=0) A ⊕ B 2 B̅ first, then MUX(S=A, I₀=B, I₁=B̅) A ⊙ B (XNOR) 2 B̅ first, then MUX(S=A, I₀=B̅, I₁=B)"
+        },
+        {
+          "type": "html",
+          "html": "<p>All counts checked by a computer search.</p>",
+          "text": "All counts checked by a computer search."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 2)</strong> XNOR\nwith 2:1 MUXes → <strong>2</strong>.</p>\n</blockquote>",
+          "text": "Worked example (2026 T2 end-term, answer 2) XNOR\nwith 2:1 MUXes → 2 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 2, answer 2)</strong> F(A, B, C)\n= Σ(0, 1, 2, 3, 4, 5, 7). F = 0 only in row 6 (110), so <strong>F = A̅ +\nB̅ + C</strong>.</p>\n<ul>\n<li>A = 0 → F = 1. A = 1 → F = B̅ + C.</li>\n<li>B̅ + C: B = 0 → 1, B = 1 → C. That’s MUX(S=B, I₀=1, I₁=C), with\n<strong>no inverter needed</strong>!</li>\n<li>F = MUX(S=A, I₀=1, I₁=that). <strong>Total 2.</strong> ✔</li>\n</ul>\n<p>Same paper, with <strong>3-input NAND</strong> gates: F = (A·B·C̅)̅ =\nNAND(A, B, C̅). C̅ = NAND(C, C, C). <strong>Total 2.</strong> ✔</p>\n</blockquote>",
+          "text": "Worked example (2026 T2 Quiz 2, answer 2) F(A, B, C)\n= Σ(0, 1, 2, 3, 4, 5, 7). F = 0 only in row 6 (110), so F = A̅ +\nB̅ + C . A = 0 → F = 1. A = 1 → F = B̅ + C. B̅ + C: B = 0 → 1, B = 1 → C. That’s MUX(S=B, I₀=1, I₁=C), with no inverter needed ! F = MUX(S=A, I₀=1, I₁=that). Total 2. ✔ Same paper, with 3-input NAND gates: F = (A·B·C̅)̅ =\nNAND(A, B, C̅). C̅ = NAND(C, C, C). Total 2. ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> a question that leaves out the symbol, like\n“F(X, Y, Z) = (4, 5, 6, 7)” (2025 T2 Quiz 1). If it is Σ, F = X (0\nMUXes, just a wire). If it is Π, F = X̅ (1 MUX). The official answer “2”\nfits neither reading, so that question was faulty. Don’t worry if you\nmeet one like it; choose the most sensible reading.</p>",
+          "text": "Trap: a question that leaves out the symbol, like\n“F(X, Y, Z) = (4, 5, 6, 7)” (2025 T2 Quiz 1). If it is Σ, F = X (0\nMUXes, just a wire). If it is Π, F = X̅ (1 MUX). The official answer “2”\nfits neither reading, so that question was faulty. Don’t worry if you\nmeet one like it; choose the most sensible reading."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 6: Priority encoder\noutput"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “4-to-2 priority encoder… L₃ highest… what\nis the output for (L₃, L₂, L₁, L₀) = …?”</p>",
+          "text": "Spot it: “4-to-2 priority encoder… L₃ highest… what\nis the output for (L₃, L₂, L₁, L₀) = …?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Find the <strong>highest-numbered input that is 1</strong>.</li>\n<li>Write its number in binary. <strong>Done.</strong></li>\n<li>(Optional check: plug into the given equations.)</li>\n</ol>",
+          "text": "Find the highest-numbered input that is 1 . Write its number in binary. Done. (Optional check: plug into the given equations.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 10)</strong> (0, 1,\n1, 1): the highest 1 is L₂ → 2 → <strong>10</strong>. ✔</p>\n</blockquote>",
+          "text": "Worked example (2026 T2 end-term, answer 10) (0, 1,\n1, 1): the highest 1 is L₂ → 2 → 10 . ✔"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: (L₃, L₂, L₁, L₀) = (0, 0, 1, 1).\n</summary>\n01 (L₁ is the highest input that is on).\n</details>",
+          "text": "Try: (L₃, L₂, L₁, L₀) = (0, 0, 1, 1). 01 (L₁ is the highest input that is on)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: (1, 0, 1, 0).\n</summary>\n11 (L₃ wins).\n</details>",
+          "text": "Try: (1, 0, 1, 0). 11 (L₃ wins)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Learn the five true/false facts, add\ndelays along the longest chain, read MUX and decoder circuits row by\nrow, count MUXes by splitting on one variable (NOT costs a MUX), and for\na priority encoder just find the highest 1. <strong>Exam words:</strong>\ndecoder, encoder, priority encoder, multiplexer, propagation delay,\nlongest path, select lines, Σm, minimum MUX count.</p>",
+          "text": "In one line: Learn the five true/false facts, add\ndelays along the longest chain, read MUX and decoder circuits row by\nrow, count MUXes by splitting on one variable (NOT costs a MUX), and for\na priority encoder just find the highest 1. Exam words: decoder, encoder, priority encoder, multiplexer, propagation delay,\nlongest path, select lines, Σm, minimum MUX count."
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many 2:1 MUXes for F(X, Y) = Π(0, 3)? (2025 T3 Quiz 1)\n</summary>\n<ol start=\"2\" type=\"1\">\n<li>F = 0 at 00 and 11, so F = X ⊕ Y, which needs 2 MUXes.\n</li></ol></details>",
+          "text": "How many 2:1 MUXes for F(X, Y) = Π(0, 3)? (2025 T3 Quiz 1) F = 0 at 00 and 11, so F = X ⊕ Y, which needs 2 MUXes."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nA 3×8 decoder (NOT and 2-input AND, all 1 ns). Maximum delay? (2025 T3\nQuiz 1)\n</summary>\n3 ns (NOT → AND → AND).\n</details>",
+          "text": "A 3×8 decoder (NOT and 2-input AND, all 1 ns). Maximum delay? (2025 T3\nQuiz 1) 3 ns (NOT → AND → AND)."
+        }
+      ]
+    },
+    {
+      "slug": "week-4-quick-revision",
+      "title": "Week 4 Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> All of Week 4 on one page: what each\nblock does, its key formula, the facts that keep coming back as\ntrue/false questions, and 10 practice questions.</p>\n</blockquote>",
+          "text": "Start here All of Week 4 on one page: what each\nblock does, its key formula, the facts that keep coming back as\ntrue/false questions, and 10 practice questions."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-4/img18-week4-map.webp",
+          "alt": "Week 4 at a glance",
+          "caption": "Four blocks: comparator, decoder,\nencoder (and priority encoder), and multiplexer.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "The whole week in a table"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Block</th>\n<th>Inputs → outputs</th>\n<th>Key formula / fact</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Equality comparator</strong></td>\n<td>two n-bit numbers → 1 bit</td>\n<td>XNOR per bit, then AND all</td>\n</tr>\n<tr>\n<td><strong>Decoder</strong></td>\n<td>n → 2ⁿ</td>\n<td>Exactly one output is 1. Each output is a minterm</td>\n</tr>\n<tr>\n<td><strong>Encoder</strong></td>\n<td>2ⁿ → n</td>\n<td>4-to-2: Y₁ = I₂ + I₃, Y₀ = I₁ + I₃</td>\n</tr>\n<tr>\n<td><strong>Priority encoder</strong></td>\n<td>2ⁿ → n</td>\n<td>Highest active input wins. Y₁ = I₃ + I₂, Y₀ = I₃ + I̅₂I₁</td>\n</tr>\n<tr>\n<td><strong>Multiplexer</strong></td>\n<td>N data + log₂N select → 1</td>\n<td>2:1: Y = S̅I₀ + SI₁</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Block Inputs → outputs Key formula / fact Equality comparator two n-bit numbers → 1 bit XNOR per bit, then AND all Decoder n → 2ⁿ Exactly one output is 1. Each output is a minterm Encoder 2ⁿ → n 4-to-2: Y₁ = I₂ + I₃, Y₀ = I₁ + I₃ Priority encoder 2ⁿ → n Highest active input wins. Y₁ = I₃ + I₂, Y₀ = I₃ + I̅₂I₁ Multiplexer N data + log₂N select → 1 2:1: Y = S̅I₀ + SI₁"
+        },
+        {
+          "type": "heading",
+          "text": "Numbers to remember"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>2:1 MUX delay</strong> = NOT + AND + OR (all 1 ns →\n<strong>3</strong>; NOT 1, AND/OR 2 → <strong>5</strong>).</li>\n<li><strong>Decoder delay</strong> = NOT + AND (a 3-input AND made of\n2-input ANDs counts <strong>twice</strong>).</li>\n<li><strong>2:1 MUX counts:</strong> AND 1, OR 1, NOT 1, XOR 2, XNOR 2,\nNAND 2, NOR 2.</li>\n<li><strong>Select lines</strong> for an N:1 MUX = log₂N.</li>\n</ul>",
+          "text": "2:1 MUX delay = NOT + AND + OR (all 1 ns → 3 ; NOT 1, AND/OR 2 → 5 ). Decoder delay = NOT + AND (a 3-input AND made of\n2-input ANDs counts twice ). 2:1 MUX counts: AND 1, OR 1, NOT 1, XOR 2, XNOR 2,\nNAND 2, NOR 2. Select lines for an N:1 MUX = log₂N."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Mistake</th>\n<th>Correct way</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Adding delays of gates that work side by side</td>\n<td>Only add gates <strong>in a chain</strong></td>\n</tr>\n<tr>\n<td>Treating NOT as free in MUX-count questions</td>\n<td>NOT = <strong>1 MUX</strong> (unless the question gives X̅)</td>\n</tr>\n<tr>\n<td>Plain encoder with two inputs on</td>\n<td>Gives a <strong>wrong</strong> code; that’s why we need priority\nencoders</td>\n</tr>\n<tr>\n<td>Missing a bent wire in a decoder circuit</td>\n<td>Trace <strong>every</strong> wire to see which Dₖ goes into the\nOR</td>\n</tr>\n<tr>\n<td>Trusting an option that “looks right”</td>\n<td>Put in numbers and test (one past key was wrong!)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Mistake Correct way Adding delays of gates that work side by side Only add gates in a chain Treating NOT as free in MUX-count questions NOT = 1 MUX (unless the question gives X̅) Plain encoder with two inputs on Gives a wrong code; that’s why we need priority\nencoders Missing a bent wire in a decoder circuit Trace every wire to see which Dₖ goes into the\nOR Trusting an option that “looks right” Put in numbers and test (one past key was wrong!)"
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>How many outputs does a 4-input decoder have?\n</li></ol></summary>\n16.\n</details>",
+          "text": "How many outputs does a 4-input decoder have? 16."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>A 3:8 decoder gets ABC = 011. Which output is 1?\n</li></ol></summary>\nD₃.\n</details>",
+          "text": "A 3:8 decoder gets ABC = 011. Which output is 1? D₃."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>F(A,B,C) = Σm(0, 7) using a 3:8 decoder. What extra gate?\n</li></ol></summary>\nOne 2-input OR gate on D₀ and D₇.\n</details>",
+          "text": "F(A,B,C) = Σm(0, 7) using a 3:8 decoder. What extra gate? One 2-input OR gate on D₀ and D₇."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>4-to-2 priority encoder, inputs I₃I₂I₁I₀ = 0110. Output?\n</li></ol></summary>\n10 (I₂ is the highest input that is on).\n</details>",
+          "text": "4-to-2 priority encoder, inputs I₃I₂I₁I₀ = 0110. Output? 10 (I₂ is the highest input that is on)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>How many select lines does a 16:1 MUX have?\n</li></ol></summary>\n4.\n</details>",
+          "text": "How many select lines does a 16:1 MUX have? 4."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>2:1 MUX, NOT = 2 ns, AND = OR = 1 ns. Maximum delay?\n</li></ol></summary>\n2 + 1 + 1 = 4 ns.\n</details>",
+          "text": "2:1 MUX, NOT = 2 ns, AND = OR = 1 ns. Maximum delay? 2 + 1 + 1 = 4 ns."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Minimum 2:1 MUXes for A ⊕ B?\n</li></ol></summary>\n2 (one makes B̅, one picks B or B̅ using A).\n</details>",
+          "text": "Minimum 2:1 MUXes for A ⊕ B? 2 (one makes B̅, one picks B or B̅ using A)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>2:1 MUX with S = A, I₀ = 0, I₁ = B. What gate is it?\n</li></ol></summary>\nAND (Y = AB).\n</details>",
+          "text": "2:1 MUX with S = A, I₀ = 0, I₁ = B. What gate is it? AND (Y = AB)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"9\" type=\"1\">\n<li>4-bit equality comparator: A = 1100, B = 1101. Output?\n</li></ol></summary>\n0 (bit 0 differs).\n</details>",
+          "text": "4-bit equality comparator: A = 1100, B = 1101. Output? 0 (bit 0 differs)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"10\" type=\"1\">\n<li>True or false: “In a decoder, exactly one of the outputs is 1 at any\ntime.”\n</li></ol></summary>\nTrue.\n</details>",
+          "text": "True or false: “In a decoder, exactly one of the outputs is 1 at any\ntime.” True."
+        }
+      ]
+    }
+  ]
+}

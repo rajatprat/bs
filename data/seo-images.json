@@ -1179,5 +1179,123 @@
   ],
   "/spg/week-11/week-11-quick-revision/": [
     "/images/spg-week-11/img13-week11-map.webp"
+  ],
+  "/computer-system-design/week-2/truth-tables/": [
+    "/images/csd-week-2/img01-tictactoe-bits.webp",
+    "/images/csd-week-2/img10-vending-function.webp",
+    "/images/csd-week-2/img02-comb-vs-seq.webp"
+  ],
+  "/computer-system-design/week-2/logic-gates/": [
+    "/images/csd-week-2/img03-basic-gates.webp",
+    "/images/csd-week-2/img11-daily-and-or-not.webp",
+    "/images/csd-week-2/img04-more-gates.webp"
+  ],
+  "/computer-system-design/week-2/boolean-algebra/": [
+    "/images/csd-week-2/img05-laws-pairs.webp"
+  ],
+  "/computer-system-design/week-2/de-morgans-laws/": [
+    "/images/csd-week-2/img06-demorgan-gates.webp",
+    "/images/csd-week-2/img12-not-inside.webp"
+  ],
+  "/computer-system-design/week-2/sum-of-products/": [
+    "/images/csd-week-2/img13-row-detector.webp",
+    "/images/csd-week-2/img07-sop-from-table.webp"
+  ],
+  "/computer-system-design/week-2/exam-question-types/": [
+    "/images/csd-week-2/img08-probability-example.webp"
+  ],
+  "/computer-system-design/week-2/week-2-quick-revision/": [
+    "/images/csd-week-2/img09-week2-map.webp"
+  ],
+  "/computer-system-design/week-3/sop-circuits/": [
+    "/images/csd-week-3/img01-sop-two-level.webp"
+  ],
+  "/computer-system-design/week-3/product-of-sums/": [
+    "/images/csd-week-3/img13-list-the-zeros.webp",
+    "/images/csd-week-3/img02-sop-vs-pos.webp",
+    "/images/csd-week-3/img03-sigma-pi-split.webp"
+  ],
+  "/computer-system-design/week-3/universal-gates/": [
+    "/images/csd-week-3/img15-one-brick-every-circuit.webp",
+    "/images/csd-week-3/img04-nand-universal.webp",
+    "/images/csd-week-3/img05-and-or-to-nand-nand.webp"
+  ],
+  "/computer-system-design/week-3/multilevel-and-timing/": [
+    "/images/csd-week-3/img14-three-doors-one-bulb.webp",
+    "/images/csd-week-3/img06-multilevel.webp",
+    "/images/csd-week-3/img16-cooks-and-levels.webp",
+    "/images/csd-week-3/img07-timing-diagram.webp",
+    "/images/csd-week-3/img08-three-switch-light.webp"
+  ],
+  "/computer-system-design/week-3/how-to-solve-week-3-questions/": [
+    "/images/csd-week-3/img09-gate-count-recipe.webp",
+    "/images/csd-week-3/img10-four-nor-comparator.webp",
+    "/images/csd-week-3/img11-timing-to-xor.webp"
+  ],
+  "/computer-system-design/week-3/week-3-quick-revision/": [
+    "/images/csd-week-3/img12-week3-map.webp"
+  ],
+  "/computer-system-design/week-4/building-blocks-and-comparators/": [
+    "/images/csd-week-4/img13-ready-made-parts.webp",
+    "/images/csd-week-4/img01-building-blocks.webp",
+    "/images/csd-week-4/img02-4bit-comparator.webp"
+  ],
+  "/computer-system-design/week-4/decoders/": [
+    "/images/csd-week-4/img14-hotel-rooms.webp",
+    "/images/csd-week-4/img03-2to4-decoder.webp",
+    "/images/csd-week-4/img04-decoder-plus-or.webp",
+    "/images/csd-week-4/img05-decoder-delay.webp"
+  ],
+  "/computer-system-design/week-4/encoders-and-priority-encoders/": [
+    "/images/csd-week-4/img06-decoder-vs-encoder.webp",
+    "/images/csd-week-4/img15-priority-queue.webp",
+    "/images/csd-week-4/img07-priority-encoder.webp"
+  ],
+  "/computer-system-design/week-4/multiplexers/": [
+    "/images/csd-week-4/img16-tv-remote-mux.webp",
+    "/images/csd-week-4/img08-2to1-mux.webp",
+    "/images/csd-week-4/img09-4to1-mux.webp",
+    "/images/csd-week-4/img10-mux-shannon.webp"
+  ],
+  "/computer-system-design/week-4/how-to-solve-week-4-questions/": [
+    "/images/csd-week-4/img11-delay-paths.webp",
+    "/images/csd-week-4/img12-read-mux-circuit.webp",
+    "/images/csd-week-4/img17-mux-gate-table.webp"
+  ],
+  "/computer-system-design/week-4/week-4-quick-revision/": [
+    "/images/csd-week-4/img18-week4-map.webp"
+  ],
+  "/computer-system-design/week-1/what-is-a-computer-system/": [
+    "/images/csd-week-1/img01-three-blocks.webp",
+    "/images/csd-week-1/img02-transformation-ladder.webp"
+  ],
+  "/computer-system-design/week-1/transistors-chips-moores-law/": [
+    "/images/csd-week-1/img03-zoom-levels.webp",
+    "/images/csd-week-1/img14-lego-blocks.webp",
+    "/images/csd-week-1/img04-moores-law.webp"
+  ],
+  "/computer-system-design/week-1/representing-information/": [
+    "/images/csd-week-1/img05-picture-voltages.webp"
+  ],
+  "/computer-system-design/week-1/the-digital-abstraction/": [
+    "/images/csd-week-1/img13-telephone-game.webp",
+    "/images/csd-week-1/img06-noise-chain.webp",
+    "/images/csd-week-1/img07-voltage-zones.webp"
+  ],
+  "/computer-system-design/week-1/binary-numbers/": [
+    "/images/csd-week-1/img08-bit-patterns.webp",
+    "/images/csd-week-1/img09-place-values.webp"
+  ],
+  "/computer-system-design/week-1/other-bases-and-hex/": [
+    "/images/csd-week-1/img12-hex-groups.webp"
+  ],
+  "/computer-system-design/week-1/from-logic-to-circuits/": [
+    "/images/csd-week-1/img10-switches-logic.webp"
+  ],
+  "/computer-system-design/week-1/how-to-solve-week-1-questions/": [
+    "/images/csd-week-1/img15-week1-question-types.webp"
+  ],
+  "/computer-system-design/week-1/week-1-quick-revision/": [
+    "/images/csd-week-1/img11-week1-map.webp"
   ]
 }

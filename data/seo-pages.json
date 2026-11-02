@@ -1,7 +1,7 @@
 {
   "/": {
     "title": "IIT Madras BS Notes: Subjects, Lessons & Revision",
-    "description": "Free student-made notes for IIT Madras BS students: SPG, Software Engineering, Algorithms in Data Science, Generative AI mathematics and Statistics."
+    "description": "Student-made IIT Madras BS notes: Computer System Design, SPG, Software Engineering, Algorithms in Data Science, Generative AI mathematics and Statistics."
   },
   "/spg/": {
     "title": "Strategies for Professional Growth (SPG) Notes | IIT Madras BS",
@@ -1222,5 +1222,137 @@
   "/statistics/week-1/lesson-5-the-cdf-of-a-continuous-random-variable/": {
     "title": "Lesson 5 — The CDF of a Continuous Random Variable | Statistics",
     "description": "Lesson 5 — The CDF of a Continuous Random Variable explained in Statistics, Week 1. 24. What the CDF is: accumulated probability; 25. From PDF to CDF: integr."
+  },
+  "/computer-system-design/week-2/truth-tables/": {
+    "title": "Describing a Circuit — Functional Specification and Truth Tables | CSD | IITM BS",
+    "description": "Describing a Circuit — Functional Specification and Truth Tables explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with."
+  },
+  "/computer-system-design/week-2/logic-gates/": {
+    "title": "Logic Gates — NOT, AND, OR and Friends | CSD | IITM BS",
+    "description": "Logic Gates — NOT, AND, OR and Friends explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-2/boolean-algebra/": {
+    "title": "Boolean Algebra — The Rules | CSD | IITM BS",
+    "description": "Boolean Algebra — The Rules explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-2/de-morgans-laws/": {
+    "title": "De Morgan's Laws | CSD | IITM BS",
+    "description": "De Morgan's Laws explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-2/sum-of-products/": {
+    "title": "Sum of Products (SOP) and Minterms | CSD | IITM BS",
+    "description": "Sum of Products (SOP) and Minterms explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-2/exam-question-types/": {
+    "title": "How to Solve — Truth-Table Exam Questions | CSD | IITM BS",
+    "description": "How to Solve — Truth-Table Exam Questions explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-2/week-2-quick-revision/": {
+    "title": "Week 2 — Quick Revision | CSD | IITM BS",
+    "description": "Week 2 — Quick Revision explained in Computer System Design Week 2. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-2/": {
+    "title": "CSD Week 2: Truth tables, logic gates and Boolean algebra | IIT Madras BS",
+    "description": "Computer System Design Week 2 notes: Truth tables, logic gates and Boolean algebra. Diagrams, worked examples, exam practice and revision."
+  },
+  "/computer-system-design/week-3/sop-circuits/": {
+    "title": "From SOP to a Circuit — Two-Level Logic | CSD | IITM BS",
+    "description": "From SOP to a Circuit — Two-Level Logic explained in Computer System Design Week 3. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-3/product-of-sums/": {
+    "title": "Product of Sums (POS) and Maxterms | CSD | IITM BS",
+    "description": "Product of Sums (POS) and Maxterms explained in Computer System Design Week 3. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-3/universal-gates/": {
+    "title": "Universal Gates — Building Everything from NAND or NOR | CSD | IITM BS",
+    "description": "Universal Gates — Building Everything from NAND or NOR explained in Computer System Design Week 3. Illustrated IIT Madras BS study notes with worked examples."
+  },
+  "/computer-system-design/week-3/multilevel-and-timing/": {
+    "title": "Multilevel Logic and Timing Diagrams | CSD | IITM BS",
+    "description": "Multilevel Logic and Timing Diagrams explained in Computer System Design Week 3. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-3/how-to-solve-week-3-questions/": {
+    "title": "How to Solve Week 3 Exam Questions | CSD | IITM BS",
+    "description": "How to Solve Week 3 Exam Questions explained in Computer System Design Week 3. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-3/week-3-quick-revision/": {
+    "title": "Week 3 Quick Revision | CSD | IITM BS",
+    "description": "Week 3 Quick Revision explained in Computer System Design Week 3. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-3/": {
+    "title": "CSD Week 3: SOP, POS, universal gates and timing | IIT Madras BS",
+    "description": "Computer System Design Week 3 notes: SOP, POS, universal gates and timing. Diagrams, worked examples, exam practice and revision."
+  },
+  "/computer-system-design/week-4/building-blocks-and-comparators/": {
+    "title": "Building Blocks and Equality Comparators | CSD | IITM BS",
+    "description": "Building Blocks and Equality Comparators explained in Computer System Design Week 4. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-4/decoders/": {
+    "title": "Decoders | CSD | IITM BS",
+    "description": "Decoders explained in Computer System Design Week 4. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-4/encoders-and-priority-encoders/": {
+    "title": "Encoders and Priority Encoders | CSD | IITM BS",
+    "description": "Encoders and Priority Encoders explained in Computer System Design Week 4. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-4/multiplexers/": {
+    "title": "Multiplexers (MUX) | CSD | IITM BS",
+    "description": "Multiplexers (MUX) explained in Computer System Design Week 4. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-4/how-to-solve-week-4-questions/": {
+    "title": "How to Solve Week 4 Exam Questions | CSD | IITM BS",
+    "description": "How to Solve Week 4 Exam Questions explained in Computer System Design Week 4. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-4/week-4-quick-revision/": {
+    "title": "Week 4 Quick Revision | CSD | IITM BS",
+    "description": "Week 4 Quick Revision explained in Computer System Design Week 4. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-4/": {
+    "title": "CSD Week 4: Combinational building blocks | IIT Madras BS",
+    "description": "Computer System Design Week 4 notes: Combinational building blocks. Diagrams, worked examples, exam practice and revision."
+  },
+  "/computer-system-design/": {
+    "title": "Computer System Design (CSD) Notes | IIT Madras BS",
+    "description": "Computer System Design (CS3031) notes for IIT Madras BS: truth tables, Boolean algebra, SOP/POS, NAND/NOR, timing, decoders, encoders and multiplexers."
+  },
+  "/computer-system-design/week-1/what-is-a-computer-system/": {
+    "title": "What Is a Computer System? | CSD | IITM BS",
+    "description": "What Is a Computer System? explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/transistors-chips-moores-law/": {
+    "title": "From Transistors to Chips, and Moore's Law | CSD | IITM BS",
+    "description": "From Transistors to Chips, and Moore's Law explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/representing-information/": {
+    "title": "Representing Information with Voltage | CSD | IITM BS",
+    "description": "Representing Information with Voltage explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/the-digital-abstraction/": {
+    "title": "The Digital Abstraction — Why Computers Use 0 and 1 | CSD | IITM BS",
+    "description": "The Digital Abstraction — Why Computers Use 0 and 1 explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples."
+  },
+  "/computer-system-design/week-1/binary-numbers/": {
+    "title": "Binary Numbers and Place Value | CSD | IITM BS",
+    "description": "Binary Numbers and Place Value explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/other-bases-and-hex/": {
+    "title": "Other Bases — Octal, Hexadecimal and Any Base | CSD | IITM BS",
+    "description": "Other Bases — Octal, Hexadecimal and Any Base explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/from-logic-to-circuits/": {
+    "title": "From Logic to Circuits — Boole and Shannon | CSD | IITM BS",
+    "description": "From Logic to Circuits — Boole and Shannon explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/how-to-solve-week-1-questions/": {
+    "title": "How to Solve Week 1 Exam Questions | CSD | IITM BS",
+    "description": "How to Solve Week 1 Exam Questions explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/week-1-quick-revision/": {
+    "title": "Week 1 — Quick Revision | CSD | IITM BS",
+    "description": "Week 1 — Quick Revision explained in Computer System Design Week 1. Illustrated IIT Madras BS study notes with worked examples and."
+  },
+  "/computer-system-design/week-1/": {
+    "title": "CSD Week 1: Introduction, digital abstraction and binary | IIT Madras BS",
+    "description": "Computer System Design Week 1 notes: Introduction, digital abstraction and binary. Diagrams, worked examples, exam practice and revision."
   }
 }

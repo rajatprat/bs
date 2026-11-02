@@ -1,0 +1,1652 @@
+{
+  "subject": "Computer System Design",
+  "subjectSlug": "computer-system-design",
+  "week": 1,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computer-system-design/week-1/",
+  "intro": [],
+  "sections": [
+    {
+      "slug": "what-is-a-computer-system",
+      "title": "What Is a Computer System?",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Your phone, a smart watch, a washing\nmachine, a drone, a self-driving car, even a smart speaker. They look\ncompletely different. But inside, every one of them does the same three\njobs: it <strong>computes</strong>, it <strong>remembers</strong>, and\nit <strong>communicates</strong>. This course shows you how to build\nsuch a machine from the very bottom.</p>\n</blockquote>",
+          "text": "Start here Your phone, a smart watch, a washing\nmachine, a drone, a self-driving car, even a smart speaker. They look\ncompletely different. But inside, every one of them does the same three\njobs: it computes , it remembers , and\nit communicates . This course shows you how to build\nsuch a machine from the very bottom."
+        },
+        {
+          "type": "heading",
+          "text": "Computers are everywhere"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>computing system</strong> is any machine that takes in\ninformation, works on it, and gives out a result. Today they are inside\nalmost everything: phones, watches, cars, robots, TVs and fridges.</p>",
+          "text": "A computing system is any machine that takes in\ninformation, works on it, and gives out a result. Today they are inside\nalmost everything: phones, watches, cars, robots, TVs and fridges."
+        },
+        {
+          "type": "html",
+          "html": "<p>They also keep getting more complex. A Nokia 3310 phone (2000) could\nmake calls and send SMS. A smartphone from the 2020s has a camera, GPS,\ninternet, AI features and billions of tiny switches inside.</p>",
+          "text": "They also keep getting more complex. A Nokia 3310 phone (2000) could\nmake calls and send SMS. A smartphone from the 2020s has a camera, GPS,\ninternet, AI features and billions of tiny switches inside."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The good news:</strong> however complex they get, the\n<strong>basics stay the same</strong>. If you understand the basics\nwell, you can understand any computer.</p>",
+          "text": "The good news: however complex they get, the basics stay the same . If you understand the basics\nwell, you can understand any computer."
+        },
+        {
+          "type": "heading",
+          "text": "The three building blocks"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img01-three-blocks.webp",
+          "alt": "The three blocks of every computer",
+          "caption": "Every computer computes,\nremembers and communicates.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Block</th>\n<th>Job</th>\n<th>Simple example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Computing unit</strong></td>\n<td>Does the work: adds, compares, decides</td>\n<td>The calculator part of your phone</td>\n</tr>\n<tr>\n<td><strong>Memory / storage unit</strong></td>\n<td>Keeps information</td>\n<td>Your photos and contacts</td>\n</tr>\n<tr>\n<td><strong>Communication unit</strong></td>\n<td>Moves information in and out</td>\n<td>Wi-Fi, the screen, the keyboard</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Block Job Simple example Computing unit Does the work: adds, compares, decides The calculator part of your phone Memory / storage unit Keeps information Your photos and contacts Communication unit Moves information in and out Wi-Fi, the screen, the keyboard"
+        },
+        {
+          "type": "html",
+          "html": "<p>The idea of a computer built from these parts goes back to a famous\n<strong>1946</strong> report by <strong>Burks, Goldstine and von\nNeumann</strong> on how to design an electronic computer.</p>",
+          "text": "The idea of a computer built from these parts goes back to a famous 1946 report by Burks, Goldstine and von\nNeumann on how to design an electronic computer."
+        },
+        {
+          "type": "heading",
+          "text": "Why do we have computers at\nall?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>To solve problems.</strong> We use computers to get answers\nwe couldn’t easily work out by hand: weather forecasts, bank balances,\nthe path of a rocket, the shortest route on a map.</p>",
+          "text": "To solve problems. We use computers to get answers\nwe couldn’t easily work out by hand: weather forecasts, bank balances,\nthe path of a rocket, the shortest route on a map."
+        },
+        {
+          "type": "heading",
+          "text": "How does a computer solve a\nproblem?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>By moving electrons around.</strong></p>",
+          "text": "By moving electrons around."
+        },
+        {
+          "type": "html",
+          "html": "<p>Deep inside, a computer is just a huge number of tiny\n<strong>switches</strong> (called <strong>transistors</strong>). Each\nswitch lets electricity flow (<strong>ON</strong>) or blocks it\n(<strong>OFF</strong>). By turning billions of switches on and off in\nthe right pattern, the computer does maths, shows pictures and runs\napps.</p>",
+          "text": "Deep inside, a computer is just a huge number of tiny switches (called transistors ). Each\nswitch lets electricity flow ( ON ) or blocks it\n( OFF ). By turning billions of switches on and off in\nthe right pattern, the computer does maths, shows pictures and runs\napps."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>So how does a problem become electrons?</strong> Step by\nstep, through layers.</p>",
+          "text": "So how does a problem become electrons? Step by\nstep, through layers."
+        },
+        {
+          "type": "heading",
+          "text": "The transformation hierarchy"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img02-transformation-ladder.webp",
+          "alt": "From problem to electrons",
+          "caption": "A problem is turned, layer by\nlayer, into electrons moving in a chip.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>Start at the top with a <strong>problem</strong>, and keep going down\nuntil you reach <strong>electrons</strong>:</p>",
+          "text": "Start at the top with a problem , and keep going down\nuntil you reach electrons :"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Layer (top to bottom)</th>\n<th>What it means</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Problem</strong></td>\n<td>What we want to solve</td>\n<td>“Add up my monthly bills”</td>\n</tr>\n<tr>\n<td><strong>Algorithm</strong></td>\n<td>Step-by-step method</td>\n<td>Start at 0, add each bill one by one</td>\n</tr>\n<tr>\n<td><strong>Program</strong></td>\n<td>Algorithm written in a language</td>\n<td>A few lines of Python or C</td>\n</tr>\n<tr>\n<td><strong>System software</strong></td>\n<td>Turns the program into machine instructions</td>\n<td>Compiler, operating system</td>\n</tr>\n<tr>\n<td><strong>Instruction set</strong></td>\n<td>The commands the chip understands</td>\n<td>ADD, LOAD, STORE</td>\n</tr>\n<tr>\n<td><strong>Microarchitecture</strong></td>\n<td>How the chip carries out each command</td>\n<td>Which parts switch on, in which order</td>\n</tr>\n<tr>\n<td><strong>Logic</strong></td>\n<td>Gates that do AND, OR, NOT</td>\n<td><strong>← this course</strong></td>\n</tr>\n<tr>\n<td><strong>Circuits and devices</strong></td>\n<td>Transistors and wires</td>\n<td>Tiny switches on silicon</td>\n</tr>\n<tr>\n<td><strong>Electrons</strong></td>\n<td>The physics at the bottom</td>\n<td>Charges moving</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Layer (top to bottom) What it means Example Problem What we want to solve “Add up my monthly bills” Algorithm Step-by-step method Start at 0, add each bill one by one Program Algorithm written in a language A few lines of Python or C System software Turns the program into machine instructions Compiler, operating system Instruction set The commands the chip understands ADD, LOAD, STORE Microarchitecture How the chip carries out each command Which parts switch on, in which order Logic Gates that do AND, OR, NOT ← this course Circuits and devices Transistors and wires Tiny switches on silicon Electrons The physics at the bottom Charges moving"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Computer science</strong> usually works at the top layers\n(algorithms, programs).</li>\n<li><strong>Electrical engineering</strong> works at the bottom\n(devices, physics).</li>\n<li><strong>Computer engineering</strong> sits in the middle and joins\nthe two. <strong>This course lives here.</strong></li>\n</ul>",
+          "text": "Computer science usually works at the top layers\n(algorithms, programs). Electrical engineering works at the bottom\n(devices, physics). Computer engineering sits in the middle and joins\nthe two. This course lives here."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Why this matters for you:</strong> you can write\n<strong>better software</strong> if you understand the hardware, and\ndesign <strong>better hardware</strong> if you understand the\nsoftware.</p>\n</blockquote>",
+          "text": "Why this matters for you: you can write better software if you understand the hardware, and\ndesign better hardware if you understand the\nsoftware."
+        },
+        {
+          "type": "heading",
+          "text": "What you will be able to\ndo by the end"
+        },
+        {
+          "type": "html",
+          "html": "<p>The course has four modules:</p>",
+          "text": "The course has four modules:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Module</th>\n<th>Topic</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1</strong></td>\n<td>Foundations: the digital world, logic gates, Boolean algebra,\ncomputer arithmetic</td>\n</tr>\n<tr>\n<td><strong>2</strong></td>\n<td><strong>Combinational</strong> logic: circuits with no memory,\nleading up to an <strong>ALU</strong> (the part that does maths)</td>\n</tr>\n<tr>\n<td><strong>3</strong></td>\n<td><strong>Sequential</strong> logic: circuits with memory, timing and\nthe <strong>clock</strong></td>\n</tr>\n<tr>\n<td><strong>4</strong></td>\n<td><strong>Processor design</strong>: putting it all together into a\nsimple <strong>CPU</strong> and its instruction set</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Module Topic 1 Foundations: the digital world, logic gates, Boolean algebra,\ncomputer arithmetic 2 Combinational logic: circuits with no memory,\nleading up to an ALU (the part that does maths) 3 Sequential logic: circuits with memory, timing and\nthe clock 4 Processor design : putting it all together into a\nsimple CPU and its instruction set"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>The goal:</strong> you will design a <strong>simple\nCPU</strong> yourself, with its arithmetic unit, timing and control.</p>",
+          "text": "The goal: you will design a simple\nCPU yourself, with its arithmetic unit, timing and control."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Textbooks:</strong></p>",
+          "text": "Textbooks:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><em>Digital Logic and Computer Design</em> by <strong>M. Morris\nMano</strong> (main book)</li>\n<li><em>Digital Design and Computer Architecture, ARM Edition</em> by\n<strong>Sarah L. Harris and David Money Harris</strong> (for further\nreading)</li>\n</ul>",
+          "text": "Digital Logic and Computer Design by M. Morris\nMano (main book) Digital Design and Computer Architecture, ARM Edition by Sarah L. Harris and David Money Harris (for further\nreading)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Every computer computes, remembers and\ncommunicates, and a problem reaches the hardware by going down layers\nfrom algorithm to electrons. This course covers the logic layer, all the\nway up to a simple CPU. <strong>Exam words:</strong> computing system,\ncomputing unit, memory unit, communication unit, transistor, switch\n(ON/OFF), transformation hierarchy, algorithm, instruction set,\nmicroarchitecture, logic, computer engineering, combinational,\nsequential, CPU, ALU.</p>",
+          "text": "In one line: Every computer computes, remembers and\ncommunicates, and a problem reaches the hardware by going down layers\nfrom algorithm to electrons. This course covers the logic layer, all the\nway up to a simple CPU. Exam words: computing system,\ncomputing unit, memory unit, communication unit, transistor, switch\n(ON/OFF), transformation hierarchy, algorithm, instruction set,\nmicroarchitecture, logic, computer engineering, combinational,\nsequential, CPU, ALU."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nName the three building blocks of a computing system.\n</summary>\nComputing unit, memory/storage unit, communication unit.\n</details>",
+          "text": "Name the three building blocks of a computing system. Computing unit, memory/storage unit, communication unit."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAt the very bottom, what does a computer use to solve problems?\n</summary>\nElectrons, controlled by billions of tiny switches called transistors.\n</details>",
+          "text": "At the very bottom, what does a computer use to solve problems? Electrons, controlled by billions of tiny switches called transistors."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIn the transformation hierarchy, which layer comes right after\n“algorithm”?\n</summary>\nProgram (the algorithm written in a programming language).\n</details>",
+          "text": "In the transformation hierarchy, which layer comes right after\n“algorithm”? Program (the algorithm written in a programming language)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich layer of the hierarchy does this course mainly study?\n</summary>\nLogic (gates, Boolean algebra), building up to microarchitecture and a\nsimple CPU.\n</details>",
+          "text": "Which layer of the hierarchy does this course mainly study? Logic (gates, Boolean algebra), building up to microarchitecture and a\nsimple CPU."
+        }
+      ]
+    },
+    {
+      "slug": "transistors-chips-moores-law",
+      "title": "From Transistors to Chips, and Moore's Law",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> A modern phone chip has\n<strong>billions</strong> of transistors. That’s more tiny switches than\nthere are people on Earth, packed into something smaller than your\nfingernail. No human can design billions of switches one by one. So how\nis it done?</p>\n</blockquote>",
+          "text": "Start here A modern phone chip has billions of transistors. That’s more tiny switches than\nthere are people on Earth, packed into something smaller than your\nfingernail. No human can design billions of switches one by one. So how\nis it done?"
+        },
+        {
+          "type": "heading",
+          "text": "Building big things from\nsmall blocks"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img03-zoom-levels.webp",
+          "alt": "Zooming into a phone",
+          "caption": "Small blocks join to make bigger\nblocks, again and again.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>Engineers never design billions of switches one at a time. They build\n<strong>in levels</strong>, like LEGO:</p>",
+          "text": "Engineers never design billions of switches one at a time. They build in levels , like LEGO:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Level</th>\n<th>Made of</th>\n<th>Roughly how many inside</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Transistor</strong></td>\n<td>One tiny switch</td>\n<td>1</td>\n</tr>\n<tr>\n<td><strong>Gate</strong> (AND, OR, NOT…)</td>\n<td>A few transistors</td>\n<td>2–8 transistors</td>\n</tr>\n<tr>\n<td><strong>Cell / small block</strong></td>\n<td>A group of gates</td>\n<td>2–16 gates</td>\n</tr>\n<tr>\n<td><strong>Module</strong> (adder, memory block…)</td>\n<td>Many cells</td>\n<td>thousands of transistors</td>\n</tr>\n<tr>\n<td><strong>Chip (IC)</strong></td>\n<td>Many modules</td>\n<td>millions to <strong>billions</strong> of transistors</td>\n</tr>\n<tr>\n<td><strong>Circuit board (PCB)</strong></td>\n<td>Several chips</td>\n<td>about 8–16 chips</td>\n</tr>\n<tr>\n<td><strong>Device (phone)</strong></td>\n<td>Boards, screen, battery</td>\n<td>about 8–10 chips/boards</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Level Made of Roughly how many inside Transistor One tiny switch 1 Gate (AND, OR, NOT…) A few transistors 2–8 transistors Cell / small block A group of gates 2–16 gates Module (adder, memory block…) Many cells thousands of transistors Chip (IC) Many modules millions to billions of transistors Circuit board (PCB) Several chips about 8–16 chips Device (phone) Boards, screen, battery about 8–10 chips/boards"
+        },
+        {
+          "type": "html",
+          "html": "<p>At each level, you only need to know <strong>what a block\ndoes</strong>, not every switch inside it. This trick is called\n<strong>abstraction</strong>: hide the details, use the block.</p>",
+          "text": "At each level, you only need to know what a block\ndoes , not every switch inside it. This trick is called abstraction : hide the details, use the block."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img14-lego-blocks.webp",
+          "alt": "Build big from small blocks",
+          "caption": "Like toy bricks: small blocks\nmake bigger blocks, and you use each block by what it does.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>Putting billions of transistors on one chip is called\n<strong>VLSI</strong> (Very Large-Scale Integration). In simple words:\n<strong>managing billions of transistors</strong>.</p>",
+          "text": "Putting billions of transistors on one chip is called VLSI (Very Large-Scale Integration). In simple words: managing billions of transistors ."
+        },
+        {
+          "type": "heading",
+          "text": "Moore’s Law"
+        },
+        {
+          "type": "html",
+          "html": "<p>In <strong>1965</strong>, <strong>Gordon Moore</strong> (who later\nco-founded <strong>Intel</strong>) noticed a pattern:</p>",
+          "text": "In 1965 , Gordon Moore (who later\nco-founded Intel ) noticed a pattern:"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p>The number of transistors that fit on a chip keeps\n<strong>doubling</strong> at a steady rate.</p>\n</blockquote>",
+          "text": "The number of transistors that fit on a chip keeps doubling at a steady rate."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>In his 1965 paper, <em>“Cramming more components onto integrated\ncircuits”</em>, he said it doubled <strong>every year</strong>.</li>\n<li>In <strong>1975</strong> he changed this to <strong>about every two\nyears</strong>, and that’s the version people remember.</li>\n</ul>",
+          "text": "In his 1965 paper, “Cramming more components onto integrated\ncircuits” , he said it doubled every year . In 1975 he changed this to about every two\nyears , and that’s the version people remember."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img04-moores-law.webp",
+          "alt": "Moore’s Law",
+          "caption": "Transistors per chip, from about 2,300 in 1971\nto tens of billions today. Each step up the scale is 10 times\nmore.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How fast is “doubling every two years”?</strong></p>",
+          "text": "How fast is “doubling every two years”?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>After 2 years: <strong>2×</strong></li>\n<li>After 10 years: 2⁵ = <strong>32×</strong></li>\n<li>After 20 years: 2¹⁰ = <strong>1,024×</strong>, about a thousand\ntimes more</li>\n</ul>",
+          "text": "After 2 years: 2× After 10 years: 2⁵ = 32× After 20 years: 2¹⁰ = 1,024× , about a thousand\ntimes more"
+        },
+        {
+          "type": "html",
+          "html": "<p>That’s why your phone today is far more powerful than a room-sized\ncomputer from the 1960s.</p>",
+          "text": "That’s why your phone today is far more powerful than a room-sized\ncomputer from the 1960s."
+        },
+        {
+          "type": "heading",
+          "text": "A short history of shrinking\nchips"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Year</th>\n<th>Milestone</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1947</strong></td>\n<td>First <strong>transistor</strong> (Bell Labs; it later won the Nobel\nPrize)</td>\n</tr>\n<tr>\n<td><strong>1954</strong></td>\n<td>First <strong>silicon</strong> transistor</td>\n</tr>\n<tr>\n<td><strong>1963</strong></td>\n<td><strong>CMOS</strong> logic invented (the kind used in almost all\nchips today)</td>\n</tr>\n<tr>\n<td><strong>Late 1960s–1970s</strong></td>\n<td>First commercial CMOS chips; used in <strong>digital\nwatches</strong> because they use very little power</td>\n</tr>\n<tr>\n<td><strong>1971</strong></td>\n<td>Intel <strong>4004</strong>, the first single-chip microprocessor:\nabout <strong>2,300</strong> transistors</td>\n</tr>\n<tr>\n<td><strong>2020s</strong></td>\n<td>The biggest chips have <strong>tens of billions</strong> of\ntransistors, more than the number of people on Earth</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Year Milestone 1947 First transistor (Bell Labs; it later won the Nobel\nPrize) 1954 First silicon transistor 1963 CMOS logic invented (the kind used in almost all\nchips today) Late 1960s–1970s First commercial CMOS chips; used in digital\nwatches because they use very little power 1971 Intel 4004 , the first single-chip microprocessor:\nabout 2,300 transistors 2020s The biggest chips have tens of billions of\ntransistors, more than the number of people on Earth"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Engineers build huge chips level by\nlevel (transistor → gate → module → chip → board → device), and Moore’s\nLaw says the number of transistors on a chip has doubled about every two\nyears. <strong>Exam words:</strong> transistor, gate, module, integrated\ncircuit (IC), PCB, abstraction, VLSI, Moore’s Law, Gordon Moore, Intel,\ndoubling, CMOS, microprocessor.</p>",
+          "text": "In one line: Engineers build huge chips level by\nlevel (transistor → gate → module → chip → board → device), and Moore’s\nLaw says the number of transistors on a chip has doubled about every two\nyears. Exam words: transistor, gate, module, integrated\ncircuit (IC), PCB, abstraction, VLSI, Moore’s Law, Gordon Moore, Intel,\ndoubling, CMOS, microprocessor."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "How\nto solve: Moore’s Law questions (a True/False on this comes in almost\nevery end-term)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “A chip has X transistors today. According\nto Moore’s Law, will it have Y after T years?”</p>",
+          "text": "Spot it: “A chip has X transistors today. According\nto Moore’s Law, will it have Y after T years?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>How many times bigger? <strong>Y ÷ X</strong>.</li>\n<li>How many doublings is that? Find n with <strong>2ⁿ = Y ÷\nX</strong>.</li>\n<li>Each doubling takes <strong>2 years</strong>, so the time =\n<strong>2n years</strong>.</li>\n<li>Compare with T.</li>\n</ol>",
+          "text": "How many times bigger? Y ÷ X . How many doublings is that? Find n with 2ⁿ = Y ÷\nX . Each doubling takes 2 years , so the time = 2n years . Compare with T."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Worked example:</strong> 2 million today → 32 million in 7\nyears? True or false?</p>",
+          "text": "Worked example: 2 million today → 32 million in 7\nyears? True or false?"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>32 ÷ 2 = <strong>16</strong></li>\n<li>16 = 2⁴ → <strong>4 doublings</strong></li>\n<li>4 × 2 = <strong>8 years</strong></li>\n<li>The question says 7 → <strong>FALSE</strong>. (With 8 years it would\nbe TRUE; with 4 years, FALSE.)</li>\n</ol>",
+          "text": "32 ÷ 2 = 16 16 = 2⁴ → 4 doublings 4 × 2 = 8 years The question says 7 → FALSE . (With 8 years it would\nbe TRUE; with 4 years, FALSE.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap 1:</strong> Moore’s Law is about the\n<strong>number</strong> of transistors doubling. “The\n<strong>size</strong> of transistors doubles every two years” is\n<strong>FALSE</strong>: transistors get <strong>smaller</strong>, which\nis why more of them fit. <strong>Trap 2:</strong> use <strong>2\nyears</strong> per doubling (that’s what this course and the exams use),\nnot 1 year.</p>",
+          "text": "Trap 1: Moore’s Law is about the number of transistors doubling. “The size of transistors doubles every two years” is FALSE : transistors get smaller , which\nis why more of them fit. Trap 2: use 2\nyears per doubling (that’s what this course and the exams use),\nnot 1 year."
+        },
+        {
+          "type": "html",
+          "html": "<strong>Try it:</strong>",
+          "text": "Try it:"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAnswer\n</summary>\n6 years = 3 doublings → 3 × 2³ = 24 million.\n</details>",
+          "text": "Answer 6 years = 3 doublings → 3 × 2³ = 24 million."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does Moore’s Law say?\n</summary>\nThe number of transistors on a chip doubles at a steady rate, about\nevery two years.\n</details>",
+          "text": "What does Moore’s Law say? The number of transistors on a chip doubles at a steady rate, about\nevery two years."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIf the number doubles every 2 years, how many times bigger is it after\n10 years?\n</summary>\n2⁵ = 32 times.\n</details>",
+          "text": "If the number doubles every 2 years, how many times bigger is it after\n10 years? 2⁵ = 32 times."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does “abstraction” mean when building a chip?\n</summary>\nUsing a block by knowing what it does, without worrying about every\nswitch inside it.\n</details>",
+          "text": "What does “abstraction” mean when building a chip? Using a block by knowing what it does, without worrying about every\nswitch inside it."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich company did Gordon Moore co-found?\n</summary>\nIntel (1968).\n</details>",
+          "text": "Which company did Gordon Moore co-found? Intel (1968)."
+        }
+      ]
+    },
+    {
+      "slug": "representing-information",
+      "title": "Representing Information with Voltage",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Long ago, people stored information by\ncarving on stone. Your body stores information in DNA. A computer has no\nstone and no DNA. It has only <strong>electricity</strong>. So how does\na computer store a photo, a song or your name using just\nelectricity?</p>\n</blockquote>",
+          "text": "Start here Long ago, people stored information by\ncarving on stone. Your body stores information in DNA. A computer has no\nstone and no DNA. It has only electricity . So how does\na computer store a photo, a song or your name using just\nelectricity?"
+        },
+        {
+          "type": "heading",
+          "text": "What makes a good way to\nstore a bit?"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>bit</strong> is the smallest piece of information: a\n<strong>0</strong> or a <strong>1</strong>.</p>",
+          "text": "A bit is the smallest piece of information: a 0 or a 1 ."
+        },
+        {
+          "type": "html",
+          "html": "<p>A computer needs <strong>billions</strong> of bits, so a good way to\nstore one must be:</p>",
+          "text": "A computer needs billions of bits, so a good way to\nstore one must be:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Need</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Small and cheap</strong></td>\n<td>We need lots of them</td>\n</tr>\n<tr>\n<td><strong>Stable</strong></td>\n<td>It should stay the same and give the same answer every time</td>\n</tr>\n<tr>\n<td><strong>Easy and fast to use</strong></td>\n<td>We must read it, change it, combine it and send it quickly</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Need Why Small and cheap We need lots of them Stable It should stay the same and give the same answer every time Easy and fast to use We must read it, change it, combine it and send it quickly"
+        },
+        {
+          "type": "heading",
+          "text": "Which electrical\nquantity should we use?"
+        },
+        {
+          "type": "html",
+          "html": "<p>Electricity gives us four choices: <strong>voltage</strong>,\n<strong>current</strong>, <strong>phase</strong> and\n<strong>frequency</strong>. Computers mostly use\n<strong>voltage</strong>.</p>",
+          "text": "Electricity gives us four choices: voltage , current , phase and frequency . Computers mostly use voltage ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Voltage: good points</th>\n<th>Voltage: problems</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Easy to make and to detect</td>\n<td>Affected by the surroundings (noise)</td>\n</tr>\n<tr>\n<td>Engineers know it well</td>\n<td>Wires behave like tiny resistors and capacitors, which <strong>slow\nthings down</strong></td>\n</tr>\n<tr>\n<td>Uses <strong>very little power</strong> when it’s not changing</td>\n<td></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Voltage: good points Voltage: problems Easy to make and to detect Affected by the surroundings (noise) Engineers know it well Wires behave like tiny resistors and capacitors, which slow\nthings down Uses very little power when it’s not changing"
+        },
+        {
+          "type": "heading",
+          "text": "Example: storing a\npicture with voltages"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img05-picture-voltages.webp",
+          "alt": "A picture as voltages",
+          "caption": "Each point of a black-and-white photo\nbecomes one voltage: 0 V for black, 1 V for white, in between for\ngrey.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>Take a black-and-white photo and look at it <strong>point by\npoint</strong>:</p>",
+          "text": "Take a black-and-white photo and look at it point by\npoint :"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Voltage</th>\n<th>Colour</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>0 V</strong></td>\n<td>Black</td>\n</tr>\n<tr>\n<td><strong>1 V</strong></td>\n<td>White</td>\n</tr>\n<tr>\n<td><strong>0.67 V</strong></td>\n<td>67% grey</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Voltage Colour 0 V Black 1 V White 0.67 V 67% grey"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Scanning:</strong> go across the picture <strong>row by\nrow</strong> (like reading a page) and turn each point into a voltage.\nYou get a wavy voltage signal. A TV signal works in a similar way.</p>",
+          "text": "Scanning: go across the picture row by\nrow (like reading a page) and turn each point into a voltage.\nYou get a wavy voltage signal. A TV signal works in a similar way."
+        },
+        {
+          "type": "subheading",
+          "text": "How much information is in\none point?"
+        },
+        {
+          "type": "html",
+          "html": "<p>In theory, a voltage between 0 V and 1 V could be\n<strong>any</strong> value: 0.671, 0.6712… so one point could hold\nendless information.</p>",
+          "text": "In theory, a voltage between 0 V and 1 V could be any value: 0.671, 0.6712… so one point could hold\nendless information."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In real life, no.</strong> Noise and imperfect parts mean we\ncan only <strong>trust</strong> a few voltage levels. How many levels we\ncan reliably tell apart decides how much information each point really\nholds.</p>",
+          "text": "In real life, no. Noise and imperfect parts mean we\ncan only trust a few voltage levels. How many levels we\ncan reliably tell apart decides how much information each point really\nholds."
+        },
+        {
+          "type": "heading",
+          "text": "Processing = computation"
+        },
+        {
+          "type": "html",
+          "html": "<p>Once information is a voltage, a <strong>circuit</strong> can change\nit. That’s <strong>computation</strong>.</p>",
+          "text": "Once information is a voltage, a circuit can change\nit. That’s computation ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Block</th>\n<th>What it does to the voltage V</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>COPY</strong></td>\n<td>Output = V (same picture)</td>\n</tr>\n<tr>\n<td><strong>INVERT</strong></td>\n<td>Output = 1 − V (black becomes white: a photo negative)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Block What it does to the voltage V COPY Output = V (same picture) INVERT Output = 1 − V (black becomes white: a photo negative)"
+        },
+        {
+          "type": "html",
+          "html": "<p>These are <strong>ready-made blocks</strong>. If every block works\nreliably, we can join many of them to build a reliable big system.</p>",
+          "text": "These are ready-made blocks . If every block works\nreliably, we can join many of them to build a reliable big system."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>But there’s a catch,</strong> and it leads to the most\nimportant idea of this week: the <strong>digital abstraction</strong>\n(next page).</p>",
+          "text": "But there’s a catch, and it leads to the most\nimportant idea of this week: the digital abstraction (next page)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Computers store information as voltages\n(for example, 0 V = black, 1 V = white), and circuits that change these\nvoltages are doing computation. <strong>Exam words:</strong> bit,\ninformation, voltage, current, phase, frequency, noise, scan (raster\norder), signal waveform, COPY block, INVERT block, computation.</p>",
+          "text": "In one line: Computers store information as voltages\n(for example, 0 V = black, 1 V = white), and circuits that change these\nvoltages are doing computation. Exam words: bit,\ninformation, voltage, current, phase, frequency, noise, scan (raster\norder), signal waveform, COPY block, INVERT block, computation."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nGive three qualities of a good way to store a bit.\n</summary>\nSmall and cheap, stable (reliable), and easy and fast to manipulate.\n</details>",
+          "text": "Give three qualities of a good way to store a bit. Small and cheap, stable (reliable), and easy and fast to manipulate."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhich electrical quantity do computers mainly use to represent\ninformation?\n</summary>\nVoltage.\n</details>",
+          "text": "Which electrical quantity do computers mainly use to represent\ninformation? Voltage."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIf 0 V = black and 1 V = white, what does 0.25 V show?\n</summary>\nA dark grey (25% of the way to white).\n</details>",
+          "text": "If 0 V = black and 1 V = white, what does 0.25 V show? A dark grey (25% of the way to white)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAn INVERT block gets 0.8 V. What comes out?\n</summary>\n1 − 0.8 = 0.2 V.\n</details>",
+          "text": "An INVERT block gets 0.8 V. What comes out? 1 − 0.8 = 0.2 V."
+        }
+      ]
+    },
+    {
+      "slug": "the-digital-abstraction",
+      "title": "The Digital Abstraction — Why Computers Use 0 and 1",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Play “telephone”: whisper a sentence to a\nfriend, who whispers it to the next, and so on down a line of ten\npeople. By the end, the sentence is completely wrong. Small mistakes\n<strong>add up</strong>. Computers face the same problem with voltages,\nand they solve it in a clever way.</p>\n</blockquote>",
+          "text": "Start here Play “telephone”: whisper a sentence to a\nfriend, who whispers it to the next, and so on down a line of ten\npeople. By the end, the sentence is completely wrong. Small mistakes add up . Computers face the same problem with voltages,\nand they solve it in a clever way."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img13-telephone-game.webp",
+          "alt": "Noise adds up",
+          "caption": "Each person adds a small mistake. By the end,\nthe message is wrong.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "The problem: noise adds up"
+        },
+        {
+          "type": "html",
+          "html": "<p>Real circuits are never perfect. Every block adds a tiny error,\ncalled <strong>noise</strong>, because of:</p>",
+          "text": "Real circuits are never perfect. Every block adds a tiny error,\ncalled noise , because of:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>small differences when the chip was made</li>\n<li>heat, nearby wires and other disturbances</li>\n</ul>",
+          "text": "small differences when the chip was made heat, nearby wires and other disturbances"
+        },
+        {
+          "type": "html",
+          "html": "<p>Now join many COPY and INVERT blocks in a long chain, passing a\npicture’s voltages along.</p>",
+          "text": "Now join many COPY and INVERT blocks in a long chain, passing a\npicture’s voltages along."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img06-noise-chain.webp",
+          "alt": "Noise adds up, or gets cleaned",
+          "caption": "Top: with exact voltages,\neach block adds a little noise and the signal gets worse. Bottom: with\nonly 0 and 1, each block snaps the signal back to clean.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Approach</th>\n<th>What happens after many blocks</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Analog</strong> (every exact voltage matters)</td>\n<td>Errors <strong>pile up</strong>. The picture becomes blurry and\nwrong.</td>\n</tr>\n<tr>\n<td><strong>Digital</strong> (only “low” or “high” matters)</td>\n<td>Each block <strong>cleans</strong> the signal back to a perfect 0 or\n1. Errors <strong>don’t pile up</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Approach What happens after many blocks Analog (every exact voltage matters) Errors pile up . The picture becomes blurry and\nwrong. Digital (only “low” or “high” matters) Each block cleans the signal back to a perfect 0 or\n1. Errors don’t pile up ."
+        },
+        {
+          "type": "heading",
+          "text": "The digital abstraction"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Idea:</strong> stop caring about the exact voltage. Only ask:\n<strong>is it low or high?</strong></p>",
+          "text": "Idea: stop caring about the exact voltage. Only ask: is it low or high?"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Low voltage → read it as <strong>0</strong></li>\n<li>High voltage → read it as <strong>1</strong></li>\n</ul>",
+          "text": "Low voltage → read it as 0 High voltage → read it as 1"
+        },
+        {
+          "type": "html",
+          "html": "<p>A slightly wrong voltage (0.1 V instead of 0 V) is still clearly\n“low”, so it’s still read as <strong>0</strong>. The error disappears.\nThis is called <strong>restoring</strong> the signal.</p>",
+          "text": "A slightly wrong voltage (0.1 V instead of 0 V) is still clearly\n“low”, so it’s still read as 0 . The error disappears.\nThis is called restoring the signal."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Important:</strong> the real world is <strong>not</strong>\ndigital, and the parts we use aren’t digital either. “Digital” is a\n<strong>way of looking at</strong> voltages, an abstraction, that makes\ncircuits reliable.</p>\n</blockquote>",
+          "text": "Important: the real world is not digital, and the parts we use aren’t digital either. “Digital” is a way of looking at voltages, an abstraction, that makes\ncircuits reliable."
+        },
+        {
+          "type": "heading",
+          "text": "Version 1: one dividing line"
+        },
+        {
+          "type": "html",
+          "html": "<p>Pick a <strong>threshold voltage</strong> V_TH:</p>",
+          "text": "Pick a threshold voltage V_TH:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>V &lt; V_TH</strong> → 0</li>\n<li><strong>V ≥ V_TH</strong> → 1</li>\n</ul>",
+          "text": "V < V_TH → 0 V ≥ V_TH → 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Problem:</strong> a voltage sitting right next to V_TH could\nbe read as 0 one time and 1 the next. Noise can push it either way.</p>",
+          "text": "Problem: a voltage sitting right next to V_TH could\nbe read as 0 one time and 1 the next. Noise can push it either way."
+        },
+        {
+          "type": "heading",
+          "text": "Version 2: a safe gap\n(the forbidden zone)"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img07-voltage-zones.webp",
+          "alt": "Voltage zones",
+          "caption": "Below V_L means 0, above V_H means 1. In\nbetween is the forbidden zone, which circuits must never\noutput.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>Use <strong>two</strong> limits, V_L (low) and V_H (high):</p>",
+          "text": "Use two limits, V_L (low) and V_H (high):"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Voltage</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>V ≤ V_L</strong></td>\n<td><strong>0</strong></td>\n</tr>\n<tr>\n<td><strong>V_L &lt; V &lt; V_H</strong></td>\n<td><strong>Forbidden zone</strong>: not allowed</td>\n</tr>\n<tr>\n<td><strong>V ≥ V_H</strong></td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Voltage Meaning V ≤ V_L 0 V_L < V < V_H Forbidden zone : not allowed V ≥ V_H 1"
+        },
+        {
+          "type": "html",
+          "html": "<p>Circuits are designed so their outputs are <strong>always</strong>\nclearly inside the 0 zone or the 1 zone, never in the gap. Even if noise\nmoves the voltage a bit, it stays on the correct side.</p>",
+          "text": "Circuits are designed so their outputs are always clearly inside the 0 zone or the 1 zone, never in the gap. Even if noise\nmoves the voltage a bit, it stays on the correct side."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Example from the slides:</strong> with a 3 V supply, roughly\n<strong>2.5–3 V</strong> means <strong>1</strong> and <strong>0–0.5\nV</strong> means <strong>0</strong>. Anything in between is\nforbidden.</p>\n</blockquote>",
+          "text": "Example from the slides: with a 3 V supply, roughly 2.5–3 V means 1 and 0–0.5\nV means 0 . Anything in between is\nforbidden."
+        },
+        {
+          "type": "heading",
+          "text": "The binary digital system"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Digital system:</strong> uses a <strong>limited\n(finite)</strong> set of values, not every possible voltage.</li>\n<li><strong>Binary system:</strong> uses exactly <strong>two</strong>\nvalues, 0 and 1 (base 2).</li>\n<li>One binary digit is called a <strong>bit</strong>.</li>\n</ul>",
+          "text": "Digital system: uses a limited\n(finite) set of values, not every possible voltage. Binary system: uses exactly two values, 0 and 1 (base 2). One binary digit is called a bit ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why binary?</strong> Circuits with just two states are\n<strong>cheap, small, fast and use little power</strong>. Telling apart\n2 levels is far easier and safer than telling apart 10.</p>",
+          "text": "Why binary? Circuits with just two states are cheap, small, fast and use little power . Telling apart\n2 levels is far easier and safer than telling apart 10."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Noise piles up when every exact voltage\nmatters, so computers only ask “low or high?” (0 or 1) and keep a\nforbidden gap between the two. Each block then restores a clean signal.\n<strong>Exam words:</strong> noise, analog, digital, digital\nabstraction, restoring the signal, threshold voltage (V_TH), V_L, V_H,\nforbidden zone, binary, bit.</p>",
+          "text": "In one line: Noise piles up when every exact voltage\nmatters, so computers only ask “low or high?” (0 or 1) and keep a\nforbidden gap between the two. Each block then restores a clean signal. Exam words: noise, analog, digital, digital\nabstraction, restoring the signal, threshold voltage (V_TH), V_L, V_H,\nforbidden zone, binary, bit."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "How to solve: voltage-zone\nquestions"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> you’re given V_L, V_H (or a threshold) and\na voltage, and asked whether it’s a 0, a 1 or invalid.</p>",
+          "text": "Spot it: you’re given V_L, V_H (or a threshold) and\na voltage, and asked whether it’s a 0, a 1 or invalid."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Draw a number line with V_L and V_H marked.</li>\n<li>Place the given voltage on it.</li>\n<li>At or below V_L → <strong>0</strong>. At or above V_H →\n<strong>1</strong>. In between → <strong>forbidden /\ninvalid</strong>.</li>\n</ol>",
+          "text": "Draw a number line with V_L and V_H marked. Place the given voltage on it. At or below V_L → 0 . At or above V_H → 1 . In between → forbidden /\ninvalid ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> don’t use “closest to 0 V or 1 V”. Only the\nzones decide.</p>",
+          "text": "Trap: don’t use “closest to 0 V or 1 V”. Only the\nzones decide."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Worked example:</strong> V_L = 0.8 V, V_H = 2.0 V. Read 0.3\nV, 1.5 V and 2.7 V.</p>",
+          "text": "Worked example: V_L = 0.8 V, V_H = 2.0 V. Read 0.3\nV, 1.5 V and 2.7 V."
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>0.3 V ≤ 0.8 → <strong>0</strong></li>\n<li>0.8 &lt; 1.5 &lt; 2.0 → <strong>forbidden</strong></li>\n<li>2.7 ≥ 2.0 → <strong>1</strong></li>\n</ul>",
+          "text": "0.3 V ≤ 0.8 → 0 0.8 < 1.5 < 2.0 → forbidden 2.7 ≥ 2.0 → 1"
+        },
+        {
+          "type": "html",
+          "html": "<strong>Try it:</strong>",
+          "text": "Try it:"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nAnswer\n</summary>\n1 &lt; 3.2 &lt; 3.5, so it’s in the forbidden zone (invalid).\n</details>",
+          "text": "Answer 1 < 3.2 < 3.5, so it’s in the forbidden zone (invalid)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy do errors pile up in an analog chain but not a digital one?\n</summary>\nIn analog, every exact voltage matters, so each block’s small error is\npassed on and added to. In digital, each block reads only “low or high”\nand outputs a clean 0 or 1, removing the error.\n</details>",
+          "text": "Why do errors pile up in an analog chain but not a digital one? In analog, every exact voltage matters, so each block’s small error is\npassed on and added to. In digital, each block reads only “low or high”\nand outputs a clean 0 or 1, removing the error."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is the forbidden zone?\n</summary>\nThe gap between V_L and V_H. Valid outputs must never fall there, so\nnoise can’t flip a 0 into a 1.\n</details>",
+          "text": "What is the forbidden zone? The gap between V_L and V_H. Valid outputs must never fall there, so\nnoise can’t flip a 0 into a 1."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nIs the real world digital?\n</summary>\nNo. Digital is an abstraction, a way of interpreting real (analog)\nvoltages as 0 or 1.\n</details>",
+          "text": "Is the real world digital? No. Digital is an abstraction, a way of interpreting real (analog)\nvoltages as 0 or 1."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhy do computers use binary rather than 10 levels?\n</summary>\nTwo levels are easiest to tell apart reliably, and two-state circuits\nare cheap, small, fast and low-power.\n</details>",
+          "text": "Why do computers use binary rather than 10 levels? Two levels are easiest to tell apart reliably, and two-state circuits\nare cheap, small, fast and low-power."
+        }
+      ]
+    },
+    {
+      "slug": "binary-numbers",
+      "title": "Binary Numbers and Place Value",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> One light bulb can show only two things:\noff or on. Two bulbs can show four patterns. Three bulbs, eight. With\nenough bulbs you can show any number. A computer is just a huge row of\n“bulbs” (bits).</p>\n</blockquote>",
+          "text": "Start here One light bulb can show only two things:\noff or on. Two bulbs can show four patterns. Three bulbs, eight. With\nenough bulbs you can show any number. A computer is just a huge row of\n“bulbs” (bits)."
+        },
+        {
+          "type": "heading",
+          "text": "More than two values: use\nmore bits"
+        },
+        {
+          "type": "html",
+          "html": "<p>One bit gives only 2 values (0 and 1). To show more, put bits side by\nside:</p>",
+          "text": "One bit gives only 2 values (0 and 1). To show more, put bits side by\nside:"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img08-bit-patterns.webp",
+          "alt": "Bits and patterns",
+          "caption": "Each extra bit doubles the number of\npatterns.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Bits</th>\n<th>Patterns</th>\n<th>Count</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>0, 1</td>\n<td>2</td>\n</tr>\n<tr>\n<td>2</td>\n<td>00, 01, 10, 11</td>\n<td>4</td>\n</tr>\n<tr>\n<td>3</td>\n<td>000, 001, 010, 011, 100, 101, 110, 111</td>\n<td>8</td>\n</tr>\n<tr>\n<td><strong>n</strong></td>\n<td>…</td>\n<td><strong>2ⁿ</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Bits Patterns Count 1 0, 1 2 2 00, 01, 10, 11 4 3 000, 001, 010, 011, 100, 101, 110, 111 8 n … 2ⁿ"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Rule:</strong> n bits give <strong>2ⁿ</strong> different\nvalues.</p>",
+          "text": "Rule: n bits give 2ⁿ different\nvalues."
+        },
+        {
+          "type": "heading",
+          "text": "Place value: decimal (base 10)"
+        },
+        {
+          "type": "html",
+          "html": "<p>You already know this. In <strong>329</strong>, each place is worth\n<strong>10 times</strong> the place to its right:</p>",
+          "text": "You already know this. In 329 , each place is worth 10 times the place to its right:"
+        },
+        {
+          "type": "html",
+          "html": "<p>329 = <strong>3×100 + 2×10 + 9×1</strong> = 3×10² + 2×10¹ + 9×10⁰</p>",
+          "text": "329 = 3×100 + 2×10 + 9×1 = 3×10² + 2×10¹ + 9×10⁰"
+        },
+        {
+          "type": "heading",
+          "text": "Place value: binary (base 2)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Binary works the same way, but each place is worth <strong>2\ntimes</strong> the place to its right:</p>",
+          "text": "Binary works the same way, but each place is worth 2\ntimes the place to its right:"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img09-place-values.webp",
+          "alt": "Place values",
+          "caption": "Decimal places go 1, 10, 100… Binary places go\n1, 2, 4, 8, 16…",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>101</strong> in binary = <strong>1×4 + 0×2 + 1×1 =\n5</strong></p>",
+          "text": "101 in binary = 1×4 + 0×2 + 1×1 =\n5"
+        },
+        {
+          "type": "html",
+          "html": "<p>Binary place values (right to left): <strong>1, 2, 4, 8, 16, 32, 64,\n128, 256, 512, 1024…</strong></p>",
+          "text": "Binary place values (right to left): 1, 2, 4, 8, 16, 32, 64,\n128, 256, 512, 1024…"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Tip:</strong> write the base as a small subscript when it\ncould be confusing: 101₂ = 5₁₀.</p>\n</blockquote>",
+          "text": "Tip: write the base as a small subscript when it\ncould be confusing: 101₂ = 5₁₀."
+        },
+        {
+          "type": "heading",
+          "text": "The binary digital system,\nsummed up"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>A <strong>digital</strong> system uses a limited set of values.</li>\n<li>A <strong>binary</strong> system uses two: 0 and 1, held as low and\nhigh voltages.</li>\n<li>Groups of bits represent bigger numbers, letters, colours,\nanything.</li>\n</ul>",
+          "text": "A digital system uses a limited set of values. A binary system uses two: 0 and 1, held as low and\nhigh voltages. Groups of bits represent bigger numbers, letters, colours,\nanything."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> n bits give 2ⁿ values, and binary place\nvalues double from right to left (1, 2, 4, 8, …), just as decimal places\nmultiply by 10. <strong>Exam words:</strong> bit, binary (base 2),\ndecimal (base 10), place value, positional number system, 2ⁿ, least\nsignificant bit (LSB, rightmost), most significant bit (MSB,\nleftmost).</p>",
+          "text": "In one line: n bits give 2ⁿ values, and binary place\nvalues double from right to left (1, 2, 4, 8, …), just as decimal places\nmultiply by 10. Exam words: bit, binary (base 2),\ndecimal (base 10), place value, positional number system, 2ⁿ, least\nsignificant bit (LSB, rightmost), most significant bit (MSB,\nleftmost)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "How to solve: the\nfour common question types"
+        },
+        {
+          "type": "subheading",
+          "text": "Type 1: How many values\ncan n bits show?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> answer = <strong>2ⁿ</strong>.\n<strong>Example:</strong> 5 bits → 2⁵ = <strong>32</strong> values (0 to\n31). <strong>Trap:</strong> the biggest number is <strong>2ⁿ −\n1</strong>, not 2ⁿ, because we start from 0.</p>",
+          "text": "Steps: answer = 2ⁿ . Example: 5 bits → 2⁵ = 32 values (0 to\n31). Trap: the biggest number is 2ⁿ −\n1 , not 2ⁿ, because we start from 0."
+        },
+        {
+          "type": "subheading",
+          "text": "Type 2:\nHow many bits do I need for N different things?"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> find the smallest n with <strong>2ⁿ ≥\nN</strong>. <strong>Example:</strong> 26 letters. 2⁴ = 16 (too small),\n2⁵ = 32 ≥ 26 → <strong>5 bits</strong>. <strong>Trap:</strong> N = 32\nneeds 5 bits, but N = 33 needs <strong>6</strong>.</p>",
+          "text": "Steps: find the smallest n with 2ⁿ ≥\nN . Example: 26 letters. 2⁴ = 16 (too small),\n2⁵ = 32 ≥ 26 → 5 bits . Trap: N = 32\nneeds 5 bits, but N = 33 needs 6 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>You’ll see this again</strong> in sequential circuits: “A\nsystem has 64 states. Are 6 flip-flops enough?” Each flip-flop stores 1\nbit, so n flip-flops give 2ⁿ states. 2⁶ = 64 → <strong>yes</strong>. 65\nstates would need <strong>7</strong>.</p>\n</blockquote>",
+          "text": "You’ll see this again in sequential circuits: “A\nsystem has 64 states. Are 6 flip-flops enough?” Each flip-flop stores 1\nbit, so n flip-flops give 2ⁿ states. 2⁶ = 64 → yes . 65\nstates would need 7 ."
+        },
+        {
+          "type": "subheading",
+          "text": "Type 3: Binary → decimal"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write the place values over each bit, starting with 1 on the\nright.</li>\n<li>Add the place values where the bit is 1.</li>\n</ol>",
+          "text": "Write the place values over each bit, starting with 1 on the\nright. Add the place values where the bit is 1."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong> 110101₂</p>",
+          "text": "Example: 110101₂"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Place value</th>\n<th>32</th>\n<th>16</th>\n<th>8</th>\n<th>4</th>\n<th>2</th>\n<th>1</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bit</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Place value 32 16 8 4 2 1 Bit 1 1 0 1 0 1"
+        },
+        {
+          "type": "html",
+          "html": "<p>32 + 16 + 4 + 1 = <strong>53</strong></p>",
+          "text": "32 + 16 + 4 + 1 = 53"
+        },
+        {
+          "type": "subheading",
+          "text": "Type 4: Decimal → binary"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Method A, keep dividing by 2:</strong></p>",
+          "text": "Method A, keep dividing by 2:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Divide by 2 and write down the remainder (0 or 1).</li>\n<li>Divide the answer by 2 again, and keep going until you reach 0.</li>\n<li>Read the remainders <strong>from bottom to top</strong>.</li>\n</ol>",
+          "text": "Divide by 2 and write down the remainder (0 or 1). Divide the answer by 2 again, and keep going until you reach 0. Read the remainders from bottom to top ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example:</strong> 13</p>",
+          "text": "Example: 13"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Divide</th>\n<th>Answer</th>\n<th>Remainder</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13 ÷ 2</td>\n<td>6</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>6 ÷ 2</td>\n<td>3</td>\n<td><strong>0</strong></td>\n</tr>\n<tr>\n<td>3 ÷ 2</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1 ÷ 2</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Divide Answer Remainder 13 ÷ 2 6 1 6 ÷ 2 3 0 3 ÷ 2 1 1 1 ÷ 2 0 1"
+        },
+        {
+          "type": "html",
+          "html": "<p>Read bottom to top: <strong>1101₂</strong>. Check: 8 + 4 + 0 + 1 = 13\n✓</p>",
+          "text": "Read bottom to top: 1101₂ . Check: 8 + 4 + 0 + 1 = 13\n✓"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Method B, take away the biggest place values:</strong> 13 →\nlargest place value ≤ 13 is 8 (left 5) → 4 fits (left 1) → 2 doesn’t fit\n→ 1 fits (left 0). So the places are 8, 4, 1 →\n<strong>1101₂</strong>.</p>",
+          "text": "Method B, take away the biggest place values: 13 →\nlargest place value ≤ 13 is 8 (left 5) → 4 fits (left 1) → 2 doesn’t fit\n→ 1 fits (left 0). So the places are 8, 4, 1 → 1101₂ ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> in Method A, reading the remainders top to\nbottom gives the number <strong>backwards</strong>.</p>",
+          "text": "Trap: in Method A, reading the remainders top to\nbottom gives the number backwards ."
+        },
+        {
+          "type": "subheading",
+          "text": "Try these"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>How many values can 8 bits show? What’s the largest?\n</li></ol></summary>\n2⁸ = 256 values; largest = 255.\n</details>",
+          "text": "How many values can 8 bits show? What’s the largest? 2⁸ = 256 values; largest = 255."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>How many bits are needed to give a unique code to 100 students?\n</li></ol></summary>\n2⁶ = 64 &lt; 100 ≤ 128 = 2⁷, so 7 bits.\n</details>",
+          "text": "How many bits are needed to give a unique code to 100 students? 2⁶ = 64 < 100 ≤ 128 = 2⁷, so 7 bits."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Convert 1011011₂ to decimal.\n</li></ol></summary>\n64 + 16 + 8 + 2 + 1 = 91.\n</details>",
+          "text": "Convert 1011011₂ to decimal. 64 + 16 + 8 + 2 + 1 = 91."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Convert 45 to binary.\n</li></ol></summary>\n45 = 32 + 8 + 4 + 1 → 101101₂.\n</details>",
+          "text": "Convert 45 to binary. 45 = 32 + 8 + 4 + 1 → 101101₂."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is each binary place worth compared with the one to its right?\n</summary>\nTwice as much.\n</details>",
+          "text": "What is each binary place worth compared with the one to its right? Twice as much."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does 2ⁿ tell you?\n</summary>\nHow many different values n bits can represent.\n</details>",
+          "text": "What does 2ⁿ tell you? How many different values n bits can represent."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat is 1000₂ in decimal?\n</summary>\n8.\n</details>",
+          "text": "What is 1000₂ in decimal? 8."
+        }
+      ]
+    },
+    {
+      "slug": "other-bases-and-hex",
+      "title": "Other Bases — Octal, Hexadecimal and Any Base",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Binary numbers get long very fast:\n1011011011101110 is hard to read and easy to copy wrong. So engineers\nuse a short form called <strong>hexadecimal</strong>, where every 4 bits\nbecome one symbol. That number is just <strong>0xB6EE</strong>. You’ll\nsee “0x…” all over this course: in control words, machine code and\nmemory addresses.</p>\n</blockquote>",
+          "text": "Start here Binary numbers get long very fast:\n1011011011101110 is hard to read and easy to copy wrong. So engineers\nuse a short form called hexadecimal , where every 4 bits\nbecome one symbol. That number is just 0xB6EE . You’ll\nsee “0x…” all over this course: in control words, machine code and\nmemory addresses."
+        },
+        {
+          "type": "heading",
+          "text": "Any base works the same way"
+        },
+        {
+          "type": "html",
+          "html": "<p>In <strong>base b</strong>, each place is worth <strong>b\ntimes</strong> the place to its right, and the digits go from <strong>0\nto b − 1</strong>.</p>",
+          "text": "In base b , each place is worth b\ntimes the place to its right, and the digits go from 0\nto b − 1 ."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Base</th>\n<th>Name</th>\n<th>Digits</th>\n<th>Place values (right to left)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>Binary</td>\n<td>0, 1</td>\n<td>1, 2, 4, 8, 16 …</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Octal</td>\n<td>0–7</td>\n<td>1, 8, 64, 512 …</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Decimal</td>\n<td>0–9</td>\n<td>1, 10, 100 …</td>\n</tr>\n<tr>\n<td>16</td>\n<td>Hexadecimal (hex)</td>\n<td>0–9, <strong>A–F</strong></td>\n<td>1, 16, 256, 4096 …</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Base Name Digits Place values (right to left) 2 Binary 0, 1 1, 2, 4, 8, 16 … 8 Octal 0–7 1, 8, 64, 512 … 10 Decimal 0–9 1, 10, 100 … 16 Hexadecimal (hex) 0–9, A–F 1, 16, 256, 4096 …"
+        },
+        {
+          "type": "html",
+          "html": "<p>In hex, the letters stand for: <strong>A = 10, B = 11, C = 12, D =\n13, E = 14, F = 15</strong>.</p>",
+          "text": "In hex, the letters stand for: A = 10, B = 11, C = 12, D =\n13, E = 14, F = 15 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Rule:</strong> a digit can never be equal to or bigger than\nits base. “(143)₄” is impossible, because base 4 has no digit 4.</p>\n</blockquote>",
+          "text": "Rule: a digit can never be equal to or bigger than\nits base. “(143)₄” is impossible, because base 4 has no digit 4."
+        },
+        {
+          "type": "heading",
+          "text": "Hex ↔︎ binary: groups of 4"
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img12-hex-groups.webp",
+          "alt": "Hex and binary",
+          "caption": "Every hex digit is exactly 4 bits. Split\nbinary into groups of 4 from the right.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>Since 16 = 2⁴, <strong>one hex digit = 4 bits</strong>. (Octal: one\ndigit = 3 bits, since 8 = 2³.)</p>",
+          "text": "Since 16 = 2⁴, one hex digit = 4 bits . (Octal: one\ndigit = 3 bits, since 8 = 2³.)"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 5%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Hex</th>\n<th>0</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n<th>9</th>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>D</th>\n<th>E</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Binary</td>\n<td>0000</td>\n<td>0001</td>\n<td>0010</td>\n<td>0011</td>\n<td>0100</td>\n<td>0101</td>\n<td>0110</td>\n<td>0111</td>\n<td>1000</td>\n<td>1001</td>\n<td>1010</td>\n<td>1011</td>\n<td>1100</td>\n<td>1101</td>\n<td>1110</td>\n<td>1111</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Hex 0 1 2 3 4 5 6 7 8 9 A B C D E F Binary 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Every base works by place value (each\nplace = base × the one to its right). Hex uses 0–9 and A–F, and each hex\ndigit is exactly 4 bits. <strong>Exam words:</strong> base (radix),\noctal, hexadecimal, 0x prefix, A–F, nibble (4 bits), place value.</p>",
+          "text": "In one line: Every base works by place value (each\nplace = base × the one to its right). Hex uses 0–9 and A–F, and each hex\ndigit is exactly 4 bits. Exam words: base (radix),\noctal, hexadecimal, 0x prefix, A–F, nibble (4 bits), place value."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "How to\nsolve: base questions (these come in every Quiz 1)"
+        },
+        {
+          "type": "subheading",
+          "text": "Type 1: any base → decimal"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> multiply each digit by its place value (1, b,\nb², …) and add. <strong>Example:</strong> (431)₆ = 4×36 + 3×6 + 1×1 =\n144 + 18 + 1 = <strong>163</strong></p>",
+          "text": "Steps: multiply each digit by its place value (1, b,\nb², …) and add. Example: (431)₆ = 4×36 + 3×6 + 1×1 =\n144 + 18 + 1 = 163"
+        },
+        {
+          "type": "subheading",
+          "text": "Type 2: decimal → any base"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> divide by the base again and again, and read\nthe remainders from <strong>bottom to top</strong> (same as for binary,\njust a different divisor). <strong>Example:</strong> 163 → hex: 163 ÷ 16\n= 10 remainder <strong>3</strong>; 10 ÷ 16 = 0 remainder <strong>10\n(A)</strong> → <strong>0xA3</strong></p>",
+          "text": "Steps: divide by the base again and again, and read\nthe remainders from bottom to top (same as for binary,\njust a different divisor). Example: 163 → hex: 163 ÷ 16\n= 10 remainder 3 ; 10 ÷ 16 = 0 remainder 10\n(A) → 0xA3"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Exam pattern:</strong> “A number in base 6 is 431. What is\nits hex form?” Go <strong>base 6 → decimal → hex</strong>: 431₆ = 163 =\n<strong>A3</strong>.</p>\n</blockquote>",
+          "text": "Exam pattern: “A number in base 6 is 431. What is\nits hex form?” Go base 6 → decimal → hex : 431₆ = 163 = A3 ."
+        },
+        {
+          "type": "subheading",
+          "text": "Type 3: binary ↔︎ hex"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps (binary → hex):</strong> group the bits in 4s\n<strong>from the right</strong> (add 0s on the left if needed), then\nchange each group to one hex digit. <strong>Example:</strong> 101111 →\n<strong>0010 1111</strong> → <strong>2F</strong> <strong>Steps (hex →\nbinary):</strong> write each hex digit as 4 bits. 0xDE → 1101 1110.</p>",
+          "text": "Steps (binary → hex): group the bits in 4s from the right (add 0s on the left if needed), then\nchange each group to one hex digit. Example: 101111 → 0010 1111 → 2F Steps (hex →\nbinary): write each hex digit as 4 bits. 0xDE → 1101 1110."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> group from the <strong>right</strong>.\nGrouping from the left gives a wrong answer.</p>",
+          "text": "Trap: group from the right .\nGrouping from the left gives a wrong answer."
+        },
+        {
+          "type": "subheading",
+          "text": "Type 4: find the unknown\nbases"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Example (real Quiz 1 pattern):</strong> if (143)ₐ = (212)ᵦ,\nfind a and b.</p>",
+          "text": "Example (real Quiz 1 pattern): if (143)ₐ = (212)ᵦ,\nfind a and b."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write both sides in decimal: a² + 4a + 3 = 2b² + b + 2.</li>\n<li>Try the answer options one by one, and pick the one where both sides\nare equal:\n<ul>\n<li>a = 6, b = 5: 36 + 24 + 3 = <strong>63</strong>; 50 + 5 + 2 =\n<strong>57</strong>, not equal ✗</li>\n<li>a = 7, b = 6: 49 + 28 + 3 = <strong>80</strong>; 72 + 6 + 2 =\n<strong>80</strong> ✓</li>\n</ul></li>\n</ol>",
+          "text": "Write both sides in decimal: a² + 4a + 3 = 2b² + b + 2. Try the answer options one by one, and pick the one where both sides\nare equal: a = 6, b = 5: 36 + 24 + 3 = 63 ; 50 + 5 + 2 = 57 , not equal ✗ a = 7, b = 6: 49 + 28 + 3 = 80 ; 72 + 6 + 2 = 80 ✓"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Answer: a = 7, b = 6.</strong></p>",
+          "text": "Answer: a = 7, b = 6."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Tips:</strong></p>",
+          "text": "Tips:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Don’t solve the equation by algebra in the exam. Testing the options\nis faster and safe.</li>\n<li>In true maths, each base must be bigger than its largest digit. But\none past paper accepted an answer that breaks this rule (see “Try these”\nno. 3), so <strong>trust the equation</strong> over the digit rule.</li>\n</ul>",
+          "text": "Don’t solve the equation by algebra in the exam. Testing the options\nis faster and safe. In true maths, each base must be bigger than its largest digit. But\none past paper accepted an answer that breaks this rule (see “Try these”\nno. 3), so trust the equation over the digit rule."
+        },
+        {
+          "type": "subheading",
+          "text": "Type 5: minimum bits to\nwrite a number"
+        },
+        {
+          "type": "html",
+          "html": "<p>“How many bits are needed to write <strong>the number</strong> 128 in\nbinary?”</p>",
+          "text": "“How many bits are needed to write the number 128 in\nbinary?”"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>128 = 10000000₂ → <strong>8 bits</strong>.</li>\n<li>Quick rule: the number N needs <strong>n bits</strong> where 2ⁿ⁻¹ ≤\nN &lt; 2ⁿ. For 128: 2⁷ = 128 ≤ 128 &lt; 256 = 2⁸ → n =\n<strong>8</strong>.</li>\n</ul>",
+          "text": "128 = 10000000₂ → 8 bits . Quick rule: the number N needs n bits where 2ⁿ⁻¹ ≤\nN < 2ⁿ. For 128: 2⁷ = 128 ≤ 128 < 256 = 2⁸ → n = 8 ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> this is <strong>different</strong> from “how\nmany bits for 128 <em>different values</em>” (that’s 7 bits, values\n0–127). Read the question carefully: <strong>a number</strong> vs\n<strong>a count of things</strong>.</p>",
+          "text": "Trap: this is different from “how\nmany bits for 128 different values ” (that’s 7 bits, values\n0–127). Read the question carefully: a number vs a count of things ."
+        },
+        {
+          "type": "subheading",
+          "text": "Try these"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>Convert (777)₈ to decimal.\n</li></ol></summary>\n7×64 + 7×8 + 7 = 448 + 56 + 7 = 511.\n</details>",
+          "text": "Convert (777)₈ to decimal. 7×64 + 7×8 + 7 = 448 + 56 + 7 = 511."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Convert 11011110₂ to hex.\n</li></ol></summary>\n1101 1110 → D E → 0xDE.\n</details>",
+          "text": "Convert 11011110₂ to hex. 1101 1110 → D E → 0xDE."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>If (234)ₐ = (143)ᵦ, find a and b (options: a=3,b=4 / a=4,b=5 /\na=5,b=6 / a=6,b=7 / a=7,b=8).\n</li></ol></summary>\nEquation: 2a² + 3a + 4 = b² + 4b + 3. Only a=4, b=5 works (48 = 48), and\nthat was the official answer (2025 Term 3, Quiz 1). Strictly, the digit\n4 can’t appear in base 4, so the question is slightly flawed. In the\nexam, go with the option that makes both sides equal.\n</details>",
+          "text": "If (234)ₐ = (143)ᵦ, find a and b (options: a=3,b=4 / a=4,b=5 /\na=5,b=6 / a=6,b=7 / a=7,b=8). Equation: 2a² + 3a + 4 = b² + 4b + 3. Only a=4, b=5 works (48 = 48), and\nthat was the official answer (2025 Term 3, Quiz 1). Strictly, the digit\n4 can’t appear in base 4, so the question is slightly flawed. In the\nexam, go with the option that makes both sides equal."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Minimum bits to write the number 500?\n</li></ol></summary>\n256 ≤ 500 &lt; 512 → 9 bits.\n</details>",
+          "text": "Minimum bits to write the number 500? 256 ≤ 500 < 512 → 9 bits."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat does the hex digit B stand for?\n</summary>\n11 (binary 1011).\n</details>",
+          "text": "What does the hex digit B stand for? 11 (binary 1011)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nHow many bits does one hex digit hold? One octal digit?\n</summary>\nHex: 4 bits. Octal: 3 bits.\n</details>",
+          "text": "How many bits does one hex digit hold? One octal digit? Hex: 4 bits. Octal: 3 bits."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nCan (148)₆ be a valid number?\n</summary>\nNo. Base 6 only has digits 0–5, and 8 is not allowed.\n</details>",
+          "text": "Can (148)₆ be a valid number? No. Base 6 only has digits 0–5, and 8 is not allowed."
+        }
+      ]
+    },
+    {
+      "slug": "from-logic-to-circuits",
+      "title": "From Logic to Circuits — Boole and Shannon",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> “If it’s raining <strong>and</strong> I\nhave an umbrella, I’ll go out.” “If it’s Sunday <strong>or</strong> a\nholiday, there’s no school.” You use <strong>logic</strong> every day.\nAbout 90 years ago, a young student showed that this everyday logic\ncould be built with electric switches. That idea made every computer\npossible.</p>\n</blockquote>",
+          "text": "Start here “If it’s raining and I\nhave an umbrella, I’ll go out.” “If it’s Sunday or a\nholiday, there’s no school.” You use logic every day.\nAbout 90 years ago, a young student showed that this everyday logic\ncould be built with electric switches. That idea made every computer\npossible."
+        },
+        {
+          "type": "heading",
+          "text": "Step 1: logic is maths\n(George Boole, 1854)"
+        },
+        {
+          "type": "html",
+          "html": "<p>In <strong>1854</strong>, <strong>George Boole</strong> showed that\nlogic is a kind of <strong>maths</strong>, not just philosophy. He\nworked with values that are only <strong>true</strong> or\n<strong>false</strong>.</p>",
+          "text": "In 1854 , George Boole showed that\nlogic is a kind of maths , not just philosophy. He\nworked with values that are only true or false ."
+        },
+        {
+          "type": "html",
+          "html": "<p>This is now called <strong>Boolean algebra</strong>: the maths of\n<strong>binary values</strong> (1 = true, 0 = false).</p>",
+          "text": "This is now called Boolean algebra : the maths of binary values (1 = true, 0 = false)."
+        },
+        {
+          "type": "heading",
+          "text": "Step 2:\nlogic can be built with switches (Claude Shannon, 1937)"
+        },
+        {
+          "type": "html",
+          "html": "<p>For many years, people built machines from relays and vacuum tubes\n(the vacuum tube “triode” came in <strong>1906</strong>), but nobody\nlinked them to Boole’s logic.</p>",
+          "text": "For many years, people built machines from relays and vacuum tubes\n(the vacuum tube “triode” came in 1906 ), but nobody\nlinked them to Boole’s logic."
+        },
+        {
+          "type": "html",
+          "html": "<p>In <strong>1937</strong>, <strong>Claude Shannon</strong>, a master’s\nstudent at MIT, noticed that:</p>",
+          "text": "In 1937 , Claude Shannon , a master’s\nstudent at MIT, noticed that:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>switches in <strong>series</strong> (one after another) behave like\n<strong>AND</strong>: current flows only if switch A\n<strong>and</strong> switch B are closed;</li>\n<li>switches in <strong>parallel</strong> (side by side) behave like\n<strong>OR</strong>: current flows if switch A <strong>or</strong>\nswitch B is closed.</li>\n</ul>",
+          "text": "switches in series (one after another) behave like AND : current flows only if switch A and switch B are closed; switches in parallel (side by side) behave like OR : current flows if switch A or switch B is closed."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img10-switches-logic.webp",
+          "alt": "Switches as logic",
+          "caption": "Two switches in a row make AND. Two\nswitches side by side make OR.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<p>His thesis showed that <strong>any</strong> Boolean logic can be\nbuilt with switches. This started <strong>binary digital\nelectronics</strong>.</p>",
+          "text": "His thesis showed that any Boolean logic can be\nbuilt with switches. This started binary digital\nelectronics ."
+        },
+        {
+          "type": "heading",
+          "text": "The three basic gates\n(preview)"
+        },
+        {
+          "type": "html",
+          "html": "<p>A <strong>logic gate</strong> is a small circuit that does one logic\njob. You’ll study these properly next week.</p>",
+          "text": "A logic gate is a small circuit that does one logic\njob. You’ll study these properly next week."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Gate</th>\n<th>Output is 1 when…</th>\n<th>Everyday version</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>AND</strong></td>\n<td><strong>all</strong> inputs are 1</td>\n<td>Rain <strong>and</strong> umbrella → go out</td>\n</tr>\n<tr>\n<td><strong>OR</strong></td>\n<td><strong>at least one</strong> input is 1</td>\n<td>Sunday <strong>or</strong> holiday → no school</td>\n</tr>\n<tr>\n<td><strong>NOT</strong></td>\n<td>the input is <strong>0</strong> (it flips it)</td>\n<td>“Not raining”</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Gate Output is 1 when… Everyday version AND all inputs are 1 Rain and umbrella → go out OR at least one input is 1 Sunday or holiday → no school NOT the input is 0 (it flips it) “Not raining”"
+        },
+        {
+          "type": "heading",
+          "text": "Digital logic design"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Digital logic design</strong> means taking a job (“light the\nlamp when both buttons are pressed”) and building it from gates. That’s\nexactly what the next weeks teach, step by step:</p>",
+          "text": "Digital logic design means taking a job (“light the\nlamp when both buttons are pressed”) and building it from gates. That’s\nexactly what the next weeks teach, step by step:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Describe the job in a <strong>truth table</strong> (every input →\noutput).</li>\n<li>Write it as a <strong>Boolean equation</strong>.</li>\n<li>Turn the equation into a <strong>circuit of gates</strong>.</li>\n</ol>",
+          "text": "Describe the job in a truth table (every input →\noutput). Write it as a Boolean equation . Turn the equation into a circuit of gates ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Boole (1854) turned logic into maths\nwith true/false values, and Shannon (1937) showed switches can build\nthat logic. Together they gave us digital circuits made of gates like\nAND, OR and NOT. <strong>Exam words:</strong> Boolean algebra, George\nBoole, Claude Shannon, relays, vacuum tubes, series = AND, parallel =\nOR, logic gate, AND, OR, NOT, digital logic design, truth table.</p>",
+          "text": "In one line: Boole (1854) turned logic into maths\nwith true/false values, and Shannon (1937) showed switches can build\nthat logic. Together they gave us digital circuits made of gates like\nAND, OR and NOT. Exam words: Boolean algebra, George\nBoole, Claude Shannon, relays, vacuum tubes, series = AND, parallel =\nOR, logic gate, AND, OR, NOT, digital logic design, truth table."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nWhat did George Boole show in 1854?\n</summary>\nThat logic can be treated as maths with true/false (binary) values:\nBoolean algebra.\n</details>",
+          "text": "What did George Boole show in 1854? That logic can be treated as maths with true/false (binary) values:\nBoolean algebra."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTwo switches in series act like which gate?\n</summary>\nAND (both must be closed).\n</details>",
+          "text": "Two switches in series act like which gate? AND (both must be closed)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTwo switches in parallel act like which gate?\n</summary>\nOR (either one closed is enough).\n</details>",
+          "text": "Two switches in parallel act like which gate? OR (either one closed is enough)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nInputs A = 1, B = 0. What do AND and OR give?\n</summary>\nAND = 0, OR = 1.\n</details>",
+          "text": "Inputs A = 1, B = 0. What do AND and OR give? AND = 0, OR = 1."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-solve-week-1-questions",
+      "title": "How to Solve Week 1 Exam Questions",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 1 gives easy marks in every paper: a\nMoore’s Law true/false, a “find the unknown bases” question, a\nbase-conversion question and a “how many bits” question. They take one\nminute each <strong>if</strong> you know the steps. This page puts all\nof them in one place, with examples from real papers.</p>\n</blockquote>",
+          "text": "Start here Week 1 gives easy marks in every paper: a\nMoore’s Law true/false, a “find the unknown bases” question, a\nbase-conversion question and a “how many bits” question. They take one\nminute each if you know the steps. This page puts all\nof them in one place, with examples from real papers."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img15-week1-question-types.webp",
+          "alt": "Week 1 question types",
+          "caption": "Six question types from Week 1. Each\ncard shows the one rule you need.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type\n1: Moore’s Law true/false (1 mark, almost every end-term)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><strong>Y ÷ X</strong> = how many times bigger.</li>\n<li>Write it as <strong>2ⁿ</strong> → n doublings.</li>\n<li>Time = <strong>2 × n years</strong>. Compare with the question.</li>\n</ol>",
+          "text": "Y ÷ X = how many times bigger. Write it as 2ⁿ → n doublings. Time = 2 × n years . Compare with the question."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Statement from a real paper</th>\n<th>Answer</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“2 million transistors today → about 32 million in <strong>4\nyears</strong>” (2026 T2 end-term)</td>\n<td><strong>False</strong></td>\n<td>16× = 2⁴ → 4 doublings × 2 = <strong>8 years</strong></td>\n</tr>\n<tr>\n<td>“2 million today → about 32 million in <strong>7 years</strong>”\n(2025 T2 end-term)</td>\n<td><strong>False</strong></td>\n<td>Still 8 years</td>\n</tr>\n<tr>\n<td>“2 million today → about 32 million in <strong>8 years</strong>”\n(2025 T2 end-term, other shift)</td>\n<td><strong>True</strong></td>\n<td>Exactly 8 years</td>\n</tr>\n<tr>\n<td>“The <strong>size</strong> of transistors doubles about every two\nyears” (2025 T3 end-term)</td>\n<td><strong>False</strong></td>\n<td>It’s the <strong>number</strong> of transistors that doubles. Size\ngets <strong>smaller</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Statement from a real paper Answer Why “2 million transistors today → about 32 million in 4\nyears ” (2026 T2 end-term) False 16× = 2⁴ → 4 doublings × 2 = 8 years “2 million today → about 32 million in 7 years ”\n(2025 T2 end-term) False Still 8 years “2 million today → about 32 million in 8 years ”\n(2025 T2 end-term, other shift) True Exactly 8 years “The size of transistors doubles about every two\nyears” (2025 T3 end-term) False It’s the number of transistors that doubles. Size\ngets smaller"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> read every word. “Size” vs “number” changes\nthe answer.</p>",
+          "text": "Trap: read every word. “Size” vs “number” changes\nthe answer."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 2: Minimum bits (3 marks)"
+        },
+        {
+          "type": "html",
+          "html": "<p>There are <strong>two different questions</strong> that look\nalike:</p>",
+          "text": "There are two different questions that look\nalike:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>Rule</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bits to <strong>write the number N</strong></td>\n<td>2ⁿ⁻¹ ≤ N &lt; 2ⁿ</td>\n<td>128 → <strong>8 bits</strong> (2025 T3 Quiz 1); 515 → <strong>10\nbits</strong> (2026 T2 Quiz 1)</td>\n</tr>\n<tr>\n<td>Bits (or flip-flops) for <strong>N different things /\nstates</strong></td>\n<td>smallest n with 2ⁿ ≥ N</td>\n<td>64 states → <strong>6</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Question Rule Example Bits to write the number N 2ⁿ⁻¹ ≤ N < 2ⁿ 128 → 8 bits (2025 T3 Quiz 1); 515 → 10\nbits (2026 T2 Quiz 1) Bits (or flip-flops) for N different things /\nstates smallest n with 2ⁿ ≥ N 64 states → 6"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked examples (1 mark each, all real)</strong></p>\n<ul>\n<li>“64 unique states, <strong>4</strong> flip-flops are sufficient”\n(2025 T2 end-term) → 2⁴ = 16 &lt; 64 → <strong>False</strong>.</li>\n<li>“64 unique states, <strong>6</strong> flip-flops are sufficient”\n(2025 T2 end-term, other shift) → 2⁶ = 64 → <strong>True</strong>.</li>\n<li>“<strong>65</strong> unique states, 6 flip-flops are sufficient”\n(2026 T2 end-term) → 64 &lt; 65 → <strong>False</strong> (you need\n7).</li>\n</ul>\n</blockquote>",
+          "text": "Worked examples (1 mark each, all real) “64 unique states, 4 flip-flops are sufficient”\n(2025 T2 end-term) → 2⁴ = 16 < 64 → False . “64 unique states, 6 flip-flops are sufficient”\n(2025 T2 end-term, other shift) → 2⁶ = 64 → True . “ 65 unique states, 6 flip-flops are sufficient”\n(2026 T2 end-term) → 64 < 65 → False (you need\n7)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Quick check for 515:</strong> 2⁹ = 512 ≤ 515 &lt; 1024 = 2¹⁰\n→ <strong>10 bits</strong>.</p>",
+          "text": "Quick check for 515: 2⁹ = 512 ≤ 515 < 1024 = 2¹⁰\n→ 10 bits ."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 3: Base → decimal → hex (3\nmarks)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> change to decimal using place values, then\ndivide by 16.</p>",
+          "text": "Steps: change to decimal using place values, then\ndivide by 16."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1, answer A3)</strong> “A number\nin base 6 is 431. What is it in hex?”</p>\n<ul>\n<li>431₆ = 4×36 + 3×6 + 1 = 144 + 18 + 1 = <strong>163</strong></li>\n<li>163 ÷ 16 = 10 remainder <strong>3</strong>; 10 =\n<strong>A</strong></li>\n<li>Answer: <strong>A3</strong> ✔</li>\n</ul>\n</blockquote>",
+          "text": "Worked example (2025 T2 Quiz 1, answer A3) “A number\nin base 6 is 431. What is it in hex?” 431₆ = 4×36 + 3×6 + 1 = 144 + 18 + 1 = 163 163 ÷ 16 = 10 remainder 3 ; 10 = A Answer: A3 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> hex digits above 9 are letters. Write\n<strong>A3</strong>, not “103”.</p>",
+          "text": "Trap: hex digits above 9 are letters. Write A3 , not “103”."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 4: Find\nthe unknown bases (4 marks, every Quiz 1)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write both sides in decimal using a and b.</li>\n<li><strong>Test each option.</strong> The right one makes both sides\nequal.</li>\n</ol>",
+          "text": "Write both sides in decimal using a and b. Test each option. The right one makes both sides\nequal."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1, answer a = 7, b = 6)</strong>\n(143)ₐ = (212)ᵦ → a² + 4a + 3 = 2b² + b + 2. a = 7, b = 6: 49 + 28 + 3 =\n<strong>80</strong> and 72 + 6 + 2 = <strong>80</strong> ✔</p>\n</blockquote>",
+          "text": "Worked example (2025 T2 Quiz 1, answer a = 7, b = 6) (143)ₐ = (212)ᵦ → a² + 4a + 3 = 2b² + b + 2. a = 7, b = 6: 49 + 28 + 3 = 80 and 72 + 6 + 2 = 80 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Worked example (2025 T3 Quiz 1, official answer a = 4, b =\n5)</strong> (234)ₐ = (143)ᵦ → 2a² + 3a + 4 = b² + 4b + 3. a = 4, b = 5:\n32 + 12 + 4 = <strong>48</strong> and 25 + 20 + 3 = <strong>48</strong>\n✔ (Strictly, base 4 can’t use the digit 4, so the question is slightly\nflawed. In the exam, pick the option that makes both sides equal.)</p>\n</blockquote>",
+          "text": "Worked example (2025 T3 Quiz 1, official answer a = 4, b =\n5) (234)ₐ = (143)ᵦ → 2a² + 3a + 4 = b² + 4b + 3. a = 4, b = 5:\n32 + 12 + 4 = 48 and 25 + 20 + 3 = 48 ✔ (Strictly, base 4 can’t use the digit 4, so the question is slightly\nflawed. In the exam, pick the option that makes both sides equal.)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> don’t try to solve with algebra. Testing 4–5\noptions is faster.</p>",
+          "text": "Trap: don’t try to solve with algebra. Testing 4–5\noptions is faster."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type\n5: An equation written in an unknown base (3 marks, end-term)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Spot it:</strong> “The solutions of x² − 11ᵦx + 21ᵦ = 0 are x\n= 3 and x = 5. What is the base b?”</p>",
+          "text": "Spot it: “The solutions of x² − 11ᵦx + 21ᵦ = 0 are x\n= 3 and x = 5. What is the base b?”"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong></p>",
+          "text": "Steps:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>For x² − Sx + P = 0, the roots add up to <strong>S</strong> and\nmultiply to <strong>P</strong>.</li>\n<li>Write S and P in base b: 11ᵦ = <strong>b + 1</strong>, 21ᵦ =\n<strong>2b + 1</strong>.</li>\n<li>Match: roots add to 3 + 5 = 8, so b + 1 = 8 → <strong>b =\n7</strong>.</li>\n<li>Check with the product: 3 × 5 = 15 and 2(7) + 1 = 15 ✔</li>\n</ol>",
+          "text": "For x² − Sx + P = 0, the roots add up to S and\nmultiply to P . Write S and P in base b: 11ᵦ = b + 1 , 21ᵦ = 2b + 1 . Match: roots add to 3 + 5 = 8, so b + 1 = 8 → b =\n7 . Check with the product: 3 × 5 = 15 and 2(7) + 1 = 15 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Answer (2025 T3 end-term): b = 7</strong> ✔</p>\n</blockquote>",
+          "text": "Answer (2025 T3 end-term): b = 7 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Another way:</strong> put x = 3 into the equation: 9 − 3(b +\n1) + (2b + 1) = 0 → 7 − b = 0 → b = 7.</p>",
+          "text": "Another way: put x = 3 into the equation: 9 − 3(b +\n1) + (2b + 1) = 0 → 7 − b = 0 → b = 7."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 6: Voltage zones\n(from the lectures)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Steps:</strong> V ≤ V_L → <strong>0</strong>. V ≥ V_H →\n<strong>1</strong>. In between → <strong>forbidden</strong> (not\nallowed).</p>",
+          "text": "Steps: V ≤ V_L → 0 . V ≥ V_H → 1 . In between → forbidden (not\nallowed)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nTry: V_L = 0.8 V, V_H = 2 V. Read 0.5 V, 1.5 V, 3 V.\n</summary>\n0, forbidden, 1.\n</details>",
+          "text": "Try: V_L = 0.8 V, V_H = 2 V. Read 0.5 V, 1.5 V, 3 V. 0, forbidden, 1."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice set"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>3 million transistors today → 48 million in 8 years (Moore’s Law).\nTrue or false?\n</li></ol></summary>\nTrue. 48 ÷ 3 = 16 = 2⁴ → 4 doublings → 8 years.\n</details>",
+          "text": "3 million transistors today → 48 million in 8 years (Moore’s Law).\nTrue or false? True. 48 ÷ 3 = 16 = 2⁴ → 4 doublings → 8 years."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Minimum bits to write the number 300?\n</li></ol></summary>\n9 (256 ≤ 300 &lt; 512).\n</details>",
+          "text": "Minimum bits to write the number 300? 9 (256 ≤ 300 < 512)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>How many flip-flops for a system with 100 states?\n</li></ol></summary>\n7 (2⁷ = 128 ≥ 100).\n</details>",
+          "text": "How many flip-flops for a system with 100 states? 7 (2⁷ = 128 ≥ 100)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>(321)₅ in hex?\n</li></ol></summary>\n3×25 + 2×5 + 1 = 86 = 5×16 + 6 → 0x56.\n</details>",
+          "text": "(321)₅ in hex? 3×25 + 2×5 + 1 = 86 = 5×16 + 6 → 0x56."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>(25)ₐ = (17)ᵦ. Options: a=6,b=10 / a=7,b=9 / a=8,b=9. Which works?\n</li></ol></summary>\n2a + 5 = b + 7. a=6,b=10: 17 = 17 ✔. a=7,b=9: 19 vs 16 ✗. a=8,b=9: 21 vs\n16 ✗. Answer: a = 6, b = 10.\n</details>",
+          "text": "(25)ₐ = (17)ᵦ. Options: a=6,b=10 / a=7,b=9 / a=8,b=9. Which works? 2a + 5 = b + 7. a=6,b=10: 17 = 17 ✔. a=7,b=9: 19 vs 16 ✗. a=8,b=9: 21 vs\n16 ✗. Answer: a = 6, b = 10."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Roots 2 and 4 of x² − 6ᵦx + 11ᵦ = 0 (here “6” and “11” are written\nin base b). Find b.\n</li></ol></summary>\n6ᵦ = 6 = sum ✔ (any b &gt; 6). 11ᵦ = b + 1 = product 8 → b = 7.\n</details>",
+          "text": "Roots 2 and 4 of x² − 6ᵦx + 11ᵦ = 0 (here “6” and “11” are written\nin base b). Find b. 6ᵦ = 6 = sum ✔ (any b > 6). 11ᵦ = b + 1 = product 8 → b = 7."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Moore = count the doublings × 2 years;\n“write the number N” vs “N things” use different bit rules; for unknown\nbases, write both sides in decimal and test the options. <strong>Exam\nwords:</strong> Moore’s Law, doubling, minimum bits, flip-flops for\nstates, base conversion, hexadecimal, unknown base, sum and product of\nroots.</p>",
+          "text": "In one line: Moore = count the doublings × 2 years;\n“write the number N” vs “N things” use different bit rules; for unknown\nbases, write both sides in decimal and test the options. Exam\nwords: Moore’s Law, doubling, minimum bits, flip-flops for\nstates, base conversion, hexadecimal, unknown base, sum and product of\nroots."
+        }
+      ]
+    },
+    {
+      "slug": "week-1-quick-revision",
+      "title": "Week 1 — Quick Revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 1 on one page: from “what is a\ncomputer” to bits and binary numbers.</p>\n</blockquote>",
+          "text": "Start here Week 1 on one page: from “what is a\ncomputer” to bits and binary numbers."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-1/img11-week1-map.webp",
+          "alt": "Week 1 at a glance",
+          "caption": "Problem → layers → transistors →\nvoltages → 0 and 1 → binary numbers → logic.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "heading",
+          "text": "Big ideas"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li>Every computer <strong>computes, remembers and\ncommunicates</strong>.</li>\n<li>A problem reaches hardware through layers: <strong>problem →\nalgorithm → program → system software → instruction set →\nmicroarchitecture → logic → circuits → electrons</strong>. This course:\n<strong>logic up to a simple CPU</strong>.</li>\n<li>Chips are built <strong>in levels</strong> (transistor → gate →\nmodule → chip → board → device) using <strong>abstraction</strong>.</li>\n<li><strong>Moore’s Law:</strong> transistors per chip double about\n<strong>every 2 years</strong> (1965 paper said every year; revised in\n1975).</li>\n<li>Information is stored as <strong>voltage</strong> (e.g. 0 V black, 1\nV white).</li>\n<li><strong>Noise piles up</strong> in analog chains. The\n<strong>digital abstraction</strong> reads only low/high, so each block\n<strong>restores</strong> a clean signal.</li>\n<li><strong>V ≤ V_L → 0</strong>, <strong>V ≥ V_H → 1</strong>, between\n= <strong>forbidden zone</strong>.</li>\n<li><strong>Binary</strong> = 2 values. n bits → <strong>2ⁿ</strong>\nvalues. Binary place values: <strong>1, 2, 4, 8, 16…</strong></li>\n<li><strong>Other bases:</strong> hex digit = 4 bits (A–F = 10–15); any\nbase → decimal by place values; unknown bases: test the options in the\nequation.</li>\n<li><strong>Boole (1854):</strong> logic as maths. <strong>Shannon\n(1937):</strong> logic with switches (series = AND, parallel = OR).</li>\n</ul>",
+          "text": "Every computer computes, remembers and\ncommunicates . A problem reaches hardware through layers: problem →\nalgorithm → program → system software → instruction set →\nmicroarchitecture → logic → circuits → electrons . This course: logic up to a simple CPU . Chips are built in levels (transistor → gate →\nmodule → chip → board → device) using abstraction . Moore’s Law: transistors per chip double about every 2 years (1965 paper said every year; revised in\n1975). Information is stored as voltage (e.g. 0 V black, 1\nV white). Noise piles up in analog chains. The digital abstraction reads only low/high, so each block restores a clean signal. V ≤ V_L → 0 , V ≥ V_H → 1 , between\n= forbidden zone . Binary = 2 values. n bits → 2ⁿ values. Binary place values: 1, 2, 4, 8, 16… Other bases: hex digit = 4 bits (A–F = 10–15); any\nbase → decimal by place values; unknown bases: test the options in the\nequation. Boole (1854): logic as maths. Shannon\n(1937): logic with switches (series = AND, parallel = OR)."
+        },
+        {
+          "type": "heading",
+          "text": "Formulas and methods"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Task</th>\n<th>Method</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Values from n bits</td>\n<td>2ⁿ (largest number 2ⁿ − 1)</td>\n</tr>\n<tr>\n<td>Bits for N things</td>\n<td>smallest n with 2ⁿ ≥ N</td>\n</tr>\n<tr>\n<td>Binary → decimal</td>\n<td>add place values where the bit is 1</td>\n</tr>\n<tr>\n<td>Decimal → binary</td>\n<td>divide by 2 repeatedly, read remainders bottom to top</td>\n</tr>\n<tr>\n<td>Read a voltage</td>\n<td>compare with V_L and V_H</td>\n</tr>\n<tr>\n<td>Moore’s Law T/F</td>\n<td>Y ÷ X = 2ⁿ → time = 2n years</td>\n</tr>\n<tr>\n<td>Binary ↔︎ hex</td>\n<td>groups of 4 bits from the right</td>\n</tr>\n<tr>\n<td>Bits to write number N</td>\n<td>2ⁿ⁻¹ ≤ N &lt; 2ⁿ</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Task Method Values from n bits 2ⁿ (largest number 2ⁿ − 1) Bits for N things smallest n with 2ⁿ ≥ N Binary → decimal add place values where the bit is 1 Decimal → binary divide by 2 repeatedly, read remainders bottom to top Read a voltage compare with V_L and V_H Moore’s Law T/F Y ÷ X = 2ⁿ → time = 2n years Binary ↔︎ hex groups of 4 bits from the right Bits to write number N 2ⁿ⁻¹ ≤ N < 2ⁿ"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice questions"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>What are the three building blocks of a computing system?\n</li></ol></summary>\nComputing unit, memory/storage unit, communication unit.\n</details>",
+          "text": "What are the three building blocks of a computing system? Computing unit, memory/storage unit, communication unit."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Put in order, top to bottom: logic, algorithm, program, electrons,\ninstruction set.\n</li></ol></summary>\nAlgorithm → program → instruction set → logic → electrons.\n</details>",
+          "text": "Put in order, top to bottom: logic, algorithm, program, electrons,\ninstruction set. Algorithm → program → instruction set → logic → electrons."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>A chip had 1 million transistors. Following Moore’s Law (2 years),\nabout how many after 6 years?\n</li></ol></summary>\n2³ = 8 → about 8 million.\n</details>",
+          "text": "A chip had 1 million transistors. Following Moore’s Law (2 years),\nabout how many after 6 years? 2³ = 8 → about 8 million."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>V_L = 0.5 V, V_H = 2.5 V. Read 0.4 V, 1.2 V, 2.8 V.\n</li></ol></summary>\n0, forbidden, 1.\n</details>",
+          "text": "V_L = 0.5 V, V_H = 2.5 V. Read 0.4 V, 1.2 V, 2.8 V. 0, forbidden, 1."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Why does a digital chain not pile up noise?\n</li></ol></summary>\nEach block reads only low/high and outputs a clean 0 or 1, removing\nsmall errors.\n</details>",
+          "text": "Why does a digital chain not pile up noise? Each block reads only low/high and outputs a clean 0 or 1, removing\nsmall errors."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>How many bits to number 1,000 items?\n</li></ol></summary>\n2¹⁰ = 1024 ≥ 1000 → 10 bits.\n</details>",
+          "text": "How many bits to number 1,000 items? 2¹⁰ = 1024 ≥ 1000 → 10 bits."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>Convert 10110₂ to decimal and 37 to binary.\n</li></ol></summary>\n16 + 4 + 2 = 22; 37 = 32 + 4 + 1 = 100101₂.\n</details>",
+          "text": "Convert 10110₂ to decimal and 37 to binary. 16 + 4 + 2 = 22; 37 = 32 + 4 + 1 = 100101₂."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"8\" type=\"1\">\n<li>Switches in parallel act like which gate?\n</li></ol></summary>\nOR.\n</details>",
+          "text": "Switches in parallel act like which gate? OR."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"9\" type=\"1\">\n<li>True or false: 2 million transistors today → about 32 million in 8\nyears (Moore’s Law).\n</li></ol></summary>\nTrue: 16× = 2⁴ = 4 doublings × 2 years = 8 years.\n</details>",
+          "text": "True or false: 2 million transistors today → about 32 million in 8\nyears (Moore’s Law). True: 16× = 2⁴ = 4 doublings × 2 years = 8 years."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"10\" type=\"1\">\n<li>(431)₆ in hex?\n</li></ol></summary>\n4×36 + 3×6 + 1 = 163 = 0xA3.\n</details>",
+          "text": "(431)₆ in hex? 4×36 + 3×6 + 1 = 163 = 0xA3."
+        }
+      ]
+    }
+  ]
+}
