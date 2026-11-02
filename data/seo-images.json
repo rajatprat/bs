@@ -1313,5 +1313,81 @@
   ],
   "/computer-system-design/week-1/week-1-quick-revision/": [
     "/images/csd-week-1/img11-week1-map.webp?v=ff6dda4d1397"
-  ]
+  ],
+  "/deep-learning/week-1/biological-and-mp-neuron/": [
+    "/images/deep-learning-week-1/img01-biological-neuron.webp?v=1fc6e13c5e06",
+    "/images/deep-learning-week-1/img02-brain-hierarchy.webp?v=ab4a48a0cc79",
+    "/images/deep-learning-week-1/img03-mp-neuron.webp?v=1e0ac3bce4e9",
+    "/images/deep-learning-week-1/img04-mp-logic-gates.webp?v=d8790adc43fe",
+    "/images/deep-learning-week-1/img05-one-neuron-one-line.webp?v=ed2f400db3da"
+  ],
+  "/deep-learning/week-1/perceptron/": [
+    "/images/deep-learning-week-1/img06-perceptron.webp?v=55f341cc47e4",
+    "/images/deep-learning-week-1/img07-bias-as-prior.webp?v=dd283d0ede1a"
+  ],
+  "/deep-learning/week-1/perceptron-learning-algorithm/": [
+    "/images/deep-learning-week-1/img08-pla-angle-geometry.webp?v=bd38597f5adf"
+  ],
+  "/deep-learning/week-1/xor-and-multilayer-perceptrons/": [
+    "/images/deep-learning-week-1/img09-xor-problem.webp?v=e3804582642b",
+    "/images/deep-learning-week-1/img10-xor-network.webp?v=80c3121bc4bf"
+  ],
+  "/deep-learning/week-1/how-to-solve/": [],
+  "/deep-learning/week-1/quick-revision/": [],
+  "/deep-learning/week-2/sigmoid-neuron/": [
+    "/images/deep-learning-week-2/img01-step-vs-sigmoid.webp?v=d03fc2e2ded5"
+  ],
+  "/deep-learning/week-2/supervised-learning-setup/": [
+    "/images/deep-learning-week-2/img02-supervised-ml-setup.webp?v=f6e0d2bc1fa6",
+    "/images/deep-learning-week-2/img03-fitting-sigmoid-two-points.webp?v=4734a6f1f6a4",
+    "/images/deep-learning-week-2/img04-error-surface-guesswork.webp?v=57c0907c3ea2"
+  ],
+  "/deep-learning/week-2/gradient-descent/": [
+    "/images/deep-learning-week-2/img05-gradient-descent-downhill.webp?v=9858e27b12c2"
+  ],
+  "/deep-learning/week-2/representation-power/": [
+    "/images/deep-learning-week-2/img07-towers-approximate-curve.webp?v=ac7068d52e2d",
+    "/images/deep-learning-week-2/img06-tower-from-sigmoids.webp?v=d9ec066c2a89",
+    "/images/deep-learning-week-2/img08-2d-tower-oil.webp?v=f7841922074c"
+  ],
+  "/deep-learning/week-2/how-to-solve/": [],
+  "/deep-learning/week-2/quick-revision/": [],
+  "/deep-learning/week-3/feedforward-networks/": [
+    "/images/deep-learning-week-3/img01-ffnn-layers.webp?v=69493c51d6d5",
+    "/images/deep-learning-week-3/img02-pre-activation-activation.webp?v=b890956ee737"
+  ],
+  "/deep-learning/week-3/output-and-loss-functions/": [
+    "/images/deep-learning-week-3/img04-softmax-example.webp?v=cdbb7c5d2813",
+    "/images/deep-learning-week-3/img05-cross-entropy.webp?v=b8eb512eec45",
+    "/images/deep-learning-week-3/img03-output-loss-choice.webp?v=eb9ba96d2888"
+  ],
+  "/deep-learning/week-3/backpropagation-intuition-and-output-gradients/": [
+    "/images/deep-learning-week-3/img06-backprop-blame.webp?v=75063abd6acb"
+  ],
+  "/deep-learning/week-3/backpropagation-hidden-units-and-weights/": [
+    "/images/deep-learning-week-3/img07-chain-rule-multipath.webp?v=5b7203ff567f",
+    "/images/deep-learning-week-3/img08-backprop-algorithm-flow.webp?v=74e13586b2ca",
+    "/images/deep-learning-week-3/img09-activation-derivatives.webp?v=7aeef6aee362"
+  ],
+  "/deep-learning/week-3/how-to-solve/": [],
+  "/deep-learning/week-3/quick-revision/": [],
+  "/deep-learning/week-4/gradient-descent-and-contours/": [
+    "/images/deep-learning-week-4/img01-steep-vs-gentle.webp?v=2f0d7340836e",
+    "/images/deep-learning-week-4/img02-contours.webp?v=88e2801f6ebd"
+  ],
+  "/deep-learning/week-4/momentum-and-nag/": [
+    "/images/deep-learning-week-4/img03-momentum-ball.webp?v=4659ad77af3b",
+    "/images/deep-learning-week-4/img04-nag-lookahead.webp?v=f5ebfc3695c6",
+    "/images/deep-learning-week-4/img05-gd-momentum-nag-paths.webp?v=ac8f3a79a6ad"
+  ],
+  "/deep-learning/week-4/stochastic-and-mini-batch/": [
+    "/images/deep-learning-week-4/img06-sgd-vs-minibatch.webp?v=d9fcb278770b",
+    "/images/deep-learning-week-4/img07-epochs-vs-steps.webp?v=79985e32aa04"
+  ],
+  "/deep-learning/week-4/learning-rate-and-line-search/": [
+    "/images/deep-learning-week-4/img08-learning-rate.webp?v=db9fdc603a88",
+    "/images/deep-learning-week-4/img09-line-search.webp?v=abd4af36e711"
+  ],
+  "/deep-learning/week-4/how-to-solve/": [],
+  "/deep-learning/week-4/quick-revision/": []
 }

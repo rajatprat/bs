@@ -1354,5 +1354,121 @@
   "/computer-system-design/week-1/": {
     "title": "CSD Week 1: Introduction, digital abstraction and binary | IIT Madras BS",
     "description": "Computer System Design Week 1 notes: Introduction, digital abstraction and binary. Diagrams, worked examples, exam practice and revision."
+  },
+  "/deep-learning/week-1/biological-and-mp-neuron/": {
+    "title": "From Brain Cells to the McCulloch–Pitts Neuron | Deep Learning | IITM BS",
+    "description": "From Brain Cells to the McCulloch–Pitts Neuron — IIT Madras BS Deep Learning Week 1 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-1/perceptron/": {
+    "title": "The Perceptron, Weights, Bias and Errors | Deep Learning | IITM BS",
+    "description": "The Perceptron, Weights, Bias and Errors — IIT Madras BS Deep Learning Week 1 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-1/perceptron-learning-algorithm/": {
+    "title": "Perceptron Learning Algorithm and Its Proof of Convergence | Deep Learning | IITM BS",
+    "description": "Perceptron Learning Algorithm and Its Proof of Convergence — IIT Madras BS Deep Learning Week 1 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-1/xor-and-multilayer-perceptrons/": {
+    "title": "XOR, Boolean Functions and the Power of a Network of Perceptrons | Deep Learning | IITM BS",
+    "description": "XOR, Boolean Functions and the Power of a Network of Perceptrons — IIT Madras BS Deep Learning Week 1 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-1/how-to-solve/": {
+    "title": "How to Solve Week 1 Questions | Deep Learning | IITM BS",
+    "description": "How to Solve Week 1 Questions — IIT Madras BS Deep Learning Week 1 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-1/quick-revision/": {
+    "title": "Week 1 Quick Revision | Deep Learning | IITM BS",
+    "description": "Week 1 Quick Revision — IIT Madras BS Deep Learning Week 1 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-1/": {
+    "title": "Deep Learning Week 1: Neurons, perceptrons and learning | IITM BS",
+    "description": "IIT Madras BS Deep Learning Week 1: Neurons, perceptrons and learning. Illustrated notes and worked examples."
+  },
+  "/deep-learning/week-2/sigmoid-neuron/": {
+    "title": "The Sigmoid Neuron — a Smooth Perceptron | Deep Learning | IITM BS",
+    "description": "The Sigmoid Neuron — a Smooth Perceptron — IIT Madras BS Deep Learning Week 2 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-2/supervised-learning-setup/": {
+    "title": "The Supervised Learning Setup, Loss and Guess Work | Deep Learning | IITM BS",
+    "description": "The Supervised Learning Setup, Loss and Guess Work — IIT Madras BS Deep Learning Week 2 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-2/gradient-descent/": {
+    "title": "Gradient Descent — Learning by Walking Downhill | Deep Learning | IITM BS",
+    "description": "Gradient Descent — Learning by Walking Downhill — IIT Madras BS Deep Learning Week 2 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-2/representation-power/": {
+    "title": "Representation Power of a Network of Sigmoid Neurons | Deep Learning | IITM BS",
+    "description": "Representation Power of a Network of Sigmoid Neurons — IIT Madras BS Deep Learning Week 2 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-2/how-to-solve/": {
+    "title": "How to Solve Week 2 Questions | Deep Learning | IITM BS",
+    "description": "How to Solve Week 2 Questions — IIT Madras BS Deep Learning Week 2 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-2/quick-revision/": {
+    "title": "Week 2 Quick Revision | Deep Learning | IITM BS",
+    "description": "Week 2 Quick Revision — IIT Madras BS Deep Learning Week 2 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-2/": {
+    "title": "Deep Learning Week 2: Sigmoid neurons and gradient descent | IITM BS",
+    "description": "IIT Madras BS Deep Learning Week 2: Sigmoid neurons and gradient descent. Illustrated notes and worked examples."
+  },
+  "/deep-learning/week-3/feedforward-networks/": {
+    "title": "Feedforward Neural Networks — Layers, Notation and Parameters | Deep Learning | IITM BS",
+    "description": "Feedforward Neural Networks — Layers, Notation and Parameters — IIT Madras BS Deep Learning Week 3 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-3/output-and-loss-functions/": {
+    "title": "Output Functions and Loss Functions — Linear, Softmax, Squared Error, Cross-Entropy | Deep Learning | IITM BS",
+    "description": "Output Functions and Loss Functions — Linear, Softmax, Squared Error, Cross-Entropy — IIT Madras BS Deep Learning Week 3 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-3/backpropagation-intuition-and-output-gradients/": {
+    "title": "Backpropagation — the Idea, and Gradients at the Output Layer | Deep Learning | IITM BS",
+    "description": "Backpropagation — the Idea, and Gradients at the Output Layer — IIT Madras BS Deep Learning Week 3 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-3/backpropagation-hidden-units-and-weights/": {
+    "title": "Backpropagation — Hidden Units, Weights, Biases and the Full Algorithm | Deep Learning | IITM BS",
+    "description": "Backpropagation — Hidden Units, Weights, Biases and the Full Algorithm — IIT Madras BS Deep Learning Week 3 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-3/how-to-solve/": {
+    "title": "How to Solve Week 3 Questions | Deep Learning | IITM BS",
+    "description": "How to Solve Week 3 Questions — IIT Madras BS Deep Learning Week 3 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-3/quick-revision/": {
+    "title": "Week 3 Quick Revision | Deep Learning | IITM BS",
+    "description": "Week 3 Quick Revision — IIT Madras BS Deep Learning Week 3 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-3/": {
+    "title": "Deep Learning Week 3: Feedforward networks and backpropagation | IITM BS",
+    "description": "IIT Madras BS Deep Learning Week 3: Feedforward networks and backpropagation. Illustrated notes and worked examples."
+  },
+  "/deep-learning/week-4/gradient-descent-and-contours/": {
+    "title": "Gradient Descent Revisited — Slow Plateaus and Contour Maps | Deep Learning | IITM BS",
+    "description": "Gradient Descent Revisited — Slow Plateaus and Contour Maps — IIT Madras BS Deep Learning Week 4 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-4/momentum-and-nag/": {
+    "title": "Momentum-Based Gradient Descent and Nesterov Accelerated Gradient | Deep Learning | IITM BS",
+    "description": "Momentum-Based Gradient Descent and Nesterov Accelerated Gradient — IIT Madras BS Deep Learning Week 4 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-4/stochastic-and-mini-batch/": {
+    "title": "Stochastic and Mini-Batch Gradient Descent | Deep Learning | IITM BS",
+    "description": "Stochastic and Mini-Batch Gradient Descent — IIT Madras BS Deep Learning Week 4 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-4/learning-rate-and-line-search/": {
+    "title": "Choosing the Learning Rate and Momentum, and Line Search | Deep Learning | IITM BS",
+    "description": "Choosing the Learning Rate and Momentum, and Line Search — IIT Madras BS Deep Learning Week 4 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-4/how-to-solve/": {
+    "title": "How to Solve Week 4 Questions | Deep Learning | IITM BS",
+    "description": "How to Solve Week 4 Questions — IIT Madras BS Deep Learning Week 4 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-4/quick-revision/": {
+    "title": "Week 4 Quick Revision | Deep Learning | IITM BS",
+    "description": "Week 4 Quick Revision — IIT Madras BS Deep Learning Week 4 notes, illustrated examples and revision."
+  },
+  "/deep-learning/week-4/": {
+    "title": "Deep Learning Week 4: Optimization, momentum and learning rates | IITM BS",
+    "description": "IIT Madras BS Deep Learning Week 4: Optimization, momentum and learning rates. Illustrated notes and worked examples."
+  },
+  "/deep-learning/": {
+    "title": "Deep Learning Notes: Weeks 1–4 | IITM BS",
+    "description": "IIT Madras BS Deep Learning study notes: neurons, perceptrons, sigmoid, gradient descent, backpropagation and optimization. Illustrated lessons and practice."
   }
 }
