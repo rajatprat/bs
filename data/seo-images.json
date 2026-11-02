@@ -1202,7 +1202,16 @@
     "/images/csd-week-2/img07-sop-from-table.webp?v=3dd25fc98603"
   ],
   "/computer-system-design/week-2/exam-question-types/": [
-    "/images/csd-week-2/img08-probability-example.webp?v=107d7c2d8a83"
+    "/images/csd-week-2/img08-probability-example.webp?v=107d7c2d8a83",
+    "/images/csd-pyq/2025t2-quiz1-q96.webp?v=ecfa4f18c03c",
+    "/images/csd-pyq/2025t3-quiz1-q166.webp?v=09457f608c8c",
+    "/images/csd-pyq/2026t2-quiz1-q12.webp?v=6cc8d15a6ab3",
+    "/images/csd-pyq/2025t2-quiz1-q100.webp?v=862c7f8bc23c",
+    "/images/csd-pyq/2025t3-quiz1-q170.webp?v=1a8400d62229",
+    "/images/csd-pyq/2025t2-endterm-q156.webp?v=6fc985236e86",
+    "/images/csd-pyq/2025t3-quiz1-q164.webp?v=9c07ff05f0e0",
+    "/images/csd-pyq/2025t3-endterm-an-q8.webp?v=f13c0703d966",
+    "/images/csd-pyq/2025t3-endterm-fn-q8.webp?v=4a9faba78da7"
   ],
   "/computer-system-design/week-2/week-2-quick-revision/": [
     "/images/csd-week-2/img09-week2-map.webp?v=abad5d5633c5"
@@ -1229,8 +1238,10 @@
   ],
   "/computer-system-design/week-3/how-to-solve-week-3-questions/": [
     "/images/csd-week-3/img09-gate-count-recipe.webp?v=c05c4600c511",
-    "/images/csd-week-3/img10-four-nor-comparator.webp?v=c7219bcd9c99",
-    "/images/csd-week-3/img11-timing-to-xor.webp?v=6c36ea981547"
+    "/images/csd-week-3/img11-timing-to-xor.webp?v=6c36ea981547",
+    "/images/csd-pyq/2026t2-quiz1-q3.webp?v=18be30271b13",
+    "/images/csd-pyq/2025t2-quiz1-q102.webp?v=0ae56401c512",
+    "/images/csd-pyq/2025t3-quiz1-q175.webp?v=d4cffc6f0e1b"
   ],
   "/computer-system-design/week-3/week-3-quick-revision/": [
     "/images/csd-week-3/img12-week3-map.webp?v=9a549844d0ee"
@@ -1260,7 +1271,12 @@
   "/computer-system-design/week-4/how-to-solve-week-4-questions/": [
     "/images/csd-week-4/img11-delay-paths.webp?v=41bc41e558ef",
     "/images/csd-week-4/img12-read-mux-circuit.webp?v=d259245a7b00",
-    "/images/csd-week-4/img17-mux-gate-table.webp?v=e1827cfd5b5c"
+    "/images/csd-week-4/img17-mux-gate-table.webp?v=e1827cfd5b5c",
+    "/images/csd-pyq/2025t2-quiz1-q99.webp?v=08f657dc95f4",
+    "/images/csd-pyq/2025t3-quiz1-q169.webp?v=08f657dc95f4",
+    "/images/csd-pyq/2026t2-quiz1-q2.webp?v=0680055c41b3",
+    "/images/csd-pyq/2025t2-quiz1-q106.webp?v=0680055c41b3",
+    "/images/csd-pyq/2025t3-quiz1-q174.webp?v=0680055c41b3"
   ],
   "/computer-system-design/week-4/week-4-quick-revision/": [
     "/images/csd-week-4/img18-week4-map.webp?v=2a82515fcdda"

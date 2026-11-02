@@ -191,6 +191,142 @@
     "width": 1536,
     "height": 1024
   },
+  "/images/csd-pyq/2025t2-quiz1-q106.webp": {
+    "source": "A",
+    "pngSha256": "b1020bc763f69de148bf479178b3b4c45e317ee4c660449a1f387d573b24e650",
+    "webpSha256": "0680055c41b395e96d0f7ca25cff69a07b653ddbbb0c601977a9176d9f7ca8f5",
+    "src": "/images/csd-pyq/2025t2-quiz1-q106.webp?v=0680055c41b3",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2025t2-quiz1-q99.webp": {
+    "source": "A",
+    "pngSha256": "9fdc4bd0dc7291378faa664f7bbd6679b33474281315f9e262582102571a65a0",
+    "webpSha256": "08f657dc95f40d68cafb41cb275ce3182fc0d555d71fff9625cbbbbec44a5dcf",
+    "src": "/images/csd-pyq/2025t2-quiz1-q99.webp?v=08f657dc95f4",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2025t3-quiz1-q175.webp": {
+    "source": "A",
+    "pngSha256": "d1197bce8c8e00839895078958a1866ca76abea8a01d6b0d21b412da7b3b99e1",
+    "webpSha256": "d4cffc6f0e1b935d6cce23cbad798345a8cab86ebe6493a913f40764196fdfe7",
+    "src": "/images/csd-pyq/2025t3-quiz1-q175.webp?v=d4cffc6f0e1b",
+    "width": 1650,
+    "height": 630
+  },
+  "/images/csd-pyq/2026t2-quiz1-q12.webp": {
+    "source": "A",
+    "pngSha256": "4cc63674d5a74425e2efaa7e7a3349494e80fe95ad6f75304fe757ff50432c40",
+    "webpSha256": "6cc8d15a6ab340cb3a483927348105e5be29097a38e5e23329029dc1616e211b",
+    "src": "/images/csd-pyq/2026t2-quiz1-q12.webp?v=6cc8d15a6ab3",
+    "width": 1800,
+    "height": 540
+  },
+  "/images/csd-pyq/2025t3-quiz1-q166.webp": {
+    "source": "A",
+    "pngSha256": "2c5dac63c149056c82dc7c228f994bdbe5fa058f5116458f98e8510411c9d627",
+    "webpSha256": "09457f608c8c90d8801a5faeacc14c4511e7946532854232d617792275e3a0c1",
+    "src": "/images/csd-pyq/2025t3-quiz1-q166.webp?v=09457f608c8c",
+    "width": 1800,
+    "height": 540
+  },
+  "/images/csd-pyq/2025t3-quiz1-q174.webp": {
+    "source": "A",
+    "pngSha256": "b1020bc763f69de148bf479178b3b4c45e317ee4c660449a1f387d573b24e650",
+    "webpSha256": "0680055c41b395e96d0f7ca25cff69a07b653ddbbb0c601977a9176d9f7ca8f5",
+    "src": "/images/csd-pyq/2025t3-quiz1-q174.webp?v=0680055c41b3",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2025t2-quiz1-q100.webp": {
+    "source": "A",
+    "pngSha256": "daec1351bccdafe03e1f55069123d0a2f339795f31e8774f45bd611097a17207",
+    "webpSha256": "862c7f8bc23c8c2a9111523aba59d8a859ec91ac55414968c8473260a34eb327",
+    "src": "/images/csd-pyq/2025t2-quiz1-q100.webp?v=862c7f8bc23c",
+    "width": 1650,
+    "height": 750
+  },
+  "/images/csd-pyq/2025t3-endterm-fn-q8.webp": {
+    "source": "A",
+    "pngSha256": "eb22a1d9149c7175b0a57bea3ffa6cd0428f6ef304214c28ad867ff3b2513fb2",
+    "webpSha256": "4a9faba78da79d803a1c35efc8e7e9f5fb32ae5eefef6a10e16fd46c07c386d2",
+    "src": "/images/csd-pyq/2025t3-endterm-fn-q8.webp?v=4a9faba78da7",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2025t3-quiz1-q164.webp": {
+    "source": "A",
+    "pngSha256": "0b2b1dbb6e53661aab180f08709330cff749d84aa67638d2404222f257de91ad",
+    "webpSha256": "9c07ff05f0e0d0c8d36acfb6bfce8c1b3857256808ad50b5ca4b95f325ddc8ea",
+    "src": "/images/csd-pyq/2025t3-quiz1-q164.webp?v=9c07ff05f0e0",
+    "width": 1500,
+    "height": 720
+  },
+  "/images/csd-pyq/2025t2-quiz1-q96.webp": {
+    "source": "A",
+    "pngSha256": "50c35c1813982e113f2bd871630f5646a271fd0dd27ed987f9e5c7e3b69d9887",
+    "webpSha256": "ecfa4f18c03c6ae6ec0676ee099a72fd69daf0e7bf8a06679eaf5f17854e8f28",
+    "src": "/images/csd-pyq/2025t2-quiz1-q96.webp?v=ecfa4f18c03c",
+    "width": 1800,
+    "height": 540
+  },
+  "/images/csd-pyq/2026t2-quiz1-q2.webp": {
+    "source": "A",
+    "pngSha256": "b1020bc763f69de148bf479178b3b4c45e317ee4c660449a1f387d573b24e650",
+    "webpSha256": "0680055c41b395e96d0f7ca25cff69a07b653ddbbb0c601977a9176d9f7ca8f5",
+    "src": "/images/csd-pyq/2026t2-quiz1-q2.webp?v=0680055c41b3",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2025t3-quiz1-q170.webp": {
+    "source": "A",
+    "pngSha256": "44e3cbb3aeecaef21369cc58952bc54ae5ff79bde4297e283321d8c89ab85356",
+    "webpSha256": "1a8400d62229cbbc559b55bd484339f61b1d95eee9adc096b21385208bccb2a6",
+    "src": "/images/csd-pyq/2025t3-quiz1-q170.webp?v=1a8400d62229",
+    "width": 1650,
+    "height": 840
+  },
+  "/images/csd-pyq/2025t3-endterm-an-q8.webp": {
+    "source": "A",
+    "pngSha256": "fda43f6953deb2ad51e8aea354911d9109a169ece05f00a0eff02cdd4885673d",
+    "webpSha256": "f13c0703d966e025ca84d0c102f6c8e31efe2b7b6dab8c06c2a627dd1172fba3",
+    "src": "/images/csd-pyq/2025t3-endterm-an-q8.webp?v=f13c0703d966",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2026t2-quiz1-q3.webp": {
+    "source": "A",
+    "pngSha256": "248fce4134e43bc48fa0f587724b7e954c0b3d44cee3f96e436c7dd089dea6d0",
+    "webpSha256": "18be30271b135a03df6f09188dc5cc550915f97ce94eaf6cf1f12d531bfdc8f5",
+    "src": "/images/csd-pyq/2026t2-quiz1-q3.webp?v=18be30271b13",
+    "width": 1650,
+    "height": 630
+  },
+  "/images/csd-pyq/2025t2-quiz1-q102.webp": {
+    "source": "A",
+    "pngSha256": "270156dac50247d346177ca82918d19439b78b8e97d458c2f92d688482efbb96",
+    "webpSha256": "0ae56401c5126c644f7f7224ad1a8b287bfae0c6a4f2865287a038684832ee56",
+    "src": "/images/csd-pyq/2025t2-quiz1-q102.webp?v=0ae56401c512",
+    "width": 1650,
+    "height": 630
+  },
+  "/images/csd-pyq/2025t3-quiz1-q169.webp": {
+    "source": "A",
+    "pngSha256": "9fdc4bd0dc7291378faa664f7bbd6679b33474281315f9e262582102571a65a0",
+    "webpSha256": "08f657dc95f40d68cafb41cb275ce3182fc0d555d71fff9625cbbbbec44a5dcf",
+    "src": "/images/csd-pyq/2025t3-quiz1-q169.webp?v=08f657dc95f4",
+    "width": 1500,
+    "height": 780
+  },
+  "/images/csd-pyq/2025t2-endterm-q156.webp": {
+    "source": "A",
+    "pngSha256": "248c41638c020c98434a5a889ef2f8c122728c3deb097fcbf076061e1554f763",
+    "webpSha256": "6fc985236e86665a1da06bb20958fd7770ea0166e84329052e3bd2ed6010a4d3",
+    "src": "/images/csd-pyq/2025t2-endterm-q156.webp?v=6fc985236e86",
+    "width": 1950,
+    "height": 1140
+  },
   "/images/csd-week-3/img01-sop-two-level.webp": {
     "source": "B",
     "pngSha256": "e678303cf5ed281cd602f5d63ae324de84dc32880dbcf346924f7d9516eb8a20",

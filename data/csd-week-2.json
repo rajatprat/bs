@@ -741,49 +741,70 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q96 · 4 marks</p>\n<p><strong>Question:</strong> X feeds a chain: XNOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output Y? Options: X / X̄ / 1\n/ 0</p>\n<p><strong>Answer:</strong> <strong>X̄</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q96 · 4 marks Question: X feeds a chain: XNOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output Y? Options: X / X̄ / 1\n/ 0 Answer: X̄"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q96 · 4 marks",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q96",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> X feeds a chain: XNOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output Y? Options: X / X̄ / 1\n/ 0</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"540\" loading=\"lazy\" src=\"/images/csd-pyq/2025t2-quiz1-q96.webp?v=ecfa4f18c03c\" width=\"1800\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>X̄</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>G1 = X ⊙ X = <strong>1</strong></li>\n<li>G2 = G1 ⊙ X = 1 ⊙ X = <strong>X</strong></li>\n<li>G3 = G2 ⊙ X = X ⊙ X = <strong>1</strong></li>\n<li>Y = G3 ⊕ X = 1 ⊕ X = <strong>X̄</strong></li>\n<li>Check with X = 0: 1 → 0 → 1 → Y = 1 ✔ (X̄ = 1)</li>\n</ol>",
+          "text": "2025 T2 Quiz 1 · Q96 · 4 marks Asked in: 2025 T2 Quiz 1 · Q96 · 4 marks Question: X feeds a chain: XNOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output Y? Options: X / X̄ / 1\n/ 0 Question figure (redrawn exactly from the\npaper) Answer: X̄ G1 = X ⊙ X = 1 G2 = G1 ⊙ X = 1 ⊙ X = X G3 = G2 ⊙ X = X ⊙ X = 1 Y = G3 ⊕ X = 1 ⊕ X = X̄ Check with X = 0: 1 → 0 → 1 → Y = 1 ✔ (X̄ = 1)"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q166 · 4 marks",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q166",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> X feeds a chain: XOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output? Options: X / X̄ / 1 /\n0</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"540\" loading=\"lazy\" src=\"/images/csd-pyq/2025t3-quiz1-q166.webp?v=09457f608c8c\" width=\"1800\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>X</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>G1 = X ⊕ X = <strong>0</strong></li>\n<li>G2 = 0 ⊙ X = <strong>X̄</strong> (XNOR with 0 flips)</li>\n<li>G3 = X̄ ⊙ X = <strong>0</strong> (they are always different)</li>\n<li>Out = 0 ⊕ X = <strong>X</strong></li>\n</ol>",
+          "text": "2025 T3 Quiz 1 · Q166 · 4 marks Asked in: 2025 T3 Quiz 1 · Q166 · 4 marks Question: X feeds a chain: XOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output? Options: X / X̄ / 1 /\n0 Question figure (redrawn exactly from the\npaper) Answer: X G1 = X ⊕ X = 0 G2 = 0 ⊙ X = X̄ (XNOR with 0 flips) G3 = X̄ ⊙ X = 0 (they are always different) Out = 0 ⊕ X = X"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>G1 = X ⊙ X = <strong>1</strong></li>\n<li>G2 = G1 ⊙ X = 1 ⊙ X = <strong>X</strong></li>\n<li>G3 = G2 ⊙ X = X ⊙ X = <strong>1</strong></li>\n<li>Y = G3 ⊕ X = 1 ⊕ X = <strong>X̄</strong></li>\n<li>Check with X = 0: 1 → 0 → 1 → Y = 1 ✔ (X̄ = 1)</li>\n</ol>",
-          "text": "G1 = X ⊙ X = 1 G2 = G1 ⊙ X = 1 ⊙ X = X G3 = G2 ⊙ X = X ⊙ X = 1 Y = G3 ⊕ X = 1 ⊕ X = X̄ Check with X = 0: 1 → 0 → 1 → Y = 1 ✔ (X̄ = 1)"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q166 · 4 marks</p>\n<p><strong>Question:</strong> X feeds a chain: XOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output? Options: X / X̄ / 1 /\n0</p>\n<p><strong>Answer:</strong> <strong>X</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q166 · 4 marks Question: X feeds a chain: XOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output? Options: X / X̄ / 1 /\n0 Answer: X"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>G1 = X ⊕ X = <strong>0</strong></li>\n<li>G2 = 0 ⊙ X = <strong>X̄</strong> (XNOR with 0 flips)</li>\n<li>G3 = X̄ ⊙ X = <strong>0</strong> (they are always different)</li>\n<li>Out = 0 ⊕ X = <strong>X</strong></li>\n</ol>",
-          "text": "G1 = X ⊕ X = 0 G2 = 0 ⊙ X = X̄ (XNOR with 0 flips) G3 = X̄ ⊙ X = 0 (they are always different) Out = 0 ⊕ X = X"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q12 · 4 marks</p>\n<p><strong>Question:</strong> X feeds a chain: XNOR → XOR → XOR → NAND.\nEach gate’s second input is X. What is the output? Options: X̄ / 1 / 0 /\nX</p>\n<p><strong>Answer:</strong> <strong>X̄</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q12 · 4 marks Question: X feeds a chain: XNOR → XOR → XOR → NAND.\nEach gate’s second input is X. What is the output? Options: X̄ / 1 / 0 /\nX Answer: X̄"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>G1 = X ⊙ X = <strong>1</strong></li>\n<li>G2 = 1 ⊕ X = <strong>X̄</strong></li>\n<li>G3 = X̄ ⊕ X = <strong>1</strong></li>\n<li>Out = NAND(1, X) = NOT(1 · X) = <strong>X̄</strong></li>\n</ol>",
-          "text": "G1 = X ⊙ X = 1 G2 = 1 ⊕ X = X̄ G3 = X̄ ⊕ X = 1 Out = NAND(1, X) = NOT(1 · X) = X̄"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q12 · 4 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q12",
+            "4 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> X feeds a chain: XNOR → XOR → XOR → NAND.\nEach gate’s second input is X. What is the output? Options: X̄ / 1 / 0 /\nX</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"540\" loading=\"lazy\" src=\"/images/csd-pyq/2026t2-quiz1-q12.webp?v=6cc8d15a6ab3\" width=\"1800\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>X̄</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>G1 = X ⊙ X = <strong>1</strong></li>\n<li>G2 = 1 ⊕ X = <strong>X̄</strong></li>\n<li>G3 = X̄ ⊕ X = <strong>1</strong></li>\n<li>Out = NAND(1, X) = NOT(1 · X) = <strong>X̄</strong></li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q12 · 4 marks Asked in: 2026 T2 Quiz 1 · Q12 · 4 marks Question: X feeds a chain: XNOR → XOR → XOR → NAND.\nEach gate’s second input is X. What is the output? Options: X̄ / 1 / 0 /\nX Question figure (redrawn exactly from the\npaper) Answer: X̄ G1 = X ⊙ X = 1 G2 = 1 ⊕ X = X̄ G3 = X̄ ⊕ X = 1 Out = NAND(1, X) = NOT(1 · X) = X̄"
         },
         {
           "type": "html",
@@ -831,59 +852,75 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q100 · 5 marks</p>\n<p><strong>Question:</strong> X and Y go into an XOR. Separately, X and\nY go into an AND. The XOR output and Z go into a second AND. Both AND\noutputs go into an OR → F. Inputs are uniformly random. P(F = 1)?\nOptions: 0.75 / 0.33 / 0.25 / 0.50 / 1 / None of these</p>\n<p><strong>Answer:</strong> <strong>0.50</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q100 · 5 marks Question: X and Y go into an XOR. Separately, X and\nY go into an AND. The XOR output and Z go into a second AND. Both AND\noutputs go into an OR → F. Inputs are uniformly random. P(F = 1)?\nOptions: 0.75 / 0.33 / 0.25 / 0.50 / 1 / None of these Answer: 0.50"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q100 · 5 marks",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q100",
+            "5 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> X and Y go into an XOR. Separately, X and\nY go into an AND. The XOR output and Z go into a second AND. Both AND\noutputs go into an OR → F. Inputs are uniformly random. P(F = 1)?\nOptions: 0.75 / 0.33 / 0.25 / 0.50 / 1 / None of these</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"750\" loading=\"lazy\" src=\"/images/csd-pyq/2025t2-quiz1-q100.webp?v=862c7f8bc23c\" width=\"1650\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>0.50</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Write the formula: F = (X ⊕ Y)·Z + X·Y</li>\n<li>Make the table (8 rows):</li>\n</ol><div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>X Y Z</th>\n<th>X⊕Y</th>\n<th>(X⊕Y)·Z</th>\n<th>X·Y</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>000</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>001</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>010</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>011</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>100</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>101</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>110</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>111</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div><ol start=\"3\" type=\"1\">\n<li>F = 1 in <strong>4</strong> rows → P = 4/8 = <strong>0.50</strong>\n(F is 1 when at least two inputs are 1. This is the “majority”\nfunction.)</li>\n</ol>",
+          "text": "2025 T2 Quiz 1 · Q100 · 5 marks Asked in: 2025 T2 Quiz 1 · Q100 · 5 marks Question: X and Y go into an XOR. Separately, X and\nY go into an AND. The XOR output and Z go into a second AND. Both AND\noutputs go into an OR → F. Inputs are uniformly random. P(F = 1)?\nOptions: 0.75 / 0.33 / 0.25 / 0.50 / 1 / None of these Question figure (redrawn exactly from the\npaper) Answer: 0.50 Write the formula: F = (X ⊕ Y)·Z + X·Y Make the table (8 rows): X Y Z X⊕Y (X⊕Y)·Z X·Y F 000 0 0 0 0 001 0 0 0 0 010 1 0 0 0 011 1 1 0 1 100 1 0 0 0 101 1 1 0 1 110 0 0 1 1 111 0 0 1 1 F = 1 in 4 rows → P = 4/8 = 0.50 (F is 1 when at least two inputs are 1. This is the “majority”\nfunction.)"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q170 · 5 marks (and the same circuit in 2026 T2 Quiz 1 · Q9 · 4 marks)",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q170",
+            "5 marks (and the same circuit in 2026 T2 Quiz 1",
+            "Q9",
+            "4 marks)"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1",
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Three AND gates feed an OR → Y. AND1 =\nX̄·Y. AND2 = X·Y·Z. AND3 = X·Y·Z̄. Inputs are uniformly random. P(Y = 0)?\n(The 2026 paper asks P(f = 1).)</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"840\" loading=\"lazy\" src=\"/images/csd-pyq/2025t3-quiz1-q170.webp?v=1a8400d62229\" width=\"1650\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>0.50</strong> (for both)</p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Y = X̄Y + XYZ + XYZ̄</li>\n<li>Join the last two: XYZ + XYZ̄ = XY(Z + Z̄) = XY·1 =\n<strong>XY</strong></li>\n<li>Y = X̄Y + XY = Y(X̄ + X) = Y·1 = <strong>Y</strong></li>\n<li>The whole circuit is just the input Y! Y is 0 in half the rows →\nP(0) = <strong>0.5</strong>, and P(1) = <strong>0.5</strong> too.</li>\n</ol>",
+          "text": "2025 T3 Quiz 1 · Q170 · 5 marks (and the same circuit in 2026 T2 Quiz 1 · Q9 · 4 marks) Asked in: 2025 T3 Quiz 1 · Q170 · 5 marks (and the\nsame circuit in 2026 T2 Quiz 1 · Q9 · 4 marks) Question: Three AND gates feed an OR → Y. AND1 =\nX̄·Y. AND2 = X·Y·Z. AND3 = X·Y·Z̄. Inputs are uniformly random. P(Y = 0)?\n(The 2026 paper asks P(f = 1).) Question figure (redrawn exactly from the\npaper) Answer: 0.50 (for both) Y = X̄Y + XYZ + XYZ̄ Join the last two: XYZ + XYZ̄ = XY(Z + Z̄) = XY·1 = XY Y = X̄Y + XY = Y(X̄ + X) = Y·1 = Y The whole circuit is just the input Y! Y is 0 in half the rows →\nP(0) = 0.5 , and P(1) = 0.5 too."
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write the formula: F = (X ⊕ Y)·Z + X·Y</li>\n<li>Make the table (8 rows):</li>\n</ol>",
-          "text": "Write the formula: F = (X ⊕ Y)·Z + X·Y Make the table (8 rows):"
-        },
-        {
-          "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>X Y Z</th>\n<th>X⊕Y</th>\n<th>(X⊕Y)·Z</th>\n<th>X·Y</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>000</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>001</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>010</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>011</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>100</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>101</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>110</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>111</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "X Y Z X⊕Y (X⊕Y)·Z X·Y F 000 0 0 0 0 001 0 0 0 0 010 1 0 0 0 011 1 1 0 1 100 1 0 0 0 101 1 1 0 1 110 0 0 1 1 111 0 0 1 1"
-        },
-        {
-          "type": "html",
-          "html": "<ol start=\"3\" type=\"1\">\n<li>F = 1 in <strong>4</strong> rows → P = 4/8 = <strong>0.50</strong>\n(F is 1 when at least two inputs are 1. This is the “majority”\nfunction.)</li>\n</ol>",
-          "text": "F = 1 in 4 rows → P = 4/8 = 0.50 (F is 1 when at least two inputs are 1. This is the “majority”\nfunction.)"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q170 · 5 marks (and the\nsame circuit in 2026 T2 Quiz 1 · Q9 · 4 marks)</p>\n<p><strong>Question:</strong> Three AND gates feed an OR → Y. AND1 =\nX̄·Y. AND2 = X·Y·Z. AND3 = X·Y·Z̄. Inputs are uniformly random. P(Y = 0)?\n(The 2026 paper asks P(f = 1).)</p>\n<p><strong>Answer:</strong> <strong>0.50</strong> (for both)</p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q170 · 5 marks (and the\nsame circuit in 2026 T2 Quiz 1 · Q9 · 4 marks) Question: Three AND gates feed an OR → Y. AND1 =\nX̄·Y. AND2 = X·Y·Z. AND3 = X·Y·Z̄. Inputs are uniformly random. P(Y = 0)?\n(The 2026 paper asks P(f = 1).) Answer: 0.50 (for both)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Y = X̄Y + XYZ + XYZ̄</li>\n<li>Join the last two: XYZ + XYZ̄ = XY(Z + Z̄) = XY·1 =\n<strong>XY</strong></li>\n<li>Y = X̄Y + XY = Y(X̄ + X) = Y·1 = <strong>Y</strong></li>\n<li>The whole circuit is just the input Y! Y is 0 in half the rows →\nP(0) = <strong>0.5</strong>, and P(1) = <strong>0.5</strong> too.</li>\n</ol>",
-          "text": "Y = X̄Y + XYZ + XYZ̄ Join the last two: XYZ + XYZ̄ = XY(Z + Z̄) = XY·1 = XY Y = X̄Y + XY = Y(X̄ + X) = Y·1 = Y The whole circuit is just the input Y! Y is 0 in half the rows →\nP(0) = 0.5 , and P(1) = 0.5 too."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q156 and 2025 T2\nEnd-term (FN) · Q124 · 3 marks each</p>\n<p><strong>Question:</strong> A 4-input circuit (x, y, w, z) with five\nAND gates, two OR gates and three NOT gates. P(f = 1)?</p>\n<p><strong>Answer:</strong> <strong>0.5</strong> (the answer key shows\n“5”, meaning .5)</p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (AN) · Q156 and 2025 T2\nEnd-term (FN) · Q124 · 3 marks each Question: A 4-input circuit (x, y, w, z) with five\nAND gates, two OR gates and three NOT gates. P(f = 1)? Answer: 0.5 (the answer key shows\n“5”, meaning .5)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Read every gate from the diagram: A1 = x̄·y, A2 = w̄·z, O1 = A2 + z̄,\nA3 = A1·O1 A4 = x̄·w·z, O2 = A4 + x, A5 = O2·y f = A3 + A5</li>\n<li>Simplify: O1 = w̄z + z̄ = <strong>w̄ + z̄</strong>. O2 = x̄wz + x =\n<strong>x + wz</strong>.</li>\n<li>f = x̄y(w̄ + z̄) + y(x + wz)</li>\n<li>If y = 0, f = 0. If y = 1: f = x̄(w̄ + z̄) + x + wz. If x = 1 → 1. If x\n= 0 → (w̄ + z̄) + wz = 1 (one of them is always true).</li>\n<li>So <strong>f = y</strong>, and P = 8/16 = <strong>0.5</strong>. (We\nchecked all 16 rows by computer.)</li>\n</ol>",
-          "text": "Read every gate from the diagram: A1 = x̄·y, A2 = w̄·z, O1 = A2 + z̄,\nA3 = A1·O1 A4 = x̄·w·z, O2 = A4 + x, A5 = O2·y f = A3 + A5 Simplify: O1 = w̄z + z̄ = w̄ + z̄ . O2 = x̄wz + x = x + wz . f = x̄y(w̄ + z̄) + y(x + wz) If y = 0, f = 0. If y = 1: f = x̄(w̄ + z̄) + x + wz. If x = 1 → 1. If x\n= 0 → (w̄ + z̄) + wz = 1 (one of them is always true). So f = y , and P = 8/16 = 0.5 . (We\nchecked all 16 rows by computer.)"
+          "type": "pyq",
+          "header": "2025 T2 End-term (AN) · Q156 and 2025 T2 End-term (FN) · Q124 · 3 marks each",
+          "badges": [
+            "2025 T2 End-term (AN)",
+            "Q156 and 2025 T2 End-term (FN)",
+            "Q124",
+            "3 marks each"
+          ],
+          "papers": [
+            "2025 T2 End-term (AN)",
+            "2025 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> A 4-input circuit (x, y, w, z) with five\nAND gates, two OR gates and three NOT gates. P(f = 1)?</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"1140\" loading=\"lazy\" src=\"/images/csd-pyq/2025t2-endterm-q156.webp?v=6fc985236e86\" width=\"1950\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>0.5</strong> (the answer key shows\n“5”, meaning .5)</p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Read every gate from the diagram: A1 = x̄·y, A2 = w̄·z, O1 = A2 + z̄,\nA3 = A1·O1 A4 = x̄·w·z, O2 = A4 + x, A5 = O2·y f = A3 + A5</li>\n<li>Simplify: O1 = w̄z + z̄ = <strong>w̄ + z̄</strong>. O2 = x̄wz + x =\n<strong>x + wz</strong>.</li>\n<li>f = x̄y(w̄ + z̄) + y(x + wz)</li>\n<li>If y = 0, f = 0. If y = 1: f = x̄(w̄ + z̄) + x + wz. If x = 1 → 1. If x\n= 0 → (w̄ + z̄) + wz = 1 (one of them is always true).</li>\n<li>So <strong>f = y</strong>, and P = 8/16 = <strong>0.5</strong>. (We\nchecked all 16 rows by computer.)</li>\n</ol>",
+          "text": "2025 T2 End-term (AN) · Q156 and 2025 T2 End-term (FN) · Q124 · 3 marks each Asked in: 2025 T2 End-term (AN) · Q156 and 2025 T2\nEnd-term (FN) · Q124 · 3 marks each Question: A 4-input circuit (x, y, w, z) with five\nAND gates, two OR gates and three NOT gates. P(f = 1)? Question figure (redrawn exactly from the\npaper) Answer: 0.5 (the answer key shows\n“5”, meaning .5) Read every gate from the diagram: A1 = x̄·y, A2 = w̄·z, O1 = A2 + z̄,\nA3 = A1·O1 A4 = x̄·w·z, O2 = A4 + x, A5 = O2·y f = A3 + A5 Simplify: O1 = w̄z + z̄ = w̄ + z̄ . O2 = x̄wz + x = x + wz . f = x̄y(w̄ + z̄) + y(x + wz) If y = 0, f = 0. If y = 1: f = x̄(w̄ + z̄) + x + wz. If x = 1 → 1. If x\n= 0 → (w̄ + z̄) + wz = 1 (one of them is always true). So f = y , and P = 8/16 = 0.5 . (We\nchecked all 16 rows by computer.)"
         },
         {
           "type": "html",
@@ -918,64 +955,84 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q167 · 4 marks</p>\n<p><strong>Question:</strong> f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1</p>\n<p><strong>Answer:</strong> <strong>Any odd number of inputs are at\nlogic 1</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q167 · 4 marks Question: f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1 Answer: Any odd number of inputs are at\nlogic 1"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q167 · 4 marks",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q167",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>Any odd number of inputs are at\nlogic 1</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>f = 1 rows: 001, 010, 100, 111 → counts of 1s: 1, 1, 1, 3. All\n<strong>odd</strong>.</li>\n<li>Test the other options:\n<ul>\n<li>“2 or more at 0” includes 000 → f = 0 ✗</li>\n<li>“2 or more at 1” includes 011 → f = 0 ✗</li>\n<li>“Odd number of 0s” includes 000 (three 0s) → f = 0 ✗</li>\n</ul></li>\n</ol>",
+          "text": "2025 T3 Quiz 1 · Q167 · 4 marks Asked in: 2025 T3 Quiz 1 · Q167 · 4 marks Question: f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1 Answer: Any odd number of inputs are at\nlogic 1 f = 1 rows: 001, 010, 100, 111 → counts of 1s: 1, 1, 1, 3. All odd . Test the other options: “2 or more at 0” includes 000 → f = 0 ✗ “2 or more at 1” includes 011 → f = 0 ✗ “Odd number of 0s” includes 000 (three 0s) → f = 0 ✗"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q97 · 4 marks. The official key is incomplete.",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q97",
+            "4 marks. The official key is incomplete."
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": true,
+          "questionHtml": "<p><strong>Question:</strong> f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: exactly one input at 1 / all inputs at\n1 / any two inputs at 0 / any even number of inputs at 1</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer (key):</strong> <strong>Exactly one input is at logic\n1</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>“Exactly one input at 1” → rows 001, 010, 100 → f = 1 in all ✔</li>\n<li>But also “all inputs at 1” → row 111 → f = 1 ✔</li>\n<li>And “any two inputs at 0” means exactly one at 1 → the same rows → f\n= 1 ✔</li>\n<li>“Even number of 1s” includes 000 → f = 0 ✗</li>\n<li>So <strong>three options are true</strong>. The key accepted\n“exactly one input at 1”. In the exam, pick that one, the most direct\ndescription.</li>\n</ol>",
+          "text": "2025 T2 Quiz 1 · Q97 · 4 marks. The official key is incomplete. Asked in: 2025 T2 Quiz 1 · Q97 · 4 marks. The official key is incomplete. Question: f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: exactly one input at 1 / all inputs at\n1 / any two inputs at 0 / any even number of inputs at 1 Answer (key): Exactly one input is at logic\n1 “Exactly one input at 1” → rows 001, 010, 100 → f = 1 in all ✔ But also “all inputs at 1” → row 111 → f = 1 ✔ And “any two inputs at 0” means exactly one at 1 → the same rows → f\n= 1 ✔ “Even number of 1s” includes 000 → f = 0 ✗ So three options are true . The key accepted\n“exactly one input at 1”. In the exam, pick that one, the most direct\ndescription."
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>f = 1 rows: 001, 010, 100, 111 → counts of 1s: 1, 1, 1, 3. All\n<strong>odd</strong>.</li>\n<li>Test the other options:\n<ul>\n<li>“2 or more at 0” includes 000 → f = 0 ✗</li>\n<li>“2 or more at 1” includes 011 → f = 0 ✗</li>\n<li>“Odd number of 0s” includes 000 (three 0s) → f = 0 ✗</li>\n</ul></li>\n</ol>",
-          "text": "f = 1 rows: 001, 010, 100, 111 → counts of 1s: 1, 1, 1, 3. All odd . Test the other options: “2 or more at 0” includes 000 → f = 0 ✗ “2 or more at 1” includes 011 → f = 0 ✗ “Odd number of 0s” includes 000 (three 0s) → f = 0 ✗"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q11 · 4 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q11",
+            "4 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> f(x, y, z) = Σm(0, 3, 5, 6). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>Any odd number of inputs are at\nlogic 0</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>f = 1 rows: 000, 011, 101, 110. Count the <strong>0s</strong>: 3, 1,\n1, 1 → all <strong>odd</strong>.</li>\n<li>Test the others: “2 or more at 0” includes 001 → f = 0 ✗; “2 or more\nat 1” includes 111 → f = 0 ✗; “odd number of 1s” includes 001 → f = 0\n✗.</li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q11 · 4 marks Asked in: 2026 T2 Quiz 1 · Q11 · 4 marks Question: f(x, y, z) = Σm(0, 3, 5, 6). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1 Answer: Any odd number of inputs are at\nlogic 0 f = 1 rows: 000, 011, 101, 110. Count the 0s : 3, 1,\n1, 1 → all odd . Test the others: “2 or more at 0” includes 001 → f = 0 ✗; “2 or more\nat 1” includes 111 → f = 0 ✗; “odd number of 1s” includes 001 → f = 0\n✗."
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q97 · 4 marks.\n<strong>The official key is incomplete.</strong></p>\n<p><strong>Question:</strong> f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: exactly one input at 1 / all inputs at\n1 / any two inputs at 0 / any even number of inputs at 1</p>\n<p><strong>Answer (key):</strong> <strong>Exactly one input is at logic\n1</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q97 · 4 marks. The official key is incomplete. Question: f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: exactly one input at 1 / all inputs at\n1 / any two inputs at 0 / any even number of inputs at 1 Answer (key): Exactly one input is at logic\n1"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>“Exactly one input at 1” → rows 001, 010, 100 → f = 1 in all ✔</li>\n<li>But also “all inputs at 1” → row 111 → f = 1 ✔</li>\n<li>And “any two inputs at 0” means exactly one at 1 → the same rows → f\n= 1 ✔</li>\n<li>“Even number of 1s” includes 000 → f = 0 ✗</li>\n<li>So <strong>three options are true</strong>. The key accepted\n“exactly one input at 1”. In the exam, pick that one, the most direct\ndescription.</li>\n</ol>",
-          "text": "“Exactly one input at 1” → rows 001, 010, 100 → f = 1 in all ✔ But also “all inputs at 1” → row 111 → f = 1 ✔ And “any two inputs at 0” means exactly one at 1 → the same rows → f\n= 1 ✔ “Even number of 1s” includes 000 → f = 0 ✗ So three options are true . The key accepted\n“exactly one input at 1”. In the exam, pick that one, the most direct\ndescription."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q11 · 4 marks</p>\n<p><strong>Question:</strong> f(x, y, z) = Σm(0, 3, 5, 6). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1</p>\n<p><strong>Answer:</strong> <strong>Any odd number of inputs are at\nlogic 0</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q11 · 4 marks Question: f(x, y, z) = Σm(0, 3, 5, 6). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1 Answer: Any odd number of inputs are at\nlogic 0"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>f = 1 rows: 000, 011, 101, 110. Count the <strong>0s</strong>: 3, 1,\n1, 1 → all <strong>odd</strong>.</li>\n<li>Test the others: “2 or more at 0” includes 001 → f = 0 ✗; “2 or more\nat 1” includes 111 → f = 0 ✗; “odd number of 1s” includes 001 → f = 0\n✗.</li>\n</ol>",
-          "text": "f = 1 rows: 000, 011, 101, 110. Count the 0s : 3, 1,\n1, 1 → all odd . Test the others: “2 or more at 0” includes 001 → f = 0 ✗; “2 or more\nat 1” includes 111 → f = 0 ✗; “odd number of 1s” includes 001 → f = 0\n✗."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q8 · 4 marks. <strong>Two\noptions are true here.</strong></p>\n<p><strong>Question:</strong> Given f(A, B, C) = A ⊕ B ⊕ C = 1, which\nstatement is always true? Options: A = B ⊕ C / A + B + C = 1 / A = B ⊙ C\n/ ABC = 1 / None of these</p>\n<p><strong>Answer (key):</strong> <strong>A = B ⊙ C</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q8 · 4 marks. Two\noptions are true here. Question: Given f(A, B, C) = A ⊕ B ⊕ C = 1, which\nstatement is always true? Options: A = B ⊕ C / A + B + C = 1 / A = B ⊙ C\n/ ABC = 1 / None of these Answer (key): A = B ⊙ C"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>XOR both sides with (B ⊕ C): A = 1 ⊕ (B ⊕ C) = NOT(B ⊕ C) =\n<strong>B ⊙ C</strong> ✔</li>\n<li>Check “A + B + C = 1”: A ⊕ B ⊕ C = 1 means an odd number of 1s, so\n<strong>at least one</strong> is 1. So A + B + C = 1 is also always\ntrue.</li>\n<li>“A = B ⊕ C” is the opposite ✗. “ABC = 1” fails for 100 ✗.</li>\n<li>The key accepts only <strong>A = B ⊙ C</strong>, so choose that in\nthe exam.</li>\n</ol>",
-          "text": "XOR both sides with (B ⊕ C): A = 1 ⊕ (B ⊕ C) = NOT(B ⊕ C) = B ⊙ C ✔ Check “A + B + C = 1”: A ⊕ B ⊕ C = 1 means an odd number of 1s, so at least one is 1. So A + B + C = 1 is also always\ntrue. “A = B ⊕ C” is the opposite ✗. “ABC = 1” fails for 100 ✗. The key accepts only A = B ⊙ C , so choose that in\nthe exam."
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q8 · 4 marks. Two options are true here.",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q8",
+            "4 marks. Two options are true here."
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": true,
+          "questionHtml": "<p><strong>Question:</strong> Given f(A, B, C) = A ⊕ B ⊕ C = 1, which\nstatement is always true? Options: A = B ⊕ C / A + B + C = 1 / A = B ⊙ C\n/ ABC = 1 / None of these</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer (key):</strong> <strong>A = B ⊙ C</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>XOR both sides with (B ⊕ C): A = 1 ⊕ (B ⊕ C) = NOT(B ⊕ C) =\n<strong>B ⊙ C</strong> ✔</li>\n<li>Check “A + B + C = 1”: A ⊕ B ⊕ C = 1 means an odd number of 1s, so\n<strong>at least one</strong> is 1. So A + B + C = 1 is also always\ntrue.</li>\n<li>“A = B ⊕ C” is the opposite ✗. “ABC = 1” fails for 100 ✗.</li>\n<li>The key accepts only <strong>A = B ⊙ C</strong>, so choose that in\nthe exam.</li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q8 · 4 marks. Two options are true here. Asked in: 2026 T2 Quiz 1 · Q8 · 4 marks. Two\noptions are true here. Question: Given f(A, B, C) = A ⊕ B ⊕ C = 1, which\nstatement is always true? Options: A = B ⊕ C / A + B + C = 1 / A = B ⊙ C\n/ ABC = 1 / None of these Answer (key): A = B ⊙ C XOR both sides with (B ⊕ C): A = 1 ⊕ (B ⊕ C) = NOT(B ⊕ C) = B ⊙ C ✔ Check “A + B + C = 1”: A ⊕ B ⊕ C = 1 means an odd number of 1s, so at least one is 1. So A + B + C = 1 is also always\ntrue. “A = B ⊕ C” is the opposite ✗. “ABC = 1” fails for 100 ✗. The key accepts only A = B ⊙ C , so choose that in\nthe exam."
         },
         {
           "type": "html",
@@ -1005,19 +1062,28 @@
           "text": "Past paper question"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q159, 2025 T2\nEnd-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each</p>\n<p><strong>Question:</strong> A circuit has inputs A, B, C, D. F = 1 if\nand only if exactly two of the four inputs are 0 (the AN paper says “are\n1”). Minimum number of minterms in the SOP for F?</p>\n<p><strong>Answer:</strong> <strong>6</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (AN) · Q159, 2025 T2\nEnd-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each Question: A circuit has inputs A, B, C, D. F = 1 if\nand only if exactly two of the four inputs are 0 (the AN paper says “are\n1”). Minimum number of minterms in the SOP for F? Answer: 6"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>“Exactly two 0s” among four inputs = “exactly two 1s”. Both count\nthe same rows.</li>\n<li>Count: ⁴C₂ = (4 × 3) ÷ (2 × 1) = <strong>6</strong></li>\n<li>List to check: 0011, 0101, 0110, 1001, 1010, 1100 → 6 rows ✔</li>\n<li><strong>Trap:</strong> “minimum number of minterms” is still 6.\nMinterms can’t be simplified away; each 1-row is one minterm.</li>\n</ol>",
-          "text": "“Exactly two 0s” among four inputs = “exactly two 1s”. Both count\nthe same rows. Count: ⁴C₂ = (4 × 3) ÷ (2 × 1) = 6 List to check: 0011, 0101, 0110, 1001, 1010, 1100 → 6 rows ✔ Trap: “minimum number of minterms” is still 6.\nMinterms can’t be simplified away; each 1-row is one minterm."
+          "type": "pyq",
+          "header": "2025 T2 End-term (AN) · Q159, 2025 T2 End-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each",
+          "badges": [
+            "2025 T2 End-term (AN)",
+            "Q159, 2025 T2 End-term (FN)",
+            "Q127, 2026 T2 End-term",
+            "Q12",
+            "3 marks each"
+          ],
+          "papers": [
+            "2025 T2 End-term (AN)",
+            "2025 T2 End-term (FN)",
+            "2026 T2 End-term"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> A circuit has inputs A, B, C, D. F = 1 if\nand only if exactly two of the four inputs are 0 (the AN paper says “are\n1”). Minimum number of minterms in the SOP for F?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>6</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>“Exactly two 0s” among four inputs = “exactly two 1s”. Both count\nthe same rows.</li>\n<li>Count: ⁴C₂ = (4 × 3) ÷ (2 × 1) = <strong>6</strong></li>\n<li>List to check: 0011, 0101, 0110, 1001, 1010, 1100 → 6 rows ✔</li>\n<li><strong>Trap:</strong> “minimum number of minterms” is still 6.\nMinterms can’t be simplified away; each 1-row is one minterm.</li>\n</ol>",
+          "text": "2025 T2 End-term (AN) · Q159, 2025 T2 End-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each Asked in: 2025 T2 End-term (AN) · Q159, 2025 T2\nEnd-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each Question: A circuit has inputs A, B, C, D. F = 1 if\nand only if exactly two of the four inputs are 0 (the AN paper says “are\n1”). Minimum number of minterms in the SOP for F? Answer: 6 “Exactly two 0s” among four inputs = “exactly two 1s”. Both count\nthe same rows. Count: ⁴C₂ = (4 × 3) ÷ (2 × 1) = 6 List to check: 0011, 0101, 0110, 1001, 1010, 1100 → 6 rows ✔ Trap: “minimum number of minterms” is still 6.\nMinterms can’t be simplified away; each 1-row is one minterm."
         },
         {
           "type": "html",
@@ -1047,34 +1113,44 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q132 · 4 marks</p>\n<p><strong>Question:</strong> Find the minterms of F(A, B, C, D) = ĀB̄ +\nACD̄ + BC̄D̄.</p>\n<p><strong>Answer:</strong> <strong>Σ(0, 1, 2, 3, 4, 10, 12,\n14)</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 2 · Q132 · 4 marks Question: Find the minterms of F(A, B, C, D) = ĀB̄ +\nACD̄ + BC̄D̄. Answer: Σ(0, 1, 2, 3, 4, 10, 12,\n14)"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 2 · Q132 · 4 marks",
+          "badges": [
+            "2025 T2 Quiz 2",
+            "Q132",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 2"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Find the minterms of F(A, B, C, D) = ĀB̄ +\nACD̄ + BC̄D̄.</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>Σ(0, 1, 2, 3, 4, 10, 12,\n14)</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>ĀB̄ → A = 0, B = 0, C and D free → 0000, 0001, 0010, 0011 →\n<strong>0, 1, 2, 3</strong></li>\n<li>ACD̄ → A = 1, C = 1, D = 0, B free → 1010, 1110 → <strong>10,\n14</strong></li>\n<li>BC̄D̄ → B = 1, C = 0, D = 0, A free → 0100, 1100 → <strong>4,\n12</strong></li>\n<li>Join: Σ(0, 1, 2, 3, 4, 10, 12, 14) ✔</li>\n</ol>",
+          "text": "2025 T2 Quiz 2 · Q132 · 4 marks Asked in: 2025 T2 Quiz 2 · Q132 · 4 marks Question: Find the minterms of F(A, B, C, D) = ĀB̄ +\nACD̄ + BC̄D̄. Answer: Σ(0, 1, 2, 3, 4, 10, 12,\n14) ĀB̄ → A = 0, B = 0, C and D free → 0000, 0001, 0010, 0011 → 0, 1, 2, 3 ACD̄ → A = 1, C = 1, D = 0, B free → 1010, 1110 → 10,\n14 BC̄D̄ → B = 1, C = 0, D = 0, A free → 0100, 1100 → 4,\n12 Join: Σ(0, 1, 2, 3, 4, 10, 12, 14) ✔"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>ĀB̄ → A = 0, B = 0, C and D free → 0000, 0001, 0010, 0011 →\n<strong>0, 1, 2, 3</strong></li>\n<li>ACD̄ → A = 1, C = 1, D = 0, B free → 1010, 1110 → <strong>10,\n14</strong></li>\n<li>BC̄D̄ → B = 1, C = 0, D = 0, A free → 0100, 1100 → <strong>4,\n12</strong></li>\n<li>Join: Σ(0, 1, 2, 3, 4, 10, 12, 14) ✔</li>\n</ol>",
-          "text": "ĀB̄ → A = 0, B = 0, C and D free → 0000, 0001, 0010, 0011 → 0, 1, 2, 3 ACD̄ → A = 1, C = 1, D = 0, B free → 1010, 1110 → 10,\n14 BC̄D̄ → B = 1, C = 0, D = 0, A free → 0100, 1100 → 4,\n12 Join: Σ(0, 1, 2, 3, 4, 10, 12, 14) ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q11 · 4 marks</p>\n<p><strong>Question:</strong> Find the minterms of AB + ĀCD̄ + BC̄D.</p>\n<p><strong>Answer:</strong> <strong>Σ(2, 5, 6, 12, 13, 14,\n15)</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 2 · Q11 · 4 marks Question: Find the minterms of AB + ĀCD̄ + BC̄D. Answer: Σ(2, 5, 6, 12, 13, 14,\n15)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>AB → 11XX → 1100, 1101, 1110, 1111 → <strong>12, 13, 14,\n15</strong></li>\n<li>ĀCD̄ → 0X10 → 0010, 0110 → <strong>2, 6</strong></li>\n<li>BC̄D → X101 → 0101, 1101 → <strong>5, 13</strong> (13 is already\nthere)</li>\n<li>Join: Σ(2, 5, 6, 12, 13, 14, 15) ✔</li>\n</ol>",
-          "text": "AB → 11XX → 1100, 1101, 1110, 1111 → 12, 13, 14,\n15 ĀCD̄ → 0X10 → 0010, 0110 → 2, 6 BC̄D → X101 → 0101, 1101 → 5, 13 (13 is already\nthere) Join: Σ(2, 5, 6, 12, 13, 14, 15) ✔"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 2 · Q11 · 4 marks",
+          "badges": [
+            "2026 T2 Quiz 2",
+            "Q11",
+            "4 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 2"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Find the minterms of AB + ĀCD̄ + BC̄D.</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>Σ(2, 5, 6, 12, 13, 14,\n15)</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>AB → 11XX → 1100, 1101, 1110, 1111 → <strong>12, 13, 14,\n15</strong></li>\n<li>ĀCD̄ → 0X10 → 0010, 0110 → <strong>2, 6</strong></li>\n<li>BC̄D → X101 → 0101, 1101 → <strong>5, 13</strong> (13 is already\nthere)</li>\n<li>Join: Σ(2, 5, 6, 12, 13, 14, 15) ✔</li>\n</ol>",
+          "text": "2026 T2 Quiz 2 · Q11 · 4 marks Asked in: 2026 T2 Quiz 2 · Q11 · 4 marks Question: Find the minterms of AB + ĀCD̄ + BC̄D. Answer: Σ(2, 5, 6, 12, 13, 14,\n15) AB → 11XX → 1100, 1101, 1110, 1111 → 12, 13, 14,\n15 ĀCD̄ → 0X10 → 0010, 0110 → 2, 6 BC̄D → X101 → 0101, 1101 → 5, 13 (13 is already\nthere) Join: Σ(2, 5, 6, 12, 13, 14, 15) ✔"
         },
         {
           "type": "html",
@@ -1095,19 +1171,24 @@
           "text": "For each row, put the values into each product term .\nIf any term is 1, F = 1."
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q14 · 3 marks</p>\n<p><strong>Question:</strong> Choose the correct truth table for F(x, y,\nz) = x̄ȳz̄ + x̄y + xz̄.</p>\n<p><strong>Answer:</strong> the table with F = <strong>1, 0, 1, 1, 1, 0,\n1, 0</strong> (rows 000 → 111)</p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (FN) · Q14 · 3 marks Question: Choose the correct truth table for F(x, y,\nz) = x̄ȳz̄ + x̄y + xz̄. Answer: the table with F = 1, 0, 1, 1, 1, 0,\n1, 0 (rows 000 → 111)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>x̄ȳz̄ → only 000 → row 0</li>\n<li>x̄y → 01X → rows 2, 3</li>\n<li>xz̄ → 1X0 → rows 4, 6</li>\n<li>F = 1 in rows 0, 2, 3, 4, 6 → F column: 1, 0, 1, 1, 1, 0, 1, 0\n✔</li>\n<li>Pick the option whose F column matches <strong>exactly</strong>. One\nwrong row means a wrong option.</li>\n</ol>",
-          "text": "x̄ȳz̄ → only 000 → row 0 x̄y → 01X → rows 2, 3 xz̄ → 1X0 → rows 4, 6 F = 1 in rows 0, 2, 3, 4, 6 → F column: 1, 0, 1, 1, 1, 0, 1, 0\n✔ Pick the option whose F column matches exactly . One\nwrong row means a wrong option."
+          "type": "pyq",
+          "header": "2025 T3 End-term (FN) · Q14 · 3 marks",
+          "badges": [
+            "2025 T3 End-term (FN)",
+            "Q14",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Choose the correct truth table for F(x, y,\nz) = x̄ȳz̄ + x̄y + xz̄.</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> the table with F = <strong>1, 0, 1, 1, 1, 0,\n1, 0</strong> (rows 000 → 111)</p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>x̄ȳz̄ → only 000 → row 0</li>\n<li>x̄y → 01X → rows 2, 3</li>\n<li>xz̄ → 1X0 → rows 4, 6</li>\n<li>F = 1 in rows 0, 2, 3, 4, 6 → F column: 1, 0, 1, 1, 1, 0, 1, 0\n✔</li>\n<li>Pick the option whose F column matches <strong>exactly</strong>. One\nwrong row means a wrong option.</li>\n</ol>",
+          "text": "2025 T3 End-term (FN) · Q14 · 3 marks Asked in: 2025 T3 End-term (FN) · Q14 · 3 marks Question: Choose the correct truth table for F(x, y,\nz) = x̄ȳz̄ + x̄y + xz̄. Answer: the table with F = 1, 0, 1, 1, 1, 0,\n1, 0 (rows 000 → 111) x̄ȳz̄ → only 000 → row 0 x̄y → 01X → rows 2, 3 xz̄ → 1X0 → rows 4, 6 F = 1 in rows 0, 2, 3, 4, 6 → F column: 1, 0, 1, 1, 1, 0, 1, 0\n✔ Pick the option whose F column matches exactly . One\nwrong row means a wrong option."
         },
         {
           "type": "html",
@@ -1137,34 +1218,44 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q133 · 5 marks (multiple\nselect)</p>\n<p><strong>Question:</strong> Choose the correct identities: (A ⊕ B)’ =\nAB + A’B’ / (A + B)’ = A’ + B’ / A(B + C) = AB + C / (A + B)(A + C) = A\n+ BC</p>\n<p><strong>Answer:</strong> <strong>(A ⊕ B)’ = AB + A’B’</strong> and\n<strong>(A + B)(A + C) = A + BC</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 2 · Q133 · 5 marks (multiple\nselect) Question: Choose the correct identities: (A ⊕ B)’ =\nAB + A’B’ / (A + B)’ = A’ + B’ / A(B + C) = AB + C / (A + B)(A + C) = A\n+ BC Answer: (A ⊕ B)’ = AB + A’B’ and (A + B)(A + C) = A + BC"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 2 · Q133 · 5 marks (multiple select)",
+          "badges": [
+            "2025 T2 Quiz 2",
+            "Q133",
+            "5 marks (multiple select)"
+          ],
+          "papers": [
+            "2025 T2 Quiz 2"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Choose the correct identities: (A ⊕ B)’ =\nAB + A’B’ / (A + B)’ = A’ + B’ / A(B + C) = AB + C / (A + B)(A + C) = A\n+ BC</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>(A ⊕ B)’ = AB + A’B’</strong> and\n<strong>(A + B)(A + C) = A + BC</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>(A ⊕ B)’ is 1 when A = B, which is exactly AB + A’B’ ✔</li>\n<li>(A + B)’ = A’ + B’? Try A = 1, B = 0: left = (1)’ = 0, right = 0 + 1\n= 1 ✗ (correct De Morgan: A’·B’)</li>\n<li>A(B + C) = AB + C? Try A = 0, C = 1: left = 0, right = 1 ✗ (correct:\nAB + AC)</li>\n<li>(A + B)(A + C) = AA + AC + AB + BC = A(1 + C + B) + BC = <strong>A +\nBC</strong> ✔</li>\n</ol>",
+          "text": "2025 T2 Quiz 2 · Q133 · 5 marks (multiple select) Asked in: 2025 T2 Quiz 2 · Q133 · 5 marks (multiple\nselect) Question: Choose the correct identities: (A ⊕ B)’ =\nAB + A’B’ / (A + B)’ = A’ + B’ / A(B + C) = AB + C / (A + B)(A + C) = A\n+ BC Answer: (A ⊕ B)’ = AB + A’B’ and (A + B)(A + C) = A + BC (A ⊕ B)’ is 1 when A = B, which is exactly AB + A’B’ ✔ (A + B)’ = A’ + B’? Try A = 1, B = 0: left = (1)’ = 0, right = 0 + 1\n= 1 ✗ (correct De Morgan: A’·B’) A(B + C) = AB + C? Try A = 0, C = 1: left = 0, right = 1 ✗ (correct:\nAB + AC) (A + B)(A + C) = AA + AC + AB + BC = A(1 + C + B) + BC = A +\nBC ✔"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>(A ⊕ B)’ is 1 when A = B, which is exactly AB + A’B’ ✔</li>\n<li>(A + B)’ = A’ + B’? Try A = 1, B = 0: left = (1)’ = 0, right = 0 + 1\n= 1 ✗ (correct De Morgan: A’·B’)</li>\n<li>A(B + C) = AB + C? Try A = 0, C = 1: left = 0, right = 1 ✗ (correct:\nAB + AC)</li>\n<li>(A + B)(A + C) = AA + AC + AB + BC = A(1 + C + B) + BC = <strong>A +\nBC</strong> ✔</li>\n</ol>",
-          "text": "(A ⊕ B)’ is 1 when A = B, which is exactly AB + A’B’ ✔ (A + B)’ = A’ + B’? Try A = 1, B = 0: left = (1)’ = 0, right = 0 + 1\n= 1 ✗ (correct De Morgan: A’·B’) A(B + C) = AB + C? Try A = 0, C = 1: left = 0, right = 1 ✗ (correct:\nAB + AC) (A + B)(A + C) = AA + AC + AB + BC = A(1 + C + B) + BC = A +\nBC ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q14 · 5 marks</p>\n<p><strong>Question:</strong> Choose the correct option: (A ⊕ B)’ = A ⊕\nB / (A + B) ⊕ C = A + (B ⊕ C) / (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C / (A·B) ⊕\n(A·C) = A</p>\n<p><strong>Answer:</strong> <strong>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕\nC</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 2 · Q14 · 5 marks Question: Choose the correct option: (A ⊕ B)’ = A ⊕\nB / (A + B) ⊕ C = A + (B ⊕ C) / (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C / (A·B) ⊕\n(A·C) = A Answer: (A ⊕ B) ⊕ (B ⊕ C) = A ⊕\nC"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>(A ⊕ B)’ = A ⊕ B? A thing can’t equal its own opposite ✗</li>\n<li>(A + B) ⊕ C = A + (B ⊕ C)? Try A = 1, B = 0, C = 1: left = 1 ⊕ 1 =\n0, right = 1 + 1 = 1 ✗</li>\n<li>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕ B ⊕ B ⊕ C = A ⊕ <strong>0</strong> ⊕ C = A ⊕\nC ✔ (B ⊕ B = 0)</li>\n<li>(AB) ⊕ (AC) = A? Try A = 1, B = 1, C = 1: left = 1 ⊕ 1 = 0, right =\n1 ✗</li>\n</ol>",
-          "text": "(A ⊕ B)’ = A ⊕ B? A thing can’t equal its own opposite ✗ (A + B) ⊕ C = A + (B ⊕ C)? Try A = 1, B = 0, C = 1: left = 1 ⊕ 1 =\n0, right = 1 + 1 = 1 ✗ (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ B ⊕ B ⊕ C = A ⊕ 0 ⊕ C = A ⊕\nC ✔ (B ⊕ B = 0) (AB) ⊕ (AC) = A? Try A = 1, B = 1, C = 1: left = 1 ⊕ 1 = 0, right =\n1 ✗"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 2 · Q14 · 5 marks",
+          "badges": [
+            "2026 T2 Quiz 2",
+            "Q14",
+            "5 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 2"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Choose the correct option: (A ⊕ B)’ = A ⊕\nB / (A + B) ⊕ C = A + (B ⊕ C) / (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C / (A·B) ⊕\n(A·C) = A</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕\nC</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>(A ⊕ B)’ = A ⊕ B? A thing can’t equal its own opposite ✗</li>\n<li>(A + B) ⊕ C = A + (B ⊕ C)? Try A = 1, B = 0, C = 1: left = 1 ⊕ 1 =\n0, right = 1 + 1 = 1 ✗</li>\n<li>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕ B ⊕ B ⊕ C = A ⊕ <strong>0</strong> ⊕ C = A ⊕\nC ✔ (B ⊕ B = 0)</li>\n<li>(AB) ⊕ (AC) = A? Try A = 1, B = 1, C = 1: left = 1 ⊕ 1 = 0, right =\n1 ✗</li>\n</ol>",
+          "text": "2026 T2 Quiz 2 · Q14 · 5 marks Asked in: 2026 T2 Quiz 2 · Q14 · 5 marks Question: Choose the correct option: (A ⊕ B)’ = A ⊕\nB / (A + B) ⊕ C = A + (B ⊕ C) / (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C / (A·B) ⊕\n(A·C) = A Answer: (A ⊕ B) ⊕ (B ⊕ C) = A ⊕\nC (A ⊕ B)’ = A ⊕ B? A thing can’t equal its own opposite ✗ (A + B) ⊕ C = A + (B ⊕ C)? Try A = 1, B = 0, C = 1: left = 1 ⊕ 1 =\n0, right = 1 + 1 = 1 ✗ (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ B ⊕ B ⊕ C = A ⊕ 0 ⊕ C = A ⊕\nC ✔ (B ⊕ B = 0) (AB) ⊕ (AC) = A? Try A = 1, B = 1, C = 1: left = 1 ⊕ 1 = 0, right =\n1 ✗"
         },
         {
           "type": "html",
@@ -1189,49 +1280,70 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q164 · 3 marks</p>\n<p><strong>Question:</strong> Y must equal AB + BC + CA. A and B go into\nGT1. GT1’s output and C go into an AND. A and B also go into GT2. The\nAND output and GT2’s output go into an OR → Y. What are GT1 and GT2?</p>\n<p><strong>Answer:</strong> <strong>GT1 = XOR, GT2 = AND</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q164 · 3 marks Question: Y must equal AB + BC + CA. A and B go into\nGT1. GT1’s output and C go into an AND. A and B also go into GT2. The\nAND output and GT2’s output go into an OR → Y. What are GT1 and GT2? Answer: GT1 = XOR, GT2 = AND"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q164 · 3 marks",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q164",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Y must equal AB + BC + CA. A and B go into\nGT1. GT1’s output and C go into an AND. A and B also go into GT2. The\nAND output and GT2’s output go into an OR → Y. What are GT1 and GT2?</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"720\" loading=\"lazy\" src=\"/images/csd-pyq/2025t3-quiz1-q164.webp?v=9c07ff05f0e0\" width=\"1500\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>GT1 = XOR, GT2 = AND</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Circuit: Y = (GT1(A, B) · C) + GT2(A, B)</li>\n<li>Try XOR, AND: Y = (A ⊕ B)C + AB</li>\n<li>Check the rows where Y should be 1 (two or more 1s):\n<ul>\n<li>011: (0⊕1)·1 + 0 = 1 ✔</li>\n<li>101: (1⊕0)·1 + 0 = 1 ✔</li>\n<li>110: (1⊕1)·0 + 1 = 1 ✔</li>\n<li>111: (0)·1 + 1 = 1 ✔</li>\n<li>001, 010, 100, 000 all give 0 ✔</li>\n</ul></li>\n<li>All 8 rows match → <strong>XOR, AND</strong></li>\n</ol>",
+          "text": "2025 T3 Quiz 1 · Q164 · 3 marks Asked in: 2025 T3 Quiz 1 · Q164 · 3 marks Question: Y must equal AB + BC + CA. A and B go into\nGT1. GT1’s output and C go into an AND. A and B also go into GT2. The\nAND output and GT2’s output go into an OR → Y. What are GT1 and GT2? Question figure (redrawn exactly from the\npaper) Answer: GT1 = XOR, GT2 = AND Circuit: Y = (GT1(A, B) · C) + GT2(A, B) Try XOR, AND: Y = (A ⊕ B)C + AB Check the rows where Y should be 1 (two or more 1s): 011: (0⊕1)·1 + 0 = 1 ✔ 101: (1⊕0)·1 + 0 = 1 ✔ 110: (1⊕1)·0 + 1 = 1 ✔ 111: (0)·1 + 1 = 1 ✔ 001, 010, 100, 000 all give 0 ✔ All 8 rows match → XOR, AND"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T3 End-term (AN) · Q8 · 3 marks. Flawed question: no option fits.",
+          "badges": [
+            "2025 T3 End-term (AN)",
+            "Q8",
+            "3 marks. Flawed question: no option fits."
+          ],
+          "papers": [
+            "2025 T3 End-term (AN)"
+          ],
+          "keyIssue": true,
+          "questionHtml": "<p><strong>Question:</strong> f must be (x̄ + ȳ)zw. x goes through a NOT\ninto GT2. y and z go into an AND, whose output also goes into GT2. z and\nw go into GT1. GT1 and GT2 go into a final AND → f.</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"780\" loading=\"lazy\" src=\"/images/csd-pyq/2025t3-endterm-an-q8.webp?v=f13c0703d966\" width=\"1500\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer (key):</strong> <strong>AND, NAND</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>With GT1 = AND, GT2 = NAND: f = NAND(x̄, yz) · zw = (x + ȳ + z̄)·zw =\n<strong>(x + ȳ)zw</strong></li>\n<li>That is (x + ȳ)zw, <strong>not</strong> (x̄ + ȳ)zw. Test x = 0, y =\n1, z = w = 1: required = (1 + 0)·1 = 1, but the circuit gives NAND(1,\n1)·1 = <strong>0</strong> ✗</li>\n<li>We tried every pair of gates by computer, and <strong>none</strong>\ngives (x̄ + ȳ)zw. The question has an extra NOT on x.</li>\n<li><strong>In the exam</strong>, write the official answer <strong>AND,\nNAND</strong> (it works if the NOT on x is removed).</li>\n</ol>",
+          "text": "2025 T3 End-term (AN) · Q8 · 3 marks. Flawed question: no option fits. Asked in: 2025 T3 End-term (AN) · Q8 · 3 marks. Flawed question: no option fits. Question: f must be (x̄ + ȳ)zw. x goes through a NOT\ninto GT2. y and z go into an AND, whose output also goes into GT2. z and\nw go into GT1. GT1 and GT2 go into a final AND → f. Question figure (redrawn exactly from the\npaper) Answer (key): AND, NAND With GT1 = AND, GT2 = NAND: f = NAND(x̄, yz) · zw = (x + ȳ + z̄)·zw = (x + ȳ)zw That is (x + ȳ)zw, not (x̄ + ȳ)zw. Test x = 0, y =\n1, z = w = 1: required = (1 + 0)·1 = 1, but the circuit gives NAND(1,\n1)·1 = 0 ✗ We tried every pair of gates by computer, and none gives (x̄ + ȳ)zw. The question has an extra NOT on x. In the exam , write the official answer AND,\nNAND (it works if the NOT on x is removed)."
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Circuit: Y = (GT1(A, B) · C) + GT2(A, B)</li>\n<li>Try XOR, AND: Y = (A ⊕ B)C + AB</li>\n<li>Check the rows where Y should be 1 (two or more 1s):\n<ul>\n<li>011: (0⊕1)·1 + 0 = 1 ✔</li>\n<li>101: (1⊕0)·1 + 0 = 1 ✔</li>\n<li>110: (1⊕1)·0 + 1 = 1 ✔</li>\n<li>111: (0)·1 + 1 = 1 ✔</li>\n<li>001, 010, 100, 000 all give 0 ✔</li>\n</ul></li>\n<li>All 8 rows match → <strong>XOR, AND</strong></li>\n</ol>",
-          "text": "Circuit: Y = (GT1(A, B) · C) + GT2(A, B) Try XOR, AND: Y = (A ⊕ B)C + AB Check the rows where Y should be 1 (two or more 1s): 011: (0⊕1)·1 + 0 = 1 ✔ 101: (1⊕0)·1 + 0 = 1 ✔ 110: (1⊕1)·0 + 1 = 1 ✔ 111: (0)·1 + 1 = 1 ✔ 001, 010, 100, 000 all give 0 ✔ All 8 rows match → XOR, AND"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q8 · 3 marks.\n<strong>Flawed question: no option fits.</strong></p>\n<p><strong>Question:</strong> f must be (x̄ + ȳ)zw. x goes through a NOT\ninto GT2. y and z go into an AND, whose output also goes into GT2. z and\nw go into GT1. GT1 and GT2 go into a final AND → f.</p>\n<p><strong>Answer (key):</strong> <strong>AND, NAND</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (AN) · Q8 · 3 marks. Flawed question: no option fits. Question: f must be (x̄ + ȳ)zw. x goes through a NOT\ninto GT2. y and z go into an AND, whose output also goes into GT2. z and\nw go into GT1. GT1 and GT2 go into a final AND → f. Answer (key): AND, NAND"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve, and what’s wrong:</strong></p>",
-          "text": "How to solve, and what’s wrong:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>With GT1 = AND, GT2 = NAND: f = NAND(x̄, yz) · zw = (x + ȳ + z̄)·zw =\n<strong>(x + ȳ)zw</strong></li>\n<li>That is (x + ȳ)zw, <strong>not</strong> (x̄ + ȳ)zw. Test x = 0, y =\n1, z = w = 1: required = (1 + 0)·1 = 1, but the circuit gives NAND(1,\n1)·1 = <strong>0</strong> ✗</li>\n<li>We tried every pair of gates by computer, and <strong>none</strong>\ngives (x̄ + ȳ)zw. The question has an extra NOT on x.</li>\n<li><strong>In the exam</strong>, write the official answer <strong>AND,\nNAND</strong> (it works if the NOT on x is removed).</li>\n</ol>",
-          "text": "With GT1 = AND, GT2 = NAND: f = NAND(x̄, yz) · zw = (x + ȳ + z̄)·zw = (x + ȳ)zw That is (x + ȳ)zw, not (x̄ + ȳ)zw. Test x = 0, y =\n1, z = w = 1: required = (1 + 0)·1 = 1, but the circuit gives NAND(1,\n1)·1 = 0 ✗ We tried every pair of gates by computer, and none gives (x̄ + ȳ)zw. The question has an extra NOT on x. In the exam , write the official answer AND,\nNAND (it works if the NOT on x is removed)."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q8 · 3 marks.\n<strong>Flawed question.</strong></p>\n<p><strong>Question:</strong> Same circuit, f must be (x + ȳ)zw +\nz̄w.</p>\n<p><strong>Answer (key):</strong> <strong>OR, NAND</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (FN) · Q8 · 3 marks. Flawed question. Question: Same circuit, f must be (x + ȳ)zw +\nz̄w. Answer (key): OR, NAND"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve, and what’s wrong:</strong></p>",
-          "text": "How to solve, and what’s wrong:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>With GT1 = OR, GT2 = NAND: f = (x + ȳ + z̄)(z + w)</li>\n<li>Test x = 1, z = 1, w = 0: required = (1)·1·0 + 0 = 0, circuit =\n(1)(1) = <strong>1</strong> ✗</li>\n<li>No gate pair matches in all 16 rows (checked by computer). The key’s\nchoice is <strong>OR, NAND</strong>, so write that.</li>\n</ol>",
-          "text": "With GT1 = OR, GT2 = NAND: f = (x + ȳ + z̄)(z + w) Test x = 1, z = 1, w = 0: required = (1)·1·0 + 0 = 0, circuit =\n(1)(1) = 1 ✗ No gate pair matches in all 16 rows (checked by computer). The key’s\nchoice is OR, NAND , so write that."
+          "type": "pyq",
+          "header": "2025 T3 End-term (FN) · Q8 · 3 marks. Flawed question.",
+          "badges": [
+            "2025 T3 End-term (FN)",
+            "Q8",
+            "3 marks. Flawed question."
+          ],
+          "papers": [
+            "2025 T3 End-term (FN)"
+          ],
+          "keyIssue": true,
+          "questionHtml": "<p><strong>Question:</strong> Same circuit, f must be (x + ȳ)zw +\nz̄w.</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"780\" loading=\"lazy\" src=\"/images/csd-pyq/2025t3-endterm-fn-q8.webp?v=4a9faba78da7\" width=\"1500\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer (key):</strong> <strong>OR, NAND</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>With GT1 = OR, GT2 = NAND: f = (x + ȳ + z̄)(z + w)</li>\n<li>Test x = 1, z = 1, w = 0: required = (1)·1·0 + 0 = 0, circuit =\n(1)(1) = <strong>1</strong> ✗</li>\n<li>No gate pair matches in all 16 rows (checked by computer). The key’s\nchoice is <strong>OR, NAND</strong>, so write that.</li>\n</ol>",
+          "text": "2025 T3 End-term (FN) · Q8 · 3 marks. Flawed question. Asked in: 2025 T3 End-term (FN) · Q8 · 3 marks. Flawed question. Question: Same circuit, f must be (x + ȳ)zw +\nz̄w. Question figure (redrawn exactly from the\npaper) Answer (key): OR, NAND With GT1 = OR, GT2 = NAND: f = (x + ȳ + z̄)(z + w) Test x = 1, z = 1, w = 0: required = (1)·1·0 + 0 = 0, circuit =\n(1)(1) = 1 ✗ No gate pair matches in all 16 rows (checked by computer). The key’s\nchoice is OR, NAND , so write that."
         },
         {
           "type": "html",
@@ -1243,14 +1355,26 @@
           "text": "Type 9:\nTrue or false on combinational vs sequential"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 ·\nQ6 · 1 mark each</p>\n<p><strong>Question:</strong> “Sequential circuits do not utilize\nfeedback loops, while combinational circuits do.” True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 ·\nQ6 · 1 mark each Question: “Sequential circuits do not utilize\nfeedback loops, while combinational circuits do.” True or False? Answer: FALSE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> it’s the other way round.\n<strong>Sequential</strong> circuits use feedback (that’s how they\nremember). <strong>Combinational</strong> circuits have no feedback and\nno memory.</p>",
-          "text": "How to solve: it’s the other way round. Sequential circuits use feedback (that’s how they\nremember). Combinational circuits have no feedback and\nno memory."
+          "type": "pyq",
+          "header": "2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 · Q6 · 1 mark each",
+          "badges": [
+            "2025 T2 Quiz 2",
+            "Q129 and 2026 T2 Quiz 2",
+            "Q6",
+            "1 mark each"
+          ],
+          "papers": [
+            "2025 T2 Quiz 2",
+            "2026 T2 Quiz 2"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> “Sequential circuits do not utilize\nfeedback loops, while combinational circuits do.” True or False?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>FALSE</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> it’s the other way round.\n<strong>Sequential</strong> circuits use feedback (that’s how they\nremember). <strong>Combinational</strong> circuits have no feedback and\nno memory.</p></li></ol>",
+          "text": "2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 · Q6 · 1 mark each Asked in: 2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 ·\nQ6 · 1 mark each Question: “Sequential circuits do not utilize\nfeedback loops, while combinational circuits do.” True or False? Answer: FALSE it’s the other way round. Sequential circuits use feedback (that’s how they\nremember). Combinational circuits have no feedback and\nno memory."
         },
         {
           "type": "html",

@@ -1456,24 +1456,24 @@
           "text": "Past paper question"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q103 · 3 marks</p>\n<p><strong>Question:</strong> A number in base 6 is 431. What is its\nhexadecimal representation?</p>\n<p><strong>Answer:</strong> <strong>A3</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q103 · 3 marks Question: A number in base 6 is 431. What is its\nhexadecimal representation? Answer: A3"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Change base 6 → decimal: (431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 +\n1 = 144 + 18 + 1 = <strong>163</strong></li>\n<li>Change decimal → hex by dividing by 16: 163 ÷ 16 = 10, remainder\n<strong>3</strong> 10 ÷ 16 = 0, remainder <strong>10 → A</strong></li>\n<li>Read the remainders bottom → top: <strong>A3</strong></li>\n<li>Check: A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 ✔</li>\n</ol>",
-          "text": "Change base 6 → decimal: (431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 +\n1 = 144 + 18 + 1 = 163 Change decimal → hex by dividing by 16: 163 ÷ 16 = 10, remainder 3 10 ÷ 16 = 0, remainder 10 → A Read the remainders bottom → top: A3 Check: A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 ✔"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Trap:</strong> don’t write “103”. The remainder 10 is\n<strong>one</strong> hex digit: <strong>A</strong>.</p>",
-          "text": "Trap: don’t write “103”. The remainder 10 is one hex digit: A ."
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q103 · 3 marks",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q103",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> A number in base 6 is 431. What is its\nhexadecimal representation?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>A3</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Change base 6 → decimal: (431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 +\n1 = 144 + 18 + 1 = <strong>163</strong></li>\n<li>Change decimal → hex by dividing by 16: 163 ÷ 16 = 10, remainder\n<strong>3</strong> 10 ÷ 16 = 0, remainder <strong>10 → A</strong></li>\n<li>Read the remainders bottom → top: <strong>A3</strong></li>\n<li>Check: A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 ✔</li>\n</ol><p><strong>Trap:</strong> don’t write “103”. The remainder 10 is\n<strong>one</strong> hex digit: <strong>A</strong>.</p>",
+          "text": "2025 T2 Quiz 1 · Q103 · 3 marks Asked in: 2025 T2 Quiz 1 · Q103 · 3 marks Question: A number in base 6 is 431. What is its\nhexadecimal representation? Answer: A3 Change base 6 → decimal: (431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 +\n1 = 144 + 18 + 1 = 163 Change decimal → hex by dividing by 16: 163 ÷ 16 = 10, remainder 3 10 ÷ 16 = 0, remainder 10 → A Read the remainders bottom → top: A3 Check: A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 ✔ Trap: don’t write “103”. The remainder 10 is one hex digit: A ."
         },
         {
           "type": "html",
@@ -1503,64 +1503,64 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q95 · 4 marks</p>\n<p><strong>Question:</strong> If (143)ₐ = (212)ᵦ, where a and b are the\nbases, what are a and b? Options: a=6, b=5 / a=8, b=5 / a=7, b=6 / a=9,\nb=7 / a=5, b=4</p>\n<p><strong>Answer:</strong> <strong>a = 7, b = 6</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q95 · 4 marks Question: If (143)ₐ = (212)ᵦ, where a and b are the\nbases, what are a and b? Options: a=6, b=5 / a=8, b=5 / a=7, b=6 / a=9,\nb=7 / a=5, b=4 Answer: a = 7, b = 6"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q95 · 4 marks",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q95",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> If (143)ₐ = (212)ᵦ, where a and b are the\nbases, what are a and b? Options: a=6, b=5 / a=8, b=5 / a=7, b=6 / a=9,\nb=7 / a=5, b=4</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>a = 7, b = 6</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Left side: (143)ₐ = 1×a² + 4×a¹ + 3×a⁰ = <strong>a² + 4a +\n3</strong></li>\n<li>Right side: (212)ᵦ = 2×b² + 1×b¹ + 2×b⁰ = <strong>2b² + b +\n2</strong></li>\n<li>Test the options:</li>\n</ol><div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Option</th>\n<th>a² + 4a + 3</th>\n<th>2b² + b + 2</th>\n<th>Equal?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>a=6, b=5</td>\n<td>36 + 24 + 3 = 63</td>\n<td>50 + 5 + 2 = 57</td>\n<td>✗</td>\n</tr>\n<tr>\n<td>a=8, b=5</td>\n<td>64 + 32 + 3 = 99</td>\n<td>57</td>\n<td>✗</td>\n</tr>\n<tr>\n<td><strong>a=7, b=6</strong></td>\n<td><strong>49 + 28 + 3 = 80</strong></td>\n<td><strong>72 + 6 + 2 = 80</strong></td>\n<td><strong>✔</strong></td>\n</tr>\n<tr>\n<td>a=9, b=7</td>\n<td>81 + 36 + 3 = 120</td>\n<td>98 + 7 + 2 = 107</td>\n<td>✗</td>\n</tr>\n<tr>\n<td>a=5, b=4</td>\n<td>25 + 20 + 3 = 48</td>\n<td>32 + 4 + 2 = 38</td>\n<td>✗</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "2025 T2 Quiz 1 · Q95 · 4 marks Asked in: 2025 T2 Quiz 1 · Q95 · 4 marks Question: If (143)ₐ = (212)ᵦ, where a and b are the\nbases, what are a and b? Options: a=6, b=5 / a=8, b=5 / a=7, b=6 / a=9,\nb=7 / a=5, b=4 Answer: a = 7, b = 6 Left side: (143)ₐ = 1×a² + 4×a¹ + 3×a⁰ = a² + 4a +\n3 Right side: (212)ᵦ = 2×b² + 1×b¹ + 2×b⁰ = 2b² + b +\n2 Test the options: Option a² + 4a + 3 2b² + b + 2 Equal? a=6, b=5 36 + 24 + 3 = 63 50 + 5 + 2 = 57 ✗ a=8, b=5 64 + 32 + 3 = 99 57 ✗ a=7, b=6 49 + 28 + 3 = 80 72 + 6 + 2 = 80 ✔ a=9, b=7 81 + 36 + 3 = 120 98 + 7 + 2 = 107 ✗ a=5, b=4 25 + 20 + 3 = 48 32 + 4 + 2 = 38 ✗"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q165 · 4 marks",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q165",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> If (234)ₐ = (143)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>a = 4, b = 5</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Left: (234)ₐ = 2×a² + 3×a + 4</li>\n<li>Right: (143)ᵦ = 1×b² + 4×b + 3</li>\n<li>Test a = 4, b = 5: left = 2×16 + 3×4 + 4 = 32 + 12 + 4 =\n<strong>48</strong>; right = 25 + 20 + 3 = <strong>48</strong> ✔</li>\n<li>Every other option gives two different numbers (for example a=5, b=6\ngives 69 vs 63).</li>\n</ol><p><strong>Note:</strong> strictly, base 4 can only use the digits 0–3,\nso “234 in base 4” isn’t a valid number. The official answer is still a\n= 4, b = 5, because it is the only option that makes both sides equal.\n<strong>In the exam, trust the equation.</strong></p>",
+          "text": "2025 T3 Quiz 1 · Q165 · 4 marks Asked in: 2025 T3 Quiz 1 · Q165 · 4 marks Question: If (234)ₐ = (143)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8 Answer: a = 4, b = 5 Left: (234)ₐ = 2×a² + 3×a + 4 Right: (143)ᵦ = 1×b² + 4×b + 3 Test a = 4, b = 5: left = 2×16 + 3×4 + 4 = 32 + 12 + 4 = 48 ; right = 25 + 20 + 3 = 48 ✔ Every other option gives two different numbers (for example a=5, b=6\ngives 69 vs 63). Note: strictly, base 4 can only use the digits 0–3,\nso “234 in base 4” isn’t a valid number. The official answer is still a\n= 4, b = 5, because it is the only option that makes both sides equal. In the exam, trust the equation."
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Left side: (143)ₐ = 1×a² + 4×a¹ + 3×a⁰ = <strong>a² + 4a +\n3</strong></li>\n<li>Right side: (212)ᵦ = 2×b² + 1×b¹ + 2×b⁰ = <strong>2b² + b +\n2</strong></li>\n<li>Test the options:</li>\n</ol>",
-          "text": "Left side: (143)ₐ = 1×a² + 4×a¹ + 3×a⁰ = a² + 4a +\n3 Right side: (212)ᵦ = 2×b² + 1×b¹ + 2×b⁰ = 2b² + b +\n2 Test the options:"
-        },
-        {
-          "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Option</th>\n<th>a² + 4a + 3</th>\n<th>2b² + b + 2</th>\n<th>Equal?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>a=6, b=5</td>\n<td>36 + 24 + 3 = 63</td>\n<td>50 + 5 + 2 = 57</td>\n<td>✗</td>\n</tr>\n<tr>\n<td>a=8, b=5</td>\n<td>64 + 32 + 3 = 99</td>\n<td>57</td>\n<td>✗</td>\n</tr>\n<tr>\n<td><strong>a=7, b=6</strong></td>\n<td><strong>49 + 28 + 3 = 80</strong></td>\n<td><strong>72 + 6 + 2 = 80</strong></td>\n<td><strong>✔</strong></td>\n</tr>\n<tr>\n<td>a=9, b=7</td>\n<td>81 + 36 + 3 = 120</td>\n<td>98 + 7 + 2 = 107</td>\n<td>✗</td>\n</tr>\n<tr>\n<td>a=5, b=4</td>\n<td>25 + 20 + 3 = 48</td>\n<td>32 + 4 + 2 = 38</td>\n<td>✗</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Option a² + 4a + 3 2b² + b + 2 Equal? a=6, b=5 36 + 24 + 3 = 63 50 + 5 + 2 = 57 ✗ a=8, b=5 64 + 32 + 3 = 99 57 ✗ a=7, b=6 49 + 28 + 3 = 80 72 + 6 + 2 = 80 ✔ a=9, b=7 81 + 36 + 3 = 120 98 + 7 + 2 = 107 ✗ a=5, b=4 25 + 20 + 3 = 48 32 + 4 + 2 = 38 ✗"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q165 · 4 marks</p>\n<p><strong>Question:</strong> If (234)ₐ = (143)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8</p>\n<p><strong>Answer:</strong> <strong>a = 4, b = 5</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q165 · 4 marks Question: If (234)ₐ = (143)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8 Answer: a = 4, b = 5"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Left: (234)ₐ = 2×a² + 3×a + 4</li>\n<li>Right: (143)ᵦ = 1×b² + 4×b + 3</li>\n<li>Test a = 4, b = 5: left = 2×16 + 3×4 + 4 = 32 + 12 + 4 =\n<strong>48</strong>; right = 25 + 20 + 3 = <strong>48</strong> ✔</li>\n<li>Every other option gives two different numbers (for example a=5, b=6\ngives 69 vs 63).</li>\n</ol>",
-          "text": "Left: (234)ₐ = 2×a² + 3×a + 4 Right: (143)ᵦ = 1×b² + 4×b + 3 Test a = 4, b = 5: left = 2×16 + 3×4 + 4 = 32 + 12 + 4 = 48 ; right = 25 + 20 + 3 = 48 ✔ Every other option gives two different numbers (for example a=5, b=6\ngives 69 vs 63)."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Note:</strong> strictly, base 4 can only use the digits 0–3,\nso “234 in base 4” isn’t a valid number. The official answer is still a\n= 4, b = 5, because it is the only option that makes both sides equal.\n<strong>In the exam, trust the equation.</strong></p>",
-          "text": "Note: strictly, base 4 can only use the digits 0–3,\nso “234 in base 4” isn’t a valid number. The official answer is still a\n= 4, b = 5, because it is the only option that makes both sides equal. In the exam, trust the equation."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q13 · 4 marks</p>\n<p><strong>Question:</strong> If (344)ₐ = (243)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8</p>\n<p><strong>Answer:</strong> <strong>a = 5, b = 6</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q13 · 4 marks Question: If (344)ₐ = (243)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8 Answer: a = 5, b = 6"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Left: (344)ₐ = 3×a² + 4×a + 4</li>\n<li>Right: (243)ᵦ = 2×b² + 4×b + 3</li>\n<li>Test a = 5, b = 6: left = 3×25 + 4×5 + 4 = 75 + 20 + 4 =\n<strong>99</strong>; right = 2×36 + 4×6 + 3 = 72 + 24 + 3 =\n<strong>99</strong> ✔</li>\n<li>Check one wrong option, a = 4, b = 5: 48 + 16 + 4 = 68 vs 50 + 20 +\n3 = 73 ✗</li>\n</ol>",
-          "text": "Left: (344)ₐ = 3×a² + 4×a + 4 Right: (243)ᵦ = 2×b² + 4×b + 3 Test a = 5, b = 6: left = 3×25 + 4×5 + 4 = 75 + 20 + 4 = 99 ; right = 2×36 + 4×6 + 3 = 72 + 24 + 3 = 99 ✔ Check one wrong option, a = 4, b = 5: 48 + 16 + 4 = 68 vs 50 + 20 +\n3 = 73 ✗"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Trap:</strong> don’t try to solve this with algebra. Testing\n5 options takes about 1 minute.</p>",
-          "text": "Trap: don’t try to solve this with algebra. Testing\n5 options takes about 1 minute."
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q13 · 4 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q13",
+            "4 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> If (344)ₐ = (243)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>a = 5, b = 6</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Left: (344)ₐ = 3×a² + 4×a + 4</li>\n<li>Right: (243)ᵦ = 2×b² + 4×b + 3</li>\n<li>Test a = 5, b = 6: left = 3×25 + 4×5 + 4 = 75 + 20 + 4 =\n<strong>99</strong>; right = 2×36 + 4×6 + 3 = 72 + 24 + 3 =\n<strong>99</strong> ✔</li>\n<li>Check one wrong option, a = 4, b = 5: 48 + 16 + 4 = 68 vs 50 + 20 +\n3 = 73 ✗</li>\n</ol><p><strong>Trap:</strong> don’t try to solve this with algebra. Testing\n5 options takes about 1 minute.</p>",
+          "text": "2026 T2 Quiz 1 · Q13 · 4 marks Asked in: 2026 T2 Quiz 1 · Q13 · 4 marks Question: If (344)ₐ = (243)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8 Answer: a = 5, b = 6 Left: (344)ₐ = 3×a² + 4×a + 4 Right: (243)ᵦ = 2×b² + 4×b + 3 Test a = 5, b = 6: left = 3×25 + 4×5 + 4 = 75 + 20 + 4 = 99 ; right = 2×36 + 4×6 + 3 = 72 + 24 + 3 = 99 ✔ Check one wrong option, a = 4, b = 5: 48 + 16 + 4 = 68 vs 50 + 20 +\n3 = 73 ✗ Trap: don’t try to solve this with algebra. Testing\n5 options takes about 1 minute."
         },
         {
           "type": "html",
@@ -1595,34 +1595,44 @@
           "text": "Past paper question"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q9 · 3 marks</p>\n<p><strong>Question:</strong> The solutions of the quadratic equation x²\n− 11ᵦx + 21ᵦ = 0 are x = 3 and x = 5. What is the base b?</p>\n<p><strong>Answer:</strong> <strong>7</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (AN) · Q9 · 3 marks Question: The solutions of the quadratic equation x²\n− 11ᵦx + 21ᵦ = 0 are x = 3 and x = 5. What is the base b? Answer: 7"
+          "type": "pyq",
+          "header": "2025 T3 End-term (AN) · Q9 · 3 marks",
+          "badges": [
+            "2025 T3 End-term (AN)",
+            "Q9",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 End-term (AN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> The solutions of the quadratic equation x²\n− 11ᵦx + 21ᵦ = 0 are x = 3 and x = 5. What is the base b?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>7</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>“11” and “21” are written in base b. Expand them: 11ᵦ = 1×b¹ + 1×b⁰\n= <strong>b + 1</strong> 21ᵦ = 2×b¹ + 1×b⁰ = <strong>2b +\n1</strong></li>\n<li>Roots add up to the middle number: 3 + 5 = b + 1 → 8 = b + 1 →\n<strong>b = 7</strong></li>\n<li>Check with the product: 3 × 5 = 15 and 2b + 1 = 2×7 + 1 = 15 ✔</li>\n</ol>",
+          "text": "2025 T3 End-term (AN) · Q9 · 3 marks Asked in: 2025 T3 End-term (AN) · Q9 · 3 marks Question: The solutions of the quadratic equation x²\n− 11ᵦx + 21ᵦ = 0 are x = 3 and x = 5. What is the base b? Answer: 7 “11” and “21” are written in base b. Expand them: 11ᵦ = 1×b¹ + 1×b⁰\n= b + 1 21ᵦ = 2×b¹ + 1×b⁰ = 2b +\n1 Roots add up to the middle number: 3 + 5 = b + 1 → 8 = b + 1 → b = 7 Check with the product: 3 × 5 = 15 and 2b + 1 = 2×7 + 1 = 15 ✔"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>“11” and “21” are written in base b. Expand them: 11ᵦ = 1×b¹ + 1×b⁰\n= <strong>b + 1</strong> 21ᵦ = 2×b¹ + 1×b⁰ = <strong>2b +\n1</strong></li>\n<li>Roots add up to the middle number: 3 + 5 = b + 1 → 8 = b + 1 →\n<strong>b = 7</strong></li>\n<li>Check with the product: 3 × 5 = 15 and 2b + 1 = 2×7 + 1 = 15 ✔</li>\n</ol>",
-          "text": "“11” and “21” are written in base b. Expand them: 11ᵦ = 1×b¹ + 1×b⁰\n= b + 1 21ᵦ = 2×b¹ + 1×b⁰ = 2b +\n1 Roots add up to the middle number: 3 + 5 = b + 1 → 8 = b + 1 → b = 7 Check with the product: 3 × 5 = 15 and 2b + 1 = 2×7 + 1 = 15 ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q7 · 3 marks</p>\n<p><strong>Question:</strong> The solutions of x² − 11ᵦx + 22ᵦ = 0 are x\n= 3 and x = 6. What is the base b?</p>\n<p><strong>Answer:</strong> <strong>8</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (FN) · Q7 · 3 marks Question: The solutions of x² − 11ᵦx + 22ᵦ = 0 are x\n= 3 and x = 6. What is the base b? Answer: 8"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>11ᵦ = 1×b + 1 = <strong>b + 1</strong>; 22ᵦ = 2×b + 2 = <strong>2b +\n2</strong></li>\n<li>Roots add up to the middle number: 3 + 6 = b + 1 → 9 = b + 1 →\n<strong>b = 8</strong></li>\n<li>Check with the product: 3 × 6 = 18 and 2×8 + 2 = 18 ✔</li>\n</ol>",
-          "text": "11ᵦ = 1×b + 1 = b + 1 ; 22ᵦ = 2×b + 2 = 2b +\n2 Roots add up to the middle number: 3 + 6 = b + 1 → 9 = b + 1 → b = 8 Check with the product: 3 × 6 = 18 and 2×8 + 2 = 18 ✔"
+          "type": "pyq",
+          "header": "2025 T3 End-term (FN) · Q7 · 3 marks",
+          "badges": [
+            "2025 T3 End-term (FN)",
+            "Q7",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> The solutions of x² − 11ᵦx + 22ᵦ = 0 are x\n= 3 and x = 6. What is the base b?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>8</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>11ᵦ = 1×b + 1 = <strong>b + 1</strong>; 22ᵦ = 2×b + 2 = <strong>2b +\n2</strong></li>\n<li>Roots add up to the middle number: 3 + 6 = b + 1 → 9 = b + 1 →\n<strong>b = 8</strong></li>\n<li>Check with the product: 3 × 6 = 18 and 2×8 + 2 = 18 ✔</li>\n</ol>",
+          "text": "2025 T3 End-term (FN) · Q7 · 3 marks Asked in: 2025 T3 End-term (FN) · Q7 · 3 marks Question: The solutions of x² − 11ᵦx + 22ᵦ = 0 are x\n= 3 and x = 6. What is the base b? Answer: 8 11ᵦ = 1×b + 1 = b + 1 ; 22ᵦ = 2×b + 2 = 2b +\n2 Roots add up to the middle number: 3 + 6 = b + 1 → 9 = b + 1 → b = 8 Check with the product: 3 × 6 = 18 and 2×8 + 2 = 18 ✔"
         },
         {
           "type": "html",
@@ -1662,74 +1672,104 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q172 · 3 marks</p>\n<p><strong>Question:</strong> What is the minimum number of bits\nrequired to represent the number (128)₁₀ in binary?</p>\n<p><strong>Answer:</strong> <strong>8</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q172 · 3 marks Question: What is the minimum number of bits\nrequired to represent the number (128)₁₀ in binary? Answer: 8"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q172 · 3 marks",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q172",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> What is the minimum number of bits\nrequired to represent the number (128)₁₀ in binary?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>8</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Find the powers of 2 around 128: 2⁷ = 128 and 2⁸ = 256.</li>\n<li>2⁷ ≤ 128 &lt; 2⁸, so n = <strong>8</strong>.</li>\n<li>Check by writing it: 128 = 1×2⁷ = <strong>10000000</strong>. Count\nthe digits: 8 ✔</li>\n</ol><p><strong>Trap:</strong> 7 bits only reach 2⁷ − 1 =\n<strong>127</strong>. 128 needs one more bit.</p>",
+          "text": "2025 T3 Quiz 1 · Q172 · 3 marks Asked in: 2025 T3 Quiz 1 · Q172 · 3 marks Question: What is the minimum number of bits\nrequired to represent the number (128)₁₀ in binary? Answer: 8 Find the powers of 2 around 128: 2⁷ = 128 and 2⁸ = 256. 2⁷ ≤ 128 < 2⁸, so n = 8 . Check by writing it: 128 = 1×2⁷ = 10000000 . Count\nthe digits: 8 ✔ Trap: 7 bits only reach 2⁷ − 1 = 127 . 128 needs one more bit."
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q6 · 3 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q6",
+            "3 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> What is the minimum number of bits\nrequired to represent (515)₁₀ in binary?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>10</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>2⁹ = 512 and 2¹⁰ = 1024.</li>\n<li>512 ≤ 515 &lt; 1024, so n = <strong>10</strong>.</li>\n<li>Check: 515 = 512 + 2 + 1 = 1×2⁹ + 1×2¹ + 1×2⁰ =\n<strong>1000000011</strong> → 10 digits ✔</li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q6 · 3 marks Asked in: 2026 T2 Quiz 1 · Q6 · 3 marks Question: What is the minimum number of bits\nrequired to represent (515)₁₀ in binary? Answer: 10 2⁹ = 512 and 2¹⁰ = 1024. 512 ≤ 515 < 1024, so n = 10 . Check: 515 = 512 + 2 + 1 = 1×2⁹ + 1×2¹ + 1×2⁰ = 1000000011 → 10 digits ✔"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Find the powers of 2 around 128: 2⁷ = 128 and 2⁸ = 256.</li>\n<li>2⁷ ≤ 128 &lt; 2⁸, so n = <strong>8</strong>.</li>\n<li>Check by writing it: 128 = 1×2⁷ = <strong>10000000</strong>. Count\nthe digits: 8 ✔</li>\n</ol>",
-          "text": "Find the powers of 2 around 128: 2⁷ = 128 and 2⁸ = 256. 2⁷ ≤ 128 < 2⁸, so n = 8 . Check by writing it: 128 = 1×2⁷ = 10000000 . Count\nthe digits: 8 ✔"
+          "type": "pyq",
+          "header": "2025 T2 End-term (AN) · Q151 · 1 mark",
+          "badges": [
+            "2025 T2 End-term (AN)",
+            "Q151",
+            "1 mark"
+          ],
+          "papers": [
+            "2025 T2 End-term (AN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> In a system with 64 unique states, 4\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>FALSE</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Each flip-flop stores 1 bit, so n flip-flops give 2ⁿ states.</li>\n<li>4 flip-flops → 2⁴ = <strong>16</strong> states.</li>\n<li>16 &lt; 64, so 4 is <strong>not</strong> enough. (You need 6,\nbecause 2⁶ = 64.)</li>\n</ol>",
+          "text": "2025 T2 End-term (AN) · Q151 · 1 mark Asked in: 2025 T2 End-term (AN) · Q151 · 1 mark Question: In a system with 64 unique states, 4\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: FALSE Each flip-flop stores 1 bit, so n flip-flops give 2ⁿ states. 4 flip-flops → 2⁴ = 16 states. 16 < 64, so 4 is not enough. (You need 6,\nbecause 2⁶ = 64.)"
         },
         {
-          "type": "html",
-          "html": "<p><strong>Trap:</strong> 7 bits only reach 2⁷ − 1 =\n<strong>127</strong>. 128 needs one more bit.</p>",
-          "text": "Trap: 7 bits only reach 2⁷ − 1 = 127 . 128 needs one more bit."
+          "type": "pyq",
+          "header": "2025 T2 End-term (FN) · Q119 · 1 mark",
+          "badges": [
+            "2025 T2 End-term (FN)",
+            "Q119",
+            "1 mark"
+          ],
+          "papers": [
+            "2025 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> In a system with 64 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>TRUE</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> 6 flip-flops → 2⁶ = 64 states. 64 ≥ 64\n✔, so it is enough.</p></li></ol>",
+          "text": "2025 T2 End-term (FN) · Q119 · 1 mark Asked in: 2025 T2 End-term (FN) · Q119 · 1 mark Question: In a system with 64 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: TRUE 6 flip-flops → 2⁶ = 64 states. 64 ≥ 64\n✔, so it is enough."
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q6 · 3 marks</p>\n<p><strong>Question:</strong> What is the minimum number of bits\nrequired to represent (515)₁₀ in binary?</p>\n<p><strong>Answer:</strong> <strong>10</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q6 · 3 marks Question: What is the minimum number of bits\nrequired to represent (515)₁₀ in binary? Answer: 10"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>2⁹ = 512 and 2¹⁰ = 1024.</li>\n<li>512 ≤ 515 &lt; 1024, so n = <strong>10</strong>.</li>\n<li>Check: 515 = 512 + 2 + 1 = 1×2⁹ + 1×2¹ + 1×2⁰ =\n<strong>1000000011</strong> → 10 digits ✔</li>\n</ol>",
-          "text": "2⁹ = 512 and 2¹⁰ = 1024. 512 ≤ 515 < 1024, so n = 10 . Check: 515 = 512 + 2 + 1 = 1×2⁹ + 1×2¹ + 1×2⁰ = 1000000011 → 10 digits ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q151 · 1 mark</p>\n<p><strong>Question:</strong> In a system with 64 unique states, 4\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (AN) · Q151 · 1 mark Question: In a system with 64 unique states, 4\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: FALSE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Each flip-flop stores 1 bit, so n flip-flops give 2ⁿ states.</li>\n<li>4 flip-flops → 2⁴ = <strong>16</strong> states.</li>\n<li>16 &lt; 64, so 4 is <strong>not</strong> enough. (You need 6,\nbecause 2⁶ = 64.)</li>\n</ol>",
-          "text": "Each flip-flop stores 1 bit, so n flip-flops give 2ⁿ states. 4 flip-flops → 2⁴ = 16 states. 16 < 64, so 4 is not enough. (You need 6,\nbecause 2⁶ = 64.)"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q119 · 1 mark</p>\n<p><strong>Question:</strong> In a system with 64 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (FN) · Q119 · 1 mark Question: In a system with 64 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: TRUE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> 6 flip-flops → 2⁶ = 64 states. 64 ≥ 64\n✔, so it is enough.</p>",
-          "text": "How to solve: 6 flip-flops → 2⁶ = 64 states. 64 ≥ 64\n✔, so it is enough."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 End-term (FN) · Q4 · 1 mark</p>\n<p><strong>Question:</strong> In a system with 65 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 End-term (FN) · Q4 · 1 mark Question: In a system with 65 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: FALSE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> 6 flip-flops → 2⁶ = 64 states. 64 &lt;\n65, so it is <strong>one short</strong>. You need 7 (2⁷ = 128).</p>",
-          "text": "How to solve: 6 flip-flops → 2⁶ = 64 states. 64 <\n65, so it is one short . You need 7 (2⁷ = 128)."
+          "type": "pyq",
+          "header": "2026 T2 End-term (FN) · Q4 · 1 mark",
+          "badges": [
+            "2026 T2 End-term (FN)",
+            "Q4",
+            "1 mark"
+          ],
+          "papers": [
+            "2026 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> In a system with 65 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>FALSE</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> 6 flip-flops → 2⁶ = 64 states. 64 &lt;\n65, so it is <strong>one short</strong>. You need 7 (2⁷ = 128).</p></li></ol>",
+          "text": "2026 T2 End-term (FN) · Q4 · 1 mark Asked in: 2026 T2 End-term (FN) · Q4 · 1 mark Question: In a system with 65 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: FALSE 6 flip-flops → 2⁶ = 64 states. 64 <\n65, so it is one short . You need 7 (2⁷ = 128)."
         },
         {
           "type": "html",
@@ -1764,49 +1804,84 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q153 · 1 mark</p>\n<p><strong>Question:</strong> According to Moore’s law, if a computer\nsystem has 2 million transistors today, it will have approximately 32\nmillion transistors in 7 years. True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (AN) · Q153 · 1 mark Question: According to Moore’s law, if a computer\nsystem has 2 million transistors today, it will have approximately 32\nmillion transistors in 7 years. True or False? Answer: FALSE"
+          "type": "pyq",
+          "header": "2025 T2 End-term (AN) · Q153 · 1 mark",
+          "badges": [
+            "2025 T2 End-term (AN)",
+            "Q153",
+            "1 mark"
+          ],
+          "papers": [
+            "2025 T2 End-term (AN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> According to Moore’s law, if a computer\nsystem has 2 million transistors today, it will have approximately 32\nmillion transistors in 7 years. True or False?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>FALSE</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>32 ÷ 2 = <strong>16</strong></li>\n<li>16 = 2 × 2 × 2 × 2 = 2⁴ → <strong>4 doublings</strong></li>\n<li>4 × 2 years = <strong>8 years</strong>, not 7 →\n<strong>FALSE</strong></li>\n</ol>",
+          "text": "2025 T2 End-term (AN) · Q153 · 1 mark Asked in: 2025 T2 End-term (AN) · Q153 · 1 mark Question: According to Moore’s law, if a computer\nsystem has 2 million transistors today, it will have approximately 32\nmillion transistors in 7 years. True or False? Answer: FALSE 32 ÷ 2 = 16 16 = 2 × 2 × 2 × 2 = 2⁴ → 4 doublings 4 × 2 years = 8 years , not 7 → FALSE"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T2 End-term (FN) · Q121 · 1 mark",
+          "badges": [
+            "2025 T2 End-term (FN)",
+            "Q121",
+            "1 mark"
+          ],
+          "papers": [
+            "2025 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> 2 million transistors today →\napproximately 32 million in <strong>8 years</strong>. True or False?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>TRUE</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> same steps as above: 16× = 2⁴ = 4\ndoublings = 8 years ✔</p></li></ol>",
+          "text": "2025 T2 End-term (FN) · Q121 · 1 mark Asked in: 2025 T2 End-term (FN) · Q121 · 1 mark Question: 2 million transistors today →\napproximately 32 million in 8 years . True or False? Answer: TRUE same steps as above: 16× = 2⁴ = 4\ndoublings = 8 years ✔"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>32 ÷ 2 = <strong>16</strong></li>\n<li>16 = 2 × 2 × 2 × 2 = 2⁴ → <strong>4 doublings</strong></li>\n<li>4 × 2 years = <strong>8 years</strong>, not 7 →\n<strong>FALSE</strong></li>\n</ol>",
-          "text": "32 ÷ 2 = 16 16 = 2 × 2 × 2 × 2 = 2⁴ → 4 doublings 4 × 2 years = 8 years , not 7 → FALSE"
+          "type": "pyq",
+          "header": "2026 T2 End-term (FN) · Q6 · 1 mark",
+          "badges": [
+            "2026 T2 End-term (FN)",
+            "Q6",
+            "1 mark"
+          ],
+          "papers": [
+            "2026 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> 2 million transistors today →\napproximately 32 million in <strong>4 years</strong>. True or False?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>FALSE</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> it needs 8 years. In 4 years you get\nonly 2 doublings: 2 → 4 → <strong>8 million</strong>, not 32.</p></li></ol>",
+          "text": "2026 T2 End-term (FN) · Q6 · 1 mark Asked in: 2026 T2 End-term (FN) · Q6 · 1 mark Question: 2 million transistors today →\napproximately 32 million in 4 years . True or False? Answer: FALSE it needs 8 years. In 4 years you get\nonly 2 doublings: 2 → 4 → 8 million , not 32."
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q121 · 1 mark</p>\n<p><strong>Question:</strong> 2 million transistors today →\napproximately 32 million in <strong>8 years</strong>. True or False?</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (FN) · Q121 · 1 mark Question: 2 million transistors today →\napproximately 32 million in 8 years . True or False? Answer: TRUE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> same steps as above: 16× = 2⁴ = 4\ndoublings = 8 years ✔</p>",
-          "text": "How to solve: same steps as above: 16× = 2⁴ = 4\ndoublings = 8 years ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 End-term (FN) · Q6 · 1 mark</p>\n<p><strong>Question:</strong> 2 million transistors today →\napproximately 32 million in <strong>4 years</strong>. True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 End-term (FN) · Q6 · 1 mark Question: 2 million transistors today →\napproximately 32 million in 4 years . True or False? Answer: FALSE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> it needs 8 years. In 4 years you get\nonly 2 doublings: 2 → 4 → <strong>8 million</strong>, not 32.</p>",
-          "text": "How to solve: it needs 8 years. In 4 years you get\nonly 2 doublings: 2 → 4 → 8 million , not 32."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN and FN) · Q6 · 1\nmark</p>\n<p><strong>Question:</strong> According to Moore’s Law, the\n<strong>size</strong> of transistors on an integrated circuit doubles\napproximately every two years. True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (AN and FN) · Q6 · 1\nmark Question: According to Moore’s Law, the size of transistors on an integrated circuit doubles\napproximately every two years. True or False? Answer: FALSE"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> Moore’s Law is about the\n<strong>number</strong> of transistors doubling. Transistors get\n<strong>smaller</strong>, which is why more of them fit. One wrong word\n(“size”) makes the sentence false.</p>",
-          "text": "How to solve: Moore’s Law is about the number of transistors doubling. Transistors get smaller , which is why more of them fit. One wrong word\n(“size”) makes the sentence false."
+          "type": "pyq",
+          "header": "2025 T3 End-term (AN and FN) · Q6 · 1 mark",
+          "badges": [
+            "2025 T3 End-term (AN and FN)",
+            "Q6",
+            "1 mark"
+          ],
+          "papers": [
+            "2025 T3 End-term"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> According to Moore’s Law, the\n<strong>size</strong> of transistors on an integrated circuit doubles\napproximately every two years. True or False?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>FALSE</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> Moore’s Law is about the\n<strong>number</strong> of transistors doubling. Transistors get\n<strong>smaller</strong>, which is why more of them fit. One wrong word\n(“size”) makes the sentence false.</p></li></ol>",
+          "text": "2025 T3 End-term (AN and FN) · Q6 · 1 mark Asked in: 2025 T3 End-term (AN and FN) · Q6 · 1\nmark Question: According to Moore’s Law, the size of transistors on an integrated circuit doubles\napproximately every two years. True or False? Answer: FALSE Moore’s Law is about the number of transistors doubling. Transistors get smaller , which is why more of them fit. One wrong word\n(“size”) makes the sentence false."
         },
         {
           "type": "html",

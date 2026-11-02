@@ -632,122 +632,170 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q105 · 4 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input NAND gates to\nrealize F = (X̄ + Ȳ)(Z + W)?</p>\n<p><strong>Answer:</strong> <strong>4</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q105 · 4 marks Question: Minimum number of 2-input NAND gates to\nrealize F = (X̄ + Ȳ)(Z + W)? Answer: 4"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q105 · 4 marks",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q105",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Minimum number of 2-input NAND gates to\nrealize F = (X̄ + Ȳ)(Z + W)?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>4</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Spot the shortcut: X̄ + Ȳ = NAND(X, Y) → <strong>G1</strong>, 1 gate,\nno NOTs needed.</li>\n<li>Multiply out: F = G1·Z + G1·W</li>\n<li>SOP → NAND–NAND: G2 = NAND(G1, Z), G3 = NAND(G1, W), F = NAND(G2,\nG3)</li>\n<li>Count: G1, G2, G3, F = <strong>4</strong> ✔ (a computer search\nconfirmed 3 is impossible)</li>\n</ol>",
+          "text": "2025 T2 Quiz 1 · Q105 · 4 marks Asked in: 2025 T2 Quiz 1 · Q105 · 4 marks Question: Minimum number of 2-input NAND gates to\nrealize F = (X̄ + Ȳ)(Z + W)? Answer: 4 Spot the shortcut: X̄ + Ȳ = NAND(X, Y) → G1 , 1 gate,\nno NOTs needed. Multiply out: F = G1·Z + G1·W SOP → NAND–NAND: G2 = NAND(G1, Z), G3 = NAND(G1, W), F = NAND(G2,\nG3) Count: G1, G2, G3, F = 4 ✔ (a computer search\nconfirmed 3 is impossible)"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T2 End-term (AN) · Q155, 2025 T2 Quiz 2 · Q138, 2026 T2 End-term · Q8 · 3 marks each",
+          "badges": [
+            "2025 T2 End-term (AN)",
+            "Q155, 2025 T2 Quiz 2",
+            "Q138, 2026 T2 End-term",
+            "Q8",
+            "3 marks each"
+          ],
+          "papers": [
+            "2025 T2 End-term (AN)",
+            "2025 T2 Quiz 2",
+            "2026 T2 End-term"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Minimum number of 2-input NOR gates for F\n= Σ(0, 2, 8, 10) (4 inputs)?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>1</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Write the rows in binary (ABCD): 0 = 0000, 2 = 0010, 8 = 1000, 10 =\n1010</li>\n<li>Which letters never change? <strong>B = 0 and D = 0</strong> in all\nfour rows. A and C take both values.</li>\n<li>So F = B̄·D̄</li>\n<li>B̄·D̄ = NOT(B + D) = <strong>NOR(B, D)</strong> → <strong>1\ngate</strong> ✔</li>\n</ol>",
+          "text": "2025 T2 End-term (AN) · Q155, 2025 T2 Quiz 2 · Q138, 2026 T2 End-term · Q8 · 3 marks each Asked in: 2025 T2 End-term (AN) · Q155, 2025 T2 Quiz\n2 · Q138, 2026 T2 End-term · Q8 · 3 marks each Question: Minimum number of 2-input NOR gates for F\n= Σ(0, 2, 8, 10) (4 inputs)? Answer: 1 Write the rows in binary (ABCD): 0 = 0000, 2 = 0010, 8 = 1000, 10 =\n1010 Which letters never change? B = 0 and D = 0 in all\nfour rows. A and C take both values. So F = B̄·D̄ B̄·D̄ = NOT(B + D) = NOR(B, D) → 1\ngate ✔"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Spot the shortcut: X̄ + Ȳ = NAND(X, Y) → <strong>G1</strong>, 1 gate,\nno NOTs needed.</li>\n<li>Multiply out: F = G1·Z + G1·W</li>\n<li>SOP → NAND–NAND: G2 = NAND(G1, Z), G3 = NAND(G1, W), F = NAND(G2,\nG3)</li>\n<li>Count: G1, G2, G3, F = <strong>4</strong> ✔ (a computer search\nconfirmed 3 is impossible)</li>\n</ol>",
-          "text": "Spot the shortcut: X̄ + Ȳ = NAND(X, Y) → G1 , 1 gate,\nno NOTs needed. Multiply out: F = G1·Z + G1·W SOP → NAND–NAND: G2 = NAND(G1, Z), G3 = NAND(G1, W), F = NAND(G2,\nG3) Count: G1, G2, G3, F = 4 ✔ (a computer search\nconfirmed 3 is impossible)"
+          "type": "pyq",
+          "header": "2025 T2 End-term (FN) · Q123 · 3 marks",
+          "badges": [
+            "2025 T2 End-term (FN)",
+            "Q123",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Minimum number of 2-input NOR gates for F\n= Σ(5, 7, 13, 15)?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>3</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Binary: 0101, 0111, 1101, 1111 → <strong>B = 1 and D = 1</strong>\nalways</li>\n<li>F = B·D (an AND)</li>\n<li>AND from NOR costs <strong>3</strong>: NOR(B, B) = B̄, NOR(D, D) = D̄,\nNOR(B̄, D̄) = BD ✔</li>\n</ol>",
+          "text": "2025 T2 End-term (FN) · Q123 · 3 marks Asked in: 2025 T2 End-term (FN) · Q123 · 3 marks Question: Minimum number of 2-input NOR gates for F\n= Σ(5, 7, 13, 15)? Answer: 3 Binary: 0101, 0111, 1101, 1111 → B = 1 and D = 1 always F = B·D (an AND) AND from NOR costs 3 : NOR(B, B) = B̄, NOR(D, D) = D̄,\nNOR(B̄, D̄) = BD ✔"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q155, 2025 T2 Quiz\n2 · Q138, 2026 T2 End-term · Q8 · 3 marks each</p>\n<p><strong>Question:</strong> Minimum number of 2-input NOR gates for F\n= Σ(0, 2, 8, 10) (4 inputs)?</p>\n<p><strong>Answer:</strong> <strong>1</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (AN) · Q155, 2025 T2 Quiz\n2 · Q138, 2026 T2 End-term · Q8 · 3 marks each Question: Minimum number of 2-input NOR gates for F\n= Σ(0, 2, 8, 10) (4 inputs)? Answer: 1"
+          "type": "pyq",
+          "header": "2025 T3 End-term (AN) · Q10 · 3 marks",
+          "badges": [
+            "2025 T3 End-term (AN)",
+            "Q10",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 End-term (AN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Minimum number of 2-input NAND gates for\nthe minimized SOP of f(x, y, z) = Σm(0, 2, 5, 7)?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>5</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Binary: 000, 010, 101, 111</li>\n<li>Rows 000 and 010: x = 0, z = 0 → x̄z̄. Rows 101 and 111: x = 1, z = 1\n→ xz.</li>\n<li>f = x̄z̄ + xz = 1 when x = z → <strong>XNOR(x, z)</strong></li>\n<li>XNOR from NAND = <strong>5</strong> (from the table) ✔</li>\n</ol>",
+          "text": "2025 T3 End-term (AN) · Q10 · 3 marks Asked in: 2025 T3 End-term (AN) · Q10 · 3 marks Question: Minimum number of 2-input NAND gates for\nthe minimized SOP of f(x, y, z) = Σm(0, 2, 5, 7)? Answer: 5 Binary: 000, 010, 101, 111 Rows 000 and 010: x = 0, z = 0 → x̄z̄. Rows 101 and 111: x = 1, z = 1\n→ xz. f = x̄z̄ + xz = 1 when x = z → XNOR(x, z) XNOR from NAND = 5 (from the table) ✔"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T3 End-term (FN) · Q9 · 3 marks",
+          "badges": [
+            "2025 T3 End-term (FN)",
+            "Q9",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T3 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Minimum number of 2-input XNOR gates for\nthe same f = Σm(0, 2, 5, 7)?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>1</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> f = x ⊙ z (from above). That is one\nXNOR gate → <strong>1</strong> ✔. Always simplify first!</p></li></ol>",
+          "text": "2025 T3 End-term (FN) · Q9 · 3 marks Asked in: 2025 T3 End-term (FN) · Q9 · 3 marks Question: Minimum number of 2-input XNOR gates for\nthe same f = Σm(0, 2, 5, 7)? Answer: 1 f = x ⊙ z (from above). That is one\nXNOR gate → 1 ✔. Always simplify first!"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write the rows in binary (ABCD): 0 = 0000, 2 = 0010, 8 = 1000, 10 =\n1010</li>\n<li>Which letters never change? <strong>B = 0 and D = 0</strong> in all\nfour rows. A and C take both values.</li>\n<li>So F = B̄·D̄</li>\n<li>B̄·D̄ = NOT(B + D) = <strong>NOR(B, D)</strong> → <strong>1\ngate</strong> ✔</li>\n</ol>",
-          "text": "Write the rows in binary (ABCD): 0 = 0000, 2 = 0010, 8 = 1000, 10 =\n1010 Which letters never change? B = 0 and D = 0 in all\nfour rows. A and C take both values. So F = B̄·D̄ B̄·D̄ = NOT(B + D) = NOR(B, D) → 1\ngate ✔"
+          "type": "pyq",
+          "header": "2025 T2 End-term (AN) · Q157 and 2026 T2 End-term · Q10 · 3 marks each",
+          "badges": [
+            "2025 T2 End-term (AN)",
+            "Q157 and 2026 T2 End-term",
+            "Q10",
+            "3 marks each"
+          ],
+          "papers": [
+            "2025 T2 End-term (AN)",
+            "2026 T2 End-term"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> A 1-bit comparator outputs 1 if A = B,\nelse 0. Minimum 2-input NOR gates?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>4</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>“1 when A = B” is <strong>XNOR</strong>.</li>\n<li>From the table: XNOR from NOR = <strong>4</strong>.</li>\n<li>The circuit: G1 = NOR(A, B), G2 = NOR(A, G1), G3 = NOR(B, G1), Y =\nNOR(G2, G3).</li>\n</ol><p><img alt=\"Building XNOR from 4 NOR gates\" decoding=\"async\" height=\"1024\" loading=\"lazy\" src=\"/images/csd-week-3/img10-four-nor-comparator.webp?v=c7219bcd9c99\" width=\"1536\"/> <em>A 1-bit equality checker\nbuilt from exactly 4 NOR gates.</em></p>",
+          "text": "2025 T2 End-term (AN) · Q157 and 2026 T2 End-term · Q10 · 3 marks each Asked in: 2025 T2 End-term (AN) · Q157 and 2026 T2\nEnd-term · Q10 · 3 marks each Question: A 1-bit comparator outputs 1 if A = B,\nelse 0. Minimum 2-input NOR gates? Answer: 4 “1 when A = B” is XNOR . From the table: XNOR from NOR = 4 . The circuit: G1 = NOR(A, B), G2 = NOR(A, G1), G3 = NOR(B, G1), Y =\nNOR(G2, G3). A 1-bit equality checker\nbuilt from exactly 4 NOR gates."
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q123 · 3 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input NOR gates for F\n= Σ(5, 7, 13, 15)?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (FN) · Q123 · 3 marks Question: Minimum number of 2-input NOR gates for F\n= Σ(5, 7, 13, 15)? Answer: 3"
+          "type": "pyq",
+          "header": "2025 T2 End-term (FN) · Q125 · 3 marks",
+          "badges": [
+            "2025 T2 End-term (FN)",
+            "Q125",
+            "3 marks"
+          ],
+          "papers": [
+            "2025 T2 End-term (FN)"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Same comparator (1 if A = B), but using\nonly 2-input <strong>NAND</strong> gates. Minimum?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>5</strong></p>"
+          ],
+          "solutionHtml": "<ol><li><p> XNOR from NAND = XOR (4 NANDs) + one\nNOT (1 NAND) = <strong>5</strong>.</p></li></ol>",
+          "text": "2025 T2 End-term (FN) · Q125 · 3 marks Asked in: 2025 T2 End-term (FN) · Q125 · 3 marks Question: Same comparator (1 if A = B), but using\nonly 2-input NAND gates. Minimum? Answer: 5 XNOR from NAND = XOR (4 NANDs) + one\nNOT (1 NAND) = 5 ."
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Binary: 0101, 0111, 1101, 1111 → <strong>B = 1 and D = 1</strong>\nalways</li>\n<li>F = B·D (an AND)</li>\n<li>AND from NOR costs <strong>3</strong>: NOR(B, B) = B̄, NOR(D, D) = D̄,\nNOR(B̄, D̄) = BD ✔</li>\n</ol>",
-          "text": "Binary: 0101, 0111, 1101, 1111 → B = 1 and D = 1 always F = B·D (an AND) AND from NOR costs 3 : NOR(B, B) = B̄, NOR(D, D) = D̄,\nNOR(B̄, D̄) = BD ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q10 · 3 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input NAND gates for\nthe minimized SOP of f(x, y, z) = Σm(0, 2, 5, 7)?</p>\n<p><strong>Answer:</strong> <strong>5</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (AN) · Q10 · 3 marks Question: Minimum number of 2-input NAND gates for\nthe minimized SOP of f(x, y, z) = Σm(0, 2, 5, 7)? Answer: 5"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Binary: 000, 010, 101, 111</li>\n<li>Rows 000 and 010: x = 0, z = 0 → x̄z̄. Rows 101 and 111: x = 1, z = 1\n→ xz.</li>\n<li>f = x̄z̄ + xz = 1 when x = z → <strong>XNOR(x, z)</strong></li>\n<li>XNOR from NAND = <strong>5</strong> (from the table) ✔</li>\n</ol>",
-          "text": "Binary: 000, 010, 101, 111 Rows 000 and 010: x = 0, z = 0 → x̄z̄. Rows 101 and 111: x = 1, z = 1\n→ xz. f = x̄z̄ + xz = 1 when x = z → XNOR(x, z) XNOR from NAND = 5 (from the table) ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q9 · 3 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input XNOR gates for\nthe same f = Σm(0, 2, 5, 7)?</p>\n<p><strong>Answer:</strong> <strong>1</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 End-term (FN) · Q9 · 3 marks Question: Minimum number of 2-input XNOR gates for\nthe same f = Σm(0, 2, 5, 7)? Answer: 1"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> f = x ⊙ z (from above). That is one\nXNOR gate → <strong>1</strong> ✔. Always simplify first!</p>",
-          "text": "How to solve: f = x ⊙ z (from above). That is one\nXNOR gate → 1 ✔. Always simplify first!"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q157 and 2026 T2\nEnd-term · Q10 · 3 marks each</p>\n<p><strong>Question:</strong> A 1-bit comparator outputs 1 if A = B,\nelse 0. Minimum 2-input NOR gates?</p>\n<p><strong>Answer:</strong> <strong>4</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (AN) · Q157 and 2026 T2\nEnd-term · Q10 · 3 marks each Question: A 1-bit comparator outputs 1 if A = B,\nelse 0. Minimum 2-input NOR gates? Answer: 4"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>“1 when A = B” is <strong>XNOR</strong>.</li>\n<li>From the table: XNOR from NOR = <strong>4</strong>.</li>\n<li>The circuit: G1 = NOR(A, B), G2 = NOR(A, G1), G3 = NOR(B, G1), Y =\nNOR(G2, G3).</li>\n</ol>",
-          "text": "“1 when A = B” is XNOR . From the table: XNOR from NOR = 4 . The circuit: G1 = NOR(A, B), G2 = NOR(A, G1), G3 = NOR(B, G1), Y =\nNOR(G2, G3)."
-        },
-        {
-          "type": "image",
-          "src": "/images/csd-week-3/img10-four-nor-comparator.webp?v=c7219bcd9c99",
-          "width": 1536,
-          "height": 1024,
-          "alt": "Building XNOR from 4 NOR gates",
-          "caption": "A 1-bit equality checker\nbuilt from exactly 4 NOR gates."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q125 · 3 marks</p>\n<p><strong>Question:</strong> Same comparator (1 if A = B), but using\nonly 2-input <strong>NAND</strong> gates. Minimum?</p>\n<p><strong>Answer:</strong> <strong>5</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 End-term (FN) · Q125 · 3 marks Question: Same comparator (1 if A = B), but using\nonly 2-input NAND gates. Minimum? Answer: 5"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> XNOR from NAND = XOR (4 NANDs) + one\nNOT (1 NAND) = <strong>5</strong>.</p>",
-          "text": "How to solve: XNOR from NAND = XOR (4 NANDs) + one\nNOT (1 NAND) = 5 ."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q12 · 3 marks</p>\n<p><strong>Question:</strong> F = Σ(0, 1, 2, 3, 4, 5, 7) using\n<strong>3-input</strong> NAND gates. Minimum?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 2 · Q12 · 3 marks Question: F = Σ(0, 1, 2, 3, 4, 5, 7) using 3-input NAND gates. Minimum? Answer: 2"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>F is 1 in every row except <strong>6</strong> (110). So F = 0 only\nwhen A = 1, B = 1, C = 0.</li>\n<li>F = NOT(A·B·C̄) = <strong>NAND(A, B, C̄)</strong> → 1 gate, but it\nneeds C̄.</li>\n<li>C̄ = NAND(C, C, C) → 1 more gate.</li>\n<li>Total <strong>2</strong> ✔</li>\n</ol>",
-          "text": "F is 1 in every row except 6 (110). So F = 0 only\nwhen A = 1, B = 1, C = 0. F = NOT(A·B·C̄) = NAND(A, B, C̄) → 1 gate, but it\nneeds C̄. C̄ = NAND(C, C, C) → 1 more gate. Total 2 ✔"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 2 · Q12 · 3 marks",
+          "badges": [
+            "2026 T2 Quiz 2",
+            "Q12",
+            "3 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 2"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> F = Σ(0, 1, 2, 3, 4, 5, 7) using\n<strong>3-input</strong> NAND gates. Minimum?</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>2</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>F is 1 in every row except <strong>6</strong> (110). So F = 0 only\nwhen A = 1, B = 1, C = 0.</li>\n<li>F = NOT(A·B·C̄) = <strong>NAND(A, B, C̄)</strong> → 1 gate, but it\nneeds C̄.</li>\n<li>C̄ = NAND(C, C, C) → 1 more gate.</li>\n<li>Total <strong>2</strong> ✔</li>\n</ol>",
+          "text": "2026 T2 Quiz 2 · Q12 · 3 marks Asked in: 2026 T2 Quiz 2 · Q12 · 3 marks Question: F = Σ(0, 1, 2, 3, 4, 5, 7) using 3-input NAND gates. Minimum? Answer: 2 F is 1 in every row except 6 (110). So F = 0 only\nwhen A = 1, B = 1, C = 0. F = NOT(A·B·C̄) = NAND(A, B, C̄) → 1 gate, but it\nneeds C̄. C̄ = NAND(C, C, C) → 1 more gate. Total 2 ✔"
         },
         {
           "type": "html",
@@ -785,49 +833,70 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q3 · 5 marks</p>\n<p><strong>Question:</strong> Timing diagram for A, B, C and Y. Minimum\n2-input <strong>XOR</strong> gates to make Y?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q3 · 5 marks Question: Timing diagram for A, B, C and Y. Minimum\n2-input XOR gates to make Y? Answer: 2"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q3 · 5 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q3",
+            "5 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Timing diagram for A, B, C and Y. Minimum\n2-input <strong>XOR</strong> gates to make Y?</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"630\" loading=\"lazy\" src=\"/images/csd-pyq/2026t2-quiz1-q3.webp?v=18be30271b13\" width=\"1650\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>2</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Read the 8 slices (ABC → Y): 000→0, 001→1, 010→1, 011→0, 100→1,\n101→0, 110→0, 111→1</li>\n<li>Y = 1 when the number of 1s is <strong>odd</strong> (1, 1, 1, 3) →\n<strong>Y = A ⊕ B ⊕ C</strong></li>\n<li>With 2-input XORs: (A ⊕ B) ⊕ C → <strong>2 gates</strong> ✔</li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q3 · 5 marks Asked in: 2026 T2 Quiz 1 · Q3 · 5 marks Question: Timing diagram for A, B, C and Y. Minimum\n2-input XOR gates to make Y? Question figure (redrawn exactly from the\npaper) Answer: 2 Read the 8 slices (ABC → Y): 000→0, 001→1, 010→1, 011→0, 100→1,\n101→0, 110→0, 111→1 Y = 1 when the number of 1s is odd (1, 1, 1, 3) → Y = A ⊕ B ⊕ C With 2-input XORs: (A ⊕ B) ⊕ C → 2 gates ✔"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q102 · 5 marks",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q102",
+            "5 marks"
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Timing diagram for A, B, C and Y. Minimum\n2-input <strong>NAND</strong> gates to make Y?</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"630\" loading=\"lazy\" src=\"/images/csd-pyq/2025t2-quiz1-q102.webp?v=0ae56401c512\" width=\"1650\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>3</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Read the slices: Y = 1, 1, 1, 1, 1, 1, 1, <strong>0</strong>. Y is 0\nonly in slice 111.</li>\n<li>So Y = NOT(A·B·C), a 3-input NAND.</li>\n<li>With 2-input NANDs: G1 = NAND(A, B), G2 = NAND(G1, G1) = AB, Y =\nNAND(G2, C)</li>\n<li>Total <strong>3</strong> ✔</li>\n</ol>",
+          "text": "2025 T2 Quiz 1 · Q102 · 5 marks Asked in: 2025 T2 Quiz 1 · Q102 · 5 marks Question: Timing diagram for A, B, C and Y. Minimum\n2-input NAND gates to make Y? Question figure (redrawn exactly from the\npaper) Answer: 3 Read the slices: Y = 1, 1, 1, 1, 1, 1, 1, 0 . Y is 0\nonly in slice 111. So Y = NOT(A·B·C), a 3-input NAND. With 2-input NANDs: G1 = NAND(A, B), G2 = NAND(G1, G1) = AB, Y =\nNAND(G2, C) Total 3 ✔"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Read the 8 slices (ABC → Y): 000→0, 001→1, 010→1, 011→0, 100→1,\n101→0, 110→0, 111→1</li>\n<li>Y = 1 when the number of 1s is <strong>odd</strong> (1, 1, 1, 3) →\n<strong>Y = A ⊕ B ⊕ C</strong></li>\n<li>With 2-input XORs: (A ⊕ B) ⊕ C → <strong>2 gates</strong> ✔</li>\n</ol>",
-          "text": "Read the 8 slices (ABC → Y): 000→0, 001→1, 010→1, 011→0, 100→1,\n101→0, 110→0, 111→1 Y = 1 when the number of 1s is odd (1, 1, 1, 3) → Y = A ⊕ B ⊕ C With 2-input XORs: (A ⊕ B) ⊕ C → 2 gates ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q102 · 5 marks</p>\n<p><strong>Question:</strong> Timing diagram for A, B, C and Y. Minimum\n2-input <strong>NAND</strong> gates to make Y?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q102 · 5 marks Question: Timing diagram for A, B, C and Y. Minimum\n2-input NAND gates to make Y? Answer: 3"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Read the slices: Y = 1, 1, 1, 1, 1, 1, 1, <strong>0</strong>. Y is 0\nonly in slice 111.</li>\n<li>So Y = NOT(A·B·C), a 3-input NAND.</li>\n<li>With 2-input NANDs: G1 = NAND(A, B), G2 = NAND(G1, G1) = AB, Y =\nNAND(G2, C)</li>\n<li>Total <strong>3</strong> ✔</li>\n</ol>",
-          "text": "Read the slices: Y = 1, 1, 1, 1, 1, 1, 1, 0 . Y is 0\nonly in slice 111. So Y = NOT(A·B·C), a 3-input NAND. With 2-input NANDs: G1 = NAND(A, B), G2 = NAND(G1, G1) = AB, Y =\nNAND(G2, C) Total 3 ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q175 · 5 marks (the\nanswer key is missing in the PDF; our answer is checked)</p>\n<p><strong>Question:</strong> Timing diagram for A, B, C and Output Y.\nMinimum 2-input <strong>NOR</strong> gates to make Y?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q175 · 5 marks (the\nanswer key is missing in the PDF; our answer is checked) Question: Timing diagram for A, B, C and Output Y.\nMinimum 2-input NOR gates to make Y? Answer: 2"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Read the slices: Y = 0, 1, 0, 1, 1, 1, 1, 1</li>\n<li>Y = 0 only in rows 000 and 010 → there A = 0 and C = 0. So Y =\n<strong>A + C</strong>.</li>\n<li>OR from NOR = <strong>2</strong>: G1 = NOR(A, C), Y = NOR(G1, G1)\n✔</li>\n</ol>",
-          "text": "Read the slices: Y = 0, 1, 0, 1, 1, 1, 1, 1 Y = 0 only in rows 000 and 010 → there A = 0 and C = 0. So Y = A + C . OR from NOR = 2 : G1 = NOR(A, C), Y = NOR(G1, G1)\n✔"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q175 · 5 marks (the answer key is missing in the PDF; our answer is checked)",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q175",
+            "5 marks (the answer key is missing in the PDF; our answer is checked)"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Timing diagram for A, B, C and Output Y.\nMinimum 2-input <strong>NOR</strong> gates to make Y?</p>",
+          "figures": [
+            "<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"630\" loading=\"lazy\" src=\"/images/csd-pyq/2025t3-quiz1-q175.webp?v=d4cffc6f0e1b\" width=\"1650\"/>"
+          ],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>2</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>Read the slices: Y = 0, 1, 0, 1, 1, 1, 1, 1</li>\n<li>Y = 0 only in rows 000 and 010 → there A = 0 and C = 0. So Y =\n<strong>A + C</strong>.</li>\n<li>OR from NOR = <strong>2</strong>: G1 = NOR(A, C), Y = NOR(G1, G1)\n✔</li>\n</ol>",
+          "text": "2025 T3 Quiz 1 · Q175 · 5 marks (the answer key is missing in the PDF; our answer is checked) Asked in: 2025 T3 Quiz 1 · Q175 · 5 marks (the\nanswer key is missing in the PDF; our answer is checked) Question: Timing diagram for A, B, C and Output Y.\nMinimum 2-input NOR gates to make Y? Question figure (redrawn exactly from the\npaper) Answer: 2 Read the slices: Y = 0, 1, 0, 1, 1, 1, 1, 1 Y = 0 only in rows 000 and 010 → there A = 0 and C = 0. So Y = A + C . OR from NOR = 2 : G1 = NOR(A, C), Y = NOR(G1, G1)\n✔"
         },
         {
           "type": "html",
@@ -852,49 +921,64 @@
           "text": "Past paper questions"
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q10 · 4 marks</p>\n<p><strong>Question:</strong> F(a, b, c) = Π(0, 1, 2, 4). Find the\nminimized SOP. Options: āc + ab / ab̄ + ac̄ + b̄c / ab + bc + ca / ab̄ + ac̄\n+ b̄c̄ / None</p>\n<p><strong>Answer:</strong> <strong>ab + bc + ca</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q10 · 4 marks Question: F(a, b, c) = Π(0, 1, 2, 4). Find the\nminimized SOP. Options: āc + ab / ab̄ + ac̄ + b̄c / ab + bc + ca / ab̄ + ac̄\n+ b̄c̄ / None Answer: ab + bc + ca"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q10 · 4 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q10",
+            "4 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> F(a, b, c) = Π(0, 1, 2, 4). Find the\nminimized SOP. Options: āc + ab / ab̄ + ac̄ + b̄c / ab + bc + ca / ab̄ + ac̄\n+ b̄c̄ / None</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>ab + bc + ca</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>F = 0 in rows 0, 1, 2, 4 → F = 1 in the <strong>other</strong> rows:\n<strong>3, 5, 6, 7</strong></li>\n<li>Binary: 011, 101, 110, 111 → every row has <strong>two or more\n1s</strong></li>\n<li>That is ab + bc + ca (any two are 1) ✔</li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q10 · 4 marks Asked in: 2026 T2 Quiz 1 · Q10 · 4 marks Question: F(a, b, c) = Π(0, 1, 2, 4). Find the\nminimized SOP. Options: āc + ab / ab̄ + ac̄ + b̄c / ab + bc + ca / ab̄ + ac̄\n+ b̄c̄ / None Answer: ab + bc + ca F = 0 in rows 0, 1, 2, 4 → F = 1 in the other rows: 3, 5, 6, 7 Binary: 011, 101, 110, 111 → every row has two or more\n1s That is ab + bc + ca (any two are 1) ✔"
         },
         {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "type": "pyq",
+          "header": "2025 T3 Quiz 1 · Q168 · 4 marks",
+          "badges": [
+            "2025 T3 Quiz 1",
+            "Q168",
+            "4 marks"
+          ],
+          "papers": [
+            "2025 T3 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> F(a, b, c) = Π(1, 2, 3, 7). Find the\nminimized SOP.</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>ab̄ + ac̄ + b̄c̄</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>F = 1 in rows <strong>0, 4, 5, 6</strong> = 000, 100, 101, 110</li>\n<li>Pair them: 000 + 100 → b̄c̄. 100 + 101 → ab̄. 100 + 110 → ac̄.</li>\n<li>F = ab̄ + ac̄ + b̄c̄ ✔ (each pair shares 100, and every row is\ncovered)</li>\n</ol>",
+          "text": "2025 T3 Quiz 1 · Q168 · 4 marks Asked in: 2025 T3 Quiz 1 · Q168 · 4 marks Question: F(a, b, c) = Π(1, 2, 3, 7). Find the\nminimized SOP. Answer: ab̄ + ac̄ + b̄c̄ F = 1 in rows 0, 4, 5, 6 = 000, 100, 101, 110 Pair them: 000 + 100 → b̄c̄. 100 + 101 → ab̄. 100 + 110 → ac̄. F = ab̄ + ac̄ + b̄c̄ ✔ (each pair shares 100, and every row is\ncovered)"
         },
         {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>F = 0 in rows 0, 1, 2, 4 → F = 1 in the <strong>other</strong> rows:\n<strong>3, 5, 6, 7</strong></li>\n<li>Binary: 011, 101, 110, 111 → every row has <strong>two or more\n1s</strong></li>\n<li>That is ab + bc + ca (any two are 1) ✔</li>\n</ol>",
-          "text": "F = 0 in rows 0, 1, 2, 4 → F = 1 in the other rows: 3, 5, 6, 7 Binary: 011, 101, 110, 111 → every row has two or more\n1s That is ab + bc + ca (any two are 1) ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q168 · 4 marks</p>\n<p><strong>Question:</strong> F(a, b, c) = Π(1, 2, 3, 7). Find the\nminimized SOP.</p>\n<p><strong>Answer:</strong> <strong>ab̄ + ac̄ + b̄c̄</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T3 Quiz 1 · Q168 · 4 marks Question: F(a, b, c) = Π(1, 2, 3, 7). Find the\nminimized SOP. Answer: ab̄ + ac̄ + b̄c̄"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>F = 1 in rows <strong>0, 4, 5, 6</strong> = 000, 100, 101, 110</li>\n<li>Pair them: 000 + 100 → b̄c̄. 100 + 101 → ab̄. 100 + 110 → ac̄.</li>\n<li>F = ab̄ + ac̄ + b̄c̄ ✔ (each pair shares 100, and every row is\ncovered)</li>\n</ol>",
-          "text": "F = 1 in rows 0, 4, 5, 6 = 000, 100, 101, 110 Pair them: 000 + 100 → b̄c̄. 100 + 101 → ab̄. 100 + 110 → ac̄. F = ab̄ + ac̄ + b̄c̄ ✔ (each pair shares 100, and every row is\ncovered)"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q98 · 4 marks.\n<strong>The official key is wrong.</strong></p>\n<p><strong>Question:</strong> F(A, B, C) = Σ(0, 2, 3, 6). Which is the\ncorrect minimized POS? Options: (A + B)(Ā + C̄) / (Ā + B + C)(A + B̄) / (A\n+ B̄)(Ā + C̄) / None of these</p>\n<p><strong>Answer (key):</strong> (A + B̄)(Ā + C̄) · <strong>Correct\nanswer: None of these</strong></p>\n</blockquote>",
-          "text": "Asked in: 2025 T2 Quiz 1 · Q98 · 4 marks. The official key is wrong. Question: F(A, B, C) = Σ(0, 2, 3, 6). Which is the\ncorrect minimized POS? Options: (A + B)(Ā + C̄) / (Ā + B + C)(A + B̄) / (A\n+ B̄)(Ā + C̄) / None of these Answer (key): (A + B̄)(Ā + C̄) · Correct\nanswer: None of these"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>F = 0 in rows <strong>1, 4, 5, 7</strong> = 001, 100, 101, 111</li>\n<li>Check the keyed option (A + B̄)(Ā + C̄). It is 0 when A = 0 and B = 1\n(rows 2, 3), or when A = 1 and C = 1 (rows 5, 7). So its 0-rows are 2,\n3, 5, 7, <strong>not</strong> 1, 4, 5, 7 ✗</li>\n<li>Row 2 makes it obvious: F should be <strong>1</strong> at row 2\n(it’s in the Σ list), but the option gives 0.</li>\n<li>The true minimum POS needs <strong>three</strong> terms: (B + C̄)(Ā +\nB)(Ā + C̄). We checked by computer that no 2-term POS works.</li>\n<li>So the correct choice is <strong>None of these</strong>. (In the\nexam the key gave marks to (A + B̄)(Ā + C̄).)</li>\n</ol>",
-          "text": "F = 0 in rows 1, 4, 5, 7 = 001, 100, 101, 111 Check the keyed option (A + B̄)(Ā + C̄). It is 0 when A = 0 and B = 1\n(rows 2, 3), or when A = 1 and C = 1 (rows 5, 7). So its 0-rows are 2,\n3, 5, 7, not 1, 4, 5, 7 ✗ Row 2 makes it obvious: F should be 1 at row 2\n(it’s in the Σ list), but the option gives 0. The true minimum POS needs three terms: (B + C̄)(Ā +\nB)(Ā + C̄). We checked by computer that no 2-term POS works. So the correct choice is None of these . (In the\nexam the key gave marks to (A + B̄)(Ā + C̄).)"
+          "type": "pyq",
+          "header": "2025 T2 Quiz 1 · Q98 · 4 marks. The official key is wrong.",
+          "badges": [
+            "2025 T2 Quiz 1",
+            "Q98",
+            "4 marks. The official key is wrong."
+          ],
+          "papers": [
+            "2025 T2 Quiz 1"
+          ],
+          "keyIssue": true,
+          "questionHtml": "<p><strong>Question:</strong> F(A, B, C) = Σ(0, 2, 3, 6). Which is the\ncorrect minimized POS? Options: (A + B)(Ā + C̄) / (Ā + B + C)(A + B̄) / (A\n+ B̄)(Ā + C̄) / None of these</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer (key):</strong> (A + B̄)(Ā + C̄) · <strong>Correct\nanswer: None of these</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>F = 0 in rows <strong>1, 4, 5, 7</strong> = 001, 100, 101, 111</li>\n<li>Check the keyed option (A + B̄)(Ā + C̄). It is 0 when A = 0 and B = 1\n(rows 2, 3), or when A = 1 and C = 1 (rows 5, 7). So its 0-rows are 2,\n3, 5, 7, <strong>not</strong> 1, 4, 5, 7 ✗</li>\n<li>Row 2 makes it obvious: F should be <strong>1</strong> at row 2\n(it’s in the Σ list), but the option gives 0.</li>\n<li>The true minimum POS needs <strong>three</strong> terms: (B + C̄)(Ā +\nB)(Ā + C̄). We checked by computer that no 2-term POS works.</li>\n<li>So the correct choice is <strong>None of these</strong>. (In the\nexam the key gave marks to (A + B̄)(Ā + C̄).)</li>\n</ol>",
+          "text": "2025 T2 Quiz 1 · Q98 · 4 marks. The official key is wrong. Asked in: 2025 T2 Quiz 1 · Q98 · 4 marks. The official key is wrong. Question: F(A, B, C) = Σ(0, 2, 3, 6). Which is the\ncorrect minimized POS? Options: (A + B)(Ā + C̄) / (Ā + B + C)(A + B̄) / (A\n+ B̄)(Ā + C̄) / None of these Answer (key): (A + B̄)(Ā + C̄) · Correct\nanswer: None of these F = 0 in rows 1, 4, 5, 7 = 001, 100, 101, 111 Check the keyed option (A + B̄)(Ā + C̄). It is 0 when A = 0 and B = 1\n(rows 2, 3), or when A = 1 and C = 1 (rows 5, 7). So its 0-rows are 2,\n3, 5, 7, not 1, 4, 5, 7 ✗ Row 2 makes it obvious: F should be 1 at row 2\n(it’s in the Σ list), but the option gives 0. The true minimum POS needs three terms: (B + C̄)(Ā +\nB)(Ā + C̄). We checked by computer that no 2-term POS works. So the correct choice is None of these . (In the\nexam the key gave marks to (A + B̄)(Ā + C̄).)"
         },
         {
           "type": "html",
@@ -920,19 +1004,24 @@
           "text": "Useful steps: take out a common part, then use X + X̄ = 1."
         },
         {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q5 · 5 marks</p>\n<p><strong>Question:</strong> Minimum number of literals in the SOP\nform: ab + āb̄c̄ + ābc̄</p>\n<p><strong>Answer:</strong> <strong>4</strong></p>\n</blockquote>",
-          "text": "Asked in: 2026 T2 Quiz 1 · Q5 · 5 marks Question: Minimum number of literals in the SOP\nform: ab + āb̄c̄ + ābc̄ Answer: 4"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>The last two terms share āc̄: āb̄c̄ + ābc̄ = āc̄(b̄ + b)</li>\n<li>b̄ + b = 1, so they become <strong>āc̄</strong></li>\n<li>F = ab + āc̄ → letters: a, b, ā, c̄ → <strong>4</strong> ✔</li>\n</ol>",
-          "text": "The last two terms share āc̄: āb̄c̄ + ābc̄ = āc̄(b̄ + b) b̄ + b = 1, so they become āc̄ F = ab + āc̄ → letters: a, b, ā, c̄ → 4 ✔"
+          "type": "pyq",
+          "header": "2026 T2 Quiz 1 · Q5 · 5 marks",
+          "badges": [
+            "2026 T2 Quiz 1",
+            "Q5",
+            "5 marks"
+          ],
+          "papers": [
+            "2026 T2 Quiz 1"
+          ],
+          "keyIssue": false,
+          "questionHtml": "<p><strong>Question:</strong> Minimum number of literals in the SOP\nform: ab + āb̄c̄ + ābc̄</p>",
+          "figures": [],
+          "answerHtml": [
+            "<p><strong>Answer:</strong> <strong>4</strong></p>"
+          ],
+          "solutionHtml": "<ol type=\"1\">\n<li>The last two terms share āc̄: āb̄c̄ + ābc̄ = āc̄(b̄ + b)</li>\n<li>b̄ + b = 1, so they become <strong>āc̄</strong></li>\n<li>F = ab + āc̄ → letters: a, b, ā, c̄ → <strong>4</strong> ✔</li>\n</ol>",
+          "text": "2026 T2 Quiz 1 · Q5 · 5 marks Asked in: 2026 T2 Quiz 1 · Q5 · 5 marks Question: Minimum number of literals in the SOP\nform: ab + āb̄c̄ + ābc̄ Answer: 4 The last two terms share āc̄: āb̄c̄ + ābc̄ = āc̄(b̄ + b) b̄ + b = 1, so they become āc̄ F = ab + āc̄ → letters: a, b, ā, c̄ → 4 ✔"
         },
         {
           "type": "html",
