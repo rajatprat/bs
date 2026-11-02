@@ -13,9 +13,9 @@ export default function Diagram({ block }) {
       <span className="diagram-hint" aria-hidden="true">Enlarge diagram ↗</span>
     </button>
     <noscript><a href={block.src} target="_blank" rel="noreferrer">Open full size diagram ↗</a></noscript>
-    {(block.caption || block.qualityNote) && <figcaption>{block.caption}{block.qualityNote && <p className="diagram-quality-note"><strong>Diagram clarification: </strong>{block.qualityNote}</p>}</figcaption>}
+    {(block.caption || block.qualityNote) && <figcaption>{block.captionHtml ? <span dangerouslySetInnerHTML={{__html:block.captionHtml}}/> : block.caption}{block.qualityNote && <p className="diagram-quality-note"><strong>Diagram clarification: </strong>{block.qualityNote}</p>}</figcaption>}
     <dialog ref={dialog} className="diagram-dialog" aria-label={label} onClick={e => { if (e.target === e.currentTarget) dialog.current.close(); }}>
-      <div className="diagram-toolbar"><span>{label}</span><div>
+      <div className="diagram-toolbar"><span>{block.captionHtml ? <span dangerouslySetInnerHTML={{__html:block.captionHtml}}/> : label}</span><div>
         <button type="button" aria-pressed={actualSize} onClick={() => setActualSize(v => !v)}>{actualSize ? 'Fit to screen' : 'Actual size'}</button>
         <a href={block.src} target="_blank" rel="noreferrer">Open image ↗</a>
         <button type="button" onClick={() => dialog.current.close()} aria-label="Close diagram">Close ✕</button>

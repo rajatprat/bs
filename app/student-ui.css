@@ -18,3 +18,8 @@
 
 /* SPG source notes: examples, nested lists and revealable quick checks. */
 .spg-lesson blockquote{margin:1.5rem 0;padding:1rem 1.3rem;border-left:4px solid #16847c;background:#edf5f1;border-radius:0 12px 12px 0}.spg-lesson blockquote p:last-child{margin-bottom:0}.spg-lesson li{margin:.5rem 0}.spg-lesson li p{margin:.4rem 0}.spg-lesson details{margin:.8rem 0;padding:1rem 1.2rem;border:1px solid #d5e2dd;border-radius:12px;background:#fff}.spg-lesson summary{cursor:pointer;font-weight:700;color:#173d39}.spg-lesson details[open] summary{margin-bottom:.8rem}.spg-lesson hr{border:0;border-top:1px solid #d5e2dd;margin:2rem 0}.spg-lesson table{min-width:540px}.spg-lesson a{overflow-wrap:anywhere}
+
+/* Keep CSD notation readable without changing the source notes or circuit images. */
+.csd-lesson .katex{font-size:1.08em;display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:.2em .08em}
+.csd-lesson .katex .katex-html{white-space:nowrap}
+.csd-lesson td .katex,.csd-lesson th .katex{max-width:none}
