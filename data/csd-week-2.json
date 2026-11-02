@@ -690,166 +690,18 @@
     },
     {
       "slug": "exam-question-types",
-      "title": "How to Solve — Truth-Table Exam Questions",
+      "title": "How to Solve Week 2 Exam Questions",
       "resource": false,
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Almost every Quiz 1 has these questions:\n“What’s the probability the output is 1?”, “For which inputs is f always\n1?”, “How many minterms?”, “Which gates should go in the empty boxes?”\nThey look different, but <strong>one tool solves them all: the truth\ntable.</strong></p>\n</blockquote>",
-          "text": "Start here Almost every Quiz 1 has these questions:\n“What’s the probability the output is 1?”, “For which inputs is f always\n1?”, “How many minterms?”, “Which gates should go in the empty boxes?”\nThey look different, but one tool solves them all: the truth\ntable."
-        },
-        {
-          "type": "heading",
-          "text": "Type 1: Probability\nthat the output is 1"
+          "html": "<blockquote>\n<p><strong>Start here</strong> Every Week 2 question from the 11 past\npapers is on this page, with the exact paper it came from. For each type\nyou first <strong>learn the method from zero</strong>, then you see\n<strong>every real question</strong> solved step by step, writing out\nevery line. Three official answer keys turned out to be wrong. Those are\nmarked so you don’t get confused.</p>\n</blockquote>",
+          "text": "Start here Every Week 2 question from the 11 past\npapers is on this page, with the exact paper it came from. For each type\nyou first learn the method from zero , then you see every real question solved step by step, writing out\nevery line. Three official answer keys turned out to be wrong. Those are\nmarked so you don’t get confused."
         },
         {
           "type": "html",
-          "html": "<p><strong>Spot it:</strong> “Inputs are random. What’s the probability\nthat F = 1 (or 0)?”</p>",
-          "text": "Spot it: “Inputs are random. What’s the probability\nthat F = 1 (or 0)?”"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write the truth table: 2ⁿ rows.</li>\n<li>Work out F for every row.</li>\n<li><strong>Probability = (number of rows with F = 1) ÷\n2ⁿ</strong>.</li>\n</ol>",
-          "text": "Write the truth table: 2ⁿ rows. Work out F for every row. Probability = (number of rows with F = 1) ÷\n2ⁿ ."
-        },
-        {
-          "type": "image",
-          "src": "/images/csd-week-2/img08-probability-example.webp?v=107d7c2d8a83",
-          "width": 1536,
-          "height": 1024,
-          "alt": "Probability from a truth table",
-          "caption": "F = (A XOR B) AND C. Only 2\nof the 8 rows give 1, so P(F = 1) = 2/8 = 0.25."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Worked example:</strong> F = (A ⊕ B) · C</p>",
-          "text": "Worked example: F = (A ⊕ B) · C"
-        },
-        {
-          "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A</th>\n<th>B</th>\n<th>C</th>\n<th>A ⊕ B</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>1</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "A B C A ⊕ B F 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 0 1 0 1 1 1 1 1 0 0 0 1 1 1 0 0"
-        },
-        {
-          "type": "html",
-          "html": "<p>2 ones out of 8 → <strong>P(F = 1) = 0.25</strong>, so P(F = 0) =\n0.75.</p>",
-          "text": "2 ones out of 8 → P(F = 1) = 0.25 , so P(F = 0) =\n0.75."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Trap:</strong> read carefully whether they ask for\n<strong>logic 1</strong> or <strong>logic 0</strong>.</p>",
-          "text": "Trap: read carefully whether they ask for logic 1 or logic 0 ."
-        },
-        {
-          "type": "heading",
-          "text": "Type 2: For which inputs\nis f always 1?"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> f(x, y, z) = Σm(1, 2, 4, 7). “Under which\ncondition is f <strong>always</strong> 1?”</p>",
-          "text": "Spot it: f(x, y, z) = Σm(1, 2, 4, 7). “Under which\ncondition is f always 1?”"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write each minterm in binary and count its 1s:</li>\n</ol>",
-          "text": "Write each minterm in binary and count its 1s:"
-        },
-        {
-          "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Minterm</th>\n<th>Binary</th>\n<th>Number of 1s</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>001</td>\n<td>1</td>\n</tr>\n<tr>\n<td>2</td>\n<td>010</td>\n<td>1</td>\n</tr>\n<tr>\n<td>4</td>\n<td>100</td>\n<td>1</td>\n</tr>\n<tr>\n<td>7</td>\n<td>111</td>\n<td>3</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Minterm Binary Number of 1s 1 001 1 2 010 1 4 100 1 7 111 3"
-        },
-        {
-          "type": "html",
-          "html": "<ol start=\"2\" type=\"1\">\n<li>Look for a pattern: every one has an <strong>odd</strong> number of\n1s, and every odd-count row is in the list. So <strong>f = x ⊕ y ⊕\nz</strong> (3-input XOR).</li>\n<li>Check each option: <strong>every</strong> input combination that\nmatches the option must be in the list.\n<ul>\n<li>“Any odd number of inputs are 1” → rows 1, 2, 4, 7 → all in the list\n✓</li>\n<li>“Any even number of inputs are 1” → rows 0, 3, 5, 6 → none in the\nlist ✗</li>\n</ul></li>\n</ol>",
-          "text": "Look for a pattern: every one has an odd number of\n1s, and every odd-count row is in the list. So f = x ⊕ y ⊕\nz (3-input XOR). Check each option: every input combination that\nmatches the option must be in the list. “Any odd number of inputs are 1” → rows 1, 2, 4, 7 → all in the list\n✓ “Any even number of inputs are 1” → rows 0, 3, 5, 6 → none in the\nlist ✗"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Trap (from a real paper):</strong> in 2025 T2 Quiz 1, the\noptions for Σm(1,2,4,7) were “exactly one input is 1”, “all inputs are\n1”, “any two inputs are 0” and “even number of 1s”. The official answer\nwas “exactly one input is 1”, but “all inputs are 1” (row 7) and “any\ntwo inputs are 0” (same as exactly one 1) <strong>also</strong> always\ngive 1. So the question had more than one correct option. In the exam,\ntest <strong>every</strong> option against the list.</p>",
-          "text": "Trap (from a real paper): in 2025 T2 Quiz 1, the\noptions for Σm(1,2,4,7) were “exactly one input is 1”, “all inputs are\n1”, “any two inputs are 0” and “even number of 1s”. The official answer\nwas “exactly one input is 1”, but “all inputs are 1” (row 7) and “any\ntwo inputs are 0” (same as exactly one 1) also always\ngive 1. So the question had more than one correct option. In the exam,\ntest every option against the list."
-        },
-        {
-          "type": "heading",
-          "text": "Type 3: Count the minterms"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> “F = 1 if and only if <strong>exactly\ntwo</strong> of the four inputs A, B, C, D are 0. How many minterms in\nits SOP?”</p>",
-          "text": "Spot it: “F = 1 if and only if exactly\ntwo of the four inputs A, B, C, D are 0. How many minterms in\nits SOP?”"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong> count the input rows that match. Choosing\nwhich 2 of the 4 inputs are 0 = <strong>“4 choose 2”</strong> = (4 × 3)\n÷ 2 = <strong>6</strong>.</p>",
-          "text": "Steps: count the input rows that match. Choosing\nwhich 2 of the 4 inputs are 0 = “4 choose 2” = (4 × 3)\n÷ 2 = 6 ."
-        },
-        {
-          "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Rows (inputs that are 0 in bold)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>00</strong>11, <strong>0</strong>1<strong>0</strong>1,\n<strong>0</strong>11<strong>0</strong>, 1<strong>00</strong>1,\n1<strong>0</strong>1<strong>0</strong>, 11<strong>00</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Rows (inputs that are 0 in bold) 00 11, 0 1 0 1, 0 11 0 , 1 00 1,\n1 0 1 0 , 11 00"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Answer: 6.</strong></p>",
-          "text": "Answer: 6."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Shortcut:</strong> “exactly k of n inputs” → <strong>C(n, k)\n= n! ÷ (k! (n−k)!)</strong>.</p>",
-          "text": "Shortcut: “exactly k of n inputs” → C(n, k)\n= n! ÷ (k! (n−k)!) ."
-        },
-        {
-          "type": "heading",
-          "text": "Type 4: Fill in the missing\ngates"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> a circuit with two empty boxes GT1 and GT2\nmust give <strong>Y = AB + BC + CA</strong>.</p>",
-          "text": "Spot it: a circuit with two empty boxes GT1 and GT2\nmust give Y = AB + BC + CA ."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Look at the fixed part of the circuit. Here, GT1 takes A and B, then\nGT1 and C go into an AND, and that result is ORed with GT2’s\noutput.</li>\n<li>So Y = <strong>(GT1 of A, B) · C + (GT2 of A, B)</strong>.</li>\n<li>Try options until it matches. With <strong>GT1 = XOR</strong>,\n<strong>GT2 = AND</strong>: Y = C·(A ⊕ B) + AB.</li>\n<li>Check with a truth table: it equals AB + BC + CA in all 8 rows\n✓.</li>\n</ol>",
-          "text": "Look at the fixed part of the circuit. Here, GT1 takes A and B, then\nGT1 and C go into an AND, and that result is ORed with GT2’s\noutput. So Y = (GT1 of A, B) · C + (GT2 of A, B) . Try options until it matches. With GT1 = XOR , GT2 = AND : Y = C·(A ⊕ B) + AB. Check with a truth table: it equals AB + BC + CA in all 8 rows\n✓."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Answer: XOR, AND.</strong> (This was a real 2025 T3 end-term\nquestion.)</p>",
-          "text": "Answer: XOR, AND. (This was a real 2025 T3 end-term\nquestion.)"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p>AB + BC + CA is the <strong>majority function</strong>: it’s 1 when\n<strong>at least two</strong> of the three inputs are 1. You’ll see it\nagain as the <strong>carry</strong> of a full adder (Week 5).</p>\n</blockquote>",
-          "text": "AB + BC + CA is the majority function : it’s 1 when at least two of the three inputs are 1. You’ll see it\nagain as the carry of a full adder (Week 5)."
-        },
-        {
-          "type": "heading",
-          "text": "Type 5: Trace a circuit\ngate by gate"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong> write the output of <strong>each\ngate</strong> in order, from inputs to output. If some inputs are left\nas letters (like X), carry the letter through.</p>",
-          "text": "Steps: write the output of each\ngate in order, from inputs to output. If some inputs are left\nas letters (like X), carry the letter through."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Tip:</strong> a chain of gates that each just\n<strong>flip</strong> the signal gives X̅ for an <strong>odd</strong>\nnumber of flips and X for an <strong>even</strong> number.</p>",
-          "text": "Tip: a chain of gates that each just flip the signal gives X̅ for an odd number of flips and X for an even number."
+          "html": "<p><strong>How to read this page:</strong> each grey “Asked in” box is a\nreal past-paper question, with the paper, question number and marks.\nBelow it, <strong>How to solve</strong> shows every step.</p>",
+          "text": "How to read this page: each grey “Asked in” box is a\nreal past-paper question, with the paper, question number and marks.\nBelow it, How to solve shows every step."
         },
         {
           "type": "html",
@@ -858,27 +710,586 @@
         },
         {
           "type": "heading",
-          "text": "Try these"
+          "text": "Type 1: Find the\noutput of a chain of gates"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>F = A · B + C. Probability that F = 1?\n</li></ol></summary>\nF = 1 when C = 1 (4 rows) or A = B = 1, C = 0 (1 more row) → 5/8 =\n0.625.\n</details>",
-          "text": "F = A · B + C. Probability that F = 1? F = 1 when C = 1 (4 rows) or A = B = 1, C = 0 (1 more row) → 5/8 =\n0.625."
+          "html": "<p>Work <strong>one gate at a time, from left to right</strong>. Write\neach gate’s output in terms of the input. Use these rules:</p>",
+          "text": "Work one gate at a time, from left to right . Write\neach gate’s output in terms of the input. Use these rules:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>f = Σm(0, 3, 5, 6). Is f always 1 when an even number of inputs are\n1?\n</li></ol></summary>\nYes: 0 (000), 3 (011), 5 (101), 6 (110) all have an even number of 1s. f\n= XNOR-style even parity.\n</details>",
-          "text": "f = Σm(0, 3, 5, 6). Is f always 1 when an even number of inputs are\n1? Yes: 0 (000), 3 (011), 5 (101), 6 (110) all have an even number of 1s. f\n= XNOR-style even parity."
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Rule</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>X ⊕ X = 0, X ⊙ X = 1</td>\n<td>same inputs → XOR says “not different” (0), XNOR says “same”\n(1)</td>\n</tr>\n<tr>\n<td>X ⊕ 0 = X, X ⊕ 1 = X̄</td>\n<td>XOR with 1 flips</td>\n</tr>\n<tr>\n<td>X ⊙ 1 = X, X ⊙ 0 = X̄</td>\n<td>XNOR with 0 flips</td>\n</tr>\n<tr>\n<td>NAND(1, X) = X̄</td>\n<td>AND with 1 gives X, then flip</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Rule Why X ⊕ X = 0, X ⊙ X = 1 same inputs → XOR says “not different” (0), XNOR says “same”\n(1) X ⊕ 0 = X, X ⊕ 1 = X̄ XOR with 1 flips X ⊙ 1 = X, X ⊙ 0 = X̄ XNOR with 0 flips NAND(1, X) = X̄ AND with 1 gives X, then flip"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>F = 1 when exactly 3 of 5 inputs are 1. Number of minterms?\n</li></ol></summary>\nC(5,3) = 10.\n</details>",
-          "text": "F = 1 when exactly 3 of 5 inputs are 1. Number of minterms? C(5,3) = 10."
+          "html": "<p><strong>Level 1:</strong> one gate. XOR with both inputs X → X ⊕ X =\n<strong>0</strong>. <strong>Level 2:</strong> two gates. G1 = X ⊙ X = 1,\nthen G2 = 1 ⊕ X = <strong>X̄</strong>.</p>",
+          "text": "Level 1: one gate. XOR with both inputs X → X ⊕ X = 0 . Level 2: two gates. G1 = X ⊙ X = 1,\nthen G2 = 1 ⊕ X = X̄ ."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Probability that a 3-input majority function is 1?\n</li></ol></summary>\n4 rows (011, 101, 110, 111) of 8 → 0.5.\n</details>",
-          "text": "Probability that a 3-input majority function is 1? 4 rows (011, 101, 110, 111) of 8 → 0.5."
+          "html": "<p><strong>Check trick:</strong> put X = 0, then X = 1, and push the\nnumbers through. If you get 1, 0 → the answer is X̄. If you get 0, 1 →\nX.</p>",
+          "text": "Check trick: put X = 0, then X = 1, and push the\nnumbers through. If you get 1, 0 → the answer is X̄. If you get 0, 1 →\nX."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q96 · 4 marks</p>\n<p><strong>Question:</strong> X feeds a chain: XNOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output Y? Options: X / X̄ / 1\n/ 0</p>\n<p><strong>Answer:</strong> <strong>X̄</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q96 · 4 marks Question: X feeds a chain: XNOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output Y? Options: X / X̄ / 1\n/ 0 Answer: X̄"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>G1 = X ⊙ X = <strong>1</strong></li>\n<li>G2 = G1 ⊙ X = 1 ⊙ X = <strong>X</strong></li>\n<li>G3 = G2 ⊙ X = X ⊙ X = <strong>1</strong></li>\n<li>Y = G3 ⊕ X = 1 ⊕ X = <strong>X̄</strong></li>\n<li>Check with X = 0: 1 → 0 → 1 → Y = 1 ✔ (X̄ = 1)</li>\n</ol>",
+          "text": "G1 = X ⊙ X = 1 G2 = G1 ⊙ X = 1 ⊙ X = X G3 = G2 ⊙ X = X ⊙ X = 1 Y = G3 ⊕ X = 1 ⊕ X = X̄ Check with X = 0: 1 → 0 → 1 → Y = 1 ✔ (X̄ = 1)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q166 · 4 marks</p>\n<p><strong>Question:</strong> X feeds a chain: XOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output? Options: X / X̄ / 1 /\n0</p>\n<p><strong>Answer:</strong> <strong>X</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q166 · 4 marks Question: X feeds a chain: XOR → XNOR → XNOR → XOR.\nEach gate’s second input is X. What is the output? Options: X / X̄ / 1 /\n0 Answer: X"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>G1 = X ⊕ X = <strong>0</strong></li>\n<li>G2 = 0 ⊙ X = <strong>X̄</strong> (XNOR with 0 flips)</li>\n<li>G3 = X̄ ⊙ X = <strong>0</strong> (they are always different)</li>\n<li>Out = 0 ⊕ X = <strong>X</strong></li>\n</ol>",
+          "text": "G1 = X ⊕ X = 0 G2 = 0 ⊙ X = X̄ (XNOR with 0 flips) G3 = X̄ ⊙ X = 0 (they are always different) Out = 0 ⊕ X = X"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q12 · 4 marks</p>\n<p><strong>Question:</strong> X feeds a chain: XNOR → XOR → XOR → NAND.\nEach gate’s second input is X. What is the output? Options: X̄ / 1 / 0 /\nX</p>\n<p><strong>Answer:</strong> <strong>X̄</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q12 · 4 marks Question: X feeds a chain: XNOR → XOR → XOR → NAND.\nEach gate’s second input is X. What is the output? Options: X̄ / 1 / 0 /\nX Answer: X̄"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>G1 = X ⊙ X = <strong>1</strong></li>\n<li>G2 = 1 ⊕ X = <strong>X̄</strong></li>\n<li>G3 = X̄ ⊕ X = <strong>1</strong></li>\n<li>Out = NAND(1, X) = NOT(1 · X) = <strong>X̄</strong></li>\n</ol>",
+          "text": "G1 = X ⊙ X = 1 G2 = 1 ⊕ X = X̄ G3 = X̄ ⊕ X = 1 Out = NAND(1, X) = NOT(1 · X) = X̄"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 2:\nProbability that the output is 1 (or 0)"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p>“Inputs are uniformly random” means <strong>every row of the truth\ntable is equally likely</strong>.</p>",
+          "text": "“Inputs are uniformly random” means every row of the truth\ntable is equally likely ."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>P(output = 1) = (number of rows where output = 1) ÷ (total\nrows)</strong></p>",
+          "text": "P(output = 1) = (number of rows where output = 1) ÷ (total\nrows)"
+        },
+        {
+          "type": "html",
+          "html": "<p>Total rows = 2ⁿ for n inputs: 3 inputs → 8 rows, 4 inputs → 16\nrows.</p>",
+          "text": "Total rows = 2ⁿ for n inputs: 3 inputs → 8 rows, 4 inputs → 16\nrows."
+        },
+        {
+          "type": "image",
+          "src": "/images/csd-week-2/img08-probability-example.webp?v=107d7c2d8a83",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Probability from a truth table",
+          "caption": "F = (A ⊕ B)·C is 1 in 2 of\nthe 8 rows, so P = 2/8 = 0.25."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Level 1:</strong> F = A·B. Only row 11 gives 1. P = 1/4 =\n<strong>0.25</strong>. <strong>Level 2:</strong> F = A + B. Rows 01, 10,\n11 give 1. P = 3/4 = <strong>0.75</strong>. <strong>Level 3:</strong>\nbig circuits. <strong>First simplify</strong> the circuit to a formula,\nthen count. A big circuit often simplifies to just one letter, and then\nP = 0.5.</p>",
+          "text": "Level 1: F = A·B. Only row 11 gives 1. P = 1/4 = 0.25 . Level 2: F = A + B. Rows 01, 10,\n11 give 1. P = 3/4 = 0.75 . Level 3: big circuits. First simplify the circuit to a formula,\nthen count. A big circuit often simplifies to just one letter, and then\nP = 0.5."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q100 · 5 marks</p>\n<p><strong>Question:</strong> X and Y go into an XOR. Separately, X and\nY go into an AND. The XOR output and Z go into a second AND. Both AND\noutputs go into an OR → F. Inputs are uniformly random. P(F = 1)?\nOptions: 0.75 / 0.33 / 0.25 / 0.50 / 1 / None of these</p>\n<p><strong>Answer:</strong> <strong>0.50</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q100 · 5 marks Question: X and Y go into an XOR. Separately, X and\nY go into an AND. The XOR output and Z go into a second AND. Both AND\noutputs go into an OR → F. Inputs are uniformly random. P(F = 1)?\nOptions: 0.75 / 0.33 / 0.25 / 0.50 / 1 / None of these Answer: 0.50"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write the formula: F = (X ⊕ Y)·Z + X·Y</li>\n<li>Make the table (8 rows):</li>\n</ol>",
+          "text": "Write the formula: F = (X ⊕ Y)·Z + X·Y Make the table (8 rows):"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>X Y Z</th>\n<th>X⊕Y</th>\n<th>(X⊕Y)·Z</th>\n<th>X·Y</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>000</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>001</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>010</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>011</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>100</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n</tr>\n<tr>\n<td>101</td>\n<td>1</td>\n<td>1</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>110</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>111</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "X Y Z X⊕Y (X⊕Y)·Z X·Y F 000 0 0 0 0 001 0 0 0 0 010 1 0 0 0 011 1 1 0 1 100 1 0 0 0 101 1 1 0 1 110 0 0 1 1 111 0 0 1 1"
+        },
+        {
+          "type": "html",
+          "html": "<ol start=\"3\" type=\"1\">\n<li>F = 1 in <strong>4</strong> rows → P = 4/8 = <strong>0.50</strong>\n(F is 1 when at least two inputs are 1. This is the “majority”\nfunction.)</li>\n</ol>",
+          "text": "F = 1 in 4 rows → P = 4/8 = 0.50 (F is 1 when at least two inputs are 1. This is the “majority”\nfunction.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q170 · 5 marks (and the\nsame circuit in 2026 T2 Quiz 1 · Q9 · 4 marks)</p>\n<p><strong>Question:</strong> Three AND gates feed an OR → Y. AND1 =\nX̄·Y. AND2 = X·Y·Z. AND3 = X·Y·Z̄. Inputs are uniformly random. P(Y = 0)?\n(The 2026 paper asks P(f = 1).)</p>\n<p><strong>Answer:</strong> <strong>0.50</strong> (for both)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q170 · 5 marks (and the\nsame circuit in 2026 T2 Quiz 1 · Q9 · 4 marks) Question: Three AND gates feed an OR → Y. AND1 =\nX̄·Y. AND2 = X·Y·Z. AND3 = X·Y·Z̄. Inputs are uniformly random. P(Y = 0)?\n(The 2026 paper asks P(f = 1).) Answer: 0.50 (for both)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Y = X̄Y + XYZ + XYZ̄</li>\n<li>Join the last two: XYZ + XYZ̄ = XY(Z + Z̄) = XY·1 =\n<strong>XY</strong></li>\n<li>Y = X̄Y + XY = Y(X̄ + X) = Y·1 = <strong>Y</strong></li>\n<li>The whole circuit is just the input Y! Y is 0 in half the rows →\nP(0) = <strong>0.5</strong>, and P(1) = <strong>0.5</strong> too.</li>\n</ol>",
+          "text": "Y = X̄Y + XYZ + XYZ̄ Join the last two: XYZ + XYZ̄ = XY(Z + Z̄) = XY·1 = XY Y = X̄Y + XY = Y(X̄ + X) = Y·1 = Y The whole circuit is just the input Y! Y is 0 in half the rows →\nP(0) = 0.5 , and P(1) = 0.5 too."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q156 and 2025 T2\nEnd-term (FN) · Q124 · 3 marks each</p>\n<p><strong>Question:</strong> A 4-input circuit (x, y, w, z) with five\nAND gates, two OR gates and three NOT gates. P(f = 1)?</p>\n<p><strong>Answer:</strong> <strong>0.5</strong> (the answer key shows\n“5”, meaning .5)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q156 and 2025 T2\nEnd-term (FN) · Q124 · 3 marks each Question: A 4-input circuit (x, y, w, z) with five\nAND gates, two OR gates and three NOT gates. P(f = 1)? Answer: 0.5 (the answer key shows\n“5”, meaning .5)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Read every gate from the diagram: A1 = x̄·y, A2 = w̄·z, O1 = A2 + z̄,\nA3 = A1·O1 A4 = x̄·w·z, O2 = A4 + x, A5 = O2·y f = A3 + A5</li>\n<li>Simplify: O1 = w̄z + z̄ = <strong>w̄ + z̄</strong>. O2 = x̄wz + x =\n<strong>x + wz</strong>.</li>\n<li>f = x̄y(w̄ + z̄) + y(x + wz)</li>\n<li>If y = 0, f = 0. If y = 1: f = x̄(w̄ + z̄) + x + wz. If x = 1 → 1. If x\n= 0 → (w̄ + z̄) + wz = 1 (one of them is always true).</li>\n<li>So <strong>f = y</strong>, and P = 8/16 = <strong>0.5</strong>. (We\nchecked all 16 rows by computer.)</li>\n</ol>",
+          "text": "Read every gate from the diagram: A1 = x̄·y, A2 = w̄·z, O1 = A2 + z̄,\nA3 = A1·O1 A4 = x̄·w·z, O2 = A4 + x, A5 = O2·y f = A3 + A5 Simplify: O1 = w̄z + z̄ = w̄ + z̄ . O2 = x̄wz + x = x + wz . f = x̄y(w̄ + z̄) + y(x + wz) If y = 0, f = 0. If y = 1: f = x̄(w̄ + z̄) + x + wz. If x = 1 → 1. If x\n= 0 → (w̄ + z̄) + wz = 1 (one of them is always true). So f = y , and P = 8/16 = 0.5 . (We\nchecked all 16 rows by computer.)"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 3: Σm → “for\nwhich inputs is f always 1?”"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write out every row number in binary.</li>\n<li>Mark the rows where f = 1.</li>\n<li>Look for the pattern: <strong>count the 1s</strong> in each\nrow.</li>\n<li><strong>Test every option.</strong> An option is correct only if f =\n1 in <strong>every</strong> row that the option describes.</li>\n</ol>",
+          "text": "Write out every row number in binary. Mark the rows where f = 1. Look for the pattern: count the 1s in each\nrow. Test every option. An option is correct only if f =\n1 in every row that the option describes."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Count of 1s</th>\n<th>Rows (3 variables)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0 ones</td>\n<td>0 (000)</td>\n</tr>\n<tr>\n<td>1 one</td>\n<td>1 (001), 2 (010), 4 (100)</td>\n</tr>\n<tr>\n<td>2 ones</td>\n<td>3 (011), 5 (101), 6 (110)</td>\n</tr>\n<tr>\n<td>3 ones</td>\n<td>7 (111)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Count of 1s Rows (3 variables) 0 ones 0 (000) 1 one 1 (001), 2 (010), 4 (100) 2 ones 3 (011), 5 (101), 6 (110) 3 ones 7 (111)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Quick facts:</strong> Σm(1, 2, 4, 7) = A ⊕ B ⊕ C (odd number\nof 1s). Σm(0, 3, 5, 6) = its opposite (even number of 1s).</p>",
+          "text": "Quick facts: Σm(1, 2, 4, 7) = A ⊕ B ⊕ C (odd number\nof 1s). Σm(0, 3, 5, 6) = its opposite (even number of 1s)."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q167 · 4 marks</p>\n<p><strong>Question:</strong> f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1</p>\n<p><strong>Answer:</strong> <strong>Any odd number of inputs are at\nlogic 1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q167 · 4 marks Question: f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1 Answer: Any odd number of inputs are at\nlogic 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>f = 1 rows: 001, 010, 100, 111 → counts of 1s: 1, 1, 1, 3. All\n<strong>odd</strong>.</li>\n<li>Test the other options:\n<ul>\n<li>“2 or more at 0” includes 000 → f = 0 ✗</li>\n<li>“2 or more at 1” includes 011 → f = 0 ✗</li>\n<li>“Odd number of 0s” includes 000 (three 0s) → f = 0 ✗</li>\n</ul></li>\n</ol>",
+          "text": "f = 1 rows: 001, 010, 100, 111 → counts of 1s: 1, 1, 1, 3. All odd . Test the other options: “2 or more at 0” includes 000 → f = 0 ✗ “2 or more at 1” includes 011 → f = 0 ✗ “Odd number of 0s” includes 000 (three 0s) → f = 0 ✗"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q97 · 4 marks.\n<strong>The official key is incomplete.</strong></p>\n<p><strong>Question:</strong> f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: exactly one input at 1 / all inputs at\n1 / any two inputs at 0 / any even number of inputs at 1</p>\n<p><strong>Answer (key):</strong> <strong>Exactly one input is at logic\n1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q97 · 4 marks. The official key is incomplete. Question: f(x, y, z) = Σm(1, 2, 4, 7). For which\ncondition is f always 1? Options: exactly one input at 1 / all inputs at\n1 / any two inputs at 0 / any even number of inputs at 1 Answer (key): Exactly one input is at logic\n1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>“Exactly one input at 1” → rows 001, 010, 100 → f = 1 in all ✔</li>\n<li>But also “all inputs at 1” → row 111 → f = 1 ✔</li>\n<li>And “any two inputs at 0” means exactly one at 1 → the same rows → f\n= 1 ✔</li>\n<li>“Even number of 1s” includes 000 → f = 0 ✗</li>\n<li>So <strong>three options are true</strong>. The key accepted\n“exactly one input at 1”. In the exam, pick that one, the most direct\ndescription.</li>\n</ol>",
+          "text": "“Exactly one input at 1” → rows 001, 010, 100 → f = 1 in all ✔ But also “all inputs at 1” → row 111 → f = 1 ✔ And “any two inputs at 0” means exactly one at 1 → the same rows → f\n= 1 ✔ “Even number of 1s” includes 000 → f = 0 ✗ So three options are true . The key accepted\n“exactly one input at 1”. In the exam, pick that one, the most direct\ndescription."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q11 · 4 marks</p>\n<p><strong>Question:</strong> f(x, y, z) = Σm(0, 3, 5, 6). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1</p>\n<p><strong>Answer:</strong> <strong>Any odd number of inputs are at\nlogic 0</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q11 · 4 marks Question: f(x, y, z) = Σm(0, 3, 5, 6). For which\ncondition is f always 1? Options: 2 or more inputs at 0 / 2 or more\ninputs at 1 / any odd number of inputs at 0 / any odd number of inputs\nat 1 Answer: Any odd number of inputs are at\nlogic 0"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>f = 1 rows: 000, 011, 101, 110. Count the <strong>0s</strong>: 3, 1,\n1, 1 → all <strong>odd</strong>.</li>\n<li>Test the others: “2 or more at 0” includes 001 → f = 0 ✗; “2 or more\nat 1” includes 111 → f = 0 ✗; “odd number of 1s” includes 001 → f = 0\n✗.</li>\n</ol>",
+          "text": "f = 1 rows: 000, 011, 101, 110. Count the 0s : 3, 1,\n1, 1 → all odd . Test the others: “2 or more at 0” includes 001 → f = 0 ✗; “2 or more\nat 1” includes 111 → f = 0 ✗; “odd number of 1s” includes 001 → f = 0\n✗."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q8 · 4 marks. <strong>Two\noptions are true here.</strong></p>\n<p><strong>Question:</strong> Given f(A, B, C) = A ⊕ B ⊕ C = 1, which\nstatement is always true? Options: A = B ⊕ C / A + B + C = 1 / A = B ⊙ C\n/ ABC = 1 / None of these</p>\n<p><strong>Answer (key):</strong> <strong>A = B ⊙ C</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q8 · 4 marks. Two\noptions are true here. Question: Given f(A, B, C) = A ⊕ B ⊕ C = 1, which\nstatement is always true? Options: A = B ⊕ C / A + B + C = 1 / A = B ⊙ C\n/ ABC = 1 / None of these Answer (key): A = B ⊙ C"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>XOR both sides with (B ⊕ C): A = 1 ⊕ (B ⊕ C) = NOT(B ⊕ C) =\n<strong>B ⊙ C</strong> ✔</li>\n<li>Check “A + B + C = 1”: A ⊕ B ⊕ C = 1 means an odd number of 1s, so\n<strong>at least one</strong> is 1. So A + B + C = 1 is also always\ntrue.</li>\n<li>“A = B ⊕ C” is the opposite ✗. “ABC = 1” fails for 100 ✗.</li>\n<li>The key accepts only <strong>A = B ⊙ C</strong>, so choose that in\nthe exam.</li>\n</ol>",
+          "text": "XOR both sides with (B ⊕ C): A = 1 ⊕ (B ⊕ C) = NOT(B ⊕ C) = B ⊙ C ✔ Check “A + B + C = 1”: A ⊕ B ⊕ C = 1 means an odd number of 1s, so at least one is 1. So A + B + C = 1 is also always\ntrue. “A = B ⊕ C” is the opposite ✗. “ABC = 1” fails for 100 ✗. The key accepts only A = B ⊙ C , so choose that in\nthe exam."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 4: Count the minterms"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p>Each row where F = 1 is one minterm. <strong>Count the rows.</strong>\nFor “exactly k of n inputs”, use <strong>ⁿCₖ</strong> = n! ÷ (k! × (n −\nk)!).</p>",
+          "text": "Each row where F = 1 is one minterm. Count the rows. For “exactly k of n inputs”, use ⁿCₖ = n! ÷ (k! × (n −\nk)!)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Level 1:</strong> exactly one 1 among 3 inputs → ³C₁ =\n<strong>3</strong> (001, 010, 100). <strong>Level 2:</strong> exactly\ntwo 1s among 4 inputs → ⁴C₂ = (4 × 3) ÷ (2 × 1) =\n<strong>6</strong>.</p>",
+          "text": "Level 1: exactly one 1 among 3 inputs → ³C₁ = 3 (001, 010, 100). Level 2: exactly\ntwo 1s among 4 inputs → ⁴C₂ = (4 × 3) ÷ (2 × 1) = 6 ."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper question"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q159, 2025 T2\nEnd-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each</p>\n<p><strong>Question:</strong> A circuit has inputs A, B, C, D. F = 1 if\nand only if exactly two of the four inputs are 0 (the AN paper says “are\n1”). Minimum number of minterms in the SOP for F?</p>\n<p><strong>Answer:</strong> <strong>6</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q159, 2025 T2\nEnd-term (FN) · Q127, 2026 T2 End-term · Q12 · 3 marks each Question: A circuit has inputs A, B, C, D. F = 1 if\nand only if exactly two of the four inputs are 0 (the AN paper says “are\n1”). Minimum number of minterms in the SOP for F? Answer: 6"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>“Exactly two 0s” among four inputs = “exactly two 1s”. Both count\nthe same rows.</li>\n<li>Count: ⁴C₂ = (4 × 3) ÷ (2 × 1) = <strong>6</strong></li>\n<li>List to check: 0011, 0101, 0110, 1001, 1010, 1100 → 6 rows ✔</li>\n<li><strong>Trap:</strong> “minimum number of minterms” is still 6.\nMinterms can’t be simplified away; each 1-row is one minterm.</li>\n</ol>",
+          "text": "“Exactly two 0s” among four inputs = “exactly two 1s”. Both count\nthe same rows. Count: ⁴C₂ = (4 × 3) ÷ (2 × 1) = 6 List to check: 0011, 0101, 0110, 1001, 1010, 1100 → 6 rows ✔ Trap: “minimum number of minterms” is still 6.\nMinterms can’t be simplified away; each 1-row is one minterm."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 5: Expression → list\nof minterms (Σ)"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Take one product term at a time.</li>\n<li>The letters in the term are <strong>fixed</strong>. Missing letters\ncan be <strong>0 or 1</strong> (both).</li>\n<li>Write all the rows, convert to numbers, and join all the lists.</li>\n</ol>",
+          "text": "Take one product term at a time. The letters in the term are fixed . Missing letters\ncan be 0 or 1 (both). Write all the rows, convert to numbers, and join all the lists."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Level 1:</strong> F(A, B) = A. B is missing → rows 10, 11 →\nΣm(2, 3). <strong>Level 2:</strong> F(A, B, C) = AB̄. C is missing → 100,\n101 → Σm(4, 5).</p>",
+          "text": "Level 1: F(A, B) = A. B is missing → rows 10, 11 →\nΣm(2, 3). Level 2: F(A, B, C) = AB̄. C is missing → 100,\n101 → Σm(4, 5)."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q132 · 4 marks</p>\n<p><strong>Question:</strong> Find the minterms of F(A, B, C, D) = ĀB̄ +\nACD̄ + BC̄D̄.</p>\n<p><strong>Answer:</strong> <strong>Σ(0, 1, 2, 3, 4, 10, 12,\n14)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 2 · Q132 · 4 marks Question: Find the minterms of F(A, B, C, D) = ĀB̄ +\nACD̄ + BC̄D̄. Answer: Σ(0, 1, 2, 3, 4, 10, 12,\n14)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>ĀB̄ → A = 0, B = 0, C and D free → 0000, 0001, 0010, 0011 →\n<strong>0, 1, 2, 3</strong></li>\n<li>ACD̄ → A = 1, C = 1, D = 0, B free → 1010, 1110 → <strong>10,\n14</strong></li>\n<li>BC̄D̄ → B = 1, C = 0, D = 0, A free → 0100, 1100 → <strong>4,\n12</strong></li>\n<li>Join: Σ(0, 1, 2, 3, 4, 10, 12, 14) ✔</li>\n</ol>",
+          "text": "ĀB̄ → A = 0, B = 0, C and D free → 0000, 0001, 0010, 0011 → 0, 1, 2, 3 ACD̄ → A = 1, C = 1, D = 0, B free → 1010, 1110 → 10,\n14 BC̄D̄ → B = 1, C = 0, D = 0, A free → 0100, 1100 → 4,\n12 Join: Σ(0, 1, 2, 3, 4, 10, 12, 14) ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q11 · 4 marks</p>\n<p><strong>Question:</strong> Find the minterms of AB + ĀCD̄ + BC̄D.</p>\n<p><strong>Answer:</strong> <strong>Σ(2, 5, 6, 12, 13, 14,\n15)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 2 · Q11 · 4 marks Question: Find the minterms of AB + ĀCD̄ + BC̄D. Answer: Σ(2, 5, 6, 12, 13, 14,\n15)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>AB → 11XX → 1100, 1101, 1110, 1111 → <strong>12, 13, 14,\n15</strong></li>\n<li>ĀCD̄ → 0X10 → 0010, 0110 → <strong>2, 6</strong></li>\n<li>BC̄D → X101 → 0101, 1101 → <strong>5, 13</strong> (13 is already\nthere)</li>\n<li>Join: Σ(2, 5, 6, 12, 13, 14, 15) ✔</li>\n</ol>",
+          "text": "AB → 11XX → 1100, 1101, 1110, 1111 → 12, 13, 14,\n15 ĀCD̄ → 0X10 → 0010, 0110 → 2, 6 BC̄D → X101 → 0101, 1101 → 5, 13 (13 is already\nthere) Join: Σ(2, 5, 6, 12, 13, 14, 15) ✔"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 6: Expression → truth\ntable"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p>For each row, put the values into <strong>each product term</strong>.\nIf <strong>any</strong> term is 1, F = 1.</p>",
+          "text": "For each row, put the values into each product term .\nIf any term is 1, F = 1."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q14 · 3 marks</p>\n<p><strong>Question:</strong> Choose the correct truth table for F(x, y,\nz) = x̄ȳz̄ + x̄y + xz̄.</p>\n<p><strong>Answer:</strong> the table with F = <strong>1, 0, 1, 1, 1, 0,\n1, 0</strong> (rows 000 → 111)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (FN) · Q14 · 3 marks Question: Choose the correct truth table for F(x, y,\nz) = x̄ȳz̄ + x̄y + xz̄. Answer: the table with F = 1, 0, 1, 1, 1, 0,\n1, 0 (rows 000 → 111)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>x̄ȳz̄ → only 000 → row 0</li>\n<li>x̄y → 01X → rows 2, 3</li>\n<li>xz̄ → 1X0 → rows 4, 6</li>\n<li>F = 1 in rows 0, 2, 3, 4, 6 → F column: 1, 0, 1, 1, 1, 0, 1, 0\n✔</li>\n<li>Pick the option whose F column matches <strong>exactly</strong>. One\nwrong row means a wrong option.</li>\n</ol>",
+          "text": "x̄ȳz̄ → only 000 → row 0 x̄y → 01X → rows 2, 3 xz̄ → 1X0 → rows 4, 6 F = 1 in rows 0, 2, 3, 4, 6 → F column: 1, 0, 1, 1, 1, 0, 1, 0\n✔ Pick the option whose F column matches exactly . One\nwrong row means a wrong option."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 7: Which Boolean\nidentity is correct?"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p>Test each identity with numbers. <strong>One row that gives different\nsides proves it wrong.</strong> If it survives all rows, it is\nright.</p>",
+          "text": "Test each identity with numbers. One row that gives different\nsides proves it wrong. If it survives all rows, it is\nright."
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>True identity</th>\n<th>Name</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(A + B)(A + C) = A + BC</td>\n<td>distributive (OR over AND)</td>\n</tr>\n<tr>\n<td>(A + B)’ = A’·B’</td>\n<td>De Morgan</td>\n</tr>\n<tr>\n<td>(A ⊕ B)’ = AB + A’B’</td>\n<td>XNOR</td>\n</tr>\n<tr>\n<td>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C</td>\n<td>B ⊕ B cancels</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "True identity Name (A + B)(A + C) = A + BC distributive (OR over AND) (A + B)’ = A’·B’ De Morgan (A ⊕ B)’ = AB + A’B’ XNOR (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C B ⊕ B cancels"
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q133 · 5 marks (multiple\nselect)</p>\n<p><strong>Question:</strong> Choose the correct identities: (A ⊕ B)’ =\nAB + A’B’ / (A + B)’ = A’ + B’ / A(B + C) = AB + C / (A + B)(A + C) = A\n+ BC</p>\n<p><strong>Answer:</strong> <strong>(A ⊕ B)’ = AB + A’B’</strong> and\n<strong>(A + B)(A + C) = A + BC</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 2 · Q133 · 5 marks (multiple\nselect) Question: Choose the correct identities: (A ⊕ B)’ =\nAB + A’B’ / (A + B)’ = A’ + B’ / A(B + C) = AB + C / (A + B)(A + C) = A\n+ BC Answer: (A ⊕ B)’ = AB + A’B’ and (A + B)(A + C) = A + BC"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>(A ⊕ B)’ is 1 when A = B, which is exactly AB + A’B’ ✔</li>\n<li>(A + B)’ = A’ + B’? Try A = 1, B = 0: left = (1)’ = 0, right = 0 + 1\n= 1 ✗ (correct De Morgan: A’·B’)</li>\n<li>A(B + C) = AB + C? Try A = 0, C = 1: left = 0, right = 1 ✗ (correct:\nAB + AC)</li>\n<li>(A + B)(A + C) = AA + AC + AB + BC = A(1 + C + B) + BC = <strong>A +\nBC</strong> ✔</li>\n</ol>",
+          "text": "(A ⊕ B)’ is 1 when A = B, which is exactly AB + A’B’ ✔ (A + B)’ = A’ + B’? Try A = 1, B = 0: left = (1)’ = 0, right = 0 + 1\n= 1 ✗ (correct De Morgan: A’·B’) A(B + C) = AB + C? Try A = 0, C = 1: left = 0, right = 1 ✗ (correct:\nAB + AC) (A + B)(A + C) = AA + AC + AB + BC = A(1 + C + B) + BC = A +\nBC ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q14 · 5 marks</p>\n<p><strong>Question:</strong> Choose the correct option: (A ⊕ B)’ = A ⊕\nB / (A + B) ⊕ C = A + (B ⊕ C) / (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C / (A·B) ⊕\n(A·C) = A</p>\n<p><strong>Answer:</strong> <strong>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕\nC</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 2 · Q14 · 5 marks Question: Choose the correct option: (A ⊕ B)’ = A ⊕\nB / (A + B) ⊕ C = A + (B ⊕ C) / (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ C / (A·B) ⊕\n(A·C) = A Answer: (A ⊕ B) ⊕ (B ⊕ C) = A ⊕\nC"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>(A ⊕ B)’ = A ⊕ B? A thing can’t equal its own opposite ✗</li>\n<li>(A + B) ⊕ C = A + (B ⊕ C)? Try A = 1, B = 0, C = 1: left = 1 ⊕ 1 =\n0, right = 1 + 1 = 1 ✗</li>\n<li>(A ⊕ B) ⊕ (B ⊕ C) = A ⊕ B ⊕ B ⊕ C = A ⊕ <strong>0</strong> ⊕ C = A ⊕\nC ✔ (B ⊕ B = 0)</li>\n<li>(AB) ⊕ (AC) = A? Try A = 1, B = 1, C = 1: left = 1 ⊕ 1 = 0, right =\n1 ✗</li>\n</ol>",
+          "text": "(A ⊕ B)’ = A ⊕ B? A thing can’t equal its own opposite ✗ (A + B) ⊕ C = A + (B ⊕ C)? Try A = 1, B = 0, C = 1: left = 1 ⊕ 1 =\n0, right = 1 + 1 = 1 ✗ (A ⊕ B) ⊕ (B ⊕ C) = A ⊕ B ⊕ B ⊕ C = A ⊕ 0 ⊕ C = A ⊕\nC ✔ (B ⊕ B = 0) (AB) ⊕ (AC) = A? Try A = 1, B = 1, C = 1: left = 1 ⊕ 1 = 0, right =\n1 ✗"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 8: Fill in the\nmissing gates (GT1, GT2)"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write what the circuit computes, with GT1 and GT2 as unknowns.</li>\n<li>Try each option. Put it in and simplify.</li>\n<li>If unsure, <strong>test with numbers</strong>: pick a row, compute\nthe circuit and the required output. They must match in every row.</li>\n</ol>",
+          "text": "Write what the circuit computes, with GT1 and GT2 as unknowns. Try each option. Put it in and simplify. If unsure, test with numbers : pick a row, compute\nthe circuit and the required output. They must match in every row."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q164 · 3 marks</p>\n<p><strong>Question:</strong> Y must equal AB + BC + CA. A and B go into\nGT1. GT1’s output and C go into an AND. A and B also go into GT2. The\nAND output and GT2’s output go into an OR → Y. What are GT1 and GT2?</p>\n<p><strong>Answer:</strong> <strong>GT1 = XOR, GT2 = AND</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q164 · 3 marks Question: Y must equal AB + BC + CA. A and B go into\nGT1. GT1’s output and C go into an AND. A and B also go into GT2. The\nAND output and GT2’s output go into an OR → Y. What are GT1 and GT2? Answer: GT1 = XOR, GT2 = AND"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Circuit: Y = (GT1(A, B) · C) + GT2(A, B)</li>\n<li>Try XOR, AND: Y = (A ⊕ B)C + AB</li>\n<li>Check the rows where Y should be 1 (two or more 1s):\n<ul>\n<li>011: (0⊕1)·1 + 0 = 1 ✔</li>\n<li>101: (1⊕0)·1 + 0 = 1 ✔</li>\n<li>110: (1⊕1)·0 + 1 = 1 ✔</li>\n<li>111: (0)·1 + 1 = 1 ✔</li>\n<li>001, 010, 100, 000 all give 0 ✔</li>\n</ul></li>\n<li>All 8 rows match → <strong>XOR, AND</strong></li>\n</ol>",
+          "text": "Circuit: Y = (GT1(A, B) · C) + GT2(A, B) Try XOR, AND: Y = (A ⊕ B)C + AB Check the rows where Y should be 1 (two or more 1s): 011: (0⊕1)·1 + 0 = 1 ✔ 101: (1⊕0)·1 + 0 = 1 ✔ 110: (1⊕1)·0 + 1 = 1 ✔ 111: (0)·1 + 1 = 1 ✔ 001, 010, 100, 000 all give 0 ✔ All 8 rows match → XOR, AND"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q8 · 3 marks.\n<strong>Flawed question: no option fits.</strong></p>\n<p><strong>Question:</strong> f must be (x̄ + ȳ)zw. x goes through a NOT\ninto GT2. y and z go into an AND, whose output also goes into GT2. z and\nw go into GT1. GT1 and GT2 go into a final AND → f.</p>\n<p><strong>Answer (key):</strong> <strong>AND, NAND</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (AN) · Q8 · 3 marks. Flawed question: no option fits. Question: f must be (x̄ + ȳ)zw. x goes through a NOT\ninto GT2. y and z go into an AND, whose output also goes into GT2. z and\nw go into GT1. GT1 and GT2 go into a final AND → f. Answer (key): AND, NAND"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve, and what’s wrong:</strong></p>",
+          "text": "How to solve, and what’s wrong:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>With GT1 = AND, GT2 = NAND: f = NAND(x̄, yz) · zw = (x + ȳ + z̄)·zw =\n<strong>(x + ȳ)zw</strong></li>\n<li>That is (x + ȳ)zw, <strong>not</strong> (x̄ + ȳ)zw. Test x = 0, y =\n1, z = w = 1: required = (1 + 0)·1 = 1, but the circuit gives NAND(1,\n1)·1 = <strong>0</strong> ✗</li>\n<li>We tried every pair of gates by computer, and <strong>none</strong>\ngives (x̄ + ȳ)zw. The question has an extra NOT on x.</li>\n<li><strong>In the exam</strong>, write the official answer <strong>AND,\nNAND</strong> (it works if the NOT on x is removed).</li>\n</ol>",
+          "text": "With GT1 = AND, GT2 = NAND: f = NAND(x̄, yz) · zw = (x + ȳ + z̄)·zw = (x + ȳ)zw That is (x + ȳ)zw, not (x̄ + ȳ)zw. Test x = 0, y =\n1, z = w = 1: required = (1 + 0)·1 = 1, but the circuit gives NAND(1,\n1)·1 = 0 ✗ We tried every pair of gates by computer, and none gives (x̄ + ȳ)zw. The question has an extra NOT on x. In the exam , write the official answer AND,\nNAND (it works if the NOT on x is removed)."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q8 · 3 marks.\n<strong>Flawed question.</strong></p>\n<p><strong>Question:</strong> Same circuit, f must be (x + ȳ)zw +\nz̄w.</p>\n<p><strong>Answer (key):</strong> <strong>OR, NAND</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (FN) · Q8 · 3 marks. Flawed question. Question: Same circuit, f must be (x + ȳ)zw +\nz̄w. Answer (key): OR, NAND"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve, and what’s wrong:</strong></p>",
+          "text": "How to solve, and what’s wrong:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>With GT1 = OR, GT2 = NAND: f = (x + ȳ + z̄)(z + w)</li>\n<li>Test x = 1, z = 1, w = 0: required = (1)·1·0 + 0 = 0, circuit =\n(1)(1) = <strong>1</strong> ✗</li>\n<li>No gate pair matches in all 16 rows (checked by computer). The key’s\nchoice is <strong>OR, NAND</strong>, so write that.</li>\n</ol>",
+          "text": "With GT1 = OR, GT2 = NAND: f = (x + ȳ + z̄)(z + w) Test x = 1, z = 1, w = 0: required = (1)·1·0 + 0 = 0, circuit =\n(1)(1) = 1 ✗ No gate pair matches in all 16 rows (checked by computer). The key’s\nchoice is OR, NAND , so write that."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 9:\nTrue or false on combinational vs sequential"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 ·\nQ6 · 1 mark each</p>\n<p><strong>Question:</strong> “Sequential circuits do not utilize\nfeedback loops, while combinational circuits do.” True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 2 · Q129 and 2026 T2 Quiz 2 ·\nQ6 · 1 mark each Question: “Sequential circuits do not utilize\nfeedback loops, while combinational circuits do.” True or False? Answer: FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> it’s the other way round.\n<strong>Sequential</strong> circuits use feedback (that’s how they\nremember). <strong>Combinational</strong> circuits have no feedback and\nno memory.</p>",
+          "text": "How to solve: it’s the other way round. Sequential circuits use feedback (that’s how they\nremember). Combinational circuits have no feedback and\nno memory."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice set (new\nquestions, same types)"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>X goes through XNOR(X, X), then XOR with X, then XNOR with X.\nOutput?\n</li></ol></summary>\n1 → 1 ⊕ X = X̄ → X̄ ⊙ X = 0. Output is 0.\n</details>",
+          "text": "X goes through XNOR(X, X), then XOR with X, then XNOR with X.\nOutput? 1 → 1 ⊕ X = X̄ → X̄ ⊙ X = 0. Output is 0."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>F = A·B + C, inputs random. P(F = 1)?\n</li></ol></summary>\nF = 0 only when C = 0 and AB = 0: rows 000, 010, 100 → 3 zeros. P = 5/8\n= 0.625.\n</details>",
+          "text": "F = A·B + C, inputs random. P(F = 1)? F = 0 only when C = 0 and AB = 0: rows 000, 010, 100 → 3 zeros. P = 5/8\n= 0.625."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>f = Σm(3, 5, 6, 7). Always 1 when…?\n</li></ol></summary>\nRows with two or more 1s → “2 or more inputs at logic 1”.\n</details>",
+          "text": "f = Σm(3, 5, 6, 7). Always 1 when…? Rows with two or more 1s → “2 or more inputs at logic 1”."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Exactly three of five inputs are 1. How many minterms?\n</li></ol></summary>\n⁵C₃ = 10.\n</details>",
+          "text": "Exactly three of five inputs are 1. How many minterms? ⁵C₃ = 10."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Minterms of F(A, B, C) = AB + C̄?\n</li></ol></summary>\nAB → 6, 7. C̄ → 0, 2, 4, 6. Join: Σ(0, 2, 4, 6, 7).\n</details>",
+          "text": "Minterms of F(A, B, C) = AB + C̄? AB → 6, 7. C̄ → 0, 2, 4, 6. Join: Σ(0, 2, 4, 6, 7)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Push values through gate chains,\nsimplify before counting probability, test every option row by row, and\nremember the papers’ Week 2 keys were wrong three times. <strong>Exam\nwords:</strong> gate chain, uniformly random, probability, Σm, parity,\nⁿCₖ, minterm list, Boolean identity, missing gate, feedback.</p>",
+          "text": "In one line: Push values through gate chains,\nsimplify before counting probability, test every option row by row, and\nremember the papers’ Week 2 keys were wrong three times. Exam\nwords: gate chain, uniformly random, probability, Σm, parity,\nⁿCₖ, minterm list, Boolean identity, missing gate, feedback."
         }
       ]
     },

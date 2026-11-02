@@ -637,8 +637,13 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 4 questions come in six types:\ntrue/false facts, delay, “read this MUX circuit”, “read this decoder\ncircuit”, “minimum number of 2:1 MUXes”, and priority encoders. Every\npast paper has at least two of them. Learn the six recipes below and\nthese become sure marks.</p>\n</blockquote>",
-          "text": "Start here Week 4 questions come in six types:\ntrue/false facts, delay, “read this MUX circuit”, “read this decoder\ncircuit”, “minimum number of 2:1 MUXes”, and priority encoders. Every\npast paper has at least two of them. Learn the six recipes below and\nthese become sure marks."
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 4 (decoders, encoders, multiplexers)\ngives sure marks in every paper: true/false facts, delay, “read this MUX\ncircuit”, “read this decoder circuit”, “minimum number of MUXes” and\npriority encoders. This page teaches each method from zero, then solves\n<strong>every Week 4 question from the 11 past papers</strong>, each\nwith the paper it came from. Two answer keys were wrong. Those are\nmarked.</p>\n</blockquote>",
+          "text": "Start here Week 4 (decoders, encoders, multiplexers)\ngives sure marks in every paper: true/false facts, delay, “read this MUX\ncircuit”, “read this decoder circuit”, “minimum number of MUXes” and\npriority encoders. This page teaches each method from zero, then solves every Week 4 question from the 11 past papers , each\nwith the paper it came from. Two answer keys were wrong. Those are\nmarked."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to read this page:</strong> each grey “Asked in” box is a\nreal past-paper question. Below it, <strong>How to solve</strong> shows\nevery step.</p>",
+          "text": "How to read this page: each grey “Asked in” box is a\nreal past-paper question. Below it, How to solve shows\nevery step."
         },
         {
           "type": "html",
@@ -650,14 +655,43 @@
           "text": "Type 1: True/false facts (1\nmark each)"
         },
         {
-          "type": "html",
-          "html": "<p>These exact sentences keep coming back. Learn the answers.</p>",
-          "text": "These exact sentences keep coming back. Learn the answers."
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Statement</th>\n<th>Answer</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“In a decoder, at any point, exactly one output is 1 and the rest\nare 0.”</td>\n<td><strong>True</strong></td>\n<td>Each input pattern turns on exactly one output.</td>\n</tr>\n<tr>\n<td>“A multiplexer selects one of several inputs and forwards it to a\nsingle output.”</td>\n<td><strong>True</strong></td>\n<td>That’s the definition.</td>\n</tr>\n<tr>\n<td>“A decoder performs the inverse operation of a multiplexer.”</td>\n<td><strong>True</strong> (official key)</td>\n<td>A MUX takes many lines into one. A decoder with an enable input\nsends one signal to one of many lines (this is a\n<strong>demultiplexer</strong>), which is the reverse. Strictly, a\ndecoder is the inverse of an <strong>encoder</strong>, but the exam’s\nanswer is True.</td>\n</tr>\n<tr>\n<td>“A decoder has n inputs and 2ⁿ outputs.”</td>\n<td><strong>True</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>“An encoder has 2ⁿ inputs and n outputs.”</td>\n<td><strong>True</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Statement Answer Why “In a decoder, at any point, exactly one output is 1 and the rest\nare 0.” True Each input pattern turns on exactly one output. “A multiplexer selects one of several inputs and forwards it to a\nsingle output.” True That’s the definition. “A decoder performs the inverse operation of a multiplexer.” True (official key) A MUX takes many lines into one. A decoder with an enable input\nsends one signal to one of many lines (this is a demultiplexer ), which is the reverse. Strictly, a\ndecoder is the inverse of an encoder , but the exam’s\nanswer is True. “A decoder has n inputs and 2ⁿ outputs.” True “An encoder has 2ⁿ inputs and n outputs.” True"
+          "html": "<p>These sentences come back again and again. Learn the answers.</p>",
+          "text": "These sentences come back again and again. Learn the answers."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q152, 2025 T2\nEnd-term (FN) · Q120, 2026 T2 End-term · Q5</p>\n<p><strong>Question:</strong> “In a decoder, at any point, exactly one\nof the outputs is 1 and all the rest are 0s.”</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q152, 2025 T2\nEnd-term (FN) · Q120, 2026 T2 End-term · Q5 Question: “In a decoder, at any point, exactly one\nof the outputs is 1 and all the rest are 0s.” Answer: TRUE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> a decoder turns each input pattern\ninto exactly <strong>one</strong> active output line. For 2 inputs = 10,\nonly D₂ = 1.</p>",
+          "text": "How to solve: a decoder turns each input pattern\ninto exactly one active output line. For 2 inputs = 10,\nonly D₂ = 1."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q126, 2026 T2 Quiz 2 ·\nQ3, 2025 T3 End-term (AN and FN) · Q2</p>\n<p><strong>Question:</strong> “A multiplexer selects one of several\ninput signals and forwards it to a single output line.”</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 2 · Q126, 2026 T2 Quiz 2 ·\nQ3, 2025 T3 End-term (AN and FN) · Q2 Question: “A multiplexer selects one of several\ninput signals and forwards it to a single output line.” Answer: TRUE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> this is the definition of a MUX. Many\ninputs, one output, and the select lines choose which input gets\nthrough.</p>",
+          "text": "How to solve: this is the definition of a MUX. Many\ninputs, one output, and the select lines choose which input gets\nthrough."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN and FN) · Q5</p>\n<p><strong>Question:</strong> “A decoder performs the inverse operation\nof a multiplexer.”</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong> (official key)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (AN and FN) · Q5 Question: “A decoder performs the inverse operation\nof a multiplexer.” Answer: TRUE (official key)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> a MUX takes many lines → one line. A\ndecoder with an enable input works as a <strong>demultiplexer</strong>:\none line → many lines, the reverse. Strictly, a decoder is the inverse\nof an <strong>encoder</strong>, but the exam’s answer is\n<strong>True</strong>.</p>",
+          "text": "How to solve: a MUX takes many lines → one line. A\ndecoder with an enable input works as a demultiplexer :\none line → many lines, the reverse. Strictly, a decoder is the inverse\nof an encoder , but the exam’s answer is True ."
         },
         {
           "type": "html",
@@ -666,22 +700,16 @@
         },
         {
           "type": "heading",
-          "text": "Type 2: Delay questions"
+          "text": "Type 2: Delay of a MUX or\ndecoder"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Spot it:</strong> “NOT has delay … AND/OR have delay … what\nis the maximum delay of a 2×1 MUX / 3×8 decoder?”</p>",
-          "text": "Spot it: “NOT has delay … AND/OR have delay … what\nis the maximum delay of a 2×1 MUX / 3×8 decoder?”"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Draw (or picture) the block’s gates.</li>\n<li>Find the <strong>longest path</strong> from any input to the output,\ncounting gates <strong>in a chain</strong>.</li>\n<li><strong>Add</strong> the delays along that path. Gates side by side\ndon’t add up; only gates <strong>one after another</strong> do.</li>\n</ol>",
-          "text": "Draw (or picture) the block’s gates. Find the longest path from any input to the output,\ncounting gates in a chain . Add the delays along that path. Gates side by side\ndon’t add up; only gates one after another do."
+          "html": "<ol type=\"1\">\n<li>Find the <strong>longest chain of gates</strong> from any input to\nthe output.</li>\n<li><strong>Add</strong> the delays of the gates in that chain. Gates\nside by side don’t add up; only gates one after another do.</li>\n</ol>",
+          "text": "Find the longest chain of gates from any input to\nthe output. Add the delays of the gates in that chain. Gates\nside by side don’t add up; only gates one after another do."
         },
         {
           "type": "image",
@@ -689,27 +717,66 @@
           "width": 1536,
           "height": 1024,
           "alt": "Finding the longest path",
-          "caption": "The select line passes through\nNOT, then AND, then OR. That’s the longest path, so add those\nthree."
+          "caption": "In a 2:1 MUX the select line goes\nNOT → AND → OR. That’s the longest chain."
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Block</th>\n<th>Longest path</th>\n<th>NOT 1, AND/OR 2</th>\n<th>All gates 1</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2:1 MUX</td>\n<td>NOT → AND → OR</td>\n<td><strong>5</strong></td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td>n:2ⁿ decoder (with n-input AND)</td>\n<td>NOT → AND</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>3:8 decoder (with <strong>2-input</strong> ANDs)</td>\n<td>NOT → AND → AND</td>\n<td>5</td>\n<td><strong>3</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Block Longest path NOT 1, AND/OR 2 All gates 1 2:1 MUX NOT → AND → OR 5 3 n:2ⁿ decoder (with n-input AND) NOT → AND 3 2 3:8 decoder (with 2-input ANDs) NOT → AND → AND 5 3"
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Block</th>\n<th>Longest chain</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2:1 MUX (Y = S̄·I₀ + S·I₁)</td>\n<td>NOT → AND → OR</td>\n</tr>\n<tr>\n<td>n:2ⁿ decoder with n-input ANDs</td>\n<td>NOT → AND</td>\n</tr>\n<tr>\n<td>3:8 decoder from <strong>2-input</strong> ANDs</td>\n<td>NOT → AND → AND (a 3-input AND needs two 2-input ANDs in a row)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Block Longest chain 2:1 MUX (Y = S̄·I₀ + S·I₁) NOT → AND → OR n:2ⁿ decoder with n-input ANDs NOT → AND 3:8 decoder from 2-input ANDs NOT → AND → AND (a 3-input AND needs two 2-input ANDs in a row)"
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 1, answer 3)</strong> A 4×16\ndecoder uses NOT (1 ns) and 4-input AND gates (2 ns). Longest path = NOT\n→ AND = 1 + 2 = <strong>3 ns</strong>. ✔</p>\n</blockquote>",
-          "text": "Worked example (2026 T2 Quiz 1, answer 3) A 4×16\ndecoder uses NOT (1 ns) and 4-input AND gates (2 ns). Longest path = NOT\n→ AND = 1 + 2 = 3 ns . ✔"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q104 · 3 marks</p>\n<p><strong>Question:</strong> NOT has a delay of 1 ns, and 2-input\nAND/OR have 2 ns. Maximum delay of a 2×1 MUX?</p>\n<p><strong>Answer:</strong> <strong>5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q104 · 3 marks Question: NOT has a delay of 1 ns, and 2-input\nAND/OR have 2 ns. Maximum delay of a 2×1 MUX? Answer: 5"
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> a 3-input AND made from 2-input ANDs takes\n<strong>two</strong> gate delays (AND(AND(A, B), C)).</p>",
-          "text": "Trap: a 3-input AND made from 2-input ANDs takes two gate delays (AND(AND(A, B), C))."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: NOT = 2 ns, AND = 3 ns, OR = 3 ns. Delay of a 2:1 MUX?\n</summary>\n2 + 3 + 3 = 8 ns.\n</details>",
-          "text": "Try: NOT = 2 ns, AND = 3 ns, OR = 3 ns. Delay of a 2:1 MUX? 2 + 3 + 3 = 8 ns."
+          "html": "<ol type=\"1\">\n<li>Chain: S → NOT → AND → OR → Y</li>\n<li>Add: 1 + 2 + 2 = <strong>5 ns</strong> ✔</li>\n</ol>",
+          "text": "Chain: S → NOT → AND → OR → Y Add: 1 + 2 + 2 = 5 ns ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q11 and 2025 T3\nEnd-term (FN) · Q10 · 3 marks</p>\n<p><strong>Question:</strong> NOT and 2-input AND/OR all have a delay of\n1 ns. Maximum delay of a 2×1 MUX?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (AN) · Q11 and 2025 T3\nEnd-term (FN) · Q10 · 3 marks Question: NOT and 2-input AND/OR all have a delay of\n1 ns. Maximum delay of a 2×1 MUX? Answer: 3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> same chain NOT → AND → OR = 1 + 1 + 1\n= <strong>3 ns</strong> ✔</p>",
+          "text": "How to solve: same chain NOT → AND → OR = 1 + 1 + 1\n= 3 ns ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q171 · 3 marks</p>\n<p><strong>Question:</strong> NOT and 2-input AND/OR all have 1 ns\ndelay. Maximum delay of a 3×8 decoder?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q171 · 3 marks Question: NOT and 2-input AND/OR all have 1 ns\ndelay. Maximum delay of a 3×8 decoder? Answer: 3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Each output is a 3-input AND, like A̅·B·C̅. With 2-input ANDs:\nAND(AND(A̅, B), C̅) → <strong>2 ANDs in a row</strong>.</li>\n<li>Before that, the input goes through a NOT.</li>\n<li>Chain: NOT → AND → AND = 1 + 1 + 1 = <strong>3 ns</strong> ✔</li>\n</ol>",
+          "text": "Each output is a 3-input AND, like A̅·B·C̅. With 2-input ANDs:\nAND(AND(A̅, B), C̅) → 2 ANDs in a row . Before that, the input goes through a NOT. Chain: NOT → AND → AND = 1 + 1 + 1 = 3 ns ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q7 · 3 marks</p>\n<p><strong>Question:</strong> A 4×16 decoder uses NOT gates (1 ns) and\n4-input AND gates (2 ns). Maximum delay?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q7 · 3 marks Question: A 4×16 decoder uses NOT gates (1 ns) and\n4-input AND gates (2 ns). Maximum delay? Answer: 3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> each output is one 4-input AND. Chain:\nNOT → AND = 1 + 2 = <strong>3 ns</strong> ✔</p>",
+          "text": "How to solve: each output is one 4-input AND. Chain:\nNOT → AND = 1 + 2 = 3 ns ✔"
         },
         {
           "type": "html",
@@ -721,24 +788,18 @@
           "text": "Type 3: “What is F?” for a\nMUX circuit"
         },
         {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> a MUX box with things wired to I₀, I₁… and\nvariables on the select lines.</p>",
-          "text": "Spot it: a MUX box with things wired to I₀, I₁… and\nvariables on the select lines."
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<ol type=\"1\">\n<li>Make a table with <strong>one row for each select\npattern</strong>.</li>\n<li>In each row, write which signal reaches the output.</li>\n<li>Look for the pattern, then <strong>test every option</strong> with\nnumbers.</li>\n</ol>",
+          "text": "Make a table with one row for each select\npattern . In each row, write which signal reaches the output. Look for the pattern, then test every option with\nnumbers."
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write a small table: one row for each select pattern (S₁S₀ = 00, 01,\n10, 11).</li>\n<li>In each row, write <strong>which signal</strong> reaches the\noutput.</li>\n<li>Turn the table into a formula (or spot the pattern).</li>\n<li><strong>Check every option</strong> by putting in values. Don’t\ntrust “looks similar”.</li>\n</ol>",
-          "text": "Write a small table: one row for each select pattern (S₁S₀ = 00, 01,\n10, 11). In each row, write which signal reaches the\noutput. Turn the table into a formula (or spot the pattern). Check every option by putting in values. Don’t\ntrust “looks similar”."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1). The official key is wrong\nhere!</strong> A 4×1 MUX has I₀ = X, I₁ = X̅, I₂ = X, I₃ = X̅, with S₁ = Y\nand S₀ = Z.</p>\n<table>\n<thead>\n<tr>\n<th>Y (S₁)</th>\n<th>Z (S₀)</th>\n<th>Output</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>I₀ = X</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>I₁ = X̅</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>I₂ = X</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>I₃ = X̅</td>\n</tr>\n</tbody>\n</table>\n<p>When Z = 0, F = X. When Z = 1, F = X̅. So <strong>F = X ⊕ Z</strong>\n(Y doesn’t matter at all).</p>\n<p>The official answer was X(Z̅ + YZ) + X̅Y̅Z. Test it at X = 1, Y = 1, Z =\n1: it gives <strong>1</strong>, but the circuit gives I₃ = X̅ =\n<strong>0</strong>. So that option is wrong, and the correct choice is\n<strong>“None of these”</strong>. (We checked all 8 rows by\ncomputer.)</p>\n</blockquote>",
-          "text": "Worked example (2025 T2 Quiz 1). The official key is wrong\nhere! A 4×1 MUX has I₀ = X, I₁ = X̅, I₂ = X, I₃ = X̅, with S₁ = Y\nand S₀ = Z. Y (S₁) Z (S₀) Output 0 0 I₀ = X 0 1 I₁ = X̅ 1 0 I₂ = X 1 1 I₃ = X̅ When Z = 0, F = X. When Z = 1, F = X̅. So F = X ⊕ Z (Y doesn’t matter at all). The official answer was X(Z̅ + YZ) + X̅Y̅Z. Test it at X = 1, Y = 1, Z =\n1: it gives 1 , but the circuit gives I₃ = X̅ = 0 . So that option is wrong, and the correct choice is “None of these” . (We checked all 8 rows by\ncomputer.)"
+          "html": "<p><strong>Level 1:</strong> 2:1 MUX, S = A, I₀ = 0, I₁ = B. A = 0 → 0;\nA = 1 → B. So F = <strong>AB</strong>.</p>",
+          "text": "Level 1: 2:1 MUX, S = A, I₀ = 0, I₁ = B. A = 0 → 0;\nA = 1 → B. So F = AB ."
         },
         {
           "type": "image",
@@ -749,43 +810,125 @@
           "caption": "Fill one row per select pattern. Here\nthe output only follows Z, so F = X ⊕ Z."
         },
         {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q99 · 5 marks.\n<strong>The official key is wrong.</strong></p>\n<p><strong>Question:</strong> 4×1 MUX: I₀ = X, I₁ = X̄, I₂ = X, I₃ = X̄.\nS₁ = Y, S₀ = Z. What is F? Options: X(Z̄ + YZ) + X̄·Y·Z / X(Z̄ + YZ) +\nX̄·Ȳ·Z / X(Z + YZ) + X̄·Ȳ·Z / X(Z̄ + YZ) + X·Ȳ·Z / None of these</p>\n<p><strong>Answer (key):</strong> X(Z̄ + YZ) + X̄·Ȳ·Z · <strong>Correct\nanswer: None of these</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q99 · 5 marks. The official key is wrong. Question: 4×1 MUX: I₀ = X, I₁ = X̄, I₂ = X, I₃ = X̄.\nS₁ = Y, S₀ = Z. What is F? Options: X(Z̄ + YZ) + X̄·Y·Z / X(Z̄ + YZ) +\nX̄·Ȳ·Z / X(Z + YZ) + X̄·Ȳ·Z / X(Z̄ + YZ) + X·Ȳ·Z / None of these Answer (key): X(Z̄ + YZ) + X̄·Ȳ·Z · Correct\nanswer: None of these"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Table:</li>\n</ol>",
+          "text": "Table:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Y (S₁)</th>\n<th>Z (S₀)</th>\n<th>Input chosen</th>\n<th>F</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>I₀</td>\n<td>X</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>I₁</td>\n<td>X̄</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0</td>\n<td>I₂</td>\n<td>X</td>\n</tr>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>I₃</td>\n<td>X̄</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Y (S₁) Z (S₀) Input chosen F 0 0 I₀ X 0 1 I₁ X̄ 1 0 I₂ X 1 1 I₃ X̄"
+        },
+        {
+          "type": "html",
+          "html": "<ol start=\"2\" type=\"1\">\n<li>Z = 0 → F = X. Z = 1 → F = X̄. Y doesn’t matter. So <strong>F = X ⊕\nZ</strong>.</li>\n<li>Test the keyed option at X = 1, Y = 1, Z = 1: X(Z̄ + YZ) + X̄ȲZ = 1·(0\n+ 1) + 0 = <strong>1</strong>. The circuit gives I₃ = X̄ =\n<strong>0</strong> ✗</li>\n<li>No option equals X ⊕ Z → <strong>None of these</strong>. (We checked\nall 8 rows by computer.)</li>\n</ol>",
+          "text": "Z = 0 → F = X. Z = 1 → F = X̄. Y doesn’t matter. So F = X ⊕\nZ . Test the keyed option at X = 1, Y = 1, Z = 1: X(Z̄ + YZ) + X̄ȲZ = 1·(0\n+ 1) + 0 = 1 . The circuit gives I₃ = X̄ = 0 ✗ No option equals X ⊕ Z → None of these . (We checked\nall 8 rows by computer.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q169 · 5 marks.\n<strong>The official key is wrong.</strong></p>\n<p><strong>Question:</strong> The same MUX circuit (I₀ = X, I₁ = X̄, I₂ =\nX, I₃ = X̄, S₁ = Y, S₀ = Z). What is F? Options: X ⊕ Y / X ⊙ Y / X + Y /\nXY / None of these</p>\n<p><strong>Answer (key):</strong> X ⊕ Y · <strong>Correct answer: None\nof these</strong> (F = X ⊕ Z)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q169 · 5 marks. The official key is wrong. Question: The same MUX circuit (I₀ = X, I₁ = X̄, I₂ =\nX, I₃ = X̄, S₁ = Y, S₀ = Z). What is F? Options: X ⊕ Y / X ⊙ Y / X + Y /\nXY / None of these Answer (key): X ⊕ Y · Correct answer: None\nof these (F = X ⊕ Z)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Same table as above → <strong>F = X ⊕ Z</strong></li>\n<li>The key says X ⊕ Y. Test X = 0, Y = 1, Z = 0: X ⊕ Y = 1, but the\ncircuit picks I₂ = X = <strong>0</strong> ✗</li>\n<li>F depends on <strong>Z</strong> (S₀), not Y. None of the options is\nX ⊕ Z → <strong>None of these</strong>.</li>\n</ol>",
+          "text": "Same table as above → F = X ⊕ Z The key says X ⊕ Y. Test X = 0, Y = 1, Z = 0: X ⊕ Y = 1, but the\ncircuit picks I₂ = X = 0 ✗ F depends on Z (S₀), not Y. None of the options is\nX ⊕ Z → None of these ."
+        },
+        {
           "type": "html",
           "html": "<hr/>",
           "text": ""
         },
         {
           "type": "heading",
-          "text": "Type 4: Decoder + OR circuit"
+          "text": "Type 4: Decoder + OR circuits"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Spot it:</strong> a 3×8 decoder with some outputs (D₂, D₃, …)\nwired into an OR gate.</p>",
-          "text": "Spot it: a 3×8 decoder with some outputs (D₂, D₃, …)\nwired into an OR gate."
+          "html": "<ol type=\"1\">\n<li>Every decoder output Dₖ is minterm k. If Dₖ goes into the OR, then\n<strong>k is in Σm</strong>.</li>\n<li>Follow each wire carefully. A wire can bend and join another\nline.</li>\n<li>Simplify, then answer what is asked.</li>\n</ol>",
+          "text": "Every decoder output Dₖ is minterm k. If Dₖ goes into the OR, then k is in Σm . Follow each wire carefully. A wire can bend and join another\nline. Simplify, then answer what is asked."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q2 · 5 marks</p>\n<p><strong>Question:</strong> A 3:8 decoder (A, B, C) has D₂, D₃, D₅, D₆\nwired into an OR → Y. Using only 2:1 MUXes, minimum number needed?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q2 · 5 marks Question: A 3:8 decoder (A, B, C) has D₂, D₃, D₅, D₆\nwired into an OR → Y. Using only 2:1 MUXes, minimum number needed? Answer: 3"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li><strong>Write F = Σm(the connected output numbers).</strong> Follow\nevery wire carefully. Sometimes a wire bends and joins another\nline.</li>\n<li>Simplify F.</li>\n<li>Answer what is asked (gate count, MUX count, output for an\ninput…).</li>\n</ol>",
-          "text": "Write F = Σm(the connected output numbers). Follow\nevery wire carefully. Sometimes a wire bends and joins another\nline. Simplify F. Answer what is asked (gate count, MUX count, output for an\ninput…)."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 1, answer 3)</strong> D₂, D₃,\nD₅, D₆ go into the OR. So <strong>F(A, B, C) = Σm(2, 3, 5,\n6)</strong>.</p>\n<ul>\n<li>A = 0: rows 0–3 give 0, 0, 1, 1 → F = <strong>B</strong>.</li>\n<li>A = 1: rows 4–7 give 0, 1, 1, 0 → F = <strong>B ⊕ C</strong>.</li>\n</ul>\n<p>So F = B ⊕ AC. Minimum 2:1 MUXes (only muxes, no free inverters):\n<strong>3</strong>. One way: M1 = MUX(S=A, I₀=0, I₁=C) = AC; M2 =\nMUX(S=M1, I₀=1, I₁=0) = (AC)̅; F = MUX(S=B, I₀=M1, I₁=M2). ✔</p>\n</blockquote>",
-          "text": "Worked example (2026 T2 Quiz 1, answer 3) D₂, D₃,\nD₅, D₆ go into the OR. So F(A, B, C) = Σm(2, 3, 5,\n6) . A = 0: rows 0–3 give 0, 0, 1, 1 → F = B . A = 1: rows 4–7 give 0, 1, 1, 0 → F = B ⊕ C . So F = B ⊕ AC. Minimum 2:1 MUXes (only muxes, no free inverters): 3 . One way: M1 = MUX(S=A, I₀=0, I₁=C) = AC; M2 =\nMUX(S=M1, I₀=1, I₁=0) = (AC)̅; F = MUX(S=B, I₀=M1, I₁=M2). ✔"
+          "html": "<ol type=\"1\">\n<li>Y = Σm(2, 3, 5, 6) = 010, 011, 101, 110</li>\n<li>Split on A:\n<ul>\n<li>A = 0 (rows 0–3): Y = 0, 0, 1, 1 → <strong>Y = B</strong></li>\n<li>A = 1 (rows 4–7): Y = 0, 1, 1, 0 → <strong>Y = B ⊕ C</strong></li>\n</ul></li>\n<li>So Y = Ā·B + A·(B ⊕ C) = <strong>B ⊕ AC</strong></li>\n<li>Build with MUXes (NOT costs a MUX):\n<ul>\n<li>M1 = MUX(S = A, I₀ = 0, I₁ = C) = <strong>AC</strong></li>\n<li>M2 = MUX(S = M1, I₀ = 1, I₁ = 0) = <strong>NOT(AC)</strong></li>\n<li>Y = MUX(S = B, I₀ = M1, I₁ = M2) = B ⊕ AC</li>\n</ul></li>\n<li>Total <strong>3</strong> ✔ (a computer search confirmed 2 is\nimpossible)</li>\n</ol>",
+          "text": "Y = Σm(2, 3, 5, 6) = 010, 011, 101, 110 Split on A: A = 0 (rows 0–3): Y = 0, 0, 1, 1 → Y = B A = 1 (rows 4–7): Y = 0, 1, 1, 0 → Y = B ⊕ C So Y = Ā·B + A·(B ⊕ C) = B ⊕ AC Build with MUXes (NOT costs a MUX): M1 = MUX(S = A, I₀ = 0, I₁ = C) = AC M2 = MUX(S = M1, I₀ = 1, I₁ = 0) = NOT(AC) Y = MUX(S = B, I₀ = M1, I₁ = M2) = B ⊕ AC Total 3 ✔ (a computer search confirmed 2 is\nimpossible)"
         },
         {
           "type": "html",
-          "html": "<p><strong>Same circuit in other papers:</strong></p>",
-          "text": "Same circuit in other papers:"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q106 · 4 marks</p>\n<p><strong>Question:</strong> The same decoder circuit. Using 2-input\nXOR gates plus NAND gates, minimum number of <strong>NAND</strong>\ngates?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q106 · 4 marks Question: The same decoder circuit. Using 2-input\nXOR gates plus NAND gates, minimum number of NAND gates? Answer: 2"
         },
         {
           "type": "html",
-          "html": "<ul>\n<li>2025 T2 Quiz 1 asked: with XOR gates available, how many\n<strong>NAND</strong> gates? F = B ⊕ AC needs one XOR and one AND, and\nan AND costs <strong>2 NANDs</strong> → <strong>2</strong>.</li>\n<li>2025 T3 Quiz 1 asked: how many <strong>4:1</strong> MUXes? Answer\n<strong>1</strong>: S₁S₀ = AB, inputs 0, 1, C, C̅. This only works if\n<strong>C̅ is available</strong> for free. Using just muxes, you’d need a\nNOT too. Say this assumption in your rough work.</li>\n</ul>",
-          "text": "2025 T2 Quiz 1 asked: with XOR gates available, how many NAND gates? F = B ⊕ AC needs one XOR and one AND, and\nan AND costs 2 NANDs → 2 . 2025 T3 Quiz 1 asked: how many 4:1 MUXes? Answer 1 : S₁S₀ = AB, inputs 0, 1, C, C̅. This only works if C̅ is available for free. Using just muxes, you’d need a\nNOT too. Say this assumption in your rough work."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Y = B ⊕ AC (from above)</li>\n<li>The XOR is free (XOR gates are given). We only need\n<strong>AC</strong> from NANDs.</li>\n<li>AND from NAND = <strong>2</strong>: G1 = NAND(A, C), G2 = NAND(G1,\nG1) = AC ✔</li>\n</ol>",
+          "text": "Y = B ⊕ AC (from above) The XOR is free (XOR gates are given). We only need AC from NANDs. AND from NAND = 2 : G1 = NAND(A, C), G2 = NAND(G1,\nG1) = AC ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q174 · 5 marks</p>\n<p><strong>Question:</strong> The same decoder circuit. Using only\n<strong>4:1</strong> MUXes, minimum number?</p>\n<p><strong>Answer:</strong> <strong>1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q174 · 5 marks Question: The same decoder circuit. Using only 4:1 MUXes, minimum number? Answer: 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Put A, B on the select lines (S₁ = A, S₀ = B). Each input is then a\nfunction of C alone:</li>\n</ol>",
+          "text": "Put A, B on the select lines (S₁ = A, S₀ = B). Each input is then a\nfunction of C alone:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>A B</th>\n<th>Rows</th>\n<th>Y</th>\n<th>Input</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>00</td>\n<td>0, 1</td>\n<td>0, 0</td>\n<td>I₀ = <strong>0</strong></td>\n</tr>\n<tr>\n<td>01</td>\n<td>2, 3</td>\n<td>1, 1</td>\n<td>I₁ = <strong>1</strong></td>\n</tr>\n<tr>\n<td>10</td>\n<td>4, 5</td>\n<td>0, 1</td>\n<td>I₂ = <strong>C</strong></td>\n</tr>\n<tr>\n<td>11</td>\n<td>6, 7</td>\n<td>1, 0</td>\n<td>I₃ = <strong>C̄</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "A B Rows Y Input 00 0, 1 0, 0 I₀ = 0 01 2, 3 1, 1 I₁ = 1 10 4, 5 0, 1 I₂ = C 11 6, 7 1, 0 I₃ = C̄"
+        },
+        {
+          "type": "html",
+          "html": "<ol start=\"2\" type=\"1\">\n<li>One 4:1 MUX does it → <strong>1</strong> ✔</li>\n<li><strong>Note:</strong> this assumes C̄ is available. With only MUXes,\nC̄ would need one more.</li>\n</ol>",
+          "text": "One 4:1 MUX does it → 1 ✔ Note: this assumes C̄ is available. With only MUXes,\nC̄ would need one more."
         },
         {
           "type": "html",
@@ -797,24 +940,23 @@
           "text": "Type 5: Minimum number of 2:1\nMUXes"
         },
         {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> “minimum number of 2:1 multiplexers to\nimplement F…”</p>",
-          "text": "Spot it: “minimum number of 2:1 multiplexers to\nimplement F…”"
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>The rule the papers use:</strong> you get the variables and\nthe constants 0 and 1 for free. A <strong>NOT costs one MUX</strong>: A̅\n= MUX(S=A, I₀=1, I₁=0).</p>",
-          "text": "The rule the papers use: you get the variables and\nthe constants 0 and 1 for free. A NOT costs one MUX : A̅\n= MUX(S=A, I₀=1, I₁=0)."
+          "html": "<p><strong>Rules the papers use:</strong> the variables and 0, 1 are\nfree. <strong>A NOT costs one MUX</strong>: Ā = MUX(S = A, I₀ = 1, I₁ =\n0).</p>",
+          "text": "Rules the papers use: the variables and 0, 1 are\nfree. A NOT costs one MUX : Ā = MUX(S = A, I₀ = 1, I₁ =\n0)."
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<p><strong>Splitting on one variable:</strong> F = Ā·(F when A = 0) +\nA·(F when A = 1) = MUX(S = A, I₀ = F|A=0, I₁ = F|A=1)</p>",
+          "text": "Splitting on one variable: F = Ā·(F when A = 0) +\nA·(F when A = 1) = MUX(S = A, I₀ = F|A=0, I₁ = F|A=1)"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Simplify F first.</li>\n<li>Try each variable as the select line. Write <strong>F when it’s\n0</strong> and <strong>F when it’s 1</strong>.</li>\n<li>If both halves are just a variable, a constant, or 0/1 → <strong>1\nMUX</strong>.</li>\n<li>If a half needs a NOT or another function, build that half with more\nMUXes and add them up.</li>\n</ol>",
-          "text": "Simplify F first. Try each variable as the select line. Write F when it’s\n0 and F when it’s 1 . If both halves are just a variable, a constant, or 0/1 → 1\nMUX . If a half needs a NOT or another function, build that half with more\nMUXes and add them up."
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Function</th>\n<th>2:1 MUXes</th>\n<th>How</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A·B</td>\n<td>1</td>\n<td>MUX(S = A, I₀ = 0, I₁ = B)</td>\n</tr>\n<tr>\n<td>A + B</td>\n<td>1</td>\n<td>MUX(S = A, I₀ = B, I₁ = 1)</td>\n</tr>\n<tr>\n<td>Ā</td>\n<td>1</td>\n<td>MUX(S = A, I₀ = 1, I₁ = 0)</td>\n</tr>\n<tr>\n<td>A ⊕ B</td>\n<td>2</td>\n<td>B̄ first, then MUX(S = A, I₀ = B, I₁ = B̄)</td>\n</tr>\n<tr>\n<td>A ⊙ B</td>\n<td>2</td>\n<td>B̄ first, then MUX(S = A, I₀ = B̄, I₁ = B)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Function 2:1 MUXes How A·B 1 MUX(S = A, I₀ = 0, I₁ = B) A + B 1 MUX(S = A, I₀ = B, I₁ = 1) Ā 1 MUX(S = A, I₀ = 1, I₁ = 0) A ⊕ B 2 B̄ first, then MUX(S = A, I₀ = B, I₁ = B̄) A ⊙ B 2 B̄ first, then MUX(S = A, I₀ = B̄, I₁ = B)"
         },
         {
           "type": "image",
@@ -822,32 +964,111 @@
           "width": 1536,
           "height": 1024,
           "alt": "Gates made from 2:1 MUXes",
-          "caption": "AND, OR and AB̅ need 1 MUX. NOT\nneeds 1. NAND, NOR, XOR and XNOR need 2."
+          "caption": "AND, OR and NOT need 1 MUX. XOR\nand XNOR need 2."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Function</th>\n<th>2:1 MUXes</th>\n<th>How</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A·B</td>\n<td>1</td>\n<td>MUX(S=A, I₀=0, I₁=B)</td>\n</tr>\n<tr>\n<td>A + B</td>\n<td>1</td>\n<td>MUX(S=A, I₀=B, I₁=1)</td>\n</tr>\n<tr>\n<td>A̅</td>\n<td>1</td>\n<td>MUX(S=A, I₀=1, I₁=0)</td>\n</tr>\n<tr>\n<td>A ⊕ B</td>\n<td><strong>2</strong></td>\n<td>B̅ first, then MUX(S=A, I₀=B, I₁=B̅)</td>\n</tr>\n<tr>\n<td>A ⊙ B (XNOR)</td>\n<td><strong>2</strong></td>\n<td>B̅ first, then MUX(S=A, I₀=B̅, I₁=B)</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Function 2:1 MUXes How A·B 1 MUX(S=A, I₀=0, I₁=B) A + B 1 MUX(S=A, I₀=B, I₁=1) A̅ 1 MUX(S=A, I₀=1, I₁=0) A ⊕ B 2 B̅ first, then MUX(S=A, I₀=B, I₁=B̅) A ⊙ B (XNOR) 2 B̅ first, then MUX(S=A, I₀=B̅, I₁=B)"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q158, 2026 T2\nEnd-term · Q11 · 3 marks each</p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for A ⊙ B (XNOR)?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q158, 2026 T2\nEnd-term · Q11 · 3 marks each Question: Minimum 2:1 MUXes for A ⊙ B (XNOR)? Answer: 2"
         },
         {
           "type": "html",
-          "html": "<p>All counts checked by a computer search.</p>",
-          "text": "All counts checked by a computer search."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 2)</strong> XNOR\nwith 2:1 MUXes → <strong>2</strong>.</p>\n</blockquote>",
-          "text": "Worked example (2026 T2 end-term, answer 2) XNOR\nwith 2:1 MUXes → 2 ."
+          "html": "<ol type=\"1\">\n<li>Split on A: A = 0 → F = B̄; A = 1 → F = B</li>\n<li>We need B̄ → one MUX: M1 = MUX(S = B, I₀ = 1, I₁ = 0)</li>\n<li>F = MUX(S = A, I₀ = M1, I₁ = B) → total <strong>2</strong> ✔</li>\n</ol>",
+          "text": "Split on A: A = 0 → F = B̄; A = 1 → F = B We need B̄ → one MUX: M1 = MUX(S = B, I₀ = 1, I₁ = 0) F = MUX(S = A, I₀ = M1, I₁ = B) → total 2 ✔"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 2, answer 2)</strong> F(A, B, C)\n= Σ(0, 1, 2, 3, 4, 5, 7). F = 0 only in row 6 (110), so <strong>F = A̅ +\nB̅ + C</strong>.</p>\n<ul>\n<li>A = 0 → F = 1. A = 1 → F = B̅ + C.</li>\n<li>B̅ + C: B = 0 → 1, B = 1 → C. That’s MUX(S=B, I₀=1, I₁=C), with\n<strong>no inverter needed</strong>!</li>\n<li>F = MUX(S=A, I₀=1, I₁=that). <strong>Total 2.</strong> ✔</li>\n</ul>\n<p>Same paper, with <strong>3-input NAND</strong> gates: F = (A·B·C̅)̅ =\nNAND(A, B, C̅). C̅ = NAND(C, C, C). <strong>Total 2.</strong> ✔</p>\n</blockquote>",
-          "text": "Worked example (2026 T2 Quiz 2, answer 2) F(A, B, C)\n= Σ(0, 1, 2, 3, 4, 5, 7). F = 0 only in row 6 (110), so F = A̅ +\nB̅ + C . A = 0 → F = 1. A = 1 → F = B̅ + C. B̅ + C: B = 0 → 1, B = 1 → C. That’s MUX(S=B, I₀=1, I₁=C), with no inverter needed ! F = MUX(S=A, I₀=1, I₁=that). Total 2. ✔ Same paper, with 3-input NAND gates: F = (A·B·C̅)̅ =\nNAND(A, B, C̅). C̅ = NAND(C, C, C). Total 2. ✔"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q126 · 3 marks</p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for A ⊕ B (XOR)?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (FN) · Q126 · 3 marks Question: Minimum 2:1 MUXes for A ⊕ B (XOR)? Answer: 2"
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> a question that leaves out the symbol, like\n“F(X, Y, Z) = (4, 5, 6, 7)” (2025 T2 Quiz 1). If it is Σ, F = X (0\nMUXes, just a wire). If it is Π, F = X̅ (1 MUX). The official answer “2”\nfits neither reading, so that question was faulty. Don’t worry if you\nmeet one like it; choose the most sensible reading.</p>",
-          "text": "Trap: a question that leaves out the symbol, like\n“F(X, Y, Z) = (4, 5, 6, 7)” (2025 T2 Quiz 1). If it is Σ, F = X (0\nMUXes, just a wire). If it is Π, F = X̅ (1 MUX). The official answer “2”\nfits neither reading, so that question was faulty. Don’t worry if you\nmeet one like it; choose the most sensible reading."
+          "html": "<p><strong>How to solve:</strong> split on A: A = 0 → B, A = 1 → B̄. Make\nB̄ (1 MUX) + the final MUX (1) = <strong>2</strong>.</p>",
+          "text": "How to solve: split on A: A = 0 → B, A = 1 → B̄. Make\nB̄ (1 MUX) + the final MUX (1) = 2 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q173 · 5 marks</p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for F(X, Y) = Π(0,\n3)?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q173 · 5 marks Question: Minimum 2:1 MUXes for F(X, Y) = Π(0,\n3)? Answer: 2"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F = 0 in rows 0 (00) and 3 (11) → F = 1 in rows 01, 10 → <strong>F =\nX ⊕ Y</strong></li>\n<li>XOR = <strong>2</strong> MUXes ✔</li>\n</ol>",
+          "text": "F = 0 in rows 0 (00) and 3 (11) → F = 1 in rows 01, 10 → F =\nX ⊕ Y XOR = 2 MUXes ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q4 · 5 marks</p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for F(X, Y, Z) = Π(0,\n4)?</p>\n<p><strong>Answer:</strong> <strong>1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q4 · 5 marks Question: Minimum 2:1 MUXes for F(X, Y, Z) = Π(0,\n4)? Answer: 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F = 0 in rows 000 and 100 → F = 0 only when Y = 0 and Z = 0 →\n<strong>F = Y + Z</strong></li>\n<li>OR = <strong>1</strong> MUX: MUX(S = Y, I₀ = Z, I₁ = 1) ✔</li>\n</ol>",
+          "text": "F = 0 in rows 000 and 100 → F = 0 only when Y = 0 and Z = 0 → F = Y + Z OR = 1 MUX: MUX(S = Y, I₀ = Z, I₁ = 1) ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 2 · Q139 · 3 marks</p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for F = Σ(0, 2, 8,\n10)?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 2 · Q139 · 3 marks Question: Minimum 2:1 MUXes for F = Σ(0, 2, 8,\n10)? Answer: 2"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F = B̄·D̄ (B = 0 and D = 0 in all four rows)</li>\n<li>Split on B: B = 0 → D̄; B = 1 → 0</li>\n<li>Make D̄ (1 MUX), then MUX(S = B, I₀ = D̄, I₁ = 0) (1 MUX) →\n<strong>2</strong> ✔</li>\n</ol>",
+          "text": "F = B̄·D̄ (B = 0 and D = 0 in all four rows) Split on B: B = 0 → D̄; B = 1 → 0 Make D̄ (1 MUX), then MUX(S = B, I₀ = D̄, I₁ = 0) (1 MUX) → 2 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q13 · 3 marks</p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for F = Σ(0, 1, 2, 3, 4,\n5, 7)?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 2 · Q13 · 3 marks Question: Minimum 2:1 MUXes for F = Σ(0, 1, 2, 3, 4,\n5, 7)? Answer: 2"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F = 0 only in row 6 (110) → F = Ā + B̄ + C</li>\n<li>Split on A: A = 0 → <strong>1</strong>. A = 1 → B̄ + C.</li>\n<li>B̄ + C, split on B: B = 0 → 1, B = 1 → C → MUX(S = B, I₀ = 1, I₁ =\nC), with <strong>no NOT needed</strong>.</li>\n<li>F = MUX(S = A, I₀ = 1, I₁ = that MUX) → total <strong>2</strong>\n✔</li>\n</ol>",
+          "text": "F = 0 only in row 6 (110) → F = Ā + B̄ + C Split on A: A = 0 → 1 . A = 1 → B̄ + C. B̄ + C, split on B: B = 0 → 1, B = 1 → C → MUX(S = B, I₀ = 1, I₁ =\nC), with no NOT needed . F = MUX(S = A, I₀ = 1, I₁ = that MUX) → total 2 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q101 · 5 marks.\n<strong>Flawed question.</strong></p>\n<p><strong>Question:</strong> Minimum 2:1 MUXes for F(X, Y, Z) = (4, 5,\n6, 7)?</p>\n<p><strong>Answer (key):</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q101 · 5 marks. Flawed question. Question: Minimum 2:1 MUXes for F(X, Y, Z) = (4, 5,\n6, 7)? Answer (key): 2"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve, and what’s wrong:</strong></p>",
+          "text": "How to solve, and what’s wrong:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>The paper forgot to write Σ or Π.</li>\n<li>If Σ: F = 1 in rows 100–111 → <strong>F = X</strong> →\n<strong>0</strong> MUXes (just a wire).</li>\n<li>If Π: F = 0 in rows 4–7 → <strong>F = X̄</strong> →\n<strong>1</strong> MUX.</li>\n<li>Neither gives 2. The question is faulty. If it comes again, read the\nsymbol carefully.</li>\n</ol>",
+          "text": "The paper forgot to write Σ or Π. If Σ: F = 1 in rows 100–111 → F = X → 0 MUXes (just a wire). If Π: F = 0 in rows 4–7 → F = X̄ → 1 MUX. Neither gives 2. The question is faulty. If it comes again, read the\nsymbol carefully."
         },
         {
           "type": "html",
@@ -859,34 +1080,28 @@
           "text": "Type 6: Priority encoder\noutput"
         },
         {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> “4-to-2 priority encoder… L₃ highest… what\nis the output for (L₃, L₂, L₁, L₀) = …?”</p>",
-          "text": "Spot it: “4-to-2 priority encoder… L₃ highest… what\nis the output for (L₃, L₂, L₁, L₀) = …?”"
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<ol type=\"1\">\n<li>Find the <strong>highest-numbered input that is 1</strong>. It\nwins.</li>\n<li>Write its number in binary. <strong>Done.</strong></li>\n<li>Optional check: put the values into the given equations.</li>\n</ol>",
+          "text": "Find the highest-numbered input that is 1 . It\nwins. Write its number in binary. Done. Optional check: put the values into the given equations."
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Find the <strong>highest-numbered input that is 1</strong>.</li>\n<li>Write its number in binary. <strong>Done.</strong></li>\n<li>(Optional check: plug into the given equations.)</li>\n</ol>",
-          "text": "Find the highest-numbered input that is 1 . Write its number in binary. Done. (Optional check: plug into the given equations.)"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 End-term · Q9 · 3 marks</p>\n<p><strong>Question:</strong> A 4-to-2 priority encoder: L₃ has the\nhighest priority, L₀ the lowest. Y₁ = L₃ + L₂ and Y₀ = L₃ + L̄₂L₁. Output\nfor (L₃, L₂, L₁, L₀) = (0, 1, 1, 1)?</p>\n<p><strong>Answer:</strong> <strong>10</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 End-term · Q9 · 3 marks Question: A 4-to-2 priority encoder: L₃ has the\nhighest priority, L₀ the lowest. Y₁ = L₃ + L₂ and Y₀ = L₃ + L̄₂L₁. Output\nfor (L₃, L₂, L₁, L₀) = (0, 1, 1, 1)? Answer: 10"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 10)</strong> (0, 1,\n1, 1): the highest 1 is L₂ → 2 → <strong>10</strong>. ✔</p>\n</blockquote>",
-          "text": "Worked example (2026 T2 end-term, answer 10) (0, 1,\n1, 1): the highest 1 is L₂ → 2 → 10 . ✔"
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: (L₃, L₂, L₁, L₀) = (0, 0, 1, 1).\n</summary>\n01 (L₁ is the highest input that is on).\n</details>",
-          "text": "Try: (L₃, L₂, L₁, L₀) = (0, 0, 1, 1). 01 (L₁ is the highest input that is on)."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nTry: (1, 0, 1, 0).\n</summary>\n11 (L₃ wins).\n</details>",
-          "text": "Try: (1, 0, 1, 0). 11 (L₃ wins)."
+          "html": "<ol type=\"1\">\n<li>The highest input that is 1 is <strong>L₂</strong> → 2 → binary\n<strong>10</strong></li>\n<li>Check: Y₁ = 0 + 1 = <strong>1</strong>; Y₀ = 0 + (L̄₂ = 0)·1 =\n<strong>0</strong> → <strong>10</strong> ✔</li>\n</ol>",
+          "text": "The highest input that is 1 is L₂ → 2 → binary 10 Check: Y₁ = 0 + 1 = 1 ; Y₀ = 0 + (L̄₂ = 0)·1 = 0 → 10 ✔"
         },
         {
           "type": "html",
@@ -894,23 +1109,38 @@
           "text": ""
         },
         {
-          "type": "html",
-          "html": "<p><strong>In one line:</strong> Learn the five true/false facts, add\ndelays along the longest chain, read MUX and decoder circuits row by\nrow, count MUXes by splitting on one variable (NOT costs a MUX), and for\na priority encoder just find the highest 1. <strong>Exam words:</strong>\ndecoder, encoder, priority encoder, multiplexer, propagation delay,\nlongest path, select lines, Σm, minimum MUX count.</p>",
-          "text": "In one line: Learn the five true/false facts, add\ndelays along the longest chain, read MUX and decoder circuits row by\nrow, count MUXes by splitting on one variable (NOT costs a MUX), and for\na priority encoder just find the highest 1. Exam words: decoder, encoder, priority encoder, multiplexer, propagation delay,\nlongest path, select lines, Σm, minimum MUX count."
-        },
-        {
           "type": "heading",
-          "text": "Quick check"
+          "text": "Practice set"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nHow many 2:1 MUXes for F(X, Y) = Π(0, 3)? (2025 T3 Quiz 1)\n</summary>\n<ol start=\"2\" type=\"1\">\n<li>F = 0 at 00 and 11, so F = X ⊕ Y, which needs 2 MUXes.\n</li></ol></details>",
-          "text": "How many 2:1 MUXes for F(X, Y) = Π(0, 3)? (2025 T3 Quiz 1) F = 0 at 00 and 11, so F = X ⊕ Y, which needs 2 MUXes."
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>NOT = 2 ns, AND = OR = 3 ns. Delay of a 2:1 MUX?\n</li></ol></summary>\n2 + 3 + 3 = 8 ns.\n</details>",
+          "text": "NOT = 2 ns, AND = OR = 3 ns. Delay of a 2:1 MUX? 2 + 3 + 3 = 8 ns."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nA 3×8 decoder (NOT and 2-input AND, all 1 ns). Maximum delay? (2025 T3\nQuiz 1)\n</summary>\n3 ns (NOT → AND → AND).\n</details>",
-          "text": "A 3×8 decoder (NOT and 2-input AND, all 1 ns). Maximum delay? (2025 T3\nQuiz 1) 3 ns (NOT → AND → AND)."
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>4:1 MUX with I₀ = 0, I₁ = 1, I₂ = 1, I₃ = 0 and S₁ = A, S₀ = B. F?\n</li></ol></summary>\nRows 00→0, 01→1, 10→1, 11→0 → F = A ⊕ B.\n</details>",
+          "text": "4:1 MUX with I₀ = 0, I₁ = 1, I₂ = 1, I₃ = 0 and S₁ = A, S₀ = B. F? Rows 00→0, 01→1, 10→1, 11→0 → F = A ⊕ B."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>A 3:8 decoder with D₁, D₂, D₄, D₇ into an OR. F?\n</li></ol></summary>\nΣm(1, 2, 4, 7) = A ⊕ B ⊕ C.\n</details>",
+          "text": "A 3:8 decoder with D₁, D₂, D₄, D₇ into an OR. F? Σm(1, 2, 4, 7) = A ⊕ B ⊕ C."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>Minimum 2:1 MUXes for F = A·B̄?\n</li></ol></summary>\n1: MUX(S = B, I₀ = A, I₁ = 0).\n</details>",
+          "text": "Minimum 2:1 MUXes for F = A·B̄? 1: MUX(S = B, I₀ = A, I₁ = 0)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Priority encoder input (L₃, L₂, L₁, L₀) = (1, 0, 0, 1). Output?\n</li></ol></summary>\nL₃ wins → 11.\n</details>",
+          "text": "Priority encoder input (L₃, L₂, L₁, L₀) = (1, 0, 0, 1). Output? L₃ wins → 11."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Learn the true/false facts, add delays\nalong the longest chain, read MUX/decoder circuits row by row, split on\none variable to count MUXes (NOT costs one), and for a priority encoder\njust find the highest 1. <strong>Exam words:</strong> decoder, encoder,\npriority encoder, multiplexer, select line, propagation delay, Σm,\nminimum MUX count.</p>",
+          "text": "In one line: Learn the true/false facts, add delays\nalong the longest chain, read MUX/decoder circuits row by row, split on\none variable to count MUXes (NOT costs one), and for a priority encoder\njust find the highest 1. Exam words: decoder, encoder,\npriority encoder, multiplexer, select line, propagation delay, Σm,\nminimum MUX count."
         }
       ]
     },

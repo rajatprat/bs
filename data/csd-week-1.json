@@ -1325,8 +1325,8 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 1 gives easy marks in every paper: a\nMoore’s Law true/false, a “find the unknown bases” question, a\nbase-conversion question and a “how many bits” question. They take one\nminute each <strong>if</strong> you know the steps. This page puts all\nof them in one place, with examples from real papers.</p>\n</blockquote>",
-          "text": "Start here Week 1 gives easy marks in every paper: a\nMoore’s Law true/false, a “find the unknown bases” question, a\nbase-conversion question and a “how many bits” question. They take one\nminute each if you know the steps. This page puts all\nof them in one place, with examples from real papers."
+          "html": "<blockquote>\n<p><strong>Start here</strong> Every Week 1 question in the past papers\nis on this page, with the exact paper it came from. For each type you\nfirst <strong>learn the method from zero</strong> (Level 1 → Level 3),\nthen you see <strong>every real question</strong> solved step by step,\nwriting out every line.</p>\n</blockquote>",
+          "text": "Start here Every Week 1 question in the past papers\nis on this page, with the exact paper it came from. For each type you\nfirst learn the method from zero (Level 1 → Level 3),\nthen you see every real question solved step by step,\nwriting out every line."
         },
         {
           "type": "image",
@@ -1338,32 +1338,8 @@
         },
         {
           "type": "html",
-          "html": "<hr/>",
-          "text": ""
-        },
-        {
-          "type": "heading",
-          "text": "Type\n1: Moore’s Law true/false (1 mark, almost every end-term)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li><strong>Y ÷ X</strong> = how many times bigger.</li>\n<li>Write it as <strong>2ⁿ</strong> → n doublings.</li>\n<li>Time = <strong>2 × n years</strong>. Compare with the question.</li>\n</ol>",
-          "text": "Y ÷ X = how many times bigger. Write it as 2ⁿ → n doublings. Time = 2 × n years . Compare with the question."
-        },
-        {
-          "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Statement from a real paper</th>\n<th>Answer</th>\n<th>Why</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>“2 million transistors today → about 32 million in <strong>4\nyears</strong>” (2026 T2 end-term)</td>\n<td><strong>False</strong></td>\n<td>16× = 2⁴ → 4 doublings × 2 = <strong>8 years</strong></td>\n</tr>\n<tr>\n<td>“2 million today → about 32 million in <strong>7 years</strong>”\n(2025 T2 end-term)</td>\n<td><strong>False</strong></td>\n<td>Still 8 years</td>\n</tr>\n<tr>\n<td>“2 million today → about 32 million in <strong>8 years</strong>”\n(2025 T2 end-term, other shift)</td>\n<td><strong>True</strong></td>\n<td>Exactly 8 years</td>\n</tr>\n<tr>\n<td>“The <strong>size</strong> of transistors doubles about every two\nyears” (2025 T3 end-term)</td>\n<td><strong>False</strong></td>\n<td>It’s the <strong>number</strong> of transistors that doubles. Size\ngets <strong>smaller</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Statement from a real paper Answer Why “2 million transistors today → about 32 million in 4\nyears ” (2026 T2 end-term) False 16× = 2⁴ → 4 doublings × 2 = 8 years “2 million today → about 32 million in 7 years ”\n(2025 T2 end-term) False Still 8 years “2 million today → about 32 million in 8 years ”\n(2025 T2 end-term, other shift) True Exactly 8 years “The size of transistors doubles about every two\nyears” (2025 T3 end-term) False It’s the number of transistors that doubles. Size\ngets smaller"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Trap:</strong> read every word. “Size” vs “number” changes\nthe answer.</p>",
-          "text": "Trap: read every word. “Size” vs “number” changes\nthe answer."
+          "html": "<p><strong>How to read this page:</strong> each grey “Asked in” box is a\nreal past-paper question. It shows the paper, the question number and\nthe marks. Below it, <strong>How to solve</strong> shows every step.</p>",
+          "text": "How to read this page: each grey “Asked in” box is a\nreal past-paper question. It shows the paper, the question number and\nthe marks. Below it, How to solve shows every step."
         },
         {
           "type": "html",
@@ -1372,119 +1348,85 @@
         },
         {
           "type": "heading",
-          "text": "Type 2: Minimum bits (3 marks)"
+          "text": "Type\n1: Converting any base to decimal (the skill behind everything)"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p>There are <strong>two different questions</strong> that look\nalike:</p>",
-          "text": "There are two different questions that look\nalike:"
+          "html": "<p>Every digit is worth <strong>digit × (base)^(position)</strong>.\nPositions are counted from the <strong>right</strong>, starting at\n<strong>0</strong>.</p>",
+          "text": "Every digit is worth digit × (base)^(position) .\nPositions are counted from the right , starting at 0 ."
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>Rule</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bits to <strong>write the number N</strong></td>\n<td>2ⁿ⁻¹ ≤ N &lt; 2ⁿ</td>\n<td>128 → <strong>8 bits</strong> (2025 T3 Quiz 1); 515 → <strong>10\nbits</strong> (2026 T2 Quiz 1)</td>\n</tr>\n<tr>\n<td>Bits (or flip-flops) for <strong>N different things /\nstates</strong></td>\n<td>smallest n with 2ⁿ ≥ N</td>\n<td>64 states → <strong>6</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Question Rule Example Bits to write the number N 2ⁿ⁻¹ ≤ N < 2ⁿ 128 → 8 bits (2025 T3 Quiz 1); 515 → 10\nbits (2026 T2 Quiz 1) Bits (or flip-flops) for N different things /\nstates smallest n with 2ⁿ ≥ N 64 states → 6"
+          "html": "<p><strong>Level 1: decimal, which you already know</strong></p>",
+          "text": "Level 1: decimal, which you already know"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked examples (1 mark each, all real)</strong></p>\n<ul>\n<li>“64 unique states, <strong>4</strong> flip-flops are sufficient”\n(2025 T2 end-term) → 2⁴ = 16 &lt; 64 → <strong>False</strong>.</li>\n<li>“64 unique states, <strong>6</strong> flip-flops are sufficient”\n(2025 T2 end-term, other shift) → 2⁶ = 64 → <strong>True</strong>.</li>\n<li>“<strong>65</strong> unique states, 6 flip-flops are sufficient”\n(2026 T2 end-term) → 64 &lt; 65 → <strong>False</strong> (you need\n7).</li>\n</ul>\n</blockquote>",
-          "text": "Worked examples (1 mark each, all real) “64 unique states, 4 flip-flops are sufficient”\n(2025 T2 end-term) → 2⁴ = 16 < 64 → False . “64 unique states, 6 flip-flops are sufficient”\n(2025 T2 end-term, other shift) → 2⁶ = 64 → True . “ 65 unique states, 6 flip-flops are sufficient”\n(2026 T2 end-term) → 64 < 65 → False (you need\n7)."
+          "html": "<p>329 = 3×10² + 2×10¹ + 9×10⁰ = 3×100 + 2×10 + 9×1 = 300 + 20 + 9 =\n<strong>329</strong></p>",
+          "text": "329 = 3×10² + 2×10¹ + 9×10⁰ = 3×100 + 2×10 + 9×1 = 300 + 20 + 9 = 329"
         },
         {
           "type": "html",
-          "html": "<p><strong>Quick check for 515:</strong> 2⁹ = 512 ≤ 515 &lt; 1024 = 2¹⁰\n→ <strong>10 bits</strong>.</p>",
-          "text": "Quick check for 515: 2⁹ = 512 ≤ 515 < 1024 = 2¹⁰\n→ 10 bits ."
+          "html": "<p><strong>Level 2: binary (base 2)</strong></p>",
+          "text": "Level 2: binary (base 2)"
         },
         {
           "type": "html",
-          "html": "<hr/>",
-          "text": ""
-        },
-        {
-          "type": "heading",
-          "text": "Type 3: Base → decimal → hex (3\nmarks)"
+          "html": "<p>11₂ = 1×2¹ + 1×2⁰ = 1×2 + 1×1 = 2 + 1 = <strong>3</strong></p>",
+          "text": "11₂ = 1×2¹ + 1×2⁰ = 1×2 + 1×1 = 2 + 1 = 3"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong> change to decimal using place values, then\ndivide by 16.</p>",
-          "text": "Steps: change to decimal using place values, then\ndivide by 16."
+          "html": "<p>1011₂ = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 1×8 + 0×4 + 1×2 + 1×1 = 8 + 0 + 2\n+ 1 = <strong>11</strong></p>",
+          "text": "1011₂ = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 1×8 + 0×4 + 1×2 + 1×1 = 8 + 0 + 2\n+ 1 = 11"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1, answer A3)</strong> “A number\nin base 6 is 431. What is it in hex?”</p>\n<ul>\n<li>431₆ = 4×36 + 3×6 + 1 = 144 + 18 + 1 = <strong>163</strong></li>\n<li>163 ÷ 16 = 10 remainder <strong>3</strong>; 10 =\n<strong>A</strong></li>\n<li>Answer: <strong>A3</strong> ✔</li>\n</ul>\n</blockquote>",
-          "text": "Worked example (2025 T2 Quiz 1, answer A3) “A number\nin base 6 is 431. What is it in hex?” 431₆ = 4×36 + 3×6 + 1 = 144 + 18 + 1 = 163 163 ÷ 16 = 10 remainder 3 ; 10 = A Answer: A3 ✔"
+          "html": "<p><strong>Level 3: any base</strong></p>",
+          "text": "Level 3: any base"
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> hex digits above 9 are letters. Write\n<strong>A3</strong>, not “103”.</p>",
-          "text": "Trap: hex digits above 9 are letters. Write A3 , not “103”."
+          "html": "<p>(431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 + 1×1 = 144 + 18 + 1 =\n<strong>163</strong></p>",
+          "text": "(431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 + 1×1 = 144 + 18 + 1 = 163"
         },
         {
           "type": "html",
-          "html": "<hr/>",
-          "text": ""
-        },
-        {
-          "type": "heading",
-          "text": "Type 4: Find\nthe unknown bases (4 marks, every Quiz 1)"
+          "html": "<p>(143)₇ = 1×7² + 4×7¹ + 3×7⁰ = 1×49 + 4×7 + 3×1 = 49 + 28 + 3 =\n<strong>80</strong></p>",
+          "text": "(143)₇ = 1×7² + 4×7¹ + 3×7⁰ = 1×49 + 4×7 + 3×1 = 49 + 28 + 3 = 80"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<p><strong>Remember:</strong> anything⁰ = 1. So the rightmost digit is\nalways just itself.</p>",
+          "text": "Remember: anything⁰ = 1. So the rightmost digit is\nalways just itself."
+        },
+        {
+          "type": "subheading",
+          "text": "Going the other way: decimal\n→ binary"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write both sides in decimal using a and b.</li>\n<li><strong>Test each option.</strong> The right one makes both sides\nequal.</li>\n</ol>",
-          "text": "Write both sides in decimal using a and b. Test each option. The right one makes both sides\nequal."
+          "html": "<p>Divide by 2 again and again. Write the remainders. Read them\n<strong>from the bottom up</strong>.</p>",
+          "text": "Divide by 2 again and again. Write the remainders. Read them from the bottom up ."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1, answer a = 7, b = 6)</strong>\n(143)ₐ = (212)ᵦ → a² + 4a + 3 = 2b² + b + 2. a = 7, b = 6: 49 + 28 + 3 =\n<strong>80</strong> and 72 + 6 + 2 = <strong>80</strong> ✔</p>\n</blockquote>",
-          "text": "Worked example (2025 T2 Quiz 1, answer a = 7, b = 6) (143)ₐ = (212)ᵦ → a² + 4a + 3 = 2b² + b + 2. a = 7, b = 6: 49 + 28 + 3 = 80 and 72 + 6 + 2 = 80 ✔"
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Step</th>\n<th>Divide</th>\n<th>Answer</th>\n<th>Remainder</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>11 ÷ 2</td>\n<td>5</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>2</td>\n<td>5 ÷ 2</td>\n<td>2</td>\n<td><strong>1</strong></td>\n</tr>\n<tr>\n<td>3</td>\n<td>2 ÷ 2</td>\n<td>1</td>\n<td><strong>0</strong></td>\n</tr>\n<tr>\n<td>4</td>\n<td>1 ÷ 2</td>\n<td>0</td>\n<td><strong>1</strong></td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Step Divide Answer Remainder 1 11 ÷ 2 5 1 2 5 ÷ 2 2 1 3 2 ÷ 2 1 0 4 1 ÷ 2 0 1"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2025 T3 Quiz 1, official answer a = 4, b =\n5)</strong> (234)ₐ = (143)ᵦ → 2a² + 3a + 4 = b² + 4b + 3. a = 4, b = 5:\n32 + 12 + 4 = <strong>48</strong> and 25 + 20 + 3 = <strong>48</strong>\n✔ (Strictly, base 4 can’t use the digit 4, so the question is slightly\nflawed. In the exam, pick the option that makes both sides equal.)</p>\n</blockquote>",
-          "text": "Worked example (2025 T3 Quiz 1, official answer a = 4, b =\n5) (234)ₐ = (143)ᵦ → 2a² + 3a + 4 = b² + 4b + 3. a = 4, b = 5:\n32 + 12 + 4 = 48 and 25 + 20 + 3 = 48 ✔ (Strictly, base 4 can’t use the digit 4, so the question is slightly\nflawed. In the exam, pick the option that makes both sides equal.)"
+          "html": "<p>Read bottom → top: <strong>1011</strong>. Check: 8 + 0 + 2 + 1 = 11\n✔</p>",
+          "text": "Read bottom → top: 1011 . Check: 8 + 0 + 2 + 1 = 11\n✔"
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> don’t try to solve with algebra. Testing 4–5\noptions is faster.</p>",
-          "text": "Trap: don’t try to solve with algebra. Testing 4–5\noptions is faster."
-        },
-        {
-          "type": "html",
-          "html": "<hr/>",
-          "text": ""
-        },
-        {
-          "type": "heading",
-          "text": "Type\n5: An equation written in an unknown base (3 marks, end-term)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> “The solutions of x² − 11ᵦx + 21ᵦ = 0 are x\n= 3 and x = 5. What is the base b?”</p>",
-          "text": "Spot it: “The solutions of x² − 11ᵦx + 21ᵦ = 0 are x\n= 3 and x = 5. What is the base b?”"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>For x² − Sx + P = 0, the roots add up to <strong>S</strong> and\nmultiply to <strong>P</strong>.</li>\n<li>Write S and P in base b: 11ᵦ = <strong>b + 1</strong>, 21ᵦ =\n<strong>2b + 1</strong>.</li>\n<li>Match: roots add to 3 + 5 = 8, so b + 1 = 8 → <strong>b =\n7</strong>.</li>\n<li>Check with the product: 3 × 5 = 15 and 2(7) + 1 = 15 ✔</li>\n</ol>",
-          "text": "For x² − Sx + P = 0, the roots add up to S and\nmultiply to P . Write S and P in base b: 11ᵦ = b + 1 , 21ᵦ = 2b + 1 . Match: roots add to 3 + 5 = 8, so b + 1 = 8 → b =\n7 . Check with the product: 3 × 5 = 15 and 2(7) + 1 = 15 ✔"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Answer (2025 T3 end-term): b = 7</strong> ✔</p>\n</blockquote>",
-          "text": "Answer (2025 T3 end-term): b = 7 ✔"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Another way:</strong> put x = 3 into the equation: 9 − 3(b +\n1) + (2b + 1) = 0 → 7 − b = 0 → b = 7.</p>",
-          "text": "Another way: put x = 3 into the equation: 9 − 3(b +\n1) + (2b + 1) = 0 → 7 − b = 0 → b = 7."
+          "html": "<p>The same method works for any base: divide by 16 for hex, by 8 for\noctal, and so on.</p>",
+          "text": "The same method works for any base: divide by 16 for hex, by 8 for\noctal, and so on."
         },
         {
           "type": "html",
@@ -1493,17 +1435,45 @@
         },
         {
           "type": "heading",
-          "text": "Type 6: Voltage zones\n(from the lectures)"
+          "text": "Type 2: Base → hex"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong> V ≤ V_L → <strong>0</strong>. V ≥ V_H →\n<strong>1</strong>. In between → <strong>forbidden</strong> (not\nallowed).</p>",
-          "text": "Steps: V ≤ V_L → 0 . V ≥ V_H → 1 . In between → forbidden (not\nallowed)."
+          "html": "<p>Go <strong>base → decimal → hex</strong>. To get hex, divide by 16.\nRemainders 10–15 become the letters <strong>A–F</strong>.</p>",
+          "text": "Go base → decimal → hex . To get hex, divide by 16.\nRemainders 10–15 become the letters A–F ."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: V_L = 0.8 V, V_H = 2 V. Read 0.5 V, 1.5 V, 3 V.\n</summary>\n0, forbidden, 1.\n</details>",
-          "text": "Try: V_L = 0.8 V, V_H = 2 V. Read 0.5 V, 1.5 V, 3 V. 0, forbidden, 1."
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Decimal</th>\n<th>10</th>\n<th>11</th>\n<th>12</th>\n<th>13</th>\n<th>14</th>\n<th>15</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Hex</td>\n<td>A</td>\n<td>B</td>\n<td>C</td>\n<td>D</td>\n<td>E</td>\n<td>F</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Decimal 10 11 12 13 14 15 Hex A B C D E F"
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper question"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q103 · 3 marks</p>\n<p><strong>Question:</strong> A number in base 6 is 431. What is its\nhexadecimal representation?</p>\n<p><strong>Answer:</strong> <strong>A3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q103 · 3 marks Question: A number in base 6 is 431. What is its\nhexadecimal representation? Answer: A3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Change base 6 → decimal: (431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 +\n1 = 144 + 18 + 1 = <strong>163</strong></li>\n<li>Change decimal → hex by dividing by 16: 163 ÷ 16 = 10, remainder\n<strong>3</strong> 10 ÷ 16 = 0, remainder <strong>10 → A</strong></li>\n<li>Read the remainders bottom → top: <strong>A3</strong></li>\n<li>Check: A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 ✔</li>\n</ol>",
+          "text": "Change base 6 → decimal: (431)₆ = 4×6² + 3×6¹ + 1×6⁰ = 4×36 + 3×6 +\n1 = 144 + 18 + 1 = 163 Change decimal → hex by dividing by 16: 163 ÷ 16 = 10, remainder 3 10 ÷ 16 = 0, remainder 10 → A Read the remainders bottom → top: A3 Check: A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> don’t write “103”. The remainder 10 is\n<strong>one</strong> hex digit: <strong>A</strong>.</p>",
+          "text": "Trap: don’t write “103”. The remainder 10 is one hex digit: A ."
         },
         {
           "type": "html",
@@ -1512,42 +1482,380 @@
         },
         {
           "type": "heading",
-          "text": "Practice set"
+          "text": "Type 3: Find the unknown\nbases"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>3 million transistors today → 48 million in 8 years (Moore’s Law).\nTrue or false?\n</li></ol></summary>\nTrue. 48 ÷ 3 = 16 = 2⁴ → 4 doublings → 8 years.\n</details>",
-          "text": "3 million transistors today → 48 million in 8 years (Moore’s Law).\nTrue or false? True. 48 ÷ 3 = 16 = 2⁴ → 4 doublings → 8 years."
+          "html": "<ol type=\"1\">\n<li>Expand <strong>both sides</strong> in decimal using the letters a\nand b (Type 1).</li>\n<li>Put each answer option in. The correct option makes <strong>both\nsides equal</strong>.</li>\n</ol>",
+          "text": "Expand both sides in decimal using the letters a\nand b (Type 1). Put each answer option in. The correct option makes both\nsides equal ."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Minimum bits to write the number 300?\n</li></ol></summary>\n9 (256 ≤ 300 &lt; 512).\n</details>",
-          "text": "Minimum bits to write the number 300? 9 (256 ≤ 300 < 512)."
+          "html": "<p><strong>Level 1 example:</strong> (12)ₐ = (5)₁₀. Find a. 1×a¹ + 2×a⁰\n= 5 → a + 2 = 5 → <strong>a = 3</strong></p>",
+          "text": "Level 1 example: (12)ₐ = (5)₁₀. Find a. 1×a¹ + 2×a⁰\n= 5 → a + 2 = 5 → a = 3"
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>How many flip-flops for a system with 100 states?\n</li></ol></summary>\n7 (2⁷ = 128 ≥ 100).\n</details>",
-          "text": "How many flip-flops for a system with 100 states? 7 (2⁷ = 128 ≥ 100)."
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q95 · 4 marks</p>\n<p><strong>Question:</strong> If (143)ₐ = (212)ᵦ, where a and b are the\nbases, what are a and b? Options: a=6, b=5 / a=8, b=5 / a=7, b=6 / a=9,\nb=7 / a=5, b=4</p>\n<p><strong>Answer:</strong> <strong>a = 7, b = 6</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q95 · 4 marks Question: If (143)ₐ = (212)ᵦ, where a and b are the\nbases, what are a and b? Options: a=6, b=5 / a=8, b=5 / a=7, b=6 / a=9,\nb=7 / a=5, b=4 Answer: a = 7, b = 6"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>(321)₅ in hex?\n</li></ol></summary>\n3×25 + 2×5 + 1 = 86 = 5×16 + 6 → 0x56.\n</details>",
-          "text": "(321)₅ in hex? 3×25 + 2×5 + 1 = 86 = 5×16 + 6 → 0x56."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>(25)ₐ = (17)ᵦ. Options: a=6,b=10 / a=7,b=9 / a=8,b=9. Which works?\n</li></ol></summary>\n2a + 5 = b + 7. a=6,b=10: 17 = 17 ✔. a=7,b=9: 19 vs 16 ✗. a=8,b=9: 21 vs\n16 ✗. Answer: a = 6, b = 10.\n</details>",
-          "text": "(25)ₐ = (17)ᵦ. Options: a=6,b=10 / a=7,b=9 / a=8,b=9. Which works? 2a + 5 = b + 7. a=6,b=10: 17 = 17 ✔. a=7,b=9: 19 vs 16 ✗. a=8,b=9: 21 vs\n16 ✗. Answer: a = 6, b = 10."
+          "html": "<ol type=\"1\">\n<li>Left side: (143)ₐ = 1×a² + 4×a¹ + 3×a⁰ = <strong>a² + 4a +\n3</strong></li>\n<li>Right side: (212)ᵦ = 2×b² + 1×b¹ + 2×b⁰ = <strong>2b² + b +\n2</strong></li>\n<li>Test the options:</li>\n</ol>",
+          "text": "Left side: (143)ₐ = 1×a² + 4×a¹ + 3×a⁰ = a² + 4a +\n3 Right side: (212)ᵦ = 2×b² + 1×b¹ + 2×b⁰ = 2b² + b +\n2 Test the options:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>Roots 2 and 4 of x² − 6ᵦx + 11ᵦ = 0 (here “6” and “11” are written\nin base b). Find b.\n</li></ol></summary>\n6ᵦ = 6 = sum ✔ (any b &gt; 6). 11ᵦ = b + 1 = product 8 → b = 7.\n</details>",
-          "text": "Roots 2 and 4 of x² − 6ᵦx + 11ᵦ = 0 (here “6” and “11” are written\nin base b). Find b. 6ᵦ = 6 = sum ✔ (any b > 6). 11ᵦ = b + 1 = product 8 → b = 7."
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Option</th>\n<th>a² + 4a + 3</th>\n<th>2b² + b + 2</th>\n<th>Equal?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>a=6, b=5</td>\n<td>36 + 24 + 3 = 63</td>\n<td>50 + 5 + 2 = 57</td>\n<td>✗</td>\n</tr>\n<tr>\n<td>a=8, b=5</td>\n<td>64 + 32 + 3 = 99</td>\n<td>57</td>\n<td>✗</td>\n</tr>\n<tr>\n<td><strong>a=7, b=6</strong></td>\n<td><strong>49 + 28 + 3 = 80</strong></td>\n<td><strong>72 + 6 + 2 = 80</strong></td>\n<td><strong>✔</strong></td>\n</tr>\n<tr>\n<td>a=9, b=7</td>\n<td>81 + 36 + 3 = 120</td>\n<td>98 + 7 + 2 = 107</td>\n<td>✗</td>\n</tr>\n<tr>\n<td>a=5, b=4</td>\n<td>25 + 20 + 3 = 48</td>\n<td>32 + 4 + 2 = 38</td>\n<td>✗</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Option a² + 4a + 3 2b² + b + 2 Equal? a=6, b=5 36 + 24 + 3 = 63 50 + 5 + 2 = 57 ✗ a=8, b=5 64 + 32 + 3 = 99 57 ✗ a=7, b=6 49 + 28 + 3 = 80 72 + 6 + 2 = 80 ✔ a=9, b=7 81 + 36 + 3 = 120 98 + 7 + 2 = 107 ✗ a=5, b=4 25 + 20 + 3 = 48 32 + 4 + 2 = 38 ✗"
         },
         {
           "type": "html",
-          "html": "<p><strong>In one line:</strong> Moore = count the doublings × 2 years;\n“write the number N” vs “N things” use different bit rules; for unknown\nbases, write both sides in decimal and test the options. <strong>Exam\nwords:</strong> Moore’s Law, doubling, minimum bits, flip-flops for\nstates, base conversion, hexadecimal, unknown base, sum and product of\nroots.</p>",
-          "text": "In one line: Moore = count the doublings × 2 years;\n“write the number N” vs “N things” use different bit rules; for unknown\nbases, write both sides in decimal and test the options. Exam\nwords: Moore’s Law, doubling, minimum bits, flip-flops for\nstates, base conversion, hexadecimal, unknown base, sum and product of\nroots."
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q165 · 4 marks</p>\n<p><strong>Question:</strong> If (234)ₐ = (143)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8</p>\n<p><strong>Answer:</strong> <strong>a = 4, b = 5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q165 · 4 marks Question: If (234)ₐ = (143)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8 Answer: a = 4, b = 5"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Left: (234)ₐ = 2×a² + 3×a + 4</li>\n<li>Right: (143)ᵦ = 1×b² + 4×b + 3</li>\n<li>Test a = 4, b = 5: left = 2×16 + 3×4 + 4 = 32 + 12 + 4 =\n<strong>48</strong>; right = 25 + 20 + 3 = <strong>48</strong> ✔</li>\n<li>Every other option gives two different numbers (for example a=5, b=6\ngives 69 vs 63).</li>\n</ol>",
+          "text": "Left: (234)ₐ = 2×a² + 3×a + 4 Right: (143)ᵦ = 1×b² + 4×b + 3 Test a = 4, b = 5: left = 2×16 + 3×4 + 4 = 32 + 12 + 4 = 48 ; right = 25 + 20 + 3 = 48 ✔ Every other option gives two different numbers (for example a=5, b=6\ngives 69 vs 63)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Note:</strong> strictly, base 4 can only use the digits 0–3,\nso “234 in base 4” isn’t a valid number. The official answer is still a\n= 4, b = 5, because it is the only option that makes both sides equal.\n<strong>In the exam, trust the equation.</strong></p>",
+          "text": "Note: strictly, base 4 can only use the digits 0–3,\nso “234 in base 4” isn’t a valid number. The official answer is still a\n= 4, b = 5, because it is the only option that makes both sides equal. In the exam, trust the equation."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q13 · 4 marks</p>\n<p><strong>Question:</strong> If (344)ₐ = (243)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8</p>\n<p><strong>Answer:</strong> <strong>a = 5, b = 6</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q13 · 4 marks Question: If (344)ₐ = (243)ᵦ, what are a and b?\nOptions: a=3, b=4 / a=4, b=5 / a=5, b=6 / a=6, b=7 / a=7, b=8 Answer: a = 5, b = 6"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Left: (344)ₐ = 3×a² + 4×a + 4</li>\n<li>Right: (243)ᵦ = 2×b² + 4×b + 3</li>\n<li>Test a = 5, b = 6: left = 3×25 + 4×5 + 4 = 75 + 20 + 4 =\n<strong>99</strong>; right = 2×36 + 4×6 + 3 = 72 + 24 + 3 =\n<strong>99</strong> ✔</li>\n<li>Check one wrong option, a = 4, b = 5: 48 + 16 + 4 = 68 vs 50 + 20 +\n3 = 73 ✗</li>\n</ol>",
+          "text": "Left: (344)ₐ = 3×a² + 4×a + 4 Right: (243)ᵦ = 2×b² + 4×b + 3 Test a = 5, b = 6: left = 3×25 + 4×5 + 4 = 75 + 20 + 4 = 99 ; right = 2×36 + 4×6 + 3 = 72 + 24 + 3 = 99 ✔ Check one wrong option, a = 4, b = 5: 48 + 16 + 4 = 68 vs 50 + 20 +\n3 = 73 ✗"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> don’t try to solve this with algebra. Testing\n5 options takes about 1 minute.</p>",
+          "text": "Trap: don’t try to solve this with algebra. Testing\n5 options takes about 1 minute."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 4: An\nequation written in an unknown base"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p>For x² − Sx + P = 0 with roots p and q:</p>",
+          "text": "For x² − Sx + P = 0 with roots p and q:"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>p + q = S</strong> (the roots add up to the middle\nnumber)</li>\n<li><strong>p × q = P</strong> (the roots multiply to the last\nnumber)</li>\n</ul>",
+          "text": "p + q = S (the roots add up to the middle\nnumber) p × q = P (the roots multiply to the last\nnumber)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Level 1:</strong> x² − 5x + 6 = 0 has roots 2 and 3. Check: 2\n+ 3 = 5 ✔, 2 × 3 = 6 ✔.</p>",
+          "text": "Level 1: x² − 5x + 6 = 0 has roots 2 and 3. Check: 2\n+ 3 = 5 ✔, 2 × 3 = 6 ✔."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper question"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q9 · 3 marks</p>\n<p><strong>Question:</strong> The solutions of the quadratic equation x²\n− 11ᵦx + 21ᵦ = 0 are x = 3 and x = 5. What is the base b?</p>\n<p><strong>Answer:</strong> <strong>7</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (AN) · Q9 · 3 marks Question: The solutions of the quadratic equation x²\n− 11ᵦx + 21ᵦ = 0 are x = 3 and x = 5. What is the base b? Answer: 7"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>“11” and “21” are written in base b. Expand them: 11ᵦ = 1×b¹ + 1×b⁰\n= <strong>b + 1</strong> 21ᵦ = 2×b¹ + 1×b⁰ = <strong>2b +\n1</strong></li>\n<li>Roots add up to the middle number: 3 + 5 = b + 1 → 8 = b + 1 →\n<strong>b = 7</strong></li>\n<li>Check with the product: 3 × 5 = 15 and 2b + 1 = 2×7 + 1 = 15 ✔</li>\n</ol>",
+          "text": "“11” and “21” are written in base b. Expand them: 11ᵦ = 1×b¹ + 1×b⁰\n= b + 1 21ᵦ = 2×b¹ + 1×b⁰ = 2b +\n1 Roots add up to the middle number: 3 + 5 = b + 1 → 8 = b + 1 → b = 7 Check with the product: 3 × 5 = 15 and 2b + 1 = 2×7 + 1 = 15 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q7 · 3 marks</p>\n<p><strong>Question:</strong> The solutions of x² − 11ᵦx + 22ᵦ = 0 are x\n= 3 and x = 6. What is the base b?</p>\n<p><strong>Answer:</strong> <strong>8</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (FN) · Q7 · 3 marks Question: The solutions of x² − 11ᵦx + 22ᵦ = 0 are x\n= 3 and x = 6. What is the base b? Answer: 8"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>11ᵦ = 1×b + 1 = <strong>b + 1</strong>; 22ᵦ = 2×b + 2 = <strong>2b +\n2</strong></li>\n<li>Roots add up to the middle number: 3 + 6 = b + 1 → 9 = b + 1 →\n<strong>b = 8</strong></li>\n<li>Check with the product: 3 × 6 = 18 and 2×8 + 2 = 18 ✔</li>\n</ol>",
+          "text": "11ᵦ = 1×b + 1 = b + 1 ; 22ᵦ = 2×b + 2 = 2b +\n2 Roots add up to the middle number: 3 + 6 = b + 1 → 9 = b + 1 → b = 8 Check with the product: 3 × 6 = 18 and 2×8 + 2 = 18 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 5: Minimum bits"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>n bits can make 2ⁿ different patterns.</strong> Learn the\npowers of 2:</p>",
+          "text": "n bits can make 2ⁿ different patterns. Learn the\npowers of 2:"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>n</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n<th>9</th>\n<th>10</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2ⁿ</td>\n<td>2</td>\n<td>4</td>\n<td>8</td>\n<td>16</td>\n<td>32</td>\n<td>64</td>\n<td>128</td>\n<td>256</td>\n<td>512</td>\n<td>1024</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "n 1 2 3 4 5 6 7 8 9 10 2ⁿ 2 4 8 16 32 64 128 256 512 1024"
+        },
+        {
+          "type": "html",
+          "html": "<p>There are <strong>two different questions</strong>:</p>",
+          "text": "There are two different questions :"
+        },
+        {
+          "type": "html",
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n<col style=\"width: 33%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Question</th>\n<th>Rule</th>\n<th>Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bits to <strong>write the number N</strong></td>\n<td>Find n with 2ⁿ⁻¹ ≤ N &lt; 2ⁿ</td>\n<td>11 = 1011 → 4 bits (8 ≤ 11 &lt; 16)</td>\n</tr>\n<tr>\n<td>Bits (or flip-flops) for <strong>N different states</strong></td>\n<td>Smallest n with 2ⁿ ≥ N</td>\n<td>11 states → 4 bits (16 ≥ 11)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Question Rule Example Bits to write the number N Find n with 2ⁿ⁻¹ ≤ N < 2ⁿ 11 = 1011 → 4 bits (8 ≤ 11 < 16) Bits (or flip-flops) for N different states Smallest n with 2ⁿ ≥ N 11 states → 4 bits (16 ≥ 11)"
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q172 · 3 marks</p>\n<p><strong>Question:</strong> What is the minimum number of bits\nrequired to represent the number (128)₁₀ in binary?</p>\n<p><strong>Answer:</strong> <strong>8</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q172 · 3 marks Question: What is the minimum number of bits\nrequired to represent the number (128)₁₀ in binary? Answer: 8"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Find the powers of 2 around 128: 2⁷ = 128 and 2⁸ = 256.</li>\n<li>2⁷ ≤ 128 &lt; 2⁸, so n = <strong>8</strong>.</li>\n<li>Check by writing it: 128 = 1×2⁷ = <strong>10000000</strong>. Count\nthe digits: 8 ✔</li>\n</ol>",
+          "text": "Find the powers of 2 around 128: 2⁷ = 128 and 2⁸ = 256. 2⁷ ≤ 128 < 2⁸, so n = 8 . Check by writing it: 128 = 1×2⁷ = 10000000 . Count\nthe digits: 8 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Trap:</strong> 7 bits only reach 2⁷ − 1 =\n<strong>127</strong>. 128 needs one more bit.</p>",
+          "text": "Trap: 7 bits only reach 2⁷ − 1 = 127 . 128 needs one more bit."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q6 · 3 marks</p>\n<p><strong>Question:</strong> What is the minimum number of bits\nrequired to represent (515)₁₀ in binary?</p>\n<p><strong>Answer:</strong> <strong>10</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q6 · 3 marks Question: What is the minimum number of bits\nrequired to represent (515)₁₀ in binary? Answer: 10"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>2⁹ = 512 and 2¹⁰ = 1024.</li>\n<li>512 ≤ 515 &lt; 1024, so n = <strong>10</strong>.</li>\n<li>Check: 515 = 512 + 2 + 1 = 1×2⁹ + 1×2¹ + 1×2⁰ =\n<strong>1000000011</strong> → 10 digits ✔</li>\n</ol>",
+          "text": "2⁹ = 512 and 2¹⁰ = 1024. 512 ≤ 515 < 1024, so n = 10 . Check: 515 = 512 + 2 + 1 = 1×2⁹ + 1×2¹ + 1×2⁰ = 1000000011 → 10 digits ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q151 · 1 mark</p>\n<p><strong>Question:</strong> In a system with 64 unique states, 4\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q151 · 1 mark Question: In a system with 64 unique states, 4\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Each flip-flop stores 1 bit, so n flip-flops give 2ⁿ states.</li>\n<li>4 flip-flops → 2⁴ = <strong>16</strong> states.</li>\n<li>16 &lt; 64, so 4 is <strong>not</strong> enough. (You need 6,\nbecause 2⁶ = 64.)</li>\n</ol>",
+          "text": "Each flip-flop stores 1 bit, so n flip-flops give 2ⁿ states. 4 flip-flops → 2⁴ = 16 states. 16 < 64, so 4 is not enough. (You need 6,\nbecause 2⁶ = 64.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q119 · 1 mark</p>\n<p><strong>Question:</strong> In a system with 64 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (FN) · Q119 · 1 mark Question: In a system with 64 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: TRUE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> 6 flip-flops → 2⁶ = 64 states. 64 ≥ 64\n✔, so it is enough.</p>",
+          "text": "How to solve: 6 flip-flops → 2⁶ = 64 states. 64 ≥ 64\n✔, so it is enough."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 End-term (FN) · Q4 · 1 mark</p>\n<p><strong>Question:</strong> In a system with 65 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 End-term (FN) · Q4 · 1 mark Question: In a system with 65 unique states, 6\nflip-flops are sufficient to represent all the states. True or\nFalse? Answer: FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> 6 flip-flops → 2⁶ = 64 states. 64 &lt;\n65, so it is <strong>one short</strong>. You need 7 (2⁷ = 128).</p>",
+          "text": "How to solve: 6 flip-flops → 2⁶ = 64 states. 64 <\n65, so it is one short . You need 7 (2⁷ = 128)."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Type 6: Moore’s Law true/false"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<p>Moore’s Law: the <strong>number</strong> of transistors on a chip\n<strong>doubles about every 2 years</strong>.</p>",
+          "text": "Moore’s Law: the number of transistors on a chip doubles about every 2 years ."
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>How many times bigger? <strong>Y ÷ X</strong></li>\n<li>Write it as 2ⁿ → that’s <strong>n doublings</strong></li>\n<li>Time = <strong>n × 2 years</strong></li>\n</ol>",
+          "text": "How many times bigger? Y ÷ X Write it as 2ⁿ → that’s n doublings Time = n × 2 years"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Level 1:</strong> 1 million → 4 million. 4 ÷ 1 = 4 = 2² → 2\ndoublings → 2 × 2 = <strong>4 years</strong>.</p>",
+          "text": "Level 1: 1 million → 4 million. 4 ÷ 1 = 4 = 2² → 2\ndoublings → 2 × 2 = 4 years ."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q153 · 1 mark</p>\n<p><strong>Question:</strong> According to Moore’s law, if a computer\nsystem has 2 million transistors today, it will have approximately 32\nmillion transistors in 7 years. True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q153 · 1 mark Question: According to Moore’s law, if a computer\nsystem has 2 million transistors today, it will have approximately 32\nmillion transistors in 7 years. True or False? Answer: FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>32 ÷ 2 = <strong>16</strong></li>\n<li>16 = 2 × 2 × 2 × 2 = 2⁴ → <strong>4 doublings</strong></li>\n<li>4 × 2 years = <strong>8 years</strong>, not 7 →\n<strong>FALSE</strong></li>\n</ol>",
+          "text": "32 ÷ 2 = 16 16 = 2 × 2 × 2 × 2 = 2⁴ → 4 doublings 4 × 2 years = 8 years , not 7 → FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q121 · 1 mark</p>\n<p><strong>Question:</strong> 2 million transistors today →\napproximately 32 million in <strong>8 years</strong>. True or False?</p>\n<p><strong>Answer:</strong> <strong>TRUE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (FN) · Q121 · 1 mark Question: 2 million transistors today →\napproximately 32 million in 8 years . True or False? Answer: TRUE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> same steps as above: 16× = 2⁴ = 4\ndoublings = 8 years ✔</p>",
+          "text": "How to solve: same steps as above: 16× = 2⁴ = 4\ndoublings = 8 years ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 End-term (FN) · Q6 · 1 mark</p>\n<p><strong>Question:</strong> 2 million transistors today →\napproximately 32 million in <strong>4 years</strong>. True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 End-term (FN) · Q6 · 1 mark Question: 2 million transistors today →\napproximately 32 million in 4 years . True or False? Answer: FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> it needs 8 years. In 4 years you get\nonly 2 doublings: 2 → 4 → <strong>8 million</strong>, not 32.</p>",
+          "text": "How to solve: it needs 8 years. In 4 years you get\nonly 2 doublings: 2 → 4 → 8 million , not 32."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN and FN) · Q6 · 1\nmark</p>\n<p><strong>Question:</strong> According to Moore’s Law, the\n<strong>size</strong> of transistors on an integrated circuit doubles\napproximately every two years. True or False?</p>\n<p><strong>Answer:</strong> <strong>FALSE</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (AN and FN) · Q6 · 1\nmark Question: According to Moore’s Law, the size of transistors on an integrated circuit doubles\napproximately every two years. True or False? Answer: FALSE"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> Moore’s Law is about the\n<strong>number</strong> of transistors doubling. Transistors get\n<strong>smaller</strong>, which is why more of them fit. One wrong word\n(“size”) makes the sentence false.</p>",
+          "text": "How to solve: Moore’s Law is about the number of transistors doubling. Transistors get smaller , which is why more of them fit. One wrong word\n(“size”) makes the sentence false."
+        },
+        {
+          "type": "html",
+          "html": "<hr/>",
+          "text": ""
+        },
+        {
+          "type": "heading",
+          "text": "Practice set (new\nquestions, same types)"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>Convert (1101)₂ to decimal. Show every term.\n</li></ol></summary>\n1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13.\n</details>",
+          "text": "Convert (1101)₂ to decimal. Show every term. 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Convert 25 to binary using repeated division.\n</li></ol></summary>\n25÷2 = 12 r1; 12÷2 = 6 r0; 6÷2 = 3 r0; 3÷2 = 1 r1; 1÷2 = 0 r1. Bottom →\ntop: 11001. Check: 16 + 8 + 1 = 25.\n</details>",
+          "text": "Convert 25 to binary using repeated division. 25÷2 = 12 r1; 12÷2 = 6 r0; 6÷2 = 3 r0; 3÷2 = 1 r1; 1÷2 = 0 r1. Bottom →\ntop: 11001. Check: 16 + 8 + 1 = 25."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>(321)₅ in hex?\n</li></ol></summary>\n3×25 + 2×5 + 1 = 75 + 10 + 1 = 86. 86 ÷ 16 = 5 r6 → 0x56.\n</details>",
+          "text": "(321)₅ in hex? 3×25 + 2×5 + 1 = 75 + 10 + 1 = 86. 86 ÷ 16 = 5 r6 → 0x56."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>(25)ₐ = (17)ᵦ. Options: a=6, b=10 / a=7, b=9 / a=8, b=9.\n</li></ol></summary>\n2a + 5 = b + 7. a=6, b=10: 17 = 17 ✔. Answer: a = 6, b = 10.\n</details>",
+          "text": "(25)ₐ = (17)ᵦ. Options: a=6, b=10 / a=7, b=9 / a=8, b=9. 2a + 5 = b + 7. a=6, b=10: 17 = 17 ✔. Answer: a = 6, b = 10."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"5\" type=\"1\">\n<li>Minimum bits to write 300?\n</li></ol></summary>\n256 ≤ 300 &lt; 512 → 9 bits.\n</details>",
+          "text": "Minimum bits to write 300? 256 ≤ 300 < 512 → 9 bits."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"6\" type=\"1\">\n<li>100 states, 6 flip-flops. Enough?\n</li></ol></summary>\nNo. 2⁶ = 64 &lt; 100. You need 7 (128).\n</details>",
+          "text": "100 states, 6 flip-flops. Enough? No. 2⁶ = 64 < 100. You need 7 (128)."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\n<ol start=\"7\" type=\"1\">\n<li>3 million → 48 million in 8 years (Moore). True or false?\n</li></ol></summary>\n48 ÷ 3 = 16 = 2⁴ → 4 doublings → 8 years. True.\n</details>",
+          "text": "3 million → 48 million in 8 years (Moore). True or false? 48 ÷ 3 = 16 = 2⁴ → 4 doublings → 8 years. True."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>In one line:</strong> Expand every number as digit ×\nbase^position, compare powers of 2 for bit questions, and for Moore’s\nLaw count doublings × 2 years. <strong>Exam words:</strong> place value,\nbase conversion, repeated division, hexadecimal, unknown base, sum and\nproduct of roots, minimum bits, flip-flops for states, Moore’s Law.</p>",
+          "text": "In one line: Expand every number as digit ×\nbase^position, compare powers of 2 for bit questions, and for Moore’s\nLaw count doublings × 2 years. Exam words: place value,\nbase conversion, repeated division, hexadecimal, unknown base, sum and\nproduct of roots, minimum bits, flip-flops for states, Moore’s Law."
         }
       ]
     },

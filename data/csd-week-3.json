@@ -558,8 +558,8 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 3 questions show up in\n<strong>every</strong> quiz and end-term paper. Most of them ask:\n<strong>“What is the minimum number of gates?”</strong> These are easy\nmarks once you know the steps. This page gives you a recipe for each\nquestion type, a worked example from a real paper, and practice\nquestions with answers.</p>\n</blockquote>",
-          "text": "Start here Week 3 questions show up in every quiz and end-term paper. Most of them ask: “What is the minimum number of gates?” These are easy\nmarks once you know the steps. This page gives you a recipe for each\nquestion type, a worked example from a real paper, and practice\nquestions with answers."
+          "html": "<blockquote>\n<p><strong>Start here</strong> “What is the minimum number of gates?”\ncomes in <strong>every</strong> quiz and end-term. This page teaches the\nmethod from zero, then solves <strong>every Week 3 question from the 11\npast papers</strong> step by step, each with the exact paper it came\nfrom.</p>\n</blockquote>",
+          "text": "Start here “What is the minimum number of gates?”\ncomes in every quiz and end-term. This page teaches the\nmethod from zero, then solves every Week 3 question from the 11\npast papers step by step, each with the exact paper it came\nfrom."
         },
         {
           "type": "image",
@@ -571,57 +571,150 @@
         },
         {
           "type": "html",
+          "html": "<p><strong>How to read this page:</strong> each grey “Asked in” box is a\nreal past-paper question. Below it, <strong>How to solve</strong> shows\nevery step.</p>",
+          "text": "How to read this page: each grey “Asked in” box is a\nreal past-paper question. Below it, How to solve shows\nevery step."
+        },
+        {
+          "type": "html",
           "html": "<hr/>",
           "text": ""
         },
         {
           "type": "heading",
-          "text": "Type 1:\n“Minimum number of 2-input NAND (or NOR) gates”"
+          "text": "Type 1:\nMinimum number of 2-input NAND / NOR / XNOR gates"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Spot it:</strong> “using only 2-input NAND gates, what is the\nminimum number…” (3 marks, answer is a number).</p>",
-          "text": "Spot it: “using only 2-input NAND gates, what is the\nminimum number…” (3 marks, answer is a number)."
+          "html": "<p><strong>Step 1: simplify the function first.</strong> Many answers\nturn out to be just 1 gate.</p>",
+          "text": "Step 1: simplify the function first. Many answers\nturn out to be just 1 gate."
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<p><strong>Step 2: learn this table by heart</strong> (every number was\nchecked by a computer search over all possible circuits):</p>",
+          "text": "Step 2: learn this table by heart (every number was\nchecked by a computer search over all possible circuits):"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li><strong>Simplify first.</strong> Use Boolean algebra (or a K-map\nlater) to get the smallest formula.</li>\n<li><strong>Is it a known gate?</strong> Use this table. Learn it by\nheart:</li>\n</ol>",
-          "text": "Simplify first. Use Boolean algebra (or a K-map\nlater) to get the smallest formula. Is it a known gate? Use this table. Learn it by\nheart:"
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Function</th>\n<th>NAND gates</th>\n<th>NOR gates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>NOT A</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>A·B (AND)</td>\n<td>2</td>\n<td>3</td>\n</tr>\n<tr>\n<td>A + B (OR)</td>\n<td>3</td>\n<td>2</td>\n</tr>\n<tr>\n<td>NAND</td>\n<td>1</td>\n<td>4</td>\n</tr>\n<tr>\n<td>NOR</td>\n<td>4</td>\n<td>1</td>\n</tr>\n<tr>\n<td>A ⊕ B (XOR)</td>\n<td>4</td>\n<td>5</td>\n</tr>\n<tr>\n<td>A ⊙ B (XNOR, “A = B”)</td>\n<td>5</td>\n<td>4</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Function NAND gates NOR gates NOT A 1 1 A·B (AND) 2 3 A + B (OR) 3 2 NAND 1 4 NOR 4 1 A ⊕ B (XOR) 4 5 A ⊙ B (XNOR, “A = B”) 5 4"
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Function</th>\n<th>NAND gates</th>\n<th>NOR gates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>NOT</td>\n<td>1</td>\n<td>1</td>\n</tr>\n<tr>\n<td>AND</td>\n<td>2</td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td>OR</td>\n<td><strong>3</strong></td>\n<td>2</td>\n</tr>\n<tr>\n<td>NAND</td>\n<td>1</td>\n<td>4</td>\n</tr>\n<tr>\n<td>NOR</td>\n<td>4</td>\n<td>1</td>\n</tr>\n<tr>\n<td>XOR</td>\n<td><strong>4</strong></td>\n<td>5</td>\n</tr>\n<tr>\n<td>XNOR (equality)</td>\n<td>5</td>\n<td><strong>4</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Function NAND gates NOR gates NOT 1 1 AND 2 3 OR 3 2 NAND 1 4 NOR 4 1 XOR 4 5 XNOR (equality) 5 4"
+          "html": "<p><strong>Why these numbers (Level 1 → 3):</strong></p>",
+          "text": "Why these numbers (Level 1 → 3):"
         },
         {
           "type": "html",
-          "html": "<ol start=\"3\" type=\"1\">\n<li><strong>Not a single gate?</strong> Write it as SOP (for NAND) or\nPOS (for NOR), then swap to NAND–NAND or NOR–NOR (page 03).</li>\n<li><strong>Look for shortcuts:</strong> a NAND output already gives you\na “free” NOT. Reuse a gate’s output in two places.</li>\n<li><strong>Count.</strong> Don’t forget the inverters made from NANDs\nor NORs.</li>\n</ol>",
-          "text": "Not a single gate? Write it as SOP (for NAND) or\nPOS (for NOR), then swap to NAND–NAND or NOR–NOR (page 03). Look for shortcuts: a NAND output already gives you\na “free” NOT. Reuse a gate’s output in two places. Count. Don’t forget the inverters made from NANDs\nor NORs."
+          "html": "<ul>\n<li><strong>NOT from NAND:</strong> tie both inputs together. NAND(A, A)\n= NOT(A·A) = NOT A → <strong>1 gate</strong>.</li>\n<li><strong>AND from NAND:</strong> NAND gives NOT(AB). Flip it with one\nmore NAND → <strong>2 gates</strong>.</li>\n<li><strong>OR from NAND:</strong> De Morgan says A + B = NOT(Ā·B̄) =\nNAND(Ā, B̄). Making Ā and B̄ costs 2 → total <strong>3</strong>.</li>\n<li>NOR is the mirror image: OR = 2, AND = 3.</li>\n</ul>",
+          "text": "NOT from NAND: tie both inputs together. NAND(A, A)\n= NOT(A·A) = NOT A → 1 gate . AND from NAND: NAND gives NOT(AB). Flip it with one\nmore NAND → 2 gates . OR from NAND: De Morgan says A + B = NOT(Ā·B̄) =\nNAND(Ā, B̄). Making Ā and B̄ costs 2 → total 3 . NOR is the mirror image: OR = 2, AND = 3."
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> students count a NOT as “free”. In a NAND-only\ncircuit, <strong>every NOT is a NAND gate</strong> and must be\ncounted.</p>",
-          "text": "Trap: students count a NOT as “free”. In a NAND-only\ncircuit, every NOT is a NAND gate and must be\ncounted."
+          "html": "<p><strong>Step 3: shortcuts</strong></p>",
+          "text": "Step 3: shortcuts"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2025 T2 Quiz 1, answer 4)</strong> F = (X̅ +\nY̅)(Z + W). Minimum 2-input NANDs?</p>\n<ul>\n<li>Notice X̅ + Y̅ = <strong>NAND(X, Y)</strong>. That’s 1 gate, and no\ninverters are needed!</li>\n<li>Then F = G1 · (Z + W) = G1·Z + G1·W.</li>\n<li>G2 = NAND(Z, G1), G3 = NAND(W, G1), F = NAND(G2, G3).</li>\n<li><strong>Total = 4 NAND gates.</strong> ✔ (Checked by a computer\nsearch: 3 is impossible.)</li>\n</ul>\n</blockquote>",
-          "text": "Worked example (2025 T2 Quiz 1, answer 4) F = (X̅ +\nY̅)(Z + W). Minimum 2-input NANDs? Notice X̅ + Y̅ = NAND(X, Y) . That’s 1 gate, and no\ninverters are needed! Then F = G1 · (Z + W) = G1·Z + G1·W. G2 = NAND(Z, G1), G3 = NAND(W, G1), F = NAND(G2, G3). Total = 4 NAND gates. ✔ (Checked by a computer\nsearch: 3 is impossible.)"
+          "html": "<ul>\n<li><strong>NOR(X, Y) = X̄·Ȳ</strong>: one NOR gives a “both are 0” term\n<strong>for free</strong>.</li>\n<li><strong>NAND(X, Y) = X̄ + Ȳ</strong>: one NAND gives an “either is 0”\nterm <strong>for free</strong>.</li>\n</ul>",
+          "text": "NOR(X, Y) = X̄·Ȳ : one NOR gives a “both are 0” term for free . NAND(X, Y) = X̄ + Ȳ : one NAND gives an “either is 0”\nterm for free ."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 end-term, answer 4)</strong> “A 1-bit\ncomparator outputs 1 if A = B. Minimum 2-input NOR gates?”</p>\n<ul>\n<li>“1 if A = B” is <strong>XNOR</strong>.</li>\n<li>From the table: XNOR with NOR = <strong>4</strong>. ✔</li>\n</ul>\n</blockquote>",
-          "text": "Worked example (2026 T2 end-term, answer 4) “A 1-bit\ncomparator outputs 1 if A = B. Minimum 2-input NOR gates?” “1 if A = B” is XNOR . From the table: XNOR with NOR = 4 . ✔"
+          "html": "<p><strong>Step 4: count every gate</strong>, including NOTs made from\nNAND/NOR.</p>",
+          "text": "Step 4: count every gate , including NOTs made from\nNAND/NOR."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Watch out: the answer can be 1 (2025 T2 Quiz 2 and 2026 T2\nend-term both had “1” as the answer)</strong> If the function simplifies\nto (A + B)̅, it <strong>is</strong> a NOR gate, so the answer is\n<strong>1</strong>. Always simplify first!</p>\n</blockquote>",
-          "text": "Watch out: the answer can be 1 (2025 T2 Quiz 2 and 2026 T2\nend-term both had “1” as the answer) If the function simplifies\nto (A + B)̅, it is a NOR gate, so the answer is 1 . Always simplify first!"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q105 · 4 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input NAND gates to\nrealize F = (X̄ + Ȳ)(Z + W)?</p>\n<p><strong>Answer:</strong> <strong>4</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q105 · 4 marks Question: Minimum number of 2-input NAND gates to\nrealize F = (X̄ + Ȳ)(Z + W)? Answer: 4"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Spot the shortcut: X̄ + Ȳ = NAND(X, Y) → <strong>G1</strong>, 1 gate,\nno NOTs needed.</li>\n<li>Multiply out: F = G1·Z + G1·W</li>\n<li>SOP → NAND–NAND: G2 = NAND(G1, Z), G3 = NAND(G1, W), F = NAND(G2,\nG3)</li>\n<li>Count: G1, G2, G3, F = <strong>4</strong> ✔ (a computer search\nconfirmed 3 is impossible)</li>\n</ol>",
+          "text": "Spot the shortcut: X̄ + Ȳ = NAND(X, Y) → G1 , 1 gate,\nno NOTs needed. Multiply out: F = G1·Z + G1·W SOP → NAND–NAND: G2 = NAND(G1, Z), G3 = NAND(G1, W), F = NAND(G2,\nG3) Count: G1, G2, G3, F = 4 ✔ (a computer search\nconfirmed 3 is impossible)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q155, 2025 T2 Quiz\n2 · Q138, 2026 T2 End-term · Q8 · 3 marks each</p>\n<p><strong>Question:</strong> Minimum number of 2-input NOR gates for F\n= Σ(0, 2, 8, 10) (4 inputs)?</p>\n<p><strong>Answer:</strong> <strong>1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q155, 2025 T2 Quiz\n2 · Q138, 2026 T2 End-term · Q8 · 3 marks each Question: Minimum number of 2-input NOR gates for F\n= Σ(0, 2, 8, 10) (4 inputs)? Answer: 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Write the rows in binary (ABCD): 0 = 0000, 2 = 0010, 8 = 1000, 10 =\n1010</li>\n<li>Which letters never change? <strong>B = 0 and D = 0</strong> in all\nfour rows. A and C take both values.</li>\n<li>So F = B̄·D̄</li>\n<li>B̄·D̄ = NOT(B + D) = <strong>NOR(B, D)</strong> → <strong>1\ngate</strong> ✔</li>\n</ol>",
+          "text": "Write the rows in binary (ABCD): 0 = 0000, 2 = 0010, 8 = 1000, 10 =\n1010 Which letters never change? B = 0 and D = 0 in all\nfour rows. A and C take both values. So F = B̄·D̄ B̄·D̄ = NOT(B + D) = NOR(B, D) → 1\ngate ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q123 · 3 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input NOR gates for F\n= Σ(5, 7, 13, 15)?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (FN) · Q123 · 3 marks Question: Minimum number of 2-input NOR gates for F\n= Σ(5, 7, 13, 15)? Answer: 3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Binary: 0101, 0111, 1101, 1111 → <strong>B = 1 and D = 1</strong>\nalways</li>\n<li>F = B·D (an AND)</li>\n<li>AND from NOR costs <strong>3</strong>: NOR(B, B) = B̄, NOR(D, D) = D̄,\nNOR(B̄, D̄) = BD ✔</li>\n</ol>",
+          "text": "Binary: 0101, 0111, 1101, 1111 → B = 1 and D = 1 always F = B·D (an AND) AND from NOR costs 3 : NOR(B, B) = B̄, NOR(D, D) = D̄,\nNOR(B̄, D̄) = BD ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (AN) · Q10 · 3 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input NAND gates for\nthe minimized SOP of f(x, y, z) = Σm(0, 2, 5, 7)?</p>\n<p><strong>Answer:</strong> <strong>5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (AN) · Q10 · 3 marks Question: Minimum number of 2-input NAND gates for\nthe minimized SOP of f(x, y, z) = Σm(0, 2, 5, 7)? Answer: 5"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Binary: 000, 010, 101, 111</li>\n<li>Rows 000 and 010: x = 0, z = 0 → x̄z̄. Rows 101 and 111: x = 1, z = 1\n→ xz.</li>\n<li>f = x̄z̄ + xz = 1 when x = z → <strong>XNOR(x, z)</strong></li>\n<li>XNOR from NAND = <strong>5</strong> (from the table) ✔</li>\n</ol>",
+          "text": "Binary: 000, 010, 101, 111 Rows 000 and 010: x = 0, z = 0 → x̄z̄. Rows 101 and 111: x = 1, z = 1\n→ xz. f = x̄z̄ + xz = 1 when x = z → XNOR(x, z) XNOR from NAND = 5 (from the table) ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 End-term (FN) · Q9 · 3 marks</p>\n<p><strong>Question:</strong> Minimum number of 2-input XNOR gates for\nthe same f = Σm(0, 2, 5, 7)?</p>\n<p><strong>Answer:</strong> <strong>1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 End-term (FN) · Q9 · 3 marks Question: Minimum number of 2-input XNOR gates for\nthe same f = Σm(0, 2, 5, 7)? Answer: 1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong> f = x ⊙ z (from above). That is one\nXNOR gate → <strong>1</strong> ✔. Always simplify first!</p>",
+          "text": "How to solve: f = x ⊙ z (from above). That is one\nXNOR gate → 1 ✔. Always simplify first!"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (AN) · Q157 and 2026 T2\nEnd-term · Q10 · 3 marks each</p>\n<p><strong>Question:</strong> A 1-bit comparator outputs 1 if A = B,\nelse 0. Minimum 2-input NOR gates?</p>\n<p><strong>Answer:</strong> <strong>4</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (AN) · Q157 and 2026 T2\nEnd-term · Q10 · 3 marks each Question: A 1-bit comparator outputs 1 if A = B,\nelse 0. Minimum 2-input NOR gates? Answer: 4"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>“1 when A = B” is <strong>XNOR</strong>.</li>\n<li>From the table: XNOR from NOR = <strong>4</strong>.</li>\n<li>The circuit: G1 = NOR(A, B), G2 = NOR(A, G1), G3 = NOR(B, G1), Y =\nNOR(G2, G3).</li>\n</ol>",
+          "text": "“1 when A = B” is XNOR . From the table: XNOR from NOR = 4 . The circuit: G1 = NOR(A, B), G2 = NOR(A, G1), G3 = NOR(B, G1), Y =\nNOR(G2, G3)."
         },
         {
           "type": "image",
@@ -633,23 +726,28 @@
         },
         {
           "type": "html",
-          "html": "<p><strong>Try these:</strong></p>",
-          "text": "Try these:"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 End-term (FN) · Q125 · 3 marks</p>\n<p><strong>Question:</strong> Same comparator (1 if A = B), but using\nonly 2-input <strong>NAND</strong> gates. Minimum?</p>\n<p><strong>Answer:</strong> <strong>5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 End-term (FN) · Q125 · 3 marks Question: Same comparator (1 if A = B), but using\nonly 2-input NAND gates. Minimum? Answer: 5"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nMinimum 2-input NAND gates for A + BC?\n</summary>\n<ol start=\"3\" type=\"1\">\n<li>G1 = NAND(A, A) = A̅, G2 = NAND(B, C), F = NAND(G1, G2).\n</li></ol></details>",
-          "text": "Minimum 2-input NAND gates for A + BC? G1 = NAND(A, A) = A̅, G2 = NAND(B, C), F = NAND(G1, G2)."
+          "html": "<p><strong>How to solve:</strong> XNOR from NAND = XOR (4 NANDs) + one\nNOT (1 NAND) = <strong>5</strong>.</p>",
+          "text": "How to solve: XNOR from NAND = XOR (4 NANDs) + one\nNOT (1 NAND) = 5 ."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nMinimum 2-input NAND gates for P̅ + Q?\n</summary>\n<ol start=\"2\" type=\"1\">\n<li>G1 = NAND(P, Q), F = NAND(P, G1). (Check: P = 1, Q = 0 gives G1 = 1,\nF = NAND(1, 1) = 0 ✓, and that’s the only row where P̅ + Q is 0.)\n</li></ol></details>",
-          "text": "Minimum 2-input NAND gates for P̅ + Q? G1 = NAND(P, Q), F = NAND(P, G1). (Check: P = 1, Q = 0 gives G1 = 1,\nF = NAND(1, 1) = 0 ✓, and that’s the only row where P̅ + Q is 0.)"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 2 · Q12 · 3 marks</p>\n<p><strong>Question:</strong> F = Σ(0, 1, 2, 3, 4, 5, 7) using\n<strong>3-input</strong> NAND gates. Minimum?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 2 · Q12 · 3 marks Question: F = Σ(0, 1, 2, 3, 4, 5, 7) using 3-input NAND gates. Minimum? Answer: 2"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nMinimum 2-input NOR gates for an AND gate?\n</summary>\n<ol start=\"3\" type=\"1\">\n<li>NOT A, NOT B, then NOR them.\n</li></ol></details>",
-          "text": "Minimum 2-input NOR gates for an AND gate? NOT A, NOT B, then NOR them."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F is 1 in every row except <strong>6</strong> (110). So F = 0 only\nwhen A = 1, B = 1, C = 0.</li>\n<li>F = NOT(A·B·C̄) = <strong>NAND(A, B, C̄)</strong> → 1 gate, but it\nneeds C̄.</li>\n<li>C̄ = NAND(C, C, C) → 1 more gate.</li>\n<li>Total <strong>2</strong> ✔</li>\n</ol>",
+          "text": "F is 1 in every row except 6 (110). So F = 0 only\nwhen A = 1, B = 1, C = 0. F = NOT(A·B·C̄) = NAND(A, B, C̄) → 1 gate, but it\nneeds C̄. C̄ = NAND(C, C, C) → 1 more gate. Total 2 ✔"
         },
         {
           "type": "html",
@@ -661,19 +759,18 @@
           "text": "Type 2: Timing diagram →\nminimum gates"
         },
         {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> a picture of waves for A, B, C and Y, then\n“minimum 2-input XOR / NOR gates to make Y” (5 marks).</p>",
-          "text": "Spot it: a picture of waves for A, B, C and Y, then\n“minimum 2-input XOR / NOR gates to make Y” (5 marks)."
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<ol type=\"1\">\n<li>Draw a line wherever <strong>any</strong> input changes. This cuts\ntime into <strong>slices</strong>.</li>\n<li>In each slice, read every input and Y. Each slice = one truth-table\nrow.</li>\n<li>Find the function, then count gates (Type 1).</li>\n</ol>",
+          "text": "Draw a line wherever any input changes. This cuts\ntime into slices . In each slice, read every input and Y. Each slice = one truth-table\nrow. Find the function, then count gates (Type 1)."
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Draw a vertical line every time <strong>any</strong> input\nchanges.</li>\n<li>In each slice, read A, B, C and Y. Write a truth table.</li>\n<li>Look for a pattern. <strong>Y = 1 when an odd number of inputs are\n1?</strong> Then it’s XOR.</li>\n<li>Find the function, then count gates using Type 1.</li>\n</ol>",
-          "text": "Draw a vertical line every time any input\nchanges. In each slice, read A, B, C and Y. Write a truth table. Look for a pattern. Y = 1 when an odd number of inputs are\n1? Then it’s XOR. Find the function, then count gates using Type 1."
+          "html": "<p><strong>Usual pattern in these papers:</strong> A changes slowest, C\nfastest, so the slices go 000, 001, 010, …, 111 in order.</p>",
+          "text": "Usual pattern in these papers: A changes slowest, C\nfastest, so the slices go 000, 001, 010, …, 111 in order."
         },
         {
           "type": "image",
@@ -681,32 +778,56 @@
           "width": 1536,
           "height": 1024,
           "alt": "Timing diagram to truth table",
-          "caption": "Cut the waves into slices;\neach slice is one row. Y is 1 when an odd number of inputs are 1, so Y =\nA ⊕ B ⊕ C."
+          "caption": "Cut the waves into slices;\neach slice is one row."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (same idea as 2026 T2 Quiz 1, answer\n2)</strong> A changes slowly, B twice as fast, C fastest, so together\nthey count 000, 001, …, 111. Reading Y in the slices gives 0 1 1 0 1 0 0\n1.</p>\n<ul>\n<li>Y = 1 exactly when an <strong>odd</strong> number of inputs are 1,\nso <strong>Y = A ⊕ B ⊕ C</strong>.</li>\n<li>With 2-input XOR gates: (A ⊕ B) ⊕ C → <strong>2 gates.</strong>\n✔</li>\n</ul>\n</blockquote>",
-          "text": "Worked example (same idea as 2026 T2 Quiz 1, answer\n2) A changes slowly, B twice as fast, C fastest, so together\nthey count 000, 001, …, 111. Reading Y in the slices gives 0 1 1 0 1 0 0\n1. Y = 1 exactly when an odd number of inputs are 1,\nso Y = A ⊕ B ⊕ C . With 2-input XOR gates: (A ⊕ B) ⊕ C → 2 gates. ✔"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q3 · 5 marks</p>\n<p><strong>Question:</strong> Timing diagram for A, B, C and Y. Minimum\n2-input <strong>XOR</strong> gates to make Y?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q3 · 5 marks Question: Timing diagram for A, B, C and Y. Minimum\n2-input XOR gates to make Y? Answer: 2"
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> don’t count the slices. Count the\n<strong>distinct input patterns</strong>. A pattern that appears twice\nis still one row.</p>",
-          "text": "Trap: don’t count the slices. Count the distinct input patterns . A pattern that appears twice\nis still one row."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<p><strong>Quick patterns to recognise:</strong></p>",
-          "text": "Quick patterns to recognise:"
+          "html": "<ol type=\"1\">\n<li>Read the 8 slices (ABC → Y): 000→0, 001→1, 010→1, 011→0, 100→1,\n101→0, 110→0, 111→1</li>\n<li>Y = 1 when the number of 1s is <strong>odd</strong> (1, 1, 1, 3) →\n<strong>Y = A ⊕ B ⊕ C</strong></li>\n<li>With 2-input XORs: (A ⊕ B) ⊕ C → <strong>2 gates</strong> ✔</li>\n</ol>",
+          "text": "Read the 8 slices (ABC → Y): 000→0, 001→1, 010→1, 011→0, 100→1,\n101→0, 110→0, 111→1 Y = 1 when the number of 1s is odd (1, 1, 1, 3) → Y = A ⊕ B ⊕ C With 2-input XORs: (A ⊕ B) ⊕ C → 2 gates ✔"
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Y looks like…</th>\n<th>Function</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 only when all inputs are 1</td>\n<td>AND</td>\n</tr>\n<tr>\n<td>0 only when all inputs are 0</td>\n<td>OR</td>\n</tr>\n<tr>\n<td>1 when an odd number of inputs are 1</td>\n<td>XOR</td>\n</tr>\n<tr>\n<td>1 when the inputs are equal</td>\n<td>XNOR</td>\n</tr>\n<tr>\n<td>the exact opposite of one input</td>\n<td>NOT</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Y looks like… Function 1 only when all inputs are 1 AND 0 only when all inputs are 0 OR 1 when an odd number of inputs are 1 XOR 1 when the inputs are equal XNOR the exact opposite of one input NOT"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q102 · 5 marks</p>\n<p><strong>Question:</strong> Timing diagram for A, B, C and Y. Minimum\n2-input <strong>NAND</strong> gates to make Y?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q102 · 5 marks Question: Timing diagram for A, B, C and Y. Minimum\n2-input NAND gates to make Y? Answer: 3"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: slices give x₁x₂ = 00 → 1, 01 → 1, 10 → 0, 11 → 1. Function?\nMinimum NANDs?\n</summary>\nf = x̅₁ + x₂ (0 only at 10). NAND count = 2: G1 = NAND(x₁, x₂), f =\nNAND(x₁, G1).\n</details>",
-          "text": "Try: slices give x₁x₂ = 00 → 1, 01 → 1, 10 → 0, 11 → 1. Function?\nMinimum NANDs? f = x̅₁ + x₂ (0 only at 10). NAND count = 2: G1 = NAND(x₁, x₂), f =\nNAND(x₁, G1)."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Read the slices: Y = 1, 1, 1, 1, 1, 1, 1, <strong>0</strong>. Y is 0\nonly in slice 111.</li>\n<li>So Y = NOT(A·B·C), a 3-input NAND.</li>\n<li>With 2-input NANDs: G1 = NAND(A, B), G2 = NAND(G1, G1) = AB, Y =\nNAND(G2, C)</li>\n<li>Total <strong>3</strong> ✔</li>\n</ol>",
+          "text": "Read the slices: Y = 1, 1, 1, 1, 1, 1, 1, 0 . Y is 0\nonly in slice 111. So Y = NOT(A·B·C), a 3-input NAND. With 2-input NANDs: G1 = NAND(A, B), G2 = NAND(G1, G1) = AB, Y =\nNAND(G2, C) Total 3 ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q175 · 5 marks (the\nanswer key is missing in the PDF; our answer is checked)</p>\n<p><strong>Question:</strong> Timing diagram for A, B, C and Output Y.\nMinimum 2-input <strong>NOR</strong> gates to make Y?</p>\n<p><strong>Answer:</strong> <strong>2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q175 · 5 marks (the\nanswer key is missing in the PDF; our answer is checked) Question: Timing diagram for A, B, C and Output Y.\nMinimum 2-input NOR gates to make Y? Answer: 2"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Read the slices: Y = 0, 1, 0, 1, 1, 1, 1, 1</li>\n<li>Y = 0 only in rows 000 and 010 → there A = 0 and C = 0. So Y =\n<strong>A + C</strong>.</li>\n<li>OR from NOR = <strong>2</strong>: G1 = NOR(A, C), Y = NOR(G1, G1)\n✔</li>\n</ol>",
+          "text": "Read the slices: Y = 0, 1, 0, 1, 1, 1, 1, 1 Y = 0 only in rows 000 and 010 → there A = 0 and C = 0. So Y = A + C . OR from NOR = 2 : G1 = NOR(A, C), Y = NOR(G1, G1)\n✔"
         },
         {
           "type": "html",
@@ -715,37 +836,65 @@
         },
         {
           "type": "heading",
-          "text": "Type 3: Σ ↔︎ Π conversion MCQs"
+          "text": "Type 3: SOP ↔︎ POS multiple\nchoice"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Spot it:</strong> “F = Σm(…). Which of these is F?” with\noptions in ΠM form, or with F̅.</p>",
-          "text": "Spot it: “F = Σm(…). Which of these is F?” with\noptions in ΠM form, or with F̅."
+          "html": "<ul>\n<li><strong>Σm</strong> lists the rows where F = 1. <strong>ΠM</strong>\nlists the rows where F = 0. Change Σ ↔︎ Π by taking the\n<strong>other</strong> numbers.</li>\n<li>A <strong>maxterm</strong> for a 0-row: digit 0 → plain letter,\ndigit 1 → barred letter, joined by <strong>+</strong>.</li>\n<li>To check an option quickly: find where the option is\n<strong>0</strong> and compare with the 0-rows.</li>\n</ul>",
+          "text": "Σm lists the rows where F = 1. ΠM lists the rows where F = 0. Change Σ ↔︎ Π by taking the other numbers. A maxterm for a 0-row: digit 0 → plain letter,\ndigit 1 → barred letter, joined by + . To check an option quickly: find where the option is 0 and compare with the 0-rows."
+        },
+        {
+          "type": "subheading",
+          "text": "Past paper questions"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong></p>",
-          "text": "Steps:"
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q10 · 4 marks</p>\n<p><strong>Question:</strong> F(a, b, c) = Π(0, 1, 2, 4). Find the\nminimized SOP. Options: āc + ab / ab̄ + ac̄ + b̄c / ab + bc + ca / ab̄ + ac̄\n+ b̄c̄ / None</p>\n<p><strong>Answer:</strong> <strong>ab + bc + ca</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q10 · 4 marks Question: F(a, b, c) = Π(0, 1, 2, 4). Find the\nminimized SOP. Options: āc + ab / ab̄ + ac̄ + b̄c / ab + bc + ca / ab̄ + ac̄\n+ b̄c̄ / None Answer: ab + bc + ca"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Write the list of all row numbers: 0 to 2ⁿ − 1.</li>\n<li>Change <strong>Σ ↔︎ Π</strong> → take the <strong>missing</strong>\nnumbers.</li>\n<li>Change <strong>F ↔︎ F̅</strong> → take the <strong>missing</strong>\nnumbers.</li>\n<li>Do <strong>both</strong> → keep the <strong>same</strong>\nnumbers.</li>\n</ol>",
-          "text": "Write the list of all row numbers: 0 to 2ⁿ − 1. Change Σ ↔︎ Π → take the missing numbers. Change F ↔︎ F̅ → take the missing numbers. Do both → keep the same numbers."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong> F(A, B, C) = Σm(1, 2, 4, 7).\nThen:</p>\n<ul>\n<li>F = ΠM(0, 3, 5, 6)</li>\n<li>F̅ = Σm(0, 3, 5, 6)</li>\n<li>F̅ = ΠM(1, 2, 4, 7)</li>\n</ul>\n</blockquote>",
-          "text": "Worked example F(A, B, C) = Σm(1, 2, 4, 7).\nThen: F = ΠM(0, 3, 5, 6) F̅ = Σm(0, 3, 5, 6) F̅ = ΠM(1, 2, 4, 7)"
+          "html": "<ol type=\"1\">\n<li>F = 0 in rows 0, 1, 2, 4 → F = 1 in the <strong>other</strong> rows:\n<strong>3, 5, 6, 7</strong></li>\n<li>Binary: 011, 101, 110, 111 → every row has <strong>two or more\n1s</strong></li>\n<li>That is ab + bc + ca (any two are 1) ✔</li>\n</ol>",
+          "text": "F = 0 in rows 0, 1, 2, 4 → F = 1 in the other rows: 3, 5, 6, 7 Binary: 011, 101, 110, 111 → every row has two or more\n1s That is ab + bc + ca (any two are 1) ✔"
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> check how many variables there are. For 4\nvariables, rows go up to <strong>15</strong>, not 7.</p>",
-          "text": "Trap: check how many variables there are. For 4\nvariables, rows go up to 15 , not 7."
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q168 · 4 marks</p>\n<p><strong>Question:</strong> F(a, b, c) = Π(1, 2, 3, 7). Find the\nminimized SOP.</p>\n<p><strong>Answer:</strong> <strong>ab̄ + ac̄ + b̄c̄</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q168 · 4 marks Question: F(a, b, c) = Π(1, 2, 3, 7). Find the\nminimized SOP. Answer: ab̄ + ac̄ + b̄c̄"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: F(A,B,C,D) = ΠM(0, 15). Write F as Σm.\n</summary>\nΣm(1, 2, 3, …, 14): every row except 0 and 15. That’s 14 minterms.\n</details>",
-          "text": "Try: F(A,B,C,D) = ΠM(0, 15). Write F as Σm. Σm(1, 2, 3, …, 14): every row except 0 and 15. That’s 14 minterms."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F = 1 in rows <strong>0, 4, 5, 6</strong> = 000, 100, 101, 110</li>\n<li>Pair them: 000 + 100 → b̄c̄. 100 + 101 → ab̄. 100 + 110 → ac̄.</li>\n<li>F = ab̄ + ac̄ + b̄c̄ ✔ (each pair shares 100, and every row is\ncovered)</li>\n</ol>",
+          "text": "F = 1 in rows 0, 4, 5, 6 = 000, 100, 101, 110 Pair them: 000 + 100 → b̄c̄. 100 + 101 → ab̄. 100 + 110 → ac̄. F = ab̄ + ac̄ + b̄c̄ ✔ (each pair shares 100, and every row is\ncovered)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q98 · 4 marks.\n<strong>The official key is wrong.</strong></p>\n<p><strong>Question:</strong> F(A, B, C) = Σ(0, 2, 3, 6). Which is the\ncorrect minimized POS? Options: (A + B)(Ā + C̄) / (Ā + B + C)(A + B̄) / (A\n+ B̄)(Ā + C̄) / None of these</p>\n<p><strong>Answer (key):</strong> (A + B̄)(Ā + C̄) · <strong>Correct\nanswer: None of these</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q98 · 4 marks. The official key is wrong. Question: F(A, B, C) = Σ(0, 2, 3, 6). Which is the\ncorrect minimized POS? Options: (A + B)(Ā + C̄) / (Ā + B + C)(A + B̄) / (A\n+ B̄)(Ā + C̄) / None of these Answer (key): (A + B̄)(Ā + C̄) · Correct\nanswer: None of these"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>F = 0 in rows <strong>1, 4, 5, 7</strong> = 001, 100, 101, 111</li>\n<li>Check the keyed option (A + B̄)(Ā + C̄). It is 0 when A = 0 and B = 1\n(rows 2, 3), or when A = 1 and C = 1 (rows 5, 7). So its 0-rows are 2,\n3, 5, 7, <strong>not</strong> 1, 4, 5, 7 ✗</li>\n<li>Row 2 makes it obvious: F should be <strong>1</strong> at row 2\n(it’s in the Σ list), but the option gives 0.</li>\n<li>The true minimum POS needs <strong>three</strong> terms: (B + C̄)(Ā +\nB)(Ā + C̄). We checked by computer that no 2-term POS works.</li>\n<li>So the correct choice is <strong>None of these</strong>. (In the\nexam the key gave marks to (A + B̄)(Ā + C̄).)</li>\n</ol>",
+          "text": "F = 0 in rows 1, 4, 5, 7 = 001, 100, 101, 111 Check the keyed option (A + B̄)(Ā + C̄). It is 0 when A = 0 and B = 1\n(rows 2, 3), or when A = 1 and C = 1 (rows 5, 7). So its 0-rows are 2,\n3, 5, 7, not 1, 4, 5, 7 ✗ Row 2 makes it obvious: F should be 1 at row 2\n(it’s in the Σ list), but the option gives 0. The true minimum POS needs three terms: (B + C̄)(Ā +\nB)(Ā + C̄). We checked by computer that no 2-term POS works. So the correct choice is None of these . (In the\nexam the key gave marks to (A + B̄)(Ā + C̄).)"
         },
         {
           "type": "html",
@@ -757,29 +906,33 @@
           "text": "Type 4: Minimum number of\nliterals"
         },
         {
-          "type": "html",
-          "html": "<p><strong>Spot it:</strong> “Find the minimum number of literals in the\nSOP form…” (a <strong>literal</strong> = one letter, barred or not, each\ntime it appears).</p>",
-          "text": "Spot it: “Find the minimum number of literals in the\nSOP form…” (a literal = one letter, barred or not, each\ntime it appears)."
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong> simplify fully, then count letters.</p>",
-          "text": "Steps: simplify fully, then count letters."
+          "html": "<p>A <strong>literal</strong> is one letter, with or without a bar, each\ntime it appears. <strong>Simplify fully, then count\nletters.</strong></p>",
+          "text": "A literal is one letter, with or without a bar, each\ntime it appears. Simplify fully, then count\nletters."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example (2026 T2 Quiz 1, answer 4)</strong> ab + a̅b̅c̅ +\na̅bc̅ = ab + a̅c̅(b̅ + b) ← take out a̅c̅ = ab + a̅c̅ ← because b̅ + b = 1\nLiterals: a, b, a̅, c̅ → <strong>4.</strong> ✔</p>\n</blockquote>",
-          "text": "Worked example (2026 T2 Quiz 1, answer 4) ab + a̅b̅c̅ +\na̅bc̅ = ab + a̅c̅(b̅ + b) ← take out a̅c̅ = ab + a̅c̅ ← because b̅ + b = 1\nLiterals: a, b, a̅, c̅ → 4. ✔"
+          "html": "<p>Useful steps: take out a common part, then use X + X̄ = 1.</p>",
+          "text": "Useful steps: take out a common part, then use X + X̄ = 1."
         },
         {
           "type": "html",
-          "html": "<p><strong>Trap:</strong> count letters, not terms. “ab + a̅c̅” has 2\nterms but <strong>4</strong> literals.</p>",
-          "text": "Trap: count letters, not terms. “ab + a̅c̅” has 2\nterms but 4 literals."
+          "html": "<blockquote>\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q5 · 5 marks</p>\n<p><strong>Question:</strong> Minimum number of literals in the SOP\nform: ab + āb̄c̄ + ābc̄</p>\n<p><strong>Answer:</strong> <strong>4</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q5 · 5 marks Question: Minimum number of literals in the SOP\nform: ab + āb̄c̄ + ābc̄ Answer: 4"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: minimum literals in xy + xy̅ + x̅y?\n</summary>\nx + y → 2 literals. (xy + xy̅ = x, then x + x̅y = x + y.)\n</details>",
-          "text": "Try: minimum literals in xy + xy̅ + x̅y? x + y → 2 literals. (xy + xy̅ = x, then x + x̅y = x + y.)"
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>The last two terms share āc̄: āb̄c̄ + ābc̄ = āc̄(b̄ + b)</li>\n<li>b̄ + b = 1, so they become <strong>āc̄</strong></li>\n<li>F = ab + āc̄ → letters: a, b, ā, c̄ → <strong>4</strong> ✔</li>\n</ol>",
+          "text": "The last two terms share āc̄: āb̄c̄ + ābc̄ = āc̄(b̄ + b) b̄ + b = 1, so they become āc̄ F = ab + āc̄ → letters: a, b, ā, c̄ → 4 ✔"
         },
         {
           "type": "html",
@@ -788,46 +941,32 @@
         },
         {
           "type": "heading",
-          "text": "Type 5: “Three\nswitches, one bulb” (word problems)"
+          "text": "Practice set"
         },
         {
           "type": "html",
-          "html": "<p><strong>Spot it:</strong> a story where <strong>any one\nchange</strong> flips the output.</p>",
-          "text": "Spot it: a story where any one\nchange flips the output."
+          "html": "<details>\n<summary>\n<ol type=\"1\">\n<li>Minimum 2-input NAND gates for A + BC?\n</li></ol></summary>\n<ol start=\"3\" type=\"1\">\n<li>G1 = NAND(A, A) = Ā, G2 = NAND(B, C), F = NAND(G1, G2).\n</li></ol></details>",
+          "text": "Minimum 2-input NAND gates for A + BC? G1 = NAND(A, A) = Ā, G2 = NAND(B, C), F = NAND(G1, G2)."
         },
         {
           "type": "html",
-          "html": "<p><strong>Steps:</strong> “any one flip flips the output” =\n<strong>XOR</strong> of all inputs. n inputs → <strong>n − 1</strong>\ntwo-input XOR gates.</p>",
-          "text": "Steps: “any one flip flips the output” = XOR of all inputs. n inputs → n − 1 two-input XOR gates."
+          "html": "<details>\n<summary>\n<ol start=\"2\" type=\"1\">\n<li>Minimum 2-input NOR gates for F = Σ(1, 3, 9, 11) (4 inputs)?\n</li></ol></summary>\nRows 0001, 0011, 1001, 1011 → B = 0, D = 1 → F = B̄D. NOR(B, D̄) with D̄ =\nNOR(D, D) → 2 gates.\n</details>",
+          "text": "Minimum 2-input NOR gates for F = Σ(1, 3, 9, 11) (4 inputs)? Rows 0001, 0011, 1001, 1011 → B = 0, D = 1 → F = B̄D. NOR(B, D̄) with D̄ =\nNOR(D, D) → 2 gates."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nTry: 5 switches control one bulb, any one toggles it. How many 2-input\nXOR gates?\n</summary>\n4.\n</details>",
-          "text": "Try: 5 switches control one bulb, any one toggles it. How many 2-input\nXOR gates? 4."
+          "html": "<details>\n<summary>\n<ol start=\"3\" type=\"1\">\n<li>Timing slices give Y = 1, 1, 0, 0, 1, 1, 0, 0 (ABC from 000 to 111).\nFunction and minimum 2-input NAND?\n</li></ol></summary>\nY = 1 exactly when B = 0, so Y = B̄. NAND(B, B) → 1 gate.\n</details>",
+          "text": "Timing slices give Y = 1, 1, 0, 0, 1, 1, 0, 0 (ABC from 000 to 111).\nFunction and minimum 2-input NAND? Y = 1 exactly when B = 0, so Y = B̄. NAND(B, B) → 1 gate."
         },
         {
           "type": "html",
-          "html": "<hr/>",
-          "text": ""
+          "html": "<details>\n<summary>\n<ol start=\"4\" type=\"1\">\n<li>F = Π(0, 3, 5, 6). Write F as Σm.\n</li></ol></summary>\nΣm(1, 2, 4, 7) (= A ⊕ B ⊕ C).\n</details>",
+          "text": "F = Π(0, 3, 5, 6). Write F as Σm. Σm(1, 2, 4, 7) (= A ⊕ B ⊕ C)."
         },
         {
           "type": "html",
-          "html": "<p><strong>In one line:</strong> Simplify first, check the gate-count\ntable, watch for free NOTs from NAND/NOR, and read timing diagrams by\nslicing them into truth-table rows. <strong>Exam words:</strong> minimum\ngate count, 2-input NAND/NOR/XOR, universal gate, timing diagram,\nparity, literal, Σ↔︎Π conversion.</p>",
-          "text": "In one line: Simplify first, check the gate-count\ntable, watch for free NOTs from NAND/NOR, and read timing diagrams by\nslicing them into truth-table rows. Exam words: minimum\ngate count, 2-input NAND/NOR/XOR, universal gate, timing diagram,\nparity, literal, Σ↔︎Π conversion."
-        },
-        {
-          "type": "heading",
-          "text": "Quick check"
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nWhy is XOR cheaper with NAND (4) than with NOR (5)?\n</summary>\nXOR is naturally an “OR of ANDs” (SOP), which fits NAND–NAND. With NOR\nyou build XNOR first (4), then need one more NOR to invert it (5).\n</details>",
-          "text": "Why is XOR cheaper with NAND (4) than with NOR (5)? XOR is naturally an “OR of ANDs” (SOP), which fits NAND–NAND. With NOR\nyou build XNOR first (4), then need one more NOR to invert it (5)."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nA circuit gives 1 when A = B. With only 2-input NAND gates, how many?\n</summary>\n5 (XNOR with NAND = XOR (4) + one NOT).\n</details>",
-          "text": "A circuit gives 1 when A = B. With only 2-input NAND gates, how many? 5 (XNOR with NAND = XOR (4) + one NOT)."
+          "html": "<p><strong>In one line:</strong> Simplify first, use the NAND/NOR table\nand free shortcuts, read timing diagrams slice by slice, and test\nSOP/POS options by finding their 0-rows. <strong>Exam words:</strong>\nminimum gate count, universal gates, NAND, NOR, XNOR, comparator, timing\ndiagram, Σm, ΠM, maxterm, literal.</p>",
+          "text": "In one line: Simplify first, use the NAND/NOR table\nand free shortcuts, read timing diagrams slice by slice, and test\nSOP/POS options by finding their 0-rows. Exam words: minimum gate count, universal gates, NAND, NOR, XNOR, comparator, timing\ndiagram, Σm, ΠM, maxterm, literal."
         }
       ]
     },
