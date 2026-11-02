@@ -1,0 +1,498 @@
+{
+  "/images/csd-week-1/img05-picture-voltages.webp": {
+    "source": "B",
+    "pngSha256": "cbfabf0835034cd170e22728808693f803d2ae60a5bdca456f7752cb3614ea6b",
+    "webpSha256": "81a04ffd6d786780b9b992d0f0ccb9b416cefd35d493e1fcdad09fac1337eee4",
+    "src": "/images/csd-week-1/img05-picture-voltages.webp?v=81a04ffd6d78",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img15-week1-question-types.webp": {
+    "source": "B",
+    "pngSha256": "7fb7dd1d2909affc02bde22fc4c0f839b7d18c00850b926f83a714ab86c9b01a",
+    "webpSha256": "d9646dfe139dbb6d7b8773bece1fbd105f82ef6fe2b1b0f80fef893e9f351c5c",
+    "src": "/images/csd-week-1/img15-week1-question-types.webp?v=d9646dfe139d",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img09-place-values.webp": {
+    "source": "B",
+    "pngSha256": "f571297fcee6c0b60521fd753def68332e893023d58050d45481b937eab59519",
+    "webpSha256": "ebd62b5ffae11a61c86987df71f8976acb26d7ace1b08d82bf2f0aff0e53e80d",
+    "src": "/images/csd-week-1/img09-place-values.webp?v=ebd62b5ffae1",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img06-noise-chain.webp": {
+    "source": "B",
+    "pngSha256": "e30de31296dfc5c70c27181f0fad2076f085907b5ea9169de5a6c1c0a7b44f9c",
+    "webpSha256": "9635b9015816662927e79b0a80504dc0c02123747095c1d159c30c31fca29419",
+    "src": "/images/csd-week-1/img06-noise-chain.webp?v=9635b9015816",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img07-voltage-zones.webp": {
+    "source": "B",
+    "pngSha256": "460c3be66139224cc942f2142c9b0d3dd57337953314fc3b4ecd281f0e071822",
+    "webpSha256": "66fbdd1dbe9c278a9661b686b7dcefa8303789c9c4b83f927a6c11b5a2201cf6",
+    "src": "/images/csd-week-1/img07-voltage-zones.webp?v=66fbdd1dbe9c",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img08-bit-patterns.webp": {
+    "source": "B",
+    "pngSha256": "5192d98967908028700714941c7214f0031c3a3d228a3d071572dcc3e63a490e",
+    "webpSha256": "c9e56dd7c304abe10e2b1edbe4d8ea19b1f550134cbc94f8f294e007f2a33e3a",
+    "src": "/images/csd-week-1/img08-bit-patterns.webp?v=c9e56dd7c304",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img04-moores-law.webp": {
+    "source": "B",
+    "pngSha256": "1d4972d81588a2ac1cc644292fb9a0e84d7b41a052070a5032a641306da24152",
+    "webpSha256": "a6f22c706c5b2d23cc19e84eddaed7b5de01bacb38a9950c4ed920ebac4fbfc1",
+    "src": "/images/csd-week-1/img04-moores-law.webp?v=a6f22c706c5b",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img11-week1-map.webp": {
+    "source": "B",
+    "pngSha256": "7012e57b026920562d3e58046566b5efc920e8fbd32acd6900fa40a2852412e7",
+    "webpSha256": "ff6dda4d1397ad2502841380cb22283e74a3eea246940e6373c0956796d4ee3f",
+    "src": "/images/csd-week-1/img11-week1-map.webp?v=ff6dda4d1397",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img10-switches-logic.webp": {
+    "source": "B",
+    "pngSha256": "d22f641a1359ccd973514b48e1d542c7821275c17b3d0ee1354cb4114a243d9d",
+    "webpSha256": "f81433be8876c1ff4e2a677a8d5b99cb1dc8ed303088f9d2d4dfede1795eb793",
+    "src": "/images/csd-week-1/img10-switches-logic.webp?v=f81433be8876",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img12-hex-groups.webp": {
+    "source": "B",
+    "pngSha256": "213f4147612a2a540ee2f840890573fcaddd85f73a96921a3cdf412213be8803",
+    "webpSha256": "021e20fb2a68b61d00a546c9003da43209657657a9702996388530a133158a42",
+    "src": "/images/csd-week-1/img12-hex-groups.webp?v=021e20fb2a68",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img07-priority-encoder.webp": {
+    "source": "B",
+    "pngSha256": "75984cb8b54156f8564b658897d0c23e123721108a0826e554f7096487d26252",
+    "webpSha256": "dfb22d195e946bcabab73b1ccb5c64abf012e0b3aed848aaae9b75f9ecf72fe2",
+    "src": "/images/csd-week-4/img07-priority-encoder.webp?v=dfb22d195e94",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img05-decoder-delay.webp": {
+    "source": "B",
+    "pngSha256": "df217239e575754161e72b42defb0e7c825b8c82e28a1df149d3a19730f7276a",
+    "webpSha256": "bc35db8cff153f6d725bbd842b91e4bc857ecdd5e63581afa24eaa0f068ef2d3",
+    "src": "/images/csd-week-4/img05-decoder-delay.webp?v=bc35db8cff15",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img18-week4-map.webp": {
+    "source": "A",
+    "pngSha256": "24ade41736505282972b739a8024e461a372be5107423437c135a62c93de4b76",
+    "webpSha256": "2a82515fcdda76bd5e5eba7650b25aa154ab4a9fdd5b119f07248b064a5e2151",
+    "src": "/images/csd-week-4/img18-week4-map.webp?v=2a82515fcdda",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img01-building-blocks.webp": {
+    "source": "B",
+    "pngSha256": "0eb8d2fde4cc1d6d827c636ccfe34434374811a3c2d913ceac9ee8138877b950",
+    "webpSha256": "dfcaac6f49a177acf5f38fc90a5c9137a6c57d06c5578147072a021008412d00",
+    "src": "/images/csd-week-4/img01-building-blocks.webp?v=dfcaac6f49a1",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img06-decoder-vs-encoder.webp": {
+    "source": "B",
+    "pngSha256": "88dba2ea442d99b548bc74965a10df36a2889efef64363f5b20fc961b95f3eee",
+    "webpSha256": "45104d5ccf671aa84aec666dd5d5430b6044b9f240243372a0f5c9700b4647c0",
+    "src": "/images/csd-week-4/img06-decoder-vs-encoder.webp?v=45104d5ccf67",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img02-4bit-comparator.webp": {
+    "source": "B",
+    "pngSha256": "4fab755a7c829b9aeff6edbbdfb09713b25c83b29d92bb438c599fe2aa97fca9",
+    "webpSha256": "6de26cac5b3c274c2110934e6b7aa3b2e5cae267e209caacb47d3d83da38960b",
+    "src": "/images/csd-week-4/img02-4bit-comparator.webp?v=6de26cac5b3c",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img12-read-mux-circuit.webp": {
+    "source": "A",
+    "pngSha256": "aac744939aecf1809f90d14aa50efaffc16f74007a12fb12711399dfea165994",
+    "webpSha256": "d259245a7b00db792dc03e2fdb137c49eb46191a94062851928a8b58adcfdc4b",
+    "src": "/images/csd-week-4/img12-read-mux-circuit.webp?v=d259245a7b00",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img08-2to1-mux.webp": {
+    "source": "B",
+    "pngSha256": "2e3a1c3ca56d1e37710e58d011705183edadc93ebdce600fa10b0084b378818c",
+    "webpSha256": "b6f1eed867ce166fc046729ebc839ef2b29255a18bccb92138659fdf7a5475e4",
+    "src": "/images/csd-week-4/img08-2to1-mux.webp?v=b6f1eed867ce",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img09-4to1-mux.webp": {
+    "source": "A",
+    "pngSha256": "667f53a6f38fc3774944ec84eda372749708be1cba172bd03f3e208cb47b59b5",
+    "webpSha256": "c45a4607198628ce20be10d5160c37c0c698244ca5019e510791ab8d842eda39",
+    "src": "/images/csd-week-4/img09-4to1-mux.webp?v=c45a46071986",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img10-mux-shannon.webp": {
+    "source": "A",
+    "pngSha256": "7baadb698f053e9dce988c1ea15f7a2a7fbde2628f69560bc9e7d6cf6aa54765",
+    "webpSha256": "cafde827d765ce5de84bb1eff71629422b37544facfdafb8ee99a09a7841f6aa",
+    "src": "/images/csd-week-4/img10-mux-shannon.webp?v=cafde827d765",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img04-decoder-plus-or.webp": {
+    "source": "B",
+    "pngSha256": "6d91eea4d4efa980886154c287449aef4b56c0b8ff53b460223da69523dcf11f",
+    "webpSha256": "7a3cdc8e0dea1b3eb31f2e30a8dcf1db769677798819910b8d48ceefc7a1b133",
+    "src": "/images/csd-week-4/img04-decoder-plus-or.webp?v=7a3cdc8e0dea",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img11-delay-paths.webp": {
+    "source": "A",
+    "pngSha256": "341bc4fc4f33e9927436f0c3aa27be5b0e6572315033322b1d77ebacdcfa1bf0",
+    "webpSha256": "41bc41e558efe1a88450489d5aebfa1354b8f3458bb6bbc8287dfe5b0f59bd77",
+    "src": "/images/csd-week-4/img11-delay-paths.webp?v=41bc41e558ef",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img03-2to4-decoder.webp": {
+    "source": "B",
+    "pngSha256": "0f004fcec2be1a7e7efa626c9345c49510eb628ad512d9de219d9d3677d80cab",
+    "webpSha256": "66059fbee110a971bece78f383a4ee0e3e4461921e082356660741544279e90f",
+    "src": "/images/csd-week-4/img03-2to4-decoder.webp?v=66059fbee110",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img17-mux-gate-table.webp": {
+    "source": "A",
+    "pngSha256": "a9714f3457e8a187dbc8493b36551ed8ad73b4ea3bc4341a66fd1888ddeb8e3f",
+    "webpSha256": "e1827cfd5b5c9ad055108ebcf5a4e30e7ba38c83522ff104edc96e6e5996d832",
+    "src": "/images/csd-week-4/img17-mux-gate-table.webp?v=e1827cfd5b5c",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img01-sop-two-level.webp": {
+    "source": "B",
+    "pngSha256": "e678303cf5ed281cd602f5d63ae324de84dc32880dbcf346924f7d9516eb8a20",
+    "webpSha256": "e5fbb5d83f0ab9a47905504fe34e46fa8b446dbaf091b8ce7398bf2196f185ab",
+    "src": "/images/csd-week-3/img01-sop-two-level.webp?v=e5fbb5d83f0a",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img10-four-nor-comparator.webp": {
+    "source": "B",
+    "pngSha256": "5faa6573761b2fa9f1d386150ffbb1f62a894c30822620049288a870b4786399",
+    "webpSha256": "c7219bcd9c99b1a9e368695daf4105af37187c5c4fefe1171ccc3851d46d2a0c",
+    "src": "/images/csd-week-3/img10-four-nor-comparator.webp?v=c7219bcd9c99",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img08-three-switch-light.webp": {
+    "source": "B",
+    "pngSha256": "77f42cdcfe3539ba478c91bf98bb01f3f10b323c39f316b2e79a8f773850b1cf",
+    "webpSha256": "6e74bbc74fd71a25de73ae47f72ebc25123a9bea23a5cc9c0b03f48fa51703cf",
+    "src": "/images/csd-week-3/img08-three-switch-light.webp?v=6e74bbc74fd7",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img11-timing-to-xor.webp": {
+    "source": "B",
+    "pngSha256": "6d4bdd5d12fd43673bbc60590ef59ceaa84256a648dec5212b8e7ea369309a80",
+    "webpSha256": "6c36ea9815470b59744fd9292102e33d2b243c5ce27fe1d01f7aaf599ed91c70",
+    "src": "/images/csd-week-3/img11-timing-to-xor.webp?v=6c36ea981547",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img03-sigma-pi-split.webp": {
+    "source": "B",
+    "pngSha256": "7b1fef44e82f992669111ef4501f27358d698b15eca3f690953818960bac3b36",
+    "webpSha256": "d17177fc6b7b80c4352b1cd18a5263e3ecd488e8f9dcd2eee9b16c0a0dbc1587",
+    "src": "/images/csd-week-3/img03-sigma-pi-split.webp?v=d17177fc6b7b",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img06-multilevel.webp": {
+    "source": "B",
+    "pngSha256": "aff6e87e630143068a2e357e9db49e1379af6b96c1e35f7a3727ae0b56060045",
+    "webpSha256": "0cafe52e4fe348b19a34cd265dd00e3816d0bc51103b283c9691011375bbdf34",
+    "src": "/images/csd-week-3/img06-multilevel.webp?v=0cafe52e4fe3",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img05-and-or-to-nand-nand.webp": {
+    "source": "B",
+    "pngSha256": "f76acad61980fc36b28effbb07401940097d3a7524048d183297cf937e216880",
+    "webpSha256": "f9785b7b1f21cb386a8d61023958c24fae879a596a8f8b20a1e468b59c416069",
+    "src": "/images/csd-week-3/img05-and-or-to-nand-nand.webp?v=f9785b7b1f21",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img02-sop-vs-pos.webp": {
+    "source": "B",
+    "pngSha256": "1bef349b8f4eca7685776163bea08ec03be75fc526264bcb30c29911809d08e8",
+    "webpSha256": "e2bf3c9b5b237ae2e36beff6fbcd88a0eb4427f31ba53af3135603dc75b45002",
+    "src": "/images/csd-week-3/img02-sop-vs-pos.webp?v=e2bf3c9b5b23",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img12-week3-map.webp": {
+    "source": "B",
+    "pngSha256": "d6c52dcd0b822c9f68d9009ba0cb43927f10ab7656989f325a99e98afa3ff12a",
+    "webpSha256": "9a549844d0ee212c4153d2d8f01012f901d5c44c6cad5343f5ed5d0dcf254e8e",
+    "src": "/images/csd-week-3/img12-week3-map.webp?v=9a549844d0ee",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img04-nand-universal.webp": {
+    "source": "B",
+    "pngSha256": "00e45d92b44372a6afd1dd299f6d4fdf607527f445b316c49dbf1712e486e3dd",
+    "webpSha256": "0a8ffef3af7e5f761c441c5aaac88037648b421ce3354cd31e8156fac36a6303",
+    "src": "/images/csd-week-3/img04-nand-universal.webp?v=0a8ffef3af7e",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img09-gate-count-recipe.webp": {
+    "source": "B",
+    "pngSha256": "0c113f55e767ba53d75faf978209a3397f46e1ca36b13c2ae9d6839db7aaac21",
+    "webpSha256": "c05c4600c511239593454f1d23c97d8142f133721fb62c848720065733727300",
+    "src": "/images/csd-week-3/img09-gate-count-recipe.webp?v=c05c4600c511",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img07-timing-diagram.webp": {
+    "source": "B",
+    "pngSha256": "a1efd56cc5048665825c196ca36d7368bfdab2cb5fbd4be2dfc0b62865cb2d13",
+    "webpSha256": "444a3a77f8ca1135da799eccdd7b487c7f03f783f8e27d7601e305db5d17f5c5",
+    "src": "/images/csd-week-3/img07-timing-diagram.webp?v=444a3a77f8ca",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img03-basic-gates.webp": {
+    "source": "B",
+    "pngSha256": "73b2fc8b55c13dbb7d7bb90a31ce85c14061e309a830b0d7ebfc32952812c4f5",
+    "webpSha256": "4363cec80ccdec9a09aaea173ef49e5f62010abf8eec4ce3037a0870556fcb00",
+    "src": "/images/csd-week-2/img03-basic-gates.webp?v=4363cec80ccd",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img06-demorgan-gates.webp": {
+    "source": "B",
+    "pngSha256": "2a79fe29b679014b9fe147439dbc065ca8be12281e27d204fc86733a13cb3c39",
+    "webpSha256": "1864e9aa033ed006e14538cca26d7cada2aaaeaa3c0d4d9a2aba7cb6f708cb55",
+    "src": "/images/csd-week-2/img06-demorgan-gates.webp?v=1864e9aa033e",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img02-comb-vs-seq.webp": {
+    "source": "B",
+    "pngSha256": "612ee3e1162a298b0e14e513a7e5598c012ef32158e8ed0efb262ec90ff69a8c",
+    "webpSha256": "e33771e81c4f8460a03b0491c5a98ab78ecb12835dfea78da564dfae47d44f7f",
+    "src": "/images/csd-week-2/img02-comb-vs-seq.webp?v=e33771e81c4f",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img08-probability-example.webp": {
+    "source": "B",
+    "pngSha256": "e9474727e4106b486f3bf769296e00d2e2a9aa3b84916573869b214be565021d",
+    "webpSha256": "107d7c2d8a833aa84e000d21d810bef120c16de1e519d38df343b12a34fcf0df",
+    "src": "/images/csd-week-2/img08-probability-example.webp?v=107d7c2d8a83",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img04-more-gates.webp": {
+    "source": "B",
+    "pngSha256": "efe7e70834c25092a3cb22743287986f786d266db65e488af7f6cf88bb94399b",
+    "webpSha256": "933245927ed45679fa6c7be8315d7433fabd5fa8b9c52ac869dd529151faddf0",
+    "src": "/images/csd-week-2/img04-more-gates.webp?v=933245927ed4",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img09-week2-map.webp": {
+    "source": "B",
+    "pngSha256": "96d77cc4f008a1e6d622f124ddcff9a4048f552c631e0a0675dedbcf41cc5013",
+    "webpSha256": "abad5d5633c59294fea30e227920deeae00438fb1642ea6281777c589889063c",
+    "src": "/images/csd-week-2/img09-week2-map.webp?v=abad5d5633c5",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img01-tictactoe-bits.webp": {
+    "source": "B",
+    "pngSha256": "7069eae9bedd204b086c0b97fc9757848c10287c62476603c80a182884d15337",
+    "webpSha256": "1d75b257e83e1265e415a528a306bcd2cea32c3a67f897e7024f50498272a8ab",
+    "src": "/images/csd-week-2/img01-tictactoe-bits.webp?v=1d75b257e83e",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img07-sop-from-table.webp": {
+    "source": "B",
+    "pngSha256": "7793bff8a7b4392ea2d34ca2749ec3b8fc79760a86963bec1baef15bf060f368",
+    "webpSha256": "3dd25fc98603cb232d7f9b8b4512e4a47a81bfaf9d7606961cbe19cb0173d8d4",
+    "src": "/images/csd-week-2/img07-sop-from-table.webp?v=3dd25fc98603",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img05-laws-pairs.webp": {
+    "source": "B",
+    "pngSha256": "df9c7205e044eb9724376f993dc8e24370af7b518928f3aed4b7f3ecc8d6bc79",
+    "webpSha256": "07b8608dd1acfa31edebe10428d816b2d83d17d0dad64088f3eb0fb6e6b6b184",
+    "src": "/images/csd-week-2/img05-laws-pairs.webp?v=07b8608dd1ac",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img13-telephone-game.webp": {
+    "source": "B",
+    "pngSha256": "307f15ff754443d962ed5e5a0d9e63035a56378eaaf3abb79072be4a922eef8d",
+    "webpSha256": "8e4b99f7e08af033220cbf1bd2bf79cd4751fc40c194a0ba3d6a791a5ab405a5",
+    "src": "/images/csd-week-1/img13-telephone-game.webp?v=8e4b99f7e08a",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img14-lego-blocks.webp": {
+    "source": "B",
+    "pngSha256": "080efd6b8474090ddc2ff4c91f94e5aa92336849177732ca94f23e48d4c1d4fd",
+    "webpSha256": "bbaf6367fd81fbf4c8445c4f37d2784ade32857f8cdb0d417c0604ca1710e878",
+    "src": "/images/csd-week-1/img14-lego-blocks.webp?v=bbaf6367fd81",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img01-three-blocks.webp": {
+    "source": "B",
+    "pngSha256": "4be2967379139769ca3c61063c50f7769013185ed818fd8d4be020b8dc0a43e6",
+    "webpSha256": "82b0b2788a6bb1378a1fa3e17e669120ff3750c20ca2ee94827658c3bd982f01",
+    "src": "/images/csd-week-1/img01-three-blocks.webp?v=82b0b2788a6b",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img02-transformation-ladder.webp": {
+    "source": "B",
+    "pngSha256": "632efaf7ae148b3ce8fe266676f83451040f0fac7ca106f11bdd810aca631c95",
+    "webpSha256": "2465a50936c35660682b9ebbe01a933cf9057924b7911464bf546e1e8d72f64a",
+    "src": "/images/csd-week-1/img02-transformation-ladder.webp?v=2465a50936c3",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-1/img03-zoom-levels.webp": {
+    "source": "B",
+    "pngSha256": "98ac14fe586610cab36a6fc4535df377ae36c01c6aa4919c03eafe134ae80331",
+    "webpSha256": "a1969c2db06716e823ecd84de7e7d7735fdec7448580dc5a922d5882e92c8b07",
+    "src": "/images/csd-week-1/img03-zoom-levels.webp?v=a1969c2db067",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img10-vending-function.webp": {
+    "source": "B",
+    "pngSha256": "718db5f229ba506e0add64b5fc87e5eda1493b6b95b6b4240013f16de863c14c",
+    "webpSha256": "e9a78e46332e3cf1bab4da15a7d17f8acce026496996a0adf39b86cb22112a28",
+    "src": "/images/csd-week-2/img10-vending-function.webp?v=e9a78e46332e",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img11-daily-and-or-not.webp": {
+    "source": "B",
+    "pngSha256": "22728a05bd952707d453dbdcf4e7147cda06bcc10ada54e51cfa0142aac1710a",
+    "webpSha256": "5d65a8fad07601f7cac8c5b562e989686b8a013711569bd7fd8c88678917cb9f",
+    "src": "/images/csd-week-2/img11-daily-and-or-not.webp?v=5d65a8fad076",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img12-not-inside.webp": {
+    "source": "B",
+    "pngSha256": "5c1aab34683abd524d7989d93a33016923e83fa50d399d0a86f7f9a5a931c1d8",
+    "webpSha256": "4a734abf6ae2458a048eea0f5665fea6e5a2548513182465aec805226c0a6ce9",
+    "src": "/images/csd-week-2/img12-not-inside.webp?v=4a734abf6ae2",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-2/img13-row-detector.webp": {
+    "source": "B",
+    "pngSha256": "dd9ff593626ffe1ed340f0472897206ba6be2c5d0cdcdb7c22b56b8cd95882b7",
+    "webpSha256": "0efa38162e23b27fe793e47b652d3432bbf36fe5bb1c4a9330021e1c5ac99188",
+    "src": "/images/csd-week-2/img13-row-detector.webp?v=0efa38162e23",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img13-list-the-zeros.webp": {
+    "source": "B",
+    "pngSha256": "6924faae491088087eb4b80f9f03e1753902818a914df4c7aeee15c1e3490033",
+    "webpSha256": "54bee266fde3df018cf721cc97a30ee70852e7f2becc091b9a34c54c97c900da",
+    "src": "/images/csd-week-3/img13-list-the-zeros.webp?v=54bee266fde3",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img14-three-doors-one-bulb.webp": {
+    "source": "B",
+    "pngSha256": "19589b4763f6e683356580b767824ce02e6abcb4c85bebccea0c022de31bcd44",
+    "webpSha256": "a763226c71b9ff61f13fdda3b32863ba59faccd1a6b9214307a47bf81a6e0c09",
+    "src": "/images/csd-week-3/img14-three-doors-one-bulb.webp?v=a763226c71b9",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img15-one-brick-every-circuit.webp": {
+    "source": "B",
+    "pngSha256": "91ce54481baaf1b2ef97538435d7bf172ebc03b56155bf4b2dc24d63a8648056",
+    "webpSha256": "fa3ca0fcc20a807abbf64ef4fac4a34342808956b584f7a03228558ee4a734d4",
+    "src": "/images/csd-week-3/img15-one-brick-every-circuit.webp?v=fa3ca0fcc20a",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-3/img16-cooks-and-levels.webp": {
+    "source": "B",
+    "pngSha256": "00c9ab33e217d65ab46c1d4b423f9a474d251ee12b05452138478d15bdeb28e2",
+    "webpSha256": "8c217d8b5fd503d837e34ae0d3feafebb49678455d8ba2fcba9af3dc64756156",
+    "src": "/images/csd-week-3/img16-cooks-and-levels.webp?v=8c217d8b5fd5",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img13-ready-made-parts.webp": {
+    "source": "B",
+    "pngSha256": "55ae5248d6469c913f5f56e2fccd0685b53c7edd0a613a86340cc5c84a13602b",
+    "webpSha256": "350fc9344f8868a8b9ee6dc0adb1813264bb650becb44a2d4cf500877a69c0ff",
+    "src": "/images/csd-week-4/img13-ready-made-parts.webp?v=350fc9344f88",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img14-hotel-rooms.webp": {
+    "source": "B",
+    "pngSha256": "67bfa3dbed6bce92cd2eee7e226ae17f8a8bd36c38e2a149e8a752729f798dfa",
+    "webpSha256": "c58340f6f6f1d74561a42c2b3799cbe166e805f2367eae7310e613687c3b1848",
+    "src": "/images/csd-week-4/img14-hotel-rooms.webp?v=c58340f6f6f1",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img15-priority-queue.webp": {
+    "source": "B",
+    "pngSha256": "e85e48f6d24f8fe052fe13e1a93f358d732f965c2a105274825bb12624d497f7",
+    "webpSha256": "465b44aa6137fccfe6e93588178edc18aa3e2431e246f920385a74b0d26d99ac",
+    "src": "/images/csd-week-4/img15-priority-queue.webp?v=465b44aa6137",
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/csd-week-4/img16-tv-remote-mux.webp": {
+    "source": "B",
+    "pngSha256": "1ed042e01163b7c559c4282a3c30c17daf64f9cb8f8d94b376d40697f7ebf661",
+    "webpSha256": "d90bc2ccbe49d711c0dfb9c857effae190d0dfcf69176769b76444af6c91ec41",
+    "src": "/images/csd-week-4/img16-tv-remote-mux.webp?v=d90bc2ccbe49",
+    "width": 1536,
+    "height": 1024
+  }
+}

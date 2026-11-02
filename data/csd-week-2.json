@@ -27,11 +27,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img01-tictactoe-bits.webp",
-          "alt": "Tic-tac-toe as bits",
-          "caption": "Each square becomes one bit: 1 if it\nhas an X, 0 if not.",
+          "src": "/images/csd-week-2/img01-tictactoe-bits.webp?v=1d75b257e83e",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Tic-tac-toe as bits",
+          "caption": "Each square becomes one bit: 1 if it\nhas an X, 0 if not."
         },
         {
           "type": "html",
@@ -63,11 +63,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img10-vending-function.webp",
-          "alt": "A function has no memory",
-          "caption": "Press B, get biscuits, every time.\nThe machine doesn’t remember who pressed before.",
+          "src": "/images/csd-week-2/img10-vending-function.webp?v=e9a78e46332e",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "A function has no memory",
+          "caption": "Press B, get biscuits, every time.\nThe machine doesn’t remember who pressed before."
         },
         {
           "type": "heading",
@@ -75,11 +75,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img02-comb-vs-seq.webp",
-          "alt": "Combinational vs sequential",
-          "caption": "Combinational: output depends\nonly on the inputs right now. Sequential: it also remembers the\npast.",
+          "src": "/images/csd-week-2/img02-comb-vs-seq.webp?v=e33771e81c4f",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Combinational vs sequential",
+          "caption": "Combinational: output depends\nonly on the inputs right now. Sequential: it also remembers the\npast."
         },
         {
           "type": "html",
@@ -177,11 +177,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img03-basic-gates.webp",
-          "alt": "The basic gates",
-          "caption": "Each gate’s symbol, its rule, and its full\ntruth table.",
+          "src": "/images/csd-week-2/img03-basic-gates.webp?v=4363cec80ccd",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "The basic gates",
+          "caption": "Each gate’s symbol, its rule, and its full\ntruth table."
         },
         {
           "type": "html",
@@ -195,11 +195,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img11-daily-and-or-not.webp",
-          "alt": "AND, OR, NOT in daily life",
-          "caption": "Lift door: AND. Fan: OR. Night\nlamp: NOT.",
+          "src": "/images/csd-week-2/img11-daily-and-or-not.webp?v=5d65a8fad076",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "AND, OR, NOT in daily life",
+          "caption": "Lift door: AND. Fan: OR. Night\nlamp: NOT."
         },
         {
           "type": "heading",
@@ -212,11 +212,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img04-more-gates.webp",
-          "alt": "More gates",
-          "caption": "NAND and NOR are AND and OR with a small circle\n(the flip) on the output. XOR adds an extra curve.",
+          "src": "/images/csd-week-2/img04-more-gates.webp?v=933245927ed4",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "More gates",
+          "caption": "NAND and NOR are AND and OR with a small circle\n(the flip) on the output. XOR adds an extra curve."
         },
         {
           "type": "html",
@@ -323,11 +323,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img05-laws-pairs.webp",
-          "alt": "Laws in pairs",
-          "caption": "Each law and its dual: swap AND with OR, and\n0 with 1.",
+          "src": "/images/csd-week-2/img05-laws-pairs.webp?v=07b8608dd1ac",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Laws in pairs",
+          "caption": "Each law and its dual: swap AND with OR, and\n0 with 1."
         },
         {
           "type": "html",
@@ -429,11 +429,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img06-demorgan-gates.webp",
-          "alt": "De Morgan’s laws with gates",
-          "caption": "A NOR gate does the same job as\nan AND gate with both inputs flipped. A NAND gate does the same job as\nan OR gate with both inputs flipped.",
+          "src": "/images/csd-week-2/img06-demorgan-gates.webp?v=1864e9aa033e",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "De Morgan’s laws with gates",
+          "caption": "A NOR gate does the same job as\nan AND gate with both inputs flipped. A NAND gate does the same job as\nan OR gate with both inputs flipped."
         },
         {
           "type": "html",
@@ -442,11 +442,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img12-not-inside.webp",
-          "alt": "Pushing the NOT inside",
-          "caption": "“Not (hungry or tired)” means “not\nhungry AND not tired”.",
+          "src": "/images/csd-week-2/img12-not-inside.webp?v=4a734abf6ae2",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Pushing the NOT inside",
+          "caption": "“Not (hungry or tired)” means “not\nhungry AND not tired”."
         },
         {
           "type": "html",
@@ -586,11 +586,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img13-row-detector.webp",
-          "alt": "A minterm is a row detector",
-          "caption": "A minterm is like a lock that\nopens for only one exact pattern.",
+          "src": "/images/csd-week-2/img13-row-detector.webp?v=0efa38162e23",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "A minterm is a row detector",
+          "caption": "A minterm is like a lock that\nopens for only one exact pattern."
         },
         {
           "type": "heading",
@@ -598,11 +598,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img07-sop-from-table.webp",
-          "alt": "From truth table to SOP",
-          "caption": "Pick the rows where F = 1, write a\nminterm for each, and OR them together.",
+          "src": "/images/csd-week-2/img07-sop-from-table.webp?v=3dd25fc98603",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "From truth table to SOP",
+          "caption": "Pick the rows where F = 1, write a\nminterm for each, and OR them together."
         },
         {
           "type": "html",
@@ -719,11 +719,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img08-probability-example.webp",
-          "alt": "Probability from a truth table",
-          "caption": "F = (A XOR B) AND C. Only 2\nof the 8 rows give 1, so P(F = 1) = 2/8 = 0.25.",
+          "src": "/images/csd-week-2/img08-probability-example.webp?v=107d7c2d8a83",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Probability from a truth table",
+          "caption": "F = (A XOR B) AND C. Only 2\nof the 8 rows give 1, so P(F = 1) = 2/8 = 0.25."
         },
         {
           "type": "html",
@@ -894,11 +894,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-2/img09-week2-map.webp",
-          "alt": "Week 2 at a glance",
-          "caption": "Truth table → gates → Boolean laws → De\nMorgan → Sum of Products → exam tricks.",
+          "src": "/images/csd-week-2/img09-week2-map.webp?v=abad5d5633c5",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Week 2 at a glance",
+          "caption": "Truth table → gates → Boolean laws → De\nMorgan → Sum of Products → exam tricks."
         },
         {
           "type": "heading",

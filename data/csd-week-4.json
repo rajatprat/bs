@@ -23,11 +23,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img13-ready-made-parts.webp",
-          "alt": "Ready-made parts",
-          "caption": "Bricks, doors and windows are ready-made\nparts for houses. Comparators, decoders and multiplexers are ready-made\nparts for circuits.",
+          "src": "/images/csd-week-4/img13-ready-made-parts.webp?v=350fc9344f88",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Ready-made parts",
+          "caption": "Bricks, doors and windows are ready-made\nparts for houses. Comparators, decoders and multiplexers are ready-made\nparts for circuits."
         },
         {
           "type": "heading",
@@ -45,11 +45,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img01-building-blocks.webp",
-          "alt": "The common building blocks",
-          "caption": "The five standard blocks in this\ncourse. Weeks 4 and 5 cover them one by one.",
+          "src": "/images/csd-week-4/img01-building-blocks.webp?v=dfcaac6f49a1",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "The common building blocks",
+          "caption": "The five standard blocks in this\ncourse. Weeks 4 and 5 cover them one by one."
         },
         {
           "type": "html",
@@ -96,11 +96,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img02-4bit-comparator.webp",
-          "alt": "4-bit equality comparator",
-          "caption": "Four XNORs check the four bit\npairs. The AND gate says “equal” only if all four agree.",
+          "src": "/images/csd-week-4/img02-4bit-comparator.webp?v=6de26cac5b3c",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "4-bit equality comparator",
+          "caption": "Four XNORs check the four bit\npairs. The AND gate says “equal” only if all four agree."
         },
         {
           "type": "html",
@@ -155,11 +155,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img14-hotel-rooms.webp",
-          "alt": "One code, one room",
-          "caption": "The code 101 lights up exactly one room:\nroom 5. That’s what a decoder does.",
+          "src": "/images/csd-week-4/img14-hotel-rooms.webp?v=c58340f6f6f1",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "One code, one room",
+          "caption": "The code 101 lights up exactly one room:\nroom 5. That’s what a decoder does."
         },
         {
           "type": "heading",
@@ -181,11 +181,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img03-2to4-decoder.webp",
-          "alt": "2-to-4 decoder",
-          "caption": "Each output is one AND gate. Each AND gate\nis a minterm detector.",
+          "src": "/images/csd-week-4/img03-2to4-decoder.webp?v=66059fbee110",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "2-to-4 decoder",
+          "caption": "Each output is one AND gate. Each AND gate\nis a minterm detector."
         },
         {
           "type": "html",
@@ -232,11 +232,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img04-decoder-plus-or.webp",
-          "alt": "Decoder plus OR makes any function",
-          "caption": "F = Σm(2, 3, 5, 6):\nconnect outputs D₂, D₃, D₅ and D₆ to one OR gate.",
+          "src": "/images/csd-week-4/img04-decoder-plus-or.webp?v=7a3cdc8e0dea",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Decoder plus OR makes any function",
+          "caption": "F = Σm(2, 3, 5, 6):\nconnect outputs D₂, D₃, D₅ and D₆ to one OR gate."
         },
         {
           "type": "html",
@@ -264,11 +264,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img05-decoder-delay.webp",
-          "alt": "Decoder delay path",
-          "caption": "The slowest path: input → NOT → AND →\noutput.",
+          "src": "/images/csd-week-4/img05-decoder-delay.webp?v=bc35db8cff15",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Decoder delay path",
+          "caption": "The slowest path: input → NOT → AND →\noutput."
         },
         {
           "type": "html",
@@ -332,11 +332,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img06-decoder-vs-encoder.webp",
-          "alt": "Encoder is the opposite of a decoder",
-          "caption": "Decoder: code → one\nline on. Encoder: one line on → code.",
+          "src": "/images/csd-week-4/img06-decoder-vs-encoder.webp?v=45104d5ccf67",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Encoder is the opposite of a decoder",
+          "caption": "Decoder: code → one\nline on. Encoder: one line on → code."
         },
         {
           "type": "subheading",
@@ -373,11 +373,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img15-priority-queue.webp",
-          "alt": "Priority: the highest wins",
-          "caption": "Three vehicles arrive together,\nbut the ambulance (highest priority) goes first. The lower ones must\nwait.",
+          "src": "/images/csd-week-4/img15-priority-queue.webp?v=465b44aa6137",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Priority: the highest wins",
+          "caption": "Three vehicles arrive together,\nbut the ambulance (highest priority) goes first. The lower ones must\nwait."
         },
         {
           "type": "subheading",
@@ -395,11 +395,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img07-priority-encoder.webp",
-          "alt": "Priority encoder truth table",
-          "caption": "Read the table from the top.\nThe first 1 you meet (the highest input) decides the output.",
+          "src": "/images/csd-week-4/img07-priority-encoder.webp?v=dfb22d195e94",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Priority encoder truth table",
+          "caption": "Read the table from the top.\nThe first 1 you meet (the highest input) decides the output."
         },
         {
           "type": "html",
@@ -469,11 +469,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img16-tv-remote-mux.webp",
-          "alt": "TV remote as a multiplexer",
-          "caption": "Many channels, one screen. The\nselect number decides which input you see.",
+          "src": "/images/csd-week-4/img16-tv-remote-mux.webp?v=d90bc2ccbe49",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "TV remote as a multiplexer",
+          "caption": "Many channels, one screen. The\nselect number decides which input you see."
         },
         {
           "type": "heading",
@@ -505,11 +505,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img08-2to1-mux.webp",
-          "alt": "2:1 multiplexer inside",
-          "caption": "Inside a 2:1 MUX: one NOT, two ANDs,\none OR. S = 0 lets I₀ through; S = 1 lets I₁ through.",
+          "src": "/images/csd-week-4/img08-2to1-mux.webp?v=b6f1eed867ce",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "2:1 multiplexer inside",
+          "caption": "Inside a 2:1 MUX: one NOT, two ANDs,\none OR. S = 0 lets I₀ through; S = 1 lets I₁ through."
         },
         {
           "type": "subheading",
@@ -551,11 +551,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img09-4to1-mux.webp",
-          "alt": "4:1 multiplexer",
-          "caption": "Each select pattern opens exactly one gate.\nNotice: the select lines feed a decoder-like set of AND gates.",
+          "src": "/images/csd-week-4/img09-4to1-mux.webp?v=c45a46071986",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "4:1 multiplexer",
+          "caption": "Each select pattern opens exactly one gate.\nNotice: the select lines feed a decoder-like set of AND gates."
         },
         {
           "type": "heading",
@@ -578,11 +578,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img10-mux-shannon.webp",
-          "alt": "Splitting a function on one variable",
-          "caption": "Put A on the select\nline. Feed the “A = 0” half into I₀ and the “A = 1” half into\nI₁.",
+          "src": "/images/csd-week-4/img10-mux-shannon.webp?v=cafde827d765",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Splitting a function on one variable",
+          "caption": "Put A on the select\nline. Feed the “A = 0” half into I₀ and the “A = 1” half into\nI₁."
         },
         {
           "type": "html",
@@ -685,11 +685,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img11-delay-paths.webp",
-          "alt": "Finding the longest path",
-          "caption": "The select line passes through\nNOT, then AND, then OR. That’s the longest path, so add those\nthree.",
+          "src": "/images/csd-week-4/img11-delay-paths.webp?v=41bc41e558ef",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Finding the longest path",
+          "caption": "The select line passes through\nNOT, then AND, then OR. That’s the longest path, so add those\nthree."
         },
         {
           "type": "html",
@@ -742,11 +742,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img12-read-mux-circuit.webp",
-          "alt": "Reading a MUX circuit",
-          "caption": "Fill one row per select pattern. Here\nthe output only follows Z, so F = X ⊕ Z.",
+          "src": "/images/csd-week-4/img12-read-mux-circuit.webp?v=d259245a7b00",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Reading a MUX circuit",
+          "caption": "Fill one row per select pattern. Here\nthe output only follows Z, so F = X ⊕ Z."
         },
         {
           "type": "html",
@@ -818,11 +818,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img17-mux-gate-table.webp",
-          "alt": "Gates made from 2:1 MUXes",
-          "caption": "AND, OR and AB̅ need 1 MUX. NOT\nneeds 1. NAND, NOR, XOR and XNOR need 2.",
+          "src": "/images/csd-week-4/img17-mux-gate-table.webp?v=e1827cfd5b5c",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Gates made from 2:1 MUXes",
+          "caption": "AND, OR and AB̅ need 1 MUX. NOT\nneeds 1. NAND, NOR, XOR and XNOR need 2."
         },
         {
           "type": "html",
@@ -926,11 +926,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img18-week4-map.webp",
-          "alt": "Week 4 at a glance",
-          "caption": "Four blocks: comparator, decoder,\nencoder (and priority encoder), and multiplexer.",
+          "src": "/images/csd-week-4/img18-week4-map.webp?v=2a82515fcdda",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Week 4 at a glance",
+          "caption": "Four blocks: comparator, decoder,\nencoder (and priority encoder), and multiplexer."
         },
         {
           "type": "heading",

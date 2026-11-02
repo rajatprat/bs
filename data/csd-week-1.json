@@ -46,11 +46,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img01-three-blocks.webp",
-          "alt": "The three blocks of every computer",
-          "caption": "Every computer computes,\nremembers and communicates.",
+          "src": "/images/csd-week-1/img01-three-blocks.webp?v=82b0b2788a6b",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "The three blocks of every computer",
+          "caption": "Every computer computes,\nremembers and communicates."
         },
         {
           "type": "html",
@@ -96,11 +96,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img02-transformation-ladder.webp",
-          "alt": "From problem to electrons",
-          "caption": "A problem is turned, layer by\nlayer, into electrons moving in a chip.",
+          "src": "/images/csd-week-1/img02-transformation-ladder.webp?v=2465a50936c3",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "From problem to electrons",
+          "caption": "A problem is turned, layer by\nlayer, into electrons moving in a chip."
         },
         {
           "type": "html",
@@ -203,11 +203,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img03-zoom-levels.webp",
-          "alt": "Zooming into a phone",
-          "caption": "Small blocks join to make bigger\nblocks, again and again.",
+          "src": "/images/csd-week-1/img03-zoom-levels.webp?v=a1969c2db067",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Zooming into a phone",
+          "caption": "Small blocks join to make bigger\nblocks, again and again."
         },
         {
           "type": "html",
@@ -226,11 +226,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img14-lego-blocks.webp",
-          "alt": "Build big from small blocks",
-          "caption": "Like toy bricks: small blocks\nmake bigger blocks, and you use each block by what it does.",
+          "src": "/images/csd-week-1/img14-lego-blocks.webp?v=bbaf6367fd81",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Build big from small blocks",
+          "caption": "Like toy bricks: small blocks\nmake bigger blocks, and you use each block by what it does."
         },
         {
           "type": "html",
@@ -258,11 +258,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img04-moores-law.webp",
-          "alt": "Moore’s Law",
-          "caption": "Transistors per chip, from about 2,300 in 1971\nto tens of billions today. Each step up the scale is 10 times\nmore.",
+          "src": "/images/csd-week-1/img04-moores-law.webp?v=a6f22c706c5b",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Moore’s Law",
+          "caption": "Transistors per chip, from about 2,300 in 1971\nto tens of billions today. Each step up the scale is 10 times\nmore."
         },
         {
           "type": "html",
@@ -422,11 +422,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img05-picture-voltages.webp",
-          "alt": "A picture as voltages",
-          "caption": "Each point of a black-and-white photo\nbecomes one voltage: 0 V for black, 1 V for white, in between for\ngrey.",
+          "src": "/images/csd-week-1/img05-picture-voltages.webp?v=81a04ffd6d78",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "A picture as voltages",
+          "caption": "Each point of a black-and-white photo\nbecomes one voltage: 0 V for black, 1 V for white, in between for\ngrey."
         },
         {
           "type": "html",
@@ -529,11 +529,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img13-telephone-game.webp",
-          "alt": "Noise adds up",
-          "caption": "Each person adds a small mistake. By the end,\nthe message is wrong.",
+          "src": "/images/csd-week-1/img13-telephone-game.webp?v=8e4b99f7e08a",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Noise adds up",
+          "caption": "Each person adds a small mistake. By the end,\nthe message is wrong."
         },
         {
           "type": "heading",
@@ -556,11 +556,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img06-noise-chain.webp",
-          "alt": "Noise adds up, or gets cleaned",
-          "caption": "Top: with exact voltages,\neach block adds a little noise and the signal gets worse. Bottom: with\nonly 0 and 1, each block snaps the signal back to clean.",
+          "src": "/images/csd-week-1/img06-noise-chain.webp?v=9635b9015816",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Noise adds up, or gets cleaned",
+          "caption": "Top: with exact voltages,\neach block adds a little noise and the signal gets worse. Bottom: with\nonly 0 and 1, each block snaps the signal back to clean."
         },
         {
           "type": "html",
@@ -616,11 +616,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img07-voltage-zones.webp",
-          "alt": "Voltage zones",
-          "caption": "Below V_L means 0, above V_H means 1. In\nbetween is the forbidden zone, which circuits must never\noutput.",
+          "src": "/images/csd-week-1/img07-voltage-zones.webp?v=66fbdd1dbe9c",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Voltage zones",
+          "caption": "Below V_L means 0, above V_H means 1. In\nbetween is the forbidden zone, which circuits must never\noutput."
         },
         {
           "type": "html",
@@ -762,11 +762,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img08-bit-patterns.webp",
-          "alt": "Bits and patterns",
-          "caption": "Each extra bit doubles the number of\npatterns.",
+          "src": "/images/csd-week-1/img08-bit-patterns.webp?v=c9e56dd7c304",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Bits and patterns",
+          "caption": "Each extra bit doubles the number of\npatterns."
         },
         {
           "type": "html",
@@ -803,11 +803,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img09-place-values.webp",
-          "alt": "Place values",
-          "caption": "Decimal places go 1, 10, 100… Binary places go\n1, 2, 4, 8, 16…",
+          "src": "/images/csd-week-1/img09-place-values.webp?v=ebd62b5ffae1",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Place values",
+          "caption": "Decimal places go 1, 10, 100… Binary places go\n1, 2, 4, 8, 16…"
         },
         {
           "type": "html",
@@ -1028,11 +1028,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img12-hex-groups.webp",
-          "alt": "Hex and binary",
-          "caption": "Every hex digit is exactly 4 bits. Split\nbinary into groups of 4 from the right.",
+          "src": "/images/csd-week-1/img12-hex-groups.webp?v=021e20fb2a68",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Hex and binary",
+          "caption": "Every hex digit is exactly 4 bits. Split\nbinary into groups of 4 from the right."
         },
         {
           "type": "html",
@@ -1243,11 +1243,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img10-switches-logic.webp",
-          "alt": "Switches as logic",
-          "caption": "Two switches in a row make AND. Two\nswitches side by side make OR.",
+          "src": "/images/csd-week-1/img10-switches-logic.webp?v=f81433be8876",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Switches as logic",
+          "caption": "Two switches in a row make AND. Two\nswitches side by side make OR."
         },
         {
           "type": "html",
@@ -1330,11 +1330,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img15-week1-question-types.webp",
-          "alt": "Week 1 question types",
-          "caption": "Six question types from Week 1. Each\ncard shows the one rule you need.",
+          "src": "/images/csd-week-1/img15-week1-question-types.webp?v=d9646dfe139d",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Week 1 question types",
+          "caption": "Six question types from Week 1. Each\ncard shows the one rule you need."
         },
         {
           "type": "html",
@@ -1563,11 +1563,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-1/img11-week1-map.webp",
-          "alt": "Week 1 at a glance",
-          "caption": "Problem → layers → transistors →\nvoltages → 0 and 1 → binary numbers → logic.",
+          "src": "/images/csd-week-1/img11-week1-map.webp?v=ff6dda4d1397",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Week 1 at a glance",
+          "caption": "Problem → layers → transistors →\nvoltages → 0 and 1 → binary numbers → logic."
         },
         {
           "type": "heading",

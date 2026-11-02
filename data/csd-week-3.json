@@ -46,11 +46,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img01-sop-two-level.webp",
-          "alt": "SOP as a two-level circuit",
-          "caption": "Inverters make the barred\nletters, each AND gate makes one minterm, and one OR gate joins\nthem.",
+          "src": "/images/csd-week-3/img01-sop-two-level.webp?v=e5fbb5d83f0a",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "SOP as a two-level circuit",
+          "caption": "Inverters make the barred\nletters, each AND gate makes one minterm, and one OR gate joins\nthem."
         },
         {
           "type": "html",
@@ -134,11 +134,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img13-list-the-zeros.webp",
-          "alt": "List the few zeros",
-          "caption": "If only 2 of 40 students are absent,\nlisting the absent ones is quicker. POS works the same way: it lists the\nfew 0-rows.",
+          "src": "/images/csd-week-3/img13-list-the-zeros.webp?v=54bee266fde3",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "List the few zeros",
+          "caption": "If only 2 of 40 students are absent,\nlisting the absent ones is quicker. POS works the same way: it lists the\nfew 0-rows."
         },
         {
           "type": "heading",
@@ -146,11 +146,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img02-sop-vs-pos.webp",
-          "alt": "SOP looks at 1s, POS looks at 0s",
-          "caption": "SOP builds F from the\n1-rows using ANDs then OR. POS builds F from the 0-rows using ORs then\nAND.",
+          "src": "/images/csd-week-3/img02-sop-vs-pos.webp?v=e2bf3c9b5b23",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "SOP looks at 1s, POS looks at 0s",
+          "caption": "SOP builds F from the\n1-rows using ANDs then OR. POS builds F from the 0-rows using ORs then\nAND."
         },
         {
           "type": "html",
@@ -211,11 +211,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img03-sigma-pi-split.webp",
-          "alt": "Sigma and Pi split the rows",
-          "caption": "Σm lists the 1-rows. ΠM lists\nthe 0-rows. Together they cover every row exactly once.",
+          "src": "/images/csd-week-3/img03-sigma-pi-split.webp?v=d17177fc6b7b",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Sigma and Pi split the rows",
+          "caption": "Σm lists the 1-rows. ΠM lists\nthe 0-rows. Together they cover every row exactly once."
         },
         {
           "type": "html",
@@ -275,11 +275,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img15-one-brick-every-circuit.webp",
-          "alt": "One brick, every circuit",
-          "caption": "Only NAND bricks: 1 brick makes\nNOT, 2 make AND, 3 make OR.",
+          "src": "/images/csd-week-3/img15-one-brick-every-circuit.webp?v=fa3ca0fcc20a",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "One brick, every circuit",
+          "caption": "Only NAND bricks: 1 brick makes\nNOT, 2 make AND, 3 make OR."
         },
         {
           "type": "heading",
@@ -296,11 +296,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img04-nand-universal.webp",
-          "alt": "Gates made from NAND",
-          "caption": "NOT needs 1 NAND, AND needs 2, OR\nneeds 3, XOR needs 4.",
+          "src": "/images/csd-week-3/img04-nand-universal.webp?v=0a8ffef3af7e",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Gates made from NAND",
+          "caption": "NOT needs 1 NAND, AND needs 2, OR\nneeds 3, XOR needs 4."
         },
         {
           "type": "html",
@@ -332,11 +332,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img05-and-or-to-nand-nand.webp",
-          "alt": "AND-OR to NAND-NAND",
-          "caption": "Replace every gate in an AND-OR circuit\nwith a NAND. The output stays exactly the same.",
+          "src": "/images/csd-week-3/img05-and-or-to-nand-nand.webp?v=f9785b7b1f21",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "AND-OR to NAND-NAND",
+          "caption": "Replace every gate in an AND-OR circuit\nwith a NAND. The output stays exactly the same."
         },
         {
           "type": "html",
@@ -401,11 +401,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img14-three-doors-one-bulb.webp",
-          "alt": "One bulb, three switches",
-          "caption": "Flip any one switch and the bulb\nchanges. Keep this picture in mind; the answer is at the end of the\npage.",
+          "src": "/images/csd-week-3/img14-three-doors-one-bulb.webp?v=a763226c71b9",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "One bulb, three switches",
+          "caption": "Flip any one switch and the bulb\nchanges. Keep this picture in mind; the answer is at the end of the\npage."
         },
         {
           "type": "heading",
@@ -418,11 +418,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img06-multilevel.webp",
-          "alt": "A multilevel circuit",
-          "caption": "Y = (A + B)(C̅ + D) + E̅ uses three\nlevels of gates, but fewer gates than its two-level version.",
+          "src": "/images/csd-week-3/img06-multilevel.webp?v=0cafe52e4fe3",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "A multilevel circuit",
+          "caption": "Y = (A + B)(C̅ + D) + E̅ uses three\nlevels of gates, but fewer gates than its two-level version."
         },
         {
           "type": "html",
@@ -441,11 +441,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img16-cooks-and-levels.webp",
-          "alt": "Cooks and levels",
-          "caption": "Five cooks working at once finish fast.\nThree cooks passing one plate along need fewer people but take longer.\nGates work the same way.",
+          "src": "/images/csd-week-3/img16-cooks-and-levels.webp?v=8c217d8b5fd5",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Cooks and levels",
+          "caption": "Five cooks working at once finish fast.\nThree cooks passing one plate along need fewer people but take longer.\nGates work the same way."
         },
         {
           "type": "heading",
@@ -458,11 +458,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img07-timing-diagram.webp",
-          "alt": "Reading a timing diagram",
-          "caption": "Cut the diagram into time slices.\nEach slice gives one row of the truth table.",
+          "src": "/images/csd-week-3/img07-timing-diagram.webp?v=444a3a77f8ca",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Reading a timing diagram",
+          "caption": "Cut the diagram into time slices.\nEach slice gives one row of the truth table."
         },
         {
           "type": "subheading",
@@ -499,11 +499,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img08-three-switch-light.webp",
-          "alt": "Three switches, one bulb",
-          "caption": "Flip any one switch and the bulb\nchanges. That’s exactly what XOR does.",
+          "src": "/images/csd-week-3/img08-three-switch-light.webp?v=6e74bbc74fd7",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Three switches, one bulb",
+          "caption": "Flip any one switch and the bulb\nchanges. That’s exactly what XOR does."
         },
         {
           "type": "html",
@@ -563,11 +563,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img09-gate-count-recipe.webp",
-          "alt": "The 4-step gate-count recipe",
-          "caption": "Most Week 3 questions follow\nthese four steps: simplify, check for a shortcut, build, then\ncount.",
+          "src": "/images/csd-week-3/img09-gate-count-recipe.webp?v=c05c4600c511",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "The 4-step gate-count recipe",
+          "caption": "Most Week 3 questions follow\nthese four steps: simplify, check for a shortcut, build, then\ncount."
         },
         {
           "type": "html",
@@ -625,11 +625,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img10-four-nor-comparator.webp",
-          "alt": "Building XNOR from 4 NOR gates",
-          "caption": "A 1-bit equality checker\nbuilt from exactly 4 NOR gates.",
+          "src": "/images/csd-week-3/img10-four-nor-comparator.webp?v=c7219bcd9c99",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Building XNOR from 4 NOR gates",
+          "caption": "A 1-bit equality checker\nbuilt from exactly 4 NOR gates."
         },
         {
           "type": "html",
@@ -677,11 +677,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img11-timing-to-xor.webp",
-          "alt": "Timing diagram to truth table",
-          "caption": "Cut the waves into slices;\neach slice is one row. Y is 1 when an odd number of inputs are 1, so Y =\nA ⊕ B ⊕ C.",
+          "src": "/images/csd-week-3/img11-timing-to-xor.webp?v=6c36ea981547",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Timing diagram to truth table",
+          "caption": "Cut the waves into slices;\neach slice is one row. Y is 1 when an odd number of inputs are 1, so Y =\nA ⊕ B ⊕ C."
         },
         {
           "type": "html",
@@ -843,11 +843,11 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-3/img12-week3-map.webp",
-          "alt": "Week 3 at a glance",
-          "caption": "Truth table → SOP or POS → two-level\ncircuit → NAND/NOR only → count the gates.",
+          "src": "/images/csd-week-3/img12-week3-map.webp?v=9a549844d0ee",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "alt": "Week 3 at a glance",
+          "caption": "Truth table → SOP or POS → two-level\ncircuit → NAND/NOR only → count the gates."
         },
         {
           "type": "heading",
