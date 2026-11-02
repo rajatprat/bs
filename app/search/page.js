@@ -1,3 +1,4 @@
+import numberExamples from '../../data/deep-learning-number-examples.json';
 import dl1 from '../../data/deep-learning-week-1.json';
 import dl2 from '../../data/deep-learning-week-2.json';
 import dl3 from '../../data/deep-learning-week-3.json';
@@ -45,6 +46,8 @@ export default function Page() {
       const context = {subject: data.subject, subjectSlug: data.subjectSlug || 'software-engineering', part: data.part};
       let entry = { ...context, week: data.week, lesson: section.title, title: section.title, url: base, text: '' };
       entries.push(entry);
+      const numeric=numberExamples[base];
+      if(numeric)entries.push({...context,week:data.week,lesson:section.title,title:numeric.title,url:base+'#dl-number-example-title',text:[numeric.setup,...numeric.steps.map(s=>s.text),numeric.meaning,numeric.question,numeric.answer].join(' ')});
       const additions = data.subjectSlug ? [] : additionsFor(data.week, section.slug, section.blocks);
       section.blocks.forEach((block, index) => {
         if (['heading', 'subheading'].includes(block.type)) {

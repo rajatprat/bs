@@ -1,5 +1,5 @@
 import { resources, studySections, imageCount, courseWeeks } from '../lib/course';
-export function WeekStats({ data }) { return <div className="pills"><span>{studySections(data).length} study sections</span><span>{imageCount(data)} illustrations</span><span>{resources(data).length} {resources(data).length === 1 ? 'resource' : 'resources'}</span></div>; }
+export function WeekStats({ data }) { const questionFigures=data.subjectSlug==='deep-learning'?new Set(data.sections.flatMap(s=>s.blocks.flatMap(b=>[...(b.html||'').matchAll(/src="([^" ]*deep-learning-pyq[^" ]*)"/g)].map(m=>m[1])))).size:0; return <div className="pills"><span>{studySections(data).length} study sections</span><span>{imageCount(data)} {data.subjectSlug==='deep-learning'?'lesson illustrations':'illustrations'}</span>{questionFigures>0&&<span>{questionFigures} question figures</span>}<span>{resources(data).length} {resources(data).length === 1 ? 'resource' : 'resources'}</span></div>; }
 export default function WeekSections({ data }) {
   const subjectPath = '/' + (data.subjectSlug || 'software-engineering') + '/';
   const base = data.base || `/software-engineering/week-${data.week}/`;

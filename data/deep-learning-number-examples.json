@@ -1,0 +1,338 @@
+{
+  "/deep-learning/week-1/biological-and-mp-neuron/": {
+    "title": "When does one neuron fire?",
+    "setup": "Two excitatory inputs, no inhibitory inputs. The neuron fires when their sum is at least 2.",
+    "steps": [
+      {
+        "text": "Try one active input.",
+        "tex": "g=1+0=1<2\\quad\\Rightarrow\\quad y=0"
+      },
+      {
+        "text": "Now activate both inputs.",
+        "tex": "g=1+1=2\\ge2\\quad\\Rightarrow\\quad y=1"
+      }
+    ],
+    "meaning": "The threshold turns a sum into a yes/no decision. This neuron implements AND.",
+    "question": "What is the output for inputs (0, 1)?",
+    "answer": "0: the sum is 1, below the threshold of 2."
+  },
+  "/deep-learning/week-1/perceptron/": {
+    "title": "Weights and bias make one decision",
+    "setup": "Use weights 1 and 1, bias −1.5, and output 1 when the weighted sum is at least zero.",
+    "steps": [
+      {
+        "text": "With both inputs on, calculate the score.",
+        "tex": "z=1(1)+1(1)-1.5=0.5\\quad\\Rightarrow\\quad y=1"
+      },
+      {
+        "text": "Switch the second input off.",
+        "tex": "z=1(1)+1(0)-1.5=-0.5\\quad\\Rightarrow\\quad y=0"
+      }
+    ],
+    "meaning": "The bias sets how much positive evidence is needed before the neuron fires.",
+    "question": "Keep both inputs on, but change the bias to −2.5. What happens?",
+    "answer": "The score becomes −0.5, so the output is 0."
+  },
+  "/deep-learning/week-1/perceptron-learning-algorithm/": {
+    "title": "Correct one mistaken prediction",
+    "setup": "Include the constant bias input. Start with weights [−1, 0], augmented input [1, 2], and true label 1. Predict 1 when the score is at least zero.",
+    "steps": [
+      {
+        "text": "The current prediction is wrong.",
+        "tex": "w^Tx=(-1)(1)+0(2)=-1\\quad\\Rightarrow\\quad\\hat y=0"
+      },
+      {
+        "text": "For a missed positive point, add the input to the weights.",
+        "tex": "w_{new}=[-1,0]+[1,2]=[0,2]"
+      },
+      {
+        "text": "Check the same point after the correction.",
+        "tex": "w_{new}^Tx=0(1)+2(2)=4\\quad\\Rightarrow\\quad\\hat y=1"
+      }
+    ],
+    "meaning": "The update changes a concrete mistaken decision. It does not guarantee that every other point is now correct.",
+    "question": "If this point had true label 0, would the original weights need an update?",
+    "answer": "No. The original score is negative, so its prediction of 0 would already be correct."
+  },
+  "/deep-learning/week-1/xor-and-multilayer-perceptrons/": {
+    "title": "Build XOR from two hidden decisions",
+    "setup": "Let one hidden neuron compute OR and the other compute AND. The output is 1 when OR − 2·AND − 0.5 is at least zero.",
+    "steps": [
+      {
+        "text": "For inputs (1, 0), OR is 1 and AND is 0.",
+        "tex": "z=1-2(0)-0.5=0.5\\quad\\Rightarrow\\quad y=1"
+      },
+      {
+        "text": "For inputs (1, 1), both hidden outputs are 1.",
+        "tex": "z=1-2(1)-0.5=-1.5\\quad\\Rightarrow\\quad y=0"
+      },
+      {
+        "text": "The same rule handles the other two inputs.",
+        "tex": "(0,0)\\mapsto0,\\qquad(0,1)\\mapsto1"
+      }
+    ],
+    "meaning": "The hidden layer creates two useful features. Their combination separates the XOR cases.",
+    "question": "What is the final output for (0, 1)?",
+    "answer": "1: OR is 1, AND is 0, and the output score is 0.5."
+  },
+  "/deep-learning/week-2/sigmoid-neuron/": {
+    "title": "From a score to a soft prediction",
+    "setup": "Use weight 2, bias −1, and input 0.5.",
+    "steps": [
+      {
+        "text": "First calculate the weighted score.",
+        "tex": "z=wx+b=2(0.5)-1=0"
+      },
+      {
+        "text": "Pass the score through the sigmoid.",
+        "tex": "\\sigma(0)=\\frac{1}{1+e^0}=\\frac12"
+      },
+      {
+        "text": "A larger input produces a larger score.",
+        "tex": "x=1\\Rightarrow z=1\\Rightarrow\\sigma(1)\\approx0.7311"
+      }
+    ],
+    "meaning": "Unlike a hard threshold, sigmoid output changes smoothly as the score changes.",
+    "question": "What does the sigmoid output when its score is zero?",
+    "answer": "0.5, regardless of how the weights and inputs produced that zero score."
+  },
+  "/deep-learning/week-2/supervised-learning-setup/": {
+    "title": "Measure how wrong two predictions are",
+    "setup": "Targets are [0, 1], predictions are [0.2, 0.8]. Here we choose mean squared error, with no extra factor of ½.",
+    "steps": [
+      {
+        "text": "Calculate each squared error.",
+        "tex": "(0.2-0)^2=0.04,\\qquad(0.8-1)^2=0.04"
+      },
+      {
+        "text": "Average over the two examples.",
+        "tex": "L=\\frac{0.04+0.04}{2}=0.04"
+      }
+    ],
+    "meaning": "The loss compresses prediction errors into one number. Summing instead of averaging would give 0.08, so check the question’s convention.",
+    "question": "If both predictions exactly matched their targets, what would this loss be?",
+    "answer": "0: both squared errors would be zero."
+  },
+  "/deep-learning/week-2/gradient-descent/": {
+    "title": "One complete sigmoid learning step",
+    "setup": "One example: input 2, target 1. Start with weight 0.5 and bias −1. Use loss ½(prediction − target)² and learning rate 0.5.",
+    "steps": [
+      {
+        "text": "Forward pass: find the current prediction.",
+        "tex": "z=0.5(2)-1=0,\\qquad f=\\sigma(0)=0.5"
+      },
+      {
+        "text": "Differentiate the chosen loss.",
+        "tex": "\\begin{aligned}\\frac{\\partial L}{\\partial w}&=(f-y)f(1-f)x\\\\&=(-0.5)(0.5)(0.5)(2)\\\\&=-0.25\\end{aligned}"
+      },
+      {
+        "text": "The bias has the same derivative, without the input factor.",
+        "tex": "\\frac{\\partial L}{\\partial b}=(-0.5)(0.5)(0.5)=-0.125"
+      },
+      {
+        "text": "Subtract the learning rate times each gradient.",
+        "tex": "\\begin{aligned}w_{new}&=0.5-0.5(-0.25)=0.625\\\\b_{new}&=-1-0.5(-0.125)=-0.9375\\end{aligned}"
+      },
+      {
+        "text": "Check that the prediction moved toward the target.",
+        "tex": "z_{new}=0.3125,\\qquad\\sigma(z_{new})\\approx0.5775"
+      }
+    ],
+    "meaning": "Negative gradients make these parameters increase. The new prediction is closer to the target of 1.",
+    "question": "Why does subtracting a negative gradient increase a parameter?",
+    "answer": "Because −η(−g) = +ηg when η and g are positive."
+  },
+  "/deep-learning/week-2/representation-power/": {
+    "title": "Make a bump with two sigmoid steps",
+    "setup": "Subtract a steep sigmoid centred at 3 from one centred at 1. Use a steepness of 100.",
+    "steps": [
+      {
+        "text": "Define the bump.",
+        "tex": "T(x)=\\sigma(100(x-1))-\\sigma(100(x-3))"
+      },
+      {
+        "text": "Between the two centres, the first sigmoid is near 1 and the second is near 0.",
+        "tex": "T(2)=\\sigma(100)-\\sigma(-100)\\approx1"
+      },
+      {
+        "text": "Before both centres, both sigmoid outputs are near 0.",
+        "tex": "T(0)=\\sigma(-100)-\\sigma(-300)\\approx0"
+      }
+    ],
+    "meaning": "Two smooth steps create an approximate rectangular bump. Adding many such bumps can approximate a curve. Values are approximate, not exact hard steps.",
+    "question": "What is the bump approximately at x = 4?",
+    "answer": "0: both sigmoid outputs are near 1, so they nearly cancel."
+  },
+  "/deep-learning/week-3/feedforward-networks/": {
+    "title": "Track shapes through one layer",
+    "setup": "Input has two features. This layer has two sigmoid neurons. We use column vectors.",
+    "steps": [
+      {
+        "text": "Check the dimensions before multiplying.",
+        "tex": "\\begin{aligned}x&=\\begin{bmatrix}1\\\\2\\end{bmatrix}\\\\W&=\\begin{bmatrix}1&0\\\\0&2\\end{bmatrix}\\\\b&=\\begin{bmatrix}-1\\\\1\\end{bmatrix}\\end{aligned}"
+      },
+      {
+        "text": "Multiply and add the bias. A 2×2 matrix times a 2×1 vector gives a 2×1 vector.",
+        "tex": "\\begin{aligned}a&=Wx+b\\\\&=\\begin{bmatrix}1\\\\4\\end{bmatrix}+\\begin{bmatrix}-1\\\\1\\end{bmatrix}\\\\&=\\begin{bmatrix}0\\\\5\\end{bmatrix}\\end{aligned}"
+      },
+      {
+        "text": "Apply sigmoid separately to each entry.",
+        "tex": "h=\\begin{bmatrix}\\sigma(0)\\\\\\sigma(5)\\end{bmatrix}\\approx\\begin{bmatrix}0.5\\\\0.9933\\end{bmatrix}"
+      }
+    ],
+    "meaning": "Each row of W belongs to one neuron. The activation keeps the same vector shape as the pre-activation.",
+    "question": "If this layer had three neurons and two input features, what shape would W have?",
+    "answer": "3×2: three rows for neurons, two columns for input features."
+  },
+  "/deep-learning/week-3/output-and-loss-functions/": {
+    "title": "Turn two scores into probabilities and a loss",
+    "setup": "Two class scores are 0 and ln(3). The correct class is the second one. Use natural logarithms.",
+    "steps": [
+      {
+        "text": "Exponentiate the scores.",
+        "tex": "e^0=1,\\qquad e^{\\ln3}=3"
+      },
+      {
+        "text": "Normalise by their sum.",
+        "tex": "\\hat y=\\left[\\frac14,\\frac34\\right]=[0.25,0.75]"
+      },
+      {
+        "text": "Cross-entropy uses the probability assigned to the correct class.",
+        "tex": "L=-\\ln(0.75)\\approx0.2877"
+      }
+    ],
+    "meaning": "Softmax compares scores; cross-entropy rewards high probability on the correct class.",
+    "question": "What would the loss be if the first class were correct instead?",
+    "answer": "−ln(0.25) ≈ 1.3863: assigning the correct class only 25% probability is penalised more."
+  },
+  "/deep-learning/week-3/backpropagation-intuition-and-output-gradients/": {
+    "title": "See what an output gradient asks us to change",
+    "setup": "Two softmax scores start at [0, 0], giving probabilities [0.5, 0.5]. The second class is correct. Use cross-entropy for one example.",
+    "steps": [
+      {
+        "text": "Write the true class as a one-hot vector.",
+        "tex": "y=[0,1]"
+      },
+      {
+        "text": "For softmax with cross-entropy, the score gradient is prediction minus target.",
+        "tex": "\\nabla_a L=\\hat y-y=[0.5,0.5]-[0,1]=[0.5,-0.5]"
+      },
+      {
+        "text": "Take a learning step directly on these scores, with learning rate 0.2.",
+        "tex": "a_{new}=[0,0]-0.2[0.5,-0.5]=[-0.1,0.1]"
+      }
+    ],
+    "meaning": "The first score falls and the correct class’s score rises. In a network, backpropagation passes this signal to the weights that created the scores.",
+    "question": "Is the second class now more or less likely?",
+    "answer": "More likely: softmax([-0.1, 0.1]) gives its probability about 0.5498."
+  },
+  "/deep-learning/week-3/backpropagation-hidden-units-and-weights/": {
+    "title": "Trace the chain rule through one weight",
+    "setup": "Start with one linear neuron, h = wx + b, to isolate the chain rule. Set input 2, target 4, weight 1, bias 0, and loss ½(h − y)².",
+    "steps": [
+      {
+        "text": "Forward pass and loss.",
+        "tex": "h=1(2)+0=2,\\qquad L=\\frac12(2-4)^2=2"
+      },
+      {
+        "text": "Find the loss gradient at the neuron output.",
+        "tex": "\\frac{\\partial L}{\\partial h}=h-y=-2"
+      },
+      {
+        "text": "Pass it through the local derivatives.",
+        "tex": "\\begin{aligned}\\frac{\\partial L}{\\partial w}&=\\frac{\\partial L}{\\partial h}\\frac{\\partial h}{\\partial w}\\\\&=(-2)(2)=-4\\\\\\frac{\\partial L}{\\partial b}&=-2\\end{aligned}"
+      },
+      {
+        "text": "Update with learning rate 0.1, then check the loss.",
+        "tex": "\\begin{aligned}w_{new}&=1.4,\\quad b_{new}=0.2\\\\h_{new}&=1.4(2)+0.2=3\\\\L_{new}&=\\tfrac12(3-4)^2=0.5\\end{aligned}"
+      }
+    ],
+    "meaning": "Backpropagation multiplies an incoming gradient by a local derivative. A sigmoid neuron adds its activation derivative to this chain.",
+    "question": "Why is the weight gradient −4 but the bias gradient −2?",
+    "answer": "The weight’s local derivative is the input x = 2; the bias’s local derivative is 1."
+  },
+  "/deep-learning/week-4/gradient-descent-and-contours/": {
+    "title": "Watch a gradient step reduce a loss",
+    "setup": "Use the one-parameter bowl L(w) = ½w², starting at w = 2, with learning rate 0.25.",
+    "steps": [
+      {
+        "text": "Compute the current loss and gradient.",
+        "tex": "L(2)=2,\\qquad\\frac{dL}{dw}=w=2"
+      },
+      {
+        "text": "Move opposite to the gradient.",
+        "tex": "w_{new}=2-0.25(2)=1.5"
+      },
+      {
+        "text": "Evaluate the new point.",
+        "tex": "L(1.5)=\\frac12(1.5)^2=1.125"
+      }
+    ],
+    "meaning": "The gradient points uphill; subtracting a suitable step moves downhill. A lower gradient near the minimum also makes steps smaller.",
+    "question": "At w = 0, what update does this rule make?",
+    "answer": "No change: the gradient is zero."
+  },
+  "/deep-learning/week-4/momentum-and-nag/": {
+    "title": "Compare momentum with a look-ahead gradient",
+    "setup": "Use L(w) = ½w², current w = 3, previous accumulator u = 2, β = 0.9 and η = 0.1. Here η is outside the accumulator, including in the look-ahead distance.",
+    "steps": [
+      {
+        "text": "Ordinary momentum uses the gradient at the current point.",
+        "tex": "\\begin{aligned}g&=3\\\\u_{new}&=0.9(2)+3=4.8\\\\w_{new}&=3-0.1(4.8)=2.52\\end{aligned}"
+      },
+      {
+        "text": "For this NAG convention, first find the look-ahead point.",
+        "tex": "w_{look}=3-0.1(0.9)(2)=2.82"
+      },
+      {
+        "text": "Use the gradient there, then update from the original current point.",
+        "tex": "\\begin{aligned}g_{look}&=2.82\\\\u_{new}&=0.9(2)+2.82=4.62\\\\w_{new}&=3-0.1(4.62)=2.538\\end{aligned}"
+      }
+    ],
+    "meaning": "NAG changes where the gradient is measured. This example names its scaling convention explicitly; do not mix it with code that absorbs η into the accumulator.",
+    "question": "Why is the NAG accumulator a little smaller here?",
+    "answer": "The look-ahead point is closer to the bowl’s minimum, so its gradient is 2.82 instead of 3."
+  },
+  "/deep-learning/week-4/stochastic-and-mini-batch/": {
+    "title": "Count actual parameter updates",
+    "setup": "There are 10 training examples and 2 epochs. For mini-batches of 4, keep the final partial batch rather than dropping it.",
+    "steps": [
+      {
+        "text": "Batch gradient descent updates once per epoch.",
+        "tex": "2\\times1=2\\text{ updates}"
+      },
+      {
+        "text": "SGD updates once per example.",
+        "tex": "2\\times10=20\\text{ updates}"
+      },
+      {
+        "text": "Mini-batch sizes are 4, 4 and 2, so there are three updates per epoch.",
+        "tex": "\\left\\lceil\\frac{10}{4}\\right\\rceil=3,\\qquad2\\times3=6\\text{ updates}"
+      }
+    ],
+    "meaning": "An epoch is a pass through the dataset; an update is a parameter change. The last partial batch matters when the dataset size is not divisible by the batch size.",
+    "question": "With batch size 4, how many updates would one epoch over 12 examples take?",
+    "answer": "3 updates, now with no partial batch."
+  },
+  "/deep-learning/week-4/learning-rate-and-line-search/": {
+    "title": "Try three learning rates on the same gradient",
+    "setup": "Again use L(w) = ½w², current w = 2 and gradient 2. Compare candidate steps from the same starting point.",
+    "steps": [
+      {
+        "text": "A small rate improves the loss.",
+        "tex": "\\eta=0.1:\\quad w_{new}=1.8,\\quad L=1.62"
+      },
+      {
+        "text": "This candidate reaches the minimum for this particular quadratic.",
+        "tex": "\\eta=1:\\quad w_{new}=0,\\quad L=0"
+      },
+      {
+        "text": "Too large a rate overshoots and worsens the loss.",
+        "tex": "\\eta=3:\\quad w_{new}=-4,\\quad L=8"
+      }
+    ],
+    "meaning": "A trial-based line search compares candidate losses. Rate 1 wins here; that does not make it a universally good learning rate.",
+    "question": "Would you choose η = 3 for this step?",
+    "answer": "No. It raises the loss from 2 to 8."
+  }
+}
