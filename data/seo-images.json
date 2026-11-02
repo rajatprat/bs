@@ -1332,7 +1332,10 @@
     "/images/deep-learning-week-1/img09-xor-problem.webp?v=e3804582642b",
     "/images/deep-learning-week-1/img10-xor-network.webp?v=80c3121bc4bf"
   ],
-  "/deep-learning/week-1/how-to-solve/": [],
+  "/deep-learning/week-1/how-to-solve/": [
+    "/images/deep-learning-pyq/2025t3-q57-pla-blanks.webp?v=01d8cbce79f2",
+    "/images/deep-learning-pyq/2025t2-q64-parabola-data.webp?v=43c755a0161e"
+  ],
   "/deep-learning/week-1/quick-revision/": [],
   "/deep-learning/week-2/sigmoid-neuron/": [
     "/images/deep-learning-week-2/img01-step-vs-sigmoid.webp?v=d03fc2e2ded5"
@@ -1350,7 +1353,9 @@
     "/images/deep-learning-week-2/img06-tower-from-sigmoids.webp?v=d9ec066c2a89",
     "/images/deep-learning-week-2/img08-2d-tower-oil.webp?v=f7841922074c"
   ],
-  "/deep-learning/week-2/how-to-solve/": [],
+  "/deep-learning/week-2/how-to-solve/": [
+    "/images/deep-learning-pyq/2025t2-q63-two-sigmoids.webp?v=f1cd96581acb"
+  ],
   "/deep-learning/week-2/quick-revision/": [],
   "/deep-learning/week-3/feedforward-networks/": [
     "/images/deep-learning-week-3/img01-ffnn-layers.webp?v=69493c51d6d5",
@@ -1369,7 +1374,13 @@
     "/images/deep-learning-week-3/img08-backprop-algorithm-flow.webp?v=74e13586b2ca",
     "/images/deep-learning-week-3/img09-activation-derivatives.webp?v=7aeef6aee362"
   ],
-  "/deep-learning/week-3/how-to-solve/": [],
+  "/deep-learning/week-3/how-to-solve/": [
+    "/images/deep-learning-pyq/2025t1-q75-network.webp?v=915022c21e9d",
+    "/images/deep-learning-pyq/2025t3-q53-network.webp?v=9ebe5584eb9b",
+    "/images/deep-learning-pyq/2026t1-q12-network.webp?v=f75bf88de550",
+    "/images/deep-learning-pyq/2026t2-q13-house-network.webp?v=b375a6f97fd1",
+    "/images/deep-learning-pyq/2025t2-q70-network.webp?v=85b3bc71c87a"
+  ],
   "/deep-learning/week-3/quick-revision/": [],
   "/deep-learning/week-4/gradient-descent-and-contours/": [
     "/images/deep-learning-week-4/img01-steep-vs-gentle.webp?v=2f0d7340836e",
@@ -1388,6 +1399,10 @@
     "/images/deep-learning-week-4/img08-learning-rate.webp?v=db9fdc603a88",
     "/images/deep-learning-week-4/img09-line-search.webp?v=abd4af36e711"
   ],
-  "/deep-learning/week-4/how-to-solve/": [],
+  "/deep-learning/week-4/how-to-solve/": [
+    "/images/deep-learning-pyq/2025t3-q46-loss-curves.webp?v=4d25dccbffd7",
+    "/images/deep-learning-pyq/2026t2-q4-graphs-x-y.webp?v=6b8fe2812ff3",
+    "/images/deep-learning-pyq/2026t2-q5-momentum-curves.webp?v=3b8d70783a92"
+  ],
   "/deep-learning/week-4/quick-revision/": []
 }

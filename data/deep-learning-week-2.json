@@ -560,7 +560,7 @@
         },
         {
           "type": "html",
-          "html": "<pre><code>t ← 0;  max_iterations ← 1000\nw, b ← random\nwhile t &lt; max_iterations:\n    w ← w − η ∇w\n    b ← b − η ∇b\n    t ← t + 1</code></pre>",
+          "html": "<pre class=\"text\"><code>t ← 0;  max_iterations ← 1000\nw, b ← random\nwhile t &lt; max_iterations:\n    w ← w − η ∇w\n    b ← b − η ∇b\n    t ← t + 1</code></pre>",
           "text": "t ← 0;  max_iterations ← 1000\nw, b ← random\nwhile t < max_iterations:\n    w ← w − η ∇w\n    b ← b − η ∇b\n    t ← t + 1"
         },
         {
@@ -918,12 +918,12 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 2 questions are mostly numbers:\ncompute a sigmoid, compute a loss, compute a gradient, do one update.\nWrite every line out — most marks are lost to small arithmetic slips.\nAll answers below were checked with code.</p>\n</blockquote>",
-          "text": "Start here Week 2 questions are mostly numbers:\ncompute a sigmoid, compute a loss, compute a gradient, do one update.\nWrite every line out — most marks are lost to small arithmetic slips.\nAll answers below were checked with code."
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 2 questions are mostly numbers:\ncompute a sigmoid, a loss, a gradient, one update, or a Taylor\napproximation. This page has <strong>every Week 2 question</strong> from\nfive past Quiz 1 papers (2025 T1, T2, T3 and 2026 T1, T2). Write every\nline out — most marks are lost to small slips. All answers were checked\nwith code.</p>\n</blockquote>",
+          "text": "Start here Week 2 questions are mostly numbers:\ncompute a sigmoid, a loss, a gradient, one update, or a Taylor\napproximation. This page has every Week 2 question from\nfive past Quiz 1 papers (2025 T1, T2, T3 and 2026 T1, T2). Write every\nline out — most marks are lost to small slips. All answers were checked\nwith code."
         },
         {
           "type": "heading",
-          "text": "Type 1 — Sigmoid output"
+          "text": "Type 1 —\nSigmoid output and the meaning of w and b"
         },
         {
           "type": "subheading",
@@ -931,13 +931,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Compute z = w₀ + w₁x₁ + … (or wx + b).</li>\n<li>Compute e^(−z). Useful values: e⁰ = 1, e^(−1) = 0.368, e¹ = 2.718,\ne^(−2) = 0.135, e² = 7.389.</li>\n<li>σ(z) = 1 / (1 + e^(−z)).</li>\n<li>Shortcut: σ(−z) = 1 − σ(z).</li>\n</ol>",
-          "text": "Compute z = w₀ + w₁x₁ + … (or wx + b). Compute e^(−z). Useful values: e⁰ = 1, e^(−1) = 0.368, e¹ = 2.718,\ne^(−2) = 0.135, e² = 7.389. σ(z) = 1 / (1 + e^(−z)). Shortcut: σ(−z) = 1 − σ(z)."
+          "html": "<ol type=\"1\">\n<li>z = wᵀx + b. Then σ(z) = 1 / (1 + e⁻ᶻ).</li>\n<li>Useful values: e⁰ = 1, e⁻¹ = 0.368, e⁻² = 0.135, e^(−2.5) = 0.082,\nσ(0) = 0.5, σ(−z) = 1 − σ(z).</li>\n<li><strong>Where is the middle of σ(x + a)?</strong> At x + a = 0 →\n<strong>x = −a</strong>. So a bigger a shifts the curve\n<strong>left</strong>.</li>\n<li>A bigger weight makes the curve steeper; very large w → almost a\nstep (a perceptron).</li>\n</ol>",
+          "text": "z = wᵀx + b. Then σ(z) = 1 / (1 + e⁻ᶻ). Useful values: e⁰ = 1, e⁻¹ = 0.368, e⁻² = 0.135, e^(−2.5) = 0.082,\nσ(0) = 0.5, σ(−z) = 1 − σ(z). Where is the middle of σ(x + a)? At x + a = 0 → x = −a . So a bigger a shifts the curve left . A bigger weight makes the curve steeper; very large w → almost a\nstep (a perceptron)."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> A sigmoid neuron has w = 2, b = −1. Find\nthe output for x = 1.</p>\n<p><strong>Answer:</strong> <strong>0.731</strong></p>\n</blockquote>",
-          "text": "Worked example Question: A sigmoid neuron has w = 2, b = −1. Find\nthe output for x = 1. Answer: 0.731"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q63 · 4 marks</p>\n<p><strong>Question:</strong> Two sigmoid functions f(x) = 1/(1 +\ne^−(x+a)) and g(x) = 1/(1 + e^−(x+b)) are shown. Which is true? a &gt; b\n· a &lt; b · a = b</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"960\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t2-q63-two-sigmoids.webp?v=f1cd96581acb\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>a &gt; b</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q63 · 4 marks Question: Two sigmoid functions f(x) = 1/(1 +\ne^−(x+a)) and g(x) = 1/(1 + e^−(x+b)) are shown. Which is true? a > b\n· a < b · a = b Question figure (redrawn exactly from the\npaper) Answer: a > b"
         },
         {
           "type": "html",
@@ -946,26 +946,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>z = 2 × 1 − 1 = 1.</li>\n<li>e^(−1) = 0.368.</li>\n<li>σ(1) = 1/(1 + 0.368) = 1/1.368 = <strong>0.731</strong>.</li>\n</ol>",
-          "text": "z = 2 × 1 − 1 = 1. e^(−1) = 0.368. σ(1) = 1/(1 + 0.368) = 1/1.368 = 0.731 ."
-        },
-        {
-          "type": "heading",
-          "text": "Type 2 — Squared-error loss"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "html": "<ol type=\"1\">\n<li>Each curve is 0.5 at its middle point. f is 0.5 where x + a = 0 → x\n= −a. g is 0.5 at x = −b.</li>\n<li>From the graph, f reaches 0.5 near x = −3 and g near x = −1.</li>\n<li>−a = −3 → a = 3; −b = −1 → b = 1. So <strong>a &gt; b</strong>.\n(Quick rule: the curve further left has the bigger shift.)</li>\n</ol>",
+          "text": "Each curve is 0.5 at its middle point. f is 0.5 where x + a = 0 → x\n= −a. g is 0.5 at x = −b. From the graph, f reaches 0.5 near x = −3 and g near x = −1. −a = −3 → a = 3; −b = −1 → b = 1. So a > b .\n(Quick rule: the curve further left has the bigger shift.)"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>For each point compute f(xᵢ).</li>\n<li>Square each error (yᵢ − f(xᵢ))².</li>\n<li>Add them, then multiply by the factor the question uses (½, or\n1/N).</li>\n</ol>",
-          "text": "For each point compute f(xᵢ). Square each error (yᵢ − f(xᵢ))². Add them, then multiply by the factor the question uses (½, or\n1/N)."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Data (0.5, 0.2) and (2.5, 0.9). Model f(x)\n= σ(wx + b), loss L = ½Σ(y − f(x))². Find L for w = 3, b = −1.</p>\n<p><strong>Answer:</strong> <strong>L ≈ 0.0941</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Data (0.5, 0.2) and (2.5, 0.9). Model f(x)\n= σ(wx + b), loss L = ½Σ(y − f(x))². Find L for w = 3, b = −1. Answer: L ≈ 0.0941"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q11 · 4 marks</p>\n<p><strong>Question:</strong> Which statements about perceptrons and\nsigmoid neurons are correct?</p>\n<ol type=\"a\">\n<li>A perceptron’s output changes abruptly at the threshold; a sigmoid’s\nchanges smoothly. (b) The sigmoid is differentiable, so it suits\ngradient-based learning. (c) With large enough weights, a sigmoid neuron\ncan closely approximate a perceptron. (d) A network of perceptrons with\none hidden layer can represent any Boolean function exactly. (e) A\nnetwork of sigmoid neurons with one hidden layer can approximate any\ncontinuous function to any precision, given enough hidden neurons. (f) A\nsingle sigmoid neuron can represent every non-linear decision boundary\nin ℝⁿ.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(a), (b), (c), (d), (e)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q11 · 4 marks Question: Which statements about perceptrons and\nsigmoid neurons are correct? A perceptron’s output changes abruptly at the threshold; a sigmoid’s\nchanges smoothly. (b) The sigmoid is differentiable, so it suits\ngradient-based learning. (c) With large enough weights, a sigmoid neuron\ncan closely approximate a perceptron. (d) A network of perceptrons with\none hidden layer can represent any Boolean function exactly. (e) A\nnetwork of sigmoid neurons with one hidden layer can approximate any\ncontinuous function to any precision, given enough hidden neurons. (f) A\nsingle sigmoid neuron can represent every non-linear decision boundary\nin ℝⁿ. Answer: (a), (b), (c), (d), (e)"
         },
         {
           "type": "html",
@@ -974,12 +961,12 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>f(2.5) = σ(6.5) = 1/(1 + 0.0015) = 0.9985.</li>\n<li>f(0.5) = σ(0.5) = 1/(1 + 0.6065) = 0.6225.</li>\n<li>(0.9 − 0.9985)² = 0.0097; (0.2 − 0.6225)² = 0.1785.</li>\n<li>L = ½ × (0.0097 + 0.1785) = <strong>0.0941</strong>.</li>\n</ol>",
-          "text": "f(2.5) = σ(6.5) = 1/(1 + 0.0015) = 0.9985. f(0.5) = σ(0.5) = 1/(1 + 0.6065) = 0.6225. (0.9 − 0.9985)² = 0.0097; (0.2 − 0.6225)² = 0.1785. L = ½ × (0.0097 + 0.1785) = 0.0941 ."
+          "html": "<ol type=\"1\">\n<li>(a), (b): the two key differences from the lecture ✔.</li>\n<li>(c): large w makes σ(wx + b) a near-step ✔.</li>\n<li>(d): Week 1 theorem (2ⁿ hidden perceptrons) ✔. (e): universal\napproximation theorem ✔.</li>\n<li>(f): one sigmoid neuron still has a <strong>linear</strong> boundary\n(σ = 0.5 exactly when wᵀx + b = 0) ✘.</li>\n</ol>",
+          "text": "(a), (b): the two key differences from the lecture ✔. (c): large w makes σ(wx + b) a near-step ✔. (d): Week 1 theorem (2ⁿ hidden perceptrons) ✔. (e): universal\napproximation theorem ✔. (f): one sigmoid neuron still has a linear boundary\n(σ = 0.5 exactly when wᵀx + b = 0) ✘."
         },
         {
           "type": "heading",
-          "text": "Type 3 — Gradient of a\nsigmoid neuron"
+          "text": "Type 2 —\nLoss, gradient and one gradient-descent step"
         },
         {
           "type": "subheading",
@@ -987,23 +974,23 @@
         },
         {
           "type": "html",
-          "html": "<p>For L = ½(f(x) − y)² and f(x) = σ(wx + b):</p>",
-          "text": "For L = ½(f(x) − y)² and f(x) = σ(wx + b):"
+          "html": "<p>For ŷ = σ(z), z = wᵀx + b, and L = ½(ŷ − y)²:</p>",
+          "text": "For ŷ = σ(z), z = wᵀx + b, and L = ½(ŷ − y)²:"
         },
         {
           "type": "html",
-          "html": "<ul>\n<li><strong>∇w = (f − y) · f · (1 − f) · x</strong></li>\n<li><strong>∇b = (f − y) · f · (1 − f)</strong></li>\n<li>For many points, <strong>add</strong> the terms of every point.</li>\n</ul>",
-          "text": "∇w = (f − y) · f · (1 − f) · x ∇b = (f − y) · f · (1 − f) For many points, add the terms of every point."
+          "html": "<ul>\n<li>∂L/∂z = (ŷ − y) · ŷ · (1 − ŷ) — call this <strong>g</strong></li>\n<li>∇w = g · x (one entry per input), ∇b = g</li>\n<li>Update: w ← w − η∇w, b ← b − η∇b</li>\n</ul>",
+          "text": "∂L/∂z = (ŷ − y) · ŷ · (1 − ŷ) — call this g ∇w = g · x (one entry per input), ∇b = g Update: w ← w − η∇w, b ← b − η∇b"
         },
         {
           "type": "html",
-          "html": "<p>Sign check: if f &gt; y (prediction too big), ∇w has the same sign as\nx, and the update w − η∇w pushes the prediction down.</p>",
-          "text": "Sign check: if f > y (prediction too big), ∇w has the same sign as\nx, and the update w − η∇w pushes the prediction down."
+          "html": "<p>If the loss is <strong>(y − ŷ)²</strong> without the ½ (or (1/n)Σ\nwith n = 1), every gradient is <strong>2×</strong> bigger: g = 2(ŷ −\ny)ŷ(1 − ŷ).</p>",
+          "text": "If the loss is (y − ŷ)² without the ½ (or (1/n)Σ\nwith n = 1), every gradient is 2× bigger: g = 2(ŷ −\ny)ŷ(1 − ŷ)."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> One point x = 2, y = 1. Current w = 0.5, b\n= −1. Find ∇w and ∇b.</p>\n<p><strong>Answer:</strong> <strong>∇w = −0.25, ∇b = −0.125</strong></p>\n</blockquote>",
-          "text": "Worked example Question: One point x = 2, y = 1. Current w = 0.5, b\n= −1. Find ∇w and ∇b. Answer: ∇w = −0.25, ∇b = −0.125"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q15 · 3 marks</p>\n<p><strong>Question:</strong> Sigmoid neuron f(x) = 1/(1 + e^−(wx+b)).\nTraining example (x, y) = (2, 0.8), w = 0, b = 0, loss L = ½(f(x) − y)².\nFind ∇_w L (2 decimals).</p>\n<p><strong>Answer:</strong> <strong>−0.15</strong> (key range −0.17 to\n−0.13)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q15 · 3 marks Question: Sigmoid neuron f(x) = 1/(1 + e^−(wx+b)).\nTraining example (x, y) = (2, 0.8), w = 0, b = 0, loss L = ½(f(x) − y)².\nFind ∇_w L (2 decimals). Answer: −0.15 (key range −0.17 to\n−0.13)"
         },
         {
           "type": "html",
@@ -1012,26 +999,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>z = 0.5 × 2 − 1 = 0, so f = σ(0) = 0.5.</li>\n<li>f − y = 0.5 − 1 = −0.5.</li>\n<li>f(1 − f) = 0.5 × 0.5 = 0.25.</li>\n<li>∇b = −0.5 × 0.25 = <strong>−0.125</strong>.</li>\n<li>∇w = −0.125 × x = −0.125 × 2 = <strong>−0.25</strong>.</li>\n</ol>",
-          "text": "z = 0.5 × 2 − 1 = 0, so f = σ(0) = 0.5. f − y = 0.5 − 1 = −0.5. f(1 − f) = 0.5 × 0.5 = 0.25. ∇b = −0.5 × 0.25 = −0.125 . ∇w = −0.125 × x = −0.125 × 2 = −0.25 ."
-        },
-        {
-          "type": "heading",
-          "text": "Type 4 — One\ngradient-descent update"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "html": "<ol type=\"1\">\n<li>z = 0 × 2 + 0 = 0 → f = σ(0) = 0.5.</li>\n<li>f − y = 0.5 − 0.8 = −0.3.</li>\n<li>f(1 − f) = 0.5 × 0.5 = 0.25.</li>\n<li>∇w = (−0.3) × 0.25 × 2 = <strong>−0.15</strong>.</li>\n</ol>",
+          "text": "z = 0 × 2 + 0 = 0 → f = σ(0) = 0.5. f − y = 0.5 − 0.8 = −0.3. f(1 − f) = 0.5 × 0.5 = 0.25. ∇w = (−0.3) × 0.25 × 2 = −0.15 ."
         },
         {
           "type": "html",
-          "html": "<p>w_new = w − η∇w, b_new = b − η∇b. Watch the double minus when the\ngradient is negative.</p>",
-          "text": "w_new = w − η∇w, b_new = b − η∇b. Watch the double minus when the\ngradient is negative."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Continue the example above with η = 0.5.\nNew w and b?</p>\n<p><strong>Answer:</strong> <strong>w = 0.625, b = −0.9375</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Continue the example above with η = 0.5.\nNew w and b? Answer: w = 0.625, b = −0.9375"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q71–74 · 1 + 1 + 1 + 3\nmarks</p>\n<p><strong>Question:</strong> A sigmoid neuron takes x = (1, 0.5, 1), w\n= (0.5, 1, 0.5), b = 1; z = wᵀx + b, ŷ = 1/(1 + e⁻ᶻ), loss L = ½(y −\nŷ)². Q71: z? Q72: ŷ? Q73: with y = 0, the loss? Q74: update the weights\nand bias once with gradient descent, η = 2, y = 0. New loss? (2 decimals\neach)</p>\n<p><strong>Answer:</strong> <strong>Q71: 2.50 · Q72: 0.92 · Q73: 0.43 ·\nQ74: 0.40</strong> (key ranges 2.47–2.53, 0.89–0.95, 0.39–0.45,\n0.36–0.42)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q71–74 · 1 + 1 + 1 + 3\nmarks Question: A sigmoid neuron takes x = (1, 0.5, 1), w\n= (0.5, 1, 0.5), b = 1; z = wᵀx + b, ŷ = 1/(1 + e⁻ᶻ), loss L = ½(y −\nŷ)². Q71: z? Q72: ŷ? Q73: with y = 0, the loss? Q74: update the weights\nand bias once with gradient descent, η = 2, y = 0. New loss? (2 decimals\neach) Answer: Q71: 2.50 · Q72: 0.92 · Q73: 0.43 ·\nQ74: 0.40 (key ranges 2.47–2.53, 0.89–0.95, 0.39–0.45,\n0.36–0.42)"
         },
         {
           "type": "html",
@@ -1040,41 +1014,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>w = 0.5 − 0.5 × (−0.25) = 0.5 + 0.125 = <strong>0.625</strong>.</li>\n<li>b = −1 − 0.5 × (−0.125) = −1 + 0.0625 =\n<strong>−0.9375</strong>.</li>\n<li>Check: new z = 0.625 × 2 − 0.9375 = 0.3125, f = σ(0.3125) ≈ 0.577 —\ncloser to y = 1 than 0.5 was ✔.</li>\n</ol>",
-          "text": "w = 0.5 − 0.5 × (−0.25) = 0.5 + 0.125 = 0.625 . b = −1 − 0.5 × (−0.125) = −1 + 0.0625 = −0.9375 . Check: new z = 0.625 × 2 − 0.9375 = 0.3125, f = σ(0.3125) ≈ 0.577 —\ncloser to y = 1 than 0.5 was ✔."
+          "html": "<ol type=\"1\">\n<li>Q71: z = 0.5×1 + 1×0.5 + 0.5×1 + 1 = 0.5 + 0.5 + 0.5 + 1 =\n<strong>2.5</strong>.</li>\n<li>Q72: e^(−2.5) = 0.0821 → ŷ = 1/1.0821 = <strong>0.924</strong>.</li>\n<li>Q73: L = ½(0 − 0.924)² = ½ × 0.854 = <strong>0.427</strong>.</li>\n<li>Q74 — gradients:\n<ul>\n<li>g = (ŷ − y) ŷ (1 − ŷ) = 0.924 × 0.924 × 0.076 =\n<strong>0.0648</strong></li>\n<li>∇w = g·x = (0.0648, 0.0324, 0.0648); ∇b = 0.0648</li>\n</ul></li>\n<li>Update with η = 2:\n<ul>\n<li>w = (0.5 − 0.1296, 1 − 0.0648, 0.5 − 0.1296) = (0.3704, 0.9352,\n0.3704)</li>\n<li>b = 1 − 0.1296 = 0.8704</li>\n</ul></li>\n<li>New z = 0.3704 + 0.4676 + 0.3704 + 0.8704 = 2.0789 → ŷ = σ(2.0789) =\n0.8888</li>\n<li>New loss = ½ × 0.8888² = ½ × 0.790 = <strong>0.395</strong> —\nsmaller than 0.427, as it should be.</li>\n</ol>",
+          "text": "Q71: z = 0.5×1 + 1×0.5 + 0.5×1 + 1 = 0.5 + 0.5 + 0.5 + 1 = 2.5 . Q72: e^(−2.5) = 0.0821 → ŷ = 1/1.0821 = 0.924 . Q73: L = ½(0 − 0.924)² = ½ × 0.854 = 0.427 . Q74 — gradients: g = (ŷ − y) ŷ (1 − ŷ) = 0.924 × 0.924 × 0.076 = 0.0648 ∇w = g·x = (0.0648, 0.0324, 0.0648); ∇b = 0.0648 Update with η = 2: w = (0.5 − 0.1296, 1 − 0.0648, 0.5 − 0.1296) = (0.3704, 0.9352,\n0.3704) b = 1 − 0.1296 = 0.8704 New z = 0.3704 + 0.4676 + 0.3704 + 0.8704 = 2.0789 → ŷ = σ(2.0789) =\n0.8888 New loss = ½ × 0.8888² = ½ × 0.790 = 0.395 —\nsmaller than 0.427, as it should be."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Lecture data, start w = −2, b = −2, η = 1.\nOne step of (batch) gradient descent?</p>\n<p><strong>Answer:</strong> <strong>w ≈ −1.9945, b ≈\n−1.9923</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Lecture data, start w = −2, b = −2, η = 1.\nOne step of (batch) gradient descent? Answer: w ≈ −1.9945, b ≈\n−1.9923"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> see the full table on the <a href=\"gradient-descent\">Gradient Descent</a> page: ∇w = −0.005492, ∇b =\n−0.007711, so w = −2 + 0.005492 and b = −2 + 0.007711.</p>",
-          "text": "How to solve: see the full table on the Gradient Descent page: ∇w = −0.005492, ∇b =\n−0.007711, so w = −2 + 0.005492 and b = −2 + 0.007711."
-        },
-        {
-          "type": "heading",
-          "text": "Type 5 — Why the\nnegative gradient? (theory)"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
-        },
-        {
-          "type": "html",
-          "html": "<p>Remember the 4-line argument:</p>",
-          "text": "Remember the 4-line argument:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Taylor: L(θ + ηu) ≈ L(θ) + η uᵀ∇L.</li>\n<li>Want L to drop → uᵀ∇L &lt; 0.</li>\n<li>uᵀ∇L = ‖u‖‖∇L‖ cos β, between −k and k.</li>\n<li>Most negative at cos β = −1 → β = 180° → u = −∇L.</li>\n</ol>",
-          "text": "Taylor: L(θ + ηu) ≈ L(θ) + η uᵀ∇L. Want L to drop → uᵀ∇L < 0. uᵀ∇L = ‖u‖‖∇L‖ cos β, between −k and k. Most negative at cos β = −1 → β = 180° → u = −∇L."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> ∇L = (3, 4) at the current point. Which\nunit direction decreases the loss fastest?</p>\n<p><strong>Answer:</strong> <strong>(−0.6, −0.8)</strong></p>\n</blockquote>",
-          "text": "Worked example Question: ∇L = (3, 4) at the current point. Which\nunit direction decreases the loss fastest? Answer: (−0.6, −0.8)"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q7 · 4 marks</p>\n<p><strong>Question:</strong> ŷᵢ = 1/(1 + e^−(wᵀxᵢ+b)), loss L(w, b) =\n(1/n) Σ (yᵢ − ŷᵢ)². One example x = (1, 1), y = 1. Start w = (0, 0), b =\n0. Compute the loss after one update of w and b with η = 1 (2\ndecimals).</p>\n<p><strong>Answer:</strong> <strong>0.10</strong> (key range\n0.08–0.12)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q7 · 4 marks Question: ŷᵢ = 1/(1 + e^−(wᵀxᵢ+b)), loss L(w, b) =\n(1/n) Σ (yᵢ − ŷᵢ)². One example x = (1, 1), y = 1. Start w = (0, 0), b =\n0. Compute the loss after one update of w and b with η = 1 (2\ndecimals). Answer: 0.10 (key range\n0.08–0.12)"
         },
         {
           "type": "html",
@@ -1083,12 +1029,12 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>‖∇L‖ = √(3² + 4²) = √25 = 5.</li>\n<li>Unit gradient = (3/5, 4/5) = (0.6, 0.8).</li>\n<li>Fastest decrease = opposite direction = <strong>(−0.6,\n−0.8)</strong>.</li>\n</ol>",
-          "text": "‖∇L‖ = √(3² + 4²) = √25 = 5. Unit gradient = (3/5, 4/5) = (0.6, 0.8). Fastest decrease = opposite direction = (−0.6,\n−0.8) ."
+          "html": "<ol type=\"1\">\n<li>n = 1, so L = (1 − ŷ)² — <strong>no ½</strong>, so the gradient has\na factor 2.</li>\n<li>z = 0 → ŷ = 0.5.</li>\n<li>∂L/∂z = −2(1 − ŷ) · ŷ(1 − ŷ) = −2 × 0.5 × 0.25 =\n<strong>−0.25</strong>.</li>\n<li>∇w = −0.25 × (1, 1) = (−0.25, −0.25); ∇b = −0.25.</li>\n<li>Update: w = (0, 0) − 1 × (−0.25, −0.25) = (0.25, 0.25); b =\n0.25.</li>\n<li>New z = 0.25 + 0.25 + 0.25 = 0.75 → ŷ = 1/(1 + e^(−0.75)) = 1/1.4724\n= 0.679.</li>\n<li>New loss = (1 − 0.679)² = 0.321² = <strong>0.103</strong>.</li>\n</ol>",
+          "text": "n = 1, so L = (1 − ŷ)² — no ½ , so the gradient has\na factor 2. z = 0 → ŷ = 0.5. ∂L/∂z = −2(1 − ŷ) · ŷ(1 − ŷ) = −2 × 0.5 × 0.25 = −0.25 . ∇w = −0.25 × (1, 1) = (−0.25, −0.25); ∇b = −0.25. Update: w = (0, 0) − 1 × (−0.25, −0.25) = (0.25, 0.25); b =\n0.25. New z = 0.25 + 0.25 + 0.25 = 0.75 → ŷ = 1/(1 + e^(−0.75)) = 1/1.4724\n= 0.679. New loss = (1 − 0.679)² = 0.321² = 0.103 ."
         },
         {
           "type": "heading",
-          "text": "Type 6 — Towers and\nrepresentation power"
+          "text": "Type 3 — Slopes and Taylor\nseries"
         },
         {
           "type": "subheading",
@@ -1096,13 +1042,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>A steep σ(w(x − c)) steps up at <strong>x = c</strong> (bias b =\n−wc).</li>\n<li>Tower from a to c: σ(w(x − a)) − σ(w(x − c)).</li>\n<li>1-D: 2 neurons per tower; 2-D: 4 (+1 closing sigmoid); n-D: 2n\n(+1).</li>\n</ol>",
-          "text": "A steep σ(w(x − c)) steps up at x = c (bias b =\n−wc). Tower from a to c: σ(w(x − a)) − σ(w(x − c)). 1-D: 2 neurons per tower; 2-D: 4 (+1 closing sigmoid); n-D: 2n\n(+1)."
+          "html": "<ol type=\"1\">\n<li><strong>Steepest slope at a point</strong> = largest |derivative| at\nthat point. Differentiate each function, put in the x value.</li>\n<li><strong>Taylor (quadratic) at w₀:</strong> L(w) ≈ L(w₀) + L′(w₀)(w −\nw₀) + L″(w₀)/2 · (w − w₀)².</li>\n<li>Taylor is only good <strong>near</strong> w₀; far away it gets\nworse.</li>\n</ol>",
+          "text": "Steepest slope at a point = largest |derivative| at\nthat point. Differentiate each function, put in the x value. Taylor (quadratic) at w₀: L(w) ≈ L(w₀) + L′(w₀)(w −\nw₀) + L″(w₀)/2 · (w − w₀)². Taylor is only good near w₀; far away it gets\nworse."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Write a tower of height 3 from x = 1 to x\n= 4, using w = 100.</p>\n<p><strong>Answer:</strong> <strong>3 · [σ(100x − 100) − σ(100x −\n400)]</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Write a tower of height 3 from x = 1 to x\n= 4, using w = 100. Answer: 3 · [σ(100x − 100) − σ(100x −\n400)]"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q61 · 3 marks</p>\n<p><strong>Question:</strong> Which function has the steepest slope at x\n= 1? log₁₀(x) · ln(x²) · √x · x³</p>\n<p><strong>Answer:</strong> <strong>x³</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q61 · 3 marks Question: Which function has the steepest slope at x\n= 1? log₁₀(x) · ln(x²) · √x · x³ Answer: x³"
         },
         {
           "type": "html",
@@ -1111,52 +1057,72 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Step at 1: σ(100(x − 1)) = σ(100x − 100).</li>\n<li>Step at 4: σ(100x − 400).</li>\n<li>Subtract and scale the output weights by 3 (+3 and −3).</li>\n</ol>",
-          "text": "Step at 1: σ(100(x − 1)) = σ(100x − 100). Step at 4: σ(100x − 400). Subtract and scale the output weights by 3 (+3 and −3)."
+          "html": "<ol type=\"1\">\n<li>log₁₀(x): derivative 1/(x ln 10) → at 1: 1/2.303 =\n<strong>0.434</strong></li>\n<li>ln(x²) = 2 ln x: derivative 2/x → at 1: <strong>2</strong></li>\n<li>√x: derivative 1/(2√x) → at 1: <strong>0.5</strong></li>\n<li>x³: derivative 3x² → at 1: <strong>3</strong> ← biggest</li>\n</ol>",
+          "text": "log₁₀(x): derivative 1/(x ln 10) → at 1: 1/2.303 = 0.434 ln(x²) = 2 ln x: derivative 2/x → at 1: 2 √x: derivative 1/(2√x) → at 1: 0.5 x³: derivative 3x² → at 1: 3 ← biggest"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q49 · 3 marks</p>\n<p><strong>Question:</strong> L(w) = ln(1 + w). Using L(w) ≈ L(w₀) +\nL′(w₀)/1! (w − w₀) + L″(w₀)/2! (w − w₀)², find the quadratic Taylor\napproximation at w₀ = 0. Options: 0 · w − w²/2 · w + w²/2 · −∞</p>\n<p><strong>Answer:</strong> <strong>w − w²/2</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q49 · 3 marks Question: L(w) = ln(1 + w). Using L(w) ≈ L(w₀) +\nL′(w₀)/1! (w − w₀) + L″(w₀)/2! (w − w₀)², find the quadratic Taylor\napproximation at w₀ = 0. Options: 0 · w − w²/2 · w + w²/2 · −∞ Answer: w − w²/2"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>L(0) = ln 1 = <strong>0</strong>.</li>\n<li>L′(w) = 1/(1 + w) → L′(0) = <strong>1</strong>.</li>\n<li>L″(w) = −1/(1 + w)² → L″(0) = <strong>−1</strong>.</li>\n<li>L(w) ≈ 0 + 1·w + (−1)/2 · w² = <strong>w − w²/2</strong>.</li>\n</ol>",
+          "text": "L(0) = ln 1 = 0 . L′(w) = 1/(1 + w) → L′(0) = 1 . L″(w) = −1/(1 + w)² → L″(0) = −1 . L(w) ≈ 0 + 1·w + (−1)/2 · w² = w − w²/2 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q12 · 4 marks</p>\n<p><strong>Question:</strong> σ(z) = 1/(1 + e⁻ᶻ). Which are true?</p>\n<ol type=\"a\">\n<li>Using e⁻ᶻ ≈ 1 − z, σ(z) ≈ 1/2 + z/4 near z = 0. (b) σ′(0) = 1/4. (c)\nThe first-order approximation means σ is exactly linear for all z. (d)\nAs |z| grows, the linear approximation gets worse. (e) Smooth\ndifferentiability of σ enables gradient-based learning, unlike the\nhard-threshold perceptron.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(a), (b), (d), (e)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q12 · 4 marks Question: σ(z) = 1/(1 + e⁻ᶻ). Which are true? Using e⁻ᶻ ≈ 1 − z, σ(z) ≈ 1/2 + z/4 near z = 0. (b) σ′(0) = 1/4. (c)\nThe first-order approximation means σ is exactly linear for all z. (d)\nAs |z| grows, the linear approximation gets worse. (e) Smooth\ndifferentiability of σ enables gradient-based learning, unlike the\nhard-threshold perceptron. Answer: (a), (b), (d), (e)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><ol type=\"a\">\n<li>σ ≈ 1/(1 + 1 − z) = 1/(2 − z) = ½ · 1/(1 − z/2) ≈ ½(1 + z/2) =\n<strong>½ + z/4</strong> ✔ (using 1/(1 − u) ≈ 1 + u for small u).</li>\n</ol></li>\n<li><ol start=\"2\" type=\"a\">\n<li>σ′ = σ(1 − σ) = 0.5 × 0.5 = <strong>¼</strong> ✔ — matches the slope\nof ½ + z/4.</li>\n</ol></li>\n<li><ol start=\"3\" type=\"a\">\n<li>σ stays between 0 and 1, a line doesn’t → only approximately linear\nnear 0 ✘.</li>\n</ol></li>\n<li><ol start=\"4\" type=\"a\">\n<li>✔ — e.g. at z = 10 the line gives 3, but σ(10) ≈ 1.</li>\n</ol></li>\n<li><ol start=\"5\" type=\"a\">\n<li>✔ — the lecture’s reason for moving to sigmoid neurons.</li>\n</ol></li>\n</ol>",
+          "text": "σ ≈ 1/(1 + 1 − z) = 1/(2 − z) = ½ · 1/(1 − z/2) ≈ ½(1 + z/2) = ½ + z/4 ✔ (using 1/(1 − u) ≈ 1 + u for small u). σ′ = σ(1 − σ) = 0.5 × 0.5 = ¼ ✔ — matches the slope\nof ½ + z/4. σ stays between 0 and 1, a line doesn’t → only approximately linear\nnear 0 ✘. ✔ — e.g. at z = 10 the line gives 3, but σ(10) ≈ 1. ✔ — the lecture’s reason for moving to sigmoid neurons."
         },
         {
           "type": "heading",
-          "text": "Practice set"
+          "text": "Practice set (new questions)"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP1. σ(2) = ?\n</summary>\n1/(1 + e^(−2)) = 1/(1 + 0.135) = 1/1.135 = 0.881.\n</details>",
-          "text": "P1. σ(2) = ? 1/(1 + e^(−2)) = 1/(1 + 0.135) = 1/1.135 = 0.881."
+          "html": "<details>\n<summary>\nP1. σ(2) = ?\n</summary>\n1/(1 + 0.135) = 0.881.\n</details>",
+          "text": "P1. σ(2) = ? 1/(1 + 0.135) = 0.881."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP2. f(x) = σ(x − 1). Data (1, 1). Loss ½(y − f)²?\n</summary>\nf = σ(0) = 0.5. ½(1 − 0.5)² = ½ × 0.25 = 0.125.\n</details>",
-          "text": "P2. f(x) = σ(x − 1). Data (1, 1). Loss ½(y − f)²? f = σ(0) = 0.5. ½(1 − 0.5)² = ½ × 0.25 = 0.125."
+          "html": "<details>\n<summary>\nP2. f(x) = σ(x − 1), data (1, 1), L = ½(y − f)². ∇w and ∇b?\n</summary>\nf = 0.5. g = (0.5 − 1)(0.25) = −0.125. ∇w = −0.125 × 1 = −0.125; ∇b =\n−0.125.\n</details>",
+          "text": "P2. f(x) = σ(x − 1), data (1, 1), L = ½(y − f)². ∇w and ∇b? f = 0.5. g = (0.5 − 1)(0.25) = −0.125. ∇w = −0.125 × 1 = −0.125; ∇b =\n−0.125."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP3. Same setup as P2 (w = 1, b = −1). ∇w and ∇b?\n</summary>\n(0.5 − 1) × 0.25 × 1 = −0.125 for both (x = 1).\n</details>",
-          "text": "P3. Same setup as P2 (w = 1, b = −1). ∇w and ∇b? (0.5 − 1) × 0.25 × 1 = −0.125 for both (x = 1)."
+          "html": "<details>\n<summary>\nP3. Where is σ(4x + 8) equal to 0.5?\n</summary>\n4x + 8 = 0 → x = −2.\n</details>",
+          "text": "P3. Where is σ(4x + 8) equal to 0.5? 4x + 8 = 0 → x = −2."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP4. w = 1, ∇w = −0.125, η = 2. New w?\n</summary>\n1 − 2 × (−0.125) = 1.25.\n</details>",
-          "text": "P4. w = 1, ∇w = −0.125, η = 2. New w? 1 − 2 × (−0.125) = 1.25."
+          "html": "<details>\n<summary>\nP4. Quadratic Taylor of eʷ at w₀ = 0?\n</summary>\n1 + w + w²/2.\n</details>",
+          "text": "P4. Quadratic Taylor of eʷ at w₀ = 0? 1 + w + w²/2."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP5. Where does the sigmoid σ(4x + 8) have output 0.5?\n</summary>\n4x + 8 = 0 → x = −2.\n</details>",
-          "text": "P5. Where does the sigmoid σ(4x + 8) have output 0.5? 4x + 8 = 0 → x = −2."
+          "html": "<details>\n<summary>\nP5. Which has the steepest slope at x = 4: √x, ln x, x²/16?\n</summary>\nDerivatives: 1/(2·2) = 0.25, 1/4 = 0.25, 2·4/16 = 0.5 → x²/16.\n</details>",
+          "text": "P5. Which has the steepest slope at x = 4: √x, ln x, x²/16? Derivatives: 1/(2·2) = 0.25, 1/4 = 0.25, 2·4/16 = 0.5 → x²/16."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP6. True or false: a network of sigmoid neurons with one hidden layer\ncan exactly represent any continuous function.\n</summary>\nFalse — it can approximate it to any desired precision ε, not exactly.\n</details>",
-          "text": "P6. True or false: a network of sigmoid neurons with one hidden layer\ncan exactly represent any continuous function. False — it can approximate it to any desired precision ε, not exactly."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP7. What is f(1 − f) at its largest, and where?\n</summary>\n0.25, when f = 0.5 (i.e. z = 0).\n</details>",
-          "text": "P7. What is f(1 − f) at its largest, and where? 0.25, when f = 0.5 (i.e. z = 0)."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP8. Three points have grad_w terms 0.02, −0.05, 0.01. Total ∇w?\n</summary>\n0.02 − 0.05 + 0.01 = −0.02.\n</details>",
-          "text": "P8. Three points have grad_w terms 0.02, −0.05, 0.01. Total ∇w? 0.02 − 0.05 + 0.01 = −0.02."
+          "html": "<details>\n<summary>\nP6. Same as 2026 T2 Q15 but y = 0.2. ∇w?\n</summary>\n(0.5 − 0.2) × 0.25 × 2 = +0.15.\n</details>",
+          "text": "P6. Same as 2026 T2 Q15 but y = 0.2. ∇w? (0.5 − 0.2) × 0.25 × 2 = +0.15."
         }
       ]
     },

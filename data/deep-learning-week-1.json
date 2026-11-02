@@ -517,7 +517,7 @@
         },
         {
           "type": "html",
-          "html": "<pre><code>P ← inputs with label 1\nN ← inputs with label 0\nInitialise w randomly\nwhile not converged:\n    pick a random x from P ∪ N\n    if x ∈ P and wᵀx &lt; 0:    w = w + x\n    if x ∈ N and wᵀx ≥ 0:    w = w − x\n# converged = every input is classified correctly</code></pre>",
+          "html": "<pre class=\"text\"><code>P ← inputs with label 1\nN ← inputs with label 0\nInitialise w randomly\nwhile not converged:\n    pick a random x from P ∪ N\n    if x ∈ P and wᵀx &lt; 0:    w = w + x\n    if x ∈ N and wᵀx ≥ 0:    w = w − x\n# converged = every input is classified correctly</code></pre>",
           "text": "P ← inputs with label 1\nN ← inputs with label 0\nInitialise w randomly\nwhile not converged:\n    pick a random x from P ∪ N\n    if x ∈ P and wᵀx < 0:    w = w + x\n    if x ∈ N and wᵀx ≥ 0:    w = w − x\n# converged = every input is classified correctly"
         },
         {
@@ -968,12 +968,12 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 1 questions come in five types. Each\nhas a fixed recipe. Learn the recipe once, then every question of that\ntype is just careful arithmetic. Every example below is fully worked and\nwas checked with code.</p>\n</blockquote>",
-          "text": "Start here Week 1 questions come in five types. Each\nhas a fixed recipe. Learn the recipe once, then every question of that\ntype is just careful arithmetic. Every example below is fully worked and\nwas checked with code."
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 1 topics appear in every Quiz 1\npaper. This page has <strong>every Week 1 question</strong> from five\npast papers (2025 T1, T2, T3 and 2026 T1, T2), grouped into 4 question\ntypes. Learn the method for each type, then work through the real\nquestions. All answers were checked with code.</p>\n</blockquote>",
+          "text": "Start here Week 1 topics appear in every Quiz 1\npaper. This page has every Week 1 question from five\npast papers (2025 T1, T2, T3 and 2026 T1, T2), grouped into 4 question\ntypes. Learn the method for each type, then work through the real\nquestions. All answers were checked with code."
         },
         {
           "type": "heading",
-          "text": "Type 1 — MP neuron: output\nor threshold"
+          "text": "Type 1 — McCulloch–Pitts (MP)\nneuron"
         },
         {
           "type": "subheading",
@@ -986,38 +986,28 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Check inhibitory inputs first. If any inhibitory input is 1 → output\n0. Stop.</li>\n<li>Add all inputs: g = x₁ + x₂ + … + xₙ.</li>\n<li>Compare: g ≥ θ → 1, else 0.</li>\n</ol>",
-          "text": "Check inhibitory inputs first. If any inhibitory input is 1 → output\n0. Stop. Add all inputs: g = x₁ + x₂ + … + xₙ. Compare: g ≥ θ → 1, else 0."
+          "html": "<ol type=\"1\">\n<li>Check inhibitory inputs first. If any inhibitory input is 1 → output\n<strong>0</strong>. Stop.</li>\n<li>Add the inputs: g = x₁ + x₂ + … + xₙ.</li>\n<li>g ≥ θ → <strong>1</strong>, else <strong>0</strong>.</li>\n</ol>",
+          "text": "Check inhibitory inputs first. If any inhibitory input is 1 → output 0 . Stop. Add the inputs: g = x₁ + x₂ + … + xₙ. g ≥ θ → 1 , else 0 ."
         },
         {
           "type": "html",
-          "html": "<p><strong>Level 2 — find θ for a given function.</strong> Write the sum\nfor every row. Pick θ so that every “1” row has sum ≥ θ and every “0”\nrow has sum &lt; θ.</p>",
-          "text": "Level 2 — find θ for a given function. Write the sum\nfor every row. Pick θ so that every “1” row has sum ≥ θ and every “0”\nrow has sum < θ."
+          "html": "<p><strong>Level 2 — find θ.</strong> “Fires when at least k inputs are\n1” → θ = k. OR → θ = 1. AND (n inputs) → θ = n.</p>",
+          "text": "Level 2 — find θ. “Fires when at least k inputs are\n1” → θ = k. OR → θ = 1. AND (n inputs) → θ = n."
         },
         {
           "type": "html",
-          "html": "<p><strong>Level 3 — “at least k of n” functions.</strong> θ = k always\nworks.</p>",
-          "text": "Level 3 — “at least k of n” functions. θ = k always\nworks."
+          "html": "<p><strong>Level 3 — count how many inputs give 1.</strong> With n\ninputs and threshold θ, the number of input rows with output 1 = (ways\nto choose θ ones) + (θ + 1 ones) + … + (n ones) = C(n, θ) + C(n, θ+1) +\n… + C(n, n).</p>",
+          "text": "Level 3 — count how many inputs give 1. With n\ninputs and threshold θ, the number of input rows with output 1 = (ways\nto choose θ ones) + (θ + 1 ones) + … + (n ones) = C(n, θ) + C(n, θ+1) +\n… + C(n, n)."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> An MP neuron has 4 inputs, x₄ inhibitory,\nθ = 2. Find the output for (1, 1, 0, 0) and (1, 1, 1, 1).</p>\n<p><strong>Answer:</strong> <strong>1 and 0</strong></p>\n</blockquote>",
-          "text": "Worked example Question: An MP neuron has 4 inputs, x₄ inhibitory,\nθ = 2. Find the output for (1, 1, 0, 0) and (1, 1, 1, 1). Answer: 1 and 0"
+          "html": "<p>For n = 5: C(5,0)=1, C(5,1)=5, C(5,2)=10, C(5,3)=10, C(5,4)=5,\nC(5,5)=1 (total 32).</p>",
+          "text": "For n = 5: C(5,0)=1, C(5,1)=5, C(5,2)=10, C(5,3)=10, C(5,4)=5,\nC(5,5)=1 (total 32)."
         },
         {
           "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>(1, 1, 0, 0): inhibitory x₄ = 0, no veto. Sum = 1 + 1 + 0 + 0 = 2. 2\n≥ 2 → <strong>1</strong>.</li>\n<li>(1, 1, 1, 1): inhibitory x₄ = 1 → veto → <strong>0</strong> (even\nthough the sum is 4).</li>\n</ol>",
-          "text": "(1, 1, 0, 0): inhibitory x₄ = 0, no veto. Sum = 1 + 1 + 0 + 0 = 2. 2\n≥ 2 → 1 . (1, 1, 1, 1): inhibitory x₄ = 1 → veto → 0 (even\nthough the sum is 4)."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Which θ makes a 3-input MP neuron output 1\nexactly when <strong>at least two</strong> inputs are 1?</p>\n<p><strong>Answer:</strong> <strong>θ = 2</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Which θ makes a 3-input MP neuron output 1\nexactly when at least two inputs are 1? Answer: θ = 2"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q2 · 2 marks</p>\n<p><strong>Question:</strong> Which among the following is true for a\nMcCulloch–Pitts (MP) neuron?</p>\n<ol type=\"a\">\n<li>It can implement Boolean functions with a non-linear decision\nboundary. (b) It can implement linearly separable Boolean functions with\na linear decision boundary. (c) It can be used to approximate a\nreal-valued function. (d) It can accurately represent the XOR function\nby adjusting its weights and thresholds.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(b)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q2 · 2 marks Question: Which among the following is true for a\nMcCulloch–Pitts (MP) neuron? It can implement Boolean functions with a non-linear decision\nboundary. (b) It can implement linearly separable Boolean functions with\na linear decision boundary. (c) It can be used to approximate a\nreal-valued function. (d) It can accurately represent the XOR function\nby adjusting its weights and thresholds. Answer: (b)"
         },
         {
           "type": "html",
@@ -1026,12 +1016,72 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Rows with two 1s have sum 2; with three 1s, sum 3. These must give 1\n→ need θ ≤ 2.</li>\n<li>Rows with one 1 have sum 1; with none, sum 0. These must give 0 →\nneed θ &gt; 1.</li>\n<li>Only integer in 1 &lt; θ ≤ 2 is <strong>2</strong>.</li>\n</ol>",
-          "text": "Rows with two 1s have sum 2; with three 1s, sum 3. These must give 1\n→ need θ ≤ 2. Rows with one 1 have sum 1; with none, sum 0. These must give 0 →\nneed θ > 1. Only integer in 1 < θ ≤ 2 is 2 ."
+          "html": "<ol type=\"1\">\n<li>An MP neuron fires when x₁ + … + xₙ ≥ θ. The boundary x₁ + … + xₙ =\nθ is a straight line (plane). So its boundary is <strong>linear</strong>\n→ (a) is false, (b) is true.</li>\n<li><ol start=\"3\" type=\"a\">\n<li>Inputs and output are only 0/1, so it cannot approximate real-valued\nfunctions → false.</li>\n</ol></li>\n<li><ol start=\"4\" type=\"a\">\n<li>XOR is not linearly separable, and an MP neuron has no weights to\nadjust anyway → false.</li>\n</ol></li>\n</ol>",
+          "text": "An MP neuron fires when x₁ + … + xₙ ≥ θ. The boundary x₁ + … + xₙ =\nθ is a straight line (plane). So its boundary is linear → (a) is false, (b) is true. Inputs and output are only 0/1, so it cannot approximate real-valued\nfunctions → false. XOR is not linearly separable, and an MP neuron has no weights to\nadjust anyway → false."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q3 · 2 marks</p>\n<p><strong>Question:</strong> Statement I: A single MP neuron can be\nused to represent all linearly separable Boolean functions. Statement\nII: Every linearly separable Boolean function can be represented using\nat least one MP neuron. Options: Only I is true · Only II is true · Both\nare true · None is true.</p>\n<p><strong>Answer:</strong> <strong>Only Statement II is true</strong>\n(as per the key)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q3 · 2 marks Question: Statement I: A single MP neuron can be\nused to represent all linearly separable Boolean functions. Statement\nII: Every linearly separable Boolean function can be represented using\nat least one MP neuron. Options: Only I is true · Only II is true · Both\nare true · None is true. Answer: Only Statement II is true (as per the key)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Statement I says <strong>one</strong> neuron covers\n<strong>all</strong> such functions. That is false: AND needs θ = n, OR\nneeds θ = 1 — one fixed neuron can’t be both.</li>\n<li>Statement II says <strong>each</strong> linearly separable function\nhas <strong>its own</strong> MP neuron. This is the idea taught in the\nlecture → true.</li>\n<li>Note: strictly, an MP neuron has no weights, so a separable function\nlike “2x₁ + x₂ + x₃ ≥ 2” can’t be built from one MP unit. The key\nfollows the lecture’s simpler reading — choose “Only II”.</li>\n</ol>",
+          "text": "Statement I says one neuron covers all such functions. That is false: AND needs θ = n, OR\nneeds θ = 1 — one fixed neuron can’t be both. Statement II says each linearly separable function\nhas its own MP neuron. This is the idea taught in the\nlecture → true. Note: strictly, an MP neuron has no weights, so a separable function\nlike “2x₁ + x₂ + x₃ ≥ 2” can’t be built from one MP unit. The key\nfollows the lecture’s simpler reading — choose “Only II”."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q51 · 3 marks</p>\n<p><strong>Question:</strong> We want to implement a 3-input NOR Boolean\nfunction using an MP neuron (g = Σxᵢ, y = 1 if g ≥ θ, else 0; an\ninhibitory input forces the output to 0). How many inhibitory inputs are\nrequired?</p>\n<p><strong>Answer:</strong> <strong>3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q51 · 3 marks Question: We want to implement a 3-input NOR Boolean\nfunction using an MP neuron (g = Σxᵢ, y = 1 if g ≥ θ, else 0; an\ninhibitory input forces the output to 0). How many inhibitory inputs are\nrequired? Answer: 3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>NOR is 1 only when <strong>all</strong> inputs are 0.</li>\n<li>If any input is 1, the output must be 0 → every input must be able\nto veto → all <strong>3</strong> inputs inhibitory.</li>\n<li>With all three inhibitory and θ = 0: input (0,0,0) → no veto, sum 0\n≥ 0 → 1 ✔. Any 1 → veto → 0 ✔.</li>\n</ol>",
+          "text": "NOR is 1 only when all inputs are 0. If any input is 1, the output must be 0 → every input must be able\nto veto → all 3 inputs inhibitory. With all three inhibitory and θ = 0: input (0,0,0) → no veto, sum 0\n≥ 0 → 1 ✔. Any 1 → veto → 0 ✔."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q9 · 3 marks</p>\n<p><strong>Question:</strong> MP neuron with x₁, x₂ excitatory, x₃\ninhibitory, threshold 2. It fires if the inhibitory input is inactive\nand the sum of excitatory inputs ≥ threshold. Which are correct?</p>\n<ol type=\"a\">\n<li>(1,1,0) → 1 (b) (1,1,1) → 1 (c) (1,0,0) → 0 (d) Raising the\nthreshold from 2 to 3 would not change the output for any input.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(a) and (c)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q9 · 3 marks Question: MP neuron with x₁, x₂ excitatory, x₃\ninhibitory, threshold 2. It fires if the inhibitory input is inactive\nand the sum of excitatory inputs ≥ threshold. Which are correct? (1,1,0) → 1 (b) (1,1,1) → 1 (c) (1,0,0) → 0 (d) Raising the\nthreshold from 2 to 3 would not change the output for any input. Answer: (a) and (c)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><ol type=\"a\">\n<li>x₃ = 0, no veto. Sum = 1 + 1 = 2 ≥ 2 → <strong>1</strong> ✔.</li>\n</ol></li>\n<li><ol start=\"2\" type=\"a\">\n<li>x₃ = 1 → veto → <strong>0</strong>, not 1 ✘.</li>\n</ol></li>\n<li><ol start=\"3\" type=\"a\">\n<li>No veto. Sum = 1 &lt; 2 → <strong>0</strong> ✔.</li>\n</ol></li>\n<li><ol start=\"4\" type=\"a\">\n<li>With θ = 3, input (1,1,0) has sum 2 &lt; 3 → 0 instead of 1. The\noutput changes ✘.</li>\n</ol></li>\n</ol>",
+          "text": "x₃ = 0, no veto. Sum = 1 + 1 = 2 ≥ 2 → 1 ✔. x₃ = 1 → veto → 0 , not 1 ✘. No veto. Sum = 1 < 2 → 0 ✔. With θ = 3, input (1,1,0) has sum 2 < 3 → 0 instead of 1. The\noutput changes ✘."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q67–69 · 2 + 2 + 4\nmarks</p>\n<p><strong>Question:</strong> h: {0,1}⁵ → {0,1}. An MP neuron with five\nexcitatory binary inputs gives f = 1 if x₁ + … + x₅ ≥ θ, else 0, where θ\nis a positive integer and f = h for all 32 inputs. (Sub-questions are\nindependent.) Q67: If θ = 1, which are true? (h is OR · h is linearly\nseparable · h is AND · h is neither OR nor AND · h is not linearly\nseparable) Q68: h = 0 for 26 of the 32 inputs and 1 for the rest. Find\nθ. Q69: Is there a θ with h = 1 for exactly 16 tuples? Enter θ, or −1 if\nnone.</p>\n<p><strong>Answer:</strong> <strong>Q67: “h is OR” and “h is linearly\nseparable” · Q68: θ = 4 · Q69: θ = 3</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q67–69 · 2 + 2 + 4\nmarks Question: h: {0,1}⁵ → {0,1}. An MP neuron with five\nexcitatory binary inputs gives f = 1 if x₁ + … + x₅ ≥ θ, else 0, where θ\nis a positive integer and f = h for all 32 inputs. (Sub-questions are\nindependent.) Q67: If θ = 1, which are true? (h is OR · h is linearly\nseparable · h is AND · h is neither OR nor AND · h is not linearly\nseparable) Q68: h = 0 for 26 of the 32 inputs and 1 for the rest. Find\nθ. Q69: Is there a θ with h = 1 for exactly 16 tuples? Enter θ, or −1 if\nnone. Answer: Q67: “h is OR” and “h is linearly\nseparable” · Q68: θ = 4 · Q69: θ = 3"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Q67: θ = 1 → fires when at least one input is 1 →\n<strong>OR</strong>. Every single MP neuron computes a linearly\nseparable function → <strong>separable</strong>.</li>\n<li>Q68: h = 1 for 32 − 26 = <strong>6</strong> inputs. Count rows with\nsum ≥ θ:\n<ul>\n<li>θ = 5: C(5,5) = 1</li>\n<li>θ = 4: C(5,4) + C(5,5) = 5 + 1 = <strong>6</strong> ✔ → θ = 4</li>\n</ul></li>\n<li>Q69: need 16 rows with sum ≥ θ:\n<ul>\n<li>θ = 3: C(5,3) + C(5,4) + C(5,5) = 10 + 5 + 1 = <strong>16</strong> ✔\n→ θ = 3</li>\n</ul></li>\n</ol>",
+          "text": "Q67: θ = 1 → fires when at least one input is 1 → OR . Every single MP neuron computes a linearly\nseparable function → separable . Q68: h = 1 for 32 − 26 = 6 inputs. Count rows with\nsum ≥ θ: θ = 5: C(5,5) = 1 θ = 4: C(5,4) + C(5,5) = 5 + 1 = 6 ✔ → θ = 4 Q69: need 16 rows with sum ≥ θ: θ = 3: C(5,3) + C(5,4) + C(5,5) = 10 + 5 + 1 = 16 ✔\n→ θ = 3"
         },
         {
           "type": "heading",
-          "text": "Type 2 — Perceptron:\ncheck or find weights"
+          "text": "Type 2 —\nPerceptron: weights, bias and counting"
         },
         {
           "type": "subheading",
@@ -1039,23 +1089,13 @@
         },
         {
           "type": "html",
-          "html": "<p><strong>Level 1 — check weights.</strong> For each row compute w₀ +\nw₁x₁ + w₂x₂. ≥ 0 → 1, &lt; 0 → 0. Compare with the truth table.</p>",
-          "text": "Level 1 — check weights. For each row compute w₀ +\nw₁x₁ + w₂x₂. ≥ 0 → 1, < 0 → 0. Compare with the truth table."
+          "html": "<ol type=\"1\">\n<li>Write wᵀx (add w₀ if there is a bias, x₀ = 1).</li>\n<li>Output 1 if wᵀx ≥ 0, else 0 (watch: = 0 counts as\n<strong>1</strong>).</li>\n<li><strong>Find weights/bias:</strong> one inequality per row, then\nlook for values that satisfy all of them. If two rows contradict,\n<strong>no value works</strong>.</li>\n<li><strong>Count points with label 1:</strong> go through all possible\ninputs and count those with wᵀx ≥ 0.</li>\n</ol>",
+          "text": "Write wᵀx (add w₀ if there is a bias, x₀ = 1). Output 1 if wᵀx ≥ 0, else 0 (watch: = 0 counts as 1 ). Find weights/bias: one inequality per row, then\nlook for values that satisfy all of them. If two rows contradict, no value works . Count points with label 1: go through all possible\ninputs and count those with wᵀx ≥ 0."
         },
         {
           "type": "html",
-          "html": "<p><strong>Level 2 — find weights.</strong> Write one inequality per row\n(≥ 0 for output 1, &lt; 0 for output 0). Simplify each. Pick numbers\nthat satisfy all.</p>",
-          "text": "Level 2 — find weights. Write one inequality per row\n(≥ 0 for output 1, < 0 for output 0). Simplify each. Pick numbers\nthat satisfy all."
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>Level 3 — count errors.</strong> Do Level 1 for every row,\ncount the rows that don’t match.</p>",
-          "text": "Level 3 — count errors. Do Level 1 for every row,\ncount the rows that don’t match."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> A perceptron uses w₀ = −1.5, w₁ = 1, w₂ =\n1. Which Boolean function does it compute?</p>\n<p><strong>Answer:</strong> <strong>AND</strong></p>\n</blockquote>",
-          "text": "Worked example Question: A perceptron uses w₀ = −1.5, w₁ = 1, w₂ =\n1. Which Boolean function does it compute? Answer: AND"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q45 · 4 marks</p>\n<p><strong>Question:</strong> A perceptron outputs ŷ = 1 if wᵀx ≥ 0,\nelse 0. Weights w₁ = −2, w₂ = −1. Data: (0,0) → 0, (0,1) → 1, (1,0) → 1,\n(1,1) → 1. What is the possible range of the bias w₀ so that all points\nare classified correctly? Options: w₀ ∈ (−∞, 0) · (1, ∞) · (1, 3] · [3,\n∞) · no possible value of w₀</p>\n<p><strong>Answer:</strong> <strong>No possible value of w₀</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q45 · 4 marks Question: A perceptron outputs ŷ = 1 if wᵀx ≥ 0,\nelse 0. Weights w₁ = −2, w₂ = −1. Data: (0,0) → 0, (0,1) → 1, (1,0) → 1,\n(1,1) → 1. What is the possible range of the bias w₀ so that all points\nare classified correctly? Options: w₀ ∈ (−∞, 0) · (1, ∞) · (1, 3] · [3,\n∞) · no possible value of w₀ Answer: No possible value of w₀"
         },
         {
           "type": "html",
@@ -1064,28 +1104,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>(0,0): −1.5 + 0 + 0 = −1.5 &lt; 0 → 0</li>\n<li>(0,1): −1.5 + 0 + 1 = −0.5 &lt; 0 → 0</li>\n<li>(1,0): −1.5 + 1 + 0 = −0.5 &lt; 0 → 0</li>\n<li>(1,1): −1.5 + 1 + 1 = 0.5 ≥ 0 → 1</li>\n<li>Output column 0, 0, 0, 1 = <strong>AND</strong>.</li>\n</ol>",
-          "text": "(0,0): −1.5 + 0 + 0 = −1.5 < 0 → 0 (0,1): −1.5 + 0 + 1 = −0.5 < 0 → 0 (1,0): −1.5 + 1 + 0 = −0.5 < 0 → 0 (1,1): −1.5 + 1 + 1 = 0.5 ≥ 0 → 1 Output column 0, 0, 0, 1 = AND ."
+          "html": "<ol type=\"1\">\n<li>(0,0) → 0: w₀ + 0 + 0 &lt; 0 → <strong>w₀ &lt; 0</strong>.</li>\n<li>(0,1) → 1: w₀ − 1 ≥ 0 → <strong>w₀ ≥ 1</strong>.</li>\n<li>w₀ &lt; 0 and w₀ ≥ 1 cannot both be true → <strong>no value</strong>\nworks.</li>\n<li>(With negative weights, the perceptron leans towards 0 when inputs\nare 1 — the opposite of OR.)</li>\n</ol>",
+          "text": "(0,0) → 0: w₀ + 0 + 0 < 0 → w₀ < 0 . (0,1) → 1: w₀ − 1 ≥ 0 → w₀ ≥ 1 . w₀ < 0 and w₀ ≥ 1 cannot both be true → no value works. (With negative weights, the perceptron leans towards 0 when inputs\nare 1 — the opposite of OR.)"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Find perceptron weights for NAND (output 0\nonly for (1,1)).</p>\n<p><strong>Answer:</strong> <strong>w₀ = 1.5, w₁ = −1, w₂ = −1</strong>\n(one of many)</p>\n</blockquote>",
-          "text": "Worked example Question: Find perceptron weights for NAND (output 0\nonly for (1,1)). Answer: w₀ = 1.5, w₁ = −1, w₂ = −1 (one of many)"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>(0,0) → 1: w₀ ≥ 0.</li>\n<li>(0,1) → 1: w₀ + w₂ ≥ 0 → w₂ ≥ −w₀.</li>\n<li>(1,0) → 1: w₀ + w₁ ≥ 0 → w₁ ≥ −w₀.</li>\n<li>(1,1) → 0: w₀ + w₁ + w₂ &lt; 0.</li>\n<li>Try w₀ = 1.5, w₁ = w₂ = −1: row 1: 1.5 ≥ 0 ✔; rows 2–3: 0.5 ≥ 0 ✔;\nrow 4: 1.5 − 2 = −0.5 &lt; 0 ✔.</li>\n</ol>",
-          "text": "(0,0) → 1: w₀ ≥ 0. (0,1) → 1: w₀ + w₂ ≥ 0 → w₂ ≥ −w₀. (1,0) → 1: w₀ + w₁ ≥ 0 → w₁ ≥ −w₀. (1,1) → 0: w₀ + w₁ + w₂ < 0. Try w₀ = 1.5, w₁ = w₂ = −1: row 1: 1.5 ≥ 0 ✔; rows 2–3: 0.5 ≥ 0 ✔;\nrow 4: 1.5 − 2 = −0.5 < 0 ✔."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> For OR with w₀ = −1, how many errors do\n(w₁, w₂) = (−1, −1) give?</p>\n<p><strong>Answer:</strong> <strong>3 errors</strong></p>\n</blockquote>",
-          "text": "Worked example Question: For OR with w₀ = −1, how many errors do\n(w₁, w₂) = (−1, −1) give? Answer: 3 errors"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q8–9 · 1 + 3 marks</p>\n<p><strong>Question:</strong> NAND truth table: (0,0)→1, (0,1)→1,\n(1,0)→1, (1,1)→0. A perceptron outputs 1 if Σᵢ₌₀² wᵢxᵢ ≥ 0, with x₀ = 1.\nQ8: Is NAND linearly separable? Q9: Which (w₀, w₁, w₂) produce NAND? (2,\n−1, −1) · (1, −1, −1) · (−2, −1, −1) · (0.5, −0.25, −0.25)</p>\n<p><strong>Answer:</strong> <strong>Q8: Yes · Q9: only (1, −1,\n−1)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q8–9 · 1 + 3 marks Question: NAND truth table: (0,0)→1, (0,1)→1,\n(1,0)→1, (1,1)→0. A perceptron outputs 1 if Σᵢ₌₀² wᵢxᵢ ≥ 0, with x₀ = 1.\nQ8: Is NAND linearly separable? Q9: Which (w₀, w₁, w₂) produce NAND? (2,\n−1, −1) · (1, −1, −1) · (−2, −1, −1) · (0.5, −0.25, −0.25) Answer: Q8: Yes · Q9: only (1, −1,\n−1)"
         },
         {
           "type": "html",
@@ -1094,12 +1119,27 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>(0,0): −1 → 0. OR = 0 ✔</li>\n<li>(1,0): −1 − 1 = −2 → 0. OR = 1 ✘</li>\n<li>(0,1): −2 → 0. OR = 1 ✘</li>\n<li>(1,1): −1 − 1 − 1 = −3 → 0. OR = 1 ✘</li>\n<li>Errors = 3. (The lecture slide’s table shows 1 here; the correct\ncount is 3.)</li>\n</ol>",
-          "text": "(0,0): −1 → 0. OR = 0 ✔ (1,0): −1 − 1 = −2 → 0. OR = 1 ✘ (0,1): −2 → 0. OR = 1 ✘ (1,1): −1 − 1 − 1 = −3 → 0. OR = 1 ✘ Errors = 3. (The lecture slide’s table shows 1 here; the correct\ncount is 3.)"
+          "html": "<ol type=\"1\">\n<li>Q8: one line can cut off the single point (1,1) →\n<strong>Yes</strong>.</li>\n<li>Q9 — test each option on all 4 rows (sum = w₀ + w₁x₁ + w₂x₂):\n<ul>\n<li>(2, −1, −1): (1,1) → 2 − 1 − 1 = 0 ≥ 0 → 1 ✘ (should be 0)</li>\n<li>(1, −1, −1): (0,0) → 1 → 1 ✔; (0,1) → 0 → 1 ✔; (1,0) → 0 → 1 ✔;\n(1,1) → −1 → 0 ✔ → <strong>NAND</strong></li>\n<li>(−2, −1, −1): (0,0) → −2 → 0 ✘</li>\n<li>(0.5, −0.25, −0.25): (1,1) → 0.5 − 0.5 = 0 → 1 ✘</li>\n</ul></li>\n</ol>",
+          "text": "Q8: one line can cut off the single point (1,1) → Yes . Q9 — test each option on all 4 rows (sum = w₀ + w₁x₁ + w₂x₂): (2, −1, −1): (1,1) → 2 − 1 − 1 = 0 ≥ 0 → 1 ✘ (should be 0) (1, −1, −1): (0,0) → 1 → 1 ✔; (0,1) → 0 → 1 ✔; (1,0) → 0 → 1 ✔;\n(1,1) → −1 → 0 ✔ → NAND (−2, −1, −1): (0,0) → −2 → 0 ✘ (0.5, −0.25, −0.25): (1,1) → 0.5 − 0.5 = 0 → 1 ✘"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q64–65 · 2 + 2 marks</p>\n<p><strong>Question:</strong> A perceptron has four binary features. The\ndataset has 16 points, no two the same (so all 16 binary patterns). w =\n(1, 1, −1, −1), no bias, ŷ = 1 if wᵀx ≥ 0, else 0. There are zero\nmisclassifications. Q64: how many points have true label 1? Q65: how\nmany have label 0?</p>\n<p><strong>Answer:</strong> <strong>Q64: 11 · Q65: 5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q64–65 · 2 + 2 marks Question: A perceptron has four binary features. The\ndataset has 16 points, no two the same (so all 16 binary patterns). w =\n(1, 1, −1, −1), no bias, ŷ = 1 if wᵀx ≥ 0, else 0. There are zero\nmisclassifications. Q64: how many points have true label 1? Q65: how\nmany have label 0? Answer: Q64: 11 · Q65: 5"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Zero errors → the label equals the perceptron’s output. So count\npatterns with x₁ + x₂ − x₃ − x₄ ≥ 0, i.e. (ones in x₁,x₂) ≥ (ones in\nx₃,x₄).</li>\n<li>Let a = ones in (x₁,x₂), b = ones in (x₃,x₄). Number of ways: a = 0\n→ 1, a = 1 → 2, a = 2 → 1 (same for b).</li>\n<li>Add all cases with a ≥ b:\n<ul>\n<li>a = 0, b = 0: 1 × 1 = 1</li>\n<li>a = 1, b = 0: 2 × 1 = 2; a = 1, b = 1: 2 × 2 = 4</li>\n<li>a = 2, b = 0: 1 × 1 = 1; b = 1: 1 × 2 = 2; b = 2: 1 × 1 = 1</li>\n</ul></li>\n<li>Total = 1 + 2 + 4 + 1 + 2 + 1 = <strong>11</strong> → label 0: 16 −\n11 = <strong>5</strong>.</li>\n</ol>",
+          "text": "Zero errors → the label equals the perceptron’s output. So count\npatterns with x₁ + x₂ − x₃ − x₄ ≥ 0, i.e. (ones in x₁,x₂) ≥ (ones in\nx₃,x₄). Let a = ones in (x₁,x₂), b = ones in (x₃,x₄). Number of ways: a = 0\n→ 1, a = 1 → 2, a = 2 → 1 (same for b). Add all cases with a ≥ b: a = 0, b = 0: 1 × 1 = 1 a = 1, b = 0: 2 × 1 = 2; a = 1, b = 1: 2 × 2 = 4 a = 2, b = 0: 1 × 1 = 1; b = 1: 1 × 2 = 2; b = 2: 1 × 1 = 1 Total = 1 + 2 + 4 + 1 + 2 + 1 = 11 → label 0: 16 −\n11 = 5 ."
         },
         {
           "type": "heading",
-          "text": "Type 3 —\nOne step of the Perceptron Learning Algorithm"
+          "text": "Type 3 —\nPerceptron Learning Algorithm (PLA) step by step"
         },
         {
           "type": "subheading",
@@ -1107,13 +1147,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Add x₀ = 1 to the point: x = [1, x₁, …, xₙ].</li>\n<li>Compute wᵀx.</li>\n<li>Positive point and wᵀx &lt; 0 → <strong>w + x</strong>. Negative\npoint and wᵀx ≥ 0 → <strong>w − x</strong>. Otherwise no change.</li>\n<li>Watch the “= 0” case: wᵀx = 0 counts as output <strong>1</strong> (≥\n0).</li>\n</ol>",
-          "text": "Add x₀ = 1 to the point: x = [1, x₁, …, xₙ]. Compute wᵀx. Positive point and wᵀx < 0 → w + x . Negative\npoint and wᵀx ≥ 0 → w − x . Otherwise no change. Watch the “= 0” case: wᵀx = 0 counts as output 1 (≥\n0)."
+          "html": "<ol type=\"1\">\n<li>Start with the given w. Take the points <strong>in the given\norder</strong>.</li>\n<li>For each point compute wᵀx (+ b if there is a bias).</li>\n<li><strong>Labels 0/1:</strong> positive point with wᵀx &lt; 0 → w = w\n+ x; negative point with wᵀx ≥ 0 → w = w − x. <strong>Labels\n±1:</strong> if the prediction is wrong → w = w + y·x (and b = b + y).\nSame thing: y = +1 adds x, y = −1 subtracts x.</li>\n<li>Count updates. “Converged” = one full pass with <strong>no</strong>\nupdate.</li>\n<li>Angle questions: cos θ = (a · b) / (‖a‖ ‖b‖).</li>\n</ol>",
+          "text": "Start with the given w. Take the points in the given\norder . For each point compute wᵀx (+ b if there is a bias). Labels 0/1: positive point with wᵀx < 0 → w = w\n+ x; negative point with wᵀx ≥ 0 → w = w − x. Labels\n±1: if the prediction is wrong → w = w + y·x (and b = b + y).\nSame thing: y = +1 adds x, y = −1 subtracts x. Count updates. “Converged” = one full pass with no update. Angle questions: cos θ = (a · b) / (‖a‖ ‖b‖)."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> w = [0.5, −1, 2]. The point (2, 1) has\nlabel 0. Give the new w.</p>\n<p><strong>Answer:</strong> <strong>w = [−0.5, −3, 1]</strong></p>\n</blockquote>",
-          "text": "Worked example Question: w = [0.5, −1, 2]. The point (2, 1) has\nlabel 0. Give the new w. Answer: w = [−0.5, −3, 1]"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q57–60 · 1 + 1 + 1 + 1\nmarks</p>\n<p><strong>Question:</strong> Fill in the blanks a, b, c, d of the\nPerceptron Learning Algorithm.</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"1080\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t3-q57-pla-blanks.webp?v=01d8cbce79f2\" width=\"1680\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p>Options for a and c: Σᵢ₌₀ⁿ wᵢ·xᵢ &lt; 0 · Σ xᵢ &lt; 0 · Σ wᵢ &gt; 0 ·\nΣ wᵢ &lt; 0 · Σ wᵢ·xᵢ ≥ 0 · Σ xᵢ &gt; 0. Options for b and d: w = w + x\n· w = w − x · w = w − η∇_wL · w = w − η∇_xL.</p>\n<p><strong>Answer:</strong> <strong>a: Σwᵢxᵢ &lt; 0 · b: w = w + x · c:\nΣwᵢxᵢ ≥ 0 · d: w = w − x</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q57–60 · 1 + 1 + 1 + 1\nmarks Question: Fill in the blanks a, b, c, d of the\nPerceptron Learning Algorithm. Question figure (redrawn exactly from the\npaper) Options for a and c: Σᵢ₌₀ⁿ wᵢ·xᵢ < 0 · Σ xᵢ < 0 · Σ wᵢ > 0 ·\nΣ wᵢ < 0 · Σ wᵢ·xᵢ ≥ 0 · Σ xᵢ > 0. Options for b and d: w = w + x\n· w = w − x · w = w − η∇_wL · w = w − η∇_xL. Answer: a: Σwᵢxᵢ < 0 · b: w = w + x · c:\nΣwᵢxᵢ ≥ 0 · d: w = w − x"
         },
         {
           "type": "html",
@@ -1122,22 +1162,72 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>x = [1, 2, 1].</li>\n<li>wᵀx = 0.5×1 + (−1)×2 + 2×1 = 0.5 − 2 + 2 = 0.5.</li>\n<li>0.5 ≥ 0 → predicts 1, but label is 0 → mistake on a negative\npoint.</li>\n<li>w − x = [0.5 − 1, −1 − 2, 2 − 1] = <strong>[−0.5, −3,\n1]</strong>.</li>\n<li>Check: new wᵀx = −0.5 − 6 + 1 = −5.5 &lt; 0 → now correct.</li>\n</ol>",
-          "text": "x = [1, 2, 1]. wᵀx = 0.5×1 + (−1)×2 + 2×1 = 0.5 − 2 + 2 = 0.5. 0.5 ≥ 0 → predicts 1, but label is 0 → mistake on a negative\npoint. w − x = [0.5 − 1, −1 − 2, 2 − 1] = [−0.5, −3,\n1] . Check: new wᵀx = −0.5 − 6 + 1 = −5.5 < 0 → now correct."
+          "html": "<ol type=\"1\">\n<li>a: a positive point is wrong when the perceptron says 0,\ni.e. <strong>Σwᵢxᵢ &lt; 0</strong> (it uses both w and x — options with\nonly w or only x make no sense).</li>\n<li>b: fix by turning w towards x → <strong>w = w + x</strong>.</li>\n<li>c: a negative point is wrong when it says 1, i.e. <strong>Σwᵢxᵢ ≥\n0</strong>.</li>\n<li>d: turn w away from x → <strong>w = w − x</strong>. (The η∇L options\nare gradient descent, not PLA.)</li>\n</ol>",
+          "text": "a: a positive point is wrong when the perceptron says 0,\ni.e. Σwᵢxᵢ < 0 (it uses both w and x — options with\nonly w or only x make no sense). b: fix by turning w towards x → w = w + x . c: a negative point is wrong when it says 1, i.e. Σwᵢxᵢ ≥\n0 . d: turn w away from x → w = w − x . (The η∇L options\nare gradient descent, not PLA.)"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Start w = [0, 0, 0]. Run PLA on OR,\ncycling (0,0), (0,1), (1,0), (1,1). How many corrections and what final\nw?</p>\n<p><strong>Answer:</strong> <strong>5 corrections, w = [−1, 1,\n1]</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Start w = [0, 0, 0]. Run PLA on OR,\ncycling (0,0), (0,1), (1,0), (1,1). How many corrections and what final\nw? Answer: 5 corrections, w = [−1, 1,\n1]"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q68–70 · 2 + 2 + 2\nmarks</p>\n<p><strong>Question:</strong> Data (x₁, x₂, y): (1, 1, 1), (−1, 1, 1),\n(1, −1, 0). PLA starts from w = (0, 0), no bias, points processed top to\nbottom, ŷ = 1 if wᵀx ≥ 0, else 0. It converges to w* after k updates.\nQ68: possible w*? (0,0) · (0,1) · (−1,1) · (1,1). Q69: k = ? Q70: For a\ntest point ((x₁, x₂), y) classified correctly, which are true? x₂ − x₁ ≥\n0 and y = 1 · x₂ − x₁ &lt; 0 and y = 0 · x₁ + x₂ ≥ 0 and y = 1 · x₁ + x₂\n&lt; 0 and y = 0</p>\n<p><strong>Answer:</strong> <strong>Q68: (−1, 1) · Q69: k = 1 · Q70: the\nfirst two options</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q68–70 · 2 + 2 + 2\nmarks Question: Data (x₁, x₂, y): (1, 1, 1), (−1, 1, 1),\n(1, −1, 0). PLA starts from w = (0, 0), no bias, points processed top to\nbottom, ŷ = 1 if wᵀx ≥ 0, else 0. It converges to w* after k updates.\nQ68: possible w*? (0,0) · (0,1) · (−1,1) · (1,1). Q69: k = ? Q70: For a\ntest point ((x₁, x₂), y) classified correctly, which are true? x₂ − x₁ ≥\n0 and y = 1 · x₂ − x₁ < 0 and y = 0 · x₁ + x₂ ≥ 0 and y = 1 · x₁ + x₂\n< 0 and y = 0 Answer: Q68: (−1, 1) · Q69: k = 1 · Q70: the\nfirst two options"
         },
         {
           "type": "html",
-          "html": "<p><strong>How to solve:</strong> follow the full table on the <a href=\"perceptron-learning-algorithm\">Perceptron Learning Algorithm</a>\npage. Corrections happen at (0,0), (0,1), (0,0), (1,0), (0,0). Then a\nfull pass gives sums −1, 0, 0, 1 → all correct.</p>",
-          "text": "How to solve: follow the full table on the Perceptron Learning Algorithm page. Corrections happen at (0,0), (0,1), (0,0), (1,0), (0,0). Then a\nfull pass gives sums −1, 0, 0, 1 → all correct."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Pass 1:\n<ul>\n<li>(1, 1), y = 1: wᵀx = 0 ≥ 0 → says 1 ✔ no update</li>\n<li>(−1, 1), y = 1: wᵀx = 0 → says 1 ✔</li>\n<li>(1, −1), y = 0: wᵀx = 0 ≥ 0 → says 1 ✘ → w = (0,0) − (1,−1) =\n<strong>(−1, 1)</strong> (update 1)</li>\n</ul></li>\n<li>Pass 2 with w = (−1, 1): (1,1) → 0 → 1 ✔; (−1,1) → 2 → 1 ✔; (1,−1) →\n−2 → 0 ✔. No update → converged.</li>\n<li>So <strong>w* = (−1, 1)</strong> and <strong>k = 1</strong>.</li>\n<li>Q70: w*ᵀx = −x₁ + x₂ = x₂ − x₁. The perceptron says 1 when x₂ − x₁ ≥\n0, 0 when x₂ − x₁ &lt; 0. “Correct” means the label matches → options 1\nand 2.</li>\n</ol>",
+          "text": "Pass 1: (1, 1), y = 1: wᵀx = 0 ≥ 0 → says 1 ✔ no update (−1, 1), y = 1: wᵀx = 0 → says 1 ✔ (1, −1), y = 0: wᵀx = 0 ≥ 0 → says 1 ✘ → w = (0,0) − (1,−1) = (−1, 1) (update 1) Pass 2 with w = (−1, 1): (1,1) → 0 → 1 ✔; (−1,1) → 2 → 1 ✔; (1,−1) →\n−2 → 0 ✔. No update → converged. So w* = (−1, 1) and k = 1 . Q70: w*ᵀx = −x₁ + x₂ = x₂ − x₁. The perceptron says 1 when x₂ − x₁ ≥\n0, 0 when x₂ − x₁ < 0. “Correct” means the label matches → options 1\nand 2."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q10–11 · 3 + 2 marks</p>\n<p><strong>Question:</strong> PLA on (x₁, x₂, y): (2, 1, +1), (−1, −2,\n−1), (1, 3, +1), (−2, −1, −1). Start w = (0, 0), points in table order,\ny = 1 if wᵀx ≥ 0, else −1. Q10: w after one epoch? (3,4) · (1,2) · (1,3)\n· (−2,−1). Q11: “After one epoch the model has converged.” True or\nfalse?</p>\n<p><strong>Answer:</strong> <strong>Q10: w = (1, 2) · Q11:\nTrue</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q10–11 · 3 + 2 marks Question: PLA on (x₁, x₂, y): (2, 1, +1), (−1, −2,\n−1), (1, 3, +1), (−2, −1, −1). Start w = (0, 0), points in table order,\ny = 1 if wᵀx ≥ 0, else −1. Q10: w after one epoch? (3,4) · (1,2) · (1,3)\n· (−2,−1). Q11: “After one epoch the model has converged.” True or\nfalse? Answer: Q10: w = (1, 2) · Q11:\nTrue"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>(2, 1), y = +1: wᵀx = 0 ≥ 0 → +1 ✔</li>\n<li>(−1, −2), y = −1: wᵀx = 0 → +1 ✘ → w = w + y·x = (0,0) − (−1,−2) =\n<strong>(1, 2)</strong></li>\n<li>(1, 3), y = +1: 1 + 6 = 7 → +1 ✔</li>\n<li>(−2, −1), y = −1: −2 − 2 = −4 → −1 ✔</li>\n<li>Check again with (1, 2): 2 + 2 = 4 (+1 ✔), −1 − 4 = −5 (−1 ✔), 7 (+1\n✔), −4 (−1 ✔) → no more updates → <strong>converged</strong>\n(True).</li>\n</ol>",
+          "text": "(2, 1), y = +1: wᵀx = 0 ≥ 0 → +1 ✔ (−1, −2), y = −1: wᵀx = 0 → +1 ✘ → w = w + y·x = (0,0) − (−1,−2) = (1, 2) (1, 3), y = +1: 1 + 6 = 7 → +1 ✔ (−2, −1), y = −1: −2 − 2 = −4 → −1 ✔ Check again with (1, 2): 2 + 2 = 4 (+1 ✔), −1 − 4 = −5 (−1 ✔), 7 (+1\n✔), −4 (−1 ✔) → no more updates → converged (True)."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q10 · 4 marks</p>\n<p><strong>Question:</strong> Perceptron w = (2, −1), b = 0. Predict +1\nif wᵀx + b ≥ 0, else −1. On a mistake: w ← w + yᵢxᵢ, b ← b + yᵢ. Points\nprocessed once in order A(3,1, +1), B(2,0, −1), C(1,2, −1), D(4,4, +1).\nWhich are correct? (a) First update after B. (b) Second update after C.\n(c) Final bias = −1. (d) Exactly two updates.</p>\n<p><strong>Answer:</strong> <strong>(a) and (d)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q10 · 4 marks Question: Perceptron w = (2, −1), b = 0. Predict +1\nif wᵀx + b ≥ 0, else −1. On a mistake: w ← w + yᵢxᵢ, b ← b + yᵢ. Points\nprocessed once in order A(3,1, +1), B(2,0, −1), C(1,2, −1), D(4,4, +1).\nWhich are correct? (a) First update after B. (b) Second update after C.\n(c) Final bias = −1. (d) Exactly two updates. Answer: (a) and (d)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>A: 2·3 − 1·1 + 0 = 5 ≥ 0 → +1 ✔ (correct)</li>\n<li>B: 2·2 − 0 + 0 = 4 → +1 ✘ (true −1) → w = (2,−1) − (2,0) = (0, −1),\nb = 0 − 1 = −1 → <strong>first update after B</strong> ✔</li>\n<li>C: 0·1 − 1·2 − 1 = −3 → −1 ✔ (correct, no update) → (b) ✘</li>\n<li>D: 0·4 − 1·4 − 1 = −5 → −1 ✘ (true +1) → w = (0,−1) + (4,4) = (4,\n3), b = −1 + 1 = <strong>0</strong> → (c) ✘</li>\n<li>Updates at B and D → <strong>exactly two</strong> ✔</li>\n</ol>",
+          "text": "A: 2·3 − 1·1 + 0 = 5 ≥ 0 → +1 ✔ (correct) B: 2·2 − 0 + 0 = 4 → +1 ✘ (true −1) → w = (2,−1) − (2,0) = (0, −1),\nb = 0 − 1 = −1 → first update after B ✔ C: 0·1 − 1·2 − 1 = −3 → −1 ✔ (correct, no update) → (b) ✘ D: 0·4 − 1·4 − 1 = −5 → −1 ✘ (true +1) → w = (0,−1) + (4,4) = (4,\n3), b = −1 + 1 = 0 → (c) ✘ Updates at B and D → exactly two ✔"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q6 · 3 marks</p>\n<p><strong>Question:</strong> Current w = (3, 4). A misclassified\nexample x = (4, 3) with y = −1 is used: w_new = w − x. Let θ_new be the\nangle between w_new and x. Which equals θ_new? cos⁻¹(24/(5√2)) ·\ncos⁻¹(1/(5√2)) · cos⁻¹(−1/(5√2)) · 0°</p>\n<p><strong>Answer:</strong> <strong>cos⁻¹(−1/(5√2))</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q6 · 3 marks Question: Current w = (3, 4). A misclassified\nexample x = (4, 3) with y = −1 is used: w_new = w − x. Let θ_new be the\nangle between w_new and x. Which equals θ_new? cos⁻¹(24/(5√2)) ·\ncos⁻¹(1/(5√2)) · cos⁻¹(−1/(5√2)) · 0° Answer: cos⁻¹(−1/(5√2))"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>w_new = (3 − 4, 4 − 3) = <strong>(−1, 1)</strong>.</li>\n<li>w_new · x = (−1)(4) + (1)(3) = −4 + 3 = <strong>−1</strong>.</li>\n<li>‖w_new‖ = √(1 + 1) = √2; ‖x‖ = √(16 + 9) = 5.</li>\n<li>cos θ_new = −1 / (5√2) → θ_new = <strong>cos⁻¹(−1/(5√2))</strong>\n(just over 90°, as we want for a negative point).</li>\n</ol>",
+          "text": "w_new = (3 − 4, 4 − 3) = (−1, 1) . w_new · x = (−1)(4) + (1)(3) = −4 + 3 = −1 . ‖w_new‖ = √(1 + 1) = √2; ‖x‖ = √(16 + 9) = 5. cos θ_new = −1 / (5√2) → θ_new = cos⁻¹(−1/(5√2)) (just over 90°, as we want for a negative point)."
         },
         {
           "type": "heading",
-          "text": "Type 4 — Linear\nseparability and counting"
+          "text": "Type 4 —\nLinear separability and networks of perceptrons"
         },
         {
           "type": "subheading",
@@ -1145,13 +1235,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Draw the points that output 1 and those that output 0.</li>\n<li>Can one straight line split them? If not sure, write the 4\ninequalities and look for a contradiction (like XOR).</li>\n<li>Counting: n inputs → 2ⁿ rows → <strong>2^(2ⁿ)</strong> Boolean\nfunctions. For n = 2, 16 functions, 14 separable (all except XOR and\nXNOR).</li>\n</ol>",
-          "text": "Draw the points that output 1 and those that output 0. Can one straight line split them? If not sure, write the 4\ninequalities and look for a contradiction (like XOR). Counting: n inputs → 2ⁿ rows → 2^(2ⁿ) Boolean\nfunctions. For n = 2, 16 functions, 14 separable (all except XOR and\nXNOR)."
+          "html": "<ol type=\"1\">\n<li><strong>Separable?</strong> Can one straight line (plane) put all 1s\non one side and all 0s on the other? If a line through the data meets +\n− + (or − + −) in a row, it is not.</li>\n<li>A <strong>change of features</strong> (like x₁ → x₁²) can make data\nseparable.</li>\n<li><strong>Network theorem:</strong> any Boolean function of n inputs\nneeds at most <strong>2ⁿ</strong> hidden perceptrons (+1 output).</li>\n<li><strong>XOR with 2 hidden units:</strong> h₁ = OR, h₂ = AND, output\nfires for “OR but not AND”.</li>\n</ol>",
+          "text": "Separable? Can one straight line (plane) put all 1s\non one side and all 0s on the other? If a line through the data meets +\n− + (or − + −) in a row, it is not. A change of features (like x₁ → x₁²) can make data\nseparable. Network theorem: any Boolean function of n inputs\nneeds at most 2ⁿ hidden perceptrons (+1 output). XOR with 2 hidden units: h₁ = OR, h₂ = AND, output\nfires for “OR but not AND”."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Is f(x₁, x₂) = x₁ AND (NOT x₂) linearly\nseparable? If yes, give weights.</p>\n<p><strong>Answer:</strong> <strong>Yes — w₀ = −0.5, w₁ = 1, w₂ =\n−1</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Is f(x₁, x₂) = x₁ AND (NOT x₂) linearly\nseparable? If yes, give weights. Answer: Yes — w₀ = −0.5, w₁ = 1, w₂ =\n−1"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q65 · 2 marks</p>\n<p><strong>Question:</strong> f is a Boolean function with 10 inputs,\nrepresented exactly by a network of perceptrons with one hidden layer\nand one output perceptron. Let k be the sufficient number of perceptrons\nneeded in the hidden layer. Enter k.</p>\n<p><strong>Answer:</strong> <strong>1024</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q65 · 2 marks Question: f is a Boolean function with 10 inputs,\nrepresented exactly by a network of perceptrons with one hidden layer\nand one output perceptron. Let k be the sufficient number of perceptrons\nneeded in the hidden layer. Enter k. Answer: 1024"
         },
         {
           "type": "html",
@@ -1160,105 +1250,107 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Output 1 only for (1,0).</li>\n<li>(0,0): −0.5 → 0 ✔. (0,1): −0.5 − 1 = −1.5 → 0 ✔. (1,0): −0.5 + 1 =\n0.5 → 1 ✔. (1,1): −0.5 + 1 − 1 = −0.5 → 0 ✔.</li>\n</ol>",
-          "text": "Output 1 only for (1,0). (0,0): −0.5 → 0 ✔. (0,1): −0.5 − 1 = −1.5 → 0 ✔. (1,0): −0.5 + 1 =\n0.5 → 1 ✔. (1,1): −0.5 + 1 − 1 = −0.5 → 0 ✔."
+          "html": "<ol type=\"1\">\n<li>The theorem uses one hidden perceptron per input pattern.</li>\n<li>10 binary inputs → 2¹⁰ patterns = <strong>1024</strong>.</li>\n</ol>",
+          "text": "The theorem uses one hidden perceptron per input pattern. 10 binary inputs → 2¹⁰ patterns = 1024 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q47 · 3 marks</p>\n<p><strong>Question:</strong> Which statement best describes the main\nrepresentational advantage of a Multi-Layer Perceptron (MLP) over a\nSingle-Layer Perceptron (SLP)?</p>\n<p><strong>Answer:</strong> <strong>An MLP can learn non-linear decision\nboundaries, so it can classify data that is not linearly\nseparable.</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q47 · 3 marks Question: Which statement best describes the main\nrepresentational advantage of a Multi-Layer Perceptron (MLP) over a\nSingle-Layer Perceptron (SLP)? Answer: An MLP can learn non-linear decision\nboundaries, so it can classify data that is not linearly\nseparable."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>An SLP draws one line → only linearly separable data.</li>\n<li>Hidden layers combine many lines → curved / non-linear boundaries\n(e.g. XOR).</li>\n<li>The other options (faster convergence, less overfitting, “only\nclassification”) are not what the lecture’s representation-power result\nsays.</li>\n</ol>",
+          "text": "An SLP draws one line → only linearly separable data. Hidden layers combine many lines → curved / non-linear boundaries\n(e.g. XOR). The other options (faster convergence, less overfitting, “only\nclassification”) are not what the lecture’s representation-power result\nsays."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q2 · 1 mark</p>\n<p><strong>Question:</strong> True or false: The decision boundary\nlearned by a neural network is always non-linear.</p>\n<p><strong>Answer:</strong> <strong>False</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q2 · 1 mark Question: True or false: The decision boundary\nlearned by a neural network is always non-linear. Answer: False"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>A single perceptron / sigmoid neuron is a neural network, and its\nboundary is a straight line.</li>\n<li>A network with only linear activations also gives a linear boundary.\nSo “always non-linear” is false.</li>\n</ol>",
+          "text": "A single perceptron / sigmoid neuron is a neural network, and its\nboundary is a straight line. A network with only linear activations also gives a linear boundary.\nSo “always non-linear” is false."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q4 · 3 marks</p>\n<p><strong>Question:</strong> An MLP with binary inputs x₁, x₂ has\nhidden outputs h₁ = step(−0.5 + x₁ + x₂), h₂ = step(−1.5 + x₁ + x₂) and\noutput y = step(w₀ + w₁h₁ + w₂h₂), where step(z) = 1 if z ≥ 0, else 0.\nGiven w₀ = −0.5, w₁ = 1, which w₂ make the network compute XOR? 0.5 ·\n−0.55 · −0.60 · 1</p>\n<p><strong>Answer:</strong> <strong>−0.55 and −0.60</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q4 · 3 marks Question: An MLP with binary inputs x₁, x₂ has\nhidden outputs h₁ = step(−0.5 + x₁ + x₂), h₂ = step(−1.5 + x₁ + x₂) and\noutput y = step(w₀ + w₁h₁ + w₂h₂), where step(z) = 1 if z ≥ 0, else 0.\nGiven w₀ = −0.5, w₁ = 1, which w₂ make the network compute XOR? 0.5 ·\n−0.55 · −0.60 · 1 Answer: −0.55 and −0.60"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>h₁ = 1 when x₁ + x₂ ≥ 0.5 → <strong>OR</strong>. h₂ = 1 when x₁ + x₂\n≥ 1.5 → <strong>AND</strong>.</li>\n<li>Table:\n<ul>\n<li>(0,0): h = (0,0) → −0.5 &lt; 0 → 0 ✔</li>\n<li>(0,1), (1,0): h = (1,0) → −0.5 + 1 = 0.5 ≥ 0 → 1 ✔</li>\n<li>(1,1): h = (1,1) → −0.5 + 1 + w₂ = 0.5 + w₂. XOR needs 0 → 0.5 + w₂\n&lt; 0 → <strong>w₂ &lt; −0.5</strong></li>\n</ul></li>\n<li>−0.55 ✔, −0.60 ✔; 0.5 and 1 give 1 for (1,1) ✘.</li>\n</ol>",
+          "text": "h₁ = 1 when x₁ + x₂ ≥ 0.5 → OR . h₂ = 1 when x₁ + x₂\n≥ 1.5 → AND . Table: (0,0): h = (0,0) → −0.5 < 0 → 0 ✔ (0,1), (1,0): h = (1,0) → −0.5 + 1 = 0.5 ≥ 0 → 1 ✔ (1,1): h = (1,1) → −0.5 + 1 + w₂ = 0.5 + w₂. XOR needs 0 → 0.5 + w₂\n< 0 → w₂ < −0.5 −0.55 ✔, −0.60 ✔; 0.5 and 1 give 1 for (1,1) ✘."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q64 · 4 marks</p>\n<p><strong>Question:</strong> Dataset D₁ in ℝ² (+ and − points shown).\nD₂ is obtained by the transformation (x₁, x₂) → (x₁², x₂). Which are\ntrue? (a) D₂ is linearly separable (b) PLA will converge on D₂ (c) D₁ is\nlinearly separable (d) PLA will converge on D₁</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"1200\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t2-q64-parabola-data.webp?v=43c755a0161e\" width=\"1560\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>(a) and (b)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q64 · 4 marks Question: Dataset D₁ in ℝ² (+ and − points shown).\nD₂ is obtained by the transformation (x₁, x₂) → (x₁², x₂). Which are\ntrue? (a) D₂ is linearly separable (b) PLA will converge on D₂ (c) D₁ is\nlinearly separable (d) PLA will converge on D₁ Question figure (redrawn exactly from the\npaper) Answer: (a) and (b)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>In D₁, every + lies <strong>above</strong> the parabola x₂ = x₁²\n(inside the U) and every − lies <strong>below</strong> it (outside). A\ncurve separates them, not a line. Along the line x₂ = 1 you meet − (x₁ =\n−1.5), + (x₁ = 0.25), − (x₁ = 1.5) → no single line works → (c) ✘, (d) ✘\n(PLA never stops).</li>\n<li>Put u = x₁². The boundary x₂ = x₁² becomes <strong>x₂ = u</strong>,\na straight line. + points have x₂ &gt; u, − points have x₂ &lt; u → D₂\nis <strong>linearly separable</strong> → (a) ✔.</li>\n<li>PLA converges on separable data → (b) ✔.</li>\n</ol>",
+          "text": "In D₁, every + lies above the parabola x₂ = x₁²\n(inside the U) and every − lies below it (outside). A\ncurve separates them, not a line. Along the line x₂ = 1 you meet − (x₁ =\n−1.5), + (x₁ = 0.25), − (x₁ = 1.5) → no single line works → (c) ✘, (d) ✘\n(PLA never stops). Put u = x₁². The boundary x₂ = x₁² becomes x₂ = u ,\na straight line. + points have x₂ > u, − points have x₂ < u → D₂\nis linearly separable → (a) ✔. PLA converges on separable data → (b) ✔."
         },
         {
           "type": "heading",
-          "text": "Type 5 — Network of\nperceptrons"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "text": "Practice set (new questions)"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Hidden units needed (by the theorem) = <strong>2ⁿ</strong>; total\nperceptrons = 2ⁿ + 1.</li>\n<li>Each hidden unit fires for one input pattern (weights = that pattern\nin ±1 form, bias = −n).</li>\n<li>Output weight wᵢ for pattern i: choose wᵢ ≥ w₀ if the function is 1\nthere, wᵢ &lt; w₀ if it is 0.</li>\n</ol>",
-          "text": "Hidden units needed (by the theorem) = 2ⁿ ; total\nperceptrons = 2ⁿ + 1. Each hidden unit fires for one input pattern (weights = that pattern\nin ±1 form, bias = −n). Output weight wᵢ for pattern i: choose wᵢ ≥ w₀ if the function is 1\nthere, wᵢ < w₀ if it is 0."
+          "html": "<details>\n<summary>\nP1. MP neuron, 4 excitatory inputs, θ = 2. How many of the 16 inputs\ngive output 1?\n</summary>\nC(4,2) + C(4,3) + C(4,4) = 6 + 4 + 1 = 11.\n</details>",
+          "text": "P1. MP neuron, 4 excitatory inputs, θ = 2. How many of the 16 inputs\ngive output 1? C(4,2) + C(4,3) + C(4,4) = 6 + 4 + 1 = 11."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Using the 2-4-1 network (±1 inputs, w₀ = 0\nat the output), give w₁…w₄ for XNOR (1 when inputs are equal).</p>\n<p><strong>Answer:</strong> <strong>w₁ = +1, w₂ = −1, w₃ = −1, w₄ =\n+1</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Using the 2-4-1 network (±1 inputs, w₀ = 0\nat the output), give w₁…w₄ for XNOR (1 when inputs are equal). Answer: w₁ = +1, w₂ = −1, w₃ = −1, w₄ =\n+1"
+          "html": "<details>\n<summary>\nP2. Perceptron w = (1, 1), b = −1.5, output 1 if wᵀx + b ≥ 0. Which\nBoolean function?\n</summary>\n(1,1): 0.5 → 1; others −0.5 or −1.5 → 0. It is AND.\n</details>",
+          "text": "P2. Perceptron w = (1, 1), b = −1.5, output 1 if wᵀx + b ≥ 0. Which\nBoolean function? (1,1): 0.5 → 1; others −0.5 or −1.5 → 0. It is AND."
         },
         {
           "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "html": "<details>\n<summary>\nP3. PLA (labels ±1, update w ← w + yx): w = (1, −1), point x = (1, 2), y\n= +1. New w?\n</summary>\nwᵀx = 1 − 2 = −1 → predicts −1 ✘. w = (1,−1) + (1,2) = (2, 1).\n</details>",
+          "text": "P3. PLA (labels ±1, update w ← w + yx): w = (1, −1), point x = (1, 2), y\n= +1. New w? wᵀx = 1 − 2 = −1 → predicts −1 ✘. w = (1,−1) + (1,2) = (2, 1)."
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Patterns: h₁ ↔︎ (−1,−1), h₂ ↔︎ (−1,+1), h₃ ↔︎ (+1,−1), h₄ ↔︎\n(+1,+1).</li>\n<li>XNOR is 1 for (−1,−1) and (+1,+1) → w₁ ≥ 0, w₄ ≥ 0.</li>\n<li>XNOR is 0 for the mixed patterns → w₂ &lt; 0, w₃ &lt; 0.</li>\n</ol>",
-          "text": "Patterns: h₁ ↔︎ (−1,−1), h₂ ↔︎ (−1,+1), h₃ ↔︎ (+1,−1), h₄ ↔︎\n(+1,+1). XNOR is 1 for (−1,−1) and (+1,+1) → w₁ ≥ 0, w₄ ≥ 0. XNOR is 0 for the mixed patterns → w₂ < 0, w₃ < 0."
+          "html": "<details>\n<summary>\nP4. w = (2, 0), misclassified x = (1, 1) with y = +1, w_new = w + x.\nAngle between w_new and x?\n</summary>\nw_new = (3, 1). Dot = 4. ‖w_new‖ = √10, ‖x‖ = √2 → cos θ = 4/√20 = 0.894\n→ θ ≈ 26.6°.\n</details>",
+          "text": "P4. w = (2, 0), misclassified x = (1, 1) with y = +1, w_new = w + x.\nAngle between w_new and x? w_new = (3, 1). Dot = 4. ‖w_new‖ = √10, ‖x‖ = √2 → cos θ = 4/√20 = 0.894\n→ θ ≈ 26.6°."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> A hidden perceptron in the 3-input network\nhas weights (+1, −1, +1) and bias −3. For which input does it fire?</p>\n<p><strong>Answer:</strong> <strong>(+1, −1, +1) only</strong></p>\n</blockquote>",
-          "text": "Worked example Question: A hidden perceptron in the 3-input network\nhas weights (+1, −1, +1) and bias −3. For which input does it fire? Answer: (+1, −1, +1) only"
+          "html": "<details>\n<summary>\nP5. Hidden perceptrons sufficient for any Boolean function of 6 inputs?\n</summary>\n2⁶ = 64.\n</details>",
+          "text": "P5. Hidden perceptrons sufficient for any Boolean function of 6 inputs? 2⁶ = 64."
         },
         {
           "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "html": "<details>\n<summary>\nP6. In the 2026 T1 Q4 network, which w₂ makes it compute OR instead of\nXOR?\n</summary>\nNeed (1,1) → 1: 0.5 + w₂ ≥ 0 → any w₂ ≥ −0.5 (e.g. 0 or 1).\n</details>",
+          "text": "P6. In the 2026 T1 Q4 network, which w₂ makes it compute OR instead of\nXOR? Need (1,1) → 1: 0.5 + w₂ ≥ 0 → any w₂ ≥ −0.5 (e.g. 0 or 1)."
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>It fires when x₁ − x₂ + x₃ ≥ 3.</li>\n<li>The largest possible value is 1 + 1 + 1 = 3, reached only when x₁ =\n+1, x₂ = −1, x₃ = +1.</li>\n<li>Any other input changes at least one term from +1 to −1 → sum ≤ 1\n&lt; 3.</li>\n</ol>",
-          "text": "It fires when x₁ − x₂ + x₃ ≥ 3. The largest possible value is 1 + 1 + 1 = 3, reached only when x₁ =\n+1, x₂ = −1, x₃ = +1. Any other input changes at least one term from +1 to −1 → sum ≤ 1\n< 3."
-        },
-        {
-          "type": "heading",
-          "text": "Practice set"
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP1. MP neuron, 5 inputs, θ = 5, no inhibitory inputs. What function is\nit?\n</summary>\n5-input AND (fires only when all five are 1).\n</details>",
-          "text": "P1. MP neuron, 5 inputs, θ = 5, no inhibitory inputs. What function is\nit? 5-input AND (fires only when all five are 1)."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP2. MP neuron, 2 inputs, x₁ inhibitory, θ = 1. Output for (0,1), (1,1),\n(0,0)?\n</summary>\n(0,1): no veto, sum 1 ≥ 1 → 1. (1,1): veto → 0. (0,0): sum 0 &lt; 1 → 0.\nSo it computes (NOT x₁) AND x₂.\n</details>",
-          "text": "P2. MP neuron, 2 inputs, x₁ inhibitory, θ = 1. Output for (0,1), (1,1),\n(0,0)? (0,1): no veto, sum 1 ≥ 1 → 1. (1,1): veto → 0. (0,0): sum 0 < 1 → 0.\nSo it computes (NOT x₁) AND x₂."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP3. Perceptron w₀ = −0.5, w₁ = 1, w₂ = 1. Which function?\n</summary>\n(0,0): −0.5 → 0; (0,1): 0.5 → 1; (1,0): 0.5 → 1; (1,1): 1.5 → 1. This is\nOR.\n</details>",
-          "text": "P3. Perceptron w₀ = −0.5, w₁ = 1, w₂ = 1. Which function? (0,0): −0.5 → 0; (0,1): 0.5 → 1; (1,0): 0.5 → 1; (1,1): 1.5 → 1. This is\nOR."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP4. PLA: w = [−1, 1, 1], positive point (0, 0.5). Update?\n</summary>\nx = [1, 0, 0.5]. wᵀx = −1 + 0 + 0.5 = −0.5 &lt; 0, but label is 1. New w\n= w + x = [0, 1, 1.5].\n</details>",
-          "text": "P4. PLA: w = [−1, 1, 1], positive point (0, 0.5). Update? x = [1, 0, 0.5]. wᵀx = −1 + 0 + 0.5 = −0.5 < 0, but label is 1. New w\n= w + x = [0, 1, 1.5]."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP5. PLA: w = [2, −1, 0], negative point (3, 4). Update?\n</summary>\nx = [1, 3, 4]. wᵀx = 2 − 3 + 0 = −1 &lt; 0 → predicts 0 = correct. No\nupdate.\n</details>",
-          "text": "P5. PLA: w = [2, −1, 0], negative point (3, 4). Update? x = [1, 3, 4]. wᵀx = 2 − 3 + 0 = −1 < 0 → predicts 0 = correct. No\nupdate."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP6. How many Boolean functions of 4 inputs exist?\n</summary>\n2^(2⁴) = 2¹⁶ = 65,536.\n</details>",
-          "text": "P6. How many Boolean functions of 4 inputs exist? 2^(2⁴) = 2¹⁶ = 65,536."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP7. Is NOR linearly separable? Give weights.\n</summary>\nYes. w₀ = 0.5, w₁ = −1, w₂ = −1: (0,0): 0.5 → 1; (0,1), (1,0): −0.5 → 0;\n(1,1): −1.5 → 0.\n</details>",
-          "text": "P7. Is NOR linearly separable? Give weights. Yes. w₀ = 0.5, w₁ = −1, w₂ = −1: (0,0): 0.5 → 1; (0,1), (1,0): −0.5 → 0;\n(1,1): −1.5 → 0."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP8. Network theorem: total perceptrons for 6 inputs?\n</summary>\n2⁶ hidden + 1 output = 64 + 1 = 65.\n</details>",
-          "text": "P8. Network theorem: total perceptrons for 6 inputs? 2⁶ hidden + 1 output = 64 + 1 = 65."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP9. 2-4-1 network, w₀ = 0. Output weights for f = x₁ (output 1 when x₁ =\n+1)?\n</summary>\nw₁ = −1, w₂ = −1 (x₁ = −1 rows), w₃ = +1, w₄ = +1 (x₁ = +1 rows).\n</details>",
-          "text": "P9. 2-4-1 network, w₀ = 0. Output weights for f = x₁ (output 1 when x₁ =\n+1)? w₁ = −1, w₂ = −1 (x₁ = −1 rows), w₃ = +1, w₄ = +1 (x₁ = +1 rows)."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP10. True or false: PLA converges on any dataset after enough steps.\n</summary>\nFalse. It is guaranteed to converge only when the data is linearly\nseparable.\n</details>",
-          "text": "P10. True or false: PLA converges on any dataset after enough steps. False. It is guaranteed to converge only when the data is linearly\nseparable."
+          "html": "<details>\n<summary>\nP7. MP neuron, 5 inputs: is there a θ giving exactly 10 ones?\n</summary>\nPossible counts are 31, 26, 16, 6, 1 for θ = 1…5 (and 32 for θ = 0). 10\nis not one of them → no.\n</details>",
+          "text": "P7. MP neuron, 5 inputs: is there a θ giving exactly 10 ones? Possible counts are 31, 26, 16, 6, 1 for θ = 1…5 (and 32 for θ = 0). 10\nis not one of them → no."
         }
       ]
     },

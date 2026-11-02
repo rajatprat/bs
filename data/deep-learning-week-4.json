@@ -32,7 +32,7 @@
         },
         {
           "type": "html",
-          "html": "<p>Full derivations are on the Week 2 page <a href=\"../deep-learning-week-2/gradient-descent\">Gradient\nDescent</a>.</p>",
+          "html": "<p>Full derivations are on the Week 2 page <a href=\"/deep-learning/week-2/gradient-descent/\">Gradient\nDescent</a>.</p>",
           "text": "Full derivations are on the Week 2 page Gradient\nDescent ."
         },
         {
@@ -817,12 +817,12 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 4 questions ask you to run a few\nsteps of an optimiser by hand, count steps per epoch, or apply a\nlearning-rate schedule. Make a small table — one row per step — and you\nwon’t get lost. All numbers below were checked with code.</p>\n</blockquote>",
-          "text": "Start here Week 4 questions ask you to run a few\nsteps of an optimiser by hand, count steps per epoch, or apply a\nlearning-rate schedule. Make a small table — one row per step — and you\nwon’t get lost. All numbers below were checked with code."
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 4 questions ask you to run a few\noptimiser steps by hand, count updates per epoch, read loss graphs, or\npick true statements about GD, momentum, NAG and SGD. This page has\n<strong>every Week 4 question</strong> from five past Quiz 1 papers\n(2025 T1, T2, T3 and 2026 T1, T2). Make a small table, one row per step.\nAll answers were checked with code.</p>\n</blockquote>",
+          "text": "Start here Week 4 questions ask you to run a few\noptimiser steps by hand, count updates per epoch, read loss graphs, or\npick true statements about GD, momentum, NAG and SGD. This page has every Week 4 question from five past Quiz 1 papers\n(2025 T1, T2, T3 and 2026 T1, T2). Make a small table, one row per step.\nAll answers were checked with code."
         },
         {
           "type": "heading",
-          "text": "Type 1 — Steps of plain\ngradient descent"
+          "text": "Type 1 — Counting\nupdates (epochs and steps)"
         },
         {
           "type": "subheading",
@@ -830,13 +830,18 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Compute the gradient at the current w.</li>\n<li>w ← w − η × gradient.</li>\n<li>Repeat; put each step in a table.</li>\n</ol>",
-          "text": "Compute the gradient at the current w. w ← w − η × gradient. Repeat; put each step in a table."
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Algorithm</th>\n<th>Updates per epoch</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Vanilla (batch) GD</td>\n<td>1</td>\n</tr>\n<tr>\n<td>SGD (B = 1)</td>\n<td>N</td>\n</tr>\n<tr>\n<td>Mini-batch GD</td>\n<td>N / B (round <strong>up</strong> if it doesn’t divide)</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "Algorithm Updates per epoch Vanilla (batch) GD 1 SGD (B = 1) N Mini-batch GD N / B (round up if it doesn’t divide)"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> L(w) = w², start w = 1, η = 0.1. Find w\nafter 3 steps.</p>\n<p><strong>Answer:</strong> <strong>w = 0.512</strong></p>\n</blockquote>",
-          "text": "Worked example Question: L(w) = w², start w = 1, η = 0.1. Find w\nafter 3 steps. Answer: w = 0.512"
+          "html": "<p>Total updates = (updates per epoch) × (number of epochs).</p>",
+          "text": "Total updates = (updates per epoch) × (number of epochs)."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q63 · 3 marks</p>\n<p><strong>Question:</strong> A network is trained on 5000 data points\nusing mini-batch gradient descent with batch size 50, for 100 epochs.\nHow many times does each parameter get updated?</p>\n<p><strong>Answer:</strong> <strong>10000</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q63 · 3 marks Question: A network is trained on 5000 data points\nusing mini-batch gradient descent with batch size 50, for 100 epochs.\nHow many times does each parameter get updated? Answer: 10000"
         },
         {
           "type": "html",
@@ -845,12 +850,57 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>∇w = 2w.</li>\n<li>Step 1: w = 1 − 0.1 × 2 × 1 = 1 − 0.2 = 0.8.</li>\n<li>Step 2: w = 0.8 − 0.1 × 1.6 = 0.8 − 0.16 = 0.64.</li>\n<li>Step 3: w = 0.64 − 0.1 × 1.28 = 0.64 − 0.128 =\n<strong>0.512</strong>. (Each step multiplies w by 1 − 0.2 = 0.8.)</li>\n</ol>",
-          "text": "∇w = 2w. Step 1: w = 1 − 0.1 × 2 × 1 = 1 − 0.2 = 0.8. Step 2: w = 0.8 − 0.1 × 1.6 = 0.8 − 0.16 = 0.64. Step 3: w = 0.64 − 0.1 × 1.28 = 0.64 − 0.128 = 0.512 . (Each step multiplies w by 1 − 0.2 = 0.8.)"
+          "html": "<ol type=\"1\">\n<li>Updates per epoch = 5000 / 50 = 100.</li>\n<li>Total = 100 × 100 = <strong>10,000</strong>.</li>\n</ol>",
+          "text": "Updates per epoch = 5000 / 50 = 100. Total = 100 × 100 = 10,000 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q66 · 2 marks</p>\n<p><strong>Question:</strong> Mini-batch gradient descent is run on a\ndataset of size 1000 with batch size 25 for 10 epochs. Find the number\nof times each parameter is updated.</p>\n<p><strong>Answer:</strong> <strong>400</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q66 · 2 marks Question: Mini-batch gradient descent is run on a\ndataset of size 1000 with batch size 25 for 10 epochs. Find the number\nof times each parameter is updated. Answer: 400"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>1000 / 25 = 40 updates per epoch.</li>\n<li>40 × 10 = <strong>400</strong>.</li>\n</ol>",
+          "text": "1000 / 25 = 40 updates per epoch. 40 × 10 = 400 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q18–19 · 2 + 2 marks</p>\n<p><strong>Question:</strong> You classify 200 bird species from 100,000\naudio clips, starting with vanilla gradient descent. Q18: How many\nparameter updates per epoch? Q19: You switch to mini-batch GD with B =\n50. How many updates per epoch now?</p>\n<p><strong>Answer:</strong> <strong>Q18: 1 · Q19: 2000</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q18–19 · 2 + 2 marks Question: You classify 200 bird species from 100,000\naudio clips, starting with vanilla gradient descent. Q18: How many\nparameter updates per epoch? Q19: You switch to mini-batch GD with B =\n50. How many updates per epoch now? Answer: Q18: 1 · Q19: 2000"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Vanilla GD uses all the data for one update → <strong>1</strong> per\nepoch. (The 200 classes don’t matter.)</li>\n<li>Mini-batch: 100,000 / 50 = <strong>2000</strong>.</li>\n</ol>",
+          "text": "Vanilla GD uses all the data for one update → 1 per\nepoch. (The 200 classes don’t matter.) Mini-batch: 100,000 / 50 = 2000 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q6 · 3 marks</p>\n<p><strong>Question:</strong> 12 training samples, vanilla gradient\ndescent for 4 epochs. Learning rate ηₜ = 0.8 exp(−0.2t), where t starts\nat 0 and increases only when the parameters are updated. What is ηₜ at\nthe end of training? (3 decimals)</p>\n<p><strong>Answer:</strong> <strong>0.439</strong> (key range\n0.436–0.442)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q6 · 3 marks Question: 12 training samples, vanilla gradient\ndescent for 4 epochs. Learning rate ηₜ = 0.8 exp(−0.2t), where t starts\nat 0 and increases only when the parameters are updated. What is ηₜ at\nthe end of training? (3 decimals) Answer: 0.439 (key range\n0.436–0.442)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Vanilla GD → 1 update per epoch → 4 updates in total, made at t = 0,\n1, 2, 3.</li>\n<li>The last update uses t = 3: η₃ = 0.8 × e^(−0.6) = 0.8 × 0.5488 =\n<strong>0.439</strong>.</li>\n<li>Note: the key treats “end of training” as the rate used in the last\nupdate (t = 3). If you counted one more step (t = 4) you would get 0.8 ×\ne^(−0.8) = 0.359, which the key does not accept.</li>\n</ol>",
+          "text": "Vanilla GD → 1 update per epoch → 4 updates in total, made at t = 0,\n1, 2, 3. The last update uses t = 3: η₃ = 0.8 × e^(−0.6) = 0.8 × 0.5488 = 0.439 . Note: the key treats “end of training” as the rate used in the last\nupdate (t = 3). If you counted one more step (t = 4) you would get 0.8 ×\ne^(−0.8) = 0.359, which the key does not accept."
         },
         {
           "type": "heading",
-          "text": "Type 2 — Steps of momentum"
+          "text": "Type 2 —\nGradient descent and momentum steps by hand"
         },
         {
           "type": "subheading",
@@ -858,13 +908,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>u_t = β u_{t−1} + ∇w_t (start with u₋₁ = 0).</li>\n<li>w_{t+1} = w_t − η u_t.</li>\n<li>Keep columns: t, w_t, ∇w_t, u_t, w_{t+1}.</li>\n</ol>",
-          "text": "u_t = β u_{t−1} + ∇w_t (start with u₋₁ = 0). w_{t+1} = w_t − η u_t. Keep columns: t, w_t, ∇w_t, u_t, w_{t+1}."
+          "html": "<ul>\n<li><strong>GD:</strong> w ← w − η∇w.</li>\n<li><strong>Momentum (lecture form):</strong> uₜ = βuₜ₋₁ + ∇wₜ, then\nwₜ₊₁ = wₜ − ηuₜ (start u₋₁ = 0).</li>\n<li>Some questions write it as uₜ = βuₜ₋₁ − ∇wₜ, wₜ = wₜ₋₁ + ηuₜ — the\nsame idea with u pointing downhill. <strong>Always use the exact rule\ngiven in the question.</strong></li>\n<li>For L = (w − c)², ∇ = 2(w − c). For f = x² + y², ∇ = (2x, 2y).</li>\n<li>“w did not change” → the step ηuₜ was 0 → uₜ = 0.</li>\n</ul>",
+          "text": "GD: w ← w − η∇w. Momentum (lecture form): uₜ = βuₜ₋₁ + ∇wₜ, then\nwₜ₊₁ = wₜ − ηuₜ (start u₋₁ = 0). Some questions write it as uₜ = βuₜ₋₁ − ∇wₜ, wₜ = wₜ₋₁ + ηuₜ — the\nsame idea with u pointing downhill. Always use the exact rule\ngiven in the question. For L = (w − c)², ∇ = 2(w − c). For f = x² + y², ∇ = (2x, 2y). “w did not change” → the step ηuₜ was 0 → uₜ = 0."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> L(w) = w², start w = 1, η = 0.1, β = 0.9.\nFind w after 3 momentum steps.</p>\n<p><strong>Answer:</strong> <strong>w = 0.062</strong></p>\n</blockquote>",
-          "text": "Worked example Question: L(w) = w², start w = 1, η = 0.1, β = 0.9.\nFind w after 3 momentum steps. Answer: w = 0.062"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q52 · 4 marks</p>\n<p><strong>Question:</strong> Minimise L(w) = (w + 3)² with momentum: uₜ\n= βuₜ₋₁ − ∇wₜ, wₜ = wₜ₋₁ + ηuₜ. η = 0.2, β = 0.8, w₀ = 5, u₀ = 0. Find\nw₂ (2 decimals).</p>\n<p><strong>Answer:</strong> <strong>−2.68</strong> (key range −2.72 to\n−2.64)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q52 · 4 marks Question: Minimise L(w) = (w + 3)² with momentum: uₜ\n= βuₜ₋₁ − ∇wₜ, wₜ = wₜ₋₁ + ηuₜ. η = 0.2, β = 0.8, w₀ = 5, u₀ = 0. Find\nw₂ (2 decimals). Answer: −2.68 (key range −2.72 to\n−2.64)"
         },
         {
           "type": "html",
@@ -873,17 +923,57 @@
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 20%\"/>\n<col style=\"width: 20%\"/>\n<col style=\"width: 20%\"/>\n<col style=\"width: 20%\"/>\n<col style=\"width: 20%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>t</th>\n<th>w_t</th>\n<th>∇w_t = 2w_t</th>\n<th>u_t = 0.9u_{t−1} + ∇w_t</th>\n<th>w_{t+1} = w_t − 0.1u_t</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>2</td>\n<td>0 + 2 = 2</td>\n<td>1 − 0.2 = 0.8</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0.8</td>\n<td>1.6</td>\n<td>1.8 + 1.6 = 3.4</td>\n<td>0.8 − 0.34 = 0.46</td>\n</tr>\n<tr>\n<td>2</td>\n<td>0.46</td>\n<td>0.92</td>\n<td>3.06 + 0.92 = 3.98</td>\n<td>0.46 − 0.398 = <strong>0.062</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "t w_t ∇w_t = 2w_t u_t = 0.9u_{t−1} + ∇w_t w_{t+1} = w_t − 0.1u_t 0 1 2 0 + 2 = 2 1 − 0.2 = 0.8 1 0.8 1.6 1.8 + 1.6 = 3.4 0.8 − 0.34 = 0.46 2 0.46 0.92 3.06 + 0.92 = 3.98 0.46 − 0.398 = 0.062"
+          "html": "<ol type=\"1\">\n<li>∇ = 2(w + 3).</li>\n<li>Step 1: ∇ at w₀ = 5 → 2 × 8 = 16. u₁ = 0.8 × 0 − 16 = −16. w₁ = 5 +\n0.2 × (−16) = 5 − 3.2 = <strong>1.8</strong>.</li>\n<li>Step 2: ∇ at 1.8 → 2 × 4.8 = 9.6. u₂ = 0.8 × (−16) − 9.6 = −12.8 −\n9.6 = −22.4. w₂ = 1.8 + 0.2 × (−22.4) = 1.8 − 4.48 =\n<strong>−2.68</strong>.</li>\n<li>The minimum is at −3, so momentum got very close in only 2\nsteps.</li>\n</ol>",
+          "text": "∇ = 2(w + 3). Step 1: ∇ at w₀ = 5 → 2 × 8 = 16. u₁ = 0.8 × 0 − 16 = −16. w₁ = 5 +\n0.2 × (−16) = 5 − 3.2 = 1.8 . Step 2: ∇ at 1.8 → 2 × 4.8 = 9.6. u₂ = 0.8 × (−16) − 9.6 = −12.8 −\n9.6 = −22.4. w₂ = 1.8 + 0.2 × (−22.4) = 1.8 − 4.48 = −2.68 . The minimum is at −3, so momentum got very close in only 2\nsteps."
         },
         {
           "type": "html",
-          "html": "<p>Momentum is much closer to 0 than GD (0.512) after 3 steps. One more\nstep: u = 0.9 × 3.98 + 0.124 = 3.706, w = 0.062 − 0.3706 =\n<strong>−0.3086</strong> → it overshoots past the minimum.</p>",
-          "text": "Momentum is much closer to 0 than GD (0.512) after 3 steps. One more\nstep: u = 0.9 × 3.98 + 0.124 = 3.706, w = 0.062 − 0.3706 = −0.3086 → it overshoots past the minimum."
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q14–15 · 3 + 3 marks</p>\n<p><strong>Question:</strong> Linear regression ŷ = wx with J(w) =\n1/(2m) Σ (wxᵢ − yᵢ)², mini-batch size m = 2, η = 0.1, β = 0.9, w₀ = 1,\nu₋₁ = 0. Rules: uₜ = βuₜ₋₁ + ∇J(wₜ), wₜ₊₁ = wₜ − ηuₜ. First mini-batch:\n(x, y) = (1, 2) and (2, 4). Q14: ∇J(w₀) for this batch? (−2.5 · −5.0 ·\n−7.5 · 5.0) Q15: the velocity u₀ after the first iteration (1\ndecimal)?</p>\n<p><strong>Answer:</strong> <strong>Q14: −2.5 · Q15: −2.5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q14–15 · 3 + 3 marks Question: Linear regression ŷ = wx with J(w) =\n1/(2m) Σ (wxᵢ − yᵢ)², mini-batch size m = 2, η = 0.1, β = 0.9, w₀ = 1,\nu₋₁ = 0. Rules: uₜ = βuₜ₋₁ + ∇J(wₜ), wₜ₊₁ = wₜ − ηuₜ. First mini-batch:\n(x, y) = (1, 2) and (2, 4). Q14: ∇J(w₀) for this batch? (−2.5 · −5.0 ·\n−7.5 · 5.0) Q15: the velocity u₀ after the first iteration (1\ndecimal)? Answer: Q14: −2.5 · Q15: −2.5"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>∇J = (1/m) Σ (wxᵢ − yᵢ)·xᵢ (the ½ cancels the 2 from the\nsquare).</li>\n<li>Point 1: (1×1 − 2) × 1 = −1. Point 2: (1×2 − 4) × 2 = −4.</li>\n<li>∇J = (−1 − 4)/2 = <strong>−2.5</strong>.</li>\n<li>u₀ = 0.9 × 0 + (−2.5) = <strong>−2.5</strong> (the first velocity is\njust the first gradient).</li>\n</ol>",
+          "text": "∇J = (1/m) Σ (wxᵢ − yᵢ)·xᵢ (the ½ cancels the 2 from the\nsquare). Point 1: (1×1 − 2) × 1 = −1. Point 2: (1×2 − 4) × 2 = −4. ∇J = (−1 − 4)/2 = −2.5 . u₀ = 0.9 × 0 + (−2.5) = −2.5 (the first velocity is\njust the first gradient)."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q66–67 · 2 + 2 marks</p>\n<p><strong>Question:</strong> Momentum GD with β = 0.8 and η = 0.1\noptimises f(w) of two parameters. At time t the history vector is uₜ₋₁ =\n(1, −1). After one iteration, wₜ₊₁ = wₜ. Q66: Find ∇wₜ. ((−0.8, 0.8) ·\n(0.08, −0.08) · (−0.08, 0.08) · (1, −1)) Q67: the angle between uₜ₋₁ and\n∇wₜ in degrees, in [0, 360]?</p>\n<p><strong>Answer:</strong> <strong>Q66: (−0.8, 0.8) · Q67:\n180</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q66–67 · 2 + 2 marks Question: Momentum GD with β = 0.8 and η = 0.1\noptimises f(w) of two parameters. At time t the history vector is uₜ₋₁ =\n(1, −1). After one iteration, wₜ₊₁ = wₜ. Q66: Find ∇wₜ. ((−0.8, 0.8) ·\n(0.08, −0.08) · (−0.08, 0.08) · (1, −1)) Q67: the angle between uₜ₋₁ and\n∇wₜ in degrees, in [0, 360]? Answer: Q66: (−0.8, 0.8) · Q67:\n180"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>wₜ₊₁ = wₜ − ηuₜ = wₜ → ηuₜ = 0 → <strong>uₜ = 0</strong>.</li>\n<li>uₜ = βuₜ₋₁ + ∇wₜ = 0 → ∇wₜ = −0.8 × (1, −1) = <strong>(−0.8,\n0.8)</strong>.</li>\n<li>∇wₜ = −0.8 × uₜ₋₁ — exactly the opposite direction → angle =\n<strong>180°</strong>. (The new gradient cancelled the momentum.)</li>\n</ol>",
+          "text": "wₜ₊₁ = wₜ − ηuₜ = wₜ → ηuₜ = 0 → uₜ = 0 . uₜ = βuₜ₋₁ + ∇wₜ = 0 → ∇wₜ = −0.8 × (1, −1) = (−0.8,\n0.8) . ∇wₜ = −0.8 × uₜ₋₁ — exactly the opposite direction → angle = 180° . (The new gradient cancelled the momentum.)"
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q74–75 · 4 + 6 marks</p>\n<p><strong>Question:</strong> Minimise f(x, y) = x² + y² from any point\n(x₀, y₀) ≠ origin. Q74: Run two steps of GD with η = 0.2 to get (x₂, y₂)\n= α(x₀, y₀). Find α (2 decimals). Q75: Momentum with u₋₁ = (0, 0), η =\n0.2: uₜ = βuₜ₋₁ + ∇f(xₜ, yₜ), (xₜ₊₁, yₜ₊₁) = (xₜ, yₜ) − ηuₜ. What β\nmakes two steps reach the global minimum, i.e. (x₂, y₂) = (0, 0)? (2\ndecimals)</p>\n<p><strong>Answer:</strong> <strong>Q74: α = 0.36 · Q75: β =\n0.90</strong> (key ranges 0.35–0.37, 0.89–0.91)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q74–75 · 4 + 6 marks Question: Minimise f(x, y) = x² + y² from any point\n(x₀, y₀) ≠ origin. Q74: Run two steps of GD with η = 0.2 to get (x₂, y₂)\n= α(x₀, y₀). Find α (2 decimals). Q75: Momentum with u₋₁ = (0, 0), η =\n0.2: uₜ = βuₜ₋₁ + ∇f(xₜ, yₜ), (xₜ₊₁, yₜ₊₁) = (xₜ, yₜ) − ηuₜ. What β\nmakes two steps reach the global minimum, i.e. (x₂, y₂) = (0, 0)? (2\ndecimals) Answer: Q74: α = 0.36 · Q75: β =\n0.90 (key ranges 0.35–0.37, 0.89–0.91)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>∇f = (2x, 2y), so each coordinate can be done on its own. Use\nx.</li>\n<li>Q74: x₁ = x₀ − 0.2 × 2x₀ = 0.6x₀; x₂ = 0.6x₁ = 0.36x₀ → <strong>α =\n0.36</strong>.</li>\n<li>Q75, step 1: u₀ = 0 + 2x₀ = 2x₀; x₁ = x₀ − 0.2 × 2x₀ = 0.6x₀.</li>\n<li>Step 2: u₁ = β × 2x₀ + 2 × 0.6x₀ = (2β + 1.2)x₀; x₂ = 0.6x₀ − 0.2(2β\n+ 1.2)x₀ = (0.36 − 0.4β)x₀.</li>\n<li>x₂ = 0 → 0.4β = 0.36 → <strong>β = 0.9</strong>.</li>\n</ol>",
+          "text": "∇f = (2x, 2y), so each coordinate can be done on its own. Use\nx. Q74: x₁ = x₀ − 0.2 × 2x₀ = 0.6x₀; x₂ = 0.6x₁ = 0.36x₀ → α =\n0.36 . Q75, step 1: u₀ = 0 + 2x₀ = 2x₀; x₁ = x₀ − 0.2 × 2x₀ = 0.6x₀. Step 2: u₁ = β × 2x₀ + 2 × 0.6x₀ = (2β + 1.2)x₀; x₂ = 0.6x₀ − 0.2(2β\n+ 1.2)x₀ = (0.36 − 0.4β)x₀. x₂ = 0 → 0.4β = 0.36 → β = 0.9 ."
         },
         {
           "type": "heading",
-          "text": "Type 3 — Steps of NAG"
+          "text": "Type 3 — Reading\nloss graphs (learning rate and β)"
         },
         {
           "type": "subheading",
@@ -891,13 +981,18 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Look-ahead point: w_look = w_t − η β u_{t−1} (where momentum alone\nwould take you).</li>\n<li>Gradient at w_look.</li>\n<li>u_t = β u_{t−1} + ∇(w_look).</li>\n<li>w_{t+1} = w_t − η u_t.</li>\n</ol>",
-          "text": "Look-ahead point: w_look = w_t − η β u_{t−1} (where momentum alone\nwould take you). Gradient at w_look. u_t = β u_{t−1} + ∇(w_look). w_{t+1} = w_t − η u_t."
+          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>What the curve does</th>\n<th>Cause</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Falls smoothly but slowly</td>\n<td>η too small (or β = 0 on a flat surface)</td>\n</tr>\n<tr>\n<td>Falls fast to a low value</td>\n<td>η about right</td>\n</tr>\n<tr>\n<td>Bounces up and down, never settles</td>\n<td>η too large</td>\n</tr>\n<tr>\n<td>Grows bigger and bigger (blows up)</td>\n<td>η too large to converge at all</td>\n</tr>\n<tr>\n<td>Momentum: bigger β</td>\n<td>faster at first, but more and longer oscillations</td>\n</tr>\n</tbody>\n</table></div>",
+          "text": "What the curve does Cause Falls smoothly but slowly η too small (or β = 0 on a flat surface) Falls fast to a low value η about right Bounces up and down, never settles η too large Grows bigger and bigger (blows up) η too large to converge at all Momentum: bigger β faster at first, but more and longer oscillations"
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Same setup (L = w², w = 1, η = 0.1, β =\n0.9). Find w after 3 NAG steps.</p>\n<p><strong>Answer:</strong> <strong>w ≈ 0.178</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Same setup (L = w², w = 1, η = 0.1, β =\n0.9). Find w after 3 NAG steps. Answer: w ≈ 0.178"
+          "html": "<p>For L = w²: GD gives w ← (1 − 2η)w. It converges only if |1 − 2η|\n&lt; 1, i.e. 0 &lt; η &lt; 1.</p>",
+          "text": "For L = w²: GD gives w ← (1 − 2η)w. It converges only if |1 − 2η|\n< 1, i.e. 0 < η < 1."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q46 · 3 marks</p>\n<p><strong>Question:</strong> The graph shows training loss across\nepochs for learning rates 0.001, 0.01 and 1.0. Graph A: smooth but very\nslow convergence. Graph B: fast convergence to a low loss. Graph C:\noscillates and does not converge. Match each graph to its learning\nrate.</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"1080\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t3-q46-loss-curves.webp?v=4d25dccbffd7\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>A → 0.001, B → 0.01, C →\n1.0</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q46 · 3 marks Question: The graph shows training loss across\nepochs for learning rates 0.001, 0.01 and 1.0. Graph A: smooth but very\nslow convergence. Graph B: fast convergence to a low loss. Graph C:\noscillates and does not converge. Match each graph to its learning\nrate. Question figure (redrawn exactly from the\npaper) Answer: A → 0.001, B → 0.01, C →\n1.0"
         },
         {
           "type": "html",
@@ -906,17 +1001,42 @@
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table style=\"width:100%;\">\n<colgroup>\n<col style=\"width: 16%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 16%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>t</th>\n<th>w_t</th>\n<th>w_look = w_t − 0.09u_{t−1}</th>\n<th>∇ = 2w_look</th>\n<th>u_t</th>\n<th>w_{t+1} = w_t − 0.1u_t</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>1</td>\n<td>1 − 0 = 1</td>\n<td>2</td>\n<td>2</td>\n<td>0.8</td>\n</tr>\n<tr>\n<td>1</td>\n<td>0.8</td>\n<td>0.8 − 0.18 = 0.62</td>\n<td>1.24</td>\n<td>1.8 + 1.24 = 3.04</td>\n<td>0.8 − 0.304 = 0.496</td>\n</tr>\n<tr>\n<td>2</td>\n<td>0.496</td>\n<td>0.496 − 0.2736 = 0.2224</td>\n<td>0.4448</td>\n<td>2.736 + 0.4448 = 3.1808</td>\n<td>0.496 − 0.31808 = <strong>0.1779</strong></td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "t w_t w_look = w_t − 0.09u_{t−1} ∇ = 2w_look u_t w_{t+1} = w_t − 0.1u_t 0 1 1 − 0 = 1 2 2 0.8 1 0.8 0.8 − 0.18 = 0.62 1.24 1.8 + 1.24 = 3.04 0.8 − 0.304 = 0.496 2 0.496 0.496 − 0.2736 = 0.2224 0.4448 2.736 + 0.4448 = 3.1808 0.496 − 0.31808 = 0.1779"
+          "html": "<ol type=\"1\">\n<li>Slow, smooth → smallest η = <strong>0.001</strong> (A).</li>\n<li>Bouncing, no convergence → biggest η = <strong>1.0</strong>\n(C).</li>\n<li>The one left, fast and low → <strong>0.01</strong> (B).</li>\n</ol>",
+          "text": "Slow, smooth → smallest η = 0.001 (A). Bouncing, no convergence → biggest η = 1.0 (C). The one left, fast and low → 0.01 (B)."
         },
         {
           "type": "html",
-          "html": "<p>Next step gives w ≈ −0.087: NAG also crosses 0, but by much less than\nmomentum (−0.309). That is the “shorter U-turn”.</p>",
-          "text": "Next step gives w ≈ −0.087: NAG also crosses 0, but by much less than\nmomentum (−0.309). That is the “shorter U-turn”."
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q4 · 2 marks</p>\n<p><strong>Question:</strong> Two runs of gradient descent on L(w) = w²\nfrom the same start w₀ = 2 give Graph X and Graph Y with two learning\nrates. Which could be correct? (X uses η = 1.1, Y uses η = 0.3) · (X\nuses η = 0.3, Y uses η = 1.1)</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"840\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2026t2-q4-graphs-x-y.webp?v=6b8fe2812ff3\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>X uses η = 0.3, Y uses η =\n1.1</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q4 · 2 marks Question: Two runs of gradient descent on L(w) = w²\nfrom the same start w₀ = 2 give Graph X and Graph Y with two learning\nrates. Which could be correct? (X uses η = 1.1, Y uses η = 0.3) · (X\nuses η = 0.3, Y uses η = 1.1) Question figure (redrawn exactly from the\npaper) Answer: X uses η = 0.3, Y uses η =\n1.1"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>GD on w²: w ← w − η × 2w = (1 − 2η)w.</li>\n<li>η = 0.3: factor 0.4 → w = 2, 0.8, 0.32 … → loss 4, 0.64, 0.10 …\nfalls fast → <strong>Graph X</strong>.</li>\n<li>η = 1.1: factor −1.2 → |w| grows by 1.2 each step → loss × 1.44 each\nstep: 4 × 1.44¹¹ ≈ 220 at step 11 → <strong>Graph Y</strong>.</li>\n</ol>",
+          "text": "GD on w²: w ← w − η × 2w = (1 − 2η)w. η = 0.3: factor 0.4 → w = 2, 0.8, 0.32 … → loss 4, 0.64, 0.10 …\nfalls fast → Graph X . η = 1.1: factor −1.2 → |w| grows by 1.2 each step → loss × 1.44 each\nstep: 4 × 1.44¹¹ ≈ 220 at step 11 → Graph Y ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q5 · 2 marks</p>\n<p><strong>Question:</strong> L(w) = (w − 5)² is minimised from w₀ = −5\nwith η = 0.04 using vanilla GD (β = 0) and momentum GD with β ∈ {0.5,\n0.9, 0.99}. Match each curve to its β.</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"1080\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2026t2-q5-momentum-curves.webp?v=3b8d70783a92\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>S: β = 0, T: β = 0.5, U: β = 0.9, V:\nβ = 0.99</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q5 · 2 marks Question: L(w) = (w − 5)² is minimised from w₀ = −5\nwith η = 0.04 using vanilla GD (β = 0) and momentum GD with β ∈ {0.5,\n0.9, 0.99}. Match each curve to its β. Question figure (redrawn exactly from the\npaper) Answer: S: β = 0, T: β = 0.5, U: β = 0.9, V:\nβ = 0.99"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>No momentum → smooth fall with no bounce at all → <strong>S</strong>\n(β = 0).</li>\n<li>Small momentum → fastest fall with almost no overshoot →\n<strong>T</strong> (β = 0.5).</li>\n<li>More momentum → a few overshoots that die out → <strong>U</strong>\n(β = 0.9).</li>\n<li>Huge momentum → keeps swinging for 100+ steps → <strong>V</strong>\n(β = 0.99). (The figure above was made by running exactly these four\nsettings in code.)</li>\n</ol>",
+          "text": "No momentum → smooth fall with no bounce at all → S (β = 0). Small momentum → fastest fall with almost no overshoot → T (β = 0.5). More momentum → a few overshoots that die out → U (β = 0.9). Huge momentum → keeps swinging for 100+ steps → V (β = 0.99). (The figure above was made by running exactly these four\nsettings in code.)"
         },
         {
           "type": "heading",
-          "text": "Type 4 — Momentum as a\nweighted sum"
+          "text": "Type 4 — Concept\nstatements (GD, momentum, NAG, SGD)"
         },
         {
           "type": "subheading",
@@ -924,13 +1044,13 @@
         },
         {
           "type": "html",
-          "html": "<p>u_t = Σ_τ β^(t−τ) ∇w_τ: the gradient from τ steps ago has weight\nβ^(t−τ). Constant gradient g → u_t approaches g / (1 − β).</p>",
-          "text": "u_t = Σ_τ β^(t−τ) ∇w_τ: the gradient from τ steps ago has weight\nβ^(t−τ). Constant gradient g → u_t approaches g / (1 − β)."
+          "html": "<ul>\n<li><strong>Batch GD:</strong> true gradient; each step lowers the loss\nfor small η; very expensive on huge data.</li>\n<li><strong>SGD:</strong> gradient from one point → cheap, noisy, no\nguarantee per step.</li>\n<li><strong>Mini-batch:</strong> ⌈N/B⌉ updates per epoch; less noisy\nthan SGD.</li>\n<li><strong>Momentum:</strong> uses past gradients; fast on flat areas;\ncan overshoot narrow valleys.</li>\n<li><strong>NAG:</strong> gradient at the look-ahead point; smaller\nU-turns. Neither momentum nor NAG changes the learning rate.</li>\n<li><strong>Update size ∝ slope:</strong> steep → big steps; gentle →\ntiny steps.</li>\n</ul>",
+          "text": "Batch GD: true gradient; each step lowers the loss\nfor small η; very expensive on huge data. SGD: gradient from one point → cheap, noisy, no\nguarantee per step. Mini-batch: ⌈N/B⌉ updates per epoch; less noisy\nthan SGD. Momentum: uses past gradients; fast on flat areas;\ncan overshoot narrow valleys. NAG: gradient at the look-ahead point; smaller\nU-turns. Neither momentum nor NAG changes the learning rate. Update size ∝ slope: steep → big steps; gentle →\ntiny steps."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> β = 0.8, gradients ∇w₀ = 1, ∇w₁ = −1, ∇w₂\n= 2. Find u₂.</p>\n<p><strong>Answer:</strong> <strong>u₂ = 1.84</strong></p>\n</blockquote>",
-          "text": "Worked example Question: β = 0.8, gradients ∇w₀ = 1, ∇w₁ = −1, ∇w₂\n= 2. Find u₂. Answer: u₂ = 1.84"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q60 · 3 marks</p>\n<p><strong>Question:</strong> Which statement correctly distinguishes\nthe Momentum optimiser from Nesterov Accelerated Gradient (NAG)?</p>\n<ol type=\"a\">\n<li>Momentum uses the current gradient to update the velocity, while NAG\nuses a look-ahead gradient based on a tentative future position. (b)\nMomentum is computationally faster because it skips the look-ahead\ngradient. (c) NAG adjusts the step size dynamically. (d) Momentum uses\nan adaptive learning rate, NAG a fixed one.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(a)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q60 · 3 marks Question: Which statement correctly distinguishes\nthe Momentum optimiser from Nesterov Accelerated Gradient (NAG)? Momentum uses the current gradient to update the velocity, while NAG\nuses a look-ahead gradient based on a tentative future position. (b)\nMomentum is computationally faster because it skips the look-ahead\ngradient. (c) NAG adjusts the step size dynamically. (d) Momentum uses\nan adaptive learning rate, NAG a fixed one. Answer: (a)"
         },
         {
           "type": "html",
@@ -939,123 +1059,87 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>u₂ = β²∇w₀ + β∇w₁ + ∇w₂.</li>\n<li>= 0.64 × 1 + 0.8 × (−1) + 2 = 0.64 − 0.8 + 2 =\n<strong>1.84</strong>.</li>\n<li>Check step by step: u₀ = 1; u₁ = 0.8 − 1 = −0.2; u₂ = 0.8 × (−0.2) +\n2 = 1.84 ✔.</li>\n</ol>",
-          "text": "u₂ = β²∇w₀ + β∇w₁ + ∇w₂. = 0.64 × 1 + 0.8 × (−1) + 2 = 0.64 − 0.8 + 2 = 1.84 . Check step by step: u₀ = 1; u₁ = 0.8 − 1 = −0.2; u₂ = 0.8 × (−0.2) +\n2 = 1.84 ✔."
+          "html": "<ol type=\"1\">\n<li>This is exactly the lecture’s “look before you leap” idea → (a)\n✔.</li>\n<li><ol start=\"2\" type=\"a\">\n<li>Both compute one gradient per step (just at different points)\n✘.</li>\n</ol></li>\n<li>(c), (d) Neither is an adaptive-learning-rate method (that is\nAdaGrad / RMSProp / Adam) ✘.</li>\n</ol>",
+          "text": "This is exactly the lecture’s “look before you leap” idea → (a)\n✔. Both compute one gradient per step (just at different points)\n✘. (c), (d) Neither is an adaptive-learning-rate method (that is\nAdaGrad / RMSProp / Adam) ✘."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q62 · 3 marks</p>\n<p><strong>Question:</strong> For gradient descent wₜ₊₁ = wₜ − η∇wₜ,\nselect the correct behaviours: (a) update is tiny on a gentle loss\nsurface (b) tiny on a steep surface (c) large on a steep surface (d)\nlarge on a gentle surface.</p>\n<p><strong>Answer:</strong> <strong>(a) and (c)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q62 · 3 marks Question: For gradient descent wₜ₊₁ = wₜ − η∇wₜ,\nselect the correct behaviours: (a) update is tiny on a gentle loss\nsurface (b) tiny on a steep surface (c) large on a steep surface (d)\nlarge on a gentle surface. Answer: (a) and (c)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Step size = η × slope.</li>\n<li>Gentle → small slope → tiny step (a) ✔. Steep → big slope → large\nstep (c) ✔.</li>\n</ol>",
+          "text": "Step size = η × slope. Gentle → small slope → tiny step (a) ✔. Steep → big slope → large\nstep (c) ✔."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q48 · 3 marks</p>\n<p><strong>Question:</strong> Training on billions of data points, batch\ngradient descent is computationally infeasible. What is the main reason,\nrequiring an alternative like SGD?</p>\n<p><strong>Answer:</strong> <strong>Batch GD must compute the gradient\nover the entire dataset for a single update, which is very\nexpensive.</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q48 · 3 marks Question: Training on billions of data points, batch\ngradient descent is computationally infeasible. What is the main reason,\nrequiring an alternative like SGD? Answer: Batch GD must compute the gradient\nover the entire dataset for a single update, which is very\nexpensive."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>One step of batch GD = one gradient per data point, summed →\nbillions of calculations per update.</li>\n<li>Wrong options: “can’t fit in RAM” (data can be streamed), “gradient\ntoo noisy” (batch GD is the <strong>least</strong> noisy), “guaranteed\nto get stuck in sharp minima” (not a lecture fact).</li>\n</ol>",
+          "text": "One step of batch GD = one gradient per data point, summed →\nbillions of calculations per update. Wrong options: “can’t fit in RAM” (data can be streamed), “gradient\ntoo noisy” (batch GD is the least noisy), “guaranteed\nto get stuck in sharp minima” (not a lecture fact)."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q7 · 3 marks</p>\n<p><strong>Question:</strong> Which statements about training neural\nnetworks are TRUE?</p>\n<ol type=\"a\">\n<li>SGD (B = 1) computes the true gradient of the total loss at each\nstep. (b) Mini-batch GD with batch size B on N points does ⌈N/B⌉ updates\nper epoch. (c) Momentum GD can overshoot a narrow valley because\naccumulated velocity carries the parameters past the minimum. (d) In\nvanilla (batch) GD, each step is guaranteed to decrease the loss for a\nsmall enough learning rate on a smooth loss.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(b), (c), (d)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q7 · 3 marks Question: Which statements about training neural\nnetworks are TRUE? SGD (B = 1) computes the true gradient of the total loss at each\nstep. (b) Mini-batch GD with batch size B on N points does ⌈N/B⌉ updates\nper epoch. (c) Momentum GD can overshoot a narrow valley because\naccumulated velocity carries the parameters past the minimum. (d) In\nvanilla (batch) GD, each step is guaranteed to decrease the loss for a\nsmall enough learning rate on a smooth loss. Answer: (b), (c), (d)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li><ol type=\"a\">\n<li>SGD uses <strong>one</strong> point → an estimate, not the true\ngradient ✘.</li>\n</ol></li>\n<li><ol start=\"2\" type=\"a\">\n<li>✔ (the last batch may be smaller, hence the ceiling).</li>\n</ol></li>\n<li><ol start=\"3\" type=\"a\">\n<li>✔ — the U-turns from the lecture.</li>\n</ol></li>\n<li><ol start=\"4\" type=\"a\">\n<li>✔ — the true gradient always points downhill locally.</li>\n</ol></li>\n</ol>",
+          "text": "SGD uses one point → an estimate, not the true\ngradient ✘. ✔ (the last batch may be smaller, hence the ceiling). ✔ — the U-turns from the lecture. ✔ — the true gradient always points downhill locally."
         },
         {
           "type": "heading",
-          "text": "Type 5 — Steps per epoch"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "text": "Practice set (new questions)"
         },
         {
           "type": "html",
-          "html": "<p>Batch: 1. SGD: N. Mini-batch: N / B (round up if B doesn’t divide N).\nTotal updates = (steps per epoch) × (epochs).</p>",
-          "text": "Batch: 1. SGD: N. Mini-batch: N / B (round up if B doesn’t divide N).\nTotal updates = (steps per epoch) × (epochs)."
+          "html": "<details>\n<summary>\nP1. N = 2400, B = 64, 5 epochs. Updates?\n</summary>\n⌈2400/64⌉ = ⌈37.5⌉ = 38 per epoch → 190.\n</details>",
+          "text": "P1. N = 2400, B = 64, 5 epochs. Updates? ⌈2400/64⌉ = ⌈37.5⌉ = 38 per epoch → 190."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> N = 60,000, B = 64, 10 epochs of\nmini-batch GD. How many updates?</p>\n<p><strong>Answer:</strong> <strong>9,380</strong></p>\n</blockquote>",
-          "text": "Worked example Question: N = 60,000, B = 64, 10 epochs of\nmini-batch GD. How many updates? Answer: 9,380"
+          "html": "<details>\n<summary>\nP2. L = (w − 2)², w₀ = 0, η = 0.25. Two GD steps?\n</summary>\n∇ = 2(w − 2). w₁ = 0 − 0.25(−4) = 1. w₂ = 1 − 0.25(−2) = 1.5.\n</details>",
+          "text": "P2. L = (w − 2)², w₀ = 0, η = 0.25. Two GD steps? ∇ = 2(w − 2). w₁ = 0 − 0.25(−4) = 1. w₂ = 1 − 0.25(−2) = 1.5."
         },
         {
           "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
+          "html": "<details>\n<summary>\nP3. Same as P2 with momentum β = 0.5 (uₜ = βuₜ₋₁ + ∇, w = w − ηu). w₂?\n</summary>\nu₀ = −4, w₁ = 1. u₁ = 0.5(−4) + (−2) = −4, w₂ = 1 − 0.25(−4) = 2 —\nexactly the minimum.\n</details>",
+          "text": "P3. Same as P2 with momentum β = 0.5 (uₜ = βuₜ₋₁ + ∇, w = w − ηu). w₂? u₀ = −4, w₁ = 1. u₁ = 0.5(−4) + (−2) = −4, w₂ = 1 − 0.25(−4) = 2 —\nexactly the minimum."
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>60,000 / 64 = 937.5 → 938 batches (the last one has only 32\npoints).</li>\n<li>938 × 10 = <strong>9,380</strong> updates. (If the question says\n“drop the last incomplete batch”, it is 937 × 10 = 9,370.)</li>\n</ol>",
-          "text": "60,000 / 64 = 937.5 → 938 batches (the last one has only 32\npoints). 938 × 10 = 9,380 updates. (If the question says\n“drop the last incomplete batch”, it is 937 × 10 = 9,370.)"
-        },
-        {
-          "type": "heading",
-          "text": "Type 6 — Learning-rate\nschedules"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "html": "<details>\n<summary>\nP4. For L = w², which η values make GD converge?\n</summary>\n|1 − 2η| &lt; 1 → 0 &lt; η &lt; 1. (η = 0.5 reaches 0 in one step.)\n</details>",
+          "text": "P4. For L = w², which η values make GD converge? |1 − 2η| < 1 → 0 < η < 1. (η = 0.5 reaches 0 in one step.)"
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr>\n<th>Schedule</th>\n<th>Formula</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Step decay</td>\n<td>multiply by ½ every fixed number of epochs</td>\n</tr>\n<tr>\n<td>Exponential</td>\n<td>η = η₀ e^(−kt)</td>\n</tr>\n<tr>\n<td>1/t</td>\n<td>η = η₀ / (1 + kt)</td>\n</tr>\n<tr>\n<td>Sutskever momentum</td>\n<td>β_t = min(1 − 2^(−1 − log₂(⌊t/250⌋ + 1)), β_max)</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Schedule Formula Step decay multiply by ½ every fixed number of epochs Exponential η = η₀ e^(−kt) 1/t η = η₀ / (1 + kt) Sutskever momentum β_t = min(1 − 2^(−1 − log₂(⌊t/250⌋ + 1)), β_max)"
+          "html": "<details>\n<summary>\nP5. ηₜ = 1 / (1 + 0.5t). Vanilla GD, 3 epochs, t starts at 0. Rate used\nin the last update?\n</summary>\nUpdates at t = 0, 1, 2 → η₂ = 1/(1 + 1) = 0.5.\n</details>",
+          "text": "P5. ηₜ = 1 / (1 + 0.5t). Vanilla GD, 3 epochs, t starts at 0. Rate used\nin the last update? Updates at t = 0, 1, 2 → η₂ = 1/(1 + 1) = 0.5."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> η₀ = 0.1, k = 0.1. Compare exponential and\n1/t decay at t = 10.</p>\n<p><strong>Answer:</strong> <strong>exponential 0.0368, 1/t\n0.05</strong></p>\n</blockquote>",
-          "text": "Worked example Question: η₀ = 0.1, k = 0.1. Compare exponential and\n1/t decay at t = 10. Answer: exponential 0.0368, 1/t\n0.05"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>Exponential: 0.1 × e^(−1) = 0.1 × 0.3679 = 0.0368.</li>\n<li>1/t: 0.1 / (1 + 0.1 × 10) = 0.1 / 2 = 0.05.</li>\n<li>Exponential decay shrinks η faster.</li>\n</ol>",
-          "text": "Exponential: 0.1 × e^(−1) = 0.1 × 0.3679 = 0.0368. 1/t: 0.1 / (1 + 0.1 × 10) = 0.1 / 2 = 0.05. Exponential decay shrinks η faster."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Sutskever schedule, β_max = 0.9. Find β at\nt = 1000 and t = 2000.</p>\n<p><strong>Answer:</strong> <strong>0.9 and 0.9</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Sutskever schedule, β_max = 0.9. Find β at\nt = 1000 and t = 2000. Answer: 0.9 and 0.9"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong></p>",
-          "text": "How to solve:"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>t = 1000: ⌊1000/250⌋ + 1 = 5 → 1 − 2^(−1 − log₂5) = 1 − 1/(2 × 5) =\n0.9. min(0.9, 0.9) = 0.9.</li>\n<li>t = 2000: ⌊2000/250⌋ + 1 = 9 → 1 − 1/18 = 0.944. min(0.944, 0.9) =\n0.9 (capped).</li>\n</ol>",
-          "text": "t = 1000: ⌊1000/250⌋ + 1 = 5 → 1 − 2^(−1 − log₂5) = 1 − 1/(2 × 5) =\n0.9. min(0.9, 0.9) = 0.9. t = 2000: ⌊2000/250⌋ + 1 = 9 → 1 − 1/18 = 0.944. min(0.944, 0.9) =\n0.9 (capped)."
-        },
-        {
-          "type": "heading",
-          "text": "Practice set"
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP1. L = (w − 3)², w = 0, η = 0.25. One GD step?\n</summary>\n∇ = 2(w − 3) = −6. w = 0 − 0.25 × (−6) = 1.5.\n</details>",
-          "text": "P1. L = (w − 3)², w = 0, η = 0.25. One GD step? ∇ = 2(w − 3) = −6. w = 0 − 0.25 × (−6) = 1.5."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP2. Same as P1 but with momentum β = 0.5: two steps.\n</summary>\nStep 1: u = −6, w = 1.5. Step 2: ∇ = 2(1.5 − 3) = −3; u = 0.5 × (−6) − 3\n= −6; w = 1.5 − 0.25 × (−6) = 3.0.\n</details>",
-          "text": "P2. Same as P1 but with momentum β = 0.5: two steps. Step 1: u = −6, w = 1.5. Step 2: ∇ = 2(1.5 − 3) = −3; u = 0.5 × (−6) − 3\n= −6; w = 1.5 − 0.25 × (−6) = 3.0."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP3. β = 0.9, constant gradient 0.5. Long-run value of u?\n</summary>\n0.5 / (1 − 0.9) = 5.\n</details>",
-          "text": "P3. β = 0.9, constant gradient 0.5. Long-run value of u? 0.5 / (1 − 0.9) = 5."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP4. N = 1200, B = 40. Steps per epoch for SGD and mini-batch?\n</summary>\nSGD: 1200. Mini-batch: 1200/40 = 30.\n</details>",
-          "text": "P4. N = 1200, B = 40. Steps per epoch for SGD and mini-batch? SGD: 1200. Mini-batch: 1200/40 = 30."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP5. Step decay: η₀ = 0.08, halve every 5 epochs. η during epoch 17\n(epochs counted from 0)?\n</summary>\nHalved 3 times (after 5, 10, 15): 0.08 → 0.04 → 0.02 → 0.01.\n</details>",
-          "text": "P5. Step decay: η₀ = 0.08, halve every 5 epochs. η during epoch 17\n(epochs counted from 0)? Halved 3 times (after 5, 10, 15): 0.08 → 0.04 → 0.02 → 0.01."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP6. Line search from w with gradient 2, L(w) = w², w = 1, candidates η ∈\n{0.1, 0.5, 1}. Which η is kept?\n</summary>\nNew w: 0.8 (L = 0.64), 0 (L = 0), −1 (L = 1). Keep η = 0.5.\n</details>",
-          "text": "P6. Line search from w with gradient 2, L(w) = w², w = 1, candidates η ∈\n{0.1, 0.5, 1}. Which η is kept? New w: 0.8 (L = 0.64), 0 (L = 0), −1 (L = 1). Keep η = 0.5."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP7. Which optimiser computes the gradient at w − (momentum step)?\n</summary>\nNesterov Accelerated Gradient (NAG).\n</details>",
-          "text": "P7. Which optimiser computes the gradient at w − (momentum step)? Nesterov Accelerated Gradient (NAG)."
-        },
-        {
-          "type": "html",
-          "html": "<details>\n<summary>\nP8. Why does batch GD guarantee a decrease in loss but SGD does not?\n</summary>\nBatch GD uses the true gradient of the full loss; SGD uses a one-point\nestimate that may point the wrong way for the other points.\n</details>",
-          "text": "P8. Why does batch GD guarantee a decrease in loss but SGD does not? Batch GD uses the true gradient of the full loss; SGD uses a one-point\nestimate that may point the wrong way for the other points."
+          "html": "<details>\n<summary>\nP6. uₜ₋₁ = (2, 0), β = 0.5, and w did not change after the step. ∇wₜ?\n</summary>\nuₜ = 0 → ∇wₜ = −0.5 × (2, 0) = (−1, 0).\n</details>",
+          "text": "P6. uₜ₋₁ = (2, 0), β = 0.5, and w did not change after the step. ∇wₜ? uₜ = 0 → ∇wₜ = −0.5 × (2, 0) = (−1, 0)."
         }
       ]
     },

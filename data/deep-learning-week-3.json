@@ -144,7 +144,7 @@
         },
         {
           "type": "html",
-          "html": "<pre><code>t ← 0;  max_iterations ← 1000\ninitialise θ₀ = [W₁, …, W_L, b₁, …, b_L]\nwhile t++ &lt; max_iterations:\n    θ_{t+1} ← θ_t − η ∇θ_t</code></pre>",
+          "html": "<pre class=\"text\"><code>t ← 0;  max_iterations ← 1000\ninitialise θ₀ = [W₁, …, W_L, b₁, …, b_L]\nwhile t++ &lt; max_iterations:\n    θ_{t+1} ← θ_t − η ∇θ_t</code></pre>",
           "text": "t ← 0;  max_iterations ← 1000\ninitialise θ₀ = [W₁, …, W_L, b₁, …, b_L]\nwhile t++ < max_iterations:\n    θ_{t+1} ← θ_t − η ∇θ_t"
         },
         {
@@ -854,7 +854,7 @@
         },
         {
           "type": "html",
-          "html": "<pre><code>t ← 0;  max_iterations ← 1000\ninitialise θ₀ = [W₁, …, W_L, b₁, …, b_L]\nwhile t++ &lt; max_iterations:\n    a₁, h₁, …, a_{L−1}, h_{L−1}, a_L, ŷ = forward_propagation(θ_t)\n    ∇θ_t = backward_propagation(h₁ … h_{L−1}, a₁ … a_L, y, ŷ)\n    θ_{t+1} ← θ_t − η ∇θ_t</code></pre>",
+          "html": "<pre class=\"text\"><code>t ← 0;  max_iterations ← 1000\ninitialise θ₀ = [W₁, …, W_L, b₁, …, b_L]\nwhile t++ &lt; max_iterations:\n    a₁, h₁, …, a_{L−1}, h_{L−1}, a_L, ŷ = forward_propagation(θ_t)\n    ∇θ_t = backward_propagation(h₁ … h_{L−1}, a₁ … a_L, y, ŷ)\n    θ_{t+1} ← θ_t − η ∇θ_t</code></pre>",
           "text": "t ← 0;  max_iterations ← 1000\ninitialise θ₀ = [W₁, …, W_L, b₁, …, b_L]\nwhile t++ < max_iterations:\n    a₁, h₁, …, a_{L−1}, h_{L−1}, a_L, ŷ = forward_propagation(θ_t)\n    ∇θ_t = backward_propagation(h₁ … h_{L−1}, a₁ … a_L, y, ŷ)\n    θ_{t+1} ← θ_t − η ∇θ_t"
         },
         {
@@ -864,7 +864,7 @@
         },
         {
           "type": "html",
-          "html": "<pre><code>for k = 1 to L−1:\n    a_k = b_k + W_k h_{k−1}\n    h_k = g(a_k)\na_L = b_L + W_L h_{L−1}\nŷ = O(a_L)</code></pre>",
+          "html": "<pre class=\"text\"><code>for k = 1 to L−1:\n    a_k = b_k + W_k h_{k−1}\n    h_k = g(a_k)\na_L = b_L + W_L h_{L−1}\nŷ = O(a_L)</code></pre>",
           "text": "for k = 1 to L−1:\n    a_k = b_k + W_k h_{k−1}\n    h_k = g(a_k)\na_L = b_L + W_L h_{L−1}\nŷ = O(a_L)"
         },
         {
@@ -874,7 +874,7 @@
         },
         {
           "type": "html",
-          "html": "<pre><code>∇a_L L = −(e(y) − ŷ)                         # output gradient\nfor k = L down to 1:\n    ∇W_k L = ∇a_k L · h_{k−1}ᵀ                # weights\n    ∇b_k L = ∇a_k L                           # biases\n    ∇h_{k−1} L = W_kᵀ ∇a_k L                  # pass to layer below\n    ∇a_{k−1} L = ∇h_{k−1} L ⊙ [… g′(a_{k−1,j}) …]   # through activation</code></pre>",
+          "html": "<pre class=\"text\"><code>∇a_L L = −(e(y) − ŷ)                         # output gradient\nfor k = L down to 1:\n    ∇W_k L = ∇a_k L · h_{k−1}ᵀ                # weights\n    ∇b_k L = ∇a_k L                           # biases\n    ∇h_{k−1} L = W_kᵀ ∇a_k L                  # pass to layer below\n    ∇a_{k−1} L = ∇h_{k−1} L ⊙ [… g′(a_{k−1,j}) …]   # through activation</code></pre>",
           "text": "∇a_L L = −(e(y) − ŷ)                         # output gradient\nfor k = L down to 1:\n    ∇W_k L = ∇a_k L · h_{k−1}ᵀ                # weights\n    ∇b_k L = ∇a_k L                           # biases\n    ∇h_{k−1} L = W_kᵀ ∇a_k L                  # pass to layer below\n    ∇a_{k−1} L = ∇h_{k−1} L ⊙ [… g′(a_{k−1,j}) …]   # through activation"
         },
         {
@@ -1021,22 +1021,22 @@
       "blocks": [
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Start here</strong> Week 3 questions test shapes, softmax,\ncross-entropy, and backprop steps. Each type has a short recipe. Keep\nthe five backprop formulas in front of you and write every\nmultiplication out. All answers below were checked with code.</p>\n</blockquote>",
-          "text": "Start here Week 3 questions test shapes, softmax,\ncross-entropy, and backprop steps. Each type has a short recipe. Keep\nthe five backprop formulas in front of you and write every\nmultiplication out. All answers below were checked with code."
+          "html": "<blockquote>\n<p><strong>Start here</strong> Week 3 gives the biggest numerical\nquestions in Quiz 1: a full forward pass, the softmax, the cross-entropy\nloss, and one or two backprop gradients. This page has <strong>every\nWeek 3 question</strong> from five past papers (2025 T1, T2, T3 and 2026\nT1, T2). Keep the five formulas below in front of you. All answers were\nchecked with code.</p>\n</blockquote>",
+          "text": "Start here Week 3 gives the biggest numerical\nquestions in Quiz 1: a full forward pass, the softmax, the cross-entropy\nloss, and one or two backprop gradients. This page has every\nWeek 3 question from five past papers (2025 T1, T2, T3 and 2026\nT1, T2). Keep the five formulas below in front of you. All answers were\nchecked with code."
         },
         {
           "type": "html",
-          "html": "<p><strong>The five formulas</strong> (softmax + cross-entropy):</p>",
-          "text": "The five formulas (softmax + cross-entropy):"
+          "html": "<p><strong>The five backprop formulas</strong> (softmax +\ncross-entropy):</p>",
+          "text": "The five backprop formulas (softmax +\ncross-entropy):"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>∇a_L = ŷ − e(ℓ)</li>\n<li>∇W_k = ∇a_k · h_{k−1}ᵀ</li>\n<li>∇b_k = ∇a_k</li>\n<li>∇h_{k−1} = W_kᵀ ∇a_k</li>\n<li>∇a_{k−1} = ∇h_{k−1} ⊙ g′(a_{k−1})</li>\n</ol>",
-          "text": "∇a_L = ŷ − e(ℓ) ∇W_k = ∇a_k · h_{k−1}ᵀ ∇b_k = ∇a_k ∇h_{k−1} = W_kᵀ ∇a_k ∇a_{k−1} = ∇h_{k−1} ⊙ g′(a_{k−1})"
+          "html": "<ol type=\"1\">\n<li>∇a_L = ŷ − y (y = one-hot true label)</li>\n<li>∇W_k = ∇a_k · h_{k−1}ᵀ → one entry: ∂L/∂W_k,ij = (∇a_k)ᵢ ×\nh_{k−1,j}</li>\n<li>∇b_k = ∇a_k</li>\n<li>∇h_{k−1} = W_kᵀ ∇a_k</li>\n<li>∇a_{k−1} = ∇h_{k−1} ⊙ g′(a_{k−1}); for sigmoid g′ = h(1 − h)</li>\n</ol>",
+          "text": "∇a_L = ŷ − y (y = one-hot true label) ∇W_k = ∇a_k · h_{k−1}ᵀ → one entry: ∂L/∂W_k,ij = (∇a_k)ᵢ ×\nh_{k−1,j} ∇b_k = ∇a_k ∇h_{k−1} = W_kᵀ ∇a_k ∇a_{k−1} = ∇h_{k−1} ⊙ g′(a_{k−1}); for sigmoid g′ = h(1 − h)"
         },
         {
           "type": "heading",
-          "text": "Type 1 — Shapes and\nparameter counts"
+          "text": "Type 1 — Counting parameters"
         },
         {
           "type": "subheading",
@@ -1044,13 +1044,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Wₖ has shape <strong>(units in layer k) × (units in layer k −\n1)</strong>; bₖ has (units in layer k) entries.</li>\n<li>Parameters = sum over layers of (rows × columns + rows).</li>\n<li>∇Wₖ always has the <strong>same shape</strong> as Wₖ.</li>\n</ol>",
-          "text": "Wₖ has shape (units in layer k) × (units in layer k −\n1) ; bₖ has (units in layer k) entries. Parameters = sum over layers of (rows × columns + rows). ∇Wₖ always has the same shape as Wₖ."
+          "html": "<p>Each layer: <strong>weights = (neurons in this layer) × (neurons in\nthe layer before)</strong>, <strong>biases = neurons in this\nlayer</strong>. Add over all layers. If the question says “ignore\nbiases” or “number of weights”, leave biases out.</p>",
+          "text": "Each layer: weights = (neurons in this layer) × (neurons in\nthe layer before) , biases = neurons in this\nlayer . Add over all layers. If the question says “ignore\nbiases” or “number of weights”, leave biases out."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> A network has input size 10, hidden layers\nof 20 and 15 units, and 4 outputs. How many parameters?</p>\n<p><strong>Answer:</strong> <strong>599</strong></p>\n</blockquote>",
-          "text": "Worked example Question: A network has input size 10, hidden layers\nof 20 and 15 units, and 4 outputs. How many parameters? Answer: 599"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q5 · 2 marks</p>\n<p><strong>Question:</strong> A regression network has input x ∈ ℝ¹⁰, 2\nhidden layers of 5 sigmoid neurons each, and 1 output neuron (sigmoid).\nEnter the number of parameters.</p>\n<p><strong>Answer:</strong> <strong>91</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q5 · 2 marks Question: A regression network has input x ∈ ℝ¹⁰, 2\nhidden layers of 5 sigmoid neurons each, and 1 output neuron (sigmoid).\nEnter the number of parameters. Answer: 91"
         },
         {
           "type": "html",
@@ -1059,26 +1059,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>W₁: 20 × 10 = 200, b₁: 20 → 220</li>\n<li>W₂: 15 × 20 = 300, b₂: 15 → 315</li>\n<li>W₃: 4 × 15 = 60, b₃: 4 → 64</li>\n<li>Total = 220 + 315 + 64 = <strong>599</strong></li>\n</ol>",
-          "text": "W₁: 20 × 10 = 200, b₁: 20 → 220 W₂: 15 × 20 = 300, b₂: 15 → 315 W₃: 4 × 15 = 60, b₃: 4 → 64 Total = 220 + 315 + 64 = 599"
-        },
-        {
-          "type": "heading",
-          "text": "Type 2 — Softmax and\ncross-entropy"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "html": "<ol type=\"1\">\n<li>Layer 1: 10 × 5 = 50 weights + 5 biases = 55</li>\n<li>Layer 2: 5 × 5 = 25 weights + 5 biases = 30</li>\n<li>Output: 5 × 1 = 5 weights + 1 bias = 6</li>\n<li>Total = 55 + 30 + 6 = <strong>91</strong></li>\n</ol>",
+          "text": "Layer 1: 10 × 5 = 50 weights + 5 biases = 55 Layer 2: 5 × 5 = 25 weights + 5 biases = 30 Output: 5 × 1 = 5 weights + 1 bias = 6 Total = 55 + 30 + 6 = 91"
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Exponentiate every score.</li>\n<li>Divide each by the sum → ŷ.</li>\n<li>Loss = −ln(ŷ of the true class).</li>\n</ol>",
-          "text": "Exponentiate every score. Divide each by the sum → ŷ. Loss = −ln(ŷ of the true class)."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Scores a_L = [1, 2, 3], true class 3. Find\nŷ and the loss.</p>\n<p><strong>Answer:</strong> <strong>ŷ = [0.090, 0.245, 0.665], L =\n0.408</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Scores a_L = [1, 2, 3], true class 3. Find\nŷ and the loss. Answer: ŷ = [0.090, 0.245, 0.665], L =\n0.408"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q72–73 · 4 + 4 marks</p>\n<p><strong>Question:</strong> A 5-class classifier has input ∈ ℝ²⁰, 2\nhidden layers of 10 sigmoid neurons each, and 5 softmax outputs;\ncross-entropy loss (use ln); ignore biases. Q72: Find the number of\nweights. Q73: If all weights have the same value, find the cross-entropy\nloss for any data point (2 decimals; −1 if not enough information).</p>\n<p><strong>Answer:</strong> <strong>Q72: 350 · Q73: 1.61</strong> (key\nrange 1.59–1.63)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q72–73 · 4 + 4 marks Question: A 5-class classifier has input ∈ ℝ²⁰, 2\nhidden layers of 10 sigmoid neurons each, and 5 softmax outputs;\ncross-entropy loss (use ln); ignore biases. Q72: Find the number of\nweights. Q73: If all weights have the same value, find the cross-entropy\nloss for any data point (2 decimals; −1 if not enough information). Answer: Q72: 350 · Q73: 1.61 (key\nrange 1.59–1.63)"
         },
         {
           "type": "html",
@@ -1087,12 +1074,12 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>e¹ = 2.718, e² = 7.389, e³ = 20.086.</li>\n<li>Sum = 2.718 + 7.389 + 20.086 = 30.193.</li>\n<li>ŷ = [2.718/30.193, 7.389/30.193, 20.086/30.193] = [0.090, 0.245,\n0.665].</li>\n<li>L = −ln(0.665) = <strong>0.408</strong>.</li>\n</ol>",
-          "text": "e¹ = 2.718, e² = 7.389, e³ = 20.086. Sum = 2.718 + 7.389 + 20.086 = 30.193. ŷ = [2.718/30.193, 7.389/30.193, 20.086/30.193] = [0.090, 0.245,\n0.665]. L = −ln(0.665) = 0.408 ."
+          "html": "<ol type=\"1\">\n<li>Q72: 20×10 + 10×10 + 10×5 = 200 + 100 + 50 =\n<strong>350</strong>.</li>\n<li>Q73: if all weights are equal (and no biases), every neuron in a\nlayer gets exactly the same inputs with the same weights → all 5 output\nscores are <strong>equal</strong>.</li>\n<li>Softmax of 5 equal scores = 1/5 each, whatever the true class.</li>\n<li>Loss = −ln(1/5) = ln 5 = <strong>1.609</strong>. (So the answer is\nnot −1 — it can be computed.)</li>\n</ol>",
+          "text": "Q72: 20×10 + 10×10 + 10×5 = 200 + 100 + 50 = 350 . Q73: if all weights are equal (and no biases), every neuron in a\nlayer gets exactly the same inputs with the same weights → all 5 output\nscores are equal . Softmax of 5 equal scores = 1/5 each, whatever the true class. Loss = −ln(1/5) = ln 5 = 1.609 . (So the answer is\nnot −1 — it can be computed.)"
         },
         {
           "type": "heading",
-          "text": "Type 3 — Choosing\noutput function and loss"
+          "text": "Type 2 — Forward\npass, softmax and cross-entropy"
         },
         {
           "type": "subheading",
@@ -1100,36 +1087,13 @@
         },
         {
           "type": "html",
-          "html": "<div aria-label=\"Scrollable course table\" class=\"table-wrap\" role=\"region\" tabindex=\"0\"><table>\n<thead>\n<tr>\n<th>Target</th>\n<th>Output O</th>\n<th>Loss</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Real numbers (price, rating, temperature)</td>\n<td>Linear</td>\n<td>Squared error</td>\n</tr>\n<tr>\n<td>One of k classes</td>\n<td>Softmax</td>\n<td>Cross-entropy</td>\n</tr>\n</tbody>\n</table></div>",
-          "text": "Target Output O Loss Real numbers (price, rating, temperature) Linear Squared error One of k classes Softmax Cross-entropy"
+          "html": "<ol type=\"1\">\n<li>Layer by layer: a = W·h (+ b), then h = σ(a). Keep 4 decimals.</li>\n<li>Softmax: exponentiate each score, divide by the sum.</li>\n<li>Cross-entropy = −ln(probability of the true class).</li>\n<li>Softmax trick: ŷ₁ = e^a₁ / (e^a₁ + e^a₂ + …). Setting this to a\ntarget lets you solve for a₁.</li>\n</ol>",
+          "text": "Layer by layer: a = W·h (+ b), then h = σ(a). Keep 4 decimals. Softmax: exponentiate each score, divide by the sum. Cross-entropy = −ln(probability of the true class). Softmax trick: ŷ₁ = e^a₁ / (e^a₁ + e^a₂ + …). Setting this to a\ntarget lets you solve for a₁."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> A network predicts tomorrow’s temperature\nin °C. Which output function and loss?</p>\n<p><strong>Answer:</strong> <strong>Linear output, squared-error\nloss</strong></p>\n</blockquote>",
-          "text": "Worked example Question: A network predicts tomorrow’s temperature\nin °C. Which output function and loss? Answer: Linear output, squared-error\nloss"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> temperature can be any real number\n(including negative values or 35), so a sigmoid or softmax would wrongly\nsquash it. Use a linear output; squared error measures the distance\nbetween real numbers.</p>",
-          "text": "How to solve: temperature can be any real number\n(including negative values or 35), so a sigmoid or softmax would wrongly\nsquash it. Use a linear output; squared error measures the distance\nbetween real numbers."
-        },
-        {
-          "type": "heading",
-          "text": "Type 4 — Output-layer\ngradient"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
-        },
-        {
-          "type": "html",
-          "html": "<p>∇a_L L = ŷ − e(ℓ): copy ŷ, subtract 1 at the true class. (∇ŷ L is\ndifferent: −1/ŷ_ℓ at the true class, 0 elsewhere.)</p>",
-          "text": "∇a_L L = ŷ − e(ℓ): copy ŷ, subtract 1 at the true class. (∇ŷ L is\ndifferent: −1/ŷ_ℓ at the true class, 0 elsewhere.)"
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> ŷ = [0.1, 0.6, 0.3], true class 3. Find ∇ŷ\nL and ∇a_L L.</p>\n<p><strong>Answer:</strong> <strong>∇ŷ L = [0, 0, −3.333]; ∇a_L L =\n[0.1, 0.6, −0.7]</strong></p>\n</blockquote>",
-          "text": "Worked example Question: ŷ = [0.1, 0.6, 0.3], true class 3. Find ∇ŷ\nL and ∇a_L L. Answer: ∇ŷ L = [0, 0, −3.333]; ∇a_L L =\n[0.1, 0.6, −0.7]"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q75–78 · 1 + 1 + 1 + 1\nmarks</p>\n<p><strong>Question:</strong> A 3-class network: input x ∈ ℝ³, 3 sigmoid\nneurons in hidden layer 1, 2 in hidden layer 2, 3 softmax outputs, no\nbiases. W₁ = [[0,1,1],[1,0,1],[1,1,0]], W₂ = [[0,0,1],[1,1,0]], W₃ =\n[[0,1],[1,1],[1,0]], x = (0, 1, 2), y = (1, 0, 0). (2 decimals; −1 if\nnot enough information.) Q75: h₁₁? Q76: h₂₁? Q77: h₃₁ (first softmax\noutput)? Q78: cross-entropy loss (ln)?</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"960\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t1-q75-network.webp?v=915022c21e9d\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>Q75: 0.95 · Q76: 0.68 · Q77: 0.26 ·\nQ78: 1.33</strong> (key ranges 0.91–0.99, 0.63–0.71, 0.22–0.30,\n1.29–1.37)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q75–78 · 1 + 1 + 1 + 1\nmarks Question: A 3-class network: input x ∈ ℝ³, 3 sigmoid\nneurons in hidden layer 1, 2 in hidden layer 2, 3 softmax outputs, no\nbiases. W₁ = [[0,1,1],[1,0,1],[1,1,0]], W₂ = [[0,0,1],[1,1,0]], W₃ =\n[[0,1],[1,1],[1,0]], x = (0, 1, 2), y = (1, 0, 0). (2 decimals; −1 if\nnot enough information.) Q75: h₁₁? Q76: h₂₁? Q77: h₃₁ (first softmax\noutput)? Q78: cross-entropy loss (ln)? Question figure (redrawn exactly from the\npaper) Answer: Q75: 0.95 · Q76: 0.68 · Q77: 0.26 ·\nQ78: 1.33 (key ranges 0.91–0.99, 0.63–0.71, 0.22–0.30,\n1.29–1.37)"
         },
         {
           "type": "html",
@@ -1138,31 +1102,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>∇ŷ L: only the true position: −1/0.3 = −3.333.</li>\n<li>∇a_L L = [0.1 − 0, 0.6 − 0, 0.3 − 1] = [0.1, 0.6, −0.7].</li>\n<li>Check: 0.1 + 0.6 − 0.7 = 0 ✔ (always sums to 0).</li>\n</ol>",
-          "text": "∇ŷ L: only the true position: −1/0.3 = −3.333. ∇a_L L = [0.1 − 0, 0.6 − 0, 0.3 − 1] = [0.1, 0.6, −0.7]. Check: 0.1 + 0.6 − 0.7 = 0 ✔ (always sums to 0)."
-        },
-        {
-          "type": "heading",
-          "text": "Type 5 — One backward\nstep through a layer"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
+          "html": "<ol type=\"1\">\n<li>a₁ = W₁x: row 1 = 0·0 + 1·1 + 1·2 = 3; row 2 = 1·0 + 0·1 + 1·2 = 2;\nrow 3 = 1·0 + 1·1 + 0·2 = 1 → a₁ = (3, 2, 1).</li>\n<li>h₁ = σ(a₁) = (0.9526, 0.8808, 0.7311) → <strong>h₁₁ =\n0.95</strong>.</li>\n<li>a₂ = W₂h₁: row 1 = h₁₃ = 0.7311; row 2 = h₁₁ + h₁₂ = 1.8334.</li>\n<li>h₂ = σ(a₂) = (0.6750, 0.8622) → <strong>h₂₁ = 0.68</strong>.</li>\n<li>a₃ = W₃h₂: row 1 = h₂₂ = 0.8622; row 2 = h₂₁ + h₂₂ = 1.5372; row 3 =\nh₂₁ = 0.6750.</li>\n<li>e^a₃ = (2.368, 4.651, 1.964), sum = 8.984 → ŷ = (0.2636, 0.5178,\n0.2186) → <strong>h₃₁ = 0.26</strong>.</li>\n<li>True class is 1 → loss = −ln 0.2636 = <strong>1.33</strong>.</li>\n</ol>",
+          "text": "a₁ = W₁x: row 1 = 0·0 + 1·1 + 1·2 = 3; row 2 = 1·0 + 0·1 + 1·2 = 2;\nrow 3 = 1·0 + 1·1 + 0·2 = 1 → a₁ = (3, 2, 1). h₁ = σ(a₁) = (0.9526, 0.8808, 0.7311) → h₁₁ =\n0.95 . a₂ = W₂h₁: row 1 = h₁₃ = 0.7311; row 2 = h₁₁ + h₁₂ = 1.8334. h₂ = σ(a₂) = (0.6750, 0.8622) → h₂₁ = 0.68 . a₃ = W₃h₂: row 1 = h₂₂ = 0.8622; row 2 = h₂₁ + h₂₂ = 1.5372; row 3 =\nh₂₁ = 0.6750. e^a₃ = (2.368, 4.651, 1.964), sum = 8.984 → ŷ = (0.2636, 0.5178,\n0.2186) → h₃₁ = 0.26 . True class is 1 → loss = −ln 0.2636 = 1.33 ."
         },
         {
           "type": "html",
-          "html": "<p>Given ∇a_k, W_k, h_{k−1} (and the activation):</p>",
-          "text": "Given ∇a_k, W_k, h_{k−1} (and the activation):"
-        },
-        {
-          "type": "html",
-          "html": "<ol type=\"1\">\n<li>∇W_k = ∇a_k h_{k−1}ᵀ (outer product).</li>\n<li>∇b_k = ∇a_k.</li>\n<li>∇h_{k−1} = W_kᵀ ∇a_k.</li>\n<li>∇a_{k−1} = ∇h_{k−1} ⊙ g′ — for sigmoid g′ = h(1 − h), for tanh g′ =\n1 − h².</li>\n</ol>",
-          "text": "∇W_k = ∇a_k h_{k−1}ᵀ (outer product). ∇b_k = ∇a_k. ∇h_{k−1} = W_kᵀ ∇a_k. ∇a_{k−1} = ∇h_{k−1} ⊙ g′ — for sigmoid g′ = h(1 − h), for tanh g′ =\n1 − h²."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> ∇a₂ = [0.2, −0.4], W₂ = [[1, 0], [−1, 2]],\nh₁ = [0.5, 0.8] (sigmoid). Find ∇W₂, ∇h₁ and ∇a₁.</p>\n<p><strong>Answer:</strong> <strong>∇W₂ = [[0.1, 0.16], [−0.2, −0.32]];\n∇h₁ = [0.6, −0.8]; ∇a₁ = [0.15, −0.128]</strong></p>\n</blockquote>",
-          "text": "Worked example Question: ∇a₂ = [0.2, −0.4], W₂ = [[1, 0], [−1, 2]],\nh₁ = [0.5, 0.8] (sigmoid). Find ∇W₂, ∇h₁ and ∇a₁. Answer: ∇W₂ = [[0.1, 0.16], [−0.2, −0.32]];\n∇h₁ = [0.6, −0.8]; ∇a₁ = [0.15, −0.128]"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q53–54 · 1 + 1 marks</p>\n<p><strong>Question:</strong> Input x = 2 → one sigmoid hidden neuron\n(W₁ = 1) → 3 softmax outputs with W₂ = (w₂₁₁, w₂₂₁, w₂₃₁) = (−1, 1, 2).\nNo biases; y = (0, 1, 0). Q53: output of the hidden layer? Q54:\ncross-entropy loss (ln)? (2 decimals)</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"960\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t3-q53-network.webp?v=9ebe5584eb9b\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>Q53: 0.88 · Q54: 1.28</strong> (key\nranges 0.84–0.92, 1.22–1.32)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q53–54 · 1 + 1 marks Question: Input x = 2 → one sigmoid hidden neuron\n(W₁ = 1) → 3 softmax outputs with W₂ = (w₂₁₁, w₂₂₁, w₂₃₁) = (−1, 1, 2).\nNo biases; y = (0, 1, 0). Q53: output of the hidden layer? Q54:\ncross-entropy loss (ln)? (2 decimals) Question figure (redrawn exactly from the\npaper) Answer: Q53: 0.88 · Q54: 1.28 (key\nranges 0.84–0.92, 1.22–1.32)"
         },
         {
           "type": "html",
@@ -1171,36 +1117,13 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>∇W₂ row 1 = 0.2 × [0.5, 0.8] = [0.1, 0.16]; row 2 = −0.4 × [0.5,\n0.8] = [−0.2, −0.32].</li>\n<li>W₂ᵀ = [[1, −1], [0, 2]]. ∇h₁ = [1×0.2 + (−1)×(−0.4), 0×0.2 +\n2×(−0.4)] = [0.6, −0.8].</li>\n<li>g′ = h₁(1 − h₁) = [0.5×0.5, 0.8×0.2] = [0.25, 0.16].</li>\n<li>∇a₁ = [0.6×0.25, −0.8×0.16] = [0.15, −0.128].</li>\n</ol>",
-          "text": "∇W₂ row 1 = 0.2 × [0.5, 0.8] = [0.1, 0.16]; row 2 = −0.4 × [0.5,\n0.8] = [−0.2, −0.32]. W₂ᵀ = [[1, −1], [0, 2]]. ∇h₁ = [1×0.2 + (−1)×(−0.4), 0×0.2 +\n2×(−0.4)] = [0.6, −0.8]. g′ = h₁(1 − h₁) = [0.5×0.5, 0.8×0.2] = [0.25, 0.16]. ∇a₁ = [0.6×0.25, −0.8×0.16] = [0.15, −0.128]."
+          "html": "<ol type=\"1\">\n<li>a₁ = 1 × 2 = 2 → h = σ(2) = 1/(1 + 0.1353) =\n<strong>0.8808</strong>.</li>\n<li>a₂ = (−1, 1, 2) × 0.8808 = (−0.8808, 0.8808, 1.7616).</li>\n<li>e^a₂ = (0.4145, 2.4128, 5.8217), sum = 8.6490 → ŷ = (0.0479, 0.2790,\n0.6731).</li>\n<li>True class 2 → loss = −ln 0.2790 = <strong>1.277</strong>.</li>\n</ol>",
+          "text": "a₁ = 1 × 2 = 2 → h = σ(2) = 1/(1 + 0.1353) = 0.8808 . a₂ = (−1, 1, 2) × 0.8808 = (−0.8808, 0.8808, 1.7616). e^a₂ = (0.4145, 2.4128, 5.8217), sum = 8.6490 → ŷ = (0.0479, 0.2790,\n0.6731). True class 2 → loss = −ln 0.2790 = 1.277 ."
         },
         {
           "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> Full backprop on the 2-2-2 network: x =\n[1, 0.5], W₁ = [[0.1, 0.2], [0.3, −0.1]], W₂ = [[0.5, −0.4], [0.2,\n0.3]], biases 0, sigmoid hidden, softmax output, true class 1. Find\n∇W₁.</p>\n<p><strong>Answer:</strong> <strong>∇W₁ = [[−0.0414, −0.0207], [0.0959,\n0.0480]]</strong></p>\n</blockquote>",
-          "text": "Worked example Question: Full backprop on the 2-2-2 network: x =\n[1, 0.5], W₁ = [[0.1, 0.2], [0.3, −0.1]], W₂ = [[0.5, −0.4], [0.2,\n0.3]], biases 0, sigmoid hidden, softmax output, true class 1. Find\n∇W₁. Answer: ∇W₁ = [[−0.0414, −0.0207], [0.0959,\n0.0480]]"
-        },
-        {
-          "type": "html",
-          "html": "<p><strong>How to solve:</strong> follow the 7 forward steps and 7\nbackward steps written out on the <a href=\"backpropagation-hidden-units-and-weights\">Backpropagation — Hidden\nUnits and Weights</a> page.</p>",
-          "text": "How to solve: follow the 7 forward steps and 7\nbackward steps written out on the Backpropagation — Hidden\nUnits and Weights page."
-        },
-        {
-          "type": "heading",
-          "text": "Type 6 — Activation\nderivatives"
-        },
-        {
-          "type": "subheading",
-          "text": "Learn the method"
-        },
-        {
-          "type": "html",
-          "html": "<p>σ′(z) = σ(z)(1 − σ(z)) (max 0.25 at z = 0); tanh′(z) = 1 − tanh²(z)\n(max 1 at z = 0). If the question gives the <strong>output</strong> h,\nuse it directly.</p>",
-          "text": "σ′(z) = σ(z)(1 − σ(z)) (max 0.25 at z = 0); tanh′(z) = 1 − tanh²(z)\n(max 1 at z = 0). If the question gives the output h,\nuse it directly."
-        },
-        {
-          "type": "html",
-          "html": "<blockquote>\n<p><strong>Worked example</strong></p>\n<p><strong>Question:</strong> A sigmoid unit outputs 0.8 and a tanh unit\noutputs −0.5. Find both derivatives.</p>\n<p><strong>Answer:</strong> <strong>0.16 and 0.75</strong></p>\n</blockquote>",
-          "text": "Worked example Question: A sigmoid unit outputs 0.8 and a tanh unit\noutputs −0.5. Find both derivatives. Answer: 0.16 and 0.75"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q12 · 3 marks</p>\n<p><strong>Question:</strong> Binary classifier: x → two sigmoid hidden\nneurons h₁ (w₁ = 1, b₁₁ = 0) and h₂ (w₂ = −1, b₁₂ = 0) → sigmoid output\nwith v₁ = 1, v₂ = 1, b₂₁ = 1. Cross-entropy loss, x = 1, y = 1. Compute\nŷ (2 decimals).</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"1080\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2026t1-q12-network.webp?v=f75bf88de550\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>0.88</strong> (key range\n0.86–0.90)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q12 · 3 marks Question: Binary classifier: x → two sigmoid hidden\nneurons h₁ (w₁ = 1, b₁₁ = 0) and h₂ (w₂ = −1, b₁₂ = 0) → sigmoid output\nwith v₁ = 1, v₂ = 1, b₂₁ = 1. Cross-entropy loss, x = 1, y = 1. Compute\nŷ (2 decimals). Question figure (redrawn exactly from the\npaper) Answer: 0.88 (key range\n0.86–0.90)"
         },
         {
           "type": "html",
@@ -1209,52 +1132,263 @@
         },
         {
           "type": "html",
-          "html": "<ol type=\"1\">\n<li>Sigmoid: 0.8 × (1 − 0.8) = 0.8 × 0.2 = 0.16.</li>\n<li>tanh: 1 − (−0.5)² = 1 − 0.25 = 0.75.</li>\n</ol>",
-          "text": "Sigmoid: 0.8 × (1 − 0.8) = 0.8 × 0.2 = 0.16. tanh: 1 − (−0.5)² = 1 − 0.25 = 0.75."
+          "html": "<ol type=\"1\">\n<li>h₁ = σ(1 × 1 + 0) = σ(1) = 0.7311.</li>\n<li>h₂ = σ(−1 × 1 + 0) = σ(−1) = 0.2689.</li>\n<li>Output pre-activation = 1 × 0.7311 + 1 × 0.2689 + 1 =\n<strong>2.0</strong> (note 0.7311 + 0.2689 = 1, since σ(1) + σ(−1) =\n1).</li>\n<li>ŷ = σ(2) = <strong>0.881</strong>.</li>\n</ol>",
+          "text": "h₁ = σ(1 × 1 + 0) = σ(1) = 0.7311. h₂ = σ(−1 × 1 + 0) = σ(−1) = 0.2689. Output pre-activation = 1 × 0.7311 + 1 × 0.2689 + 1 = 2.0 (note 0.7311 + 0.2689 = 1, since σ(1) + σ(−1) =\n1). ŷ = σ(2) = 0.881 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q14 · 3 marks</p>\n<p><strong>Question:</strong> A 3-class softmax output has\npre-activations a_L = (a₁, 0, 0). Find a₁ so that ŷ₁ = 0.5 exactly (2\ndecimals).</p>\n<p><strong>Answer:</strong> <strong>0.69</strong> (key range\n0.67–0.71)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q14 · 3 marks Question: A 3-class softmax output has\npre-activations a_L = (a₁, 0, 0). Find a₁ so that ŷ₁ = 0.5 exactly (2\ndecimals). Answer: 0.69 (key range\n0.67–0.71)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>ŷ₁ = e^a₁ / (e^a₁ + e⁰ + e⁰) = e^a₁ / (e^a₁ + 2).</li>\n<li>Set = 0.5: e^a₁ = 0.5 e^a₁ + 1 → 0.5 e^a₁ = 1 → e^a₁ = 2.</li>\n<li>a₁ = ln 2 = <strong>0.693</strong>.</li>\n</ol>",
+          "text": "ŷ₁ = e^a₁ / (e^a₁ + e⁰ + e⁰) = e^a₁ / (e^a₁ + 2). Set = 0.5: e^a₁ = 0.5 e^a₁ + 1 → 0.5 e^a₁ = 1 → e^a₁ = 2. a₁ = ln 2 = 0.693 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q13 · 3 marks</p>\n<p><strong>Question:</strong> House-price regression with inputs x₁\n(overall quality) and x₂ (living area). Hidden layer: 3 sigmoid neurons\n(W₁ ∈ ℝ³ˣ², b₁ ∈ ℝ³). Output: one linear neuron (W₂ ∈ ℝ¹ˣ³, b₂).\nGradient descent starts with all W₁ = 0, all W₂ = 100 and all biases 0.\nWhat price does the network give for quality 8 and area 3000?</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"960\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2026t2-q13-house-network.webp?v=b375a6f97fd1\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>150</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q13 · 3 marks Question: House-price regression with inputs x₁\n(overall quality) and x₂ (living area). Hidden layer: 3 sigmoid neurons\n(W₁ ∈ ℝ³ˣ², b₁ ∈ ℝ³). Output: one linear neuron (W₂ ∈ ℝ¹ˣ³, b₂).\nGradient descent starts with all W₁ = 0, all W₂ = 100 and all biases 0.\nWhat price does the network give for quality 8 and area 3000? Question figure (redrawn exactly from the\npaper) Answer: 150"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>W₁ = 0 and b₁ = 0 → every hidden pre-activation = 0 (the inputs 8\nand 3000 don’t matter).</li>\n<li>Each hidden output = σ(0) = 0.5.</li>\n<li>ŷ = 100 × 0.5 + 100 × 0.5 + 100 × 0.5 + 0 =\n<strong>150</strong>.</li>\n</ol>",
+          "text": "W₁ = 0 and b₁ = 0 → every hidden pre-activation = 0 (the inputs 8\nand 3000 don’t matter). Each hidden output = σ(0) = 0.5. ŷ = 100 × 0.5 + 100 × 0.5 + 100 × 0.5 + 0 = 150 ."
         },
         {
           "type": "heading",
-          "text": "Practice set"
+          "text": "Type 3 — Backprop gradients"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP1. Input 3, one hidden layer of 4, output 2. Number of parameters?\n</summary>\nW₁ 12 + b₁ 4 + W₂ 8 + b₂ 2 = 26.\n</details>",
-          "text": "P1. Input 3, one hidden layer of 4, output 2. Number of parameters? W₁ 12 + b₁ 4 + W₂ 8 + b₂ 2 = 26."
+          "html": "<ol type=\"1\">\n<li>Do the forward pass first and keep every value.</li>\n<li>Output gradient: softmax + CE → ŷ − y. Sigmoid output + CE (binary)\n→ also ŷ − y. Linear output + ½(ŷ − y)² → ŷ − y.</li>\n<li>Weight into the output: (output gradient) × (input to that\nweight).</li>\n<li>Weight further down: multiply by the weight on the path, then by h(1\n− h), then by the input. If one hidden unit feeds several outputs,\n<strong>add</strong> all paths.</li>\n</ol>",
+          "text": "Do the forward pass first and keep every value. Output gradient: softmax + CE → ŷ − y. Sigmoid output + CE (binary)\n→ also ŷ − y. Linear output + ½(ŷ − y)² → ŷ − y. Weight into the output: (output gradient) × (input to that\nweight). Weight further down: multiply by the weight on the path, then by h(1\n− h), then by the input. If one hidden unit feeds several outputs, add all paths."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP2. Softmax of [ln 1, ln 2, ln 5]?\n</summary>\ne^(ln x) = x → [1, 2, 5], sum 8 → [0.125, 0.25, 0.625].\n</details>",
-          "text": "P2. Softmax of [ln 1, ln 2, ln 5]? e^(ln x) = x → [1, 2, 5], sum 8 → [0.125, 0.25, 0.625]."
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T1 Quiz 1 · Q79–80 · 2 + 2 marks</p>\n<p><strong>Question:</strong> Same network as Q75–78 above. Using\ncross-entropy loss, compute ∇w₃₁₁ (the gradient of w₁₁ of W₃) and ∇w₂₁₁\n(w₁₁ of W₂). (Use 2 decimals.)</p>\n<p><strong>Answer:</strong> <strong>∇w₃₁₁ = −0.50 · ∇w₂₁₁ =\n0.15</strong> (key ranges −0.54 to −0.46, 0.11–0.19)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T1 Quiz 1 · Q79–80 · 2 + 2 marks Question: Same network as Q75–78 above. Using\ncross-entropy loss, compute ∇w₃₁₁ (the gradient of w₁₁ of W₃) and ∇w₂₁₁\n(w₁₁ of W₂). (Use 2 decimals.) Answer: ∇w₃₁₁ = −0.50 · ∇w₂₁₁ =\n0.15 (key ranges −0.54 to −0.46, 0.11–0.19)"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP3. From P2, true class 2. Cross-entropy loss and ∇a_L?\n</summary>\nL = −ln 0.25 = 1.386. ∇a_L = [0.125, 0.25 − 1, 0.625] = [0.125, −0.75,\n0.625].\n</details>",
-          "text": "P3. From P2, true class 2. Cross-entropy loss and ∇a_L? L = −ln 0.25 = 1.386. ∇a_L = [0.125, 0.25 − 1, 0.625] = [0.125, −0.75,\n0.625]."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP4. ∇a = [1, 2], h_below = [3, 4]. ∇W?\n</summary>\n[[3, 4], [6, 8]].\n</details>",
-          "text": "P4. ∇a = [1, 2], h_below = [3, 4]. ∇W? [[3, 4], [6, 8]]."
+          "html": "<ol type=\"1\">\n<li>∇a₃ = ŷ − y = (0.2636 − 1, 0.5178, 0.2186) = (−0.7364, 0.5178,\n0.2186).</li>\n<li>∇w₃₁₁ = (∇a₃)₁ × h₂₁ = −0.7364 × 0.6750 =\n<strong>−0.497</strong>.</li>\n<li>∇h₂ = W₃ᵀ ∇a₃. W₃ᵀ = [[0,1,1],[1,1,0]] → (∇h₂)₁ = 0.5178 + 0.2186 =\n0.7364.</li>\n<li>(∇a₂)₁ = 0.7364 × h₂₁(1 − h₂₁) = 0.7364 × 0.6750 × 0.3250 =\n0.1616.</li>\n<li>∇w₂₁₁ = (∇a₂)₁ × h₁₁ = 0.1616 × 0.9526 =\n<strong>0.154</strong>.</li>\n</ol>",
+          "text": "∇a₃ = ŷ − y = (0.2636 − 1, 0.5178, 0.2186) = (−0.7364, 0.5178,\n0.2186). ∇w₃₁₁ = (∇a₃)₁ × h₂₁ = −0.7364 × 0.6750 = −0.497 . ∇h₂ = W₃ᵀ ∇a₃. W₃ᵀ = [[0,1,1],[1,1,0]] → (∇h₂)₁ = 0.5178 + 0.2186 =\n0.7364. (∇a₂)₁ = 0.7364 × h₂₁(1 − h₂₁) = 0.7364 × 0.6750 × 0.3250 =\n0.1616. ∇w₂₁₁ = (∇a₂)₁ × h₁₁ = 0.1616 × 0.9526 = 0.154 ."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP5. Which is correct: ∇h_{k−1} = W_k ∇a_k or W_kᵀ ∇a_k?\n</summary>\nW_kᵀ ∇a_k. (The transpose sends the blame from layer k back to layer k −\n1, and makes the shapes match.)\n</details>",
-          "text": "P5. Which is correct: ∇h_{k−1} = W_k ∇a_k or W_kᵀ ∇a_k? W_kᵀ ∇a_k. (The transpose sends the blame from layer k back to layer k −\n1, and makes the shapes match.)"
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q55–56 · 2 + 2 marks</p>\n<p><strong>Question:</strong> Same network as Q53–54 above (x = 2, W₁ =\n1, W₂ = (−1, 1, 2), y = (0, 1, 0)). Using cross-entropy loss, compute\nthe gradient of w₂₃₁ and of W₁ (2 decimals).</p>\n<p><strong>Answer:</strong> <strong>∇w₂₃₁ = 0.59 · ∇W₁ = 0.12</strong>\n(key ranges 0.54–0.64, 0.06–0.18)</p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q55–56 · 2 + 2 marks Question: Same network as Q53–54 above (x = 2, W₁ =\n1, W₂ = (−1, 1, 2), y = (0, 1, 0)). Using cross-entropy loss, compute\nthe gradient of w₂₃₁ and of W₁ (2 decimals). Answer: ∇w₂₃₁ = 0.59 · ∇W₁ = 0.12 (key ranges 0.54–0.64, 0.06–0.18)"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP6. σ′(0) and tanh′(0)?\n</summary>\n0.25 and 1.\n</details>",
-          "text": "P6. σ′(0) and tanh′(0)? 0.25 and 1."
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP7. Why is the gradient w.r.t. the bias equal to ∇a?\n</summary>\nBecause a = b + Wh, so ∂a/∂b = 1 for each unit.\n</details>",
-          "text": "P7. Why is the gradient w.r.t. the bias equal to ∇a? Because a = b + Wh, so ∂a/∂b = 1 for each unit."
+          "html": "<ol type=\"1\">\n<li>∇a₂ = ŷ − y = (0.0479, 0.2790 − 1, 0.6731) = (0.0479, −0.7210,\n0.6731).</li>\n<li>∇w₂₃₁ = (∇a₂)₃ × h = 0.6731 × 0.8808 = <strong>0.593</strong>.</li>\n<li>∇h = Σ (weight × output gradient) = (−1)(0.0479) + (1)(−0.7210) +\n(2)(0.6731) = −0.0479 − 0.7210 + 1.3462 = 0.5773.</li>\n<li>∇a₁ = 0.5773 × h(1 − h) = 0.5773 × 0.8808 × 0.1192 = 0.0606.</li>\n<li>∇W₁ = ∇a₁ × x = 0.0606 × 2 = <strong>0.121</strong>.</li>\n</ol>",
+          "text": "∇a₂ = ŷ − y = (0.0479, 0.2790 − 1, 0.6731) = (0.0479, −0.7210,\n0.6731). ∇w₂₃₁ = (∇a₂)₃ × h = 0.6731 × 0.8808 = 0.593 . ∇h = Σ (weight × output gradient) = (−1)(0.0479) + (1)(−0.7210) +\n(2)(0.6731) = −0.0479 − 0.7210 + 1.3462 = 0.5773. ∇a₁ = 0.5773 × h(1 − h) = 0.5773 × 0.8808 × 0.1192 = 0.0606. ∇W₁ = ∇a₁ × x = 0.0606 × 2 = 0.121 ."
         },
         {
           "type": "html",
-          "html": "<details>\n<summary>\nP8. Predicting the price of a house: output function and loss?\n</summary>\nLinear output with squared-error loss.\n</details>",
-          "text": "P8. Predicting the price of a house: output function and loss? Linear output with squared-error loss."
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q13 · 4 marks</p>\n<p><strong>Question:</strong> Same network as Q12 above (x = 1, y = 1,\nsigmoid output, cross-entropy). Compute ∂L/∂w₁ (2 decimals).</p>\n<p><strong>Answer:</strong> <strong>−0.02</strong> (key range −0.04 to\n0.00)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q13 · 4 marks Question: Same network as Q12 above (x = 1, y = 1,\nsigmoid output, cross-entropy). Compute ∂L/∂w₁ (2 decimals). Answer: −0.02 (key range −0.04 to\n0.00)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>For a sigmoid output with cross-entropy L = −[y ln ŷ + (1 − y) ln(1\n− ŷ)], ∂L/∂(output pre-activation) = ŷ − y = 0.8808 − 1 = −0.1192.</li>\n<li>Path to w₁: output → v₁ → h₁ → w₁.</li>\n<li>∂L/∂w₁ = (ŷ − y) × v₁ × h₁(1 − h₁) × x = −0.1192 × 1 × (0.7311 ×\n0.2689) × 1 = −0.1192 × 0.1966 = <strong>−0.0234</strong>.</li>\n</ol>",
+          "text": "For a sigmoid output with cross-entropy L = −[y ln ŷ + (1 − y) ln(1\n− ŷ)], ∂L/∂(output pre-activation) = ŷ − y = 0.8808 − 1 = −0.1192. Path to w₁: output → v₁ → h₁ → w₁. ∂L/∂w₁ = (ŷ − y) × v₁ × h₁(1 − h₁) × x = −0.1192 × 1 × (0.7311 ×\n0.2689) × 1 = −0.1192 × 0.1966 = −0.0234 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q70–71 · 4 + 4 marks</p>\n<p><strong>Question:</strong> Regression network: one input x → two\nsigmoid hidden neurons (weights w₁, w₂) → linear output (weights w₃,\nw₄). No biases. L = ½(ŷ − y)². Given w₁ = 1, w₂ = 1, w₃ = 8, w₄ = −4, x\n= −ln 3, y = 1 + 1/ln 3. Q70: ŷ? Q71: ∂L/∂w₁?</p>\n<figure>\n<img alt=\"Question figure (redrawn exactly from the paper)\" decoding=\"async\" height=\"960\" loading=\"lazy\" src=\"/images/deep-learning-pyq/2025t2-q70-network.webp?v=85b3bc71c87a\" width=\"1800\"/>\n<figcaption aria-hidden=\"true\">Question figure (redrawn exactly from the\npaper)</figcaption>\n</figure>\n<p><strong>Answer:</strong> <strong>Q70: ŷ = 1 · Q71: 1.5</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q70–71 · 4 + 4 marks Question: Regression network: one input x → two\nsigmoid hidden neurons (weights w₁, w₂) → linear output (weights w₃,\nw₄). No biases. L = ½(ŷ − y)². Given w₁ = 1, w₂ = 1, w₃ = 8, w₄ = −4, x\n= −ln 3, y = 1 + 1/ln 3. Q70: ŷ? Q71: ∂L/∂w₁? Question figure (redrawn exactly from the\npaper) Answer: Q70: ŷ = 1 · Q71: 1.5"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Both hidden units get w·x = −ln 3 → σ(−ln 3) = 1/(1 + e^(ln 3)) =\n1/(1 + 3) = <strong>0.25</strong>.</li>\n<li>ŷ = 8 × 0.25 + (−4) × 0.25 = 2 − 1 = <strong>1</strong>.</li>\n<li>ŷ − y = 1 − (1 + 1/ln 3) = −1/ln 3.</li>\n<li>∂L/∂w₁ = (ŷ − y) × w₃ × h₁(1 − h₁) × x = (−1/ln 3) × 8 × (0.25 ×\n0.75) × (−ln 3).</li>\n<li>The ln 3 terms cancel and the two minus signs make a plus: 8 ×\n0.1875 = <strong>1.5</strong>.</li>\n</ol>",
+          "text": "Both hidden units get w·x = −ln 3 → σ(−ln 3) = 1/(1 + e^(ln 3)) =\n1/(1 + 3) = 0.25 . ŷ = 8 × 0.25 + (−4) × 0.25 = 2 − 1 = 1 . ŷ − y = 1 − (1 + 1/ln 3) = −1/ln 3. ∂L/∂w₁ = (ŷ − y) × w₃ × h₁(1 − h₁) × x = (−1/ln 3) × 8 × (0.25 ×\n0.75) × (−ln 3). The ln 3 terms cancel and the two minus signs make a plus: 8 ×\n0.1875 = 1.5 ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q17 · 3 marks</p>\n<p><strong>Question:</strong> A 10-class softmax network with\ncross-entropy loss L = −log ŷ_ℓ. On an example with true class ℓ, ŷ_ℓ =\n0.99. What is ∂L/∂a_{L,ℓ}? (2 decimals)</p>\n<p><strong>Answer:</strong> <strong>−0.01</strong> (key range −0.03 to\n0.01)</p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q17 · 3 marks Question: A 10-class softmax network with\ncross-entropy loss L = −log ŷ_ℓ. On an example with true class ℓ, ŷ_ℓ =\n0.99. What is ∂L/∂a_{L,ℓ}? (2 decimals) Answer: −0.01 (key range −0.03 to\n0.01)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>∂L/∂a_{L,i} = ŷᵢ − 𝟙(i = ℓ).</li>\n<li>For i = ℓ: 0.99 − 1 = <strong>−0.01</strong> (tiny, because the\nnetwork is already almost right).</li>\n</ol>",
+          "text": "∂L/∂a_{L,i} = ŷᵢ − 𝟙(i = ℓ). For i = ℓ: 0.99 − 1 = −0.01 (tiny, because the\nnetwork is already almost right)."
+        },
+        {
+          "type": "heading",
+          "text": "Type 4 — Concept\nquestions on network design"
+        },
+        {
+          "type": "subheading",
+          "text": "Learn the method"
+        },
+        {
+          "type": "html",
+          "html": "<ul>\n<li><strong>Linear (identity) activations everywhere</strong> → the\nwhole network is one matrix: W₃W₂W₁x. No extra power from depth.</li>\n<li><strong>Identical neurons</strong> (same weights and bias) → same\noutput and same gradient → they stay identical (symmetry).</li>\n<li><strong>All-zero weights in a layer</strong> → no gradient flows\n<strong>below</strong> that layer, but that layer’s own weights still\nget gradients.</li>\n<li><strong>Regression</strong> → 1 linear output + squared error;\n<strong>classification</strong> → softmax + cross-entropy.</li>\n<li><strong>ReLU(αz) = α·ReLU(z) for α &gt; 0</strong> (scaling passes\nthrough ReLU), but not for sigmoid.</li>\n</ul>",
+          "text": "Linear (identity) activations everywhere → the\nwhole network is one matrix: W₃W₂W₁x. No extra power from depth. Identical neurons (same weights and bias) → same\noutput and same gradient → they stay identical (symmetry). All-zero weights in a layer → no gradient flows below that layer, but that layer’s own weights still\nget gradients. Regression → 1 linear output + squared error; classification → softmax + cross-entropy. ReLU(αz) = α·ReLU(z) for α > 0 (scaling passes\nthrough ReLU), but not for sigmoid."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T2 Quiz 1 · Q62 · 4 marks</p>\n<p><strong>Question:</strong> A regression network: 3 hidden layers of\n10 neurons each, input ∈ ℝ¹⁰, output ∈ ℝ, f: ℝ¹⁰ → ℝ, no biases, all\nactivations linear. True or false: “The network is just computing a\nlinear function of the input and can be represented as f(x) = wᵀx for\nsome w ∈ ℝ¹⁰.” (True · False · Insufficient data)</p>\n<p><strong>Answer:</strong> <strong>True</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T2 Quiz 1 · Q62 · 4 marks Question: A regression network: 3 hidden layers of\n10 neurons each, input ∈ ℝ¹⁰, output ∈ ℝ, f: ℝ¹⁰ → ℝ, no biases, all\nactivations linear. True or false: “The network is just computing a\nlinear function of the input and can be represented as f(x) = wᵀx for\nsome w ∈ ℝ¹⁰.” (True · False · Insufficient data) Answer: True"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>With linear activations, f(x) = W₄W₃W₂W₁x.</li>\n<li>W₄ is 1×10, the others 10×10 → the product is a single 1×10 matrix —\ncall it wᵀ.</li>\n<li>So f(x) = wᵀx → <strong>True</strong>.</li>\n</ol>",
+          "text": "With linear activations, f(x) = W₄W₃W₂W₁x. W₄ is 1×10, the others 10×10 → the product is a single 1×10 matrix —\ncall it wᵀ. So f(x) = wᵀx → True ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q16 · 3 marks</p>\n<p><strong>Question:</strong> A network: input (50) → 64 sigmoid → 32\nsigmoid → 10 softmax, cross-entropy. If you use the identity function\n(hᵢ = aᵢ) in both hidden layers but keep softmax at the output, which is\ntrue?</p>\n<ol type=\"a\">\n<li>It can learn non-linear boundaries because softmax is non-linear.\n(b) It is equivalent to a single softmax regression ŷ = O(W′x + b′) with\nW′ = W₃W₂W₁. (c) It will fail to train because gradients can’t flow\nthrough linear layers. (d) Training forces W₁, W₂, W₃ to become identity\nmatrices.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(b)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q16 · 3 marks Question: A network: input (50) → 64 sigmoid → 32\nsigmoid → 10 softmax, cross-entropy. If you use the identity function\n(hᵢ = aᵢ) in both hidden layers but keep softmax at the output, which is\ntrue? It can learn non-linear boundaries because softmax is non-linear.\n(b) It is equivalent to a single softmax regression ŷ = O(W′x + b′) with\nW′ = W₃W₂W₁. (c) It will fail to train because gradients can’t flow\nthrough linear layers. (d) Training forces W₁, W₂, W₃ to become identity\nmatrices. Answer: (b)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>a₃ = W₃(W₂(W₁x + b₁) + b₂) + b₃ = (W₃W₂W₁)x + (some vector) = W′x +\nb′.</li>\n<li>So the output is softmax(W′x + b′) — a single softmax regression →\n(b) ✔.</li>\n<li><ol type=\"a\">\n<li>Softmax only turns scores into probabilities; the class boundaries\nstay linear ✘. (c) Gradients flow fine through linear layers ✘. (d)\nNothing forces identity matrices ✘.</li>\n</ol></li>\n</ol>",
+          "text": "a₃ = W₃(W₂(W₁x + b₁) + b₂) + b₃ = (W₃W₂W₁)x + (some vector) = W′x +\nb′. So the output is softmax(W′x + b′) — a single softmax regression →\n(b) ✔. Softmax only turns scores into probabilities; the class boundaries\nstay linear ✘. (c) Gradients flow fine through linear layers ✘. (d)\nNothing forces identity matrices ✘."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q50 · 3 marks</p>\n<p><strong>Question:</strong> A network built for 10-class image\nclassification is adapted to predict the price of a car (regression).\nWhich changes are essential or standard?</p>\n<ol type=\"a\">\n<li>Make the final activation linear. (b) Use one output neuron. (c)\nChange the loss from categorical cross-entropy to mean squared error.\n(d) Use accuracy as the main metric. (e) Keep softmax to scale the\nprice.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(a), (b), (c)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q50 · 3 marks Question: A network built for 10-class image\nclassification is adapted to predict the price of a car (regression).\nWhich changes are essential or standard? Make the final activation linear. (b) Use one output neuron. (c)\nChange the loss from categorical cross-entropy to mean squared error.\n(d) Use accuracy as the main metric. (e) Keep softmax to scale the\nprice. Answer: (a), (b), (c)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>A price is one real number → <strong>one</strong> output neuron,\n<strong>linear</strong> output, <strong>squared error</strong> loss\n✔✔✔.</li>\n<li>Accuracy is for classes, not prices ✘. Softmax squashes outputs into\nprobabilities that add to 1 — useless for a price ✘.</li>\n</ol>",
+          "text": "A price is one real number → one output neuron, linear output, squared error loss\n✔✔✔. Accuracy is for classes, not prices ✘. Softmax squashes outputs into\nprobabilities that add to 1 — useless for a price ✘."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T2 Quiz 1 · Q8 · 3 marks</p>\n<p><strong>Question:</strong> A hidden layer has n sigmoid neurons, all\nwith identical weight vectors w and identical bias b. Which are\ntrue?</p>\n<ol type=\"a\">\n<li>After one gradient-descent step the neurons will have different\nweights. (b) For any input x, all n neurons produce the same output. (c)\nDuring backprop the gradients of all n neurons are always zero. (d) The\nlayer is functionally equivalent to a single neuron.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(b) and (d)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T2 Quiz 1 · Q8 · 3 marks Question: A hidden layer has n sigmoid neurons, all\nwith identical weight vectors w and identical bias b. Which are\ntrue? After one gradient-descent step the neurons will have different\nweights. (b) For any input x, all n neurons produce the same output. (c)\nDuring backprop the gradients of all n neurons are always zero. (d) The\nlayer is functionally equivalent to a single neuron. Answer: (b) and (d)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>Same w, same b, same input → same σ(wᵀx + b) → (b) ✔.</li>\n<li>They receive the same gradient, so they stay identical after every\nstep → (a) ✘ (if the next layer’s weights are also equal, which the\nquestion implies).</li>\n<li>The gradients are equal, not zero → (c) ✘.</li>\n<li>n copies of one function = one neuron → (d) ✔.</li>\n</ol>",
+          "text": "Same w, same b, same input → same σ(wᵀx + b) → (b) ✔. They receive the same gradient, so they stay identical after every\nstep → (a) ✘ (if the next layer’s weights are also equal, which the\nquestion implies). The gradients are equal, not zero → (c) ✘. n copies of one function = one neuron → (d) ✔."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2025 T3 Quiz 1 · Q61–62 · 2 + 2 marks</p>\n<p><strong>Question:</strong> One hidden layer (sigmoid) and a softmax\noutput. W₁ is random, the output weights W₂ are all zeros, biases zero,\ntrained with SGD. After one iteration: Q61 — is W₁ unchanged? Q62 — is\nW₂ unchanged?</p>\n<p><strong>Answer:</strong> <strong>Q61: Yes · Q62: No</strong></p>\n</blockquote>",
+          "text": "Asked in: 2025 T3 Quiz 1 · Q61–62 · 2 + 2 marks Question: One hidden layer (sigmoid) and a softmax\noutput. W₁ is random, the output weights W₂ are all zeros, biases zero,\ntrained with SGD. After one iteration: Q61 — is W₁ unchanged? Q62 — is\nW₂ unchanged? Answer: Q61: Yes · Q62: No"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>∇h₁ = W₂ᵀ ∇a₂ = 0, because W₂ = 0. So ∇a₁ = 0 and ∇W₁ = 0 →\n<strong>W₁ stays the same</strong>.</li>\n<li>∇W₂ = ∇a₂ h₁ᵀ. ∇a₂ = ŷ − y ≠ 0 (softmax of all-zero scores is\nuniform, not one-hot), and h₁ &gt; 0 (sigmoid) → ∇W₂ ≠ 0 → <strong>W₂\nchanges</strong>.</li>\n</ol>",
+          "text": "∇h₁ = W₂ᵀ ∇a₂ = 0, because W₂ = 0. So ∇a₁ = 0 and ∇W₁ = 0 → W₁ stays the same . ∇W₂ = ∇a₂ h₁ᵀ. ∇a₂ = ŷ − y ≠ 0 (softmax of all-zero scores is\nuniform, not one-hot), and h₁ > 0 (sigmoid) → ∇W₂ ≠ 0 → W₂\nchanges ."
+        },
+        {
+          "type": "html",
+          "html": "<blockquote class=\"dl-pyq\">\n<p><strong>Asked in:</strong> 2026 T1 Quiz 1 · Q3 · 4 marks</p>\n<p><strong>Question:</strong> Scalar input x, hidden layer h₁ⱼ = a(b₁ⱼ +\nw₁ⱼx) for j = 1, 2, 3, output y = b₂₁ + w₂₁h₁₁ + w₂₂h₁₂ + w₂₃h₁₃.\nMultiply b₁₁ and w₁₁ by a constant α ≠ 0 and divide w₂₁ by α. Which is\ncorrect?</p>\n<ol type=\"a\">\n<li>Output unchanged with ReLU for α &gt; 0, x ∈ ℝ. (b) Output unchanged\nwith ReLU for α &lt; 0. (c) Output unchanged with sigmoid for α &gt; 0.\n(d) The contribution w₂₁h₁₁ is unchanged for all x and all α ≠ 0.</li>\n</ol>\n<p><strong>Answer:</strong> <strong>(a)</strong></p>\n</blockquote>",
+          "text": "Asked in: 2026 T1 Quiz 1 · Q3 · 4 marks Question: Scalar input x, hidden layer h₁ⱼ = a(b₁ⱼ +\nw₁ⱼx) for j = 1, 2, 3, output y = b₂₁ + w₂₁h₁₁ + w₂₂h₁₂ + w₂₃h₁₃.\nMultiply b₁₁ and w₁₁ by a constant α ≠ 0 and divide w₂₁ by α. Which is\ncorrect? Output unchanged with ReLU for α > 0, x ∈ ℝ. (b) Output unchanged\nwith ReLU for α < 0. (c) Output unchanged with sigmoid for α > 0.\n(d) The contribution w₂₁h₁₁ is unchanged for all x and all α ≠ 0. Answer: (a)"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How to solve:</strong></p>",
+          "text": "How to solve:"
+        },
+        {
+          "type": "html",
+          "html": "<ol type=\"1\">\n<li>New contribution = (w₂₁/α) · a(α(b₁₁ + w₁₁x)).</li>\n<li>ReLU, α &gt; 0: ReLU(αz) = α·ReLU(z) → (w₂₁/α)·α·ReLU(z) =\nw₂₁ReLU(z) → <strong>unchanged</strong> ✔.</li>\n<li>ReLU, α &lt; 0: ReLU(αz) = |α|·ReLU(−z), a different function ✘\n(e.g. z = 1, α = −1: ReLU(−1) = 0 but ReLU(1) = 1).</li>\n<li>Sigmoid: σ(2z)/2 ≠ σ(z) (e.g. z = 0: σ(0)/2 = 0.25 but σ(0) = 0.5)\n✘. (d) fails for the same reasons ✘.</li>\n</ol>",
+          "text": "New contribution = (w₂₁/α) · a(α(b₁₁ + w₁₁x)). ReLU, α > 0: ReLU(αz) = α·ReLU(z) → (w₂₁/α)·α·ReLU(z) =\nw₂₁ReLU(z) → unchanged ✔. ReLU, α < 0: ReLU(αz) = |α|·ReLU(−z), a different function ✘\n(e.g. z = 1, α = −1: ReLU(−1) = 0 but ReLU(1) = 1). Sigmoid: σ(2z)/2 ≠ σ(z) (e.g. z = 0: σ(0)/2 = 0.25 but σ(0) = 0.5)\n✘. (d) fails for the same reasons ✘."
+        },
+        {
+          "type": "heading",
+          "text": "Practice set (new questions)"
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nP1. Input 8, one hidden layer of 6, output 3, with biases. Parameters?\n</summary>\n8×6 + 6 + 6×3 + 3 = 48 + 6 + 18 + 3 = 75.\n</details>",
+          "text": "P1. Input 8, one hidden layer of 6, output 3, with biases. Parameters? 8×6 + 6 + 6×3 + 3 = 48 + 6 + 18 + 3 = 75."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nP2. Softmax scores (a, 0) for 2 classes. Which a gives ŷ₁ = 0.8?\n</summary>\neᵃ/(eᵃ + 1) = 0.8 → eᵃ = 4 → a = ln 4 = 1.386.\n</details>",
+          "text": "P2. Softmax scores (a, 0) for 2 classes. Which a gives ŷ₁ = 0.8? eᵃ/(eᵃ + 1) = 0.8 → eᵃ = 4 → a = ln 4 = 1.386."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nP3. All weights equal, no biases, 4 classes. Cross-entropy?\n</summary>\nln 4 = 1.386.\n</details>",
+          "text": "P3. All weights equal, no biases, 4 classes. Cross-entropy? ln 4 = 1.386."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nP4. ∇a₂ = (0.3, −0.5, 0.2), h₁ = 0.6 (one hidden unit). ∇ of the weight\nto output 2?\n</summary>\n−0.5 × 0.6 = −0.3.\n</details>",
+          "text": "P4. ∇a₂ = (0.3, −0.5, 0.2), h₁ = 0.6 (one hidden unit). ∇ of the weight\nto output 2? −0.5 × 0.6 = −0.3."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nP5. In P4, the weights from h₁ to the outputs are (1, 2, −1). Find ∇h₁\nand ∇a₁ (sigmoid).\n</summary>\n∇h₁ = 0.3 − 1.0 − 0.2 = −0.9. ∇a₁ = −0.9 × 0.6 × 0.4 = −0.216.\n</details>",
+          "text": "P5. In P4, the weights from h₁ to the outputs are (1, 2, −1). Find ∇h₁\nand ∇a₁ (sigmoid). ∇h₁ = 0.3 − 1.0 − 0.2 = −0.9. ∇a₁ = −0.9 × 0.6 × 0.4 = −0.216."
+        },
+        {
+          "type": "html",
+          "html": "<details>\n<summary>\nP6. W₁ = 0, b₁ = 0, 4 sigmoid hidden units, linear output with all\nweights 10, bias 2. Output for any input?\n</summary>\n4 × 10 × 0.5 + 2 = 22.\n</details>",
+          "text": "P6. W₁ = 0, b₁ = 0, 4 sigmoid hidden units, linear output with all\nweights 10, bias 2. Output for any input? 4 × 10 × 0.5 + 2 = 22."
         }
       ]
     },
