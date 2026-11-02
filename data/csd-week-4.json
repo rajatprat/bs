@@ -551,7 +551,7 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img09-4to1-mux.webp?v=c45a46071986",
+          "src": "/images/csd-week-4/img09-4to1-mux.webp?v=24f811f4f72d",
           "width": 1536,
           "height": 1024,
           "alt": "4:1 multiplexer",
@@ -578,7 +578,7 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img10-mux-shannon.webp?v=cafde827d765",
+          "src": "/images/csd-week-4/img10-mux-shannon.webp?v=8f5a934deed0",
           "width": 1536,
           "height": 1024,
           "alt": "Splitting a function on one variable",
@@ -748,7 +748,7 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img11-delay-paths.webp?v=41bc41e558ef",
+          "src": "/images/csd-week-4/img11-delay-paths.webp?v=e2b8e79abc80",
           "width": 1536,
           "height": 1024,
           "alt": "Finding the longest path",
@@ -870,7 +870,7 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img12-read-mux-circuit.webp?v=d259245a7b00",
+          "src": "/images/csd-week-4/img12-read-mux-circuit.webp?v=b894d3ddbb2e",
           "width": 1536,
           "height": 1024,
           "alt": "Reading a MUX circuit",
@@ -1043,7 +1043,7 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img17-mux-gate-table.webp?v=e1827cfd5b5c",
+          "src": "/images/csd-week-4/img17-mux-gate-table.webp?v=a2b1fe11fd1a",
           "width": 1536,
           "height": 1024,
           "alt": "Gates made from 2:1 MUXes",
@@ -1286,7 +1286,7 @@
         },
         {
           "type": "image",
-          "src": "/images/csd-week-4/img18-week4-map.webp?v=2a82515fcdda",
+          "src": "/images/csd-week-4/img18-week4-map.webp?v=1043fbec3416",
           "width": 1536,
           "height": 1024,
           "alt": "Week 4 at a glance",

@@ -96,10 +96,10 @@
     "height": 1024
   },
   "/images/csd-week-4/img18-week4-map.webp": {
-    "source": "A",
-    "pngSha256": "24ade41736505282972b739a8024e461a372be5107423437c135a62c93de4b76",
-    "webpSha256": "2a82515fcdda76bd5e5eba7650b25aa154ab4a9fdd5b119f07248b064a5e2151",
-    "src": "/images/csd-week-4/img18-week4-map.webp?v=2a82515fcdda",
+    "source": "csd-week4-last-6.zip",
+    "pngSha256": "9d1ad450a6261ae5b05d10ed2ac37694dfa5463baea6583a5b088101c8faef07",
+    "webpSha256": "1043fbec3416f29822cb74d01addda33d455a2382885132e062ad237c50e3aa1",
+    "src": "/images/csd-week-4/img18-week4-map.webp?v=1043fbec3416",
     "width": 1536,
     "height": 1024
   },
@@ -128,10 +128,10 @@
     "height": 1024
   },
   "/images/csd-week-4/img12-read-mux-circuit.webp": {
-    "source": "A",
-    "pngSha256": "aac744939aecf1809f90d14aa50efaffc16f74007a12fb12711399dfea165994",
-    "webpSha256": "d259245a7b00db792dc03e2fdb137c49eb46191a94062851928a8b58adcfdc4b",
-    "src": "/images/csd-week-4/img12-read-mux-circuit.webp?v=d259245a7b00",
+    "source": "csd-week4-last-6.zip",
+    "pngSha256": "1e4b511ed98cf0d46973a7e79f1bcafa7c73cd524f00d76d38c8059ebb4ca9d9",
+    "webpSha256": "b894d3ddbb2eced828ec93fe96c5fb9973c372e55df6e6b8f2da556b7824603e",
+    "src": "/images/csd-week-4/img12-read-mux-circuit.webp?v=b894d3ddbb2e",
     "width": 1536,
     "height": 1024
   },
@@ -144,18 +144,18 @@
     "height": 1024
   },
   "/images/csd-week-4/img09-4to1-mux.webp": {
-    "source": "A",
-    "pngSha256": "667f53a6f38fc3774944ec84eda372749708be1cba172bd03f3e208cb47b59b5",
-    "webpSha256": "c45a4607198628ce20be10d5160c37c0c698244ca5019e510791ab8d842eda39",
-    "src": "/images/csd-week-4/img09-4to1-mux.webp?v=c45a46071986",
+    "source": "csd-week4-last-6.zip",
+    "pngSha256": "e08983a463ec3da1fb36a6e5f0830393df641ecd34eb56af3d6d050b8c7d5df4",
+    "webpSha256": "24f811f4f72d43f0a5539aaf59552e13e544b435ab7a6208eb8f333e0511ebbd",
+    "src": "/images/csd-week-4/img09-4to1-mux.webp?v=24f811f4f72d",
     "width": 1536,
     "height": 1024
   },
   "/images/csd-week-4/img10-mux-shannon.webp": {
-    "source": "A",
-    "pngSha256": "7baadb698f053e9dce988c1ea15f7a2a7fbde2628f69560bc9e7d6cf6aa54765",
-    "webpSha256": "cafde827d765ce5de84bb1eff71629422b37544facfdafb8ee99a09a7841f6aa",
-    "src": "/images/csd-week-4/img10-mux-shannon.webp?v=cafde827d765",
+    "source": "csd-week4-last-6.zip",
+    "pngSha256": "89bb3b971747dc30d48acd40dc2256e8ee30875c2040d4056d73838ef848cb14",
+    "webpSha256": "8f5a934deed0827138a2e319b490a179df7787e30f583ba59dcc10435e170035",
+    "src": "/images/csd-week-4/img10-mux-shannon.webp?v=8f5a934deed0",
     "width": 1536,
     "height": 1024
   },
@@ -168,10 +168,10 @@
     "height": 1024
   },
   "/images/csd-week-4/img11-delay-paths.webp": {
-    "source": "A",
-    "pngSha256": "341bc4fc4f33e9927436f0c3aa27be5b0e6572315033322b1d77ebacdcfa1bf0",
-    "webpSha256": "41bc41e558efe1a88450489d5aebfa1354b8f3458bb6bbc8287dfe5b0f59bd77",
-    "src": "/images/csd-week-4/img11-delay-paths.webp?v=41bc41e558ef",
+    "source": "csd-week4-last-6.zip",
+    "pngSha256": "bef6ec507b448b2d9a2e4956bbd4166ad8fbfee9dcbd22aa428e74582a92ced4",
+    "webpSha256": "e2b8e79abc80b573ca0af451d00babffc24c320286bab631803c669f6cf11b3e",
+    "src": "/images/csd-week-4/img11-delay-paths.webp?v=e2b8e79abc80",
     "width": 1536,
     "height": 1024
   },
@@ -184,10 +184,10 @@
     "height": 1024
   },
   "/images/csd-week-4/img17-mux-gate-table.webp": {
-    "source": "A",
-    "pngSha256": "a9714f3457e8a187dbc8493b36551ed8ad73b4ea3bc4341a66fd1888ddeb8e3f",
-    "webpSha256": "e1827cfd5b5c9ad055108ebcf5a4e30e7ba38c83522ff104edc96e6e5996d832",
-    "src": "/images/csd-week-4/img17-mux-gate-table.webp?v=e1827cfd5b5c",
+    "source": "csd-week4-last-6.zip",
+    "pngSha256": "1590e7ba776280fe3a944eecb60a3c1b10e42c9c6f7e25c0526e1ca913551c18",
+    "webpSha256": "a2b1fe11fd1a25c673d7cde0e2ce0af388e0c8554474ddb49c4019f5693a3a92",
+    "src": "/images/csd-week-4/img17-mux-gate-table.webp?v=a2b1fe11fd1a",
     "width": 1536,
     "height": 1024
   },
