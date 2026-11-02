@@ -34,9 +34,4 @@
 
 .deep-learning-reading-layout .lesson{min-width:0;overflow-wrap:anywhere}.deep-learning-reading-layout .table-wrap{max-width:100%;overflow-x:auto}.deep-learning-reading-layout pre,.deep-learning-reading-layout math{max-width:100%;overflow-x:auto}.deep-learning-reading-layout .lesson-pagination a{min-width:0;overflow-wrap:anywhere}
 
-.deep-learning-reading-layout .dl-equation{display:block;max-width:100%;min-width:0;margin:14px 0;padding:16px 18px;border:1px solid #dce6e2;border-radius:10px;background:#f5f8f6;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;color:#173d39;text-indent:0;font-size:1rem;line-height:1.5;white-space:normal}
-.deep-learning-reading-layout .dl-equation .katex-display{margin:0;text-align:left;overflow:visible}
-.deep-learning-reading-layout .dl-equation .katex{font-size:1.12em;text-indent:0}
-.deep-learning-reading-layout .dl-equation .katex-html{white-space:nowrap}
-.deep-learning-reading-layout td .dl-equation,.deep-learning-reading-layout th .dl-equation{margin:4px 0;padding:10px 12px;font-weight:400}
-@media(max-width:600px){.deep-learning-reading-layout .dl-equation{padding:13px 12px;font-size:.94rem}.deep-learning-reading-layout .table-wrap{max-width:100%;overflow-x:auto}}
+.deep-learning-reading-layout .lesson-body{font-family:inherit}.deep-learning-reading-layout pre{white-space:pre;overflow-x:auto;max-width:100%;padding:20px;border:1px solid #dce6e2;border-radius:10px;background:#f5f8f6;font-size:.9rem;line-height:1.65}.deep-learning-reading-layout pre code{white-space:pre}
