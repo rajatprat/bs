@@ -1,7 +1,7 @@
 const escape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 function inline(value) { return escape(value).replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\*([^*]+)\*/g, '<em>$1</em>').replace(/\[([^\]]+)\]\(([^ )]+)\)/g, '<a href="$2">$1</a>'); }
 const Html = ({as: Tag='p', value, className}) => <Tag className={className} dangerouslySetInnerHTML={{__html:inline(value)}}/>;
-const cells = line => line.trim().replace(/^\||\|$/g, '').split('|').map(cell => cell.trim());
+const cells = line => line.trim().replace(/^\||\|$/g, '').replace(/\\\|/g, '§PIPE§').split('|').map(cell => cell.trim().replace(/§PIPE§/g, '|'));
 export default function PDSAMarkdown({source}) {
   const lines = source.replace(/\r/g, '').split('\n'); const out=[]; let i=0;
   while (i < lines.length) { const line=lines[i];

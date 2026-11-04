@@ -7,6 +7,10 @@
     "title": "PDSA Week 1 Notes | IIT Madras BS",
     "description": "PDSA Week 1: Python recap, Jupyter notebooks, GCD, primes, exceptions, classes and why efficient algorithms matter."
   },
+  "/pdsa/week-2/": {
+    "title": "PDSA Week 2 Notes | IIT Madras BS",
+    "description": "PDSA Week 2: algorithm analysis, Big O, Ω and Θ, searching, sorting and merge sort for IIT Madras BS students."
+  },
   "/": {
     "title": "IIT Madras BS Notes: Subjects, Lessons & Revision",
     "description": "Student-made IIT Madras BS notes: Computer System Design, SPG, Software Engineering, Algorithms in Data Science, Generative AI mathematics and Statistics."
