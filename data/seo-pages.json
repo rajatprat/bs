@@ -11,6 +11,14 @@
     "title": "PDSA Week 2 Notes | IIT Madras BS",
     "description": "PDSA Week 2: algorithm analysis, Big O, Ω and Θ, searching, sorting and merge sort for IIT Madras BS students."
   },
+  "/pdsa/week-3/": {
+    "title": "PDSA Week 3 Notes | IIT Madras BS",
+    "description": "PDSA Week 3: quicksort, sorting choices, linked lists, arrays, Python lists and hash tables."
+  },
+  "/pdsa/week-4/": {
+    "title": "PDSA Week 4 Notes | IIT Madras BS",
+    "description": "PDSA Week 4: graphs, BFS, DFS, directed acyclic graphs, topological sorting and longest paths."
+  },
   "/": {
     "title": "IIT Madras BS Notes: Subjects, Lessons & Revision",
     "description": "Student-made IIT Madras BS notes: Computer System Design, SPG, Software Engineering, Algorithms in Data Science, Generative AI mathematics and Statistics."
