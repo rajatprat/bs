@@ -52,3 +52,11 @@
 .dl-reading-hint{display:none}@media(max-width:650px){.dl-course-content p.dl-reading-hint{display:block;font-size:.8rem;color:#61717b;margin:12px 0 20px}.dl-inline-math::-webkit-scrollbar{height:5px}.dl-inline-math::-webkit-scrollbar-thumb{background:#bdcdc5;border-radius:5px}}
 
 .dl-number-example{margin:26px 0 38px;padding:24px;border:1px solid #cddfd6;border-radius:14px;background:#f2f8f4;min-width:0}.dl-number-example h2{font-size:1.4rem;line-height:1.35;margin:9px 0 16px}.dl-number-example p{font-size:1rem;line-height:1.75}.dl-number-example ol{padding-left:24px}.dl-number-example li{padding-left:7px;margin:20px 0}.dl-number-example li::marker{font-weight:700;color:#006d67}.dl-number-formula{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:12px 15px;background:white;border:1px solid #dae7df;border-radius:8px;line-height:1.7}.dl-number-formula .katex{font-size:1.12em}.dl-number-formula .katex-html{white-space:nowrap}.dl-number-meaning{border-top:1px solid #d3e3da;padding-top:18px}.dl-number-example details{margin:18px 0 0;padding:14px 16px;border:1px solid #cedfd5;border-radius:8px;background:white}.dl-number-example summary{cursor:pointer;font-size:.94rem;line-height:1.6;font-weight:600}.dl-number-example details p{margin-bottom:0}@media(max-width:650px){.dl-number-example{padding:17px}.dl-number-example h2{font-size:1.25rem}.dl-number-example ol{padding-left:20px}.dl-number-example li{padding-left:2px}.dl-number-formula{padding:12px 10px}.dl-number-formula .katex{font-size:1em}}
+
+/* Consistent overlays for all course images, including imported HTML. */
+.watermarked-media{position:relative;isolation:isolate;display:block;width:fit-content;max-width:100%;margin-inline:auto;overflow:hidden;line-height:0}
+.watermarked-media img{display:block;max-width:100%;height:auto;margin:0!important}
+.watermarked-media::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:url('/images/brand/bsnotes-logo.png');background-repeat:repeat;background-position:center;background-size:180px 60px;opacity:.13;filter:grayscale(1);user-select:none}
+.watermarked-media .watermarked-media::after{display:none}
+@media(max-width:600px){.watermarked-media::after{background-size:135px 45px}}
+@media print{.watermarked-media::after{-webkit-print-color-adjust:exact;print-color-adjust:exact}}

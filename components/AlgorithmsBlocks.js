@@ -1,3 +1,4 @@
+import {watermarkImages} from '../lib/image-html';
 import katex from 'katex';
 import {algorithmSegments} from '../lib/algorithms-math';
 import { Fragment } from 'react';
@@ -11,7 +12,7 @@ function FormulaText({text='', display=false}) {
 }
 export default function AlgorithmsBlocks({ blocks, additions = [] }) { let questionNumber=0; return <div className="lesson-body algorithms-lesson">{blocks.map((b,i) => { const contentNode = (() => {
 if(b.type==='equation') return <div className="math-equation algorithms-equation" key={i} dangerouslySetInnerHTML={{__html:katex.renderToString(b.tex,{displayMode:true,throwOnError:true,trust:false,output:'htmlAndMathml'})}}/>;
-if(b.type==='html') return <div className="algorithms-html" key={i} dangerouslySetInnerHTML={{__html:b.html}}/>;
+if(b.type==='html') return <div className="algorithms-html" key={i} dangerouslySetInnerHTML={{__html:watermarkImages(b.html)}}/>;
 if(b.type==='code') return <pre key={i} className="lesson-code" tabIndex={0}><code>{b.text}</code></pre>;
 if(b.type==='image') return <Diagram key={i} block={b}/>;
 if(b.type==='table' && b.rows.every(r=>r.length===1)) return <div key={i}>{b.rows.map((r,j)=><p className="note" key={j}>{<FormulaText text={r[0]}/>}</p>)}</div>;

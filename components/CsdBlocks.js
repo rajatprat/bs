@@ -1,3 +1,4 @@
+import {watermarkImages} from '../lib/image-html';
 import Diagram from './Diagram';
 import CsdPyqContent from './CsdPyqContent';
 import {headingId} from '../lib/course';
@@ -11,7 +12,7 @@ export default function CsdBlocks({blocks}) {
     else if(['heading','subheading'].includes(block.type)){
       const Heading=block.type==='heading'?'h2':'h3';const id=headingId(block,i);
       content=<>{/^Learn the method/i.test(block.text)&&<span className="csd-method-label">Method</span>}<Heading id={id} className="anchored-heading"><a href={'#'+id}>{block.text}<span className="heading-link" aria-hidden="true"> #</span></a></Heading></>;
-    }else content=<div dangerouslySetInnerHTML={{__html:renderBooleanHtml(block.html||'')}}/>;
+    }else content=<div dangerouslySetInnerHTML={{__html:watermarkImages(renderBooleanHtml(block.html||''))}}/>;
     return {type:'content',content};
   });
   return <CsdPyqContent items={items}/>;
