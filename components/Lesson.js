@@ -10,6 +10,8 @@ import { additionsFor } from '../lib/review-additions';
 import Blocks from './Blocks';
 import AlgorithmsBlocks from './AlgorithmsBlocks';
 import MathLesson from './MathLesson';
+import ProcedurePlayground,{supportedProcedureKinds} from './ProcedurePlayground';
+import {playgroundFor} from '../lib/playground-registry';
 import { headings, isResource, studySections, resources, courseWeeks } from '../lib/course';
 function SectionLinks({ sections, week, current, base, resource = false }) {
   return <nav aria-label={resource ? `Week ${week} revision and practice` : `Week ${week} study sections`}>{sections.map((s, i) => <a key={s.slug} aria-current={s.slug === current ? 'page' : undefined} className={s.slug === current ? 'active' : ''} href={base+s.slug+'/'}><span>{resource ? '↗' : String(i + 1).padStart(2, '0')}</span>{s.title}</a>)}</nav>;
@@ -20,6 +22,7 @@ export default function Lesson({ data, slug }) {
   const nextWeek = weeks[weeks.indexOf(week)+1];
   const subjectPath = '/' + (data.subjectSlug || 'software-engineering') + '/';
   const section = data.sections.find(s => s.slug === slug);
+  const playground=playgroundFor(data.subjectSlug==='computer-system-design'?'csd':data.subjectSlug==='deep-learning'?'deepLearning':data.subjectSlug,week,slug);
   const studies = studySections(data), extras = resources(data);
   const sequence = isResource(section) ? extras : studies;
   const index = sequence.findIndex(s => s.slug === slug);
@@ -41,7 +44,7 @@ export default function Lesson({ data, slug }) {
     <div className="eyebrow">{isResource(section) ? 'REVISION AND PRACTICE' : `SECTION ${String(index + 1).padStart(2, '0')} / ${studies.length}`}</div><h1>{section.title}</h1><StudyTools title={section.title} subject={data.subject} week={week} minutes={minutes} resource={!!isResource(section)}/>
     {contents.length > 0 && <details className="lesson-contents" open={contents.length <= 6 && data.subjectSlug !== 'algorithms-in-data-science'}><summary>On this page <span>{contents.length+(data.subjectSlug==='deep-learning'&&!isResource(section)?1:0)} headings</span></summary><nav aria-label="On this page"><ol>{data.subjectSlug==='deep-learning' && !isResource(section) && <li><a href="#dl-number-example-title">Start with a numerical example</a></li>}{contents.map(item => <li key={item.id} className={item.nested ? 'nested' : ''}><a href={`#${item.id}`}>{item.text}</a></li>)}</ol></nav></details>}
     {data.subjectSlug === 'deep-learning' && <DeepLearningNumberExample route={base+slug+'/'}/>}
-    {data.subjectSlug === 'computer-system-design' ? <CsdBlocks blocks={section.blocks}/> : data.subjectSlug === 'deep-learning' ? <DeepLearningBlocks blocks={section.blocks} route={base+slug+'/'}/> : data.subjectSlug === 'spg' ? <SpgBlocks blocks={section.blocks}/> : data.subjectSlug === 'statistics' ? <StatisticsBlocks blocks={section.blocks}/> : data.subjectSlug === 'algorithms-in-data-science' ? <AlgorithmsBlocks blocks={section.blocks}/> : data.subjectSlug === 'mathematical-foundation-of-generative-ai' ? <MathLesson blocks={section.blocks}/> : <Blocks blocks={section.blocks} additions={data.subjectSlug ? [] : additionsFor(week,slug,section.blocks)}/>}
+    {data.subjectSlug === 'computer-system-design' ? <CsdBlocks blocks={section.blocks}/> : data.subjectSlug === 'deep-learning' ? <DeepLearningBlocks blocks={section.blocks} route={base+slug+'/'}/> : data.subjectSlug === 'spg' ? <SpgBlocks blocks={section.blocks}/> : data.subjectSlug === 'statistics' ? <StatisticsBlocks blocks={section.blocks}/> : data.subjectSlug === 'algorithms-in-data-science' ? <AlgorithmsBlocks blocks={section.blocks}/> : data.subjectSlug === 'mathematical-foundation-of-generative-ai' ? <MathLesson blocks={section.blocks}/> : <Blocks blocks={section.blocks} additions={data.subjectSlug ? [] : additionsFor(week,slug,section.blocks)}/>} {playground&&supportedProcedureKinds.includes(playground.kind)&&<ProcedurePlayground kind={playground.kind}/>}
     <StudyTools title={section.title} subject={data.subject} week={week} minutes={minutes} resource={!!isResource(section)} completionOnly/>
     <a className="back-top" href="#main">Back to top ↑</a>
     <nav className="lesson-pagination" aria-label="Previous and next sections">
