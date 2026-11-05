@@ -1,0 +1,1100 @@
+{
+  "subject": "Statistics 1 · Foundation",
+  "subjectSlug": "stats-1",
+  "week": 2,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/stats-1/week-2/",
+  "title": "Describing categorical data",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Start from everyday examples. Read the diagrams, work through the steps, and try the questions before revealing the answers."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Frequency tables: count each category",
+      "slug": "frequency-tables",
+      "source": "Lecture 2.1.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A frequency is a count. A frequency distribution lists the different categories and how many observations belong to each. It turns a long list of labels into a short, useful summary."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/frequency.svg",
+          "alt": "The lecture’s first list becomes counts A = 4, B = 2, C = 2, D = 2.",
+          "caption": "The lecture’s first list becomes counts A = 4, B = 2, C = 2, D = 2.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Build a table one observation at a time"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the list A, A, B, C, A, D, A, B, D, C. First list the distinct categories A, B, C and D. Next read each observation once and add a tally in the matching row. Finally count the tallies."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Category",
+              "Tally",
+              "Frequency"
+            ],
+            [
+              "A",
+              "||||",
+              "4"
+            ],
+            [
+              "B",
+              "||",
+              "2"
+            ],
+            [
+              "C",
+              "||",
+              "2"
+            ],
+            [
+              "D",
+              "||",
+              "2"
+            ],
+            [
+              "Total",
+              "",
+              "10"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The total number of observations is often written n. Here n = 10, and 4 + 2 + 2 + 2 = 10. For this single-response variable, each case belongs to exactly one category. Categories should not overlap or leave observed values out."
+        },
+        {
+          "type": "heading",
+          "text": "The lecture’s practice lists, counted carefully"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "List",
+              "A",
+              "B",
+              "C",
+              "D",
+              "Total"
+            ],
+            [
+              "1: A,A,B,C,A,D,A,B,D,C",
+              "4",
+              "2",
+              "2",
+              "2",
+              "10"
+            ],
+            [
+              "2: list 1 followed by A,B,C,D,A",
+              "6",
+              "3",
+              "3",
+              "3",
+              "15"
+            ],
+            [
+              "3: A,B,B,C,A,D,B,B,D,C,A,B,C,D,B",
+              "3",
+              "6",
+              "3",
+              "3",
+              "15"
+            ],
+            [
+              "4: list 2 followed by C,D,D",
+              "6",
+              "3",
+              "4",
+              "5",
+              "18"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Source clarification: the opening exercise slide in Lecture 2.1 prints a different third list, A,A,B,C,A,A,B,B,D,C,A,B,C,D,B. That list has A = 5, B = 5, C = 3, D = 2. The later worked table uses the third list shown above, with counts 3,6,3,3. Always count the actual list you are given."
+        },
+        {
+          "type": "heading",
+          "text": "A spreadsheet method"
+        },
+        {
+          "type": "paragraph",
+          "text": "A pivot table can do the same counting: use the category as the row field and count the category entries as the value. Check that the result counts text entries rather than trying to sum them, and check whether blanks were included. The exact menu position depends on the spreadsheet app."
+        },
+        {
+          "type": "check",
+          "question": "Count Red, Blue, Red, Green, Blue, Red.",
+          "answer": "Red = 3, Blue = 2, Green = 1; total = 6.",
+          "text": "Count Red, Blue, Red, Green, Blue, Red. Answer: Red = 3, Blue = 2, Green = 1; total = 6."
+        },
+        {
+          "type": "check",
+          "question": "A table for 18 single-response cases has counts 6,3,4,4. Is it complete?",
+          "answer": "No. The counts sum to 17. Recheck for an omitted or misclassified observation.",
+          "text": "A table for 18 single-response cases has counts 6,3,4,4. Is it complete? Answer: No. The counts sum to 17. Recheck for an omitted or misclassified observation."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "Make a frequency table for Bus,Walk,Bus,Cycle,Walk,Bus,Cycle,Bus.",
+          "answer": "Bus = 4, Walk = 2, Cycle = 2. Total = 8. Each response belongs to one transport category and is counted once.",
+          "text": "Make a frequency table for Bus,Walk,Bus,Cycle,Walk,Bus,Cycle,Bus. Answer: Bus = 4, Walk = 2, Cycle = 2. Total = 8. Each response belongs to one transport category and is counted once."
+        },
+        {
+          "type": "check",
+          "question": "A list contains 4 cats, 3 dogs and 2 birds. How many observations should the frequency total show?",
+          "answer": "4 + 3 + 2 = 9. If the total is different, check for a missed or duplicated observation.",
+          "text": "A list contains 4 cats, 3 dogs and 2 birds. How many observations should the frequency total show? Answer: 4 + 3 + 2 = 9. If the total is different, check for a missed or duplicated observation."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.1.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Relative frequency: compare fairly",
+      "slug": "relative-frequency",
+      "source": "Lecture 2.1.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Raw counts can be hard to compare when groups have different sizes. Relative frequency tells us what fraction of a group belongs to a category."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/frequency.svg",
+          "alt": "Divide each count by the number of observations to get a share.",
+          "caption": "Divide each count by the number of observations to get a share.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "One idea, three ways to write it"
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Relative frequency} = \\frac{\\text{category frequency}}{\\text{total frequency}} = \\frac{f}{n}"
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Percentage} = \\frac{f}{n}\\times 100\\%"
+        },
+        {
+          "type": "paragraph",
+          "text": "For A in the first lecture example, f = 4 and n = 10. Its relative frequency is 4/10 = 0.4, its proportion is 0.4, and its percentage is 40%. The remaining three categories each have 2/10 = 0.2 = 20%."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Category",
+              "List 1: n = 10",
+              "List 2: n = 15",
+              "List 3: n = 15",
+              "List 4: n = 18"
+            ],
+            [
+              "A",
+              "4/10 = 0.4",
+              "6/15 = 0.4",
+              "3/15 = 0.2",
+              "6/18 ≈ 0.3333"
+            ],
+            [
+              "B",
+              "2/10 = 0.2",
+              "3/15 = 0.2",
+              "6/15 = 0.4",
+              "3/18 ≈ 0.1667"
+            ],
+            [
+              "C",
+              "2/10 = 0.2",
+              "3/15 = 0.2",
+              "3/15 = 0.2",
+              "4/18 ≈ 0.2222"
+            ],
+            [
+              "D",
+              "2/10 = 0.2",
+              "3/15 = 0.2",
+              "3/15 = 0.2",
+              "5/18 ≈ 0.2778"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Why the denominator matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lists 1 and 2 have different counts but identical proportions: A is 40% in both. As another example, 20 bus users among 50 students is 40%, whereas 30 among 100 is 30%. The second group has more bus users but a smaller share."
+        },
+        {
+          "type": "heading",
+          "text": "Checks that catch mistakes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Each relative frequency lies between 0 and 1. For a complete set of non-overlapping categories, exact relative frequencies sum to 1 and exact percentages sum to 100%. Use the total for the group you are actually describing: after filtering, the denominator may change."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep fractions or full precision while calculating and round only for display. Three equal categories each have share 1/3. Displaying each as 33.3% gives 99.9%; this small discrepancy is rounding, not a missing observation."
+        },
+        {
+          "type": "check",
+          "question": "A category has 12 of 40 responses. Find its relative frequency and percentage.",
+          "answer": "12/40 = 0.3 = 30%.",
+          "text": "A category has 12 of 40 responses. Find its relative frequency and percentage. Answer: 12/40 = 0.3 = 30%."
+        },
+        {
+          "type": "check",
+          "question": "Group X has 8 out of 20 choosing A. Group Y has 15 out of 50 choosing A. Which has a larger share?",
+          "answer": "X: 8/20 = 40%. Y: 15/50 = 30%. X has the larger share even though Y has the larger count.",
+          "text": "Group X has 8 out of 20 choosing A. Group Y has 15 out of 50 choosing A. Which has a larger share? Answer: X: 8/20 = 40%. Y: 15/50 = 30%. X has the larger share even though Y has the larger count."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "In a class of 25 students, 10 choose football. Find the relative frequency and percentage.",
+          "answer": "Relative frequency = 10/25 = 0.4. Percentage = 0.4×100% = 40%. Use the class total 25 as the denominator.",
+          "text": "In a class of 25 students, 10 choose football. Find the relative frequency and percentage. Answer: Relative frequency = 10/25 = 0.4. Percentage = 0.4×100% = 40%. Use the class total 25 as the denominator."
+        },
+        {
+          "type": "check",
+          "question": "A survey has 100 responses, but after filtering one class only 20 remain; 5 choose A. Find A’s share within that class.",
+          "answer": "5/20 = 0.25 = 25%. The question asks within the filtered class, so divide by 20, not by the original 100.",
+          "text": "A survey has 100 responses, but after filtering one class only 20 remain; 5 choose A. Find A’s share within that class. Answer: 5/20 = 0.25 = 25%. The question asks within the filtered class, so divide by 20, not by the original 100."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.1.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Pie charts: show parts of one whole",
+      "slug": "pie-charts",
+      "source": "Lecture 2.2.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A pie chart is a circle split into slices. Each slice has an area proportional to its category’s share. The entire circle represents the whole group, or 100%."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/pie.svg",
+          "alt": "A 40% share uses 144 degrees; each 20% share uses 72 degrees.",
+          "caption": "A 40% share uses 144 degrees; each 20% share uses 72 degrees.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "From a table to a circle"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with a relative-frequency table. Multiply each share by 360° to get its slice angle. Draw the slices using a protractor, then label each category and its share."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Slice angle} = \\frac{f}{n}\\times 360^\\circ"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Category",
+              "Frequency",
+              "Share",
+              "Percent",
+              "Angle"
+            ],
+            [
+              "A",
+              "4",
+              "0.4",
+              "40%",
+              "144°"
+            ],
+            [
+              "B",
+              "2",
+              "0.2",
+              "20%",
+              "72°"
+            ],
+            [
+              "C",
+              "2",
+              "0.2",
+              "20%",
+              "72°"
+            ],
+            [
+              "D",
+              "2",
+              "0.2",
+              "20%",
+              "72°"
+            ],
+            [
+              "Total",
+              "10",
+              "1",
+              "100%",
+              "360°"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "With counts 6,3,3,3 out of 15, the slices are exactly the same: 40%,20%,20%,20%. A pie shows proportions, so different group sizes can produce the same pie."
+        },
+        {
+          "type": "heading",
+          "text": "Read the slice, not just its color"
+        },
+        {
+          "type": "paragraph",
+          "text": "Half the circle is 50% or 180°. A share greater than 50% occupies more than half. In this example A is the largest category but is not a majority: 40% is less than 50%."
+        },
+        {
+          "type": "heading",
+          "text": "When a pie chart helps"
+        },
+        {
+          "type": "paragraph",
+          "text": "A pie works best for a few categories that form one whole, especially when showing that a category is more than half. Comparing nearly equal slices is difficult; a bar chart usually makes small differences clearer. Avoid a pie for overlapping multiple-response categories because their percentages may exceed 100%."
+        },
+        {
+          "type": "heading",
+          "text": "Make it in a spreadsheet"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prepare category and count columns. Select the summary table without its Total row, insert a chart, and choose a pie chart. Label slices with category and percentage. Check that the chart represents the same group as the table and that no category was omitted."
+        },
+        {
+          "type": "check",
+          "question": "A category has 9 of 30 observations. What angle should its slice have?",
+          "answer": "9/30 = 0.3, so the slice is 0.3 × 360° = 108°.",
+          "text": "A category has 9 of 30 observations. What angle should its slice have? Answer: 9/30 = 0.3, so the slice is 0.3 × 360° = 108°."
+        },
+        {
+          "type": "check",
+          "question": "The largest category is 45%. Is it a majority?",
+          "answer": "No. It is the largest share, but a majority requires more than 50%.",
+          "text": "The largest category is 45%. Is it a majority? Answer: No. It is the largest share, but a majority requires more than 50%."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "A category is 25% of a group. What angle should its pie slice have?",
+          "answer": "25% = 0.25. Angle = 0.25×360° = 90°, one quarter of a circle.",
+          "text": "A category is 25% of a group. What angle should its pie slice have? Answer: 25% = 0.25. Angle = 0.25×360° = 90°, one quarter of a circle."
+        },
+        {
+          "type": "check",
+          "question": "A pie slice measures 180°. What share and percentage does it represent?",
+          "answer": "180/360 = 0.5 = 50%. It represents half the whole, not more than half.",
+          "text": "A pie slice measures 180°. What share and percentage does it represent? Answer: 180/360 = 0.5 = 50%. It represents half the whole, not more than half."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.2.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Bar charts, Pareto charts and category order",
+      "slug": "bar-and-pareto-charts",
+      "source": "Lecture 2.2.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A bar chart compares categories using bar lengths. You can display counts, relative frequencies, or percentages. Tell the reader which one the axis uses."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/bar.svg",
+          "alt": "Separate, equal-width bars show category counts from a zero baseline.",
+          "caption": "Separate, equal-width bars show category counts from a zero baseline.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Build a bar chart"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with the frequency table. Put category names on one axis and frequency on the other. Use equal-width bars, leave gaps between them, and make each bar height match its count. Label the variable, the measurement axis, and the group being summarized. Horizontal bars are useful for long category names."
+        },
+        {
+          "type": "paragraph",
+          "text": "For counts 4,2,2,2, A’s bar is twice as high as each other bar. A relative-frequency chart would use heights 0.4,0.2,0.2,0.2. A percentage chart would use 40,20,20,20. The pattern is the same because all values use the same denominator."
+        },
+        {
+          "type": "heading",
+          "text": "Pareto: sort by descending frequency"
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/pareto.svg",
+          "alt": "The Pareto order is B, A, C, D for counts 6,4,3,2.",
+          "caption": "The Pareto order is B, A, C, D for counts 6,4,3,2.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "paragraph",
+          "text": "A Pareto chart is a bar chart arranged from highest frequency to lowest. It helps identify the most common problem or category, for example the defect that needs attention first. For the lecture list A,B,B,C,A,D,B,B,A,C,B,B,C,D,A, counts are A = 4, B = 6, C = 3 and D = 2."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Category in Pareto order",
+              "Count",
+              "Exact share",
+              "Percent (rounded)"
+            ],
+            [
+              "B",
+              "6",
+              "6/15",
+              "40.00%"
+            ],
+            [
+              "A",
+              "4",
+              "4/15",
+              "26.67%"
+            ],
+            [
+              "C",
+              "3",
+              "3/15",
+              "20.00%"
+            ],
+            [
+              "D",
+              "2",
+              "2/15",
+              "13.33%"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Source clarification: the lecture displays A as 0.26 and D as 0.14. For the stated counts, the correct shares are 4/15 ≈ 0.2667 and 2/15 ≈ 0.1333. Use the counts to calculate accurately."
+        },
+        {
+          "type": "heading",
+          "text": "Ordinal categories keep their natural order"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture’s 20 T-shirt sizes are L,M,M,S,L,S,S,M,L,M,M,S,S,L,M,S,M,S,L,M. Counts are Small = 7, Medium = 8, Large = 5, giving 35%,40%,25%. Keep S,M,L on the axis rather than sorting M,S,L by frequency. Order is part of the information."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Need",
+              "Suitable display"
+            ],
+            [
+              "Compare category sizes precisely",
+              "Bar chart"
+            ],
+            [
+              "Show shares of one whole with few categories",
+              "Pie chart"
+            ],
+            [
+              "Find the most frequent unordered problems",
+              "Pareto chart"
+            ],
+            [
+              "Display ordered categories",
+              "Bar chart in category order"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Complaints are Delivery = 8, Payment = 3, Quality = 11. What is the Pareto order?",
+          "answer": "Quality (11), Delivery (8), Payment (3).",
+          "text": "Complaints are Delivery = 8, Payment = 3, Quality = 11. What is the Pareto order? Answer: Quality (11), Delivery (8), Payment (3)."
+        },
+        {
+          "type": "check",
+          "question": "Should Poor, Fair, Good and Excellent be reordered by their counts?",
+          "answer": "For an ordinal bar chart, preserve Poor, Fair, Good, Excellent so the ranking remains visible.",
+          "text": "Should Poor, Fair, Good and Excellent be reordered by their counts? Answer: For an ordinal bar chart, preserve Poor, Fair, Good, Excellent so the ranking remains visible."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "Defect counts are Scratch=5,Crack=9,Loose part=2. Give their Pareto order and name the most common defect.",
+          "answer": "Crack (9), Scratch (5), Loose part (2). Crack is the most common defect. Pareto order runs from highest count to lowest.",
+          "text": "Defect counts are Scratch=5,Crack=9,Loose part=2. Give their Pareto order and name the most common defect. Answer: Crack (9), Scratch (5), Loose part (2). Crack is the most common defect. Pareto order runs from highest count to lowest."
+        },
+        {
+          "type": "check",
+          "question": "Sizes Small,Medium,Large have counts 9,3,7. What category order should an ordinal bar chart use?",
+          "answer": "Small, Medium, Large (or the reverse). Preserve the meaningful size order rather than sorting by count.",
+          "text": "Sizes Small,Medium,Large have counts 9,3,7. What category order should an ordinal bar chart use? Answer: Small, Medium, Large (or the reverse). Preserve the meaningful size order rather than sorting by count."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.2.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Read charts carefully: avoid misleading graphs",
+      "slug": "misleading-graphs",
+      "source": "Lecture 2.3 _ 2.4.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A chart should make the data easier to understand. Its appearance should not exaggerate a difference, hide a category, or make a different group look like the one you meant."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/misleading.svg",
+          "alt": "Counts of 100 and 110 differ by 10%; a baseline of 90 makes the bars look twice as tall.",
+          "caption": "Counts of 100 and 110 differ by 10%; a baseline of 90 makes the bars look twice as tall.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Begin with the purpose and the labels"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a pie to show parts of a whole and a bar chart to compare groups. Name the categories and say whether the values are counts, shares, or percentages. State which cases are included. If only one intake or one region is shown, put that in the title or caption."
+        },
+        {
+          "type": "heading",
+          "text": "Too many categories can hide the message"
+        },
+        {
+          "type": "paragraph",
+          "text": "When there are many small categories, a chart becomes hard to read. You may group some as “Other”, but explain what it contains and keep the underlying counts available. Do not silently omit inconvenient categories. Keep important distinctions when they matter to the question."
+        },
+        {
+          "type": "heading",
+          "text": "The area principle"
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/area.svg",
+          "alt": "Visible area should grow in proportion to the count, and labels and totals must remain honest.",
+          "caption": "Visible area should grow in proportion to the count, and labels and totals must remain honest.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "paragraph",
+          "text": "The area principle says the amount of visible area should match the amount of data. If a count doubles, doubling both the width and height of an icon multiplies its area by four, exaggerating the change. Equal-width bars avoid this problem because their areas grow with their heights. Decorative bottles, pictures, 3D slices and perspective can distort comparisons."
+        },
+        {
+          "type": "heading",
+          "text": "Truncated axes can exaggerate differences"
+        },
+        {
+          "type": "paragraph",
+          "text": "For North = 100 and South = 110, South is 10% larger. If a bar axis starts at 90, visible heights are 10 and 20, which look twice as large. A zero baseline gives the correct bar-length comparison. This is why bar charts should normally start at zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "If an axis is shortened or broken, show a clear break symbol and explain the scale change. A break warns the reader; it does not make bar lengths proportional again. For an ordinary category comparison, a zero-baseline chart is clearer. In a timeplot, a narrower labeled vertical range may help show changes, but readers still need to inspect it."
+        },
+        {
+          "type": "heading",
+          "text": "Rounding is different from missing data"
+        },
+        {
+          "type": "paragraph",
+          "text": "Three equal shares rounded to one decimal place become 33.3%,33.3%,33.3%, totaling 99.9%. Explain rounding and calculate chart angles from unrounded values. A large discrepancy should be investigated, not dismissed as rounding."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Before trusting a graph, check…",
+              "Ask…"
+            ],
+            [
+              "Purpose",
+              "Does this chart answer the stated question?"
+            ],
+            [
+              "Labels and group",
+              "What is counted, in what unit, among whom?"
+            ],
+            [
+              "Categories",
+              "Were some omitted or combined?"
+            ],
+            [
+              "Baseline and scale",
+              "Do bar lengths begin at zero? Is a break shown?"
+            ],
+            [
+              "Area and decoration",
+              "Does area match the count?"
+            ],
+            [
+              "Totals",
+              "Do shares describe a whole? Is rounding explained?"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "An icon representing 20 cases is twice as wide and twice as tall as the icon for 10 cases. What is wrong?",
+          "answer": "The count doubled, but the visible area became four times as large. The picture exaggerates the change.",
+          "text": "An icon representing 20 cases is twice as wide and twice as tall as the icon for 10 cases. What is wrong? Answer: The count doubled, but the visible area became four times as large. The picture exaggerates the change."
+        },
+        {
+          "type": "check",
+          "question": "A percentage chart totals 99.9%. Is it necessarily wrong?",
+          "answer": "No. Rounded percentages can total 99.9%. Check the exact counts and unrounded shares before deciding.",
+          "text": "A percentage chart totals 99.9%. Is it necessarily wrong? Answer: No. Rounded percentages can total 99.9%. Check the exact counts and unrounded shares before deciding."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "Two equal-width bars show counts 45 and 50, but the axis starts at 40. Compare the visible and actual ratios.",
+          "answer": "Visible heights are 5 and 10, which look like a doubling. Actual ratio is 50/45 ≈ 1.111: the second count is only about 11.11% larger. A zero baseline gives a fair bar-length comparison.",
+          "text": "Two equal-width bars show counts 45 and 50, but the axis starts at 40. Compare the visible and actual ratios. Answer: Visible heights are 5 and 10, which look like a doubling. Actual ratio is 50/45 ≈ 1.111: the second count is only about 11.11% larger. A zero baseline gives a fair bar-length comparison."
+        },
+        {
+          "type": "check",
+          "question": "A chart is titled “All students”, but includes only students who answered a voluntary survey. What should the label say?",
+          "answer": "It should say that it summarizes the survey respondents and give the relevant group or date. A voluntary survey is not automatically all students.",
+          "text": "A chart is titled “All students”, but includes only students who answered a voluntary survey. What should the label say? Answer: It should say that it summarizes the survey respondents and give the relevant group or date. A voluntary survey is not automatically all students."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.3 _ 2.4.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Mode and median: most common versus middle",
+      "slug": "mode-and-median",
+      "source": "Lecture 2.5.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A descriptive measure is a compact summary of a dataset. Measures of central tendency describe a center or typical value. For categorical data, the mode is especially useful; for ordinal data, we can also find a median."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/mode-median.svg",
+          "alt": "The mode is A but the median is B in the same ordered grade dataset.",
+          "caption": "The mode is A but the median is B in the same ordered grade dataset.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Mode means most common category"
+        },
+        {
+          "type": "paragraph",
+          "text": "The mode is the category with the highest frequency. It names the tallest bar, widest pie slice, or first category in a descending Pareto chart. Give the category, not just its frequency."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the lecture list A,A,B,C,A,D,A,B,C,C,A,B,C,D,A, counts are A = 6, B = 3, C = 4, D = 2. The mode is A because 6 is the highest count."
+        },
+        {
+          "type": "heading",
+          "text": "Ties: bimodal and multimodal"
+        },
+        {
+          "type": "paragraph",
+          "text": "When exactly two categories tie for the highest frequency, report both modes: the data are bimodal. If more than two categories tie at the top, report all tied categories: multimodal. The lecture list A,A,B,C,A,C,A,B,C,C,A,C,C,D,A,A,C,D,B has A = 7, C = 7, B = 3, D = 2, so its modes are A and C."
+        },
+        {
+          "type": "note",
+          "text": "If every category is equally frequent, no category stands out. Many introductory courses call this “no unique mode” or “no mode”. Always state the tie rather than choosing an arbitrary category."
+        },
+        {
+          "type": "heading",
+          "text": "Median requires a meaningful order"
+        },
+        {
+          "type": "paragraph",
+          "text": "The median is the category at the middle of the sorted observations. Nominal blood groups have no meaningful order, so they have no meaningful median. Ordinal grades do: use the grade ranking provided. For these examples, use the order A, B, C, D."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Middle position for odd }n = \\frac{n+1}{2}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For A,B,B,C,A,D,B,B,A,C,B,B,C,D,A, the counts are A = 4, B = 6, C = 3, D = 2. The sorted list is A,A,A,A,B,B,B,B,B,B,C,C,C,D,D. There are 15 observations, so the middle is position (15+1)/2 = 8. Position 8 is B. The median is B, and the mode is also B."
+        },
+        {
+          "type": "heading",
+          "text": "Even-sized ordinal data"
+        },
+        {
+          "type": "paragraph",
+          "text": "For even n, inspect positions n/2 and n/2 + 1. The lecture’s 14-student example sorts to A,A,A,B,B,B,B,B,B,C,C,C,D,D. Positions 7 and 8 are both B, so the median is unambiguously B."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the two middle categories differ, do not average their labels or codes. For Poor,Poor,Good,Excellent, the middle categories are Poor and Good. The supplied lecture allows the category on either side of the middle; report both middle categories and follow the course’s requested convention if one answer is required. There is no numerical halfway category justified by ordinal labels."
+        },
+        {
+          "type": "heading",
+          "text": "Mode and median need not agree"
+        },
+        {
+          "type": "paragraph",
+          "text": "For A,B,B,C,A,D,A,B,A,C,B,A,C,D,A, counts are A = 6, B = 4, C = 3, D = 2. Positions 1–6 are A, 7–10 are B, 11–13 are C, and 14–15 are D. The 8th position is B, so the median is B; the mode is A."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Summary",
+              "Question it answers",
+              "Allowed for nominal?",
+              "Allowed for ordinal?"
+            ],
+            [
+              "Mode",
+              "Which category occurs most?",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "Median",
+              "Which category is in the middle after ordering?",
+              "No",
+              "Yes"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sizes S,S,M,M,M,L,L are ordered S < M < L. Find the mode and median.",
+          "answer": "Mode = M (3 occurrences). Median = position 4 of 7 = M.",
+          "text": "Sizes S,S,M,M,M,L,L are ordered S < M < L. Find the mode and median. Answer: Mode = M (3 occurrences). Median = position 4 of 7 = M."
+        },
+        {
+          "type": "check",
+          "question": "For ordered grades A,A,A,A,B,C,C, what are the mode and median?",
+          "answer": "Mode = A (4 occurrences). Median = position 4 of 7 = A.",
+          "text": "For ordered grades A,A,A,A,B,C,C, what are the mode and median? Answer: Mode = A (4 occurrences). Median = position 4 of 7 = A."
+        },
+        {
+          "type": "check",
+          "question": "Blood groups A,B,O,O,AB: can you find a mode and median?",
+          "answer": "Mode = O. A median is not meaningful because blood groups are nominal.",
+          "text": "Blood groups A,B,O,O,AB: can you find a mode and median? Answer: Mode = O. A median is not meaningful because blood groups are nominal."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "Ratings are Poor,Good,Good,Excellent,Good,Poor. Find the mode.",
+          "answer": "Good appears 3 times, Poor 2 times, Excellent once. The mode is Good. Give the category, not just the count 3.",
+          "text": "Ratings are Poor,Good,Good,Excellent,Good,Poor. Find the mode. Answer: Good appears 3 times, Poor 2 times, Excellent once. The mode is Good. Give the category, not just the count 3."
+        },
+        {
+          "type": "check",
+          "question": "Ordered sizes are S,S,S,M,M,L,L,L,L, with S<M<L. Find mode and median.",
+          "answer": "Mode = L (4 occurrences). There are 9 observations, so median is position (9+1)/2 = 5, which is M. Most common and middle differ.",
+          "text": "Ordered sizes are S,S,S,M,M,L,L,L,L, with S<M<L. Find mode and median. Answer: Mode = L (4 occurrences). There are 9 observations, so median is position (9+1)/2 = 5, which is M. Most common and middle differ."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.5.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Revision and practice with answers",
+      "slug": "revision-and-practice",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use this page after the lessons. Attempt each question before opening its answer."
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Idea",
+              "Remember"
+            ],
+            [
+              "Frequency",
+              "Count the cases in each category."
+            ],
+            [
+              "Relative frequency",
+              "Count divided by group total."
+            ],
+            [
+              "Percent / pie angle",
+              "Share × 100% / share × 360°."
+            ],
+            [
+              "Bar / pie / Pareto",
+              "Compare categories / parts of whole / descending counts."
+            ],
+            [
+              "Ordinal charts",
+              "Keep the natural category order."
+            ],
+            [
+              "Fair chart",
+              "Clear labels, honest areas and zero-baseline bars."
+            ],
+            [
+              "Mode / median",
+              "Most common / middle category after sorting."
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/mode-median.svg",
+          "alt": "A visual recap of mode and median.",
+          "caption": "A visual recap of mode and median.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Practice with explained answers"
+        },
+        {
+          "type": "check",
+          "question": "1. Count A,B,A,C,B,A,D,C,A,D,A,B.",
+          "answer": "A = 5, B = 3, C = 2, D = 2; total = 12.",
+          "text": "1. Count A,B,A,C,B,A,D,C,A,D,A,B. Answer: A = 5, B = 3, C = 2, D = 2; total = 12."
+        },
+        {
+          "type": "check",
+          "question": "2. Find the shares and percentages for question 1.",
+          "answer": "A: 5/12 ≈ 41.67%. B: 3/12 = 25%. C and D: each 2/12 ≈ 16.67%. Rounded percentages total 100.01%.",
+          "text": "2. Find the shares and percentages for question 1. Answer: A: 5/12 ≈ 41.67%. B: 3/12 = 25%. C and D: each 2/12 ≈ 16.67%. Rounded percentages total 100.01%."
+        },
+        {
+          "type": "check",
+          "question": "3. Find the pie angles for question 1.",
+          "answer": "A = 150°, B = 90°, C = 60°, D = 60°; total = 360°.",
+          "text": "3. Find the pie angles for question 1. Answer: A = 150°, B = 90°, C = 60°, D = 60°; total = 360°."
+        },
+        {
+          "type": "check",
+          "question": "4. Which category is the mode in question 1?",
+          "answer": "A. The mode is the category; 5 is its frequency.",
+          "text": "4. Which category is the mode in question 1? Answer: A. The mode is the category; 5 is its frequency."
+        },
+        {
+          "type": "check",
+          "question": "5. Counts are X = 10, Y = 40, Z = 20. Give Pareto order.",
+          "answer": "Y, Z, X, with counts 40,20,10.",
+          "text": "5. Counts are X = 10, Y = 40, Z = 20. Give Pareto order. Answer: Y, Z, X, with counts 40,20,10."
+        },
+        {
+          "type": "check",
+          "question": "6. Two bars represent 50 and 60 but start at 40. What impression can they create?",
+          "answer": "Visible heights are 10 and 20, suggesting a doubling. The true increase is 10/50 = 20%.",
+          "text": "6. Two bars represent 50 and 60 but start at 40. What impression can they create? Answer: Visible heights are 10 and 20, suggesting a doubling. The true increase is 10/50 = 20%."
+        },
+        {
+          "type": "check",
+          "question": "7. Ordered responses are Poor,Poor,Fair,Good,Good,Good,Excellent. Find mode and median.",
+          "answer": "Mode = Good, appearing 3 times. Median = the 4th ordered response = Good.",
+          "text": "7. Ordered responses are Poor,Poor,Fair,Good,Good,Good,Excellent. Find mode and median. Answer: Mode = Good, appearing 3 times. Median = the 4th ordered response = Good."
+        },
+        {
+          "type": "check",
+          "question": "8. A multiple-choice survey allows more than one favorite sport. Should percentages that total 150% form one pie?",
+          "answer": "No. Overlapping responses do not form mutually exclusive parts of one 100% whole.",
+          "text": "8. A multiple-choice survey allows more than one favorite sport. Should percentages that total 150% form one pie? Answer: No. Overlapping responses do not form mutually exclusive parts of one 100% whole."
+        },
+        {
+          "type": "check",
+          "question": "9. For ordinal responses S,S,M,L,L,L, what are the middle categories?",
+          "answer": "Positions 3 and 4 are M and L. Report both; do not average label codes. Follow the course convention if a single median is requested.",
+          "text": "9. For ordinal responses S,S,M,L,L,L, what are the middle categories? Answer: Positions 3 and 4 are M and L. Report both; do not average label codes. Follow the course convention if a single median is requested."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "10. Count Tea,Coffee,Tea,Juice,Tea,Coffee,Juice,Tea,Coffee,Tea.",
+          "answer": "Tea = 5, Coffee = 3, Juice = 2; total = 10. Check that 5+3+2 = 10.",
+          "text": "10. Count Tea,Coffee,Tea,Juice,Tea,Coffee,Juice,Tea,Coffee,Tea. Answer: Tea = 5, Coffee = 3, Juice = 2; total = 10. Check that 5+3+2 = 10."
+        },
+        {
+          "type": "check",
+          "question": "11. For question 10, find relative frequencies and percentages.",
+          "answer": "Tea: 5/10 = 0.5 = 50%. Coffee: 3/10 = 0.3 = 30%. Juice: 2/10 = 0.2 = 20%. The exact shares sum to 1, and the percentages to 100%.",
+          "text": "11. For question 10, find relative frequencies and percentages. Answer: Tea: 5/10 = 0.5 = 50%. Coffee: 3/10 = 0.3 = 30%. Juice: 2/10 = 0.2 = 20%. The exact shares sum to 1, and the percentages to 100%."
+        },
+        {
+          "type": "check",
+          "question": "12. For question 10, calculate all pie angles.",
+          "answer": "Tea: 0.5×360° = 180°. Coffee: 0.3×360° = 108°. Juice: 0.2×360° = 72°. Total = 360°.",
+          "text": "12. For question 10, calculate all pie angles. Answer: Tea: 0.5×360° = 180°. Coffee: 0.3×360° = 108°. Juice: 0.2×360° = 72°. Total = 360°."
+        },
+        {
+          "type": "check",
+          "question": "13. For question 10, identify the mode and decide whether it is a majority.",
+          "answer": "Mode = Tea. Its share is exactly 50%, so it is half the group, not a strict majority. A majority requires more than 50%.",
+          "text": "13. For question 10, identify the mode and decide whether it is a majority. Answer: Mode = Tea. Its share is exactly 50%, so it is half the group, not a strict majority. A majority requires more than 50%."
+        },
+        {
+          "type": "check",
+          "question": "14. A category has frequency 7 in 28 responses. Find its share, percentage and pie angle.",
+          "answer": "Share = 7/28 = 0.25; percentage = 25%; angle = 0.25×360° = 90°.",
+          "text": "14. A category has frequency 7 in 28 responses. Find its share, percentage and pie angle. Answer: Share = 7/28 = 0.25; percentage = 25%; angle = 0.25×360° = 90°."
+        },
+        {
+          "type": "check",
+          "question": "15. A chart says 30% of 50 students chose A. How many students is that?",
+          "answer": "0.30×50 = 15 students. Multiplying the proportion by the total recovers the category count.",
+          "text": "15. A chart says 30% of 50 students chose A. How many students is that? Answer: 0.30×50 = 15 students. Multiplying the proportion by the total recovers the category count."
+        },
+        {
+          "type": "check",
+          "question": "16. One group has 18 of 30 using the library; another has 24 of 60. Which has the larger count and which the larger share?",
+          "answer": "The second has the larger count (24 versus 18). The first has the larger share: 18/30 = 60%, compared with 24/60 = 40%.",
+          "text": "16. One group has 18 of 30 using the library; another has 24 of 60. Which has the larger count and which the larger share? Answer: The second has the larger count (24 versus 18). The first has the larger share: 18/30 = 60%, compared with 24/60 = 40%."
+        },
+        {
+          "type": "check",
+          "question": "17. A bar chart uses relative frequency. The heights are 0.2,0.5,0.3. What are the corresponding percentages?",
+          "answer": "20%,50%,30%. Multiply each proportion by 100%. The bar heights already sum to 1.",
+          "text": "17. A bar chart uses relative frequency. The heights are 0.2,0.5,0.3. What are the corresponding percentages? Answer: 20%,50%,30%. Multiply each proportion by 100%. The bar heights already sum to 1."
+        },
+        {
+          "type": "check",
+          "question": "18. Defect counts are A=3,B=8,C=5,D=1. Give Pareto order and the mode.",
+          "answer": "Pareto order: B,C,A,D. Mode = B, with the highest frequency 8.",
+          "text": "18. Defect counts are A=3,B=8,C=5,D=1. Give Pareto order and the mode. Answer: Pareto order: B,C,A,D. Mode = B, with the highest frequency 8."
+        },
+        {
+          "type": "check",
+          "question": "19. A pie chart shows shares 45%,35%,30%. Is this a complete, non-overlapping one-response distribution?",
+          "answer": "No. The total is 110%, too far from 100% to be ordinary rounding. Check overlapping responses, wrong denominators or a data error.",
+          "text": "19. A pie chart shows shares 45%,35%,30%. Is this a complete, non-overlapping one-response distribution? Answer: No. The total is 110%, too far from 100% to be ordinary rounding. Check overlapping responses, wrong denominators or a data error."
+        },
+        {
+          "type": "check",
+          "question": "20. Three equal shares are displayed as 33.3% each. Explain the total.",
+          "answer": "They total 99.9% because each exact share 1/3 was rounded. The original shares still sum to 1. Calculate from exact counts or unrounded shares.",
+          "text": "20. Three equal shares are displayed as 33.3% each. Explain the total. Answer: They total 99.9% because each exact share 1/3 was rounded. The original shares still sum to 1. Calculate from exact counts or unrounded shares."
+        },
+        {
+          "type": "check",
+          "question": "21. A picture grows from width 2 cm and height 3 cm to width 4 cm and height 6 cm. How much did its area change?",
+          "answer": "Original area = 2×3 = 6 cm². New area = 4×6 = 24 cm², four times as large. It would exaggerate data that only doubled.",
+          "text": "21. A picture grows from width 2 cm and height 3 cm to width 4 cm and height 6 cm. How much did its area change? Answer: Original area = 2×3 = 6 cm². New area = 4×6 = 24 cm², four times as large. It would exaggerate data that only doubled."
+        },
+        {
+          "type": "check",
+          "question": "22. With order Poor<Fair<Good<Excellent, responses are Poor,Fair,Good,Good,Excellent. Find mode and median.",
+          "answer": "Mode = Good, appearing twice. The 5 observations are already ordered; median is position 3 = Good.",
+          "text": "22. With order Poor<Fair<Good<Excellent, responses are Poor,Fair,Good,Good,Excellent. Find mode and median. Answer: Mode = Good, appearing twice. The 5 observations are already ordered; median is position 3 = Good."
+        },
+        {
+          "type": "check",
+          "question": "23. With grade order A,B,C,D, data are A,A,A,A,B,B,C. Find mode and median.",
+          "answer": "Mode = A (4 times). Median is position 4 of 7 = A. Do not confuse position 4 with grade D.",
+          "text": "23. With grade order A,B,C,D, data are A,A,A,A,B,B,C. Find mode and median. Answer: Mode = A (4 times). Median is position 4 of 7 = A. Do not confuse position 4 with grade D."
+        },
+        {
+          "type": "check",
+          "question": "24. Ordered responses are Low,Low,Medium,High. What are the middle categories, and can you average their codes?",
+          "answer": "Positions 2 and 3 are Low and Medium. Report both middle categories and follow the course convention if one is requested. Averaging arbitrary codes does not create a meaningful halfway category.",
+          "text": "24. Ordered responses are Low,Low,Medium,High. What are the middle categories, and can you average their codes? Answer: Positions 2 and 3 are Low and Medium. Report both middle categories and follow the course convention if one is requested. Averaging arbitrary codes does not create a meaningful halfway category."
+        },
+        {
+          "type": "check",
+          "question": "25. Counts are A=4,B=4,C=2. What are the modes?",
+          "answer": "A and B tie for the highest frequency, so both are modes: the data are bimodal. Do not choose one arbitrarily.",
+          "text": "25. Counts are A=4,B=4,C=2. What are the modes? Answer: A and B tie for the highest frequency, so both are modes: the data are bimodal. Do not choose one arbitrarily."
+        },
+        {
+          "type": "heading",
+          "text": "Ready to move on?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Explain each answer in your own words. If you cannot explain the denominator, category order or measurement scale, revisit that lesson before continuing."
+        }
+      ]
+    }
+  ],
+  "illustrationCount": 9,
+  "description": "Frequency and relative frequency, pie and bar charts, Pareto charts, misleading graphs, mode and ordinal median."
+}

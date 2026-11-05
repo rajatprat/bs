@@ -59,3 +59,10 @@
 .watermarked-media::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:url('/images/brand/study-watermark.svg');background-repeat:repeat;background-position:center;background-size:360px 120px;opacity:.065;user-select:none}
 .watermarked-media .watermarked-media::after{display:none}
 @media print{.watermarked-media::after{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Foundation Statistics: questions remain readable without JavaScript. */
+.stats-quick-check { margin: 2rem 0; padding: 1.3rem 1.5rem; border: 1px solid #cbded7; border-radius: 16px; background: #f3f8f5; }
+.stats-quick-check h3 { margin: 0 0 .6rem; font-size: 1.05rem; }
+.stats-quick-check p { margin: .7rem 0; }
+.stats-quick-check summary { cursor: pointer; font-weight: 650; color: #235c50; padding: .6rem 0; }
+.stats-quick-check summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

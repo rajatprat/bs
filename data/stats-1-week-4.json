@@ -1,0 +1,1525 @@
+{
+  "subject": "Statistics 1 · Foundation",
+  "subjectSlug": "stats-1",
+  "week": 4,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/stats-1/week-4/",
+  "title": "Association between variables",
+  "description": "Compare category shares, read scatterplots, and explain covariance, correlation and fitted lines step by step.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Compare category shares, read scatterplots, and explain covariance, correlation and fitted lines step by step."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Two-variable questions and contingency tables",
+      "slug": "contingency-tables",
+      "source": "Lectures 4.1 and 4.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "So far we have described one variable at a time. Now we ask whether two characteristics vary together. For example, does smartphone ownership differ across income groups? We need two values recorded for the same case."
+        },
+        {
+          "type": "heading",
+          "text": "A quick review before starting"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Earlier idea",
+              "Why it matters now"
+            ],
+            [
+              "Case and variable",
+              "Keep both values paired with the correct person."
+            ],
+            [
+              "Categorical or numerical",
+              "The variable types determine the table or graph."
+            ],
+            [
+              "Frequency and relative frequency",
+              "Counts summarize cases; shares allow fair group comparisons."
+            ],
+            [
+              "Mean, median, spread and percentiles",
+              "Use these to compare numerical distributions within groups."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Choose the method from the variable types"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Variable pair",
+              "First tool",
+              "Examples"
+            ],
+            [
+              "Categorical + categorical",
+              "Two-way contingency table",
+              "Income group and phone ownership"
+            ],
+            [
+              "Numerical + numerical",
+              "Scatterplot",
+              "House size and price"
+            ],
+            [
+              "Categorical + numerical",
+              "Separate group distributions",
+              "Group label and exam marks"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "A contingency table counts combinations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Each interior cell counts cases with both its row category and its column category. Row and column totals are marginal totals; the bottom-right number is the grand total. Each case is counted once in the body of a complete two-way table."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Gender in lecture survey",
+              "No phone",
+              "Owns phone",
+              "Row total"
+            ],
+            [
+              "Female",
+              "10",
+              "34",
+              "44"
+            ],
+            [
+              "Male",
+              "14",
+              "42",
+              "56"
+            ],
+            [
+              "Column total",
+              "24",
+              "76",
+              "100"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Of the 100 surveyed students, 44 are female, 56 are male, and 76 own phones. The missing female/non-owner cell is 44−34 = 10. The male/non-owner cell is 56−42 = 14. Check 10+34+14+42 = 100."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/denominators.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "The same count of 34 answers different questions depending on the comparison group.",
+          "caption": "The same count of 34 answers different questions depending on the comparison group."
+        },
+        {
+          "type": "heading",
+          "text": "A second example: income and ownership"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Income group",
+              "No phone",
+              "Owns phone",
+              "Total"
+            ],
+            [
+              "Low",
+              "9",
+              "5",
+              "14"
+            ],
+            [
+              "Medium",
+              "27",
+              "39",
+              "66"
+            ],
+            [
+              "High",
+              "2",
+              "18",
+              "20"
+            ],
+            [
+              "Total",
+              "38",
+              "62",
+              "100"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Income group is ordinal, so retain Low, Medium, High (or the reverse order). Ownership is nominal. The largest owner count is Medium = 39, but that group also contains the most people. Counts alone do not tell us which income group has the highest ownership share."
+        },
+        {
+          "type": "heading",
+          "text": "Create a two-way summary in a spreadsheet"
+        },
+        {
+          "type": "paragraph",
+          "text": "Begin with one row per participant and a column for each variable. In a pivot table, place one variable in Rows and the other in Columns. Set Values to count a complete ID or category field, using a count appropriate for text. Check blanks and totals. Do not add the Total row as if it were another observation when graphing."
+        },
+        {
+          "type": "check",
+          "question": "In the income table, how many participants are both low income and non-owners?",
+          "answer": "9. This is the intersection of the Low row and No phone column.",
+          "text": "In the income table, how many participants are both low income and non-owners? Answer: 9. This is the intersection of the Low row and No phone column."
+        },
+        {
+          "type": "check",
+          "question": "A row total is 30 and its Yes count is 18. Find No.",
+          "answer": "30−18 = 12, assuming Yes and No cover every response exactly once.",
+          "text": "A row total is 30 and its Yes count is 18. Find No. Answer: 30−18 = 12, assuming Yes and No cover every response exactly once."
+        },
+        {
+          "type": "check",
+          "question": "Can house size and house price be analyzed by a category contingency table without changing them?",
+          "answer": "They are numerical variables, so a scatterplot is the natural starting point. Binning them into categories loses detail.",
+          "text": "Can house size and house price be analyzed by a category contingency table without changing them? Answer: They are numerical variables, so a scatterplot is the natural starting point. Binning them into categories loses detail."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lectures 4.1 and 4.2. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Row shares, column shares and association",
+      "slug": "conditional-shares-and-association",
+      "source": "Lecture 4.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The phrase “out of whom?” decides the denominator. The share of women who own phones and the share of owners who are women are different quantities."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/denominators.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "34/100 is a joint share, 34/44 a row share, and 34/76 a column share.",
+          "caption": "34/100 is a joint share, 34/44 a row share, and 34/76 a column share."
+        },
+        {
+          "type": "heading",
+          "text": "Overall, joint, row and column shares"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Calculation",
+              "Result"
+            ],
+            [
+              "What share of all participants own phones?",
+              "76/100",
+              "76% (overall ownership share)"
+            ],
+            [
+              "What share are female owners?",
+              "34/100",
+              "34% (joint share)"
+            ],
+            [
+              "Among female participants, what share own phones?",
+              "34/44",
+              "≈ 77.27% (row share)"
+            ],
+            [
+              "Among owners, what share are female?",
+              "34/76",
+              "≈ 44.74% (column share)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Row relative frequencies"
+        },
+        {
+          "type": "paragraph",
+          "text": "Divide every cell in a row by its row total. The percentages across each row add to 100%, apart from rounding."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Gender",
+              "No phone",
+              "Owns phone",
+              "Within-row total"
+            ],
+            [
+              "Female",
+              "10/44 ≈ 22.73%",
+              "34/44 ≈ 77.27%",
+              "100%"
+            ],
+            [
+              "Male",
+              "14/56 = 25%",
+              "42/56 = 75%",
+              "100%"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Column relative frequencies"
+        },
+        {
+          "type": "paragraph",
+          "text": "Divide every cell in a column by its column total. The percentages down each column add to 100%."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Gender",
+              "Among non-owners (n=24)",
+              "Among owners (n=76)"
+            ],
+            [
+              "Female",
+              "10/24 ≈ 41.67%",
+              "34/76 ≈ 44.74%"
+            ],
+            [
+              "Male",
+              "14/24 ≈ 58.33%",
+              "42/76 ≈ 55.26%"
+            ],
+            [
+              "Within-column total",
+              "100%",
+              "100%"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Repeat for the income table"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Income",
+              "Ownership within income group",
+              "Share among all 62 owners",
+              "Share among all 38 non-owners"
+            ],
+            [
+              "Low",
+              "5/14 ≈ 35.71%",
+              "5/62 ≈ 8.06%",
+              "9/38 ≈ 23.68%"
+            ],
+            [
+              "Medium",
+              "39/66 ≈ 59.09%",
+              "39/62 ≈ 62.90%",
+              "27/38 ≈ 71.05%"
+            ],
+            [
+              "High",
+              "18/20 = 90%",
+              "18/62 ≈ 29.03%",
+              "2/38 ≈ 5.26%"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Association means one variable gives information about the other"
+        },
+        {
+          "type": "paragraph",
+          "text": "If every row has exactly the same ownership distribution, knowing the row category gives no extra information about ownership in that table. The variables have no association in the empirical table. If the conditional distributions differ, there is association in the table. You can compare row profiles across rows or column profiles across columns; do not compare a row percentage with an unrelated column percentage."
+        },
+        {
+          "type": "note",
+          "text": "The lecture describes the gender example as “not associated”, treating 77.27% and 75% as similar. They are close, but not exactly equal. Describe this as a small observed difference of about 2.27 percentage points. These notes do not use a significance test, so this sample alone does not establish exact independence in the population."
+        },
+        {
+          "type": "paragraph",
+          "text": "For income, the ownership shares differ much more: about 35.71%,59.09%,90%. In this sample, income group provides information about ownership. This is an observed association, not proof that changing income alone causes ownership."
+        },
+        {
+          "type": "heading",
+          "text": "Stacked counts versus 100% stacked shares"
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/stacked.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "The three equal-length bars show within-income percentages, making group comparisons easier.",
+          "caption": "The three equal-length bars show within-income percentages, making group comparisons easier."
+        },
+        {
+          "type": "paragraph",
+          "text": "An ordinary stacked bar has total length equal to the group count, split into Yes and No counts. A 100% stacked bar gives each group the same total length and splits it into within-group shares. Use counts to show group sizes and 100% bars to compare compositions. Label the legend and denominator clearly."
+        },
+        {
+          "type": "check",
+          "question": "Which is the larger ownership share: 39 owners out of 66 medium-income participants, or 18 out of 20 high-income participants?",
+          "answer": "High income: 18/20 = 90%, versus 39/66 ≈ 59.09%. The larger raw count was not the larger share.",
+          "text": "Which is the larger ownership share: 39 owners out of 66 medium-income participants, or 18 out of 20 high-income participants? Answer: High income: 18/20 = 90%, versus 39/66 ≈ 59.09%. The larger raw count was not the larger share."
+        },
+        {
+          "type": "check",
+          "question": "In a table with rows for board and columns for pass/fail, how do you find pass rate within each board?",
+          "answer": "Divide the Pass cell in each board row by that board’s row total. Compare those row percentages.",
+          "text": "In a table with rows for board and columns for pass/fail, how do you find pass rate within each board? Answer: Divide the Pass cell in each board row by that board’s row total. Compare those row percentages."
+        },
+        {
+          "type": "check",
+          "question": "One group has 8 of 10 choosing A; another has 16 of 20. Are the profiles different?",
+          "answer": "Both are 80% A and 20% not-A. The counts differ, but the conditional profiles match exactly.",
+          "text": "One group has 8 of 10 choosing A; another has 16 of 20. Are the profiles different? Answer: Both are 80% A and 20% not-A. The counts differ, but the conditional profiles match exactly."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 4.3. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Scatterplots: keep the numerical pairs together",
+      "slug": "scatterplots",
+      "source": "Lecture 4.4",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A scatterplot displays pairs of numerical values as points. Each point represents one case. Its horizontal position gives one measurement, and its vertical position gives the other."
+        },
+        {
+          "type": "links",
+          "links": [
+            {
+              "href": "/data/stats-1/week-4-houses.csv",
+              "text": "Download the 15 lecture house pairs (CSV)"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/scatter.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "The five age–height pairs form a rising pattern; the axes include years and centimeters.",
+          "caption": "The five age–height pairs form a rising pattern; the axes include years and centimeters."
+        },
+        {
+          "type": "heading",
+          "text": "Choose x and y from the question"
+        },
+        {
+          "type": "paragraph",
+          "text": "Put the explanatory variable on the x-axis: the variable used to help explain or predict. Put the response variable on the y-axis: the outcome you want to describe. For predicting a house price from its size, size is x and price is y. These names do not prove cause and effect."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: age and height"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Age x (years)",
+              "Height y (cm)",
+              "Point"
+            ],
+            [
+              "1",
+              "75",
+              "(1,75)"
+            ],
+            [
+              "2",
+              "85",
+              "(2,85)"
+            ],
+            [
+              "3",
+              "94",
+              "(3,94)"
+            ],
+            [
+              "4",
+              "101",
+              "(4,101)"
+            ],
+            [
+              "5",
+              "108",
+              "(5,108)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For the child aged 2, move to x = 2 and up to y = 85; plot one dot. Repeat for every child. Do not connect the points as a time-series line: these are separate paired observations. A rising pattern suggests that higher age goes with higher height in this dataset."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: house size and price"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture records 15 houses. Size is in thousands of square feet, and price is in lakhs of rupees. A size of 2.3 means 2,300 square feet, not 2.3 square feet."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Size (1,000 sq ft)",
+              "Price (lakh rupees)"
+            ],
+            [
+              "0.8",
+              "68"
+            ],
+            [
+              "1.0",
+              "81"
+            ],
+            [
+              "1.1",
+              "72"
+            ],
+            [
+              "1.3",
+              "91"
+            ],
+            [
+              "1.6",
+              "87"
+            ],
+            [
+              "1.8",
+              "56"
+            ],
+            [
+              "2.3",
+              "83"
+            ],
+            [
+              "2.3",
+              "112"
+            ],
+            [
+              "2.5",
+              "93"
+            ],
+            [
+              "2.5",
+              "98"
+            ],
+            [
+              "2.7",
+              "136"
+            ],
+            [
+              "3.1",
+              "109"
+            ],
+            [
+              "3.1",
+              "122"
+            ],
+            [
+              "3.2",
+              "159"
+            ],
+            [
+              "3.4",
+              "170"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Two houses can have the same size but different prices: size 2.3 has prices 83 and 112. A relationship need not determine an exact response. Knowing size can help a prediction while leaving considerable variation."
+        },
+        {
+          "type": "heading",
+          "text": "Make and read the plot"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use paired x and y columns, choose a scatter chart, and check which column is on each axis. Label the title and both units. Keep pairs together when sorting or removing missing data. The visual test is: if you know x, does the pattern help you guess y?"
+        },
+        {
+          "type": "check",
+          "question": "For a scatterplot of study hours and exam marks, predicting marks from hours, which variable goes on y?",
+          "answer": "Exam marks are the response and go on y. Study hours are explanatory and go on x.",
+          "text": "For a scatterplot of study hours and exam marks, predicting marks from hours, which variable goes on y? Answer: Exam marks are the response and go on y. Study hours are explanatory and go on x."
+        },
+        {
+          "type": "check",
+          "question": "Is the point (2.5,98) a house of 98 square feet costing 2.5 lakh?",
+          "answer": "No. With the lecture axes it is a 2,500-square-foot house priced at 98 lakh.",
+          "text": "Is the point (2.5,98) a house of 98 square feet costing 2.5 lakh? Answer: No. With the lecture axes it is a 2,500-square-foot house priced at 98 lakh."
+        },
+        {
+          "type": "check",
+          "question": "May you sort the x column alone before plotting?",
+          "answer": "No. That destroys the original pairing and may create a false association.",
+          "text": "May you sort the x column alone before plotting? Answer: No. That destroys the original pairing and may create a false association."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 4.4. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Describe association: direction, shape, spread, outliers",
+      "slug": "describing-association",
+      "source": "Lecture 4.5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before calculating a coefficient, describe the scatterplot. A single number cannot capture every feature of a relationship."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/patterns.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "Four illustrative patterns show rising, falling, curved and unusual-point relationships.",
+          "caption": "Four illustrative patterns show rising, falling, curved and unusual-point relationships."
+        },
+        {
+          "type": "heading",
+          "text": "1. Direction: upward, downward or neither?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A positive association rises: larger x tends to go with larger y. Child age and height can show this pattern. A negative association falls: larger x tends to go with smaller y, as in age and resale price of cars. A U-shaped pattern changes direction, so one “positive” or “negative” label is incomplete."
+        },
+        {
+          "type": "heading",
+          "text": "2. Curvature: straight or bent?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A roughly linear cloud follows a straight-line trend. A curved pattern may flatten, accelerate, or turn. A strong curve is still an association, even when a straight-line correlation is small."
+        },
+        {
+          "type": "heading",
+          "text": "3. Variation: how close are points to the pattern?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A tight cloud around a trend gives more precise predictions than a widely scattered cloud. “Strong” describes closeness to a pattern, not how steep a line looks. The same relationship can look steeper if you stretch the vertical axis."
+        },
+        {
+          "type": "heading",
+          "text": "4. Outliers: what seems unexpected?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Look for points far from the overall pattern or far from the rest of the x-values. A high-priced house is not automatically unusual if it is also very large. A surprisingly low price for a large house may be unusual relative to the pattern. Check data entry, units and possible explanations before deleting anything."
+        },
+        {
+          "type": "heading",
+          "text": "Worked description for the housing example"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the lecture’s housing data, price generally rises with size. The pattern is roughly linear but has noticeable variation. The house at size 1.8 and price 56 sits relatively low. Describe it as a point to investigate, not automatically as a mistake. Size alone does not explain every price."
+        },
+        {
+          "type": "heading",
+          "text": "Avoid two common conclusions"
+        },
+        {
+          "type": "paragraph",
+          "text": "An association does not establish causation. Other variables, selection effects or chance can contribute. Also, absence of a visible straight line does not prove that the variables are unrelated: a curve, subgroups, or a restricted range can hide a relationship."
+        },
+        {
+          "type": "check",
+          "question": "Points form a tight downward line. Describe direction, form and variation.",
+          "answer": "Negative direction, approximately linear form, and little variation around the line: a strong negative linear association.",
+          "text": "Points form a tight downward line. Describe direction, form and variation. Answer: Negative direction, approximately linear form, and little variation around the line: a strong negative linear association."
+        },
+        {
+          "type": "check",
+          "question": "A U-shaped scatterplot has correlation near zero. Is the graph necessarily random?",
+          "answer": "No. A clear U-shape is a nonlinear association that a linear correlation can miss.",
+          "text": "A U-shaped scatterplot has correlation near zero. Is the graph necessarily random? Answer: No. A clear U-shape is a nonlinear association that a linear correlation can miss."
+        },
+        {
+          "type": "check",
+          "question": "Does a steep slope automatically mean a stronger association?",
+          "answer": "No. Strength concerns how tightly points follow the pattern; slope depends on units and axis scales.",
+          "text": "Does a steep slope automatically mean a stronger association? Answer: No. Strength concerns how tightly points follow the pattern; slope depends on units and axis scales."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 4.5. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Covariance: multiply paired deviations",
+      "slug": "covariance",
+      "source": "Lecture 4.6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Covariance measures whether two numerical variables tend to move above and below their own means together. Its sign is easier to interpret than its size."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/covariance.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "Same-side deviations have positive products; opposite-side deviations have negative products.",
+          "caption": "Same-side deviations have positive products; opposite-side deviations have negative products."
+        },
+        {
+          "type": "heading",
+          "text": "Why multiply deviations?"
+        },
+        {
+          "type": "paragraph",
+          "text": "When x and y are both above their means, both deviations are positive and their product is positive. When both are below, negative times negative is positive. When one is above and the other below, the product is negative. Summing these products reveals the overall tendency."
+        },
+        {
+          "type": "equation",
+          "tex": "\\operatorname{Cov}_{pop}(x,y)=\\frac{\\sum_{i=1}^{N}(x_i-\\mu_x)(y_i-\\mu_y)}{N}"
+        },
+        {
+          "type": "equation",
+          "tex": "s_{xy}=\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})(y_i-\\bar{y})}{n-1}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use population means and N for the population version; use sample means and n−1 for the sample version. Keep the paired observations together."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: age and height"
+        },
+        {
+          "type": "paragraph",
+          "text": "The age mean is 3 years; the height mean is 92.6 cm. Subtract these means, then multiply the deviations within each row."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Age",
+              "Height",
+              "x − 3",
+              "y − 92.6",
+              "Product"
+            ],
+            [
+              "1",
+              "75",
+              "-2",
+              "-17.6",
+              "35.2"
+            ],
+            [
+              "2",
+              "85",
+              "-1",
+              "-7.6",
+              "7.6"
+            ],
+            [
+              "3",
+              "94",
+              "0",
+              "1.4",
+              "0"
+            ],
+            [
+              "4",
+              "101",
+              "1",
+              "8.4",
+              "8.4"
+            ],
+            [
+              "5",
+              "108",
+              "2",
+              "15.4",
+              "30.8"
+            ],
+            [
+              "Total",
+              "",
+              "",
+              "",
+              "82"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Population covariance = 82/5 = 16.4 year·cm. Sample covariance = 82/4 = 20.5 year·cm. Both signs are positive: greater age tends to occur with greater height in this small dataset."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: car age and price"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Age (years)",
+              "Price (lakh rupees)",
+              "Age deviation",
+              "Price deviation",
+              "Product"
+            ],
+            [
+              "1",
+              "6",
+              "-2",
+              "2",
+              "-4"
+            ],
+            [
+              "2",
+              "5",
+              "-1",
+              "1",
+              "-1"
+            ],
+            [
+              "3",
+              "4",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4",
+              "3",
+              "1",
+              "-1",
+              "-1"
+            ],
+            [
+              "5",
+              "2",
+              "2",
+              "-2",
+              "-4"
+            ],
+            [
+              "Means: 3 and 4",
+              "",
+              "",
+              "",
+              "Sum = −10"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Population covariance = −10/5 = −2 year·lakh rupees. Sample covariance = −10/4 = −2.5. The negative sign matches the falling relationship."
+        },
+        {
+          "type": "note",
+          "text": "Source correction: an intermediate slide gives the last price deviation as −1. It is −2 because 2−4 = −2. The final worked table and total −10 use the correct value."
+        },
+        {
+          "type": "heading",
+          "text": "Units make the magnitude hard to compare"
+        },
+        {
+          "type": "paragraph",
+          "text": "Covariance has units of x multiplied by units of y. Converting height from cm to m divides its covariance with age by 100, even though the relationship has not changed. Therefore “a covariance of 20 is stronger than 2” is not a safe comparison across different scales. Adding constants does not change covariance; multiplying x by a and y by b multiplies covariance by ab."
+        },
+        {
+          "type": "check",
+          "question": "For pairs (1,2),(2,4),(3,6), find sample covariance.",
+          "answer": "Means are 2 and 4. Products of deviations are 2,0,2. Sum = 4; divide by n−1 = 2 to get 2.",
+          "text": "For pairs (1,2),(2,4),(3,6), find sample covariance. Answer: Means are 2 and 4. Products of deviations are 2,0,2. Sum = 4; divide by n−1 = 2 to get 2."
+        },
+        {
+          "type": "check",
+          "question": "If one deviation is −3 and the other is +5, what is their product?",
+          "answer": "−15. Opposite signs contribute negatively to covariance.",
+          "text": "If one deviation is −3 and the other is +5, what is their product? Answer: −15. Opposite signs contribute negatively to covariance."
+        },
+        {
+          "type": "check",
+          "question": "If price changes from lakh rupees to rupees, does covariance keep the same numerical value?",
+          "answer": "No. Multiplying price by 100,000 multiplies its covariance with age by 100,000.",
+          "text": "If price changes from lakh rupees to rupees, does covariance keep the same numerical value? Answer: No. Multiplying price by 100,000 multiplies its covariance with age by 100,000."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 4.6. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Correlation: direction and strength without units",
+      "slug": "correlation",
+      "source": "Lecture 4.7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Correlation standardizes covariance so its magnitude can be interpreted without measurement units. Pearson’s r summarizes a straight-line relationship."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/correlation.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "Divide sample covariance by the two sample standard deviations, or use the equivalent sums formula.",
+          "caption": "Divide sample covariance by the two sample standard deviations, or use the equivalent sums formula."
+        },
+        {
+          "type": "equation",
+          "tex": "r=\\frac{s_{xy}}{s_xs_y}=\\frac{\\sum_i(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\left[\\sum_i(x_i-\\bar{x})^2\\right]\\left[\\sum_i(y_i-\\bar{y})^2\\right]}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The sample n−1 factors cancel in the sums formula. If using covariance divided by standard deviations, use consistent sample definitions throughout, or consistent population definitions throughout. If either variable is constant, its SD is zero and correlation is undefined."
+        },
+        {
+          "type": "heading",
+          "text": "Read the sign and the absolute size"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "r",
+              "Interpretation"
+            ],
+            [
+              "+1",
+              "Perfect positive straight-line relationship."
+            ],
+            [
+              "Near +1",
+              "Strong positive linear association."
+            ],
+            [
+              "Near 0",
+              "Little linear association; a curve may still exist."
+            ],
+            [
+              "Near −1",
+              "Strong negative linear association."
+            ],
+            [
+              "−1",
+              "Perfect negative straight-line relationship."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "There is no universal cutoff that makes every correlation “strong” in every subject. Interpret the magnitude alongside the scatterplot, sample size and context. Correlation has no units and lies between −1 and +1."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: age and height"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the five pairs, the sum of squared age deviations is 10, the sum of squared height deviations is 677.2, and the sum of paired products is 82."
+        },
+        {
+          "type": "equation",
+          "tex": "r=\\frac{82}{\\sqrt{10\\times677.2}}\\approx0.99645"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a very strong positive linear relationship in these five observations. Keep full precision in intermediate values: using sample covariance 20.5, age SD √2.5 and height SD √169.3 gives the same result."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: car age and price"
+        },
+        {
+          "type": "paragraph",
+          "text": "The car data have squared-deviation sums 10 and 10, and product sum −10. Thus r = −10/√(10×10) = −1. Every pair lies on Price = 7 − Age. This perfect example is a small teaching dataset, not a rule for all cars."
+        },
+        {
+          "type": "heading",
+          "text": "What changes r, and what does not?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Changing centimeters to meters, or adding the same constant to all measurements of one variable, leaves r unchanged. Multiplying just one variable by a negative number reverses the sign. Swapping x and y leaves r unchanged, although it changes a regression prediction problem. Outliers can strongly change r."
+        },
+        {
+          "type": "heading",
+          "text": "Zero correlation does not rule out a curve"
+        },
+        {
+          "type": "paragraph",
+          "text": "For x = −2,−1,0,1,2 and y = 4,1,0,1,4, y equals x² exactly. The pattern is a perfect U-curve, but r = 0 because the negative and positive linear contributions cancel."
+        },
+        {
+          "type": "heading",
+          "text": "Spreadsheet and correlation matrix"
+        },
+        {
+          "type": "paragraph",
+          "text": "For age in A2:A6 and height in B2:B6, =CORREL(A2:A6,B2:B6) calculates Pearson r. Keep rows paired and use the same complete cases. With several numerical variables, a correlation matrix lists r for every pair. It is symmetric, with 1 on the diagonal for nonconstant variables; it does not make a causal claim."
+        },
+        {
+          "type": "links",
+          "links": [
+            {
+              "href": "https://support.google.com/docs/answer/3093990?hl=en",
+              "text": "Google Sheets: CORREL function"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which is stronger as a linear association: r = −0.9 or r = +0.4?",
+          "answer": "−0.9 has the stronger linear association because its absolute value is larger. The minus sign gives direction, not weakness.",
+          "text": "Which is stronger as a linear association: r = −0.9 or r = +0.4? Answer: −0.9 has the stronger linear association because its absolute value is larger. The minus sign gives direction, not weakness."
+        },
+        {
+          "type": "check",
+          "question": "If r is 0.8 using kilograms, what is it after converting the same weights to grams?",
+          "answer": "Still 0.8. Multiplying by a positive unit-conversion constant does not change correlation.",
+          "text": "If r is 0.8 using kilograms, what is it after converting the same weights to grams? Answer: Still 0.8. Multiplying by a positive unit-conversion constant does not change correlation."
+        },
+        {
+          "type": "check",
+          "question": "Does r = 0.95 prove that x causes y?",
+          "answer": "No. It describes strong linear association. Confounding, selection and other explanations remain possible.",
+          "text": "Does r = 0.95 prove that x causes y? Answer: No. It describes strong linear association. Confounding, selection and other explanations remain possible."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 4.7. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Fitting a line: predictions, slope and R squared",
+      "slug": "fitting-a-line",
+      "source": "Lectures 4.7 and 4.8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A fitted line summarizes an approximately linear pattern and lets us predict a numerical response from an explanatory value. Predictions can miss individual observations."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/fitted-line.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "A fitted value comes from the line; a residual is the vertical observed-minus-predicted difference.",
+          "caption": "A fitted value comes from the line; a residual is the vertical observed-minus-predicted difference."
+        },
+        {
+          "type": "heading",
+          "text": "Read the equation before using it"
+        },
+        {
+          "type": "equation",
+          "tex": "\\widehat{y}=a+bx"
+        },
+        {
+          "type": "paragraph",
+          "text": "y-hat means predicted y. The intercept a is the predicted y when x = 0. The slope b is the predicted change in y for a one-unit increase in x. The units of slope are y-units per x-unit. An intercept can be mathematically necessary without being a sensible real-world prediction if x = 0 lies outside the data range."
+        },
+        {
+          "type": "heading",
+          "text": "How the line is chosen"
+        },
+        {
+          "type": "paragraph",
+          "text": "The usual least-squares line minimizes the sum of squared vertical residuals. A residual is observed y minus predicted y. A positive residual means the observation is above the line; a negative residual means it is below."
+        },
+        {
+          "type": "equation",
+          "tex": "b=\\frac{s_{xy}}{s_x^2}=r\\frac{s_y}{s_x},\\qquad a=\\bar{y}-b\\bar{x}"
+        },
+        {
+          "type": "paragraph",
+          "text": "These formulas add a way to check the fitted line by hand. They apply when x varies; if all x values are identical, a unique slope cannot be estimated."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: house size and price"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture gives the rounded line Predicted price = 36 + 30.5 × Size. Size is measured in thousands of square feet; price is in lakh rupees. An extra 1,000 sq ft is associated with about 30.5 lakh more predicted price."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Size",
+              "Calculation using rounded lecture line",
+              "Predicted price"
+            ],
+            [
+              "2.0 (2,000 sq ft)",
+              "36 + 30.5×2",
+              "97 lakh"
+            ],
+            [
+              "2.5 (2,500 sq ft)",
+              "36 + 30.5×2.5",
+              "112.25 lakh"
+            ],
+            [
+              "3.0 (3,000 sq ft)",
+              "36 + 30.5×3",
+              "127.5 lakh"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For the observed house at size 2.5 and price 98, the residual using this rounded line is 98−112.25 = −14.25 lakh. The actual house is priced below its prediction. Fitting the original 15 pairs at full precision gives slope ≈ 30.4807 and intercept ≈ 36.0188; small differences from the slide equation are rounding."
+        },
+        {
+          "type": "heading",
+          "text": "What R² tells us"
+        },
+        {
+          "type": "paragraph",
+          "text": "For ordinary least-squares regression with one explanatory variable and an intercept, R² = r². It measures the fraction of variation in the observed response accounted for by the fitted line, relative to predicting the response mean. It does not mean that percentage of predictions are correct, and it does not measure causation."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Lecture example",
+              "Rounded line",
+              "r",
+              "R²",
+              "Meaning"
+            ],
+            [
+              "House example 1",
+              "Price = 36 + 30.5×Size",
+              "≈ +0.8045",
+              "≈ 0.647",
+              "About 64.7% of observed price variation is accounted for by this line."
+            ],
+            [
+              "Car example",
+              "Price = 9.03 − 0.694×Age",
+              "≈ −0.9247",
+              "≈ 0.855",
+              "A strong negative fitted relationship."
+            ],
+            [
+              "House example 3",
+              "Price = 130 + 7.77×Size",
+              "≈ +0.149",
+              "≈ 0.022",
+              "The line accounts for only about 2.2% of observed price variation."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The latter two equations are separate lecture examples; do not combine them with the earlier five-car teaching data or assume the two housing lines fit the same dataset. R² has no sign, so use the slope or r to determine whether the relationship rises or falls."
+        },
+        {
+          "type": "heading",
+          "text": "A second complete calculation"
+        },
+        {
+          "type": "paragraph",
+          "text": "For pairs (1,2),(2,2.5),(3,4),(4,4.5), x-bar = 2.5 and y-bar = 3.25. Sum of x squared deviations = 5; sum of products = 4.5. Slope = 4.5/5 = 0.9. Intercept = 3.25−0.9×2.5 = 1. Predicted y at x = 3 is 3.7; observed y is 4, so residual = 0.3."
+        },
+        {
+          "type": "heading",
+          "text": "Use a fit within its limits"
+        },
+        {
+          "type": "paragraph",
+          "text": "Plot the data, check that a line is sensible, and inspect unusual points. Predicting within the observed x-range is interpolation. Predicting far outside it is extrapolation and may fail if the pattern changes. A line for sizes 0.8–3.4 thousand sq ft should not be trusted automatically for a 20-thousand-sq-ft house."
+        },
+        {
+          "type": "paragraph",
+          "text": "In a spreadsheet, fit a linear trendline to the scatterplot and display its equation and R². Read the units and retain enough decimal places for the required accuracy."
+        },
+        {
+          "type": "check",
+          "question": "A line is predicted cost = 100 + 20×distance, with distance in km. Interpret its slope.",
+          "answer": "Each additional kilometer increases predicted cost by 20 currency units. The intercept is predicted cost at zero distance.",
+          "text": "A line is predicted cost = 100 + 20×distance, with distance in km. Interpret its slope. Answer: Each additional kilometer increases predicted cost by 20 currency units. The intercept is predicted cost at zero distance."
+        },
+        {
+          "type": "check",
+          "question": "If r = −0.8, what is R² for simple least squares with an intercept?",
+          "answer": "0.64. About 64% of response variation is accounted for by the line. The relationship is negative even though R² is positive.",
+          "text": "If r = −0.8, what is R² for simple least squares with an intercept? Answer: 0.64. About 64% of response variation is accounted for by the line. The relationship is negative even though R² is positive."
+        },
+        {
+          "type": "check",
+          "question": "Observed y is 12 and predicted y is 15. Find the residual.",
+          "answer": "12−15 = −3. The point lies 3 y-units below the fitted line.",
+          "text": "Observed y is 12 and predicted y is 15. Find the residual. Answer: 12−15 = −3. The point lies 3 y-units below the fitted line."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lectures 4.7 and 4.8. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "A category and a number: compare groups",
+      "slug": "categorical-numerical-association",
+      "source": "Lecture 4.9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When one variable is a category and the other is numerical, compare the numerical distributions within the categories. Begin with the dots and group summaries before reducing the result to one number."
+        },
+        {
+          "type": "links",
+          "links": [
+            {
+              "href": "/data/stats-1/week-4-group-marks.csv",
+              "text": "Download the 20 lecture group-and-mark pairs (CSV)"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/group-comparison.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "The lecture’s F and M marks overlap even though their sample means differ.",
+          "caption": "The lecture’s F and M marks overlap even though their sample means differ."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: the lecture’s twenty students"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Group",
+              "Marks out of 100",
+              "Count",
+              "Total",
+              "Mean"
+            ],
+            [
+              "F",
+              "71,67,65,91,85,69,75,79,86,75,90,91",
+              "12",
+              "944",
+              "944/12 ≈ 78.667"
+            ],
+            [
+              "M",
+              "69,75,83,92,71,94,84,90",
+              "8",
+              "658",
+              "658/8 = 82.25"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In these data the M group has the higher mean by about 3.583 marks. That is a description of this class, not a claim about every individual or a cause of performance. Many marks overlap across groups."
+        },
+        {
+          "type": "heading",
+          "text": "Show the groups rather than a misleading line"
+        },
+        {
+          "type": "paragraph",
+          "text": "Place the category labels on one axis and marks on the other. Plot each student as a dot, offsetting duplicates slightly so they remain visible. Side-by-side boxplots are useful with larger groups. Compare center, spread, shape, overlap and unusual observations; do not compare means alone."
+        },
+        {
+          "type": "heading",
+          "text": "Two categories: a 0/1 code"
+        },
+        {
+          "type": "paragraph",
+          "text": "A dichotomous variable has two categories. Code them 0 and 1, and record which category each code means. Coding labels does not turn them into a measured amount. With two categories, Pearson correlation between the 0/1 code and the numerical marks is called point-biserial correlation."
+        },
+        {
+          "type": "heading",
+          "text": "Compute point-biserial correlation consistently"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let X be the numerical marks and Z the category code. Let mean X₀ and mean X₁ be the mark means in groups 0 and 1, and p₀ and p₁ their proportions. Using SD computed over all observations with divisor n (written σX here), Pearson correlation with code Z is:"
+        },
+        {
+          "type": "equation",
+          "tex": "r_{pb}=\\frac{\\bar{X}_1-\\bar{X}_0}{\\sigma_X}\\sqrt{p_0p_1}"
+        },
+        {
+          "type": "paragraph",
+          "text": "If you instead use the sample SD sX with divisor n−1, include the finite-sample factor:"
+        },
+        {
+          "type": "equation",
+          "tex": "r_{pb}=\\frac{\\bar{X}_1-\\bar{X}_0}{s_X}\\sqrt{\\frac{n_0n_1}{n(n-1)}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The two formulas give the same result. Here n₀ and n₁ are the two group counts and n = n₀+n₁. Do not use the sample SD in the first formula without adjusting the factor."
+        },
+        {
+          "type": "heading",
+          "text": "Calculate it for these students"
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose F = 0 and M = 1. Then n₀ = 12, n₁ = 8, p₀ = 0.6 and p₁ = 0.4. The mean difference X₁−X₀ is 82.25−78.6667 ≈ 3.5833. The all-student SD with divisor 20 is about 9.3322."
+        },
+        {
+          "type": "equation",
+          "tex": "r_{pb}=\\frac{82.25-78.6667}{9.3322}\\sqrt{0.6\\times0.4}\\approx0.1881"
+        },
+        {
+          "type": "paragraph",
+          "text": "This small positive value says the group coded 1 has the higher mean here, with substantial within-group variation. Changing the code to F = 1 and M = 0 gives −0.1881. The underlying difference and its magnitude do not change."
+        },
+        {
+          "type": "note",
+          "text": "Source clarification: the slide writes group-0 mean minus group-1 mean and uses an unspecified SD. To reproduce Pearson/CORREL with code 1, use the group-1-minus-group-0 order and a matching SD formula as above. A 0-minus-1 contrast reverses the sign. Always state both the coding and the denominator convention."
+        },
+        {
+          "type": "links",
+          "links": [
+            {
+              "href": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pointbiserialr.html",
+              "text": "Reference: point-biserial correlation and its equivalence to Pearson correlation"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Practical checks"
+        },
+        {
+          "type": "paragraph",
+          "text": "Put a complete 0/1 code column beside the paired numerical column and calculate CORREL on the matching rows. Each group must contain observations, and the numerical variable must vary. With more than two nominal categories, arbitrary codes such as 1,2,3 are not a justified substitute for a group comparison; start with separate group distributions."
+        },
+        {
+          "type": "check",
+          "question": "If a binary code is reversed, what happens to point-biserial r?",
+          "answer": "Its sign reverses and its magnitude stays the same. A positive sign is meaningful only after the coding is stated.",
+          "text": "If a binary code is reversed, what happens to point-biserial r? Answer: Its sign reverses and its magnitude stays the same. A positive sign is meaningful only after the coding is stated."
+        },
+        {
+          "type": "check",
+          "question": "Does a higher group mean imply every person in that group scored higher?",
+          "answer": "No. Individual distributions can overlap substantially, as in the lecture marks.",
+          "text": "Does a higher group mean imply every person in that group scored higher? Answer: No. Individual distributions can overlap substantially, as in the lecture marks."
+        },
+        {
+          "type": "check",
+          "question": "Can you compute this two-group coefficient when all observations have code 0?",
+          "answer": "No. There is no second group and the code has zero variance, so Pearson correlation is undefined.",
+          "text": "Can you compute this two-group coefficient when all observations have code 0? Answer: No. There is no second group and the code has zero variance, so Pearson correlation is undefined."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 4.9. Extra examples and diagrams are teaching material prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Revision and practice with answers",
+      "slug": "revision-and-practice",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Try these questions without looking at the answers. Then open each explanation and check your method, units and denominator."
+        },
+        {
+          "type": "heading",
+          "text": "One-page method guide"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Pair or question",
+              "Method"
+            ],
+            [
+              "Two categorical variables",
+              "Contingency table; compare conditional shares."
+            ],
+            [
+              "Two numerical variables",
+              "Scatterplot before covariance or correlation."
+            ],
+            [
+              "Direction without units",
+              "Sign of r."
+            ],
+            [
+              "Strength of linear association",
+              "Magnitude of r, alongside the plot."
+            ],
+            [
+              "Predict y from x",
+              "Fitted line; inspect residuals and range."
+            ],
+            [
+              "Two groups and numerical observations",
+              "Compare distributions; point-biserial for an explicit 0/1 code."
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/denominators.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "A compact reminder to choose the denominator from the question.",
+          "caption": "A compact reminder to choose the denominator from the question."
+        },
+        {
+          "type": "heading",
+          "text": "Practice with explained answers"
+        },
+        {
+          "type": "check",
+          "question": "1. A two-way row has Yes=12 and No=8. Find its within-row Yes share.",
+          "answer": "12/(12+8) = 12/20 = 60%.",
+          "text": "1. A two-way row has Yes=12 and No=8. Find its within-row Yes share. Answer: 12/(12+8) = 12/20 = 60%."
+        },
+        {
+          "type": "check",
+          "question": "2. If all rows have the same conditional percentages, what does that say about this table?",
+          "answer": "The empirical category distributions are identical across rows, so knowing the row category gives no extra information about the column category.",
+          "text": "2. If all rows have the same conditional percentages, what does that say about this table? Answer: The empirical category distributions are identical across rows, so knowing the row category gives no extra information about the column category."
+        },
+        {
+          "type": "check",
+          "question": "3. In the phone survey, distinguish 34/44 and 34/76.",
+          "answer": "34/44 is ownership among female participants. 34/76 is the female share among owners. They condition on different groups.",
+          "text": "3. In the phone survey, distinguish 34/44 and 34/76. Answer: 34/44 is ownership among female participants. 34/76 is the female share among owners. They condition on different groups."
+        },
+        {
+          "type": "check",
+          "question": "4. What should you describe before computing correlation?",
+          "answer": "Direction, linearity or curvature, variation around the pattern, and unusual points.",
+          "text": "4. What should you describe before computing correlation? Answer: Direction, linearity or curvature, variation around the pattern, and unusual points."
+        },
+        {
+          "type": "check",
+          "question": "5. For (1,3),(2,2),(3,1), find sample covariance and correlation.",
+          "answer": "Means are 2 and 2. Products are −1,0,−1. Sample covariance = −2/2 = −1. Each sample variance is 1, so r = −1.",
+          "text": "5. For (1,3),(2,2),(3,1), find sample covariance and correlation. Answer: Means are 2 and 2. Products are −1,0,−1. Sample covariance = −2/2 = −1. Each sample variance is 1, so r = −1."
+        },
+        {
+          "type": "check",
+          "question": "6. If one variable is converted from meters to centimeters, what happens to covariance and correlation?",
+          "answer": "Covariance is multiplied by 100. Correlation is unchanged because standardization cancels the positive scale change.",
+          "text": "6. If one variable is converted from meters to centimeters, what happens to covariance and correlation? Answer: Covariance is multiplied by 100. Correlation is unchanged because standardization cancels the positive scale change."
+        },
+        {
+          "type": "check",
+          "question": "7. What if r=0 but the scatterplot is a clear U-shape?",
+          "answer": "There is a nonlinear association. Pearson r only summarizes a linear relationship.",
+          "text": "7. What if r=0 but the scatterplot is a clear U-shape? Answer: There is a nonlinear association. Pearson r only summarizes a linear relationship."
+        },
+        {
+          "type": "check",
+          "question": "8. Predicted y = 10+3x. At x=4, actual y=20. Find predicted y and residual.",
+          "answer": "Predicted y = 22. Residual = observed−predicted = 20−22 = −2.",
+          "text": "8. Predicted y = 10+3x. At x=4, actual y=20. Find predicted y and residual. Answer: Predicted y = 22. Residual = observed−predicted = 20−22 = −2."
+        },
+        {
+          "type": "check",
+          "question": "9. A simple fitted line with intercept has r=−0.6. Find R² and interpret it.",
+          "answer": "R² = 0.36. The line accounts for 36% of observed response variation relative to the mean-only prediction. The direction is negative.",
+          "text": "9. A simple fitted line with intercept has r=−0.6. Find R² and interpret it. Answer: R² = 0.36. The line accounts for 36% of observed response variation relative to the mean-only prediction. The direction is negative."
+        },
+        {
+          "type": "check",
+          "question": "10. Does R²=0.9 mean that 90% of individual predictions are exactly correct?",
+          "answer": "No. It describes variation accounted for by the fitted model, not the percentage of correct predictions.",
+          "text": "10. Does R²=0.9 mean that 90% of individual predictions are exactly correct? Answer: No. It describes variation accounted for by the fitted model, not the percentage of correct predictions."
+        },
+        {
+          "type": "check",
+          "question": "11. With F=0 and M=1, point-biserial r is +0.1881. What happens if the codes are reversed?",
+          "answer": "The value becomes −0.1881. Coding changes the sign; the underlying group difference is unchanged.",
+          "text": "11. With F=0 and M=1, point-biserial r is +0.1881. What happens if the codes are reversed? Answer: The value becomes −0.1881. Coding changes the sign; the underlying group difference is unchanged."
+        },
+        {
+          "type": "check",
+          "question": "12. What happens if every x value is identical?",
+          "answer": "SD of x is zero, so correlation is undefined and a unique regression slope cannot be calculated.",
+          "text": "12. What happens if every x value is identical? Answer: SD of x is zero, so correlation is undefined and a unique regression slope cannot be calculated."
+        },
+        {
+          "type": "check",
+          "question": "13. Why can the largest ownership count belong to a group without the largest ownership rate?",
+          "answer": "The group may simply be larger. Compare within-group shares using each group’s own total.",
+          "text": "13. Why can the largest ownership count belong to a group without the largest ownership rate? Answer: The group may simply be larger. Compare within-group shares using each group’s own total."
+        },
+        {
+          "type": "check",
+          "question": "14. Can a fitted line prove causation or guarantee a prediction far outside the data?",
+          "answer": "No. A fitted association does neither. Inspect context, possible other variables and the observed range.",
+          "text": "14. Can a fitted line prove causation or guarantee a prediction far outside the data? Answer: No. A fitted association does neither. Inspect context, possible other variables and the observed range."
+        },
+        {
+          "type": "heading",
+          "text": "Before moving on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Explain one result in a complete sentence with the group, unit and method. If your result disagrees with a spreadsheet, check the definition, sample/population denominator and percentile convention before changing your answer."
+        }
+      ]
+    }
+  ],
+  "illustrationCount": 10
+}

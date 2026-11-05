@@ -1404,5 +1404,104 @@
     "/images/deep-learning-pyq/2026t2-q4-graphs-x-y.webp?v=6b8fe2812ff3",
     "/images/deep-learning-pyq/2026t2-q5-momentum-curves.webp?v=3b8d70783a92"
   ],
-  "/deep-learning/week-4/quick-revision/": []
+  "/deep-learning/week-4/quick-revision/": [],
+  "/stats-1/week-1/course-overview/": [
+    "/images/stats-1/workflow.svg"
+  ],
+  "/stats-1/week-1/statistics-population-sample/": [
+    "/images/stats-1/population.svg"
+  ],
+  "/stats-1/week-1/cases-variables-data-tables/": [
+    "/images/stats-1/data-table.svg"
+  ],
+  "/stats-1/week-1/types-of-data/": [
+    "/images/stats-1/data-types.svg",
+    "/images/stats-1/timeplot.svg"
+  ],
+  "/stats-1/week-1/measurement-scales/": [
+    "/images/stats-1/scales.svg"
+  ],
+  "/stats-1/week-1/working-with-data/": [
+    "/images/stats-1/workflow.svg"
+  ],
+  "/stats-1/week-1/revision-and-practice/": [
+    "/images/stats-1/scales.svg"
+  ],
+  "/stats-1/week-2/frequency-tables/": [
+    "/images/stats-1/frequency.svg"
+  ],
+  "/stats-1/week-2/relative-frequency/": [
+    "/images/stats-1/frequency.svg"
+  ],
+  "/stats-1/week-2/pie-charts/": [
+    "/images/stats-1/pie.svg"
+  ],
+  "/stats-1/week-2/bar-and-pareto-charts/": [
+    "/images/stats-1/bar.svg",
+    "/images/stats-1/pareto.svg"
+  ],
+  "/stats-1/week-2/misleading-graphs/": [
+    "/images/stats-1/misleading.svg",
+    "/images/stats-1/area.svg"
+  ],
+  "/stats-1/week-2/mode-and-median/": [
+    "/images/stats-1/mode-median.svg"
+  ],
+  "/stats-1/week-2/revision-and-practice/": [
+    "/images/stats-1/mode-median.svg"
+  ],
+  "/stats-1/week-3/numerical-frequency-tables/": [
+    "/images/stats-1/numerical-bins.svg"
+  ],
+  "/stats-1/week-3/histograms-and-stemplots/": [
+    "/images/stats-1/histogram.svg",
+    "/images/stats-1/stemplot.svg"
+  ],
+  "/stats-1/week-3/mean-and-grouped-mean/": [
+    "/images/stats-1/mean.svg"
+  ],
+  "/stats-1/week-3/numerical-median-and-mode/": [
+    "/images/stats-1/numerical-median.svg"
+  ],
+  "/stats-1/week-3/range-variance-standard-deviation/": [
+    "/images/stats-1/spread.svg",
+    "/images/stats-1/variance.svg"
+  ],
+  "/stats-1/week-3/percentiles-two-methods/": [
+    "/images/stats-1/percentiles.svg"
+  ],
+  "/stats-1/week-3/quartiles-iqr-boxplots/": [
+    "/images/stats-1/quartiles.svg"
+  ],
+  "/stats-1/week-3/revision-and-practice/": [
+    "/images/stats-1/variance.svg"
+  ],
+  "/stats-1/week-4/contingency-tables/": [
+    "/images/stats-1/denominators.svg"
+  ],
+  "/stats-1/week-4/conditional-shares-and-association/": [
+    "/images/stats-1/denominators.svg",
+    "/images/stats-1/stacked.svg"
+  ],
+  "/stats-1/week-4/scatterplots/": [
+    "/images/stats-1/scatter.svg"
+  ],
+  "/stats-1/week-4/describing-association/": [
+    "/images/stats-1/patterns.svg"
+  ],
+  "/stats-1/week-4/covariance/": [
+    "/images/stats-1/covariance.svg"
+  ],
+  "/stats-1/week-4/correlation/": [
+    "/images/stats-1/correlation.svg"
+  ],
+  "/stats-1/week-4/fitting-a-line/": [
+    "/images/stats-1/fitted-line.svg"
+  ],
+  "/stats-1/week-4/categorical-numerical-association/": [
+    "/images/stats-1/group-comparison.svg"
+  ],
+  "/stats-1/week-4/revision-and-practice/": [
+    "/images/stats-1/denominators.svg"
+  ]
 }

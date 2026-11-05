@@ -1,7 +1,11 @@
 import katex from 'katex';
+import Diagram from './Diagram';
 import { headingId } from '../lib/course';
 export default function StatisticsBlocks({blocks}) {
  return <div className="lesson-body statistics-lesson">{blocks.map((b,i)=>{
+  if(b.type==='links') return <nav key={i} aria-label={b.text || 'Lesson resources'} className="lesson-related"><ul>{b.links.map(link=><li key={link.href}><a href={link.href} download={link.href.endsWith('.csv')}>{link.text} →</a></li>)}</ul></nav>;
+  if(b.type==='image') return <Diagram key={i} block={b}/>;
+  if(b.type==='check') return <section key={i} className="stats-quick-check"><h3>Try it yourself</h3><p>{b.question}</p><details><summary>Show explained answer</summary><p>{b.answer}</p></details></section>;
   if(b.type==='equation') return <div key={i} className="math-equation algorithms-equation" dangerouslySetInnerHTML={{__html:katex.renderToString(b.tex,{displayMode:true,throwOnError:true,trust:false,output:'htmlAndMathml'})}}/>;
   if(b.type==='heading'||b.type==='subheading') {const Tag=b.type==='heading'?'h2':'h3';return <Tag key={i} id={headingId(b,i)} className="anchored-heading"><a href={'#'+headingId(b,i)}>{b.text}<span className="heading-link" aria-hidden="true"> #</span></a></Tag>;}
   if(b.type==='table') return <div className="table-wrap" key={i} tabIndex={0} role="region" aria-label="Scrollable statistics table"><table><thead><tr>{b.rows[0].map((c,j)=><th scope="col" key={j}>{c}</th>)}</tr></thead><tbody>{b.rows.slice(1).map((r,j)=><tr key={j}>{r.map((c,k)=><td key={k}>{c}</td>)}</tr>)}</tbody></table></div>;

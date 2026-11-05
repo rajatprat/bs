@@ -1,0 +1,1007 @@
+{
+  "subject": "Statistics 1 · Foundation",
+  "subjectSlug": "stats-1",
+  "week": 1,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/stats-1/week-1/",
+  "title": "Getting to know data",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Start from everyday examples. Read the diagrams, work through the steps, and try the questions before revealing the answers."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Start here: what this course helps you do",
+      "slug": "course-overview",
+      "source": "Course Overview.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Statistics helps us learn from data. You do not need advanced maths to begin. Start with a question, collect useful information, organize it, and explain what it tells you."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/workflow.svg",
+          "alt": "A question becomes an investigation: collect, organize, summarize, then answer.",
+          "caption": "A question becomes an investigation: collect, organize, summarize, then answer.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "One story for the whole course"
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine a university admission form. Each student gives their board, age, Class 10 marks and Class 12 marks. These answers form a dataset. We can ask how many students came from each board, what the typical marks were, and whether two sets of marks are related."
+        },
+        {
+          "type": "heading",
+          "text": "The course roadmap"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Overview schedule",
+              "What you will learn",
+              "Example question"
+            ],
+            [
+              "Week 1",
+              "Data, cases, variables, types and scales",
+              "What does one row represent?"
+            ],
+            [
+              "Week 2",
+              "Categorical tables, charts, mode and median",
+              "How many students came from each board?"
+            ],
+            [
+              "Week 3",
+              "Numerical graphs; mean, median, mode; range, variance, standard deviation; percentiles, IQR and five-number summary; outliers",
+              "What are typical marks, and how spread out are they?"
+            ],
+            [
+              "Week 4",
+              "Association; contingency tables, scatter plots and correlation; categorical versus numerical comparisons",
+              "Do higher Class 10 marks go with higher Class 12 marks?"
+            ],
+            [
+              "Week 5",
+              "Counting, factorials, permutations and combinations",
+              "How many committees of 3 can we choose from 10?"
+            ],
+            [
+              "Weeks 6–7",
+              "Experiments, sample spaces, events, probability laws, trees, conditional probability and independence",
+              "What is the chance of a top grade, given a board?"
+            ],
+            [
+              "Weeks 8–9",
+              "Discrete and continuous random variables; PMF, CDF, expectation and variance",
+              "What is the chance of exactly 2 siblings?"
+            ],
+            [
+              "Week 10",
+              "Binomial distribution",
+              "If we guess 25 four-option answers, how many may be correct?"
+            ],
+            [
+              "Weeks 11–12",
+              "Density, normal distribution, empirical rule and standard normal",
+              "What is the chance a test takes 30–45 minutes?"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "This roadmap follows the supplied Course Overview. Only Weeks 1 and 2 are taught in this new subject so far; later topics are a preview, not prerequisites."
+        },
+        {
+          "type": "heading",
+          "text": "How to study these notes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Look at the diagram first. Read the explanation underneath. Work the example yourself, then open the quick-check answer. Keep asking: who is being studied, what was recorded, and what can the data really answer?"
+        },
+        {
+          "type": "check",
+          "question": "Does learning statistics begin by memorizing formulas?",
+          "answer": "No. Begin by understanding the question, the cases and the meaning of the recorded values.",
+          "text": "Does learning statistics begin by memorizing formulas? Answer: No. Begin by understanding the question, the cases and the meaning of the recorded values."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "A shop records the number of notebooks sold each day. Give one question these data can answer.",
+          "answer": "For example: “Which recorded day had the highest notebook sales?” Each day is a case and the number sold is a numerical variable.",
+          "text": "A shop records the number of notebooks sold each day. Give one question these data can answer. Answer: For example: “Which recorded day had the highest notebook sales?” Each day is a case and the number sold is a numerical variable."
+        },
+        {
+          "type": "check",
+          "question": "You have collected survey answers. What should you do before calculating anything?",
+          "answer": "Check what each row represents, name the columns, record the units, and look for missing or inconsistent entries. A calculation is useful only when the values have a clear meaning.",
+          "text": "You have collected survey answers. What should you do before calculating anything? Answer: Check what each row represents, name the columns, record the units, and look for missing or inconsistent entries. A calculation is useful only when the values have a clear meaning."
+        },
+        {
+          "type": "note",
+          "text": "Source: Course Overview.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "What is statistics? Population and sample",
+      "slug": "statistics-population-sample",
+      "source": "Lecture 1.1.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Statistics is the process of collecting, describing and analyzing data so we can learn something. Data are the recorded facts and figures: numbers, labels, answers, or measurements."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/population.svg",
+          "alt": "Population, sample, description and inference in one college travel survey.",
+          "caption": "Population, sample, description and inference in one college travel survey.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Population means the whole group you care about"
+        },
+        {
+          "type": "paragraph",
+          "text": "The population depends on your question. For house prices in Tamil Nadu, the population is all houses included in that question. For visitors to a city mall in a particular month, it is the people who visited that mall during that month. Define the place and time carefully."
+        },
+        {
+          "type": "paragraph",
+          "text": "A sample is a subgroup of the population studied in detail. If asking all 1,000 students is difficult, we might ask 100. Studying the whole population is a census."
+        },
+        {
+          "type": "heading",
+          "text": "Descriptive statistics: describe what you observed"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose 60 of the 100 students surveyed use the bus. Saying “60% of the students in our survey use the bus” describes the observed sample. Tables, charts and numerical summaries are descriptive tools. You can describe either a sample or an entire population."
+        },
+        {
+          "type": "heading",
+          "text": "Inferential statistics: go beyond what you observed"
+        },
+        {
+          "type": "paragraph",
+          "text": "Using those 100 students to estimate the bus-use share among all 1,000 is inference. The sample may not match the population perfectly. Chance creates uncertainty; probability helps us reason about it. A convenient sample can also be biased: asking only students standing at the bus stop is unlikely to represent everyone."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Statement",
+              "Type",
+              "Why"
+            ],
+            [
+              "The 100 surveyed students include 60 bus users.",
+              "Descriptive",
+              "It reports the observed data."
+            ],
+            [
+              "About 60% of all college students may use the bus.",
+              "Inferential",
+              "It extends from the sample to the population."
+            ],
+            [
+              "Every house in the city was counted and summarized.",
+              "Descriptive",
+              "Summarizing a population is still description."
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "The purpose of a statement decides whether it is descriptive or inferential. Merely using a sample does not automatically make a study inferential."
+        },
+        {
+          "type": "check",
+          "question": "We record car sales at 20 dealerships and report only their total. Is that inference?",
+          "answer": "No. Reporting those observed dealerships is descriptive. Estimating sales across all dealerships would be inferential.",
+          "text": "We record car sales at 20 dealerships and report only their total. Is that inference? Answer: No. Reporting those observed dealerships is descriptive. Estimating sales across all dealerships would be inferential."
+        },
+        {
+          "type": "check",
+          "question": "We want the ages of all mall visitors in July, but ask 80 visitors on one afternoon. Identify the population and sample.",
+          "answer": "Population: all visitors covered by the July question. Sample: the 80 people asked. One afternoon may miss other kinds of visitors.",
+          "text": "We want the ages of all mall visitors in July, but ask 80 visitors on one afternoon. Identify the population and sample. Answer: Population: all visitors covered by the July question. Sample: the 80 people asked. One afternoon may miss other kinds of visitors."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "A school has 600 students. A teacher asks 60 of them about their favorite sport. Identify the population and sample.",
+          "answer": "Population: all 600 students in the school. Sample: the 60 students who answered. The sample is part of the population.",
+          "text": "A school has 600 students. A teacher asks 60 of them about their favorite sport. Identify the population and sample. Answer: Population: all 600 students in the school. Sample: the 60 students who answered. The sample is part of the population."
+        },
+        {
+          "type": "check",
+          "question": "A café asks only customers buying coffee whether they prefer coffee or tea. Can it safely describe every customer’s preference?",
+          "answer": "No. Tea buyers and other customers are left out. The sample is likely biased toward coffee lovers, so a claim about all customers is not well supported.",
+          "text": "A café asks only customers buying coffee whether they prefer coffee or tea. Can it safely describe every customer’s preference? Answer: No. Tea buyers and other customers are left out. The sample is likely biased toward coffee lovers, so a claim about all customers is not well supported."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.1.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Data tables: cases, variables and context",
+      "slug": "cases-variables-data-tables",
+      "source": "Lecture 1.2.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A dataset is a collection of related observations. Before calculating anything, find out what one row means and what each column records."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/data-table.svg",
+          "alt": "Rows are students, columns are characteristics, and a cell contains one recorded value.",
+          "caption": "Rows are students, columns are characteristics, and a cell contains one recorded value.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Cases are the units we study"
+        },
+        {
+          "type": "paragraph",
+          "text": "A case, also called an observation, is a unit from which we collect data. It might be a student, house, car sale, day, or event. In the illustrated table, each of the three students is one case."
+        },
+        {
+          "type": "heading",
+          "text": "Variables are the characteristics we record"
+        },
+        {
+          "type": "paragraph",
+          "text": "A variable is a characteristic that can vary across cases. In the table, student name, board, marks and height are four recorded variables. A value is one entry: 162 cm is Asha’s height. Names and IDs help identify cases; they are usually not useful quantities to average."
+        },
+        {
+          "type": "heading",
+          "text": "Why context matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "The number 84 alone is unclear. Is it marks, age, price, or temperature? A useful dataset records who or what was measured, the variable names, units, time and source. Use the same unit within a numerical column."
+        },
+        {
+          "type": "heading",
+          "text": "Where data come from"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sometimes data already exist in published reports or downloadable files. Otherwise we need to collect or generate them, for example with a survey, an experiment, or a measuring instrument. The lectures mainly assume data are available and focus on analyzing them."
+        },
+        {
+          "type": "paragraph",
+          "text": "An unstructured pile of notes, messages or comments is harder to analyze than a consistent table. Organizing data gives it a structure: one case per row, one variable per column, and one value per cell."
+        },
+        {
+          "type": "note",
+          "text": "Comments can reveal opinions, but commenters are not automatically a representative sample of everyone who watched a video or used a product."
+        },
+        {
+          "type": "check",
+          "question": "A file has 50 student rows and columns for name, board and marks. How many cases and variables are recorded?",
+          "answer": "50 cases and 3 recorded variables. The header row is a label, not an extra case.",
+          "text": "A file has 50 student rows and columns for name, board and marks. How many cases and variables are recorded? Answer: 50 cases and 3 recorded variables. The header row is a label, not an extra case."
+        },
+        {
+          "type": "check",
+          "question": "A table has one row per day and columns for Chennai’s temperature and rainfall. What is a case?",
+          "answer": "One day. The case is defined by the row, so it need not be a person.",
+          "text": "A table has one row per day and columns for Chennai’s temperature and rainfall. What is a case? Answer: One day. The case is defined by the row, so it need not be a person."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "A table records 25 houses, with columns for address, price and number of rooms. Identify the cases and variables.",
+          "answer": "There are 25 cases: the houses. Three recorded variables are address, price and number of rooms. One price entry is a value, not a new variable.",
+          "text": "A table records 25 houses, with columns for address, price and number of rooms. Identify the cases and variables. Answer: There are 25 cases: the houses. Three recorded variables are address, price and number of rooms. One price entry is a value, not a new variable."
+        },
+        {
+          "type": "check",
+          "question": "A column called “Distance” contains 5,8,12. What information is missing?",
+          "answer": "The unit is missing: kilometers, meters or something else. We also need context, such as distance from home to school and which people were measured.",
+          "text": "A column called “Distance” contains 5,8,12. What information is missing? Answer: The unit is missing: kilometers, meters or something else. We also need context, such as distance from home to school and which people were measured."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.2.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Types of data: labels, amounts and time",
+      "slug": "types-of-data",
+      "source": "Lecture 1.3.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Data can be classified in more than one way. First ask whether a value is a label or an amount. Separately ask whether the observations are a snapshot or a sequence over time."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/data-types.svg",
+          "alt": "Categorical versus numerical describes the values; cross-sectional versus time series describes timing.",
+          "caption": "Categorical versus numerical describes the values; cross-sectional versus time series describes timing.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Categorical data: which group?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Categorical, or qualitative, data identify a group or category. Examples are board, blood group, and product type. A number can still be a category code: a roll number or a code for a board does not measure an amount."
+        },
+        {
+          "type": "heading",
+          "text": "Numerical data: how much or how many?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Numerical, or quantitative, data describe amounts. Examples are weight in kilograms, height in centimeters, price in rupees, and the number of siblings. Counts are often discrete; measured quantities can be continuous. This distinction will matter more later."
+        },
+        {
+          "type": "paragraph",
+          "text": "Numerical measurements need units. Convert before comparing: 1.6 meters and 160 centimeters are the same height. Storing both as 1.6 and 160 in a column labeled “cm” would create a false difference."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/timeplot.svg",
+          "width": 1000,
+          "height": 720,
+          "alt": "Snapshot: three cities on the same day. Time series: one city measured Monday, Tuesday and Wednesday in chronological order.",
+          "caption": "Same temperatures, different context: compare cities in a snapshot, or follow one city through time."
+        },
+        {
+          "type": "heading",
+          "text": "Cross-sectional data: a snapshot"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cross-sectional data are observed for different cases at roughly the same time. Heights of 30 students measured today or house prices across a city for one period are examples."
+        },
+        {
+          "type": "heading",
+          "text": "Time-series data: follow time"
+        },
+        {
+          "type": "paragraph",
+          "text": "A time series records a quantity over time, such as Chennai’s daily temperature during a month. A timeplot places time in chronological order along the horizontal axis and the recorded value on the vertical axis. Sorting the dates by temperature would hide the time pattern."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Recorded information",
+              "Value type",
+              "Timing"
+            ],
+            [
+              "Blood groups of a class today",
+              "Categorical",
+              "Cross-sectional"
+            ],
+            [
+              "Heights of that class today",
+              "Numerical",
+              "Cross-sectional"
+            ],
+            [
+              "Chennai temperature each day in June",
+              "Numerical",
+              "Time series"
+            ],
+            [
+              "Daily weather category: sunny/rainy/cloudy",
+              "Categorical",
+              "Recorded over time"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A board is coded State = 1, CBSE = 2, ISC = 3. Is board numerical?",
+          "answer": "No. The numbers are labels; their arithmetic differences do not measure a real difference between boards.",
+          "text": "A board is coded State = 1, CBSE = 2, ISC = 3. Is board numerical? Answer: No. The numbers are labels; their arithmetic differences do not measure a real difference between boards."
+        },
+        {
+          "type": "check",
+          "question": "The price of the same item recorded every month: what type is it?",
+          "answer": "Price is numerical, measured in currency; monthly recording makes it a time series.",
+          "text": "The price of the same item recorded every month: what type is it? Answer: Price is numerical, measured in currency; monthly recording makes it a time series."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "Classify number of books, favorite book genre and reading time in minutes.",
+          "answer": "Number of books: numerical count. Favorite genre: categorical label. Reading time: numerical measurement with minutes as its unit.",
+          "text": "Classify number of books, favorite book genre and reading time in minutes. Answer: Number of books: numerical count. Favorite genre: categorical label. Reading time: numerical measurement with minutes as its unit."
+        },
+        {
+          "type": "check",
+          "question": "We record the temperatures of ten cities on one date. Then we record one city’s temperature on ten dates. How do the structures differ?",
+          "answer": "Ten cities on one date form a cross-sectional snapshot. One city on ten dates forms a time series, which should stay in chronological order.",
+          "text": "We record the temperatures of ten cities on one date. Then we record one city’s temperature on ten dates. How do the structures differ? Answer: Ten cities on one date form a cross-sectional snapshot. One city on ten dates forms a time series, which should stay in chronological order."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.3.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Scales of measurement: nominal to ratio",
+      "slug": "measurement-scales",
+      "source": "Lecture 1.4.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A measurement scale tells us which comparisons make sense. A label, an ordered label and a measured amount give us different kinds of information."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/scales.svg",
+          "alt": "Four measurement scales with the comparison each one supports.",
+          "caption": "Four measurement scales with the comparison each one supports.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Nominal: names with no built-in order"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nominal values identify categories without ranking them. Names, boards and blood groups are examples. Coding blood group A as 1 and B as 2 is allowed, but code 2 does not mean twice as much blood group. Changing the codes does not change the category information."
+        },
+        {
+          "type": "heading",
+          "text": "Ordinal: labels with an order"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ordinal categories have a meaningful ranking. Poor, Good and Excellent can be arranged from lower to higher service quality. T-shirt sizes Small, Medium and Large also have order. The distance from Poor to Good need not equal the distance from Good to Excellent. Do not assume equal gaps from codes 1, 2 and 3."
+        },
+        {
+          "type": "heading",
+          "text": "Interval: equal gaps, but an arbitrary zero"
+        },
+        {
+          "type": "paragraph",
+          "text": "Interval data are numerical, and differences have a fixed meaning. In Celsius, the difference between 20°C and 40°C is 20°C. But 0°C does not mean no thermal energy. So 40°C is not twice as hot as 20°C in a meaningful ratio sense."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Reference point",
+              "Celsius",
+              "Fahrenheit"
+            ],
+            [
+              "Water freezes (standard pressure)",
+              "0°C",
+              "32°F"
+            ],
+            [
+              "Water boils (standard pressure)",
+              "100°C",
+              "212°F"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The same room at 20°C is 68°F; outdoors at 40°C is 104°F. The ratio changes from 40/20 = 2 to 104/68 ≈ 1.53 when the temperature scale changes. That is why Celsius ratios do not measure “twice as hot”."
+        },
+        {
+          "type": "heading",
+          "text": "Ratio: equal gaps and a meaningful zero"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ratio data have a zero that represents absence of the measured quantity, so ratios make sense. A 4 kg mass is twice a 2 kg mass. Height, elapsed time, age measured as elapsed time, and counts are standard examples. Kelvin temperature has a meaningful absolute zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture lists marks as ratio data: 80 marks is twice 40 marks as a score. This does not mean twice the knowledge or ability. A comparison is meaningful only for the quantity actually measured."
+        },
+        {
+          "type": "heading",
+          "text": "The way you ask changes the data"
+        },
+        {
+          "type": "paragraph",
+          "text": "The broad topic “temperature” does not have one scale for every question. “Comfortable or uncomfortable?” records nominal comfort labels. “Cold, warm or hot?” records ordered categories. A Celsius reading is interval. A Kelvin reading is ratio."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Scale",
+              "Names/groups",
+              "Order",
+              "Equal gaps",
+              "Meaningful ratios"
+            ],
+            [
+              "Nominal",
+              "Yes",
+              "No",
+              "No",
+              "No"
+            ],
+            [
+              "Ordinal",
+              "Yes",
+              "Yes",
+              "No",
+              "No"
+            ],
+            [
+              "Interval",
+              "Yes",
+              "Yes",
+              "Yes",
+              "No"
+            ],
+            [
+              "Ratio",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A runner finishes first, second or third. Does third take three times as long as first?",
+          "answer": "No. Rank is ordinal. Actual finishing time is a different variable and is ratio-scaled.",
+          "text": "A runner finishes first, second or third. Does third take three times as long as first? Answer: No. Rank is ordinal. Actual finishing time is a different variable and is ratio-scaled."
+        },
+        {
+          "type": "check",
+          "question": "Classify PIN code, satisfaction level, Celsius temperature and weight.",
+          "answer": "PIN code: nominal. Satisfaction level: ordinal. Celsius: interval. Weight: ratio.",
+          "text": "Classify PIN code, satisfaction level, Celsius temperature and weight. Answer: PIN code: nominal. Satisfaction level: ordinal. Celsius: interval. Weight: ratio."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "Bus routes are labeled 10,20,30. Is route 20 twice as much as route 10?",
+          "answer": "No. Route numbers are nominal labels. Their digits identify routes, not amounts, so ratios and averages have no useful route meaning.",
+          "text": "Bus routes are labeled 10,20,30. Is route 20 twice as much as route 10? Answer: No. Route numbers are nominal labels. Their digits identify routes, not amounts, so ratios and averages have no useful route meaning."
+        },
+        {
+          "type": "check",
+          "question": "A bag weighs 0 kg when empty of the material being measured. Compare 2 kg and 6 kg of that material. Which scale applies?",
+          "answer": "Mass is ratio-scaled: zero means none of the measured mass. 6/2 = 3, so 6 kg is three times the mass of 2 kg.",
+          "text": "A bag weighs 0 kg when empty of the material being measured. Compare 2 kg and 6 kg of that material. Which scale applies? Answer: Mass is ratio-scaled: zero means none of the measured mass. 6/2 = 3, so 6 kg is three times the mass of 2 kg."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.4.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Try it: build and explore a small dataset",
+      "slug": "working-with-data",
+      "source": "Week 1 learning objectives in Course Overview.pdf and Lectures 1.1–1.4.pdf",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This guided activity turns the Week 1 learning objectives into a practical routine. The dataset below is a small teaching example, not actual university admissions data."
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/workflow.svg",
+          "alt": "A practical workflow for a first student dataset.",
+          "caption": "A practical workflow for a first student dataset.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "links",
+          "text": "Practice dataset",
+          "links": [
+            {
+              "href": "/data/stats-1/student-practice.csv",
+              "text": "Download the five-student practice dataset (CSV)"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "ID",
+              "Board",
+              "Class 12 marks /100",
+              "Height (cm)"
+            ],
+            [
+              "S01",
+              "CBSE",
+              "84",
+              "162"
+            ],
+            [
+              "S02",
+              "State",
+              "76",
+              "170"
+            ],
+            [
+              "S03",
+              "CBSE",
+              "91",
+              "158"
+            ],
+            [
+              "S04",
+              "ISC",
+              "88",
+              "166"
+            ],
+            [
+              "S05",
+              "State",
+              "82",
+              "172"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "1. Create or download a table"
+        },
+        {
+          "type": "paragraph",
+          "text": "Enter the header once, then one student per row. If using an existing CSV file, open or import it into a spreadsheet and check that columns have separated correctly. Record the source, date, population covered, and units. Keep a copy before editing."
+        },
+        {
+          "type": "heading",
+          "text": "2. Check before calculating"
+        },
+        {
+          "type": "paragraph",
+          "text": "Look for missing entries, accidental duplicate rows and inconsistent spellings. “CBSE”, “cbse” and “CBSE ” should not become three boards. Check whether 84 means marks out of 100 or a percentage. Do not silently treat a missing mark as zero."
+        },
+        {
+          "type": "heading",
+          "text": "3. Sort, filter and choose columns"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sorting by marks rearranges the rows. Always sort the whole table together so each student keeps their own board and height. Filtering Board = CBSE keeps S01 and S03: 2 cases. Selecting Board and Marks keeps 2 columns; it does not change how many rows are selected."
+        },
+        {
+          "type": "heading",
+          "text": "4. Ask questions the data can answer"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Can this table answer it?"
+            ],
+            [
+              "How many of these five students came from CBSE?",
+              "Yes: 2."
+            ],
+            [
+              "Which listed student has the highest marks?",
+              "Yes: S03 with 91."
+            ],
+            [
+              "What percentage of all Indian students use CBSE?",
+              "No: these five do not establish a national percentage."
+            ],
+            [
+              "Does a particular board cause higher marks?",
+              "No: this small observational table cannot establish causation."
+            ],
+            [
+              "How do marks change month by month?",
+              "No: there is no repeated monthly measurement."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "5. Explain the result with its scope"
+        },
+        {
+          "type": "paragraph",
+          "text": "Say “2 of these 5 students are from CBSE”, rather than leaving the group unstated. A good answer includes the group studied, the variable, the unit or denominator, and any important limitation."
+        },
+        {
+          "type": "check",
+          "question": "If you filter marks of at least 85 in the teaching table, which rows remain?",
+          "answer": "S03 (91) and S04 (88). Two cases remain, with all four recorded columns if no columns were removed.",
+          "text": "If you filter marks of at least 85 in the teaching table, which rows remain? Answer: S03 (91) and S04 (88). Two cases remain, with all four recorded columns if no columns were removed."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "In the five-student practice table, filter Board = State. Which students remain, and how many cases are there?",
+          "answer": "S02 and S05 remain. There are 2 cases. Filtering selects rows; it does not turn Board into a new variable.",
+          "text": "In the five-student practice table, filter Board = State. Which students remain, and how many cases are there? Answer: S02 and S05 remain. There are 2 cases. Filtering selects rows; it does not turn Board into a new variable."
+        },
+        {
+          "type": "check",
+          "question": "A missing mark is entered as 0 so the table has no blanks. Why can this be a mistake?",
+          "answer": "Zero means an actual score of zero; missing means the score is unknown. Replacing unknown marks with zero can lower the average and change conclusions. Keep missing values clearly identified.",
+          "text": "A missing mark is entered as 0 so the table has no blanks. Why can this be a mistake? Answer: Zero means an actual score of zero; missing means the score is unknown. Replacing unknown marks with zero can lower the average and change conclusions. Keep missing values clearly identified."
+        },
+        {
+          "type": "note",
+          "text": "Source: Week 1 learning objectives in Course Overview.pdf and Lectures 1.1–1.4.pdf. Explanations, diagrams and extra practice are prepared for these notes."
+        }
+      ]
+    },
+    {
+      "title": "Revision and practice with answers",
+      "slug": "revision-and-practice",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use this page after the lessons. Attempt each question before opening its answer."
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Idea",
+              "Remember"
+            ],
+            [
+              "Population / sample",
+              "Whole group / subgroup studied"
+            ],
+            [
+              "Descriptive / inferential",
+              "Describe observed data / extend beyond it"
+            ],
+            [
+              "Case / variable / value",
+              "Row unit / characteristic / cell entry"
+            ],
+            [
+              "Categorical / numerical",
+              "Labels / amounts"
+            ],
+            [
+              "Cross-sectional / time series",
+              "Snapshot / chronological sequence"
+            ],
+            [
+              "Nominal / ordinal / interval / ratio",
+              "Names / order / equal gaps / meaningful zero"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/stats-1/scales.svg",
+          "alt": "A visual recap of the four measurement scales.",
+          "caption": "A visual recap of the four measurement scales.",
+          "width": 1000,
+          "height": 720
+        },
+        {
+          "type": "heading",
+          "text": "Practice with explained answers"
+        },
+        {
+          "type": "check",
+          "question": "1. A survey asks 40 of a college’s 800 students about commute time. Identify population, sample, case and variable.",
+          "answer": "Population: the 800 students. Sample: the 40 asked. Case: one student. Variable: commute time, with a unit such as minutes.",
+          "text": "1. A survey asks 40 of a college’s 800 students about commute time. Identify population, sample, case and variable. Answer: Population: the 800 students. Sample: the 40 asked. Case: one student. Variable: commute time, with a unit such as minutes."
+        },
+        {
+          "type": "check",
+          "question": "2. The mean commute time of those 40 is reported. Then it is used to estimate the college mean. Classify each step.",
+          "answer": "Reporting the 40 is descriptive. Estimating the college mean is inferential.",
+          "text": "2. The mean commute time of those 40 is reported. Then it is used to estimate the college mean. Classify each step. Answer: Reporting the 40 is descriptive. Estimating the college mean is inferential."
+        },
+        {
+          "type": "check",
+          "question": "3. Classify board code, number of siblings, rank, Celsius temperature and height by scale.",
+          "answer": "Board code: nominal. Sibling count: ratio. Rank: ordinal. Celsius: interval. Height: ratio.",
+          "text": "3. Classify board code, number of siblings, rank, Celsius temperature and height by scale. Answer: Board code: nominal. Sibling count: ratio. Rank: ordinal. Celsius: interval. Height: ratio."
+        },
+        {
+          "type": "check",
+          "question": "4. We record rainfall each day for a year. Is that cross-sectional?",
+          "answer": "It is a time series. Preserve chronological order.",
+          "text": "4. We record rainfall each day for a year. Is that cross-sectional? Answer: It is a time series. Preserve chronological order."
+        },
+        {
+          "type": "check",
+          "question": "5. A height column contains 170 cm and 1.65 m. What must be fixed?",
+          "answer": "Convert to a common unit: 170 cm and 165 cm, for example.",
+          "text": "5. A height column contains 170 cm and 1.65 m. What must be fixed? Answer: Convert to a common unit: 170 cm and 165 cm, for example."
+        },
+        {
+          "type": "check",
+          "question": "6. A spreadsheet is sorted only by moving the marks column. What can go wrong?",
+          "answer": "Marks can become attached to the wrong student. Sort the whole table together.",
+          "text": "6. A spreadsheet is sorted only by moving the marks column. What can go wrong? Answer: Marks can become attached to the wrong student. Sort the whole table together."
+        },
+        {
+          "type": "check",
+          "question": "7. Is a mean of board codes useful?",
+          "answer": "No. Board codes label categories; their average does not describe a meaningful board.",
+          "text": "7. Is a mean of board codes useful? Answer: No. Board codes label categories; their average does not describe a meaningful board."
+        },
+        {
+          "type": "check",
+          "question": "8. Can a table with marks but no study-time column answer how study time relates to marks?",
+          "answer": "No. The required variable was not recorded.",
+          "text": "8. Can a table with marks but no study-time column answer how study time relates to marks? Answer: No. The required variable was not recorded."
+        },
+        {
+          "type": "heading",
+          "text": "More practice: apply what you learned"
+        },
+        {
+          "type": "check",
+          "question": "9. A city wants to know the travel time of all bus passengers this month, but interviews 200 passengers. Identify population and sample.",
+          "answer": "Population: the bus passengers covered by the question this month. Sample: the 200 interviewed passengers. Place, time and eligibility define the population.",
+          "text": "9. A city wants to know the travel time of all bus passengers this month, but interviews 200 passengers. Identify population and sample. Answer: Population: the bus passengers covered by the question this month. Sample: the 200 interviewed passengers. Place, time and eligibility define the population."
+        },
+        {
+          "type": "check",
+          "question": "10. A report says “12 of our 30 respondents prefer online classes.” Is this descriptive or inferential?",
+          "answer": "Descriptive. It reports the responses actually observed. Saying the same proportion applies to every student would go beyond these data and be inferential.",
+          "text": "10. A report says “12 of our 30 respondents prefer online classes.” Is this descriptive or inferential? Answer: Descriptive. It reports the responses actually observed. Saying the same proportion applies to every student would go beyond these data and be inferential."
+        },
+        {
+          "type": "check",
+          "question": "11. A researcher records every household in a village. Is this a sample survey or a census of those households?",
+          "answer": "A census. Every household in the defined village population is included. A summary of their recorded data is still descriptive statistics.",
+          "text": "11. A researcher records every household in a village. Is this a sample survey or a census of those households? Answer: A census. Every household in the defined village population is included. A summary of their recorded data is still descriptive statistics."
+        },
+        {
+          "type": "check",
+          "question": "12. A file has 18 data rows and 5 columns. The first row above them contains headings. How many cases are there?",
+          "answer": "18 cases, assuming one case per data row. The heading row names the variables and is not another case. There are 5 recorded columns.",
+          "text": "12. A file has 18 data rows and 5 columns. The first row above them contains headings. How many cases are there? Answer: 18 cases, assuming one case per data row. The heading row names the variables and is not another case. There are 5 recorded columns."
+        },
+        {
+          "type": "check",
+          "question": "13. A table has one row per cricket match, with date, venue and runs scored. What is a case?",
+          "answer": "One match. Date, venue and runs scored are recorded variables. A case need not be a person.",
+          "text": "13. A table has one row per cricket match, with date, venue and runs scored. What is a case? Answer: One match. Date, venue and runs scored are recorded variables. A case need not be a person."
+        },
+        {
+          "type": "check",
+          "question": "14. Classify school name, shoe size, monthly rent and number of pets as categorical or numerical.",
+          "answer": "School name is categorical. Shoe size, monthly rent and number of pets are numerical. Shoe size has a numerical scale; do not confuse it with ordered labels such as Small, Medium and Large.",
+          "text": "14. Classify school name, shoe size, monthly rent and number of pets as categorical or numerical. Answer: School name is categorical. Shoe size, monthly rent and number of pets are numerical. Shoe size has a numerical scale; do not confuse it with ordered labels such as Small, Medium and Large."
+        },
+        {
+          "type": "check",
+          "question": "15. A survey uses 1 = bus, 2 = bicycle and 3 = walk. Can the mean code describe an average transport method?",
+          "answer": "No. The values are nominal category codes. An average such as 1.8 does not name a meaningful transport method. Count the categories instead.",
+          "text": "15. A survey uses 1 = bus, 2 = bicycle and 3 = walk. Can the mean code describe an average transport method? Answer: No. The values are nominal category codes. An average such as 1.8 does not name a meaningful transport method. Count the categories instead."
+        },
+        {
+          "type": "check",
+          "question": "16. Classify service ratings Poor, Fair, Good and Excellent by measurement scale. Can we assume equal gaps?",
+          "answer": "Ordinal: the categories have an order. We cannot assume the improvement from Poor to Fair equals the improvement from Good to Excellent.",
+          "text": "16. Classify service ratings Poor, Fair, Good and Excellent by measurement scale. Can we assume equal gaps? Answer: Ordinal: the categories have an order. We cannot assume the improvement from Poor to Fair equals the improvement from Good to Excellent."
+        },
+        {
+          "type": "check",
+          "question": "17. A room changes from 10°C to 20°C. What numerical comparison is valid?",
+          "answer": "The temperature increases by 10°C. It is not valid to say that 20°C is twice as hot in a ratio sense, because the Celsius zero is arbitrary.",
+          "text": "17. A room changes from 10°C to 20°C. What numerical comparison is valid? Answer: The temperature increases by 10°C. It is not valid to say that 20°C is twice as hot in a ratio sense, because the Celsius zero is arbitrary."
+        },
+        {
+          "type": "check",
+          "question": "18. Classify elapsed time in seconds and finish position in a race.",
+          "answer": "Elapsed time is ratio-scaled: equal time units and a meaningful zero. Finish position is ordinal: first, second and third give order but not the gaps in running time.",
+          "text": "18. Classify elapsed time in seconds and finish position in a race. Answer: Elapsed time is ratio-scaled: equal time units and a meaningful zero. Finish position is ordinal: first, second and third give order but not the gaps in running time."
+        },
+        {
+          "type": "check",
+          "question": "19. Heights of different students are measured on Monday. Is this a time series just because Monday is mentioned?",
+          "answer": "No. It is a snapshot across students at about one time. A date in the description does not by itself make data a time series.",
+          "text": "19. Heights of different students are measured on Monday. Is this a time series just because Monday is mentioned? Answer: No. It is a snapshot across students at about one time. A date in the description does not by itself make data a time series."
+        },
+        {
+          "type": "check",
+          "question": "20. A column contains 2 meters and 150 centimeters. Express both in centimeters before comparison.",
+          "answer": "2 meters = 200 centimeters. The comparable values are 200 cm and 150 cm. Keep one unit in the column heading.",
+          "text": "20. A column contains 2 meters and 150 centimeters. Express both in centimeters before comparison. Answer: 2 meters = 200 centimeters. The comparable values are 200 cm and 150 cm. Keep one unit in the column heading."
+        },
+        {
+          "type": "check",
+          "question": "21. After filtering a dataset from 100 people to 25 people, how many cases are visible? Does the filter change their recorded values?",
+          "answer": "25 cases are visible. A filter selects matching rows; it does not change the values recorded for those rows.",
+          "text": "21. After filtering a dataset from 100 people to 25 people, how many cases are visible? Does the filter change their recorded values? Answer: 25 cases are visible. A filter selects matching rows; it does not change the values recorded for those rows."
+        },
+        {
+          "type": "check",
+          "question": "22. A file has “State”, “state” and “State ” in its Board column. What should be checked?",
+          "answer": "These may be the same board label with differences in capitalization or spaces. Standardize them carefully so one category is not accidentally counted as three.",
+          "text": "22. A file has “State”, “state” and “State ” in its Board column. What should be checked? Answer: These may be the same board label with differences in capitalization or spaces. Standardize them carefully so one category is not accidentally counted as three."
+        },
+        {
+          "type": "check",
+          "question": "23. A table contains age and marks but no attendance information. Can it answer whether attendance is related to marks?",
+          "answer": "No. Attendance was not recorded. You need the required variables paired for the same students before exploring their relationship.",
+          "text": "23. A table contains age and marks but no attendance information. Can it answer whether attendance is related to marks? Answer: No. Attendance was not recorded. You need the required variables paired for the same students before exploring their relationship."
+        },
+        {
+          "type": "check",
+          "question": "24. We ask 15 friends and estimate the preferences of every teenager in India. What makes that conclusion weak?",
+          "answer": "The sample is small and selected from friends, who may share similar backgrounds or preferences. It is not automatically representative of all Indian teenagers.",
+          "text": "24. We ask 15 friends and estimate the preferences of every teenager in India. What makes that conclusion weak? Answer: The sample is small and selected from friends, who may share similar backgrounds or preferences. It is not automatically representative of all Indian teenagers."
+        },
+        {
+          "type": "heading",
+          "text": "Ready to move on?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Explain each answer in your own words. If you cannot explain the denominator, category order or measurement scale, revisit that lesson before continuing."
+        }
+      ]
+    }
+  ],
+  "illustrationCount": 8,
+  "description": "Population and sample, cases and variables, data types, measurement scales, and working with datasets."
+}

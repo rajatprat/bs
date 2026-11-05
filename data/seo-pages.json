@@ -1490,5 +1490,149 @@
   "/deep-learning/": {
     "title": "Deep Learning Notes: Weeks 1–4 | IITM BS",
     "description": "IIT Madras BS Deep Learning study notes: neurons, perceptrons, sigmoid, gradient descent, backpropagation and optimization. Illustrated lessons and practice."
+  },
+  "/stats-1/": {
+    "title": "Statistics 1 Foundation: Weeks 1–4",
+    "description": "Easy English Statistics 1 Foundation notes for Weeks 1–4: data, charts, numerical summaries and association, with diagrams and worked examples."
+  },
+  "/stats-1/week-1/": {
+    "title": "Statistics 1 Foundation Week 1: Getting to know data",
+    "description": "Learn getting to know data step by step with clear diagrams, worked examples and practice answers."
+  },
+  "/stats-1/week-1/course-overview/": {
+    "title": "Start here: what this course helps you do · Statistics 1 Foundation",
+    "description": "Statistics helps us learn from data. You do not need advanced maths to begin. Start with a question, collect useful information, organize it, and explain w"
+  },
+  "/stats-1/week-1/statistics-population-sample/": {
+    "title": "What is statistics? Population and sample · Statistics 1 Foundation",
+    "description": "Statistics is the process of collecting, describing and analyzing data so we can learn something. Data are the recorded facts and figures: numbers, labels,"
+  },
+  "/stats-1/week-1/cases-variables-data-tables/": {
+    "title": "Data tables: cases, variables and context · Statistics 1 Foundation",
+    "description": "A dataset is a collection of related observations. Before calculating anything, find out what one row means and what each column records."
+  },
+  "/stats-1/week-1/types-of-data/": {
+    "title": "Types of data: labels, amounts and time · Statistics 1 Foundation",
+    "description": "Data can be classified in more than one way. First ask whether a value is a label or an amount. Separately ask whether the observations are a snapshot or a"
+  },
+  "/stats-1/week-1/measurement-scales/": {
+    "title": "Scales of measurement: nominal to ratio · Statistics 1 Foundation",
+    "description": "A measurement scale tells us which comparisons make sense. A label, an ordered label and a measured amount give us different kinds of information."
+  },
+  "/stats-1/week-1/working-with-data/": {
+    "title": "Try it: build and explore a small dataset · Statistics 1 Foundation",
+    "description": "This guided activity turns the Week 1 learning objectives into a practical routine. The dataset below is a small teaching example, not actual university ad"
+  },
+  "/stats-1/week-1/revision-and-practice/": {
+    "title": "Revision and practice with answers · Statistics 1 Foundation",
+    "description": "Use this page after the lessons. Attempt each question before opening its answer."
+  },
+  "/stats-1/week-2/": {
+    "title": "Statistics 1 Foundation Week 2: Describing categorical data",
+    "description": "Learn describing categorical data step by step with clear diagrams, worked examples and practice answers."
+  },
+  "/stats-1/week-2/frequency-tables/": {
+    "title": "Frequency tables: count each category · Statistics 1 Foundation",
+    "description": "A frequency is a count. A frequency distribution lists the different categories and how many observations belong to each. It turns a long list of labels in"
+  },
+  "/stats-1/week-2/relative-frequency/": {
+    "title": "Relative frequency: compare fairly · Statistics 1 Foundation",
+    "description": "Raw counts can be hard to compare when groups have different sizes. Relative frequency tells us what fraction of a group belongs to a category."
+  },
+  "/stats-1/week-2/pie-charts/": {
+    "title": "Pie charts: show parts of one whole · Statistics 1 Foundation",
+    "description": "A pie chart is a circle split into slices. Each slice has an area proportional to its category’s share. The entire circle represents the whole group, or 10"
+  },
+  "/stats-1/week-2/bar-and-pareto-charts/": {
+    "title": "Bar charts, Pareto charts and category order · Statistics 1 Foundation",
+    "description": "A bar chart compares categories using bar lengths. You can display counts, relative frequencies, or percentages. Tell the reader which one the axis uses."
+  },
+  "/stats-1/week-2/misleading-graphs/": {
+    "title": "Read charts carefully: avoid misleading graphs · Statistics 1 Foundation",
+    "description": "A chart should make the data easier to understand. Its appearance should not exaggerate a difference, hide a category, or make a different group look like "
+  },
+  "/stats-1/week-2/mode-and-median/": {
+    "title": "Mode and median: most common versus middle · Statistics 1 Foundation",
+    "description": "A descriptive measure is a compact summary of a dataset. Measures of central tendency describe a center or typical value. For categorical data, the mode is"
+  },
+  "/stats-1/week-2/revision-and-practice/": {
+    "title": "Revision and practice with answers · Statistics 1 Foundation",
+    "description": "Use this page after the lessons. Attempt each question before opening its answer."
+  },
+  "/stats-1/week-3/": {
+    "title": "Statistics 1 Foundation Week 3: Describing numerical data",
+    "description": "Read numerical distributions, calculate center and spread, and understand both course percentile methods."
+  },
+  "/stats-1/week-3/numerical-frequency-tables/": {
+    "title": "Numerical frequency tables: values and intervals · Statistics 1 Foundation",
+    "description": "A numerical variable records an amount, such as household size, height, or marks. Before finding an average, organize the numbers so you can see which valu"
+  },
+  "/stats-1/week-3/histograms-and-stemplots/": {
+    "title": "Histograms and stem-and-leaf plots · Statistics 1 Foundation",
+    "description": "A graph helps you see where numerical observations cluster, how spread out they are, and whether there are unusual values. Two useful choices are a histogr"
+  },
+  "/stats-1/week-3/mean-and-grouped-mean/": {
+    "title": "Mean: ordinary, frequency-weighted and grouped · Statistics 1 Foundation",
+    "description": "The mean is the total shared equally across all observations. It is often called the average. A measure of center tells us a typical location; it does not "
+  },
+  "/stats-1/week-3/numerical-median-and-mode/": {
+    "title": "Numerical median, mode and choosing a center · Statistics 1 Foundation",
+    "description": "The median is the middle after sorting. The mode is the most frequent value. They answer different questions from the mean, and an unusual value affects th"
+  },
+  "/stats-1/week-3/range-variance-standard-deviation/": {
+    "title": "Spread: range, variance and standard deviation · Statistics 1 Foundation",
+    "description": "Two groups can have the same mean but feel very different. Spread tells us whether values stay close together or vary widely."
+  },
+  "/stats-1/week-3/percentiles-two-methods/": {
+    "title": "Percentiles: learn both course methods · Statistics 1 Foundation",
+    "description": "A percentile describes a position in an ordered dataset. The 50th percentile is the median. A 90th percentile is a cutoff near the upper end, not “90% mark"
+  },
+  "/stats-1/week-3/quartiles-iqr-boxplots/": {
+    "title": "Quartiles, IQR, five-number summaries and boxplots · Statistics 1 Foundation",
+    "description": "Quartiles divide ordered data into roughly four parts. Q1 is the 25th percentile, Q2 is the median, and Q3 is the 75th percentile. The interquartile range "
+  },
+  "/stats-1/week-3/revision-and-practice/": {
+    "title": "Revision and practice with answers · Statistics 1 Foundation",
+    "description": "Try these questions without looking at the answers. Then open each explanation and check your method, units and denominator."
+  },
+  "/stats-1/week-4/": {
+    "title": "Statistics 1 Foundation Week 4: Association between variables",
+    "description": "Compare category shares, read scatterplots, and explain covariance, correlation and fitted lines step by step."
+  },
+  "/stats-1/week-4/contingency-tables/": {
+    "title": "Two-variable questions and contingency tables · Statistics 1 Foundation",
+    "description": "So far we have described one variable at a time. Now we ask whether two characteristics vary together. For example, does smartphone ownership differ across"
+  },
+  "/stats-1/week-4/conditional-shares-and-association/": {
+    "title": "Row shares, column shares and association · Statistics 1 Foundation",
+    "description": "The phrase “out of whom?” decides the denominator. The share of women who own phones and the share of owners who are women are different quantities."
+  },
+  "/stats-1/week-4/scatterplots/": {
+    "title": "Scatterplots: keep the numerical pairs together · Statistics 1 Foundation",
+    "description": "A scatterplot displays pairs of numerical values as points. Each point represents one case. Its horizontal position gives one measurement, and its vertical"
+  },
+  "/stats-1/week-4/describing-association/": {
+    "title": "Describe association: direction, shape, spread, outliers · Statistics 1 Foundation",
+    "description": "Before calculating a coefficient, describe the scatterplot. A single number cannot capture every feature of a relationship."
+  },
+  "/stats-1/week-4/covariance/": {
+    "title": "Covariance: multiply paired deviations · Statistics 1 Foundation",
+    "description": "Covariance measures whether two numerical variables tend to move above and below their own means together. Its sign is easier to interpret than its size."
+  },
+  "/stats-1/week-4/correlation/": {
+    "title": "Correlation: direction and strength without units · Statistics 1 Foundation",
+    "description": "Correlation standardizes covariance so its magnitude can be interpreted without measurement units. Pearson’s r summarizes a straight-line relationship."
+  },
+  "/stats-1/week-4/fitting-a-line/": {
+    "title": "Fitting a line: predictions, slope and R squared · Statistics 1 Foundation",
+    "description": "A fitted line summarizes an approximately linear pattern and lets us predict a numerical response from an explanatory value. Predictions can miss individua"
+  },
+  "/stats-1/week-4/categorical-numerical-association/": {
+    "title": "A category and a number: compare groups · Statistics 1 Foundation",
+    "description": "When one variable is a category and the other is numerical, compare the numerical distributions within the categories. Begin with the dots and group summar"
+  },
+  "/stats-1/week-4/revision-and-practice/": {
+    "title": "Revision and practice with answers · Statistics 1 Foundation",
+    "description": "Try these questions without looking at the answers. Then open each explanation and check your method, units and denominator."
   }
 }
