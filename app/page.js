@@ -32,9 +32,9 @@ export default function Home(){
  const courseOrder=['pdsa','software-engineering','statistics','spg','deep-learning','computer-system-design','mathematical-foundation-of-generative-ai','algorithms-in-data-science'];
  const ordered=courseOrder.map(slug=>courses.find(c=>c.slug===slug));
  const levels=[
-  {name:'Foundation',description:'Build the core mathematical and programming base.',slugs:['pdsa','statistics']},
-  {name:'Diploma',description:'Develop deeper technical understanding and problem-solving.',slugs:['deep-learning','computer-system-design','algorithms-in-data-science']},
-  {name:'Degree',description:'Apply your foundation to software, communication and advanced AI.',slugs:['software-engineering','spg','mathematical-foundation-of-generative-ai']}
+  {name:'Foundation',description:'Build the core mathematical base.',slugs:['statistics']},
+  {name:'Diploma',description:'Develop programming, technical understanding and problem-solving.',slugs:['pdsa']},
+  {name:'Degree',description:'Apply your foundation to software, communication and advanced AI.',slugs:['software-engineering','spg','deep-learning','computer-system-design','mathematical-foundation-of-generative-ai','algorithms-in-data-science']}
  ];
  const total=courses.reduce((sum,c)=>sum+c.data.reduce((n,d)=>n+studySections(d).length,0),0);
  const figures=courses.reduce((sum,c)=>sum+c.data.reduce((n,d)=>n+JSON.stringify(d).split('"type":"image"').length-1,0),0);
