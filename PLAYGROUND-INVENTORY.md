@@ -2,14 +2,8 @@
 
 ## Implemented
 
-- PDSA: Euclid/GCD, prime checking, binary search, selection sort, insertion sort, merge sort, quicksort, linked-list insertion, hashing, BFS, DFS, and topological sort.
-- Deep Learning: perceptron update and gradient descent.
-- Computer System Design: decimal-to-binary conversion and logic-gate truth tables.
+- PDSA: Euclid/GCD, prime checking, binary search, selection sort, insertion sort, merge sort, quicksort, array insertion, linked-list insertion, hashing, BFS, DFS, topological sort, and longest paths in DAGs.
+- Deep Learning: perceptron update, gradient descent, backpropagation, momentum/NAG, and mini-batch updates.
+- Computer System Design: decimal-to-binary conversion, logic-gate truth tables, Boolean algebra, decoders, and multiplexers.
 
-## Mapped for subject-specific engines
-
-- PDSA: array insertion, longest path in a DAG.
-- Deep Learning: backpropagation, momentum/NAG, mini-batch training.
-- Computer System Design: Boolean algebra, decoders, and multiplexers.
-
-Each mapped item has a registry entry in `lib/playground-registry.js`; only items with a compatible engine are rendered automatically.
+Each listed item is registered in `lib/playground-registry.js` and rendered by the matching reusable procedure engine.
