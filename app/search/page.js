@@ -37,6 +37,7 @@ import genai from '../../data/genai-week-1-part-1.json';
 import genai2 from '../../data/genai-week-1-part-2.json';
 import { headingId } from '../../lib/course';
 import { additionsFor } from '../../lib/review-additions';
+import {pdsaSections,pdsaWeek2Sections,pdsaWeek3Sections,pdsaWeek4Sections} from '../../lib/pdsa';
 export const metadata = {title:'Search course notes', robots:{index:false, follow:true}};
 export default function Page() {
   const entries = [];
@@ -62,5 +63,6 @@ export default function Page() {
       });
     }
   }
+  for (const [week,sections] of [[1,pdsaSections],[2,pdsaWeek2Sections],[3,pdsaWeek3Sections],[4,pdsaWeek4Sections]]) for(const section of sections) entries.push({subject:'Programming, Data Structures and Algorithms',subjectSlug:'pdsa',week,lesson:section.title,title:section.title,url:`/pdsa/week-${week}/${section.slug}/`,text:`PDSA Week ${week} ${section.section||''} ${section.title}`});
   return <main id="main" className="home search-page"><div className="eyebrow">YOUR LEARNING LIBRARY</div><h1>Search course notes.</h1><p className="lead">Find topics, explanations, figures, and revision questions across all subjects.</p><Search entries={entries}/></main>;
 }
