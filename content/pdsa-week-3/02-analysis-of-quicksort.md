@@ -57,14 +57,14 @@ Each call removes only **one** item (the pivot). That's n levels instead of log 
 ![Two recursion trees side by side: on the left a balanced tree where each pivot splits the list into halves, only log n levels deep; on the right a long one-sided chain where each pivot removes just one item, n levels deep](images/pdsa-week-3/img03-quicksort-best-vs-worst.webp)
 *Good pivot → balanced splits, log n levels → n log n. Bad pivot (sorted input) → one-sided splits, n levels → n².*
 
-> **Tried it ourselves (n = 1000, counting comparisons):**
->
-> | Input | First element as pivot | Random pivot |
-> |---|---|---|
-> | Already sorted | **4,99,500** (= 1000 × 999 / 2, worst case!) | about 11,300 |
-> | Random order | about 10,600 | about 10,700 |
->
-> And in time, for 5000 sorted numbers (with Python's recursion limit raised so it would not crash): first-element quicksort took **0.66 s**, random-pivot quicksort **0.007 s** — about 90 times faster.
+### Tried it ourselves (n = 1000, counting comparisons)
+
+| Input | First element as pivot | Random pivot |
+|---|---|---|
+| Already sorted | **4,99,500** (= 1000 × 999 / 2, worst case!) | about 11,300 |
+| Random order | about 10,600 | about 10,700 |
+
+For 5000 sorted numbers (with Python's recursion limit raised so it would not crash), first-element quicksort took **0.66 s**; random-pivot quicksort took **0.007 s** — about 90 times faster.
 
 (A reverse-sorted list is also a worst case: the first element is then the **largest**, so Lower gets everything and Upper is empty.)
 
