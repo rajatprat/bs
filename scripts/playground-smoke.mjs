@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {quickSortTrace,bfsTrace,dfsTrace,parseGraph} from '../lib/algorithm-playground.js';
+const quick=quickSortTrace([4,1,3,2]);
+assert.deepEqual(quick.at(-1).array,[1,2,3,4]);
+const graph=parseGraph('A:B,C; B:D; C:D; D:');
+const bfs=bfsTrace(graph,'A');
+assert.deepEqual(bfs.at(-1).visited,['A','B','C','D']);
+const dfs=dfsTrace(graph,'A');
+assert.deepEqual([...new Set(dfs.at(-1).visited)].sort(),['A','B','C','D']);
+assert.throws(()=>parseGraph(''),/at least one vertex/);
+console.log('Playground trace smoke tests passed.');
