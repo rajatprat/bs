@@ -40,3 +40,6 @@ body{background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-s
 .header-mobile-nav a{display:flex;gap:12px}.header-mobile-nav a svg{color:#8b7756}
 .study-tabs button{display:inline-flex;align-items:center;gap:7px}.study-tabs button svg{color:#8f897a}
 @media(min-width:801px) and (max-width:1050px){.header-inner{gap:20px}.header-nav{gap:0}.header-nav a{padding:7px 9px;gap:6px;font-size:13px}}
+
+/* Keep each course's scope visible without crowding its card. */
+.academic-subject .availability{display:grid;gap:2px;max-width:calc(100% - 46px);padding:6px 9px;text-align:right;line-height:1.15}.academic-subject .availability b{font-size:9px;font-weight:700;color:#606675}.academic-subject .availability small{font-size:8px;white-space:nowrap;color:#777986}
