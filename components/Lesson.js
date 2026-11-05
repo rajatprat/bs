@@ -10,8 +10,8 @@ import { additionsFor } from '../lib/review-additions';
 import Blocks from './Blocks';
 import AlgorithmsBlocks from './AlgorithmsBlocks';
 import MathLesson from './MathLesson';
-import ProcedurePlayground,{supportedProcedureKinds} from './ProcedurePlayground';
-import {playgroundFor} from '../lib/playground-registry';
+import ProcedurePlayground from './ProcedurePlayground';
+import {playgroundFor,supportedProcedureKinds} from '../lib/playground-registry';
 import { headings, isResource, studySections, resources, courseWeeks } from '../lib/course';
 function SectionLinks({ sections, week, current, base, resource = false }) {
   return <nav aria-label={resource ? `Week ${week} revision and practice` : `Week ${week} study sections`}>{sections.map((s, i) => <a key={s.slug} aria-current={s.slug === current ? 'page' : undefined} className={s.slug === current ? 'active' : ''} href={base+s.slug+'/'}><span>{resource ? '↗' : String(i + 1).padStart(2, '0')}</span>{s.title}</a>)}</nav>;
