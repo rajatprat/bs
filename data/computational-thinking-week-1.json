@@ -1,0 +1,2266 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 1,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computational-thinking/week-1/",
+  "title": "From data cards to clear procedures",
+  "description": "Learn variables, iteration, filtering, flowcharts and data types through small examples you can trace by hand.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Learn with the actual course score cards, word cards and shopping bills. Each lesson includes an on-page walkthrough: predict the answer, read one card, watch the variables change, and explain the result. No download or programming experience is needed."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Start here: think in clear, repeatable steps",
+      "slug": "what-is-computational-thinking",
+      "source": "Lecture 0 — Introduction to course",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Computational thinking means turning a problem into clear steps that another person or a computer can follow. This course begins before any particular programming language. You will learn to organize information, recognize useful patterns, and check that your procedure does what you intended."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/variables-1.png",
+          "caption": "A variable remembers a changing value. Count and Sum answer different questions.",
+          "alt": "A variable remembers a changing value. Count and Sum answer different questions.",
+          "width": 766,
+          "height": 478
+        },
+        {
+          "type": "interactive",
+          "mode": "count"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-1.png",
+          "caption": "The first four actual score cards show a running sum of 68, 130, 187 and 229.",
+          "alt": "Add Mathematics marks 68, 62, 57 and 42 to get 229.",
+          "width": 766,
+          "height": 478
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/patterns.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "A precise procedure can be reused across recipes, preparing a hall, hanging clothes and arranging books.",
+          "alt": "A precise procedure can be reused across recipes, preparing a hall, hanging clothes and arranging books."
+        },
+        {
+          "type": "heading",
+          "text": "A goal is not yet a procedure"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Prepare the hall for 50 guests” leaves many decisions unstated. A beginner may need: clean the hall, arrange 5 rows of 10 chairs, leave an aisle, and finish before the event starts. The amount of detail depends on what the person or machine already knows how to do."
+        },
+        {
+          "type": "heading",
+          "text": "What is an algorithm?"
+        },
+        {
+          "type": "paragraph",
+          "text": "An algorithm is a systematic procedure for solving a problem. It states what information is needed, which steps to perform, when to make a choice, what to repeat, and when to stop. A computer executes the specified steps; it does not fill gaps using human common sense."
+        },
+        {
+          "type": "heading",
+          "text": "Recognize the same pattern in different stories"
+        },
+        {
+          "type": "paragraph",
+          "text": "For clothes, repeatedly choose an item and put it on a line. For books, repeatedly choose a book and place it on a shelf. The objects differ, but the repeated “choose, process, move on” structure is similar. The lecture’s largest-first arrangement is an example of a strategy, not a guarantee of the best packing for every situation."
+        },
+        {
+          "type": "heading",
+          "text": "Your Week 1 roadmap"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Stage",
+              "What you will learn"
+            ],
+            [
+              "Read the data",
+              "Marks cards, shopping bills and word cards."
+            ],
+            [
+              "Process the data",
+              "Variables, iteration, counts, sums and averages."
+            ],
+            [
+              "Select records",
+              "Filters, combined conditions and separate group summaries."
+            ],
+            [
+              "Draw the procedure",
+              "Flowcharts, decisions and loop arrows."
+            ],
+            [
+              "Trust the inputs",
+              "Sanity checks and missing or inconsistent data."
+            ],
+            [
+              "Describe the data",
+              "Basic types, subtypes, representations, records and lists."
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Why is “sort these books nicely” an incomplete instruction?",
+          "answer": "“Nicely” does not state a rule. Specify the order, such as by title or height, how to choose the next book, and when the procedure is finished.",
+          "text": "Why is “sort these books nicely” an incomplete instruction? Answer: “Nicely” does not state a rule. Specify the order, such as by title or height, how to choose the next book, and when the procedure is finished."
+        },
+        {
+          "type": "check",
+          "question": "Do you need to know Python to understand a card-counting procedure?",
+          "answer": "No. You can explain and execute the steps by hand first. A programming language can express the same procedure later.",
+          "text": "Do you need to know Python to understand a card-counting procedure? Answer: No. You can explain and execute the steps by hand first. A programming language can express the same procedure later."
+        },
+        {
+          "type": "check",
+          "question": "Which stopping condition fits “move every card to a second pile”?",
+          "answer": "Stop when the original pile is empty. That condition can be checked after each completed move.",
+          "text": "Which stopping condition fits “move every card to a second pile”? Answer: Stop when the original pile is empty. That condition can be checked after each completed move."
+        },
+        {
+          "type": "check",
+          "question": "Does a similar procedure require identical objects?",
+          "answer": "No. The same scan-and-update pattern can count students, words or shopping bills. Change the record fields and the update rule to match the task.",
+          "text": "Does a similar procedure require identical objects? Answer: No. The same scan-and-update pattern can count students, words or shopping bills. Change the record fields and the update rule to match the task."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 0 — Introduction to course. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Meet the datasets: marks, bills and words",
+      "slug": "datasets-and-fields",
+      "source": "Lecture 1.1 — Introduction to datasets",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A dataset is a collection of related items. In this course, each item is drawn as a card. Each card has named fields. Different cards follow the same format, while the field values change."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-3.png",
+          "width": 766,
+          "height": 544,
+          "caption": "Bhuvanesh’s actual score card shows how one record groups fields with different types.",
+          "alt": "Bhuvanesh’s actual score card shows how one record groups fields with different types."
+        },
+        {
+          "type": "interactive",
+          "mode": "types"
+        },
+        {
+          "type": "interactive",
+          "mode": "wordread"
+        },
+        {
+          "type": "interactive",
+          "mode": "bills"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/datasets.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Three small teaching cards show fields for a student, a word occurrence and a shopping bill.",
+          "alt": "Three small teaching cards show fields for a student, a word occurrence and a shopping bill."
+        },
+        {
+          "type": "heading",
+          "text": "Marks cards"
+        },
+        {
+          "type": "paragraph",
+          "text": "A marks card records sequence number, name, group/gender label, date of birth, town/city, maths marks, physics marks, chemistry marks and their total. The sequence number identifies the card. Two students can share a name, so a name alone is not a reliable unique ID."
+        },
+        {
+          "type": "heading",
+          "text": "Shopping bills"
+        },
+        {
+          "type": "paragraph",
+          "text": "A simplified bill records a sequence number, store name, customer name, purchased items and total bill value. Each item row records item name, category, quantity, unit price and cost. The course omits real-bill details such as tax when they are not needed for the task."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Item",
+              "Category",
+              "Quantity",
+              "Unit price",
+              "Cost"
+            ],
+            [
+              "Rice",
+              "Food",
+              "2 kg",
+              "Rs 40 per kg",
+              "Rs 80"
+            ],
+            [
+              "Soap",
+              "Toiletries",
+              "3 bars",
+              "Rs 20 per bar",
+              "Rs 60"
+            ],
+            [
+              "Bill total",
+              "",
+              "",
+              "",
+              "Rs 140"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "One bill is one outer record, even though it contains several item rows. “Number of bills”, “number of item rows” and “total purchased quantity” are different questions."
+        },
+        {
+          "type": "heading",
+          "text": "Word cards"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture takes words from a paragraph and creates one card per occurrence. A word card stores its position, word text, part-of-speech category and letter count. Repeated words get separate cards because they occur at different positions. Punctuation stays attached to the word in the lecture dataset."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the teaching word “bright”, the category is Adjective and letter count is 6. For “open”, the part of speech depends on the sentence: “open the door” uses a verb, while “the door is open” uses an adjective."
+        },
+        {
+          "type": "heading",
+          "text": "The questions determine the fields you need"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Relevant fields"
+            ],
+            [
+              "What is the average maths mark?",
+              "Maths marks across marks cards."
+            ],
+            [
+              "How much did one customer spend at one store?",
+              "Customer, store and bill total."
+            ],
+            [
+              "How many long adjectives occur?",
+              "Category and letter count."
+            ],
+            [
+              "How many sentences are there?",
+              "Word order and a defined sentence-ending rule."
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A paragraph contains “it” twice. Should there be one card or two?",
+          "answer": "Two occurrence cards. Their text matches, but their positions differ. Collapsing them would change the word count.",
+          "text": "A paragraph contains “it” twice. Should there be one card or two? Answer: Two occurrence cards. Their text matches, but their positions differ. Collapsing them would change the word count."
+        },
+        {
+          "type": "check",
+          "question": "A shopping bill has five item rows. How many bills does that represent?",
+          "answer": "One bill, containing a list of five item rows. Count the outer record or the inner rows according to the question.",
+          "text": "A shopping bill has five item rows. How many bills does that represent? Answer: One bill, containing a list of five item rows. Count the outer record or the inner rows according to the question."
+        },
+        {
+          "type": "check",
+          "question": "Which field helps distinguish two students both called Ravi?",
+          "answer": "A unique sequence number or ID. A name can be shared by different people.",
+          "text": "Which field helps distinguish two students both called Ravi? Answer: A unique sequence number or ID. A name can be shared by different people."
+        },
+        {
+          "type": "check",
+          "question": "Three soaps cost Rs 20 each. Find the item cost.",
+          "answer": "Quantity × unit price = 3×20 = Rs 60. Check that the quantity and unit price refer to the same unit.",
+          "text": "Three soaps cost Rs 20 each. Find the item cost. Answer: Quantity × unit price = 3×20 = Rs 60. Check that the quantity and unit price refer to the same unit."
+        },
+        {
+          "type": "links",
+          "links": [
+            {
+              "href": "/computational-thinking/week-2/source-material-dataset-lab/",
+              "text": "Open the full course datasets and checked summaries"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.1 — Introduction to datasets. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Variables and iteration: remember your progress",
+      "slug": "variables-and-iteration",
+      "source": "Lecture 1.2 — Concept of variables, iterators and filtering",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A variable is a named place to keep a value while a procedure runs. Iteration means repeating a set of steps over the items. Together, they let you make progress without remembering everything in your head."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/variables-1.png",
+          "caption": "A variable remembers a changing value. Count and Sum answer different questions.",
+          "alt": "A variable remembers a changing value. Count and Sum answer different questions.",
+          "width": 766,
+          "height": 478
+        },
+        {
+          "type": "interactive",
+          "mode": "count"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/iteration.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "A count variable starts at zero and increases once whenever a new card is visited.",
+          "alt": "A count variable starts at zero and increases once whenever a new card is visited."
+        },
+        {
+          "type": "heading",
+          "text": "The two-pile method"
+        },
+        {
+          "type": "paragraph",
+          "text": "Put unvisited cards in Pile 1. Put visited cards in Pile 2. Start Count at 0. While Pile 1 has cards, pick one, move it to Pile 2 and add 1 to Count. When Pile 1 is empty, Count is the number of cards."
+        },
+        {
+          "type": "code",
+          "text": "Count ← 0\nWhile Pile 1 is not empty:\n    Pick one card X from Pile 1\n    Move X to Pile 2\n    Count ← Count + 1\nReport Count"
+        },
+        {
+          "type": "heading",
+          "text": "Read an assignment correctly"
+        },
+        {
+          "type": "paragraph",
+          "text": "The arrow ← means “store the value on the right in the variable on the left”. Count ← Count + 1 first reads the old Count, adds 1, then replaces the stored value. It is an update instruction, not the algebra claim that a number equals itself plus one."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Stage",
+              "Unvisited cards",
+              "Visited cards",
+              "Count"
+            ],
+            [
+              "Before starting",
+              "4",
+              "0",
+              "0"
+            ],
+            [
+              "After first card",
+              "3",
+              "1",
+              "1"
+            ],
+            [
+              "After second card",
+              "2",
+              "2",
+              "2"
+            ],
+            [
+              "After third card",
+              "1",
+              "3",
+              "3"
+            ],
+            [
+              "Finished",
+              "0",
+              "4",
+              "4"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Three parts of every loop"
+        },
+        {
+          "type": "paragraph",
+          "text": "Initialization prepares the starting state. The repeated step processes one new item and updates the variables. The stopping condition tells you when no work remains. Initialize Count once before the loop; setting it to zero inside every repetition would erase earlier progress."
+        },
+        {
+          "type": "heading",
+          "text": "Why it works, even halfway through"
+        },
+        {
+          "type": "paragraph",
+          "text": "After k completed card visits, Count equals k. This statement stays true throughout the procedure. The original lecture counts 30 marks cards. The final answer does not depend on which unvisited card is chosen next, provided every card is counted once and only once."
+        },
+        {
+          "type": "paragraph",
+          "text": "During this procedure a card’s recorded marks are input values that we leave unchanged. The Count variable changes. “Constant during this computation” does not mean a field can never be edited in a different task."
+        },
+        {
+          "type": "check",
+          "question": "Count is 7. What value is stored after Count ← Count + 1?",
+          "answer": "8. Read the old value 7, add 1, and store the result.",
+          "text": "Count is 7. What value is stored after Count ← Count + 1? Answer: 8. Read the old value 7, add 1, and store the result."
+        },
+        {
+          "type": "check",
+          "question": "What does this counting algorithm report for an empty pile?",
+          "answer": "0. Initialization happens, the loop test is false immediately, and no card is picked.",
+          "text": "What does this counting algorithm report for an empty pile? Answer: 0. Initialization happens, the loop test is false immediately, and no card is picked."
+        },
+        {
+          "type": "check",
+          "question": "Why move every processed card to Pile 2?",
+          "answer": "It marks the card as visited, preventing a second count and ensuring that the unvisited pile gets smaller.",
+          "text": "Why move every processed card to Pile 2? Answer: It marks the card as visited, preventing a second count and ensuring that the unvisited pile gets smaller."
+        },
+        {
+          "type": "check",
+          "question": "If Count starts at 1 instead of 0, what happens for five cards?",
+          "answer": "The final value becomes 6, one too large. Before any card is visited, the correct count is zero.",
+          "text": "If Count starts at 1 instead of 0, what happens for five cards? Answer: The final value becomes 6, one too large. Before any card is visited, the correct count is zero."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.2 — Concept of variables, iterators and filtering. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Sums and averages: two variables, one scan",
+      "slug": "sums-and-averages",
+      "source": "Lecture 1.2; Tutorial 1.1 — Tutorial for Lecture 2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Counting adds 1 for each record. Summing adds a value from that record. You can do both in one scan, then divide to get an average."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/average.png",
+          "caption": "The first four actual Mathematics marks sum to 229. Their average is 229 ÷ 4 = 57.25. The full 30-card average is calculated in the walkthrough.",
+          "alt": "The first four actual Mathematics marks sum to 229. Their average is 229 ÷ 4 = 57.25. The full 30-card average is calculated in the walkthrough.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "interactive",
+          "mode": "average"
+        },
+        {
+          "type": "interactive",
+          "mode": "sum"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/accumulation.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Four maths marks produce Count = 4, Sum = 229 and Average = 57.25.",
+          "alt": "Four maths marks produce Count = 4, Sum = 229 and Average = 57.25."
+        },
+        {
+          "type": "heading",
+          "text": "Trace a small example"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Card maths mark",
+              "Count after card",
+              "Sum after card"
+            ],
+            [
+              "68",
+              "1",
+              "68"
+            ],
+            [
+              "62",
+              "2",
+              "130"
+            ],
+            [
+              "57",
+              "3",
+              "187"
+            ],
+            [
+              "42",
+              "4",
+              "229"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "At every stage, Count means “cards seen so far” and Sum means “their maths marks added so far”. At the end, Average = Sum/Count = 229/4 = 57.25."
+        },
+        {
+          "type": "code",
+          "text": "Count ← 0\nSum ← 0\nFor each marks card X:\n    Count ← Count + 1\n    Sum ← Sum + X.mathsMarks\nIf Count > 0:\n    Average ← Sum / Count\nElse:\n    Report \"No observations to average\""
+        },
+        {
+          "type": "heading",
+          "text": "Reuse the pattern for the lecture dataset"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture reports 30 marks cards and a maths total of 2171. Their average is 2171/30 ≈ 72.3667. The same scan can accumulate physics marks too: keep MathsSum and PhysicsSum, and update both for every card. Separate variables keep separate meanings."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial example: average word length"
+        },
+        {
+          "type": "interactive",
+          "mode": "wordaverage"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the stored letterCount field rather than the printed card position. Tutorial 1.1 reports 65 word cards and 329 letters in total, giving 329/65 ≈ 5.0615 letters per word. Keep the fractional average: individual word lengths are whole numbers, but their average need not be."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the seven-word teaching dataset, letter counts are 3,6,5,4,3,4,9. Their sum is 34, so average length is 34/7 ≈ 4.8571. These teaching values are separate from the tutorial’s 65-word dataset."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes to catch"
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not add 1 to Sum when you mean to add the mark. Do not divide before checking Count. Do not reset Sum inside the loop. If you calculate an average with an integer-quotient operation, you may discard a meaningful fractional part; specify the intended division."
+        },
+        {
+          "type": "check",
+          "question": "Three marks are 10,20,30. Give final Count, Sum and Average.",
+          "answer": "Count = 3, Sum = 60, Average = 60/3 = 20.",
+          "text": "Three marks are 10,20,30. Give final Count, Sum and Average. Answer: Count = 3, Sum = 60, Average = 60/3 = 20."
+        },
+        {
+          "type": "check",
+          "question": "What variables are needed to find averages for maths and physics in one scan?",
+          "answer": "One Count plus MathsSum and PhysicsSum, all initialized before the loop. Divide each subject’s final sum by Count if Count is positive.",
+          "text": "What variables are needed to find averages for maths and physics in one scan? Answer: One Count plus MathsSum and PhysicsSum, all initialized before the loop. Divide each subject’s final sum by Count if Count is positive."
+        },
+        {
+          "type": "check",
+          "question": "The letter total is 17 across seven words. What is the average?",
+          "answer": "17/7 ≈ 2.4286 letters per word. It is not 17 letters per word, and integer quotient 2 would lose precision.",
+          "text": "The letter total is 17 across seven words. What is the average? Answer: 17/7 ≈ 2.4286 letters per word. It is not 17 letters per word, and integer quotient 2 would lose precision."
+        },
+        {
+          "type": "check",
+          "question": "Why not report an average of 0 when there are no cards?",
+          "answer": "There are no observations, so the average is undefined. Count is zero and division by zero is invalid. Report “no observations” instead.",
+          "text": "Why not report an average of 0 when there are no cards? Answer: There are no observations, so the average is undefined. Count is zero and division by zero is invalid. Report “no observations” instead."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.2; Tutorial 1.1 — Tutorial for Lecture 2. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Filtering: count only the cards you want",
+      "slug": "filtering",
+      "source": "Lecture 1.2; Tutorial 1.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A filter is a condition that selects the records relevant to a question. A filtered iteration still visits the records systematically, but only matching records update the chosen answer."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-2.png",
+          "width": 768,
+          "height": 478,
+          "caption": "Selected course cards show AND: keep a card only when both its city and gender pass the filter.",
+          "alt": "Selected course cards show AND: keep a card only when both its city and gender pass the filter."
+        },
+        {
+          "type": "interactive",
+          "mode": "filter"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/filter.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "VerbCount increases for run and jump, while every word card still becomes visited.",
+          "alt": "VerbCount increases for run and jump, while every word card still becomes visited."
+        },
+        {
+          "type": "heading",
+          "text": "Two ways to filter"
+        },
+        {
+          "type": "paragraph",
+          "text": "You can first separate matching cards into a pile and then count them. Or you can check each card and count a match immediately, in one scan. Both methods give the same selected set if the condition is unchanged."
+        },
+        {
+          "type": "code",
+          "text": "VerbCount ← 0\nFor each word card X:\n    If X.category = \"Verb\":\n        VerbCount ← VerbCount + 1\n    Mark X as visited\nReport VerbCount"
+        },
+        {
+          "type": "heading",
+          "text": "Trace the teaching words"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Word",
+              "Category",
+              "Match Verb?",
+              "VerbCount after visit"
+            ],
+            [
+              "run",
+              "Verb",
+              "Yes",
+              "1"
+            ],
+            [
+              "bright",
+              "Adjective",
+              "No",
+              "1"
+            ],
+            [
+              "river",
+              "Noun",
+              "No",
+              "1"
+            ],
+            [
+              "jump",
+              "Verb",
+              "Yes",
+              "2"
+            ],
+            [
+              "she",
+              "Pronoun",
+              "No",
+              "2"
+            ],
+            [
+              "tiny",
+              "Adjective",
+              "No",
+              "2"
+            ],
+            [
+              "beautiful",
+              "Adjective",
+              "No",
+              "2"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The answer is 2 verbs among 7 visited word cards. The lecture’s own paragraph has reported counts of 7 verbs and 7 pronouns; do not confuse its totals with this small teaching dataset."
+        },
+        {
+          "type": "heading",
+          "text": "Several counters can share one scan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Initialize VerbCount and PronounCount to zero. Update the appropriate count from each card’s recorded category. If you also count Other, the three totals should add to the number of visited cards, assuming each card has exactly one category label."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial example: all food versus no food"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/food-bills.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "An all-food bill, a no-food bill and a mixed bill affect the counters differently.",
+          "alt": "An all-food bill, a no-food bill and a mixed bill affect the counters differently."
+        },
+        {
+          "type": "paragraph",
+          "text": "Count bills, not individual food items. For a nonempty bill, “all food” means every item is food. “No food” means none of its items are food. A mixed bill meets neither condition. “Not all food” includes both mixed and no-food bills, so it is not the same as “no food”."
+        },
+        {
+          "type": "paragraph",
+          "text": "Assume the tutorial bills contain at least one item. If empty bills are possible in another task, explicitly define their handling before using all/none conditions; excluding or flagging an empty bill avoids ambiguity in this exercise."
+        },
+        {
+          "type": "check",
+          "question": "A bill contains rice, milk and soap. Does it increase AllFoodCount or NoFoodCount?",
+          "answer": "Neither. It has food and non-food items, so it is mixed.",
+          "text": "A bill contains rice, milk and soap. Does it increase AllFoodCount or NoFoodCount? Answer: Neither. It has food and non-food items, so it is mixed."
+        },
+        {
+          "type": "check",
+          "question": "A bill contains four food item rows. How much does AllFoodCount increase?",
+          "answer": "By 1, because the variable counts qualifying bills, not item rows.",
+          "text": "A bill contains four food item rows. How much does AllFoodCount increase? Answer: By 1, because the variable counts qualifying bills, not item rows."
+        },
+        {
+          "type": "check",
+          "question": "Five cards are visited and only two satisfy the filter. What are total visited and filtered count?",
+          "answer": "Total visited = 5; filtered count = 2. A rejected card was still inspected.",
+          "text": "Five cards are visited and only two satisfy the filter. What are total visited and filtered count? Answer: Total visited = 5; filtered count = 2. A rejected card was still inspected."
+        },
+        {
+          "type": "check",
+          "question": "Why is “If not all food, add to NoFoodCount” wrong?",
+          "answer": "A mixed bill is not all food but still contains some food. It should not increase NoFoodCount.",
+          "text": "Why is “If not all food, add to NoFoodCount” wrong? Answer: A mixed bill is not all food but still contains some food. It should not increase NoFoodCount."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.2; Tutorial 1.1. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Combine filters and keep separate group summaries",
+      "slug": "combined-filters",
+      "source": "Lecture 1.3; Tutorial 1.2 — Tutorial for Lecture 3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some questions require more than one condition. For example, a record must have group F AND city Chennai. Check both fields, then update only when the full condition matches."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-2.png",
+          "width": 768,
+          "height": 478,
+          "caption": "Selected course cards show AND: keep a card only when both its city and gender pass the filter.",
+          "alt": "Selected course cards show AND: keep a card only when both its city and gender pass the filter."
+        },
+        {
+          "type": "interactive",
+          "mode": "filter"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/variables-2.png",
+          "caption": "OR keeps a card when at least one condition is true. Compare this with the AND example.",
+          "alt": "OR keeps a card when at least one condition is true. Compare this with the AND example.",
+          "width": 768,
+          "height": 478
+        },
+        {
+          "type": "interactive",
+          "mode": "filteror"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/boolean.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "AND is true only when both conditions are true; inclusive OR accepts either or both.",
+          "alt": "AND is true only when both conditions are true; inclusive OR accepts either or both."
+        },
+        {
+          "type": "heading",
+          "text": "AND, OR and NOT"
+        },
+        {
+          "type": "paragraph",
+          "text": "A AND B requires both. A OR B requires at least one, including the case where both are true. NOT A reverses the truth value. Use parentheses to make combined conditions clear. A comparison such as letterCount > 4 already produces True or False."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: F records from Chennai"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "ID",
+              "Group",
+              "City",
+              "Maths",
+              "F AND Chennai?"
+            ],
+            [
+              "S01",
+              "F",
+              "Chennai",
+              "68",
+              "Yes"
+            ],
+            [
+              "S02",
+              "M",
+              "Madurai",
+              "62",
+              "No"
+            ],
+            [
+              "S03",
+              "F",
+              "Chennai",
+              "57",
+              "Yes"
+            ],
+            [
+              "S04",
+              "M",
+              "Chennai",
+              "42",
+              "No"
+            ],
+            [
+              "S05",
+              "F",
+              "Bengaluru",
+              "87",
+              "No"
+            ],
+            [
+              "S06",
+              "M",
+              "Chennai",
+              "71",
+              "No"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The matching IDs are S01 and S03, so count = 2. Their maths sum is 125 and average is 62.5. The original lecture finds 5 F cards from Chennai in its 30-card dataset; that is a different dataset."
+        },
+        {
+          "type": "paragraph",
+          "text": "Applying the two AND filters in either order selects the same records. In one pass, once the first AND condition is false, the second does not need to be evaluated to decide the result. For OR, a true first condition is enough to accept the card."
+        },
+        {
+          "type": "heading",
+          "text": "Date ranges include their boundaries"
+        },
+        {
+          "type": "paragraph",
+          "text": "The first half of a year runs from 1 January through 30 June, inclusive. With valid month/day values, months 1–6 meet this condition. The lecture reports 8 M and 7 F records in that half-year, totaling 15. The answer is computed from data, not assumed to be half just because the interval is half a year."
+        },
+        {
+          "type": "heading",
+          "text": "Two averages require four group variables"
+        },
+        {
+          "type": "code",
+          "text": "FCount ← 0; FSum ← 0\nMCount ← 0; MSum ← 0\nFor each valid marks card X:\n    If X.group = \"F\":\n        FCount ← FCount + 1\n        FSum ← FSum + X.mathsMarks\n    Else if X.group = \"M\":\n        MCount ← MCount + 1\n        MSum ← MSum + X.mathsMarks\nCompute each average only if its own count > 0"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the lecture data, MCount = 17, MSum = 1220, FCount = 13 and FSum = 951. The averages are approximately 71.7647 and 73.1538. These describe that dataset; they do not establish a universal group difference. One exceptional maximum is not a substitute for comparing all observations."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial examples use exactly the same patterns"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Task",
+              "Filter / state",
+              "Reported tutorial result"
+            ],
+            [
+              "Long adjectives",
+              "Category = Adjective AND letterCount > 4",
+              "7 matching cards"
+            ],
+            [
+              "One customer’s spending by store",
+              "Customer = Srivatsan; one sum per store",
+              "SV: Rs 843; Sun: Rs 694; Big Bazaar: Rs 0"
+            ],
+            [
+              "Average length by word category",
+              "A sum and count for each category",
+              "Prepositions: 27/10 = 2.7; pronouns: 17/7 ≈ 2.4286"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The store totals come from 567+276 = 843 and 340+354 = 694. A zero total in one store means no matching spending was accumulated there; it is different from an unknown or missing amount."
+        },
+        {
+          "type": "check",
+          "question": "Does a Chennai record labeled M satisfy group F OR city Chennai?",
+          "answer": "Yes. The city condition is true. Inclusive OR needs at least one true condition.",
+          "text": "Does a Chennai record labeled M satisfy group F OR city Chennai? Answer: Yes. The city condition is true. Inclusive OR needs at least one true condition."
+        },
+        {
+          "type": "check",
+          "question": "Do “more than 4 letters” and “at least 4 letters” select the same words?",
+          "answer": "No. More than 4 means >4, so length 4 fails. At least 4 means ≥4, so length 4 passes.",
+          "text": "Do “more than 4 letters” and “at least 4 letters” select the same words? Answer: No. More than 4 means >4, so length 4 fails. At least 4 means ≥4, so length 4 passes."
+        },
+        {
+          "type": "check",
+          "question": "Using the teaching marks, find the average for the F group.",
+          "answer": "F marks are 68,57,87. Sum = 212, Count = 3, Average = 212/3 ≈ 70.6667. Use the matching group count, not all 6 cards.",
+          "text": "Using the teaching marks, find the average for the F group. Answer: F marks are 68,57,87. Sum = 212, Count = 3, Average = 212/3 ≈ 70.6667. Use the matching group count, not all 6 cards."
+        },
+        {
+          "type": "check",
+          "question": "A group has no matching cards. What happens to its average?",
+          "answer": "Its count stays 0. Do not divide by 0; report that this group has no observations to average.",
+          "text": "A group has no matching cards. What happens to its average? Answer: Its count stays 0. Do not divide by 0; report that this group has no observations to average."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.3; Tutorial 1.2 — Tutorial for Lecture 3. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Flowcharts: draw decisions and repetition",
+      "slug": "introduction-to-flowcharts",
+      "source": "Lecture 1.4 — Introduction to flowcharts",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A flowchart draws a procedure using shapes and arrows. It shows the order of operations, the choices that can be made, and the steps that repeat."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/corrected-1.png",
+          "caption": "The complete loop checks for a card before reading it, increases Count once, then returns to the decision.",
+          "alt": "The complete loop checks for a card before reading it, increases Count once, then returns to the decision.",
+          "width": 766,
+          "height": 516
+        },
+        {
+          "type": "interactive",
+          "mode": "count"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/count-flowchart.svg",
+          "width": 1000,
+          "height": 980,
+          "caption": "This counting flowchart initializes Count, tests for a card, processes one card, then follows the loop arrow back.",
+          "alt": "This counting flowchart initializes Count, tests for a card, processes one card, then follows the loop arrow back."
+        },
+        {
+          "type": "heading",
+          "text": "Learn the four main symbols"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Symbol",
+              "Meaning",
+              "Example"
+            ],
+            [
+              "Terminal (oval or rounded end shape)",
+              "Start or end of the procedure",
+              "Start; End"
+            ],
+            [
+              "Process (rectangle)",
+              "An action or variable update",
+              "Count ← Count + 1"
+            ],
+            [
+              "Decision (diamond)",
+              "A condition with True/False paths",
+              "More cards in Pile 1?"
+            ],
+            [
+              "Flowline (arrow)",
+              "Direction and order of execution",
+              "Return to the loop test"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Follow the counting flowchart"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start, set Count to zero, then test whether Pile 1 has a card. Follow Yes to pick a card, increase Count and move the card to Pile 2. Follow the back arrow to test again. Follow No to End. The final Count is the answer."
+        },
+        {
+          "type": "paragraph",
+          "text": "The essential rule is that a completed visit updates the intended state and removes or marks that card before the next visit. In the lecture’s count diagram, moving the card comes before incrementing; our diagram increments then moves. Both give the same count when both actions complete once per card."
+        },
+        {
+          "type": "heading",
+          "text": "Turn a counting chart into a summing chart"
+        },
+        {
+          "type": "paragraph",
+          "text": "Replace Count ← 0 with Sum ← 0. Replace Count ← Count + 1 with Sum ← Sum + X.mathsMarks. The loop test and the card movement stay the same. This is pattern reuse: change the work done per record, not the entire structure."
+        },
+        {
+          "type": "heading",
+          "text": "Read the empty and one-card cases"
+        },
+        {
+          "type": "paragraph",
+          "text": "For no cards, the first decision is No, and Count stays 0. For one card, there is one Yes traversal, one increment and one move; the next test is No. These tiny examples are an effective way to detect an incorrect loop."
+        },
+        {
+          "type": "check",
+          "question": "Which shape should contain “X.mathsMarks > 50?”",
+          "answer": "A decision diamond. The comparison produces True or False and chooses a path.",
+          "text": "Which shape should contain “X.mathsMarks > 50?” Answer: A decision diamond. The comparison produces True or False and chooses a path."
+        },
+        {
+          "type": "check",
+          "question": "Which shape should contain “Sum ← Sum + 50”?",
+          "answer": "A process rectangle, because it changes a stored value.",
+          "text": "Which shape should contain “Sum ← Sum + 50”? Answer: A process rectangle, because it changes a stored value."
+        },
+        {
+          "type": "check",
+          "question": "Why test for more cards before picking one?",
+          "answer": "The original pile can be empty, including before the first visit. You cannot pick a card that is not there.",
+          "text": "Why test for more cards before picking one? Answer: The original pile can be empty, including before the first visit. You cannot pick a card that is not there."
+        },
+        {
+          "type": "check",
+          "question": "If the return arrow goes to Count ← 0, what is wrong?",
+          "answer": "It reinitializes the counter every time and erases progress. The return arrow should go to the card-availability test, after initialization.",
+          "text": "If the return arrow goes to Count ← 0, what is wrong? Answer: It reinitializes the counter every time and erases progress. The return arrow should go to the card-availability test, after initialization."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.4 — Introduction to flowcharts. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Flowcharts with filters: make every path finish a visit",
+      "slug": "flowcharts-with-filtering",
+      "source": "Lecture 1.5; Tutorial 1.3 — Tutorial for Lecture 5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A filtered flowchart adds another decision inside the loop. One decision asks whether work remains. The next asks whether the current card should update the answer."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/corrected-1.png",
+          "caption": "The complete loop checks for a card before reading it, increases Count once, then returns to the decision.",
+          "alt": "The complete loop checks for a card before reading it, increases Count once, then returns to the decision.",
+          "width": 766,
+          "height": 516
+        },
+        {
+          "type": "interactive",
+          "mode": "filter"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/filtered-flowchart.svg",
+          "width": 1000,
+          "height": 980,
+          "caption": "A card matching group F adds its maths mark; both match and non-match paths move the card and return to the loop test.",
+          "alt": "A card matching group F adds its maths mark; both match and non-match paths move the card and return to the loop test."
+        },
+        {
+          "type": "heading",
+          "text": "Separate the loop test from the filter test"
+        },
+        {
+          "type": "paragraph",
+          "text": "“More cards?” decides whether to start another visit. “X.group = F?” decides what to do with the card already picked. A No at the filter does not mean the dataset is finished: continue to the next card."
+        },
+        {
+          "type": "heading",
+          "text": "One-group sum"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start Sum at 0. On a matching F card, add its maths mark. On a non-matching card, do not change Sum. In both cases move the card to Pile 2 and return to the availability test. For the six teaching marks cards, the F total is 68+57+87 = 212."
+        },
+        {
+          "type": "heading",
+          "text": "Two-group sums in a single scan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Initialize FSum and MSum to zero. For a valid dataset whose group labels are exactly F and M, the filter’s Yes branch can update FSum and its No branch can update MSum. Both branches join before the loop continues. If other labels or missing values are allowed, do not automatically treat every non-F value as M; validate the labels or add an explicit branch."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial flowchart: all food and no food"
+        },
+        {
+          "type": "code",
+          "text": "AllFoodCount ← 0\nNoFoodCount ← 0\nFor each nonempty shopping bill X:\n    If every item in X is Food:\n        AllFoodCount ← AllFoodCount + 1\n    Else if no item in X is Food:\n        NoFoodCount ← NoFoodCount + 1\n    Move X to the visited pile"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the teaching bills [rice,milk], [soap,notebook], [rice,soap], [milk], the final counts are AllFoodCount = 2 and NoFoodCount = 1. The mixed bill updates neither. Draw the mixed path too: it must rejoin the loop just like the two updating paths."
+        },
+        {
+          "type": "heading",
+          "text": "Audit a flowchart with four questions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Is every variable initialized before use? Does every True/False branch have a destination? Does every completed visit mark or move the card? Does every continuing path return to the correct test? A missing path can skip records, stop early or repeat a card forever."
+        },
+        {
+          "type": "check",
+          "question": "A non-matching card is sent directly to End. Is that correct for filtered counting?",
+          "answer": "No. It ends the entire scan at the first non-match. Send the card to the visited pile and continue.",
+          "text": "A non-matching card is sent directly to End. Is that correct for filtered counting? Answer: No. It ends the entire scan at the first non-match. Send the card to the visited pile and continue."
+        },
+        {
+          "type": "check",
+          "question": "A filter’s No branch returns without moving the current card. What can happen?",
+          "answer": "The same rejected card can be selected again, so the loop may never finish. Every visited card needs progress handling.",
+          "text": "A filter’s No branch returns without moving the current card. What can happen? Answer: The same rejected card can be selected again, so the loop may never finish. Every visited card needs progress handling."
+        },
+        {
+          "type": "check",
+          "question": "When can an F/else-M split safely use just two branches?",
+          "answer": "When valid input records are guaranteed to have exactly F or M as their group label. Otherwise test or handle other values explicitly.",
+          "text": "When can an F/else-M split safely use just two branches? Answer: When valid input records are guaranteed to have exactly F or M as their group label. Otherwise test or handle other values explicitly."
+        },
+        {
+          "type": "check",
+          "question": "For bills [food,food], [non-food], [food,non-food], give the two counts.",
+          "answer": "AllFoodCount = 1 and NoFoodCount = 1. The mixed third bill changes neither counter.",
+          "text": "For bills [food,food], [non-food], [food,non-food], give the two counts. Answer: AllFoodCount = 1 and NoFoodCount = 1. The mixed third bill changes neither counter."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.5; Tutorial 1.3 — Tutorial for Lecture 5. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Sanity of data: find problems before calculating",
+      "slug": "sanity-of-data",
+      "source": "Lecture 1.6 — Sanity of data",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A well-written procedure can still give a wrong answer if its inputs are wrong. Sanity checking means asking whether the data have the expected format, range, fields, relationships and context."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/flow-2.png",
+          "caption": "The actual card adds up to 210. A deliberately changed mark of 135 illustrates a failed range check.",
+          "alt": "The actual card adds up to 210. A deliberately changed mark of 135 illustrates a failed range check.",
+          "width": 768,
+          "height": 510
+        },
+        {
+          "type": "interactive",
+          "mode": "sanity"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/sanity.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Data checks cover individual values, relationships, context, missing information and duplicate identifiers.",
+          "alt": "Data checks cover individual values, relationships, context, missing information and duplicate identifiers."
+        },
+        {
+          "type": "heading",
+          "text": "Check each field and its allowed range"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Problem",
+              "Why it needs attention"
+            ],
+            [
+              "Sequence number Q or 3F",
+              "The dataset expects a whole-number identifier."
+            ],
+            [
+              "Mark 766 out of 100",
+              "Outside the stated 0–100 range."
+            ],
+            [
+              "Quantity 2.1.5",
+              "Not a valid ordinary decimal number."
+            ],
+            [
+              "3.6 T-shirts",
+              "A count of indivisible shirts should be whole; 0.5 kg of sugar can be valid."
+            ],
+            [
+              "Date field contains Bengaluru",
+              "The wrong kind of value is in the field."
+            ],
+            [
+              "Biology replaces the required Maths field",
+              "The expected record structure is missing or mislabeled."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Check relationships, not just individual fields"
+        },
+        {
+          "type": "paragraph",
+          "text": "A marks total must equal maths + physics + chemistry. For example, 84+92+76 = 252. If chemistry says 766 while the total says 252, the record is inconsistent. If you trust the other three numbers, the implied chemistry mark is 252−84−92 = 76; that is a proposed correction to verify, not a fact established by type checking."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a simplified bill, quantity × unit price should equal item cost, and item costs should add to bill total. Three chart papers at Rs 22 cost Rs 66, not Rs 88. Even when every field is a legal number, a relationship can fail."
+        },
+        {
+          "type": "heading",
+          "text": "Context can change what is valid"
+        },
+        {
+          "type": "paragraph",
+          "text": "Thirty-one is a valid day in January but not April. Thirty April is valid; the rule is at most 30, not less than 30. Checking 29 February needs a year or a stated leap-year convention. A mark of 125 is invalid out of 100 but may be valid out of 150."
+        },
+        {
+          "type": "paragraph",
+          "text": "Quantity units must match the price units: 400 g of carrots at Rs 30 per kg is 0.4×30 = Rs 12, not 400×30 = Rs 12,000. A very large bill is a reason to investigate the units and context, not proof that the transaction must be wrong."
+        },
+        {
+          "type": "heading",
+          "text": "Missing is not zero"
+        },
+        {
+          "type": "paragraph",
+          "text": "A blank or NA price means the price is unknown. It is not automatically a free item. An external verified price list may help fill a missing unit price; a missing purchased quantity usually needs the original transaction. Do not invent an answer merely to make the arithmetic work."
+        },
+        {
+          "type": "heading",
+          "text": "Check categories, identities and word context"
+        },
+        {
+          "type": "paragraph",
+          "text": "Milk labeled Stationery needs a category check. Similar names such as Aditi Ram and R Aditi may refer to the same person or to different people: verify IDs and other evidence before merging. Check uniqueness across records as well as the format of one ID."
+        },
+        {
+          "type": "paragraph",
+          "text": "For word cards, compare the actual letter count with the stored count and check spelling. The word “open” has four letters; whether it is a verb or adjective requires its sentence. A dictionary or a format rule alone may not resolve the recorded category."
+        },
+        {
+          "type": "heading",
+          "text": "Flag first, then repair with evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Separate “a value is impossible under the rules” from “the record is unusual” and from “we lack enough information”. Keep the original entry, record the suspected issue, and verify a correction. A valid-looking record can still be factually wrong."
+        },
+        {
+          "type": "check",
+          "question": "Is 31 April valid just because day ≤31 and month ≤12?",
+          "answer": "No. Day limits depend on the month; April has 30 days. Checks across fields are necessary.",
+          "text": "Is 31 April valid just because day ≤31 and month ≤12? Answer: No. Day limits depend on the month; April has 30 days. Checks across fields are necessary."
+        },
+        {
+          "type": "check",
+          "question": "A bill has quantity 2, unit price Rs 40, cost Rs 60. Which value must be wrong?",
+          "answer": "At least one is inconsistent, because 2×40 = 80. The arithmetic alone does not prove whether quantity, price or cost is the incorrect field.",
+          "text": "A bill has quantity 2, unit price Rs 40, cost Rs 60. Which value must be wrong? Answer: At least one is inconsistent, because 2×40 = 80. The arithmetic alone does not prove whether quantity, price or cost is the incorrect field."
+        },
+        {
+          "type": "check",
+          "question": "Can NA be replaced with 0 without changing the meaning?",
+          "answer": "No. NA indicates missing information, while 0 is an actual amount. Treating them as the same can distort totals and averages.",
+          "text": "Can NA be replaced with 0 without changing the meaning? Answer: No. NA indicates missing information, while 0 is an actual amount. Treating them as the same can distort totals and averages."
+        },
+        {
+          "type": "check",
+          "question": "A city field contains a plausible person’s name. What check could help?",
+          "answer": "Validate against the intended city list or a reliable location source, and inspect whether fields were swapped or copied incorrectly.",
+          "text": "A city field contains a plausible person’s name. What check could help? Answer: Validate against the intended city list or a reliable location source, and inspect whether fields were swapped or copied incorrectly."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.6 — Sanity of data. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Basic data types: values and permitted operations",
+      "slug": "basic-data-types",
+      "source": "Lecture 1.7 — Introduction to datatypes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A data type describes two things: which values can be stored and which operations are permitted. A number-shaped label, a mark and a name have different meanings even when a computer can store all their characters."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-3.png",
+          "width": 766,
+          "height": 544,
+          "caption": "Bhuvanesh’s actual score card shows how one record groups fields with different types.",
+          "alt": "Bhuvanesh’s actual score card shows how one record groups fields with different types."
+        },
+        {
+          "type": "interactive",
+          "mode": "types"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/types.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Integer, Boolean, Character and String each support different values and operations.",
+          "alt": "Integer, Boolean, Character and String each support different values and operations."
+        },
+        {
+          "type": "heading",
+          "text": "Boolean: True or False"
+        },
+        {
+          "type": "paragraph",
+          "text": "A Boolean has exactly two values: True and False. Conditions produce Booleans. For example, 68 > 50 is True; city = Chennai is True or False for a particular record. AND, OR and NOT combine or reverse these values."
+        },
+        {
+          "type": "heading",
+          "text": "Integer: whole numbers including negatives"
+        },
+        {
+          "type": "paragraph",
+          "text": "Integers are …,−3,−2,−1,0,1,2,3,… . Adding, subtracting and multiplying integers gives an integer. Comparisons such as <, > and = give a Boolean, not another mark or count."
+        },
+        {
+          "type": "heading",
+          "text": "Division needs a stated rule"
+        },
+        {
+          "type": "paragraph",
+          "text": "21 divided by 7 gives integer 3 exactly. For 22 divided by 7, you may either allow a fractional result or explicitly choose the integer quotient 3 and remainder 1. The lecture discusses requiring exact divisibility or keeping the quotient. Do not silently use a quotient when an average needs its fractional part. Division by zero is never allowed here; rules for negative quotients also need specification in a concrete language."
+        },
+        {
+          "type": "heading",
+          "text": "Character and string"
+        },
+        {
+          "type": "paragraph",
+          "text": "A character is one symbol, such as A, z, 7, a comma or a full stop. A string is a sequence of characters, such as Chennai. The character “7”, the string “72” and the integer 72 are different kinds of values. Comparing two characters or strings for equality gives a Boolean."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture uses a check on the last character of a word to detect a full stop. That is a rule for this dataset’s sentence endings; abbreviations, question marks and other punctuation would require a richer rule in general text."
+        },
+        {
+          "type": "heading",
+          "text": "Input type and result type can differ"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Operation",
+              "Result type",
+              "Example"
+            ],
+            [
+              "Integer + Integer",
+              "Integer",
+              "2+3 gives 5."
+            ],
+            [
+              "Integer < Integer",
+              "Boolean",
+              "2<3 gives True."
+            ],
+            [
+              "Boolean AND Boolean",
+              "Boolean",
+              "True AND False gives False."
+            ],
+            [
+              "Character equality",
+              "Boolean",
+              "“.” equals “.” gives True."
+            ],
+            [
+              "String equality",
+              "Boolean",
+              "“Chennai” equals “Madurai” gives False."
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What type of result does 80 > 60 produce?",
+          "answer": "Boolean True. The inputs are integers, but a comparison produces a truth value.",
+          "text": "What type of result does 80 > 60 produce? Answer: Boolean True. The inputs are integers, but a comparison produces a truth value."
+        },
+        {
+          "type": "check",
+          "question": "Is −3 an integer? Is 3.5 an integer?",
+          "answer": "−3 is an integer; 3.5 is not. Integers include negatives and zero but no fractional part.",
+          "text": "Is −3 an integer? Is 3.5 an integer? Answer: −3 is an integer; 3.5 is not. Integers include negatives and zero but no fractional part."
+        },
+        {
+          "type": "check",
+          "question": "If the operation is integer quotient, what are 22 divided by 7 and its remainder?",
+          "answer": "Quotient = 3 and remainder = 1, because 22 = 7×3 + 1. Ordinary fractional division gives a different result.",
+          "text": "If the operation is integer quotient, what are 22 divided by 7 and its remainder? Answer: Quotient = 3 and remainder = 1, because 22 = 7×3 + 1. Ordinary fractional division gives a different result."
+        },
+        {
+          "type": "check",
+          "question": "Why is adding two names not the same operation as adding marks?",
+          "answer": "Names label identities; they are not numeric amounts. Joining their text is a different operation with a different meaning.",
+          "text": "Why is adding two names not the same operation as adding marks? Answer: Names label identities; they are not numeric amounts. Joining their text is a different operation with a different meaning."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.7 — Introduction to datatypes. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Subtypes: narrower rules for specific fields",
+      "slug": "subtypes",
+      "source": "Lecture 1.8 — Subtypes of basic datatypes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A subtype narrows a broader type to suit a particular purpose. It can restrict both the allowed values and the operations. This makes the intended meaning of a field clearer."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/flow-2.png",
+          "caption": "The actual card adds up to 210. A deliberately changed mark of 135 illustrates a failed range check.",
+          "alt": "The actual card adds up to 210. A deliberately changed mark of 135 illustrates a failed range check.",
+          "width": 768,
+          "height": 510
+        },
+        {
+          "type": "interactive",
+          "mode": "types"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/subtypes.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "SeqNo, Marks and Count have integer representations but different ranges and purposes.",
+          "alt": "SeqNo, Marks and Count have integer representations but different ranges and purposes."
+        },
+        {
+          "type": "heading",
+          "text": "Sequence number, marks and count"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Subtype",
+              "Allowed values in the exercise",
+              "Meaningful use"
+            ],
+            [
+              "SeqNo",
+              "Integers from 0 to a chosen Max",
+              "Identify a card; compare identity or position when specified."
+            ],
+            [
+              "Marks",
+              "Integers 0–100 for one subject",
+              "Compare scores or build an appropriately typed total."
+            ],
+            [
+              "Count",
+              "0,1,2,…, possibly limited by dataset size",
+              "Count cases; add compatible counts and compare."
+            ],
+            [
+              "TMarks",
+              "0–300 for three whole-number subject scores",
+              "Store one student’s combined three-subject total."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Max = 10,000 is a possible design choice from the lecture, not a universal limit on computers or datasets. If identifiers begin at zero, define the maximum ID and the number of available IDs carefully."
+        },
+        {
+          "type": "heading",
+          "text": "Storage arithmetic is not always meaningful domain arithmetic"
+        },
+        {
+          "type": "paragraph",
+          "text": "Adding two student IDs does not create a meaningful student ID. The lecture restricts operations on Marks and Count for its examples; those are domain choices, not claims that multiplication or division of numbers is always meaningless. For example, sum divided by count gives an average, with a suitable numerical result type."
+        },
+        {
+          "type": "heading",
+          "text": "An operation may leave the subtype’s range"
+        },
+        {
+          "type": "paragraph",
+          "text": "If Marks permits only 0–100, then 80+70 = 150 cannot be stored as a single-subject Mark. Use a larger TotalMarks or accumulator type. Similarly, subtracting count 7 from count 3 gives −4, which is an integer difference but not a nonnegative Count. Check result types and ranges, not only the operands."
+        },
+        {
+          "type": "heading",
+          "text": "Character and string subtypes"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Subtype",
+              "Exercise restriction"
+            ],
+            [
+              "Gender/group label",
+              "The lecture dataset uses characters M or F."
+            ],
+            [
+              "Names",
+              "Alphabetic text under the simplified slide rule."
+            ],
+            [
+              "City",
+              "Alphabetic text under the simplified slide rule."
+            ],
+            [
+              "Words",
+              "The dataset allows letters/numerals and specified punctuation."
+            ],
+            [
+              "Category",
+              "A permitted part-of-speech label, such as Noun, Verb or Adjective."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are rules for the teaching datasets. Real names and city names can legitimately contain spaces, punctuation or other writing systems, and real datasets may use different gender categories. Design the allowed values from the actual application rather than declaring the classroom simplifications universal."
+        },
+        {
+          "type": "heading",
+          "text": "Equality still needs a clear meaning"
+        },
+        {
+          "type": "paragraph",
+          "text": "For literal string equality, both strings must have the same length and the same character at each position. “Chennai” and “chennai” differ under a case-sensitive rule. Standardizing case or spaces may help category matching, but it does not automatically establish that two people have the same identity."
+        },
+        {
+          "type": "check",
+          "question": "Can Count store −2 if its definition allows only 0,1,2,…?",
+          "answer": "No. A difference can be negative, but its result then needs a suitable integer type rather than Count.",
+          "text": "Can Count store −2 if its definition allows only 0,1,2,…? Answer: No. A difference can be negative, but its result then needs a suitable integer type rather than Count."
+        },
+        {
+          "type": "check",
+          "question": "Three subject marks are 80,70,90. Which subtype suits their total?",
+          "answer": "The total is 240, so use TMarks or another total type allowing up to 300, not single-subject Marks limited to 100.",
+          "text": "Three subject marks are 80,70,90. Which subtype suits their total? Answer: The total is 240, so use TMarks or another total type allowing up to 300, not single-subject Marks limited to 100."
+        },
+        {
+          "type": "check",
+          "question": "A SeqNo permits 0–10000. Is 10001 valid?",
+          "answer": "No. It exceeds the chosen maximum, even though it is a valid integer.",
+          "text": "A SeqNo permits 0–10000. Is 10001 valid? Answer: No. It exceeds the chosen maximum, even though it is a valid integer."
+        },
+        {
+          "type": "check",
+          "question": "Should real names be rejected solely because the classroom Name subtype disallows punctuation?",
+          "answer": "No. The exercise rule is a simplified contract. Real applications need rules that fit valid names in their intended population.",
+          "text": "Should real names be rejected solely because the classroom Name subtype disallows punctuation? Answer: No. The exercise rule is a simplified contract. Real applications need rules that fit valid names in their intended population."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.8 — Subtypes of basic datatypes. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Transform representations: dates, fractional marks and money",
+      "slug": "transforming-subtypes",
+      "source": "Lecture 1.9 — Transformation of sub-datatypes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The way a value is displayed need not be the way it is stored. A useful representation makes the required comparisons and calculations easier, while a display operation converts it back to human-readable form."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/flow-3.png",
+          "caption": "Bhuvanesh’s mark can be represented as 68 out of 100 or 6,800 out of 10,000.",
+          "alt": "Bhuvanesh’s mark can be represented as 68 out of 100 or 6,800 out of 10,000.",
+          "width": 766,
+          "height": 512
+        },
+        {
+          "type": "interactive",
+          "mode": "scale"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/transformations.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Date indices and hundredths-based values are integers internally, with a defined conversion back for display.",
+          "alt": "Date indices and hundredths-based values are integers internally, with a defined conversion back for display."
+        },
+        {
+          "type": "heading",
+          "text": "Represent a date as its day index"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture uses 1 January = 0, 2 January = 1, 31 January = 30 and 1 February = 31. For a fixed non-leap year, valid day indices run 0–364. In a leap year they run 0–365. You need a consistent year/calendar convention, especially for 29 February and dates after February."
+        },
+        {
+          "type": "paragraph",
+          "text": "With that convention, compare dates by comparing their integer indices. Convert the index to a date string for display: print(31) produces “1 Feb”. Adding a number of days to a date or taking a difference between dates can be meaningful with boundary rules; adding two calendar dates is not automatically meaningful just because both are stored as integers."
+        },
+        {
+          "type": "heading",
+          "text": "Keep two decimal places by scaling"
+        },
+        {
+          "type": "paragraph",
+          "text": "If marks have at most two decimal places, multiply by 100 and store integer hundredths. 62.5 becomes 6250, and 75.25 becomes 7525. To display, divide the scale back out. Single-subject marks 0–100 therefore need stored integers 0–10000, as corrected in the supplied slides."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Human value",
+              "Store ×100",
+              "Display"
+            ],
+            [
+              "62.50 marks",
+              "6250",
+              "62.50 marks"
+            ],
+            [
+              "75.25 marks",
+              "7525",
+              "75.25 marks"
+            ],
+            [
+              "Rs 27.50",
+              "2750",
+              "Rs 27.50"
+            ],
+            [
+              "1.25 kg",
+              "125",
+              "1.25 kg"
+            ],
+            [
+              "100 marks",
+              "10000",
+              "100.00 marks"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Preserve the scale during operations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Add or compare values only after confirming compatible scales and units. Stored marks 6250+7525 = 13775 represent 137.75 total marks; that result requires a total type wider than single-subject Marks. Stored amounts Rs 27.50 and Rs 12.25 add as 2750+1225 = 3975 paise, displayed Rs 39.75."
+        },
+        {
+          "type": "paragraph",
+          "text": "If both quantity and price are scaled by 100, multiplying their stored integers creates a scale of 10,000. For 1.25 kg at Rs 20.00 per kg, 125×2000 = 250000 hundredths-of-hundredths. Divide by 100 to obtain 2500 paise, displayed Rs 25.00. State the rescaling and any rounding rule. Do not interpret 250000 as paise directly."
+        },
+        {
+          "type": "heading",
+          "text": "Why not drop the fractional part?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Turning 62.5 into 62 or 63 loses information and can affect comparisons. A floating-point type is another option, but it has finite precision; it does not store arbitrary real numbers exactly. The lesson’s fixed-scale representation is especially simple when the allowed decimal precision is known."
+        },
+        {
+          "type": "check",
+          "question": "How is 48.75 stored using hundredths, and how is stored 1250 displayed?",
+          "answer": "48.75 is stored as 4875. Stored 1250 represents 12.50 when the scale is 100.",
+          "text": "How is 48.75 stored using hundredths, and how is stored 1250 displayed? Answer: 48.75 is stored as 4875. Stored 1250 represents 12.50 when the scale is 100."
+        },
+        {
+          "type": "check",
+          "question": "What is the largest stored integer for one mark out of 100 at scale 100?",
+          "answer": "100×100 = 10000. A maximum of 1000 would only reach 10.00, so it is too small.",
+          "text": "What is the largest stored integer for one mark out of 100 at scale 100? Answer: 100×100 = 10000. A maximum of 1000 would only reach 10.00, so it is too small."
+        },
+        {
+          "type": "check",
+          "question": "With 1 Jan = 0, what index represents 2 February in the same year?",
+          "answer": "32. January contributes 31 days; 1 February is 31, so 2 February is 32.",
+          "text": "With 1 Jan = 0, what index represents 2 February in the same year? Answer: 32. January contributes 31 days; 1 February is 31, so 2 February is 32."
+        },
+        {
+          "type": "check",
+          "question": "Why should stored 125 from Quantity not be blindly added to stored 125 from Amount?",
+          "answer": "Their meanings and units differ. The first may mean 1.25 kg; the second may mean Rs 1.25. Equal integer representations do not make the quantities compatible.",
+          "text": "Why should stored 125 from Quantity not be blindly added to stored 125 from Amount? Answer: Their meanings and units differ. The first may mean 1.25 kg; the second may mean Rs 1.25. Equal integer representations do not make the quantities compatible."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.9 — Transformation of sub-datatypes. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Records and lists: build structured data",
+      "slug": "records-and-lists",
+      "source": "Lecture 1.10 — Introduction to complex datatypes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Basic types describe individual values. A record bundles named fields into one structured item. A list gathers a sequence of items. Combining them lets you describe a whole dataset and its nested parts."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/flow-4.png",
+          "caption": "The supplied first shopping bill contains seven item records. Their amounts add up to ₹567.",
+          "alt": "The supplied first shopping bill contains seven item records. Their amounts add up to ₹567.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "interactive",
+          "mode": "bills"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/corrected-3.png",
+          "caption": "Bill 4 contains only food. Bill 1 also contains toiletries and apparel, so it fails the all-food condition.",
+          "alt": "Bill 4 contains only food. Bill 1 also contains toiletries and apparel, so it fails the all-food condition.",
+          "width": 766,
+          "height": 506
+        },
+        {
+          "type": "interactive",
+          "mode": "food"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-1/records-lists.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "A ShoppingBill record contains an ItemList, which is a list of Item records.",
+          "alt": "A ShoppingBill record contains an ItemList, which is a list of Item records."
+        },
+        {
+          "type": "heading",
+          "text": "A record gives every field a name and a type"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "MarksCard field",
+              "Type"
+            ],
+            [
+              "sequenceNo",
+              "SeqNo"
+            ],
+            [
+              "name",
+              "Names"
+            ],
+            [
+              "gender",
+              "Gender label defined for this dataset"
+            ],
+            [
+              "dateOfBirth",
+              "Dates"
+            ],
+            [
+              "city",
+              "City"
+            ],
+            [
+              "mathsMarks, physicsMarks, chemistryMarks",
+              "Marks"
+            ],
+            [
+              "totalMarks",
+              "TMarks (up to 300 whole marks before scaling)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Related language terms include struct and tuple, but their exact rules differ by language. Here, use “record” for a bundle of named fields. Different fields may have different types; the three subject-mark fields happen to share one type."
+        },
+        {
+          "type": "heading",
+          "text": "WordInPara is another record"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Field",
+              "Type",
+              "Example"
+            ],
+            [
+              "sequenceNo",
+              "SeqNo",
+              "1"
+            ],
+            [
+              "word",
+              "Words",
+              "bright"
+            ],
+            [
+              "category",
+              "Category",
+              "Adjective"
+            ],
+            [
+              "letterCount",
+              "Count",
+              "6"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "X.word selects the word field of record X. It is not the entire record. A paragraph list contains many such records, including separate entries for repeated word occurrences."
+        },
+        {
+          "type": "heading",
+          "text": "A list is an ordered sequence"
+        },
+        {
+          "type": "paragraph",
+          "text": "MarksCardList is a list of MarksCard records. ParagraphWordList is a list of WordInPara records. ShoppingBillList is a list of ShoppingBill records. Lists can have different lengths, can be empty, and can contain repeated values. The course mainly uses lists whose elements share one declared type."
+        },
+        {
+          "type": "paragraph",
+          "text": "Order matters when reconstructing a paragraph or interpreting word positions. A count or sum over unchanged records is order-independent, but that does not mean list order is irrelevant to every task."
+        },
+        {
+          "type": "heading",
+          "text": "Nested records and lists in a bill"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Structure",
+              "Fields or contents"
+            ],
+            [
+              "ShoppingBill",
+              "sequenceNo, storeName, customerName, items, totalBillValue"
+            ],
+            [
+              "items: ItemList",
+              "A list of Item records."
+            ],
+            [
+              "Item",
+              "itemName, itemCategory, quantity, unitPrice, cost"
+            ],
+            [
+              "quantity",
+              "Quantity subtype."
+            ],
+            [
+              "unitPrice and cost",
+              "Amount subtype."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "To check whether a bill has only food, inspect the category field of every Item in its items list. To count shopping visits, iterate over the outer ShoppingBillList. The level you iterate over decides whether you count bills or item rows."
+        },
+        {
+          "type": "heading",
+          "text": "Field types are only part of data sanity"
+        },
+        {
+          "type": "paragraph",
+          "text": "A record can have individually valid field types and still have a wrong total, duplicate ID or incorrect category. You also need cross-field constraints such as totalMarks = maths + physics + chemistry, and across-record checks such as ID uniqueness. This distinction matters when turning a diagram into an actual validation procedure."
+        },
+        {
+          "type": "check",
+          "question": "Is a marks-card dataset better described as one MarksCard record or a list of MarksCard records?",
+          "answer": "A list of MarksCard records. One record represents one card; the list represents the collection.",
+          "text": "Is a marks-card dataset better described as one MarksCard record or a list of MarksCard records? Answer: A list of MarksCard records. One record represents one card; the list represents the collection."
+        },
+        {
+          "type": "check",
+          "question": "What is the type of a bill’s items field in this model?",
+          "answer": "ItemList: a list whose elements are Item records. It is not a single item name or a plain amount.",
+          "text": "What is the type of a bill’s items field in this model? Answer: ItemList: a list whose elements are Item records. It is not a single item name or a plain amount."
+        },
+        {
+          "type": "check",
+          "question": "Does a list need to have the same number of elements in every bill?",
+          "answer": "No. Different bills can contain different numbers of Item records while keeping the same ItemList type.",
+          "text": "Does a list need to have the same number of elements in every bill? Answer: No. Different bills can contain different numbers of Item records while keeping the same ItemList type."
+        },
+        {
+          "type": "check",
+          "question": "Do legal integer marks and a legal TMarks total guarantee that the total is correct?",
+          "answer": "No. The values can each be in range yet fail the sum constraint. Check relationships separately.",
+          "text": "Do legal integer marks and a legal TMarks total guarantee that the total is correct? Answer: No. The values can each be in range yet fail the sum constraint. Check relationships separately."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 1.10 — Introduction to complex datatypes. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Revision and practice with explained answers",
+      "slug": "revision-and-practice",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "interactive",
+          "mode": "count",
+          "explore": true
+        },
+        {
+          "type": "paragraph",
+          "text": "Try each question before revealing its answer. Trace one card at a time and state exactly what every variable means."
+        },
+        {
+          "type": "heading",
+          "text": "The Week 1 checklist"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Idea",
+              "Remember"
+            ],
+            [
+              "Algorithm",
+              "Precise steps, a goal and a stopping condition."
+            ],
+            [
+              "Iteration",
+              "Initialize, visit each new item, update, then stop."
+            ],
+            [
+              "Count / sum / average",
+              "Add 1 / add the field value / divide sum by matching count."
+            ],
+            [
+              "Filters",
+              "AND needs both; OR needs at least one."
+            ],
+            [
+              "Flowchart",
+              "Terminal, process, decision and flowline."
+            ],
+            [
+              "Data sanity",
+              "Check format, range, relationships, context and missing values."
+            ],
+            [
+              "Type and subtype",
+              "Allowed values and permitted operations."
+            ],
+            [
+              "Representation",
+              "Keep scales, units and calendar assumptions explicit."
+            ],
+            [
+              "Record / list",
+              "Named fields / an ordered sequence of items."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Twenty mixed practice questions"
+        },
+        {
+          "type": "check",
+          "question": "1. Three cards have maths marks 20,40,60. Give Count and Sum after each visit.",
+          "answer": "After card 1: Count=1, Sum=20. After card 2: Count=2, Sum=60. After card 3: Count=3, Sum=120. Final average = 120/3 = 40.",
+          "text": "1. Three cards have maths marks 20,40,60. Give Count and Sum after each visit. Answer: After card 1: Count=1, Sum=20. After card 2: Count=2, Sum=60. After card 3: Count=3, Sum=120. Final average = 120/3 = 40."
+        },
+        {
+          "type": "check",
+          "question": "2. Count starts at 0 and is set to 0 again for each new card before adding 1. What does it report after five cards?",
+          "answer": "It reports 1 instead of 5. Initialization belongs before the loop so earlier progress is not erased.",
+          "text": "2. Count starts at 0 and is set to 0 again for each new card before adding 1. What does it report after five cards? Answer: It reports 1 instead of 5. Initialization belongs before the loop so earlier progress is not erased."
+        },
+        {
+          "type": "check",
+          "question": "3. A filter accepts marks greater than 50. Which of 50,51,49,75 match?",
+          "answer": "51 and 75. “Greater than” excludes the boundary value 50.",
+          "text": "3. A filter accepts marks greater than 50. Which of 50,51,49,75 match? Answer: 51 and 75. “Greater than” excludes the boundary value 50."
+        },
+        {
+          "type": "check",
+          "question": "4. In the teaching words, how many adjectives have more than four letters?",
+          "answer": "bright (6) and beautiful (9) match: 2. tiny is an adjective but has only 4 letters.",
+          "text": "4. In the teaching words, how many adjectives have more than four letters? Answer: bright (6) and beautiful (9) match: 2. tiny is an adjective but has only 4 letters."
+        },
+        {
+          "type": "check",
+          "question": "5. For the teaching marks, list IDs satisfying group F OR city Chennai.",
+          "answer": "S01,S03,S04,S05,S06: five records. A record satisfying both conditions is counted only once in an OR selection.",
+          "text": "5. For the teaching marks, list IDs satisfying group F OR city Chennai. Answer: S01,S03,S04,S05,S06: five records. A record satisfying both conditions is counted only once in an OR selection."
+        },
+        {
+          "type": "check",
+          "question": "6. For the same dataset, list IDs satisfying group F AND city Chennai.",
+          "answer": "S01 and S03: two records. Both conditions must be true.",
+          "text": "6. For the same dataset, list IDs satisfying group F AND city Chennai. Answer: S01 and S03: two records. Both conditions must be true."
+        },
+        {
+          "type": "check",
+          "question": "7. Is 30 June inside the first half of the year? What about 1 July?",
+          "answer": "30 June is included; 1 July is excluded. The stated range is 1 January through 30 June, inclusive.",
+          "text": "7. Is 30 June inside the first half of the year? What about 1 July? Answer: 30 June is included; 1 July is excluded. The stated range is 1 January through 30 June, inclusive."
+        },
+        {
+          "type": "check",
+          "question": "8. Group A has sum 150 and count 2. Group B has sum 180 and count 3. Compare averages.",
+          "answer": "A average = 150/2 = 75. B average = 180/3 = 60. B has the larger total, but A has the larger average.",
+          "text": "8. Group A has sum 150 and count 2. Group B has sum 180 and count 3. Compare averages. Answer: A average = 150/2 = 75. B average = 180/3 = 60. B has the larger total, but A has the larger average."
+        },
+        {
+          "type": "check",
+          "question": "9. What is wrong with dividing FSum by the total count of all students?",
+          "answer": "That mixes a filtered numerator with an unfiltered denominator. For the F-group average, divide FSum by FCount.",
+          "text": "9. What is wrong with dividing FSum by the total count of all students? Answer: That mixes a filtered numerator with an unfiltered denominator. For the F-group average, divide FSum by FCount."
+        },
+        {
+          "type": "check",
+          "question": "10. A flowchart’s filter No branch skips the current card’s movement. What should be fixed?",
+          "answer": "Make the rejected-card path mark or move the card too, then join the loop. Otherwise it may be selected repeatedly.",
+          "text": "10. A flowchart’s filter No branch skips the current card’s movement. What should be fixed? Answer: Make the rejected-card path mark or move the card too, then join the loop. Otherwise it may be selected repeatedly."
+        },
+        {
+          "type": "check",
+          "question": "11. Bills have item categories [Food,Food], [Food,Soap-category], [Stationery], [Food]. Count all-food and no-food bills.",
+          "answer": "All-food = 2 (first and fourth). No-food = 1 (third). The second bill is mixed and increases neither.",
+          "text": "11. Bills have item categories [Food,Food], [Food,Soap-category], [Stationery], [Food]. Count all-food and no-food bills. Answer: All-food = 2 (first and fourth). No-food = 1 (third). The second bill is mixed and increases neither."
+        },
+        {
+          "type": "check",
+          "question": "12. A bill contains 3 notebooks at Rs 25 each, but says cost Rs 70. What can you conclude?",
+          "answer": "The relation fails because 3×25 = 75. At least one of quantity, unit price or cost is wrong; verify which before correcting it.",
+          "text": "12. A bill contains 3 notebooks at Rs 25 each, but says cost Rs 70. What can you conclude? Answer: The relation fails because 3×25 = 75. At least one of quantity, unit price or cost is wrong; verify which before correcting it."
+        },
+        {
+          "type": "check",
+          "question": "13. A recorded date is 29 February and no year is given. Can you prove it is invalid?",
+          "answer": "No. It is valid in a leap year. You need year information or an explicit calendar convention.",
+          "text": "13. A recorded date is 29 February and no year is given. Can you prove it is invalid? Answer: No. It is valid in a leap year. You need year information or an explicit calendar convention."
+        },
+        {
+          "type": "check",
+          "question": "14. A customer buys 250 g at Rs 80 per kg. Find the cost.",
+          "answer": "250 g = 0.25 kg. Cost = 0.25×80 = Rs 20. Multiplying 250 by 80 would mix grams with a per-kilogram price.",
+          "text": "14. A customer buys 250 g at Rs 80 per kg. Find the cost. Answer: 250 g = 0.25 kg. Cost = 0.25×80 = Rs 20. Multiplying 250 by 80 would mix grams with a per-kilogram price."
+        },
+        {
+          "type": "check",
+          "question": "15. What is the result type of “card category = Verb”?",
+          "answer": "Boolean: True or False. The input category is a label, but the comparison yields a truth value.",
+          "text": "15. What is the result type of “card category = Verb”? Answer: Boolean: True or False. The input category is a label, but the comparison yields a truth value."
+        },
+        {
+          "type": "check",
+          "question": "16. What is wrong with storing a three-subject total of 240 in Marks restricted to 0–100?",
+          "answer": "It is out of range for that subtype. Use TMarks or another appropriate total type that permits 240.",
+          "text": "16. What is wrong with storing a three-subject total of 240 in Marks restricted to 0–100? Answer: It is out of range for that subtype. Use TMarks or another appropriate total type that permits 240."
+        },
+        {
+          "type": "check",
+          "question": "17. Store Rs 19.95 and Rs 5.10 as paise, then add and display.",
+          "answer": "1995 + 510 = 2505 paise, displayed Rs 25.05. Both stored values use the same scale.",
+          "text": "17. Store Rs 19.95 and Rs 5.10 as paise, then add and display. Answer: 1995 + 510 = 2505 paise, displayed Rs 25.05. Both stored values use the same scale."
+        },
+        {
+          "type": "check",
+          "question": "18. Does stored integer 31 always mean 1 February?",
+          "answer": "Only under the specified date representation with 1 January=0. In an Amount it could mean 31 paise; representation requires its type and convention.",
+          "text": "18. Does stored integer 31 always mean 1 February? Answer: Only under the specified date representation with 1 January=0. In an Amount it could mean 31 paise; representation requires its type and convention."
+        },
+        {
+          "type": "check",
+          "question": "19. Is “items” in ShoppingBill a single record or a list? What is one element?",
+          "answer": "It is an ItemList. One element is an Item record with fields such as name, category, quantity, unit price and cost.",
+          "text": "19. Is “items” in ShoppingBill a single record or a list? What is one element? Answer: It is an ItemList. One element is an Item record with fields such as name, category, quantity, unit price and cost."
+        },
+        {
+          "type": "check",
+          "question": "20. Two records have valid field types but share an ID. Does field validation catch the full problem?",
+          "answer": "Not necessarily. Each ID may be an allowed integer, while uniqueness fails across records. Add an across-record duplicate check.",
+          "text": "20. Two records have valid field types but share an ID. Does field validation catch the full problem? Answer: Not necessarily. Each ID may be an allowed integer, while uniqueness fails across records. Add an across-record duplicate check."
+        }
+      ]
+    },
+    {
+      "title": "Source guide and important clarifications",
+      "slug": "source-material",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "These notes cover Lecture 0, Lectures 1.1–1.10, and Tutorials 1.1–1.3 from the supplied Week 1 English transcripts. The six supplied slide decks are used alongside their corresponding transcripts. Repeated slide builds are consolidated, while their final algorithms and data-type rules are retained."
+        },
+        {
+          "type": "heading",
+          "text": "Where to find each source topic"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Lesson in these notes"
+            ],
+            [
+              "Lecture 0",
+              "Start here: think in clear, repeatable steps"
+            ],
+            [
+              "Lecture 1.1",
+              "Meet the datasets"
+            ],
+            [
+              "Lecture 1.2",
+              "Variables and iteration; sums and averages; filtering"
+            ],
+            [
+              "Lecture 1.3",
+              "Combine filters and group summaries"
+            ],
+            [
+              "Lecture 1.4",
+              "Introduction to flowcharts"
+            ],
+            [
+              "Lecture 1.5",
+              "Flowcharts with filtering"
+            ],
+            [
+              "Lecture 1.6",
+              "Sanity of data"
+            ],
+            [
+              "Lecture 1.7",
+              "Basic data types"
+            ],
+            [
+              "Lecture 1.8",
+              "Subtypes"
+            ],
+            [
+              "Lecture 1.9",
+              "Transform representations"
+            ],
+            [
+              "Lecture 1.10",
+              "Records and lists"
+            ],
+            [
+              "Tutorial 1.1",
+              "All-food/no-food bills and average word length"
+            ],
+            [
+              "Tutorial 1.2",
+              "Long adjectives, customer/store sums and category averages"
+            ],
+            [
+              "Tutorial 1.3",
+              "Flowchart paths for all-food/no-food bills"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Which values are teaching examples?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The main interactive walkthroughs use the supplied course datasets: 30 score cards, 65 word occurrences and 30 shopping bills. Smaller examples elsewhere isolate a rule so you can check it by hand; they are not the full dataset. Source totals such as 2,171 Mathematics marks and 329 letters are calculated from the complete supplied records."
+        },
+        {
+          "type": "heading",
+          "text": "Corrections and limits made explicit"
+        },
+        {
+          "type": "paragraph",
+          "text": "The corrected slides use TMarks for a three-subject total, with range up to 300 before scaling. Fractional single-subject marks stored at scale 100 need range 0–10000. Date indices run to 364 in a normal year and 365 in a leap year. The April date check allows day 30."
+        },
+        {
+          "type": "paragraph",
+          "text": "A bounded subtype is not automatically closed under addition or subtraction: choose a valid result type. Exact or quotient division must be specified, and division by zero remains invalid. Fields with legal types still need cross-field and across-record validation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The classroom restrictions on names, cities, group labels and allowed operations are teaching-model choices. A real application needs its own appropriate rules. Floating-point representations have finite precision. “All food” and “no food” examples assume nonempty bills."
+        },
+        {
+          "type": "heading",
+          "text": "Notation used in these notes"
+        },
+        {
+          "type": "paragraph",
+          "text": "The arrow ← denotes assignment; indentation shows which actions belong inside a loop or condition. Equality in a condition is a test, not an assignment. X.field selects a field from the current record. This is readable pseudocode, not a promise that the text runs unchanged in Python or another programming language."
+        }
+      ]
+    }
+  ],
+  "illustrationCount": 25
+}

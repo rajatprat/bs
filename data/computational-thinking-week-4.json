@@ -1,0 +1,1607 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 4,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computational-thinking/week-4/",
+  "title": "Nested loops, useful bins and thoughtful shortcuts",
+  "description": "Find birthday pairs, compare cities and marks, group shopping bills, explore study partners and test pronoun rules with real course data.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Follow familiar records through nested searches, prepare helpful groups and learn when a shortcut is safe. Easy English, visual examples, interactive traces and explained practice connect Weeks 1–4."
+    }
+  ],
+  "sections": [
+    {
+      "slug": "nested-iterations",
+      "title": "One loop inside another: nested iteration",
+      "source": "Lectures 4.1, 4.3 and 4.8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You already know how to go through a pile once. Now imagine holding one student card, X, while reading several other student cards, Y. Then you pick a new X and repeat the inner scan. That is nested iteration: one repetition runs inside another repetition."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/nested-loops.png",
+          "alt": "Keep X fixed while Y changes. Only after that inner scan finishes do we move to the next X.",
+          "caption": "Keep X fixed while Y changes. Only after that inner scan finishes do we move to the next X.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "heading",
+          "text": "Two passes and two nested loops do different work"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Pattern",
+              "What happens with 30 cards?",
+              "Example"
+            ],
+            [
+              "Two separate full passes",
+              "30 + 30 = 60 visits",
+              "Find an average, then classify students"
+            ],
+            [
+              "Every ordered pair including self",
+              "30 × 30 = 900 checks",
+              "A complete 30-by-30 grid"
+            ],
+            [
+              "Distinct unordered pairs",
+              "30 × 29 ÷ 2 = 435 checks",
+              "Check each possible student pair once"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A visit is not always a pair comparison. A first pass may only place a card in a bin. We will name the work we count so that 30 placements are not silently confused with 30 pair checks."
+        },
+        {
+          "type": "code",
+          "text": "for each student X:\n    for each student Y after X:\n        compare X and Y\n    # The inner loop finishes before the next X."
+        },
+        {
+          "type": "paragraph",
+          "text": "For A, B, C, D: X = A compares with B, C, D. Next X = B compares with C, D. Next X = C compares with D. The last card has nobody after it. Three loops nested over n choices can do n × n × n operations; three separate passes do 3 × n visits."
+        },
+        {
+          "type": "check",
+          "question": "Do two WHILE statements always mean nested iteration?",
+          "answer": "No. Check their position. One WHILE inside the body of another is nested. Two complete loops written one after the other are sequential passes."
+        },
+        {
+          "type": "check",
+          "question": "If X is B in the A, B, C, D example, which Y cards remain?",
+          "answer": "C and D. A–B was already checked when X was A. B–B is a self-comparison and is excluded."
+        },
+        {
+          "type": "check",
+          "question": "With 30 choices in each of three unrestricted nested loops, how many combinations are there?",
+          "answer": "30 × 30 × 30 = 27,000. This differs from three sequential scans, which have 90 visits."
+        }
+      ]
+    },
+    {
+      "slug": "birthday-pairs",
+      "title": "Find students with the same birthday",
+      "source": "Lectures 4.1, 4.2 and 4.6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For this task, “same birthday” means the same day number AND the same month. The year does not matter. Two different students born on 15 March match; 15 March and 15 April do not."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/birthday-match.png",
+          "alt": "The supplied cards contain one matching birthday pair: Aditya and Monika, both born on 15 March.",
+          "caption": "The supplied cards contain one matching birthday pair: Aditya and Monika, both born on 15 March.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "birthday",
+          "explore": false
+        },
+        {
+          "type": "heading",
+          "text": "Ask the right question before choosing when to stop"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Is there any matching pair?” needs a true/false answer. Stop once a real pair is found. “How many pairs match?” needs the whole scan. Finding the first pair is not a general way to count all the pairs. Changing the card order can change the first pair found and the work before early stopping, but not the complete set of matching pairs."
+        },
+        {
+          "type": "paragraph",
+          "text": "A student must never be matched with their own card. Remove X from the search or use a separate identity such as CardNo to exclude it. Names can repeat in a larger dataset, so an identifier is safer than a name for deciding whether two records represent the same student."
+        },
+        {
+          "type": "heading",
+          "text": "Why is this called the birthday paradox?"
+        },
+        {
+          "type": "paragraph",
+          "text": "In a simplified model with 365 equally likely birthdays and independent people, 23 people already give a little over a 50% chance of at least one shared birthday. It is a probability, not a guarantee. The chance that somebody shares YOUR birthday is a different question. You do not need the probability formula to trace the search."
+        },
+        {
+          "type": "check",
+          "question": "Three different students share one birthday. How many matching unordered pairs are there?",
+          "answer": "Three: A–B, A–C and B–C. There is one shared date, three students on that date, and three pairs. These are different counts."
+        },
+        {
+          "type": "check",
+          "question": "May 15 and March 15: match or no match?",
+          "answer": "No match. Both day AND month must agree."
+        },
+        {
+          "type": "check",
+          "question": "Can a class of 30 students have no shared birthday?",
+          "answer": "Yes. A likely event is not a certain event. The search must be able to return false after checking all eligible pairs."
+        }
+      ]
+    },
+    {
+      "slug": "counting-comparisons",
+      "title": "Count pairs without counting twice",
+      "source": "Lectures 4.1 and 4.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/pair-count.png",
+          "alt": "Five objects have ten distinct unordered pairs. Ignore self-pairs and keep only one direction for each pair.",
+          "caption": "Five objects have ten distinct unordered pairs. Ignore self-pairs and keep only one direction for each pair.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with n × n choices. Remove the n self-comparisons. There are now n(n−1) ordered pairs. A–B and B–A represent the same unordered pair for birthday equality, so divide by 2."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Distinct unordered pairs}=\\frac{n(n-1)}{2}"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "n objects",
+              "Pairs"
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              9,
+              36
+            ],
+            [
+              30,
+              435
+            ],
+            [
+              100,
+              4950
+            ],
+            [
+              1000,
+              499500
+            ],
+            [
+              10000,
+              49995000
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Another way to see the formula is (n−1) + (n−2) + … + 1. For five cards this is 4 + 3 + 2 + 1 = 10. We also write this as “n choose 2”: choosing two different items without caring about their order."
+        },
+        {
+          "type": "note",
+          "text": "Only halve reversed pairs when reversing the two items means the same test. “X is older than Y” has a direction; do not automatically treat every pair problem as symmetric. The pair totals here assume a complete scan without early stopping."
+        },
+        {
+          "type": "paragraph",
+          "text": "As n grows, the pair count grows roughly with n squared. Doubling a large n makes the work roughly four times as large. A fast computer still benefits from avoiding unnecessary work. Exact running time depends on the machine and what each comparison does; a fixed comparisons-per-second claim is only an illustration."
+        },
+        {
+          "type": "check",
+          "question": "Why is 30 × 30 ÷ 2 = 450 not the exact answer?",
+          "answer": "It halves the self-comparisons too instead of removing them first. Use 30 × 29 ÷ 2 = 435."
+        },
+        {
+          "type": "check",
+          "question": "How many new comparisons does the final card make in the “later cards only” method?",
+          "answer": "Zero. Its pair with every earlier card has already been checked."
+        },
+        {
+          "type": "check",
+          "question": "For 100 objects, is the exact pair count 10,000?",
+          "answer": "No. That includes self-pairs and reversed pairs. The exact distinct unordered pair count is 100 × 99 ÷ 2 = 4,950."
+        }
+      ]
+    },
+    {
+      "slug": "birthday-month-bins",
+      "title": "Put birthdays into month bins",
+      "source": "Lectures 4.2 and 4.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A bin is simply a labelled group. First put each card into its month bin: January, February and so on. Two students born in different months cannot have the same birthday. Therefore, we only need day comparisons inside each month bin."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/month-bins.png",
+          "alt": "Month bins safely remove cross-month birthday comparisons. We still compare different students within each bin.",
+          "caption": "Month bins safely remove cross-month birthday comparisons. We still compare different students within each bin.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "month",
+          "explore": false
+        },
+        {
+          "type": "heading",
+          "text": "The actual month bins in your dataset"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Month",
+              "Cards",
+              "Within-bin pairs"
+            ],
+            [
+              "Jan",
+              3,
+              3
+            ],
+            [
+              "Feb",
+              2,
+              1
+            ],
+            [
+              "Mar",
+              4,
+              6
+            ],
+            [
+              "Apr",
+              1,
+              0
+            ],
+            [
+              "May",
+              4,
+              6
+            ],
+            [
+              "Jun",
+              1,
+              0
+            ],
+            [
+              "Jul / July",
+              3,
+              3
+            ],
+            [
+              "Aug",
+              1,
+              0
+            ],
+            [
+              "Sep",
+              3,
+              3
+            ],
+            [
+              "Oct",
+              2,
+              1
+            ],
+            [
+              "Nov",
+              2,
+              1
+            ],
+            [
+              "Dec",
+              4,
+              6
+            ],
+            [
+              "Total",
+              30,
+              30
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The full all-pairs method has 435 pair checks. Month binning has 30 card placements followed by 30 within-month pair checks when every pair is counted. The saving in pair checks is 405. This does not mean the entire algorithm does only 30 operations: grouping and storing cards also take work."
+        },
+        {
+          "type": "paragraph",
+          "text": "The source cards use both “Jul” and “July”. We normalize both spellings to the same month. Otherwise we would incorrectly split July into two bins and could miss a match in other data. Matching on a raw spelling is not always matching the real-world value."
+        },
+        {
+          "type": "paragraph",
+          "text": "Binning by day number is another safe option: create up to 31 day bins, then compare months inside each bin. A bin for the full day-and-month key can instead count previous occurrences while scanning. The right key depends on the question; sorting all dates is a different possible method."
+        },
+        {
+          "type": "check",
+          "question": "Can January 7 be compared only with November 7 after month binning?",
+          "answer": "No. It belongs with the other January cards. Month binning checks day equality inside January; cross-month cards cannot match."
+        },
+        {
+          "type": "check",
+          "question": "What if all 30 students were born in March?",
+          "answer": "The March bin would still need 435 unordered pair checks. The grouping pass adds work but does not save pair checks in that case."
+        },
+        {
+          "type": "check",
+          "question": "Why does a one-card bin need zero pair checks?",
+          "answer": "A pair needs two different records. A singleton cannot contain a matching student pair."
+        }
+      ]
+    },
+    {
+      "slug": "binning-work-and-space",
+      "title": "How much work does binning save?",
+      "source": "Lectures 4.3, 4.4 and 4.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/binning-saving.png",
+          "alt": "Nine objects need 36 all-pairs checks. Three bins of three need only 3 + 3 + 3 = 9 within-bin checks.",
+          "caption": "Nine objects need 36 all-pairs checks. Three bins of three need only 3 + 3 + 3 = 9 within-bin checks.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "For a bin containing nᵢ items, the pair count is nᵢ(nᵢ−1)/2. Add that number over all bins. This works even when the bins are not the same size."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Within-bin pair checks}=\\sum_{i=1}^{k}\\frac{n_i(n_i-1)}{2}"
+        },
+        {
+          "type": "paragraph",
+          "text": "If k bins have exactly equal sizes n/k, the sum simplifies to n(n/k−1)/2. Compared with n(n−1)/2, the exact reduction factor is (n−1)/(n/k−1), provided the denominator is nonzero. This is about k for large bins. Equal-size formulas require equal counts, not merely equal-width ranges."
+        },
+        {
+          "type": "week4-lab",
+          "mode": "bins",
+          "explore": false
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/binning-worst.png",
+          "alt": "Well-chosen bins can save time. One crowded bin saves no pair checks, and extra bins need extra space.",
+          "caption": "Well-chosen bins can save time. One crowded bin saves no pair checks, and extra bins need extra space.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "heading",
+          "text": "Three checks before you use bins"
+        },
+        {
+          "type": "paragraph",
+          "text": "First, prove that excluded cross-bin pairs cannot matter for an exact search. Second, inspect the actual bin sizes: uneven distribution changes the saving. Third, include the cost of grouping and storage. Physical bins take desk space; computer bins take memory. Memory is large but not unlimited."
+        },
+        {
+          "type": "paragraph",
+          "text": "If every bin has at most one card, there are zero within-bin pair checks. Do not divide by zero to call the speedup a finite factor. You still had to read and place the cards. Creating thousands of empty bins may also waste space; using only bins that occur can be helpful."
+        },
+        {
+          "type": "check",
+          "question": "Nine cards split into bins of 7, 1 and 1. How many pair checks remain?",
+          "answer": "7 × 6 ÷ 2 + 0 + 0 = 21. This is more than the 9 checks for three balanced bins of 3."
+        },
+        {
+          "type": "check",
+          "question": "Does doubling the number of bins always halve the whole running time?",
+          "answer": "No. Some bins may be empty or crowded. Grouping, lookup and storage cost work too. The equal-size pair formula describes only a particular comparison pattern."
+        },
+        {
+          "type": "check",
+          "question": "What does the time–space trade-off mean here?",
+          "answer": "Using more labelled groups can avoid repeated comparisons, but the groups require more storage or desk space."
+        }
+      ]
+    },
+    {
+      "slug": "city-and-maths-tutorial",
+      "title": "Tutorial: same city AND same Maths mark",
+      "source": "Tutorial 4.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Find pairs of different students with both the same CityTown and the same Mathematics mark. Checking only city counts too many pairs. Checking only Maths may match students from different cities."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/city-maths.png",
+          "alt": "Rahul and Deepika both come from Bengaluru and both have 97 in Mathematics. City bins reduce complete pair checks from 435 to 55.",
+          "caption": "Rahul and Deepika both come from Bengaluru and both have 97 in Mathematics. City bins reduce complete pair checks from 435 to 55.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "city",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Count = 0\nwhile Table1 has rows:\n    read first row X\n    move X from Table1 to Table2\n    while Table1 has rows:\n        read first row Y\n        if X.CityTown == Y.CityTown AND X.Mathematics == Y.Mathematics:\n            Count = Count + 1\n        move Y from Table1 to Table3\n    move all rows from Table3 back to Table1\n# Table2 contains the processed outer rows. Count is 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moving X out before the inner scan prevents self-comparison. Keeping processed X rows in Table2 prevents reversed duplicate pairs. Table3 holds inner-scan rows temporarily. Return ALL of Table3 to Table1 after each inner scan, or later outer cards will have no partners left to inspect. Here a different order among remaining rows is harmless as long as all remain and each outer row is eventually removed once."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "City",
+              "Rows",
+              "Pairs"
+            ],
+            [
+              "Ambur",
+              1,
+              0
+            ],
+            [
+              "Bengaluru",
+              5,
+              10
+            ],
+            [
+              "Chennai",
+              8,
+              28
+            ],
+            [
+              "Erode",
+              2,
+              1
+            ],
+            [
+              "Madurai",
+              5,
+              10
+            ],
+            [
+              "Nagercoil",
+              1,
+              0
+            ],
+            [
+              "Salem",
+              1,
+              0
+            ],
+            [
+              "Theni",
+              1,
+              0
+            ],
+            [
+              "Trichy",
+              3,
+              3
+            ],
+            [
+              "Vellore",
+              3,
+              3
+            ],
+            [
+              "Total",
+              30,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After grouping by CityTown, the inner test can be just X.Mathematics == Y.Mathematics because city equality is guaranteed by bin membership. The final answer remains 1. The preparation changes the work, not the matching rule."
+        },
+        {
+          "type": "check",
+          "question": "Does binning by city mean that every pair within Chennai is a match?",
+          "answer": "No. City equality is guaranteed, but Maths equality must still be tested."
+        },
+        {
+          "type": "check",
+          "question": "Why must Table3 be restored after EACH inner scan?",
+          "answer": "Those rows are still candidates for later outer rows. Without restoring them, the outer loop would stop after inspecting only the first X."
+        },
+        {
+          "type": "check",
+          "question": "If three students in one city all have the same Maths mark, what does Count gain?",
+          "answer": "Three pairs, not one city or three separate matches with themselves: A–B, A–C and B–C."
+        }
+      ]
+    },
+    {
+      "slug": "loyal-customers",
+      "title": "Shopping bills: find loyal customers",
+      "source": "Lecture 4.4",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In this lecture, a loyal customer has at least two observed bills, all from the same shop. One visit is too little evidence for this definition. Several visits to different shops fail the definition. We describe only the bills in our dataset."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/loyal-customer.png",
+          "alt": "Neeraja has two observed bills from SV Stores. A single visit is not enough to pass the lecture’s loyalty rule.",
+          "caption": "Neeraja has two observed bills from SV Stores. A single visit is not enough to pass the lecture’s loyalty rule.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "loyal",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Group the bills by Customer\nfor each customer bin B:\n    if number of bills in B < 2:\n        report \"Too little evidence\"\n    else:\n        FirstShop = the shop on the first bill\n        SameShop = true\n        for each bill X in B:\n            if X.Store != FirstShop:\n                SameShop = false\n        if SameShop:\n            report \"Loyal in these observations\"\n        else:\n            report \"Uses multiple shops\""
+        },
+        {
+          "type": "paragraph",
+          "text": "We do not need to compare every bill with every other bill. Within each customer bin, compare each shop name with one reference shop. The inner scans together inspect every bill once, even though the code has a loop over bins and a loop over their contents. Work depends on how often records are visited, not only on counting WHILE keywords."
+        },
+        {
+          "type": "paragraph",
+          "text": "There are 16 customer bins: 9 single-visit customers, 6 customers who visited multiple shops, and Neeraja, the only customer with repeated bills from one shop. Srivatsan has 4 bills from 2 shops; Ahmed has 4 bills from 2 shops. Seeing a different shop proves a customer fails, but seeing only the first two same-shop bills does not yet prove they pass."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture also tries collecting one customer’s bills while scanning the remaining pile. Removing the whole completed customer group prevents repeating that customer’s task. However, repeatedly searching for the next customer’s bills can still revisit other bills. Grouping all customers first avoids those repeated full searches when bins can be located efficiently."
+        },
+        {
+          "type": "check",
+          "question": "Four bills for a customer: SV Stores, SV Stores, SV Stores, Sun General. Loyal?",
+          "answer": "No. The last bill breaks the “all bills from one shop” condition. Never return true after checking only the first few matching bills."
+        },
+        {
+          "type": "check",
+          "question": "Why group by customer instead of shop?",
+          "answer": "The question asks about one customer’s behaviour across shops. A shop bin mixes customers and does not by itself tell whether a particular customer also visited another shop."
+        },
+        {
+          "type": "check",
+          "question": "Does “loyal in these bills” mean the person never uses another shop?",
+          "answer": "No. It is a conclusion about the supplied observations under the stated rule, not a claim about all their shopping."
+        }
+      ]
+    },
+    {
+      "slug": "fair-study-partners",
+      "title": "Build study pairs that help each other",
+      "source": "Lecture 4.5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A useful study pair can help in both directions: one student has stronger Maths marks, while the other has stronger Physics marks. This is different from pairing the highest scorer with the lowest scorer so that help goes mostly one way. Define the goal before choosing the method."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/study-partners.png",
+          "alt": "Ritika can help Akshaya with Maths (87 versus 71); Akshaya can help Ritika with Physics (92 versus 64). Their totals are 240 and 247.",
+          "caption": "Ritika can help Akshaya with Maths (87 versus 71); Akshaya can help Ritika with Physics (92 versus 64). Their totals are 240 and 247.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "To reduce the search, first group students into total bands. We use 150–174, 175–199, 200–224, 225–249, 250–274 and 275–299. The endpoints do not overlap: 250 belongs to 250–274. The counts in these six bands are 2, 6, 9, 6, 5 and 2. Equal widths do not create equal numbers of students."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/team-preparation.png",
+          "alt": "Prepare total bands, then split each band into Maths-above-Physics and Physics-above-Maths groups before comparing candidates across the groups.",
+          "caption": "Prepare total bands, then split each band into Maths-above-Physics and Physics-above-Maths groups before comparing candidates across the groups.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "teams",
+          "explore": false
+        },
+        {
+          "type": "heading",
+          "text": "Check the two students against each other"
+        },
+        {
+          "type": "code",
+          "text": "for each total band B:\n    M = students in B with Mathematics > Physics\n    P = students in B with Physics > Mathematics\n    for each student X in M:\n        for each student Y in P:\n            if X.Mathematics > Y.Mathematics AND Y.Physics > X.Physics:\n                report a candidate study pair"
+        },
+        {
+          "type": "paragraph",
+          "text": "The two personal-strength groups are a shortcut to candidate generation. We still check X’s Maths against Y’s Maths and Y’s Physics against X’s Physics. A student with equal marks in both subjects goes into neither strict group. This does not mean they cannot have any useful partner."
+        },
+        {
+          "type": "paragraph",
+          "text": "With groups of a and b students, there are a × b cross-group candidate checks, not (a+b) squared. An 8-student group split into 4 and 4 needs 16 cross-group checks; all distinct unordered pairs among 8 would be 28. The complete walkthrough lists candidate pairs, so one student may appear more than once. It does not allocate exclusive teams."
+        },
+        {
+          "type": "check",
+          "question": "Why can similar three-subject totals fail to imply complementary Maths and Physics?",
+          "answer": "Chemistry contributes to Total. Two students can reach a similar Total through very different Chemistry marks. Check the actual subject marks or use a Maths-plus-Physics subtotal for that goal."
+        },
+        {
+          "type": "check",
+          "question": "Is a student with Maths 80 and Physics 75 automatically a good partner for one with Maths 70 and Physics 65?",
+          "answer": "No. The first student is higher in both subjects. That fails the goal of each student helping the other in a different subject."
+        },
+        {
+          "type": "check",
+          "question": "Does the lecture’s choice to set aside the highest band mean high scorers never need help?",
+          "answer": "No. That was one choice in the classroom activity. High scorers may still benefit from peers. Our candidate explorer includes every band."
+        }
+      ]
+    },
+    {
+      "slug": "heuristics-and-boundaries",
+      "title": "Heuristics: useful choices, limits and better bins",
+      "source": "Lecture 4.5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A heuristic is a practical rule that tries to find a good answer with less search. It is not automatically an exact method or a proof of the best answer. The study-partner activity has many reasonable solutions because “good” depends on the goal."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/heuristic-boundary.png",
+          "alt": "A useful pair can lie across the 224/225 boundary. Bins guide a heuristic; they do not prove which study partners are possible.",
+          "caption": "A useful pair can lie across the 224/225 boundary. Bins guide a heuristic; they do not prove which study partners are possible.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "For exact birthday matching, different months cannot match, so excluding cross-month pairs is safe. For study partners, 224 and 225 are close totals but lie in different bands. Excluding that cross-band pair may lose a useful match. This is a major difference between safe pruning and heuristic pruning."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can change band widths, compare neighbouring bands, try a Maths-plus-Physics subtotal, consider Chemistry, or reconsider earlier pairs. To create exclusive teams, remove or mark a student after assigning them and define a tie or choice policy. A greedy early choice can prevent another student from finding a partner. An optimal pairing requires a precise objective and may require a more involved search."
+        },
+        {
+          "type": "heading",
+          "text": "Equal width versus equal size"
+        },
+        {
+          "type": "paragraph",
+          "text": "Marks may cluster in the middle, but do not assume every class follows a bell-shaped curve. Inspect this dataset. Narrower middle bands and wider edge bands can balance bin counts. Another option is to split a crowded bin as data arrives. Each extra preparation pass costs work but can reduce later candidate comparisons. Report the actual sizes and do not claim a guaranteed speedup."
+        },
+        {
+          "type": "check",
+          "question": "What makes a birthday month bin exact but a study-partner total bin heuristic?",
+          "answer": "Different months mathematically rule out equal birthdays. Different total bands do not rule out a good study pair."
+        },
+        {
+          "type": "check",
+          "question": "Does a candidate list prove that everybody can be put into a distinct pair?",
+          "answer": "No. Candidates can share students. Exclusive pairing is a separate assignment task, and some students may remain unpaired."
+        },
+        {
+          "type": "check",
+          "question": "How could you improve a very crowded central band?",
+          "answer": "Split it into narrower ranges, then consider whether neighbouring-bin comparisons are needed for the goal. Measure the resulting group sizes and work."
+        }
+      ]
+    },
+    {
+      "slug": "birthday-procedure-contract",
+      "title": "SearchBirthday: inputs, return values and side effects",
+      "source": "Lecture 4.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/birthday-contract.png",
+          "alt": "SearchBirthday needs a target birthday and eligible other students. Its contract also states what card order and markers must survive.",
+          "caption": "SearchBirthday needs a target birthday and eligible other students. Its contract also states what card order and markers must survive.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "A procedure lets the caller delegate a well-defined task. SearchBirthday(Target, OtherCards) returns true if at least one card in OtherCards has the target day and month; otherwise it returns false. For an individual student search, OtherCards must exclude that student. The caller can pass only later unprocessed cards to avoid repeated pairs."
+        },
+        {
+          "type": "week4-lab",
+          "mode": "contract",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Procedure SearchBirthday(Target, OtherCards):\n    for each card Y in OtherCards:\n        if BirthdayKey(Y) == Target:\n            restore any required order and markers\n            return true\n    restore any required order and markers\n    return false\nEnd Procedure"
+        },
+        {
+          "type": "paragraph",
+          "text": "Returning false inside the loop after the first non-match is a bug: a later card may match. Returning true after a genuine match is valid for existence. Early return must still honour the restoration part of the contract."
+        },
+        {
+          "type": "heading",
+          "text": "Three possible contracts"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Contract",
+              "What the helper may change"
+            ],
+            [
+              "Answer only; free reordering",
+              "It can reorder cards if the caller does not rely on order"
+            ],
+            [
+              "Preserve markers / processed status",
+              "It can reorder where allowed, but must keep each card’s status"
+            ],
+            [
+              "No observable side effects",
+              "Restore original values, markers and exact order"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In the lecture, sideways cards mark students already processed. Losing that orientation makes the caller forget which outer cards are finished. A correct Boolean alone is not enough. The caller may rely on guarantees written in the contract, but must not assume stronger guarantees that were never promised."
+        },
+        {
+          "type": "paragraph",
+          "text": "The target birthday is a parameter. A marked deck can also carry a parameter implicitly: the mark tells the helper which position or card matters. Written code is usually clearer when it names the target, eligible records and preservation rules explicitly."
+        },
+        {
+          "type": "check",
+          "question": "Why is SearchBirthday called with the selected student still in OtherCards wrong?",
+          "answer": "The student always matches their own birthday, so every search would report true even when no second student matches."
+        },
+        {
+          "type": "check",
+          "question": "Can a helper return the correct answer and still violate its contract?",
+          "answer": "Yes. It may lose processed markers or reorder words when preservation was promised. The caller’s later work can then fail."
+        },
+        {
+          "type": "check",
+          "question": "A helper checked three non-matches out of 29 cards. May it return false?",
+          "answer": "No. A false result requires exhausting the eligible cards. A true result needs only one genuine match."
+        }
+      ]
+    },
+    {
+      "slug": "pronouns-backward-search",
+      "title": "Find a pronoun’s person: search backwards",
+      "source": "Lecture 4.7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A pronoun such as he or his can refer to a person mentioned earlier. Our word cards preserve the paragraph’s order with SerialNumber. The task asks about meaning, so the nearest ordinary noun is not enough: “eyes”, “Monday” and “calendar” are nouns but not the person named Swaminathan."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/pronoun-backward.png",
+          "alt": "At “his” in position 9, look backwards past “open”, “to”, “reluctant” and “was” to the name Swaminathan in position 4.",
+          "caption": "At “his” in position 9, look backwards past “open”, “to”, “reluctant” and “was” to the name Swaminathan in position 4.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "pronoun",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "For this small demonstration, we explicitly recognize the person names Swaminathan and Vedanayagam. PartOfSpeech = Noun alone does not tell us which nouns are people. A larger language system would need more information. The nearest-person-name rule produces a candidate; later lessons here show when that rule fails."
+        },
+        {
+          "type": "heading",
+          "text": "The outer loop and the inner loop"
+        },
+        {
+          "type": "paragraph",
+          "text": "The outer loop reads the paragraph forwards. When a relevant pronoun is found, the inner loop searches earlier words backwards. After finding a candidate, restore the searched cards, return to the marked pronoun and resume the outer loop after it. Without a position marker, you may repeat or skip words."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/word-restoration.png",
+          "alt": "A word-search helper must return the original word order and the caller’s marked position, together with its answer.",
+          "caption": "A word-search helper must return the original word order and the caller’s marked position, together with its answer.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "If the text has p pronouns and each backward scan may inspect up to n words, the search can revisit many cards. Physical restoration adds movements too. The order of a sentence is part of the information: changing it can change the meaning, unlike reordering cards when only their mark sum matters."
+        },
+        {
+          "type": "check",
+          "question": "At word 11, “He considered”, why not choose “eyes” at word 10?",
+          "answer": "It is a noun, but not a person name. The simple person-name search passes it and reaches Swaminathan at position 4."
+        },
+        {
+          "type": "check",
+          "question": "What should the procedure return if it reaches the start without a suitable name?",
+          "answer": "An explicit unresolved result. It should not invent a person or silently reuse an unrelated value."
+        },
+        {
+          "type": "check",
+          "question": "Why keep SerialNumber when showing words in a table?",
+          "answer": "The position preserves text order and lets us locate the pronoun and preceding words even if another view is filtered or rearranged."
+        }
+      ]
+    },
+    {
+      "slug": "pronouns-forward-memory",
+      "title": "Remember a name instead of searching again",
+      "source": "Lecture 4.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/pronoun-memory.png",
+          "alt": "LastName stores a candidate while the paragraph is read forwards. Update it when a new recognized person name appears.",
+          "caption": "LastName stores a candidate while the paragraph is read forwards. Update it when a new recognized person name appears.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeatedly searching backwards for Swaminathan seems wasteful. Keep a variable LastName. Start it as empty. Read forwards; when a recognized person name appears, update LastName. At a relevant pronoun, use the remembered name as a candidate. This replaces repeated scans with remembered information."
+        },
+        {
+          "type": "week4-lab",
+          "mode": "memory",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "LastName = empty\nfor each word card X in paragraph order:\n    if X is a recognized person name:\n        LastName = X.Word\n    if X is a relevant personal pronoun:\n        if LastName is empty:\n            report \"Unresolved\"\n        else:\n            report LastName as a candidate, not guaranteed meaning"
+        },
+        {
+          "type": "paragraph",
+          "text": "For “his eyes” at position 9 and “He shuddered” at position 40, the candidate is Swaminathan. A single forward pass can generate these candidates without repeated backward scans. The rule must still be checked against what the sentence means."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture discusses keeping more than one remembered person or object. That may help, but categories alone cannot resolve every sentence. Do not infer a person’s identity or pronoun use from a name. We use explicit passage context, and we leave the opening “It” and impersonal “it” outside this person-name demonstration."
+        },
+        {
+          "type": "check",
+          "question": "Should seeing Monday overwrite LastName?",
+          "answer": "No. Monday is a noun but not a person name. Updating on every noun would break even these simple examples."
+        },
+        {
+          "type": "check",
+          "question": "What does LastName contain immediately before the first person name?",
+          "answer": "Empty or unresolved. It must be initialized; there is no earlier recognized person to remember."
+        },
+        {
+          "type": "check",
+          "question": "Why can remembering a value make an algorithm faster?",
+          "answer": "Later steps can reuse information from earlier visits instead of rescanning the same records. But the remembered value must still contain enough information for the actual task."
+        }
+      ]
+    },
+    {
+      "slug": "pronoun-rule-counterexamples",
+      "title": "When the nearest-name rule gets meaning wrong",
+      "source": "Lecture 4.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/pronoun-context.png",
+          "alt": "In “Vedanayagam, his class teacher”, “his” refers to Swaminathan. The nearest explicit name is not the right answer here.",
+          "caption": "In “Vedanayagam, his class teacher”, “his” refers to Swaminathan. The nearest explicit name is not the right answer here.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Position",
+              "Pronoun context",
+              "Nearest explicit person name",
+              "Meaning in this passage"
+            ],
+            [
+              9,
+              "his eyes",
+              "Swaminathan",
+              "Swaminathan"
+            ],
+            [
+              11,
+              "He considered",
+              "Swaminathan",
+              "Swaminathan"
+            ],
+            [
+              40,
+              "He shuddered",
+              "Swaminathan",
+              "Swaminathan"
+            ],
+            [
+              55,
+              "Vedanayagam, his class teacher",
+              "Vedanayagam",
+              "Swaminathan"
+            ],
+            [
+              61,
+              "headmaster with his thin long cane",
+              "Vedanayagam",
+              "headmaster"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "At position 55, the teacher is Vedanayagam, but “his class teacher” means Swaminathan’s class teacher. At position 61, the cane belongs to the headmaster. Headmaster is a person described by a role, not one of our two explicit names. Both examples show that syntax and context matter."
+        },
+        {
+          "type": "paragraph",
+          "text": "Backward search and forward LastName memory can implement the same inadequate nearest-name rule. Making that rule faster does not make it a correct general language algorithm. Test counterexamples, state the rule’s limits and flag unresolved meaning rather than confidently returning a wrong person."
+        },
+        {
+          "type": "paragraph",
+          "text": "A richer resolver could remember multiple candidate people and roles, read sentence structure, and return uncertainty when the evidence is insufficient. That is a direction for improvement, not a complete natural-language solution taught by this small exercise. A strict procedure contract should promise only the rule it can actually perform."
+        },
+        {
+          "type": "check",
+          "question": "If a procedure correctly finds the nearest name at position 55, has it correctly understood “his”?",
+          "answer": "No. It correctly performed a search rule, but the rule returns Vedanayagam while the meaning here is Swaminathan."
+        },
+        {
+          "type": "check",
+          "question": "Why does the word headmaster matter although it is not a personal name?",
+          "answer": "A role can refer to a person. Meaning cannot always be reduced to searching a fixed list of names."
+        },
+        {
+          "type": "check",
+          "question": "What is the right response to a counterexample?",
+          "answer": "Keep it in the tests, explain why the current rule fails, and refine or limit the rule. Do not hide it by choosing only easy examples."
+        }
+      ]
+    },
+    {
+      "slug": "or-versus-two-ifs",
+      "title": "Tutorial: OR is not always two separate IFs",
+      "source": "Tutorial 4.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A OR B is true when at least one condition is true, including when both are true. A AND B requires both. An IF with an OR condition runs its body once when the condition is true; it does not run the body twice when both sides are true."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/or-overlap.png",
+          "alt": "One student can score above 90 in both subjects. OR counts the student once; two independent IF updates count that overlap twice.",
+          "caption": "One student can score above 90 in both subjects. OR counts the student once; two independent IF updates count that overlap twice.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "or",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "# Count students, not qualifying subject marks\nCount = 0\nfor each score card X:\n    if X.Mathematics > 90 OR X.Physics > 90:\n        Count = Count + 1\n\n# Different result: this counts successful subject tests\nCount = 0\nfor each score card X:\n    if X.Mathematics > 90:\n        Count = Count + 1\n    if X.Physics > 90:\n        Count = Count + 1"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "A",
+              "B",
+              "A OR B",
+              "Increase with OR",
+              "Increase with two IFs"
+            ],
+            [
+              "false",
+              "false",
+              "false",
+              0,
+              0
+            ],
+            [
+              "true",
+              "false",
+              "true",
+              1,
+              1
+            ],
+            [
+              "false",
+              "true",
+              "true",
+              1,
+              1
+            ],
+            [
+              "true",
+              "true",
+              "true",
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In the actual scores, 6 students have Maths > 90 OR Physics > 90. Two independent increments produce 8 because Rahul and Deepika pass both tests. The extra 2 is the overlap. “Greater than 90” excludes exactly 90; do not silently change > to ≥."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can count once using IF A … ELSE IF B … with the same increment, because B is then used only when A is false. But this structure is wrong if you want two separate subject counters that should both increase when both tests pass. Equivalent conditions alone do not make differently placed updates equivalent."
+        },
+        {
+          "type": "check",
+          "question": "A student has Maths 97 and Physics 92. How much do the two programs add?",
+          "answer": "The OR program adds 1. The two independent IF program adds 2. This is Rahul’s actual pair of marks."
+        },
+        {
+          "type": "check",
+          "question": "When can IF A OR B and two independent IFs with the same increment agree?",
+          "answer": "When no processed record can satisfy both A and B, or when the overlap happens to be empty in that dataset. Mutual exclusivity is the general structural reason."
+        },
+        {
+          "type": "check",
+          "question": "If both conditions are false, does OR still count once?",
+          "answer": "No. The IF body is skipped, so both programs add zero."
+        }
+      ]
+    },
+    {
+      "slug": "noun-and-verb-counters",
+      "title": "Tutorial: one combined count or two separate counts?",
+      "source": "Tutorial 4.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/noun-verb.png",
+          "alt": "The word cards have one PartOfSpeech label per occurrence. There are 21 noun cards and 7 verb cards: 28 cards in their union.",
+          "caption": "The word cards have one PartOfSpeech label per occurrence. There are 21 noun cards and 7 verb cards: 28 cards in their union.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "pos",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "In these tagged word cards, an occurrence has one PartOfSpeech value, so Noun and Verb are mutually exclusive labels. Counting Noun OR Verb gives 28. Two separate IF statements that both increase the SAME Count also give 28 here because a card cannot pass both tests."
+        },
+        {
+          "type": "code",
+          "text": "Ncount = 0\nVcount = 0\nfor each word card X:\n    if X.PartOfSpeech == \"Noun\":\n        Ncount = Ncount + 1\n    if X.PartOfSpeech == \"Verb\":\n        Vcount = Vcount + 1\n# Ncount = 21, Vcount = 7"
+        },
+        {
+          "type": "paragraph",
+          "text": "Now consider the wrong rewrite: IF Noun OR Verb, increase Ncount AND increase Vcount. Every noun then increases the verb counter, and every verb increases the noun counter. Both counters become 28. Keeping two counters means the updates must remain connected to the correct conditions."
+        },
+        {
+          "type": "paragraph",
+          "text": "These counts are word-card occurrences, not distinct spellings. A word may appear several times in the paragraph. In general English a spelling can have different grammatical roles in different sentences; our exclusivity claim is about the single label stored on each particular card."
+        },
+        {
+          "type": "check",
+          "question": "Can Ncount = 28 and Vcount = 28 be the correct separate counts for these cards?",
+          "answer": "No. Those are the results of the incorrect combined-update block. Correct separate counts are 21 and 7."
+        },
+        {
+          "type": "check",
+          "question": "Does “Noun OR Verb” require a card to be both?",
+          "answer": "No. Either label is enough. Requiring both would be AND, which no single label in this dataset satisfies."
+        },
+        {
+          "type": "check",
+          "question": "Why does the separate-IF rewrite work for one combined count here but fail for Maths > 90 OR Physics > 90?",
+          "answer": "The noun/verb labels are mutually exclusive on a card. A student can pass both subject thresholds, creating overlap."
+        }
+      ]
+    },
+    {
+      "slug": "vowels-consonants-procedure",
+      "title": "Tutorial: count vowels and consonants in a word",
+      "source": "Tutorial 4.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CountVowelsAndConsonants(X) receives one word card. For “reluctant”, start i = 1, Vcount = 0 and Ccount = 0. Inspect the ith letter. If it is a vowel, increase Vcount; ELSE increase Ccount. Then increase i outside both branches."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/vowels-consonants.png",
+          "alt": "“reluctant” has 9 letters: e, u and a are the 3 vowels; r, l, c, t, n and t are the 6 consonants.",
+          "caption": "“reluctant” has 9 letters: e, u and a are the 3 vowels; r, l, c, t, n and t are the 6 consonants.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week4-lab",
+          "mode": "vowels",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Procedure CountVowelsAndConsonants(X):\n    Letters = alphabetic letters of X.Word\n    i = 1\n    Vcount = 0\n    Ccount = 0\n    while i <= number of Letters:\n        if lowercase(Letters[i]) is one of a, e, i, o, u:\n            Vcount = Vcount + 1\n        else:\n            Ccount = Ccount + 1\n        i = i + 1\n    return (Vcount, Ccount)\nEnd Procedure"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "i",
+              "Letter",
+              "Branch",
+              "Vcount",
+              "Ccount"
+            ],
+            [
+              1,
+              "r",
+              "ELSE",
+              0,
+              1
+            ],
+            [
+              2,
+              "e",
+              "IF",
+              1,
+              1
+            ],
+            [
+              3,
+              "l",
+              "ELSE",
+              1,
+              2
+            ],
+            [
+              4,
+              "u",
+              "IF",
+              2,
+              2
+            ],
+            [
+              5,
+              "c",
+              "ELSE",
+              2,
+              3
+            ],
+            [
+              6,
+              "t",
+              "ELSE",
+              2,
+              4
+            ],
+            [
+              7,
+              "a",
+              "IF",
+              3,
+              4
+            ],
+            [
+              8,
+              "n",
+              "ELSE",
+              3,
+              5
+            ],
+            [
+              9,
+              "t",
+              "ELSE",
+              3,
+              6
+            ],
+            [
+              10,
+              "No letter",
+              "Loop stops",
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial’s word has no punctuation and uses the stored LetterCount as the loop limit. To let you try cards like “cane...” and “fire-eyed”, this explorer makes a letters-only sequence first and ignores punctuation and hyphens. It uses the five-vowel convention a/e/i/o/u, so y is counted as a consonant here. This extension is stated explicitly; punctuation is not treated as a consonant."
+        },
+        {
+          "type": "paragraph",
+          "text": "The loop condition uses ≤, so the ninth letter is processed. After the final update, i becomes 10 and the test fails. At every step, Vcount + Ccount equals the number of letters already processed. The procedure returns two values in order: (vowels, consonants). The caller can store them as (V, C) = CountVowelsAndConsonants(X)."
+        },
+        {
+          "type": "check",
+          "question": "What goes wrong if i increases only inside the vowel branch?",
+          "answer": "At the first consonant, i would stay unchanged. The loop would keep processing the same letter forever. Increase i after either branch."
+        },
+        {
+          "type": "check",
+          "question": "Why does i < 9 miss information for reluctant?",
+          "answer": "It stops before position 9, so the final t is skipped. Use i ≤ 9 for 1-based positions."
+        },
+        {
+          "type": "check",
+          "question": "What is returned for reluctant, and what does 6 represent?",
+          "answer": "(3, 6): 3 vowels and 6 consonants. Return order is part of the procedure contract."
+        },
+        {
+          "type": "check",
+          "question": "What is returned for cane... in the letters-only explorer?",
+          "answer": "(2, 2). The letters are c, a, n, e. Dots are ignored rather than counted as consonants."
+        }
+      ]
+    },
+    {
+      "slug": "weeks-one-to-four-patterns",
+      "title": "Connect Weeks 1–4: choose the right pattern",
+      "source": "Lecture 4.8",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/four-week-patterns.png",
+          "alt": "Start, repeat and stop form the core pattern. Add filters, accumulators, procedures, sequential passes or nested comparisons to match the question.",
+          "caption": "Start, repeat and stop form the core pattern. Add filters, accumulators, procedures, sequential passes or nested comparisons to match the question.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-4/choose-pattern.png",
+          "width": 768,
+          "height": 512,
+          "alt": "One scan counts or sums; two sequential passes learn an average and classify; nested loops compare student pairs.",
+          "caption": "Choose the loop pattern by the question. A second loop is not always a nested loop."
+        },
+        {
+          "type": "heading",
+          "text": "Begin with valid data and meaningful types"
+        },
+        {
+          "type": "paragraph",
+          "text": "A record is one card with named fields: Name, DateOfBirth, marks and so on. A list is an ordered collection of values or records. Integer values are whole numbers, including negative numbers and zero; a character is one symbol; a string is a sequence of characters; a Boolean is true or false. A subtype restricts values or operations, such as integer marks from 0 to 100 or valid calendar dates."
+        },
+        {
+          "type": "paragraph",
+          "text": "Check data sanity before using it: fields must exist, marks must be in range, totals must agree with their component marks, and dates must be valid. The course’s Gender field has the labels M and F; that is the supplied dataset’s coding, not a complete description of people. Respect the field’s permitted operations. Dates and city labels should not be treated as ordinary numbers merely because they have a written representation."
+        },
+        {
+          "type": "heading",
+          "text": "Initialize, update and terminate"
+        },
+        {
+          "type": "paragraph",
+          "text": "An assignment gives a variable a value. Sum = Sum + X.Mathematics means read the old Sum, add this mark, then store the result; it is not an algebraic equality. A count usually starts at 0; a sum starts at 0; a maximum can start with the first valid record or an explicit empty state. Handle empty inputs rather than assuming a first card exists."
+        },
+        {
+          "type": "paragraph",
+          "text": "A flowchart uses rounded terminals for start/end, rectangles for processes and diamonds for decisions, linked by arrows. A loop has a continuation test and a route back after processing. In pseudocode, WHILE is the repetition and IF selects updates. Move the current card or advance an index so the loop makes progress. Every path must eventually reach a stop condition."
+        },
+        {
+          "type": "heading",
+          "text": "Filter, accumulate and compare"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Pattern",
+              "Dataset example"
+            ],
+            [
+              "How many? What total?",
+              "One scan with count/sum accumulators",
+              "30 score cards; Mathematics sum 2171"
+            ],
+            [
+              "Which records meet a fixed rule?",
+              "Filter during the scan",
+              "CityTown is Chennai"
+            ],
+            [
+              "What is the maximum?",
+              "Compare with an updating variable",
+              "Mathematics maximum 97"
+            ],
+            [
+              "Who is below the final mean?",
+              "Accumulate first, classify in a second pass",
+              "15 students below 2171/30"
+            ],
+            [
+              "Same operation for different fields?",
+              "A procedure with a field parameter",
+              "MaxMarks for Maths, Physics, Chemistry, Total"
+            ],
+            [
+              "Which two records relate?",
+              "Pair search, often nested iteration",
+              "Same day and month of birth"
+            ],
+            [
+              "Can groups rule out work?",
+              "Bin, then inspect relevant groups",
+              "City bins reduce pair checks to 55"
+            ],
+            [
+              "Can remembered state replace rescans?",
+              "One-pass memory, with a sufficient rule",
+              "LastName is useful but has counterexamples"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A fixed filter compares with an unchanged value, such as CityTown == Chennai. An updating comparison uses a changing variable, such as X.Mathematics > Max. A threshold learned from the whole dataset, such as the final mean, must be completed before a second pass uses it. A running mean is not the final mean."
+        },
+        {
+          "type": "paragraph",
+          "text": "Accumulators can hold totals, counts, extrema or collections. To keep every Physics topper, collect all records equal to the final maximum, including ties. A collection of students is a different output from one maximum value. Procedures make repeated patterns reusable through parameters and return values; their side-effect promises tell callers what remains usable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Later course material will store relationships for reuse. Here it is enough to see the motivation: compute a useful summary or relationship once, keep it in an appropriate representation, and use it in later work. Do not introduce a complicated structure before identifying what the question needs."
+        },
+        {
+          "type": "week4-lab",
+          "mode": "birthday",
+          "explore": true
+        },
+        {
+          "type": "check",
+          "question": "Which pattern finds below-average Maths students correctly?",
+          "answer": "First compute the final sum and count, so the average is 2171/30. Then scan again and compare each mark with that fixed average. The loops are sequential, not nested."
+        },
+        {
+          "type": "check",
+          "question": "Can maximum and sum use the same update rule?",
+          "answer": "No. Sum adds every selected value. Maximum replaces the remembered value only when a larger value appears. Initialization and updates depend on the question."
+        },
+        {
+          "type": "check",
+          "question": "What should you write down before calling a procedure?",
+          "answer": "Its inputs and parameter meanings, its return value or values, its assumptions such as valid data, and which order, markers and values it must preserve."
+        },
+        {
+          "type": "check",
+          "question": "Why preserve the tied maximum students rather than only their mark?",
+          "answer": "The question “who are the toppers?” asks for identities. One number such as 92 cannot identify every student who achieved it."
+        }
+      ]
+    },
+    {
+      "slug": "revision-and-practice",
+      "title": "Week 4 revision and practice",
+      "source": "All Week 4 lectures and tutorials",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Try each question before opening the explained answer. Use the labs to test your reasoning, then explain why the method works, what it counts and which assumptions it needs."
+        },
+        {
+          "type": "check",
+          "question": "Six distinct cards: how many unordered pairs? Show two ways to calculate it.",
+          "answer": "6 × 5 ÷ 2 = 15, or 5 + 4 + 3 + 2 + 1 = 15. Remove self-pairs and keep each reversed pair only once."
+        },
+        {
+          "type": "check",
+          "question": "A nine-card dataset splits into bins of 4, 3 and 2. How many within-bin pair checks remain?",
+          "answer": "6 + 3 + 1 = 10, compared with 36 unbinned checks. Add nine placement visits separately when describing the work."
+        },
+        {
+          "type": "check",
+          "question": "A date bin uses the exact birthday key. How can you count matching pairs without comparing every pair in the bin?",
+          "answer": "As each new card arrives, add the number of earlier cards with that same key to PairCount, then increase that key’s count. In a group of three matching dates the additions are 0, 1 and 2, totalling 3. This is a stated extension using per-key counts."
+        },
+        {
+          "type": "check",
+          "question": "A class has two January birthdays, both January 8, and two March birthdays, both March 8. How many matching pairs?",
+          "answer": "Two: one January pair and one March pair. Do not compare the two months merely because their day numbers agree."
+        },
+        {
+          "type": "check",
+          "question": "Every bill in a two-bill customer bin comes from the same shop. Does that meet the lecture’s definition?",
+          "answer": "Yes. At least two observed bills and one distinct shop meet it. This does not predict unobserved visits."
+        },
+        {
+          "type": "check",
+          "question": "A developer bins bills by BillAmount to find customer loyalty. Is that enough?",
+          "answer": "No. Loyalty is about all visits of one customer and their shops, not spending size. Group by customer."
+        },
+        {
+          "type": "check",
+          "question": "After checking an outer row X, the code returns X to the unprocessed table. What can go wrong?",
+          "answer": "X may be selected again, causing repeated pairs or even nontermination. Processed outer rows must stay separate unless the algorithm has another explicit progress mechanism."
+        },
+        {
+          "type": "check",
+          "question": "What happens to the full result when the score-card order is reversed?",
+          "answer": "Exact complete birthday and city/Maths pair sets remain the same. Early-stop work and the first pair encountered can change."
+        },
+        {
+          "type": "check",
+          "question": "Does two nested loops always imply n squared visits?",
+          "answer": "No. A loop over disjoint bins followed by a scan of each bin’s own contents visits each record once overall. Count the actual visits. All pairs within one size-n group does grow quadratically."
+        },
+        {
+          "type": "check",
+          "question": "Why is the total-band partner finder not guaranteed to be optimal?",
+          "answer": "It ignores some cross-band pairs, uses a chosen subject-strength heuristic, and lists candidates without solving an exclusive global assignment objective."
+        },
+        {
+          "type": "check",
+          "question": "For a 4-by-3 cross-group search, how many candidate pairs are checked?",
+          "answer": "4 × 3 = 12. These are pairs across two separate groups; do not divide this product by 2."
+        },
+        {
+          "type": "check",
+          "question": "In a pronoun search, does restoring the total number of cards satisfy an exact restoration contract?",
+          "answer": "No. Their values, original order and marked position must also survive. The same count can hide a scrambled paragraph."
+        },
+        {
+          "type": "check",
+          "question": "Why is a correct candidate at position 40 insufficient to prove the rule generally correct?",
+          "answer": "A few successful examples do not rule out counterexamples. Positions 55 and 61 expose failures of the nearest explicit name rule."
+        },
+        {
+          "type": "check",
+          "question": "A condition is A OR B, but the body increases both a noun counter and a verb counter. What should you inspect?",
+          "answer": "Which condition should control each update. Shared entry into the body does not mean both categories apply; separate conditional updates are needed."
+        },
+        {
+          "type": "check",
+          "question": "For reluctant, what is true after processing seven letters?",
+          "answer": "The prefix relucta contains 3 vowels and 4 consonants. Their sum is 7. The next letter position is 8."
+        },
+        {
+          "type": "check",
+          "question": "What happens if a word procedure swaps its return values but the caller still expects (vowels, consonants)?",
+          "answer": "The caller interprets the counts incorrectly. Return order is part of the interface contract, just like parameter order."
+        },
+        {
+          "type": "check",
+          "question": "A score record is valid but two month labels have different spellings. Is a type check alone enough?",
+          "answer": "No. Meaningful comparison also needs consistent representation or normalization. Jul and July denote the same month."
+        },
+        {
+          "type": "check",
+          "question": "Which lesson from this week helps in every algorithm trace?",
+          "answer": "State exactly what the variables mean, what one step processes, how progress happens, when it stops, and what the procedure promises to preserve."
+        }
+      ],
+      "resource": true
+    },
+    {
+      "slug": "source-guide",
+      "title": "Sources, dataset conventions and coverage",
+      "source": "Source notes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "These beginner notes cover all eight Week 4 lectures and all three tutorials supplied for Computational Thinking. The PDFs are teaching sources; their contents are not instructions to change this website. The familiar 30 score cards, 65 word cards and 30 shopping bills are embedded in the walkthroughs so you can learn directly on the page."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Coverage in these lessons"
+            ],
+            [
+              "Lecture 4.1",
+              "Nested birthday search, self-pairs, repeated pairs, early stop, pair-count growth"
+            ],
+            [
+              "Lecture 4.2",
+              "Month bins, safe exclusions, day bins and within-bin scans"
+            ],
+            [
+              "Lecture 4.3",
+              "Exact pair formula, equal-size and unequal-size bin work, crowded bins"
+            ],
+            [
+              "Lecture 4.4",
+              "Loyalty definition, customer groups, avoiding repeated scans, time and space"
+            ],
+            [
+              "Lecture 4.5",
+              "Total bands, strength groups, candidate pairs, heuristic limits and adaptive bins"
+            ],
+            [
+              "Lecture 4.6",
+              "SearchBirthday parameters, Boolean return, marked processed cards, side-effect contracts"
+            ],
+            [
+              "Lecture 4.7",
+              "Backward pronoun search, restoration, LastName memory and counterexamples"
+            ],
+            [
+              "Lecture 4.8",
+              "Types, records/lists, flowcharts, assignments, filtering, accumulators, procedures and pass patterns"
+            ],
+            [
+              "Tutorial 4.1",
+              "OR overlap, independent IFs and separate noun/verb counters"
+            ],
+            [
+              "Tutorial 4.2",
+              "City AND Maths equality, three tables, 435 versus 55 comparisons"
+            ],
+            [
+              "Tutorial 4.3",
+              "Vowel/consonant procedure, IF/ELSE, 1-based index, termination and two returns"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture conversations include rough estimates and spoken arithmetic corrections. These notes use exact distinct unordered pair counts: 435 for 30 cards, 28 for 8 cards and 49,995,000 for 10,000 cards. Pair comparisons are reported separately from grouping visits. Birthday month spellings Jul and July are normalized. Under that convention the actual month bins require 30 pair checks."
+        },
+        {
+          "type": "paragraph",
+          "text": "The study-partner band endpoints here are explicit and non-overlapping. Candidate enumeration includes all students rather than setting aside high scorers, and it is not an exclusive team assignment. The pronoun explorer labels nearest-name output as a heuristic candidate and separately shows the meaning in the passage. Its explicit name list cannot detect every person role."
+        },
+        {
+          "type": "paragraph",
+          "text": "The vowel/consonant tutorial is traced exactly for reluctant (3, 6). Additional word choices use a documented letters-only, five-vowel convention. Course label names and record identifiers are retained. These decisions make extensions and source conventions visible instead of silently changing the task."
+        }
+      ],
+      "resource": true
+    }
+  ],
+  "illustrationCount": 21
+}

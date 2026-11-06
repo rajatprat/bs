@@ -1,0 +1,1985 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 2,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computational-thinking/week-2/",
+  "title": "Search, compare and keep the right information",
+  "description": "Learn early stopping, maximum values, group counts, ties, two-pass filtering and pseudocode with the supplied course datasets.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Learn with the actual course score cards, word cards and shopping bills. Each lesson includes an on-page walkthrough: predict the answer, read one card, watch the variables change, and explain the result. No download or programming experience is needed."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Search and stop: conditional termination",
+      "slug": "conditional-termination",
+      "source": "Lecture 2.1 — Conditional termination in iteration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In Week 1 we usually visited every card. Sometimes the question only asks whether any matching card exists. Once you find one, further searching cannot change the answer “yes”, so you can stop early."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/stop.png",
+          "caption": "In the supplied CardNo order, Rahul is the first student with Mathematics above 90. The dots stand for the intervening cards.",
+          "alt": "In the supplied CardNo order, Rahul is the first student with Mathematics above 90. The dots stand for the intervening cards.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "interactive",
+          "mode": "search"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/search.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "The loop continues only when cards remain and Found is still False.",
+          "alt": "The loop continues only when cards remain and Found is still False."
+        },
+        {
+          "type": "heading",
+          "text": "Use a Boolean flag to remember success"
+        },
+        {
+          "type": "paragraph",
+          "text": "Initialize Found to False. For each card, test the required condition. When it matches, save any needed result and set Found to True. Include NOT Found in the loop’s continuation condition. The procedure then leaves through its normal loop test rather than a confusing side arrow."
+        },
+        {
+          "type": "code",
+          "text": "Found = False\nResult = NONE\nwhile (Pile1 has cards AND NOT Found) {\n    Read a card X\n    Move X to Pile2\n    if (X matches the condition) {\n        Found = True\n        Result = X.CardNo\n    }\n}\nReport Found and Result"
+        },
+        {
+          "type": "heading",
+          "text": "Example: above 90 in every subject"
+        },
+        {
+          "type": "paragraph",
+          "text": "The condition is Mathematics > 90 AND Physics > 90 AND Chemistry > 90. A mark of exactly 90 fails “above 90”. In the supplied Scores table, Rahul on card 11 has 97,92,92 and meets the condition. Save the ID as well as the flag if you need to identify the student."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the first test of an AND is false, you already know the whole condition is false. You can skip the remaining tests for that card. This does not mean skipping the handling needed to mark the card visited."
+        },
+        {
+          "type": "heading",
+          "text": "Know what question you are answering"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Can the first match be enough?"
+            ],
+            [
+              "Does any record meet the condition?",
+              "Yes."
+            ],
+            [
+              "Find the first match in this visit order.",
+              "Yes, but order determines which first match is returned."
+            ],
+            [
+              "How many records meet it?",
+              "No; later matches must be counted too."
+            ],
+            [
+              "Which record has the largest score?",
+              "Usually no; a later record could be larger."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Read the exit state"
+        },
+        {
+          "type": "paragraph",
+          "text": "Found True means the procedure found a match. Found False after the pile is exhausted means none matched. An empty initial pile leaves Found False and Result NONE. Remaining unvisited cards after a successful search are expected; do not claim they were all examined."
+        },
+        {
+          "type": "check",
+          "question": "A qualifying card is the second of ten. How many cards need to be inspected to answer “does any qualify”?",
+          "answer": "Two, with this scan order. After the second sets Found=True, the loop test stops further visits.",
+          "text": "A qualifying card is the second of ten. How many cards need to be inspected to answer “does any qualify”? Answer: Two, with this scan order. After the second sets Found=True, the loop test stops further visits."
+        },
+        {
+          "type": "check",
+          "question": "Can the same early stop correctly count all qualifying cards?",
+          "answer": "No. It would miss possible later matches. The stopping condition must follow the question.",
+          "text": "Can the same early stop correctly count all qualifying cards? Answer: No. It would miss possible later matches. The stopping condition must follow the question."
+        },
+        {
+          "type": "check",
+          "question": "What if the three subject marks are 95,90,96?",
+          "answer": "The card fails: Physics is exactly 90, not greater than 90.",
+          "text": "What if the three subject marks are 95,90,96? Answer: The card fails: Physics is exactly 90, not greater than 90."
+        },
+        {
+          "type": "check",
+          "question": "What does Found=False mean after an empty input?",
+          "answer": "No matching record was found. It does not identify a student or assign a score of zero.",
+          "text": "What does Found=False mean after an empty input? Answer: No matching record was found. It does not identify a student or assign a score of zero."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.1 — Conditional termination in iteration. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Search within ordered words and sentences",
+      "slug": "ordered-search",
+      "source": "Lecture 2.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "“First verb in the third sentence” is an order-sensitive question. Unlike counting or finding a maximum value, it cannot be answered correctly after randomly shuffling the word cards."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/corrected-4.png",
+          "caption": "In the original word-card order, the third sentence begins with He, followed by considered: its first verb.",
+          "alt": "In the original word-card order, the third sentence begins with He, followed by considered: its first verb.",
+          "width": 768,
+          "height": 506
+        },
+        {
+          "type": "interactive",
+          "mode": "wordsearch"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/word-1.png",
+          "caption": "Keep the supplied word cards in their original order. One occurrence is one card.",
+          "alt": "Four word cards: It, was, Monday, morning.",
+          "width": 764,
+          "height": 494
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/ordered-search.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "After two complete sentences, the supplied word table has He on card 11 and considered on card 12.",
+          "alt": "After two complete sentences, the supplied word table has He on card 11 and considered on card 12."
+        },
+        {
+          "type": "heading",
+          "text": "A position and a count are different"
+        },
+        {
+          "type": "paragraph",
+          "text": "The supplied Word table has SerialNumber IDs 0–64. Card 12 is the thirteenth word occurrence. Each full stop is attached to its word, for example morning. and eyes. The first two sentences have 4 and 7 words, so the third begins at card 11."
+        },
+        {
+          "type": "heading",
+          "text": "Keep track of the current sentence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Set Sentence=1 before reading. For each word, first use the current sentence number to decide whether it is a candidate. After processing that word, if it ends with a full stop, increment Sentence. A word carrying the full stop still belongs to the sentence that just ended."
+        },
+        {
+          "type": "code",
+          "text": "Sentence = 1\nFound = False\nResult = NONE\nwhile (cards remain AND NOT Found AND Sentence <= 3) {\n    Read next word X in SerialNumber order\n    Move X to the visited pile\n    if (Sentence == 3 AND X.PartOfSpeech == \"Verb\") {\n        Found = True\n        Result = X.SerialNumber\n    }\n    if (X.Word ends in a full stop) {\n        Sentence = Sentence + 1\n    }\n}"
+        },
+        {
+          "type": "heading",
+          "text": "Trace the actual answer"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Card ID",
+              "Word",
+              "Category",
+              "Current sentence",
+              "Action"
+            ],
+            [
+              "10",
+              "eyes.",
+              "Noun",
+              "2",
+              "End sentence 2; next sentence becomes 3."
+            ],
+            [
+              "11",
+              "He",
+              "Pronoun",
+              "3",
+              "Not a verb; continue."
+            ],
+            [
+              "12",
+              "considered",
+              "Verb",
+              "3",
+              "Save 12, set Found=True and stop."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What if the target does not exist?"
+        },
+        {
+          "type": "paragraph",
+          "text": "If there are fewer than three sentences, the pile can end without a match. If sentence 3 ends without a recorded verb, the Sentence<=3 guard prevents accepting a verb from sentence 4. Report “not found”. This is more precise than assuming every sentence must have a qualifying labeled verb."
+        },
+        {
+          "type": "paragraph",
+          "text": "The full-stop rule is the simplified rule for this dataset. Colons and semicolons inside its final sentence do not end the sentence. A general text-processing system would need explicit rules for abbreviations and other ending punctuation."
+        },
+        {
+          "type": "check",
+          "question": "Which word is the first recorded verb of sentence 3 in the supplied data?",
+          "answer": "considered, SerialNumber 12. He at SerialNumber 11 is a pronoun.",
+          "text": "Which word is the first recorded verb of sentence 3 in the supplied data? Answer: considered, SerialNumber 12. He at SerialNumber 11 is a pronoun."
+        },
+        {
+          "type": "check",
+          "question": "Why increment Sentence after handling a full-stop word?",
+          "answer": "That word belongs to the sentence ending there. Incrementing first could assign it to the next sentence.",
+          "text": "Why increment Sentence after handling a full-stop word? Answer: That word belongs to the sentence ending there. Incrementing first could assign it to the next sentence."
+        },
+        {
+          "type": "check",
+          "question": "Can the word cards be scanned in any order for this task?",
+          "answer": "No. “First” and sentence boundaries require paragraph order.",
+          "text": "Can the word cards be scanned in any order for this task? Answer: No. “First” and sentence boundaries require paragraph order."
+        },
+        {
+          "type": "check",
+          "question": "A comma appears on a word. Does this dataset’s rule end the sentence there?",
+          "answer": "No. The simplified rule recognizes a full stop, not every punctuation mark.",
+          "text": "A comma appears on a word. Does this dataset’s rule end the sentence there? Answer: No. The simplified rule recognizes a full stop, not every punctuation mark."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.1. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Maximum in one pass: keep the best so far",
+      "slug": "running-maximum",
+      "source": "Lecture 2.2; Tutorial 2.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "To find a maximum, remember the best value seen so far. Compare each new value with it. Replace the remembered value only when the new one is larger."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-4.png",
+          "width": 768,
+          "height": 544,
+          "caption": "A selected sequence of course marks shows how the best value changes. In the full dataset, Rahul and Deepika both have Mathematics 97.",
+          "alt": "A selected sequence of course marks shows how the best value changes. In the full dataset, Rahul and Deepika both have Mathematics 97."
+        },
+        {
+          "type": "interactive",
+          "mode": "max"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/running-max.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "The remembered maximum never decreases in a scan of fixed values.",
+          "alt": "The remembered maximum never decreases in a scan of fixed values."
+        },
+        {
+          "type": "heading",
+          "text": "From keeping a card aside to keeping a variable"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture first keeps the current best marks card in a separate place. Replacing it with a better card is the same idea as updating a Max variable. Keeping just the score saves the value but loses the identity of the card; a later lesson adds that information."
+        },
+        {
+          "type": "code",
+          "text": "If the dataset is empty: report \"No maximum\"\nOtherwise initialize Max from the first actual value\nFor every remaining value v {\n    if (v > Max) {\n        Max = v\n    }\n}\nReport Max"
+        },
+        {
+          "type": "heading",
+          "text": "Trace a short sequence"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "New value",
+              "Previous Max",
+              "New Max"
+            ],
+            [
+              "68",
+              "First value",
+              "68"
+            ],
+            [
+              "62",
+              "68",
+              "68"
+            ],
+            [
+              "97",
+              "68",
+              "97"
+            ],
+            [
+              "42",
+              "97",
+              "97"
+            ],
+            [
+              "97",
+              "97",
+              "97"
+            ],
+            [
+              "71",
+              "97",
+              "97"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A comparison with Max changes over time because Max changes. This differs from a fixed filter such as “score > 90”. It is also a replacement, not an accumulation: Max = Max + v would compute something else."
+        },
+        {
+          "type": "heading",
+          "text": "Results checked against the supplied dataset"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Verified result"
+            ],
+            [
+              "Largest three-subject Total",
+              "281, Rahul, card 11."
+            ],
+            [
+              "Largest Mathematics mark",
+              "97, cards 11 and 23."
+            ],
+            [
+              "Largest stored word LetterCount",
+              "11: Swaminathan (4) and Vedanayagam, (54)."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the stored LetterCount field for the word-length task: the comma on Vedanayagam, is not another letter. The shopping tutorial reports a maximum bill of Rs 4174; it is a maximum individual bill, not the total revenue of a store."
+        },
+        {
+          "type": "heading",
+          "text": "Why the final result is correct"
+        },
+        {
+          "type": "paragraph",
+          "text": "After each visit, Max is the maximum of the values already inspected. A new value either beats that maximum or cannot change it. After the last visit, the inspected set is the entire input. Card order can change the intermediate updates, but not the maximum value."
+        },
+        {
+          "type": "check",
+          "question": "For 12,8,15,9, what Max values are stored after each visit?",
+          "answer": "12,12,15,15. Only a new larger value replaces the current maximum.",
+          "text": "For 12,8,15,9, what Max values are stored after each visit? Answer: 12,12,15,15. Only a new larger value replaces the current maximum."
+        },
+        {
+          "type": "check",
+          "question": "Why not stop as soon as the first high score is seen?",
+          "answer": "A later score might be higher. To prove a maximum, inspect all candidates unless a known absolute upper bound rules out improvement.",
+          "text": "Why not stop as soon as the first high score is seen? Answer: A later score might be higher. To prove a maximum, inspect all candidates unless a known absolute upper bound rules out improvement."
+        },
+        {
+          "type": "check",
+          "question": "What is the maximum Mathematics mark in Scores.pdf?",
+          "answer": "97. Two records share it: Rahul (11) and Deepika (23).",
+          "text": "What is the maximum Mathematics mark in Scores.pdf? Answer: 97. Two records share it: Rahul (11) and Deepika (23)."
+        },
+        {
+          "type": "check",
+          "question": "Is the longest printed token necessarily the one with largest LetterCount?",
+          "answer": "Not if the printed token includes punctuation. Use the field definition and the recorded or verified letter count.",
+          "text": "Is the longest printed token necessarily the one with largest LetterCount? Answer: Not if the printed token includes punctuation. Use the field definition and the recorded or verified letter count."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.2; Tutorial 2.1. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Initialize maximum, minimum and result variables safely",
+      "slug": "safe-initialization",
+      "source": "Lectures 2.2, 2.8, 2.10; Tutorial 2.7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Initialization is part of the algorithm, not a decoration. A wrong starting value can survive every comparison and become a result that never appeared in the data."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/safe-1.png",
+          "caption": "Initialize a maximum from a real record and handle an empty pile explicitly.",
+          "alt": "Initialize a maximum from a real record and handle an empty pile explicitly.",
+          "width": 764,
+          "height": 502
+        },
+        {
+          "type": "interactive",
+          "mode": "max"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/initialization.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Handle empty input and seed from an actual record when the valid range or ownership matters.",
+          "alt": "Handle empty input and seed from an actual record when the valid range or ownership matters."
+        },
+        {
+          "type": "heading",
+          "text": "Zero is not a universal maximum seed"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a nonempty list of marks guaranteed between 0 and 100, Max=0 gives the correct maximum value. For −8,−3,−5, the same seed wrongly reports 0. Initializing from the first actual value works for negative, zero and positive values."
+        },
+        {
+          "type": "heading",
+          "text": "An owner introduces an extra boundary case"
+        },
+        {
+          "type": "paragraph",
+          "text": "If Max=0 and Owner=NONE, a strict test score>Max never updates the owner when every mark is zero. You would know the value but fail to identify a real record. Seed value and owner from the first record, or use HaveValue=False and accept the first record independently of the comparison."
+        },
+        {
+          "type": "heading",
+          "text": "Minimum reverses the comparison"
+        },
+        {
+          "type": "code",
+          "text": "If the dataset is empty: report \"No minimum\"\nOtherwise initialize Min from its first actual value\nFor each remaining value v {\n    if (v < Min) { Min = v }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "A high seed is valid only if you know it is at least every possible input. The tutorial’s value 1000 for word length is an assumption about that exercise, not a general guarantee for arbitrary text. Prefer a real first value when no justified bound is available."
+        },
+        {
+          "type": "heading",
+          "text": "Choose each variable according to its meaning"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Variable",
+              "Usual starting state"
+            ],
+            [
+              "Count or Sum of no observations",
+              "0."
+            ],
+            [
+              "Found",
+              "False."
+            ],
+            [
+              "Owner before a candidate exists",
+              "A separate NONE sentinel or explicit validity flag."
+            ],
+            [
+              "List of tied IDs",
+              "An empty list, until the first candidate is accepted."
+            ],
+            [
+              "Max/Min on unknown ranges",
+              "An actual first value, with an empty-input check."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Here NONE is a special “not assigned” marker, not an ordinary customer string that might accidentally be a real name. A numeric sentinel such as −1 for a card ID is safe only when the valid ID set excludes −1."
+        },
+        {
+          "type": "heading",
+          "text": "Dataset values versus illustrative ranges"
+        },
+        {
+          "type": "paragraph",
+          "text": "The supplied Scores data have Chemistry minimum 43 and maximum 97. Tutorial 2.7 mentions 43 and 93 while explaining seeds; treat that explanation as illustrative and use the supplied table for dataset-specific answers."
+        },
+        {
+          "type": "check",
+          "question": "Find the maximum of −10,−2,−7. Why is initial Max=0 wrong?",
+          "answer": "The maximum is −2. Zero is larger than all inputs and would never be replaced, so it would be an invented answer.",
+          "text": "Find the maximum of −10,−2,−7. Why is initial Max=0 wrong? Answer: The maximum is −2. Zero is larger than all inputs and would never be replaced, so it would be an invented answer."
+        },
+        {
+          "type": "check",
+          "question": "What is the minimum of 0,5,9 if seeded from the first record?",
+          "answer": "0. The first value is already the minimum, and neither later value is smaller.",
+          "text": "What is the minimum of 0,5,9 if seeded from the first record? Answer: 0. The first value is already the minimum, and neither later value is smaller."
+        },
+        {
+          "type": "check",
+          "question": "All scores are zero. What is needed to return an actual maximum owner?",
+          "answer": "Accept and store a first candidate explicitly, or use an equality-handling approach with a valid owner state. A strict >0 update alone is insufficient.",
+          "text": "All scores are zero. What is needed to return an actual maximum owner? Answer: Accept and store a first candidate explicitly, or use an equality-handling approach with a valid owner state. A strict >0 update alone is insufficient."
+        },
+        {
+          "type": "check",
+          "question": "Does an empty list have maximum zero?",
+          "answer": "No. Report no maximum. Zero is a possible data value, not the maximum of no observations.",
+          "text": "Does an empty list have maximum zero? Answer: No. Report no maximum. Zero is a possible data value, not the maximum of no observations."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lectures 2.2, 2.8, 2.10; Tutorial 2.7. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Local counts: longest sentence and longest grouped run",
+      "slug": "longest-sentence-and-runs",
+      "source": "Lecture 2.3; Tutorial 2.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Sometimes the value to maximize is not printed on one card. You must first build a local count across several cards, then compare it with the best completed group."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/corrected-2.png",
+          "caption": "The actual five sentence lengths are 4, 7, 8, 21 and 25 words. Sentence 5 is longest.",
+          "alt": "The actual five sentence lengths are 4, 7, 8, 21 and 25 words. Sentence 5 is longest.",
+          "width": 768,
+          "height": 516
+        },
+        {
+          "type": "interactive",
+          "mode": "sentences"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/longest-sentence.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "The supplied word table produces sentence lengths 4,7,8,21,25.",
+          "alt": "The supplied word table produces sentence lengths 4,7,8,21,25."
+        },
+        {
+          "type": "heading",
+          "text": "Two variables with different lifetimes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Count measures the current sentence, so reset it at each sentence boundary. Longest measures the best completed sentence, so keep it across boundaries. Count the full-stop word before testing the boundary, then compare and reset."
+        },
+        {
+          "type": "code",
+          "text": "Count = 0\nLongest = 0\nFor each word X in paragraph order {\n    Count = Count + 1\n    if (X.Word ends in a full stop) {\n        if (Count > Longest) { Longest = Count }\n        Count = 0\n    }\n}\nIf Count > 0: handle the unfinished last segment by the stated rule"
+        },
+        {
+          "type": "heading",
+          "text": "Check the actual paragraph"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Sentence",
+              "Card IDs (inclusive)",
+              "Length"
+            ],
+            [
+              "1",
+              "0–3",
+              "4"
+            ],
+            [
+              "2",
+              "4–10",
+              "7"
+            ],
+            [
+              "3",
+              "11–18",
+              "8"
+            ],
+            [
+              "4",
+              "19–39",
+              "21"
+            ],
+            [
+              "5",
+              "40–64",
+              "25"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These lengths total 65 cards, and the longest is 25 words. The spoken demonstration calls the fourth count 20; the supplied table has 21. The final cane... token closes the last sentence once; its three printed dots are not three extra words or sentences."
+        },
+        {
+          "type": "heading",
+          "text": "Never forget the last group"
+        },
+        {
+          "type": "paragraph",
+          "text": "The supplied paragraph ends with punctuation, so its last group is finalized inside the loop. For general input without a final stop, choose whether an unfinished segment counts as a sentence, then implement that rule. For grouped records whose boundaries are signaled by a changed key, flush the last group after the loop: no later key change will do it for you."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial: students grouped by birth month"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutorial 2.2 groups equal birth months together and counts each contiguous run. On a new month, finalize the old month’s count and start the new one at 1 for the current card. At end of input finalize the last month too. Alphabetic month order is enough for grouping; it is not calendar order."
+        },
+        {
+          "type": "paragraph",
+          "text": "From the supplied Scores table, March, May and December each have 4 students, the highest birth-month frequency. A run method is correct only after equal months are together. If cards are shuffled, use a separate counter for every month instead."
+        },
+        {
+          "type": "check",
+          "question": "If a sentence has three cards and the third ends in a full stop, is its length 2 or 3?",
+          "answer": "3. The punctuation-bearing word is still a word in the sentence.",
+          "text": "If a sentence has three cards and the third ends in a full stop, is its length 2 or 3? Answer: 3. The punctuation-bearing word is still a word in the sentence."
+        },
+        {
+          "type": "check",
+          "question": "Which variable resets after a sentence: Count, Longest, or both?",
+          "answer": "Reset Count only. Longest must retain the best completed count so far.",
+          "text": "Which variable resets after a sentence: Count, Longest, or both? Answer: Reset Count only. Longest must retain the best completed count so far."
+        },
+        {
+          "type": "check",
+          "question": "Why can a final group be lost in a run-counting algorithm?",
+          "answer": "If you update only when the group label changes, the last group has no following change. Finalize it after the loop.",
+          "text": "Why can a final group be lost in a run-counting algorithm? Answer: If you update only when the group label changes, the last group has no following change. Finalize it after the loop."
+        },
+        {
+          "type": "check",
+          "question": "Can an ungrouped sequence Jan,Feb,Jan be used to count all January students by one run?",
+          "answer": "No. It has two separate Jan runs. Group equal keys first or keep a persistent count for Jan.",
+          "text": "Can an ungrouped sequence Jan,Feb,Jan be used to count all January students by one run? Answer: No. It has two separate Jan runs. Group equal keys first or keep a persistent count for Jan."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.3; Tutorial 2.2. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Count by category and track the largest frequency",
+      "slug": "group-frequency-counts",
+      "source": "Lecture 2.4; Tutorial 2.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A record’s category may repeat much later in a shuffled pile. Keep one persistent count for each category, rather than resetting whenever the next card has a different label."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/variables-3.png",
+          "caption": "All 30 score cards, grouped by city. Each card increases exactly one city counter.",
+          "alt": "All 30 score cards, grouped by city. Each card increases exactly one city counter.",
+          "width": 766,
+          "height": 544
+        },
+        {
+          "type": "interactive",
+          "mode": "groups"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/group-counts.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Each store keeps its own count; MaxCount is compared only with the count just increased.",
+          "alt": "Each store keeps its own count; MaxCount is compared only with the count just increased."
+        },
+        {
+          "type": "heading",
+          "text": "Create a counter when the category first appears"
+        },
+        {
+          "type": "paragraph",
+          "text": "If you have not seen the category, create its counter at zero. Then add 1 for the current record. The creation and increment are separate ideas: the first record of a category must not be missed."
+        },
+        {
+          "type": "code",
+          "text": "Counts = empty table\nMaxCount = 0\nFor each record X {\n    key = X.category\n    If key has no counter: Counts[key] = 0\n    Counts[key] = Counts[key] + 1\n    if (Counts[key] > MaxCount) {\n        MaxCount = Counts[key]\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Counts[key] means “the counter belonging to this category” in a small labeled table. It is teaching notation for the lecture’s one-variable-per-category idea; you do not need to know a specific programming-language dictionary yet."
+        },
+        {
+          "type": "heading",
+          "text": "Why compare only the updated counter?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every other counter is unchanged. If MaxCount was correct before this visit, only the changed counter can beat it. Counts grow by one, so the previous best value never becomes invalid by decreasing. This avoids a separate scan of all category counters after each record."
+        },
+        {
+          "type": "heading",
+          "text": "Lecture and tutorial results"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Dataset question",
+              "Result"
+            ],
+            [
+              "Number of bills by store in the lecture",
+              "SV Stores 15; Big Bazaar 6; Sun General 9."
+            ],
+            [
+              "Maximum store bill frequency",
+              "15."
+            ],
+            [
+              "City counts in supplied Scores.pdf",
+              "Chennai 8; Madurai 5; Bengaluru 5; Vellore 3; Trichy 3; Erode 2; four other cities 1 each."
+            ],
+            [
+              "Maximum city frequency",
+              "8, for Chennai."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A bill count measures purchases represented by bills, not all visitors to a store and not necessarily distinct customers. A person can generate several bills. Also, keeping only MaxCount gives the winning number, not automatically the winning category; store its label if the question asks for it."
+        },
+        {
+          "type": "check",
+          "question": "For A,B,A,C,B,A, give final category counts and maximum frequency.",
+          "answer": "A=3, B=2, C=1; maximum frequency=3.",
+          "text": "For A,B,A,C,B,A, give final category counts and maximum frequency. Answer: A=3, B=2, C=1; maximum frequency=3."
+        },
+        {
+          "type": "check",
+          "question": "Why not reset A’s counter when B appears?",
+          "answer": "A may occur again later. The counter represents all A records seen so far, not just one contiguous run.",
+          "text": "Why not reset A’s counter when B appears? Answer: A may occur again later. The counter represents all A records seen so far, not just one contiguous run."
+        },
+        {
+          "type": "check",
+          "question": "If there are 30 bills, what should the complete store counts add to?",
+          "answer": "30, assuming every bill has exactly one valid store category and is counted once.",
+          "text": "If there are 30 bills, what should the complete store counts add to? Answer: 30, assuming every bill has exactly one valid store category and is counted once."
+        },
+        {
+          "type": "check",
+          "question": "Does maximum bill frequency 15 prove a shop had 15 distinct customers?",
+          "answer": "No. One customer may have several bills, and visitors who bought nothing are not in the bill data.",
+          "text": "Does maximum bill frequency 15 prove a shop had 15 distinct customers? Answer: No. One customer may have several bills, and visitors who bought nothing are not in the bill data."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.4; Tutorial 2.3. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Group totals: maximum revenue is a different question",
+      "slug": "group-totals-and-revenue",
+      "source": "Lecture 2.5; Tutorial 2.4",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A group count adds 1 per record. A group total adds an amount from the record. A shop can have fewer bills yet more revenue if those bills are larger."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/word-4.png",
+          "width": 766,
+          "height": 524,
+          "caption": "The actual 30 shopping bills give separate store totals of ₹7,120, ₹13,284 and ₹4,009; altogether ₹24,413.",
+          "alt": "The actual 30 shopping bills give separate store totals of ₹7,120, ₹13,284 and ₹4,009; altogether ₹24,413."
+        },
+        {
+          "type": "interactive",
+          "mode": "revenue"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/group-totals.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "The lecture’s store with most bills is different from the store with greatest revenue.",
+          "alt": "The lecture’s store with most bills is different from the store with greatest revenue."
+        },
+        {
+          "type": "heading",
+          "text": "Replace increments with additions"
+        },
+        {
+          "type": "code",
+          "text": "Totals = empty table\nMaxRevenue = 0\nFor each bill X {\n    store = X.Store\n    If store has no total: Totals[store] = 0\n    Totals[store] = Totals[store] + X.BillAmount\n    if (Totals[store] > MaxRevenue) {\n        MaxRevenue = Totals[store]\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Only the current store total changes. For nonnegative bill amounts, its total can only increase, so comparing that total against MaxRevenue maintains the best value in one pass. If negative refunds are allowed, a former leader can decrease; this shortcut needs rethinking rather than being applied blindly."
+        },
+        {
+          "type": "heading",
+          "text": "Distinguish four amounts"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Quantity",
+              "What it means"
+            ],
+            [
+              "Individual bill amount",
+              "One purchase total."
+            ],
+            [
+              "Store revenue",
+              "Sum of all its bill amounts."
+            ],
+            [
+              "Average bill for a store",
+              "Its revenue divided by its number of bills."
+            ],
+            [
+              "Maximum revenue across stores",
+              "Largest completed store total."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Worked example with small bills"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Bill",
+              "Store",
+              "Amount",
+              "A total",
+              "B total",
+              "MaxRevenue"
+            ],
+            [
+              "1",
+              "A",
+              "40",
+              "40",
+              "0",
+              "40"
+            ],
+            [
+              "2",
+              "B",
+              "100",
+              "40",
+              "100",
+              "100"
+            ],
+            [
+              "3",
+              "A",
+              "35",
+              "75",
+              "100",
+              "100"
+            ],
+            [
+              "4",
+              "A",
+              "30",
+              "105",
+              "100",
+              "105"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A has more bills and final revenue 105; B has one bill with amount 100. Average bills are 105/3 = 35 for A and 100 for B. “Best store” must be defined by a chosen metric."
+        },
+        {
+          "type": "heading",
+          "text": "Apply the pattern to words"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutorial 2.4 sums LetterCount separately for every part of speech. This asks which category contributes the most letters, not simply the most word cards. From the supplied Words table, noun letters total 145, adjective letters 65, verb letters 35, preposition letters 27, article letters 18, pronoun letters 17, adverb letters 13 and conjunction letters 9."
+        },
+        {
+          "type": "paragraph",
+          "text": "Those category letter totals sum to 329, matching the whole paragraph. Nouns contribute the most letters. A category can be common but contain short words, so occurrence frequency and total letter contribution are distinct summaries."
+        },
+        {
+          "type": "check",
+          "question": "Three A bills are 20,30,40; one B bill is 100. Which wins by bill count and by revenue?",
+          "answer": "A wins by count: 3 versus 1. B wins by revenue: 100 versus 90.",
+          "text": "Three A bills are 20,30,40; one B bill is 100. Which wins by bill count and by revenue? Answer: A wins by count: 3 versus 1. B wins by revenue: 100 versus 90."
+        },
+        {
+          "type": "check",
+          "question": "A category has words of lengths 2,2,3. What are its frequency and letter contribution?",
+          "answer": "Frequency=3 words; letter contribution=7 letters.",
+          "text": "A category has words of lengths 2,2,3. What are its frequency and letter contribution? Answer: Frequency=3 words; letter contribution=7 letters."
+        },
+        {
+          "type": "check",
+          "question": "Why is a running maximum of group totals straightforward for nonnegative bills?",
+          "answer": "A group total never falls, so an existing maximum cannot be invalidated by a decrease. Only the changed total can improve it.",
+          "text": "Why is a running maximum of group totals straightforward for nonnegative bills? Answer: A group total never falls, so an existing maximum cannot be invalidated by a decrease. Only the changed total can improve it."
+        },
+        {
+          "type": "check",
+          "question": "Which part of speech contributes the most letters in Words.pdf?",
+          "answer": "Noun, with a total LetterCount of 145. That is a sum of lengths, not a count of 145 words.",
+          "text": "Which part of speech contributes the most letters in Words.pdf? Answer: Noun, with a total LetterCount of 145. That is a sum of lengths, not a count of 145 words."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.5; Tutorial 2.4. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Word frequencies: normalize first, then count",
+      "slug": "word-frequencies",
+      "source": "Lecture 2.6; Tutorial 2.5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "To count occurrences of a word, decide what “the same word” means. Without a consistent rule, capital letters and punctuation can create separate counters for values you intended to group."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/word-2.png",
+          "width": 760,
+          "height": 494,
+          "caption": "A small selection of course words demonstrates shared counters. The complete 65-card walkthrough below computes the full dataset counts.",
+          "alt": "A small selection of course words demonstrates shared counters. The complete 65-card walkthrough below computes the full dataset counts."
+        },
+        {
+          "type": "interactive",
+          "mode": "words"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/word-frequency.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "A normalized word is the key of its counter; update it before comparing with the running maximum.",
+          "alt": "A normalized word is the key of its counter; update it before comparing with the running maximum."
+        },
+        {
+          "type": "heading",
+          "text": "State a normalization rule"
+        },
+        {
+          "type": "paragraph",
+          "text": "For these notes, turn letters to lowercase and strip surrounding full stops, commas, semicolons, colons, exclamation marks and question marks. Preserve internal hyphens. Thus It and it become it, while morning. becomes morning. Keep the original word text and card ID; normalization creates a comparison key rather than erasing the original."
+        },
+        {
+          "type": "heading",
+          "text": "Count every occurrence, not every distinct word once"
+        },
+        {
+          "type": "code",
+          "text": "Frequency = empty table\nMaxFrequency = 0\nFor each word card X {\n    w = Normalize(X.Word)\n    If w has no counter: Frequency[w] = 0\n    Frequency[w] = Frequency[w] + 1\n    if (Frequency[w] > MaxFrequency) {\n        MaxFrequency = Frequency[w]\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Create a counter only when a key is new. If you recreate and reset the counter every time its word appears, repeated words will incorrectly remain at count 1."
+        },
+        {
+          "type": "heading",
+          "text": "The supplied Words table"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Measure",
+              "Verified value"
+            ],
+            [
+              "Total occurrence cards",
+              "65"
+            ],
+            [
+              "Distinct normalized words",
+              "47"
+            ],
+            [
+              "Most frequent word",
+              "the, 6 occurrences"
+            ],
+            [
+              "Other repeated keys",
+              "was, monday, his, of, and: 3 each; it, to, he: 2 each"
+            ],
+            [
+              "Keys occurring exactly once",
+              "38"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The supplied table treats class and teacher, as separate cards, headmaster as one, and fire-eyed as one hyphenated token. The spoken text discusses slightly different splitting and estimates of distinct counts. These notes calculate from the supplied table with the stated normalization, so results are reproducible."
+        },
+        {
+          "type": "heading",
+          "text": "One pass or two sequential passes?"
+        },
+        {
+          "type": "paragraph",
+          "text": "You may first build the whole frequency table, then scan the counters to find the maximum. Or update MaxFrequency while you count to obtain the value in one pass over word cards. A second pass over counters is not a nested full word scan for every word. Efficient lookup of existing keys is another implementation concern; “one pass over records” does not make every operation free."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial: bills per customer"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutorial 2.5 reuses the pattern with customer names as keys. Its maximum bill count per customer is 4, shared by Srivatsan and Ahmed in the demonstrated set. Counting purchases differs from adding their rupee amounts. State how name spellings are standardized rather than merging people on a guess."
+        },
+        {
+          "type": "check",
+          "question": "Normalize The, the, and THE. using the stated rule. What counter do they share?",
+          "answer": "All three use key the. Their combined frequency is 3.",
+          "text": "Normalize The, the, and THE. using the stated rule. What counter do they share? Answer: All three use key the. Their combined frequency is 3."
+        },
+        {
+          "type": "check",
+          "question": "Does normalization remove the internal hyphen in fire-eyed?",
+          "answer": "No, not under this rule. It strips specified surrounding punctuation and preserves internal hyphens.",
+          "text": "Does normalization remove the internal hyphen in fire-eyed? Answer: No, not under this rule. It strips specified surrounding punctuation and preserves internal hyphens."
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between 65 occurrences and 47 distinct words?",
+          "answer": "There are 65 word-card positions, but only 47 different normalized keys; repeated keys use existing counters.",
+          "text": "What is the difference between 65 occurrences and 47 distinct words? Answer: There are 65 word-card positions, but only 47 different normalized keys; repeated keys use existing counters."
+        },
+        {
+          "type": "check",
+          "question": "Does MaxFrequency alone identify the most frequent word?",
+          "answer": "Not by itself. Store the word key alongside it, or inspect the completed frequency table to identify the key or keys.",
+          "text": "Does MaxFrequency alone identify the most frequent word? Answer: Not by itself. Store the word key alongside it, or inspect the completed frequency table to identify the key or keys."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.6; Tutorial 2.5. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Keep the winning record and handle every tie",
+      "slug": "maximum-with-ties",
+      "source": "Lecture 2.7; Tutorial 2.6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Knowing the highest mark is not enough when you need to name the students who earned it. Keep the relevant record ID together with the maximum value, and decide what to do when a later score ties it."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/safe-2.png",
+          "caption": "Rahul and Deepika both have Mathematics 97. Equal values add names; a greater value replaces the old winners.",
+          "alt": "Rahul and Deepika both have Mathematics 97. Equal values add names; a greater value replaces the old winners.",
+          "width": 760,
+          "height": 502
+        },
+        {
+          "type": "interactive",
+          "mode": "ties"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/ties.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "A higher value replaces the owner list; an equal value appends an ID.",
+          "alt": "A higher value replaces the owner list; an equal value appends an ID."
+        },
+        {
+          "type": "heading",
+          "text": "One owner: first or last depends on the comparison"
+        },
+        {
+          "type": "paragraph",
+          "text": "With a first-record seed, updating one owner only when a score is strictly greater preserves the first maximum encountered. Updating on greater-than-or-equal preserves the last maximum encountered. Both return one valid maximum owner, but neither reports all ties."
+        },
+        {
+          "type": "heading",
+          "text": "All owners: three branches"
+        },
+        {
+          "type": "code",
+          "text": "If input is empty: report \"No maximum\"\nRead first record X\nMax = X.Mathematics\nOwners = [X.CardNo]\nFor each remaining record X {\n    if (X.Mathematics > Max) {\n        Max = X.Mathematics\n        Owners = [X.CardNo]\n    }\n    else if (X.Mathematics == Max) {\n        Append X.CardNo to Owners\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "On a new higher score, clear old owners by replacing the list. On a tie, append without clearing. On a lower score, change neither. An if/else-if structure prevents the same newly accepted card from also entering a second equality branch and being added twice."
+        },
+        {
+          "type": "heading",
+          "text": "Trace the supplied maths winners"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Important event",
+              "Max",
+              "Owners"
+            ],
+            [
+              "First card 0, Bhuvanesh: 68",
+              "68",
+              "[0]"
+            ],
+            [
+              "Card 4, Ritika: 87",
+              "87",
+              "[4]"
+            ],
+            [
+              "Card 11, Rahul: 97",
+              "97",
+              "[11]"
+            ],
+            [
+              "Card 23, Deepika: 97",
+              "97",
+              "[11,23]"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "At the end, the maximum is 97 and both IDs remain. IDs are more reliable for retrieving full records than names alone, because different people can have the same name."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial: customer behind the largest single bill"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutorial 2.6 carries both MaxBillAmount and MaxBillCustomer, and reports Akshaya with Rs 4174. This answers who paid the largest individual bill in that dataset, not who spent the most across all their bills. If a later bill ties the amount and all ties are requested, retain both relevant bill IDs or customers under a stated policy."
+        },
+        {
+          "type": "check",
+          "question": "Values are 7,7,9,9 at IDs A,B,C,D. What is the final all-ties answer?",
+          "answer": "Max=9 and Owners=[C,D]. The 7-owners must be removed when the first 9 arrives.",
+          "text": "Values are 7,7,9,9 at IDs A,B,C,D. What is the final all-ties answer? Answer: Max=9 and Owners=[C,D]. The 7-owners must be removed when the first 9 arrives."
+        },
+        {
+          "type": "check",
+          "question": "What happens if you use >= and keep just one owner?",
+          "answer": "The latest encountered maximum replaces earlier tied owners. You retain the last maximum, not every tie.",
+          "text": "What happens if you use >= and keep just one owner? Answer: The latest encountered maximum replaces earlier tied owners. You retain the last maximum, not every tie."
+        },
+        {
+          "type": "check",
+          "question": "Why should Max and its owner be updated in the same branch?",
+          "answer": "They describe the same selected candidate. Updating only one can pair a score with the wrong record.",
+          "text": "Why should Max and its owner be updated in the same branch? Answer: They describe the same selected candidate. Updating only one can pair a score with the wrong record."
+        },
+        {
+          "type": "check",
+          "question": "Who shares the highest maths mark in Scores.pdf?",
+          "answer": "Rahul, card 11, and Deepika, card 23. Both have Mathematics=97.",
+          "text": "Who shares the highest maths mark in Scores.pdf? Answer: Rahul, card 11, and Deepika, card 23. Both have Mathematics=97."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.7; Tutorial 2.6. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Two passes when the second decision needs final counts",
+      "slug": "frequency-based-filtering",
+      "source": "Lectures 2.6 and 2.7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Combining work into one pass is useful when it is correct. Some decisions need information that is not available until the entire first pass has finished."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/word-3.png",
+          "width": 764,
+          "height": 524,
+          "caption": "A small example explains why frequency-based filtering needs final counts before the second pass.",
+          "alt": "A small example explains why frequency-based filtering needs final counts before the second pass."
+        },
+        {
+          "type": "interactive",
+          "mode": "words"
+        },
+        {
+          "type": "interactive",
+          "mode": "unique"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/two-passes.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Complete the frequency table first, then use those final frequencies to select words.",
+          "alt": "Complete the frequency table first, then use those final frequencies to select words."
+        },
+        {
+          "type": "heading",
+          "text": "A word seen once so far may repeat later"
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine sun, rain, sun. When you first see sun, its current frequency is 1. If you immediately keep it as a final “unique word”, the later sun invalidates that decision. The final frequencies are sun=2 and rain=1."
+        },
+        {
+          "type": "code",
+          "text": "Pass 1:\n    Build Frequency for every normalized word\nPass 2:\n    For every original word card X {\n        w = Normalize(X.Word)\n        if (Frequency[w] == 1) { keep X }\n        else { discard X }\n    }"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Discard” here means move into the non-selected output of the exercise, not delete the original dataset. Retain the original records and use their IDs when you need to reconstruct order."
+        },
+        {
+          "type": "heading",
+          "text": "Use identical keys in both passes"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the first pass combines It with it but the second pass looks for the raw capitalized text, filtering can fail. Normalize case and surrounding punctuation in exactly the same way. Do not remove part of an internal hyphenated token in only one pass."
+        },
+        {
+          "type": "heading",
+          "text": "Dataset result and threshold choices"
+        },
+        {
+          "type": "paragraph",
+          "text": "With the supplied Words table and our rule, 38 normalized keys have final count 1. Each occurs once, so 38 cards are selected. The remaining 27 occurrence cards belong to nine repeated keys. You could instead keep words with frequency at most 2; define that threshold before filtering."
+        },
+        {
+          "type": "heading",
+          "text": "Why word frequencies are useful"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture uses search and document comparison as a motivation: common words often tell us less about a document’s specific topic than distinctive words. This is an introductory model for why frequency matters, not a complete description of a modern search engine or a rule that frequent words should always be removed."
+        },
+        {
+          "type": "heading",
+          "text": "Sequential is not nested"
+        },
+        {
+          "type": "paragraph",
+          "text": "Two sequential passes finish one full scan, then start another. Nested full scans would restart a second complete scan for each outer record. In this task, it is the dependence on completed global counts that explains the second pass."
+        },
+        {
+          "type": "check",
+          "question": "For a,b,a,c, which occurrence cards survive a final-frequency-equals-1 filter?",
+          "answer": "The b and c cards. Both a occurrences are excluded because a has final frequency 2.",
+          "text": "For a,b,a,c, which occurrence cards survive a final-frequency-equals-1 filter? Answer: The b and c cards. Both a occurrences are excluded because a has final frequency 2."
+        },
+        {
+          "type": "check",
+          "question": "Why cannot the first a be accepted permanently as unique when first seen?",
+          "answer": "A later occurrence may change its final count. Current frequency 1 does not prove final frequency 1.",
+          "text": "Why cannot the first a be accepted permanently as unique when first seen? Answer: A later occurrence may change its final count. Current frequency 1 does not prove final frequency 1."
+        },
+        {
+          "type": "check",
+          "question": "Do the two passes need the same normalization?",
+          "answer": "Yes. Both must look up exactly the same category keys.",
+          "text": "Do the two passes need the same normalization? Answer: Yes. Both must look up exactly the same category keys."
+        },
+        {
+          "type": "check",
+          "question": "How many once-occurring cards are kept in the supplied normalized Words table?",
+          "answer": "38, under the explicitly stated lowercase-and-surrounding-punctuation rule.",
+          "text": "How many once-occurring cards are kept in the supplied normalized Words table? Answer: 38, under the explicitly stated lowercase-and-surrounding-punctuation rule."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lectures 2.6 and 2.7. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "A flowchart for maximum values and owners",
+      "slug": "maximum-flowchart",
+      "source": "Lecture 2.8 — Flowchart for max marks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A maximum-finding flowchart is a filtered iteration whose update condition compares the current card with a changing variable. Its processes must keep the value and the winning identity synchronized."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-4.png",
+          "width": 768,
+          "height": 544,
+          "caption": "A selected sequence of course marks shows how the best value changes. In the full dataset, Rahul and Deepika both have Mathematics 97.",
+          "alt": "A selected sequence of course marks shows how the best value changes. In the full dataset, Rahul and Deepika both have Mathematics 97."
+        },
+        {
+          "type": "interactive",
+          "mode": "max"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/max-flowchart.svg",
+          "width": 1000,
+          "height": 980,
+          "caption": "The first-value branch accepts a real record; later updates occur only for a larger score.",
+          "alt": "The first-value branch accepts a real record; later updates occur only for a larger score."
+        },
+        {
+          "type": "heading",
+          "text": "The main path"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with HaveValue=False. Test whether another card exists, read it and move it to the visited pile. If no candidate has been stored yet, accept this first one. Otherwise compare X.score with Max. A larger score updates both Max and Owner; a smaller or equal score leaves a single-owner first-maximum result unchanged."
+        },
+        {
+          "type": "heading",
+          "text": "Relate the picture to the lecture’s version"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture seeds a nonnegative mark maximum at 0 and an unknown ID at −1. The picture here makes the first-record case explicit. That handles all-zero and negative datasets too, while preserving the lecture’s compare-and-update structure. At End, check HaveValue before reporting a maximum."
+        },
+        {
+          "type": "heading",
+          "text": "Extend the picture for all ties"
+        },
+        {
+          "type": "paragraph",
+          "text": "Replace Owner by an Owners list. A new higher score resets the list to just X.id. On the not-greater branch, add another diamond testing equality with Max. Equal means append X.id; lower means do nothing. Both paths join before the loop repeats. The next higher score clears all earlier tied owners."
+        },
+        {
+          "type": "heading",
+          "text": "Check every path"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every actual card is marked visited once. Every continued path returns to the card-availability test. Initialization is outside the loop. The No-more-cards branch leads to reporting, not to an attempt to read another card. Walk through empty, one-card, all-equal and later-higher examples."
+        },
+        {
+          "type": "check",
+          "question": "Where should “X.score > Max?” appear?",
+          "answer": "In a decision diamond, because it chooses between paths.",
+          "text": "Where should “X.score > Max?” appear? Answer: In a decision diamond, because it chooses between paths."
+        },
+        {
+          "type": "check",
+          "question": "Which process actions belong together when accepting a new best record?",
+          "answer": "Update Max and its Owner, or replace Owners with the new ID list, and mark that a candidate exists.",
+          "text": "Which process actions belong together when accepting a new best record? Answer: Update Max and its Owner, or replace Owners with the new ID list, and mark that a candidate exists."
+        },
+        {
+          "type": "check",
+          "question": "Which extra decision is needed to report every tie?",
+          "answer": "On the not-greater path, test X.score == Max and append its ID if equal.",
+          "text": "Which extra decision is needed to report every tie? Answer: On the not-greater path, test X.score == Max and append its ID if equal."
+        },
+        {
+          "type": "check",
+          "question": "What does HaveValue=False at the end indicate?",
+          "answer": "No record was accepted, as with empty input. Report no maximum instead of a made-up value or ID.",
+          "text": "What does HaveValue=False at the end indicate? Answer: No record was accepted, as with empty input. Report no maximum instead of a made-up value or ID."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.8 — Flowchart for max marks. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Pseudocode: assignment, fields and while blocks",
+      "slug": "introduction-to-pseudocode",
+      "source": "Lecture 2.9 — Introduction to pseudocodes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pseudocode writes a procedure as structured text. It is easier to edit, compare and discuss than a large picture, while keeping the same logic as a flowchart."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/safe-3.png",
+          "caption": "A counting procedure in Week 2 pseudocode: assignment changes Count, while comparison checks values.",
+          "alt": "A counting procedure in Week 2 pseudocode: assignment changes Count, while comparison checks values.",
+          "width": 764,
+          "height": 518
+        },
+        {
+          "type": "interactive",
+          "mode": "count"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/pseudocode.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "Assignment, while, if, field access and equality give concise ways to express familiar steps.",
+          "alt": "Assignment, while, if, field access and equality give concise ways to express familiar steps."
+        },
+        {
+          "type": "heading",
+          "text": "From numbered steps to structured blocks"
+        },
+        {
+          "type": "paragraph",
+          "text": "You could number every process and use jumps such as “go back to step 2”. The lecture instead introduces while to show repetition directly. Braces { } enclose a block, and indentation makes that block easier to read. Start and End labels can often be omitted because execution begins at the top and finishes after the last statement."
+        },
+        {
+          "type": "code",
+          "text": "Count = 0\nwhile (Pile1 has cards) {\n    Read the top card X\n    Move X to Pile2\n    Count = Count + 1\n}\nReport Count"
+        },
+        {
+          "type": "heading",
+          "text": "The right side is evaluated before the left is replaced"
+        },
+        {
+          "type": "paragraph",
+          "text": "Count = Count + 1 is an assignment. If old Count is 5, evaluate 5+1 and store 6 as the new Count. It is not the algebra claim 5=6. The Week 1 arrow notation Count ← Count + 1 expresses the same update more visibly."
+        },
+        {
+          "type": "heading",
+          "text": "Field access identifies part of a record"
+        },
+        {
+          "type": "paragraph",
+          "text": "X.Mathematics means the Mathematics field of the current scorecard X. X.CardNo identifies that card. Names in the supplied tables are used exactly in dataset examples; field names are case-sensitive when a concrete implementation makes them so."
+        },
+        {
+          "type": "code",
+          "text": "Sum = 0\nwhile (Pile1 has cards) {\n    Read top card X\n    Move X to Pile2\n    Sum = Sum + X.Mathematics\n}\nReport Sum"
+        },
+        {
+          "type": "paragraph",
+          "text": "The count and sum procedures share the same loop. Only the state variable and per-card update change. For the supplied scorecards, this sum is 2171."
+        },
+        {
+          "type": "heading",
+          "text": "Assignment versus equality"
+        },
+        {
+          "type": "paragraph",
+          "text": "In this week’s lecture notation, a single = assigns, while == compares for equality and produces True or False. For example, X.Gender == \"F\" is a condition; Count = Count + 1 is an update. Pseudocode is a chosen notation, so explain the convention rather than assuming every language uses the same symbols."
+        },
+        {
+          "type": "check",
+          "question": "Old Sum=10 and X.Mathematics=7. What does Sum=Sum+X.Mathematics store?",
+          "answer": "17. Evaluate the old right-hand values first, then replace Sum.",
+          "text": "Old Sum=10 and X.Mathematics=7. What does Sum=Sum+X.Mathematics store? Answer: 17. Evaluate the old right-hand values first, then replace Sum."
+        },
+        {
+          "type": "check",
+          "question": "What does X.CardNo select?",
+          "answer": "The CardNo field of the current record X, not its maths score or the entire record.",
+          "text": "What does X.CardNo select? Answer: The CardNo field of the current record X, not its maths score or the entire record."
+        },
+        {
+          "type": "check",
+          "question": "Why use braces or another clear block convention?",
+          "answer": "They identify which statements repeat or depend on a condition. Ambiguous grouping changes the procedure.",
+          "text": "Why use braces or another clear block convention? Answer: They identify which statements repeat or depend on a condition. Ambiguous grouping changes the procedure."
+        },
+        {
+          "type": "check",
+          "question": "Does a while condition get checked only once?",
+          "answer": "No. It is checked before each iteration, including after returning from the previous body execution.",
+          "text": "Does a while condition get checked only once? Answer: No. It is checked before each iteration, including after returning from the previous body execution."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.9 — Introduction to pseudocodes. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Pseudocode with filters, if–else and nested conditions",
+      "slug": "pseudocode-with-filtering",
+      "source": "Lecture 2.10; Tutorial 2.8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A while chooses whether to repeat a block. An if chooses whether to execute a block during this visit. An else chooses the alternative when that particular if condition is false."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/browser/score-2.png",
+          "width": 768,
+          "height": 478,
+          "caption": "Selected course cards show AND: keep a card only when both its city and gender pass the filter.",
+          "alt": "Selected course cards show AND: keep a card only when both its city and gender pass the filter."
+        },
+        {
+          "type": "interactive",
+          "mode": "filter"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-2/nested-if.svg",
+          "width": 1000,
+          "height": 760,
+          "caption": "A Madurai F record exposes why a combined if–else can differ from an outer city filter with an inner group split.",
+          "alt": "A Madurai F record exposes why a combined if–else can differ from an outer city filter with an inner group split."
+        },
+        {
+          "type": "heading",
+          "text": "Put the update inside the right filter"
+        },
+        {
+          "type": "code",
+          "text": "FSum = 0\nwhile (Pile1 has cards) {\n    Read top card X\n    Move X to Pile2\n    if (X.Gender == \"F\") {\n        FSum = FSum + X.Mathematics\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every card is still visited. Only F cards update FSum. With the supplied Scores table, FSum=951; the M sum is 1220. Use an if/else split only when valid records are known to have exactly the two expected labels, or add explicit handling for other values."
+        },
+        {
+          "type": "heading",
+          "text": "A nested filter can become AND when only the matching action matters"
+        },
+        {
+          "type": "code",
+          "text": "if (X.CityTown == \"Chennai\") {\n    if (X.Gender == \"F\") { Count = Count + 1 }\n}\n\nEquivalent matching action:\nif (X.CityTown == \"Chennai\" AND X.Gender == \"F\") {\n    Count = Count + 1\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Both forms count only Chennai F records. In the supplied table, the count is 5. The indentation and braces make it clear that the inner test is inside the city filter."
+        },
+        {
+          "type": "heading",
+          "text": "An else can make the same rewrite wrong"
+        },
+        {
+          "type": "code",
+          "text": "Original:\nif (X.CityTown == \"Chennai\") {\n    if (X.Gender == \"F\") { FCount = FCount + 1 }\n    else { MCount = MCount + 1 }\n}\n\nNOT equivalent:\nif (X.CityTown == \"Chennai\" AND X.Gender == \"F\") {\n    FCount = FCount + 1\n}\nelse { MCount = MCount + 1 }"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the original, non-Chennai records update neither count. In the rewrite, every record that is not both Chennai and F updates MCount, including Madurai F records. The else negates the entire combined condition, not just the gender test."
+        },
+        {
+          "type": "heading",
+          "text": "Safe alternatives"
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the nested structure, or use complete independent filters: Chennai AND F for FCount; Chennai AND M for MCount. The supplied table has five Chennai F records and three Chennai M records. Both totals together account for Chennai’s eight scorecards."
+        },
+        {
+          "type": "heading",
+          "text": "Reuse the structure for a maximum"
+        },
+        {
+          "type": "paragraph",
+          "text": "Replace the fixed group filter by X.Mathematics > Max, and replace addition by Max = X.Mathematics. Seed safely, then add owner updates if needed. A sum and a maximum can share a loop shape while requiring different initialization and different update rules."
+        },
+        {
+          "type": "check",
+          "question": "For a Madurai F card, which counts change in the original nested Chennai-only split?",
+          "answer": "Neither FCount nor MCount. The outer city condition is false.",
+          "text": "For a Madurai F card, which counts change in the original nested Chennai-only split? Answer: Neither FCount nor MCount. The outer city condition is false."
+        },
+        {
+          "type": "check",
+          "question": "What changes for the same card in the unsafe combined if–else?",
+          "answer": "MCount increases, even though the card is neither Chennai nor M. That counterexample proves the programs differ.",
+          "text": "What changes for the same card in the unsafe combined if–else? Answer: MCount increases, even though the card is neither Chennai nor M. That counterexample proves the programs differ."
+        },
+        {
+          "type": "check",
+          "question": "How many Chennai scorecards are labeled F and M in the supplied table?",
+          "answer": "F=5 and M=3, totaling 8 Chennai records.",
+          "text": "How many Chennai scorecards are labeled F and M in the supplied table? Answer: F=5 and M=3, totaling 8 Chennai records."
+        },
+        {
+          "type": "check",
+          "question": "Can replacing if by while be harmless?",
+          "answer": "No. A while repeats while its condition stays true. If the body does not change that condition, it may loop forever instead of executing once.",
+          "text": "Can replacing if by while be harmless? Answer: No. A while repeats while its condition stays true. If the body does not change that condition, it may loop forever instead of executing once."
+        },
+        {
+          "type": "note",
+          "text": "Source: Lecture 2.10; Tutorial 2.8. Small teaching datasets and diagrams are prepared for these notes; lecture and tutorial totals are identified explicitly."
+        }
+      ]
+    },
+    {
+      "title": "Explore your course cards: interactive dataset lab",
+      "datasetResource": true,
+      "slug": "source-material-dataset-lab",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The same score cards, word cards and shopping bills are used throughout both weeks. Choose a procedure and follow the real records. Learn and practise here without downloading anything."
+        },
+        {
+          "type": "interactive",
+          "mode": "count",
+          "explore": true
+        },
+        {
+          "type": "heading",
+          "text": "Same data, different questions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use score cards for counts, sums, averages, filters, types and maximums. Use word cards for ordered searches, sentence lengths and frequencies. Use bills for records, food filters and store revenue. Change the question and watch how the procedure changes."
+        },
+        {
+          "type": "check",
+          "question": "What is the average Mathematics mark across all 30 score cards?",
+          "answer": "The sum is 2,171. Divide by 30 to get approximately 72.3667. The average walkthrough rounds its display to 72.37.",
+          "text": "What is the average Mathematics mark across all 30 score cards? Answer: The sum is 2,171. Divide by 30 to get approximately 72.3667. The average walkthrough rounds its display to 72.37."
+        },
+        {
+          "type": "check",
+          "question": "Which students share the highest Mathematics mark?",
+          "answer": "Rahul and Deepika both have 97. Keep both names when a mark equals the current best.",
+          "text": "Which students share the highest Mathematics mark? Answer: Rahul and Deepika both have 97. Keep both names when a mark equals the current best."
+        },
+        {
+          "type": "check",
+          "question": "How many words are in the longest sentence in the supplied paragraph?",
+          "answer": "Sentence 5 has 25 word cards. The five lengths are 4, 7, 8, 21 and 25.",
+          "text": "How many words are in the longest sentence in the supplied paragraph? Answer: Sentence 5 has 25 word cards. The five lengths are 4, 7, 8, 21 and 25."
+        },
+        {
+          "type": "check",
+          "question": "What is the combined revenue across the 30 shopping bills?",
+          "answer": "SV Stores totals ₹7,120; Big Bazaar ₹13,284; Sun General ₹4,009. Together they total ₹24,413.",
+          "text": "What is the combined revenue across the 30 shopping bills? Answer: SV Stores totals ₹7,120; Big Bazaar ₹13,284; Sun General ₹4,009. Together they total ₹24,413."
+        }
+      ]
+    },
+    {
+      "title": "Revision and practice with explained answers",
+      "slug": "revision-and-practice",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "interactive",
+          "mode": "count",
+          "explore": true
+        },
+        {
+          "type": "paragraph",
+          "text": "Try the mixed questions first, then reveal the reasoning. State the input order, initialization, comparison and tie policy before tracing a procedure."
+        },
+        {
+          "type": "heading",
+          "text": "Choose the pattern"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Task",
+              "State / method"
+            ],
+            [
+              "Find any matching record",
+              "Found flag; stop when true."
+            ],
+            [
+              "Find maximum value",
+              "Running best seeded safely."
+            ],
+            [
+              "Find all maximum owners",
+              "Best value plus reset-or-append list."
+            ],
+            [
+              "Longest sentence",
+              "Local Count plus global Longest."
+            ],
+            [
+              "Largest group frequency",
+              "Per-group counts plus MaxCount."
+            ],
+            [
+              "Largest nonnegative group total",
+              "Per-group totals plus running maximum."
+            ],
+            [
+              "Select globally rare words",
+              "Complete counts, then second-pass filter."
+            ],
+            [
+              "Translate nested conditions",
+              "Track block scope and every else."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Twenty mixed questions"
+        },
+        {
+          "type": "check",
+          "question": "1. An early-exit search sees a match on the last card. Does Found=True imply it stopped before exhausting the pile?",
+          "answer": "No. A last-card match can make Found=True just as the pile becomes empty. Inspect the flag and the remaining-pile state separately.",
+          "text": "1. An early-exit search sees a match on the last card. Does Found=True imply it stopped before exhausting the pile? Answer: No. A last-card match can make Found=True just as the pile becomes empty. Inspect the flag and the remaining-pile state separately."
+        },
+        {
+          "type": "check",
+          "question": "2. Starting from the first actual value, trace the maximum for 4,2,8,8,3.",
+          "answer": "Max values after visits: 4,4,8,8,8.",
+          "text": "2. Starting from the first actual value, trace the maximum for 4,2,8,8,3. Answer: Max values after visits: 4,4,8,8,8."
+        },
+        {
+          "type": "check",
+          "question": "3. Why is Max=100 wrong for marks whose actual maximum is 97, using a strict greater test?",
+          "answer": "No score exceeds 100, so the incorrect seed survives and invents a maximum of 100.",
+          "text": "3. Why is Max=100 wrong for marks whose actual maximum is 97, using a strict greater test? Answer: No score exceeds 100, so the incorrect seed survives and invents a maximum of 100."
+        },
+        {
+          "type": "check",
+          "question": "4. For −5,−9,−2, find maximum and minimum.",
+          "answer": "Maximum=−2, minimum=−9. Seed from an actual value rather than assuming zero is suitable.",
+          "text": "4. For −5,−9,−2, find maximum and minimum. Answer: Maximum=−2, minimum=−9. Seed from an actual value rather than assuming zero is suitable."
+        },
+        {
+          "type": "check",
+          "question": "5. Values at IDs A,B,C,D are 6,9,9,8. Give first, last and all maximum owners.",
+          "answer": "Maximum=9. First owner B; last owner C; all owners [B,C].",
+          "text": "5. Values at IDs A,B,C,D are 6,9,9,8. Give first, last and all maximum owners. Answer: Maximum=9. First owner B; last owner C; all owners [B,C]."
+        },
+        {
+          "type": "check",
+          "question": "6. Current Max=9 with Owners=[B,C]. The next record E has 12. What updates?",
+          "answer": "Max=12 and Owners=[E]. Replace the earlier owner list; do not append E to the obsolete 9-winners.",
+          "text": "6. Current Max=9 with Owners=[B,C]. The next record E has 12. What updates? Answer: Max=12 and Owners=[E]. Replace the earlier owner list; do not append E to the obsolete 9-winners."
+        },
+        {
+          "type": "check",
+          "question": "7. A sentence’s fourth word carries a full stop. When should its count be compared and reset?",
+          "answer": "Increment to 4, compare 4 with Longest, then reset Count to 0 for the next sentence.",
+          "text": "7. A sentence’s fourth word carries a full stop. When should its count be compared and reset? Answer: Increment to 4, compare 4 with Longest, then reset Count to 0 for the next sentence."
+        },
+        {
+          "type": "check",
+          "question": "8. Grouped labels A,A,B,B,B have counts finalized only on label changes. What must happen at end?",
+          "answer": "Finalize B’s count of 3 after the loop; otherwise the last group may never update the maximum.",
+          "text": "8. Grouped labels A,A,B,B,B have counts finalized only on label changes. What must happen at end? Answer: Finalize B’s count of 3 after the loop; otherwise the last group may never update the maximum."
+        },
+        {
+          "type": "check",
+          "question": "9. For labels X,Y,X,Y,Y,Z, give counts and maximum frequency.",
+          "answer": "X=2, Y=3, Z=1; MaxFrequency=3.",
+          "text": "9. For labels X,Y,X,Y,Y,Z, give counts and maximum frequency. Answer: X=2, Y=3, Z=1; MaxFrequency=3."
+        },
+        {
+          "type": "check",
+          "question": "10. Two stores have bill amounts [10,20,30] and [100]. Which has more bills and which more revenue?",
+          "answer": "The first has more bills (3). The second has more revenue (100 versus 60).",
+          "text": "10. Two stores have bill amounts [10,20,30] and [100]. Which has more bills and which more revenue? Answer: The first has more bills (3). The second has more revenue (100 versus 60)."
+        },
+        {
+          "type": "check",
+          "question": "11. Why must a new category counter be incremented after being created at zero?",
+          "answer": "The current record is the first occurrence. Merely creating a zero counter would omit it.",
+          "text": "11. Why must a new category counter be incremented after being created at zero? Answer: The current record is the first occurrence. Merely creating a zero counter would omit it."
+        },
+        {
+          "type": "check",
+          "question": "12. Normalize IT, it. and It, under the stated word rule.",
+          "answer": "All become it, so they share one counter with combined frequency 3.",
+          "text": "12. Normalize IT, it. and It, under the stated word rule. Answer: All become it, so they share one counter with combined frequency 3."
+        },
+        {
+          "type": "check",
+          "question": "13. For sun,rain,sun,wind, which words have final frequency 1?",
+          "answer": "rain and wind. Neither sun occurrence qualifies.",
+          "text": "13. For sun,rain,sun,wind, which words have final frequency 1? Answer: rain and wind. Neither sun occurrence qualifies."
+        },
+        {
+          "type": "check",
+          "question": "14. Does seeing a word once so far prove it belongs in the final uniqueness output?",
+          "answer": "No. A later card can repeat the key; complete the frequency pass first.",
+          "text": "14. Does seeing a word once so far prove it belongs in the final uniqueness output? Answer: No. A later card can repeat the key; complete the frequency pass first."
+        },
+        {
+          "type": "check",
+          "question": "15. Old Count=3. Evaluate Count=Count+1, then test Count==4.",
+          "answer": "Assignment stores 4. The following equality test is True.",
+          "text": "15. Old Count=3. Evaluate Count=Count+1, then test Count==4. Answer: Assignment stores 4. The following equality test is True."
+        },
+        {
+          "type": "check",
+          "question": "16. What does NOT Found evaluate to if Found=True?",
+          "answer": "False, so a while condition using more-cards AND NOT Found stops.",
+          "text": "16. What does NOT Found evaluate to if Found=True? Answer: False, so a while condition using more-cards AND NOT Found stops."
+        },
+        {
+          "type": "check",
+          "question": "17. A Madurai M record enters a nested Chennai-only group split. What should happen?",
+          "answer": "Neither Chennai count changes. The outer city condition fails.",
+          "text": "17. A Madurai M record enters a nested Chennai-only group split. What should happen? Answer: Neither Chennai count changes. The outer city condition fails."
+        },
+        {
+          "type": "check",
+          "question": "18. Why is if(Chennai AND F)…else MCount++ not the same as a Chennai-only F/M split?",
+          "answer": "Its else includes every non-Chennai record too. The combined condition’s negation is broader than “Chennai and M”.",
+          "text": "18. Why is if(Chennai AND F)…else MCount++ not the same as a Chennai-only F/M split? Answer: Its else includes every non-Chennai record too. The combined condition’s negation is broader than “Chennai and M”."
+        },
+        {
+          "type": "check",
+          "question": "19. What are the supplied dataset’s maths maximum and longest sentence length?",
+          "answer": "Mathematics maximum=97 with cards 11 and 23; longest sentence=25 words.",
+          "text": "19. What are the supplied dataset’s maths maximum and longest sentence length? Answer: Mathematics maximum=97 with cards 11 and 23; longest sentence=25 words."
+        },
+        {
+          "type": "check",
+          "question": "20. Which checks should be tried before trusting a maximum-owner algorithm?",
+          "answer": "Empty input, one record, all-zero or negative values, tied maxima, a later higher score, and the intended first/last/all tie policy.",
+          "text": "20. Which checks should be tried before trusting a maximum-owner algorithm? Answer: Empty input, one record, all-zero or negative values, tied maxima, a later higher score, and the intended first/last/all tie policy."
+        }
+      ]
+    },
+    {
+      "title": "Source guide and dataset conventions",
+      "slug": "source-material",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Week 2 uses the ten supplied lecture transcripts and Tutorials 2.1–2.8. The repeated Week 1 slide decks remain references for fields, types, flowchart symbols and valid input assumptions."
+        },
+        {
+          "type": "heading",
+          "text": "Source-to-lesson map"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Topic"
+            ],
+            [
+              "Lecture 2.1",
+              "Conditional termination and ordered search."
+            ],
+            [
+              "Lecture 2.2; Tutorial 2.1",
+              "Running maximum; words and bills."
+            ],
+            [
+              "Lecture 2.3; Tutorial 2.2",
+              "Longest sentence and grouped month runs."
+            ],
+            [
+              "Lecture 2.4; Tutorial 2.3",
+              "Group counts and largest city/store frequency."
+            ],
+            [
+              "Lecture 2.5; Tutorial 2.4",
+              "Revenue and total letters by part of speech."
+            ],
+            [
+              "Lecture 2.6; Tutorial 2.5",
+              "Normalized word and customer frequencies."
+            ],
+            [
+              "Lecture 2.7; Tutorial 2.6",
+              "Retaining maximum identity and ties; frequency-based filtering."
+            ],
+            [
+              "Lecture 2.8",
+              "Maximum flowchart and owner-list extension."
+            ],
+            [
+              "Lecture 2.9",
+              "Pseudocode, assignment, field selection and while."
+            ],
+            [
+              "Lecture 2.10; Tutorials 2.7 and 2.8",
+              "Safe initialization, if–else and nested-condition equivalence."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dataset-specific answers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Scores.pdf contains 30 unique records and Words.pdf contains 65 word occurrences. The supplied tables define IDs and spelling for reproducible examples. Bill summaries use printed BillNo 1–30 and printed totals. Other archive datasets such as trains and library examples are outside the scope of these Week 2 lessons."
+        },
+        {
+          "type": "heading",
+          "text": "Differences from spoken demonstrations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Under lowercase keys with surrounding punctuation stripped, Words.pdf has 47 distinct words and sentence lengths 4,7,8,21,25. Spoken demonstrations give some different counts or token splits. Chemistry maximum in the supplied Scores table is 97, even though an initialization tutorial uses 93 in its illustration. These notes retain the ideas while using the actual supplied table for worked answers."
+        },
+        {
+          "type": "heading",
+          "text": "Algorithmic details made explicit"
+        },
+        {
+          "type": "paragraph",
+          "text": "A maximum value seeded at zero needs a nonnegative-input assumption; returning an owner also needs a first-candidate or equality policy. Empty input has no maximum. A new higher value resets prior tied owners. A last group must be finalized even without a following key change."
+        },
+        {
+          "type": "paragraph",
+          "text": "A running maximum of incremented frequencies is valid because they never decrease. Group-total shortcuts use nonnegative additions; negative adjustments can invalidate a former leader. Minimum final frequency does not follow the same simple running-maximum logic, because the smallest counter can later increase."
+        },
+        {
+          "type": "paragraph",
+          "text": "Found flags answer existence, not the count of all matches. Ordered word searches stay within the target sentence. Both passes of frequency-based filtering use the same normalization. Pseudocode is descriptive text, with = for assignment and == for comparison in this week’s notation."
+        }
+      ]
+    }
+  ],
+  "illustrationCount": 26
+}

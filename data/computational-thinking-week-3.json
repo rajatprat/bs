@@ -1,0 +1,1915 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 3,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/computational-thinking/week-3/",
+  "title": "Tables, two passes and reusable procedures",
+  "description": "Use familiar score cards, word cards and shopping bills to understand tables, grade bands, hypotheses, parameters, prizes and side effects.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Start with what you already know from Weeks1 and2. Follow real records through each procedure, change parameters in the interactive labs, and practise with explained answers."
+    }
+  ],
+  "sections": [
+    {
+      "slug": "cards-to-tables",
+      "title": "From cards to tables: rows, columns and IDs",
+      "source": "Lecture 3.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A table stores the same information as the cards in a more regular shape. One ordinary card becomes one row. Each field becomes a column. You already know these records from Weeks 1 and 2; only their arrangement is changing."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/cards-to-rows.png",
+          "caption": "Bhuvanesh’s card becomes one table row. A column tells us which field to read.",
+          "alt": "Bhuvanesh’s card becomes one table row. A column tells us which field to read.",
+          "width": 768,
+          "height": 463
+        },
+        {
+          "type": "week3-lab",
+          "mode": "tables"
+        },
+        {
+          "type": "heading",
+          "text": "Find a value using a record and a field"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "CardNo",
+              "Name",
+              "CityTown",
+              "Mathematics",
+              "Physics",
+              "Chemistry",
+              "Total"
+            ],
+            [
+              0,
+              "Bhuvanesh",
+              "Erode",
+              68,
+              64,
+              78,
+              210
+            ],
+            [
+              1,
+              "Harish",
+              "Salem",
+              62,
+              45,
+              91,
+              198
+            ],
+            [
+              2,
+              "Shashank",
+              "Chennai",
+              57,
+              54,
+              77,
+              188
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "To find Harish’s Physics mark, locate his row using CardNo 1, then read the Physics column: 45. CardNo is an identifier. Sorting the rows changes a row’s position, but it must not change the identifier or the values belonging to that student."
+        },
+        {
+          "type": "heading",
+          "text": "Word cards work in the same way"
+        },
+        {
+          "type": "week3-lab",
+          "mode": "wordtable"
+        },
+        {
+          "type": "paragraph",
+          "text": "The word table has SerialNumber, Word, PartOfSpeech and LetterCount. SerialNumber 12 is considered, a Verb with LetterCount 10. Two occurrences of Monday are two rows, even though their Word values match. Keep SerialNumber when order matters."
+        },
+        {
+          "type": "note",
+          "text": "The score table has 9 fields. Some lesson tables show only the columns needed for that example. A smaller display does not remove the other fields from the dataset."
+        },
+        {
+          "type": "check",
+          "question": "Is a column one student or one attribute?",
+          "answer": "One attribute, such as Mathematics. A row describes one student.",
+          "text": "Is a column one student or one attribute? Answer: One attribute, such as Mathematics. A row describes one student."
+        },
+        {
+          "type": "check",
+          "question": "Does sorting make CardNo 0 become CardNo 1?",
+          "answer": "No. Sorting changes position, not identity.",
+          "text": "Does sorting make CardNo 0 become CardNo 1? Answer: No. Sorting changes position, not identity."
+        },
+        {
+          "type": "check",
+          "question": "Why are two Monday cards separate rows?",
+          "answer": "They are separate occurrences at different positions in the paragraph.",
+          "text": "Why are two Monday cards separate rows? Answer: They are separate occurrences at different positions in the paragraph."
+        },
+        {
+          "type": "check",
+          "question": "Which field tells you the length of considered?",
+          "answer": "LetterCount, which is 10. SerialNumber 12 is its position identifier.",
+          "text": "Which field tells you the length of considered? Answer: LetterCount, which is 10. SerialNumber 12 is its position identifier."
+        }
+      ]
+    },
+    {
+      "slug": "shopping-bills-linked-tables",
+      "title": "One bill, many items: link two tables",
+      "source": "Lecture 3.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Shopping bills have a different shape. A bill has one shop, customer and total, but it can contain any number of items. Srivatsan’s first bill has seven items. Giving each item its own set of columns would make wide, uneven rows."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/linked-bills.png",
+          "caption": "A bill table stores fixed details once. An item table stores multiple rows, linked by BillID.",
+          "alt": "A bill table stores fixed details once. An item table stores multiple rows, linked by BillID.",
+          "width": 768,
+          "height": 463
+        },
+        {
+          "type": "heading",
+          "text": "One large table is possible, but repeats details"
+        },
+        {
+          "type": "paragraph",
+          "text": "One row per item gives a fixed set of columns, but repeats the shop, customer and bill total on every row. That wastes space and creates a trap: adding those repeated bill totals counts the same purchase several times."
+        },
+        {
+          "type": "heading",
+          "text": "Split fixed details from item details"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "BillID",
+              "Shop",
+              "Customer",
+              "Total"
+            ],
+            [
+              1,
+              "SV Stores",
+              "Srivatsan",
+              567
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "BillID",
+              "Item",
+              "Quantity",
+              "Price",
+              "Cost"
+            ],
+            [
+              1,
+              "Carrots",
+              1.5,
+              50,
+              75
+            ],
+            [
+              1,
+              "Soap",
+              4,
+              32,
+              128
+            ],
+            [
+              1,
+              "Tomatoes",
+              2,
+              40,
+              80
+            ],
+            [
+              1,
+              "Bananas",
+              8,
+              8,
+              64
+            ],
+            [
+              1,
+              "Socks",
+              3,
+              56,
+              168
+            ],
+            [
+              1,
+              "Curd",
+              0.5,
+              32,
+              16
+            ],
+            [
+              1,
+              "Milk",
+              1.5,
+              24,
+              36
+            ]
+          ]
+        },
+        {
+          "type": "week3-lab",
+          "mode": "joins"
+        },
+        {
+          "type": "paragraph",
+          "text": "BillID 1 appears once in the bill table and on all seven matching item rows. It connects the two tables. Reconstruct the bill by finding its fixed row and all item rows with that same ID. Use an identifier unique within the dataset; a customer can have several bills."
+        },
+        {
+          "type": "note",
+          "text": "Quantity × Price = Cost for an item. Adding the seven Costs gives ₹567. Do not add the bill Total seven times. Every row in a particular table has the same column structure."
+        },
+        {
+          "type": "check",
+          "question": "Why not use Customer as the link?",
+          "answer": "The same customer can have several bills. A unique BillID identifies the purchase.",
+          "text": "Why not use Customer as the link? Answer: The same customer can have several bills. A unique BillID identifies the purchase."
+        },
+        {
+          "type": "check",
+          "question": "How many fixed-detail rows does Bill 1 need?",
+          "answer": "One, even though it has seven item rows.",
+          "text": "How many fixed-detail rows does Bill 1 need? Answer: One, even though it has seven item rows."
+        },
+        {
+          "type": "check",
+          "question": "What does adding ₹567 on every item row produce?",
+          "answer": "₹3,969, which wrongly counts the same bill seven times.",
+          "text": "What does adding ₹567 on every item row produce? Answer: ₹3,969, which wrongly counts the same bill seven times."
+        },
+        {
+          "type": "check",
+          "question": "Can two different tables have different columns?",
+          "answer": "Yes. The fixed-detail table and item table serve different purposes; each table has its own consistent columns.",
+          "text": "Can two different tables have different columns? Answer: Yes. The fixed-detail table and item table serve different purposes; each table has its own consistent columns."
+        }
+      ]
+    },
+    {
+      "slug": "below-average-two-passes",
+      "title": "Below average: finish one pass before filtering",
+      "source": "Lecture 3.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We want the students whose Mathematics mark is below the average of the whole class. A running average changes whenever another card is read. Deciding permanently from that unfinished average can give the wrong answer."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/below-average.png",
+          "caption": "First compute the final average. Then compare every Mathematics mark with that fixed value.",
+          "alt": "First compute the final average. Then compare every Mathematics mark with that fixed value.",
+          "width": 768,
+          "height": 561
+        },
+        {
+          "type": "week3-lab",
+          "mode": "below"
+        },
+        {
+          "type": "heading",
+          "text": "Pass 1 computes; pass 2 selects"
+        },
+        {
+          "type": "code",
+          "text": "Sum = 0\nCount = 0\nfor each row X in Scores {\n    Sum = Sum + X.Mathematics\n    Count = Count + 1\n}\nif (Count == 0) { report \"No average\"; stop }\nAverage = Sum / Count\nfor each row X in Scores {\n    if (X.Mathematics < Average) { record X.CardNo }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Our 30 cards sum to 2,171, so the exact average is 2171/30 ≈ 72.3667. For integer marks, 72 is below this average and 73 is above it. Compare with the unrounded average, even when the display is rounded."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Meaning",
+              "Result"
+            ],
+            [
+              "Below-average IDs",
+              "0, 1, 2, 3, 5, 9, 10, 12, 13, 17, 18, 19, 22, 24, 29"
+            ],
+            [
+              "Number below average",
+              15
+            ],
+            [
+              "Visits for two full passes",
+              "30 + 30 = 60"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Two passes are not nested loops"
+        },
+        {
+          "type": "paragraph",
+          "text": "The first loop ends before the second begins. We do not scan all 30 cards again inside each visit. Both passes may read the data without changing it; with physical piles, restore the cards before pass 2."
+        },
+        {
+          "type": "heading",
+          "text": "Below average does not always mean half"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the tiny example 50, 50, 50, 100, the average is 62.5 and three of four values are below it. If all values are equal, none is strictly below average. The result 15 out of 30 is a property of our supplied marks, not a general law."
+        },
+        {
+          "type": "check",
+          "question": "Why can a running average misclassify an earlier card?",
+          "answer": "A later value can move the average up or down. An earlier value may cross the new threshold.",
+          "text": "Why can a running average misclassify an earlier card? Answer: A later value can move the average up or down. An earlier value may cross the new threshold."
+        },
+        {
+          "type": "check",
+          "question": "Does a Mathematics mark of 72 pass the below-average test here?",
+          "answer": "Yes. 72 < 2171/30.",
+          "text": "Does a Mathematics mark of 72 pass the below-average test here? Answer: Yes. 72 < 2171/30."
+        },
+        {
+          "type": "check",
+          "question": "Are the two loops one inside the other?",
+          "answer": "No. They run sequentially: finish pass 1, then start pass 2.",
+          "text": "Are the two loops one inside the other? Answer: No. They run sequentially: finish pass 1, then start pass 2."
+        },
+        {
+          "type": "check",
+          "question": "What if Count is zero?",
+          "answer": "Do not divide by zero. Report that there is no average.",
+          "text": "What if Count is zero? Answer: Do not divide by zero. Report that there is no average."
+        },
+        {
+          "type": "check",
+          "question": "How many of 50,50,50,100 lie below their mean?",
+          "answer": "Three. Their mean is 62.5.",
+          "text": "How many of 50,50,50,100 lie below their mean? Answer: Three. Their mean is 62.5."
+        }
+      ]
+    },
+    {
+      "slug": "minimum-maximum-grade-bands",
+      "title": "Find the range, then assign grade bands",
+      "source": "Lecture 3.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Instead of dividing the class into above and below average, we can create four grade bands. First discover the lowest and highest actual Mathematics marks. Only then can we set fixed bands and classify students."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/grade-bands.png",
+          "caption": "The observed integer scores run from 42 to 97. The four equal-width bands contain different numbers of students.",
+          "alt": "The observed integer scores run from 42 to 97. The four equal-width bands contain different numbers of students.",
+          "width": 768,
+          "height": 561
+        },
+        {
+          "type": "week3-lab",
+          "mode": "grades"
+        },
+        {
+          "type": "heading",
+          "text": "Update minimum and maximum independently"
+        },
+        {
+          "type": "code",
+          "text": "Minimum = 101\nMaximum = -1\nfor each row X in Scores {\n    if (X.Mathematics < Minimum) { Minimum = X.Mathematics }\n    if (X.Mathematics > Maximum) { Maximum = X.Mathematics }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "These initial values work because valid marks lie from 0 to 100. The first value, 68, updates both variables. Use two separate if statements, not if / else. Starting both variables from the first real row is another safe approach for a nonempty dataset."
+        },
+        {
+          "type": "heading",
+          "text": "Count integer values, including both ends"
+        },
+        {
+          "type": "paragraph",
+          "text": "Maximum − Minimum = 97 − 42 = 55 is the numerical difference. There are 97 − 42 + 1 = 56 possible integer marks when both ends are included. Four equal groups of 14 integer values give the following bands."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Grade",
+              "Inclusive Mathematics band",
+              "Actual students"
+            ],
+            [
+              "D",
+              "42–55",
+              3
+            ],
+            [
+              "C",
+              "56–69",
+              9
+            ],
+            [
+              "B",
+              "70–83",
+              10
+            ],
+            [
+              "A",
+              "84–97",
+              8
+            ]
+          ]
+        },
+        {
+          "type": "code",
+          "text": "for each row X in Scores {\n    if (X.Mathematics >= 84) { Grade = \"A\" }\n    else if (X.Mathematics >= 70) { Grade = \"B\" }\n    else if (X.Mathematics >= 56) { Grade = \"C\" }\n    else { Grade = \"D\" }\n    record (X.CardNo, Grade)\n}"
+        },
+        {
+          "type": "note",
+          "text": "These are the lecture’s example bands, not an official grading policy. Equal-width intervals do not promise equal student counts. Boundary choices must be explicit; a new dataset may require different bands. If min equals max, handle that separately rather than pretending there is a spread."
+        },
+        {
+          "type": "check",
+          "question": "Why does the inclusive count use +1?",
+          "answer": "42 and 97 are both included. The difference counts gaps; +1 counts the integer values.",
+          "text": "Why does the inclusive count use +1? Answer: 42 and 97 are both included. The difference counts gaps; +1 counts the integer values."
+        },
+        {
+          "type": "check",
+          "question": "Where do 55,56,69,70,83,84 go?",
+          "answer": "55→D; 56 and 69→C; 70 and 83→B; 84→A.",
+          "text": "Where do 55,56,69,70,83,84 go? Answer: 55→D; 56 and 69→C; 70 and 83→B; 84→A."
+        },
+        {
+          "type": "check",
+          "question": "Why can the first mark update both min and max?",
+          "answer": "Before seeing any marks, both limits are placeholders. The first real mark is both the smallest and largest seen so far.",
+          "text": "Why can the first mark update both min and max? Answer: Before seeing any marks, both limits are placeholders. The first real mark is both the smallest and largest seen so far."
+        },
+        {
+          "type": "check",
+          "question": "Does each band have 7 or 8 students?",
+          "answer": "No. The actual counts are A 8, B 10, C 9 and D 3.",
+          "text": "Does each band have 7 or 8 students? Answer: No. The actual counts are A 8, B 10, C 9 and D 3."
+        },
+        {
+          "type": "check",
+          "question": "Can Minimum start at zero for valid nonnegative marks?",
+          "answer": "That would stop it updating when every mark is positive. Use a sufficiently high bound or the first real value.",
+          "text": "Can Minimum start at zero for valid nonnegative marks? Answer: That would stop it updating when every mark is positive. Use a sufficiently high bound or the first real value."
+        }
+      ]
+    },
+    {
+      "slug": "word-length-frequency-hypothesis",
+      "title": "Test an idea: are frequent words short?",
+      "source": "Lecture 3.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A hypothesis is an idea we can test with data. Looking at a few familiar words suggests that frequent words may be short. We need clear definitions and all relevant words before deciding what the evidence says."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/word-hypothesis.png",
+          "caption": "Classify each of the 47 different normalized words once using final frequency and length.",
+          "alt": "Classify each of the 47 different normalized words once using final frequency and length.",
+          "width": 768,
+          "height": 493
+        },
+        {
+          "type": "heading",
+          "text": "Make the definitions precise"
+        },
+        {
+          "type": "paragraph",
+          "text": "Frequent means occurring more than once. Infrequent means occurring once. Add all stored letter counts: 329 letters across 65 word occurrences gives an average length of 329/65 ≈ 5.0615. Thus integer lengths 5 or less are short; lengths 6 or more are long. The average here is over occurrences, while the classification table below counts each different word once."
+        },
+        {
+          "type": "paragraph",
+          "text": "Normalize case and remove punctuation at word ends before counting: Monday and Monday. use the same key. Keep internal hyphens and use the supplied LetterCount. First finish the frequency counts; then place each distinct word into exactly one of four boxes."
+        },
+        {
+          "type": "week3-lab",
+          "mode": "hypothesis"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Final frequency",
+              "Short (≤5)",
+              "Long (≥6)",
+              "Total"
+            ],
+            [
+              "Frequent (>1)",
+              8,
+              1,
+              9
+            ],
+            [
+              "Infrequent (=1)",
+              15,
+              23,
+              38
+            ],
+            [
+              "Total",
+              23,
+              24,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Tends to is different from always"
+        },
+        {
+          "type": "paragraph",
+          "text": "Monday has six letters and occurs three times. It disproves “every frequent word is short”. However, 8 of the 9 frequent word types are short: about 88.9%. Of the 38 infrequent types, 23 are long: about 60.5%. The two matching boxes contain 8 + 23 = 31 of 47 types, about 66.0%."
+        },
+        {
+          "type": "note",
+          "text": "These are observations about this paragraph, not proof about all English text, and not a claim that word length causes frequency. Reverse statements also differ: 8/9 frequent words are short, but only 8/23 short word types are frequent. The supplied counts resolve the transcript’s spoken arithmetic slips."
+        },
+        {
+          "type": "check",
+          "question": "Is Monday short under this definition?",
+          "answer": "No. Six letters makes it long; it is the frequent-long counterexample.",
+          "text": "Is Monday short under this definition? Answer: No. Six letters makes it long; it is the frequent-long counterexample."
+        },
+        {
+          "type": "check",
+          "question": "Why does the table total 47 instead of 65?",
+          "answer": "It counts each distinct normalized word once, rather than all occurrences.",
+          "text": "Why does the table total 47 instead of 65? Answer: It counts each distinct normalized word once, rather than all occurrences."
+        },
+        {
+          "type": "check",
+          "question": "What fraction of frequent word types are short?",
+          "answer": "8/9, about 88.9%.",
+          "text": "What fraction of frequent word types are short? Answer: 8/9, about 88.9%."
+        },
+        {
+          "type": "check",
+          "question": "Does 8/9 prove that short words cause repetition?",
+          "answer": "No. It describes an association in this dataset, not a causal rule.",
+          "text": "Does 8/9 prove that short words cause repetition? Answer: No. It describes an association in this dataset, not a causal rule."
+        },
+        {
+          "type": "check",
+          "question": "Why is the average not slightly below 5?",
+          "answer": "329/65 is approximately 5.0615, which is above 5. The transcript’s quick spoken estimate slips, but the integer short/long boundary remains 5/6.",
+          "text": "Why is the average not slightly below 5? Answer: 329/65 is approximately 5.0615, which is above 5. The transcript’s quick spoken estimate slips, but the integer short/long boundary remains 5/6."
+        }
+      ]
+    },
+    {
+      "slug": "three-prizes-criteria",
+      "title": "The three-prizes problem: decide the rules first",
+      "source": "Lecture 3.4",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The prize example asks for three high-scoring students, with two extra rules: each should be a subject topper in at least one subject, and the final group should include both genders represented by M and F in the supplied dataset. We must make these rules precise before writing the algorithm."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/prize-winners.png",
+          "caption": "Rahul, Deepika and Abirami have the highest totals in the supplied score cards.",
+          "alt": "Rahul, Deepika and Abirami have the highest totals in the supplied score cards.",
+          "width": 768,
+          "height": 493
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Student",
+              "CardNo",
+              "Gender",
+              "Maths",
+              "Physics",
+              "Chemistry",
+              "Total"
+            ],
+            [
+              "Rahul",
+              11,
+              "M",
+              97,
+              92,
+              92,
+              281
+            ],
+            [
+              "Deepika",
+              23,
+              "F",
+              97,
+              91,
+              88,
+              276
+            ],
+            [
+              "Abirami",
+              18,
+              "F",
+              72,
+              92,
+              97,
+              261
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Break a big problem into smaller questions"
+        },
+        {
+          "type": "paragraph",
+          "text": "First decide what “top three in a subject” means when scores tie. Compute the subject cutoffs. Filter the eligible students. Rank their totals while keeping their IDs. Finally check the group rule. For these cards the three winners above qualify and include M and F."
+        },
+        {
+          "type": "heading",
+          "text": "A successful example does not settle every case"
+        },
+        {
+          "type": "paragraph",
+          "text": "What if four students tie at the last prize? What if there is no eligible student from one required category? What if a high-total student misses every subject cutoff? State a tie policy and what to do if the rules cannot all be satisfied. Do not quietly change the criteria after seeing a difficult case."
+        },
+        {
+          "type": "note",
+          "text": "The lecture’s initial “top three overall, then verify” exploration and its later “filter subject toppers, then rank totals” algorithm agree on our dataset. They can differ on other datasets. Say which rule you intend rather than treating them as universally interchangeable."
+        },
+        {
+          "type": "check",
+          "question": "Why keep a student ID with each score?",
+          "answer": "A score tells you how high; an ID tells you who earned it.",
+          "text": "Why keep a student ID with each score? Answer: A score tells you how high; an ID tells you who earned it."
+        },
+        {
+          "type": "check",
+          "question": "Who has the highest actual total?",
+          "answer": "Rahul, CardNo 11, with 281.",
+          "text": "Who has the highest actual total? Answer: Rahul, CardNo 11, with 281."
+        },
+        {
+          "type": "check",
+          "question": "Are all three prize winners required to top every subject?",
+          "answer": "No. The criterion requires at least one qualifying subject per student.",
+          "text": "Are all three prize winners required to top every subject? Answer: No. The criterion requires at least one qualifying subject per student."
+        },
+        {
+          "type": "check",
+          "question": "Must exactly three valid winners always exist?",
+          "answer": "No. Eligibility, representation and tie rules can make the requirements impossible.",
+          "text": "Must exactly three valid winners always exist? Answer: No. Eligibility, representation and tie rules can make the requirements impossible."
+        }
+      ]
+    },
+    {
+      "slug": "top-three-distinct-marks",
+      "title": "Keep the top three: shift safely and handle ties",
+      "source": "Lectures 3.4 and 3.8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Keeping one maximum needs one remembered value. Keeping three needs three ordered places: First ≥ Second ≥ Third. When a new maximum arrives, save the old values before overwriting them."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/top-three-shift.png",
+          "caption": "Shift Third from Second, then Second from First, before storing a new First.",
+          "alt": "Shift Third from Second, then Second from First, before storing a new First.",
+          "width": 768,
+          "height": 493
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/distinct-marks.png",
+          "alt": "The third distinct Mathematics mark is89; the third student score counting ties is93.",
+          "caption": "The third distinct Mathematics mark is89; the third student score counting ties is93.",
+          "width": 768,
+          "height": 534
+        },
+        {
+          "type": "heading",
+          "text": "The four update cases"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "New value v",
+              "What to change"
+            ],
+            [
+              "v > First",
+              "Third = Second; Second = First; First = v"
+            ],
+            [
+              "First > v > Second",
+              "Third = Second; Second = v"
+            ],
+            [
+              "Second > v > Third",
+              "Third = v"
+            ],
+            [
+              "v below Third",
+              "No update"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use mutually exclusive cases, such as if / else if, or explicit disjoint conditions. Independent tests that reuse a just-updated value can accidentally process one card twice. The order of assignments matters: writing First = v too early loses the old First."
+        },
+        {
+          "type": "week3-lab",
+          "mode": "topthree"
+        },
+        {
+          "type": "heading",
+          "text": "Two meanings of top three"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Field",
+              "Top three distinct mark levels",
+              "Top three student scores, counting ties"
+            ],
+            [
+              "Mathematics",
+              "97, 93, 89",
+              "97, 97, 93"
+            ],
+            [
+              "Physics",
+              "92, 91, 88",
+              "92, 92, 92"
+            ],
+            [
+              "Chemistry",
+              "97, 93, 92",
+              "97, 93, 92"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The strict inequalities in the lecture’s TopThreeMarks code keep distinct score levels: repeated 97 does not create another mark level. A ranking of three students instead counts two different students with 97 separately. The walkthrough uses distinct levels and lets you change the field parameter."
+        },
+        {
+          "type": "code",
+          "text": "Procedure TopThreeMarks(Rows, Field)\n    First = -1; Second = -1; Third = -1\n    for each row X in Rows {\n        v = X[Field]\n        if (v > First) {\n            Third = Second\n            Second = First\n            First = v\n        } else if (First > v and v > Second) {\n            Third = Second\n            Second = v\n        } else if (Second > v and v > Third) {\n            Third = v\n        }\n    }\n    if (Third == -1) { report \"Fewer than 3 distinct values\" }\n    else { return Third }\nEnd Procedure"
+        },
+        {
+          "type": "note",
+          "text": "The source initializes marks to 0 because these marks are nonnegative. Here −1 marks an empty slot explicitly, so a valid zero is not confused with a filled slot. This bound is for marks, not arbitrary data. If fewer than three different values exist, do not return a placeholder as a genuine cutoff."
+        },
+        {
+          "type": "check",
+          "question": "Current values are 90,80,70. What happens when 95 arrives?",
+          "answer": "Third becomes 80, Second 90, First 95. Save lower slots first.",
+          "text": "Current values are 90,80,70. What happens when 95 arrives? Answer: Third becomes 80, Second 90, First 95. Save lower slots first."
+        },
+        {
+          "type": "check",
+          "question": "Why not write First=95 before Second=First?",
+          "answer": "Second would receive 95 instead of the old First 90, losing information.",
+          "text": "Why not write First=95 before Second=First? Answer: Second would receive 95 instead of the old First 90, losing information."
+        },
+        {
+          "type": "check",
+          "question": "Do repeated 97 s create another distinct score level?",
+          "answer": "No. They are equal to the existing level.",
+          "text": "Do repeated 97 s create another distinct score level? Answer: No. They are equal to the existing level."
+        },
+        {
+          "type": "check",
+          "question": "What is the third distinct Mathematics level here?",
+          "answer": "89. The third student score counting ties is 93.",
+          "text": "What is the third distinct Mathematics level here? Answer: 89. The third student score counting ties is 93."
+        },
+        {
+          "type": "check",
+          "question": "What should happen with only two distinct values?",
+          "answer": "Report that no third distinct cutoff exists; do not treat an empty placeholder as a mark.",
+          "text": "What should happen with only two distinct values? Answer: Report that no third distinct cutoff exists; do not treat an empty placeholder as a mark."
+        }
+      ]
+    },
+    {
+      "slug": "procedures-parameters-return",
+      "title": "Procedures, parameters and return values",
+      "source": "Lectures 3.5 and 3.6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A procedure is a named set of steps we can reuse. Think of asking a helper to do one well-defined job. Parameters tell the helper which version of the job to do. A return value brings the answer back."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/sum-parameters.png",
+          "caption": "The same SumMarks procedure can select a gender value and a mark field.",
+          "alt": "The same SumMarks procedure can select a gender value and a mark field.",
+          "width": 768,
+          "height": 493
+        },
+        {
+          "type": "heading",
+          "text": "Separate a value from a field name"
+        },
+        {
+          "type": "paragraph",
+          "text": "In SumMarks(F, Mathematics), F is a value used in a comparison with Gender. Mathematics is the name of the field to extract. Inside the procedure, the parameter GenderValue receives F and Field receives Mathematics. X[Field] means “read the field whose name is stored in Field”."
+        },
+        {
+          "type": "code",
+          "text": "Procedure SumMarks(Rows, GenderValue, Field)\n    Sum = 0\n    for each row X in Rows {\n        if (X.Gender == GenderValue) {\n            Sum = Sum + X[Field]\n        }\n    }\n    return Sum\nEnd Procedure\nGirlsMaths = SumMarks(Scores, \"F\", \"Mathematics\")\nBoysMaths = SumMarks(Scores, \"M\", \"Mathematics\")"
+        },
+        {
+          "type": "week3-lab",
+          "mode": "sumprocedure"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Call",
+              "Returned value"
+            ],
+            [
+              "SumMarks(Scores,F,Mathematics)",
+              951
+            ],
+            [
+              "SumMarks(Scores,M,Mathematics)",
+              1220
+            ],
+            [
+              "SumMarks(Scores,F,Chemistry)",
+              1064
+            ],
+            [
+              "SumMarks(Scores,M,Chemistry)",
+              1250
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Sum starts at zero on every call. Changing parameters does not require rewriting the loop. return Sum sends the computed number to the caller; writing it into GirlsMaths preserves it for later. Equal code does not mean equal answers when the parameters differ."
+        },
+        {
+          "type": "note",
+          "text": "The groups contain 13 F and 17 M records. Raw sums alone do not establish which group has a higher average. Divide each group sum by its own count for that question."
+        },
+        {
+          "type": "check",
+          "question": "Which argument is an attribute name in SumMarks(F,Chemistry)?",
+          "answer": "Chemistry. F is the category value to compare.",
+          "text": "Which argument is an attribute name in SumMarks(F,Chemistry)? Answer: Chemistry. F is the category value to compare."
+        },
+        {
+          "type": "check",
+          "question": "What does return Sum do?",
+          "answer": "It sends the computed Sum back to the code that called the procedure.",
+          "text": "What does return Sum do? Answer: It sends the computed Sum back to the code that called the procedure."
+        },
+        {
+          "type": "check",
+          "question": "Should Sum keep its value from the previous call?",
+          "answer": "No. Each new sum computation initializes its own Sum to zero.",
+          "text": "Should Sum keep its value from the previous call? Answer: No. Each new sum computation initializes its own Sum to zero."
+        },
+        {
+          "type": "check",
+          "question": "Do larger total group marks necessarily mean a larger average?",
+          "answer": "No. Groups can have different numbers of records.",
+          "text": "Do larger total group marks necessarily mean a larger average? Answer: No. Groups can have different numbers of records."
+        }
+      ]
+    },
+    {
+      "slug": "maximum-procedure-four-calls",
+      "title": "Call one maximum procedure four times",
+      "source": "Lectures 3.5 and 3.7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We want to know whether some student achieves the maximum in every subject. Finding the maximum four times is the same task with a different field each time. This is a good use for a parameterized procedure."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/four-maxima.png",
+          "caption": "Subject maxima sum to 286, while the largest real student total is 281.",
+          "alt": "Subject maxima sum to 286, while the largest real student total is 281.",
+          "width": 768,
+          "height": 531
+        },
+        {
+          "type": "code",
+          "text": "MaxMaths = MaxMarks(Scores, \"Mathematics\")\nMaxPhysics = MaxMarks(Scores, \"Physics\")\nMaxChemistry = MaxMarks(Scores, \"Chemistry\")\nMaxTotal = MaxMarks(Scores, \"Total\")\nSubjectMaxSum = MaxMaths + MaxPhysics + MaxChemistry\nHasCommonTopper = (MaxTotal == SubjectMaxSum)"
+        },
+        {
+          "type": "week3-lab",
+          "mode": "allround"
+        },
+        {
+          "type": "heading",
+          "text": "Why the comparison works"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every student’s Mathematics mark is at most 97, Physics at most 92, and Chemistry at most 97. So no total can exceed 286. To reach 286, a student must reach every one of those subject maxima: a deficit in one subject cannot be cancelled by exceeding another maximum."
+        },
+        {
+          "type": "paragraph",
+          "text": "The actual largest total is 281, earned by Rahul with 97,92,92. His Chemistry mark is five below the Chemistry maximum 97, which explains the gap 286−281=5. Nobody achieves all subject maxima in these cards."
+        },
+        {
+          "type": "code",
+          "text": "Procedure MaxMarks(Rows, Field)\n    if (Rows is empty) { report \"No maximum\"; stop }\n    Best = first row[Field]\n    for each remaining row X in Rows {\n        if (X[Field] > Best) { Best = X[Field] }\n    }\n    return Best\nEnd Procedure"
+        },
+        {
+          "type": "note",
+          "text": "HasCommonTopper means at least one student reaches every maximum. It does not establish that the student is unique. Check that Total equals the sum of the three subjects before using this reasoning."
+        },
+        {
+          "type": "check",
+          "question": "What is the sum of subject maxima?",
+          "answer": "97+92+97=286.",
+          "text": "What is the sum of subject maxima? Answer: 97+92+97=286."
+        },
+        {
+          "type": "check",
+          "question": "Is 286 an actual student total?",
+          "answer": "No. It is an upper bound assembled from potentially different students.",
+          "text": "Is 286 an actual student total? Answer: No. It is an upper bound assembled from potentially different students."
+        },
+        {
+          "type": "check",
+          "question": "What does equality of MaxTotal and SubjectMaxSum establish?",
+          "answer": "At least one student reaches all subject maxima, assuming totals are consistent.",
+          "text": "What does equality of MaxTotal and SubjectMaxSum establish? Answer: At least one student reaches all subject maxima, assuming totals are consistent."
+        },
+        {
+          "type": "check",
+          "question": "Why store each procedure result in a separate variable?",
+          "answer": "Later calls return new answers. Saved variables keep all four values available for the final comparison.",
+          "text": "Why store each procedure result in a separate variable? Answer: Later calls return new answers. Saved variables keep all four values available for the final comparison."
+        }
+      ]
+    },
+    {
+      "slug": "prize-pseudocode-eligibility",
+      "title": "Build the prize algorithm from smaller procedures",
+      "source": "Lecture 3.8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Now connect the pieces. First compute the third distinct mark level in every subject once. Then call a Boolean procedure on each student: does at least one subject reach its cutoff? Only eligible students enter the total-score ranking."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/prize-eligibility.png",
+          "caption": "SubjectTopper uses OR and includes equality at the cutoff.",
+          "alt": "SubjectTopper uses OR and includes equality at the cutoff.",
+          "width": 768,
+          "height": 531
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Saved cutoff",
+              "Value"
+            ],
+            [
+              "Maths3",
+              89
+            ],
+            [
+              "Physics3",
+              88
+            ],
+            [
+              "Chemistry3",
+              92
+            ]
+          ]
+        },
+        {
+          "type": "code",
+          "text": "Procedure SubjectTopper(X, Maths3, Physics3, Chemistry3)\n    return (X.Mathematics >= Maths3 or\n            X.Physics >= Physics3 or\n            X.Chemistry >= Chemistry3)\nEnd Procedure\n\nMaths3 = TopThreeMarks(Scores, \"Mathematics\")\nPhysics3 = TopThreeMarks(Scores, \"Physics\")\nChemistry3 = TopThreeMarks(Scores, \"Chemistry\")\nfor each row X in Scores {\n    if (SubjectTopper(X, Maths3, Physics3, Chemistry3)) {\n        Insert X.Total and X.CardNo together into the best 3 slots\n    }\n}"
+        },
+        {
+          "type": "week3-lab",
+          "mode": "prizes"
+        },
+        {
+          "type": "heading",
+          "text": "A Boolean return is already a condition"
+        },
+        {
+          "type": "paragraph",
+          "text": "SubjectTopper returns True or False. if (SubjectTopper(...)) has the same effect as comparing that result with True. OR means at least one qualifying subject, not all subjects. A mark exactly equal to the cutoff qualifies because the comparison is >=."
+        },
+        {
+          "type": "heading",
+          "text": "Scores and IDs move together"
+        },
+        {
+          "type": "code",
+          "text": "if (X.Total > FirstTotal) {\n    ThirdTotal = SecondTotal; ThirdID = SecondID\n    SecondTotal = FirstTotal; SecondID = FirstID\n    FirstTotal = X.Total; FirstID = X.CardNo\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use analogous paired moves for insertion into second or third place. An ID of −1 can mark an empty prize slot because all real CardNo values are nonnegative. You could keep IDs alone and look up marks later, but keeping both avoids repeated lookups."
+        },
+        {
+          "type": "paragraph",
+          "text": "For these cards, the final paired slots are (281,11), (276,23), (261,18): Rahul, Deepika and Abirami. Our lab processes the same supplied records and shows eligibility separately from the running leaders. Subject cutoffs are saved before the ranking scan rather than recomputed inside every visit."
+        },
+        {
+          "type": "heading",
+          "text": "All three paired update cases"
+        },
+        {
+          "type": "code",
+          "text": "FirstTotal = -1; SecondTotal = -1; ThirdTotal = -1\nFirstID = -1; SecondID = -1; ThirdID = -1\nfor each row X in Scores {\n    if (SubjectTopper(X, Maths3, Physics3, Chemistry3)) {\n        v = X.Total\n        if (v > FirstTotal) {\n            ThirdTotal = SecondTotal; ThirdID = SecondID\n            SecondTotal = FirstTotal; SecondID = FirstID\n            FirstTotal = v; FirstID = X.CardNo\n        } else if (FirstTotal > v and v > SecondTotal) {\n            ThirdTotal = SecondTotal; ThirdID = SecondID\n            SecondTotal = v; SecondID = X.CardNo\n        } else if (SecondTotal > v and v > ThirdTotal) {\n            ThirdTotal = v; ThirdID = X.CardNo\n        } else {\n            Record any equality with a retained score for tie review\n        }\n    }\n}\nCheck the selected IDs, representation rule and any boundary ties\nbefore declaring the final prize winners."
+        },
+        {
+          "type": "note",
+          "text": "This expands the source’s strict-comparison update template. Equal totals do not create another distinct total level in that template. A general three-student award algorithm must retain tied candidates or apply its stated tie policy; do not assume these strict comparisons alone resolve ties. Our supplied final winning totals are distinct."
+        },
+        {
+          "type": "check",
+          "question": "Does a mark equal to a cutoff qualify?",
+          "answer": "Yes. Use >=, not >.",
+          "text": "Does a mark equal to a cutoff qualify? Answer: Yes. Use >=, not >."
+        },
+        {
+          "type": "check",
+          "question": "Why is OR appropriate in SubjectTopper?",
+          "answer": "The rule asks for a qualifying mark in at least one subject.",
+          "text": "Why is OR appropriate in SubjectTopper? Answer: The rule asks for a qualifying mark in at least one subject."
+        },
+        {
+          "type": "check",
+          "question": "What happens if you move SecondTotal but forget SecondID?",
+          "answer": "The score can become attached to the wrong person.",
+          "text": "What happens if you move SecondTotal but forget SecondID? Answer: The score can become attached to the wrong person."
+        },
+        {
+          "type": "check",
+          "question": "Does SubjectTopper know that its thresholds are third distinct marks?",
+          "answer": "No. It simply compares against the values passed to it. The caller is responsible for computing the intended thresholds.",
+          "text": "Does SubjectTopper know that its thresholds are third distinct marks? Answer: No. It simply compares against the values passed to it. The caller is responsible for computing the intended thresholds."
+        },
+        {
+          "type": "check",
+          "question": "Why compute the thresholds before the main loop?",
+          "answer": "They stay fixed for every student and avoid repeatedly scanning the dataset for the same information.",
+          "text": "Why compute the thresholds before the main loop? Answer: They stay fixed for every student and avoid repeatedly scanning the dataset for the same information."
+        }
+      ]
+    },
+    {
+      "slug": "prize-ties-and-feasibility",
+      "title": "Ties and impossible criteria: finish the specification",
+      "source": "Lectures 3.4 and 3.8",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A calculation can be mechanically correct while the problem rules remain incomplete. Three physical prize slots cannot always fit everyone tied at the boundary. Representation rules can also be impossible if no eligible student belongs to a required category."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/ties-policy.png",
+          "caption": "A hypothetical four-way tie illustrates why exactly three prizes need a stated tie policy; these275-point cards are a teaching example, not additional course records.",
+          "alt": "A hypothetical four-way tie illustrates why exactly three prizes need a stated tie policy; these275-point cards are a teaching example, not additional course records.",
+          "width": 768,
+          "height": 531
+        },
+        {
+          "type": "heading",
+          "text": "Separate score levels from prize slots"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Situation",
+              "Can three prize slots include everyone shown?"
+            ],
+            [
+              "Three students tied for first",
+              "Yes: all three can receive a prize."
+            ],
+            [
+              "Four students tied for first",
+              "No: choose a stated tie-break or allow more prizes."
+            ],
+            [
+              "One first; two students tied for second",
+              "Yes: three people in total."
+            ],
+            [
+              "One first; three students tied for second",
+              "No: four people are competing for three slots."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A deterministic display order such as CardNo does not automatically make an award policy fair. Say whether ties lead to shared prizes, another documented criterion, or a request for a revised rule. Do not silently let the input order decide."
+        },
+        {
+          "type": "heading",
+          "text": "Check representation after eligibility"
+        },
+        {
+          "type": "paragraph",
+          "text": "Our three actual winners include M and F, so no adjustment is needed. In a different dataset, one approach is to replace the lowest selected person with the highest eligible person from the missing category. If no such eligible person exists, the current rules are infeasible. Repeating a search without a failure condition will not create a valid candidate."
+        },
+        {
+          "type": "note",
+          "text": "The lecture discusses excluding a lowest selected person and repeating. Each attempt must make progress and terminate when eligible possibilities are exhausted. Never remove a required condition silently to force an answer."
+        },
+        {
+          "type": "check",
+          "question": "Can four first-place ties all fit three prizes?",
+          "answer": "No. The rules need a tie policy or permission to award more than three prizes.",
+          "text": "Can four first-place ties all fit three prizes? Answer: No. The rules need a tie policy or permission to award more than three prizes."
+        },
+        {
+          "type": "check",
+          "question": "What if no eligible F record exists under a rule requiring M and F?",
+          "answer": "Report that the requirements cannot all be met. Further identical scans will not help.",
+          "text": "What if no eligible F record exists under a rule requiring M and F? Answer: Report that the requirements cannot all be met. Further identical scans will not help."
+        },
+        {
+          "type": "check",
+          "question": "Is using input order as an unstated tie-break acceptable?",
+          "answer": "No. It produces an arbitrary outcome that changes if the cards are shuffled.",
+          "text": "Is using input order as an unstated tie-break acceptable? Answer: No. It produces an arbitrary outcome that changes if the cards are shuffled."
+        },
+        {
+          "type": "check",
+          "question": "Do the actual winners satisfy the lecture’s representation rule?",
+          "answer": "Yes. Rahul is M; Deepika and Abirami are F.",
+          "text": "Do the actual winners satisfy the lecture’s representation rule? Answer: Yes. Rahul is M; Deepika and Abirami are F."
+        }
+      ]
+    },
+    {
+      "slug": "side-effects-and-restoration",
+      "title": "Side effects: returning a number can change a deck",
+      "source": "Lecture 3.9",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A procedure may return the right sum and still change the data arrangement. That extra change is called a side effect. To use the procedure safely, the caller must know what happens to its input."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/deck-side-effects.png",
+          "caption": "Moving cards top-to-top reverses their order. Transferring them back one at a time restores the original order.",
+          "alt": "Moving cards top-to-top reverses their order. Transferring them back one at a time restores the original order.",
+          "width": 768,
+          "height": 490
+        },
+        {
+          "type": "heading",
+          "text": "Pass the data too"
+        },
+        {
+          "type": "paragraph",
+          "text": "SumMarks(Gender,Field) assumes a particular deck already exists. To reuse it for another class, also pass the dataset: SumMarks(Deck,Gender,Field). State whether the procedure may consume, reorder or edit that deck."
+        },
+        {
+          "type": "week3-lab",
+          "mode": "sideeffects"
+        },
+        {
+          "type": "heading",
+          "text": "All cards returned is not the same as original order"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with top-to-bottom IDs 0,1,2. Move each top card onto the top of SeenDeck: the new top-to-bottom order is 2,1,0. Renaming SeenDeck as Deck gives every card back, but in reverse order. A second top-to-top transfer reverses it again and restores 0,1,2."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a sum, order does not change the answer: 68+62 equals 62+68. However, leaving the original deck empty breaks a later call unless the interface explicitly says it consumes the deck. In the lab, compare “Move cards back one at a time” with “Rename the seen pile”. Both retain the marks sum 2,171, but only the former restores sequence."
+        },
+        {
+          "type": "heading",
+          "text": "Not every procedure needs a useful return value"
+        },
+        {
+          "type": "paragraph",
+          "text": "UpdateMarks(CardNo,Field,NewValue) may be called as a statement because its purpose is to change a record. If a mark changes, keep the stored Total consistent too. Sorting also intentionally changes order; for such a procedure the change is its goal, not an unwanted surprise."
+        },
+        {
+          "type": "check",
+          "question": "Can a correct sum hide an unwanted side effect?",
+          "answer": "Yes. The sum can be correct while the input deck is emptied or reordered.",
+          "text": "Can a correct sum hide an unwanted side effect? Answer: Yes. The sum can be correct while the input deck is emptied or reordered."
+        },
+        {
+          "type": "check",
+          "question": "What order results from moving 0,1,2 top-to-top into a new pile?",
+          "answer": "2,1,0, read top-to-bottom.",
+          "text": "What order results from moving 0,1,2 top-to-top into a new pile? Answer: 2,1,0, read top-to-bottom."
+        },
+        {
+          "type": "check",
+          "question": "Does renaming a reversed pile restore sequence?",
+          "answer": "No. It returns the cards but preserves the reversed sequence.",
+          "text": "Does renaming a reversed pile restore sequence? Answer: No. It returns the cards but preserves the reversed sequence."
+        },
+        {
+          "type": "check",
+          "question": "Why pass Deck as an argument?",
+          "answer": "So the same procedure can work on different datasets rather than one hidden fixed pile.",
+          "text": "Why pass Deck as an argument? Answer: So the same procedure can work on different datasets rather than one hidden fixed pile."
+        },
+        {
+          "type": "check",
+          "question": "Is reordering always a bug?",
+          "answer": "No. Sorting intentionally reorders data. Whether a change is acceptable depends on the contract.",
+          "text": "Is reordering always a bug? Answer: No. Sorting intentionally reorders data. Whether a change is acceptable depends on the contract."
+        }
+      ]
+    },
+    {
+      "slug": "procedure-contracts-and-order",
+      "title": "Write a contract: inputs, result and allowed changes",
+      "source": "Lecture 3.9; Lecture 3.6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A procedure’s interface is the boundary between caller and helper. Its contract states what the caller supplies, what the helper returns, and what changes to the input are permitted. The implementation is how the helper performs the work."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/procedure-contract.png",
+          "caption": "A reusable procedure needs a clear agreement about inputs, outputs and side effects.",
+          "alt": "A reusable procedure needs a clear agreement about inputs, outputs and side effects.",
+          "width": 768,
+          "height": 490
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/word-order.png",
+          "alt": "Keep the original word sequence when following the course’s simplified backwards-search rule.",
+          "caption": "Keep the original word sequence when following the course’s simplified backwards-search rule.",
+          "width": 768,
+          "height": 534
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Contract part",
+              "Example: SumMarks"
+            ],
+            [
+              "Inputs",
+              "A nonempty or empty score dataset, a valid Gender value, and a valid numeric field name."
+            ],
+            [
+              "Result",
+              "The sum of that field for all matching records; zero if no rows match."
+            ],
+            [
+              "Data integrity",
+              "Do not change marks, IDs or records."
+            ],
+            [
+              "Order policy",
+              "Preserve the original order, or explicitly document if order may change."
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Replace the method while preserving the promise"
+        },
+        {
+          "type": "paragraph",
+          "text": "If you improve one procedure, every call can benefit without rewriting the main code. But the new version must preserve the agreed input meaning, result and side-effect policy. Returning the same number is insufficient if the new version unexpectedly destroys a carefully sorted deck."
+        },
+        {
+          "type": "heading",
+          "text": "Some tasks depend on the sequence"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a text-search exercise, a pronoun such as He can be associated with a preceding name by a backwards-search rule. In the supplied paragraph, Swaminathan occurs before the later He. Shuffling the word records destroys the “before” relation. Preserve SerialNumber and order when using such a rule."
+        },
+        {
+          "type": "note",
+          "text": "Nearest preceding name is a simplified course heuristic, not a complete English-language pronoun resolver. A PartOfSpeech label of Noun alone does not prove that a word is a person’s name; apply the rule specified by the task."
+        },
+        {
+          "type": "code",
+          "text": "Example contract for a text search:\nInput: a pronoun position and the ordered words before/after it\nOutput: a matching name under the stated search rule, or \"not found\"\nAllowed changes: none to words, IDs, or order"
+        },
+        {
+          "type": "paragraph",
+          "text": "A reading-only loop over table rows need not move the rows at all. Card-pile pseudocode makes movement visible; real implementations must still make their data-change promises explicit."
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between interface and implementation?",
+          "answer": "The interface is the agreement the caller relies on. The implementation is the internal method used to meet it.",
+          "text": "What is the difference between interface and implementation? Answer: The interface is the agreement the caller relies on. The implementation is the internal method used to meet it."
+        },
+        {
+          "type": "check",
+          "question": "May a faster procedure violate its old order guarantee?",
+          "answer": "No. It must preserve the full contract, including allowed changes.",
+          "text": "May a faster procedure violate its old order guarantee? Answer: No. It must preserve the full contract, including allowed changes."
+        },
+        {
+          "type": "check",
+          "question": "Why is shuffling word cards dangerous for a backwards search?",
+          "answer": "It changes which words come before the pronoun and can change the answer.",
+          "text": "Why is shuffling word cards dangerous for a backwards search? Answer: It changes which words come before the pronoun and can change the answer."
+        },
+        {
+          "type": "check",
+          "question": "Must every procedure return a useful number?",
+          "answer": "No. Some procedures act by updating or rearranging data.",
+          "text": "Must every procedure return a useful number? Answer: No. Some procedures act by updating or rearranging data."
+        }
+      ]
+    },
+    {
+      "slug": "tutorial-nouns-and-bills",
+      "title": "Tutorial lab: nouns, bill averages and expenditure bands",
+      "source": "Tutorials 3.1 and 3.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Practise the same ideas with the original word cards and shopping bills. These are new questions on familiar data, so you can focus on the procedure rather than learning a new dataset."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/noun-counts.png",
+          "caption": "Check PartOfSpeech first. Among nouns, length greater than 7 is long; exactly 7 is short.",
+          "alt": "Check PartOfSpeech first. Among nouns, length greater than 7 is long; exactly 7 is short.",
+          "width": 768,
+          "height": 493
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial 3.1: nested decisions"
+        },
+        {
+          "type": "code",
+          "text": "LongNoun = 0; ShortNoun = 0\nfor each row X in Words {\n    if (X.PartOfSpeech == \"Noun\") {\n        if (X.LetterCount > 7) { LongNoun = LongNoun + 1 }\n        else { ShortNoun = ShortNoun + 1 }\n    }\n}"
+        },
+        {
+          "type": "week3-lab",
+          "mode": "nouns"
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is 7 long noun occurrences and 14 short noun occurrences:21 nouns in total. Non-nouns increase neither counter. Notice that “short” here means 7 or fewer; this task uses a different definition from the hypothesis lesson’s 5-or-fewer rule."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial 3.2: bills above average"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/bill-average.png",
+          "caption": "Find the final average of all 30 bills before selecting the bills above it.",
+          "alt": "Find the final average of all 30 bills before selecting the bills above it.",
+          "width": 768,
+          "height": 493
+        },
+        {
+          "type": "week3-lab",
+          "mode": "billaverage"
+        },
+        {
+          "type": "paragraph",
+          "text": "All 30 amounts total₹24,413. Average=24413/30≈₹813.7667. The 8 above-average BillNo values are 2,3,5,8,11,13,23,25. Use the unrounded average for comparisons."
+        },
+        {
+          "type": "heading",
+          "text": "Tutorial 3.2: low, medium and high expenditure"
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/bill-bands.png",
+          "caption": "The supplied bills range from₹92 to₹4,174. The tutorial’s three bands contain 26,1 and 3 bills.",
+          "alt": "The supplied bills range from₹92 to₹4,174. The tutorial’s three bands contain 26,1 and 3 bills.",
+          "width": 768,
+          "height": 531
+        },
+        {
+          "type": "week3-lab",
+          "mode": "billbands"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Tutorial band",
+              "Inclusive rupee bounds",
+              "Count"
+            ],
+            [
+              "Low",
+              "92–1453",
+              26
+            ],
+            [
+              "Medium",
+              "1454–2813",
+              1
+            ],
+            [
+              "High",
+              "2814–4174",
+              3
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The numerical width is(4174−92)/3≈1360.6667. The tutorial rounds cut points to define the integer bands above. Specify those bounds explicitly; they are the convention used here. Real bills can include paise, so a general solution would use continuous bounds or integer paise rather than leaving fractional amounts between integer bands."
+        },
+        {
+          "type": "note",
+          "text": "A guessed huge initial Minimum is only safe with a guaranteed bound. Initializing Minimum and Maximum from the first actual bill avoids assuming that no larger bill can ever occur. Handle an empty dataset separately."
+        },
+        {
+          "type": "check",
+          "question": "Does a noun with 7 letters count as long here?",
+          "answer": "No. The condition is strictly greater than 7, so it is short in this tutorial.",
+          "text": "Does a noun with 7 letters count as long here? Answer: No. The condition is strictly greater than 7, so it is short in this tutorial."
+        },
+        {
+          "type": "check",
+          "question": "What is LongNoun+ShortNoun?",
+          "answer": "7+14=21 noun occurrences.",
+          "text": "What is LongNoun+ShortNoun? Answer: 7+14=21 noun occurrences."
+        },
+        {
+          "type": "check",
+          "question": "How many bills exceed the final average?",
+          "answer": "8 bills.",
+          "text": "How many bills exceed the final average? Answer: 8 bills."
+        },
+        {
+          "type": "check",
+          "question": "Which BillNo is the only medium-expenditure bill?",
+          "answer": "Bill 2, for₹1,525.",
+          "text": "Which BillNo is the only medium-expenditure bill? Answer: Bill 2, for₹1,525."
+        },
+        {
+          "type": "check",
+          "question": "Do three expenditure bands contain ten bills each?",
+          "answer": "No. They have 26 low,1 medium and 3 high bills.",
+          "text": "Do three expenditure bands contain ten bills each? Answer: No. They have 26 low,1 medium and 3 high bills."
+        }
+      ]
+    },
+    {
+      "slug": "procedure-calls-common-errors",
+      "title": "Call procedures correctly: name, count and order",
+      "source": "Tutorial 3.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A procedure call must match its definition. Tutorial 3.3 builds an average for Big Bazaar bills by returning two updated values after each card. The procedure name, number of arguments and argument order all matter."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/two-return-values.png",
+          "caption": "SumBB and CountBB are returned and assigned in that order. The final Big Bazaar average is₹2,214.",
+          "alt": "SumBB and CountBB are returned and assigned in that order. The final Big Bazaar average is₹2,214.",
+          "width": 768,
+          "height": 531
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-3/argument-order.png",
+          "alt": "A tiny arithmetic example shows why the sum and count arguments cannot be swapped.",
+          "caption": "A tiny arithmetic example shows why the sum and count arguments cannot be swapped.",
+          "width": 768,
+          "height": 531
+        },
+        {
+          "type": "code",
+          "text": "Procedure AddIfBigBazaar(X, SumBB, CountBB)\n    if (X.Store == \"Big Bazaar\") {\n        SumBB = SumBB + X.BillAmount\n        CountBB = CountBB + 1\n    }\n    return (SumBB, CountBB)\nEnd Procedure\n\nSumBB = 0; CountBB = 0\nfor each row X in Bills {\n    (SumBB, CountBB) = AddIfBigBazaar(X, SumBB, CountBB)\n}\nif (CountBB > 0) { AverageBB = SumBB / CountBB }\nelse { report \"No matching bills\" }"
+        },
+        {
+          "type": "week3-lab",
+          "mode": "bigbazaar"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Error",
+              "Why it fails"
+            ],
+            [
+              "AddingIfBigBazaar(X,SumBB,CountBB)",
+              "The name differs from the definition AddIfBigBazaar."
+            ],
+            [
+              "AddIfBigBazaar(X,SumBB)",
+              "A required argument is missing."
+            ],
+            [
+              "AddIfBigBazaar(X,SumBB,CountBB,AverageBB)",
+              "There is an extra argument."
+            ],
+            [
+              "AddIfBigBazaar(X,CountBB,SumBB)",
+              "Sum and count occupy the wrong positions."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine the current sum is 100 and count is 2, and a matching bill is₹50. The correct call returns(150,3). Swapping the arguments makes the helper treat 2 as the sum and 100 as the count: it returns(52,101), which is nonsense for our intended task."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the bill is not from Big Bazaar, return the incoming sum and count unchanged. A local update is not a promise that the caller’s variables changed automatically; the caller explicitly assigns both returned values. The final values for our data are SumBB=13,284 and CountBB=6, so AverageBB=2,214."
+        },
+        {
+          "type": "note",
+          "text": "Tuple notation (SumBB,CountBB) is used here to show two returned values in a fixed order. It does not mean that sum and count are interchangeable."
+        },
+        {
+          "type": "check",
+          "question": "What are the final Big Bazaar sum and count?",
+          "answer": "₹13,284 and 6 bills.",
+          "text": "What are the final Big Bazaar sum and count? Answer: ₹13,284 and 6 bills."
+        },
+        {
+          "type": "check",
+          "question": "Why is calling AddingIfBigBazaar an error?",
+          "answer": "It is not the defined procedure name AddIfBigBazaar.",
+          "text": "Why is calling AddingIfBigBazaar an error? Answer: It is not the defined procedure name AddIfBigBazaar."
+        },
+        {
+          "type": "check",
+          "question": "Correct incoming values are 100 and 2; bill amount 50. What is returned?",
+          "answer": "(150,3), in the order sum then count.",
+          "text": "Correct incoming values are 100 and 2; bill amount 50. What is returned? Answer: (150,3), in the order sum then count."
+        },
+        {
+          "type": "check",
+          "question": "Must a nonmatching bill reset the counters to zero?",
+          "answer": "No. It should return the existing values unchanged.",
+          "text": "Must a nonmatching bill reset the counters to zero? Answer: No. It should return the existing values unchanged."
+        },
+        {
+          "type": "check",
+          "question": "What should happen when no Big Bazaar bills exist?",
+          "answer": "CountBB is zero, so do not divide. Report that no matching bills exist.",
+          "text": "What should happen when no Big Bazaar bills exist? Answer: CountBB is zero, so do not divide. Report that no matching bills exist."
+        }
+      ]
+    },
+    {
+      "slug": "revision-and-practice",
+      "title": "Week 3 revision and practice",
+      "source": "Lectures 3.1–3.9; Tutorials 3.1–3.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Try each question before revealing its explained answer. Use the explorer to test a procedure on the original course data."
+        },
+        {
+          "type": "week3-lab",
+          "mode": "below",
+          "explore": true
+        },
+        {
+          "type": "heading",
+          "text": "Mixed practice"
+        },
+        {
+          "type": "check",
+          "question": "Is a column one student or one attribute?",
+          "answer": "One attribute, such as Mathematics. A row describes one student.",
+          "text": "Is a column one student or one attribute? Answer: One attribute, such as Mathematics. A row describes one student."
+        },
+        {
+          "type": "check",
+          "question": "Which field tells you the length of considered?",
+          "answer": "LetterCount, which is 10. SerialNumber 12 is its position identifier.",
+          "text": "Which field tells you the length of considered? Answer: LetterCount, which is 10. SerialNumber 12 is its position identifier."
+        },
+        {
+          "type": "check",
+          "question": "What does adding ₹567 on every item row produce?",
+          "answer": "₹3,969, which wrongly counts the same bill seven times.",
+          "text": "What does adding ₹567 on every item row produce? Answer: ₹3,969, which wrongly counts the same bill seven times."
+        },
+        {
+          "type": "check",
+          "question": "Does a Mathematics mark of 72 pass the below-average test here?",
+          "answer": "Yes. 72 < 2171/30.",
+          "text": "Does a Mathematics mark of 72 pass the below-average test here? Answer: Yes. 72 < 2171/30."
+        },
+        {
+          "type": "check",
+          "question": "How many of 50,50,50,100 lie below their mean?",
+          "answer": "Three. Their mean is 62.5.",
+          "text": "How many of 50,50,50,100 lie below their mean? Answer: Three. Their mean is 62.5."
+        },
+        {
+          "type": "check",
+          "question": "Why can the first mark update both min and max?",
+          "answer": "Before seeing any marks, both limits are placeholders. The first real mark is both the smallest and largest seen so far.",
+          "text": "Why can the first mark update both min and max? Answer: Before seeing any marks, both limits are placeholders. The first real mark is both the smallest and largest seen so far."
+        },
+        {
+          "type": "check",
+          "question": "Is Monday short under this definition?",
+          "answer": "No. Six letters makes it long; it is the frequent-long counterexample.",
+          "text": "Is Monday short under this definition? Answer: No. Six letters makes it long; it is the frequent-long counterexample."
+        },
+        {
+          "type": "check",
+          "question": "Does 8/9 prove that short words cause repetition?",
+          "answer": "No. It describes an association in this dataset, not a causal rule.",
+          "text": "Does 8/9 prove that short words cause repetition? Answer: No. It describes an association in this dataset, not a causal rule."
+        },
+        {
+          "type": "check",
+          "question": "Who has the highest actual total?",
+          "answer": "Rahul, CardNo 11, with 281.",
+          "text": "Who has the highest actual total? Answer: Rahul, CardNo 11, with 281."
+        },
+        {
+          "type": "check",
+          "question": "Current values are 90,80,70. What happens when 95 arrives?",
+          "answer": "Third becomes 80, Second 90, First 95. Save lower slots first.",
+          "text": "Current values are 90,80,70. What happens when 95 arrives? Answer: Third becomes 80, Second 90, First 95. Save lower slots first."
+        },
+        {
+          "type": "check",
+          "question": "What is the third distinct Mathematics level here?",
+          "answer": "89. The third student score counting ties is 93.",
+          "text": "What is the third distinct Mathematics level here? Answer: 89. The third student score counting ties is 93."
+        },
+        {
+          "type": "check",
+          "question": "What does return Sum do?",
+          "answer": "It sends the computed Sum back to the code that called the procedure.",
+          "text": "What does return Sum do? Answer: It sends the computed Sum back to the code that called the procedure."
+        },
+        {
+          "type": "check",
+          "question": "What is the sum of subject maxima?",
+          "answer": "97+92+97=286.",
+          "text": "What is the sum of subject maxima? Answer: 97+92+97=286."
+        },
+        {
+          "type": "check",
+          "question": "Why store each procedure result in a separate variable?",
+          "answer": "Later calls return new answers. Saved variables keep all four values available for the final comparison.",
+          "text": "Why store each procedure result in a separate variable? Answer: Later calls return new answers. Saved variables keep all four values available for the final comparison."
+        },
+        {
+          "type": "check",
+          "question": "What happens if you move SecondTotal but forget SecondID?",
+          "answer": "The score can become attached to the wrong person.",
+          "text": "What happens if you move SecondTotal but forget SecondID? Answer: The score can become attached to the wrong person."
+        },
+        {
+          "type": "check",
+          "question": "Can four first-place ties all fit three prizes?",
+          "answer": "No. The rules need a tie policy or permission to award more than three prizes.",
+          "text": "Can four first-place ties all fit three prizes? Answer: No. The rules need a tie policy or permission to award more than three prizes."
+        },
+        {
+          "type": "check",
+          "question": "Do the actual winners satisfy the lecture’s representation rule?",
+          "answer": "Yes. Rahul is M; Deepika and Abirami are F.",
+          "text": "Do the actual winners satisfy the lecture’s representation rule? Answer: Yes. Rahul is M; Deepika and Abirami are F."
+        },
+        {
+          "type": "check",
+          "question": "Does renaming a reversed pile restore sequence?",
+          "answer": "No. It returns the cards but preserves the reversed sequence.",
+          "text": "Does renaming a reversed pile restore sequence? Answer: No. It returns the cards but preserves the reversed sequence."
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between interface and implementation?",
+          "answer": "The interface is the agreement the caller relies on. The implementation is the internal method used to meet it.",
+          "text": "What is the difference between interface and implementation? Answer: The interface is the agreement the caller relies on. The implementation is the internal method used to meet it."
+        },
+        {
+          "type": "check",
+          "question": "Must every procedure return a useful number?",
+          "answer": "No. Some procedures act by updating or rearranging data.",
+          "text": "Must every procedure return a useful number? Answer: No. Some procedures act by updating or rearranging data."
+        },
+        {
+          "type": "check",
+          "question": "How many bills exceed the final average?",
+          "answer": "8 bills.",
+          "text": "How many bills exceed the final average? Answer: 8 bills."
+        },
+        {
+          "type": "check",
+          "question": "What are the final Big Bazaar sum and count?",
+          "answer": "₹13,284 and 6 bills.",
+          "text": "What are the final Big Bazaar sum and count? Answer: ₹13,284 and 6 bills."
+        },
+        {
+          "type": "check",
+          "question": "Must a nonmatching bill reset the counters to zero?",
+          "answer": "No. It should return the existing values unchanged.",
+          "text": "Must a nonmatching bill reset the counters to zero? Answer: No. It should return the existing values unchanged."
+        },
+        {
+          "type": "check",
+          "question": "A sum procedure returns the correct answer but reverses a text table. Is that necessarily safe?",
+          "answer": "No. A caller may require preserved order. Correct results do not excuse a contract-breaking side effect.",
+          "text": "A sum procedure returns the correct answer but reverses a text table. Is that necessarily safe? Answer: No. A caller may require preserved order. Correct results do not excuse a contract-breaking side effect."
+        },
+        {
+          "type": "check",
+          "question": "For distinct top levels 90,80,70 and new 85, what are the new levels?",
+          "answer": "90,85,80. Move old Second 80 into Third before writing Second 85.",
+          "text": "For distinct top levels 90,80,70 and new 85, what are the new levels? Answer: 90,85,80. Move old Second 80 into Third before writing Second 85."
+        },
+        {
+          "type": "check",
+          "question": "Can a common subject topper be inferred solely from the sum 286?",
+          "answer": "No. Compare the maximum actual total with 286. Here 281 differs, so there is no common topper.",
+          "text": "Can a common subject topper be inferred solely from the sum 286? Answer: No. Compare the maximum actual total with 286. Here 281 differs, so there is no common topper."
+        },
+        {
+          "type": "check",
+          "question": "How many visits does the below-average algorithm make on 30 rows?",
+          "answer": "60 record visits:30 for the sum/count scan and 30 for the filter scan. Phase-boundary steps are not extra record visits.",
+          "text": "How many visits does the below-average algorithm make on 30 rows? Answer: 60 record visits:30 for the sum/count scan and 30 for the filter scan. Phase-boundary steps are not extra record visits."
+        }
+      ]
+    },
+    {
+      "slug": "source-guide",
+      "title": "Source guide, conventions and coverage",
+      "source": "All supplied Week 3 lectures and tutorials",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This week is based on all nine supplied lecture transcripts, all three tutorials, and the supplied slide versions of Lectures 3.1 and 3.6–3.9. Repeated PDF copies cover the same source lesson; they do not create extra topics."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Where to study it"
+            ],
+            [
+              "Lecture 3.1",
+              "From cards to tables: rows, columns and IDs"
+            ],
+            [
+              "Lecture 3.1",
+              "One bill, many items: link two tables"
+            ],
+            [
+              "Lecture 3.2",
+              "Below average: finish one pass before filtering"
+            ],
+            [
+              "Lecture 3.2",
+              "Find the range, then assign grade bands"
+            ],
+            [
+              "Lecture 3.3",
+              "Test an idea: are frequent words short?"
+            ],
+            [
+              "Lecture 3.4",
+              "The three-prizes problem: decide the rules first"
+            ],
+            [
+              "Lectures 3.4 and 3.8",
+              "Keep the top three: shift safely and handle ties"
+            ],
+            [
+              "Lectures 3.5 and 3.6",
+              "Procedures, parameters and return values"
+            ],
+            [
+              "Lectures 3.5 and 3.7",
+              "Call one maximum procedure four times"
+            ],
+            [
+              "Lecture 3.8",
+              "Build the prize algorithm from smaller procedures"
+            ],
+            [
+              "Lectures 3.4 and 3.8",
+              "Ties and impossible criteria: finish the specification"
+            ],
+            [
+              "Lecture 3.9",
+              "Side effects: returning a number can change a deck"
+            ],
+            [
+              "Lecture 3.9; Lecture 3.6",
+              "Write a contract: inputs, result and allowed changes"
+            ],
+            [
+              "Tutorials 3.1 and 3.2",
+              "Tutorial lab: nouns, bill averages and expenditure bands"
+            ],
+            [
+              "Tutorial 3.3",
+              "Call procedures correctly: name, count and order"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Conventions used in these notes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the original course score, word and shopping-bill records throughout. CardNo and SerialNumber start at 0; BillNo starts at 1. Grade examples use the exact inclusive integer bounds shown. Word frequencies use lowercase keys and remove only end punctuation, preserving internal hyphens. Word hypotheses count 47 different normalized words; the average length uses 65 occurrences."
+        },
+        {
+          "type": "paragraph",
+          "text": "The strict inequalities in the lecture’s TopThreeMarks keep distinct mark levels. The eligibility check includes equality with >=. Prize totals and IDs must move together. The supplied winners have distinct totals, so their final selection has no prize-boundary tie; general datasets still need an explicit tie policy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pseudocode uses = for assignment and == for equality. X[Field] reads a field selected by name; X.Mathematics reads a fixed named field. A report-and-stop branch inside a procedure ends that procedure rather than ending every unrelated activity on the site."
+        },
+        {
+          "type": "heading",
+          "text": "Source slips and limitations"
+        },
+        {
+          "type": "paragraph",
+          "text": "The reported 329 letters over 65 words give 5.0615, not slightly under 5. The four distinct-word boxes total 47:8,1,15,23. A sentence about a “single topper” establishes existence when maxima agree, not uniqueness. These notes make those distinctions explicit rather than repeating spoken arithmetic slips."
+        },
+        {
+          "type": "paragraph",
+          "text": "The three-prize rules are an educational example, not an official award or grading policy. Simplified pronoun matching is a task-specific search rule, not a complete language-understanding method. All illustrations are separate image files, displayed at natural aspect ratios with the shared site watermark."
+        }
+      ],
+      "resource": true
+    }
+  ],
+  "illustrationCount": 20
+}

@@ -375,3 +375,39 @@ img[src="/images/week-11/image24.webp"],img[src^="/images/week-11/image24.webp?"
 img[src="/images/week-11/image24.png"],img[src^="/images/week-11/image24.png?"]{clip-path:polygon(0 0,100% 0,100% 93.510%,74.458% 93.510%,74.458% 100%,0 100%)}
 img[src="/images/week-11/image6.webp"],img[src^="/images/week-11/image6.webp?"]{clip-path:polygon(0 0,100% 0,100% 90.847%,74.679% 90.847%,74.679% 100%,0 100%)}
 img[src="/images/week-11/image6.png"],img[src^="/images/week-11/image6.png?"]{clip-path:polygon(0 0,100% 0,100% 90.847%,74.679% 90.847%,74.679% 100%,0 100%)}
+
+/* One watermark design for course figures, previews, Markdown and imported HTML.
+   CSS pixels keep the lettering readable regardless of source image resolution. */
+.watermarked-media {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  line-height: 0;
+}
+.watermarked-media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 !important;
+}
+.watermarked-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  background: url('/images/brand/study-watermark.svg?v=2') center / 340px 160px repeat;
+  opacity: .14;
+}
+.watermarked-media .watermarked-media::after { display: none; }
+@media print {
+  .watermarked-media::after {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

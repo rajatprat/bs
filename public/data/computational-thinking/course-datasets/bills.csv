@@ -1,0 +1,31 @@
+BillNo,Store,Customer,BillAmount,MajorCategories,FoodClass
+1,SV Stores,Srivatsan,567,Apparel | Food | Toiletries,Mixed
+2,Big Bazaar,Sudeep,1525,Apparel | Food | Household,Mixed
+3,SV Stores,Akshaya,1341,Food | Toiletries,Mixed
+4,SV Stores,Advaith,123,Food,All food
+5,Big Bazaar,Akshaya,4174,Apparel | Food | Household,Mixed
+6,Sun General,Srivatsan,354,Electronics | Food | Stationery | Utilities,Mixed
+7,SV Stores,Akhil,96,Food,All food
+8,Big Bazaar,Advaith,3132,Apparel | Food | Toiletries,Mixed
+9,Big Bazaar,Mohith,595,Apparel | Food,Mixed
+10,Sun General,Rajesh,378,Food | Stationery,Mixed
+11,SV Stores,Abhinav,893,Food | Household,Mixed
+12,Sun General,Aparna,186,Food | Household | Stationery,Mixed
+13,Big Bazaar,Abhinav,3060,Apparel,No food
+14,Sun General,Vignesh,656,Electronics | Grooming | Stationery | Utilities,No food
+15,Sun General,Abhinav,229,Toiletries,No food
+16,Sun General,Advaith,187,Stationery,No food
+17,SV Stores,George,279,Food,All food
+18,SV Stores,Ahmed,603,Food,All food
+19,SV Stores,Neeraja,592,Cosmetics | Food,Mixed
+20,SV Stores,Ahmed,622,Food | Toiletries,Mixed
+21,SV Stores,Akshaya,128,Food,All food
+22,Sun General,Suresh,315,Food | Household | Utilities,Mixed
+23,SV Stores,Julia,888,Food,All food
+24,SV Stores,Neeraja,92,Food,All food
+25,Sun General,Ahmed,1364,Accessories | Electronics | Stationery,No food
+26,SV Stores,Srivatsan,276,Food,All food
+27,Sun General,Srivatsan,340,Household,No food
+28,SV Stores,Vignesh,514,Food | Toiletries,Mixed
+29,SV Stores,Ahmed,106,Food,All food
+30,Big Bazaar,Radha,798,Food,All food

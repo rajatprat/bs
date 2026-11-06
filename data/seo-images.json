@@ -1503,5 +1503,199 @@
   ],
   "/stats-1/week-4/revision-and-practice/": [
     "/images/stats-1/denominators.svg"
-  ]
+  ],
+  "/computational-thinking/week-1/what-is-computational-thinking/": [
+    "/images/computational-thinking/week-1/patterns.svg"
+  ],
+  "/computational-thinking/week-1/datasets-and-fields/": [
+    "/images/computational-thinking/week-1/datasets.svg"
+  ],
+  "/computational-thinking/week-1/variables-and-iteration/": [
+    "/images/computational-thinking/week-1/iteration.svg"
+  ],
+  "/computational-thinking/week-1/sums-and-averages/": [
+    "/images/computational-thinking/week-1/accumulation.svg"
+  ],
+  "/computational-thinking/week-1/filtering/": [
+    "/images/computational-thinking/week-1/filter.svg",
+    "/images/computational-thinking/week-1/food-bills.svg"
+  ],
+  "/computational-thinking/week-1/combined-filters/": [
+    "/images/computational-thinking/week-1/boolean.svg"
+  ],
+  "/computational-thinking/week-1/introduction-to-flowcharts/": [
+    "/images/computational-thinking/week-1/count-flowchart.svg"
+  ],
+  "/computational-thinking/week-1/flowcharts-with-filtering/": [
+    "/images/computational-thinking/week-1/filtered-flowchart.svg"
+  ],
+  "/computational-thinking/week-1/sanity-of-data/": [
+    "/images/computational-thinking/week-1/sanity.svg"
+  ],
+  "/computational-thinking/week-1/basic-data-types/": [
+    "/images/computational-thinking/week-1/types.svg"
+  ],
+  "/computational-thinking/week-1/subtypes/": [
+    "/images/computational-thinking/week-1/subtypes.svg"
+  ],
+  "/computational-thinking/week-1/transforming-subtypes/": [
+    "/images/computational-thinking/week-1/transformations.svg"
+  ],
+  "/computational-thinking/week-1/records-and-lists/": [
+    "/images/computational-thinking/week-1/records-lists.svg"
+  ],
+  "/computational-thinking/week-1/revision-and-practice/": [],
+  "/computational-thinking/week-1/source-material/": [],
+  "/computational-thinking/week-2/conditional-termination/": [
+    "/images/computational-thinking/week-2/search.svg"
+  ],
+  "/computational-thinking/week-2/ordered-search/": [
+    "/images/computational-thinking/week-2/ordered-search.svg"
+  ],
+  "/computational-thinking/week-2/running-maximum/": [
+    "/images/computational-thinking/week-2/running-max.svg"
+  ],
+  "/computational-thinking/week-2/safe-initialization/": [
+    "/images/computational-thinking/week-2/initialization.svg"
+  ],
+  "/computational-thinking/week-2/longest-sentence-and-runs/": [
+    "/images/computational-thinking/week-2/longest-sentence.svg"
+  ],
+  "/computational-thinking/week-2/group-frequency-counts/": [
+    "/images/computational-thinking/week-2/group-counts.svg"
+  ],
+  "/computational-thinking/week-2/group-totals-and-revenue/": [
+    "/images/computational-thinking/week-2/group-totals.svg"
+  ],
+  "/computational-thinking/week-2/word-frequencies/": [
+    "/images/computational-thinking/week-2/word-frequency.svg"
+  ],
+  "/computational-thinking/week-2/maximum-with-ties/": [
+    "/images/computational-thinking/week-2/ties.svg"
+  ],
+  "/computational-thinking/week-2/frequency-based-filtering/": [
+    "/images/computational-thinking/week-2/two-passes.svg"
+  ],
+  "/computational-thinking/week-2/maximum-flowchart/": [
+    "/images/computational-thinking/week-2/max-flowchart.svg"
+  ],
+  "/computational-thinking/week-2/introduction-to-pseudocode/": [
+    "/images/computational-thinking/week-2/pseudocode.svg"
+  ],
+  "/computational-thinking/week-2/pseudocode-with-filtering/": [
+    "/images/computational-thinking/week-2/nested-if.svg"
+  ],
+  "/computational-thinking/week-2/source-material-dataset-lab/": [],
+  "/computational-thinking/week-2/revision-and-practice/": [],
+  "/computational-thinking/week-2/source-material/": [],
+  "/computational-thinking/week-3/cards-to-tables/": [
+    "/images/computational-thinking/week-3/cards-to-rows.png"
+  ],
+  "/computational-thinking/week-3/shopping-bills-linked-tables/": [
+    "/images/computational-thinking/week-3/linked-bills.png"
+  ],
+  "/computational-thinking/week-3/below-average-two-passes/": [
+    "/images/computational-thinking/week-3/below-average.png"
+  ],
+  "/computational-thinking/week-3/minimum-maximum-grade-bands/": [
+    "/images/computational-thinking/week-3/grade-bands.png"
+  ],
+  "/computational-thinking/week-3/word-length-frequency-hypothesis/": [
+    "/images/computational-thinking/week-3/word-hypothesis.png"
+  ],
+  "/computational-thinking/week-3/three-prizes-criteria/": [
+    "/images/computational-thinking/week-3/prize-winners.png"
+  ],
+  "/computational-thinking/week-3/top-three-distinct-marks/": [
+    "/images/computational-thinking/week-3/top-three-shift.png",
+    "/images/computational-thinking/week-3/distinct-marks.png"
+  ],
+  "/computational-thinking/week-3/procedures-parameters-return/": [
+    "/images/computational-thinking/week-3/sum-parameters.png"
+  ],
+  "/computational-thinking/week-3/maximum-procedure-four-calls/": [
+    "/images/computational-thinking/week-3/four-maxima.png"
+  ],
+  "/computational-thinking/week-3/prize-pseudocode-eligibility/": [
+    "/images/computational-thinking/week-3/prize-eligibility.png"
+  ],
+  "/computational-thinking/week-3/prize-ties-and-feasibility/": [
+    "/images/computational-thinking/week-3/ties-policy.png"
+  ],
+  "/computational-thinking/week-3/side-effects-and-restoration/": [
+    "/images/computational-thinking/week-3/deck-side-effects.png"
+  ],
+  "/computational-thinking/week-3/procedure-contracts-and-order/": [
+    "/images/computational-thinking/week-3/procedure-contract.png",
+    "/images/computational-thinking/week-3/word-order.png"
+  ],
+  "/computational-thinking/week-3/tutorial-nouns-and-bills/": [
+    "/images/computational-thinking/week-3/noun-counts.png",
+    "/images/computational-thinking/week-3/bill-average.png",
+    "/images/computational-thinking/week-3/bill-bands.png"
+  ],
+  "/computational-thinking/week-3/procedure-calls-common-errors/": [
+    "/images/computational-thinking/week-3/two-return-values.png",
+    "/images/computational-thinking/week-3/argument-order.png"
+  ],
+  "/computational-thinking/week-3/": [
+    "/images/computational-thinking/week-3/cards-to-rows.png"
+  ],
+  "/computational-thinking/week-4/nested-iterations/": [
+    "/images/computational-thinking/week-4/nested-loops.png"
+  ],
+  "/computational-thinking/week-4/birthday-pairs/": [
+    "/images/computational-thinking/week-4/birthday-match.png"
+  ],
+  "/computational-thinking/week-4/counting-comparisons/": [
+    "/images/computational-thinking/week-4/pair-count.png"
+  ],
+  "/computational-thinking/week-4/birthday-month-bins/": [
+    "/images/computational-thinking/week-4/month-bins.png"
+  ],
+  "/computational-thinking/week-4/binning-work-and-space/": [
+    "/images/computational-thinking/week-4/binning-saving.png",
+    "/images/computational-thinking/week-4/binning-worst.png"
+  ],
+  "/computational-thinking/week-4/city-and-maths-tutorial/": [
+    "/images/computational-thinking/week-4/city-maths.png"
+  ],
+  "/computational-thinking/week-4/loyal-customers/": [
+    "/images/computational-thinking/week-4/loyal-customer.png"
+  ],
+  "/computational-thinking/week-4/fair-study-partners/": [
+    "/images/computational-thinking/week-4/study-partners.png",
+    "/images/computational-thinking/week-4/team-preparation.png"
+  ],
+  "/computational-thinking/week-4/heuristics-and-boundaries/": [
+    "/images/computational-thinking/week-4/heuristic-boundary.png"
+  ],
+  "/computational-thinking/week-4/birthday-procedure-contract/": [
+    "/images/computational-thinking/week-4/birthday-contract.png"
+  ],
+  "/computational-thinking/week-4/pronouns-backward-search/": [
+    "/images/computational-thinking/week-4/pronoun-backward.png",
+    "/images/computational-thinking/week-4/word-restoration.png"
+  ],
+  "/computational-thinking/week-4/pronouns-forward-memory/": [
+    "/images/computational-thinking/week-4/pronoun-memory.png"
+  ],
+  "/computational-thinking/week-4/pronoun-rule-counterexamples/": [
+    "/images/computational-thinking/week-4/pronoun-context.png"
+  ],
+  "/computational-thinking/week-4/or-versus-two-ifs/": [
+    "/images/computational-thinking/week-4/or-overlap.png"
+  ],
+  "/computational-thinking/week-4/noun-and-verb-counters/": [
+    "/images/computational-thinking/week-4/noun-verb.png"
+  ],
+  "/computational-thinking/week-4/vowels-consonants-procedure/": [
+    "/images/computational-thinking/week-4/vowels-consonants.png"
+  ],
+  "/computational-thinking/week-4/weeks-one-to-four-patterns/": [
+    "/images/computational-thinking/week-4/four-week-patterns.png",
+    "/images/computational-thinking/week-4/choose-pattern.png"
+  ],
+  "/computational-thinking/week-4/revision-and-practice/": [],
+  "/computational-thinking/week-4/source-guide/": []
 }

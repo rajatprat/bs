@@ -1634,5 +1634,293 @@
   "/stats-1/week-4/revision-and-practice/": {
     "title": "Revision and practice with answers · Statistics 1 Foundation",
     "description": "Try these questions without looking at the answers. Then open each explanation and check your method, units and denominator."
+  },
+  "/computational-thinking/": {
+    "title": "Computational Thinking Foundation: Weeks 1–4",
+    "description": "Beginner-friendly Computational Thinking notes with real course datasets, illustrations, interactive procedures and explained practice across Weeks 1–4."
+  },
+  "/computational-thinking/week-1/": {
+    "title": "Computational Thinking Week 1: From data cards to clear procedures",
+    "description": "Learn variables, iteration, filtering, flowcharts and data types through small examples you can trace by hand."
+  },
+  "/computational-thinking/week-1/what-is-computational-thinking/": {
+    "title": "Start here: think in clear, repeatable steps · Computational Thinking",
+    "description": "Computational thinking means turning a problem into clear steps that another person or a computer can follow. This course begins before any particular prog"
+  },
+  "/computational-thinking/week-1/datasets-and-fields/": {
+    "title": "Meet the datasets: marks, bills and words · Computational Thinking",
+    "description": "A dataset is a collection of related items. In this course, each item is drawn as a card. Each card has named fields. Different cards follow the same forma"
+  },
+  "/computational-thinking/week-1/variables-and-iteration/": {
+    "title": "Variables and iteration: remember your progress · Computational Thinking",
+    "description": "A variable is a named place to keep a value while a procedure runs. Iteration means repeating a set of steps over the items. Together, they let you make pr"
+  },
+  "/computational-thinking/week-1/sums-and-averages/": {
+    "title": "Sums and averages: two variables, one scan · Computational Thinking",
+    "description": "Counting adds 1 for each record. Summing adds a value from that record. You can do both in one scan, then divide to get an average."
+  },
+  "/computational-thinking/week-1/filtering/": {
+    "title": "Filtering: count only the cards you want · Computational Thinking",
+    "description": "A filter is a condition that selects the records relevant to a question. A filtered iteration still visits the records systematically, but only matching re"
+  },
+  "/computational-thinking/week-1/combined-filters/": {
+    "title": "Combine filters and keep separate group summaries · Computational Thinking",
+    "description": "Some questions require more than one condition. For example, a record must have group F AND city Chennai. Check both fields, then update only when the full"
+  },
+  "/computational-thinking/week-1/introduction-to-flowcharts/": {
+    "title": "Flowcharts: draw decisions and repetition · Computational Thinking",
+    "description": "A flowchart draws a procedure using shapes and arrows. It shows the order of operations, the choices that can be made, and the steps that repeat."
+  },
+  "/computational-thinking/week-1/flowcharts-with-filtering/": {
+    "title": "Flowcharts with filters: make every path finish a visit · Computational Thinking",
+    "description": "A filtered flowchart adds another decision inside the loop. One decision asks whether work remains. The next asks whether the current card should update th"
+  },
+  "/computational-thinking/week-1/sanity-of-data/": {
+    "title": "Sanity of data: find problems before calculating · Computational Thinking",
+    "description": "A well-written procedure can still give a wrong answer if its inputs are wrong. Sanity checking means asking whether the data have the expected format, ran"
+  },
+  "/computational-thinking/week-1/basic-data-types/": {
+    "title": "Basic data types: values and permitted operations · Computational Thinking",
+    "description": "A data type describes two things: which values can be stored and which operations are permitted. A number-shaped label, a mark and a name have different me"
+  },
+  "/computational-thinking/week-1/subtypes/": {
+    "title": "Subtypes: narrower rules for specific fields · Computational Thinking",
+    "description": "A subtype narrows a broader type to suit a particular purpose. It can restrict both the allowed values and the operations. This makes the intended meaning "
+  },
+  "/computational-thinking/week-1/transforming-subtypes/": {
+    "title": "Transform representations: dates, fractional marks and money · Computational Thinking",
+    "description": "The way a value is displayed need not be the way it is stored. A useful representation makes the required comparisons and calculations easier, while a disp"
+  },
+  "/computational-thinking/week-1/records-and-lists/": {
+    "title": "Records and lists: build structured data · Computational Thinking",
+    "description": "Basic types describe individual values. A record bundles named fields into one structured item. A list gathers a sequence of items. Combining them lets you"
+  },
+  "/computational-thinking/week-1/revision-and-practice/": {
+    "title": "Revision and practice with explained answers · Computational Thinking",
+    "description": "Try each question before revealing its answer. Trace one card at a time and state exactly what every variable means."
+  },
+  "/computational-thinking/week-1/source-material/": {
+    "title": "Source guide and important clarifications · Computational Thinking",
+    "description": "These notes cover Lecture 0, Lectures 1.1–1.10, and Tutorials 1.1–1.3 from the supplied Week 1 English transcripts. The six supplied slide decks are used a"
+  },
+  "/computational-thinking/week-2/": {
+    "title": "Computational Thinking Week 2: Search, compare and keep the right information",
+    "description": "Learn early stopping, maximum values, group counts, ties, two-pass filtering and pseudocode with the supplied course datasets."
+  },
+  "/computational-thinking/week-2/conditional-termination/": {
+    "title": "Search and stop: conditional termination · Computational Thinking",
+    "description": "In Week 1 we usually visited every card. Sometimes the question only asks whether any matching card exists. Once you find one, further searching cannot cha"
+  },
+  "/computational-thinking/week-2/ordered-search/": {
+    "title": "Search within ordered words and sentences · Computational Thinking",
+    "description": "“First verb in the third sentence” is an order-sensitive question. Unlike counting or finding a maximum value, it cannot be answered correctly after random"
+  },
+  "/computational-thinking/week-2/running-maximum/": {
+    "title": "Maximum in one pass: keep the best so far · Computational Thinking",
+    "description": "To find a maximum, remember the best value seen so far. Compare each new value with it. Replace the remembered value only when the new one is larger."
+  },
+  "/computational-thinking/week-2/safe-initialization/": {
+    "title": "Initialize maximum, minimum and result variables safely · Computational Thinking",
+    "description": "Initialization is part of the algorithm, not a decoration. A wrong starting value can survive every comparison and become a result that never appeared in t"
+  },
+  "/computational-thinking/week-2/longest-sentence-and-runs/": {
+    "title": "Local counts: longest sentence and longest grouped run · Computational Thinking",
+    "description": "Sometimes the value to maximize is not printed on one card. You must first build a local count across several cards, then compare it with the best complete"
+  },
+  "/computational-thinking/week-2/group-frequency-counts/": {
+    "title": "Count by category and track the largest frequency · Computational Thinking",
+    "description": "A record’s category may repeat much later in a shuffled pile. Keep one persistent count for each category, rather than resetting whenever the next card has"
+  },
+  "/computational-thinking/week-2/group-totals-and-revenue/": {
+    "title": "Group totals: maximum revenue is a different question · Computational Thinking",
+    "description": "A group count adds 1 per record. A group total adds an amount from the record. A shop can have fewer bills yet more revenue if those bills are larger."
+  },
+  "/computational-thinking/week-2/word-frequencies/": {
+    "title": "Word frequencies: normalize first, then count · Computational Thinking",
+    "description": "To count occurrences of a word, decide what “the same word” means. Without a consistent rule, capital letters and punctuation can create separate counters "
+  },
+  "/computational-thinking/week-2/maximum-with-ties/": {
+    "title": "Keep the winning record and handle every tie · Computational Thinking",
+    "description": "Knowing the highest mark is not enough when you need to name the students who earned it. Keep the relevant record ID together with the maximum value, and d"
+  },
+  "/computational-thinking/week-2/frequency-based-filtering/": {
+    "title": "Two passes when the second decision needs final counts · Computational Thinking",
+    "description": "Combining work into one pass is useful when it is correct. Some decisions need information that is not available until the entire first pass has finished."
+  },
+  "/computational-thinking/week-2/maximum-flowchart/": {
+    "title": "A flowchart for maximum values and owners · Computational Thinking",
+    "description": "A maximum-finding flowchart is a filtered iteration whose update condition compares the current card with a changing variable. Its processes must keep the "
+  },
+  "/computational-thinking/week-2/introduction-to-pseudocode/": {
+    "title": "Pseudocode: assignment, fields and while blocks · Computational Thinking",
+    "description": "Pseudocode writes a procedure as structured text. It is easier to edit, compare and discuss than a large picture, while keeping the same logic as a flowcha"
+  },
+  "/computational-thinking/week-2/pseudocode-with-filtering/": {
+    "title": "Pseudocode with filters, if–else and nested conditions · Computational Thinking",
+    "description": "A while chooses whether to repeat a block. An if chooses whether to execute a block during this visit. An else chooses the alternative when that particular"
+  },
+  "/computational-thinking/week-2/source-material-dataset-lab/": {
+    "title": "Dataset lab: work with the supplied course cards · Computational Thinking",
+    "description": "Use the datasets supplied with this course task to reproduce the results yourself. Scores and Words are transcribed from the tabulated PDFs; the shopping C"
+  },
+  "/computational-thinking/week-2/revision-and-practice/": {
+    "title": "Revision and practice with explained answers · Computational Thinking",
+    "description": "Try the mixed questions first, then reveal the reasoning. State the input order, initialization, comparison and tie policy before tracing a procedure."
+  },
+  "/computational-thinking/week-2/source-material/": {
+    "title": "Source guide and dataset conventions · Computational Thinking",
+    "description": "Week 2 uses the ten supplied lecture transcripts and Tutorials 2.1–2.8. The repeated Week 1 slide decks remain references for fields, types, flowchart symb"
+  },
+  "/computational-thinking/week-3/": {
+    "title": "Computational Thinking Week 3: Tables, Parameters and Procedures",
+    "description": "Use familiar score cards, word cards and shopping bills to understand tables, grade bands, hypotheses, parameters, prizes and side effects."
+  },
+  "/computational-thinking/week-3/cards-to-tables/": {
+    "title": "From cards to tables: rows, columns and IDs | Computational Thinking Week 3",
+    "description": "A table stores the same information as the cards in a more regular shape. One ordinary card becomes one row. Each field becomes a column. You already know th"
+  },
+  "/computational-thinking/week-3/shopping-bills-linked-tables/": {
+    "title": "One bill, many items: link two tables | Computational Thinking Week 3",
+    "description": "Shopping bills have a different shape. A bill has one shop, customer and total, but it can contain any number of items. Srivatsan’s first bill has seven item"
+  },
+  "/computational-thinking/week-3/below-average-two-passes/": {
+    "title": "Below average: finish one pass before filtering | Computational Thinking Week 3",
+    "description": "We want the students whose Mathematics mark is below the average of the whole class. A running average changes whenever another card is read. Deciding perman"
+  },
+  "/computational-thinking/week-3/minimum-maximum-grade-bands/": {
+    "title": "Find the range, then assign grade bands | Computational Thinking Week 3",
+    "description": "Instead of dividing the class into above and below average, we can create four grade bands. First discover the lowest and highest actual Mathematics marks. O"
+  },
+  "/computational-thinking/week-3/word-length-frequency-hypothesis/": {
+    "title": "Test an idea: are frequent words short? | Computational Thinking Week 3",
+    "description": "A hypothesis is an idea we can test with data. Looking at a few familiar words suggests that frequent words may be short. We need clear definitions and all r"
+  },
+  "/computational-thinking/week-3/three-prizes-criteria/": {
+    "title": "The three-prizes problem: decide the rules first | Computational Thinking Week 3",
+    "description": "The prize example asks for three high-scoring students, with two extra rules: each should be a subject topper in at least one subject, and the final group sh"
+  },
+  "/computational-thinking/week-3/top-three-distinct-marks/": {
+    "title": "Keep the top three: shift safely and handle ties | Computational Thinking Week 3",
+    "description": "Keeping one maximum needs one remembered value. Keeping three needs three ordered places: First ≥ Second ≥ Third. When a new maximum arrives, save the old va"
+  },
+  "/computational-thinking/week-3/procedures-parameters-return/": {
+    "title": "Procedures, parameters and return values | Computational Thinking Week 3",
+    "description": "A procedure is a named set of steps we can reuse. Think of asking a helper to do one well-defined job. Parameters tell the helper which version of the job to"
+  },
+  "/computational-thinking/week-3/maximum-procedure-four-calls/": {
+    "title": "Call one maximum procedure four times | Computational Thinking Week 3",
+    "description": "We want to know whether some student achieves the maximum in every subject. Finding the maximum four times is the same task with a different field each time."
+  },
+  "/computational-thinking/week-3/prize-pseudocode-eligibility/": {
+    "title": "Build the prize algorithm from smaller procedures | Computational Thinking Week 3",
+    "description": "Now connect the pieces. First compute the third distinct mark level in every subject once. Then call a Boolean procedure on each student: does at least one s"
+  },
+  "/computational-thinking/week-3/prize-ties-and-feasibility/": {
+    "title": "Ties and impossible criteria: finish the specification | Computational Thinking Week 3",
+    "description": "A calculation can be mechanically correct while the problem rules remain incomplete. Three physical prize slots cannot always fit everyone tied at the bounda"
+  },
+  "/computational-thinking/week-3/side-effects-and-restoration/": {
+    "title": "Side effects: returning a number can change a deck | Computational Thinking Week 3",
+    "description": "A procedure may return the right sum and still change the data arrangement. That extra change is called a side effect. To use the procedure safely, the calle"
+  },
+  "/computational-thinking/week-3/procedure-contracts-and-order/": {
+    "title": "Write a contract: inputs, result and allowed changes | Computational Thinking Week 3",
+    "description": "A procedure’s interface is the boundary between caller and helper. Its contract states what the caller supplies, what the helper returns, and what changes to"
+  },
+  "/computational-thinking/week-3/tutorial-nouns-and-bills/": {
+    "title": "Tutorial lab: nouns, bill averages and expenditure bands | Computational Thinking Week 3",
+    "description": "Practise the same ideas with the original word cards and shopping bills. These are new questions on familiar data, so you can focus on the procedure rather t"
+  },
+  "/computational-thinking/week-3/procedure-calls-common-errors/": {
+    "title": "Call procedures correctly: name, count and order | Computational Thinking Week 3",
+    "description": "A procedure call must match its definition. Tutorial 3.3 builds an average for Big Bazaar bills by returning two updated values after each card. The procedur"
+  },
+  "/computational-thinking/week-3/revision-and-practice/": {
+    "title": "Week 3 revision and practice | Computational Thinking Week 3",
+    "description": "Try each question before revealing its explained answer. Use the explorer to test a procedure on the original course data."
+  },
+  "/computational-thinking/week-3/source-guide/": {
+    "title": "Source guide, conventions and coverage | Computational Thinking Week 3",
+    "description": "This week is based on all nine supplied lecture transcripts, all three tutorials, and the supplied slide versions of Lectures 3.1 and 3.6–3.9. Repeated PDF c"
+  },
+  "/computational-thinking/week-4/": {
+    "title": "Computational Thinking Week 4: Nested Loops and Binning",
+    "description": "Find birthday pairs, compare cities and marks, group shopping bills, explore study partners and test pronoun rules with real course data."
+  },
+  "/computational-thinking/week-4/nested-iterations/": {
+    "title": "One loop inside another: nested iteration | Computational Thinking Week 4",
+    "description": "Learn one loop inside another: nested iteration in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/birthday-pairs/": {
+    "title": "Find students with the same birthday | Computational Thinking Week 4",
+    "description": "Learn find students with the same birthday in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/counting-comparisons/": {
+    "title": "Count pairs without counting twice | Computational Thinking Week 4",
+    "description": "Learn count pairs without counting twice in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/birthday-month-bins/": {
+    "title": "Put birthdays into month bins | Computational Thinking Week 4",
+    "description": "Learn put birthdays into month bins in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/binning-work-and-space/": {
+    "title": "How much work does binning save? | Computational Thinking Week 4",
+    "description": "Learn how much work does binning save? in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/city-and-maths-tutorial/": {
+    "title": "Tutorial: same city AND same Maths mark | Computational Thinking Week 4",
+    "description": "Learn tutorial: same city and same maths mark in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/loyal-customers/": {
+    "title": "Shopping bills: find loyal customers | Computational Thinking Week 4",
+    "description": "Learn shopping bills: find loyal customers in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/fair-study-partners/": {
+    "title": "Build study pairs that help each other | Computational Thinking Week 4",
+    "description": "Learn build study pairs that help each other in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/heuristics-and-boundaries/": {
+    "title": "Heuristics: useful choices, limits and better bins | Computational Thinking Week 4",
+    "description": "Learn heuristics: useful choices, limits and better bins in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/birthday-procedure-contract/": {
+    "title": "SearchBirthday: inputs, return values and side effects | Computational Thinking Week 4",
+    "description": "Learn searchbirthday: inputs, return values and side effects in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/pronouns-backward-search/": {
+    "title": "Find a pronoun’s person: search backwards | Computational Thinking Week 4",
+    "description": "Learn find a pronoun’s person: search backwards in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/pronouns-forward-memory/": {
+    "title": "Remember a name instead of searching again | Computational Thinking Week 4",
+    "description": "Learn remember a name instead of searching again in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/pronoun-rule-counterexamples/": {
+    "title": "When the nearest-name rule gets meaning wrong | Computational Thinking Week 4",
+    "description": "Learn when the nearest-name rule gets meaning wrong in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/or-versus-two-ifs/": {
+    "title": "Tutorial: OR is not always two separate IFs | Computational Thinking Week 4",
+    "description": "Learn tutorial: or is not always two separate ifs in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/noun-and-verb-counters/": {
+    "title": "Tutorial: one combined count or two separate counts? | Computational Thinking Week 4",
+    "description": "Learn tutorial: one combined count or two separate counts? in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/vowels-consonants-procedure/": {
+    "title": "Tutorial: count vowels and consonants in a word | Computational Thinking Week 4",
+    "description": "Learn tutorial: count vowels and consonants in a word in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/weeks-one-to-four-patterns/": {
+    "title": "Connect Weeks 1–4: choose the right pattern | Computational Thinking Week 4",
+    "description": "Learn connect weeks 1–4: choose the right pattern in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/revision-and-practice/": {
+    "title": "Week 4 revision and practice | Computational Thinking Week 4",
+    "description": "Learn week 4 revision and practice in easy English with worked course-data examples and explained answers."
+  },
+  "/computational-thinking/week-4/source-guide/": {
+    "title": "Sources, dataset conventions and coverage | Computational Thinking Week 4",
+    "description": "Learn sources, dataset conventions and coverage in easy English with worked course-data examples and explained answers."
   }
 }
