@@ -4,7 +4,8 @@
   "week": 1,
   "part": 1,
   "courseWeeks": [
-    1
+    1,
+    2
   ],
   "base": "/mathematical-foundation-of-generative-ai/week-1/part-1/",
   "intro": [

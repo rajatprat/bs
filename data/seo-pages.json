@@ -1922,5 +1922,13 @@
   "/computational-thinking/week-4/source-guide/": {
     "title": "Sources, dataset conventions and coverage | Computational Thinking Week 4",
     "description": "Learn sources, dataset conventions and coverage in easy English with worked course-data examples and explained answers."
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/": {
+    "title": "Mathematical Foundation of Generative AI Week 2",
+    "description": "Begin Week 2 with the realization of VDM: real and generated distributions, neural scoring functions, min–max objectives and saddle-point intuition."
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/realization-of-variational-divergence-minimization/": {
+    "title": "Realization of Variational Divergence Minimization (VDM)",
+    "description": "Learn how real samples, latent noise, a generator and a scoring network turn variational divergence minimization into a min–max objective. Six illustrations, equations and explained practice."
   }
 }

@@ -1,0 +1,671 @@
+{
+  "subject": "Mathematical Foundation of Generative AI",
+  "subjectSlug": "mathematical-foundation-of-generative-ai",
+  "week": 2,
+  "courseWeeks": [
+    1,
+    2
+  ],
+  "base": "/mathematical-foundation-of-generative-ai/week-2/",
+  "title": "Variational divergence minimization with neural networks",
+  "description": "Begin Week 2 with the realization of VDM: real and generated distributions, neural scoring functions, min–max objectives and saddle-point intuition.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Topic 1 is available: Realization of Variational Divergence Minimization. Continue from the variational representation studied in Week 1."
+    }
+  ],
+  "illustrationCount": 6,
+  "sections": [
+    {
+      "title": "Realization of Variational Divergence Minimization (VDM)",
+      "slug": "realization-of-variational-divergence-minimization",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What is VDM?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Variational Divergence Minimization (VDM) is a framework for training generative models by minimizing a divergence between the real-data distribution and the model-generated distribution."
+        },
+        {
+          "type": "paragraph",
+          "text": "The central idea is to convert a divergence, which may be difficult to compute directly, into a variational optimization objective that can be estimated from samples."
+        },
+        {
+          "type": "paragraph",
+          "text": "Goal: Train a generator so that its output distribution resembles the distribution of real training data."
+        },
+        {
+          "type": "heading",
+          "text": "Dataset and real-data distribution"
+        },
+        {
+          "type": "paragraph",
+          "text": "Consider a dataset:"
+        },
+        {
+          "type": "equation",
+          "tex": "D=\\{x_1,x_2,\\ldots,x_n\\}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Assume the observations are independently and identically distributed:"
+        },
+        {
+          "type": "equation",
+          "tex": "x_i\\overset{iid}{\\sim}P_X"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here:"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(D\\): training dataset"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(x_i\\): an individual training sample"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(n\\): number of samples"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(P_X\\): real-data probability distribution"
+        },
+        {
+          "type": "list-item",
+          "text": "i.i.d.: independent and identically distributed"
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, if the dataset contains handwritten digits, \\(P_X\\) describes the underlying distribution of real digit images."
+        },
+        {
+          "type": "paragraph",
+          "text": "We observe samples from \\(P_X\\), but generally do not know its exact probability density."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/vdm/real-generated-distributions.png",
+          "width": 503,
+          "height": 474,
+          "alt": "Real data follow P_X; generated data follow P_θ. The goal is to bring the generated distribution closer to the real one.",
+          "caption": "Real data follow P_X; generated data follow P_θ. The goal is to bring the generated distribution closer to the real one."
+        },
+        {
+          "type": "heading",
+          "text": "Latent noise and the generator"
+        },
+        {
+          "type": "paragraph",
+          "text": "First, sample a random latent vector:"
+        },
+        {
+          "type": "equation",
+          "tex": "z\\sim\\mathcal N(0,I)"
+        },
+        {
+          "type": "paragraph",
+          "text": "where \\(0\\) is the zero mean vector and \\(I\\) is the identity covariance matrix."
+        },
+        {
+          "type": "paragraph",
+          "text": "A generator neural network transforms the latent vector into a synthetic observation:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\hat{x}=g_\\theta(z)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here:"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(z\\): latent random vector"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(g_\\theta\\): generator function"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(\\theta\\): generator parameters, including weights and biases"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(\\hat{x}\\): generated sample"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(P_\\theta\\): distribution induced by the generator"
+        },
+        {
+          "type": "paragraph",
+          "text": "Thus:"
+        },
+        {
+          "type": "equation",
+          "tex": "z\\sim\\mathcal N(0,I)\n\\quad\\longrightarrow\\quad\ng_\\theta(z)=\\hat{x}\n\\quad\\longrightarrow\\quad\n\\hat{x}\\sim P_\\theta"
+        },
+        {
+          "type": "paragraph",
+          "text": "Changing \\(\\theta\\) changes the generated samples and therefore the model distribution \\(P_\\theta\\)."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/vdm/generator-scoring-networks.png",
+          "width": 508,
+          "height": 474,
+          "alt": "The generator maps latent noise to a sample. The scoring network receives a real or generated sample and returns a score.",
+          "caption": "The generator maps latent noise to a sample. The scoring network receives a real or generated sample and returns a score."
+        },
+        {
+          "type": "heading",
+          "text": "Original divergence minimization objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "We want the generated distribution \\(P_\\theta\\) to resemble the real distribution \\(P_X\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The mathematical objective is:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\boxed{\\theta^*=\\arg\\min_\\theta D_f(P_X\\parallel P_\\theta)}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here, \\(D_f\\) is an \\(f\\)-divergence."
+        },
+        {
+          "type": "paragraph",
+          "text": "For distributions with densities \\(p_X\\) and \\(p_\\theta\\), under appropriate conditions:"
+        },
+        {
+          "type": "equation",
+          "tex": "D_f(P_X\\parallel P_\\theta)\n=\n\\int p_\\theta(x)\nf\\left(\\frac{p_X(x)}{p_\\theta(x)}\\right)dx"
+        },
+        {
+          "type": "paragraph",
+          "text": "The function \\(f\\) is convex, conventionally normalized by \\(f(1)=0\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The notation \\(\\arg\\min_\\theta\\) means finding the generator parameters that minimize the divergence."
+        },
+        {
+          "type": "paragraph",
+          "text": "Important: The generator minimizes divergence; it does not necessarily minimize the individual output values of the scoring network."
+        },
+        {
+          "type": "heading",
+          "text": "Why direct divergence minimization is difficult"
+        },
+        {
+          "type": "paragraph",
+          "text": "The divergence formula involves the density ratio:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\frac{p_X(x)}{p_\\theta(x)}"
+        },
+        {
+          "type": "paragraph",
+          "text": "In many generative modeling problems, we can sample from the real and generated distributions but cannot evaluate both densities directly."
+        },
+        {
+          "type": "paragraph",
+          "text": "This makes the original divergence difficult to calculate and optimize."
+        },
+        {
+          "type": "paragraph",
+          "text": "The solution is to use the variational representation studied in Week 1."
+        },
+        {
+          "type": "heading",
+          "text": "Variational representation of an f-divergence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Recall the convex conjugate:"
+        },
+        {
+          "type": "equation",
+          "tex": "f^*(t)=\\sup_u\\{ut-f(u)\\}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fenchel–Young inequality gives:"
+        },
+        {
+          "type": "equation",
+          "tex": "f(u)\\ge ut-f^*(t)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Using the density ratio and taking expectations leads to:"
+        },
+        {
+          "type": "equation",
+          "tex": "D_f(P_X\\parallel P_\\theta)\n\\ge\n\\mathbb E_{P_X}[T(X)]\n-\n\\mathbb E_{P_\\theta}[f^*(T(X))]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Define the variational objective:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\boxed{\nJ(\\theta,T)=\n\\mathbb E_{P_X}[T(X)]\n-\n\\mathbb E_{P_\\theta}[f^*(T(X))]\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here:"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(T\\): an admissible scoring function"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(f^*\\): convex conjugate of \\(f\\)"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(\\mathbb E_{P_X}\\): expectation over real samples"
+        },
+        {
+          "type": "list-item",
+          "text": "\\(\\mathbb E_{P_\\theta}\\): expectation over generated samples"
+        },
+        {
+          "type": "paragraph",
+          "text": "Under appropriate conditions, maximizing over a sufficiently rich class of admissible functions recovers the divergence:"
+        },
+        {
+          "type": "equation",
+          "tex": "D_f(P_X\\parallel P_\\theta)=\\sup_T J(\\theta,T)"
+        },
+        {
+          "type": "paragraph",
+          "text": "This formulation is useful because expectations can be approximated using samples."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/vdm/divergence-to-trainable-objective.png",
+          "width": 506,
+          "height": 502,
+          "alt": "Replace a difficult density-based divergence with a variational objective, then represent the scoring function by a neural network.",
+          "caption": "Replace a difficult density-based divergence with a variational objective, then represent the scoring function by a neural network."
+        },
+        {
+          "type": "heading",
+          "text": "Parameterizing the scoring function"
+        },
+        {
+          "type": "paragraph",
+          "text": "Instead of searching over all possible functions \\(T\\), represent the scoring function with a neural network:"
+        },
+        {
+          "type": "equation",
+          "tex": "T_w(x)"
+        },
+        {
+          "type": "paragraph",
+          "text": "where \\(w\\) contains the scoring network's trainable parameters."
+        },
+        {
+          "type": "paragraph",
+          "text": "The practical objective becomes:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\boxed{\nJ(\\theta,w)=\n\\mathbb E_{P_X}[T_w(X)]\n-\n\\mathbb E_{P_\\theta}[f^*(T_w(X))]\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The scoring network learns a function that maximizes the variational objective for a fixed generator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Its output is a score, not necessarily a probability."
+        },
+        {
+          "type": "paragraph",
+          "text": "The function must also satisfy the domain requirements of \\(f^*\\). The teacher introduces a suitable output activation for this in the next topic."
+        },
+        {
+          "type": "heading",
+          "text": "The min–max objective"
+        },
+        {
+          "type": "paragraph",
+          "text": "Combining generator optimization with scoring-network optimization gives:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\boxed{\n\\min_\\theta\\max_w\n\\left[\n\\mathbb E_{P_X}[T_w(X)]\n-\n\\mathbb E_{P_\\theta}[f^*(T_w(X))]\n\\right]\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The two networks have opposing optimization objectives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scoring network:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\max_w J(\\theta,w)"
+        },
+        {
+          "type": "paragraph",
+          "text": "For fixed generator parameters, find the scoring function that gives the strongest available variational lower bound."
+        },
+        {
+          "type": "paragraph",
+          "text": "Generator:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\min_\\theta J(\\theta,w)"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a fixed scoring function, update the generator to reduce the objective."
+        },
+        {
+          "type": "paragraph",
+          "text": "The intended overall result is to reduce the divergence between real and generated distributions."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the scoring-function family is restricted, the maximized variational objective may be only a lower bound on the true divergence. Exact equivalence requires suitable assumptions about the function class and optimization."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/vdm/min-max-objective.png",
+          "width": 504,
+          "height": 474,
+          "alt": "The scoring network maximizes the variational objective; the generator minimizes it. The displayed objective is not a rule to minimize each individual score.",
+          "caption": "The scoring network maximizes the variational objective; the generator minimizes it. The displayed objective is not a rule to minimize each individual score."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — estimate the objective from samples"
+        },
+        {
+          "type": "paragraph",
+          "text": "Expectations are population averages. With n real samples and m independent noise samples, replace each expectation by its own sample average. The real and generated batch sizes need not be equal."
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}\\widehat J(\\theta,w)&=\\frac1n\\sum_{i=1}^{n}T_w(x_i)\\\\&\\quad-\\frac1m\\sum_{j=1}^{m}f^*\\!\\left(T_w(g_\\theta(z_j))\\right).\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose the mean score on real samples is 1.5, and the mean conjugate-transformed score on generated samples is 0.6. The estimated objective is 1.5 − 0.6 = 0.9. These are illustrative evaluated averages, not raw probabilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the scoring network fixed. If a generator update changes the second mean to 0.8, the estimate becomes 1.5 − 0.8 = 0.7. The objective decreased. Notice that the generated conjugate-transformed term increased: minimizing the difference does not mean pushing every scoring output down."
+        },
+        {
+          "type": "note",
+          "text": "A finite-sample estimate fluctuates and need not itself be a certified lower bound on the population divergence. The variational lower-bound statement concerns the population expectations under its assumptions."
+        },
+        {
+          "type": "heading",
+          "text": "Why is this adversarial optimization?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The problem is called adversarial because the two networks have opposing objectives."
+        },
+        {
+          "type": "list-item",
+          "text": "The scoring network tries to expose discrepancies between real and generated distributions."
+        },
+        {
+          "type": "list-item",
+          "text": "The generator tries to reduce those discrepancies."
+        },
+        {
+          "type": "paragraph",
+          "text": "The networks do not need to output opposite numerical scores. Their opposition comes from maximizing versus minimizing the same objective."
+        },
+        {
+          "type": "paragraph",
+          "text": "This leads to a min–max or saddle-point optimization problem."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/vdm/adversarial-training.png",
+          "width": 509,
+          "height": 502,
+          "alt": "The networks optimize the same objective in opposite directions: the critic exposes discrepancies and the generator reduces them.",
+          "caption": "The networks optimize the same objective in opposite directions: the critic exposes discrepancies and the generator reduces them."
+        },
+        {
+          "type": "heading",
+          "text": "Understanding a saddle point"
+        },
+        {
+          "type": "paragraph",
+          "text": "Consider the simple mathematical example:"
+        },
+        {
+          "type": "equation",
+          "tex": "J(\\theta,w)=\\theta^2-w^2"
+        },
+        {
+          "type": "paragraph",
+          "text": "For \\(w=0\\):"
+        },
+        {
+          "type": "equation",
+          "tex": "J(\\theta,0)=\\theta^2"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is minimized at:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\theta=0"
+        },
+        {
+          "type": "paragraph",
+          "text": "For \\(\\theta=0\\):"
+        },
+        {
+          "type": "equation",
+          "tex": "J(0,w)=-w^2"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is maximized at:"
+        },
+        {
+          "type": "equation",
+          "tex": "w=0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\boxed{(\\theta^*,w^*)=(0,0)}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The point is a minimum in the \\(\\theta\\) direction and a maximum in the \\(w\\) direction."
+        },
+        {
+          "type": "paragraph",
+          "text": "This illustrates the mathematical meaning of a saddle point. Real neural-network objectives are more complicated and are not guaranteed to converge to such a point."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/vdm/saddle-point.png",
+          "width": 504,
+          "height": 502,
+          "alt": "For J(θ,w) = θ² − w², the origin is a minimum in θ and a maximum in w. This toy example does not guarantee convergence for neural networks.",
+          "caption": "For J(θ,w) = θ² − w², the origin is a minimum in θ and a maximum in w. This toy example does not guarantee convergence for neural networks."
+        },
+        {
+          "type": "heading",
+          "text": "Complete mathematical flow"
+        },
+        {
+          "type": "paragraph",
+          "text": "There are two sampling streams, not a transformation from real observations into latent noise. Real observations come from the dataset; latent noise enters the generator. The scoring network evaluates samples from both streams."
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}x_i&\\sim P_X &&\\text{(real-data stream)}\\\\z_j&\\sim\\mathcal N(0,I),\\quad \\hat x_j=g_\\theta(z_j)\\sim P_\\theta &&\\text{(generated-data stream)}\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The original goal is to choose generator parameters that minimize the divergence. Its variational realization replaces the density calculation with expectations and a trainable scoring network."
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}\\theta^*&\\in\\operatorname*{arg\\,min}_\\theta D_f(P_X\\parallel P_\\theta),\\\\\\min_\\theta\\sup_w J(\\theta,w)&=\\min_\\theta\\sup_w\\left\\{\\mathbb E_{P_X}[T_w(X)]-\\mathbb E_{P_\\theta}[f^*(T_w(X))]\\right\\}.\\end{aligned}"
+        },
+        {
+          "type": "note",
+          "text": "We write sup when a best score may be approached without being attained. The usual min–max notation assumes the relevant extrema are attained. With a restricted neural-network family, the maximized objective can remain a lower bound rather than the full divergence."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes"
+        },
+        {
+          "type": "list-item",
+          "text": "Confusing \\(P_X\\) and \\(P_\\theta\\): \\(P_X\\) is the real-data distribution; \\(P_\\theta\\) is the generated distribution."
+        },
+        {
+          "type": "list-item",
+          "text": "Confusing \\(\\theta\\) and \\(w\\): \\(\\theta\\) belongs to the generator; \\(w\\) belongs to the scoring network."
+        },
+        {
+          "type": "list-item",
+          "text": "Assuming the critic minimizes: The scoring network maximizes the variational objective."
+        },
+        {
+          "type": "list-item",
+          "text": "Assuming the scoring output must be zero: The goal is not to force every \\(T_w(x)\\) to zero."
+        },
+        {
+          "type": "list-item",
+          "text": "Treating a restricted variational lower bound as automatically equal to the divergence: Equality requires suitable conditions."
+        },
+        {
+          "type": "list-item",
+          "text": "Confusing \\(\\min\\) and \\(\\arg\\min\\): The former returns the minimum value; the latter identifies parameters achieving it."
+        },
+        {
+          "type": "heading",
+          "text": "Quick revision"
+        },
+        {
+          "type": "paragraph",
+          "text": "VDM: Variational Divergence Minimization."
+        },
+        {
+          "type": "paragraph",
+          "text": "Real distribution: \\(P_X\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Noise: \\(z\\sim\\mathcal N(0,I)\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Generator: \\(\\hat{x}=g_\\theta(z)\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Generated distribution: \\(P_\\theta\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scoring network: \\(T_w(x)\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Generator objective: Minimize discrepancy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scoring network objective: Maximize the variational lower bound."
+        },
+        {
+          "type": "paragraph",
+          "text": "Overall objective:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\boxed{\\min_\\theta\\max_w J(\\theta,w)}"
+        },
+        {
+          "type": "paragraph",
+          "text": "One-line memory anchor:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The scoring network finds the strongest available measure of the difference, while the generator learns to reduce that difference."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next topic: Implementing VDM with neural networks, including the output activation needed to keep \\(T_w(x)\\) in the domain of the convex conjugate."
+        },
+        {
+          "type": "heading",
+          "text": "Practice — check your understanding"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What changes when the generator parameters change? Answer: The mapping from noise to generated observations changes, so the induced distribution P_θ may change. The real-data distribution P_X is the target and is not trained by those updates."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Which network maximizes the objective? Answer: The scoring network, with parameters w, maximizes it while the generator is fixed. The generator, with parameters θ, minimizes it while the scoring network is fixed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Does the scoring network output a probability by definition? Answer: No. It outputs an admissible score. Its permitted output range depends on the effective domain of the chosen convex conjugate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Is every neural scoring network guaranteed to recover the exact divergence? Answer: No. A restricted function family and imperfect optimization may leave a gap. Equality requires a sufficiently rich admissible class and suitable regularity assumptions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Real mean score = 2.0 and generated mean conjugate-transformed score = 1.3. What is the estimated objective? Answer: 2.0 − 1.3 = 0.7. The second term is the average after applying the convex conjugate, not necessarily the average raw critic score."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: In the saddle example, what happens along θ when w = 0? Answer: The objective is θ², minimized at θ = 0. Along w with θ = 0, it is −w², maximized at w = 0."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Are real samples generated by passing them through the noise distribution? Answer: No. Real samples and latent noise are separate inputs. Noise passes through the generator to produce synthetic samples; the scoring network can evaluate both real and synthetic samples."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is the difference between min and argmin? Answer: min gives the smallest objective value; argmin gives the parameter value or set of values that achieves that value. An optimum need not always be attained."
+        }
+      ]
+    }
+  ]
+}

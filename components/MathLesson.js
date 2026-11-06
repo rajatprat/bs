@@ -4,8 +4,8 @@ import { displayMath, mathSegments, displayTex } from '../lib/genai-math';
 import Diagram from './Diagram';
 import { headingId } from '../lib/course';
 
-function Math({ tex, display = false }) {
-  const markup = katex.renderToString(display ? displayTex(tex) : tex, { displayMode: display, throwOnError: true, trust: false, strict: 'error', output: 'htmlAndMathml' });
+function Math({ tex, display = false, raw = false }) {
+  const markup = katex.renderToString(display && !raw ? displayTex(tex) : tex, { displayMode: display, throwOnError: true, trust: false, strict: 'error', output: 'htmlAndMathml' });
   return <span className={display ? 'katex-block' : 'katex-inline'} dangerouslySetInnerHTML={{ __html: markup }}/>;
 }
 function Notation({ text = '' }) {
@@ -46,6 +46,7 @@ function Content({ blocks }) {
   const nodes = [];
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i];
+    if (block.type === 'equation') { nodes.push(<div className="math-equation" key={i}><Math tex={block.tex} display raw/></div>); continue; }
     if (block.type === 'image') { nodes.push(<Diagram key={i} block={block}/>); continue; }
     if (block.type === 'list-item' || /^\d+\.\s/.test(block.text || '')) {
       const steps = [], key = i;
