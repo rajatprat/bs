@@ -1,0 +1,1569 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 6,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "base": "/computational-thinking/week-6/",
+  "title": "Nested lists, insertion sort and train timetables",
+  "description": "Sort reusable views, group equal values, test precise grade hypotheses and explore historical train records through easy explanations and interactive traces.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Build on Week 5 lists with nested structures, carefully traced sorting and source-aware dataset reasoning."
+    }
+  ],
+  "illustrationCount": 24,
+  "sections": [
+    {
+      "slug": "lists-within-lists",
+      "title": "A paragraph can be a list of lists of lists",
+      "source": "Lecture 6.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Last week, a pair was a list with two elements and a triple had three. Nested lists can also contain inner lists of different lengths. A paragraph can contain sentence lists; a sentence can contain word lists; a word can contain character lists. Each level answers a different question."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/nested-levels.png",
+          "width": 768,
+          "height": 500,
+          "alt": "Paragraph → sentences → words → characters. The small illustration includes an extra example sentence; the lab uses the original course paragraph.",
+          "caption": "Paragraph → sentences → words → characters. The small illustration includes an extra example sentence; the lab uses the original course paragraph."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "nested",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Paragraph = [Sentence1, Sentence2, ...]\nSentence1 = [explode(\"It\"), explode(\"was\"),\n             explode(\"Monday\"), explode(\"morning.\")]\n# first(Paragraph) is a sentence list\n# first(first(Paragraph)) is a character list for its first word\n# first(first(first(Paragraph))) is its first character"
+        },
+        {
+          "type": "paragraph",
+          "text": "These expressions depend on the representation. Our original dataset stores word RECORDS with a Word field, not already-exploded character lists. For that version, get the first sentence’s first word record, read its Word field, then explode it. A number such as a student ID cannot be unpacked with first as though it were a list."
+        },
+        {
+          "type": "paragraph",
+          "text": "The original paragraph has five sentence groups of 4, 7, 8, 21 and 25 word cards. We use terminal full stops in these supplied cards to build the groups once, then reuse the sentence lists. This is a dataset convention, not a complete sentence splitter for abbreviations, quotes or general English."
+        },
+        {
+          "type": "check",
+          "question": "If the outer paragraph contains five sentence lists, is its length 65?",
+          "answer": "No. Its outer length is 5. The total word-card count across those sentence lists is 65."
+        },
+        {
+          "type": "check",
+          "question": "Can you always call first three times on an object?",
+          "answer": "No. Each intermediate result must be a non-empty list with the expected meaning. A scalar or an empty list has no first element."
+        },
+        {
+          "type": "check",
+          "question": "Why group sentences once?",
+          "answer": "Later sentence-level tasks can reuse that structure instead of repeatedly searching for punctuation boundaries."
+        }
+      ]
+    },
+    {
+      "slug": "hierarchical-shopping",
+      "title": "Organize customers, shops and bill lists",
+      "source": "Lecture 6.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A flat customer–shop–category list can be regrouped hierarchically. At the top choose a customer; inside that customer choose a shop; inside that shop keep categories or item rows. The grouping can match the questions you want to ask."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "shopping",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Our first hierarchy uses the 30 existing bill summaries: Customer → Store → list of BillNo values. Srivatsan has four bills across SV Stores and Sun General. This preserves a clear path back to each original bill and keeps one customer’s information together."
+        },
+        {
+          "type": "paragraph",
+          "text": "A list of shop names is different from a list of bill records. A summary’s MajorCategories field is not a complete item-by-item sequence. To analyze purchased item rows, use the original rows as in Week 5’s verified Bill 1 example. Do not expand a summary into invented purchases."
+        },
+        {
+          "type": "paragraph",
+          "text": "A flat representation and a nested representation can retain different information. Decide whether repeats represent repeated visits, repeated items or distinct categories. Keep identities and counts when they matter; nesting alone does not enforce uniqueness."
+        },
+        {
+          "type": "check",
+          "question": "Can one customer’s inner shop list have a different length from another’s?",
+          "answer": "Yes. Inner lists need not have equal lengths."
+        },
+        {
+          "type": "check",
+          "question": "Does a hierarchy of bill IDs count purchased units?",
+          "answer": "No. It counts or stores bills. Quantities require the bill’s item data."
+        },
+        {
+          "type": "check",
+          "question": "Why retain BillNo while regrouping?",
+          "answer": "It identifies the original bill so omitted fields can be looked up later."
+        }
+      ]
+    },
+    {
+      "slug": "sorted-views-and-keys",
+      "title": "Keep the cards unchanged and sort separate views",
+      "source": "Lecture 6.2",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/sorted-views.png",
+          "width": 768,
+          "height": 500,
+          "alt": "A small illustrative table shows separate Maths and Physics orderings. The interactive score examples use your actual 30 students.",
+          "caption": "A small illustrative table shows separate Maths and Physics orderings. The interactive score examples use your actual 30 students."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sorting arranges values by a chosen comparison rule. Ascending order puts smaller keys first; descending puts larger keys first. Non-decreasing order allows equal values. Sorting requires a meaningful way to compare the key: numbers, dates and names need appropriate rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "Physically rearranging the cards for Maths would disturb their Physics ordering. Instead, build [CardNo,mark] pairs and sort these references. Another list can sort the same students by a different field while the original records keep their order."
+        },
+        {
+          "type": "paragraph",
+          "text": "The key decides order; the record travels with it. Sorting [ID,Total] by Total does not mean sorting by ID. Stable identifiers preserve the connection to names and other fields after list positions change. Several ordered views can coexist."
+        },
+        {
+          "type": "check",
+          "question": "Does sorting by CardNo automatically sort Total?",
+          "answer": "No. The comparison key must be the property whose order you want."
+        },
+        {
+          "type": "check",
+          "question": "Does ascending require every next value to be strictly greater?",
+          "answer": "No. Equal neighbours are allowed in non-decreasing order."
+        },
+        {
+          "type": "check",
+          "question": "What stays attached to a mark when its pair moves?",
+          "answer": "Its student ID. Keep the whole pair together."
+        }
+      ]
+    },
+    {
+      "slug": "insert-one-value",
+      "title": "Insert one new value into a sorted list",
+      "source": "Lectures 6.2 and 6.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/insert-middle.png",
+          "width": 768,
+          "height": 524,
+          "alt": "Insert 5 into [1,3,4,7,9] just before 7, producing [1,3,4,5,7,9].",
+          "caption": "Insert 5 into [1,3,4,7,9] just before 7, producing [1,3,4,5,7,9]."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "insert",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Insertion assumes the existing list is already sorted by the same rule. Read it from the beginning, copying old values into a new list. When x belongs before the current z, append x first, then copy z and the remaining old values."
+        },
+        {
+          "type": "paragraph",
+          "text": "For ascending order, the lecture uses x < z. Passing an equal z leaves it before the new x. The algorithm inserts one occurrence; it does not remove an equal value or deduplicate the input. The output has one more element than the input."
+        },
+        {
+          "type": "paragraph",
+          "text": "Returning the new list does not automatically change a caller variable. Store it with L = SortedListInsert(L,x). A sortedness check alone is insufficient: also ensure every original occurrence and the new occurrence remain in the result."
+        },
+        {
+          "type": "check",
+          "question": "What must be true of the input list?",
+          "answer": "It must already be sorted by the comparison key and direction used for insertion."
+        },
+        {
+          "type": "check",
+          "question": "If x equals an old value, should the old occurrence disappear?",
+          "answer": "No. Insertion adds an occurrence. Equality does not imply replacement."
+        },
+        {
+          "type": "check",
+          "question": "Why copy the current z after inserting x before it?",
+          "answer": "z is an original element that still belongs in the output. Inserting x does not consume or replace z."
+        }
+      ]
+    },
+    {
+      "slug": "insertion-boundaries",
+      "title": "Handle empty, first and final insertion positions",
+      "source": "Lecture 6.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/insert-boundaries.png",
+          "width": 768,
+          "height": 524,
+          "alt": "Check an empty list, a new smallest value and a new largest value. The picture’s plus sign means “insert”, not a valid list-concatenation expression.",
+          "caption": "Check an empty list, a new smallest value and a new largest value. The picture’s plus sign means “insert”, not a valid list-concatenation expression."
+        },
+        {
+          "type": "paragraph",
+          "text": "Three boundary cases test the algorithm. On [], the foreach body runs zero times, so a final fallback must produce [x]. If x is smaller than everything, insert before the first old element. If x is larger than or equal to every existing key under strict <, insert after the loop."
+        },
+        {
+          "type": "code",
+          "text": "if NOT inserted:\n    newList = newList ++ [x]\nreturn newList"
+        },
+        {
+          "type": "paragraph",
+          "text": "This final IF belongs outside the foreach loop. Putting it inside could insert too soon, or append x repeatedly. For a non-empty input, the output length must be old length + 1; for empty input it must be 1."
+        },
+        {
+          "type": "check",
+          "question": "What happens when you insert 5 into []?",
+          "answer": "[5]. The final fallback appends it because the loop never ran."
+        },
+        {
+          "type": "check",
+          "question": "Where does 0 go in [1,3]?",
+          "answer": "At the front: [0,1,3]."
+        },
+        {
+          "type": "check",
+          "question": "Why is the final fallback still needed when most examples insert in the middle?",
+          "answer": "It handles both empty input and values that belong after every old element."
+        }
+      ]
+    },
+    {
+      "slug": "insert-procedure-flag",
+      "title": "Use inserted to place x exactly once",
+      "source": "Lecture 6.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/inserted-flag.png",
+          "width": 768,
+          "height": 506,
+          "alt": "inserted starts false and changes to true when x is placed. Original elements are copied on every iteration.",
+          "caption": "inserted starts false and changes to true when x is placed. Original elements are copied on every iteration."
+        },
+        {
+          "type": "code",
+          "text": "Procedure SortedListInsert(L, x):\n    newList = []\n    inserted = false\n    foreach z in L:\n        if NOT inserted:\n            if x < z:\n                newList = newList ++ [x]\n                inserted = true\n        newList = newList ++ [z]\n    if NOT inserted:\n        newList = newList ++ [x]\n    return newList"
+        },
+        {
+          "type": "paragraph",
+          "text": "The flag remembers an event across loop iterations. Before insertion, test where x belongs. After insertion, stop testing x against new elements and just copy the remaining sequence. The line copying z is OUTSIDE the insertion IF, so every old element survives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a new false flag for every procedure call. A true flag carried over from an earlier call would prevent insertion. The flag is a Boolean, the output is a list and x is an element; confusing these types changes the procedure."
+        },
+        {
+          "type": "check",
+          "question": "What if inserted is never set true after placing x?",
+          "answer": "Later iterations can insert x again before other larger values."
+        },
+        {
+          "type": "check",
+          "question": "What if copying z is inside the insertion IF?",
+          "answer": "Old elements that do not trigger insertion may vanish from the result."
+        },
+        {
+          "type": "check",
+          "question": "Does inserted = true mean the whole sort is finished?",
+          "answer": "No. It only records that this one new item was placed during this insertion call."
+        }
+      ]
+    },
+    {
+      "slug": "insertion-sort-invariant",
+      "title": "Build insertion sort and explain why it works",
+      "source": "Lectures 6.2 and 6.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/sort-invariant.png",
+          "width": 768,
+          "height": 506,
+          "alt": "For input [14,4,22,11], each completed prefix is sorted: [14], [4,14], [4,14,22], [4,11,14,22].",
+          "caption": "For input [14,4,22,11], each completed prefix is sorted: [14], [4,14], [4,14,22], [4,11,14,22]."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "sort",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Procedure InsertionSort(L):\n    sortedList = []\n    foreach x in L:\n        sortedList = SortedListInsert(sortedList, x)\n    return sortedList"
+        },
+        {
+          "type": "paragraph",
+          "text": "An invariant is a property maintained after each completed iteration. Here sortedList is sorted AND contains exactly the input occurrences processed so far. Initially [] satisfies both properties. A correct insertion adds one new occurrence while preserving sortedness."
+        },
+        {
+          "type": "paragraph",
+          "text": "When foreach ends, every input occurrence has been inserted, so the sorted output contains the complete input. This argument has an initial case, a preservation step and a final conclusion. It is stronger than saying the last displayed list “looks ordered”."
+        },
+        {
+          "type": "paragraph",
+          "text": "To reverse the sort direction, change x < z to x > z inside insertion. Reverse the key comparison, not the source record identities or the order of fields inside each pair."
+        },
+        {
+          "type": "check",
+          "question": "Is “the result is sorted” a complete correctness claim?",
+          "answer": "No. An empty result is sorted but may have lost every input. You must also preserve all occurrences."
+        },
+        {
+          "type": "check",
+          "question": "Why is an empty initial result useful?",
+          "answer": "It is already sorted, so it satisfies insertion’s precondition before the first call."
+        },
+        {
+          "type": "check",
+          "question": "Which change produces descending order?",
+          "answer": "Insert before z when x > z instead of x < z."
+        }
+      ]
+    },
+    {
+      "slug": "sort-id-mark-pairs",
+      "title": "Sort by one component and keep the whole pair",
+      "source": "Lecture 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/pair-key.png",
+          "width": 768,
+          "height": 518,
+          "alt": "For [ID,Physics] pairs, compare the last component. [1,45] comes before [3,53] in ascending Physics order.",
+          "caption": "For [ID,Physics] pairs, compare the last component. [1,45] comes before [3,53] in ascending Physics order."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "sort",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "# In SortedListInsert for [ID,Mark] pairs:\nif last(x) < last(z):\n    newList = newList ++ [x]\n    inserted = true\n# Always append the WHOLE z pair after the test.\n\n# Build pairs for a chosen subject:\nmarksList = []\nforeach X in ScoreRecords:\n    marksList = marksList ++ [[X.CardNo,X[Subject]]]"
+        },
+        {
+          "type": "paragraph",
+          "text": "The outer list contains pairs; first(pair) is the ID and last(pair) is the selected mark. Comparing entire pair objects may use the wrong ordering in a programming language. State that the mark is the key. Only the comparison changes; the outer insertion pattern remains the same."
+        },
+        {
+          "type": "paragraph",
+          "text": "The source’s BuildMarksList moves rows from one table to another. Restore the data between consuming calls for Maths and Physics. Our explorer reads the existing records without consuming them, so several views can be produced safely."
+        },
+        {
+          "type": "check",
+          "question": "Why not sort [ID,mark] pairs by first(pair)?",
+          "answer": "That sorts IDs rather than marks."
+        },
+        {
+          "type": "check",
+          "question": "When moving a pair, do you copy only its key?",
+          "answer": "No. Copy both ID and mark so their association survives."
+        },
+        {
+          "type": "check",
+          "question": "What does last(first(marksList)) return on a non-empty pair list?",
+          "answer": "The mark stored in the first pair, not the entire pair or the student ID."
+        }
+      ]
+    },
+    {
+      "slug": "equal-keys-and-stability",
+      "title": "Read < and ≤ carefully when marks or pages tie",
+      "source": "Lecture 6.3 and Tutorial 6.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/equal-key-rule.png",
+          "width": 768,
+          "height": 518,
+          "alt": "Strict < inserts after old equal keys. The tutorial’s ≤ inserts a new book before old equal-page books.",
+          "caption": "Strict < inserts after old equal keys. The tutorial’s ≤ inserts a new book before old equal-page books."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture’s ascending insertion uses x < z. An incoming item with an equal key passes old equals and is inserted after them. If every insertion uses this rule, equal-key input records keep their original relative order: the sort is stable."
+        },
+        {
+          "type": "paragraph",
+          "text": "The library tutorial uses X.Pages <= last(Y). The new equal-page book is inserted before the first old equal. Repeated equal-key insertions can reverse their arrival order. The output is still sorted by pages, but stability differs. Do not change the operator while solving a question."
+        },
+        {
+          "type": "paragraph",
+          "text": "A tie policy is not automatically a grading policy. Stable sorting gives a deterministic equal-mark order, but a grade boundary can still split that tied run. Keep sorting order and grade fairness as separate decisions."
+        },
+        {
+          "type": "check",
+          "question": "Old [10,350], new [12,350]: where does the new book go under ≤?",
+          "answer": "Before the old book: [12,350], then [10,350]."
+        },
+        {
+          "type": "check",
+          "question": "Under strict <, where does the equal new key go?",
+          "answer": "After the existing equal-key run."
+        },
+        {
+          "type": "check",
+          "question": "Does a stable sort guarantee equal marks get equal grades?",
+          "answer": "No. A separate position-only grade assignment can still split tied marks."
+        }
+      ]
+    },
+    {
+      "slug": "sorting-cost-and-top-k",
+      "title": "Sorting costs work, but makes later queries easier",
+      "source": "Lectures 6.2 and 6.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Sorting is preparation. Once a mark list is sorted, endpoints give extrema and positions help select high or low values. A descending list makes the first k entries easy to read; an ascending list puts the largest entries at the end. Handle empty inputs and k larger than the list length explicitly."
+        },
+        {
+          "type": "paragraph",
+          "text": "“Top k entries” and “top k DISTINCT mark levels” differ. The first three descending Maths marks are 97,97,93; the first three distinct levels are 97,93,89. To collect every student at those levels, continue across ties and do not stop after three records."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this copying insertion implementation, each new call copies every element already accumulated. Sorting n items copies 0+1+…+(n−1) old elements: n(n−1)/2, which is 435 for 30. The inserted flag can reduce KEY COMPARISONS after placement, but it does not avoid copying the remainder."
+        },
+        {
+          "type": "paragraph",
+          "text": "Other insertion-sort implementations have different best-case costs and may shift elements rather than build new lists. The tutorial does not justify calling every version equally fast. Faster large-scale sorting algorithms exist; this week focuses on a clear correct method and on reusing its output."
+        },
+        {
+          "type": "check",
+          "question": "Are the first three Maths records necessarily three distinct scores?",
+          "answer": "No. They can include ties, such as 97,97,93."
+        },
+        {
+          "type": "check",
+          "question": "Does finding an insertion position early stop all work in this copy-based helper?",
+          "answer": "No. The rest of the old list must still be copied."
+        },
+        {
+          "type": "check",
+          "question": "Why count key comparisons separately from copies?",
+          "answer": "They are different operations and can grow differently for a particular input and implementation."
+        }
+      ]
+    },
+    {
+      "slug": "birthdays-after-sorting",
+      "title": "Equal birthdays become neighbouring records",
+      "source": "Lectures 6.2 and 6.4",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/sorted-birthdays.png",
+          "width": 768,
+          "height": 502,
+          "alt": "Aditya and Monika share 15 March. Sorting by the complete month-and-day key places them together.",
+          "caption": "Aditya and Monika share 15 March. Sorting by the complete month-and-day key places them together."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "birthday",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Normalize month spellings, then sort by calendar month and day number. Do not sort raw date strings alphabetically: “12 Jan” and “4 Jan” need numeric day order, and July and Jul mean the same month. Equality for this task ignores the year."
+        },
+        {
+          "type": "paragraph",
+          "text": "After sorting, compare neighbours using first(L) and first(rest(L)), then advance one position. A non-empty 30-card list has 29 neighbour checks. The sorting work is additional preparation, not part of those 29 checks. This dataset gives the matching neighbour pair [7,21], Aditya and Monika."
+        },
+        {
+          "type": "paragraph",
+          "text": "A matching-neighbour count is not always the number of ALL matching unordered pairs. A run of r equal birthdays has r−1 equal neighbour links but r(r−1)/2 distinct student pairs. Three matching students produce two neighbour links and three pairs. Count a run’s size if the question asks for all pairs."
+        },
+        {
+          "type": "check",
+          "question": "Why is sorting by month alone insufficient for immediate-neighbour equality checks?",
+          "answer": "Different days in one month can interleave equal day values. Sort by both month and day."
+        },
+        {
+          "type": "check",
+          "question": "If four students share a date, how many unordered matching pairs exist?",
+          "answer": "4×3/2 = 6, even though their sorted run has only three equal-neighbour links."
+        },
+        {
+          "type": "check",
+          "question": "Is the entire method only 29 operations?",
+          "answer": "No. It includes key construction, sorting and then the 29 neighbour comparisons."
+        }
+      ]
+    },
+    {
+      "slug": "count-equal-key-runs",
+      "title": "Count sorted groups and flush the last run",
+      "source": "Lecture 6.4",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/equal-runs.png",
+          "width": 768,
+          "height": 502,
+          "alt": "This miniature example has three Chennai entries and two Madurai entries. The full dataset counts are shown by the lab.",
+          "caption": "This miniature example has three Chennai entries and two Madurai entries. The full dataset counts are shown by the lab."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "citygroups",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Result = []\nCurrentKey = empty; Count = 0\nforeach X in RecordsSortedByKey:\n    if CurrentKey is not empty AND key(X) != CurrentKey:\n        Result = Result ++ [[CurrentKey,Count]]\n        Count = 0\n    CurrentKey = key(X)\n    Count = Count + 1\nif CurrentKey is not empty:\n    Result = Result ++ [[CurrentKey,Count]]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sorting gathers equal keys into runs. Keep the current key and a count. On a key change, save the previous group, reset the count and begin the new group. Save the final run after the loop because no following change will trigger it. An empty input produces []."
+        },
+        {
+          "type": "paragraph",
+          "text": "Actual city counts include Chennai 8, Bengaluru 5, Madurai 5, Trichy 3 and Vellore 3. Singleton cities include Ambur, Nagercoil, Salem and Theni. The procedure works because sorting grouped equal cities; it does not require a geographic ordering."
+        },
+        {
+          "type": "heading",
+          "text": "Change the unit before changing the key"
+        },
+        {
+          "type": "week6-lab",
+          "mode": "billgroups",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "The source applies the same idea to item-level [Customer,Shop,Category] triples. Sorting those by customer counts item rows per customer; sorting by shop counts item rows per shop. Our complete 30-record bill-summary lab counts BILLS instead: Srivatsan 4 and Ahmed 4, for example. Bill counts, item-row counts and purchased quantities are different units. Full item counting requires original item rows, not category summaries."
+        },
+        {
+          "type": "check",
+          "question": "Why save a group after the loop?",
+          "answer": "The last run has no next key change, so otherwise it would never be emitted."
+        },
+        {
+          "type": "check",
+          "question": "Does four Srivatsan bill summaries mean four purchased items?",
+          "answer": "No. Each bill can contain many rows and quantities. The unit here is bills."
+        },
+        {
+          "type": "check",
+          "question": "What result should the grouping procedure return on []?",
+          "answer": "[], without inventing a group for an unset key."
+        }
+      ]
+    },
+    {
+      "slug": "position-based-grades",
+      "title": "Run the source’s exact positional grade rule",
+      "source": "Lectures 6.5 and 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/grade-positions.png",
+          "width": 768,
+          "height": 522,
+          "alt": "For n=30 and zero-based positions, the displayed source comparisons give D8, C8, B7 and A7.",
+          "caption": "For n=30 and zero-based positions, the displayed source comparisons give D8, C8, B7 and A7."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "grades",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "q4 = length(L)/4\nq3 = length(L)/2\nq2 = 3*length(L)/4\nA=[]; B=[]; C=[]; D=[]\nposition = 0\nforeach Pair in L:       # L is ascending by marks\n    if position > q2: A = A ++ [first(Pair)]\n    if position > q3 AND position <= q2: B = B ++ [first(Pair)]\n    if position > q4 AND position <= q3: C = C ++ [first(Pair)]\n    if position <= q4: D = D ++ [first(Pair)]\n    position = position + 1\nreturn [A,B,C,D]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Read the comparisons literally. For 30 students the boundaries are 7.5,15,22.5. Starting at position 0 gives D at 0–7, C at 8–15, B at 16–22 and A at 23–29. Do not silently round thresholds or replace zero-based positions with one-based counts."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the source’s SIMPLE positional procedure, not the hand-adjusted classroom grouping and not a universal statistical quantile convention. Its purpose is to demonstrate sorting, positions and a four-list result. The groups are approximate quarters and can split equal marks."
+        },
+        {
+          "type": "check",
+          "question": "Which grade gets position 15 under this exact code?",
+          "answer": "C, because position ≤ q3 and position > q4. B requires position > 15."
+        },
+        {
+          "type": "check",
+          "question": "How many A students does this code produce for 30 records?",
+          "answer": "7: zero-based positions 23 through 29."
+        },
+        {
+          "type": "check",
+          "question": "Why not claim all four groups have exactly 7.5 students?",
+          "answer": "Student counts are integers. Exact comparisons determine which positions enter each group."
+        }
+      ]
+    },
+    {
+      "slug": "grade-boundaries-and-ties",
+      "title": "Keep a tie policy explicit",
+      "source": "Lectures 6.5 and 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/grade-ties.png",
+          "width": 768,
+          "height": 522,
+          "alt": "Equal Physics marks of 64 can be split between D and C by a position-only boundary. Stable sorting does not fix that.",
+          "caption": "Equal Physics marks of 64 can be split between D and C by a position-only boundary. Stable sorting does not fix that."
+        },
+        {
+          "type": "paragraph",
+          "text": "The manual lecture activity moves boundaries to avoid giving equal marks different grades. The later pseudocode intentionally omits this adjustment. These are different procedures, so they can give different group sizes and hypothesis results."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lab offers an explicit extension: consider cumulative positions only at the ends of equal-mark runs, including 0 and n. For each target n/4, n/2 and 3n/4, choose the nearest such count; when two boundaries are equally near, choose the lower count. This is a specified teaching policy, not an official grading rule or an exact reconstruction of every spoken classroom adjustment."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Policy",
+              "Maths A/B/C/D counts",
+              "Physics A/B/C/D counts"
+            ],
+            [
+              "Exact source positional code",
+              "7 / 7 / 8 / 8",
+              "7 / 7 / 8 / 8"
+            ],
+            [
+              "Nearest whole-run extension",
+              "8 / 7 / 7 / 8",
+              "8 / 8 / 8 / 6"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The original supplied cards determine these calculations. Spoken lists and rough counts in the classroom conversation may differ. For example, Naveen’s original card #29 has Physics 66; we retain that value rather than moving him into a higher group to reproduce an approximate spoken count."
+        },
+        {
+          "type": "check",
+          "question": "Can all ties be preserved while always forcing exactly equal grade counts?",
+          "answer": "Not in general. A large tied group can cross any desired quarter boundary."
+        },
+        {
+          "type": "check",
+          "question": "Does the extension change student marks?",
+          "answer": "No. It changes only the boundary policy used to group their existing marks."
+        },
+        {
+          "type": "check",
+          "question": "Why compare hypothesis fractions under both policies?",
+          "answer": "It reveals how a preprocessing choice affects the result instead of treating one grouping as inevitable."
+        }
+      ]
+    },
+    {
+      "slug": "unpack-grade-list-of-lists",
+      "title": "Unpack the four returned grade lists",
+      "source": "Lecture 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/unpack-grades.png",
+          "width": 768,
+          "height": 505,
+          "alt": "The returned outer order is [A-list,B-list,C-list,D-list]. Each extracted component remains a list of IDs.",
+          "caption": "The returned outer order is [A-list,B-list,C-list,D-list]. Each extracted component remains a list of IDs."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "unpack",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "G = SimpleGradeAssignment(SortedMarks)\nA = first(G)\nB = first(rest(G))\nC = last(init(G))\nD = last(G)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The grading procedure returns one outer list containing four lists. Its outer length is 4 even though there are 30 IDs across the inner lists. Each inner list can have a different length or be empty. Evaluate nested expressions from the inside out."
+        },
+        {
+          "type": "paragraph",
+          "text": "first(G) is the complete A-grade list. first(first(G)) would be its first student ID, and is safe only if A is non-empty. last(init(G)) selects the third grade list; it does not automatically select its final student."
+        },
+        {
+          "type": "check",
+          "question": "What is the type of first(G)?",
+          "answer": "A list of student IDs."
+        },
+        {
+          "type": "check",
+          "question": "What is length(G) for this contract?",
+          "answer": "4, because the outer result has A, B, C and D components."
+        },
+        {
+          "type": "check",
+          "question": "Is first(first(G)) always defined?",
+          "answer": "No. The A list might be empty even when G itself contains four lists."
+        }
+      ]
+    },
+    {
+      "slug": "define-and-test-hypothesis",
+      "title": "Define “does at least as well” before counting",
+      "source": "Lectures 6.5 and 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/grade-hypothesis.png",
+          "width": 768,
+          "height": 505,
+          "alt": "For the source hypothesis, Maths A requires Physics A; Maths B permits Physics A or B. Only Maths A/B students are eligible.",
+          "caption": "For the source hypothesis, Maths A requires Physics A; Maths B permits Physics A or B. Only Maths A/B students are eligible."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "hypothesis",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "The statement “students who do well in Maths do at least as well in Physics” needs a measurable rule. Here doing well means Maths grade A or B. At least as well means the Physics grade is no worse than that student’s Maths grade, under A better than B better than C better than D."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a Maths A student, only Physics A confirms. For a Maths B student, Physics A or B confirms. Keep each eligible ID in exactly one of Confirm and Reject. C/D Maths students are outside this question’s population; automatically adding them as confirmations would inflate the fraction."
+        },
+        {
+          "type": "paragraph",
+          "text": "Under the exact positional code and supplied data, Maths A/B gives 14 eligible students: 7 confirm and 7 reject. The fraction is 7/(7+7) = 0.5. A DIFFERENT rule, “both subjects in the top half”, permits Physics B even for Maths A and gives 8/14. The explorer lets you compare the two rules and reverse the direction."
+        },
+        {
+          "type": "check",
+          "question": "Does a Maths A, Physics B student confirm the at-least-as-good rule?",
+          "answer": "No. B is worse than A. They would confirm the different “both A/B” rule."
+        },
+        {
+          "type": "check",
+          "question": "What belongs in the denominator?",
+          "answer": "Confirm + Reject among the eligible origin-subject A/B students, not all 30 students."
+        },
+        {
+          "type": "check",
+          "question": "Why does reversing the hypothesis matter?",
+          "answer": "It changes which subject selects the eligible population and which grade must be matched or exceeded. The statements are not automatically equivalent."
+        }
+      ]
+    },
+    {
+      "slug": "found-and-exitloop",
+      "title": "Reset found and leave only the inner search",
+      "source": "Lecture 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/exit-inner-loop.png",
+          "width": 768,
+          "height": 519,
+          "alt": "On a match, exitloop ends the nearest enclosing search loop. The outer student loop continues with later students.",
+          "caption": "On a match, exitloop ends the nearest enclosing search loop. The outer student loop continues with later students."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "exitloop",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Confirm=[]; Reject=[]\nforeach x in MathsA:\n    found = false\n    foreach y in PhysicsA:\n        if x == y:\n            found = true\n            exitloop\n    if found: Confirm = Confirm ++ [x]\n    else: Reject = Reject ++ [x]\n\n# For MathsB, search PhysicsA, then PhysicsB only if not found.\n# Classify x once after the allowed searches finish."
+        },
+        {
+          "type": "paragraph",
+          "text": "One non-match does not prove absence. Keep searching allowed destinations until a match appears or every candidate is exhausted. True can be established early; false requires exhausting the permitted searches. Reset found = false for EACH new outer x."
+        },
+        {
+          "type": "paragraph",
+          "text": "exitloop is different from return. It leaves the nearest enclosing loop, then continues the surrounding procedure. After a match in Physics A for a Maths B student, skip the Physics B search. Keep processing all other Maths B students instead of returning from the whole task."
+        },
+        {
+          "type": "check",
+          "question": "What goes wrong if found is initialized once before the outer loop?",
+          "answer": "A true value from one student may carry over and falsely confirm later students."
+        },
+        {
+          "type": "check",
+          "question": "Does exitloop stop every nested loop?",
+          "answer": "No. Here it exits the nearest inner foreach only."
+        },
+        {
+          "type": "check",
+          "question": "Can you append Reject immediately after one unequal y?",
+          "answer": "No. A later eligible y may match x. Decide after the necessary searches."
+        }
+      ]
+    },
+    {
+      "slug": "interpret-confirmation-carefully",
+      "title": "A confirmation fraction is descriptive evidence",
+      "source": "Lectures 6.5 and 6.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/confirmation-evidence.png",
+          "width": 768,
+          "height": 519,
+          "alt": "Seven confirmations out of fourteen eligible students gives 0.5. It describes this rule and dataset, without proving independence or causation.",
+          "caption": "Seven confirmations out of fourteen eligible students gives 0.5. It describes this rule and dataset, without proving independence or causation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture uses confirmation versus rejection as a systematic way to examine a hypothesis. It is useful to state the eligible group, the grading rule, the matching rule and the final counts. That makes the calculation reproducible and exposes counterexamples."
+        },
+        {
+          "type": "paragraph",
+          "text": "A 50% confirmation rate does NOT by itself prove random chance, no correlation or independence. Expected rates depend on the grade distributions and on which students were selected. Likewise, 80% is not automatically statistically significant. Those conclusions need a suitable baseline or statistical analysis beyond this counting exercise."
+        },
+        {
+          "type": "paragraph",
+          "text": "With the explicit whole-run extension, the stricter Maths-to-Physics result is 7/15; the reverse direction is 7/16. The looser top-half rule gives 8/15 and 8/16 respectively. These differences show why the denominator and preprocessing policy must be reported."
+        },
+        {
+          "type": "paragraph",
+          "text": "Association is not causation. This exercise does not establish that studying one subject causes performance in another. Its computational lesson is to turn an informal claim into a precise, testable procedure and then interpret only what its result supports."
+        },
+        {
+          "type": "check",
+          "question": "Why is 7/14 not proof of independence?",
+          "answer": "One descriptive success rate does not compare the full joint distribution with an independence model."
+        },
+        {
+          "type": "check",
+          "question": "Why should you report the tie policy?",
+          "answer": "Changing grade groups can change the eligible population and resulting fraction."
+        },
+        {
+          "type": "check",
+          "question": "What does a counterexample to a universal claim establish?",
+          "answer": "It shows the claim is not universally true in these data. It does not by itself quantify the strength of every possible association."
+        }
+      ]
+    },
+    {
+      "slug": "library-insertion-tutorial",
+      "title": "Tutorial: trace the numbered book-insertion code",
+      "source": "Tutorial 6.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/library-insert.png",
+          "width": 768,
+          "height": 501,
+          "alt": "The tutorial inserts [12,350] before the existing 350-page books because its comparison uses ≤.",
+          "caption": "The tutorial inserts [12,350] before the existing 350-page books because its comparison uses ≤."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "book",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "1  Procedure Insert(X, books)\n2      sBooks = []\n3      inserted = false\n4      foreach Y in books:\n5          if X.Pages <= last(Y) AND NOT inserted:\n6              sBooks = sBooks ++ [[X.SeqNo,X.Pages]]\n7              inserted = true\n9          sBooks = sBooks ++ [Y]\n11     if NOT inserted:\n12         sBooks = sBooks ++ [[X.SeqNo,X.Pages]]\n14     return sBooks\n15 End Procedure"
+        },
+        {
+          "type": "paragraph",
+          "text": "The exercise describes a library table of 1,000 books, but the concrete insertion example supplies four pairs: [[5,220],[10,350],[15,350],[20,400]]. We trace those given pairs and an empty case without inventing 1,000 book records."
+        },
+        {
+          "type": "paragraph",
+          "text": "For empty books, line 4 has no body executions. Among the tutorial’s offered body-line choices, only line 12 executes. Initialization, the final test and return also occur; “only line 12” refers to the options in that multiple-select question, not every line of the procedure."
+        },
+        {
+          "type": "paragraph",
+          "text": "For X.SeqNo = 12 and X.Pages = 350, the result is [[5,220],[12,350],[10,350],[15,350],[20,400]]. Copy line 9 executes for every old Y, including after the insertion. Empty input and an item larger than all page counts use line 12."
+        },
+        {
+          "type": "check",
+          "question": "Does line 5 execute inside foreach on empty input?",
+          "answer": "No. There is no Y to process, so the entire loop body is skipped."
+        },
+        {
+          "type": "check",
+          "question": "Why is the new 350-page book second rather than fourth?",
+          "answer": "The ≤ test passes at the first old 350-page book, so the new pair is inserted before old equals."
+        },
+        {
+          "type": "check",
+          "question": "Does the sorted input get mutated by this function’s code?",
+          "answer": "It builds sBooks and returns it. The caller assigns that result if it wants its books variable updated."
+        }
+      ]
+    },
+    {
+      "slug": "library-selector-questions",
+      "title": "Tutorial: read pair selectors from the inside out",
+      "source": "Tutorial 6.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/library-selectors.png",
+          "width": 1536,
+          "height": 1024,
+          "alt": "For [[5,220],[10,350],[20,400]], the first book pair differs from its page count, and a book ID differs from a maximum page count.",
+          "caption": "For [[5,220],[10,350],[20,400]], the first book pair differs from its page count, and a book ID differs from a maximum page count."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Expression on a non-empty ascending page list",
+              "Meaning"
+            ],
+            [
+              "first(books)",
+              "A whole [ID,Pages] pair with minimum pages"
+            ],
+            [
+              "last(books)",
+              "A whole pair with maximum pages"
+            ],
+            [
+              "last(first(books))",
+              "Minimum page count"
+            ],
+            [
+              "last(last(books))",
+              "Maximum page count"
+            ],
+            [
+              "first(last(books))",
+              "ID of a maximum-page book"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The last expression is an identifier, not the least page count. Values can accidentally coincide numerically; answer by the expression’s meaning and schema, not one coincidence. Ties may give several minimum or maximum books, and the insertion tie rule decides which equal pair is at an endpoint."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the final multiple-select question, the correct claims are: first(books) corresponds to a minimum-page book; last(last(books)) is the maximum page count; and last(first(books)) is the minimum page count. These require a non-empty list sorted ascending by pages."
+        },
+        {
+          "type": "check",
+          "question": "What is first(last([[5,220],[10,350],[20,400]]))?",
+          "answer": "20, the ID in the final pair. It is not 400 or 220."
+        },
+        {
+          "type": "check",
+          "question": "What is last(first(...)) for that list?",
+          "answer": "220, the pages component of the first pair."
+        },
+        {
+          "type": "check",
+          "question": "Are these expressions defined for an empty library list?",
+          "answer": "Not without an explicit empty-input convention. first and last need elements."
+        }
+      ]
+    },
+    {
+      "slug": "read-train-records",
+      "title": "Meet the historical train-card dataset",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/train-card.png",
+          "width": 768,
+          "height": 523,
+          "alt": "Historical course train 02201 has cumulative distances 0,136,459 and reaches Bhubaneswar on journey Day 2.",
+          "caption": "Historical course train 02201 has cumulative distances 0,136,459 and reaches Bhubaneswar on journey Day 2."
+        },
+        {
+          "type": "paragraph",
+          "text": "The new dataset has train-wise cards and station-wise cards. A train card names one service number, its origin operating weekdays and an ordered sequence of station calls. Each call contains cumulative distance, arrival, departure and a journey-day indication. Leading zeros in train numbers are retained as part of the string identifier."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "02201 station",
+              "Distance km from origin",
+              "Arrival",
+              "Departure",
+              "Journey day"
+            ],
+            [
+              "Kolkata",
+              0,
+              "—",
+              "20:00",
+              1
+            ],
+            [
+              "Kharagpur",
+              136,
+              "22:15",
+              "22:20",
+              1
+            ],
+            [
+              "Bhubaneswar",
+              459,
+              "03:30",
+              "—",
+              2
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Distance 459 is from Kolkata, not from Kharagpur. The Kharagpur-to-Bhubaneswar leg is 459−136 = 323 km. A missing origin arrival or final departure is not a clock time of zero. The return card 02202 has a different total distance, 522 km, so do not force symmetry between paired cards."
+        },
+        {
+          "type": "paragraph",
+          "text": "The interactive train material uses ten visually verified original cards with 57 stop rows. It is a teaching subset, not every train in the complete supplied collection. These are historical course records, not a current travel timetable or availability service. The paired numbers describe opposite-direction services; they do not prove which physical rolling stock is used."
+        },
+        {
+          "type": "check",
+          "question": "What does cumulative distance mean?",
+          "answer": "Distance since that particular train’s origin. Subtract cumulative values to obtain an intermediate leg length."
+        },
+        {
+          "type": "check",
+          "question": "Is — at an endpoint the same as 00:00?",
+          "answer": "No. It means that arrival or departure is not applicable on that service card."
+        },
+        {
+          "type": "check",
+          "question": "Why preserve 02201 rather than storing only 2201?",
+          "answer": "The card’s identifier includes the leading zero. Treat service IDs consistently when joining records."
+        }
+      ]
+    },
+    {
+      "slug": "station-view-and-join",
+      "title": "Use a station card to find relevant train cards",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/station-train-link.png",
+          "width": 768,
+          "height": 523,
+          "alt": "Join station and train views using a service number and station name. Both clock times and weekday offsets need checking.",
+          "caption": "Join station and train views using a service number and station name. Both clock times and weekday offsets need checking."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "station",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "A station card lists services calling at that station. It is an index into the train cards: begin with relevant train numbers rather than scanning every unrelated route. The train card then supplies that service’s ordered station list, distance and journey timing."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lab derives station views from the ten verified train-wise cards. The original Bhopal card also includes 12213 and 12214, which are outside this interactive subset. Absence from our derived view does not mean absence from the original station card or the railway network."
+        },
+        {
+          "type": "paragraph",
+          "text": "A station table may order rows by clock arrival, not train number. Different rows can operate on different weekdays, so neighbouring rows in a weekly summary are not necessarily trains seen one after another on the same day. Filter for the chosen weekday and interpret midnight crossings carefully."
+        },
+        {
+          "type": "check",
+          "question": "Why start a route query with the source station’s train list?",
+          "answer": "It narrows the candidate services to those that actually call at the source."
+        },
+        {
+          "type": "check",
+          "question": "Does a station list sorted by clock time guarantee all rows run today?",
+          "answer": "No. Each row’s operating weekdays still need checking."
+        },
+        {
+          "type": "check",
+          "question": "Does missing from the ten-train lab prove a service does not exist?",
+          "answer": "No. The lab is explicitly a subset of historical course cards."
+        }
+      ]
+    },
+    {
+      "slug": "journey-days-and-clock-arithmetic",
+      "title": "Use journey days when subtracting times",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/day-clock.png",
+          "width": 768,
+          "height": 505,
+          "alt": "Day 1 20:00 to Day 2 03:30 lasts 7 h 30 min. A stop from 23:59 to next-day 00:04 lasts five minutes.",
+          "caption": "Day 1 20:00 to Day 2 03:30 lasts 7 h 30 min. A stop from 23:59 to next-day 00:04 lasts five minutes."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "clock",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "ElapsedMinute(day, time) = (day-1)*1440 + 60*hour(time) + minute(time)\nJourneyMinutes = ElapsedMinute(arrivalDay, arrivalTime)\n                 - ElapsedMinute(departureDay, departureTime)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Clock text alone cannot distinguish the next morning from the previous morning. On 02201, Kolkata Day 1 20:00 to Bhubaneswar Day 2 03:30 is 450 minutes, or 7 h 30 min. Return 02202 runs 20:15 to next-day 04:15: 480 minutes."
+        },
+        {
+          "type": "paragraph",
+          "text": "The 12270 Bhopal row arrives 23:59 and leaves 00:04. Its printed Day 2 aligns with departure after midnight; the arrival belongs to Day 1 in the route chronology. The lab stores separate arrivalDay and departureDay values to make the five-minute dwell explicit instead of producing a negative duration."
+        },
+        {
+          "type": "paragraph",
+          "text": "This resolves a representational ambiguity in the supplied format; it is not a rule that every printed row day always means arrival day. Check the full sequence and cross-view weekdays. Do not subtract missing endpoint fields as if they were times."
+        },
+        {
+          "type": "check",
+          "question": "Why is 03:30 − 20:00 a bad duration calculation here?",
+          "answer": "It ignores the day change. Convert both date-relative times to a common minute index first."
+        },
+        {
+          "type": "check",
+          "question": "What is the 12270 Bhopal dwell across midnight?",
+          "answer": "5 minutes: 23:59 on one day to 00:04 the next."
+        },
+        {
+          "type": "check",
+          "question": "Can a row’s one printed day safely be copied to both times in every case?",
+          "answer": "No. A midnight-crossing stop may need different arrival and departure day indices."
+        }
+      ]
+    },
+    {
+      "slug": "origin-days-and-station-days",
+      "title": "Shift origin weekdays to each station call",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/weekday-shift.png",
+          "width": 768,
+          "height": 505,
+          "alt": "For historical train 02201, a Monday Kolkata departure leads to a Tuesday Bhubaneswar arrival.",
+          "caption": "For historical train 02201, a Monday Kolkata departure leads to a Tuesday Bhubaneswar arrival."
+        },
+        {
+          "type": "paragraph",
+          "text": "Operating weekdays on a train card refer to the origin departure. Journey Day 2 is one calendar day later. Thus 02201’s Monday, Wednesday and Friday origin departures reach Bhubaneswar on Tuesday, Thursday and Saturday."
+        },
+        {
+          "type": "code",
+          "text": "StationWeekday = shift(OriginDepartureWeekday, StationJourneyDay-1)\n# Wrap Sunday + 1 day to Monday.\n# Use arrivalDay for arrival weekdays; departureDay for departure weekdays."
+        },
+        {
+          "type": "paragraph",
+          "text": "02286 leaves New Delhi on Monday and Friday, then calls at Bhopal at 00:01 on Tuesday and Saturday. The original station card agrees. Return 02285 originates Thursday and Sunday; its Day 2 Bhopal calls fall Friday and Monday. Displaying weekday lists Monday-to-Sunday can hide that origin-to-call relationship unless you compute the offset."
+        },
+        {
+          "type": "paragraph",
+          "text": "For 12270’s Bhopal midnight stop, arrivals are Tuesday/Saturday at 23:59 and departures are Wednesday/Sunday at 00:04. The station card’s W/Su labels align with departure there. State which event the weekdays describe before testing consistency or planning a connection."
+        },
+        {
+          "type": "check",
+          "question": "What is Sunday plus one day?",
+          "answer": "Monday; weekday arithmetic wraps around the seven-day cycle."
+        },
+        {
+          "type": "check",
+          "question": "If a train leaves Monday and a station call is Day 3, which weekday is it?",
+          "answer": "Wednesday, two days after the origin departure."
+        },
+        {
+          "type": "check",
+          "question": "Why can arrival and departure weekdays differ at one station?",
+          "answer": "A stop may straddle midnight, as 23:59 to 00:04 does."
+        }
+      ]
+    },
+    {
+      "slug": "direct-train-search",
+      "title": "Search direct routes with direction and weekday",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/route-direction.png",
+          "width": 768,
+          "height": 519,
+          "alt": "On a route Bengaluru → Bhubaneswar → Kolkata, the same service can carry a forward query but not the reverse query.",
+          "caption": "On a route Bengaluru → Bhubaneswar → Kolkata, the same service can carry a forward query but not the reverse query."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "route",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Matches = []\nforeach Train in candidatesCallingAt(Source):\n    i = positionOf(Source, Train.Stops)\n    j = positionOf(Destination, Train.Stops)\n    if i >= 0 AND j > i AND departureExistsAt(i):\n        if requestedWeekday is a departure weekday at Source:\n            Matches = Matches ++ [Train.Number]"
+        },
+        {
+          "type": "paragraph",
+          "text": "The outer loop examines candidate trains; the inner scan examines their station lists. Source must occur before destination in that direction, and the train must depart from the source. Finding both names somewhere in a card is insufficient. A service arriving at its final station cannot carry a passenger onward on the same card."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the verified subset, 02246 goes Bengaluru to Bhubaneswar: departure 11:00 on Day 1 and arrival 09:50 on Day 2, a duration of 22 h 50 min. It originates Monday, Tuesday, Thursday, Friday and Sunday. The Wednesday option therefore has no match for that query on this service."
+        },
+        {
+          "type": "paragraph",
+          "text": "Chennai-to-Ahmedabad has no matching direct train in the source discussion and our teaching subset. This is a scoped dataset result, not a claim about present-day rail services or every possible connection. A direct-route match also says nothing about seats, fares or real-time delays."
+        },
+        {
+          "type": "check",
+          "question": "If a train lists Destination before Source, does it answer the forward query?",
+          "answer": "No. It is travelling in the wrong order for that trip."
+        },
+        {
+          "type": "check",
+          "question": "If you board at a Day 2 intermediate station, whose weekday must you check?",
+          "answer": "The departure weekday at that source station, obtained by shifting the origin weekday by the appropriate journey-day offset."
+        },
+        {
+          "type": "check",
+          "question": "Does “no direct match in this subset” rule out a trip with a transfer?",
+          "answer": "No. Direct services and connecting journeys are different search tasks."
+        }
+      ]
+    },
+    {
+      "slug": "source-destination-intermediate",
+      "title": "Identify the station’s role for each train",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "week6-lab",
+          "mode": "endpoints",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "On the supplied cards, a source call has a departure but no arrival; a destination has an arrival but no departure; an intermediate call has both. Classify each train–station relationship separately. A station can be an endpoint for some trains and an intermediate stop for others."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bhubaneswar is a source or destination for four of the six calling services in our verified subset, and an intermediate call for two. Bhopal is intermediate for the verified services shown there. These statements are limited to the records inspected, not universal classifications of the physical station."
+        },
+        {
+          "type": "paragraph",
+          "text": "The missing-field pattern is the clue in this dataset. In other data, a missing value may mean incomplete information rather than an endpoint, so use the schema contract. The role is attached to a service call, not inferred from whether the station name contains “Junction”."
+        },
+        {
+          "type": "check",
+          "question": "Can one station be both a terminus and a through stop?",
+          "answer": "For different trains, yes. Classify each service call independently."
+        },
+        {
+          "type": "check",
+          "question": "What distinguishes a destination call here?",
+          "answer": "An arrival time exists and the departure field is —."
+        },
+        {
+          "type": "check",
+          "question": "Should missing data in any arbitrary table always mean a terminus?",
+          "answer": "No. That interpretation is specific to this dataset’s endpoint convention."
+        }
+      ]
+    },
+    {
+      "slug": "junction-clues-and-connections",
+      "title": "Compare next calls, but interpret the clue carefully",
+      "source": "Lecture 6.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-6/junction-clue.png",
+          "width": 768,
+          "height": 519,
+          "alt": "Bhubaneswar has different scheduled next calls. This gives a timetable clue, not proof of physical track topology or a feasible connection.",
+          "caption": "Bhubaneswar has different scheduled next calls. This gives a timetable clue, not proof of physical track topology or a feasible connection."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "junction",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture compares different services calling at a station, excluding a service and its paired return as the sole evidence. If their next scheduled calls differ, the timetable offers a branching or transfer clue. At Bhubaneswar, examples include Kharagpur, Balasore, Kolkata and Vijayawada on different verified cards."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use nested comparison over relevant train pairs, then locate the next call after the current station. A destination with no next call is not an outgoing branch. Do not assume that adjacent train numbers always identify a return pair; use the known pairing information."
+        },
+        {
+          "type": "paragraph",
+          "text": "Different scheduled next stops can reflect express stopping patterns on the SAME physical line. Therefore the clue does not prove a track junction. Conversely, a limited timetable can omit physical branches. To assess a possible transfer, separately check arrival before departure, calendar weekdays, sufficient transfer time and any additional journey constraints. This introduction does not claim to solve the full connection-search problem."
+        },
+        {
+          "type": "check",
+          "question": "Why is comparing only a train and its opposite-direction partner weak junction evidence?",
+          "answer": "Their different next calls may simply reflect travelling back along the same route."
+        },
+        {
+          "type": "check",
+          "question": "Do different next scheduled calls necessarily mean different physical tracks?",
+          "answer": "No. One train can skip a station where another stops."
+        },
+        {
+          "type": "check",
+          "question": "Does sharing a station guarantee a usable transfer?",
+          "answer": "No. The services must operate on compatible dates and times, with a feasible transfer interval."
+        }
+      ]
+    },
+    {
+      "slug": "train-cross-view-sanity",
+      "title": "Keep and flag inconsistent source records",
+      "source": "Lecture 6.7: dataset consistency",
+      "blocks": [
+        {
+          "type": "week6-lab",
+          "mode": "sanity",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture stresses that train and station cards should agree after accounting for journey-day offsets. Actual supplied cards also provide a useful sanity-check example: 02245’s train-wise card lists Tue, Wed, Sat, Sun, while the Bhubaneswar station card lists Tue, Wed, Fri, Sat, Sun. Friday is extra in the station view."
+        },
+        {
+          "type": "paragraph",
+          "text": "We preserve that discrepancy instead of silently inventing a correction. The direct-route explorer uses the verified train-wise card weekdays and labels its source. The separate cross-view activity reports the conflicting station entry. Resolving which view is authoritative would require more source evidence."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not confuse this disagreement with a valid day shift such as 02201 arriving the day after departure, or with 12270’s midnight arrival/departure split. First define the meaning of each field, then compare like events. Data validation is part of computational thinking, not a reason to hide inconvenient examples."
+        },
+        {
+          "type": "check",
+          "question": "Should you add Friday to the train card just to make the views agree?",
+          "answer": "No. Keep the original values and flag the unresolved conflict unless an authoritative correction is available."
+        },
+        {
+          "type": "check",
+          "question": "Why is a one-day difference sometimes valid?",
+          "answer": "The station can be reached on Journey Day 2, so its event weekday is one day after origin departure."
+        },
+        {
+          "type": "check",
+          "question": "What source does the route explorer use for operating days?",
+          "answer": "The ten visually verified train-wise cards, with explicitly derived station event days."
+        }
+      ]
+    },
+    {
+      "slug": "revision-and-practice",
+      "title": "Week 6 revision and mixed practice",
+      "source": "All Week 6 lectures and Tutorial 6.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Try a procedure with different inputs, then answer before revealing the explanation. Name the input representation, comparison key, tie policy and eligible population."
+        },
+        {
+          "type": "week6-lab",
+          "mode": "nested",
+          "explore": true
+        },
+        {
+          "type": "check",
+          "question": "For a paragraph represented as lists of character-list words inside sentence lists, what does first(first(P)) return?",
+          "answer": "The first word’s character list. One more first reaches its first character, provided each relevant list is non-empty."
+        },
+        {
+          "type": "check",
+          "question": "Insert 3 into [1,3,3,5] using strict <.",
+          "answer": "The new occurrence goes after the old 3s: [1,3,3,3,5]. IDs or labels would show its relative position among equals."
+        },
+        {
+          "type": "check",
+          "question": "Which line must run for every old insertion element, even after a match?",
+          "answer": "The line appending the old element to the output. Otherwise existing data may be lost."
+        },
+        {
+          "type": "check",
+          "question": "Can you call the insert helper on an unsorted list and assume the result is sorted?",
+          "answer": "No. Its contract assumes a sorted input."
+        },
+        {
+          "type": "check",
+          "question": "What two properties form the insertion-sort invariant?",
+          "answer": "The accumulated result is sorted and contains exactly the occurrences processed so far."
+        },
+        {
+          "type": "check",
+          "question": "What does the tutorial’s ≤ do to equal-page insertion order?",
+          "answer": "It inserts the new equal-page record before old equals; the lecture’s strict < puts it after them."
+        },
+        {
+          "type": "check",
+          "question": "Does sorting 30 items by the copying helper avoid all quadratic work on a favourable order?",
+          "answer": "No. It still copies 0+1+…+29 = 435 old elements. Key-comparison work is a separate count."
+        },
+        {
+          "type": "check",
+          "question": "A sorted birthday run contains four students. How many equal-neighbour links and all unordered pairs?",
+          "answer": "Three equal-neighbour links, but six unordered student pairs."
+        },
+        {
+          "type": "check",
+          "question": "What is the usual final-step bug in sorted group counting?",
+          "answer": "Forgetting to save the final group after the loop."
+        },
+        {
+          "type": "check",
+          "question": "Under the displayed zero-based positional grading code, what are 30-student A/B/C/D counts?",
+          "answer": "7,7,8,8. This follows the exact comparisons, not a hand-adjusted quarter split."
+        },
+        {
+          "type": "check",
+          "question": "Does first(G) return an ID when G=[AIDs,BIDs,CIDs,DIDs]?",
+          "answer": "No. It returns the whole AIDs list."
+        },
+        {
+          "type": "check",
+          "question": "Maths A and Physics B: which of the two rules confirms it?",
+          "answer": "The looser both-A/B rule confirms it; the at-least-as-good rule rejects it."
+        },
+        {
+          "type": "check",
+          "question": "Why does found need resetting for each student?",
+          "answer": "A match for an earlier student must not affect whether the next student is found."
+        },
+        {
+          "type": "check",
+          "question": "Does exitloop mean return from the procedure?",
+          "answer": "No. It ends the nearest enclosing loop, then execution continues outside that loop."
+        },
+        {
+          "type": "check",
+          "question": "For the library example, what does first(last(books)) mean?",
+          "answer": "The ID of the final, maximum-page book pair, not a page count."
+        },
+        {
+          "type": "check",
+          "question": "02201: Kolkata 20:00 Day 1 to Bhubaneswar 03:30 Day 2. Duration?",
+          "answer": "450 minutes, or 7 h 30 min."
+        },
+        {
+          "type": "check",
+          "question": "A Sunday origin departure reaches a station on Day 2. Which weekday?",
+          "answer": "Monday, one day later."
+        },
+        {
+          "type": "check",
+          "question": "Why can train and station weekdays disagree without an error?",
+          "answer": "They may refer to different events or journey days. Align those meanings first; remaining mismatches should be flagged."
+        },
+        {
+          "type": "check",
+          "question": "What is insufficient about checking only whether both station names occur in a route?",
+          "answer": "Direction and departure availability matter: source must precede destination, and service must run on the relevant source weekday."
+        },
+        {
+          "type": "check",
+          "question": "What does a different-next-call junction clue fail to prove?",
+          "answer": "It does not prove physical track branching or that a timed transfer is feasible."
+        }
+      ],
+      "resource": true
+    },
+    {
+      "slug": "source-guide",
+      "title": "Week 6 sources, conventions and coverage",
+      "source": "Coverage notes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "These notes cover all seven supplied lectures, the matching slides for 6.3 and 6.6, and Tutorial 6.1 with its numbered questions. The PDFs supply teaching content rather than instructions to operate the website. Original score, word and shopping datasets continue throughout the examples."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Coverage"
+            ],
+            [
+              "6.1",
+              "Variable-length nested lists, paragraph/sentence/word levels, hierarchical shopping"
+            ],
+            [
+              "6.2",
+              "Insertion by hand, ordered reference views, sorted-query applications"
+            ],
+            [
+              "6.3",
+              "SortedListInsert, boundary cases, inserted flag, invariant and descending comparison"
+            ],
+            [
+              "6.4",
+              "Sorted duplicate detection, equal-key groups and field-specific comparisons"
+            ],
+            [
+              "6.5",
+              "Defining grades and hypotheses, tie boundaries, directional and top-half rules"
+            ],
+            [
+              "6.6",
+              "BuildMarksList, pair sorting, exact zero-based grades, nested return unpacking, found and exitloop"
+            ],
+            [
+              "6.7",
+              "Train and station cards, cumulative distance, journey days, weekday shifts, direct routes, endpoints and junction clues"
+            ],
+            [
+              "Tutorial 6.1",
+              "Numbered book insertion, empty-input execution, ≤ tie rule and nested selectors"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The grade explorer reproduces the exact displayed zero-based positional pseudocode. Its whole-run option is a separately specified extension, not a silent repair or a claim to reproduce every spoken hand-adjustment. Hypothesis fractions are descriptive and do not prove independence or causation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The ten-train teaching subset has 57 visually verified stop rows. It preserves original service identifiers, directions, route distances and weekdays. Arrival and departure days are split explicitly for the 12270 Bhopal midnight stop. The 02245 Friday station/train discrepancy is retained and flagged. Derived station views include only these ten trains; original station cards can contain additional services."
+        },
+        {
+          "type": "paragraph",
+          "text": "Illustrations are separate images generated in the browser and placed beside their relevant concepts. Small illustrative tables and mini-runs are labelled as such; live score and train traces use the supplied records. Train material is historical course data, and library exercises use the concrete tutorial records rather than an invented 1,000-book table."
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

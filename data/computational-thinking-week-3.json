@@ -6,7 +6,10 @@
     1,
     2,
     3,
-    4
+    4,
+    5,
+    6,
+    7
   ],
   "base": "/computational-thinking/week-3/",
   "title": "Tables, two passes and reusable procedures",

@@ -1,0 +1,1651 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 5,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "base": "/computational-thinking/week-5/",
+  "title": "Lists, shared collections and structured results",
+  "description": "Build reusable ID lists, find common students, unpack first and last elements, explore words and shopping items, and keep identities in pairs and triples.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Move from single-number answers to collections you can reuse. Follow the same real course data through beginner-friendly list examples, interactive traces and explained practice."
+    }
+  ],
+  "illustrationCount": 24,
+  "sections": [
+    {
+      "slug": "collections-and-bookmarks",
+      "title": "Remember a collection without removing the cards",
+      "source": "Lecture 5.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Earlier, one variable held a count, a sum or a maximum. Now we want to remember several students together: everyone from Chennai, everyone born in May, or everyone sharing the maximum Physics mark. Creating Student1, Student2 and so on is awkward because we do not know how many matches there will be. A single list variable can hold the whole collection."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/bookmarks.png",
+          "alt": "Two lists can refer to the same original records, like two readers keeping different bookmarks in one book.",
+          "caption": "Two lists can refer to the same original records, like two readers keeping different bookmarks in one book.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "paragraph",
+          "text": "Physically pulling out all May cards creates a problem when we also need the Chennai cards. Some students belong to both groups. Instead, keep references to the records. The lecture calls them bookmarks. Several collections can point to the same card without taking ownership of it or disturbing its order."
+        },
+        {
+          "type": "paragraph",
+          "text": "Our website represents those references by CardNo values and uses a lookup to display the record. An ID is not the same thing as a row position. A bare written number does not magically locate a physical card: the bookmark, index or lookup supplies that connection. Moving a row must not change its identity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the source records available. A compact list of IDs is useful for membership and overlap, but you need the source lookup again to recover a student’s name, birthday or marks. Reusing references avoids copying an entire record into every result."
+        },
+        {
+          "type": "check",
+          "question": "Can one student appear in both the May and Chennai collections?",
+          "answer": "Yes. Rida (#3) and Geeta (#25) do. Two references can point to one original record."
+        },
+        {
+          "type": "check",
+          "question": "Does CardNo 25 always mean the 26th row on screen?",
+          "answer": "No. Sorting or filtering changes row positions. CardNo remains the identifier attached to that student."
+        },
+        {
+          "type": "check",
+          "question": "What is lost if you remember only “8 students from Chennai”?",
+          "answer": "The count tells how many, but not which students. A list of IDs preserves membership so later tasks can reuse it."
+        }
+      ]
+    },
+    {
+      "slug": "list-order-repeats-empty",
+      "title": "Lists keep order, repeats and an empty starting point",
+      "source": "Lectures 5.1, 5.2 and 5.5",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A list is a sequence written inside square brackets, with commas between its elements. [1,13,2] has three elements. [\"Monday\",\"school\"] has two string elements. [] is the empty list, with zero elements. One variable name can refer to a list of any current length."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/list-basics.png",
+          "alt": "A list preserves sequence and repeated occurrences. [] is a list with no elements, not an undefined variable.",
+          "caption": "A list preserves sequence and repeated occurrences. [] is a list with no elements, not an undefined variable.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "Lists and mathematical sets differ. [1,2] and [2,1] are different lists because the order changes. [1,1,2] contains three occurrences. A set ignores repeated values and has no intrinsic sequence. We can use a list to represent a set of unique student IDs, but uniqueness is a property of how we build that list."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Expression",
+              "Number of outer elements",
+              "Meaning"
+            ],
+            [
+              "[]",
+              0,
+              "Empty list"
+            ],
+            [
+              "[3]",
+              1,
+              "One numeric element"
+            ],
+            [
+              "[3,3,25]",
+              3,
+              "Three occurrences; two different values"
+            ],
+            [
+              "[[3,53],[24,72]]",
+              2,
+              "Two pair elements"
+            ],
+            [
+              "[\"May\"]",
+              1,
+              "One string, not three characters"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Many lists contain elements of one kind, such as only IDs or only words. Pairs and triples later in the week intentionally group different fields. Always state the meaning of each position instead of assuming every number in a list is a mark."
+        },
+        {
+          "type": "check",
+          "question": "Are [] and [0] the same?",
+          "answer": "No. [] has no elements. [0] has one element, the number zero."
+        },
+        {
+          "type": "check",
+          "question": "How long is [[3,53],[24,72]]?",
+          "answer": "The outer list has length 2. Each of its two elements is itself a list of length 2."
+        },
+        {
+          "type": "check",
+          "question": "Does foreach over [3,3,25] visit only two different IDs?",
+          "answer": "It visits three positions. The repeated value 3 is processed twice unless you explicitly remove or skip duplicates."
+        }
+      ]
+    },
+    {
+      "slug": "append-and-prepend",
+      "title": "Join lists and add one new element",
+      "source": "Lectures 5.2 and 5.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/append.png",
+          "alt": "The ++ operator joins two lists in order. To add one element x, wrap it in [x].",
+          "caption": "The ++ operator joins two lists in order. To add one element x, wrap it in [x].",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "paragraph",
+          "text": "In this course, ++ means list concatenation. If A = [1,13] and B = [2,17,1], A ++ B is [1,13,2,17,1]. No sorting or deduplication happens. A ++ B generally differs from B ++ A."
+        },
+        {
+          "type": "week5-lab",
+          "mode": "append",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "L = []\nL = L ++ [3]       # [3]\nL = L ++ [13]      # [3,13]\nL = [25] ++ L      # [25,3,13]\nL = L ++ [3]       # [25,3,13,3]"
+        },
+        {
+          "type": "paragraph",
+          "text": "The brackets matter because ++ expects two lists. L ++ x is not valid when x is a single number. L ++ [x] adds x at the end; [x] ++ L adds it at the front. To keep a pair [ID,mark] together as one new element, use L ++ [[ID,mark]]. L ++ [ID,mark] adds two separate outer elements."
+        },
+        {
+          "type": "paragraph",
+          "text": "An expression computes a result; assignment stores it. Writing L ++ [3] without assigning the result does not by itself promise to update L. [] ++ L and L ++ [] give the same sequence as L."
+        },
+        {
+          "type": "check",
+          "question": "What is [3,13] ++ [13,25]?",
+          "answer": "[3,13,13,25]. The repeated 13 stays in the list."
+        },
+        {
+          "type": "check",
+          "question": "How do you prepend 25 to [3,13]?",
+          "answer": "[25] ++ [3,13], giving [25,3,13]."
+        },
+        {
+          "type": "check",
+          "question": "How do you add the pair [3,53] as ONE outer element?",
+          "answer": "Use L = L ++ [[3,53]]. The extra outer brackets wrap the pair into a singleton list."
+        }
+      ]
+    },
+    {
+      "slug": "build-filtered-id-lists",
+      "title": "Build May and Chennai lists from the course data",
+      "source": "Lectures 5.1 and 5.2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Begin with two empty results. Read each score card, apply the two filters independently and append the ID when a condition passes. MonthOfBirth is derived from DateOfBirth; it is not a separate column in our dataset. The source uses SeqNo and TownCity; here the corresponding fields are CardNo and CityTown."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/may-list.png",
+          "alt": "In the original CardNo order, the May IDs are [3,13,23,25]: Rida, Gopi, Deepika and Geeta.",
+          "caption": "In the original CardNo order, the May IDs are [3,13,23,25]: Rida, Gopi, Deepika and Geeta.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "filter",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "MayIDs = []\nChennaiIDs = []\nforeach X in ScoreRecords:\n    if month(X.DateOfBirth) == \"May\":\n        MayIDs = MayIDs ++ [X.CardNo]\n    if X.CityTown == \"Chennai\":\n        ChennaiIDs = ChennaiIDs ++ [X.CardNo]"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Collection",
+              "IDs in the dataset scan order"
+            ],
+            [
+              "May",
+              "[3,13,23,25]"
+            ],
+            [
+              "Chennai",
+              "[2,3,5,10,12,17,25,26]"
+            ],
+            [
+              "Both",
+              "[3,25]"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "One pass can build both lists. Separate passes can also work, provided the records are available again. A physical Table1-to-Table2 implementation must restore or rename its tables according to its contract before another full scan. A read-only scan of an existing record list does not consume it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Each unique score record is scanned once, so each qualifying CardNo enters each collection once. Different source orders can produce differently ordered result lists while still representing the same membership. We keep the original dataset order for consistent examples."
+        },
+        {
+          "type": "check",
+          "question": "Why use two IFs rather than IF…ELSE IF?",
+          "answer": "A student can satisfy both filters. ELSE IF would prevent a May-born Chennai student from entering the second list."
+        },
+        {
+          "type": "check",
+          "question": "What should the result be when no student passes a filter?",
+          "answer": "An empty list [], not an uninitialized variable and not [0]."
+        },
+        {
+          "type": "check",
+          "question": "If you only store names, what problem might occur in a larger class?",
+          "answer": "Different students may share a name. Stable unique IDs make membership comparisons unambiguous."
+        }
+      ]
+    },
+    {
+      "slug": "foreach-list-iteration",
+      "title": "foreach visits values in list order",
+      "source": "Lecture 5.2 and Tutorial 5.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/foreach.png",
+          "alt": "foreach takes the next element value at each step. An empty list has no body executions.",
+          "caption": "foreach takes the next element value at each step. An empty list has no body executions.",
+          "width": 768,
+          "height": 515
+        },
+        {
+          "type": "week5-lab",
+          "mode": "foreach",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Count = 0\nforeach x in MayIDs:\n    Count = Count + 1\n# Count = 4; x took 3, then 13, then 23, then 25."
+        },
+        {
+          "type": "paragraph",
+          "text": "x is the current element, not automatically a list index. In MayIDs, the first x is 3, even though it occupies the first position. The loop runs once per occurrence, including repeated values. A foreach loop does not need a manual move-to-next-card instruction in this list notation."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the list is empty, the body runs zero times. Variables used after the loop must have meaningful initial values: Count = 0 works; a variable assigned only inside the loop may remain undefined. A return inside a function ends that function immediately, even if the foreach has more elements left."
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial also permits foreach over rows or cards. The important idea is systematic traversal, not a rule that WHILE is only for cards and FOREACH is only for lists. Avoid changing the list being traversed unless the iteration contract explains how that change behaves."
+        },
+        {
+          "type": "check",
+          "question": "For [3,3,25], how many times does Count increase?",
+          "answer": "Three times: once for each list position."
+        },
+        {
+          "type": "check",
+          "question": "If the input is [], what is Count after the displayed code?",
+          "answer": "Zero. It was initialized before the loop, and no iteration changes it."
+        },
+        {
+          "type": "check",
+          "question": "Does foreach x in [3,13] make x equal to 1 and then 2?",
+          "answer": "No. x becomes 3 and then 13. Positions and values are different."
+        }
+      ]
+    },
+    {
+      "slug": "intersection-and-difference",
+      "title": "Compare saved lists: overlap and difference",
+      "source": "Lectures 5.1, 5.2 and 5.4",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "After building the two ID lists, we can find their common members without scanning every original field again. For each May ID x, compare it with each Chennai ID y. On equality, append x to the result."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/may-chennai.png",
+          "alt": "The common IDs are [3,25], identifying Rida and Geeta. The nested scan compares identifiers, not complete cards.",
+          "caption": "The common IDs are [3,25], identifying Rida and Geeta. The nested scan compares identifiers, not complete cards.",
+          "width": 768,
+          "height": 515
+        },
+        {
+          "type": "week5-lab",
+          "mode": "intersection",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Common = []\nforeach x in MayIDs:\n    foreach y in ChennaiIDs:\n        if x == y:\n            Common = Common ++ [x]"
+        },
+        {
+          "type": "paragraph",
+          "text": "There are 4 × 8 = 32 equality tests in this complete nested scan. We do not divide by two: these are comparisons across two lists, not unordered pairs within one list. Because each input here has unique IDs, the result contains each common student once."
+        },
+        {
+          "type": "paragraph",
+          "text": "With duplicates, raw nested matching can repeat results: [3,3] matched with [3,3] appends 3 four times. To implement set-style intersection, require unique inputs or add “if NOT member(Common,x)” before appending. Specify which meaning you want."
+        },
+        {
+          "type": "heading",
+          "text": "Find May students who are not in Chennai"
+        },
+        {
+          "type": "week5-lab",
+          "mode": "difference",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "MayOnly = []\nforeach x in MayIDs:\n    if NOT member(ChennaiIDs, x):\n        MayOnly = MayOnly ++ [x]\n# [13,23]: Gopi and Deepika"
+        },
+        {
+          "type": "paragraph",
+          "text": "Absence requires checking the whole other list unless a match is found first. Appending x whenever x != y is wrong: almost every ID differs from some y, including IDs that are also present. Union is another set-like operation: begin with one unique list, then append only members of the other list not already present."
+        },
+        {
+          "type": "check",
+          "question": "What are May ∩ Chennai and May minus Chennai?",
+          "answer": "Intersection: [3,25]. May-only: [13,23], in the original May-list order."
+        },
+        {
+          "type": "check",
+          "question": "Why is IF x != y inside the nested loop not a correct set difference?",
+          "answer": "A single non-match does not prove x absent. Search all y values and append x only when no match exists."
+        },
+        {
+          "type": "check",
+          "question": "Can a list intersection reorder the result?",
+          "answer": "Yes, its sequence depends on the traversal method. Membership may be the same even when output order differs. State the intended convention."
+        }
+      ]
+    },
+    {
+      "slug": "subject-topper-lists",
+      "title": "Collect everyone at the top three distinct mark levels",
+      "source": "Lectures 5.3 and 5.4",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/top-mark-levels.png",
+          "alt": "Cutoffs are Maths 89, Physics 88 and Chemistry 92. They are the third distinct highest marks, not exactly three students.",
+          "caption": "Cutoffs are Maths 89, Physics 88 and Chemistry 92. They are the third distinct highest marks, not exactly three students.",
+          "width": 768,
+          "height": 509
+        },
+        {
+          "type": "paragraph",
+          "text": "The earlier TopThreeMarks procedure finds distinct score levels. Maths has levels 97, 93 and 89; Physics 92, 91 and 88; Chemistry 97, 93 and 92. Include every student whose mark is at least the third level. Ties mean a subject’s list can contain more than three people."
+        },
+        {
+          "type": "week5-lab",
+          "mode": "toplists",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "MathsIDs = []; PhysicsIDs = []; ChemistryIDs = []\nforeach X in ScoreRecords:\n    if X.Mathematics >= 89:\n        MathsIDs = MathsIDs ++ [X.CardNo]\n    if X.Physics >= 88:\n        PhysicsIDs = PhysicsIDs ++ [X.CardNo]\n    if X.Chemistry >= 92:\n        ChemistryIDs = ChemistryIDs ++ [X.CardNo]"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Subject",
+              "IDs",
+              "Number of students"
+            ],
+            [
+              "Maths",
+              "[11,14,20,23]",
+              4
+            ],
+            [
+              "Physics",
+              "[5,7,9,11,18,23]",
+              6
+            ],
+            [
+              "Chemistry",
+              "[11,14,18,25]",
+              4
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Learn the cutoffs first, then construct membership lists with fixed cutoffs. Three independent IF statements let Rahul enter all three lists. Using strict > would wrongly discard students exactly at the boundary. Computing the cutoffs by separate consuming table scans also requires restoring the table between calls."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture’s zero-initialized top-three procedure relies on non-negative marks and this dataset having enough positive distinct scores. A general implementation should use empty slots or an explicit unavailable result when fewer than three distinct values exist. Equality must not shift a repeated top mark into a new distinct level."
+        },
+        {
+          "type": "check",
+          "question": "Why are there four Maths IDs rather than three?",
+          "answer": "97 is shared by Rahul and Deepika. The top three distinct levels include everyone scoring 97, 93 or 89."
+        },
+        {
+          "type": "check",
+          "question": "Does Chemistry 92 qualify when the cutoff is 92?",
+          "answer": "Yes. Use ≥, including the boundary."
+        },
+        {
+          "type": "check",
+          "question": "What must happen before reusing a consuming TopThreeMarks table procedure?",
+          "answer": "Restore the input records according to its contract so every subject call sees the full dataset."
+        }
+      ]
+    },
+    {
+      "slug": "common-toppers-three-lists",
+      "title": "Who belongs to all three topper lists?",
+      "source": "Lectures 5.3 and 5.4",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/all-three.png",
+          "alt": "First intersect Maths and Physics to get [11,23]. Intersect that with Chemistry to get [11], Rahul.",
+          "caption": "First intersect Maths and Physics to get [11,23]. Intersect that with Chemistry to get [11], Rahul.",
+          "width": 768,
+          "height": 509
+        },
+        {
+          "type": "week5-lab",
+          "mode": "allthree",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "MathsPhysics = Intersect(MathsIDs, PhysicsIDs)\nAllThree = Intersect(MathsPhysics, ChemistryIDs)\n# MathsPhysics = [11,23]\n# AllThree = [11]"
+        },
+        {
+          "type": "paragraph",
+          "text": "The first scan compares 4 × 6 = 24 identifier pairs. The second compares 2 × 4 = 8. Together these membership scans use 32 comparisons after the lists are built. A full triple nested scan would inspect 4 × 6 × 4 = 96 triples. Preparation work to learn cutoffs and build lists is separate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Only students present in both first lists can possibly be present in all three. Deepika (#23) passes Maths and Physics, but Chemistry 88 is below the 92 cutoff. Rahul (#11) has Maths 97, Physics 92 and Chemistry 92, so qualifies in every subject."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not the earlier three-prize selection rule. That rule began with eligibility in AT LEAST ONE subject and then ranked eligible totals. Here we ask for membership in ALL THREE subject collections. Neither result alone means “highest mark in every subject”: top-three distinct levels are broader than one maximum."
+        },
+        {
+          "type": "check",
+          "question": "Why can Deepika be removed after the second intersection?",
+          "answer": "Her ID is absent from ChemistryIDs, so she fails the all-three condition even though she passes the first two subjects."
+        },
+        {
+          "type": "check",
+          "question": "Is Rahul necessarily the individual maximum in Chemistry?",
+          "answer": "No. His Chemistry 92 is in its top three distinct levels; the Chemistry maximum is 97, achieved by Abirami."
+        },
+        {
+          "type": "check",
+          "question": "Why is the second intermediate list useful?",
+          "answer": "It stores candidates already known to satisfy two conditions, so the next comparison need only process those candidates."
+        }
+      ]
+    },
+    {
+      "slug": "combine-many-collections",
+      "title": "Combine more lists in stages",
+      "source": "Lecture 5.4",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For four collections A, B, C and D, one method is to intersect A with B, then the result with C, then that result with D. Another method computes A ∩ B and C ∩ D independently, then intersects those two intermediate results. Both give the same membership for set-style inputs."
+        },
+        {
+          "type": "code",
+          "text": "AB = Intersect(A, B)\nABC = Intersect(AB, C)\nABCD = Intersect(ABC, D)\n\n# Another grouping:\nAB = Intersect(A, B)\nCD = Intersect(C, D)\nABCD = Intersect(AB, CD)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture extends this idea to eight lists by combining pairs, then pairs of intermediate results. It is a reusable pattern: break a many-collection task into a sequence of two-collection operations. This need not mean all operations are running at the same time."
+        },
+        {
+          "type": "paragraph",
+          "text": "The amount of work depends on intermediate sizes. An intersection with few survivors can make later steps smaller. If an intermediate intersection is empty, no element can satisfy all remaining conditions. You can stop an all-lists membership search at that point. Do not make the same inference for a union."
+        },
+        {
+          "type": "paragraph",
+          "text": "The new fourth subject in the lecture is hypothetical. Our supplied score cards contain Mathematics, Physics and Chemistry; we do not invent Biology marks. The extra-list example explains the algorithm pattern, not a new field in the dataset."
+        },
+        {
+          "type": "check",
+          "question": "If A ∩ B is [], can intersecting it with C create a common member?",
+          "answer": "No. Intersecting an empty collection with anything remains empty."
+        },
+        {
+          "type": "check",
+          "question": "Must eight input lists be handled by eight nested loops?",
+          "answer": "No. Repeated pairwise intersections can reuse stored intermediate results."
+        },
+        {
+          "type": "check",
+          "question": "Does changing grouping always leave list order identical?",
+          "answer": "Not necessarily. Set membership is unchanged under correct intersection, but output sequence depends on the implementation and duplicate policy."
+        }
+      ]
+    },
+    {
+      "slug": "first-and-rest",
+      "title": "Unpack a list into its first element and the rest",
+      "source": "Lectures 5.5 and 5.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/first-rest.png",
+          "alt": "first([3,13,23,25]) is the element 3. rest gives the list [13,23,25].",
+          "caption": "first([3,13,23,25]) is the element 3. rest gives the list [13,23,25].",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "operations",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "first(L) returns one element. rest(L) returns a list containing all occurrences after the first position. Neither operation means “remove every occurrence equal to the first value”. For [3,3,25], rest is [3,25]. The second 3 remains."
+        },
+        {
+          "type": "code",
+          "text": "L = [3,13,23,25]\nx = first(L)        # x is 3; L is still the original list\nR = rest(L)         # R is [13,23,25]\nL = rest(L)         # NOW L refers to the shorter list"
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the difference between evaluating an operation and assigning its result. A local working variable can become shorter while the source data remains available. This lesson’s demonstrations construct result lists rather than mutating the original course dataset."
+        },
+        {
+          "type": "paragraph",
+          "text": "first([]) has no defined element result. Guard it with a non-empty check. The tutorial defines rest([]) as [] and rest([x]) as []. For a comparison with first(rest(L)), you need at least TWO elements in L, because the rest must also be non-empty."
+        },
+        {
+          "type": "check",
+          "question": "What are first([3]) and rest([3])?",
+          "answer": "The element 3 and the empty list [], respectively. [3] is not the same value as 3."
+        },
+        {
+          "type": "check",
+          "question": "What is rest([3,3,25])?",
+          "answer": "[3,25]. Drop one position, not all matching values."
+        },
+        {
+          "type": "check",
+          "question": "How many elements are needed before calling first(rest(L))?",
+          "answer": "At least two in the original list. A one-element list has an empty rest."
+        }
+      ]
+    },
+    {
+      "slug": "check-ascending-order",
+      "title": "Check ascending marks with adjacent comparisons",
+      "source": "Lecture 5.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/ascending-check.png",
+          "alt": "Non-decreasing order allows equal neighbours. The pair 63 then 62 is enough to disprove it.",
+          "caption": "Non-decreasing order allows equal neighbours. The pair 63 then 62 is enough to disprove it.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "sorted",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "L = the list of Mathematics marks\nAscending = true\nwhile length(L) >= 2 AND Ascending:\n    if first(L) > first(rest(L)):\n        Ascending = false\n    else:\n        L = rest(L)\nreturn Ascending"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ascending here means non-decreasing: every mark is less than or equal to the next. Equality is allowed. Compare a neighbour pair, then advance by ONE position. Advancing by two would skip the pair across the removed boundary. One decrease is enough to stop with false."
+        },
+        {
+          "type": "paragraph",
+          "text": "The original dataset order starts 68,62,57,… and is not sorted. The ascending option sorts all 30 Maths values for a successful comparison trace. A lecture-style short sequence deliberately contains 63,62 near the end to illustrate early failure; it is labelled as a teaching sequence rather than the original order."
+        },
+        {
+          "type": "paragraph",
+          "text": "An empty or singleton list has no violating adjacent pair, so this algorithm returns true. A full successful scan over n elements makes n−1 neighbour comparisons for n ≥ 1. We count these comparisons separately from the work done by helper functions such as length or rest."
+        },
+        {
+          "type": "check",
+          "question": "Is [42,44,44,52] ascending under this rule?",
+          "answer": "Yes. Equal neighbouring values are allowed; this is non-decreasing order."
+        },
+        {
+          "type": "check",
+          "question": "Why not compare every mark with every other mark?",
+          "answer": "For this order test, adjacent comparisons suffice: if each value is ≤ the next, the entire sequence is non-decreasing."
+        },
+        {
+          "type": "check",
+          "question": "Does finding three correct neighbour pairs prove the rest of a long list is sorted?",
+          "answer": "No. Continue until all neighbours are checked or a decrease is found."
+        }
+      ]
+    },
+    {
+      "slug": "adjacent-adjective-noun",
+      "title": "Collect nouns immediately after adjectives",
+      "source": "Lectures 5.2 and 5.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/adjective-noun.png",
+          "alt": "delicious–freedom is an immediate adjective–noun pair. In dismal–yellow–building, only yellow–building is immediately adjacent.",
+          "caption": "delicious–freedom is an immediate adjective–noun pair. In dismal–yellow–building, only yellow–building is immediately adjacent.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "adjectives",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep the word-card order. Let X = first(L) and Y = first(rest(L)). Select this neighbour pair only if X.PartOfSpeech is Adjective AND Y.PartOfSpeech is Noun. Append positions or a structured pair so you remember which occurrences matched."
+        },
+        {
+          "type": "code",
+          "text": "Pairs = []\nL = WordRecords\nwhile length(L) >= 2:\n    X = first(L)\n    Y = first(rest(L))\n    if X.PartOfSpeech == \"Adjective\" AND Y.PartOfSpeech == \"Noun\":\n        Pairs = Pairs ++ [[X.SerialNumber,Y.SerialNumber]]\n    L = rest(L)"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Positions",
+              "Adjacent words"
+            ],
+            [
+              "[21,22]",
+              "delicious freedom"
+            ],
+            [
+              "[50,51]",
+              "yellow building;"
+            ],
+            [
+              "[53,54]",
+              "fire-eyed Vedanayagam,"
+            ],
+            [
+              "[63,64]",
+              "long cane..."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The tags are given on the cards; this procedure does not solve English grammar in general. “Reluctant to” has an adjective followed by a preposition, so fails this specific test. “Dismal yellow building” has two adjectives before a noun, but dismal is not IMMEDIATELY before building. The lecture discusses that wider phrase pattern without changing the adjacent-pair rule."
+        },
+        {
+          "type": "check",
+          "question": "Should “thin” and “cane” be counted as an immediate pair in “thin long cane”?",
+          "answer": "No. Long lies between them. Long–cane is the immediate adjective–noun pair."
+        },
+        {
+          "type": "check",
+          "question": "How many adjacent word pairs are tested in the 65-card paragraph?",
+          "answer": "64 when all neighbours are inspected once."
+        },
+        {
+          "type": "check",
+          "question": "Why preserve SerialNumber rather than only the word spelling?",
+          "answer": "The same word can occur more than once. Positions identify the actual occurrences and preserve the text sequence."
+        }
+      ]
+    },
+    {
+      "slug": "explode-words",
+      "title": "Turn a word into a character list",
+      "source": "Lecture 5.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/explode-word.png",
+          "alt": "explode(\"specially\") produces [s,p,e,c,i,a,l,l,y]. A word can be one string or a list of characters, depending on the operation.",
+          "caption": "explode(\"specially\") produces [s,p,e,c,i,a,l,l,y]. A word can be one string or a list of characters, depending on the operation.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "explode",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "A word stored as one field can be unpacked with explode into a character sequence. explode(\"It\") gives [\"I\",\"t\"]. You can now use foreach, first, rest, last and init on the characters just as you did on student IDs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Representations have levels. [\"Monday\",\"school\"] contains two word strings. explode(\"Monday\") contains six characters. A list of words is different from one flattened character list. Choose the representation that retains the information your question needs."
+        },
+        {
+          "type": "paragraph",
+          "text": "In this explorer, explode preserves case and punctuation. explode(\"eyes.\") includes the final dot, while the alphabetic letter count is 4. A hyphen in fire-eyed is a character too. If a task wants only letters, make that cleaning step explicit rather than silently changing explode."
+        },
+        {
+          "type": "check",
+          "question": "What is length(explode(\"It\"))?",
+          "answer": "2: the characters I and t."
+        },
+        {
+          "type": "check",
+          "question": "Does explode automatically lowercase a word?",
+          "answer": "No in this lesson. Case is preserved. The palindrome lesson explicitly lowercases its input as a separate convention."
+        },
+        {
+          "type": "check",
+          "question": "Why can stored LetterCount differ from character-list length?",
+          "answer": "Punctuation or hyphens can be present in the string but excluded from a letter count. State which characters you count."
+        }
+      ]
+    },
+    {
+      "slug": "adjacent-vowels",
+      "title": "Count adjacent vowel pairs inside a word",
+      "source": "Lecture 5.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/vowel-neighbours.png",
+          "alt": "specially has the neighbouring vowels i–a. In aaa, two overlapping adjacent pairs occur.",
+          "caption": "specially has the neighbouring vowels i–a. In aaa, two overlapping adjacent pairs occur.",
+          "width": 768,
+          "height": 528
+        },
+        {
+          "type": "week5-lab",
+          "mode": "vowelpairs",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "L = explode(Word)\nCount = 0\nwhile length(L) >= 2:\n    if isVowel(first(L)) AND isVowel(first(rest(L))):\n        Count = Count + 1\n    L = rest(L)\nreturn Count"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the five-vowel convention a, e, i, o, u, ignoring case for this test. In specially, i is immediately followed by a, giving one match. The task counts PAIRS, not vowels: specially has other vowels but only one adjacent vowel pair."
+        },
+        {
+          "type": "paragraph",
+          "text": "Move one position after each test, so pairs may overlap. aaa has matches at positions 1–2 and 2–3: two pairs. If you instead want to count word cards that contain at least one matching pair, stop the inner word scan after its first match and increment a separate word counter once. An outer word loop and inner character loop process different levels."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dots and hyphens are not vowels and interrupt adjacency in this raw character representation. Empty and one-character lists yield zero adjacent pairs. The algorithm does not infer pronunciation or vowel sounds."
+        },
+        {
+          "type": "check",
+          "question": "How many adjacent vowel pairs are in aaa?",
+          "answer": "Two. The middle a participates in both neighbouring pairs."
+        },
+        {
+          "type": "check",
+          "question": "What differs between “count matching pairs” and “count words with a match”?",
+          "answer": "One word can contain several matching pairs. A word-level count increments at most once per qualifying word."
+        },
+        {
+          "type": "check",
+          "question": "What loop guard prevents reading past the end?",
+          "answer": "Require length(L) ≥ 2 before examining first(L) and first(rest(L))."
+        }
+      ]
+    },
+    {
+      "slug": "last-init-and-reconstruction",
+      "title": "Unpack the other end: last and init",
+      "source": "Lecture 5.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/last-init.png",
+          "alt": "last returns one endpoint element; init returns all preceding elements as a list.",
+          "caption": "last returns one endpoint element; init returns all preceding elements as a list.",
+          "width": 768,
+          "height": 496
+        },
+        {
+          "type": "paragraph",
+          "text": "last(L) returns the last element. init(L) returns the list without its final position. For [3,13,23,25], last is 25 and init is [3,13,23]. These complement first and rest. On a singleton, init gives []; on an empty list the tutorial defines init as [], but last has no defined element."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/reconstruct.png",
+          "alt": "For non-empty L, [first(L)] ++ rest(L) and init(L) ++ [last(L)] both rebuild L.",
+          "caption": "For non-empty L, [first(L)] ++ rest(L) and init(L) ++ [last(L)] both rebuild L.",
+          "width": 768,
+          "height": 496
+        },
+        {
+          "type": "code",
+          "text": "# For a NON-EMPTY list L:\nL == [first(L)] ++ rest(L)\nL == init(L) ++ [last(L)]"
+        },
+        {
+          "type": "paragraph",
+          "text": "first and last may return complex elements too. If L is a list of pairs, first(L) is an entire pair. Wrapping it in [first(L)] makes a singleton OUTER list. Bracket levels carry meaning."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a known non-decreasing list of numeric marks, first gives its minimum and last its maximum, so the range is last(L) − first(L). This shortcut is invalid on an arbitrary unsorted list. A short expression also does not guarantee constant-time execution: the tutorial implements last with a full foreach scan."
+        },
+        {
+          "type": "check",
+          "question": "What is init([3,13,3])?",
+          "answer": "[3,13]. Only the last occurrence is dropped, even though its value also appears at the start."
+        },
+        {
+          "type": "check",
+          "question": "Can you use last(L) − first(L) to find the range of [68,42,97,62]?",
+          "answer": "No. It gives 62 − 68, not the true range 97 − 42 = 55. The endpoint shortcut needs sorted order."
+        },
+        {
+          "type": "check",
+          "question": "Why are the brackets in [first(L)] needed?",
+          "answer": "first(L) is an element. ++ requires list operands, so the element must be wrapped in a singleton list."
+        }
+      ]
+    },
+    {
+      "slug": "palindrome-from-both-ends",
+      "title": "Is a word a palindrome?",
+      "source": "Lecture 5.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/palindrome.png",
+          "alt": "madam reduces to ada and then d after matching and removing both ends. One remaining character is accepted.",
+          "caption": "madam reduces to ada and then d after matching and removing both ends. One remaining character is accepted.",
+          "width": 768,
+          "height": 528
+        },
+        {
+          "type": "week5-lab",
+          "mode": "palindrome",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "L = explode(lowercase(Word))\nwhile length(L) >= 2:\n    if first(L) != last(L):\n        return false\n    L = init(rest(L))\nreturn true"
+        },
+        {
+          "type": "paragraph",
+          "text": "A palindrome reads the same forwards and backwards. If the first and last characters differ, reject immediately. If they agree, remove BOTH and test the shorter middle. For madam, compare m/m, then a/a, leaving d. For noon, compare n/n, then o/o, leaving an empty list."
+        },
+        {
+          "type": "paragraph",
+          "text": "The guard ensures init(rest(L)) is applied while at least two characters are available. Zero or one remaining character has no mismatched endpoints, so returns true. Here we lowercase before comparing; otherwise Madam and madam would differ in a literal case-sensitive test. We do not remove punctuation or spaces in this demonstration."
+        },
+        {
+          "type": "paragraph",
+          "text": "The loop shrinks by two characters on every successful step. That is its progress argument. Shrinking by one would perform a different algorithm; failing to update L would repeat the same comparison forever."
+        },
+        {
+          "type": "check",
+          "question": "Why is one matching endpoint pair not enough?",
+          "answer": "The interior may still fail. abca has equal outer a characters, but the remaining b and c do not match."
+        },
+        {
+          "type": "check",
+          "question": "How many endpoint comparisons does madam need?",
+          "answer": "Two: m with m, then a with a. The final single d requires no comparison."
+        },
+        {
+          "type": "check",
+          "question": "What does this algorithm return for an empty input?",
+          "answer": "True under the stated sequence convention: there are no unequal mirrored positions. The loop never runs."
+        }
+      ]
+    },
+    {
+      "slug": "pairs-id-and-property",
+      "title": "Keep an ID beside a property: lists of pairs",
+      "source": "Lecture 5.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/id-mark-pair.png",
+          "alt": "[3,53] stores Rida’s CardNo and Physics mark. The first component is an identifier; the last is the chosen property.",
+          "caption": "[3,53] stores Rida’s CardNo and Physics mark. The first component is an identifier; the last is the chosen property.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "pairs",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "A list of marks alone loses the owners of those marks. A pair such as [3,53] keeps one identifier beside one property. A list of pairs keeps that connection for every selected record: [[0,64],[1,45],[2,54],…] for Physics in the original dataset order."
+        },
+        {
+          "type": "code",
+          "text": "Pairs = []\nforeach X in ScoreRecords:\n    Entry = [X.CardNo, X.Physics]\n    Pairs = Pairs ++ [Entry]\n\nforeach Pair in Pairs:\n    ID = first(Pair)\n    Mark = last(Pair)"
+        },
+        {
+          "type": "paragraph",
+          "text": "A pair is a list of exactly two components. Its order has a schema: [ID,mark] differs from [mark,ID]. first(Pair) is the identifier and last(Pair) the mark only because we agreed on this schema. A pair can also hold an ID and a city string; components need not all be numeric."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a projection: keep relevant fields and leave out the rest. The resulting list is enough for tasks about the retained property and IDs, but not for questions about fields you omitted. Keep the original dataset available if later tasks may need birthdays, cities or other subjects."
+        },
+        {
+          "type": "check",
+          "question": "Why is [3,53] not the same as [[3,53]]?",
+          "answer": "The first is a two-element pair. The second is a one-element outer list whose element is that pair."
+        },
+        {
+          "type": "check",
+          "question": "What information does [3,53] lose compared with the full score card?",
+          "answer": "It omits fields such as Name, birthday, city, Maths, Chemistry and Total. The ID can reconnect to them only if the source lookup remains available."
+        },
+        {
+          "type": "check",
+          "question": "How long is a 30-student list of [ID,Physics] pairs?",
+          "answer": "The outer length is 30. Each pair has length 2."
+        }
+      ]
+    },
+    {
+      "slug": "maximum-with-all-tied-ids",
+      "title": "Find the maximum and remember every tied student",
+      "source": "Lecture 5.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/tied-maxima.png",
+          "alt": "Physics maximum 92 belongs to IDs [5,7,11,18]. A new larger maximum resets the candidate list; an equal maximum extends it.",
+          "caption": "Physics maximum 92 belongs to IDs [5,7,11,18]. A new larger maximum resets the candidate list; an equal maximum extends it.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "maxima",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Max = empty\nTopperIDs = []\nforeach Pair in Pairs:\n    ID = first(Pair)\n    Mark = last(Pair)\n    if Max is empty OR Mark > Max:\n        Max = Mark\n        TopperIDs = [ID]\n    else if Mark == Max:\n        TopperIDs = TopperIDs ++ [ID]\nreturn (Max, TopperIDs)"
+        },
+        {
+          "type": "paragraph",
+          "text": "When a larger mark arrives, earlier candidates are no longer maximum scorers: replace their list with [ID]. When an equal mark arrives, keep earlier tied IDs and append this one. When a smaller mark arrives, change neither variable. The updates must keep the maximum value and its owner list consistent."
+        },
+        {
+          "type": "paragraph",
+          "text": "The real Physics result is maximum 92 with IDs [5,7,11,18]: Akshaya, Aditya, Rahul and Abirami. Maths maximum 97 has [11,23]. Chemistry maximum 97 has [18]. These are maximum owners, not top-three-level lists."
+        },
+        {
+          "type": "paragraph",
+          "text": "An empty-input contract can return an unavailable maximum and an empty owner list. Do not report 0 as a witnessed maximum of an empty list. For known non-negative, non-empty marks a zero sentinel can work for the value, but a clear empty state handles the owner list more reliably."
+        },
+        {
+          "type": "check",
+          "question": "Why not simply append every student who ever set a running record?",
+          "answer": "Some running records are later beaten. Reset the ID list when a strictly larger mark appears."
+        },
+        {
+          "type": "check",
+          "question": "What happens when the next Physics mark is also 92?",
+          "answer": "Append that student’s ID while keeping Max = 92."
+        },
+        {
+          "type": "check",
+          "question": "Can three independent IFs accidentally append the new record holder twice?",
+          "answer": "Yes, if setting Max makes a later equality IF true in the same iteration. Use IF…ELSE IF for these mutually exclusive update cases."
+        }
+      ]
+    },
+    {
+      "slug": "similarity-id-pairs",
+      "title": "Store relationships as [ID1,ID2] pairs",
+      "source": "Lecture 5.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/similar-pairs.png",
+          "alt": "A pair can connect two students rather than an ID and a mark. Store each unordered relationship once with ID1 < ID2.",
+          "caption": "A pair can connect two students rather than an ID and a mark. Store each unordered relationship once with ID1 < ID2.",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "similar",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "SimilarPairs = []\nforeach X in ScoreRecords:\n    foreach Y in ScoreRecords:\n        if X.CardNo < Y.CardNo AND abs(X.Physics-Y.Physics) <= 10:\n            SimilarPairs = SimilarPairs ++ [[X.CardNo,Y.CardNo]]"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture first discusses similar performance in two subjects, then demonstrates the pair method for Physics alone. The explorer lets you choose either rule. Physics difference ≤ 10 gives 181 distinct unordered matching pairs. Requiring BOTH Maths and Physics differences ≤ 10 gives 67. Equality at ten is included here."
+        },
+        {
+          "type": "paragraph",
+          "text": "ID1 < ID2 excludes self-pairs and reversed duplicates. The displayed pseudocode visits all ordered combinations but filters its output. The explorer generates only i<j candidate pairs, so it performs 435 pair checks. Do not confuse unique stored pairs with the number of comparisons made by a less selective loop structure."
+        },
+        {
+          "type": "heading",
+          "text": "Similarity need not be transitive"
+        },
+        {
+          "type": "paragraph",
+          "text": "Marks 74 and 81 differ by 7; 81 and 85 differ by 4. Yet 74 and 85 differ by 11. So “within ten” does not guarantee transitivity. This numerical counterexample illustrates the rule and is not a claim that these three marks identify particular Physics cards in our dataset."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stored pairs let us later count each student’s connections or search for triples whose three pairwise connections all exist. When pairs are stored in canonical smaller-ID-first order, lookups must respect that convention. A triangle of pairwise connections is stronger than merely finding a chain A–B–C. Finding a largest fully connected group is a further, harder problem."
+        },
+        {
+          "type": "check",
+          "question": "Why is checking ID1 != ID2 insufficient to remove reversed duplicates?",
+          "answer": "It removes self-pairs but allows both [5,12] and [12,5]. A strict ordering such as ID1 < ID2 retains one orientation."
+        },
+        {
+          "type": "check",
+          "question": "Does A close to B and B close to C prove A close to C?",
+          "answer": "No. The 74,81,85 example breaks that inference for an inclusive ten-mark threshold."
+        },
+        {
+          "type": "check",
+          "question": "Does length(SimilarPairs) count students?",
+          "answer": "No. It counts stored relationships. One student can participate in many pairs."
+        }
+      ]
+    },
+    {
+      "slug": "triples-and-subject-means",
+      "title": "Keep ID, Maths and Physics together in triples",
+      "source": "Lecture 5.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/score-triple.png",
+          "alt": "Rida’s triple [3,42,53] keeps identity and two subject marks. The middle component is first(rest(Triple)).",
+          "caption": "Rida’s triple [3,42,53] keeps identity and two subject marks. The middle component is first(rest(Triple)).",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "type": "week5-lab",
+          "mode": "triples",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "A triple is a list of exactly three components. For [ID,Maths,Physics], first gives ID, first(rest(Triple)) gives Maths, and last gives Physics. last(init(Triple)) is another way to obtain the middle value. A list of these triples keeps both subject marks attached to the same student."
+        },
+        {
+          "type": "code",
+          "text": "Triples = []\nforeach X in ScoreRecords:\n    Triples = Triples ++ [[X.CardNo,X.Mathematics,X.Physics]]\n\nMathsSum = 0; PhysicsSum = 0; Count = 0\nforeach T in Triples:\n    MathsSum = MathsSum + first(rest(T))\n    PhysicsSum = PhysicsSum + last(T)\n    Count = Count + 1\n# If Count > 0, compute the two means. Then classify in a second pass."
+        },
+        {
+          "type": "paragraph",
+          "text": "The real means are Maths 2171/30 = 72.3667 approximately, and Physics 2189/30 = 72.9667 approximately. In the second pass, select students with Maths strictly above its mean and Physics strictly below its mean, OR the opposite. The exact fractions determine the comparisons; rounded displays are only for reading."
+        },
+        {
+          "type": "paragraph",
+          "text": "The result has 13 IDs: [4,5,8,9,13,14,15,17,18,19,20,21,26]. We describe performance relative to these subject means, not a general label about a person’s ability. A mark exactly equal to a mean would enter neither strict above/below branch. Empty input requires handling Count = 0 before dividing."
+        },
+        {
+          "type": "check",
+          "question": "How do you extract the middle value from [3,42,53]?",
+          "answer": "first(rest([3,42,53])) = first([42,53]) = 42. Equivalently, last(init(...)) = last([3,42]) = 42."
+        },
+        {
+          "type": "check",
+          "question": "Why not compare a mark with a running average while collecting the sums?",
+          "answer": "The final means are not yet known. Complete the aggregate pass, then classify against fixed means in a second pass."
+        },
+        {
+          "type": "check",
+          "question": "Why include ID rather than just [Maths,Physics]?",
+          "answer": "The marks can still be compared, but the ID lets you identify each selected student and reconnect to their record."
+        }
+      ]
+    },
+    {
+      "slug": "shopping-item-triples",
+      "title": "One bill item becomes one customer–shop–category triple",
+      "source": "Lecture 5.6 and Lecture 5.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/bill-triples.png",
+          "alt": "Bill 1 belongs to Srivatsan at SV Stores. Each item row produces a triple; repeated categories remain repeated occurrences.",
+          "caption": "Bill 1 belongs to Srivatsan at SV Stores. Each item row produces a triple; repeated categories remain repeated occurrences.",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "type": "week5-lab",
+          "mode": "billtriples",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "A bill contains several item rows. For each row, keep [Customer,Store,Category]. This produces one triple per ITEM ROW, not one per bill and not one per individual unit purchased. The customer and store repeat across a bill’s rows."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Bill 1 item",
+              "Category",
+              "Triple"
+            ],
+            [
+              "Carrots",
+              "Vegetables/Food",
+              "[Srivatsan, SV Stores, Vegetables/Food]"
+            ],
+            [
+              "Soap",
+              "Toiletries",
+              "[Srivatsan, SV Stores, Toiletries]"
+            ],
+            [
+              "Tomatoes",
+              "Vegetables/Food",
+              "[Srivatsan, SV Stores, Vegetables/Food]"
+            ],
+            [
+              "Bananas",
+              "Vegetables/Food",
+              "[Srivatsan, SV Stores, Vegetables/Food]"
+            ],
+            [
+              "Socks",
+              "Footwear/Apparel",
+              "[Srivatsan, SV Stores, Footwear/Apparel]"
+            ],
+            [
+              "Curd",
+              "Dairy/Food",
+              "[Srivatsan, SV Stores, Dairy/Food]"
+            ],
+            [
+              "Milk",
+              "Dairy/Food",
+              "[Srivatsan, SV Stores, Dairy/Food]"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Bill 1 therefore gives 7 triples, including 5 food item rows. Repeated Vegetables/Food triples are not accidental duplicates: they came from different rows. Deduplicating them changes the question to distinct customer–shop–category combinations and loses item-row frequencies."
+        },
+        {
+          "type": "paragraph",
+          "text": "From all item triples you could count rows for a shop, customer or category, or combine filters. But quantity, price and cost are omitted. These triples alone cannot tell total units, kilograms, revenue or how many bills were issued. Our complete item-row trace uses the verified Bill 1 rows; the 30-bill summary’s MajorCategories is not an item-by-item list and must not be expanded into invented rows."
+        },
+        {
+          "type": "check",
+          "question": "Does counting triples for Bananas measure the quantity 8 in Bill 1?",
+          "answer": "No. The Bananas row contributes one triple. Quantity 8 was not retained in this projection."
+        },
+        {
+          "type": "check",
+          "question": "Why do Carrots and Tomatoes create equal category triples?",
+          "answer": "They share customer, shop and category but are different item rows. The list retains both occurrences."
+        },
+        {
+          "type": "check",
+          "question": "Can [Customer,Store,Category] alone compute bill revenue?",
+          "answer": "No. The representation omitted price and cost. Keep those fields or return to the original records for revenue questions."
+        }
+      ]
+    },
+    {
+      "slug": "positions-in-sorted-lists",
+      "title": "Compare the same student’s positions in two lists",
+      "source": "Lecture 5.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/rank-positions.png",
+          "alt": "Match by student ID before subtracting positions. The lecture’s ten-student ordering has a mean absolute position difference of 3.",
+          "caption": "Match by student ID before subtracting positions. The lecture’s ten-student ordering has a mean absolute position difference of 3.",
+          "width": 768,
+          "height": 515
+        },
+        {
+          "type": "week5-lab",
+          "mode": "ranks",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Make [ID,Maths] and [ID,Physics] lists, each sorted ascending by its mark. For a student at position i in the Maths list, find the SAME ID in the Physics list at position j. Store [ID,abs(i−j)]. Keeping IDs prevents accidentally comparing different students occupying the same position."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "ID",
+              "Maths position",
+              "Physics position",
+              "Absolute difference"
+            ],
+            [
+              3,
+              1,
+              2,
+              1
+            ],
+            [
+              24,
+              2,
+              7,
+              5
+            ],
+            [
+              12,
+              3,
+              5,
+              2
+            ],
+            [
+              19,
+              4,
+              8,
+              4
+            ],
+            [
+              2,
+              5,
+              3,
+              2
+            ],
+            [
+              22,
+              6,
+              4,
+              2
+            ],
+            [
+              17,
+              7,
+              9,
+              2
+            ],
+            [
+              1,
+              8,
+              1,
+              7
+            ],
+            [
+              9,
+              9,
+              10,
+              1
+            ],
+            [
+              10,
+              10,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the lecture’s ten low-Maths students and its displayed tie order. The differences total 30, so their mean is 30/10 = 3. Student #1 has the largest difference in this example, 7. We use one-based ascending list positions, so low marks appear first. These are not automatically standard competition ranks or average tied ranks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Equal marks need an explicit tie policy. To reproduce the lecture we retain its shown order, including ties. The all-30 option sorts by mark and uses smaller CardNo first when marks tie. Different tie policies can change position differences. Do not present a tie-dependent position number as an intrinsic rank."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture’s subset was chosen for low Maths marks, not randomly sampled. Its mean difference does not establish a population correlation or prove the same relationship across all students. This exercise demonstrates joining two ordered lists by identity and accumulating a descriptive distance."
+        },
+        {
+          "type": "check",
+          "question": "Why use the absolute difference?",
+          "answer": "Signed differences can cancel. Absolute differences measure how far apart the positions are regardless of direction."
+        },
+        {
+          "type": "check",
+          "question": "If the same ID is fourth in both lists, what is its difference?",
+          "answer": "|4−4| = 0. The ID match is essential; comparing two different students at position 4 is a different task."
+        },
+        {
+          "type": "check",
+          "question": "Does average distance 3 prove Maths causes Physics performance?",
+          "answer": "No. It is a descriptive calculation for the chosen data and tie convention, not a causal conclusion."
+        }
+      ]
+    },
+    {
+      "slug": "implement-length-first-last",
+      "title": "Tutorial: implement length, first and last",
+      "source": "Tutorial 5.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/list-functions.png",
+          "alt": "List functions have different return types and boundary conditions. first and last need an element to return; length([]) is 0.",
+          "caption": "List functions have different return types and boundary conditions. first and last need an element to return; length([]) is 0.",
+          "width": 768,
+          "height": 509
+        },
+        {
+          "type": "week5-lab",
+          "mode": "functions",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Procedure length(L):\n    Count = 0\n    foreach x in L:\n        Count = Count + 1\n    return Count\n\nProcedure first(L):\n    # Precondition: L is non-empty\n    foreach x in L:\n        return x\n\nProcedure last(L):\n    # Precondition: L is non-empty\n    foreach x in L:\n        E = x\n    return E"
+        },
+        {
+          "type": "paragraph",
+          "text": "length accepts a list and returns its occurrence count. The empty list returns 0 because no increment occurs. first returns during the very first loop execution, which terminates the function. last overwrites E on every visit, so after the final visit E holds the final element."
+        },
+        {
+          "type": "paragraph",
+          "text": "first([]) has no first occurrence; last([]) never assigns E. The tutorial calls both results undefined. State a non-empty precondition or add an explicit error/unavailable result. Do not invent a return value of 0 or [] for an undefined element. Different implementations may share the same interface but use different amounts of work."
+        },
+        {
+          "type": "check",
+          "question": "How many foreach visits does this first implementation need on a non-empty list?",
+          "answer": "One. The first return stops the function immediately."
+        },
+        {
+          "type": "check",
+          "question": "Does last have to visit the entire list in this implementation?",
+          "answer": "Yes. E must be overwritten by each element until the final one. Other representations may offer a different implementation."
+        },
+        {
+          "type": "check",
+          "question": "What is length([3,3,25])?",
+          "answer": "3, because length counts occurrences, not distinct values."
+        }
+      ]
+    },
+    {
+      "slug": "implement-rest-init-member",
+      "title": "Tutorial: rest, init and membership",
+      "source": "Tutorial 5.1",
+      "blocks": [
+        {
+          "type": "code",
+          "text": "Procedure rest(L):\n    Found = false\n    Result = []\n    foreach x in L:\n        if Found:\n            Result = Result ++ [x]\n        else:\n            Found = true\n    return Result\n\nProcedure init(L):\n    Found = false\n    Result = []\n    foreach x in L:\n        if Found:\n            Result = Result ++ [Prev]\n        else:\n            Found = true\n        Prev = x\n    return Result"
+        },
+        {
+          "type": "paragraph",
+          "text": "rest uses Found to skip exactly the first occurrence. init uses a one-element delay: when the second element arrives, append the remembered first; when the third arrives, append the remembered second. Update Prev AFTER appending it. The final current element is never appended, so the final position is excluded."
+        },
+        {
+          "type": "paragraph",
+          "text": "Both functions return [] on [] and on a singleton under the tutorial’s definitions. “L minus first(L)” is an informal description of dropping one endpoint, not a set subtraction that deletes every equal value. The functions build new result lists; the caller chooses whether to assign the result back to its working variable."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-5/membership.png",
+          "alt": "member(L,e) returns true after a match and false only after exhausting the list. Its parameter order is list first, element second.",
+          "caption": "member(L,e) returns true after a match and false only after exhausting the list. Its parameter order is list first, element second.",
+          "width": 768,
+          "height": 509
+        },
+        {
+          "type": "week5-lab",
+          "mode": "member",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Procedure member(L, e):\n    foreach x in L:\n        if e == x:\n            return true\n    return false"
+        },
+        {
+          "type": "paragraph",
+          "text": "A true result can return early; a false result comes after the loop. The empty list returns false with zero equality tests. Repeated values do not require repeated true results: membership asks only whether at least one occurrence exists. Parameter order is member(list,element), matching the tutorial."
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial’s length and last scan the list; rest and init copy result elements. Repeatedly calling these scanning or copying helpers inside another loop can add work. A short pseudocode expression is not an automatic constant-time guarantee. At this stage, first understand the interface and result; later analyze the chosen implementation’s cost."
+        },
+        {
+          "type": "check",
+          "question": "In init, what goes wrong if Prev = x happens before appending Prev?",
+          "answer": "You append the current element rather than the previous one, shifting the result and potentially retaining the final element."
+        },
+        {
+          "type": "check",
+          "question": "Why is return false inside member’s loop after the first unequal value wrong?",
+          "answer": "A later occurrence can still match. False requires finishing the search; true needs only one match."
+        },
+        {
+          "type": "check",
+          "question": "For rest([3,3,25]) and init([3,3,25]), what are the results?",
+          "answer": "rest gives [3,25]; init gives [3,3]. They remove positions at opposite ends, not values everywhere."
+        }
+      ]
+    },
+    {
+      "slug": "revision-and-practice",
+      "title": "Week 5 revision and mixed practice",
+      "source": "All Week 5 lectures and Tutorial 5.1",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Choose a lab to revisit any idea, then try the questions without opening the answer. Explain the list’s element type, its ordering, whether repeats matter, and what each variable means."
+        },
+        {
+          "type": "week5-lab",
+          "mode": "filter",
+          "explore": true
+        },
+        {
+          "type": "check",
+          "question": "What is the outer length of [[3,53],[24,72],[12,64]]?",
+          "answer": "3. The outer list has three pair elements, each with two components."
+        },
+        {
+          "type": "check",
+          "question": "Evaluate [1,13] ++ [] ++ [2,17,1].",
+          "answer": "[1,13,2,17,1]. Empty concatenation adds nothing; repeated values stay."
+        },
+        {
+          "type": "check",
+          "question": "What is first(rest([3,42,53]))?",
+          "answer": "42. rest gives [42,53], whose first element is 42."
+        },
+        {
+          "type": "check",
+          "question": "What is last(init([3,42,53]))?",
+          "answer": "42. init gives [3,42], whose last element is 42."
+        },
+        {
+          "type": "check",
+          "question": "Does first(rest([3])) return 3?",
+          "answer": "No. rest([3]) is [], so first of that empty list is undefined."
+        },
+        {
+          "type": "check",
+          "question": "For L = [3,3,25], reconstruct L from first and rest.",
+          "answer": "[first(L)] ++ rest(L) = [3] ++ [3,25] = [3,3,25]."
+        },
+        {
+          "type": "check",
+          "question": "What does a raw nested intersection of [3,3] and [3,3] append?",
+          "answer": "Four occurrences of 3, one per matching pair of positions. Add a uniqueness rule if set-style output is intended."
+        },
+        {
+          "type": "check",
+          "question": "Why is the third-highest distinct Physics cutoff 88 even though several students score 92?",
+          "answer": "Repeated 92 scores share one mark level. The distinct levels are 92,91,88."
+        },
+        {
+          "type": "check",
+          "question": "What are the all-three subject topper IDs?",
+          "answer": "[11]. Maths ∩ Physics is [11,23]; intersecting Chemistry removes 23."
+        },
+        {
+          "type": "check",
+          "question": "Can the fourth subject Biology be read from the supplied scores?",
+          "answer": "No. It is a hypothetical extension in the lecture. The actual dataset contains Maths, Physics and Chemistry."
+        },
+        {
+          "type": "check",
+          "question": "How many neighbour comparisons does a successful sortedness check need for 30 elements?",
+          "answer": "29 adjacent comparisons, apart from helper-function implementation costs."
+        },
+        {
+          "type": "check",
+          "question": "Is dismal immediately followed by the noun building?",
+          "answer": "No. Yellow is between them. The immediate adjective–noun pair is yellow–building."
+        },
+        {
+          "type": "check",
+          "question": "How many adjacent vowel pairs occur in aaaa?",
+          "answer": "Three: positions 1–2, 2–3 and 3–4. Overlap is allowed."
+        },
+        {
+          "type": "check",
+          "question": "Does matching the endpoints of abca prove it a palindrome?",
+          "answer": "No. Removing the matching outer a characters leaves b and c, which differ."
+        },
+        {
+          "type": "check",
+          "question": "What update is needed when a new maximum is strictly larger?",
+          "answer": "Replace both the maximum value and its owner list; begin the new owner list with just this ID."
+        },
+        {
+          "type": "check",
+          "question": "Are [ID,Physics] and [ID1,ID2] interchangeable pair schemas?",
+          "answer": "No. They have the same list length but different meanings. Algorithms must know which fields each position contains."
+        },
+        {
+          "type": "check",
+          "question": "Does “within ten” form a transitive relation?",
+          "answer": "Not generally. 74 is within ten of 81 and 81 within ten of 85, but 74 and 85 are eleven apart."
+        },
+        {
+          "type": "check",
+          "question": "How many Bill 1 food triples are there, and what do they count?",
+          "answer": "Five, counting food item rows. They do not count units, quantities or distinct categories."
+        },
+        {
+          "type": "check",
+          "question": "What assumption is needed to use the endpoints for minimum and maximum?",
+          "answer": "The list must be non-empty and ordered non-decreasingly by that numeric property."
+        },
+        {
+          "type": "check",
+          "question": "Why is the lecture’s mean position difference not a population conclusion?",
+          "answer": "The ten students were selected for low Maths marks and tied-position conventions affect the measure. It is a descriptive calculation for that setup."
+        }
+      ],
+      "resource": true
+    },
+    {
+      "slug": "source-guide",
+      "title": "Week 5 sources and dataset conventions",
+      "source": "Coverage notes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "These notes cover all seven supplied Week 5 lectures and Tutorial 5.1, using the transcripts and the matching slides for Lectures 5.2, 5.4 and the tutorial. The PDFs supply course content; they do not provide instructions to change the site. The lessons reuse the same score cards, word cards and shopping dataset introduced in earlier weeks."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Coverage"
+            ],
+            [
+              "Lecture 5.1",
+              "Collections, shared bookmarks, IDs and May/Chennai overlap"
+            ],
+            [
+              "Lecture 5.2",
+              "Square brackets, empty lists, ++, filtered lists and foreach"
+            ],
+            [
+              "Lecture 5.3",
+              "Subject top-three-level collections and their common members"
+            ],
+            [
+              "Lecture 5.4",
+              "Cutoff procedure assumptions, one-pass membership lists and staged intersections"
+            ],
+            [
+              "Lecture 5.5",
+              "First/rest, adjacent mark order and adjective–noun neighbours"
+            ],
+            [
+              "Lecture 5.6",
+              "Explode, character adjacency, item lists, last/init, reconstruction and palindromes"
+            ],
+            [
+              "Lecture 5.7",
+              "ID/property pairs, tied maxima, similarity relationships, triples, bill item rows and sorted positions"
+            ],
+            [
+              "Tutorial 5.1",
+              "Implementations of length, first, last, rest, init and member"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Record IDs in examples use CardNo, corresponding to the source’s SeqNo bookmarks. Lists follow original dataset order unless a different sort or lecture ordering is explicitly named. Lists retain repeated occurrences; mathematical set operations require a stated duplicate policy. The trace datasets remain unchanged."
+        },
+        {
+          "type": "paragraph",
+          "text": "The three topper cutoffs are for distinct mark levels and include ties. Similarity uses an inclusive maximum difference, with Physics-only and both-subject options labelled separately. Sortedness means non-decreasing. The palindrome explorer lowercases explicitly; explode itself preserves case and punctuation. Empty first/last are undefined; tutorial rest/init return [] on empty input."
+        },
+        {
+          "type": "paragraph",
+          "text": "The rank-position exercise reproduces the lecture’s selected ten IDs and displayed tie order to obtain mean absolute difference 3. The all-30 option uses mark then CardNo. These list positions are not average tied statistical ranks. The Bill 1 item trace uses its seven verified original rows; category summaries from the other bills are not treated as complete item rows."
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

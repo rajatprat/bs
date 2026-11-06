@@ -1713,5 +1713,253 @@
     "/images/generative-ai/week-2/vdm/min-max-objective.png",
     "/images/generative-ai/week-2/vdm/adversarial-training.png",
     "/images/generative-ai/week-2/vdm/saddle-point.png"
-  ]
+  ],
+  "/computational-thinking/week-5/collections-and-bookmarks/": [
+    "/images/computational-thinking/week-5/bookmarks.png"
+  ],
+  "/computational-thinking/week-5/list-order-repeats-empty/": [
+    "/images/computational-thinking/week-5/list-basics.png"
+  ],
+  "/computational-thinking/week-5/append-and-prepend/": [
+    "/images/computational-thinking/week-5/append.png"
+  ],
+  "/computational-thinking/week-5/build-filtered-id-lists/": [
+    "/images/computational-thinking/week-5/may-list.png"
+  ],
+  "/computational-thinking/week-5/foreach-list-iteration/": [
+    "/images/computational-thinking/week-5/foreach.png"
+  ],
+  "/computational-thinking/week-5/intersection-and-difference/": [
+    "/images/computational-thinking/week-5/may-chennai.png"
+  ],
+  "/computational-thinking/week-5/subject-topper-lists/": [
+    "/images/computational-thinking/week-5/top-mark-levels.png"
+  ],
+  "/computational-thinking/week-5/common-toppers-three-lists/": [
+    "/images/computational-thinking/week-5/all-three.png"
+  ],
+  "/computational-thinking/week-5/combine-many-collections/": [],
+  "/computational-thinking/week-5/first-and-rest/": [
+    "/images/computational-thinking/week-5/first-rest.png"
+  ],
+  "/computational-thinking/week-5/check-ascending-order/": [
+    "/images/computational-thinking/week-5/ascending-check.png"
+  ],
+  "/computational-thinking/week-5/adjacent-adjective-noun/": [
+    "/images/computational-thinking/week-5/adjective-noun.png"
+  ],
+  "/computational-thinking/week-5/explode-words/": [
+    "/images/computational-thinking/week-5/explode-word.png"
+  ],
+  "/computational-thinking/week-5/adjacent-vowels/": [
+    "/images/computational-thinking/week-5/vowel-neighbours.png"
+  ],
+  "/computational-thinking/week-5/last-init-and-reconstruction/": [
+    "/images/computational-thinking/week-5/last-init.png",
+    "/images/computational-thinking/week-5/reconstruct.png"
+  ],
+  "/computational-thinking/week-5/palindrome-from-both-ends/": [
+    "/images/computational-thinking/week-5/palindrome.png"
+  ],
+  "/computational-thinking/week-5/pairs-id-and-property/": [
+    "/images/computational-thinking/week-5/id-mark-pair.png"
+  ],
+  "/computational-thinking/week-5/maximum-with-all-tied-ids/": [
+    "/images/computational-thinking/week-5/tied-maxima.png"
+  ],
+  "/computational-thinking/week-5/similarity-id-pairs/": [
+    "/images/computational-thinking/week-5/similar-pairs.png"
+  ],
+  "/computational-thinking/week-5/triples-and-subject-means/": [
+    "/images/computational-thinking/week-5/score-triple.png"
+  ],
+  "/computational-thinking/week-5/shopping-item-triples/": [
+    "/images/computational-thinking/week-5/bill-triples.png"
+  ],
+  "/computational-thinking/week-5/positions-in-sorted-lists/": [
+    "/images/computational-thinking/week-5/rank-positions.png"
+  ],
+  "/computational-thinking/week-5/implement-length-first-last/": [
+    "/images/computational-thinking/week-5/list-functions.png"
+  ],
+  "/computational-thinking/week-5/implement-rest-init-member/": [
+    "/images/computational-thinking/week-5/membership.png"
+  ],
+  "/computational-thinking/week-5/revision-and-practice/": [],
+  "/computational-thinking/week-5/source-guide/": [],
+  "/computational-thinking/week-6/lists-within-lists/": [
+    "/images/computational-thinking/week-6/nested-levels.png"
+  ],
+  "/computational-thinking/week-6/hierarchical-shopping/": [],
+  "/computational-thinking/week-6/sorted-views-and-keys/": [
+    "/images/computational-thinking/week-6/sorted-views.png"
+  ],
+  "/computational-thinking/week-6/insert-one-value/": [
+    "/images/computational-thinking/week-6/insert-middle.png"
+  ],
+  "/computational-thinking/week-6/insertion-boundaries/": [
+    "/images/computational-thinking/week-6/insert-boundaries.png"
+  ],
+  "/computational-thinking/week-6/insert-procedure-flag/": [
+    "/images/computational-thinking/week-6/inserted-flag.png"
+  ],
+  "/computational-thinking/week-6/insertion-sort-invariant/": [
+    "/images/computational-thinking/week-6/sort-invariant.png"
+  ],
+  "/computational-thinking/week-6/sort-id-mark-pairs/": [
+    "/images/computational-thinking/week-6/pair-key.png"
+  ],
+  "/computational-thinking/week-6/equal-keys-and-stability/": [
+    "/images/computational-thinking/week-6/equal-key-rule.png"
+  ],
+  "/computational-thinking/week-6/sorting-cost-and-top-k/": [],
+  "/computational-thinking/week-6/birthdays-after-sorting/": [
+    "/images/computational-thinking/week-6/sorted-birthdays.png"
+  ],
+  "/computational-thinking/week-6/count-equal-key-runs/": [
+    "/images/computational-thinking/week-6/equal-runs.png"
+  ],
+  "/computational-thinking/week-6/position-based-grades/": [
+    "/images/computational-thinking/week-6/grade-positions.png"
+  ],
+  "/computational-thinking/week-6/grade-boundaries-and-ties/": [
+    "/images/computational-thinking/week-6/grade-ties.png"
+  ],
+  "/computational-thinking/week-6/unpack-grade-list-of-lists/": [
+    "/images/computational-thinking/week-6/unpack-grades.png"
+  ],
+  "/computational-thinking/week-6/define-and-test-hypothesis/": [
+    "/images/computational-thinking/week-6/grade-hypothesis.png"
+  ],
+  "/computational-thinking/week-6/found-and-exitloop/": [
+    "/images/computational-thinking/week-6/exit-inner-loop.png"
+  ],
+  "/computational-thinking/week-6/interpret-confirmation-carefully/": [
+    "/images/computational-thinking/week-6/confirmation-evidence.png"
+  ],
+  "/computational-thinking/week-6/library-insertion-tutorial/": [
+    "/images/computational-thinking/week-6/library-insert.png"
+  ],
+  "/computational-thinking/week-6/library-selector-questions/": [
+    "/images/computational-thinking/week-6/library-selectors.png"
+  ],
+  "/computational-thinking/week-6/read-train-records/": [
+    "/images/computational-thinking/week-6/train-card.png"
+  ],
+  "/computational-thinking/week-6/station-view-and-join/": [
+    "/images/computational-thinking/week-6/station-train-link.png"
+  ],
+  "/computational-thinking/week-6/journey-days-and-clock-arithmetic/": [
+    "/images/computational-thinking/week-6/day-clock.png"
+  ],
+  "/computational-thinking/week-6/origin-days-and-station-days/": [
+    "/images/computational-thinking/week-6/weekday-shift.png"
+  ],
+  "/computational-thinking/week-6/direct-train-search/": [
+    "/images/computational-thinking/week-6/route-direction.png"
+  ],
+  "/computational-thinking/week-6/source-destination-intermediate/": [],
+  "/computational-thinking/week-6/junction-clues-and-connections/": [
+    "/images/computational-thinking/week-6/junction-clue.png"
+  ],
+  "/computational-thinking/week-6/train-cross-view-sanity/": [],
+  "/computational-thinking/week-6/revision-and-practice/": [],
+  "/computational-thinking/week-6/source-guide/": [],
+  "/computational-thinking/week-7/keys-and-values/": [
+    "/images/computational-thinking/week-7/key-value.png"
+  ],
+  "/computational-thinking/week-7/initialize-and-assign/": [
+    "/images/computational-thinking/week-7/initialize.png",
+    "/images/computational-thinking/week-7/replace-value.png"
+  ],
+  "/computational-thinking/week-7/labels-not-positions/": [
+    "/images/computational-thinking/week-7/label-not-position.png"
+  ],
+  "/computational-thinking/week-7/check-before-reading/": [
+    "/images/computational-thinking/week-7/key-presence.png"
+  ],
+  "/computational-thinking/week-7/keys-and-iteration/": [
+    "/images/computational-thinking/week-7/keys-list.png"
+  ],
+  "/computational-thinking/week-7/marks-and-average/": [
+    "/images/computational-thinking/week-7/average-values.png"
+  ],
+  "/computational-thinking/week-7/accumulate-and-time/": [
+    "/images/computational-thinking/week-7/accumulate.png"
+  ],
+  "/computational-thinking/week-7/seen-dictionary/": [
+    "/images/computational-thinking/week-7/seen-memory.png"
+  ],
+  "/computational-thinking/week-7/word-length-frequencies/": [
+    "/images/computational-thinking/week-7/word-frequency.png"
+  ],
+  "/computational-thinking/week-7/city-counts/": [
+    "/images/computational-thinking/week-7/city-frequency.png"
+  ],
+  "/computational-thinking/week-7/birthday-index/": [
+    "/images/computational-thinking/week-7/birthday-key.png"
+  ],
+  "/computational-thinking/week-7/duplicate-date-flags/": [
+    "/images/computational-thinking/week-7/duplicate-dates.png"
+  ],
+  "/computational-thinking/week-7/birthday-id-lists/": [
+    "/images/computational-thinking/week-7/birthday-values.png"
+  ],
+  "/computational-thinking/week-7/nested-birthday-dictionaries/": [
+    "/images/computational-thinking/week-7/nested-initialize.png"
+  ],
+  "/computational-thinking/week-7/choose-values-and-cost/": [
+    "/images/computational-thinking/week-7/key-order.png"
+  ],
+  "/computational-thinking/week-7/count-bill-rows/": [
+    "/images/computational-thinking/week-7/row-not-quantity.png"
+  ],
+  "/computational-thinking/week-7/category-map/": [
+    "/images/computational-thinking/week-7/category-map.png"
+  ],
+  "/computational-thinking/week-7/customer-profiles/": [
+    "/images/computational-thinking/week-7/customer-profile.png"
+  ],
+  "/computational-thinking/week-7/coarse-customer-groups/": [
+    "/images/computational-thinking/week-7/basket-groups.png"
+  ],
+  "/computational-thinking/week-7/manhattan-distance/": [
+    "/images/computational-thinking/week-7/absolute-distance.png"
+  ],
+  "/computational-thinking/week-7/totals-can-hide-differences/": [
+    "/images/computational-thinking/week-7/totals-not-distance.png"
+  ],
+  "/computational-thinking/week-7/pair-table/": [
+    "/images/computational-thinking/week-7/pair-triangle.png"
+  ],
+  "/computational-thinking/week-7/closeness-and-groups/": [
+    "/images/computational-thinking/week-7/nontransitive.png"
+  ],
+  "/computational-thinking/week-7/food-by-customer/": [
+    "/images/computational-thinking/week-7/food-customer.png"
+  ],
+  "/computational-thinking/week-7/food-by-shop/": [
+    "/images/computational-thinking/week-7/food-shop.png"
+  ],
+  "/computational-thinking/week-7/bill-id-index/": [
+    "/images/computational-thinking/week-7/bill-id-join.png"
+  ],
+  "/computational-thinking/week-7/food-shop-hypothesis/": [
+    "/images/computational-thinking/week-7/food-hypothesis.png"
+  ],
+  "/computational-thinking/week-7/part-of-speech-index/": [
+    "/images/computational-thinking/week-7/pos-lists.png"
+  ],
+  "/computational-thinking/week-7/pronoun-matching/": [
+    "/images/computational-thinking/week-7/nearest-noun.png"
+  ],
+  "/computational-thinking/week-7/debug-dictionaries/": [
+    "/images/computational-thinking/week-7/pronoun-sentinel.png"
+  ],
+  "/computational-thinking/week-7/choose-the-structure/": [
+    "/images/computational-thinking/week-7/train-source.png",
+    "/images/computational-thinking/week-7/representation-choice.png"
+  ],
+  "/computational-thinking/week-7/revision-and-practice/": [],
+  "/computational-thinking/week-7/source-guide/": []
 }

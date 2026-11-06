@@ -1,0 +1,2067 @@
+{
+  "subject": "Computational Thinking",
+  "subjectSlug": "computational-thinking",
+  "week": 7,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "base": "/computational-thinking/week-7/",
+  "title": "Dictionaries, frequencies and customer patterns",
+  "description": "Learn keys and values through shared birthdays, word frequencies, shopping profiles and pronoun matching, with easy-English examples and interactive traces.",
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Build labelled collections that remember exactly what the next question needs."
+    }
+  ],
+  "illustrationCount": 33,
+  "sections": [
+    {
+      "slug": "keys-and-values",
+      "title": "A dictionary connects a key to a value",
+      "source": "Lectures 7.1, 7.3, 7.6",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A dictionary is a collection of labelled entries. Each entry has a KEY, which tells us what to look for, and a VALUE, which is the information stored there. Think of a labelled drawer: give its label and get what is inside. You do not need to walk through all earlier drawers."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/key-value.png",
+          "width": 768,
+          "height": 500,
+          "alt": "A CardNo key points to one Chemistry mark. Actual course entries include 7 → 76 and 21 → 74.",
+          "caption": "A CardNo key points to one Chemistry mark. Actual course entries include 7 → 76 and 21 → 74."
+        },
+        {
+          "type": "paragraph",
+          "text": "Write a colon between each key and its value, and curly braces around the dictionary: {7:76, 21:74}. The key 7 identifies Aditya; the value 76 is Aditya’s Chemistry mark. Monika has CardNo 21 and Chemistry 74. A key need not be a student ID: city names, customers, birthdays and train numbers are useful keys too."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Key",
+              "Value"
+            ],
+            [
+              "What is this student’s mark?",
+              "CardNo",
+              "Mark"
+            ],
+            [
+              "How many students are from this city?",
+              "City",
+              "Count"
+            ],
+            [
+              "Who has this birthday?",
+              "Day + month",
+              "List of IDs"
+            ],
+            [
+              "Where does this historical train start?",
+              "Train number string",
+              "Source station"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "In {7:76,21:74}, what are the keys?",
+          "answer": "7 and 21. The values are 76 and 74."
+        },
+        {
+          "type": "check",
+          "question": "Can a dictionary value be a list?",
+          "answer": "Yes. A value can be a number, Boolean, string, list or another dictionary, depending on the problem."
+        },
+        {
+          "type": "check",
+          "question": "Is a dictionary just a list of student IDs?",
+          "answer": "No. Its entries connect each unique key to a value. A list is an ordered sequence of elements."
+        }
+      ]
+    },
+    {
+      "slug": "initialize-and-assign",
+      "title": "Create the dictionary before assigning entries",
+      "source": "Lecture 7.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Start with d = {}. This declares an empty dictionary. Then d[7] = 76 creates a key 7 and stores 76. d[21] = 74 creates a second entry. Square brackets after the dictionary name contain a KEY. Curly braces display the dictionary itself."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/initialize.png",
+          "width": 768,
+          "height": 524,
+          "alt": "Initialize d as {}, then add the two actual course Chemistry entries.",
+          "caption": "Initialize d as {}, then add the two actual course Chemistry entries."
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/replace-value.png",
+          "width": 768,
+          "height": 524,
+          "alt": "A separate illustrative update: assigning d[7] = 80 replaces its earlier 76. This does not change the original course record.",
+          "caption": "A separate illustrative update: assigning d[7] = 80 replaces its earlier 76. This does not change the original course record."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "assignment",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "d = {}\nd[7] = 76\nd[21] = 74\nanswer = d[21]     # 74\n\n# Separate illustrative update, not a correction to the dataset:\nd[7] = 80         # replace the previous value for key 7"
+        },
+        {
+          "type": "paragraph",
+          "text": "Assignment has two cases: a missing key creates an entry; a present key gets a replacement value. It does not keep two entries with the same key. To keep multiple values, deliberately store a list or another dictionary as the one value."
+        },
+        {
+          "type": "check",
+          "question": "After d={} then d[7]=76 then d[7]=80, how many entries exist?",
+          "answer": "One entry: {7:80}."
+        },
+        {
+          "type": "check",
+          "question": "What is wrong with trying d[7]=76 before creating d?",
+          "answer": "The variable has not been initialized as a dictionary. Initialize d={} first."
+        },
+        {
+          "type": "check",
+          "question": "Does d[7]=80 add 80 to 76?",
+          "answer": "No. Assignment replaces 76 with 80. Addition would require d[7]=d[7]+80."
+        }
+      ]
+    },
+    {
+      "slug": "labels-not-positions",
+      "title": "A key is a label, not a list position",
+      "source": "Lectures 7.1, 7.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/label-not-position.png",
+          "width": 768,
+          "height": 500,
+          "alt": "marks[21] looks for the CardNo 21 key and returns 74. There are only two entries in this miniature dictionary.",
+          "caption": "marks[21] looks for the CardNo 21 key and returns 74. There are only two entries in this miniature dictionary."
+        },
+        {
+          "type": "paragraph",
+          "text": "The dictionary {7:76,21:74} has two entries. Yet marks[21] is a valid lookup because 21 is a key. It does not request the 21st element. Similarly, CardNo 0 is a real student ID in the dataset; it does not mean “missing”."
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose a unique key when you want one entry per student. Names can repeat. Two distinct students called Asha would collide in a name → mark dictionary. The later assignment would overwrite the earlier mark. IDs 101 and 202 avoid that problem in the constructed example below."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "collision",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Different keys are allowed to store the same value. Rida and Bhuvanesh both have Chemistry 78, but their CardNo keys 3 and 0 are different. Unique KEYS do not imply unique VALUES."
+        },
+        {
+          "type": "check",
+          "question": "Does marks[21] require at least 21 dictionary entries?",
+          "answer": "No. It requires the key 21 to exist."
+        },
+        {
+          "type": "check",
+          "question": "Can {101:70,202:70} be valid?",
+          "answer": "Yes. The keys differ; equal values are allowed."
+        },
+        {
+          "type": "check",
+          "question": "Why can names lose information?",
+          "answer": "If two records share a name, assigning by that name replaces the first value. Use unique IDs or deliberately group multiple IDs under a name."
+        }
+      ]
+    },
+    {
+      "slug": "check-before-reading",
+      "title": "Check whether the key exists before reading it",
+      "source": "Lecture 7.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/key-presence.png",
+          "width": 768,
+          "height": 510,
+          "alt": "A present zero and a missing key are different. isKey tests the key, not the value’s truth.",
+          "caption": "A present zero and a missing key are different. isKey tests the key, not the value’s truth."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "membership",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "if (isKey(d,k)) {\n    value = d[k]\n}\nelse {\n    # No value is stored for this key.\n    # Decide whether to create an entry or report a missing key.\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "With d={7:0}, isKey(d,7) is True and d[7] is 0. isKey(d,99) is False. Do not assume a missing lookup automatically returns 0 or False in this pseudocode. The lab’s key 7 has a constructed zero specifically to demonstrate presence; it is not Aditya’s actual Chemistry mark."
+        },
+        {
+          "type": "paragraph",
+          "text": "keys(d) tells us the existing keys, not all possible keys. A present key may hold False, 0, [] or {}. None of these values makes the key disappear."
+        },
+        {
+          "type": "check",
+          "question": "For d={7:False}, isKey(d,7) True or False?",
+          "answer": "True. The key exists even though its stored Boolean is False."
+        },
+        {
+          "type": "check",
+          "question": "Does isKey({7:76},76) test whether 76 is a stored value?",
+          "answer": "No. It tests for a KEY 76, which is absent here."
+        },
+        {
+          "type": "check",
+          "question": "What happens on an empty dictionary membership search?",
+          "answer": "No loop body executes and found remains False."
+        }
+      ]
+    },
+    {
+      "slug": "keys-and-iteration",
+      "title": "Loop through keys, then read their values",
+      "source": "Lecture 7.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/keys-list.png",
+          "width": 768,
+          "height": 514,
+          "alt": "keys(d) returns a list of keys. The course does not promise a sorted key order.",
+          "caption": "keys(d) returns a list of keys. The course does not promise a sorted key order."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "keys",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "foreach k in keys(d) {\n    value = d[k]\n    # use k and value\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not assume dictionary keys come out in the order they were inserted, in number order, or in alphabetical order. Our visual table chooses a readable display order; that is not a pseudocode guarantee. If a task needs sorted keys, extract keys(d) and sort that LIST using an explicit comparator."
+        },
+        {
+          "type": "paragraph",
+          "text": "The resulting list of keys lets you use familiar list operations. length(keys(d)) counts distinct entries. It does not count all original records if several records were accumulated under the same key."
+        },
+        {
+          "type": "check",
+          "question": "If d={Chennai:8,Madurai:5}, what does length(keys(d)) count?",
+          "answer": "Two city keys. It does not report the 13 student records represented by those values."
+        },
+        {
+          "type": "check",
+          "question": "Can summing all dictionary values depend on key order?",
+          "answer": "For these exact integer counts, no. Each value contributes once regardless of order."
+        },
+        {
+          "type": "check",
+          "question": "Does a displayed row order prove keys(d) is sorted?",
+          "answer": "No. It is only a display choice unless the algorithm explicitly sorts the key list."
+        }
+      ]
+    },
+    {
+      "slug": "marks-and-average",
+      "title": "Build a marks dictionary and compute an average",
+      "source": "Lecture 7.3",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Create chemMarks={}, then scan each score card. Store chemMarks[X.CardNo]=X.Chemistry. The lecture shows names as keys; the lab uses unique CardNo values so that repeated names would not overwrite another student. The dictionary keeps a computed view without altering the source cards."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "lookup",
+          "explore": false
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/average-values.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Miniature example: values 76 and 74 total 150, so their average is 75. The full dataset calculation below uses 30 students.",
+          "caption": "Miniature example: values 76 and 74 total 150, so their average is 75. The full dataset calculation below uses 30 students."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "average",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "chemMarks = {}\nwhile (Table 1 has more rows) {\n    Read the first row X in Table 1\n    chemMarks[X.CardNo] = X.Chemistry\n    Move X to Table 2\n}\ntotal = 0\ncount = 0\nforeach k in keys(chemMarks) {\n    total = total + chemMarks[k]\n    count = count + 1\n}\nif (count > 0) {\n    average = total / count\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the original 30 cards, Chemistry totals 2314 and the mean is 2314/30 ≈ 77.1333. Switching the lab field recomputes the values from those same cards. An empty input has no average; report it rather than dividing by zero."
+        },
+        {
+          "type": "check",
+          "question": "Should the average add keys 0,1,2,…?",
+          "answer": "No. Add the marks stored at those keys."
+        },
+        {
+          "type": "check",
+          "question": "Why use a count variable as well as a total?",
+          "answer": "The total is divided by the number of student entries processed."
+        },
+        {
+          "type": "check",
+          "question": "What does overwriting duplicate name keys do to an average?",
+          "answer": "It can remove a student’s earlier mark from the dictionary, making the resulting average differ from the full-record average."
+        }
+      ]
+    },
+    {
+      "slug": "accumulate-and-time",
+      "title": "Create on the first visit; accumulate on later visits",
+      "source": "Lecture 7.3",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/accumulate.png",
+          "width": 768,
+          "height": 510,
+          "alt": "Illustrative cricket scores: 20 followed by 30 gives an accumulated total 50. These are constructed examples, not real match results.",
+          "caption": "Illustrative cricket scores: 20 followed by 30 gives an accumulated total 50. These are constructed examples, not real match results."
+        },
+        {
+          "type": "code",
+          "text": "runs = {}\nforeach scoreRow in matchRows {\n    player = scoreRow.Player\n    if (isKey(runs,player)) {\n        runs[player] = runs[player] + scoreRow.Runs\n    }\n    else {\n        runs[player] = scoreRow.Runs\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For Kohli’s first illustrative 20, create runs[Kohli]=20. For a later 30, read 20 and replace it with 20+30=50. Writing runs[Kohli]=30 would erase the earlier total. Writing runs[Kohli]=runs[Kohli]+20 before the key exists would read an absent value."
+        },
+        {
+          "type": "paragraph",
+          "text": "The course assumes direct dictionary lookup, update and built-in isKey take constant time. “Random access” means direct access by a key; it does not mean choosing a random key. The lecture’s manual isKey scans keys(D), sets found=True on a match and uses exitloop. That manual version can inspect every key, so it is linear in the number of keys. Keep the assumed built-in and the demonstration scan separate."
+        },
+        {
+          "type": "code",
+          "text": "Procedure manualIsKey(D,k)\n    found = False\n    foreach candidate in keys(D) {\n        if (candidate == k) {\n            found = True\n            exitloop\n        }\n    }\n    return(found)\nEnd manualIsKey"
+        },
+        {
+          "type": "note",
+          "text": "These are the course’s abstract data-structure assumptions. Real languages can implement lists and dictionaries differently. Iterating over every key still costs work for every entry; a constant-time lookup does not make a whole scan constant time."
+        },
+        {
+          "type": "check",
+          "question": "A dictionary already stores runs[A]=20. What does runs[A]=30 leave?",
+          "answer": "30. To accumulate a new 30, assign runs[A]=runs[A]+30, giving 50."
+        },
+        {
+          "type": "check",
+          "question": "Does manualIsKey prove dictionary lookup is constant time?",
+          "answer": "No. It is a correct linear search demonstration. The efficient built-in isKey is an assumed primitive."
+        },
+        {
+          "type": "check",
+          "question": "If there are m keys and a key is missing, how many candidates can the manual search inspect?",
+          "answer": "All m keys. Only then can it report absence."
+        }
+      ]
+    },
+    {
+      "slug": "seen-dictionary",
+      "title": "Use seen to avoid reversed pairs without marking cards",
+      "source": "Lecture 7.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/seen-memory.png",
+          "width": 768,
+          "height": 512,
+          "alt": "The Riya card is an illustrative fictional card showing temporary seen memory. The lab below uses the original score records, where CardNo 2 is Shashank.",
+          "caption": "The Riya card is an illustrative fictional card showing temporary seen memory. The lab below uses the original score records, where CardNo 2 is Shashank."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "seen",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "seen = {}\nforeach A in scores {\n    seen[A.CardNo] = True\n    foreach B in scores {\n        if (not isKey(seen,B.CardNo)) {\n            if (A.Mathematics == B.Mathematics) {\n                # record [A.CardNo,B.CardNo]\n            }\n        }\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mark the OUTER card before checking inner cards. The mark excludes the card itself and all earlier outer cards. A later inner card remains unmarked until it becomes an outer card. Marking every inner candidate would wrongly remove future pairs. Start a fresh seen dictionary for a new task."
+        },
+        {
+          "type": "paragraph",
+          "text": "For three cards A,B,C, the accepted comparisons are A–B, A–C and B–C. A–A and reversed B–A are skipped. For 30 students there are 435 accepted mark comparisons. This particular two-full-loop algorithm still performs 900 membership checks. It organizes pairs but does not remove the nested loops."
+        },
+        {
+          "type": "check",
+          "question": "Why mark A before the inner loop?",
+          "answer": "To skip A itself and every previously processed outer card."
+        },
+        {
+          "type": "check",
+          "question": "Should we mark B just because it was an inner candidate?",
+          "answer": "No. That would wrongly prevent later comparisons involving B."
+        },
+        {
+          "type": "check",
+          "question": "Does a seen dictionary make this pair algorithm one-pass linear time?",
+          "answer": "No. It still scans all inner cards for each outer card; the accepted unordered comparisons number n(n−1)/2."
+        }
+      ]
+    },
+    {
+      "slug": "word-length-frequencies",
+      "title": "Build a word-length frequency dictionary",
+      "source": "Lecture 7.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/word-frequency.png",
+          "width": 768,
+          "height": 512,
+          "alt": "The supplied 65 word cards contain 11 of length 2, 16 of length 3 and 10 of length 4.",
+          "caption": "The supplied 65 word cards contain 11 of length 2, 16 of length 3 and 10 of length 4."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "wordlength",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "lengthCount = {}\nforeach X in words {\n    k = X.LetterCount\n    if (isKey(lengthCount,k)) {\n        lengthCount[k] = lengthCount[k] + 1\n    }\n    else {\n        lengthCount[k] = 1\n    }\n}"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "LetterCount",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11"
+            ],
+            [
+              "Word-card frequency",
+              "11",
+              "16",
+              "10",
+              "2",
+              "7",
+              "4",
+              "4",
+              "5",
+              "4",
+              "2"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the provided LetterCount field. The Word field retains punctuation, so counting the visible characters of “morning.” is a different calculation. Repeated word occurrences each count once. There are 10 observed length keys and 65 word records. The most frequent length is 3, with 16 occurrences."
+        },
+        {
+          "type": "paragraph",
+          "text": "A bar chart can put observed lengths in numerical order and frequencies on the vertical axis. That ordering is a presentation step; it does not require dictionary storage to be sorted. A missing length key means no observed occurrence under this counting rule."
+        },
+        {
+          "type": "check",
+          "question": "What does lengthCount[3]=16 mean?",
+          "answer": "Sixteen word cards have supplied LetterCount 3. It is not the third word’s length."
+        },
+        {
+          "type": "check",
+          "question": "What should the frequencies sum to?",
+          "answer": "65, the number of word cards."
+        },
+        {
+          "type": "check",
+          "question": "If “the” appears many times, do we count it once?",
+          "answer": "No. This is a frequency of word-card occurrences, not a count of distinct spellings."
+        }
+      ]
+    },
+    {
+      "slug": "city-counts",
+      "title": "Count students from each city",
+      "source": "Lecture 7.1",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/city-frequency.png",
+          "width": 768,
+          "height": 512,
+          "alt": "Small constructed example: two Chennai records and one Bengaluru record give counts 2 and 1. The lab uses all 30 original students.",
+          "caption": "Small constructed example: two Chennai records and one Bengaluru record give counts 2 and 1. The lab uses all 30 original students."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "city",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Now use CityTown as the key and a student count as the value. Each record increments exactly one city. This is the same create-or-increment pattern as word lengths; only the chosen key changes. You no longer need separate counters named ChennaiCount, MaduraiCount and so on."
+        },
+        {
+          "type": "code",
+          "text": "cityCount = {}\nforeach X in scores {\n    city = X.CityTown\n    if (not isKey(cityCount,city)) {\n        cityCount[city] = 0\n    }\n    cityCount[city] = cityCount[city] + 1\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use consistent labels. “Bengaluru” is the dataset label; the spoken lecture sometimes says Bangalore. A deliberate alias map can combine known alternatives. Do not automatically merge unrelated places just because their names look similar."
+        },
+        {
+          "type": "check",
+          "question": "What do city keys represent?",
+          "answer": "The distinct CityTown labels observed in the input."
+        },
+        {
+          "type": "check",
+          "question": "Why is setting a new city to 0 followed by adding 1 correct?",
+          "answer": "The first record becomes 1; later records increment the accumulated value."
+        },
+        {
+          "type": "check",
+          "question": "Does reversing the cards change city totals?",
+          "answer": "No. It may change intermediate states, but each student still contributes once to the same city."
+        }
+      ]
+    },
+    {
+      "slug": "birthday-index",
+      "title": "Use day and month as a birthday key",
+      "source": "Lecture 7.2",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/birthday-key.png",
+          "width": 768,
+          "height": 512,
+          "alt": "Aditya (7) and Monika (21) share 15 March. The 30 original students have 29 different day-and-month birthdays.",
+          "caption": "Aditya (7) and Monika (21) share 15 March. The 30 original students have 29 different day-and-month birthdays."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "birthday",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Earlier weeks used all pairs, month bins and sorting. A dictionary provides another route: read each student once, compute a day-and-month key, and go straight to that birthday’s entry. A key such as “15 Mar” combines BOTH day and month. The year is ignored for this shared-birthday task."
+        },
+        {
+          "type": "paragraph",
+          "text": "Normalize known equivalent spellings before making keys. In these cards, Jul and July mean the same month. Different birthdays such as 15 Mar and 15 May must remain separate. Do not compare only month, and do not compare only day number."
+        },
+        {
+          "type": "paragraph",
+          "text": "After all 30 records, one repeated key is 15 Mar, associated with IDs [7,21]. The other 28 observed keys each have one student. Therefore there are 29 distinct birthday keys. Finding a shared birthday in this class is an observation, not a guarantee that every class of that size has one."
+        },
+        {
+          "type": "check",
+          "question": "Is the key just “March”?",
+          "answer": "No. That would group everyone born in March, including different days."
+        },
+        {
+          "type": "check",
+          "question": "Should birth year be included for this task?",
+          "answer": "No. The task asks for a shared day and month."
+        },
+        {
+          "type": "check",
+          "question": "Do 29 dictionary keys mean only 29 students were processed?",
+          "answer": "No. Two students share one birthday key, so 30 students produce 29 distinct keys."
+        }
+      ]
+    },
+    {
+      "slug": "duplicate-date-flags",
+      "title": "Keep duplicate dates in a second dictionary",
+      "source": "Lecture 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/duplicate-dates.png",
+          "width": 768,
+          "height": 510,
+          "alt": "A repeated date sets duplicates[date]=True. A third person on the same date does not create a second copy of that key.",
+          "caption": "A repeated date sets duplicates[date]=True. A third person on the same date does not create a second copy of that key."
+        },
+        {
+          "type": "code",
+          "text": "birthdays = {}\nduplicates = {}\nforeach X in scores {\n    dob = normalizedDayMonth(X.DateOfBirth)\n    if (isKey(birthdays,dob)) {\n        duplicates[dob] = True\n    }\n    else {\n        birthdays[dob] = True\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "birthdays remembers every observed birthday; duplicates remembers only dates seen at least twice. Both are dictionaries of True flags. Repeated assignment duplicates[dob]=True leaves one entry for that date. It does not count occurrences or remember students."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a constructed group of three people with the same birthday, duplicates still has one date key, but there are three unordered student pairs. A date group of size r contains r(r−1)/2 such pairs. Do not use the number of duplicate-date keys as the pair count."
+        },
+        {
+          "type": "check",
+          "question": "After one occurrence, is its date in duplicates?",
+          "answer": "No. The second occurrence creates the duplicate-date flag."
+        },
+        {
+          "type": "check",
+          "question": "Three records share 1 Jan. How many duplicate-date keys and matching pairs?",
+          "answer": "One duplicate-date key and three unordered pairs."
+        },
+        {
+          "type": "check",
+          "question": "Do True flags identify the students?",
+          "answer": "No. Store IDs in the birthday values when you need to know who shares the date."
+        }
+      ]
+    },
+    {
+      "slug": "birthday-id-lists",
+      "title": "Store the IDs who share each birthday",
+      "source": "Lectures 7.2, 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/birthday-values.png",
+          "width": 768,
+          "height": 510,
+          "alt": "The same date key can remember existence, a count, an ID list or an inner ID dictionary. Choose the representation for the question.",
+          "caption": "The same date key can remember existence, a count, an ID list or an inner ID dictionary. Choose the representation for the question."
+        },
+        {
+          "type": "code",
+          "text": "birthdays = {}\nduplicates = {}\nforeach X in scores {\n    dob = normalizedDayMonth(X.DateOfBirth)\n    id = X.CardNo\n    if (isKey(birthdays,dob)) {\n        duplicates[dob] = True\n        birthdays[dob] = birthdays[dob] ++ [id]\n    }\n    else {\n        birthdays[dob] = [id]\n    }\n}\nforeach dob in keys(duplicates) {\n    sharedIDs = birthdays[dob]\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "On Aditya’s card, birthdays[15 Mar] becomes [7]. On Monika’s card it becomes [7,21]. Here length(birthdays[15 Mar]) is 2, while length(keys(birthdays)) is 29 after the full scan. One counts students at a chosen date; the other counts observed dates."
+        },
+        {
+          "type": "check",
+          "question": "Why append [id] rather than id?",
+          "answer": "++ concatenates lists, so wrap the new ID in a one-element list."
+        },
+        {
+          "type": "check",
+          "question": "Does birthdays[dob]=[id] on every card retain all students?",
+          "answer": "No. It replaces earlier lists. Append on existing keys."
+        },
+        {
+          "type": "check",
+          "question": "What does birthdays[15 Mar] return here?",
+          "answer": "The whole ID list [7,21], not one ID and not just a Boolean flag."
+        }
+      ]
+    },
+    {
+      "slug": "nested-birthday-dictionaries",
+      "title": "A dictionary value can be another dictionary",
+      "source": "Lecture 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/nested-initialize.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Create the outer birthday dictionary, create an empty inner dictionary for a new date, then add an ID → True entry.",
+          "caption": "Create the outer birthday dictionary, create an empty inner dictionary for a new date, then add an ID → True entry."
+        },
+        {
+          "type": "code",
+          "text": "birthdays = {}\nduplicates = {}\nforeach X in scores {\n    dob = normalizedDayMonth(X.DateOfBirth)\n    id = X.CardNo\n    if (isKey(birthdays,dob)) {\n        duplicates[dob] = True\n    }\n    else {\n        birthdays[dob] = {}\n    }\n    birthdays[dob][id] = True\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "birthdays[15 Mar] is now {7:True,21:True}. To find IDs, use keys(birthdays[15 Mar]). To ask whether ID 21 is in that date group, test isKey(birthdays[15 Mar],21). First check the outer date key before reading its inner dictionary."
+        },
+        {
+          "type": "paragraph",
+          "text": "The inner {} must be created only for a new date. Reinitializing it on every occurrence erases earlier IDs. With unique student records, the list and inner-dictionary versions identify the same students. If an ID is accidentally processed twice, a list retains the duplicate occurrence but an ID-keyed dictionary overwrites that ID’s True flag."
+        },
+        {
+          "type": "check",
+          "question": "What is the type of birthdays[15 Mar]?",
+          "answer": "A dictionary whose keys are student IDs and values are True flags."
+        },
+        {
+          "type": "check",
+          "question": "What goes wrong if birthdays[dob]={} is executed for every record?",
+          "answer": "It clears the existing group and loses earlier students at that date."
+        },
+        {
+          "type": "check",
+          "question": "Does an inner dictionary preserve repeated copies of the same ID?",
+          "answer": "No. Each ID key has one current value. This differs from appending repeatedly to a list."
+        }
+      ]
+    },
+    {
+      "slug": "choose-values-and-cost",
+      "title": "Choose what to remember and what work remains",
+      "source": "Lectures 7.2, 7.3, 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/key-order.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Dictionary lookup does not require sorted keys. Extract and sort keys only when the later task needs calendar order.",
+          "caption": "Dictionary lookup does not require sorted keys. Extract and sort keys only when the later task needs calendar order."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Value choice",
+              "Can answer",
+              "Does not retain"
+            ],
+            [
+              "True",
+              "Has this date appeared?",
+              "Count and student identities"
+            ],
+            [
+              "Count",
+              "How many records have this date?",
+              "Individual IDs"
+            ],
+            [
+              "ID list",
+              "Which ID occurrences appeared?",
+              "Direct key membership without searching the list"
+            ],
+            [
+              "ID dictionary",
+              "Which distinct IDs appeared?",
+              "Repeated copies of the same ID"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Under the course’s constant-time dictionary-operation assumption, a birthday presence/count scan does one small amount of dictionary work per record. Finding all pairs inside a large equal-date group still requires work for every pair output. Storing ID lists also needs space for those IDs. Do not claim the entire task, including arbitrary list concatenation or producing all pairs, is constant time."
+        },
+        {
+          "type": "paragraph",
+          "text": "The course’s list model is sequential: finding a member may require a scan. That is why an ID dictionary can be useful for repeated membership questions. A list remains useful when sequence and repeated occurrences matter."
+        },
+        {
+          "type": "check",
+          "question": "Can a True flag answer “which students”?",
+          "answer": "No. It loses the IDs."
+        },
+        {
+          "type": "check",
+          "question": "Does a direct dictionary lookup require sorting its keys first?",
+          "answer": "No."
+        },
+        {
+          "type": "check",
+          "question": "If all n students share one birthday and we print all pairs, can there be only n outputs?",
+          "answer": "No. There are n(n−1)/2 unordered pairs; outputting them requires that many pair outputs."
+        }
+      ]
+    },
+    {
+      "slug": "count-bill-rows",
+      "title": "First choose the unit: item rows, quantities or money",
+      "source": "Lectures 7.4, 7.6, 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/row-not-quantity.png",
+          "width": 768,
+          "height": 510,
+          "alt": "Bill 1 excerpt: carrots, tomatoes and bananas are three food rows. Their different quantity units are not added for this row-count task.",
+          "caption": "Bill 1 excerpt: carrots, tomatoes and bananas are three food rows. Their different quantity units are not added for this row-count task."
+        },
+        {
+          "type": "paragraph",
+          "text": "A bill item row represents one listed product entry. The quantity column says how much of that product was purchased. Price × quantity gives the row cost. These are different measurements. The lecturers initially explore quantities, then explicitly switch to counting ROWS because mixing kilos, packets and individual pieces is unclear."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Bill 1 excerpt",
+              "Quantity",
+              "Contribution to Food row count"
+            ],
+            [
+              "Carrots",
+              "1.5",
+              "1"
+            ],
+            [
+              "Tomatoes",
+              "2",
+              "1"
+            ],
+            [
+              "Bananas",
+              "8",
+              "1"
+            ],
+            [
+              "Excerpt total",
+              "Do not mix these units",
+              "3 rows"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The full Bill 1 has seven rows: five Food, one Toiletries and one Apparel. The illustration is only a three-row excerpt. Across all 30 original bills there are 155 item rows, of which 97 are Food under the stated broad-category map. We keep row names and original category labels so these counts can be checked."
+        },
+        {
+          "type": "check",
+          "question": "A single bananas row has quantity 12. How much does it add?",
+          "answer": "One Food row under this task’s unit."
+        },
+        {
+          "type": "check",
+          "question": "Does a bill with five food rows represent five separate bills?",
+          "answer": "No. It is one bill with five qualifying item rows."
+        },
+        {
+          "type": "check",
+          "question": "Can the Food row maximum identify the highest spender in rupees?",
+          "answer": "No. The count does not use prices or costs. A money-based question needs a separate sum."
+        }
+      ]
+    },
+    {
+      "slug": "category-map",
+      "title": "Make the broad-category map explicit",
+      "source": "Lectures 7.4, 7.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/category-map.png",
+          "width": 768,
+          "height": 510,
+          "alt": "Detailed labels are mapped consistently to five broad groups before comparing customer profiles.",
+          "caption": "Detailed labels are mapped consistently to five broad groups before comparing customer profiles."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Original label or suffix",
+              "Broad group"
+            ],
+            [
+              "Food; Vegetables/Food; Dairy/Food; Packed/Food; Meat/Food; other /Food",
+              "Food"
+            ],
+            [
+              "Apparel; Women/Apparel; Men/Apparel; Footwear/Apparel",
+              "Apparel"
+            ],
+            [
+              "Toiletries; Cosmetics; Grooming",
+              "Toiletries"
+            ],
+            [
+              "Utilities; Electronics; Accessories; Stationery",
+              "Utilities"
+            ],
+            [
+              "Household",
+              "Household"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the same rule for every bill. Keep the original detailed label alongside the broad group so the aggregation is reversible by returning to source records. Do not silently move a category because it makes a particular pair of customers look closer."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, Bill 14’s Razor Blades, Razor and Shaving Lotion map from Grooming to Toiletries. Phone Charger, Earphones and Pencils map to Utilities. These six rows therefore contribute three Toiletries and three Utilities for Vignesh."
+        },
+        {
+          "type": "check",
+          "question": "Does Stationery stay separate in this five-column comparison?",
+          "answer": "No. The lecture’s chosen grouping places it under Utilities."
+        },
+        {
+          "type": "check",
+          "question": "Does a broader map preserve every detailed product difference?",
+          "answer": "No. It simplifies information. Keep the original rows for more detailed follow-up questions."
+        },
+        {
+          "type": "check",
+          "question": "Why must every customer use the same map?",
+          "answer": "Otherwise the profile columns would have different meanings, so their distances would be inconsistent."
+        }
+      ]
+    },
+    {
+      "slug": "customer-profiles",
+      "title": "Build customer → category → row counts",
+      "source": "Lecture 7.4",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/customer-profile.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Abhinav’s five-category row-count profile is [3,8,2,0,1], with total 14.",
+          "caption": "Abhinav’s five-category row-count profile is [3,8,2,0,1], with total 14."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "profiles",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "profile = {}\nforeach bill in bills {\n    customer = bill.Customer\n    if (not isKey(profile,customer)) {\n        profile[customer] = {}\n    }\n    foreach item in bill.Items {\n        category = broadCategory(item.Category)\n        if (not isKey(profile[customer],category)) {\n            profile[customer][category] = 0\n        }\n        profile[customer][category] = profile[customer][category] + 1\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lab pre-fills all five category keys with zero for a readable table. The pseudocode above creates only observed category keys. They are equivalent for the displayed profile if missing category counts are treated as zero when forming the five-column vector. Category order is [Apparel, Food, Toiletries, Utilities, Household]."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Customer",
+              "Apparel",
+              "Food",
+              "Toiletries",
+              "Utilities",
+              "Household",
+              "Total rows"
+            ],
+            [
+              "Abhinav",
+              "3",
+              "8",
+              "2",
+              "0",
+              "1",
+              "14"
+            ],
+            [
+              "Advaith",
+              "3",
+              "4",
+              "1",
+              "4",
+              "0",
+              "12"
+            ],
+            [
+              "Ahmed",
+              "0",
+              "18",
+              "1",
+              "5",
+              "0",
+              "24"
+            ],
+            [
+              "Akhil",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "Akshaya",
+              "3",
+              "13",
+              "4",
+              "0",
+              "1",
+              "21"
+            ],
+            [
+              "Aparna",
+              "0",
+              "1",
+              "0",
+              "2",
+              "1",
+              "4"
+            ],
+            [
+              "George",
+              "0",
+              "4",
+              "0",
+              "0",
+              "0",
+              "4"
+            ],
+            [
+              "Julia",
+              "0",
+              "6",
+              "0",
+              "0",
+              "0",
+              "6"
+            ],
+            [
+              "Mohith",
+              "1",
+              "4",
+              "0",
+              "0",
+              "0",
+              "5"
+            ],
+            [
+              "Neeraja",
+              "0",
+              "6",
+              "1",
+              "0",
+              "0",
+              "7"
+            ],
+            [
+              "Radha",
+              "0",
+              "5",
+              "0",
+              "0",
+              "0",
+              "5"
+            ],
+            [
+              "Rajesh",
+              "0",
+              "2",
+              "0",
+              "3",
+              "0",
+              "5"
+            ],
+            [
+              "Srivatsan",
+              "1",
+              "12",
+              "1",
+              "3",
+              "4",
+              "21"
+            ],
+            [
+              "Sudeep",
+              "1",
+              "4",
+              "0",
+              "0",
+              "1",
+              "6"
+            ],
+            [
+              "Suresh",
+              "0",
+              "5",
+              "0",
+              "1",
+              "1",
+              "7"
+            ],
+            [
+              "Vignesh",
+              "0",
+              "3",
+              "6",
+              "3",
+              "0",
+              "12"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A zero here means no such row was observed in these supplied bills. It does not establish that the customer never buys that category elsewhere. Customer → category and customer → customer tables answer different questions."
+        },
+        {
+          "type": "check",
+          "question": "In profile[Ahmed][Food], what does each key mean?",
+          "answer": "Ahmed selects the customer; Food selects the category within that customer’s dictionary."
+        },
+        {
+          "type": "check",
+          "question": "Can bills be shuffled before this accumulation?",
+          "answer": "Yes. Each row still contributes to the same customer and category."
+        },
+        {
+          "type": "check",
+          "question": "Does total(profile[customer]) count rupees?",
+          "answer": "No. Here it totals observed item rows."
+        }
+      ]
+    },
+    {
+      "slug": "coarse-customer-groups",
+      "title": "Separate simple groups before comparing detailed profiles",
+      "source": "Lecture 7.4",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/basket-groups.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Explicit teaching rule: first food-only customers; then remaining customers with total <10 versus total ≥10. Exactly 10 belongs to the latter group.",
+          "caption": "Explicit teaching rule: first food-only customers; then remaining customers with total <10 versus total ≥10. Exactly 10 belongs to the latter group."
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecture explores coarse bins before examining all profile differences. First set aside customers whose only observed category is Food: Akhil, George, Julia and Radha. Then divide the remaining customers by total rows. Spoken boundaries vary between “more than 10” and “10 and above”; we state one complete rule: below 10 is small, 10 or above is large. No original customer has exactly 10, so this boundary choice does not change this dataset’s groups."
+        },
+        {
+          "type": "paragraph",
+          "text": "The six large, multi-category profiles are Abhinav, Akshaya, Ahmed, Srivatsan, Advaith and Vignesh. They have totals 14,21,24,21,12,12. Grouping by total alone does not show that their category patterns match. These bins are an exploratory simplification, not an automatic clustering result."
+        },
+        {
+          "type": "check",
+          "question": "Does “food-only” mean one row?",
+          "answer": "No. It means only one observed category, Food; Julia has six Food rows."
+        },
+        {
+          "type": "check",
+          "question": "Under our explicit rule, where does a multi-category total of 10 go?",
+          "answer": "The large group, since 10 ≥ 10."
+        },
+        {
+          "type": "check",
+          "question": "Can two customers with the same total have different categories?",
+          "answer": "Yes. Their rows may be distributed very differently across the five columns."
+        }
+      ]
+    },
+    {
+      "slug": "manhattan-distance",
+      "title": "Add absolute category gaps to measure distance",
+      "source": "Lectures 7.4, 7.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/absolute-distance.png",
+          "width": 768,
+          "height": 500,
+          "alt": "Compare the same five columns. Abhinav [3,8,2,0,1] and Akshaya [3,13,4,0,1] have gaps [0,5,2,0,0], so distance 7.",
+          "caption": "Compare the same five columns. Abhinav [3,8,2,0,1] and Akshaya [3,13,4,0,1] have gaps [0,5,2,0,0], so distance 7."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "distance",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "Procedure distance(A,B)\n    total = 0\n    foreach category in categories {\n        total = total + abs(A[category] - B[category])\n    }\n    return(total)\nEnd distance"
+        },
+        {
+          "type": "paragraph",
+          "text": "abs means absolute value: abs(8−13)=5 and abs(13−8)=5. Every gap is non-negative, so a larger Food count cannot cancel a smaller Utilities count. The sum of these absolute gaps is called Manhattan or rectilinear distance. Smaller distance means closer under THIS chosen representation and distance rule."
+        },
+        {
+          "type": "paragraph",
+          "text": "Distance from a profile to itself is zero. Distance is symmetric: D(A,B)=D(B,A). Zero between two different customers means their counted profiles match, not that they are the same person. Category row counts are the features; spending in rupees is not being measured here."
+        },
+        {
+          "type": "check",
+          "question": "What is the distance between the two illustrated customers?",
+          "answer": "0+5+2+0+0=7."
+        },
+        {
+          "type": "check",
+          "question": "Why not add signed differences?",
+          "answer": "Positive and negative gaps could cancel, hiding differences in category patterns."
+        },
+        {
+          "type": "check",
+          "question": "Does distance 0 prove two customers are the same person?",
+          "answer": "No. Different customers can have identical observed profiles."
+        }
+      ]
+    },
+    {
+      "slug": "totals-can-hide-differences",
+      "title": "Equal totals can hide different baskets",
+      "source": "Lecture 7.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/totals-not-distance.png",
+          "width": 768,
+          "height": 500,
+          "alt": "Illustrative vectors [3,0] and [0,3] both total 3, yet their Manhattan distance is 6. Equal totals do not imply equal profiles.",
+          "caption": "Illustrative vectors [3,0] and [0,3] both total 3, yet their Manhattan distance is 6. Equal totals do not imply equal profiles."
+        },
+        {
+          "type": "paragraph",
+          "text": "Abhinav totals 14 rows and Srivatsan totals 21. The absolute difference of totals is 7, but their five-category Manhattan distance is 13. Taking only |21−14| allows gains and losses in different categories to cancel. Compute absolute gaps first, then add them."
+        },
+        {
+          "type": "paragraph",
+          "text": "An alternative mentioned in the discussion is Euclidean distance: square each category gap, add the squares, then take the square root. For Abhinav versus Akshaya this is √(25+4)=√29≈5.3852, while Manhattan distance is 7. The lab labels Euclidean distance as an extension. Do not compare thresholds across different definitions as though their units were identical."
+        },
+        {
+          "type": "paragraph",
+          "text": "A category can be given a larger weight if the question calls for it, but that is a new declared distance rule. Coarse categories, raw row counts and the observed time period all affect what “similar” means."
+        },
+        {
+          "type": "check",
+          "question": "Why is |sum(A)−sum(B)| not the lecture’s distance?",
+          "answer": "It combines columns before taking an absolute value, allowing category differences to cancel."
+        },
+        {
+          "type": "check",
+          "question": "For [3,0] and [0,3], what are total difference and Manhattan distance?",
+          "answer": "The total difference is 0. The Manhattan distance is |3−0|+|0−3|=6."
+        },
+        {
+          "type": "check",
+          "question": "Must Euclidean and Manhattan distances be numerically equal?",
+          "answer": "No. They are different definitions. State the chosen one before ranking or thresholding pairs."
+        }
+      ]
+    },
+    {
+      "slug": "pair-table",
+      "title": "Use a customer-by-customer table for all 15 pairs",
+      "source": "Lecture 7.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/pair-triangle.png",
+          "width": 768,
+          "height": 524,
+          "alt": "Six customers give 6×5/2=15 unordered pairs. Compare only row index i < column index j.",
+          "caption": "Six customers give 6×5/2=15 unordered pairs. Compare only row index i < column index j."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "pairs",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "Use indices only as local labels: 1 Abhinav, 2 Akshaya, 3 Ahmed, 4 Srivatsan, 5 Advaith, 6 Vignesh. These are not bill numbers or permanent customer IDs. Hold one row fixed and advance the column; then move to the next row. Rows and columns now represent the SAME customer set, unlike the customer-by-category profile table."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Row / column",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            [
+              "1",
+              "—",
+              "7",
+              "20",
+              "13",
+              "10",
+              "16"
+            ],
+            [
+              "2",
+              "—",
+              "—",
+              "17",
+              "12",
+              "17",
+              "19"
+            ],
+            [
+              "3",
+              "—",
+              "—",
+              "—",
+              "13",
+              "18",
+              "22"
+            ],
+            [
+              "4",
+              "—",
+              "—",
+              "—",
+              "—",
+              "15",
+              "19"
+            ],
+            [
+              "5",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "10"
+            ],
+            [
+              "6",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Only the upper triangle is stored here. A dash means “not stored in this triangular representation”, not zero distance and not missing source data. The omitted diagonal would be zero; the lower triangle would mirror the upper triangle. The lecturing discussion contains some spoken table slips; these entries are recomputed from the original five-category profiles."
+        },
+        {
+          "type": "code",
+          "text": "foreach i in [1,2,3,4,5,6] {\n    foreach j in [1,2,3,4,5,6] {\n        if (i < j) {\n            record(i,j,distance(profile[i],profile[j]))\n        }\n    }\n}"
+        },
+        {
+          "type": "check",
+          "question": "Why is the count 15 rather than 30?",
+          "answer": "The 30 ordered non-self comparisons include both A–B and B–A. Each unordered pair is kept once."
+        },
+        {
+          "type": "check",
+          "question": "Why exclude i=j?",
+          "answer": "It compares a customer with themselves and adds no information about similarity between distinct customers."
+        },
+        {
+          "type": "check",
+          "question": "What does the entry row 2, column 4 mean?",
+          "answer": "Akshaya versus Srivatsan has Manhattan distance 12 in this five-category row-count representation."
+        }
+      ]
+    },
+    {
+      "slug": "closeness-and-groups",
+      "title": "Close pairs do not automatically form one close group",
+      "source": "Lecture 7.5",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/nontransitive.png",
+          "width": 768,
+          "height": 524,
+          "alt": "At threshold 10, distances 1–5=10 and 5–6=10 qualify, but 1–6=16 does not. Closeness under a threshold is not transitive.",
+          "caption": "At threshold 10, distances 1–5=10 and 5–6=10 qualify, but 1–6=16 does not. Closeness under a threshold is not transitive."
+        },
+        {
+          "type": "paragraph",
+          "text": "With close defined as distance ≤10, the qualifying pairs are 1–2 (7), 1–5 (10) and 5–6 (10). But the candidate group {1,5,6} contains a distant pair 1–6 (16). A chain of close links and a group in which every pair is close are different group rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "Specify whether the threshold is < or ≤. The lecture notes one distance below 10: 1–2. Our lab makes the alternative inclusive threshold explicit so the two distances equal to 10 can be explored. A distance table alone does not decide a unique clustering."
+        },
+        {
+          "type": "paragraph",
+          "text": "These profiles summarize a small set of observed purchases. One urgent purchase or a single bill may not describe a lasting habit. The lecture’s examples of possible customer types are hypotheses, not facts about families or personal characteristics derived from these bills."
+        },
+        {
+          "type": "check",
+          "question": "If A is close to B and B to C, must A be close to C?",
+          "answer": "No. The example 1–5–6 disproves that for the distance≤10 rule."
+        },
+        {
+          "type": "check",
+          "question": "How many of the six-customer pairs have distance strictly below 10?",
+          "answer": "One: Abhinav–Akshaya, distance 7."
+        },
+        {
+          "type": "check",
+          "question": "Does a table of distances specify how to cluster every customer?",
+          "answer": "No. A grouping rule and its parameters must still be chosen."
+        }
+      ]
+    },
+    {
+      "slug": "food-by-customer",
+      "title": "Count food rows for each customer, then find the maximum",
+      "source": "Lectures 7.6, 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/food-customer.png",
+          "width": 768,
+          "height": 510,
+          "alt": "Ahmed’s three food bills contribute 8+7+3=18 Food rows. His non-food bill contributes zero.",
+          "caption": "Ahmed’s three food bills contribute 8+7+3=18 Food rows. His non-food bill contributes zero."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "food",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "foodD = {}\nforeach bill in bills {\n    customer = bill.Customer\n    foreach item in bill.Items {\n        if (broadCategory(item.Category) == \"Food\") {\n            if (isKey(foodD,customer)) {\n                foodD[customer] = foodD[customer] + 1\n            }\n            else {\n                foodD[customer] = 1\n            }\n        }\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The source’s foodD creates a customer key only when a Food row occurs. A different valid representation creates every observed customer with zero first; the key sets differ when someone has no Food row, while qualifying Food totals agree. In these supplied bills, all 16 customers have at least one Food row."
+        },
+        {
+          "type": "paragraph",
+          "text": "Complete the source’s unstated maximum phase by scanning keys(foodD). Keep the best count and a list of every customer tied at that count. Initialize safely from the first entry or use a flag for “no entries yet”. Here Ahmed is highest with 18; Akshaya has 13 and Srivatsan 12. Sorting can show a full ranking but is unnecessary to find a maximum."
+        },
+        {
+          "type": "check",
+          "question": "Does a customer’s non-food bill erase their Food total?",
+          "answer": "No. Skip non-food rows without replacing the accumulated value."
+        },
+        {
+          "type": "check",
+          "question": "What is Ahmed’s observed Food row total?",
+          "answer": "18, from bills 18,20,29 with 8,7,3 Food rows."
+        },
+        {
+          "type": "check",
+          "question": "Why keep a list of winners?",
+          "answer": "Several customers could tie for the largest value; recording only the last one would lose other winners."
+        }
+      ]
+    },
+    {
+      "slug": "food-by-shop",
+      "title": "Change the key to compare shops",
+      "source": "Lecture 7.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/food-shop.png",
+          "width": 768,
+          "height": 510,
+          "alt": "Food ROW totals from all 30 supplied cards: SV Stores73, Big Bazaar15, Sun General9. These are recomputed totals, not the spoken tally.",
+          "caption": "Food ROW totals from all 30 supplied cards: SV Stores73, Big Bazaar15, Sun General9. These are recomputed totals, not the spoken tally."
+        },
+        {
+          "type": "paragraph",
+          "text": "To ask which shop has most Food rows, keep the same qualifying item test but use bill.Store as the key. The fixed three-shop problem could use three counters, but a dictionary also handles new shops without inventing a new variable for every name."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Shop",
+              "Food item rows in all 30 cards"
+            ],
+            [
+              "SV Stores",
+              "73"
+            ],
+            [
+              "Big Bazaar",
+              "15"
+            ],
+            [
+              "Sun General",
+              "9"
+            ],
+            [
+              "Total",
+              "97"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "The spoken Lecture 7.6 tally is 72,10,9. We preserve the original bill cards and recompute 73,15,9: the spoken SV accumulation includes an addition slip, and Radha’s five Food rows in Bill 30 belong to Big Bazaar. The learning pages use the complete original dataset rather than forcing the spoken totals."
+        },
+        {
+          "type": "paragraph",
+          "text": "SV Stores is highest under the Food-row measure. Calling it “most popular” needs that measure stated: it is not necessarily highest revenue, most bills or most distinct customers. Changing the requested category may change which shop leads."
+        },
+        {
+          "type": "check",
+          "question": "Why can the shop and customer dictionaries have the same grand total?",
+          "answer": "They partition the same 97 Food rows by different keys. Each qualifying row contributes once to each partition."
+        },
+        {
+          "type": "check",
+          "question": "Can a dictionary handle a fourth shop?",
+          "answer": "Yes. Create its key when a qualifying row first appears."
+        },
+        {
+          "type": "check",
+          "question": "Does 73 mean 73 customers?",
+          "answer": "No. It means 73 Food item rows across the observed bills at SV Stores."
+        }
+      ]
+    },
+    {
+      "slug": "bill-id-index",
+      "title": "Keep bill IDs when a count alone loses useful detail",
+      "source": "Lecture 7.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/bill-id-join.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Ahmed → [18,20,25,29]. Each ID can be joined to its original bill to recover the shop and item rows.",
+          "caption": "Ahmed → [18,20,25,29]. Each ID can be joined to its original bill to recover the shop and item rows."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "bills",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "billsByCustomer = {}\nbillByID = {}\nforeach bill in bills {\n    customer = bill.Customer\n    if (not isKey(billsByCustomer,customer)) {\n        billsByCustomer[customer] = []\n    }\n    billsByCustomer[customer] = billsByCustomer[customer] ++ [bill.BillNo]\n    billByID[bill.BillNo] = bill\n}\nforeach id in billsByCustomer[\"Ahmed\"] {\n    originalBill = billByID[id]\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "A count such as Ahmed→18 cannot tell us which shops supplied the food. Ahmed’s saved IDs are [18,20,25,29] in original bill-number order. IDs are references, not item counts. Use a billByID dictionary to retrieve each record directly rather than rescanning the entire pile for every ID."
+        },
+        {
+          "type": "paragraph",
+          "text": "All-bill lists include Bill 25, even though it has no Food row. Keep original labels Advaith and Mohith from the cards; the spoken transcripts also use spellings such as Adwaith and Mohit. The examples use the supplied-card labels consistently."
+        },
+        {
+          "type": "check",
+          "question": "Is length(billsByCustomer[Ahmed]) equal to Ahmed’s Food row count?",
+          "answer": "No. It is 4 bills; the Food row count is 18."
+        },
+        {
+          "type": "check",
+          "question": "What information does saving bill IDs preserve?",
+          "answer": "A way to retrieve original shops, categories and item rows for follow-up questions."
+        },
+        {
+          "type": "check",
+          "question": "Why not deduplicate identical customer–category rows automatically?",
+          "answer": "Different bill rows can represent separate purchases. Deduplication changes the unit and loses occurrences."
+        }
+      ]
+    },
+    {
+      "slug": "food-shop-hypothesis",
+      "title": "Turn “usually buys there” into a precise check",
+      "source": "Lecture 7.6",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/food-hypothesis.png",
+          "width": 768,
+          "height": 514,
+          "alt": "Ahmed’s Food bills 18,20,29 are from SV Stores. Bill25 is non-food, so exclude it from the Food-bill check.",
+          "caption": "Ahmed’s Food bills 18,20,29 are from SV Stores. Bill25 is non-food, so exclude it from the Food-bill check."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "hypothesis",
+          "explore": false
+        },
+        {
+          "type": "paragraph",
+          "text": "A vague statement such as “top food buyers shop at the top food shop” needs a rule. We test one explicit all-bills version: for the selected customer, EVERY observed bill containing at least one Food row must be from a shop tied for highest total Food rows. First compute top shops from the full dataset. Then inspect the selected customer’s saved bill IDs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ahmed’s Food bills 18,20,29 all come from SV Stores, so his three eligible bills support that rule. Bill 25 is from Sun General but contains no Food rows, so it is excluded. Akshaya has Food bills 3,5,21: Bill 5 comes from Big Bazaar, so the ALL-bills rule fails for her. Abhinav has one eligible Food bill, Bill 11 at SV Stores."
+        },
+        {
+          "type": "paragraph",
+          "text": "“Usually” could instead mean a majority of Food bills, a majority of Food rows, or a majority of Food spending. Those are different denominators and different hypotheses. Choose before checking. For a selected customer with no eligible Food bill, report “no eligible evidence”; do not call it observed support just because there is no counterexample."
+        },
+        {
+          "type": "check",
+          "question": "Why is Ahmed’s Bill25 excluded?",
+          "answer": "It contains no Food rows, so it is irrelevant to this explicitly food-bill-based rule."
+        },
+        {
+          "type": "check",
+          "question": "Does one counterexample reject an every-eligible-bill rule?",
+          "answer": "Yes. Akshaya’s Food-containing Big Bazaar bill is a counterexample."
+        },
+        {
+          "type": "check",
+          "question": "Does Ahmed’s result prove future shopping behavior?",
+          "answer": "No. It describes the supplied observed bills under the chosen rule."
+        }
+      ]
+    },
+    {
+      "slug": "part-of-speech-index",
+      "title": "Index noun and pronoun positions with lists",
+      "source": "Lecture 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/pos-lists.png",
+          "width": 768,
+          "height": 500,
+          "alt": "partOfSpeech has Noun and Pronoun keys whose VALUES are ordered lists of zero-based word positions.",
+          "caption": "partOfSpeech has Noun and Pronoun keys whose VALUES are ordered lists of zero-based word positions."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "pos",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "partOfSpeech = {}\npartOfSpeech[\"Noun\"] = []\npartOfSpeech[\"Pronoun\"] = []\n# Process word records in ascending SerialNumber.\nforeach X in words {\n    if (X.PartOfSpeech == \"Noun\") {\n        partOfSpeech[\"Noun\"] = partOfSpeech[\"Noun\"] ++ [X.SerialNumber]\n    }\n    if (X.PartOfSpeech == \"Pronoun\") {\n        partOfSpeech[\"Pronoun\"] = partOfSpeech[\"Pronoun\"] ++ [X.SerialNumber]\n    }\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The dataset field is SerialNumber, beginning at 0. The slides use SerialNo for the same position role. Our lab maps the concept to the actual field. It uses the supplied part-of-speech labels without retagging the text. There are 21 Noun records and 7 Pronoun records."
+        },
+        {
+          "type": "paragraph",
+          "text": "The noun positions are sorted because the INPUT is processed in ascending position and positions are appended. A dictionary does not sort the contents of a list value for you. If word cards arrive shuffled, restore position order before relying on the early-exit matcher."
+        },
+        {
+          "type": "check",
+          "question": "What does partOfSpeech[Pronoun] contain?",
+          "answer": "A list of word positions, not a list of pronoun spellings and not a dictionary count."
+        },
+        {
+          "type": "check",
+          "question": "Does the dictionary’s key order determine the list’s order?",
+          "answer": "No. The input scan and append order determine the list order."
+        },
+        {
+          "type": "check",
+          "question": "Why create both keys with [] first?",
+          "answer": "Appending is safe even before the first noun or pronoun is encountered. A key can exist with an empty list value."
+        }
+      ]
+    },
+    {
+      "slug": "pronoun-matching",
+      "title": "Map each pronoun to the nearest earlier noun",
+      "source": "Lecture 7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/nearest-noun.png",
+          "width": 768,
+          "height": 500,
+          "alt": "For illustrative noun positions [1,3,8,14,19] and pronoun17, the nearest earlier noun is position14.",
+          "caption": "For illustrative noun positions [1,3,8,14,19] and pronoun17, the nearest earlier noun is position14."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "pronouns",
+          "explore": false
+        },
+        {
+          "type": "code",
+          "text": "matchD = {}\nforeach p in partOfSpeech[\"Pronoun\"] {\n    matched = -1\n    foreach n in partOfSpeech[\"Noun\"] {\n        if (n < p) {\n            matched = n\n        }\n        else {\n            exitloop\n        }\n    }\n    matchD[p] = matched\n}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For each pronoun p, reset matched to −1. Walk the sorted noun positions. Every n<p is a candidate; updating matched as n increases leaves the largest position below p. At the first n≥p, exit only the INNER loop and store matchD[p]. Then continue with the next pronoun."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Pronoun position and word",
+              "Chosen noun position and word"
+            ],
+            [
+              "0 It",
+              "−1: no preceding noun"
+            ],
+            [
+              "9 his",
+              "4 Swaminathan"
+            ],
+            [
+              "11 He",
+              "10 eyes."
+            ],
+            [
+              "27 it",
+              "26 Sunday,"
+            ],
+            [
+              "40 He",
+              "39 discipline."
+            ],
+            [
+              "55 his",
+              "54 Vedanayagam,"
+            ],
+            [
+              "61 his",
+              "59 headmaster"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "This is the lecture’s deliberately simple positional heuristic. It can choose a grammatically wrong antecedent: “He” at 11 is mapped to “eyes.” at 10. It demonstrates dictionary/list processing, not a complete English pronoun resolver. The −1 result is a sentinel, never a valid word lookup."
+        },
+        {
+          "type": "check",
+          "question": "Why must matched reset for every pronoun?",
+          "answer": "Otherwise a pronoun with no preceding noun could inherit an unrelated earlier result."
+        },
+        {
+          "type": "check",
+          "question": "Why can the loop stop at n≥p?",
+          "answer": "All later noun positions are at least as large because the list is sorted."
+        },
+        {
+          "type": "check",
+          "question": "What does the source rule return for the paragraph’s first word “It” at 0?",
+          "answer": "−1, because no noun position is earlier than 0."
+        }
+      ]
+    },
+    {
+      "slug": "debug-dictionaries",
+      "title": "Debug the first occurrence, the repeated key and empty input",
+      "source": "Lectures 7.1–7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/pronoun-sentinel.png",
+          "width": 768,
+          "height": 524,
+          "alt": "Before a pronoun search set matched=-1; with no earlier noun, retain -1 and report “no preceding noun”.",
+          "caption": "Before a pronoun search set matched=-1; with no earlier noun, retain -1 and report “no preceding noun”."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trace tiny inputs before processing the whole dataset. Use no records, one record, the same group twice, a missing key, a stored zero, and two different records with a shared name. Decide whether the algorithm counts occurrences or unique IDs. Test the key and value types separately."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Mistake",
+              "Effect",
+              "Fix"
+            ],
+            [
+              "d[k]=d[k]+1 before a first occurrence",
+              "Reads an absent value",
+              "Create 1, or create 0 then increment"
+            ],
+            [
+              "d[k]=1 on every occurrence",
+              "Erases the accumulated count",
+              "Increment when present"
+            ],
+            [
+              "inner dictionary={} on every row",
+              "Loses previous inner keys",
+              "Initialize only for a new outer key"
+            ],
+            [
+              "Assume keys(d) is sorted",
+              "Order-dependent result can fail",
+              "Sort the key list explicitly when required"
+            ],
+            [
+              "Use −1 as a real word position",
+              "Wrong word access",
+              "Check sentinel before looking up a word"
+            ],
+            [
+              "Count names instead of unique student IDs",
+              "Can overwrite records",
+              "Choose a unique key or group records deliberately"
+            ]
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What tiny input catches overwriting a frequency with 1?",
+          "answer": "Two records with the same key. The expected frequency is 2, not 1."
+        },
+        {
+          "type": "check",
+          "question": "What catches an unguarded average?",
+          "answer": "An empty dictionary, where count is 0."
+        },
+        {
+          "type": "check",
+          "question": "What catches a pronoun matcher that forgets its sentinel?",
+          "answer": "A pronoun with no preceding noun, such as the first word of the supplied paragraph."
+        }
+      ]
+    },
+    {
+      "slug": "choose-the-structure",
+      "title": "Choose keys and values from the question",
+      "source": "Lectures 7.1–7.7",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/train-source.png",
+          "width": 768,
+          "height": 524,
+          "alt": "Reuse the Week 6 historical train cards: sourceStation[\"02201\"] returns Kolkata. Leading zeros remain part of the train-number string.",
+          "caption": "Reuse the Week 6 historical train cards: sourceStation[\"02201\"] returns Kolkata. Leading zeros remain part of the train-number string."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "trains",
+          "explore": false
+        },
+        {
+          "type": "image",
+          "src": "/images/computational-thinking/week-7/representation-choice.png",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Choose a list for ordered occurrences, a count dictionary for grouped frequencies, or an ID dictionary for membership.",
+          "caption": "Choose a list for ordered occurrences, a count dictionary for grouped frequencies, or an ID dictionary for membership."
+        },
+        {
+          "type": "paragraph",
+          "text": "A list preserves an ordered sequence and repeated occurrences. A dictionary connects unique keys to current values. Combining them gives customer→bill-ID lists, birthday→student-ID dictionaries, and part-of-speech→ordered position lists. Choose what information later questions need; aggregation can discard details."
+        },
+        {
+          "type": "paragraph",
+          "text": "Reuse the same original datasets across these tasks. Student IDs and word positions start at 0, bill numbers start at 1, and train numbers are strings such as “02201”. They are different identifiers, not interchangeable list positions. Preserve source records and build derived structures alongside them."
+        },
+        {
+          "type": "check",
+          "question": "Which structure helps repeatedly ask “is this ID in the group”?",
+          "answer": "An ID-keyed dictionary using isKey, under the course’s dictionary-operation model."
+        },
+        {
+          "type": "check",
+          "question": "Which structure retains the sequence and repeated copies of bill-row events?",
+          "answer": "A list of those events or references."
+        },
+        {
+          "type": "check",
+          "question": "Why preserve train number “02201” as a string?",
+          "answer": "Its leading zeros are part of the identifier. Converting to a number would change its displayed identity."
+        }
+      ]
+    },
+    {
+      "slug": "revision-and-practice",
+      "title": "Revision studio and mixed practice",
+      "source": "Lectures 7.1–7.7",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Predict each key and value before moving the walkthrough. Change record order, representation or distance rule, then explain what changes and what remains the same."
+        },
+        {
+          "type": "week7-lab",
+          "mode": "birthday",
+          "explore": true
+        },
+        {
+          "type": "check",
+          "question": "D={} then D[\"x\"]=4 then D[\"x\"]=6. What is D?",
+          "answer": "{\"x\":6}. One key remains; its value is replaced."
+        },
+        {
+          "type": "check",
+          "question": "D={\"x\":0}. Is x present?",
+          "answer": "Yes. isKey(D,\"x\") is True."
+        },
+        {
+          "type": "check",
+          "question": "A birthday count map has values 2,1,1. How many observed birthday keys and student records?",
+          "answer": "3 keys and 4 records."
+        },
+        {
+          "type": "check",
+          "question": "Does duplicates[d]=True on a third occurrence add a second date entry?",
+          "answer": "No. The existing key is assigned True again."
+        },
+        {
+          "type": "check",
+          "question": "For four students on one date, how many unordered matching pairs?",
+          "answer": "4×3/2=6."
+        },
+        {
+          "type": "check",
+          "question": "What does keys({7:True,21:True}) represent?",
+          "answer": "The two ID keys, in an unspecified order."
+        },
+        {
+          "type": "check",
+          "question": "A word length appears five times. What value should its frequency store?",
+          "answer": "5, counting every occurrence."
+        },
+        {
+          "type": "check",
+          "question": "A key is absent. Can you safely add D[k]+1?",
+          "answer": "No. First initialize it or use a first-occurrence branch."
+        },
+        {
+          "type": "check",
+          "question": "How many unordered pairs among six distinct customers?",
+          "answer": "15."
+        },
+        {
+          "type": "check",
+          "question": "Does close(1,5) and close(5,6) prove close(1,6)?",
+          "answer": "No. Distances 10,10,16 give a counterexample at threshold10."
+        },
+        {
+          "type": "check",
+          "question": "What is Abhinav–Akshaya Manhattan distance?",
+          "answer": "7, from absolute gaps 0,5,2,0,0."
+        },
+        {
+          "type": "check",
+          "question": "What does an empty dictionary average return?",
+          "answer": "No defined average; avoid division by zero."
+        },
+        {
+          "type": "check",
+          "question": "How many Food rows are on Ahmed’s Bill25?",
+          "answer": "0. It has Electronics, Accessories and Stationery rows."
+        },
+        {
+          "type": "check",
+          "question": "Which bills contribute Ahmed’s18 Food rows?",
+          "answer": "18,20,29 contribute8,7,3."
+        },
+        {
+          "type": "check",
+          "question": "What are complete-dataset Food shop totals?",
+          "answer": "SV Stores73, Big Bazaar15, Sun General9; grand total97."
+        },
+        {
+          "type": "check",
+          "question": "Why is a full scan through keys(D) not constant time?",
+          "answer": "It visits one entry per key, so its work grows with the number of keys."
+        },
+        {
+          "type": "check",
+          "question": "For noun positions [1,3,8,14,19] and pronoun17, what is matched?",
+          "answer": "14, the largest noun position below17."
+        },
+        {
+          "type": "check",
+          "question": "Why does the noun matcher need sorted noun positions?",
+          "answer": "Its early exit assumes all later noun positions are larger."
+        },
+        {
+          "type": "check",
+          "question": "What is matchD[0] for the supplied paragraph?",
+          "answer": "−1: no noun precedes the first pronoun."
+        },
+        {
+          "type": "check",
+          "question": "Does a customer count prove a personal or family characteristic?",
+          "answer": "No. It summarizes observed purchase rows under a chosen grouping and measure."
+        }
+      ],
+      "resource": true
+    },
+    {
+      "slug": "source-guide",
+      "title": "Source guide, coverage and dataset conventions",
+      "source": "All seven lectures and both slide decks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This week uses Lectures 7.1–7.7 and the supplied slide decks for 7.3 and 7.7."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Source",
+              "Coverage in these notes"
+            ],
+            [
+              "7.1 Examples to introduce dictionary",
+              "Temporary seen flags, unique keys, word-length frequencies, city counts"
+            ],
+            [
+              "7.2 Birthday dictionaries",
+              "Day/month keys,29 observed dates, ID lists and representation choices"
+            ],
+            [
+              "7.3 Pseudocode for dictionaries; slides",
+              "{}, assignment, lookup, keys, iteration, averages, first-occurrence updates, manual versus built-in isKey"
+            ],
+            [
+              "7.4 Customer patterns Part1",
+              "Row-count unit, category map, profiles, coarse bins, feature choices"
+            ],
+            [
+              "7.5 Customer patterns Part2",
+              "Absolute/Manhattan distance, all15 pairs, triangular table, nontransitive closeness, alternatives"
+            ],
+            [
+              "7.6 Introduction to dictionaries",
+              "Food by shop/customer, dynamic keys, preserving bill IDs, testing food-shop evidence"
+            ],
+            [
+              "7.7 Real-time examples; slides",
+              "FoodD pseudocode, duplicate flags, birthday ID lists/dictionaries, POS lists and nearest-earlier-noun matching"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Data sources reused: all 30 Scores cards, 65 Paragraph Words cards, all 30 original Shopping Bills with155 visually checked item rows, and the ten verified historical train cards introduced in Week 6. Names, categories and IDs follow the original cards. The five broad shopping groups are explicit; raw category labels remain available in the data."
+        },
+        {
+          "type": "paragraph",
+          "text": "Source corrections are visible rather than silently copied: complete Food shop totals are 73, 15, 9 rather than the spoken 72, 10, 9; the spoken profile-distance discussion has occasional arithmetic/table slips, so all 15 distances are recomputed from the five original profiles. Advaith and Mohith follow the supplied-card spellings. The small-basket boundary is stated explicitly. The source’s pronoun heuristic is taught with its actual incorrect-language matches and sentinel."
+        },
+        {
+          "type": "paragraph",
+          "text": "Miniature illustrations labelled illustrative or excerpt do not replace full-dataset calculations. A dictionary table’s row order is a reading aid; no pseudocode key order is promised. Original student and word IDs are zero-based, bill IDs begin at 1, and train-number strings keep leading zeros. Course dictionary access/isKey are assumed constant-time; list scans, list storage, nested loops and output generation still require work."
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

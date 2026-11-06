@@ -1636,8 +1636,8 @@
     "description": "Try these questions without looking at the answers. Then open each explanation and check your method, units and denominator."
   },
   "/computational-thinking/": {
-    "title": "Computational Thinking Foundation: Weeks 1–4",
-    "description": "Beginner-friendly Computational Thinking notes with real course datasets, illustrations, interactive procedures and explained practice across Weeks 1–4."
+    "title": "Computational Thinking Foundation: Weeks 1–7",
+    "description": "Easy-English Computational Thinking with real datasets, separate illustrations, interactive traces and explained practice across Weeks 1–7."
   },
   "/computational-thinking/week-1/": {
     "title": "Computational Thinking Week 1: From data cards to clear procedures",
@@ -1930,5 +1930,373 @@
   "/mathematical-foundation-of-generative-ai/week-2/realization-of-variational-divergence-minimization/": {
     "title": "Realization of Variational Divergence Minimization (VDM)",
     "description": "Learn how real samples, latent noise, a generator and a scoring network turn variational divergence minimization into a min–max objective. Six illustrations, equations and explained practice."
+  },
+  "/computational-thinking/week-5/": {
+    "title": "Computational Thinking Week 5: Lists, Pairs and Triples",
+    "description": "Build reusable ID lists, find common students, unpack first and last elements, explore words and shopping items, and keep identities in pairs and triples."
+  },
+  "/computational-thinking/week-5/collections-and-bookmarks/": {
+    "title": "Remember a collection without removing the cards | Computational Thinking Week 5",
+    "description": "Learn remember a collection without removing the cards with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/list-order-repeats-empty/": {
+    "title": "Lists keep order, repeats and an empty starting point | Computational Thinking Week 5",
+    "description": "Learn lists keep order, repeats and an empty starting point with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/append-and-prepend/": {
+    "title": "Join lists and add one new element | Computational Thinking Week 5",
+    "description": "Learn join lists and add one new element with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/build-filtered-id-lists/": {
+    "title": "Build May and Chennai lists from the course data | Computational Thinking Week 5",
+    "description": "Learn build may and chennai lists from the course data with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/foreach-list-iteration/": {
+    "title": "foreach visits values in list order | Computational Thinking Week 5",
+    "description": "Learn foreach visits values in list order with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/intersection-and-difference/": {
+    "title": "Compare saved lists: overlap and difference | Computational Thinking Week 5",
+    "description": "Learn compare saved lists: overlap and difference with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/subject-topper-lists/": {
+    "title": "Collect everyone at the top three distinct mark levels | Computational Thinking Week 5",
+    "description": "Learn collect everyone at the top three distinct mark levels with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/common-toppers-three-lists/": {
+    "title": "Who belongs to all three topper lists? | Computational Thinking Week 5",
+    "description": "Learn who belongs to all three topper lists? with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/combine-many-collections/": {
+    "title": "Combine more lists in stages | Computational Thinking Week 5",
+    "description": "Learn combine more lists in stages with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/first-and-rest/": {
+    "title": "Unpack a list into its first element and the rest | Computational Thinking Week 5",
+    "description": "Learn unpack a list into its first element and the rest with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/check-ascending-order/": {
+    "title": "Check ascending marks with adjacent comparisons | Computational Thinking Week 5",
+    "description": "Learn check ascending marks with adjacent comparisons with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/adjacent-adjective-noun/": {
+    "title": "Collect nouns immediately after adjectives | Computational Thinking Week 5",
+    "description": "Learn collect nouns immediately after adjectives with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/explode-words/": {
+    "title": "Turn a word into a character list | Computational Thinking Week 5",
+    "description": "Learn turn a word into a character list with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/adjacent-vowels/": {
+    "title": "Count adjacent vowel pairs inside a word | Computational Thinking Week 5",
+    "description": "Learn count adjacent vowel pairs inside a word with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/last-init-and-reconstruction/": {
+    "title": "Unpack the other end: last and init | Computational Thinking Week 5",
+    "description": "Learn unpack the other end: last and init with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/palindrome-from-both-ends/": {
+    "title": "Is a word a palindrome? | Computational Thinking Week 5",
+    "description": "Learn is a word a palindrome? with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/pairs-id-and-property/": {
+    "title": "Keep an ID beside a property: lists of pairs | Computational Thinking Week 5",
+    "description": "Learn keep an id beside a property: lists of pairs with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/maximum-with-all-tied-ids/": {
+    "title": "Find the maximum and remember every tied student | Computational Thinking Week 5",
+    "description": "Learn find the maximum and remember every tied student with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/similarity-id-pairs/": {
+    "title": "Store relationships as [ID1,ID2] pairs | Computational Thinking Week 5",
+    "description": "Learn store relationships as [id1,id2] pairs with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/triples-and-subject-means/": {
+    "title": "Keep ID, Maths and Physics together in triples | Computational Thinking Week 5",
+    "description": "Learn keep id, maths and physics together in triples with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/shopping-item-triples/": {
+    "title": "One bill item becomes one customer–shop–category triple | Computational Thinking Week 5",
+    "description": "Learn one bill item becomes one customer–shop–category triple with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/positions-in-sorted-lists/": {
+    "title": "Compare the same student’s positions in two lists | Computational Thinking Week 5",
+    "description": "Learn compare the same student’s positions in two lists with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/implement-length-first-last/": {
+    "title": "Tutorial: implement length, first and last | Computational Thinking Week 5",
+    "description": "Learn tutorial: implement length, first and last with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/implement-rest-init-member/": {
+    "title": "Tutorial: rest, init and membership | Computational Thinking Week 5",
+    "description": "Learn tutorial: rest, init and membership with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/revision-and-practice/": {
+    "title": "Week 5 revision and mixed practice | Computational Thinking Week 5",
+    "description": "Learn week 5 revision and mixed practice with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-5/source-guide/": {
+    "title": "Week 5 sources and dataset conventions | Computational Thinking Week 5",
+    "description": "Learn week 5 sources and dataset conventions with easy explanations, worked course-data examples and explained practice."
+  },
+  "/computational-thinking/week-6/": {
+    "title": "Computational Thinking Week 6: Nested Lists and Sorting",
+    "description": "Sort reusable views, group equal values, test precise grade hypotheses and explore historical train records through easy explanations and interactive traces."
+  },
+  "/computational-thinking/week-6/lists-within-lists/": {
+    "title": "A paragraph can be a list of lists of lists | Computational Thinking Week 6",
+    "description": "Learn a paragraph can be a list of lists of lists with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/hierarchical-shopping/": {
+    "title": "Organize customers, shops and bill lists | Computational Thinking Week 6",
+    "description": "Learn organize customers, shops and bill lists with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/sorted-views-and-keys/": {
+    "title": "Keep the cards unchanged and sort separate views | Computational Thinking Week 6",
+    "description": "Learn keep the cards unchanged and sort separate views with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/insert-one-value/": {
+    "title": "Insert one new value into a sorted list | Computational Thinking Week 6",
+    "description": "Learn insert one new value into a sorted list with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/insertion-boundaries/": {
+    "title": "Handle empty, first and final insertion positions | Computational Thinking Week 6",
+    "description": "Learn handle empty, first and final insertion positions with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/insert-procedure-flag/": {
+    "title": "Use inserted to place x exactly once | Computational Thinking Week 6",
+    "description": "Learn use inserted to place x exactly once with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/insertion-sort-invariant/": {
+    "title": "Build insertion sort and explain why it works | Computational Thinking Week 6",
+    "description": "Learn build insertion sort and explain why it works with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/sort-id-mark-pairs/": {
+    "title": "Sort by one component and keep the whole pair | Computational Thinking Week 6",
+    "description": "Learn sort by one component and keep the whole pair with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/equal-keys-and-stability/": {
+    "title": "Read < and ≤ carefully when marks or pages tie | Computational Thinking Week 6",
+    "description": "Learn read < and ≤ carefully when marks or pages tie with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/sorting-cost-and-top-k/": {
+    "title": "Sorting costs work, but makes later queries easier | Computational Thinking Week 6",
+    "description": "Learn sorting costs work, but makes later queries easier with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/birthdays-after-sorting/": {
+    "title": "Equal birthdays become neighbouring records | Computational Thinking Week 6",
+    "description": "Learn equal birthdays become neighbouring records with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/count-equal-key-runs/": {
+    "title": "Count sorted groups and flush the last run | Computational Thinking Week 6",
+    "description": "Learn count sorted groups and flush the last run with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/position-based-grades/": {
+    "title": "Run the source’s exact positional grade rule | Computational Thinking Week 6",
+    "description": "Learn run the source’s exact positional grade rule with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/grade-boundaries-and-ties/": {
+    "title": "Keep a tie policy explicit | Computational Thinking Week 6",
+    "description": "Learn keep a tie policy explicit with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/unpack-grade-list-of-lists/": {
+    "title": "Unpack the four returned grade lists | Computational Thinking Week 6",
+    "description": "Learn unpack the four returned grade lists with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/define-and-test-hypothesis/": {
+    "title": "Define “does at least as well” before counting | Computational Thinking Week 6",
+    "description": "Learn define “does at least as well” before counting with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/found-and-exitloop/": {
+    "title": "Reset found and leave only the inner search | Computational Thinking Week 6",
+    "description": "Learn reset found and leave only the inner search with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/interpret-confirmation-carefully/": {
+    "title": "A confirmation fraction is descriptive evidence | Computational Thinking Week 6",
+    "description": "Learn a confirmation fraction is descriptive evidence with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/library-insertion-tutorial/": {
+    "title": "Tutorial: trace the numbered book-insertion code | Computational Thinking Week 6",
+    "description": "Learn tutorial: trace the numbered book-insertion code with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/library-selector-questions/": {
+    "title": "Tutorial: read pair selectors from the inside out | Computational Thinking Week 6",
+    "description": "Learn tutorial: read pair selectors from the inside out with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/read-train-records/": {
+    "title": "Meet the historical train-card dataset | Computational Thinking Week 6",
+    "description": "Learn meet the historical train-card dataset with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/station-view-and-join/": {
+    "title": "Use a station card to find relevant train cards | Computational Thinking Week 6",
+    "description": "Learn use a station card to find relevant train cards with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/journey-days-and-clock-arithmetic/": {
+    "title": "Use journey days when subtracting times | Computational Thinking Week 6",
+    "description": "Learn use journey days when subtracting times with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/origin-days-and-station-days/": {
+    "title": "Shift origin weekdays to each station call | Computational Thinking Week 6",
+    "description": "Learn shift origin weekdays to each station call with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/direct-train-search/": {
+    "title": "Search direct routes with direction and weekday | Computational Thinking Week 6",
+    "description": "Learn search direct routes with direction and weekday with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/source-destination-intermediate/": {
+    "title": "Identify the station’s role for each train | Computational Thinking Week 6",
+    "description": "Learn identify the station’s role for each train with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/junction-clues-and-connections/": {
+    "title": "Compare next calls, but interpret the clue carefully | Computational Thinking Week 6",
+    "description": "Learn compare next calls, but interpret the clue carefully with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/train-cross-view-sanity/": {
+    "title": "Keep and flag inconsistent source records | Computational Thinking Week 6",
+    "description": "Learn keep and flag inconsistent source records with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/revision-and-practice/": {
+    "title": "Week 6 revision and mixed practice | Computational Thinking Week 6",
+    "description": "Learn week 6 revision and mixed practice with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-6/source-guide/": {
+    "title": "Week 6 sources, conventions and coverage | Computational Thinking Week 6",
+    "description": "Learn week 6 sources, conventions and coverage with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/": {
+    "title": "Computational Thinking Week 7: Dictionaries and Customer Patterns",
+    "description": "Learn keys and values through shared birthdays, word frequencies, shopping profiles and pronoun matching, with easy-English examples and interactive traces."
+  },
+  "/computational-thinking/week-7/keys-and-values/": {
+    "title": "A dictionary connects a key to a value | Computational Thinking Week 7",
+    "description": "Learn a dictionary connects a key to a value with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/initialize-and-assign/": {
+    "title": "Create the dictionary before assigning entries | Computational Thinking Week 7",
+    "description": "Learn create the dictionary before assigning entries with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/labels-not-positions/": {
+    "title": "A key is a label, not a list position | Computational Thinking Week 7",
+    "description": "Learn a key is a label, not a list position with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/check-before-reading/": {
+    "title": "Check whether the key exists before reading it | Computational Thinking Week 7",
+    "description": "Learn check whether the key exists before reading it with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/keys-and-iteration/": {
+    "title": "Loop through keys, then read their values | Computational Thinking Week 7",
+    "description": "Learn loop through keys, then read their values with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/marks-and-average/": {
+    "title": "Build a marks dictionary and compute an average | Computational Thinking Week 7",
+    "description": "Learn build a marks dictionary and compute an average with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/accumulate-and-time/": {
+    "title": "Create on the first visit; accumulate on later visits | Computational Thinking Week 7",
+    "description": "Learn create on the first visit; accumulate on later visits with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/seen-dictionary/": {
+    "title": "Use seen to avoid reversed pairs without marking cards | Computational Thinking Week 7",
+    "description": "Learn use seen to avoid reversed pairs without marking cards with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/word-length-frequencies/": {
+    "title": "Build a word-length frequency dictionary | Computational Thinking Week 7",
+    "description": "Learn build a word-length frequency dictionary with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/city-counts/": {
+    "title": "Count students from each city | Computational Thinking Week 7",
+    "description": "Learn count students from each city with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/birthday-index/": {
+    "title": "Use day and month as a birthday key | Computational Thinking Week 7",
+    "description": "Learn use day and month as a birthday key with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/duplicate-date-flags/": {
+    "title": "Keep duplicate dates in a second dictionary | Computational Thinking Week 7",
+    "description": "Learn keep duplicate dates in a second dictionary with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/birthday-id-lists/": {
+    "title": "Store the IDs who share each birthday | Computational Thinking Week 7",
+    "description": "Learn store the ids who share each birthday with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/nested-birthday-dictionaries/": {
+    "title": "A dictionary value can be another dictionary | Computational Thinking Week 7",
+    "description": "Learn a dictionary value can be another dictionary with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/choose-values-and-cost/": {
+    "title": "Choose what to remember and what work remains | Computational Thinking Week 7",
+    "description": "Learn choose what to remember and what work remains with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/count-bill-rows/": {
+    "title": "First choose the unit: item rows, quantities or money | Computational Thinking Week 7",
+    "description": "Learn first choose the unit: item rows, quantities or money with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/category-map/": {
+    "title": "Make the broad-category map explicit | Computational Thinking Week 7",
+    "description": "Learn make the broad-category map explicit with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/customer-profiles/": {
+    "title": "Build customer → category → row counts | Computational Thinking Week 7",
+    "description": "Learn build customer → category → row counts with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/coarse-customer-groups/": {
+    "title": "Separate simple groups before comparing detailed profiles | Computational Thinking Week 7",
+    "description": "Learn separate simple groups before comparing detailed profiles with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/manhattan-distance/": {
+    "title": "Add absolute category gaps to measure distance | Computational Thinking Week 7",
+    "description": "Learn add absolute category gaps to measure distance with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/totals-can-hide-differences/": {
+    "title": "Equal totals can hide different baskets | Computational Thinking Week 7",
+    "description": "Learn equal totals can hide different baskets with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/pair-table/": {
+    "title": "Use a customer-by-customer table for all 15 pairs | Computational Thinking Week 7",
+    "description": "Learn use a customer-by-customer table for all 15 pairs with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/closeness-and-groups/": {
+    "title": "Close pairs do not automatically form one close group | Computational Thinking Week 7",
+    "description": "Learn close pairs do not automatically form one close group with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/food-by-customer/": {
+    "title": "Count food rows for each customer, then find the maximum | Computational Thinking Week 7",
+    "description": "Learn count food rows for each customer, then find the maximum with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/food-by-shop/": {
+    "title": "Change the key to compare shops | Computational Thinking Week 7",
+    "description": "Learn change the key to compare shops with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/bill-id-index/": {
+    "title": "Keep bill IDs when a count alone loses useful detail | Computational Thinking Week 7",
+    "description": "Learn keep bill ids when a count alone loses useful detail with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/food-shop-hypothesis/": {
+    "title": "Turn “usually buys there” into a precise check | Computational Thinking Week 7",
+    "description": "Learn turn “usually buys there” into a precise check with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/part-of-speech-index/": {
+    "title": "Index noun and pronoun positions with lists | Computational Thinking Week 7",
+    "description": "Learn index noun and pronoun positions with lists with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/pronoun-matching/": {
+    "title": "Map each pronoun to the nearest earlier noun | Computational Thinking Week 7",
+    "description": "Learn map each pronoun to the nearest earlier noun with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/debug-dictionaries/": {
+    "title": "Debug the first occurrence, the repeated key and empty input | Computational Thinking Week 7",
+    "description": "Learn debug the first occurrence, the repeated key and empty input with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/choose-the-structure/": {
+    "title": "Choose keys and values from the question | Computational Thinking Week 7",
+    "description": "Learn choose keys and values from the question with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/revision-and-practice/": {
+    "title": "Revision studio and mixed practice | Computational Thinking Week 7",
+    "description": "Learn revision studio and mixed practice with easy explanations, worked examples and explained practice."
+  },
+  "/computational-thinking/week-7/source-guide/": {
+    "title": "Source guide, coverage and dataset conventions | Computational Thinking Week 7",
+    "description": "Learn source guide, coverage and dataset conventions with easy explanations, worked examples and explained practice."
   }
 }

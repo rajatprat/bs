@@ -1,3 +1,6 @@
+import CTWeekSevenLab from './CTWeekSevenLab';
+import CTWeekSixLab from './CTWeekSixLab';
+import CTWeekFiveLab from './CTWeekFiveLab';
 import CTWeekFourLab from './CTWeekFourLab';
 import CTWeekThreeLab from './CTWeekThreeLab';
 import CTDatasetPlayground from './CTDatasetPlayground';
@@ -6,6 +9,9 @@ import Diagram from './Diagram';
 import { headingId } from '../lib/course';
 export default function ComputationalThinkingBlocks({blocks}) {
  return <div className="lesson-body ct-lesson">{blocks.map((b,i)=>{
+  if(b.type==='week7-lab') return <CTWeekSevenLab key={i} mode={b.mode} explore={b.explore}/>;
+  if(b.type==='week6-lab') return <CTWeekSixLab key={i} mode={b.mode} explore={b.explore}/>;
+  if(b.type==='week5-lab') return <CTWeekFiveLab key={i} mode={b.mode} explore={b.explore}/>;
   if(b.type==='week4-lab') return <CTWeekFourLab key={i} mode={b.mode} explore={b.explore}/>;
   if(b.type==='week3-lab') return <CTWeekThreeLab key={i} mode={b.mode} explore={b.explore}/>;
   if(b.type==='interactive') return <CTDatasetPlayground key={i} mode={b.mode} explore={b.explore}/>;

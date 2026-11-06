@@ -1,0 +1,1088 @@
+{
+  "source": "30 supplied original Shopping Bills cards; item names and categories visually checked",
+  "unit": "One count per bill item row, not quantity or cost",
+  "groups": [
+    "Apparel",
+    "Food",
+    "Toiletries",
+    "Utilities",
+    "Household"
+  ],
+  "bills": [
+    {
+      "BillNo": 1,
+      "Store": "SV Stores",
+      "Customer": "Srivatsan",
+      "BillAmount": 567,
+      "MajorCategories": "Apparel | Food | Toiletries",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Carrots",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Soap",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Tomatoes",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Socks",
+          "Category": "Footwear/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 2,
+      "Store": "Big Bazaar",
+      "Customer": "Sudeep",
+      "BillAmount": 1525,
+      "MajorCategories": "Apparel | Food | Household",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Baked Beans",
+          "Category": "Canned/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chicken Wings",
+          "Category": "Meat/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cocoa powder",
+          "Category": "Canned/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Capsicum",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Tie",
+          "Category": "Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Clips",
+          "Category": "Household",
+          "Group": "Household"
+        }
+      ]
+    },
+    {
+      "BillNo": 3,
+      "Store": "SV Stores",
+      "Customer": "Akshaya",
+      "BillAmount": 1341,
+      "MajorCategories": "Food | Toiletries",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Face Wash",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Shampoo",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Onions",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Biscuits",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Maggi",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Horlicks",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chips",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chocolates",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cereal",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Handwash",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Air freshener",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        }
+      ]
+    },
+    {
+      "BillNo": 4,
+      "Store": "SV Stores",
+      "Customer": "Advaith",
+      "BillAmount": 123,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bread",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Eggs",
+          "Category": "Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 5,
+      "Store": "Big Bazaar",
+      "Customer": "Akshaya",
+      "BillAmount": 4174,
+      "MajorCategories": "Apparel | Food | Household",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Trousers",
+          "Category": "Women/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Shirts",
+          "Category": "Women/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Detergent",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Tee shirts",
+          "Category": "Women/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Instant Noodles",
+          "Category": "Canned/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 6,
+      "Store": "Sun General",
+      "Customer": "Srivatsan",
+      "BillAmount": 354,
+      "MajorCategories": "Electronics | Food | Stationery | Utilities",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Batteries",
+          "Category": "Utilities",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "USB Cable",
+          "Category": "Electronics",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Ball Pens",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Onions",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 7,
+      "Store": "SV Stores",
+      "Customer": "Akhil",
+      "BillAmount": 96,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Bread",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Biscuits",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 8,
+      "Store": "Big Bazaar",
+      "Customer": "Advaith",
+      "BillAmount": 3132,
+      "MajorCategories": "Apparel | Food | Toiletries",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Trousers",
+          "Category": "Men/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Basa Fish",
+          "Category": "Meat/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Boxers",
+          "Category": "Men/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Face Wash",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Slippers",
+          "Category": "Footwear/Apparel",
+          "Group": "Apparel"
+        }
+      ]
+    },
+    {
+      "BillNo": 9,
+      "Store": "Big Bazaar",
+      "Customer": "Mohith",
+      "BillAmount": 595,
+      "MajorCategories": "Apparel | Food",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Lindt",
+          "Category": "Chocolate/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Socks",
+          "Category": "Footwear/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Spring Onions",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Lettuce",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cookies",
+          "Category": "Snacks/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 10,
+      "Store": "Sun General",
+      "Customer": "Rajesh",
+      "BillAmount": 378,
+      "MajorCategories": "Food | Stationery",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Notebooks",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Apples",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Pears",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chart Paper",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Ruler",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        }
+      ]
+    },
+    {
+      "BillNo": 11,
+      "Store": "SV Stores",
+      "Customer": "Abhinav",
+      "BillAmount": 893,
+      "MajorCategories": "Food | Household",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Chocolates",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cereal",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Tomatoes",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Horlicks",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Plates",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Eggs",
+          "Category": "Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 12,
+      "Store": "Sun General",
+      "Customer": "Aparna",
+      "BillAmount": 186,
+      "MajorCategories": "Food | Household | Stationery",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Mosquito Coil",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Ball Pens",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Paper Clips",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        }
+      ]
+    },
+    {
+      "BillNo": 13,
+      "Store": "Big Bazaar",
+      "Customer": "Abhinav",
+      "BillAmount": 3060,
+      "MajorCategories": "Apparel",
+      "FoodClass": "No food",
+      "Items": [
+        {
+          "Item": "Shoes",
+          "Category": "Footwear/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Polish",
+          "Category": "Footwear/Apparel",
+          "Group": "Apparel"
+        },
+        {
+          "Item": "Socks",
+          "Category": "Footwear/Apparel",
+          "Group": "Apparel"
+        }
+      ]
+    },
+    {
+      "BillNo": 14,
+      "Store": "Sun General",
+      "Customer": "Vignesh",
+      "BillAmount": 656,
+      "MajorCategories": "Electronics | Grooming | Stationery | Utilities",
+      "FoodClass": "No food",
+      "Items": [
+        {
+          "Item": "Phone Charger",
+          "Category": "Utilities",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Razor Blades",
+          "Category": "Grooming",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Razor",
+          "Category": "Grooming",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Shaving Lotion",
+          "Category": "Grooming",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Earphones",
+          "Category": "Electronics",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Pencils",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        }
+      ]
+    },
+    {
+      "BillNo": 15,
+      "Store": "Sun General",
+      "Customer": "Abhinav",
+      "BillAmount": 229,
+      "MajorCategories": "Toiletries",
+      "FoodClass": "No food",
+      "Items": [
+        {
+          "Item": "Toothpaste",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Shampoo",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        }
+      ]
+    },
+    {
+      "BillNo": 16,
+      "Store": "Sun General",
+      "Customer": "Advaith",
+      "BillAmount": 187,
+      "MajorCategories": "Stationery",
+      "FoodClass": "No food",
+      "Items": [
+        {
+          "Item": "Pencils",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Notebooks",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Geometry Box",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Graph Book",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        }
+      ]
+    },
+    {
+      "BillNo": 17,
+      "Store": "SV Stores",
+      "Customer": "George",
+      "BillAmount": 279,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Cereal",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cupcakes",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chocolates",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 18,
+      "Store": "SV Stores",
+      "Customer": "Ahmed",
+      "BillAmount": 603,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Tomatoes",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cupcakes",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Carrots",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Beans",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Onions",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Turmeric",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Ghee",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 19,
+      "Store": "SV Stores",
+      "Customer": "Neeraja",
+      "BillAmount": 592,
+      "MajorCategories": "Cosmetics | Food",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Carrots",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Horlicks",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chips",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Kajal",
+          "Category": "Cosmetics",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 20,
+      "Store": "SV Stores",
+      "Customer": "Ahmed",
+      "BillAmount": 622,
+      "MajorCategories": "Food | Toiletries",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Tomatoes",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cupcakes",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Carrots",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Onions",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Handwash",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Eggs",
+          "Category": "Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 21,
+      "Store": "SV Stores",
+      "Customer": "Akshaya",
+      "BillAmount": 128,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Butter",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 22,
+      "Store": "Sun General",
+      "Customer": "Suresh",
+      "BillAmount": 315,
+      "MajorCategories": "Food | Household | Utilities",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Batteries",
+          "Category": "Utilities",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Tomatoes",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Spinach",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Mosquito coils",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Guava",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Potato",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 23,
+      "Store": "SV Stores",
+      "Customer": "Julia",
+      "BillAmount": 888,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Carrots",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Cereal",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Maggi",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 24,
+      "Store": "SV Stores",
+      "Customer": "Neeraja",
+      "BillAmount": 92,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chips",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 25,
+      "Store": "Sun General",
+      "Customer": "Ahmed",
+      "BillAmount": 1364,
+      "MajorCategories": "Accessories | Electronics | Stationery",
+      "FoodClass": "No food",
+      "Items": [
+        {
+          "Item": "Earphones",
+          "Category": "Electronics",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Phone cover",
+          "Category": "Accessories",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Dongle",
+          "Category": "Electronics",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "A4 sheets",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        },
+        {
+          "Item": "Ball Pens",
+          "Category": "Stationery",
+          "Group": "Utilities"
+        }
+      ]
+    },
+    {
+      "BillNo": 26,
+      "Store": "SV Stores",
+      "Customer": "Srivatsan",
+      "BillAmount": 276,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Beans",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bread",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Onions",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Milk",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 27,
+      "Store": "Sun General",
+      "Customer": "Srivatsan",
+      "BillAmount": 340,
+      "MajorCategories": "Household",
+      "FoodClass": "No food",
+      "Items": [
+        {
+          "Item": "Broom",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Dustpan",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Floor Cleaner",
+          "Category": "Household",
+          "Group": "Household"
+        },
+        {
+          "Item": "Tissue Paper",
+          "Category": "Household",
+          "Group": "Household"
+        }
+      ]
+    },
+    {
+      "BillNo": 28,
+      "Store": "SV Stores",
+      "Customer": "Vignesh",
+      "BillAmount": 514,
+      "MajorCategories": "Food | Toiletries",
+      "FoodClass": "Mixed",
+      "Items": [
+        {
+          "Item": "Face Wash",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Shampoo",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        },
+        {
+          "Item": "Maggi",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chips",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chocolates",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Air Freshener",
+          "Category": "Toiletries",
+          "Group": "Toiletries"
+        }
+      ]
+    },
+    {
+      "BillNo": 29,
+      "Store": "SV Stores",
+      "Customer": "Ahmed",
+      "BillAmount": 106,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Chocolates",
+          "Category": "Packed/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Curd",
+          "Category": "Dairy/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Bananas",
+          "Category": "Fruits/Food",
+          "Group": "Food"
+        }
+      ]
+    },
+    {
+      "BillNo": 30,
+      "Store": "Big Bazaar",
+      "Customer": "Radha",
+      "BillAmount": 798,
+      "MajorCategories": "Food",
+      "FoodClass": "All food",
+      "Items": [
+        {
+          "Item": "Broccoli",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Chicken Legs",
+          "Category": "Meat/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Basa Fish",
+          "Category": "Meat/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Lettuce",
+          "Category": "Vegetables/Food",
+          "Group": "Food"
+        },
+        {
+          "Item": "Eggs",
+          "Category": "Meat/Food",
+          "Group": "Food"
+        }
+      ]
+    }
+  ]
+}

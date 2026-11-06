@@ -1,0 +1,667 @@
+{
+  "description": "Verified ten-train teaching subset transcribed from supplied historical train cards. Not a current timetable.",
+  "weekdays": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+  ],
+  "trains": [
+    {
+      "number": "02201",
+      "returnNumber": "02202",
+      "days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "source": 39,
+      "stops": [
+        {
+          "station": "Kolkata",
+          "km": 0,
+          "arrival": null,
+          "departure": "20:00",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Kharagpur",
+          "km": 136,
+          "arrival": "22:15",
+          "departure": "22:20",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Bhubaneswar",
+          "km": 459,
+          "arrival": "03:30",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "02202",
+      "returnNumber": "02201",
+      "days": [
+        "Tue",
+        "Thu",
+        "Sat"
+      ],
+      "source": 1,
+      "stops": [
+        {
+          "station": "Bhubaneswar",
+          "km": 0,
+          "arrival": null,
+          "departure": "20:15",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Kharagpur",
+          "km": 387,
+          "arrival": "01:10",
+          "departure": "01:15",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Kolkata",
+          "km": 522,
+          "arrival": "04:15",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "02246",
+      "returnNumber": "02245",
+      "days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "source": 46,
+      "stops": [
+        {
+          "station": "Bengaluru",
+          "km": 0,
+          "arrival": null,
+          "departure": "11:00",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Renigunta",
+          "km": 352,
+          "arrival": "16:50",
+          "departure": "17:00",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Vijayawada",
+          "km": 728,
+          "arrival": "22:20",
+          "departure": "22:31",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Vizianagram",
+          "km": 1126,
+          "arrival": "04:30",
+          "departure": "04:40",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Bhubaneswar",
+          "km": 1507,
+          "arrival": "09:50",
+          "departure": "10:00",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Kolkata",
+          "km": 1946,
+          "arrival": "16:45",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "02245",
+      "returnNumber": "02246",
+      "days": [
+        "Tue",
+        "Wed",
+        "Sat",
+        "Sun"
+      ],
+      "source": 14,
+      "stops": [
+        {
+          "station": "Kolkata",
+          "km": 0,
+          "arrival": null,
+          "departure": "10:50",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Bhubaneswar",
+          "km": 439,
+          "arrival": "16:50",
+          "departure": "17:00",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Vijayawada",
+          "km": 1219,
+          "arrival": "04:20",
+          "departure": "04:25",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Renigunta",
+          "km": 1595,
+          "arrival": "10:10",
+          "departure": "10:15",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Bengaluru",
+          "km": 1946,
+          "arrival": "16:00",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "12269",
+      "returnNumber": "12270",
+      "days": [
+        "Mon",
+        "Fri"
+      ],
+      "source": 24,
+      "stops": [
+        {
+          "station": "Chennai",
+          "km": 0,
+          "arrival": null,
+          "departure": "06:40",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Vijayawada",
+          "km": 431,
+          "arrival": "12:20",
+          "departure": "12:31",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Balharshah",
+          "km": 880,
+          "arrival": "18:06",
+          "departure": "18:11",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Nagpur",
+          "km": 1091,
+          "arrival": "21:00",
+          "departure": "21:06",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Bhopal",
+          "km": 1481,
+          "arrival": "02:18",
+          "departure": "02:20",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Jhansi",
+          "km": 1778,
+          "arrival": "05:30",
+          "departure": "05:35",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Gwalior",
+          "km": 1875,
+          "arrival": "06:51",
+          "departure": "06:53",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "New Delhi",
+          "km": 2180,
+          "arrival": "10:40",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "12270",
+      "returnNumber": "12269",
+      "days": [
+        "Tue",
+        "Sat"
+      ],
+      "source": 13,
+      "stops": [
+        {
+          "station": "New Delhi",
+          "km": 0,
+          "arrival": null,
+          "departure": "15:45",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Gwalior",
+          "km": 306,
+          "arrival": "19:09",
+          "departure": "19:11",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Jhansi",
+          "km": 403,
+          "arrival": "20:22",
+          "departure": "20:27",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Bhopal",
+          "km": 700,
+          "arrival": "23:59",
+          "departure": "00:04",
+          "arrivalDay": 1,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Nagpur",
+          "km": 1083,
+          "arrival": "05:15",
+          "departure": "05:20",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Balharshah",
+          "km": 1294,
+          "arrival": "08:10",
+          "departure": "08:15",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Vijayawada",
+          "km": 1745,
+          "arrival": "14:20",
+          "departure": "14:25",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Chennai",
+          "km": 2175,
+          "arrival": "20:40",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "02286",
+      "returnNumber": "02285",
+      "days": [
+        "Mon",
+        "Fri"
+      ],
+      "source": 11,
+      "stops": [
+        {
+          "station": "New Delhi",
+          "km": 0,
+          "arrival": null,
+          "departure": "15:45",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Jhansi",
+          "km": 403,
+          "arrival": "20:22",
+          "departure": "20:27",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Bhopal",
+          "km": 700,
+          "arrival": "00:01",
+          "departure": "00:06",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Nagpur",
+          "km": 1083,
+          "arrival": "05:15",
+          "departure": "05:20",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Balharshah",
+          "km": 1294,
+          "arrival": "08:10",
+          "departure": "08:15",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Secundrabad",
+          "km": 1660,
+          "arrival": "14:00",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "02285",
+      "returnNumber": "02286",
+      "days": [
+        "Thu",
+        "Sun"
+      ],
+      "source": 41,
+      "stops": [
+        {
+          "station": "Secundrabad",
+          "km": 0,
+          "arrival": null,
+          "departure": "13:10",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Balharshah",
+          "km": 367,
+          "arrival": "18:06",
+          "departure": "18:11",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Nagpur",
+          "km": 578,
+          "arrival": "21:00",
+          "departure": "21:06",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Bhopal",
+          "km": 967,
+          "arrival": "02:15",
+          "departure": "02:20",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Jhansi",
+          "km": 1264,
+          "arrival": "05:30",
+          "departure": "05:35",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "New Delhi",
+          "km": 1667,
+          "arrival": "10:40",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "12281",
+      "returnNumber": "12282",
+      "days": [
+        "Wed"
+      ],
+      "source": 2,
+      "stops": [
+        {
+          "station": "Bhubaneswar",
+          "km": 0,
+          "arrival": null,
+          "departure": "07:40",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Balasore",
+          "km": 206,
+          "arrival": "10:44",
+          "departure": "10:49",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Adra",
+          "km": 496,
+          "arrival": "14:56",
+          "departure": "15:00",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Varanasi",
+          "km": 964,
+          "arrival": "20:45",
+          "departure": "20:56",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Kanpur",
+          "km": 1311,
+          "arrival": "00:50",
+          "departure": "00:55",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "New Delhi",
+          "km": 1750,
+          "arrival": "06:25",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    },
+    {
+      "number": "12282",
+      "returnNumber": "12281",
+      "days": [
+        "Thu"
+      ],
+      "source": 31,
+      "stops": [
+        {
+          "station": "New Delhi",
+          "km": 0,
+          "arrival": null,
+          "departure": "12:56",
+          "arrivalDay": null,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Kanpur",
+          "km": 440,
+          "arrival": "17:48",
+          "departure": "17:54",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Varanasi",
+          "km": 786,
+          "arrival": "21:50",
+          "departure": "22:00",
+          "arrivalDay": 1,
+          "departureDay": 1,
+          "printedDay": 1
+        },
+        {
+          "station": "Adra",
+          "km": 1232,
+          "arrival": "03:40",
+          "departure": "03:50",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Balasore",
+          "km": 1522,
+          "arrival": "07:33",
+          "departure": "07:38",
+          "arrivalDay": 2,
+          "departureDay": 2,
+          "printedDay": 2
+        },
+        {
+          "station": "Bhubaneswar",
+          "km": 1727,
+          "arrival": "11:15",
+          "departure": null,
+          "arrivalDay": 2,
+          "departureDay": null,
+          "printedDay": 2
+        }
+      ]
+    }
+  ],
+  "stationCardChecks": [
+    {
+      "station": "Bhubaneswar",
+      "train": "02245",
+      "trainCardDays": [
+        "Tue",
+        "Wed",
+        "Sat",
+        "Sun"
+      ],
+      "stationCardDays": [
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "issue": "Friday appears on the station card but not the train card. Preserve and flag the disagreement."
+    },
+    {
+      "station": "Bhopal",
+      "train": "12270",
+      "issue": "Printed Day 2 and W/Su station days align with the 00:04 departure. The 23:59 arrival is on the preceding day."
+    }
+  ]
+}
