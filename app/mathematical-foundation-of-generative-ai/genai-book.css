@@ -1,0 +1,84 @@
+.genai-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.genai-group, .genai-prereqs {
+  margin: 1.5rem 0;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  border: 1px solid #dce4ea;
+  border-radius: 1rem;
+  background: #fff;
+  scroll-margin-top: 6rem;
+}
+
+.genai-prereqs { background: #f0f7f6; }
+.genai-group h2, .genai-prereqs h2 { margin: .25rem 0 .75rem; }
+.genai-chapter-links { list-style: none; padding: 0; margin: .5rem 0 0; }
+.genai-chapter-links li + li { border-top: 1px solid #dce4ea; }
+.genai-chapter-links a {
+  display: flex;
+  padding: .65rem .25rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+.genai-chapter-links a:hover { text-decoration: underline; }
+.genai-archive-link { margin-top: 2rem; }
+
+.genai-reader { max-width: 900px; }
+.genai-reader h1 { font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.08; }
+.genai-contents {
+  margin: 1.5rem 0;
+  padding: .9rem 1.2rem;
+  background: #eef5f7;
+  border-radius: .65rem;
+}
+.genai-contents summary, .genai-book-body summary { cursor: pointer; font-weight: 700; }
+.genai-contents ul { margin-bottom: 0; }
+
+.genai-book-body {
+  font-size: clamp(1rem, 2vw, 1.12rem);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.genai-book-body [id] { scroll-margin-top: 6rem; }
+.genai-book-body h2 { margin: 2rem 0 .65rem; }
+.genai-book-body h3 { margin: 1.35rem 0 .5rem; }
+.genai-book-body li + li { margin-top: .35rem; }
+.genai-book-body figure { margin: 1.4rem 0; }
+.genai-book-body figure svg, .genai-book-body img { display: block; max-width: 100%; height: auto; margin-inline: auto; }
+.genai-book-body figcaption { color: #3f536a; font-size: .9rem; margin-top: .55rem; }
+.genai-book-body table, .genai-book-body pre, .genai-book-body .katex-display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.genai-book-body table { border-collapse: collapse; margin: 1.1rem 0; }
+.genai-book-body th, .genai-book-body td { padding: .4rem .65rem; text-align: left; border-bottom: 1px solid #dce4ea; }
+.genai-book-body th { background: #eef5f7; }
+.genai-book-body .katex-display { padding: .3rem 0; }
+.genai-book-body .katex-display > .katex { display: inline-block; min-width: 100%; }
+.genai-book-body .box, .genai-book-body .q, .genai-book-body .review {
+  margin: 1.1rem 0;
+  padding: .7rem 1rem;
+  border: 1px solid #dce4ea;
+  border-radius: .6rem;
+  background: #fff;
+}
+.genai-book-body .box { border-inline-start: .28rem solid #48617a; background: #f4f7fb; }
+.genai-book-body .box.example, .genai-book-body .box.analogy { border-inline-start-color: #a65c1c; background: #fffbf4; }
+.genai-book-body .box.idea, .genai-book-body .box.check { border-inline-start-color: #227163; background: #f0f7f6; }
+.genai-book-body .box.trap, .genai-book-body .box.confusion { border-inline-start-color: #a0443e; background: #fdf5f3; }
+.genai-book-body .box-h, .genai-book-body .qh { color: #314e6c; font-weight: 750; font-size: .9rem; }
+.genai-book-body .box > :first-child, .genai-book-body .review > :first-child { margin-top: 0; }
+.genai-book-body .box > :last-child { margin-bottom: 0; }
+.genai-book-body .q details { border-top: 1px solid #dce4ea; padding-top: .45rem; }
+.genai-book-body .qh .tag { display: inline-block; padding: 0 .4rem; border-radius: .3rem; background: #edf4f6; }
+.genai-book-body .cmap ul { padding-left: 1.4rem; }
+
+@media (max-width: 540px) {
+  .genai-reader .week-pagination { flex-wrap: wrap; }
+}

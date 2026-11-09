@@ -1,3 +1,4 @@
+import {chapters as genaiBook, chapterUrl, subject as genaiSubject} from '../../lib/genai-book';
 import {computationalThinkingWeeks} from '../../lib/computational-thinking';
 import {stats1Weeks} from '../../lib/stats-1';
 import numberExamples from '../../data/deep-learning-number-examples.json';
@@ -43,6 +44,15 @@ import {pdsaSections,pdsaWeek2Sections,pdsaWeek3Sections,pdsaWeek4Sections} from
 export const metadata = {title:'Search course notes', robots:{index:false, follow:true}};
 export default function Page() {
   const entries = [];
+  for (const chapter of genaiBook) {
+    if (!chapter.unit.startsWith('week-')) continue;
+    const url = chapterUrl(chapter.slug);
+    const context = {subject: genaiSubject, subjectSlug: 'mathematical-foundation-of-generative-ai', week: Number(chapter.unit.slice(5)), lesson: chapter.title};
+    entries.push({...context, title: chapter.title, url, text: chapter.sections.map(section => section.title).join(' ')});
+    for (const section of chapter.sections) {
+      entries.push({...context, title: section.title, url: url + '#' + section.id, text: ''});
+    }
+  }
   for (const data of [...computationalThinkingWeeks, ...stats1Weeks, dl1, dl2, dl3, dl4, csd1, csd2, csd3, csd4, week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, genai3, algorithms, algorithms2, spg1, spg, spg3, spg4, spg5, spg6, spg7, spg8, spg9, spg10, spg11, spg12]) {
     for (const section of data.sections) {
       const base = (data.base || `/software-engineering/week-${data.week}/`) + section.slug + '/';

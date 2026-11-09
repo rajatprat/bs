@@ -1,7 +1,36 @@
-import {pageMetadata} from '../../lib/seo';
-import data from '../../data/genai-week-1-part-1.json';
-import week2 from '../../data/genai-week-2.json';
-import part2 from '../../data/genai-week-1-part-2.json';
-import {imageCount} from '../../lib/course';
-export const metadata = pageMetadata("/mathematical-foundation-of-generative-ai/");
-export default function Subject(){return <main id="main" className="home"><nav className="breadcrumbs"><a href="/">Subjects</a><span>/</span><span>{data.subject}</span></nav><div className="eyebrow">BS COURSE</div><h1>Mathematical foundation<br/><span>of Generative AI.</span></h1><p className="lead">Build the mathematical ideas behind generative models, one worked example at a time.</p><div className="section-label"><h2>Course weeks</h2><span>Week 1 complete · Week 2 Topic 1 available</span></div><a className="week-card" href="/mathematical-foundation-of-generative-ai/week-1/"><span className="week-number">01</span><div><span className="eyebrow">WEEK 1 · COMPLETE GUIDE</span><h2>Foundations to variational optimization</h2><p>Data distributions, convexity, divergences, convex conjugates, and variational optimization.</p><span className="muted">{imageCount(data)+imageCount(part2)} illustrations · Worked examples · Practice questions</span></div><span className="open-label">Open week →</span></a><a className="week-card" href={week2.base}><span className="week-number">02</span><div><span className="eyebrow">WEEK 2 · TOPIC 1 AVAILABLE</span><h2>{week2.title}</h2><p>{week2.description}</p><span className="muted">6 illustrations · Worked example · Explained practice</span></div><span className="open-label">Open week →</span></a></main>}
+import {bookBase, bookMetadata, chapters, chapterUrl, subject, units, unitUrl, weekKeys} from '../../lib/genai-book';
+import {ChapterLinks} from './book-ui';
+
+export const metadata = bookMetadata(subject, 'Study the first four weeks through worked examples, illustrated lessons, practice questions, and optional math foundations.', bookBase);
+
+export default function Subject() {
+  return (
+    <main id="main" className="home genai-course">
+      <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><span>{subject}</span></nav>
+      <div className="eyebrow">BS Course · Generative AI from Scratch</div>
+      <h1>Mathematical Foundation<br/><span>of Generative AI.</span></h1>
+      <p className="lead">Start with distributions and work up to training, adapting, and evaluating GANs. Each week includes worked examples, practice, and revision.</p>
+      <div className="genai-actions">
+        <a className="primary" href={unitUrl('week-1')}>Start Week 1 →</a>
+        <a href={unitUrl('foundations')}>Refresh the math first</a>
+      </div>
+      <section aria-labelledby="genai-weeks">
+        <div className="section-label"><h2 id="genai-weeks">Your four-week study plan</h2><span>Book 1 · Adversarial learning</span></div>
+        {weekKeys.map((unit, i) => {
+          const {label, title, description} = units[unit];
+          return <a className="week-card" href={unitUrl(unit)} key={unit}>
+            <span className="week-number">0{i + 1}</span>
+            <div><span className="eyebrow">{label}</span><h2>{title}</h2><p>{description}</p></div>
+            <span className="open-label">Open week →</span>
+          </a>;
+        })}
+      </section>
+      <section className="genai-group" id="book-resources">
+        <h2>Book resources</h2>
+        <p>Use the <a href={chapterUrl('start')}>reading guide</a> to get oriented, or open the <a href={unitUrl('foundations')}>optional math foundations</a> to review a topic.</p>
+        <ChapterLinks items={chapters.filter(chapter => chapter.unit === 'reference' && chapter.slug !== 'start')}/>
+      </section>
+      <p className="genai-archive-link"><a href={bookBase + 'archive/'}>Browse the original Week 1 and Week 2 notes</a></p>
+    </main>
+  );
+}
