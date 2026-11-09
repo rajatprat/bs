@@ -1,0 +1,961 @@
+{
+  "subject": "Algorithms in Data Science",
+  "subjectSlug": "algorithms-in-data-science",
+  "week": 3,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/algorithms-in-data-science/week-3/",
+  "illustrationCount": 9,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Start with the difference between an exact and an approximate answer. Then build a hash, see why nearby points match more often, and use AND and OR to control the candidate list. Each section has a worked example and quick checks."
+    },
+    {
+      "type": "heading",
+      "text": "Week 3 summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "This week builds a search index for finding close matches. A projected scan makes each comparison cheaper. Locality-sensitive hashing (LSH) also tries to reduce how many comparisons you need."
+    },
+    {
+      "type": "html",
+      "html": "<ul><li><a href=\"/algorithms-in-data-science/week-3/approximate-nearest-neighbours/\"><strong>Define an acceptable answer</strong></a>. Allow a distance within a factor of the best distance, or work with a given radius and its expanded acceptance range.</li><li><a href=\"/algorithms-in-data-science/week-3/locality-sensitive-hashing/\"><strong>Use buckets to find candidates</strong></a>. Nearby points should collide more often than far points. A collision is a shared bucket key.</li><li><a href=\"/algorithms-in-data-science/week-3/euclidean-lsh/\"><strong>Build a Euclidean hash</strong></a>. Project onto a line, add a shared random shift, divide by the bucket width, and take the floor.</li><li><a href=\"/algorithms-in-data-science/week-3/collision-probability/\"><strong>Explain the collision chance</strong></a>. For a fixed projected gap, a wider gap leaves less room for both points in one bucket. Average over directions to get the full probability.</li><li><a href=\"/algorithms-in-data-science/week-3/and-amplification/\"><strong>Use AND inside a table</strong></a>. Require all K hashes to agree. Far matches become rarer, and near matches also become harder.</li><li><a href=\"/algorithms-in-data-science/week-3/or-amplification/\"><strong>Use OR across tables</strong></a>. Accept a candidate from any of L tables, merge duplicates, and verify original distances.</li><li><a href=\"/algorithms-in-data-science/week-3/lsh-parameters/\"><strong>Choose K and L</strong></a>. Pick enough hashes to control far collisions and enough tables to meet a near retrieval target. Rho describes how the table count scales.</li><li><a href=\"/algorithms-in-data-science/week-3/tuning-bucket-width/\"><strong>Tune with data</strong></a>. Compare bucket widths on labelled pairs and test the resulting search on held-out queries.</li></ul><p>A bucket match earns a distance check. The original distance decides whether the candidate is an acceptable answer.</p><p><a href=\"/algorithms-in-data-science/week-3/formula-revision/\">Open the formula guide and practice →</a></p>",
+      "text": "Define an acceptable answer. Allow a distance within a factor of the best distance, or work with a given radius and its expanded acceptance range. Use buckets to find candidates. Nearby points should collide more often than far points. A collision is a shared bucket key. Build a Euclidean hash. Project onto a line, add a shared random shift, divide by the bucket width, and take the floor. Explain the collision chance. For a fixed projected gap, a wider gap leaves less room for both points in one bucket. Average over directions to get the full probability. Use AND inside a table. Require all K hashes to agree. Far matches become rarer, and near matches also become harder. Use OR across tables. Accept a candidate from any of L tables, merge duplicates, and verify original distances. Choose K and L. Pick enough hashes to control far collisions and enough tables to meet a near retrieval target. Rho describes how the table count scales. Tune with data. Compare bucket widths on labelled pairs and test the resulting search on held-out queries. A bucket match earns a distance check. The original distance decides whether the candidate is an acceptable answer."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Nearest neighbours and the limits of a scan",
+      "slug": "approximate-nearest-neighbours",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Explain what an approximate answer promises and why projection still leaves a scan."
+        },
+        {
+          "type": "heading",
+          "text": "Find a song close to the query"
+        },
+        {
+          "type": "paragraph",
+          "text": "Say a music app measures distance between songs. Smaller means more similar. Three songs are 4, 5, and 9 units from your query song."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/approximate-nearest-neighbours.svg",
+          "width": 640,
+          "height": 217,
+          "alt": "Distances 4 and 5 are within the allowed range up to 6. A distance of 9 is outside it."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>The exact answer has distance 4 because 4 is the smallest.</li><li>Allow a factor of 1.5. Multiply the best distance, 4, by 1.5 to get a limit of 6.</li><li>A result at distance 5 is a valid approximate answer. A result at distance 9 is too far.</li></ol>",
+          "text": "The exact answer has distance 4 because 4 is the smallest. Allow a factor of 1.5. Multiply the best distance, 4, by 1.5 to get a limit of 6. A result at distance 5 is a valid approximate answer. A result at distance 9 is too far."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If c is 1.25, does a song at distance 5 qualify?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Yes. The allowed distance is 1.25 × 4 = 5, and equality is allowed.</p></details>",
+          "text": "If c is 1.25, does a song at distance 5 qualify? Yes. The allowed distance is 1.25 × 4 = 5, and equality is allowed."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Call the new item q, the query. Let c be the allowed multiplier. A c-approximate answer has distance at most c times the true nearest distance. A related radius query starts with a given r. If a point exists within r, the goal is to find a point within cr, with the promised probability."
+        },
+        {
+          "type": "heading",
+          "text": "Where the time goes"
+        },
+        {
+          "type": "paragraph",
+          "text": "A direct scan compares the query with every stored point. If there are n points and each point has d features, one Euclidean distance uses work proportional to d, and the whole scan uses work proportional to nd."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Johnson–Lindenstrauss (JL) projection from Weeks 1 and 2 turns d features into k features. Apply the same matrix to each stored point and to the query. For a dense matrix, preparing the stored points takes O(ndk). One query takes O(dk) to project and O(nk) to scan."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Direct scan: }O(nd)\\qquad\\text{Projected scan: }O(dk+nk)",
+          "text": "Dense projection makes each distance cheaper, while the scan still visits all n points."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a fixed query included with the stored points in the JL guarantee, choosing the nearest projected point gives an original distance at most the optimal distance times the square root of (1 + ε) divided by (1 − ε), with the stated success probability. Compare the two squared distances before taking square roots."
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Why that approximation factor appears</summary><p>The projected squared distance of the chosen point is no bigger than that of the true nearest point.</p><p>The chosen point’s projected squared distance is at least (1 − ε) times its original squared distance. The true nearest point’s projected squared distance is at most (1 + ε) times its original squared distance.</p><p>Combine those inequalities, divide by (1 − ε), then take square roots. The guarantee applies when the same projection preserves distances involving the query.</p></details>",
+          "text": "Why that approximation factor appears The projected squared distance of the chosen point is no bigger than that of the true nearest point. The chosen point’s projected squared distance is at least (1 − ε) times its original squared distance. The true nearest point’s projected squared distance is at most (1 + ε) times its original squared distance. Combine those inequalities, divide by (1 − ε), then take square roots. The guarantee applies when the same projection preserves distances involving the query."
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 3 now asks a different question. Can we look at fewer than n points by putting likely matches into the same bucket?"
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If k is much smaller than d, does a projected scan stop visiting every point?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Each comparison is cheaper, but a full scan still visits all n points.</p></details><p><strong>If a point lies within r = 3 and c = 2, how far away may the radius query’s answer be?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>At most cr = 6. A valid answer need not be the exact nearest.</p></details>",
+          "text": "If k is much smaller than d, does a projected scan stop visiting every point? No. Each comparison is cheaper, but a full scan still visits all n points. If a point lies within r = 3 and c = 2, how far away may the radius query’s answer be? At most cr = 6. A valid answer need not be the exact nearest."
+        }
+      ]
+    },
+    {
+      "title": "Locality-sensitive hashing and candidate buckets",
+      "slug": "locality-sensitive-hashing",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Use collision probabilities to tell apart likely matches and far points."
+        },
+        {
+          "type": "heading",
+          "text": "Look in the query’s bucket first"
+        },
+        {
+          "type": "paragraph",
+          "text": "A hash assigns each song a bucket key. A collision means two songs get the same key under the same hash. Here r is 1, c is 2, and the near and far collision limits are 0.8 and 0.4. Treat these as example bounds for an LSH family. For a specific Gaussian hash, calculate the bounds from its bucket width."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/locality-sensitive-hashing.svg",
+          "width": 640,
+          "height": 217,
+          "alt": "At most 1 unit is near, between 1 and 2 has no promised collision rate, and 2 units or farther is far."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>A song 0.5 units away is near. It shares the query’s bucket with probability at least 80%.</li><li>A song 2.5 units away is far. It shares the bucket with probability at most 40%.</li><li>A song 1.5 units away lies in the middle. These two promises do not specify its collision probability.</li></ol>",
+          "text": "A song 0.5 units away is near. It shares the query’s bucket with probability at least 80%. A song 2.5 units away is far. It shares the bucket with probability at most 40%. A song 1.5 units away lies in the middle. These two promises do not specify its collision probability."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What can you promise for a point exactly 2 units away?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>It is far because the far rule includes equality at cr. Its collision probability is at most 40%.</p></details>",
+          "text": "What can you promise for a point exactly 2 units away? It is far because the far rule includes equality at cr. Its collision probability is at most 40%."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "A hash family is a collection of possible hash rules. Draw one rule at random and use it for both points. The parameter p₁ is a lower bound for a near pair. The parameter p₂ is an upper bound for a far pair."
+        },
+        {
+          "type": "heading",
+          "text": "Read the LSH definition"
+        },
+        {
+          "type": "equation",
+          "tex": "\\operatorname{dist}(x,y)\\le r\\Rightarrow\\Pr_h[h(x)=h(y)]\\ge p_1",
+          "text": "Near points collide with probability at least p₁."
+        },
+        {
+          "type": "equation",
+          "tex": "\\operatorname{dist}(x,y)\\ge cr\\Rightarrow\\Pr_h[h(x)=h(y)]\\le p_2",
+          "text": "Far points collide with probability at most p₂."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the formulas this week assume r > 0, c > 1, and 0 < p₂ < p₁ < 1. The probabilities are over the random choice of hash for a fixed pair. After choosing a hash, keep it fixed while indexing the dataset and checking queries."
+        },
+        {
+          "type": "heading",
+          "text": "A bucket gives candidates"
+        },
+        {
+          "type": "paragraph",
+          "text": "Index each song under its bucket key. For a query, retrieve only the songs with the same key, then calculate their actual distances. A far point may collide, and a near point may land across a bucket boundary. Exact distance checks remove false candidates but cannot recover a missed point."
+        },
+        {
+          "type": "paragraph",
+          "text": "With 10 near points and 8,000 far points, one hash gives at least 8 expected near candidates and at most 3,200 expected far candidates for these limits. The other 1,990 points are in the middle if there are 10,000 points total. Linearity of expectation lets you add the per-point probabilities even when collisions across points are related."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Does a collision prove the two songs are near?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. It only makes the stored song a candidate. Check its original distance.</p></details><p><strong>Does the expected number of candidates equal the number returned for every query?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. It is an average over the random hash choices.</p></details>",
+          "text": "Does a collision prove the two songs are near? No. It only makes the stored song a candidate. Check its original distance. Does the expected number of candidates equal the number returned for every query? No. It is an average over the random hash choices."
+        }
+      ]
+    },
+    {
+      "title": "Euclidean LSH: project, shift, and bucket",
+      "slug": "euclidean-lsh",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Compute a Euclidean hash by hand and explain each part of the rule."
+        },
+        {
+          "type": "heading",
+          "text": "Put two points into buckets"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose one random direction has already been drawn and gives projected positions 2 and 3. Take a shift of 0.5 and a bucket width of 4."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/euclidean-lsh.svg",
+          "width": 640,
+          "height": 217,
+          "alt": "Shifted positions 2.5 and 3.5 both lie in bucket 0, which runs from 0 up to 4."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Add the same shift to both positions. They become 2.5 and 3.5.</li><li>Divide each by 4. The results are 0.625 and 0.875.</li><li>Take the floor of each result, which gives 0 for both. The two points collide.</li></ol>",
+          "text": "Add the same shift to both positions. They become 2.5 and 3.5. Divide each by 4. The results are 0.625 and 0.875. Take the floor of each result, which gives 0 for both. The two points collide."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If the shifted coordinate is exactly 4, which bucket contains it?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Bucket 1. Divide by 4 to get 1, then take the floor.</p></details>",
+          "text": "If the shifted coordinate is exactly 4, which bucket contains it? Bucket 1. Divide by 4 to get 1, then take the floor."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "In several dimensions, the projected position is the dot product aᵀx. Multiply matching coordinates and add them. The letter b is the shared shift, and w is the bucket width."
+        },
+        {
+          "type": "heading",
+          "text": "Write the full hash rule"
+        },
+        {
+          "type": "equation",
+          "tex": "h_{a,b}(x)=\\left\\lfloor\\frac{a^{\\mathsf T}x+b}{w}\\right\\rfloor,\\qquad a\\sim\\mathcal N(0,I_d),\\quad b\\sim\\operatorname{Unif}[0,w)",
+          "text": "Draw a Gaussian direction and an independent uniform shift. Add the shift, divide by the bucket width, and take the floor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Draw the d entries of a independently from the standard normal distribution. Pick b uniformly from one bucket width, independently of a. Use the same a, b, and w for every point in this hash. The interval endpoint has probability zero, so either convention for including it gives the same probabilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a concrete dot product, take a = (1, 1) and x = (2, 1). Then the projected position is 1 × 2 + 1 × 1 = 3. The numbers are an illustration of one rule. When building the hash family, draw a from the Gaussian distribution."
+        },
+        {
+          "type": "heading",
+          "text": "Pay attention to boundaries"
+        },
+        {
+          "type": "paragraph",
+          "text": "With width 4, bucket 0 includes 0 and stops just before 4. Bucket 1 starts at 4. Negative results use the floor as well. The floor of −0.1 is −1 because −1 is the greatest integer at or below −0.1. A dictionary can store just the integer bucket keys that occur."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What is the bucket key for a shifted coordinate of −1 with w = 4?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>−1. The quotient is −0.25 and its floor is −1.</p></details><p><strong>Should you draw a fresh shift for every stored point?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Reuse the same shift and direction within a hash so the keys are comparable.</p></details>",
+          "text": "What is the bucket key for a shifted coordinate of −1 with w = 4? −1. The quotient is −0.25 and its floor is −1. Should you draw a fresh shift for every stored point? No. Reuse the same shift and direction within a hash so the keys are comparable."
+        }
+      ]
+    },
+    {
+      "title": "Why nearby points collide more often",
+      "slug": "collision-probability",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Derive the collision chance for a fixed projected gap, then explain what happens over random projections."
+        },
+        {
+          "type": "heading",
+          "text": "Slide the bucket boundary"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fix the projection direction for now. Two projected positions are 1 unit apart and the bucket width is 4."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/collision-probability.svg",
+          "width": 640,
+          "height": 217,
+          "alt": "With projected gap 1 and width 4, the boundary separates the two points during one quarter of a full shift cycle."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Measure the smaller point’s position within its bucket. A uniform shift makes this position equally likely anywhere from 0 up to 4.</li><li>If that position is below 3, the second point, 1 unit to the right, is still in the same bucket.</li><li>The safe part has length 3 out of 4. The collision chance over the shift is 3/4, or 75%.</li></ol>",
+          "text": "Measure the smaller point’s position within its bucket. A uniform shift makes this position equally likely anywhere from 0 up to 4. If that position is below 3, the second point, 1 unit to the right, is still in the same bucket. The safe part has length 3 out of 4. The collision chance over the shift is 3/4, or 75%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With width 4 and projected gap 2, what is the collision chance over the shift?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>1/2. Exactly half of one bucket width lets both points fit.</p></details>",
+          "text": "With width 4 and projected gap 2, what is the collision chance over the shift? 1/2. Exactly half of one bucket width lets both points fit."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Call the signed projected difference Δ. Its magnitude |Δ| is the gap on the number line. A gap at least as wide as a bucket can never fit. A smaller gap leaves w − |Δ| possible positions out of a full bucket width w."
+        },
+        {
+          "type": "equation",
+          "tex": "\\Pr_b[h(x)=h(y)\\mid a]=\\max\\!\\left(0,1-\\frac{|\\Delta|}{w}\\right),\\qquad \\Delta=a^{\\mathsf T}(x-y)",
+          "text": "Condition on the projection direction. The collision chance falls linearly with the projected gap until it reaches zero."
+        },
+        {
+          "type": "heading",
+          "text": "Now let the direction vary"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let s be the original Euclidean distance. The projected difference has the same distribution as s times a standard normal number Z. One way to see this is to write the dot product as a weighted sum of independent standard normals. Its mean is zero and its variance is the sum of the squared weights, which is s²."
+        },
+        {
+          "type": "equation",
+          "tex": "\\Delta\\sim\\mathcal N(0,s^2),\\qquad f(s)=\\mathbb E_Z\\!\\left[\\max\\!\\left(0,1-\\frac{s|Z|}{w}\\right)\\right]",
+          "text": "Average over the random Gaussian direction to get the collision probability at distance s."
+        },
+        {
+          "type": "paragraph",
+          "text": "To compare two distances, imagine using the same value of |Z| for both. The larger s gives a larger projected gap and no greater collision chance. Averaging keeps this order. For distinct positive distances, a positive range of |Z| gives a strict decrease. Thus f(r) gives p₁ and f(cr) gives p₂."
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Advanced reading: write the average as an integral</summary><p>For s &gt; 0, average the conditional probability against the normal density of Δ. The expression is even, so integrate on the positive side and double it.</p><p>Only projected gaps between 0 and w contribute. Over that range the weight is (1 − t/w) times the normal density with mean zero and variance s².</p></details>",
+          "text": "Advanced reading: write the average as an integral For s > 0, average the conditional probability against the normal density of Δ. The expression is even, so integrate on the positive side and double it. Only projected gaps between 0 and w contribute. Over that range the weight is (1 − t/w) times the normal density with mean zero and variance s²."
+        },
+        {
+          "type": "equation",
+          "tex": "f(s)=\\frac{2}{\\sqrt{2\\pi}\\,s}\\int_0^w\\left(1-\\frac{t}{w}\\right)e^{-t^2/(2s^2)}\\,dt\\quad(s>0)",
+          "text": "Integral form of the same collision probability. At distance zero, f(0) is 1."
+        },
+        {
+          "type": "html",
+          "html": "<p>Original method: <a href=\"https://doi.org/10.1145/997817.997857\">Datar, Immorlica, Indyk, and Mirrokni (2004)</a>.</p>",
+          "text": "Original method: Datar, Immorlica, Indyk, and Mirrokni (2004)."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Can a fixed projected gap of 5 collide if the bucket width is 4?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. The gap is wider than a bucket.</p></details><p><strong>If you double the original distance, must the collision probability halve?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. It decreases with distance, but the Gaussian average does not give a general inverse-proportion rule.</p></details>",
+          "text": "Can a fixed projected gap of 5 collide if the bucket width is 4? No. The gap is wider than a bucket. If you double the original distance, must the collision probability halve? No. It decreases with distance, but the Gaussian average does not give a general inverse-proportion rule."
+        }
+      ]
+    },
+    {
+      "title": "AND: require every hash to match",
+      "slug": "and-amplification",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Reduce far collisions by combining independent hashes and see the cost for near points."
+        },
+        {
+          "type": "heading",
+          "text": "Ask for two matching keys"
+        },
+        {
+          "type": "paragraph",
+          "text": "The query has keys (2, 5) under two independent hashes. Song A has keys (2, 5). Song B has keys (2, 9)."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/and-amplification.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "The query and A have the same two keys. B fails because its second key is different."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Compare the first key. Both songs match 2.</li><li>Compare the second key. Only A matches 5.</li><li>Keep A as a candidate because both keys agree. B does not match this table.</li></ol>",
+          "text": "Compare the first key. Both songs match 2. Compare the second key. Only A matches 5. Keep A as a candidate because both keys agree. B does not match this table."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With three hashes, how many keys must agree?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>All three must agree in the same table.</p></details>",
+          "text": "With three hashes, how many keys must agree? All three must agree in the same table."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use K for the number of independent hashes inside one table. The table key is the ordered tuple of all K hash results. For a fixed pair, multiply the probabilities because the component hash draws are independent."
+        },
+        {
+          "type": "equation",
+          "tex": "g(x)=(h_1(x),\\ldots,h_K(x)),\\qquad \\Pr[g(x)=g(y)]=p^K",
+          "text": "A pair with single-hash collision probability p matches all K hashes with probability p to the power K."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Hashes per table",
+              "Near collision lower bound",
+              "Far collision upper bound"
+            ],
+            [
+              "1",
+              "80%",
+              "40%"
+            ],
+            [
+              "2",
+              "64%",
+              "16%"
+            ],
+            [
+              "3",
+              "51.2%",
+              "6.4%"
+            ],
+            [
+              "11",
+              "About 8.59%",
+              "About 0.00419%"
+            ]
+          ],
+          "text": "Hashes per table Near collision lower bound Far collision upper bound 1 80% 40% 2 64% 16% 3 51.2% 6.4% 11 About 8.59% About 0.00419%"
+        },
+        {
+          "type": "heading",
+          "text": "Choose enough hashes for one table"
+        },
+        {
+          "type": "paragraph",
+          "text": "If there are at most n far points, the expected number of far candidates in one table is at most n times p₂ to the power K. Aim to make this no more than 1."
+        },
+        {
+          "type": "equation",
+          "tex": "n p_2^K\\le1\\qquad\\Longleftarrow\\qquad K=\\left\\lceil\\frac{\\ln n}{\\ln(1/p_2)}\\right\\rceil",
+          "text": "Use the smallest whole number at or above the log ratio."
+        },
+        {
+          "type": "paragraph",
+          "text": "At n = 10,000 and p₂ = 0.4, the log ratio is about 10.052. Using K = 10 gives a far count bound of 1.049, just above 1. Round up to 11 and it drops to about 0.419. With 8,000 far points, the bound at K = 11 is about 0.336."
+        },
+        {
+          "type": "paragraph",
+          "text": "The trade-off is that the per-table near guarantee also drops. More tables give a near point more chances to be seen."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Can you square a collision probability by using the same hash twice?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Both outcomes are identical. The multiplication rule needs independently drawn hashes.</p></details><p><strong>What does “at most one expected far candidate” say about a particular query?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>It is a bound on the average across random table choices. A particular table can still return more than one far point.</p></details>",
+          "text": "Can you square a collision probability by using the same hash twice? No. Both outcomes are identical. The multiplication rule needs independently drawn hashes. What does “at most one expected far candidate” say about a particular query? It is a bound on the average across random table choices. A particular table can still return more than one far point."
+        }
+      ]
+    },
+    {
+      "title": "OR: look in more than one table",
+      "slug": "or-amplification",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Calculate the chance that a candidate appears in at least one independent table."
+        },
+        {
+          "type": "heading",
+          "text": "Give the same neighbour another chance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose a fixed point matches one table with probability 20%. Build three independent tables using fresh hash draws for each."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/or-amplification.svg",
+          "width": 640,
+          "height": 197,
+          "alt": "One table finds the point 20% of the time. With three independent tables the chance rises to 48.8%."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>The chance of missing in one table is 80%.</li><li>The chance of missing in all three is 0.8 × 0.8 × 0.8 = 0.512.</li><li>Subtract from 1. The chance of seeing the point in at least one table is 0.488, or 48.8%.</li></ol>",
+          "text": "The chance of missing in one table is 80%. The chance of missing in all three is 0.8 × 0.8 × 0.8 = 0.512. Subtract from 1. The chance of seeing the point in at least one table is 0.488, or 48.8%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why is 20% × 3 not the exact answer?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>A point can match more than one table. Adding counts those overlaps repeatedly.</p></details>",
+          "text": "Why is 20% × 3 not the exact answer? A point can match more than one table. Adding counts those overlaps repeatedly."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use L for the number of independent tables. Inside each table, all K keys must agree. Across tables, one match is enough. It is easier to calculate the chance of no match and subtract it from 1."
+        },
+        {
+          "type": "equation",
+          "tex": "\\Pr[\\text{candidate appears}]=1-(1-p^K)^L",
+          "text": "This is the exact probability for a fixed pair with single-hash collision probability p."
+        },
+        {
+          "type": "paragraph",
+          "text": "Substitute p₁ to get a lower bound for a fixed near point. Substitute p₂ to get an upper bound for a fixed far point. These are per-point probabilities. If at least one near point exists, the chance of retrieving some near point is at least the bound for that fixed point. The lecture calls these the true-positive rate (TPR) and false-positive rate (FPR) for candidate retrieval. A far candidate counted in FPR can still be rejected before any answer is returned."
+        },
+        {
+          "type": "heading",
+          "text": "Use AND and OR together"
+        },
+        {
+          "type": "paragraph",
+          "text": "With K = 11 and L = 24, a fixed near point has a retrieval probability lower bound of about 88.42%. A fixed far point has a retrieval probability upper bound of about 0.101%. Across 10 near and 8,000 far points, that gives at least 8.84 expected near candidates and at most 8.05 expected far candidates. Middle-distance points may add further work."
+        },
+        {
+          "type": "paragraph",
+          "text": "For each table, look up the query’s key. Merge the bucket contents and count each point once. Verify original distances for the candidates. For a radius query, accept an answer at distance at most cr. If none qualifies, the search reports no candidate within that range. This can be a miss when a point lies within r."
+        },
+        {
+          "type": "heading",
+          "text": "Follow a query through the whole search"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use two hashes per table and two tables. Before any query arrives, draw fresh hashes for each table. For every stored song, compute its two keys in each table and store its ID in the bucket for that tuple."
+        },
+        {
+          "type": "paragraph",
+          "text": "At query time, use the same hashes. Suppose the query key is (2, 5) in table 1 and (3, 1) in table 2. Use r = 1 and c = 2, so any verified distance at most 2 qualifies."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Song",
+              "Table 1 key",
+              "Table 2 key",
+              "Original distance",
+              "What happens"
+            ],
+            [
+              "A",
+              "(2, 9)",
+              "(3, 7)",
+              "0.6",
+              "No matching bucket. Missed."
+            ],
+            [
+              "B",
+              "(2, 5)",
+              "(3, 1)",
+              "1.5",
+              "Found twice. Verify once."
+            ],
+            [
+              "C",
+              "(2, 5)",
+              "(9, 1)",
+              "3.1",
+              "Found in table 1. Reject."
+            ]
+          ],
+          "text": "Song Table 1 key Table 2 key Original distance What happens A (2, 9) (3, 7) 0.6 No matching bucket. Missed. B (2, 5) (3, 1) 1.5 Found twice. Verify once. C (2, 5) (9, 1) 3.1 Found in table 1. Reject."
+        },
+        {
+          "type": "paragraph",
+          "text": "The matching buckets contain B and C. Merge them by song ID, so B is checked once. B’s distance of 1.5 is within 2 and C’s distance of 3.1 is outside it. The search can return B even though the exact nearest song, A, was missed. The radius guarantee allows this because it asks for an answer within cr when a neighbour exists within r."
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Try it yourself: what if only C matches?</summary><p>The candidate list would contain C, which fails the exact distance check. The search reports no acceptable candidate. A is still within r, so this outcome is a search miss.</p></details>",
+          "text": "Try it yourself: what if only C matches? The candidate list would contain C, which fails the exact distance check. The search reports no acceptable candidate. A is still within r, so this outcome is a search miss."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Does adding tables lower the far collision rate?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. More tables give far points more chances too.</p></details><p><strong>If the same stored point appears in three buckets, how many times should you verify its distance?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Once. Merge the candidates by ID before verifying distances.</p></details>",
+          "text": "Does adding tables lower the far collision rate? No. More tables give far points more chances too. If the same stored point appears in three buckets, how many times should you verify its distance? Once. Merge the candidates by ID before verifying distances."
+        }
+      ]
+    },
+    {
+      "title": "Choosing K and L and reading ρ",
+      "slug": "lsh-parameters",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Choose whole numbers of hashes and tables, and explain why candidate work can grow slower than n."
+        },
+        {
+          "type": "heading",
+          "text": "Calculate settings for 10,000 points"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the running example with n = 10,000, p₁ = 0.8, and p₂ = 0.4. Aim for roughly two expected matches across tables for a fixed near pair whose single-hash probability is p₁."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/lsh-parameters.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "Round the log ratio up to 11 hashes. With a near limit of 0.8 per hash, choose 24 tables for the stated target."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Round the log ratio up to get 11 hashes per table. This makes the expected far count per table at most 1.</li><li>A near point matches one table with probability at least 0.8 to the power 11, or about 0.0859.</li><li>Divide 2 by 0.0859 and round up to get 24 tables. Use the exact integer settings in the OR formula to check the final rates.</li></ol>",
+          "text": "Round the log ratio up to get 11 hashes per table. This makes the expected far count per table at most 1. A near point matches one table with probability at least 0.8 to the power 11, or about 0.0859. Divide 2 by 0.0859 and round up to get 24 tables. Use the exact integer settings in the OR formula to check the final rates."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With K fixed, which setting can improve near retrieval?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Increase L. That also increases the far collision chance and memory use.</p></details>",
+          "text": "With K fixed, which setting can improve near retrieval? Increase L. That also increases the far collision chance and memory use."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "The symbol ρ (rho) describes how the number of tables grows with the dataset. It depends on how well the original hash separates near and far pairs. When p₁ is much larger than p₂, it takes fewer tables to achieve a useful retrieval probability."
+        },
+        {
+          "type": "equation",
+          "tex": "\\rho=\\frac{\\ln(1/p_1)}{\\ln(1/p_2)},\\qquad 0<\\rho<1",
+          "text": "Rho is the ratio of two positive logarithms. Because p₁ is larger than p₂, the numerator is smaller."
+        },
+        {
+          "type": "paragraph",
+          "text": "Here ρ is about 0.2435. The factor θ (theta) is a positive knob. In the example θ is 2. Raising θ generally means more tables, a better chance of finding a near point, more far candidates, and more memory."
+        },
+        {
+          "type": "heading",
+          "text": "From the classroom approximation to whole numbers"
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Advanced reading: where the exponent comes from</summary><p>Temporarily ignore rounding. The log ratio for K makes p₂ to the power K equal to 1/n. Multiply K by ln(p₁) to see that p₁ to the power K equals n to the power −ρ.</p><p>Choose about θ times n to the power ρ tables. As n grows, the near bound approaches 1 − exp(−θ) in this unrounded calculation. For θ = 1, 2, and 3, these reference values are about 63%, 86%, and 95%.</p><p>The far upper bound in the same calculation is 1 − (1 − 1/n) raised to L. For large n with ρ &lt; 1, it is roughly L/n, or θ times n to the power ρ − 1. The expected far count is bounded by n times that rate, so it grows on the order of n to the power ρ for fixed θ.</p></details>",
+          "text": "Advanced reading: where the exponent comes from Temporarily ignore rounding. The log ratio for K makes p₂ to the power K equal to 1/n. Multiply K by ln(p₁) to see that p₁ to the power K equals n to the power −ρ. Choose about θ times n to the power ρ tables. As n grows, the near bound approaches 1 − exp(−θ) in this unrounded calculation. For θ = 1, 2, and 3, these reference values are about 63%, 86%, and 95%. The far upper bound in the same calculation is 1 − (1 − 1/n) raised to L. For large n with ρ < 1, it is roughly L/n, or θ times n to the power ρ − 1. The expected far count is bounded by n times that rate, so it grows on the order of n to the power ρ for fixed θ."
+        },
+        {
+          "type": "equation",
+          "tex": "K=\\left\\lceil\\frac{\\ln n}{\\ln(1/p_2)}\\right\\rceil,\\qquad L=\\left\\lceil\\frac{\\theta}{p_1^K}\\right\\rceil",
+          "text": "Practical integer settings. With these choices the near lower bound is at least one minus exp of negative theta."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the practical setting, the chance of missing a fixed near point is at most (1 − p₁ to the power K) to the power L. Since 1 − x is at most exp(−x), the miss bound is at most exp(−θ). You can also choose L directly by solving the OR formula for your target."
+        },
+        {
+          "type": "paragraph",
+          "text": "The far chance is at most L times p₂ to the power K by the union bound, and therefore at most L/n. Across at most n far points this gives at most L expected distinct far candidates."
+        },
+        {
+          "type": "heading",
+          "text": "Choose tables for a target success rate"
+        },
+        {
+          "type": "paragraph",
+          "text": "If you want at least 90% retrieval for a fixed near point, you can allow at most 10% chance of missing it in every table. With 11 hashes, a single table’s near collision lower bound is 0.8¹¹, about 0.0859. Use the chance of missing all tables to work backward."
+        },
+        {
+          "type": "equation",
+          "tex": "L=\\left\\lceil\\frac{\\ln(1-\\alpha)}{\\ln(1-p_1^K)}\\right\\rceil",
+          "text": "For target retrieval probability alpha between zero and one, divide the two logs and round up to get the table count."
+        },
+        {
+          "type": "paragraph",
+          "text": "Here the smallest table count that meets the target using the lower bound is 26. Substituting it back gives a near retrieval lower bound of about 90.32%. With 25 tables, the bound is still below 90%."
+        },
+        {
+          "type": "heading",
+          "text": "Compare the three setups"
+        },
+        {
+          "type": "paragraph",
+          "text": "The table uses the running example with 8,000 far points. The near and far rates refer to one fixed point. The far count multiplies the upper rate by 8,000."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Settings",
+              "Near rate lower bound",
+              "Far rate upper bound",
+              "Expected far count upper bound"
+            ],
+            [
+              "One basic hash",
+              "About 80.00%",
+              "About 40%",
+              "About 3.2e+03"
+            ],
+            [
+              "AND only",
+              "About 8.59%",
+              "About 0.004194%",
+              "About 0.336"
+            ],
+            [
+              "AND plus OR",
+              "About 88.42%",
+              "About 0.1006%",
+              "About 8.05"
+            ]
+          ],
+          "text": "Settings Near rate lower bound Far rate upper bound Expected far count upper bound One basic hash About 80.00% About 40% About 3.2e+03 AND only About 8.59% About 0.004194% About 0.336 AND plus OR About 88.42% About 0.1006% About 8.05"
+        },
+        {
+          "type": "heading",
+          "text": "Count work and memory separately"
+        },
+        {
+          "type": "paragraph",
+          "text": "A dense dot product costs O(d), so computing the query’s keys costs O(LKd). You also scan the returned bucket entries and verify distances for unique candidates. Indexing n points costs O(nLKd) to compute the hashes and uses O(nL) stored point references, in addition to the vectors and the hash rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "The expected far-candidate count can grow sublinearly in n because ρ < 1. Total query time also depends on hashing cost and how many near and middle-distance points appear. Rho describes the scaling trade-off. After choosing the number of tables, use the actual OR formula to read near and far probabilities."
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Advanced reading: why the search can stop early</summary><p>A radius query can stop as soon as it verifies any point within cr. The total cost of listing and ranking all candidates is a different question.</p><p>With the chosen K, each table has at most one expected far entry, so L tables have at most L expected far entries in total, even if duplicate entries are counted. Markov bounds the chance of seeing at least 3L far entries by 1/3.</p><p>If a near point was retrieved and fewer than 3L far entries appear, checking up to 3L entries finds an acceptable point. Any entry closer than cr can end the search. The union bound adds the chance of missing the near point and the chance of too many far entries.</p></details>",
+          "text": "Advanced reading: why the search can stop early A radius query can stop as soon as it verifies any point within cr. The total cost of listing and ranking all candidates is a different question. With the chosen K, each table has at most one expected far entry, so L tables have at most L expected far entries in total, even if duplicate entries are counted. Markov bounds the chance of seeing at least 3L far entries by 1/3. If a near point was retrieved and fewer than 3L far entries appear, checking up to 3L entries finds an acceptable point. Any entry closer than cr can end the search. The union bound adds the chance of missing the near point and the chance of too many far entries."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why is 86% only a reference for θ = 2?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>It is the unrounded limit 1 − exp(−2), about 86.5%. Integer settings give a different exact bound, about 88.4% for this example.</p></details><p><strong>Does ρ &lt; 1 promise that every query examines fewer than n points?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. The result controls expected far candidates under the stated assumptions. Some queries may return many near or middle-distance points.</p></details>",
+          "text": "Why is 86% only a reference for θ = 2? It is the unrounded limit 1 − exp(−2), about 86.5%. Integer settings give a different exact bound, about 88.4% for this example. Does ρ < 1 promise that every query examines fewer than n points? No. The result controls expected far candidates under the stated assumptions. Some queries may return many near or middle-distance points."
+        }
+      ]
+    },
+    {
+      "title": "Tuning bucket width with data",
+      "slug": "tuning-bucket-width",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Estimate collision rates on representative pairs and measure the resulting search."
+        },
+        {
+          "type": "heading",
+          "text": "Compare two widths on labelled pairs"
+        },
+        {
+          "type": "paragraph",
+          "text": "Take 100 near pairs and 100 far pairs with distances measured in the original space. For a trial width, measure how often pairs in each group share a bucket."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/tuning-bucket-width.svg",
+          "width": 640,
+          "height": 197,
+          "alt": "In the example, 80 of 100 near trials and 40 of 100 far trials collide."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>If 80 near trials collide, the observed near rate is 80%.</li><li>If 40 far trials collide, the observed far rate is 40%.</li><li>Repeat with other widths. Compare near retrieval, candidate counts, and memory after choosing K and L.</li></ol>",
+          "text": "If 80 near trials collide, the observed near rate is 80%. If 40 far trials collide, the observed far rate is 40%. Repeat with other widths. Compare near retrieval, candidate counts, and memory after choosing K and L."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Does seeing zero far collisions in 100 trials prove the true rate is zero?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. A small nonzero rate can easily produce no observed collisions in a finite sample.</p></details>",
+          "text": "Does seeing zero far collisions in 100 trials prove the true rate is zero? No. A small nonzero rate can easily produce no observed collisions in a finite sample."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a trial width w, the rates with hats are estimates from data. The textbook p₁ and p₂ are bounds that apply to every pair in the near and far groups. An average across sampled pairs is useful for tuning, but it can hide difficult pairs."
+        },
+        {
+          "type": "heading",
+          "text": "Run a fair comparison"
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Choose r and c first. Label a pair near if its original distance is at most r, and far if its distance is at least cr. Keep middle pairs separate when estimating the two rates.</li><li>Test several widths on the same representative pairs. Draw fresh directions and shifts across trials, using a shared hash within each trial. Record the number of trials and collisions for each group.</li><li>Compare estimated separation and use the formulas to pick candidate K and L settings. If an observed rate is 0 or 1, collect more evidence before plugging it into a logarithm.</li><li>Build the tables and test on held-out queries. Record the fraction of queries where you found a good answer, the size of the candidate list, and the time and memory used.</li></ol>",
+          "text": "Choose r and c first. Label a pair near if its original distance is at most r, and far if its distance is at least cr. Keep middle pairs separate when estimating the two rates. Test several widths on the same representative pairs. Draw fresh directions and shifts across trials, using a shared hash within each trial. Record the number of trials and collisions for each group. Compare estimated separation and use the formulas to pick candidate K and L settings. If an observed rate is 0 or 1, collect more evidence before plugging it into a logarithm. Build the tables and test on held-out queries. Record the fraction of queries where you found a good answer, the size of the candidate list, and the time and memory used."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wider buckets make collisions more likely at any fixed nonzero distance. That helps nearby pairs collide, but also lets more far pairs through. The best setting depends on how those changes balance for the dataset."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you use the mathematical collision curve instead of sample averages, evaluate it at distances r and cr to get the two bounds for the Gaussian hash. With empirical estimates, keep the result labelled as a measurement."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What should you compare besides the estimated ρ?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Measure search success, candidate counts, query time, and memory with the actual tables.</p></details><p><strong>Why use held-out queries?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>They show how the chosen settings behave on queries you did not use to pick the width.</p></details>",
+          "text": "What should you compare besides the estimated ρ? Measure search success, candidate counts, query time, and memory with the actual tables. Why use held-out queries? They show how the chosen settings behave on queries you did not use to pick the width."
+        }
+      ]
+    },
+    {
+      "title": "Week 3 revision and practice",
+      "slug": "formula-revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Choose the right formula and distinguish candidate probabilities, counts, and distance guarantees."
+        },
+        {
+          "type": "heading",
+          "text": "Trace a query from key to answer"
+        },
+        {
+          "type": "paragraph",
+          "text": "A query matches a stored song in table 2 but misses it in tables 1 and 3. Their original distance is 1.8. Use r = 1 and c = 2."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-3/formula-revision.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "One matching table makes the song a candidate. Its verified distance of 1.8 is within the acceptance radius 2."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>One matching table is enough to retrieve the song as a candidate.</li><li>Compute the actual distance and compare it to cr = 2.</li><li>Distance 1.8 is within the allowed radius. A radius query can return it even though it is outside the inner radius r.</li></ol>",
+          "text": "One matching table is enough to retrieve the song as a candidate. Compute the actual distance and compare it to cr = 2. Distance 1.8 is within the allowed radius. A radius query can return it even though it is outside the inner radius r."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Does a point at distance 2.1 qualify in this example?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. It exceeds the acceptance radius of 2.</p></details>",
+          "text": "Does a point at distance 2.1 qualify in this example? No. It exceeds the acceptance radius of 2."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "A collision is a bucket match. A near point is within r. A valid answer to the radius query is within cr when the query has a neighbour within r. Check these three ideas separately."
+        },
+        {
+          "type": "heading",
+          "text": "Which formula answers which question?"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Use"
+            ],
+            [
+              "What is the bucket key?",
+              "Floor of shifted projection divided by width"
+            ],
+            [
+              "How often do points collide for a fixed projected gap?",
+              "One minus gap over width, with a minimum of zero"
+            ],
+            [
+              "Do all K hashes agree?",
+              "Raise the single-hash probability to K"
+            ],
+            [
+              "Does at least one of L tables match?",
+              "Subtract the probability of L misses from 1"
+            ],
+            [
+              "How many far candidates are expected?",
+              "Multiply a per-point upper bound by the number of far points"
+            ],
+            [
+              "How quickly does the table count grow?",
+              "Use the exponent ρ when the hash parameters are fixed"
+            ]
+          ],
+          "text": "Question Use What is the bucket key? Floor of shifted projection divided by width How often do points collide for a fixed projected gap? One minus gap over width, with a minimum of zero Do all K hashes agree? Raise the single-hash probability to K Does at least one of L tables match? Subtract the probability of L misses from 1 How many far candidates are expected? Multiply a per-point upper bound by the number of far points How quickly does the table count grow? Use the exponent ρ when the hash parameters are fixed"
+        },
+        {
+          "type": "heading",
+          "text": "Check the order of operations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Choose a distance and hash family. Set the bucket width. Choose K to reduce far collisions and L to recover near matches. For every query, merge the matching buckets, then verify actual distances. Use the stated bounds for theory and measured performance for tuning."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>A fixed point matches one table with probability 0.25. What is its chance of appearing in either of two independent tables?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>1 − 0.75² = 0.4375, or 43.75%.</p></details><p><strong>A far point’s candidate probability is at most 0.002. What is the expected number of far candidates among 8,000 far points?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>At most 16, by adding the 8,000 per-point bounds.</p></details><p><strong>What does making each projected vector shorter change in a scan?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>It makes each comparison cheaper. To look at fewer candidates, use an index such as LSH.</p></details>",
+          "text": "A fixed point matches one table with probability 0.25. What is its chance of appearing in either of two independent tables? 1 − 0.75² = 0.4375, or 43.75%. A far point’s candidate probability is at most 0.002. What is the expected number of far candidates among 8,000 far points? At most 16, by adding the 8,000 per-point bounds. What does making each projected vector shorter change in a scan? It makes each comparison cheaper. To look at fewer candidates, use an index such as LSH."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes to catch"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Drawing a new hash for each point. The query and stored points must use the same direction and shift within each hash."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Mixing up the number of hashes per table, K, with the number of independent tables, L."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Confusing a per-point candidate probability with the expected number of candidates or the probability of returning an acceptable answer."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using observed collision averages as bounds that apply to every near or far pair. Also keep points between r and cr separate."
+        },
+        {
+          "type": "heading",
+          "text": "Mixed practice with explained answers"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. A fixed projected gap is 3 and the bucket width is 5. What is the collision probability over the random shift?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The safe fraction is 1 minus 3/5, so the chance is 2/5, or 40%.</p></details><p><strong>2. A fixed pair matches one hash with probability 0.5. What is its candidate probability with two independent hashes per table and three independent tables?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>AND gives 0.5² = 0.25 per table. OR gives 1 − 0.75³ = 0.578125, about 57.81%.</p></details><p><strong>3. A candidate appears in two tables. Its original distance is 1.6, with r = 1 and c = 2. What do you do?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Count it once and check its distance. It qualifies because 1.6 is within cr = 2, even though it is outside the inner radius.</p></details><p><strong>4. The expected far candidate count is too high. What happens if you increase K while holding L fixed?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The far collision probability drops, and so does near retrieval. Recheck the near target and decide whether extra tables are worth the memory and time.</p></details><p><strong>5. You find zero far collisions in a small tuning sample. Can you use zero as a proven far collision bound?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Collect more trials and test the chosen index on held-out queries. A small positive rate can produce zero observed collisions.</p></details>",
+          "text": "A fixed projected gap is 3 and the bucket width is 5. What is the collision probability over the random shift? The safe fraction is 1 minus 3/5, so the chance is 2/5, or 40%. A fixed pair matches one hash with probability 0.5. What is its candidate probability with two independent hashes per table and three independent tables? AND gives 0.5² = 0.25 per table. OR gives 1 − 0.75³ = 0.578125, about 57.81%. A candidate appears in two tables. Its original distance is 1.6, with r = 1 and c = 2. What do you do? Count it once and check its distance. It qualifies because 1.6 is within cr = 2, even though it is outside the inner radius. The expected far candidate count is too high. What happens if you increase K while holding L fixed? The far collision probability drops, and so does near retrieval. Recheck the near target and decide whether extra tables are worth the memory and time. You find zero far collisions in a small tuning sample. Can you use zero as a proven far collision bound? No. Collect more trials and test the chosen index on held-out queries. A small positive rate can produce zero observed collisions."
+        }
+      ]
+    }
+  ]
+}

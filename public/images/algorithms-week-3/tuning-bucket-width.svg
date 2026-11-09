@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="197" viewBox="0 0 640 197">
+<rect x="0" y="0" width="640" height="197" rx="16" fill="#f8f7f2"/>
+<g font-family="system-ui, sans-serif">
+<text x="23" y="30" font-size="14" fill="#365b87" text-anchor="start" font-weight="750">BS NOTES  /  ADS  /  WEEK 3</text><text x="23" y="64" font-size="24" fill="#182441" text-anchor="start" font-weight="750">Measure both kinds of collision</text><text x="23" y="112" font-size="18" fill="#182441" text-anchor="start" font-weight="650">Near trials</text><rect x="188" y="91" width="331" height="25" rx="9" fill="#eaf1f9"/><rect x="188" y="91" width="264.8" height="25" rx="9" fill="#276651"/><text x="610" y="112" font-size="19" fill="#276651" text-anchor="end" font-weight="650">80.00%</text><text x="23" y="161" font-size="18" fill="#182441" text-anchor="start" font-weight="650">Far trials</text><rect x="188" y="140" width="331" height="25" rx="9" fill="#eaf1f9"/><rect x="188" y="140" width="132.4" height="25" rx="9" fill="#9d5324"/><text x="610" y="161" font-size="19" fill="#9d5324" text-anchor="end" font-weight="650">40.00%</text>
+</g>
+</svg>

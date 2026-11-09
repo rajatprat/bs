@@ -23,6 +23,8 @@ import spg4 from '../../data/spg-week-4.json';
 import spg3 from '../../data/spg-week-3.json';
 import spg from '../../data/spg-week-2.json';
 import algorithms2 from '../../data/algorithms-week-2.json';
+import algorithms3 from '../../data/algorithms-week-3.json';
+import algorithms4 from '../../data/algorithms-week-4.json';
 import algorithms from '../../data/algorithms-week-1.json';
 import Search from '../../components/Search';
 import week1 from '../../data/week-1.json';
@@ -53,7 +55,7 @@ export default function Page() {
       entries.push({...context, title: section.title, url: url + '#' + section.id, text: ''});
     }
   }
-  for (const data of [...computationalThinkingWeeks, ...stats1Weeks, dl1, dl2, dl3, dl4, csd1, csd2, csd3, csd4, week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, genai3, algorithms, algorithms2, spg1, spg, spg3, spg4, spg5, spg6, spg7, spg8, spg9, spg10, spg11, spg12]) {
+  for (const data of [...computationalThinkingWeeks, ...stats1Weeks, dl1, dl2, dl3, dl4, csd1, csd2, csd3, csd4, week1, week2, week3, week4, week5, week7, week8, week9, week10, week11, genai, genai2, genai3, algorithms, algorithms2, algorithms3, algorithms4, spg1, spg, spg3, spg4, spg5, spg6, spg7, spg8, spg9, spg10, spg11, spg12]) {
     for (const section of data.sections) {
       const base = (data.base || `/software-engineering/week-${data.week}/`) + section.slug + '/';
       const context = {subject: data.subject, subjectSlug: data.subjectSlug || 'software-engineering', part: data.part};

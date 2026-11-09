@@ -1961,5 +1961,89 @@
     "/images/computational-thinking/week-7/representation-choice.png"
   ],
   "/computational-thinking/week-7/revision-and-practice/": [],
-  "/computational-thinking/week-7/source-guide/": []
+  "/computational-thinking/week-7/source-guide/": [],
+  "/algorithms-in-data-science/week-3/approximate-nearest-neighbours/": [
+    "/images/algorithms-week-3/approximate-nearest-neighbours.svg"
+  ],
+  "/algorithms-in-data-science/week-3/locality-sensitive-hashing/": [
+    "/images/algorithms-week-3/locality-sensitive-hashing.svg"
+  ],
+  "/algorithms-in-data-science/week-3/euclidean-lsh/": [
+    "/images/algorithms-week-3/euclidean-lsh.svg"
+  ],
+  "/algorithms-in-data-science/week-3/collision-probability/": [
+    "/images/algorithms-week-3/collision-probability.svg"
+  ],
+  "/algorithms-in-data-science/week-3/and-amplification/": [
+    "/images/algorithms-week-3/and-amplification.svg"
+  ],
+  "/algorithms-in-data-science/week-3/or-amplification/": [
+    "/images/algorithms-week-3/or-amplification.svg"
+  ],
+  "/algorithms-in-data-science/week-3/lsh-parameters/": [
+    "/images/algorithms-week-3/lsh-parameters.svg"
+  ],
+  "/algorithms-in-data-science/week-3/tuning-bucket-width/": [
+    "/images/algorithms-week-3/tuning-bucket-width.svg"
+  ],
+  "/algorithms-in-data-science/week-3/formula-revision/": [
+    "/images/algorithms-week-3/formula-revision.svg"
+  ],
+  "/algorithms-in-data-science/week-3/": [
+    "/images/algorithms-week-3/approximate-nearest-neighbours.svg",
+    "/images/algorithms-week-3/locality-sensitive-hashing.svg",
+    "/images/algorithms-week-3/euclidean-lsh.svg",
+    "/images/algorithms-week-3/collision-probability.svg",
+    "/images/algorithms-week-3/and-amplification.svg",
+    "/images/algorithms-week-3/or-amplification.svg",
+    "/images/algorithms-week-3/lsh-parameters.svg",
+    "/images/algorithms-week-3/tuning-bucket-width.svg",
+    "/images/algorithms-week-3/formula-revision.svg"
+  ],
+  "/algorithms-in-data-science/week-4/singular-value-decomposition/": [
+    "/images/algorithms-week-4/singular-value-decomposition.svg"
+  ],
+  "/algorithms-in-data-science/week-4/pca-from-svd/": [
+    "/images/algorithms-week-4/pca-from-svd.svg"
+  ],
+  "/algorithms-in-data-science/week-4/matrix-completion/": [
+    "/images/algorithms-week-4/matrix-completion.svg"
+  ],
+  "/algorithms-in-data-science/week-4/best-low-rank-approximation/": [
+    "/images/algorithms-week-4/best-low-rank-approximation.svg"
+  ],
+  "/algorithms-in-data-science/week-4/compress-with-known-basis/": [
+    "/images/algorithms-week-4/compress-with-known-basis.svg"
+  ],
+  "/algorithms-in-data-science/week-4/randomized-svd/": [
+    "/images/algorithms-week-4/randomized-svd.svg"
+  ],
+  "/algorithms-in-data-science/week-4/randomized-svd-error/": [
+    "/images/algorithms-week-4/randomized-svd-error.svg"
+  ],
+  "/algorithms-in-data-science/week-4/power-iteration/": [
+    "/images/algorithms-week-4/power-iteration.svg"
+  ],
+  "/algorithms-in-data-science/week-4/formula-revision/": [
+    "/images/algorithms-week-4/formula-revision.svg"
+  ],
+  "/algorithms-in-data-science/week-4/": [
+    "/images/algorithms-week-4/singular-value-decomposition.svg",
+    "/images/algorithms-week-4/pca-from-svd.svg",
+    "/images/algorithms-week-4/matrix-completion.svg",
+    "/images/algorithms-week-4/best-low-rank-approximation.svg",
+    "/images/algorithms-week-4/compress-with-known-basis.svg",
+    "/images/algorithms-week-4/randomized-svd.svg",
+    "/images/algorithms-week-4/randomized-svd-error.svg",
+    "/images/algorithms-week-4/power-iteration.svg",
+    "/images/algorithms-week-4/formula-revision.svg",
+    "/images/algorithms-week-4/detour-svd-ellipse.svg",
+    "/images/algorithms-week-4/detour-pca-projection.svg",
+    "/images/algorithms-week-4/detour-pca-variance.svg"
+  ],
+  "/algorithms-in-data-science/week-4/visual-detour-pca-and-svd/": [
+    "/images/algorithms-week-4/detour-svd-ellipse.svg",
+    "/images/algorithms-week-4/detour-pca-projection.svg",
+    "/images/algorithms-week-4/detour-pca-variance.svg"
+  ]
 }

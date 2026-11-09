@@ -1,0 +1,951 @@
+{
+  "subject": "Algorithms in Data Science",
+  "subjectSlug": "algorithms-in-data-science",
+  "week": 4,
+  "courseWeeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "base": "/algorithms-in-data-science/week-4/",
+  "illustrationCount": 12,
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Start with the visual detour on SVD and PCA. Then follow the same ideas into matrix completion and randomized low-rank approximation."
+    },
+    {
+      "type": "heading",
+      "text": "Week 4 summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "A few strong directions can capture much of a large matrix. SVD finds those directions. Randomized SVD uses a smaller sketch to approximate them at lower cost when the sketch is narrow."
+    },
+    {
+      "type": "html",
+      "html": "<ul><li><a href=\"/algorithms-in-data-science/week-4/singular-value-decomposition/\"><strong>SVD</strong></a>. Read U, Σ, and Vᵀ from right to left. Each nonzero singular value weights one rank-one term.</li><li><a href=\"/algorithms-in-data-science/week-4/pca-from-svd/\"><strong>PCA</strong></a>. Subtract each feature’s mean and use the leading right singular vectors to score each observation.</li><li><a href=\"/algorithms-in-data-science/week-4/matrix-completion/\"><strong>Matrix completion</strong></a>. Predict missing values with short user and item factors fitted to observed entries.</li><li><a href=\"/algorithms-in-data-science/week-4/best-low-rank-approximation/\"><strong>Truncated SVD</strong></a>. Keep the strongest terms. The first discarded singular value gives the optimal spectral error.</li><li><a href=\"/algorithms-in-data-science/week-4/compress-with-known-basis/\"><strong>Compress and lift</strong></a>. Use Qᵀ to express columns in a smaller basis, then Q to lift them back.</li><li><a href=\"/algorithms-in-data-science/week-4/randomized-svd/\"><strong>Randomized SVD</strong></a>. Find that basis with a Gaussian sketch, take the small SVD, and truncate to the target rank.</li><li><a href=\"/algorithms-in-data-science/week-4/randomized-svd-error/\"><strong>Error checks</strong></a>. Separate the best possible rank-k error, the sketch residual, and the final error.</li><li><a href=\"/algorithms-in-data-science/week-4/power-iteration/\"><strong>Power iteration</strong></a>. Emphasize strong singular directions in the sketch while using the original matrix for the final approximation.</li></ul><p><a href=\"/algorithms-in-data-science/week-4/formula-revision/\">Open the formula guide and practice →</a></p>",
+      "text": "SVD. Read U, Σ, and Vᵀ from right to left. Each nonzero singular value weights one rank-one term. PCA. Subtract each feature’s mean and use the leading right singular vectors to score each observation. Matrix completion. Predict missing values with short user and item factors fitted to observed entries. Truncated SVD. Keep the strongest terms. The first discarded singular value gives the optimal spectral error. Compress and lift. Use Qᵀ to express columns in a smaller basis, then Q to lift them back. Randomized SVD. Find that basis with a Gaussian sketch, take the small SVD, and truncate to the target rank. Error checks. Separate the best possible rank-k error, the sketch residual, and the final error. Power iteration. Emphasize strong singular directions in the sketch while using the original matrix for the final approximation."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Visual detour: PCA and SVD",
+      "slug": "visual-detour-pca-and-svd",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Tell PCA and SVD apart, then use SVD to explain a PCA picture."
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with two questions. What does a matrix do to an arrow? Which line keeps the most information about a cloud of points? SVD answers the first. PCA answers the second."
+        },
+        {
+          "type": "heading",
+          "text": "SVD shows what a matrix does to an arrow"
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagine every arrow of length 1 starting at the origin. Their tips form a circle. A matrix can turn or reflect the arrows, scale different directions by different amounts, and turn or reflect the result again."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/detour-svd-ellipse.svg",
+          "width": 640,
+          "height": 311,
+          "alt": "A unit circle becomes a wide ellipse after scaling. The orange vector doubles in length, then rotates with the ellipse. Its endpoint remains on the long axis.",
+          "caption": "The orange vector starts on the horizontal axis. Scaling doubles its length. The final rotation turns the ellipse and vector together."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the picture, the first turn is zero, so the first panel already shows the chosen input directions. The horizontal direction scales by 2, and the vertical direction scales by ½. The last turn changes where the arrow points but keeps its new length."
+        },
+        {
+          "type": "paragraph",
+          "text": "In SVD notation, Vᵀ lines the input up with the directions the matrix scales. Σ applies the scale factors, called singular values. U places the result in its output directions. In this example the singular values are 2 and ½."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If you start with an upward arrow of length 1, what is its final length?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>½. The vertical direction scales by ½, and the last rotation preserves that length.</p></details>",
+          "text": "If you start with an upward arrow of length 1, what is its final length? ½. The vertical direction scales by ½, and the last rotation preserves that length."
+        },
+        {
+          "type": "heading",
+          "text": "PCA finds a line through the data"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose four observations are (5, 8), (7, 6), (1, 4), and (3, 2). Their feature means are (4, 5). Subtract 4 from the first feature and 5 from the second in every row. The centred points are (1, 3), (3, 1), (−3, −1), and (−1, −3)."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/detour-pca-projection.svg",
+          "width": 640,
+          "height": 347,
+          "alt": "Four observations are centred at zero and projected perpendicularly onto the rising diagonal. The four observations give two projected positions.",
+          "caption": "Blue dots are observations. The orange dashed lines show what is lost when each centred point is replaced by its nearest point on the green line."
+        },
+        {
+          "type": "paragraph",
+          "text": "Look at the point (1, 3). Drop a perpendicular to the diagonal, where the two coordinates are equal. It lands at (2, 2). Along that line its signed distance from zero is 2√2. That one number is its PCA score. The point (3, 1) gets the same score, so one component cannot tell those two points apart."
+        },
+        {
+          "type": "paragraph",
+          "text": "The four scores along the diagonal are +2√2, +2√2, −2√2, and −2√2. Along the perpendicular direction their magnitudes are all √2. Square and add: the diagonal gives 32 and the perpendicular gives 8."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/detour-pca-variance.svg",
+          "width": 640,
+          "height": 244,
+          "alt": "Squared scores add to 32 along the diagonal and 8 along its perpendicular. The first direction keeps 80% of the total.",
+          "caption": "These bars add up the squared PCA scores. Dividing both bars by the same sample-covariance divisor leaves the explained percentage unchanged."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Does keeping one component reproduce all four points exactly?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. For example, (1, 3) reconstructs as (2, 2) in centred coordinates. It loses the part perpendicular to the line.</p></details>",
+          "text": "Does keeping one component reproduce all four points exactly? No. For example, (1, 3) reconstructs as (2, 2) in centred coordinates. It loses the part perpendicular to the line."
+        },
+        {
+          "type": "heading",
+          "text": "How SVD finds the PCA directions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Put the four centred observations into the rows of a matrix A. For a unit feature direction v, the entries of Av are the four scores. Since those scores have mean zero, the sum of their squares measures their spread. PCA chooses the direction that makes that sum largest."
+        },
+        {
+          "type": "equation",
+          "tex": "\\|Av\\|_2^2=v^{\\mathsf T}A^{\\mathsf T}Av,\\qquad Av_i=\\sigma_i u_i",
+          "text": "The sum of squared scores along a right singular vector is its squared singular value."
+        },
+        {
+          "type": "paragraph",
+          "text": "The first right singular vector gives the most spread. The next right singular vector gives the most spread among directions perpendicular to the first. In this example their squared singular values are 32 and 8, so keeping the first component retains 80% of the variance. The covariance calculation divides both numbers by 3, which leaves that percentage unchanged."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>For observations stored in rows, which SVD vectors give the PCA directions?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The columns of V, called the right singular vectors. The columns of U describe the score patterns across observations after scaling by the singular values.</p></details>",
+          "text": "For observations stored in rows, which SVD vectors give the PCA directions? The columns of V, called the right singular vectors. The columns of U describe the score patterns across observations after scaling by the singular values."
+        },
+        {
+          "type": "heading",
+          "text": "Continue with the formulas"
+        },
+        {
+          "type": "html",
+          "html": "<p><a href=\"/algorithms-in-data-science/week-4/singular-value-decomposition/\">SVD lesson: factor shapes and rank-one terms</a></p>",
+          "text": "SVD lesson: factor shapes and rank-one terms"
+        },
+        {
+          "type": "html",
+          "html": "<p><a href=\"/algorithms-in-data-science/week-4/pca-from-svd/\">PCA lesson: covariance, scores, and reconstruction</a></p>",
+          "text": "PCA lesson: covariance, scores, and reconstruction"
+        }
+      ]
+    },
+    {
+      "title": "SVD: break a matrix into simple steps",
+      "slug": "singular-value-decomposition",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Read the shapes of the factors and follow a matrix acting on a vector."
+        },
+        {
+          "type": "heading",
+          "text": "Turn two input numbers into three"
+        },
+        {
+          "type": "paragraph",
+          "text": "Take a matrix that doubles the first coordinate, triples the second, and adds a third coordinate of zero. Apply it to (2, 1)."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/singular-value-decomposition.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "The example maps (2, 1) to (4, 3, 0). A sorted SVD implements the same map by swapping axes before and after scaling."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>The first input is 2. Multiply it by 2 to get 4.</li><li>The second input is 1. Multiply it by 3 to get 3.</li><li>The third output is zero. The output has three coordinates even though the input has two.</li></ol>",
+          "text": "The first input is 2. Multiply it by 2 to get 4. The second input is 1. Multiply it by 3 to get 3. The third output is zero. The output has three coordinates even though the input has two."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>How many entries must an input vector have when A has three rows and two columns?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Two. The input length matches the number of columns. The output has three entries.</p></details>",
+          "text": "How many entries must an input vector have when A has three rows and two columns? Two. The input length matches the number of columns. The output has three entries."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "The SVD writes a matrix A as UΣVᵀ. Read the factors from right to left. Vᵀ changes the input coordinates, Σ scales and adjusts the number of coordinates, and U changes the output coordinates. An orthogonal change of coordinates preserves length."
+        },
+        {
+          "type": "heading",
+          "text": "Check the shapes before multiplying"
+        },
+        {
+          "type": "equation",
+          "tex": "A_{m\\times d}=U_{m\\times m}\\,\\Sigma_{m\\times d}\\,V^{\\mathsf T}_{d\\times d}",
+          "text": "Full SVD shapes for a matrix with m rows and d columns."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the example, the sorted singular values are 3 and 2. A sorted SVD swaps the two input axes with Vᵀ, scales by 3 and 2, then swaps the first two output axes with U. The same result (4, 3, 0) comes out. Swapping axes is an orthogonal operation."
+        },
+        {
+          "type": "equation",
+          "tex": "A=\\sum_{i=1}^{\\min(m,d)}\\sigma_i u_i v_i^{\\mathsf T},\\qquad \\sigma_1\\ge\\sigma_2\\ge\\cdots\\ge0",
+          "text": "Each term is an outer product scaled by a singular value."
+        },
+        {
+          "type": "paragraph",
+          "text": "A single term takes the dot product with vᵢ and sends the result in direction uᵢ, scaled by σᵢ. Every output of that term lies along one line, so a nonzero term has rank one. The number of nonzero singular values is the rank of A."
+        },
+        {
+          "type": "paragraph",
+          "text": "A dense thin SVD for a tall matrix typically uses work on the order of md². A full set of m left vectors costs more to form and store. The later lessons avoid computing directions we do not need."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Can an orthogonal factor by itself stretch a vector?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. It changes coordinates by rotations or reflections and preserves length.</p></details><p><strong>How many directions contribute if the singular values are 8, 2, and 0?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Two. The third term is zero.</p></details>",
+          "text": "Can an orthogonal factor by itself stretch a vector? No. It changes coordinates by rotations or reflections and preserves length. How many directions contribute if the singular values are 8, 2, and 0? Two. The third term is zero."
+        },
+        {
+          "type": "html",
+          "html": "<p><a href=\"/algorithms-in-data-science/week-4/visual-detour-pca-and-svd/\">Revisit the visual detour on PCA and SVD</a></p>",
+          "text": "Revisit the visual detour on PCA and SVD"
+        }
+      ]
+    },
+    {
+      "title": "PCA: find the directions of greatest spread",
+      "slug": "pca-from-svd",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Centre a dataset, identify a principal direction, and compute a score."
+        },
+        {
+          "type": "heading",
+          "text": "Reduce two features to one"
+        },
+        {
+          "type": "paragraph",
+          "text": "Three observations are (2, 1), (3, 2), and (4, 3). They lie along a diagonal. One number can tell us where each observation sits on that line."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/pca-from-svd.svg",
+          "width": 640,
+          "height": 285,
+          "alt": "The centred observations lie along the diagonal. Projection onto this line keeps all their variation."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Find the feature means, 3 and 2. Subtract them from each observation to get (−1, −1), (0, 0), and (1, 1).</li><li>Use the unit direction along the diagonal. Its two coordinates are both 1 divided by the square root of 2.</li><li>Take the dot product of each centred row with that direction. The one-number scores are −√2, 0, and √2.</li></ol>",
+          "text": "Find the feature means, 3 and 2. Subtract them from each observation to get (−1, −1), (0, 0), and (1, 1). Use the unit direction along the diagonal. Its two coordinates are both 1 divided by the square root of 2. Take the dot product of each centred row with that direction. The one-number scores are −√2, 0, and √2."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why centre the points?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>PCA measures spread around the mean. Subtracting the mean moves the cloud’s centre to zero.</p></details>",
+          "text": "Why centre the points? PCA measures spread around the mean. Subtracting the mean moves the cloud’s centre to zero."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Rows are observations and columns are features. In PCA, each direction is a unit vector in feature space. Its score for a row is the dot product with the centred row. PCA chooses the first direction to maximize the variance of these scores."
+        },
+        {
+          "type": "heading",
+          "text": "Connect covariance to the right singular vectors"
+        },
+        {
+          "type": "equation",
+          "tex": "C=\\frac{A^{\\mathsf T}A}{m-1}=V\\frac{\\Sigma^{\\mathsf T}\\Sigma}{m-1}V^{\\mathsf T}\\quad(m>1)",
+          "text": "For centred A, the sample covariance eigenvectors are the right singular vectors."
+        },
+        {
+          "type": "paragraph",
+          "text": "AᵀA by itself is the scatter matrix. The sample covariance divides it by m − 1. Dividing all entries by the same positive number does not change the principal directions. In this example C has all four entries equal to 1, and its eigenvalues are 2 and 0."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{scores}=AV_k,\\qquad\\text{centred reconstruction}=(AV_k)V_k^{\\mathsf T}",
+          "text": "Keep the first k right singular vectors. Add the feature means back to reconstruct in the original coordinates."
+        },
+        {
+          "type": "paragraph",
+          "text": "The variance explained by one component is its covariance eigenvalue divided by the sum of those eigenvalues when total variance is positive. Here the first component explains 100% because all three centred points lie on one line."
+        },
+        {
+          "type": "paragraph",
+          "text": "Centre by subtracting feature means. If features use very different units, decide whether to standardize before PCA. That choice changes which directions have the largest spread."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Do the first k components come from U or V?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The feature directions come from V. The centred data scores are AVₖ.</p></details><p><strong>How do you reconstruct a row in the original coordinates?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Map the scores back using the retained directions, then add the feature means.</p></details>",
+          "text": "Do the first k components come from U or V? The feature directions come from V. The centred data scores are AVₖ. How do you reconstruct a row in the original coordinates? Map the scores back using the retained directions, then add the feature means."
+        },
+        {
+          "type": "html",
+          "html": "<p><a href=\"/algorithms-in-data-science/week-4/visual-detour-pca-and-svd/\">Revisit the visual detour on PCA and SVD</a></p>",
+          "text": "Revisit the visual detour on PCA and SVD"
+        }
+      ]
+    },
+    {
+      "title": "Low-rank factors for recommendations",
+      "slug": "matrix-completion",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Use a short user vector and a short item vector to predict a missing rating."
+        },
+        {
+          "type": "heading",
+          "text": "Predict an unrated film"
+        },
+        {
+          "type": "paragraph",
+          "text": "A user has two learned preference weights, (1, 2). A film has two learned feature weights, (2, 1). Their dot product is the model’s prediction."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/matrix-completion.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "Multiply matching entries of the user and film vectors, then add to get 4."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Multiply the first pair of weights. The contribution is 1 × 2 = 2.</li><li>Multiply the second pair. The contribution is 2 × 1 = 2.</li><li>Add the two contributions. The predicted rating is 4.</li></ol>",
+          "text": "Multiply the first pair of weights. The contribution is 1 × 2 = 2. Multiply the second pair. The contribution is 2 × 1 = 2. Add the two contributions. The predicted rating is 4."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What does a blank rating mean?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The rating is unknown. It does not count as a rating of zero.</p></details>",
+          "text": "What does a blank rating mean? The rating is unknown. It does not count as a rating of zero."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "With m users, d films, and k learned features, use an m-by-k user factor B and a k-by-d item factor C. The entry in row i and column j of BC is the dot product between the user’s row and the film’s column."
+        },
+        {
+          "type": "equation",
+          "tex": "\\widehat A=BC,\\qquad B\\in\\mathbb R^{m\\times k},\\quad C\\in\\mathbb R^{k\\times d}",
+          "text": "The predicted rating matrix has rank at most k."
+        },
+        {
+          "type": "heading",
+          "text": "Fit using ratings you actually observed"
+        },
+        {
+          "type": "paragraph",
+          "text": "A blank cell means the user did not provide a rating. To train the factors, compare predictions with observed ratings. A missing rating contributes no observed error. Regularization can discourage large factor weights and improve generalization."
+        },
+        {
+          "type": "equation",
+          "tex": "\\min_{B,C}\\sum_{(i,j)\\in\\mathcal O}\\bigl(A_{ij}-(BC)_{ij}\\bigr)^2",
+          "text": "The set O contains only observed ratings. This is an example objective before adding regularization."
+        },
+        {
+          "type": "paragraph",
+          "text": "The SVD of a fully observed matrix gives an optimal approximation for the matrix norms in the next lesson. Matrix completion uses only observed entries, so setting all blanks to zero changes the problem. Validate predictions on known ratings held out from training."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If the latent feature count is k, what is the maximum rank of BC?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>At most k, because every column of BC is a combination of the k columns of B.</p></details><p><strong>Can the toy factors prove that a missing rating is 4?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Four is the prediction from those learned factors. The actual rating is unknown.</p></details>",
+          "text": "If the latent feature count is k, what is the maximum rank of BC? At most k, because every column of BC is a combination of the k columns of B. Can the toy factors prove that a missing rating is 4? No. Four is the prediction from those learned factors. The actual rating is unknown."
+        }
+      ]
+    },
+    {
+      "title": "Best low-rank approximation",
+      "slug": "best-low-rank-approximation",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Truncate an SVD and use the first discarded singular value to read the spectral error."
+        },
+        {
+          "type": "heading",
+          "text": "Keep the two largest directions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose a matrix has singular values 9, 4, and 1. You can afford to keep two directions."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/best-low-rank-approximation.svg",
+          "width": 640,
+          "height": 263,
+          "alt": "Keep singular values 9 and 4. The first discarded singular value is 1."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Sort the singular values from largest to smallest. Here they are already sorted.</li><li>Keep the first two singular terms. Drop the term weighted by 1.</li><li>The error in spectral norm is 1, the first discarded singular value.</li></ol>",
+          "text": "Sort the singular values from largest to smallest. Here they are already sorted. Keep the first two singular terms. Drop the term weighted by 1. The error in spectral norm is 1, the first discarded singular value."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>With singular values 9, 4, and 1, what is the spectral error if you keep one direction?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>4, the first discarded singular value.</p></details>",
+          "text": "With singular values 9, 4, and 1, what is the spectral error if you keep one direction? 4, the first discarded singular value."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "The spectral norm measures the largest output length the matrix can give a unit input vector. It equals the largest singular value. For A minus its truncated approximation, the norm measures the worst error over all unit inputs."
+        },
+        {
+          "type": "equation",
+          "tex": "A_k=\\sum_{i=1}^{k}\\sigma_i u_i v_i^{\\mathsf T},\\qquad \\|A-A_k\\|_2=\\sigma_{k+1}",
+          "text": "The Eckart–Young theorem gives an optimal rank-at-most-k approximation in spectral norm."
+        },
+        {
+          "type": "equation",
+          "tex": "\\|A-A_k\\|_{\\mathrm F}=\\sqrt{\\sum_{i>k}\\sigma_i^2}",
+          "text": "The Frobenius error combines all discarded singular values, and the same truncation is optimal for this norm."
+        },
+        {
+          "type": "heading",
+          "text": "Why no rank-k matrix can do better in spectral norm"
+        },
+        {
+          "type": "paragraph",
+          "text": "Consider the space spanned by the first k + 1 right singular vectors. Any matrix of rank at most k must send at least one unit vector in that space to zero. On that vector A still has output length at least σₖ₊₁. The error of any such approximation is therefore at least σₖ₊₁, and truncation reaches that limit."
+        },
+        {
+          "type": "paragraph",
+          "text": "If A already has rank at most k, keeping all its nonzero singular terms reconstructs A exactly. When singular values are tied, more than one optimal approximation can exist."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What is the Frobenius error if you keep one direction?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The square root of 4² + 1², which is √17.</p></details><p><strong>If the rank is already two and you keep two directions, what is the error?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Zero. No nonzero singular term is discarded.</p></details>",
+          "text": "What is the Frobenius error if you keep one direction? The square root of 4² + 1², which is √17. If the rank is already two and you keep two directions, what is the error? Zero. No nonzero singular term is discarded."
+        }
+      ]
+    },
+    {
+      "title": "Compress with a known basis",
+      "slug": "compress-with-known-basis",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Use Qᵀ to compress coordinates and Q to lift the result back to the original space."
+        },
+        {
+          "type": "heading",
+          "text": "Project a column onto a line"
+        },
+        {
+          "type": "paragraph",
+          "text": "You have a column (3, 2). Keep only its component along the horizontal axis, whose unit direction is (1, 0)."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/compress-with-known-basis.svg",
+          "width": 640,
+          "height": 265,
+          "alt": "The projection sends (3, 2) to (3, 0). The discarded vertical component has length 2."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Take the dot product with (1, 0) to get the coordinate 3.</li><li>Multiply the unit direction by 3 to return to two coordinates. The result is (3, 0).</li><li>Subtract the projection from the original. The leftover is (0, 2).</li></ol>",
+          "text": "Take the dot product with (1, 0) to get the coordinate 3. Multiply the unit direction by 3 to return to two coordinates. The result is (3, 0). Subtract the projection from the original. The leftover is (0, 2)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If the column is (7, −1), what does this projection return?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>(7, 0). Only the horizontal coordinate is kept.</p></details>",
+          "text": "If the column is (7, −1), what does this projection return? (7, 0). Only the horizontal coordinate is kept."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Q is a matrix whose columns form an orthonormal basis. That means each column has length 1 and different columns are perpendicular. Qᵀ measures coordinates along those directions. Multiplying by Q turns those coordinates back into a vector."
+        },
+        {
+          "type": "equation",
+          "tex": "Q^{\\mathsf T}Q=I,\\qquad B=Q^{\\mathsf T}A,\\qquad QB=QQ^{\\mathsf T}A",
+          "text": "Compress every column of A, then lift it back. The matrix QQᵀ is an orthogonal projector."
+        },
+        {
+          "type": "heading",
+          "text": "Do the SVD on the smaller matrix"
+        },
+        {
+          "type": "paragraph",
+          "text": "If A has m rows and d columns and Q has ℓ columns, B has ℓ rows and d columns. Compute the SVD of B. Multiply its left singular vectors by Q to lift them. Their orthonormality is preserved because QᵀQ is the identity."
+        },
+        {
+          "type": "equation",
+          "tex": "B=\\widetilde U\\widetilde\\Sigma\\widetilde V^{\\mathsf T},\\qquad QB=(Q\\widetilde U)\\widetilde\\Sigma\\widetilde V^{\\mathsf T}",
+          "text": "Use the original right vectors from the compressed SVD and lift only the left vectors."
+        },
+        {
+          "type": "paragraph",
+          "text": "If Q spans the top k left singular directions and has k columns, the lift is exactly Aₖ. In that special case, the spectral error is σₖ₊₁. For an arbitrary Q, the error depends on how well the span of Q captures the columns of A."
+        },
+        {
+          "type": "paragraph",
+          "text": "When ℓ is much smaller than d, the SVD of B costs O(dℓ²) for a dense matrix. Computing B also costs O(mdℓ). These costs assume Q is already available. The next lesson builds Q without first finding the exact leading singular vectors."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Is QQᵀ always the identity?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. It is the identity only when the columns of Q span the entire output space. QᵀQ is always the identity for orthonormal columns.</p></details><p><strong>If Q misses an important column direction, can the SVD of B recover it?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Multiplying by Q can only return vectors in the space spanned by Q.</p></details>",
+          "text": "Is QQᵀ always the identity? No. It is the identity only when the columns of Q span the entire output space. QᵀQ is always the identity for orthonormal columns. If Q misses an important column direction, can the SVD of B recover it? No. Multiplying by Q can only return vectors in the space spanned by Q."
+        }
+      ]
+    },
+    {
+      "title": "Randomized SVD: sketch, compress, and lift",
+      "slug": "randomized-svd",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Trace the algorithm and distinguish the sketch width from the final target rank."
+        },
+        {
+          "type": "heading",
+          "text": "Make two random mixtures of the columns"
+        },
+        {
+          "type": "paragraph",
+          "text": "Take a 3-by-2 matrix whose columns are (4, 0, 0) and (0, 1, 0). To see what a sketch does, use test vectors (1, 1) and (1, −1)."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/randomized-svd.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "The 3-by-2 matrix times the 2-by-2 test matrix gives a 3-by-2 sketch. Real sketches use independent Gaussian entries and are narrow for large inputs."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>The first test vector adds the two columns and gives (4, 1, 0).</li><li>The second takes their difference and gives (4, −1, 0).</li><li>The two mixtures span the same plane as the original columns. An orthonormal basis for this plane is enough to compress the matrix without losing information.</li></ol>",
+          "text": "The first test vector adds the two columns and gives (4, 1, 0). The second takes their difference and gives (4, −1, 0). The two mixtures span the same plane as the original columns. An orthonormal basis for this plane is enough to compress the matrix without losing information."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If k = 20 and p = 5, how many sketch columns are used?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>25. The final approximation keeps up to 20 singular terms.</p></details>",
+          "text": "If k = 20 and p = 5, how many sketch columns are used? 25. The final approximation keeps up to 20 singular terms."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "Each column of Ω is a set of weights for mixing the columns of A. In the real algorithm, draw the entries independently from the standard normal distribution. A tall input can have many rows, but only a small number of sketch columns."
+        },
+        {
+          "type": "heading",
+          "text": "Follow the five stages"
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Choose target rank k and oversampling count p. Set sketch width ℓ = k + p, within the smaller matrix dimension. Draw Ω with d rows and ℓ columns.</li><li>Form the sketch Y = AΩ. Each sketch column has m entries and lies in the column space of A.</li><li>Use a thin QR factorization to obtain an orthonormal basis Q for the column space of Y. If Y has fewer than ℓ independent columns, use a basis with only as many columns as needed.</li><li>Form B = QᵀA and compute its SVD. Keep up to k singular terms.</li><li>Lift the retained left singular vectors by multiplying by Q. The resulting factorization has rank at most k.</li></ol>",
+          "text": "Choose target rank k and oversampling count p. Set sketch width ℓ = k + p, within the smaller matrix dimension. Draw Ω with d rows and ℓ columns. Form the sketch Y = AΩ. Each sketch column has m entries and lies in the column space of A. Use a thin QR factorization to obtain an orthonormal basis Q for the column space of Y. If Y has fewer than ℓ independent columns, use a basis with only as many columns as needed. Form B = QᵀA and compute its SVD. Keep up to k singular terms. Lift the retained left singular vectors by multiplying by Q. The resulting factorization has rank at most k."
+        },
+        {
+          "type": "equation",
+          "tex": "Y=A\\Omega,\\qquad Q=\\operatorname{orth}(Y),\\qquad B=Q^{\\mathsf T}A,\\qquad \\widehat A_k=QB_k",
+          "text": "Sketch the column space, compress the original matrix, and lift the truncated result."
+        },
+        {
+          "type": "heading",
+          "text": "Why the random mixtures tend to see strong directions"
+        },
+        {
+          "type": "paragraph",
+          "text": "For one Gaussian test vector ω, the mixture Aω has mean zero and covariance AAᵀ. In the left singular basis, the variance along direction uᵢ is σᵢ². Large singular values give those directions more weight in a typical sketch. Extra sketch columns give the algorithm more chances to capture useful directions."
+        },
+        {
+          "type": "equation",
+          "tex": "\\mathbb E[A\\omega]=0,\\qquad \\operatorname{Cov}(A\\omega)=A\\,\\mathbb E[\\omega\\omega^{\\mathsf T}]\\,A^{\\mathsf T}=AA^{\\mathsf T}",
+          "text": "Independent standard normal entries give an identity second-moment matrix."
+        },
+        {
+          "type": "heading",
+          "text": "Where the time goes"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Operation",
+              "Dense cost for a tall matrix"
+            ],
+            [
+              "Draw Ω",
+              "O(dℓ)"
+            ],
+            [
+              "Sketch and compress",
+              "O(mdℓ) each"
+            ],
+            [
+              "Thin QR of Y",
+              "O(mℓ²)"
+            ],
+            [
+              "SVD of B",
+              "O(dℓ²)"
+            ],
+            [
+              "Lift k left vectors",
+              "O(mℓk)"
+            ]
+          ],
+          "text": "Operation Dense cost for a tall matrix Draw Ω O(dℓ) Sketch and compress O(mdℓ) each Thin QR of Y O(mℓ²) SVD of B O(dℓ²) Lift k left vectors O(mℓk)"
+        },
+        {
+          "type": "paragraph",
+          "text": "When k ≤ ℓ ≤ d ≤ m, these costs fit within O(mdℓ). A dense thin SVD of A costs O(md²). The saving comes from a small sketch width. This comparison returns factors. Forming the full dense approximation explicitly can add work and storage."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Why use QᵀA after already forming AΩ?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>AΩ finds a useful basis. QᵀA represents all original columns in that basis so their positions and right singular directions can be approximated.</p></details><p><strong>Which operation makes the sketch basis orthonormal?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The thin QR step, or an equivalent orthonormalization of the independent sketch columns.</p></details>",
+          "text": "Why use QᵀA after already forming AΩ? AΩ finds a useful basis. QᵀA represents all original columns in that basis so their positions and right singular directions can be approximated. Which operation makes the sketch basis orthonormal? The thin QR step, or an equivalent orthonormalization of the independent sketch columns."
+        }
+      ]
+    },
+    {
+      "title": "Measure the error of a randomized sketch",
+      "slug": "randomized-svd-error",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Distinguish the best possible error, the sketch residual, and the error after truncation."
+        },
+        {
+          "type": "heading",
+          "text": "Compare the sketch with the best possible rank"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose A has singular values 10, 3, and 1. You want rank one. A sketch with two basis vectors happens to produce a projection residual of 1.4."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/randomized-svd-error.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "The exact rank-one benchmark is 3. A two-direction sketch can have residual 1.4 before truncation. The final rank-one error is between 3 and 4.4."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>The best rank-one approximation has spectral error 3, the first discarded singular value.</li><li>The sketch can keep two directions, so its residual of 1.4 can be below the rank-one benchmark.</li><li>Truncating the compressed matrix adds at most 3 to the residual. The final rank-one error is at least 3 and at most 4.4 in this example.</li></ol>",
+          "text": "The best rank-one approximation has spectral error 3, the first discarded singular value. The sketch can keep two directions, so its residual of 1.4 can be below the rank-one benchmark. Truncating the compressed matrix adds at most 3 to the residual. The final rank-one error is at least 3 and at most 4.4 in this example."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Can a width-two projection have smaller error than the best rank-one approximation?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Yes. Before truncation, the projection can use two directions.</p></details>",
+          "text": "Can a width-two projection have smaller error than the best rank-one approximation? Yes. Before truncation, the projection can use two directions."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "The exact benchmark is the smallest error any rank-k matrix can reach. The sketch residual measures what the space spanned by Q misses. After truncation, the final factorization must also meet the rank limit."
+        },
+        {
+          "type": "equation",
+          "tex": "\\|A-QQ^{\\mathsf T}A\\|_2=\\|(I-QQ^{\\mathsf T})A\\|_2",
+          "text": "The projection residual measures what the sketch space misses."
+        },
+        {
+          "type": "equation",
+          "tex": "\\sigma_{k+1}\\le\\|A-QB_k\\|_2\\le\\|(I-QQ^{\\mathsf T})A\\|_2+\\sigma_{k+1}",
+          "text": "The left bound comes from optimality. The right bound adds the residual and the cost of truncating inside the sketch space."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the upper bound, split A − QBₖ into what lies outside the sketch space and what was discarded inside it. The best rank-k approximation of the projected matrix cannot do worse than projecting Aₖ, and an orthogonal projection cannot enlarge the spectral error."
+        },
+        {
+          "type": "heading",
+          "text": "What a probability guarantee says"
+        },
+        {
+          "type": "paragraph",
+          "text": "A Gaussian sketch can vary from one draw to another. The discarded singular values matter, including how many of them are sizable. Oversampling can reduce the chance of getting a poor sketch. Read a probability guarantee as a statement over draws of Ω for a fixed input matrix."
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Advanced reading: one published spectral error bound</summary><p>For independent standard Gaussian entries, target rank k ≥ 2, oversampling p ≥ 4 and k + p no larger than the smaller matrix dimension, let T be the square root of the sum of the squared singular values after k.</p><p>Halko, Martinsson, and Tropp, Corollary 10.9, bound the projection residual by (1 + 16√(1 + k/(p + 1))) times σₖ₊₁ plus 8√(k + p)/(p + 1) times T. The probability of exceeding the bound is at most 3 exp(−p).</p><p>This bound concerns the projection before truncation. Its constants are conservative. The lesson on power iteration explains how to improve the sketch when the spectrum falls slowly.</p></details>",
+          "text": "Advanced reading: one published spectral error bound For independent standard Gaussian entries, target rank k ≥ 2, oversampling p ≥ 4 and k + p no larger than the smaller matrix dimension, let T be the square root of the sum of the squared singular values after k. Halko, Martinsson, and Tropp, Corollary 10.9, bound the projection residual by (1 + 16√(1 + k/(p + 1))) times σₖ₊₁ plus 8√(k + p)/(p + 1) times T. The probability of exceeding the bound is at most 3 exp(−p). This bound concerns the projection before truncation. Its constants are conservative. The lesson on power iteration explains how to improve the sketch when the spectrum falls slowly."
+        },
+        {
+          "type": "html",
+          "html": "<p>Reference for the error bounds: <a href=\"https://arxiv.org/abs/0909.4061\">Halko, Martinsson, and Tropp, Sections 9 and 10</a>.</p>",
+          "text": "Reference: Halko, Martinsson, and Tropp, Sections 9 and 10."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What makes a small sketch residual useful?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>It shows that the chosen subspace captures the matrix well. A separate truncation step imposes the final rank.</p></details><p><strong>Does a bound that holds with high probability rule out an unlucky draw?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Its stated failure probability allows a small chance of a worse result.</p></details>",
+          "text": "What makes a small sketch residual useful? It shows that the chosen subspace captures the matrix well. A separate truncation step imposes the final rank. Does a bound that holds with high probability rule out an unlucky draw? No. Its stated failure probability allows a small chance of a worse result."
+        }
+      ]
+    },
+    {
+      "title": "Power iteration for a better sketch",
+      "slug": "power-iteration",
+      "resource": false,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Explain why power steps separate singular directions and implement them without forming AAᵀ."
+        },
+        {
+          "type": "heading",
+          "text": "Make a weaker direction easier to separate"
+        },
+        {
+          "type": "paragraph",
+          "text": "Say the strongest two singular values are 5 and 4. The second direction has 80% of the weight of the first in an ordinary sketch."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/power-iteration.svg",
+          "width": 640,
+          "height": 246,
+          "alt": "The weaker-to-stronger weight ratio is 0.8 with no power step, 0.512 with one step, and about 0.328 with two."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>With no power step, divide 4 by 5 to get 0.8.</li><li>One power step cubes both singular values. The ratio becomes 4³ divided by 5³, or 0.512.</li><li>Two steps raise both to the fifth power. The ratio is about 0.328. The sketch now emphasizes the first direction more strongly.</li></ol>",
+          "text": "With no power step, divide 4 by 5 to get 0.8. One power step cubes both singular values. The ratio becomes 4³ divided by 5³, or 0.512. Two steps raise both to the fifth power. The ratio is about 0.328. The sketch now emphasizes the first direction more strongly."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>For q = 2, what power is applied to the singular values in the sketch?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The fifth power, because 2 × 2 + 1 = 5.</p></details>",
+          "text": "For q = 2, what power is applied to the singular values in the sketch? The fifth power, because 2 × 2 + 1 = 5."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "The exponent is 2q + 1 for q power steps. Each multiplication by Aᵀ and then A adds two powers of the singular value. This changes the sketch used to find Q. The final compressed matrix still comes from the original A."
+        },
+        {
+          "type": "equation",
+          "tex": "(AA^{\\mathsf T})^qA=U(\\Sigma\\Sigma^{\\mathsf T})^q\\Sigma V^{\\mathsf T}",
+          "text": "The left and right singular directions can be kept, and each singular value becomes its power 2q + 1."
+        },
+        {
+          "type": "heading",
+          "text": "Compute the sketch with alternating products"
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Start with Y = AΩ. This is the ordinary sketch when q is zero.</li><li>For each power step, orthonormalize Y to get Q, multiply by Aᵀ, and orthonormalize that result to get a basis Z. Then set Y = AZ.</li><li>After the last step, orthonormalize Y once more. Form B = QᵀA and complete the small SVD and lift as before.</li></ol>",
+          "text": "Start with Y = AΩ. This is the ordinary sketch when q is zero. For each power step, orthonormalize Y to get Q, multiply by Aᵀ, and orthonormalize that result to get a basis Z. Then set Y = AZ. After the last step, orthonormalize Y once more. Form B = QᵀA and complete the small SVD and lift as before."
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid building AAᵀ, which can be a large dense matrix. Alternating products use A and Aᵀ directly. Orthonormalizing in between helps retain usable directions in finite precision. Each power step adds two passes through A, plus the orthonormalizations."
+        },
+        {
+          "type": "heading",
+          "text": "Read the error improvement carefully"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the singular values near the cutoff are close together, a few steps can help the sketch distinguish them. If two singular values are equal, powers keep them equal. The powered ratio describes the spectrum used to build the sketch. The actual subspace error also depends on how well the random test vectors sample the directions."
+        },
+        {
+          "type": "html",
+          "html": "<details class=\"curious\"><summary>Advanced reading: convert a powered residual back to the original scale</summary><p>If the sketch built from the powered matrix has spectral residual at most C times σₖ₊₁ raised to 2q + 1, the power-scheme inequality bounds the original projection residual by C raised to 1/(2q + 1) times σₖ₊₁.</p><p>For example, if C = 8 and q = 1, the multiplicative factor becomes the cube root of 8, or 2. This is a conditional reading of an error bound, not a prediction that every sketch has C = 8.</p></details>",
+          "text": "Advanced reading: convert a powered residual back to the original scale If the sketch built from the powered matrix has spectral residual at most C times σₖ₊₁ raised to 2q + 1, the power-scheme inequality bounds the original projection residual by C raised to 1/(2q + 1) times σₖ₊₁. For example, if C = 8 and q = 1, the multiplicative factor becomes the cube root of 8, or 2. This is a conditional reading of an error bound, not a prediction that every sketch has C = 8."
+        },
+        {
+          "type": "equation",
+          "tex": "\\|(I-QQ^{\\mathsf T})A\\|_2\\le\\bigl\\|(I-QQ^{\\mathsf T})(AA^{\\mathsf T})^qA\\bigr\\|_2^{1/(2q+1)}",
+          "text": "The spectral power-scheme inequality takes the root of the powered residual."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Which matrix goes into B = QᵀA at the end?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The original A. The powered matrix is used only to find a better basis.</p></details><p><strong>What is the trade-off of increasing q?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>More passes and arithmetic. It can improve the sketch, but the extra work may not be worthwhile when the spectrum already drops quickly.</p></details>",
+          "text": "Which matrix goes into B = QᵀA at the end? The original A. The powered matrix is used only to find a better basis. What is the trade-off of increasing q? More passes and arithmetic. It can improve the sketch, but the extra work may not be worthwhile when the spectrum already drops quickly."
+        }
+      ]
+    },
+    {
+      "title": "Week 4 revision and practice",
+      "slug": "formula-revision",
+      "resource": true,
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Learning goal: Choose the right low-rank method and explain each step without memorizing the symbols."
+        },
+        {
+          "type": "heading",
+          "text": "Choose a route for a large table"
+        },
+        {
+          "type": "paragraph",
+          "text": "A centred matrix has 10,000 rows and 200 features. You want 10 directions and can use 5 extra sketch columns."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-week-4/formula-revision.svg",
+          "width": 640,
+          "height": 191,
+          "alt": "The 10,000-by-200 data matrix becomes a 10,000-by-15 sketch. The small SVD acts on a matrix with at most 15 rows and 200 columns."
+        },
+        {
+          "type": "html",
+          "html": "<ol><li>Set the sketch width to 10 + 5 = 15 and draw a test matrix with 200 rows and 15 columns.</li><li>Multiply by A and orthonormalize the sketch. Compress the original A by taking coordinates in that basis.</li><li>Compute the small SVD. Keep up to 10 terms and lift the left vectors to the original row dimension.</li></ol>",
+          "text": "Set the sketch width to 10 + 5 = 15 and draw a test matrix with 200 rows and 15 columns. Multiply by A and orthonormalize the sketch. Compress the original A by taking coordinates in that basis. Compute the small SVD. Keep up to 10 terms and lift the left vectors to the original row dimension."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>What is the shape of Ω in the large-table example?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>200 by 15. Its rows match the 200 columns of A.</p></details>",
+          "text": "What is the shape of Ω in the large-table example? 200 by 15. Its rows match the 200 columns of A."
+        },
+        {
+          "type": "heading",
+          "text": "From example to formula"
+        },
+        {
+          "type": "paragraph",
+          "text": "The target rank sets the number of terms in the final answer. The sketch width gives the random stage extra room. Check matrix shapes at every multiply."
+        },
+        {
+          "type": "heading",
+          "text": "Choose a method by the question"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Method"
+            ],
+            [
+              "Which feature directions explain the most spread?",
+              "Centre the data and take the leading right singular vectors for PCA."
+            ],
+            [
+              "What is the best rank-k error in spectral norm?",
+              "Truncate the exact SVD. The first discarded singular value gives the error."
+            ],
+            [
+              "How can I predict missing entries?",
+              "Fit low-rank factors to the observed entries and validate on held-out values."
+            ],
+            [
+              "How can I avoid a large full-data SVD?",
+              "Find a narrow basis, compress the original matrix, then lift the small SVD."
+            ],
+            [
+              "What if the important singular values are hard to separate?",
+              "Try power steps and weigh the improvement against extra passes."
+            ]
+          ],
+          "text": "Question Method Which feature directions explain the most spread? Centre the data and take the leading right singular vectors for PCA. What is the best rank-k error in spectral norm? Truncate the exact SVD. The first discarded singular value gives the error. How can I predict missing entries? Fit low-rank factors to the observed entries and validate on held-out values. How can I avoid a large full-data SVD? Find a narrow basis, compress the original matrix, then lift the small SVD. What if the important singular values are hard to separate? Try power steps and weigh the improvement against extra passes."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes to catch"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using the left vectors as PCA feature directions. For observations in rows, the feature directions are the right vectors."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Treating a missing entry as zero or using an uncentred matrix for ordinary covariance PCA."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Assuming the projection residual is the final error after truncating to the target rank."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using the powered matrix in the final compressed SVD. Compute QᵀA from the original A."
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 2 used a random map to preserve distances between points. Week 4 uses random probes to learn a useful space for the columns of one matrix. The two methods answer different questions."
+        },
+        {
+          "type": "heading",
+          "text": "Check your understanding"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>If the singular values are 12, 7, 2, and 0.5, what is the best rank-two spectral error?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>2, the first discarded singular value.</p></details><p><strong>After a sketch, B has 15 rows. Does that require keeping rank 15?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>No. Truncate the small SVD to 10 terms to meet the target rank.</p></details><p><strong>If q is 3, what is the singular-value exponent in the sketch?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>2 × 3 + 1 = 7.</p></details><p><strong>What must be added after reconstructing a centred PCA row?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The original feature means, one per feature.</p></details><p><strong>When can the sketch reproduce a matrix exactly before truncation?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>When the span of Q contains the column space of A. A final rank below the true rank still discards information.</p></details>",
+          "text": "If the singular values are 12, 7, 2, and 0.5, what is the best rank-two spectral error? 2, the first discarded singular value. After a sketch, B has 15 rows. Does that require keeping rank 15? No. Truncate the small SVD to 10 terms to meet the target rank. If q is 3, what is the singular-value exponent in the sketch? 2 × 3 + 1 = 7. What must be added after reconstructing a centred PCA row? The original feature means, one per feature. When can the sketch reproduce a matrix exactly before truncation? When the span of Q contains the column space of A. A final rank below the true rank still discards information."
+        }
+      ]
+    }
+  ]
+}

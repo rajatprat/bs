@@ -33,7 +33,7 @@
   },
   "/algorithms-in-data-science/": {
     "title": "Algorithms in Data Science Notes | IIT Madras BS",
-    "description": "Algorithms in Data Science study notes for IIT Madras BS students. Probability bounds, random projections, dimensionality reduction and worked algorithm examples."
+    "description": "Illustrated Algorithms in Data Science notes for IIT Madras BS students. Study probability bounds, random projections, nearest neighbours, locality-sensitive hashing, and randomized SVD."
   },
   "/mathematical-foundation-of-generative-ai/": {
     "title": "Mathematical Foundation of Generative AI Notes | IIT Madras BS",
@@ -2298,5 +2298,89 @@
   "/computational-thinking/week-7/source-guide/": {
     "title": "Source guide, coverage and dataset conventions | Computational Thinking Week 7",
     "description": "Learn source guide, coverage and dataset conventions with easy explanations, worked examples and explained practice."
+  },
+  "/algorithms-in-data-science/week-3/": {
+    "title": "Algorithms in Data Science · Week 3 Notes | IIT Madras BS",
+    "description": "Learn approximate nearest-neighbour search, Euclidean locality-sensitive hashing, AND and OR amplification, and parameter tuning with worked examples."
+  },
+  "/algorithms-in-data-science/week-3/approximate-nearest-neighbours/": {
+    "title": "Nearest neighbours and the limits of a scan | Algorithms in Data Science | IITM BS",
+    "description": "Explain what an approximate answer promises and why projection still leaves a scan."
+  },
+  "/algorithms-in-data-science/week-3/locality-sensitive-hashing/": {
+    "title": "Locality-sensitive hashing and candidate buckets | Algorithms in Data Science | IITM BS",
+    "description": "Use collision probabilities to tell apart likely matches and far points."
+  },
+  "/algorithms-in-data-science/week-3/euclidean-lsh/": {
+    "title": "Euclidean LSH: project, shift, and bucket | Algorithms in Data Science | IITM BS",
+    "description": "Compute a Euclidean hash by hand and explain each part of the rule."
+  },
+  "/algorithms-in-data-science/week-3/collision-probability/": {
+    "title": "Why nearby points collide more often | Algorithms in Data Science | IITM BS",
+    "description": "Derive the collision chance for a fixed projected gap, then explain what happens over random projections."
+  },
+  "/algorithms-in-data-science/week-3/and-amplification/": {
+    "title": "AND: require every hash to match | Algorithms in Data Science | IITM BS",
+    "description": "Reduce far collisions by combining independent hashes and see the cost for near points."
+  },
+  "/algorithms-in-data-science/week-3/or-amplification/": {
+    "title": "OR: look in more than one table | Algorithms in Data Science | IITM BS",
+    "description": "Calculate the chance that a candidate appears in at least one independent table."
+  },
+  "/algorithms-in-data-science/week-3/lsh-parameters/": {
+    "title": "Choosing K and L and reading ρ | Algorithms in Data Science | IITM BS",
+    "description": "Choose whole numbers of hashes and tables, and explain why candidate work can grow slower than n."
+  },
+  "/algorithms-in-data-science/week-3/tuning-bucket-width/": {
+    "title": "Tuning bucket width with data | Algorithms in Data Science | IITM BS",
+    "description": "Estimate collision rates on representative pairs and measure the resulting search."
+  },
+  "/algorithms-in-data-science/week-3/formula-revision/": {
+    "title": "Week 3 revision and practice | Algorithms in Data Science | IITM BS",
+    "description": "Choose the right formula and distinguish candidate probabilities, counts, and distance guarantees."
+  },
+  "/algorithms-in-data-science/week-4/": {
+    "title": "Algorithms in Data Science · Week 4 Notes | IIT Madras BS",
+    "description": "Learn SVD, PCA, matrix completion, low-rank approximation, Gaussian sketches, and power iteration with worked examples."
+  },
+  "/algorithms-in-data-science/week-4/singular-value-decomposition/": {
+    "title": "SVD: break a matrix into simple steps | Algorithms in Data Science | IITM BS",
+    "description": "Read the shapes of the factors and follow a matrix acting on a vector."
+  },
+  "/algorithms-in-data-science/week-4/pca-from-svd/": {
+    "title": "PCA: find the directions of greatest spread | Algorithms in Data Science | IITM BS",
+    "description": "Centre a dataset, identify a principal direction, and compute a score."
+  },
+  "/algorithms-in-data-science/week-4/matrix-completion/": {
+    "title": "Low-rank factors for recommendations | Algorithms in Data Science | IITM BS",
+    "description": "Use a short user vector and a short item vector to predict a missing rating."
+  },
+  "/algorithms-in-data-science/week-4/best-low-rank-approximation/": {
+    "title": "Best low-rank approximation | Algorithms in Data Science | IITM BS",
+    "description": "Truncate an SVD and use the first discarded singular value to read the spectral error."
+  },
+  "/algorithms-in-data-science/week-4/compress-with-known-basis/": {
+    "title": "Compress with a known basis | Algorithms in Data Science | IITM BS",
+    "description": "Use Qᵀ to compress coordinates and Q to lift the result back to the original space."
+  },
+  "/algorithms-in-data-science/week-4/randomized-svd/": {
+    "title": "Randomized SVD: sketch, compress, and lift | Algorithms in Data Science | IITM BS",
+    "description": "Trace the algorithm and distinguish the sketch width from the final target rank."
+  },
+  "/algorithms-in-data-science/week-4/randomized-svd-error/": {
+    "title": "Measure the error of a randomized sketch | Algorithms in Data Science | IITM BS",
+    "description": "Distinguish the best possible error, the sketch residual, and the error after truncation."
+  },
+  "/algorithms-in-data-science/week-4/power-iteration/": {
+    "title": "Power iteration for a better sketch | Algorithms in Data Science | IITM BS",
+    "description": "Explain why power steps separate singular directions and implement them without forming AAᵀ."
+  },
+  "/algorithms-in-data-science/week-4/formula-revision/": {
+    "title": "Week 4 revision and practice | Algorithms in Data Science | IITM BS",
+    "description": "Choose the right low-rank method and explain each step without memorizing the symbols."
+  },
+  "/algorithms-in-data-science/week-4/visual-detour-pca-and-svd/": {
+    "title": "Visual detour: PCA and SVD | Algorithms in Data Science | IITM BS",
+    "description": "Follow an arrow through SVD and project four observations onto a principal component using three diagrams."
   }
 }

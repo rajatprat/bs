@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="244" viewBox="0 0 640 244">
+<rect width="640" height="244" rx="16" fill="#f8f7f2"/>
+<g font-family="system-ui, sans-serif">
+<text x="22" y="29" fill="#365b87" font-size="14" font-weight="650" text-anchor="start">BS NOTES  /  ADS  /  WEEK 4</text><text x="22" y="62" fill="#182441" font-size="24" font-weight="650" text-anchor="start">Which direction keeps more spread?</text><text x="26" y="118" fill="#276651" font-size="19" font-weight="650" text-anchor="start">Diagonal direction</text><text x="26" y="174" fill="#365b87" font-size="19" font-weight="650" text-anchor="start">Perpendicular direction</text><rect x="248" y="96" width="300" height="27" rx="6" fill="#276651"/><text x="558" y="117" fill="#276651" font-size="19" font-weight="650" text-anchor="start">32</text><rect x="248" y="152" width="75" height="27" rx="6" fill="#365b87"/><text x="333" y="173" fill="#365b87" font-size="19" font-weight="650" text-anchor="start">8</text><text x="320" y="223" fill="#182441" font-size="19" font-weight="650" text-anchor="middle">Fraction kept by one component: 32 ÷ 40 = 80%</text>
+</g>
+</svg>

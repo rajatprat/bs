@@ -4,14 +4,29 @@
   "week": 2,
   "courseWeeks": [
     1,
-    2
+    2,
+    3,
+    4
   ],
   "base": "/algorithms-in-data-science/week-2/",
-  "illustrationCount": 10,
+  "illustrationCount": 17,
   "intro": [
     {
       "type": "paragraph",
-      "text": "Begin with the Week 1 recap and toolkit. Then study three lessons: Chernoff bounds, preserving all pairs, and the SVD interpretation. Finish with the complete proof and formula summary. Explanations use short points, separate equations, worked examples and self-checks."
+      "text": "Start with the recap of random projections. This week shows how to bound one pair’s error, extend that guarantee to every pair, and use the SVD to see what the projection does to a vector."
+    },
+    {
+      "type": "heading",
+      "text": "Week 2 summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "This week turns the average behaviour of a Gaussian projection into a guarantee for all pairs of points. It also explains what the projection does to a vector geometrically."
+    },
+    {
+      "type": "html",
+      "html": "<ul><li><a href=\"/algorithms-in-data-science/week-2/week-1-recap/\"><strong>Start with one pair</strong></a>. Subtract the two points and study the squared length of the difference before and after applying the same map.</li><li><a href=\"/algorithms-in-data-science/week-2/chernoff-bounds/\"><strong>Chernoff argument</strong></a>. Apply the exponential before using Markov. Independence lets you factor the average of that exponential.</li><li><a href=\"/algorithms-in-data-science/week-2/all-pairs-jl-guarantee/\"><strong>From one pair to all pairs</strong></a>. Combine the upper and lower error bounds, then use the union bound over every distinct pair.</li><li><a href=\"/algorithms-in-data-science/week-2/svd-interpretation/\"><strong>SVD geometry</strong></a>. Turn or reflect the input, scale or drop coordinates, then turn or reflect the result. Only the middle step can change length.</li><li><a href=\"/algorithms-in-data-science/week-2/complete-jl-proof/\"><strong>Put the proof together</strong></a>. Choose enough output features for your allowed distortion and your maximum chance of any failure.</li></ul><p>Distortion controls how far a squared distance can move. Failure probability controls the chance that any pair moves outside its allowed range.</p><p><a href=\"/algorithms-in-data-science/week-2/formula-summary/\">Open the formula guide and practice →</a></p>",
+      "text": "Start with one pair. Subtract the two points and study the squared length of the difference before and after applying the same map. Chernoff argument. Apply the exponential before using Markov. Independence lets you factor the average of that exponential. From one pair to all pairs. Combine the upper and lower error bounds, then use the union bound over every distinct pair. SVD geometry. Turn or reflect the input, scale or drop coordinates, then turn or reflect the result. Only the middle step can change length. Put the proof together. Choose enough output features for your allowed distortion and your maximum chance of any failure. Distortion controls how far a squared distance can move. Failure probability controls the chance that any pair moves outside its allowed range."
     }
   ],
   "sections": [
@@ -22,7 +37,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Recall why random projection preserves squared length in expectation."
+          "text": "Learning goal: Recall what the projection keeps on average."
+        },
+        {
+          "type": "heading",
+          "text": "An average can be right even when one run is off"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose a vector has squared length 16. One run of the random projection might produce 12. Another might produce 20."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-week-1-recap.svg",
+          "width": 600,
+          "height": 188,
+          "alt": "An average can be right even when one run is off. One run 12. Expected value 16. Another run 20."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>The first result is 4 below the target. The second is 4 above it.</li><li>For the Gaussian projection, the expected squared length is 16. Expected means the average over draws of the projection.</li><li>A single draw can still be far from 16. Week 2 asks how likely it is that the error in one draw is too large.</li></ol><p><strong>Quick check</strong></p><p>Does an expected value of 16 mean a single draw always returns 16?</p><details class=\"curious\"><summary>Show answer</summary><p>No. It describes the average across draws. The individual results can vary.</p></details><p><strong>Separate what we know from what we still need</strong></p><p>Imagine the 16 in the example is a squared distance between two points. At 20% allowed error, its acceptable range is 12.8 to 19.2. Both possible results shown, 12 and 20, fall outside that range. Week 1 showed that the average result is right. Week 2 asks how often one random draw lands outside the range.</p>",
+          "text": "Work it out The first result is 4 below the target. The second is 4 above it. For the Gaussian projection, the expected squared length is 16. Expected means the average over draws of the projection. A single draw can still be far from 16. Week 2 asks how likely it is that the error in one draw is too large. Quick check Does an expected value of 16 mean a single draw always returns 16? No. It describes the average across draws. The individual results can vary. Separate what we know from what we still need Imagine the 16 in the example is a squared distance between two points. At 20% allowed error, its acceptable range is 12.8 to 19.2. Both possible results shown, 12 and 20, fall outside that range. Week 1 showed that the average result is right. Week 2 asks how often one random draw lands outside the range."
         },
         {
           "type": "heading",
@@ -72,7 +107,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Learn the exponential, logarithm and SVD tools needed this week."
+          "text": "Learning goal: See how exponentials turn sums into products."
+        },
+        {
+          "type": "heading",
+          "text": "Rewrite an exponential before taking its average"
+        },
+        {
+          "type": "paragraph",
+          "text": "The notation exp(t) means e raised to the power t. Here two squared measurements are 1 and 3, and we multiply their sum by 0.5 before applying exp."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-prerequisite-toolkit.svg",
+          "width": 600,
+          "height": 188,
+          "alt": "Rewrite an exponential before taking its average. Add first exp(0.5 × 4). Or multiply exp(0.5) · exp(1.5). Same value exp(2)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>Add the measurements to get 4. Multiply by 0.5, then apply exp to get exp(2).</li><li>You can also multiply the two exponential terms, exp(0.5) and exp(1.5). When you multiply powers of e, their exponents add, so the result is exp(2) again.</li><li>If the measurements are random and independent, the average of the product is the product of the two averages. That is how the Chernoff proof turns one long calculation into smaller ones.</li></ol><p><strong>Quick check</strong></p><p>What does exp(1) multiplied by exp(2) equal?</p><details class=\"curious\"><summary>Show answer</summary><p>exp(3), because 1 and 2 add to 3.</p></details><p><strong>Use the toolkit as you meet each proof step</strong></p><p>The exponential turns a sum into a product. The natural log, written ln, reverses the exponential and helps solve for k. In the proof, λ (lambda) is a number we choose to make the probability bound smaller. You can follow the numerical examples before learning why that choice works.</p>",
+          "text": "Work it out Add the measurements to get 4. Multiply by 0.5, then apply exp to get exp(2). You can also multiply the two exponential terms, exp(0.5) and exp(1.5). When you multiply powers of e, their exponents add, so the result is exp(2) again. If the measurements are random and independent, the average of the product is the product of the two averages. That is how the Chernoff proof turns one long calculation into smaller ones. Quick check What does exp(1) multiplied by exp(2) equal? exp(3), because 1 and 2 add to 3. Use the toolkit as you meet each proof step The exponential turns a sum into a product. The natural log, written ln, reverses the exponential and helps solve for k. In the proof, λ (lambda) is a number we choose to make the probability bound smaller. You can follow the numerical examples before learning why that choice works."
         },
         {
           "type": "heading",
@@ -80,11 +135,11 @@
         },
         {
           "type": "bullet-item",
-          "text": "For the upper-tail proof, choose 0 < λ < 1/2."
+          "text": "Start with exponentials and logs. The later proof uses them to get a small bound and solve for the number of projected features."
         },
         {
           "type": "bullet-item",
-          "text": "The simpler Taylor bound is valid at λ = ε/4 when 0 < ε < 1."
+          "text": "The Taylor estimate and the Gaussian moment formula are tools for the derivation. Read them after the worked examples if this is your first pass."
         },
         {
           "type": "bullet-item",
@@ -119,8 +174,8 @@
         },
         {
           "type": "html",
-          "html": "<div class=\"box story\"><ul class=\"study-points\"><li><span class=\"tag t-story\">The idea</span>\"My height is at least 160 cm\" and \"my height is at least 1.6 m\" are the <em>same</em> statement in different units, so they have the same probability.</li><li>Applying any increasing function to both sides of an inequality gives the same event in disguise.</li></ul></div>",
-          "text": "The idea \"My height is at least 160 cm\" and \"my height is at least 1.6 m\" are the same statement in different units, so they have the same probability. Applying any increasing function to both sides of an inequality gives the same event in disguise."
+          "html": "<div class=\"box story\"><ul class=\"study-points\"><li><span class=\"tag t-story\">The idea</span>\"My height is at least 160 cm\" and \"my height is at least 1.6 m\" are the <em>same</em> statement in different units, so they have the same probability.</li><li>Applying a strictly increasing function to both sides leaves the same outcomes in the event.</li></ul></div>",
+          "text": "The idea \"My height is at least 160 cm\" and \"my height is at least 1.6 m\" are the same statement in different units, so they have the same probability. Applying a strictly increasing function to both sides leaves the same outcomes in the event."
         },
         {
           "type": "html",
@@ -299,7 +354,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Derive an exponential upper bound on projection failure."
+          "text": "Learning goal: See how the upper-tail bound falls as k grows."
+        },
+        {
+          "type": "heading",
+          "text": "Compare two choices of k at the same error tolerance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Allow a 20% increase in squared distance. The upper tail is the event that the squared distance grows by at least that much. Here k is the number of features after projection."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-chernoff-bounds.svg",
+          "width": 600,
+          "height": 252,
+          "alt": "Compare two choices of k at the same error tolerance. Error tolerance 20%. K = 200 ≈ 36.8%. K = 800 ≈ 1.83%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>Square 0.20 to get 0.04. This is the part of the formula that stays fixed when you change k.</li><li>At k = 200, the exponent is −200 × 0.04 ÷ 8, or −1. So the upper bound is exp(−1), about 36.8%.</li><li>At k = 800, the exponent is −4. The upper bound falls to about 1.83%. A separate calculation handles the chance that a distance gets too small.</li></ol><p><strong>Quick check</strong></p><p>Which choice gives the smaller bound on an increase, 200 or 800 features?</p><details class=\"curious\"><summary>Show answer</summary><p>800. The exponent is more negative, so the exponential is smaller.</p></details><p><strong>Find the event before bounding it</strong></p><p>Imagine you square and add 200 standard normal readings. The total averages 200 because each squared reading averages 1. Being at least 20% above average means the total is at least 240. The proof applies the exponential to both the total and 240, then uses Markov to bound the chance of reaching that cutoff.</p>",
+          "text": "Work it out Square 0.20 to get 0.04. This is the part of the formula that stays fixed when you change k. At k = 200, the exponent is −200 × 0.04 ÷ 8, or −1. So the upper bound is exp(−1), about 36.8%. At k = 800, the exponent is −4. The upper bound falls to about 1.83%. A separate calculation handles the chance that a distance gets too small. Quick check Which choice gives the smaller bound on an increase, 200 or 800 features? 800. The exponent is more negative, so the exponential is smaller. Find the event before bounding it Imagine you square and add 200 standard normal readings. The total averages 200 because each squared reading averages 1. Being at least 20% above average means the total is at least 240. The proof applies the exponential to both the total and 240, then uses Markov to bound the chance of reaching that cutoff."
         },
         {
           "type": "heading",
@@ -318,11 +393,6 @@
           "text": "The resulting one-sided bound is exp(−kε²/8)."
         },
         {
-          "type": "html",
-          "html": "<div class=\"box story\"><ul class=\"study-points\"><li><span class=\"tag t-story\">The idea</span>Add up k squared bell-curve numbers.</li><li>The total averages k.</li><li>We want to show that being 20 % or more above average is <em>extremely</em> rare, and that it gets rarer exponentially fast as k grows.</li><li>Markov and Chebyshev are too weak for this.</li><li>The trick: before using Markov, blow the quantity up with an exponential.</li><li>This exaggerates big values so much that Markov suddenly gives a sharp answer.</li></ul></div>",
-          "text": "The idea Add up k squared bell-curve numbers. The total averages k. We want to show that being 20 % or more above average is extremely rare, and that it gets rarer exponentially fast as k grows. Markov and Chebyshev are too weak for this. The trick: before using Markov, blow the quantity up with an exponential. This exaggerates big values so much that Markov suddenly gives a sharp answer."
-        },
-        {
           "type": "heading",
           "text": "Step 0: recall the projection setup"
         },
@@ -338,8 +408,8 @@
         },
         {
           "type": "html",
-          "html": "<ul>\n    <li><p><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∼</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.1774em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">N</span><span class=\"mopen\">(</span><span class=\"mord katex-accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9274em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\">0</span></span><span style=\"top:-3.2134em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.2355em;\"><span class=\"katex-overlay\" style=\"height:0.714em;width:0.471em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" style=\"width:0.471em\" viewbox=\"0 0 471 714\" preserveaspectratio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0785em;\">I</span><span class=\"mclose\">)</span></span></span></span> means <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0315em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are <strong>independent</strong> <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">N</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span> numbers.</p><p>For Gaussians, zero correlation (identity covariance) implies independence.</p></li>\n    <li>So ‖x‖² averages k, and the bad event asks for a value at least <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">ε</span><span class=\"mclose\">)</span></span></span></span> times its average.</li>\n    <li><p>Whether this is rare depends on how tightly ‖x‖² <strong>concentrates</strong> around k.</p><p>That is a concentration-inequality question.</p></li>\n  </ul>",
-          "text": "x ∼ N ( 0 , I ) means x 1 ​ , … , x k ​ are independent N ( 0 , 1 ) numbers. For Gaussians, zero correlation (identity covariance) implies independence. So ‖x‖² averages k, and the bad event asks for a value at least ( 1 + ε ) times its average. Whether this is rare depends on how tightly ‖x‖² concentrates around k. That is a concentration-inequality question."
+          "html": "<ul>\n    <li><p><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∼</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.1774em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">N</span><span class=\"mopen\">(</span><span class=\"mord katex-accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9274em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\">0</span></span><span style=\"top:-3.2134em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.2355em;\"><span class=\"katex-overlay\" style=\"height:0.714em;width:0.471em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.471em\" height=\"0.714em\" style=\"width:0.471em\" viewbox=\"0 0 471 714\" preserveaspectratio=\"xMinYMin\"><path d=\"M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5\n3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11\n10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63\n-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1\n-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59\nH213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359\nc-16-25.333-24-45-24-59z\"></path></svg></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0785em;\">I</span><span class=\"mclose\">)</span></span></span></span> means <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0315em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> are <strong>independent</strong> <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">N</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span> numbers.</p><p>For Gaussians, zero correlation (identity covariance) implies independence.</p></li>\n    <li>So ‖x‖² averages k, and the bad event asks for a value at least <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">ε</span><span class=\"mclose\">)</span></span></span></span> times its average.</li>\n    <li><p>To tell how rare this is, check how tightly ‖x‖² <strong>concentrates</strong> around k.</p><p>A concentration bound measures the chance of a result far from the average.</p></li>\n  </ul>",
+          "text": "x ∼ N ( 0 , I ) means x 1 ​ , … , x k ​ are independent N ( 0 , 1 ) numbers. For Gaussians, zero correlation (identity covariance) implies independence. So ‖x‖² averages k, and the bad event asks for a value at least ( 1 + ε ) times its average. To tell how rare this is, check how tightly ‖x‖² concentrates around k. A concentration bound measures the chance of a result far from the average."
         },
         {
           "type": "html",
@@ -362,7 +432,7 @@
         },
         {
           "type": "heading",
-          "text": "Worked example: why 1/k is fatal"
+          "text": "Worked example: why the 1/k bound falls too slowly"
         },
         {
           "type": "html",
@@ -478,7 +548,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Choose a target dimension that preserves every pair with high probability."
+          "text": "Learning goal: Choose enough projected features for the whole dataset."
+        },
+        {
+          "type": "heading",
+          "text": "Pick k for 20 points"
+        },
+        {
+          "type": "paragraph",
+          "text": "A dataset has 20 points with 5,000 features each. We allow squared distances to change by up to 25%. We also allow at most a 5% chance that any pair misses its range."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-all-pairs-jl-guarantee.svg",
+          "width": 600,
+          "height": 188,
+          "alt": "Pick k for 20 points. Dataset 20 points. Calculated k 1,239.08. Round up 1,240."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>Write the two percentages as decimals. The allowed change is 0.25 and the chance limit is 0.05.</li><li>Follow the course’s dimension rule. First calculate 2 × 20² ÷ 0.05 = 16,000. Take the natural log using the ln key. Then multiply by 8 ÷ 0.25², which is 128.</li><li>The result is about 1,239.08. Round up to 1,240 features. With this choice, the chance that every pair meets its range is at least 95%.</li></ol><p><strong>Quick check</strong></p><p>Why round to 1,240 instead of 1,239?</p><details class=\"curious\"><summary>Show answer</summary><p>The formula gives a minimum. Rounding down would put the chosen number below that minimum.</p></details><p><strong>Count the pairs before using the dimension rule</strong></p><p>With four points A, B, C, and D, the pairs are AB, AC, AD, BC, BD, and CD. Count each pair once. If every pair has at most a 1% chance of failing either limit, adding six copies of 1% gives a 6% upper bound for any failure. The dimension rule chooses k so this total fits the risk you allow.</p>",
+          "text": "Work it out Write the two percentages as decimals. The allowed change is 0.25 and the chance limit is 0.05. Follow the course’s dimension rule. First calculate 2 × 20² ÷ 0.05 = 16,000. Take the natural log using the ln key. Then multiply by 8 ÷ 0.25², which is 128. The result is about 1,239.08. Round up to 1,240 features. With this choice, the chance that every pair meets its range is at least 95%. Quick check Why round to 1,240 instead of 1,239? The formula gives a minimum. Rounding down would put the chosen number below that minimum. Count the pairs before using the dimension rule With four points A, B, C, and D, the pairs are AB, AC, AD, BC, BD, and CD. Count each pair once. If every pair has at most a 1% chance of failing either limit, adding six copies of 1% gives a 6% upper bound for any failure. The dimension rule chooses k so this total fits the risk you allow."
         },
         {
           "type": "heading",
@@ -495,11 +585,6 @@
         {
           "type": "bullet-item",
           "text": "The target dimension is an integer, so round the final requirement upward."
-        },
-        {
-          "type": "html",
-          "html": "<div class=\"box story\"><ul class=\"study-points\"><li><span class=\"tag t-story\">The idea</span>One coin lands heads with probability ½, but two coins both landing heads is only ¼.</li><li>Likewise, knowing that <em>one</em> distance survives the squeeze is not enough: we need <em>every</em> one of the ~n²/2 distances to survive <em>at the same time</em>.</li><li>The union bound adds up all the small failure chances, and because each one is exponentially small, k only needs to grow like log n to pay for all of them.</li></ul></div>",
-          "text": "The idea One coin lands heads with probability ½, but two coins both landing heads is only ¼. Likewise, knowing that one distance survives the squeeze is not enough: we need every one of the ~n²/2 distances to survive at the same time . The union bound adds up all the small failure chances, and because each one is exponentially small, k only needs to grow like log n to pay for all of them."
         },
         {
           "type": "heading",
@@ -540,8 +625,8 @@
         },
         {
           "type": "html",
-          "html": "<ul>\n    <li><p><strong>Why n²?</strong> There are <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">(</span></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7454em;\"><span style=\"top:-2.355em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.144em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\">/2</span></span></span></span> pairs, each failing with probability at most <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.9869em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9869em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0315em;\">k</span><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"katex-sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord mtight\">/8</span></span></span></span></span></span></span></span></span></span></span></span>.</p><p>Writing n² instead of <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">(</span></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7454em;\"><span style=\"top:-2.355em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.144em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">)</span></span></span></span></span></span> is slightly loose but simpler.</p></li>\n    <li><strong>Solving for k:</strong> take log of both sides (log is increasing), move terms across, multiply by <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord\">8/</span><span class=\"mord\"><span class=\"mord mathnormal\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>.</li>\n    <li><p><strong>Reading the result:</strong> if k is at least this big, then <strong>with probability at least 1 − δ, all pairwise distances are preserved</strong>.</p><p>If k is smaller, the proof can't promise it.</p></li>\n    <li><p><strong>Why it's O(log(n/δ)/ε²):</strong> <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.3629em;vertical-align:-0.345em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.0139em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.0179em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0379em;\">δ</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"katex-sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0404em;vertical-align:-0.345em;\"></span><span class=\"mord\">2</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.0139em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6954em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0379em;\">δ</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span> (when δ ≤ 1).</p><p>When δ is treated as a fixed constant, this is the familiar <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mop\">lo<span style=\"margin-right:0.0139em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mord\">/</span><span class=\"mord\"><span class=\"mord mathnormal\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>.</p></li>\n  </ul>",
-          "text": "Why n²? There are ( 2 n ​ ) < n 2 /2 pairs, each failing with probability at most e − k ε 2 /8 . Writing n² instead of ( 2 n ​ ) is slightly loose but simpler. Solving for k: take log of both sides (log is increasing), move terms across, multiply by 8/ ε 2 . Reading the result: if k is at least this big, then with probability at least 1 − δ, all pairwise distances are preserved . If k is smaller, the proof can't promise it. Why it's O(log(n/δ)/ε²): lo g δ n 2 ​ ≤ 2 lo g δ n ​ (when δ ≤ 1). When δ is treated as a fixed constant, this is the familiar O ( lo g n / ε 2 ) ."
+          "html": "<ul>\n    <li><p><strong>Why n²?</strong> There are <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">(</span></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7454em;\"><span style=\"top:-2.355em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.144em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">)</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\">/2</span></span></span></span> pairs, each failing with probability at most <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.9869em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9869em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0315em;\">k</span><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"katex-sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord mtight\">/8</span></span></span></span></span></span></span></span></span></span></span></span>.</p><p>Writing n² instead of <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.2em;vertical-align:-0.35em;\"></span><span class=\"mord\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">(</span></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7454em;\"><span style=\"top:-2.355em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.144em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">)</span></span></span></span></span></span> is slightly loose but simpler.</p></li>\n    <li><strong>Solving for k:</strong> take log of both sides (log is increasing), move terms across, multiply by <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord\">8/</span><span class=\"mord\"><span class=\"mord mathnormal\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>.</li>\n    <li><p><strong>Reading the result:</strong> if k is at least this big, then <strong>with probability at least 1 − δ, every pair meets the upper limit on squared distance</strong>.</p><p>The next step adds the lower limit.</p></li>\n    <li><p><strong>Why it's O(log(n/δ)/ε²):</strong> <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.3629em;vertical-align:-0.345em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.0139em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.0179em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0379em;\">δ</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913em;\"><span style=\"top:-2.931em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"katex-sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0404em;vertical-align:-0.345em;\"></span><span class=\"mord\">2</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.0139em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6954em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0379em;\">δ</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span> (when δ ≤ 1).</p><p>When δ is treated as a fixed constant, this is the familiar <span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">O</span><span class=\"mopen\">(</span><span class=\"mop\">lo<span style=\"margin-right:0.0139em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mord\">/</span><span class=\"mord\"><span class=\"mord mathnormal\">ε</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>.</p></li>\n  </ul>",
+          "text": "Why n²? There are ( 2 n ​ ) < n 2 /2 pairs, each failing with probability at most e − k ε 2 /8 . Writing n² instead of ( 2 n ​ ) is slightly loose but simpler. Solving for k: take log of both sides (log is increasing), move terms across, multiply by 8/ ε 2 . Reading the result: if k is at least this big, then with probability at least 1 − δ, every pair meets the upper limit on squared distance . The next step adds the lower limit. Why it's O(log(n/δ)/ε²): lo g δ n 2 ​ ≤ 2 lo g δ n ​ (when δ ≤ 1). When δ is treated as a fixed constant, this is the familiar O ( lo g n / ε 2 ) ."
         },
         {
           "type": "heading",
@@ -658,7 +743,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Understand projection as orthogonal changes of coordinates and scaling."
+          "text": "Learning goal: Separate the steps that turn a vector from the step that changes its length."
+        },
+        {
+          "type": "heading",
+          "text": "Stretch one coordinate and shrink the other"
+        },
+        {
+          "type": "paragraph",
+          "text": "Singular value decomposition (SVD) breaks a matrix into three steps: turn or reflect the input, scale the coordinates, then turn or reflect the result. In this example both turning steps leave the coordinates as they are."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-svd-interpretation.svg",
+          "width": 600,
+          "height": 253,
+          "alt": "Stretch one coordinate and shrink the other. Start (1, 1). Scale ×2 and ×½. Result (2, 0.5)."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>Start at (1, 1). The squared length is 1² + 1², or 2.</li><li>Double the first coordinate and halve the second. The result is (2, 0.5).</li><li>Square and add again: 4 + 0.25 gives 4.25. In an SVD, the middle scaling step is what can change the length. The other two steps preserve it.</li></ol><p><strong>Quick check</strong></p><p>If the middle step leaves both coordinates the same, can the two turning steps alone change the length?</p><details class=\"curious\"><summary>Show answer</summary><p>No. Turning or reflecting a vector leaves its length the same.</p></details><p><strong>Try the same scaling with three input coordinates</strong></p><p>Start with (3, 4, 12). Here d = 3 because there are three input coordinates, and k = 2 because we want two output coordinates. For this example, both turning steps leave the coordinates as they are. The middle step doubles 3 to get 6, halves 4 to get 2, and drops 12. The output is (6, 2). Its squared length is 40, compared with 169 before projection. That is why scaling and dropping coordinates can change length.</p>",
+          "text": "Work it out Start at (1, 1). The squared length is 1² + 1², or 2. Double the first coordinate and halve the second. The result is (2, 0.5). Square and add again: 4 + 0.25 gives 4.25. In an SVD, the middle scaling step is what can change the length. The other two steps preserve it. Quick check If the middle step leaves both coordinates the same, can the two turning steps alone change the length? No. Turning or reflecting a vector leaves its length the same. Try the same scaling with three input coordinates Start with (3, 4, 12). Here d = 3 because there are three input coordinates, and k = 2 because we want two output coordinates. For this example, both turning steps leave the coordinates as they are. The middle step doubles 3 to get 6, halves 4 to get 2, and drops 12. The output is (6, 2). Its squared length is 40, compared with 169 before projection. That is why scaling and dropping coordinates can change length."
         },
         {
           "type": "heading",
@@ -666,24 +771,19 @@
         },
         {
           "type": "bullet-item",
-          "text": "For the displayed k × d SVD, assume k ≤ d."
+          "text": "The input has d coordinates and the output has k. A projection to fewer coordinates has k smaller than d."
         },
         {
           "type": "bullet-item",
-          "text": "Squared singular values are eigenvalues of MMᵀ."
+          "text": "Vᵀ turns or reflects the input, Σ scales and can drop coordinates, and U turns or reflects the result."
         },
         {
           "type": "bullet-item",
-          "text": "Random directions are uniform in every dimension; nearly equal singular values need a suitable dimension ratio."
-        },
-        {
-          "type": "html",
-          "html": "<div class=\"box story\"><ul class=\"study-points\"><li><span class=\"tag t-story\">The idea</span>So far we treated M as a source of random measurements and estimated a length from them.</li><li>Now look at M as a <em>machine</em>.</li><li>The SVD uses orthogonal changes of coordinates and scaling.</li><li>For a random Gaussian M, the first rotation is random, so it can't favour any direction of your vector.</li><li>All k stretches are about equal, so nothing gets crushed.</li><li>The last rotation doesn't change length at all.</li><li>Result: the length comes out roughly unchanged.</li></ul></div>",
-          "text": "The idea So far we treated M as a source of random measurements and estimated a length from them. Now look at M as a machine . The SVD uses orthogonal changes of coordinates and scaling. For a random Gaussian M, the first rotation is random, so it can't favour any direction of your vector. All k stretches are about equal, so nothing gets crushed. The last rotation doesn't change length at all. Result: the length comes out roughly unchanged."
+          "text": "The numbers used to scale the retained coordinates are called singular values. In the example they are 2 and 0.5."
         },
         {
           "type": "paragraph",
-          "text": "Use this section for geometric intuition. Lessons 1 and 2 establish the probability guarantee."
+          "text": "The three steps and the ellipse are the core of this lesson. The random Gaussian explanation and simulation after the diagram are advanced reading. The earlier lessons give the probability guarantee."
         },
         {
           "type": "heading",
@@ -716,8 +816,8 @@
         },
         {
           "type": "html",
-          "html": "<figure><a href=\"/images/algorithms-week-2/svd_ellipse.svg\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Open graph at full size: Unit circle rotated then stretched into an ellipse\"><img src=\"/images/algorithms-week-2/svd_ellipse.svg\" alt=\"Unit circle rotated then stretched into an ellipse\" loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"600\"></a><figcaption>In two dimensions: the unit circle is rotated (no change), then stretched by σ₁ = 2 and σ₂ = 0.5 and rotated again. It becomes an ellipse. Lengths survive only if the stretches are all close to 1 in the right sense.</figcaption></figure>",
-          "text": "In two dimensions: the unit circle is rotated (no change), then stretched by σ₁ = 2 and σ₂ = 0.5 and rotated again. It becomes an ellipse. Lengths survive only if the stretches are all close to 1 in the right sense."
+          "html": "<figure><a href=\"/images/algorithms-week-2/svd_ellipse.svg\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Open the four SVD steps at full size\"><img src=\"/images/algorithms-week-2/svd_ellipse.svg\" alt=\"A unit circle stays round after the first turn. Doubling the horizontal coordinate and halving the vertical coordinate makes an ellipse. The last turn tilts the same ellipse.\" loading=\"lazy\" decoding=\"async\" width=\"640\" height=\"520\"></a><figcaption>Follow the orange arrow. The first turn points it to the right and keeps its length at 1. Scaling doubles the horizontal coordinate and halves the vertical coordinate. The orange arrow points along the horizontal axis, so its length doubles to 2 and its tip lands on the long end of the ellipse. The last turn rotates the ellipse and arrow together. The arrow still has length 2. In this 2D example, every direction keeps exactly the same length only if both scale factors are 1.</figcaption></figure>",
+          "text": "Follow the orange arrow. The first turn points it to the right and keeps its length at 1. Scaling doubles the horizontal coordinate and halves the vertical coordinate. The orange arrow points along the horizontal axis, so its length doubles to 2 and its tip lands on the long end of the ellipse. The last turn rotates the ellipse and arrow together. The arrow still has length 2. In this 2D example, every direction keeps exactly the same length only if both scale factors are 1."
         },
         {
           "type": "heading",
@@ -741,7 +841,7 @@
         },
         {
           "type": "bullet-item",
-          "text": "When d is much larger than k, the nonzero singular values are near √(d/k). This is an approximation, not equality for every draw."
+          "text": "When d is much larger than k, the nonzero singular values tend to be close to the square root of d/k. Individual draws can differ."
         },
         {
           "type": "equation",
@@ -839,7 +939,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Connect the complete probability argument into one chain."
+          "text": "Learning goal: Follow the full proof from one difference vector to every pair."
+        },
+        {
+          "type": "heading",
+          "text": "Translate the proof into a failure budget"
+        },
+        {
+          "type": "paragraph",
+          "text": "A dataset has 10 points, so it has 45 distinct pairs. Imagine the probability calculation bounds each type of error for a fixed pair by 0.01%."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-complete-jl-proof.svg",
+          "width": 600,
+          "height": 188,
+          "alt": "Translate the proof into a failure budget. One tail ≤ 0.01%. One pair ≤ 0.02%. Any pair fails ≤ 0.9%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>For one pair, the squared distance can be too large or too small. Add the two limits, 0.01% + 0.01%, to get 0.02%.</li><li>Add that upper limit across all 45 pairs. The chance that at least one pair fails is at most 45 × 0.02%, or 0.9%.</li><li>The full proof chooses enough projected features to make that final chance smaller than your target.</li></ol><p><strong>Quick check</strong></p><p>What success probability does a 0.9% failure bound give?</p><details class=\"curious\"><summary>Show answer</summary><p>At least 99.1%, because 100% minus 0.9% is 99.1%.</p></details><p><strong>Keep track of what each step guarantees</strong></p><p>The Gaussian calculation bounds one side for one pair. Adding the upper and lower limits gives a bound for one pair failing in either direction. Adding across all pairs gives a bound for the entire dataset. The proof uses the same random map for all points, and the union bound still works when failures are related.</p>",
+          "text": "Work it out For one pair, the squared distance can be too large or too small. Add the two limits, 0.01% + 0.01%, to get 0.02%. Add that upper limit across all 45 pairs. The chance that at least one pair fails is at most 45 × 0.02%, or 0.9%. The full proof chooses enough projected features to make that final chance smaller than your target. Quick check What success probability does a 0.9% failure bound give? At least 99.1%, because 100% minus 0.9% is 99.1%. Keep track of what each step guarantees The Gaussian calculation bounds one side for one pair. Adding the upper and lower limits gives a bound for one pair failing in either direction. Adding across all pairs gives a bound for the entire dataset. The proof uses the same random map for all points, and the union bound still works when failures are related."
         },
         {
           "type": "heading",
@@ -896,7 +1016,27 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Learning goal: Select the relevant formula and check its assumptions."
+          "text": "Learning goal: Check the guarantee before using the result."
+        },
+        {
+          "type": "heading",
+          "text": "Read ε and δ as two different limits"
+        },
+        {
+          "type": "paragraph",
+          "text": "Epsilon (ε) tells you how much a squared distance can change. Delta (δ) tells you how much risk of any pair failing you will accept. Here ε is 10% and δ is 5%."
+        },
+        {
+          "type": "image",
+          "src": "/images/algorithms-examples/week-2-formula-summary.svg",
+          "width": 600,
+          "height": 188,
+          "alt": "Read ε and δ as two different limits. Squared distance 400. Allowed range 360 to 440. Any failure ≤ 5%."
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>Work it out</strong></p><ol><li>For a pair with squared distance 400, take 10% of 400 to get 40.</li><li>Subtract and add 40. The allowed range for this pair is 360 to 440. Other pairs have their own ranges.</li><li>Choose enough projected features for the guarantee to apply. Then the chance that any pair misses its own range is at most 5%, measured over random draws of the map.</li></ol><p><strong>Quick check</strong></p><p>Which number controls the width of the range around 400?</p><details class=\"curious\"><summary>Show answer</summary><p>Epsilon. Delta controls the chance that at least one pair misses its range.</p></details><p><strong>Check the units of each input to the rule</strong></p><p>Count n as points, d as original features, and k as projected features. Enter the two percentages as fractions between 0 and 1. After computing k, round up and compare it with d. If k is at least d, this rule does not promise a smaller representation for your inputs.</p>",
+          "text": "Work it out For a pair with squared distance 400, take 10% of 400 to get 40. Subtract and add 40. The allowed range for this pair is 360 to 440. Other pairs have their own ranges. Choose enough projected features for the guarantee to apply. Then the chance that any pair misses its own range is at most 5%, measured over random draws of the map. Quick check Which number controls the width of the range around 400? Epsilon. Delta controls the chance that at least one pair misses its range. Check the units of each input to the rule Count n as points, d as original features, and k as projected features. Enter the two percentages as fractions between 0 and 1. After computing k, round up and compare it with d. If k is at least d, this rule does not promise a smaller representation for your inputs."
         },
         {
           "type": "heading",
@@ -934,6 +1074,35 @@
         {
           "type": "bullet-item",
           "text": "The guarantee concerns squared distances."
+        },
+        {
+          "type": "heading",
+          "text": "Common mistakes to catch"
+        },
+        {
+          "type": "bullet-item",
+          "text": "Using a one-sided bound as though it covers both too-short and too-long distances. Add bounds for the two tails first."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Treating pair failures as independent. Pairs share the same projection, and the union bound works without independence."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Rounding the required number of features down, or assuming the bound gives a useful reduction when the result is at least the original dimension."
+        },
+        {
+          "type": "bullet-item",
+          "text": "Treating SVD’s geometric explanation as the proof of the probability guarantee. The proof uses the Gaussian tail bound."
+        },
+        {
+          "type": "heading",
+          "text": "Mixed practice with explained answers"
+        },
+        {
+          "type": "html",
+          "html": "<p><strong>1. For one fixed pair, each tail has chance at most 0.2%. What bound covers either type of error?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Add the two limits. The chance that the squared distance is too short or too long is at most 0.4%.</p></details><p><strong>2. There are five distinct points. If each pair fails with probability at most 0.4%, what chance of all pairs passing can you guarantee?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Five points make 5 × 4 ÷ 2 = 10 pairs. The chance of any failure is at most 4%, so all pairs pass with probability at least 96%.</p></details><p><strong>3. A pair starts with squared distance 80. If epsilon is 0.25, what projected squared distances are allowed?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>A 25% change is 20. The allowed range is 60 to 100.</p></details><p><strong>4. The dimension rule gives 320.2 features and your input already has 300. What should you conclude?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>Round up to 321. This bound gives no guarantee of reducing the number of features for that input.</p></details><p><strong>5. A vector is turned, scaled, and then turned again. At which step can its length change?</strong></p><details class=\"curious\"><summary>Show answer</summary><p>The scaling step. Turning or reflecting alone preserves length.</p></details>",
+          "text": "For one fixed pair, each tail has chance at most 0.2%. What bound covers either type of error? Add the two limits. The chance that the squared distance is too short or too long is at most 0.4%. There are five distinct points. If each pair fails with probability at most 0.4%, what chance of all pairs passing can you guarantee? Five points make 5 × 4 ÷ 2 = 10 pairs. The chance of any failure is at most 4%, so all pairs pass with probability at least 96%. A pair starts with squared distance 80. If epsilon is 0.25, what projected squared distances are allowed? A 25% change is 20. The allowed range is 60 to 100. The dimension rule gives 320.2 features and your input already has 300. What should you conclude? Round up to 321. This bound gives no guarantee of reducing the number of features for that input. A vector is turned, scaled, and then turned again. At which step can its length change? The scaling step. Turning or reflecting alone preserves length."
         }
       ]
     }
