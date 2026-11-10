@@ -11,8 +11,8 @@ export default function Archive() {
     <p className="lead">Study the original illustrated lessons, worked examples, and practice for Weeks 1 and 2.</p>
     <ul className="genai-chapter-links">
       <li><a href={bookBase + 'archive/week-1/'}>Week 1 · Foundations and variational optimization</a></li>
-      <li><a href={bookBase + 'archive/week-2/'}>Week 2 · Realization of variational divergence minimization</a></li>
+      <li><a href={bookBase + 'archive/week-2/'}>Week 2 · Variational divergence minimization and GANs</a></li>
     </ul>
-    <p><a href={bookBase}>← Back to the four-week study plan</a></p>
+    <p><a href={bookBase}>← Back to the course overview</a></p>
   </main>;
 }

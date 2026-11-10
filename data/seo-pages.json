@@ -2382,5 +2382,25 @@
   "/algorithms-in-data-science/week-4/visual-detour-pca-and-svd/": {
     "title": "Visual detour: PCA and SVD | Algorithms in Data Science | IITM BS",
     "description": "Follow an arrow through SVD and project four observations onto a principal component using three diagrams."
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/vdm-realization/": {
+    "title": "Making fake data that looks real — GenAI Week 2",
+    "description": "Imagine a bag full of cat photos. You can take photos out, but you do not know the rule that made them. Can we build a machine that makes new cat photos that look like the ones in the bag? This page shows how."
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/gan-special-case/": {
+    "title": "GAN is one special case — GenAI Week 2",
+    "description": "Last time the generator and critic shared a score. This time we’ll choose a score that lets the critic answer a familiar question. Did this sample come from the real data or the generator?"
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/training-the-gan/": {
+    "title": "How to train a GAN — GenAI Week 2",
+    "description": "Training a GAN is like a game with two turns. First the critic practises spotting fakes. Then the generator practises fooling the critic. Repeat many times."
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/vanilla-gan-tutorial/": {
+    "title": "Tutorial — A GAN that draws digits — GenAI Week 2",
+    "description": "You learned the idea. Now we build it in code. We will teach a GAN to draw handwritten digits, like the numbers 0 to 9."
+  },
+  "/mathematical-foundation-of-generative-ai/week-2/quick-revision/": {
+    "title": "Week 2 quick revision — GenAI Week 2",
+    "description": "One page to check week 2. Read each row. Try to say the answer in your own words before you look at the next row."
   }
 }

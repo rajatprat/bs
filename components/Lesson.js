@@ -31,6 +31,7 @@ export default function Lesson({ data, slug }) {
   const words = section.blocks.map(b => b.text || b.html?.replace(/<[^>]*>/g, " ") || "").join(" ").split(/\s+/).length;
   const minutes = Math.max(1, Math.ceil(words / 200));
   const base = data.base || `/software-engineering/week-${week}/`;
+  const overview = data.overview || base;
   const navigation = <><SectionLinks sections={studies} week={week} current={slug} base={base}/>{extras.length > 0 && <><h3 className="resource-label">Revision and practice</h3><SectionLinks sections={extras} week={week} current={slug} base={base} resource/></>}</>;
   const url = siteUrl + base + slug + '/';
   const schema = {'@context':'https://schema.org','@graph':[
@@ -38,10 +39,10 @@ export default function Lesson({ data, slug }) {
     {'@type':'BreadcrumbList',itemListElement:[{name:'Subjects',item:siteUrl+'/'},{name:data.subject,item:siteUrl+subjectPath},{name:`Week ${week}`,item:siteUrl+base},{name:section.title,item:url}].map((item,i)=>({'@type':'ListItem',position:i+1,...item}))}
   ]};
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(schema)}}/><ReadingProgress/><div className={`reading-layout${data.subjectSlug === 'deep-learning' ? ' deep-learning-reading-layout' : ''}${data.subjectSlug === 'algorithms-in-data-science' ? ' algorithms-reading-layout' + (week === 1 ? ' ads-week-one' : '') : ''}`}><aside className="course-sidebar">
-    <a className="back-week" href={base}>← {data.part ? `Part ${data.part}` : `Week ${week}`} overview</a><div className="eyebrow">{data.subject}</div><h2>Week {String(week).padStart(2, '0')}{data.part ? ` · Part ${data.part}` : ''}</h2>
+    <a className="back-week" href={overview}>← {data.part ? `Part ${data.part}` : `Week ${week}`} overview</a><div className="eyebrow">{data.subject}</div><h2>Week {String(week).padStart(2, '0')}{data.part ? ` · Part ${data.part}` : ''}</h2>
     <div className="desktop-week-nav">{navigation}</div><details className="mobile-week-nav"><summary>Browse this week</summary>{navigation}</details>
   </aside><main id="main" className="lesson">
-    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><a href={subjectPath}>{data.subject}</a><span aria-hidden="true">/</span><a href={data.part ? `${subjectPath}week-${week}/` : base}>Week {week}</a>{data.part && <><span aria-hidden="true">/</span><a href={base}>Part {data.part}</a></>}</nav>
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><a href={subjectPath}>{data.subject}</a><span aria-hidden="true">/</span><a href={data.part ? `${subjectPath}week-${week}/` : overview}>Week {week}</a>{data.part && <><span aria-hidden="true">/</span><a href={base}>Part {data.part}</a></>}</nav>
     <div className="eyebrow">{isResource(section) ? 'REVISION AND PRACTICE' : `SECTION ${String(index + 1).padStart(2, '0')} / ${studies.length}`}</div><h1>{section.title}</h1><StudyTools title={section.title} subject={data.subject} week={week} minutes={minutes} resource={!!isResource(section)}/>
     {contents.length > 0 && <details className="lesson-contents" open={contents.length <= 6 && data.subjectSlug !== 'algorithms-in-data-science'}><summary>On this page <span>{contents.length+(data.subjectSlug==='deep-learning'&&!isResource(section)?1:0)} headings</span></summary><nav aria-label="On this page"><ol>{data.subjectSlug==='deep-learning' && !isResource(section) && <li><a href="#dl-number-example-title">Start with a numerical example</a></li>}{contents.map(item => <li key={item.id} className={item.nested ? 'nested' : ''}><a href={`#${item.id}`}>{item.text}</a></li>)}</ol></nav></details>}
     {data.subjectSlug === 'deep-learning' && <DeepLearningNumberExample route={base+slug+'/'}/>}
@@ -49,8 +50,8 @@ export default function Lesson({ data, slug }) {
     <StudyTools title={section.title} subject={data.subject} week={week} minutes={minutes} resource={!!isResource(section)} completionOnly/>
     <a className="back-top" href="#main">Back to top ↑</a>
     <nav className="lesson-pagination" aria-label="Previous and next sections">
-      {index > 0 ? <a href={base + sequence[index-1].slug + '/'}><small>PREVIOUS SECTION</small>{sequence[index-1].title}</a> : data.subjectSlug === 'deep-learning' && isResource(section) && studies.length ? <a href={base+studies[studies.length-1].slug+'/'}><small>BACK TO LESSONS</small>{studies[studies.length-1].title}</a> : <a href={base}><small>START HERE</small>{data.part ? `Part ${data.part}` : `Week ${week}`} overview</a>}
-      {index < sequence.length-1 ? <a href={base + sequence[index+1].slug + '/'}><small>NEXT SECTION</small>{sequence[index+1].title}</a> : !isResource(section) && extras.length ? <a href={base + extras[0].slug + '/'}><small>REVIEW THIS WEEK</small>{extras[0].title}</a> : data.part === 1 ? <a href={base.replace('part-1','part-2')}><small>CONTINUE WEEK 1</small>Part 2 · Convex conjugates and variational optimization</a> : nextWeek ? <a href={`${subjectPath}week-${nextWeek}/`}><small>NEXT WEEK</small>Week {nextWeek} overview</a> : <a href={subjectPath}><small>COURSE LIBRARY</small>All weeks</a>}
+      {index > 0 ? <a href={base + sequence[index-1].slug + '/'}><small>PREVIOUS SECTION</small>{sequence[index-1].title}</a> : data.subjectSlug === 'deep-learning' && isResource(section) && studies.length ? <a href={base+studies[studies.length-1].slug+'/'}><small>BACK TO LESSONS</small>{studies[studies.length-1].title}</a> : <a href={overview}><small>START HERE</small>{data.part ? `Part ${data.part}` : `Week ${week}`} overview</a>}
+      {index < sequence.length-1 ? <a href={base + sequence[index+1].slug + '/'}><small>NEXT SECTION</small>{sequence[index+1].title}</a> : !isResource(section) && extras.length ? <a href={base + extras[0].slug + '/'}><small>REVIEW THIS WEEK</small>{extras[0].title}</a> : data.part === 1 ? <a href={base.replace('part-1','part-2')}><small>CONTINUE WEEK 1</small>Part 2 · Convex conjugates and variational optimization</a> : nextWeek ? <a href={data.nextOverview || `${subjectPath}week-${nextWeek}/`}><small>NEXT WEEK</small>Week {nextWeek} overview</a> : <a href={subjectPath}><small>COURSE LIBRARY</small>All weeks</a>}
     </nav>
   </main></div></>;
 }

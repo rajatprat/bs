@@ -19,7 +19,7 @@ export default function Subject() {
         </a>
         <a className="week-card" href={bookBase + 'archive/week-2/'}>
           <span className="week-number">02</span>
-          <div><span className="eyebrow">Week 2</span><h2>Realizing variational divergence minimization</h2><p>Follow the original illustrated lesson with its worked example and explained practice.</p></div>
+          <div><span className="eyebrow">Week 2</span><h2>From variational divergence minimization to GANs</h2><p>Learn how the critic and generator take turns, then follow an illustrated tutorial on generating handwritten digits.</p></div>
           <span className="open-label">Open week →</span>
         </a>
       </section>

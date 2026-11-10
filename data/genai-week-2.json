@@ -2,23 +2,1398 @@
   "subject": "Mathematical Foundation of Generative AI",
   "subjectSlug": "mathematical-foundation-of-generative-ai",
   "week": 2,
+  "overview": "/mathematical-foundation-of-generative-ai/archive/week-2/",
+  "previousOverview": "/mathematical-foundation-of-generative-ai/archive/week-1/",
   "courseWeeks": [
     1,
     2
   ],
   "base": "/mathematical-foundation-of-generative-ai/week-2/",
-  "title": "Variational divergence minimization with neural networks",
-  "description": "Begin Week 2 with the realization of VDM: real and generated distributions, neural scoring functions, min–max objectives and saddle-point intuition.",
+  "title": "From variational divergence minimization to GANs",
+  "description": "Start with samples and a critic, learn how a GAN takes turns, then follow a handwritten-digit training example.",
   "intro": [
     {
       "type": "paragraph",
       "text": "Topic 1 is available: Realization of Variational Divergence Minimization. Continue from the variational representation studied in Week 1."
     }
   ],
-  "illustrationCount": 6,
+  "illustrationCount": 22,
   "sections": [
     {
-      "title": "Realization of Variational Divergence Minimization (VDM)",
+      "slug": "vdm-realization",
+      "title": "Making fake data that looks real",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Start here Imagine a bag full of cat photos. You can take photos out, but you do not know the rule that made them. Can we build a machine that makes new cat photos that look like the ones in the bag? This page shows how."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see",
+          "anchor": "words-you-will-see-2"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Data: the real examples we are given, like the cat photos."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Generator: a neural network. It takes random numbers and turns them into fake data."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Neural network: a machine made of many simple steps. Its settings are called weights. Changing the weights changes what it outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Distribution: the pattern of how likely each kind of data is."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Divergence: one number that tells how different two patterns are. If the patterns are the same, the number is zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Average: add up many values and divide by how many there are."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Critic: a second neural network. It gives a score to the data it sees."
+        },
+        {
+          "type": "heading",
+          "text": "The setup",
+          "anchor": "the-setup-10"
+        },
+        {
+          "type": "paragraph",
+          "text": "We have real data: x₁, x₂, …, xₙ. We do not know the rule behind it."
+        },
+        {
+          "type": "paragraph",
+          "text": "We build a generator. It takes random noise z (random numbers) and makes a fake sample x̂."
+        },
+        {
+          "type": "paragraph",
+          "text": "Our goal is simple: change the generator's weights until its fake data looks like the real data."
+        },
+        {
+          "type": "note",
+          "text": "Everyday example A copy machine. You feed it random ink patterns. It prints pages. You adjust the machine until the printed pages look like the real pages in the bag."
+        },
+        {
+          "type": "heading",
+          "text": "Problem 1: we cannot measure the difference directly",
+          "anchor": "problem-1-we-cannot-measure-the-difference-directly-15"
+        },
+        {
+          "type": "paragraph",
+          "text": "We want a divergence number that measures how different the fake and real data are. But to compute it, we would need the full pattern of both. We do not have that. We only have samples."
+        },
+        {
+          "type": "heading",
+          "text": "Idea 1: averages of samples are enough",
+          "anchor": "idea-1-averages-of-samples-are-enough-17"
+        },
+        {
+          "type": "paragraph",
+          "text": "For each sample, first compute its score. Then add the scores and divide by the number of samples. With many independent draws from the same source, this average approaches the long-run average when the expected score is finite."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img10-samples-average.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A pile of samples turning into one average",
+          "caption": "Many samples go in, one average comes out."
+        },
+        {
+          "type": "heading",
+          "text": "Idea 2: use a lower bound",
+          "anchor": "idea-2-use-a-lower-bound-20"
+        },
+        {
+          "type": "paragraph",
+          "text": "We cannot compute the exact divergence. So we find a number that is always less than or equal to the divergence. We call it a lower bound. The lower bound is written using two long-run averages, one for real data and one for generated data. We estimate them from separate batches. The exact lower-bound guarantee is for the long-run averages. A particular batch estimate can overshoot the true divergence."
+        },
+        {
+          "type": "paragraph",
+          "text": "For each generator, first try to make the bound as tight as possible by improving the critic. Then adjust the generator to bring that critic’s score down. A weak critic can give a small score even when the distributions are far apart."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/population-and-batch-bound.svg",
+          "width": 640,
+          "height": 213,
+          "alt": "The population critic score is at most the true divergence. A finite-batch estimate can exceed it.",
+          "caption": "The inequality applies to the population score. The batch score estimates it."
+        },
+        {
+          "type": "heading",
+          "text": "Idea 3: use a second network as the critic",
+          "anchor": "idea-3-use-a-second-network-as-the-critic-24"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lower bound has a part where we must search for the best scoring function. We cannot search over all functions. So we use a neural network, called the critic, with its own weights w."
+        },
+        {
+          "type": "paragraph",
+          "text": "The two goals are now:"
+        },
+        {
+          "type": "paragraph",
+          "text": "• The generator wants the score to be small. It changes its weights θ to do this."
+        },
+        {
+          "type": "paragraph",
+          "text": "• The critic wants the score to be big. It changes its weights w to do this."
+        },
+        {
+          "type": "paragraph",
+          "text": "Each one tries to undo what the other is doing. That is why this is called an adversarial game."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img02-generator-critic.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Noise to generator to fake sample to critic to score",
+          "caption": "The generator makes a fake sample. The critic scores it against real data."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — turn two batches into one score",
+          "anchor": "worked-example-turn-two-batches-into-one-score-31"
+        },
+        {
+          "type": "paragraph",
+          "text": "Give heads 0 points and tails 2 points. The real batch is heads, tails, tails, heads. Add its four scores and divide by four."
+        },
+        {
+          "type": "equation",
+          "tex": "\\frac{0+2+2+0}{4}=1"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a KL-based critic, convert each generated score into a penalty. Here T is the points assigned to one toss."
+        },
+        {
+          "type": "equation",
+          "tex": "\\text{Penalty}=e^{T-1}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator gives four heads, so each penalty is about 0.37. Subtract their average from the real average."
+        },
+        {
+          "type": "equation",
+          "tex": "1-\\frac{0.37+0.37+0.37+0.37}{4}\\approx 0.63"
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/vdm-two-batch-score.svg",
+          "width": 640,
+          "height": 392,
+          "alt": "Real tosses heads, tails, tails, heads earn 0, 2, 2, 0 points and average 1. Four generated heads each have a penalty of about 0.37. Subtracting the averages gives about 0.63.",
+          "caption": "Each average uses its own four tosses. The difference is the score for these batches."
+        },
+        {
+          "type": "paragraph",
+          "text": "Try giving both outcomes 1 point instead. Every real score and generated penalty is now 1, so the critic gets zero. The choice of scoring rule matters even when the generator stays fixed."
+        },
+        {
+          "type": "equation",
+          "tex": "1-e^{1-1}=0"
+        },
+        {
+          "type": "heading",
+          "text": "What is a saddle point?",
+          "anchor": "what-is-a-saddle-point-40"
+        },
+        {
+          "type": "paragraph",
+          "text": "Picture a horse saddle. If you walk forward, you go up. If you walk sideways, you go down. The middle point is a saddle point."
+        },
+        {
+          "type": "paragraph",
+          "text": "At a saddle point of the minimax game, changing only the critic cannot increase the score, and changing only the generator cannot decrease it. The diagram shows the local shape with two slices. Taking turns is a way to search for a solution, and convergence depends on the game and updates."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img01-saddle-point.svg",
+          "width": 720,
+          "height": 280,
+          "alt": "A saddle surface with a ball in the middle, arrows up one way and down the other",
+          "caption": "At a saddle, the score is locally highest when changing only the critic and locally lowest when changing only the generator."
+        },
+        {
+          "type": "heading",
+          "text": "The critic has a special last step",
+          "anchor": "the-critic-has-a-special-last-step-44"
+        },
+        {
+          "type": "paragraph",
+          "text": "The critic must give values in the right range for the divergence we chose. So the critic has two parts:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. A normal neural network that outputs one plain number."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. A fixed squashing step. It turns that number into a value in the right range."
+        },
+        {
+          "type": "heading",
+          "text": "Three steps inside the critic"
+        },
+        {
+          "type": "paragraph",
+          "text": "Think back to the coin example. The network first gives each outcome a raw number. A second rule converts that number into a score the chosen divergence can use."
+        },
+        {
+          "type": "equation",
+          "tex": "x\\xrightarrow{\\ V_w\\ }V_w(x)\\xrightarrow{\\ \\sigma_f\\ }T_w(x)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here x is the sample and w holds the critic’s weights. The raw output can be any real number. The activation puts it inside the domain where the conjugate is finite. That domain depends on the choice of divergence, which is why the last step can change."
+        },
+        {
+          "type": "equation",
+          "tex": "T_w(x)=\\sigma_f\\!\\left(V_w(x)\\right)"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the next lesson, the GAN activation gives a negative final score. The GAN conjugate needs that range."
+        },
+        {
+          "type": "heading",
+          "text": "In one line",
+          "anchor": "in-one-line-48"
+        },
+        {
+          "type": "paragraph",
+          "text": "A generator makes fake data. A critic scores data. They play a game on the same score, and the generator learns to make data that the critic cannot tell apart from the real data."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: divergence · lower bound · critic · generator · saddle point · adversarial"
+        },
+        {
+          "type": "heading",
+          "text": "Practice — Quick check",
+          "anchor": "practice-quick-check-51"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why can't we measure the divergence directly? Answer: We would need the full pattern of the real and fake data. We only have samples, so we use a lower bound that we can compute from samples."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does the generator want? Answer: It wants the score to be small. It changes its weights to make the fake data look more real."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does the critic want? Answer: It wants the score to be big. It changes its weights to find the best way to tell real from fake."
+        }
+      ]
+    },
+    {
+      "slug": "gan-special-case",
+      "title": "GAN is one special case",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Start here Last time the generator and critic shared a score. This time we’ll choose a score that lets the critic answer a familiar question. Did this sample come from the real data or the generator?"
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see",
+          "anchor": "words-you-will-see-2"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Log (log): a math function. For numbers between 0 and 1, the log is negative. For example, log of 0.5 is about −0.69."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Sigmoid: a function that turns any number into a value between 0 and 1. Big numbers go close to 1. Very small numbers go close to 0."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Probability: a number from 0 to 1 that says how likely something is. 0.9 means \"very likely\"."
+        },
+        {
+          "type": "heading",
+          "text": "Step 1: choose the GAN's function",
+          "anchor": "step-1-choose-the-gan-s-function-6"
+        },
+        {
+          "type": "paragraph",
+          "text": "The original GAN objective comes from this choice of divergence function."
+        },
+        {
+          "type": "equation",
+          "tex": "f(u)=u\\log u-(u+1)\\log(u+1)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Adding twice the natural log of 2 makes the function equal zero at 1. It shifts the score by a constant, so the training directions stay the same."
+        },
+        {
+          "type": "heading",
+          "text": "Step 2: the critic's score must follow a rule",
+          "anchor": "step-2-the-critic-s-score-must-follow-a-rule-10"
+        },
+        {
+          "type": "paragraph",
+          "text": "Our critic gives a plain number for each sample. We must squash that number so it fits the rule of our chosen function."
+        },
+        {
+          "type": "paragraph",
+          "text": "For a GAN, the squashing rule is:"
+        },
+        {
+          "type": "equation",
+          "tex": "T(x)=-\\log\\!\\left(1+e^{-v}\\right)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here v is the plain number from the critic, and e is a special number, about 2.718."
+        },
+        {
+          "type": "paragraph",
+          "text": "Why does it fit? The exponential is positive, so the number inside the log is greater than 1. Its log is positive, and the minus sign makes the score negative. That is the range the conjugate needs."
+        },
+        {
+          "type": "heading",
+          "text": "Step 3: use a sigmoid to get a clear answer",
+          "anchor": "step-3-use-a-sigmoid-to-get-a-clear-answer-16"
+        },
+        {
+          "type": "paragraph",
+          "text": "We now define the discriminator. It is the critic with a sigmoid at the end:"
+        },
+        {
+          "type": "equation",
+          "tex": "D(x)=\\frac{1}{1+e^{-v}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For any finite input, D(x) lies strictly between 0 and 1. Read it as the discriminator’s estimate that the sample came from the real data."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img04-sigmoid.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Sigmoid squeezes any number into a value between 0 and 1",
+          "caption": "The values at −5 and 5 are rounded. A finite input never gives exactly 0 or 1."
+        },
+        {
+          "type": "heading",
+          "text": "Step 4: put it all together",
+          "anchor": "step-4-put-it-all-together-21"
+        },
+        {
+          "type": "paragraph",
+          "text": "The sigmoid gives the discriminator probability D. The critic score T used in the variational objective is the natural log of that probability."
+        },
+        {
+          "type": "equation",
+          "tex": "T(x)=\\log D(x)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generated term subtracts the conjugate. Since exponentiating the critic score gives D back, the generated term simplifies to the log of one minus D."
+        },
+        {
+          "type": "equation",
+          "tex": "-f^*\\!\\left(T(x)\\right)=\\log\\!\\left(1-e^{T(x)}\\right)=\\log\\!\\left(1-D(x)\\right)"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}J={}&\\underbrace{\\mathbb{E}_{x\\sim P_X}[\\log D(x)]}_{\\text{average on real data}}\\\\&+\\underbrace{\\mathbb{E}_{\\hat{x}\\sim P_\\theta}[\\log(1-D(\\hat{x}))]}_{\\text{average on generated data}}\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the GAN formula from the original paper."
+        },
+        {
+          "type": "paragraph",
+          "text": "What it means in words:"
+        },
+        {
+          "type": "paragraph",
+          "text": "• For real data, we want D to be close to 1, because we want the critic to say \"real\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "• For fake data, we want D to be close to 0, because we want the critic to say \"fake\"."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img06-real-vs-fake-scores.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Real samples pushing D toward 1, fake samples pushing D toward 0",
+          "caption": "In the discriminator turn, real samples are the positive examples and generated samples are the negative examples."
+        },
+        {
+          "type": "heading",
+          "text": "A simple number check",
+          "anchor": "a-simple-number-check-32"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose the critic is confused and gives every sample the value D = 0.5."
+        },
+        {
+          "type": "paragraph",
+          "text": "• For each sample, log(0.5) is about −0.69."
+        },
+        {
+          "type": "paragraph",
+          "text": "• The critic cannot tell real from fake. It is guessing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now suppose a real sample gets D = 0.88. The critic is fairly sure it is real. That is a good sign."
+        },
+        {
+          "type": "note",
+          "text": "Everyday example A teacher checks test papers. For a real paper, the teacher should say \"yes, this is real\" with high confidence. For a fake paper, the teacher should say \"no\". The score rewards assigning high probability to the correct source, so confidence matters too."
+        },
+        {
+          "type": "heading",
+          "text": "Why the conjugate needs a negative score"
+        },
+        {
+          "type": "paragraph",
+          "text": "The conjugate converts the critic’s score into the generated-side penalty. For the unnormalized function above, the quantity inside its log must be positive. That requires the exponential of the score to be below 1, so the score must be negative."
+        },
+        {
+          "type": "equation",
+          "tex": "f^*(t)=-\\log(1-e^t),\\qquad t<0"
+        },
+        {
+          "type": "paragraph",
+          "text": "The discriminator probability lies strictly between 0 and 1 for a finite raw score. Its log is therefore negative. Exponentiating the log gives D back, so subtracting the conjugate produces the second term in the GAN score."
+        },
+        {
+          "type": "heading",
+          "text": "What the best discriminator tells us"
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember how the ideal coin judge uses the best possible real-probability score for each outcome? Do that over all inputs, with the two sources equally weighted. The best achievable GAN score then measures how different the distributions are through Jensen–Shannon divergence."
+        },
+        {
+          "type": "equation",
+          "tex": "\\max_D J=2\\,\\mathrm{JS}(P_X\\,\\|\\,P_\\theta)-\\log 4"
+        },
+        {
+          "type": "paragraph",
+          "text": "Jensen–Shannon divergence is symmetric and lies between zero and the natural log of 2. If the distributions match, it is zero, and the optimal discriminator gives 0.5 for either source on the shared support. The two logs then add to minus log 4. The constant changes the baseline without changing which generator is best. A limited or partly trained discriminator can score below the theoretical optimum. Here the maximum refers to an ideal discriminator that can output 0 or 1 when appropriate."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — one prediction, two outcomes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Suppose the judge gives a heads result a real probability of 0.8. If the result was real, the judge gave the right source 0.8. If it was generated, the judge gave the right source only 0.2. The log rewards the first answer more."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/same-score-different-credit.svg",
+          "width": 640,
+          "height": 213,
+          "alt": "D is 0.8 in both cases. The real sample contributes about −0.223. The generated sample contributes about −1.609.",
+          "caption": "Use the probability assigned to the true source before taking the log."
+        },
+        {
+          "type": "heading",
+          "text": "Why do we call D a classifier?",
+          "anchor": "why-do-we-call-d-a-classifier-38"
+        },
+        {
+          "type": "paragraph",
+          "text": "D always gives a value between 0 and 1. That is the same kind of answer as a yes-or-no question with a confidence level. A network that answers yes or no like this is called a classifier."
+        },
+        {
+          "type": "heading",
+          "text": "In one line",
+          "anchor": "in-one-line-40"
+        },
+        {
+          "type": "paragraph",
+          "text": "If we pick the right function, the GAN is just a critic that says \"real or fake\" with a number from 0 to 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: sigmoid · probability · log · discriminator · classifier"
+        },
+        {
+          "type": "heading",
+          "text": "Practice — Quick check",
+          "anchor": "practice-quick-check-43"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does D = 0.5 mean? Answer: The critic is not sure. It cannot tell real from fake."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What should D be for a real sample? Answer: Close to 1. The critic should say \"real\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is a sigmoid? Answer: A function that turns any number into a value between 0 and 1."
+        }
+      ]
+    },
+    {
+      "slug": "training-the-gan",
+      "title": "How to train a GAN",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Start here Training a GAN is like a game with two turns. First the critic practises spotting fakes. Then the generator practises fooling the critic. Repeat many times."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see",
+          "anchor": "words-you-will-see-2"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Batch: a small group of samples, for example 128 photos at once."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Gradient: a direction that tells us how to change the weights to make a score go up or down."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Going up (ascent): change the weights to make the score bigger."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Going down (descent): change the weights to make the score smaller."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Frozen: we do not change these weights in this turn. They stay the same."
+        },
+        {
+          "type": "heading",
+          "text": "What we start with",
+          "anchor": "what-we-start-with-8"
+        },
+        {
+          "type": "paragraph",
+          "text": "We start with real examples and choose networks suited to the data. A small fully connected network will do for the handwritten-digit example."
+        },
+        {
+          "type": "heading",
+          "text": "Step 1: use small groups instead of all the data",
+          "anchor": "step-1-use-small-groups-instead-of-all-the-data-10"
+        },
+        {
+          "type": "paragraph",
+          "text": "We cannot use all the data at once. So we use batches."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Take a batch of real samples."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Make a batch of fake samples. Make random noise, and pass it through the generator."
+        },
+        {
+          "type": "heading",
+          "text": "Step 2: the critic's turn",
+          "anchor": "step-2-the-critic-s-turn-14"
+        },
+        {
+          "type": "paragraph",
+          "text": "The critic tries to make its score bigger. Its job is to get better at spotting fakes."
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Take a batch of real samples. Ask the critic: \"real or fake?\" Note how it does."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Take a batch of fake samples from the generator. Ask the critic again."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Combine the two results. Find the direction that makes the score bigger."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Change only the critic's weights a little, in that direction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator is frozen during this turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Try one round with a coin. Suppose the real batch has five heads and five tails, while the generated batch has nine heads and one tail. If the judge sees a tail and knows only the outcome, five of the six matching examples came from the real coin. That makes a tail a stronger clue than a head."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/critic-coin-counts.svg",
+          "width": 640,
+          "height": 290,
+          "alt": "Five out of fourteen heads are real. Five out of six tails are real.",
+          "caption": "For these two equally sized batches, the best real-probability guesses are about 36% for heads and 83% for tails."
+        },
+        {
+          "type": "heading",
+          "text": "Step 3: the generator's turn",
+          "anchor": "step-3-the-generator-s-turn-21"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator tries to make its score smaller. Its job is to fool the critic."
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Make random noise. Pass it through the generator to get fake samples."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Ask the critic about these fake samples."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Find the direction that makes the score smaller."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Change only the generator's weights a little, in that direction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The critic is frozen during this turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Key point: in the generator's turn, we do not need real data. The real-data part of the score does not depend on the generator. So it does not matter for this turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now keep those two judge scores fixed. Suppose the generator adjusts its setting so tails make up 30% of its outputs instead of 10%. That replaces some low-scoring heads with higher-scoring tails. The next judge update will use fresh samples and can revise its scores."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/generator-coin-shift.svg",
+          "width": 640,
+          "height": 290,
+          "alt": "Generated tails rise from one in ten to three in ten. The judge still gives heads about 36% and tails about 83% as its real probabilities.",
+          "caption": "Only the generator changes on this turn. The rows illustrate the old and new proportions."
+        },
+        {
+          "type": "heading",
+          "text": "A small worked example",
+          "anchor": "a-small-worked-example-29"
+        },
+        {
+          "type": "paragraph",
+          "text": "Say we have 2 real samples and 2 fake samples. The critic gives these values:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Sample",
+              "Critic's value",
+              "What we use"
+            ],
+            [
+              "Real 1",
+              "0.9",
+              "0.9"
+            ],
+            [
+              "Real 2",
+              "0.8",
+              "0.8"
+            ],
+            [
+              "Fake 1",
+              "0.2",
+              "1 − 0.2 = 0.8"
+            ],
+            [
+              "Fake 2",
+              "0.3",
+              "1 − 0.3 = 0.7"
+            ]
+          ],
+          "text": "Sample Critic's value What we use Real 1 0.9 0.9 Real 2 0.8 0.8 Fake 1 0.2 1 − 0.2 = 0.8 Fake 2 0.3 1 − 0.3 = 0.7"
+        },
+        {
+          "type": "paragraph",
+          "text": "Now take the log of each value and average:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Average the logs for the two real samples."
+        },
+        {
+          "type": "equation",
+          "tex": "\\frac{\\log(0.9)+\\log(0.8)}{2}\\approx -0.164"
+        },
+        {
+          "type": "paragraph",
+          "text": "Average the logs for the two generated samples. Use the chance the discriminator gave to “generated.”"
+        },
+        {
+          "type": "equation",
+          "tex": "\\frac{\\log(0.8)+\\log(0.7)}{2}\\approx -0.290"
+        },
+        {
+          "type": "paragraph",
+          "text": "Add the two averages to get the score."
+        },
+        {
+          "type": "equation",
+          "tex": "J\\approx -0.164-0.290=-0.454"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the original minimax objective, the discriminator tries to push this total up toward zero. The generator tries to bring the generated-sample term down by making its outputs receive higher D values. The digit tutorial uses a different generator loss with the same practical goal."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img07-worked-example.webp",
+          "width": 1800,
+          "height": 1125,
+          "alt": "Worked example: four critic values and the totals",
+          "caption": "Two real and two fake samples, step by step."
+        },
+        {
+          "type": "heading",
+          "text": "From the worked example to the board equations"
+        },
+        {
+          "type": "paragraph",
+          "text": "The scorecard used two examples per source. The board writes the same calculation for any two batch sizes. The real batch contains the samples xᵢ. The generated batch comes from fresh random inputs zⱼ passed through the generator."
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}\\widehat J(\\theta,w)={}&\\frac{1}{B_1}\\sum_{i=1}^{B_1}\\log D_w(x_i)\\\\&+\\frac{1}{B_2}\\sum_{j=1}^{B_2}\\log\\!\\left(1-D_w(g_\\theta(z_j))\\right).\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Divide each sum by its own batch size. This keeps both sources equally weighted in the objective even when you draw more samples from one source."
+        },
+        {
+          "type": "heading",
+          "text": "Discriminator update"
+        },
+        {
+          "type": "equation",
+          "tex": "w\\leftarrow w+\\alpha_1\\nabla_w\\widehat J(\\theta,w),\\qquad\\alpha_1>0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hold the generator’s settings fixed. The positive step size controls how far to move. The plus sign moves the discriminator uphill on the score, so the update is gradient ascent. This is the update shown on page 5 of the board notes."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/discriminator-gradient-flow.svg",
+          "width": 640,
+          "height": 258,
+          "alt": "The discriminator scores both batches. Its gradient updates only its own weights.",
+          "caption": "The generator produces the fake batch in the forward pass. Detaching the batch cuts the backward path to the generator."
+        },
+        {
+          "type": "heading",
+          "text": "Generator update in the original minimax game"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hold the discriminator settings fixed. The real batch and its scores are independent of the generator weights, so the derivative of the real term is zero. Only the generated term is needed for this update."
+        },
+        {
+          "type": "equation",
+          "tex": "\\widehat J_G(\\theta)=\\frac{1}{B_2}\\sum_{j=1}^{B_2}\\log\\!\\left(1-D_w(g_\\theta(z_j))\\right)"
+        },
+        {
+          "type": "equation",
+          "tex": "\\theta\\leftarrow\\theta-\\alpha_2\\nabla_\\theta\\widehat J_G(\\theta),\\qquad\\alpha_2>0"
+        },
+        {
+          "type": "paragraph",
+          "text": "The minus sign moves downhill on the generator’s minimax objective. The gradient still passes through the discriminator because its score depends on the generated sample. Freezing the discriminator keeps its weights fixed while this calculation runs."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/generator-gradient-flow.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Noise flows through the generator and fixed discriminator to the score. The gradient flows back through the discriminator to update the generator.",
+          "caption": "The backward arrow represents a gradient through the fixed discriminator. Only the generator’s weights update."
+        },
+        {
+          "type": "heading",
+          "text": "Practice — trace the gradient"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Which weights change on the discriminator turn? Answer: Only the discriminator weights change. The generator produces the fake examples in the forward pass, and the detached examples stop the gradient from reaching the generator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the generator update drop the real-data term? Answer: The real scores use the fixed discriminator and real inputs, so they have zero derivative with respect to the generator’s weights."
+        },
+        {
+          "type": "heading",
+          "text": "Taking turns",
+          "anchor": "taking-turns-41"
+        },
+        {
+          "type": "paragraph",
+          "text": "The usual way: one critic turn, then one generator turn. Repeat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some people do more turns for one network. For example, five generator turns for each critic turn. The right choice depends on the task."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img05-taking-turns.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Two turns: critic goes up, generator goes down",
+          "caption": "Arrows refer to the shared minimax score. Frozen weights stay fixed, but the network still runs."
+        },
+        {
+          "type": "note",
+          "text": "Everyday example An art student draws fake paintings. An art teacher learns to spot them. The student then paints better fakes. The teacher learns again. After many rounds, the fakes are hard to spot."
+        },
+        {
+          "type": "heading",
+          "text": "When to stop?",
+          "anchor": "when-to-stop-46"
+        },
+        {
+          "type": "paragraph",
+          "text": "Check fixed-noise samples at regular intervals. Look for recognizable digits and variety across outputs. A low training loss alone does not show that the generator has learned the range of digits."
+        },
+        {
+          "type": "heading",
+          "text": "In one line",
+          "anchor": "in-one-line-48"
+        },
+        {
+          "type": "paragraph",
+          "text": "First the critic learns to spot fakes. Then the generator learns to fool it. Repeat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: batch · gradient · going up · going down · frozen · taking turns"
+        },
+        {
+          "type": "heading",
+          "text": "Practice — Quick check",
+          "anchor": "practice-quick-check-51"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the generator's turn not need real data? Answer: The real-data part of the score does not depend on the generator. So it does not change the generator's direction."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: In the critic's turn, which way do we move the weights? Answer: Up. We want the score to get bigger."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: In the critic's turn, which network is frozen? Answer: The generator."
+        }
+      ]
+    },
+    {
+      "slug": "vanilla-gan-tutorial",
+      "title": "Tutorial — A GAN that draws digits",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Start here You learned the idea. Now we build it in code. We will teach a GAN to draw handwritten digits, like the numbers 0 to 9."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see"
+        },
+        {
+          "type": "paragraph",
+          "text": "• MNIST: a free set of handwritten digit pictures. Each picture is small and black and white."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Pixel: one dot in a picture."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Image size 28 × 28: the picture has 28 rows and 28 columns of pixels. That is 784 pixels in total."
+        },
+        {
+          "type": "paragraph",
+          "text": "• MLP (fully connected network): a simple neural network where every number connects to every number in the next layer."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Layer: one step in the network."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Activation: a simple rule applied after a layer. It bends the numbers a little. ReLU, LeakyReLU and tanh are three such rules."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Epoch: one full pass through all the training pictures."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Batch size: how many pictures we use at once. Here it is 128."
+        },
+        {
+          "type": "heading",
+          "text": "Step 1: prepare the pictures"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Turn each picture into numbers."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Rescale pixels from [0, 1] to [−1, 1] by subtracting 0.5 and dividing by 0.5. The input 0 becomes −1, 0.5 becomes 0, and 1 becomes 1."
+        },
+        {
+          "type": "note",
+          "text": "Correction to the recording. The second normalization argument is the standard deviation used as a divisor. Here it is 0.5. A variance of 0.5 would imply a different divisor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Then we group the pictures into batches of 128, and shuffle them."
+        },
+        {
+          "type": "heading",
+          "text": "Step 2: the generator"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator takes 100 random numbers as input. It gives back 784 numbers, which we reshape into a 28 × 28 picture."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Layer",
+              "Input → output",
+              "Activation"
+            ],
+            [
+              "1",
+              "100 → 256",
+              "ReLU"
+            ],
+            [
+              "2",
+              "256 → 512",
+              "ReLU"
+            ],
+            [
+              "3",
+              "512 → 1024",
+              "ReLU"
+            ],
+            [
+              "4",
+              "1024 → 784",
+              "tanh"
+            ]
+          ],
+          "text": "Layer Input → output Activation 1 100 → 256 ReLU 2 256 → 512 ReLU 3 512 → 1024 ReLU 4 1024 → 784 tanh"
+        },
+        {
+          "type": "paragraph",
+          "text": "tanh keeps the output between −1 and 1. That matches our picture numbers."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img09-generator-layers.webp",
+          "width": 1950,
+          "height": 975,
+          "alt": "100 numbers through layers to a 28 by 28 picture",
+          "caption": "From 100 random numbers to a 28 × 28 picture, layer by layer."
+        },
+        {
+          "type": "heading",
+          "text": "Step 3: the discriminator (the critic)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The discriminator takes 784 numbers, which is one picture. It gives back one number between 0 and 1. That number is its guess: \"chance this picture is real\"."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Layer",
+              "Input → output",
+              "Activation"
+            ],
+            [
+              "1",
+              "784 → 512",
+              "LeakyReLU"
+            ],
+            [
+              "2",
+              "512 → 256",
+              "LeakyReLU"
+            ],
+            [
+              "3",
+              "256 → 1",
+              "sigmoid"
+            ]
+          ],
+          "text": "Layer Input → output Activation 1 784 → 512 LeakyReLU 2 512 → 256 LeakyReLU 3 256 → 1 sigmoid"
+        },
+        {
+          "type": "paragraph",
+          "text": "The sigmoid makes the answer a value between 0 and 1."
+        },
+        {
+          "type": "heading",
+          "text": "Step 4: the loss"
+        },
+        {
+          "type": "paragraph",
+          "text": "The loss is a number that says how wrong the network is. Lower is better."
+        },
+        {
+          "type": "paragraph",
+          "text": "We use a loss called BCE. It checks a yes-or-no guess against the right answer, and gives a bigger loss when the guess is more wrong."
+        },
+        {
+          "type": "paragraph",
+          "text": "• For the discriminator: real pictures should get answer 1. Fake pictures should get answer 0. We add both losses."
+        },
+        {
+          "type": "paragraph",
+          "text": "• For the generator: fake pictures should get answer 1. The generator wants the discriminator to say \"real\"."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img08-mnist-pipeline.webp",
+          "width": 1800,
+          "height": 975,
+          "alt": "Noise to generator to fake picture to critic to loss",
+          "caption": "One full loop of the tutorial, from noise to loss."
+        },
+        {
+          "type": "note",
+          "text": "Lecture example — why the generator uses 1 During the generator update, target 1 gives a loss of −log D for generated pictures. This is the non-saturating generator loss. It rewards higher D and gives a stronger signal early in training when the discriminator confidently rejects the generated samples."
+        },
+        {
+          "type": "heading",
+          "text": "Step 5: one training round"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Take a batch of real pictures. Ask the discriminator. Find the loss with label 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Make fake pictures from random noise. Ask the discriminator. Find the loss with label 0."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Add the two losses. Update only the discriminator."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Make new fake pictures. Ask the discriminator. Find the loss with label 1. Update only the generator."
+        },
+        {
+          "type": "paragraph",
+          "text": "In step 2 we use detach. Detach cuts the gradient path back to the generator while leaving the generated pictures available to the discriminator. During the generator turn, use fresh, attached outputs so the gradient can reach the generator through the fixed discriminator."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example — one update in pseudocode"
+        },
+        {
+          "type": "code",
+          "text": "real = next_batch()\nfake = G(sample_noise())\nloss_D = BCE(D(real), 1) + BCE(D(fake.detach()), 0)\nupdate_only(D, loss_D)\n\nfake = G(sample_noise())\nfreeze_parameters(D)\nloss_G = BCE(D(fake), 1)\nupdate_only(G, loss_G)\nunfreeze_parameters(D)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Freeze the discriminator parameters without disabling the calculation through the discriminator. The generator still needs that gradient."
+        },
+        {
+          "type": "heading",
+          "text": "Training modes"
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial tries three ways:"
+        },
+        {
+          "type": "paragraph",
+          "text": "• 1 : 1 — one generator update, one discriminator update."
+        },
+        {
+          "type": "paragraph",
+          "text": "• 5 : 1 — five generator updates for each discriminator update."
+        },
+        {
+          "type": "paragraph",
+          "text": "• 1 : 5 — five discriminator updates for each generator update."
+        },
+        {
+          "type": "paragraph",
+          "text": "The number 5 is just an example. You can change it."
+        },
+        {
+          "type": "heading",
+          "text": "What to expect"
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial runs 50 epochs as a trial. Use the same random noise each time you check the pictures, so you can compare them fairly. Early pictures are rough. Later pictures should look more like digits. Exact outputs vary with the initialization, seed, and training settings."
+        },
+        {
+          "type": "heading",
+          "text": "Try these"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Change the number of epochs and see how the pictures change."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Try the 5 : 1 and 1 : 5 modes and compare the pictures."
+        },
+        {
+          "type": "heading",
+          "text": "In one line"
+        },
+        {
+          "type": "paragraph",
+          "text": "A simple GAN in code has two small networks, two optimizers (one per network), and a BCE loss. We train them in turns."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: MNIST · pixel · layer · activation · epoch · batch · loss · detach"
+        },
+        {
+          "type": "heading",
+          "text": "Practice — Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the generator use tanh at the end? Answer: Because the pictures are scaled between −1 and 1, and tanh gives values in that range."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does detach do? Answer: It stops the calculation from changing the generator during the discriminator's turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What label does the generator's fake picture get? Answer: 1. The generator wants the discriminator to say \"real\"."
+        }
+      ]
+    },
+    {
+      "slug": "quick-revision",
+      "title": "Week 2 quick revision",
+      "blocks": [
+        {
+          "type": "note",
+          "text": "Start here One page to check week 2. Read each row. Try to say the answer in your own words before you look at the next row."
+        },
+        {
+          "type": "heading",
+          "text": "The big picture"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Simple answer"
+            ],
+            [
+              "What do we have?",
+              "Real data, from a source we do not know"
+            ],
+            [
+              "What do we build?",
+              "A generator that turns random noise into fake data"
+            ],
+            [
+              "What do we want?",
+              "Fake data that looks like the real data"
+            ],
+            [
+              "Why not measure the difference directly?",
+              "We cannot compute it from samples"
+            ],
+            [
+              "What do we do instead?",
+              "Estimate the critic’s lower-bound objective using separate sample averages"
+            ],
+            [
+              "What is the critic for?",
+              "It finds the best way to score real vs fake"
+            ],
+            [
+              "What is the final game?",
+              "The generator makes the score small. The critic makes it big."
+            ]
+          ],
+          "text": "Question Simple answer What do we have? Real data, from a source we do not know What do we build? A generator that turns random noise into fake data What do we want? Fake data that looks like the real data Why not measure the difference directly? We cannot compute it from samples What do we do instead? Estimate the critic’s lower-bound objective using separate sample averages What is the critic for? It finds the best way to score real vs fake What is the final game? The generator makes the score small. The critic makes it big."
+        },
+        {
+          "type": "heading",
+          "text": "The GAN version"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Item",
+              "Simple meaning"
+            ],
+            [
+              "Critic (discriminator) D",
+              "Gives a value between 0 and 1. Close to 1 means \"real\"."
+            ],
+            [
+              "For real data",
+              "We want D close to 1"
+            ],
+            [
+              "For fake data",
+              "We want D close to 0"
+            ],
+            [
+              "Score",
+              "Average of log D on real data, plus average of log(1 − D) on fake data"
+            ]
+          ],
+          "text": "Item Simple meaning Critic (discriminator) D Gives a value between 0 and 1. Close to 1 means \"real\". For real data We want D close to 1 For fake data We want D close to 0 Score Average of log D on real data, plus average of log(1 − D) on fake data"
+        },
+        {
+          "type": "heading",
+          "text": "Training in one table"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Turn",
+              "Which network changes?",
+              "Which way?",
+              "Which data?"
+            ],
+            [
+              "Critic's turn",
+              "the critic",
+              "up (make the score bigger)",
+              "real batch and fake batch"
+            ],
+            [
+              "Generator's turn",
+              "the generator",
+              "down (make the score smaller)",
+              "fake batch only"
+            ]
+          ],
+          "text": "Turn Which network changes? Which way? Which data? Critic's turn the critic up (make the score bigger) real batch and fake batch Generator's turn the generator down (make the score smaller) fake batch only"
+        },
+        {
+          "type": "heading",
+          "text": "Numbers to remember"
+        },
+        {
+          "type": "paragraph",
+          "text": "• If D = 0.5 for everything, each log is about −0.69."
+        },
+        {
+          "type": "paragraph",
+          "text": "• A digit picture has 28 × 28 = 784 pixels."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Random noise size in the tutorial: 100."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Batch size in the tutorial: 128."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Pixel range after normalizing: −1 to 1."
+        },
+        {
+          "type": "heading",
+          "text": "Common mix-ups"
+        },
+        {
+          "type": "paragraph",
+          "text": "• Measure vs bound: we make the bound small, not the exact measure."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Output of the critic vs output of D: the critic's raw score can be any range. D is always between 0 and 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Going up vs going down: the critic goes up. The generator goes down."
+        },
+        {
+          "type": "paragraph",
+          "text": "• Why no real data for the generator: the real-data part does not depend on the generator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: divergence · lower bound · critic · generator · up · down · loss · detach"
+        },
+        {
+          "type": "heading",
+          "text": "Practice — Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Write the GAN score in words. Answer: Average of log D on real data, plus average of log(1 − D) on fake data."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Which network is frozen in the generator's turn? Answer: The critic."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the tutorial give fake pictures the label 1 for the generator? Answer: The generator wants the critic to say \"real\" for its fake pictures."
+        }
+      ],
+      "resource": true
+    },
+    {
+      "title": "Detailed notes on variational divergence minimization",
       "slug": "realization-of-variational-divergence-minimization",
       "blocks": [
         {
@@ -665,7 +2040,8 @@
           "type": "paragraph",
           "text": "Question: What is the difference between min and argmin? Answer: min gives the smallest objective value; argmin gives the parameter value or set of values that achieves that value. An optimum need not always be attained."
         }
-      ]
+      ],
+      "resource": true
     }
   ]
 }

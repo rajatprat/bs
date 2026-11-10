@@ -48,6 +48,19 @@ function Content({ blocks }) {
     const block = blocks[i];
     if (block.type === 'equation') { nodes.push(<div className="math-equation" key={i}><Math tex={block.tex} display raw/></div>); continue; }
     if (block.type === 'image') { nodes.push(<Diagram key={i} block={block}/>); continue; }
+    if (block.type === 'table') {
+      const [head, ...rows] = block.rows;
+      nodes.push(<div className="table-wrap" key={i} tabIndex={0} role="region" aria-label="Scrollable lesson table">
+        <table><thead><tr>{head.map((cell, j) => <th scope="col" key={j}><Notation text={cell}/></th>)}</tr></thead>
+          <tbody>{rows.map((row, j) => <tr key={j}>{row.map((cell, k) => <td key={k}><Notation text={cell}/></td>)}</tr>)}</tbody>
+        </table>
+      </div>);
+      continue;
+    }
+    if (block.type === 'code') {
+      nodes.push(<pre className="lesson-code" tabIndex={0} key={i}><code>{block.text}</code></pre>);
+      continue;
+    }
     if (block.type === 'list-item' || /^\d+\.\s/.test(block.text || '')) {
       const steps = [], key = i;
       while (i < blocks.length && (blocks[i].type === 'list-item' || /^\d+\.\s/.test(blocks[i].text || ''))) { steps.push(blocks[i].text.replace(/^\d+\.\s/, '')); i++; }

@@ -2045,5 +2045,29 @@
     "/images/algorithms-week-4/detour-svd-ellipse.svg",
     "/images/algorithms-week-4/detour-pca-projection.svg",
     "/images/algorithms-week-4/detour-pca-variance.svg"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-2/vdm-realization/": [
+    "/images/generative-ai/week-2/lessons/img10-samples-average.webp",
+    "/images/generative-ai/week-2/lessons/population-and-batch-bound.svg",
+    "/images/generative-ai/week-2/lessons/img02-generator-critic.webp",
+    "/images/generative-ai/week-2/lessons/vdm-two-batch-score.svg",
+    "/images/generative-ai/week-2/lessons/img01-saddle-point.svg"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-2/gan-special-case/": [
+    "/images/generative-ai/week-2/lessons/img04-sigmoid.webp",
+    "/images/generative-ai/week-2/lessons/img06-real-vs-fake-scores.webp",
+    "/images/generative-ai/week-2/lessons/same-score-different-credit.svg"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-2/training-the-gan/": [
+    "/images/generative-ai/week-2/lessons/critic-coin-counts.svg",
+    "/images/generative-ai/week-2/lessons/generator-coin-shift.svg",
+    "/images/generative-ai/week-2/lessons/img07-worked-example.webp",
+    "/images/generative-ai/week-2/lessons/discriminator-gradient-flow.svg",
+    "/images/generative-ai/week-2/lessons/generator-gradient-flow.webp",
+    "/images/generative-ai/week-2/lessons/img05-taking-turns.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-2/vanilla-gan-tutorial/": [
+    "/images/generative-ai/week-2/lessons/img09-generator-layers.webp",
+    "/images/generative-ai/week-2/lessons/img08-mnist-pipeline.webp"
   ]
 }
