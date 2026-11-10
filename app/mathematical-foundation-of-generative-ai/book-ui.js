@@ -1,4 +1,3 @@
-import {readingUrl, readingWeeks} from './reading/reading-data';
 import {weeklyChecks} from '../../lib/genai-mastery';
 import {firstPass, firstPassUrl} from '../../lib/genai-first-pass';
 import {bookBase, chapterUrl, chapters, subject, units, unitUrl, weekKeys} from '../../lib/genai-book';
@@ -44,8 +43,7 @@ export function BookUnit({unit}) {
       <h1>{title}</h1>
       <p className="lead">{description}</p>
       <div className="genai-actions">
-        {guide && <a className="primary" href={readingUrl(readingWeeks[index].chapters[0])}>Read Week {index + 1} in Machines That Imagine →</a>}
-        <a className={guide ? undefined : 'primary'} href={guide ? firstPassUrl(bookBase, unit) : chapterUrl(items[0].slug)}>{guide ? 'Start with a worked example' : 'Start foundations'} →</a>
+        <a className="primary" href={guide ? firstPassUrl(bookBase, unit) : chapterUrl(items[0].slug)}>{guide ? 'Start with a worked example' : 'Start foundations'} →</a>
         {guide && <a href="#week-topics">Browse the full topics</a>}
         <a href="#study-review">{index < 0 ? 'Jump to revision' : 'Jump to practice and revision'}</a>
       </div>
@@ -53,7 +51,7 @@ export function BookUnit({unit}) {
         <h2>Refresh a prerequisite</h2>
         <ChapterLinks items={primers.map(slug => chapters.find(chapter => chapter.slug === slug))}/>
       </aside>}
-      {guide && <p><strong>How to study this week.</strong> Start with the worked guide, then try one topic at a time. Read an example, finish a guided problem, and try a fresh one. Use the full explanation when you want to see how the notation works.</p>}
+      {guide && <p><strong>How to study this week.</strong> Start with the worked guide, then go through the topics in order. Try the questions before moving on. Open the full explanation when you want to see how the notation works.</p>}
       <div id="week-topics">
       {lessonGroups.map(({heading, lessons}, i) => <section className="genai-group" key={heading}>
         <div className="eyebrow">Step {i + 1}</div>

@@ -1,4 +1,6 @@
 const figures = {
+  'coin-knob': ['coin-knob', 186, 'The target is 50% heads. The 60% setting is 10 percentage points away, while 90% is 40 points away.', 'The closer setting in this example is 60%.'],
+
   "numbers": ["basics-numbers", 165, "Three pixels, three numbers. Dark 0. Gray 100. Bright 255.", "One brightness value for each pixel."],
   "probability": ["basics-probability", 165, "The two chances add to one. Heads 0.7. Tails 0.3. Together 1.0.", "Once you know one chance, subtract it from 1."],
   "density": ["basics-density", 165, "A quarter of the line. Start 0. End of stretch 0.25. Whole line 1.", "A quarter of the line means a quarter of the chance."],
@@ -29,7 +31,7 @@ const figures = {
   "bigan": ["basics-bigan", 165, "The judge sees the picture and code. Generator Picture 4, code 1. Encoder Picture 4, code 1.", "These two routes produced the same pair."],
   "latreg": ["basics-latreg", 165, "Compare a guess with the code you used. Pick code 2. Encoder guesses 1.5. Error squared 0.25.", "We know the correct code because we picked it."],
   "dann": ["basics-dann", 165, "What helps a digit reader?. Keep Digit shape. Hide Scan or photo.", "The shape tells you the digit. The source can distract."],
-  "detail-bound": ["critic-sample-averages",256,"Average critic scores on real tosses and penalties on generated tosses, then subtract.","Use two lists of samples to compute the score. You can do this without a formula for either density."],
+  "detail-bound": ["critic-sample-averages",256,"The real coin gives heads, tails, tails, heads. Its points are 0, 2, 2, 0 and average to 1. The computer gives four heads, each with a penalty of about 0.37. The two averages give a score of about 0.63.","Average each row separately, then subtract the computer’s average penalty from the real coin’s average points."],
   "detail-judge": ["judge-heads-counts",256,"Fifty real heads and ninety generated heads make 140 heads in total.","With equally weighted sources, the fraction of heads that came from the real source is 50 out of 140."],
   "detail-ganf": ["gan-real-fake-loss",256,"Real examples use log D. Generated examples use log of one minus D.","The judge learns from the probability it assigned to the correct source. D itself is the probability of “real.”"],
   "detail-wgan": ["lipschitz-score-gap",254,"The real point at 2 and generated point at 5 are three units apart.","A 1-Lipschitz critic cannot give these points scores that differ by more than 3. The cap comes from the input distance."],

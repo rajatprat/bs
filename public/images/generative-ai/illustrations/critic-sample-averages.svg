@@ -1,19 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="256" viewBox="0 0 640 256">
-<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
-<rect width="640" height="256" fill="#fbf8f1"/>
-<g font-family="system-ui, sans-serif">
-<text x="320" y="39" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">Two averages give one score</text>
-<rect x="23" y="65" width="238" height="61" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
-<text x="142.0" y="89.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Real tosses</text>
-<text x="142.0" y="117.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Average T</text>
-<rect x="23" y="144" width="238" height="61" rx="14" fill="#fff0d8" stroke="#b7cfcb" stroke-width="2"/>
-<text x="142.0" y="168.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Model tosses</text>
-<text x="142.0" y="196.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Average penalty</text>
-<rect x="385" y="105" width="230" height="64" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
-<text x="500.0" y="131.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Critic score</text>
-<text x="500.0" y="159.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Real − penalty</text>
-<path d="M272 96L371 128" fill="none" stroke="#26766a" stroke-width="4" stroke-linecap="round" marker-end="url(#teal)"/>
-<path d="M272 175L371 148" fill="none" stroke="#26766a" stroke-width="4" stroke-linecap="round" marker-end="url(#teal)"/>
-<text x="320" y="231" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Use scores from the tosses you observed.</text>
-</g>
+  <rect width="640" height="256" fill="#fbf8f1"/>
+  <g font-family="system-ui, sans-serif" fill="#18354d" text-anchor="middle">
+    <rect x="16" y="14" width="296" height="155" rx="14" fill="#e2f2ed"/>
+    <rect x="328" y="14" width="296" height="155" rx="14" fill="#fff0d8"/>
+    <g font-size="24" font-weight="650">
+      <text x="164" y="45">Real coin</text>
+      <text x="476" y="45">Computer coin</text>
+      <text x="164" y="145">Average points = 1</text>
+      <text x="476" y="145">Average penalty ≈ 0.37</text>
+    </g>
+    <g font-size="21">
+      <text x="164" y="78">Heads · Tails · Tails · Heads</text>
+      <text x="476" y="78">Heads · Heads · Heads · Heads</text>
+      <text x="164" y="110">0 + 2 + 2 + 0</text>
+      <text x="476" y="110">0.37 + 0.37 + 0.37 + 0.37</text>
+    </g>
+    <rect x="80" y="184" width="480" height="54" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
+    <text x="320" y="219" font-size="26" font-weight="650">Critic score ≈ 1 − 0.37 = 0.63</text>
+  </g>
 </svg>

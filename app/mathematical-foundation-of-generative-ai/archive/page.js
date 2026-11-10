@@ -6,9 +6,9 @@ export const metadata = {title: 'Original GenAI course notes', robots: {index: f
 export default function Archive() {
   return <main id="main" className="week-page">
     <BookBreadcrumbs archive/>
-    <div className="eyebrow">Course archive</div>
+    <div className="eyebrow">Illustrated course notes</div>
     <h1>Original GenAI notes</h1>
-    <p className="lead">The earlier lessons, diagrams, and practice remain available here. Existing lesson links still open the original material.</p>
+    <p className="lead">Study the original illustrated lessons, worked examples, and practice for Weeks 1 and 2.</p>
     <ul className="genai-chapter-links">
       <li><a href={bookBase + 'archive/week-1/'}>Week 1 · Foundations and variational optimization</a></li>
       <li><a href={bookBase + 'archive/week-2/'}>Week 2 · Realization of variational divergence minimization</a></li>

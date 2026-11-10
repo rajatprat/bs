@@ -41,7 +41,6 @@ export default async function FirstPass({params}) {
       <h1>{guide.title}</h1>
       <p className="lead">{guide.goal}</p>
       {guide.prerequisite && <p><a href={chapterUrl(guide.prerequisite[0])}>{guide.prerequisite[1]} →</a></p>}
-      {week !== 'week-1' && week !== 'week-4' && <GenAIStoryLab stage={week}/>}
       <article className="genai-book-body">
         {guide.steps.map((step, index) => <div key={step.topic}><section className="genai-group">
           <div className="eyebrow">Step {index + 1}</div>
@@ -51,8 +50,9 @@ export default async function FirstPass({params}) {
           <div className="box idea"><p className="box-h">Why this step helps</p><p>{step.why}</p></div>
           <p><a href={chapterUrl(step.topic) + '#try-it'}>Try this idea with new numbers →</a></p>
         </section>
-        {index === 0 && (week === 'week-1' || week === 'week-4') && <GenAIStoryLab stage={week}/>}
+        {week === 'week-1' && index === 0 && <GenAIStoryLab stage={week}/>}
         </div>)}
+        {week !== 'week-1' && <GenAIStoryLab stage={week}/>}
         <details className="genai-full-explanation">
           <summary>Try another interactive example</summary>
           <GenAIExplorer kind={week}/>

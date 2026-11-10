@@ -4,6 +4,8 @@ import {BookBreadcrumbs} from '../../book-ui';
 import GenAIExplorer from '../../genai-explorer';
 import GenAIIntroQuiz from '../../genai-intro-quiz';
 import GenAIStoryLab from '../../genai-story-lab';
+import TopicFigure from '../../genai-topic-figure';
+import {beginnerLessons} from '../beginner-lessons';
 import {chapters, practiceUrl, readingOrder, readingUrl, readingWeeks, weekPracticeUrl} from '../reading-data';
 
 const explorers = {log:'log', critic:'week-1', judge:'week-2', digits:'week-3', transport:'week-4'};
@@ -45,7 +47,7 @@ export function generateStaticParams() {
 export async function generateMetadata({params}) {
   const {chapter} = await params;
   if (!Object.hasOwn(chapters, chapter)) notFound();
-  return bookMetadata(chapters[chapter].title, 'Read Machines That Imagine on BS Notes.', readingUrl(chapter));
+  return bookMetadata(beginnerLessons[chapter]?.question ?? chapters[chapter].title, 'Study the foundations of generative AI on BS Notes.', readingUrl(chapter));
 }
 
 export default async function ReadingChapter({params}) {
@@ -53,34 +55,61 @@ export default async function ReadingChapter({params}) {
   if (!Object.hasOwn(chapters, chapter)) notFound();
   const {title, body, activity} = chapters[chapter];
   const week = readingWeeks.findIndex(part => part.chapters.includes(chapter)) + 1;
+  const lesson = beginnerLessons[chapter];
   const index = readingOrder.indexOf(chapter);
   const previous = readingOrder[index - 1];
   const next = readingOrder[index + 1];
   return <main id="main" className="week-page genai-reader">
-    <BookBreadcrumbs/>
+    <BookBreadcrumbs unit={week ? 'week-' + week : undefined} chapter/>
     <nav className="genai-actions" aria-label="Reading resources">
-      <a href={readingUrl() + (week ? '#week-' + week : '')}>← Book contents</a>
+      <a href={readingUrl() + (week ? '#week-' + week : '')}>← All lessons</a>
       {chapter !== 'glossary' && <a href={readingUrl('glossary')}>Glossary and symbols</a>}
     </nav>
     <div className="genai-topic-heading">
-      <div className="eyebrow">Machines That Imagine{week ? ' · Week ' + week + ' · Chapter ' + chapter : ''}</div>
-      <h1>{title}</h1>
+      <div className="eyebrow">Generative AI from Scratch{week ? ' · Week ' + week : ''}</div>
+      <h1>{lesson?.question ?? title}</h1>
     </div>
-    <article>
-      <div className="machines-text" dangerouslySetInnerHTML={{__html:body[0]}}/>
-      {activity && <Activity kind={activity}/>}
-      {body[1] && <div className="machines-text" dangerouslySetInnerHTML={{__html:body[1]}}/>}
+    <article className="genai-book-body">
+      {lesson && <>
+        <section className="genai-group">
+          <p>{lesson.setup}</p>
+          <h2>Work through an example</h2>
+          <ol>{lesson.steps.map(step => <li key={step}>{step}</li>)}</ol>
+          <TopicFigure slug={lesson.figure}/>
+        </section>
+        <section className="genai-group">
+          <h2>Try it yourself</h2>
+          <ol>{lesson.practice.map(([question, answer]) => <li key={question}>
+            <p>{question}</p>
+            <details><summary>Show answer</summary><p>{answer}</p></details>
+          </li>)}</ol>
+        </section>
+        {activity && <details className="genai-full-explanation">
+          <summary>Try the interactive activity</summary>
+          <Activity kind={activity}/>
+        </details>}
+        {lesson.math && <details className="genai-full-explanation">
+          <summary>Why the maths works</summary>
+          <p>{lesson.math}</p>
+          {lesson.secondMath && <p>{lesson.secondMath}</p>}
+        </details>}
+      </>}
+      {lesson ? <details className="genai-full-explanation">
+        <summary>Read the detailed explanation</summary>
+        <div className="machines-text" dangerouslySetInnerHTML={{__html:body.join('')}}/>
+      </details> : <div className="machines-text" dangerouslySetInnerHTML={{__html:body.join('')}}/>}
     </article>
     {exercises[chapter] && <section className="genai-group">
-      <h2>Practise on BS Notes</h2>
+      <h2>More practice on BS Notes</h2>
       <ul className="genai-chapter-links">
         {exercises[chapter].map(topic => <li key={topic}><a href={practiceUrl(topic)}>{exerciseNames[topic]} →</a></li>)}
       </ul>
       <p><a href={weekPracticeUrl(week)}>More Week {week} practice and revision</a></p>
     </section>}
-    <nav className="week-pagination" aria-label="Chapter navigation">
-      <a href={readingUrl(previous)}>{previous ? '← ' + chapters[previous].title : '← Book contents'}</a>
-      {next && <a href={readingUrl(next)}>{chapters[next].title} →</a>}
+    {lesson && <p>{lesson.next}</p>}
+    <nav className="week-pagination" aria-label="Lesson navigation">
+      <a href={readingUrl(previous)}>{previous ? '← ' + (beginnerLessons[previous]?.question ?? chapters[previous].title) : '← All lessons'}</a>
+      {next && <a href={readingUrl(next)}>{beginnerLessons[next]?.question ?? chapters[next].title} →</a>}
     </nav>
   </main>;
 }
