@@ -9,10 +9,10 @@ export default function Subject() {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><span>{subject}</span></nav>
       <div className="eyebrow">BS Course · Generative AI from Scratch</div>
       <h1>Mathematical Foundation<br/><span>of Generative AI.</span></h1>
-      <p className="lead">Start with distributions and work up to training, adapting, and evaluating GANs. Each week includes worked examples, practice, and revision.</p>
+      <p className="lead">Start with a coin toss and a few pictures. Then learn how a machine makes new examples, how it gets feedback, and how to tell whether it has improved.</p>
       <div className="genai-actions">
-        <a className="primary" href={unitUrl('week-1')}>Start Week 1 →</a>
-        <a href={unitUrl('foundations')}>Refresh the math first</a>
+        <a className="primary" href={unitUrl('foundations')}>Start from the basics →</a>
+        <a href={unitUrl('week-1')}>Go to Week 1</a>
       </div>
       <section aria-labelledby="genai-weeks">
         <div className="section-label"><h2 id="genai-weeks">Your four-week study plan</h2><span>Book 1 · Adversarial learning</span></div>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="256" viewBox="0 0 640 256">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="256" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="39" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">Read the judge’s score for heads</text>
+<rect x="75" y="93" width="176" height="55" rx="14" fill="#e2f2ed" stroke="#26766a" stroke-width="2"/>
+<rect x="251" y="93" width="316" height="55" rx="14" fill="#fff0d8" stroke="#a45c22" stroke-width="2"/>
+<text x="163" y="127" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">50 real</text>
+<text x="409" y="127" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">90 generated</text>
+<text x="320" y="185" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">Heads total = 140</text>
+<text x="320" y="225" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Real among heads = 50 / 140</text>
+</g>
+</svg>

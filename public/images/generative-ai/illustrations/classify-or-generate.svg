@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="260" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="37" font-size="29" fill="#18354d" font-weight="650" text-anchor="middle">Look at what comes out</text>
+<rect x="22" y="61" width="180" height="72" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="112.0" y="91.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Bicycle</text>
+<text x="112.0" y="119.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">photo</text>
+<rect x="438" y="61" width="180" height="72" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="528.0" y="105.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">“Bicycle”</text>
+<text x="320" y="84" font-size="22" fill="#18354d" font-weight="650" text-anchor="middle">Classify</text>
+<path d="M224 109L416 109" fill="none" stroke="#26766a" stroke-width="4" stroke-linecap="round" marker-end="url(#teal)"/>
+<rect x="22" y="165" width="180" height="72" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="112.0" y="195.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">“Draw a</text>
+<text x="112.0" y="223.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">bicycle”</text>
+<rect x="438" y="165" width="180" height="72" rx="14" fill="#fff0d8" stroke="#b7cfcb" stroke-width="2"/>
+<text x="528.0" y="195.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">New bicycle</text>
+<text x="528.0" y="223.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">picture</text>
+<text x="320" y="188" font-size="22" fill="#18354d" font-weight="650" text-anchor="middle">Generate</text>
+<path d="M224 213L416 213" fill="none" stroke="#26766a" stroke-width="4" stroke-linecap="round" marker-end="url(#teal)"/>
+</g>
+</svg>

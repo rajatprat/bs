@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="269" viewBox="0 0 640 269">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="269" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="36" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">Can you mix the two rules?</text>
+<text x="230" y="83" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Heads</text>
+<text x="365" y="83" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Tails</text>
+<text x="500" y="83" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Whole rule</text>
+<text x="100" y="139" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Rule A</text>
+<rect x="175" y="109" width="110" height="44" rx="14" fill="#fff0d8" stroke="#b7cfcb" stroke-width="2"/>
+<text x="230.0" y="139.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">3</text>
+<rect x="310" y="109" width="110" height="44" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
+<text x="365.0" y="139.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">0</text>
+<rect x="445" y="109" width="110" height="44" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="500.0" y="139.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">3</text>
+<text x="100" y="199" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Rule B</text>
+<rect x="175" y="169" width="110" height="44" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
+<text x="230.0" y="199.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">0</text>
+<rect x="310" y="169" width="110" height="44" rx="14" fill="#fff0d8" stroke="#b7cfcb" stroke-width="2"/>
+<text x="365.0" y="199.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">2</text>
+<rect x="445" y="169" width="110" height="44" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="500.0" y="199.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">2</text>
+<text x="320" y="247" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Pick A for heads and B for tails: 3 + 2 = 5</text>
+</g>
+</svg>

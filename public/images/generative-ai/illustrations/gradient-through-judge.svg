@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="264" viewBox="0 0 640 264">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="264" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="38" font-size="29" fill="#18354d" font-weight="650" text-anchor="middle">Follow the feedback</text>
+<rect x="24" y="88" width="171" height="74" rx="14" fill="#fff0d8" stroke="#b7cfcb" stroke-width="2"/>
+<text x="109.5" y="133.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Generator</text>
+<rect x="235" y="88" width="170" height="74" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
+<text x="320.0" y="133.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Fake sample</text>
+<rect x="445" y="88" width="171" height="74" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="530.5" y="133.0" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Judge</text>
+<path d="M203 125L225 125" fill="none" stroke="#26766a" stroke-width="4" stroke-linecap="round" marker-end="url(#teal)"/>
+<path d="M413 125L435 125" fill="none" stroke="#26766a" stroke-width="4" stroke-linecap="round" marker-end="url(#teal)"/>
+<path d="M529 172Q529 233 329 233T109 174" fill="none" stroke="#a45c22" stroke-width="4" stroke-dasharray="7 5" marker-end="url(#amber)"/>
+<text x="109" y="190" font-size="20" fill="#a45c22" font-weight="650" text-anchor="middle">Update</text>
+<text x="530" y="190" font-size="20" fill="#26766a" font-weight="650" text-anchor="middle">Keep fixed</text>
+<text x="320" y="214" font-size="22" fill="#a45c22" font-weight="650" text-anchor="middle">Feedback</text>
+</g>
+</svg>

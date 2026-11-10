@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="254" viewBox="0 0 640 254">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="254" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="39" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">A filter sees a small window</text>
+<rect x="132" y="68" width="77" height="61" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="170" y="107" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">1</text>
+<rect x="232" y="68" width="77" height="61" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+<text x="270" y="107" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">2</text>
+<rect x="332" y="68" width="77" height="61" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
+<text x="370" y="107" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">3</text>
+<rect x="432" y="68" width="77" height="61" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
+<text x="470" y="107" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">4</text>
+<path d="M132 144v10h177v-10" stroke="#26766a" stroke-width="3" fill="none"/>
+<text x="221" y="188" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">First window</text>
+<text x="320" y="226" font-size="25" fill="#18354d" font-weight="650" text-anchor="middle">0.5 × 1 + 0.5 × 2 = 1.5</text>
+</g>
+</svg>

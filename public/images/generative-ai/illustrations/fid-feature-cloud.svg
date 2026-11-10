@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="263" viewBox="0 0 640 263">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="263" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="39" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">Read the feature cloud</text>
+<circle cx="123" cy="194" r="7" fill="#26766a"/>
+<circle cx="144" cy="172" r="7" fill="#26766a"/>
+<circle cx="172" cy="165" r="7" fill="#26766a"/>
+<circle cx="205" cy="138" r="7" fill="#26766a"/>
+<circle cx="236" cy="120" r="7" fill="#26766a"/>
+<circle cx="257" cy="105" r="7" fill="#26766a"/>
+<circle cx="203" cy="122" r="7" fill="#26766a"/>
+<circle cx="159" cy="180" r="7" fill="#26766a"/>
+<path d="M102 207L278 93" stroke="#18354d" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="190" cy="150" r="9" fill="#a45c22"/>
+<text x="426" y="117" font-size="25" fill="#18354d" font-weight="650" text-anchor="middle">Centre</text>
+<text x="426" y="149" font-size="20" fill="#18354d" font-weight="650" text-anchor="middle">Where the cloud sits</text>
+<text x="426" y="198" font-size="25" fill="#18354d" font-weight="650" text-anchor="middle">Covariance</text>
+<text x="426" y="229" font-size="20" fill="#18354d" font-weight="650" text-anchor="middle">How it spreads and tilts</text>
+</g>
+</svg>

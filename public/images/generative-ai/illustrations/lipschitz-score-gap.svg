@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="254" viewBox="0 0 640 254">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="254" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="39" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">The critic can change by at most 3</text>
+<path d="M116 141H524" stroke="#18354d" stroke-width="3"/>
+<circle cx="196" cy="141" r="11" fill="#26766a"/>
+<text x="196" y="115" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">Real</text>
+<text x="196" y="179" font-size="25" fill="#18354d" font-weight="650" text-anchor="middle">2</text>
+<circle cx="444" cy="141" r="11" fill="#a45c22"/>
+<text x="444" y="115" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">Generated</text>
+<text x="444" y="179" font-size="25" fill="#18354d" font-weight="650" text-anchor="middle">5</text>
+<text x="320" y="222" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">Distance = 5 − 2 = 3</text>
+</g>
+</svg>

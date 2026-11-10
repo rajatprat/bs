@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="266" viewBox="0 0 640 266">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="266" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="36" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">What did the four tosses score?</text>
+<text x="93" y="77" font-size="22" fill="#18354d" font-weight="650" text-anchor="middle">Toss 1</text>
+<circle cx="93" cy="117" r="27" fill="#e2f2ed" stroke="#26766a" stroke-width="2"/>
+<text x="93" y="125" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">H</text>
+<text x="93" y="174" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Heads</text>
+<text x="93" y="204" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">+0</text>
+<text x="244" y="77" font-size="22" fill="#18354d" font-weight="650" text-anchor="middle">Toss 2</text>
+<circle cx="244" cy="117" r="27" fill="#fff0d8" stroke="#26766a" stroke-width="2"/>
+<text x="244" y="125" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">T</text>
+<text x="244" y="174" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Tails</text>
+<text x="244" y="204" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">+2</text>
+<text x="395" y="77" font-size="22" fill="#18354d" font-weight="650" text-anchor="middle">Toss 3</text>
+<circle cx="395" cy="117" r="27" fill="#fff0d8" stroke="#26766a" stroke-width="2"/>
+<text x="395" y="125" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">T</text>
+<text x="395" y="174" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Tails</text>
+<text x="395" y="204" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">+2</text>
+<text x="546" y="77" font-size="22" fill="#18354d" font-weight="650" text-anchor="middle">Toss 4</text>
+<circle cx="546" cy="117" r="27" fill="#e2f2ed" stroke="#26766a" stroke-width="2"/>
+<text x="546" y="125" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">H</text>
+<text x="546" y="174" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Heads</text>
+<text x="546" y="204" font-size="24" fill="#18354d" font-weight="650" text-anchor="middle">+0</text>
+<text x="320" y="246" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">4 points ÷ 4 tosses = 1 point per toss</text>
+</g>
+</svg>

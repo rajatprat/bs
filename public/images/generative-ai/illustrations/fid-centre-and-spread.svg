@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="264" viewBox="0 0 640 264">
+<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
+<rect width="640" height="264" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif">
+<text x="320" y="38" font-size="28" fill="#18354d" font-weight="650" text-anchor="middle">Two ways the features can differ</text>
+<rect x="26" y="67" width="275" height="170" rx="14" fill="#fff" stroke="#c0d0d4" stroke-width="2"/>
+<text x="163" y="104" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Centre shifts</text>
+<circle cx="80" cy="156" r="6" fill="#26766a"/>
+<circle cx="92" cy="156" r="6" fill="#26766a"/>
+<circle cx="104" cy="156" r="6" fill="#26766a"/>
+<circle cx="116" cy="156" r="6" fill="#26766a"/>
+<circle cx="128" cy="156" r="6" fill="#26766a"/>
+<circle cx="186" cy="191" r="6" fill="#a45c22"/>
+<circle cx="198" cy="191" r="6" fill="#a45c22"/>
+<circle cx="210" cy="191" r="6" fill="#a45c22"/>
+<circle cx="222" cy="191" r="6" fill="#a45c22"/>
+<circle cx="234" cy="191" r="6" fill="#a45c22"/>
+<text x="163" y="223" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Same spread</text>
+<rect x="339" y="67" width="275" height="170" rx="14" fill="#fff" stroke="#c0d0d4" stroke-width="2"/>
+<text x="476" y="104" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Spread changes</text>
+<circle cx="453" cy="156" r="6" fill="#26766a"/>
+<circle cx="465" cy="156" r="6" fill="#26766a"/>
+<circle cx="477" cy="156" r="6" fill="#26766a"/>
+<circle cx="489" cy="156" r="6" fill="#26766a"/>
+<circle cx="501" cy="156" r="6" fill="#26766a"/>
+<circle cx="419" cy="191" r="6" fill="#a45c22"/>
+<circle cx="448" cy="191" r="6" fill="#a45c22"/>
+<circle cx="477" cy="191" r="6" fill="#a45c22"/>
+<circle cx="506" cy="191" r="6" fill="#a45c22"/>
+<circle cx="535" cy="191" r="6" fill="#a45c22"/>
+<text x="476" y="223" font-size="21" fill="#18354d" font-weight="650" text-anchor="middle">Same centre</text>
+</g>
+</svg>

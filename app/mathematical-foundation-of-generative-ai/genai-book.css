@@ -82,3 +82,294 @@
 @media (max-width: 540px) {
   .genai-reader .week-pagination { flex-wrap: wrap; }
 }
+
+#week-topics { scroll-margin-top: 6rem; }
+.genai-book-body .genai-group > h2 { margin-top: .35rem; }
+
+.genai-topic-heading {
+  margin-block: 1.1rem 1.5rem;
+}
+.genai-topic-heading h1 {
+  margin: .35rem 0 .65rem;
+  overflow-wrap: anywhere;
+}
+.genai-topic-heading > a { display: inline-block; }
+
+.genai-explorer {
+  margin-block: 1.5rem 2rem;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid #cbdedb;
+  border-radius: 1rem;
+  background: #f1f7f6;
+}
+.genai-explorer h2 { margin: .3rem 0 1rem; }
+.genai-explorer p:last-child { margin-bottom: 0; }
+.genai-explorer select {
+  margin: .25rem .4rem .4rem;
+  padding: .3rem .5rem;
+  font: inherit;
+}
+.genai-slider {
+  display: grid;
+  gap: .35rem;
+  margin: .6rem 0 .9rem;
+}
+.genai-slider input {
+  width: min(100%, 32rem);
+  min-height: 28px;
+  margin: 0;
+  accent-color: #236d60;
+}
+.genai-slider strong { margin-left: .4rem; }
+.genai-plot {
+  display: block;
+  width: min(100%, 32rem);
+  height: auto;
+  margin: .8rem auto;
+  border-radius: .65rem;
+  background: #fff;
+  font: 14px system-ui, sans-serif;
+}
+
+.genai-book-body .genai-math-table {
+  display: table;
+  width: 100%;
+}
+.genai-book-body .genai-math-table th,
+.genai-book-body .genai-math-table td {
+  padding: .95rem clamp(.9rem, 2.7vw, 1.55rem);
+  vertical-align: top;
+}
+.genai-math-table th:first-child { width: 36%; }
+.genai-math-table tbody tr + tr { border-top: 1px solid #dce4ea; }
+.genai-math-line {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-block: .22rem;
+  line-height: 1.65;
+}
+.genai-math-line + .genai-math-line { margin-top: .2rem; }
+.genai-math-label { display: none; }
+
+@media (max-width: 640px) {
+  .genai-book-body .genai-math-table,
+  .genai-math-table tbody,
+  .genai-math-table tbody tr,
+  .genai-math-table td { display: block; }
+  .genai-math-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    overflow: hidden;
+  }
+  .genai-book-body .genai-math-table td { border: 0; }
+  .genai-book-body .genai-math-table td + td { padding-top: 0; }
+  .genai-math-label {
+    display: block;
+    color: #48617a;
+    font: 700 .8rem system-ui, sans-serif;
+    margin-bottom: .25rem;
+  }
+}
+
+.genai-book-body .review h2 {
+  margin: 0 0 .8rem;
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+}
+.genai-book-body .review h3 {
+  margin: 1.1rem 0 .45rem;
+  font-size: 1.15rem;
+}
+.genai-book-body .review ul,
+.genai-book-body .review ol { padding-inline-start: 1.45rem; }
+.genai-book-body .review li > p:first-child { margin-top: 0; }
+.genai-review-answer { margin-block: .65rem 1rem; }
+.genai-review-answer summary {
+  width: fit-content;
+  padding: .35rem .65rem;
+  border: 1px solid #cbdedb;
+  border-radius: .35rem;
+  background: #f1f7f6;
+  color: #205c52;
+  font-size: .95rem;
+}
+.genai-review-solution {
+  padding: .65rem .85rem;
+  margin-top: .45rem;
+  border-inline-start: 3px solid #cbdedb;
+}
+.genai-book-body .review .katex-display {
+  text-align: left;
+  padding-block: .55rem;
+}
+.genai-book-body .review .katex-display > .katex { text-align: left; }
+
+.genai-book-body .genai-compact-table {
+  width: fit-content;
+  max-width: 100%;
+}
+.genai-book-body .genai-compact-table th,
+.genai-book-body .genai-compact-table td { padding: .55rem .75rem; }
+.genai-book-body .genai-compact-table tbody th {
+  background: #f3f7f8;
+  font-weight: 600;
+}
+.genai-book-body .katex-display {
+  margin-block: 1rem;
+  padding: .6rem .15rem;
+}
+.genai-book-body .katex-display > .katex {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+}
+
+.genai-math-notes {
+  margin-block: 1rem 1.5rem;
+  padding: .65rem .9rem;
+  border: 1px solid #cbdedb;
+  border-radius: .55rem;
+  background: #f1f7f6;
+}
+.genai-math-notes details { margin-block: .75rem .25rem; }
+
+.genai-book-body .genai-illustration {
+  max-width: 42rem;
+  margin: 1.6rem auto;
+  overflow: hidden;
+  border: 1px solid #dce4ea;
+  border-radius: .85rem;
+  background: #fff;
+}
+.genai-illustration img { width: 100%; }
+.genai-illustration figcaption {
+  margin: 0;
+  padding: .65rem .85rem .75rem;
+  border-top: 1px solid #dce4ea;
+}
+
+.genai-book-body .genai-worked-steps {
+  padding: clamp(.85rem, 2.4vw, 1.4rem);
+}
+.genai-worked-steps ol { padding-inline-start: 1.4rem; }
+.genai-worked-steps li + li {
+  margin-top: .9rem;
+  padding-top: .7rem;
+  border-top: 1px solid #e8ded2;
+}
+.genai-worked-steps li > p:first-child { margin-top: 0; }
+.genai-worked-steps .katex-display { text-align: left; }
+.genai-worked-steps .katex-display > .katex { text-align: left; }
+
+.genai-mastery h2 { max-width: 36ch; }
+.genai-mastery h3 { font-size: 1.12rem; margin: 0 0 .45rem; }
+.genai-mastery p { margin-block: .45rem .8rem; }
+.genai-mastery-step { border-top: 1px solid #dce4ea; margin-top: 1rem; padding-top: .9rem; }
+.genai-mastery details {
+  padding: .55rem .75rem;
+  border-radius: .45rem;
+  background: #f0f7f6;
+}
+.genai-mastery summary { cursor: pointer; color: #205c52; font-weight: 650; }
+.genai-mastery-step, #formal-lesson { scroll-margin-top: 6rem; }
+
+.genai-full-explanation {
+  border: 1px solid #cbdedb;
+  border-radius: .75rem;
+  margin: 1.5rem 0;
+  padding: .8rem 1rem;
+  background: #fff;
+}
+.genai-full-explanation > summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #205c52;
+}
+.genai-full-explanation .genai-contents p { margin: 0 0 .4rem; }
+.genai-mastery .genai-mastery-ready { margin-top: 1rem; color: #3f536a; }
+.genai-intro-quiz {
+  margin-block: 1rem 1.2rem;
+  padding: clamp(.8rem, 3vw, 1.25rem);
+  border: 1px solid #cbdedb;
+  border-radius: .65rem;
+  background: #f1f7f6;
+}
+.genai-intro-quiz dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+.genai-intro-quiz dl > div { padding: .6rem .7rem; border-radius: .4rem; background: #fff; }
+.genai-intro-quiz dt { font-weight: 700; }
+.genai-intro-quiz dd { margin: .25rem 0 0; }
+.genai-quiz-options { display: flex; flex-wrap: wrap; gap: .5rem; }
+.genai-intro-quiz button {
+  font: inherit;
+  font-weight: 650;
+  color: #205c52;
+  background: #fff;
+  border: 1px solid #8cb6ad;
+  border-radius: .45rem;
+  padding: .45rem .7rem;
+  min-height: 44px;
+  cursor: pointer;
+}
+.genai-intro-quiz button[aria-pressed="true"] { color: #fff; background: #205c52; }
+.genai-quiz-feedback { min-height: 1.5em; }
+@media (max-width: 480px) {
+  .genai-intro-quiz dl { grid-template-columns: 1fr; }
+}
+
+.genai-topic-figure {
+  max-width: 40rem;
+  margin: .85rem auto 1.25rem;
+  border: 1px solid #dce4ea;
+  border-radius: .65rem;
+  overflow: hidden;
+  background: #fff;
+}
+.genai-topic-figure img { display: block; width: 100%; height: auto; }
+.genai-topic-figure figcaption {
+  padding: .55rem .75rem;
+  border-top: 1px solid #dce4ea;
+  color: #3f536a;
+  font-size: .92rem;
+}
+
+.genai-story-lab { background: #f1f7f6; }
+.genai-story-lab h3 { margin: 1.15rem 0 .4rem; font-size: 1.12rem; }
+.genai-story-lab button {
+  min-height: 44px;
+  padding: .4rem .7rem;
+  border: 1px solid #8cb6ad;
+  border-radius: .45rem;
+  background: #fff;
+  color: #205c52;
+  font: inherit;
+  cursor: pointer;
+}
+.genai-story-lab button[aria-pressed="true"] { color: #fff; background: #205c52; }
+.genai-story-lab select { font: inherit; }
+.genai-story-lab summary { font-weight: 700; cursor: pointer; }
+.genai-story-lab ol { padding-inline-start: 1.35rem; }
+.genai-story-next { border-top: 1px solid #cbdedb; padding-top: .75rem; }
+.genai-coin-scale {
+  position: relative;
+  height: 1.1rem;
+  margin: .7rem .25rem .9rem;
+  border-radius: .4rem;
+  background: #f5d6ab;
+}
+.genai-coin-scale > div { height: 100%; border-radius: .4rem; background: #559589; }
+.genai-coin-scale > span {
+  position: absolute;
+  top: -.15rem;
+  width: .2rem;
+  height: 1.4rem;
+  background: #18354d;
+}
+
+.genai-simple-steps, .genai-extra-practice ol { padding-inline-start: 1.35rem; }
+.genai-simple-steps li + li, .genai-extra-practice li + li { margin-top: .65rem; }
+.genai-extra-practice {
+  border-top: 1px solid #dce4ea;
+  padding-top: .9rem;
+  margin-top: 1rem;
+}
