@@ -1,7 +1,7 @@
 import {bookBase, bookMetadata, chapters, chapterUrl, subject, units, unitUrl, weekKeys} from '../../lib/genai-book';
 import {ChapterLinks} from './book-ui';
 
-export const metadata = bookMetadata(subject, 'Study the first four weeks through worked examples, illustrated lessons, practice questions, and optional math foundations.', bookBase);
+export const metadata = bookMetadata(subject, 'Study the original illustrated notes for GenAI Weeks 1 and 2, with worked examples and practice questions.', bookBase);
 
 export default function Subject() {
   return (
@@ -9,13 +9,22 @@ export default function Subject() {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><span>{subject}</span></nav>
       <div className="eyebrow">BS Course · Generative AI from Scratch</div>
       <h1>Mathematical Foundation<br/><span>of Generative AI.</span></h1>
-      <p className="lead">Choose the original illustrated notes for Weeks 1 and 2 or the BS Notes study plan for Weeks 1–4.</p>
-      <div className="genai-actions">
-        <a className="primary" href={bookBase + 'archive/'}>Open original illustrated notes →</a>
-        <a href="#genai-weeks">Open the four-week study plan</a>
-      </div>
-      <section aria-labelledby="genai-weeks">
-        <div className="section-label"><h2 id="genai-weeks">BS Notes four-week study plan</h2><span>Adversarial learning</span></div>
+      <p className="lead">Build the mathematics behind generative models through the original illustrated lessons for Weeks 1 and 2.</p>
+      <section aria-labelledby="genai-week-title" id="genai-weeks">
+        <div className="section-label"><h2 id="genai-week-title">Original illustrated lessons</h2><span>2 weeks available</span></div>
+        <a className="week-card" href={bookBase + 'archive/week-1/'}>
+          <span className="week-number">01</span>
+          <div><span className="eyebrow">Week 1</span><h2>Foundations to variational optimization</h2><p>Start with generative models, then work through distributions, divergences, and convex conjugates.</p></div>
+          <span className="open-label">Open week →</span>
+        </a>
+        <a className="week-card" href={bookBase + 'archive/week-2/'}>
+          <span className="week-number">02</span>
+          <div><span className="eyebrow">Week 2</span><h2>Realizing variational divergence minimization</h2><p>Follow the original illustrated lesson with its worked example and explained practice.</p></div>
+          <span className="open-label">Open week →</span>
+        </a>
+      </section>
+      <details className="genai-group">
+        <summary>Supplementary study notes</summary>
         {weekKeys.map((unit, i) => {
           const {label, title, description} = units[unit];
           return <a className="week-card" href={unitUrl(unit)} key={unit}>
@@ -24,7 +33,7 @@ export default function Subject() {
             <span className="open-label">Open week →</span>
           </a>;
         })}
-      </section>
+      </details>
       <section className="genai-group" id="book-resources">
         <h2>Course resources</h2>
         <p>Use the <a href={chapterUrl('start')}>reading guide</a> to get oriented, or open the <a href={unitUrl('foundations')}>optional math foundations</a> to review a topic.</p>
