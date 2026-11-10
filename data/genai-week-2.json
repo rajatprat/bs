@@ -1223,7 +1223,7 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Start here One page to check week 2. Read each row. Try to say the answer in your own words before you look at the next row."
+          "text": "Start here Scan the tables, then trace the derivation from VDM to one round of GAN training. Finish by trying the recall questions before opening the answers."
         },
         {
           "type": "heading",
@@ -1355,11 +1355,11 @@
         },
         {
           "type": "paragraph",
-          "text": "• Measure vs bound: we make the bound small, not the exact measure."
+          "text": "• Measure and bound: improve the critic to tighten the population bound within its family. Then update the generator to reduce that score. The batch score estimates the population score."
         },
         {
           "type": "paragraph",
-          "text": "• Output of the critic vs output of D: the critic's raw score can be any range. D is always between 0 and 1."
+          "text": "• Raw score and discriminator probability: the raw score can be any real number. For a finite raw score, the sigmoid output lies strictly between 0 and 1."
         },
         {
           "type": "paragraph",
@@ -1375,19 +1375,188 @@
         },
         {
           "type": "heading",
-          "text": "Practice — Quick check"
+          "text": "Trace the full derivation"
         },
         {
           "type": "paragraph",
-          "text": "Question: Write the GAN score in words. Answer: Average of log D on real data, plus average of log(1 − D) on fake data."
+          "text": "Keep one picture in mind. The real coin and the computer coin each give a batch of tosses. We want the computer to match the real coin’s chances. For images, the same goal applies to the whole distribution of pictures."
+        },
+        {
+          "type": "subheading",
+          "text": "1. Compare the two distributions"
         },
         {
           "type": "paragraph",
-          "text": "Question: Which network is frozen in the generator's turn? Answer: The critic."
+          "text": "The real distribution is fixed. The generated distribution changes when we change the generator weights θ. The goal of VDM is to find weights that make the chosen divergence small."
+        },
+        {
+          "type": "equation",
+          "tex": "\\min_\\theta D_f(P_X\\,\\|\\,P_\\theta)"
         },
         {
           "type": "paragraph",
-          "text": "Question: Why does the tutorial give fake pictures the label 1 for the generator? Answer: The generator wants the critic to say \"real\" for its fake pictures."
+          "text": "We have examples from the two sources, so we use a critic to score them. The real-data average rewards the critic’s scores. The generated-data average subtracts a penalty from the conjugate. For every admissible critic, the resulting population score is a lower bound."
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}D_f(P_X\\,\\|\\,P_\\theta)&\\ge J(\\theta,T)\\\\J(\\theta,T)&=\\mathbb E_{P_X}[T(x)]\\\\&\\quad-\\mathbb E_{P_\\theta}[f^*(T(x))].\\end{aligned}"
+        },
+        {
+          "type": "subheading",
+          "text": "2. Give the critic a network"
+        },
+        {
+          "type": "paragraph",
+          "text": "With the generator fixed, search for the best critic in the network family. Its weights w control a raw number. A divergence-specific activation converts that number to a score where the conjugate is finite."
+        },
+        {
+          "type": "equation",
+          "tex": "T_w(x)=\\sigma_f\\!\\left(V_w(x)\\right)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The critic raises the score to expose a mismatch. The generator lowers it by changing the distribution it produces. The best critic in a restricted family can still give a bound below the true divergence."
+        },
+        {
+          "type": "equation",
+          "tex": "\\min_\\theta\\max_w J(\\theta,T_w)"
+        },
+        {
+          "type": "subheading",
+          "text": "3. Get the two terms of the GAN score"
+        },
+        {
+          "type": "paragraph",
+          "text": "The board uses the following function and its conjugate. The conjugate’s log needs a positive argument, so its input t must be negative."
+        },
+        {
+          "type": "equation",
+          "tex": "f(u)=u\\log u-(u+1)\\log(u+1)"
+        },
+        {
+          "type": "equation",
+          "tex": "f^*(t)=-\\log(1-e^t),\\qquad t<0"
+        },
+        {
+          "type": "paragraph",
+          "text": "This choice has f(1) equal to minus twice log 2. Adding twice log 2 normalizes it to zero at 1 and adds the same constant to the objective for every choice of weights. The updates stay the same. The equations below use the board’s original choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "Apply a sigmoid to the raw output to get the discriminator probability. Its log is negative, so it gives a valid critic score."
+        },
+        {
+          "type": "equation",
+          "tex": "D_w(x)=\\frac{1}{1+e^{-V_w(x)}}"
+        },
+        {
+          "type": "equation",
+          "tex": "T_w(x)=\\log D_w(x)=-\\log\\!\\left(1+e^{-V_w(x)}\\right)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The real term already uses the log of D. In the generated term, exponentiating the critic score gives D back. Subtracting the conjugate leaves the log of the probability assigned to “generated.”"
+        },
+        {
+          "type": "equation",
+          "tex": "-f^*\\!\\left(T_w(x)\\right)=\\log\\!\\left(1-D_w(x)\\right)"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}J_{\\mathrm{GAN}}(\\theta,w)&=\\mathbb E_{P_X}[\\log D_w(x)]\\\\&\\quad+\\mathbb E_{P_\\theta}[\\log(1-D_w(x))].\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a quick check, take the same D value of 0.8. A real example contributes log(0.8), about −0.223. A generated example contributes log(0.2), about −1.609. The true source determines which probability gets credit."
+        },
+        {
+          "type": "subheading",
+          "text": "4. Turn the expectations into batch averages"
+        },
+        {
+          "type": "paragraph",
+          "text": "Draw B₁ real examples and B₂ noise inputs. The generator maps each noise input to one generated example. Divide each sum by its own batch size, so both sources keep the same weight even when the batch sizes differ."
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}\\widehat J_{\\mathrm{GAN}}(\\theta,w)&=\\frac{1}{B_1}\\sum_{i=1}^{B_1}\\log D_w(x_i)\\\\&\\quad+\\frac{1}{B_2}\\sum_{j=1}^{B_2}\\log\\!\\left(1-D_w(g_\\theta(z_j))\\right).\\end{aligned}"
+        },
+        {
+          "type": "subheading",
+          "text": "5. Take one turn for each network"
+        },
+        {
+          "type": "paragraph",
+          "text": "First hold θ fixed. Use both batches and update the discriminator weights w. The plus sign moves uphill on the score."
+        },
+        {
+          "type": "equation",
+          "tex": "w\\leftarrow w+\\alpha_1\\nabla_w\\widehat J_{\\mathrm{GAN}},\\qquad\\alpha_1>0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Now hold w fixed. The real examples and their discriminator scores do not depend on θ. Their derivative with respect to θ is zero, so only the generated term contributes."
+        },
+        {
+          "type": "equation",
+          "tex": "\\widehat J_G(\\theta)=\\frac{1}{B_2}\\sum_{j=1}^{B_2}\\log\\!\\left(1-D_w(g_\\theta(z_j))\\right)"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the original minimax update, the minus sign moves the generator downhill on this term. The gradient travels through the fixed discriminator to reach the generator. The digit tutorial uses the non-saturating loss, which instead minimizes the negative average of log D on generated examples."
+        },
+        {
+          "type": "equation",
+          "tex": "\\theta\\leftarrow\\theta-\\alpha_2\\nabla_\\theta\\widehat J_G,\\qquad\\alpha_2>0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat with fresh batches. If the two distributions match and the discriminator is optimal with the sources equally weighted, its output is 0.5 on the shared support. A score of 0.5 from a partly trained discriminator alone does not establish a match."
+        },
+        {
+          "type": "heading",
+          "text": "Practice — recall the derivation",
+          "anchor": "practice-quick-check-20"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is the generator trying to match? Answer: The distribution of real examples. The divergence compares that distribution with the distribution of generated examples."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does the variational score give us, and what can a restricted critic miss? Answer: It gives a population lower bound on the divergence. Even the best critic in a restricted family can leave a gap."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What roles do V, the activation, and T play? Answer: V gives a raw number. The activation maps it into the allowed domain. T is the final score used in the variational objective."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the generated term become log(1 − D)? Answer: The GAN critic uses log D. Exponentiating gives D, and subtracting the conjugate leaves log(1 − D)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does each network want from a generated example? Answer: The discriminator wants its real probability low. The generator wants that probability high."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why divide the two sums by different denominators? Answer: Each denominator counts its own batch. Each sum becomes an average, so a larger batch does not give that source extra weight."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Which update uses a plus sign and which weights change? Answer: The discriminator uses ascent on the GAN score. Only its weights w change on that turn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why can the generator omit the real term, and where does the gradient flow? Answer: The real term is independent of θ. The generated term sends a gradient through the fixed discriminator back into the generator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: When does the ideal discriminator output 0.5? Answer: When real and generated distributions match, with both sources equally weighted. This holds on their shared support."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the digit tutorial give generated pictures target 1 on the generator turn? Answer: The non-saturating loss uses target 1 to reward generated pictures that the discriminator scores as real."
         }
       ],
       "resource": true
