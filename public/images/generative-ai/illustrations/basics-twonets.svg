@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="165" viewBox="0 0 640 165">
-<defs><marker id="teal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#26766a"/></marker><marker id="amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#a45c22"/></marker></defs>
-<rect width="640" height="165" fill="#fbf8f1"/>
-<g font-family="system-ui, sans-serif">
-<text x="320" y="36" font-size="27" fill="#18354d" font-weight="650" text-anchor="middle">The judge and machine take turns</text>
-<rect x="27" y="69" width="272" height="77" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
-<text x="163.0" y="101.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Turn 1</text>
-<text x="163.0" y="129.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Change judge</text>
-<rect x="341" y="69" width="272" height="77" rx="14" fill="#fff" stroke="#b7cfcb" stroke-width="2"/>
-<text x="477.0" y="101.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Turn 2</text>
-<text x="477.0" y="129.5" font-size="23" fill="#18354d" font-weight="650" text-anchor="middle">Change machine</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="244" viewBox="0 0 640 244">
+<rect width="640" height="244" fill="#fbf8f1"/>
+<g font-family="system-ui, sans-serif" text-anchor="middle" fill="#18354d">
+  <text x="320" y="36" font-size="27" font-weight="700">Where did the tails come from?</text>
+  <rect x="24" y="59" width="280" height="85" rx="14" fill="#e2f2ed" stroke="#b7cfcb" stroke-width="2"/>
+  <rect x="336" y="59" width="280" height="85" rx="14" fill="#fff0d8" stroke="#d6bd93" stroke-width="2"/>
+  <text x="164" y="92" font-size="23" font-weight="700">Real coin</text>
+  <text x="476" y="92" font-size="23" font-weight="700">Coin machine</text>
+  <text x="164" y="123" font-size="23">5 tails in 10 tosses</text>
+  <text x="476" y="123" font-size="23">1 tail in 10 tosses</text>
+  <path d="M164 150v14h156m156-14v14H320v12m-6-6 6 6 6-6" fill="none" stroke="#26766a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="213" font-size="24" font-weight="700">5 of the 6 tails were real</text>
 </g>
 </svg>

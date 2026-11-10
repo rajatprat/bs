@@ -11,10 +11,13 @@ const refreshers = {
 };
 
 export default function MasteryPractice({lesson, figure, activity, questions}) {
-  const {example, steps, words, guided, independent, refresher} = lesson;
+  const {setup, example, steps, words, guided, independent, refresher} = lesson;
   return (
     <section className="genai-group genai-mastery" id="try-it" aria-labelledby="genai-mastery-title">
       <h2 id="genai-mastery-title">Try it with a small example</h2>
+      {setup && <div className="genai-mastery-setup">
+        {setup.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+      </div>}
       {refresher && <details className="genai-mastery-refresh">
         <summary>Quick refresher · {refresher[1]}</summary>
         <p>{refreshers[refresher[0]]}</p>

@@ -1,3 +1,4 @@
+import {readingUrl} from './reading/reading-data';
 import {bookBase, bookMetadata, chapters, chapterUrl, subject, units, unitUrl, weekKeys} from '../../lib/genai-book';
 import {ChapterLinks} from './book-ui';
 
@@ -9,10 +10,10 @@ export default function Subject() {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Subjects</a><span aria-hidden="true">/</span><span>{subject}</span></nav>
       <div className="eyebrow">BS Course · Generative AI from Scratch</div>
       <h1>Mathematical Foundation<br/><span>of Generative AI.</span></h1>
-      <p className="lead">Start with a coin toss and a few pictures. Then learn how a machine makes new examples, how it gets feedback, and how to tell whether it has improved.</p>
+      <p className="lead">Read Machines That Imagine from the first example through all four weeks. Use the BS Notes activities and practice questions as you go.</p>
       <div className="genai-actions">
-        <a className="primary" href={unitUrl('foundations')}>Start from the basics →</a>
-        <a href={unitUrl('week-1')}>Go to Week 1</a>
+        <a className="primary" href={readingUrl()}>Read Machines That Imagine →</a>
+        <a href={readingUrl('glossary')}>Glossary and symbols</a>
       </div>
       <section aria-labelledby="genai-weeks">
         <div className="section-label"><h2 id="genai-weeks">Your four-week study plan</h2><span>Book 1 · Adversarial learning</span></div>

@@ -15,7 +15,7 @@ const figures = {
   "obstacle": ["basics-obstacle", 266, "Four tosses show heads, tails, tails, heads. They score zero, two, two, and zero. Four points divided by four tosses is one point per toss.", "Add every score, then divide by all four tosses."],
   "conjugate": ["basics-conjugate", 165, "Find the highest score. Try 0.5 Score 0.75. Try 1 Score 1. Try 1.5 Score 0.75.", "The input 1 wins among these three tries."],
   "bound": ["basics-bound", 269, "Rule A has heads 3 and tails 0, total 3. Rule B has heads 0 and tails 2, total 2. Mixing the best parts gives 5.", "Picking one whole rule gives 3. Mixing rows gives 5."],
-  "twonets": ["basics-twonets", 165, "The judge and machine take turns. Turn 1 Change judge. Turn 2 Change machine.", "Keep the other one fixed during each turn."],
+  "twonets": ["basics-twonets", 244, "Ten real tosses contain five tails. Ten machine tosses contain one tail. Five of the six tails came from the real coin.", "The judge spots a clue in the counts. The machine can respond by making tails more often."],
   "gd": ["basics-gd", 165, "A downhill step can move right. Start 0. Slope −6. New setting 0.6.", "Subtracting 0.1 × (−6) moves the setting up."],
   "sigmoid": ["basics-sigmoid", 165, "Turn a raw score into a chance. Raw score 0. Divide 1 ÷ (1 + 1). Chance 0.5.", "A raw score of zero becomes an even chance."],
   "ganf": ["basics-ganf", 165, "Reward the correct source. Real Use D. Fake Use 1 − D.", "D is the chance the judge gives to “real.”"],

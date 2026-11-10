@@ -18,9 +18,9 @@ const cases = {
   },
   'week-1': {
     title: 'Give the coin generator a score',
-    problem: 'The real coin is fair. Our generator makes heads 90% of the time. We want to compare them using averages we can estimate from tosses.',
-    question: 'With θ = 0.9, which critic gets the higher score?',
-    options: ['Give both outcomes 1', 'Give heads 0 and tails 2', 'They tie'],
+    problem: 'The real coin gives heads half the time. Our machine gives heads 90% of the time. To compare them, try a rule that gives one score to heads and another to tails. We call that rule a critic.',
+    question: 'At 90% machine heads, Rule A gives a real average of 1 and a penalty of 1. Rule B also gives a real average of 1, but its penalty is about 0.603. Subtract each penalty from its average. Which rule gets the higher total?',
+    options: ['Rule A · give both outcomes 1', 'Rule B · give heads 0 and tails 2', 'They tie'],
     correct: 1,
     feedback: 'Scoring heads and tails differently exposes a mismatch that the constant critic misses.',
     notation: 'The critic is T. For this KL example, the population score is E_P[T] − E_Q[exp(T−1)], where P is the real distribution and Q is the model distribution. Replacing each expectation with an observed average gives a sample estimate.',
@@ -38,7 +38,7 @@ const cases = {
   },
   'week-3': {
     title: 'Give the generator a request',
-    problem: 'There are now two coin styles. A real coin from group A has 50% heads. A real coin from group B has 75% heads. The label tells the generator which style to imitate. The seed still varies each toss.',
+    problem: 'In Week 2 the machine copied one coin. Now imagine asking it to copy either of two coins. Coin A gives 50% heads. Coin B gives 75% heads. The letter is the label, or your request. The random seed still picks the result of each toss.',
     question: 'To make another group B toss, which input should change?',
     options: ['Only the label', 'Only the random seed', 'Both'],
     correct: 1,
@@ -48,8 +48,8 @@ const cases = {
   },
   'week-4': {
     title: 'Put a speed limit on the critic',
-    problem: 'Put heads at position 0 and tails at position 1. The fair real coin has half its mass at each point. The model starts with 90% of its mass at heads. Compare how much work it takes to move the extra mass with the critic’s score gap.',
-    question: 'The points are one unit apart. Can a 1-Lipschitz critic score them 0 and 2?',
+    problem: 'Imagine 100 tokens spread between two boxes one step apart. The fair coin puts 50 tokens in each box. The machine puts 90 in heads and 10 in tails. Move 40 tokens from heads to tails to match the fair coin. Now see if a judge can measure that same gap.',
+    question: 'Give the judge a speed limit of one score point per step. Can it give these boxes scores of 0 and 2?',
     options: ['Yes, both scores are allowed', 'No, the gap is too large'],
     correct: 1,
     feedback: 'A difference of 2 across a distance of 1 exceeds the speed limit. The maximum allowed gap between the two scores is 1.',

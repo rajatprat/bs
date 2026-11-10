@@ -1,3 +1,4 @@
+import {readingUrl, readingWeeks} from './reading/reading-data';
 import {weeklyChecks} from '../../lib/genai-mastery';
 import {firstPass, firstPassUrl} from '../../lib/genai-first-pass';
 import {bookBase, chapterUrl, chapters, subject, units, unitUrl, weekKeys} from '../../lib/genai-book';
@@ -43,7 +44,8 @@ export function BookUnit({unit}) {
       <h1>{title}</h1>
       <p className="lead">{description}</p>
       <div className="genai-actions">
-        <a className="primary" href={guide ? firstPassUrl(bookBase, unit) : chapterUrl(items[0].slug)}>{guide ? 'Start with a worked example' : 'Start foundations'} →</a>
+        {guide && <a className="primary" href={readingUrl(readingWeeks[index].chapters[0])}>Read Week {index + 1} in Machines That Imagine →</a>}
+        <a className={guide ? undefined : 'primary'} href={guide ? firstPassUrl(bookBase, unit) : chapterUrl(items[0].slug)}>{guide ? 'Start with a worked example' : 'Start foundations'} →</a>
         {guide && <a href="#week-topics">Browse the full topics</a>}
         <a href="#study-review">{index < 0 ? 'Jump to revision' : 'Jump to practice and revision'}</a>
       </div>

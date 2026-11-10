@@ -373,3 +373,32 @@
   padding-top: .9rem;
   margin-top: 1rem;
 }
+
+.machines-text { color: #19324c; line-height: 1.7; overflow-wrap: break-word; }
+.machines-text h2, .machines-text h3 { margin-block: 1.8rem .6rem; line-height: 1.25; }
+.machines-text h2 small { display: block; font-size: .55em; }
+.machines-text .box { padding: .9rem 1rem; margin: 1.15rem 0; border: 1px solid #d8e4e6; border-left: 4px solid #398278; border-radius: .5rem; background: #eff7f5; }
+.machines-text .story { background: #f6f1fb; border-left-color: #7751a1; }
+.machines-text .warn { background: #fdf1ec; border-left-color: #a74a31; }
+.machines-text .detour { background: #fff6dc; border-left-color: #9d791d; }
+.machines-text .try { background: #eef4fb; border-left-color: #3f72a8; }
+.machines-text .box h4 { margin: 0 0 .45rem; }
+.machines-text .box p:last-child { margin-bottom: 0; }
+.machines-text .eq, .machines-text .steps, .machines-table { max-width: 100%; overflow-x: auto; margin: 1rem 0; }
+.machines-text .eq, .machines-text .steps { padding: .65rem .8rem; background: #fff; border: 1px solid #d8e4e6; border-radius: .45rem; }
+.machines-text .eq { text-align: center; }
+.machines-text .m { font-family: 'Cambria Math', Cambria, Georgia, serif; font-style: italic; }
+.machines-text .frac { display: inline-block; vertical-align: middle; text-align: center; }
+.machines-text .frac > span { display: block; line-height: 1.25; padding: 0 .25em; }
+.machines-text .frac > span:first-child { border-bottom: 1px solid; }
+.machines-text .steps .why { display: inline-block; color: #486075; margin-inline-start: .5em; font-size: .9em; }
+.machines-text table { border-collapse: collapse; width: 100%; background: #fff; }
+.machines-text th, .machines-text td { border: 1px solid #d8e4e6; padding: .4rem .55rem; text-align: center; }
+.machines-text th, .machines-text tr.hi { background: #eff7f5; }
+.machines-text .l { text-align: left; }
+.machines-text figure { margin: 1rem 0; text-align: center; }
+.machines-text svg { max-width: 100%; height: auto; }
+.machines-text figcaption { font-size: .92rem; color: #486075; }
+.machines-text summary { cursor: pointer; font-weight: 650; }
+.machines-text [id], .genai-group[id^="week-"] { scroll-margin-top: 6rem; }
+.machines-text .next { margin-block: 1.5rem; padding: .8rem 1rem; border: 1px dashed #9db4bd; border-radius: .5rem; }
