@@ -48,22 +48,6 @@
           "text": "Mode collapse: the generator keeps making only a few kinds of output and never covers the full data."
         },
         {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/classifier-boundary.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "A weak horizontal boundary fails while a vertical boundary still separates these distinct clusters.",
-          "caption": "A weak horizontal boundary fails while a vertical boundary still separates these distinct clusters."
-        },
-        {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/classifier-overview.webp",
-          "width": 1672,
-          "height": 941,
-          "alt": "The generator makes samples and a classifier evaluates them. Training alternates; improvement is an aim, not a guarantee.",
-          "caption": "The generator makes samples and a classifier evaluates them. Training alternates; improvement is an aim, not a guarantee."
-        },
-        {
           "type": "heading",
           "text": "The setup"
         },
@@ -144,6 +128,14 @@
           "text": "Weights are the numbers inside a neural network that the training changes. \\(\\theta\\) holds the generator's weights. \\(w\\) holds the classifier's weights."
         },
         {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/classifier-overview.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": "The generator makes samples and a classifier evaluates them. Training alternates; improvement is an aim, not a guarantee.",
+          "caption": "The generator makes samples and a classifier evaluates them. Training alternates; improvement is an aim, not a guarantee."
+        },
+        {
           "type": "heading",
           "text": "Why a failing classifier is not proof"
         },
@@ -198,6 +190,14 @@
         {
           "type": "paragraph",
           "text": "So a classifier that fails does not mean the distributions match."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/classifier-boundary.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A weak horizontal boundary fails while a vertical boundary still separates these distinct clusters.",
+          "caption": "A weak horizontal boundary fails while a vertical boundary still separates these distinct clusters."
         },
         {
           "type": "heading",
@@ -322,14 +322,6 @@
           "text": "Saddle point: a point where neither player improves its own objective by changing its weights alone."
         },
         {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/discriminator-objective.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "The discriminator rewards correct real and fake predictions using two log terms.",
-          "caption": "The discriminator rewards correct real and fake predictions using two log terms."
-        },
-        {
           "type": "heading",
           "text": "Part A: what the classifier wants"
         },
@@ -416,6 +408,14 @@
         {
           "type": "paragraph",
           "text": "If the classifier is good, \\(D_w(x)\\) is near 1 for real data. The log is near 0, which is the largest possible value. If it is also good on fake data, \\(1 - D_w(\\hat{x})\\) is near 1, and again the log is near 0."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/discriminator-objective.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "The discriminator rewards correct real and fake predictions using two log terms.",
+          "caption": "The discriminator rewards correct real and fake predictions using two log terms."
         },
         {
           "type": "heading",
@@ -537,14 +537,6 @@
           "text": "This is called adversarial optimization. The classifier and the generator fight over the same score."
         },
         {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/img03-minimax-game.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "Classifier wants J big, generator wants J small, both on one score J",
-          "caption": "One score, two players pulling in opposite directions."
-        },
-        {
           "type": "subheading",
           "text": "Detour: minimax game"
         },
@@ -575,6 +567,14 @@
         {
           "type": "paragraph",
           "text": "At \\((0,0)\\), changing only \\(\\theta\\) increases J, which the minimizing generator dislikes. Changing only \\(w\\) decreases J, which the maximizing classifier dislikes. Neither benefits by moving alone. This simple surface illustrates a saddle; real GAN objectives are more complicated."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img03-minimax-game.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Classifier wants J big, generator wants J small, both on one score J",
+          "caption": "One score, two players pulling in opposite directions."
         },
         {
           "type": "heading",
@@ -808,22 +808,6 @@
           "text": "A dimension is one number in a list. A \\(28 \\times 28\\) image has \\(28 \\times 28 = 784\\) pixel values, so its dimension is 784."
         },
         {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/transpose-example.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "A small worked example with dilation 1: each input value scales the 2 × 2 diagonal kernel; stride 2 places the contributions without overlap.",
-          "caption": "A small worked example with dilation 1: each input value scales the 2 × 2 diagonal kernel; stride 2 places the contributions without overlap."
-        },
-        {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/dcgan-overview.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "A separate 64 × 64 colour-image example. The digit tutorial below uses 28 × 28 grayscale images; these spatial sizes are not its layer dimensions.",
-          "caption": "A separate 64 × 64 colour-image example. The digit tutorial below uses 28 × 28 grayscale images; these spatial sizes are not its layer dimensions."
-        },
-        {
           "type": "heading",
           "text": "Why the input is small"
         },
@@ -898,6 +882,14 @@
         {
           "type": "paragraph",
           "text": "A channel is one layer of numbers stacked on the picture. A colour photo has 3 channels (red, green, blue). A grey digit has 1 channel."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/dcgan-overview.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A separate 64 × 64 colour-image example. The digit tutorial below uses 28 × 28 grayscale images; these spatial sizes are not its layer dimensions.",
+          "caption": "A separate 64 × 64 colour-image example. The digit tutorial below uses 28 × 28 grayscale images; these spatial sizes are not its layer dimensions."
         },
         {
           "type": "heading",
@@ -996,6 +988,14 @@
           "text": "Take the input \\(A, B, C\\). With stride 2, we put a zero between each element: \\(A, 0, B, 0, C\\). The kernel spreads each value over neighbouring output positions and overlapping contributions add. The final size also depends on kernel size and padding."
         },
         {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/transpose-example.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A small worked example with dilation 1: each input value scales the 2 × 2 diagonal kernel; stride 2 places the contributions without overlap.",
+          "caption": "A small worked example with dilation 1: each input value scales the 2 × 2 diagonal kernel; stride 2 places the contributions without overlap."
+        },
+        {
           "type": "heading",
           "text": "The tutorial's DC-GAN generator"
         },
@@ -1090,6 +1090,14 @@
           ]
         },
         {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img05-dcgan-generator.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "Generator stack from noise 100 to 256 channels, 128 channels, then 1 channel picture",
+          "caption": "These numbers count channels, not image width or height. Spatial dimensions grow while channel counts can shrink."
+        },
+        {
           "type": "subheading",
           "text": "Detour: batch norm"
         },
@@ -1116,14 +1124,6 @@
         {
           "type": "paragraph",
           "text": "tanh keeps every pixel between \\(-1\\) and \\(1\\), which matches the normalized data."
-        },
-        {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/img05-dcgan-generator.webp",
-          "width": 1920,
-          "height": 1280,
-          "alt": "Generator stack from noise 100 to 256 channels, 128 channels, then 1 channel picture",
-          "caption": "These numbers count channels, not image width or height. Spatial dimensions grow while channel counts can shrink."
         },
         {
           "type": "heading",
@@ -1264,14 +1264,6 @@
           "text": "The bar \\(\\mid\\) means \"given that\". \\(P_{x \\mid y}\\) reads \"the pattern of \\(x\\) given the label \\(y\\)\". Example: among all digit images, the 7s form their own group. \\(P_{x \\mid 7}\\) describes only those 7s."
         },
         {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/conditional-objective.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "Both real and generated image-label pairs must give the discriminator the same associated label. The generated branch also needs y, even though its arrow is omitted in this infographic.",
-          "caption": "Both real and generated image-label pairs must give the discriminator the same associated label. The generated branch also needs y, even though its arrow is omitted in this infographic."
-        },
-        {
           "type": "heading",
           "text": "The data"
         },
@@ -1410,6 +1402,14 @@
         {
           "type": "paragraph",
           "text": "Picture 1000 labelled digits. Averaging by \"pick a label, then pick an image of that label\" gives the same answer as averaging over all 1000 pairs one by one. This matches only when labels are picked in their data proportions. If 800 images are 7s and 200 are 3s, pick label 7 with chance 0.8, not 0.5."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/conditional-objective.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Both real and generated image-label pairs must give the discriminator the same associated label. The generated branch also needs y, even though its arrow is omitted in this infographic.",
+          "caption": "Both real and generated image-label pairs must give the discriminator the same associated label. The generated branch also needs y, even though its arrow is omitted in this infographic."
         },
         {
           "type": "heading",
@@ -1570,14 +1570,6 @@
           "text": "Fresh noise can produce different samples. Different inputs are not guaranteed to give distinct outputs; mode collapse or memorization can still occur."
         },
         {
-          "type": "image",
-          "src": "/images/generative-ai/week-3/lessons/img07-inference.webp",
-          "width": 1536,
-          "height": 1024,
-          "alt": "New random z goes into the trained generator, which outputs a new sample x",
-          "caption": "Change the noise to request another output. The weights stay fixed; uniqueness is not guaranteed."
-        },
-        {
           "type": "heading",
           "text": "For a conditional GAN"
         },
@@ -1592,6 +1584,14 @@
         {
           "type": "paragraph",
           "text": "The output is a new sample of the class \\(y\\). For example, with \\(y = \\) \"7\", you get a new 7."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img07-inference.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "New random z goes into the trained generator, which outputs a new sample x",
+          "caption": "Change the noise to request another output. The weights stay fixed; uniqueness is not guaranteed."
         },
         {
           "type": "subheading",
