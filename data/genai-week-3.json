@@ -1,0 +1,1852 @@
+{
+  "subject": "Mathematical Foundation of Generative AI",
+  "subjectSlug": "mathematical-foundation-of-generative-ai",
+  "week": 3,
+  "overview": "/mathematical-foundation-of-generative-ai/week-3/",
+  "previousOverview": "/mathematical-foundation-of-generative-ai/archive/week-2/",
+  "courseWeeks": [
+    1,
+    2,
+    3
+  ],
+  "base": "/mathematical-foundation-of-generative-ai/week-3/",
+  "title": "GANs, DC-GANs and conditional generation",
+  "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels.",
+  "intro": [],
+  "illustrationCount": 19,
+  "sections": [
+    {
+      "slug": "classifier-guided-view",
+      "title": "A GAN as a classifier-guided sampler",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Start here"
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 2 showed a GAN as a game of divergence. This lesson shows the same game as a game of spotting fakes. A classifier is the judge. The generator is the student who tries to fool the judge."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sampler: a machine that makes new data. Ours is the generator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Binary classifier: a machine that answers one of two labels. Here: \"real\" (1) or \"fake\" (0)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Decision boundary: the line (or curve) that splits the two groups for a classifier."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mode collapse: the generator keeps making only a few kinds of output and never covers the full data."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/classifier-boundary.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A weak horizontal boundary fails while a vertical boundary still separates these distinct clusters.",
+          "caption": "A weak horizontal boundary fails while a vertical boundary still separates these distinct clusters."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/classifier-overview.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": "The generator makes samples and a classifier evaluates them. Training alternates; improvement is an aim, not a guarantee.",
+          "caption": "The generator makes samples and a classifier evaluates them. Training alternates; improvement is an aim, not a guarantee."
+        },
+        {
+          "type": "heading",
+          "text": "The setup"
+        },
+        {
+          "type": "paragraph",
+          "text": "We have real data, \\(x_1, \\dots, x_n\\), drawn from a distribution \\(P_x\\)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: distribution \\(P_x\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "A distribution says how likely each kind of data is. For faces, it tells you how often each kind of face shows up. \\(P_x\\) is the \"true\" distribution of the real data."
+        },
+        {
+          "type": "paragraph",
+          "text": "We also have a generator. It takes random noise \\(z \\sim \\mathcal{N}(0, I)\\) and makes samples \\(\\hat{x}\\) from a distribution \\(P_\\theta\\)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: noise \\(z \\sim \\mathcal{N}(0, I)\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(z\\) is a random list of numbers. \\(\\mathcal{N}(0, I)\\) is the normal (bell-shaped) distribution centred at 0. Most values come out close to 0. The generator turns this random list into a new sample."
+        },
+        {
+          "type": "paragraph",
+          "text": "Goal: make \\(P_\\theta\\) the same as \\(P_x\\)."
+        },
+        {
+          "type": "heading",
+          "text": "The classifier idea"
+        },
+        {
+          "type": "paragraph",
+          "text": "Build a classifier \\(D_w\\) that gives:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1 when the sample comes from \\(P_x\\) (real)"
+        },
+        {
+          "type": "paragraph",
+          "text": "0 when the sample comes from \\(P_\\theta\\) (fake)"
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: binary classifier"
+        },
+        {
+          "type": "paragraph",
+          "text": "A classifier is a machine that puts an input into a group. \"Binary\" means there are only two groups. Here the two groups are \"real\" and \"fake\"."
+        },
+        {
+          "type": "subheading",
+          "text": "Everyday example"
+        },
+        {
+          "type": "paragraph",
+          "text": "A teacher can tell a real \\(100\\) rupee note from a copy, because the teacher has seen many real notes. The teacher is the classifier. The forger is the generator. The forger improves until the teacher cannot tell the difference."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: can this classifier be used to make \\(P_\\theta\\) close to \\(P_x\\)?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer: yes. Keep changing the generator's weights \\(\\theta\\) until the classifier fails to tell real from fake."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: weights \\(\\theta\\) and \\(w\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Weights are the numbers inside a neural network that the training changes. \\(\\theta\\) holds the generator's weights. \\(w\\) holds the classifier's weights."
+        },
+        {
+          "type": "heading",
+          "text": "Why a failing classifier is not proof"
+        },
+        {
+          "type": "paragraph",
+          "text": "When \\(P_x\\) and \\(P_\\theta\\) are the same, the classifier must fail. That part is true."
+        },
+        {
+          "type": "paragraph",
+          "text": "But the reverse is not true. A classifier can fail even when the two distributions are different."
+        },
+        {
+          "type": "subheading",
+          "text": "Counter-example (2D data):"
+        },
+        {
+          "type": "paragraph",
+          "text": "The real data (crosses) sits in one cluster."
+        },
+        {
+          "type": "paragraph",
+          "text": "The generated data (dots) sits in another place."
+        },
+        {
+          "type": "paragraph",
+          "text": "The first classifier \\(D_{w_1}\\) is a straight line that separates them."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: decision boundary"
+        },
+        {
+          "type": "paragraph",
+          "text": "The decision boundary is the line the classifier draws. Points on one side get the label \"real\". Points on the other side get \"fake\". Here the line is straight, but it can also be curved."
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator moves its cluster to the other side of the line. Now the classifier fails."
+        },
+        {
+          "type": "paragraph",
+          "text": "But the two clusters are still far apart. They are not the same."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img01-counter-example.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "Two clusters with a straight dashed line; the generated cluster moves across the line and the classifier fails",
+          "caption": "The classifier fails here, but the two clusters are still far apart."
+        },
+        {
+          "type": "paragraph",
+          "text": "So a classifier that fails does not mean the distributions match."
+        },
+        {
+          "type": "heading",
+          "text": "Why the classifier must move too"
+        },
+        {
+          "type": "paragraph",
+          "text": "If we keep the classifier fixed, the generator can easily fool it by moving its cluster to the other side of the line. So the classifier must also be retrained as the generator changes. The two networks take separate turns."
+        },
+        {
+          "type": "paragraph",
+          "text": "The new story:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with a generator cluster \\(P_{\\theta_1}\\) and a classifier \\(D_{w_1}\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Move the cluster to \\(P_{\\theta_2}\\) so that \\(D_{w_1}\\) fails."
+        },
+        {
+          "type": "paragraph",
+          "text": "Learn a new classifier \\(D_{w_2}\\) that separates \\(P_x\\) from \\(P_{\\theta_2}\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Move the cluster to \\(P_{\\theta_3}\\) so that \\(D_{w_2}\\) fails."
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Both networks are updated over training, usually in alternating turns. The aim is to match the full distributions; convergence is not guaranteed."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img02-classifier-generator-cycle.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Generator cluster P θ1, then classifier D w1, then cluster P θ2, then classifier D w2, then cluster P θ3",
+          "caption": "Train the classifier on current fakes, then update the generator with the classifier fixed. Repeat; do not update both weights in the same turn."
+        },
+        {
+          "type": "subheading",
+          "text": "Lecture note"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecturer warns that this can get stuck. The generator may move back and forth between two spots, and the classifier may keep switching sides. The generator never reaches the real data. This back-and-forth motion is called oscillation. Mode collapse is a different failure: the generator produces too few kinds of sample. Training a GAN is known to be unstable for this reason."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: mode collapse"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mode collapse means the generator finds a few outputs that fool the classifier and then keeps making only those. The real data has many kinds of output, but the generator covers only a few of them."
+        },
+        {
+          "type": "heading",
+          "text": "In one line"
+        },
+        {
+          "type": "paragraph",
+          "text": "A GAN is a classifier-guided sampler. The classifier learns to tell real from fake, and the generator moves until the classifier cannot tell the difference. Both must change together."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: sampler · binary classifier · decision boundary · mode collapse"
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why do designers often choose a failing classifier not enough to prove the two distributions match? Answer: A classifier can fail when the generator simply moves its samples across the decision boundary. The two distributions can still be far apart."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why must the classifier change during training? Answer: If the classifier stays fixed, the generator can easily fool it without matching the real data. Changing the classifier forces the generator to keep improving."
+        }
+      ]
+    },
+    {
+      "slug": "minimax-objective",
+      "title": "The training objective and the minimax game",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Start here"
+        },
+        {
+          "type": "paragraph",
+          "text": "We now write the classifier game as one formula. The classifier tries to make the formula big. The generator tries to make it small. Two players, one score."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see"
+        },
+        {
+          "type": "paragraph",
+          "text": "Expectation (E): the average over many samples from one source. \\(\\mathbb{E}_{x \\sim P_x}\\) means \"average over real samples\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "Log-likelihood: the log of how likely the classifier thinks a sample is. A bigger number means more confident."
+        },
+        {
+          "type": "paragraph",
+          "text": "Maximize: make a number as big as possible."
+        },
+        {
+          "type": "paragraph",
+          "text": "Minimize: make a number as small as possible."
+        },
+        {
+          "type": "paragraph",
+          "text": "Saddle point: a point where neither player improves its own objective by changing its weights alone."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/discriminator-objective.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "The discriminator rewards correct real and fake predictions using two log terms.",
+          "caption": "The discriminator rewards correct real and fake predictions using two log terms."
+        },
+        {
+          "type": "heading",
+          "text": "Part A: what the classifier wants"
+        },
+        {
+          "type": "paragraph",
+          "text": "The classifier \\(D_w(x)\\) gives a number between 0 and 1. It is the chance that \\(x\\) is real."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: expectation \\(\\mathbb{E}\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "An expectation is an average. \\(\\mathbb{E}_{x \\sim P_x}[\\cdot]\\) means: take many real samples \\(x\\), compute the value for each, and average them. Think of the average marks of a whole class."
+        },
+        {
+          "type": "paragraph",
+          "text": "Goal 1: real samples should look real. Maximize the average log-likelihood on real data:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\mathbb{E}_{x \\sim P_x}\\big[\\log D_w(x)\\big]"
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: log"
+        },
+        {
+          "type": "paragraph",
+          "text": "The log turns a chance into a score. A chance near 1 gives a log near 0, which is the top score. A small chance gives a very negative log. So \"bigger log\" means \"more sure\"."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img08-log-curve.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "Curve of log p for p from 0.01 to 1, rising to 0 at p = 1",
+          "caption": "The log is 0 at the top score and very negative for small chances."
+        },
+        {
+          "type": "paragraph",
+          "text": "Goal 2: fake samples should look fake. Maximize the average log-likelihood that a fake sample is not real. For a fake sample \\(\\hat{x}\\), \\(1 - D_w(\\hat{x})\\) is the chance that it is fake:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\mathbb{E}_{\\hat{x} \\sim P_\\theta}\\big[\\log(1 - D_w(\\hat{x}))\\big]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Both goals together give one score:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}J(\\theta,w)&=\\mathbb{E}_{x\\sim P_x}[\\log D_w(x)]\\\\&\\quad+\\mathbb{E}_{\\hat{x}\\sim P_\\theta}[\\log(1-D_w(\\hat{x}))].\\end{aligned}"
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: \\(J(\\theta, w)\\) is a score"
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(J\\) is one number that depends on two sets of weights. \\(\\theta\\) (generator) and \\(w\\) (classifier) both change \\(J\\). Each player wants a different direction."
+        },
+        {
+          "type": "subheading",
+          "text": "The classifier chooses \\(w\\) to make this bigger:"
+        },
+        {
+          "type": "equation",
+          "tex": "w^* = \\arg\\max_w J(\\theta, w)"
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: \\(\\arg\\max\\) and \\(\\arg\\min\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(\\arg\\max_w\\) means \"the value of \\(w\\) that makes the score biggest\". It is not the biggest score itself. \\(\\arg\\min_\\theta\\) is the same idea, but for the smallest score."
+        },
+        {
+          "type": "subheading",
+          "text": "Why it works"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the classifier is good, \\(D_w(x)\\) is near 1 for real data. The log is near 0, which is the largest possible value. If it is also good on fake data, \\(1 - D_w(\\hat{x})\\) is near 1, and again the log is near 0."
+        },
+        {
+          "type": "heading",
+          "text": "Worked example: score one small batch"
+        },
+        {
+          "type": "paragraph",
+          "text": "In practice, each average \\(\\mathbb{E}\\) is just the plain average over a small batch. Take 2 real samples and 2 fake samples."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Sample",
+              "\\(D_w\\) says \"real\" with chance",
+              "Value we take the log of",
+              "log"
+            ],
+            [
+              "real 1",
+              "0.8",
+              "\\(D_w(x) = 0.8\\)",
+              "\\(\\log 0.8 = -0.2231\\)"
+            ],
+            [
+              "real 2",
+              "0.6",
+              "\\(D_w(x) = 0.6\\)",
+              "\\(\\log 0.6 = -0.5108\\)"
+            ],
+            [
+              "fake 1",
+              "0.2",
+              "\\(1 - 0.2 = 0.8\\)",
+              "\\(\\log 0.8 = -0.2231\\)"
+            ],
+            [
+              "fake 2",
+              "0.3",
+              "\\(1 - 0.3 = 0.7\\)",
+              "\\(\\log 0.7 = -0.3567\\)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Step by step:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Real term: \\(\\dfrac{-0.2231 + (-0.5108)}{2} = \\dfrac{-0.7339}{2} = -0.3670\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fake term: \\(\\dfrac{-0.2231 + (-0.3567)}{2} = \\dfrac{-0.5798}{2} = -0.2899\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Score: Add the two averages: \\(-0.3670\\) plus \\(-0.2899\\). The result is \\(J=-0.6569\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The classifier changes \\(w\\) to push \\(J\\) up, toward 0. Zero is an upper bound. It can be approached with perfect separation; overlapping real and fake distributions prevent perfect separation."
+        },
+        {
+          "type": "subheading",
+          "text": "Common mix-up"
+        },
+        {
+          "type": "paragraph",
+          "text": "For a fake sample, we do not take \\(\\log 0.2\\). We take \\(\\log(1 - 0.2) = \\log 0.8\\). The fake term asks \"how sure are you that this is fake?\", and that chance is \\(1 - D_w(\\hat{x})\\)."
+        },
+        {
+          "type": "subheading",
+          "text": "Check yourself"
+        },
+        {
+          "type": "paragraph",
+          "text": "A fake sample gets \\(D_w(\\hat{x}) = 0.1\\). Another fake gets \\(D_w(\\hat{x}) = 0.9\\). Which one does the classifier prefer?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Answer Answer: 0.1. Its fake-term value is \\(\\log(1 - 0.1) = \\log 0.9 = -0.1054\\), close to 0. For 0.9, the value is \\(\\log(1 - 0.9) = \\log 0.1 = -2.3026\\), which is much worse."
+        },
+        {
+          "type": "heading",
+          "text": "Part B: what the generator wants"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator wants the classifier to fail. A failing classifier gives a smaller score. So the generator makes \\(J\\) small."
+        },
+        {
+          "type": "subheading",
+          "text": "The generator chooses \\(\\theta\\) to make this smaller:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\theta^* = \\arg\\min_\\theta J(\\theta, w)"
+        },
+        {
+          "type": "paragraph",
+          "text": "We put both goals together as one game:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\theta^* \\in \\arg\\min_\\theta \\max_w J(\\theta,w)"
+        },
+        {
+          "type": "paragraph",
+          "text": "At a solution, choose the classifier separately:"
+        },
+        {
+          "type": "equation",
+          "tex": "w^* \\in \\arg\\max_w J(\\theta^*,w)"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is called adversarial optimization. The classifier and the generator fight over the same score."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img03-minimax-game.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Classifier wants J big, generator wants J small, both on one score J",
+          "caption": "One score, two players pulling in opposite directions."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: minimax game"
+        },
+        {
+          "type": "paragraph",
+          "text": "A minimax game has two players. One player wants the score big (the max). The other wants it small (the min). The answer is the point where neither player can do better by changing alone. That point is a saddle point."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: saddle point"
+        },
+        {
+          "type": "paragraph",
+          "text": "Picture a horse saddle. Along one direction the surface curves up, and along the other it curves down. A saddle point is a spot that is the lowest in one direction and the highest in the other. The GAN game looks for this kind of spot."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-2/lessons/img01-saddle-point.svg",
+          "width": 720,
+          "height": 280,
+          "alt": "At the saddle the critic slice has a peak and the generator slice has a valley.",
+          "caption": "The same point, viewed along each player’s direction. The critic wants the peak; the generator wants the valley."
+        },
+        {
+          "type": "equation",
+          "tex": "J(\\theta,w)=\\theta^2-w^2"
+        },
+        {
+          "type": "paragraph",
+          "text": "At \\((0,0)\\), changing only \\(\\theta\\) increases J, which the minimizing generator dislikes. Changing only \\(w\\) decreases J, which the maximizing classifier dislikes. Neither benefits by moving alone. This simple surface illustrates a saddle; real GAN objectives are more complicated."
+        },
+        {
+          "type": "heading",
+          "text": "Why the real-data term drops out for the generator"
+        },
+        {
+          "type": "paragraph",
+          "text": "On the generator's turn, we only change \\(\\theta\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The real-data term \\(\\mathbb{E}_{x \\sim P_x}[\\log D_w(x)]\\) has no \\(\\theta\\) in it."
+        },
+        {
+          "type": "paragraph",
+          "text": "So its change with respect to \\(\\theta\\) is zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "Only the fake-data term depends on \\(\\theta\\), through \\(\\hat{x} = g_\\theta(z)\\)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: derivative (change with respect to \\(\\theta\\))"
+        },
+        {
+          "type": "paragraph",
+          "text": "A derivative tells you how much a number changes when one weight changes a little. If a term has no \\(\\theta\\) in it, changing \\(\\theta\\) leaves that term the same, so its derivative is zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "So the generator only needs the fake batch to learn."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: on the generator's turn, a fake sample's score \\(D_w(\\hat{x})\\) rises from 0.1 to 0.8. Its fake-term value falls from \\(\\log 0.9 = -0.1054\\) to \\(\\log 0.2 = -1.6094\\). \\(J\\) went down, so the generator did its job: the classifier now thinks this fake is real."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: \"frozen\" is not \"removed\""
+        },
+        {
+          "type": "paragraph",
+          "text": "On the generator's turn, the classifier's weights \\(w\\) are frozen (not changed). But the classifier is still used. The fake sample goes through \\(D_w\\), the score is computed, and the signal flows back through \\(D_w\\) to the generator. Frozen means \"do not update\", not \"leave out\"."
+        },
+        {
+          "type": "heading",
+          "text": "Where the game should end"
+        },
+        {
+          "type": "paragraph",
+          "text": "With equally likely real and fake sources, if the generator matches the data, \\(P_\\theta = P_x\\). Then no classifier can do better than guessing, so the best classifier says \\(D_w = 0.5\\) for every sample."
+        },
+        {
+          "type": "paragraph",
+          "text": "The score at that point is:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}J&=\\log 0.5 + \\log(1 - 0.5)\\\\&=\\log 0.5 + \\log 0.5\\\\&=-0.6931 + (-0.6931)\\\\&=-1.3863\\\\&=-\\log 4\\end{aligned}"
+        },
+        {
+          "type": "subheading",
+          "text": "Link to week 2"
+        },
+        {
+          "type": "paragraph",
+          "text": "This \\(-\\log 4\\) is the same number that appeared in week 2, where the GAN score was written as \\(2 \\cdot \\text{JS} - \\log 4\\). When the two distributions match, the JS divergence is 0, and only \\(-\\log 4\\) is left."
+        },
+        {
+          "type": "paragraph",
+          "text": "The ideal optimal-classifier relation is \\(\\max_w J=2\\operatorname{JS}(P_x\\|P_\\theta)-\\log4\\) when the classifier can represent the optimum. A restricted network may give a smaller value. Add \\(\\log4\\) to compare this score with a nonnegative divergence bound."
+        },
+        {
+          "type": "heading",
+          "text": "Only for this divergence"
+        },
+        {
+          "type": "paragraph",
+          "text": "This \"classifier\" reading only works for the GAN choice of divergence from week 2."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: divergence"
+        },
+        {
+          "type": "paragraph",
+          "text": "A divergence is a number that says how different two distributions are. Zero means they are the same. Different divergences measure the difference in different ways."
+        },
+        {
+          "type": "paragraph",
+          "text": "For other divergences, the function that plays the role of the critic does not have a classifier meaning. Keep that in mind."
+        },
+        {
+          "type": "heading",
+          "text": "The same game, seen from week 2"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecturer links the two views:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Classifier view (week 3)",
+              "Divergence view (week 2)"
+            ],
+            [
+              "Train the classifier on the current fakes",
+              "Build a lower bound on the divergence for the current \\(\\theta\\)"
+            ],
+            [
+              "A better classifier",
+              "A tighter (closer) lower bound"
+            ],
+            [
+              "Move the generator so the classifier fails",
+              "Make that lower bound smaller by changing \\(\\theta\\)"
+            ],
+            [
+              "The fakes moved, so train the classifier again",
+              "\\(\\theta\\) changed, so the divergence changed. Build a new lower bound"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: lower bound"
+        },
+        {
+          "type": "paragraph",
+          "text": "A lower bound is a number that is always less than or equal to the true value. If the true divergence is 0.9, then 0.6 and 0.85 are both lower bounds. 0.85 is \"tighter\" because it is closer to 0.9."
+        },
+        {
+          "type": "subheading",
+          "text": "Lecture note"
+        },
+        {
+          "type": "paragraph",
+          "text": "If the classifier is weak, the lower bound is loose. Then making it smaller may not move \\(P_\\theta\\) any closer to \\(P_x\\). This is one more reason GAN training is known to be unstable."
+        },
+        {
+          "type": "heading",
+          "text": "In one line"
+        },
+        {
+          "type": "paragraph",
+          "text": "The classifier maximizes one score \\(J\\), and the generator minimizes the same score. This is a minimax game."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: expectation · log-likelihood · maximize · minimize · saddle point · adversarial optimization · lower bound"
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Which player maximizes \\(J\\), and which minimizes it? Answer: The classifier \\(D_w\\) maximizes \\(J\\). The generator \\(g_\\theta\\) minimizes \\(J\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the real-data term not change the generator's update? Answer: The real-data term has no \\(\\theta\\) in it, so its derivative with respect to \\(\\theta\\) is zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Real scores are 0.9 and 0.7. Fake scores are 0.2 and 0.4. Find \\(J\\). Answer: Real term: \\((\\log 0.9 + \\log 0.7)/2 = (-0.1054 - 0.3567)/2 = -0.2310\\). Fake term: \\((\\log 0.8 + \\log 0.6)/2 = (-0.2231 - 0.5108)/2 = -0.3670\\). \\(J = -0.2310 - 0.3670 = -0.5980\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is \\(J\\) when the generator is perfect and the classifier says 0.5 for everything? Answer: \\(J = \\log 0.5 + \\log 0.5 = -1.3863 = -\\log 4\\)."
+        }
+      ]
+    },
+    {
+      "slug": "dc-gan",
+      "title": "DC-GAN: a GAN for images",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Start here"
+        },
+        {
+          "type": "paragraph",
+          "text": "A GAN can learn any kind of data. For images, a special generator works better. It starts from a small set of random numbers and grows them into a full picture."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see"
+        },
+        {
+          "type": "paragraph",
+          "text": "Latent vector \\(z\\): the random input to the generator. Its size is \\(K\\) (for example 16 or 100)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Data dimension \\(D\\): the size of one data sample. For a \\(28 \\times 28\\) grey image, \\(D = 784\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "MLP (multi-layer perceptron): a plain network where every number connects to every number in the next layer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Transposed convolution: a layer that makes the input bigger. It is also called an up-convolution or a convolution with fractional stride."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stride: how many steps the filter jumps each time."
+        },
+        {
+          "type": "paragraph",
+          "text": "Padding: extra zeros added around the input or output."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: latent vector"
+        },
+        {
+          "type": "paragraph",
+          "text": "\"Latent\" means hidden. The latent vector is a short list of random numbers that the generator never shows us directly. The generator turns this hidden list into the visible image."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: data dimension"
+        },
+        {
+          "type": "paragraph",
+          "text": "A dimension is one number in a list. A \\(28 \\times 28\\) image has \\(28 \\times 28 = 784\\) pixel values, so its dimension is 784."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/transpose-example.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A small worked example with dilation 1: each input value scales the 2 × 2 diagonal kernel; stride 2 places the contributions without overlap.",
+          "caption": "A small worked example with dilation 1: each input value scales the 2 × 2 diagonal kernel; stride 2 places the contributions without overlap."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/dcgan-overview.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A separate 64 × 64 colour-image example. The digit tutorial below uses 28 × 28 grayscale images; these spatial sizes are not its layer dimensions.",
+          "caption": "A separate 64 × 64 colour-image example. The digit tutorial below uses 28 × 28 grayscale images; these spatial sizes are not its layer dimensions."
+        },
+        {
+          "type": "heading",
+          "text": "Why the input is small"
+        },
+        {
+          "type": "paragraph",
+          "text": "In this example, the random input is much smaller than the image. This is a common design choice, not a rule for every GAN:"
+        },
+        {
+          "type": "equation",
+          "tex": "z \\in \\mathbb{R}^{K}, \\qquad x \\in \\mathbb{R}^{D}, \\qquad K \\ll D"
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: \\(\\in \\mathbb{R}^K\\) and \\(\\ll\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(z \\in \\mathbb{R}^K\\) means \\(z\\) is a list of \\(K\\) real numbers. \\(K \\ll D\\) means \\(K\\) is much smaller than \\(D\\) (the \\(\\ll\\) sign reads \"much less than\")."
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator starts small and grows. A typical path is:"
+        },
+        {
+          "type": "equation",
+          "tex": "K = 16 \\;\\to\\; 32 \\;\\to\\; 64 \\;\\to\\; \\dots \\;\\to\\; D"
+        },
+        {
+          "type": "paragraph",
+          "text": "An MLP does this with plain layers. The output is a flat list of \\(D\\) numbers, and we must reshape it into a picture."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: reshape"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reshape means to fold a flat list back into a grid. A list of 784 numbers becomes a \\(28 \\times 28\\) grid of pixels."
+        },
+        {
+          "type": "heading",
+          "text": "DC-GAN: grow the picture directly"
+        },
+        {
+          "type": "paragraph",
+          "text": "For images, DC-GAN uses transposed convolution layers in the generator. The upsampling layers grow the spatial grid. The last layer produces an image-shaped tensor. Some implementations first reshape a projected noise vector into a small feature map."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: convolution"
+        },
+        {
+          "type": "paragraph",
+          "text": "A convolution slides a small filter (a grid of weights, here \\(4 \\times 4\\)) across the picture. At each spot it multiplies and adds, and writes one number. The filter finds local patterns such as edges."
+        },
+        {
+          "type": "paragraph",
+          "text": "The data is an image with shape"
+        },
+        {
+          "type": "equation",
+          "tex": "x \\in \\mathbb{R}^{r \\times c \\times 3}"
+        },
+        {
+          "type": "paragraph",
+          "text": "where \\(r\\) is the number of rows, \\(c\\) is the number of columns, and 3 is the number of colour channels (red, green, blue)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: channels"
+        },
+        {
+          "type": "paragraph",
+          "text": "A channel is one layer of numbers stacked on the picture. A colour photo has 3 channels (red, green, blue). A grey digit has 1 channel."
+        },
+        {
+          "type": "heading",
+          "text": "How transposed convolution makes the picture bigger"
+        },
+        {
+          "type": "paragraph",
+          "text": "In this architecture, strided convolution shrinks the feature maps and transposed convolution grows them. In general, their output sizes depend on the settings."
+        },
+        {
+          "type": "paragraph",
+          "text": "For dilation 1, the output height is (apply the same rule to width):"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}H_{\\text{out}}&=(H_{\\text{in}} - 1)\\cdot s - 2p + k + p_{\\text{out}}\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(H_{\\text{in}}\\) is the input size."
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(s\\) is the stride."
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(p\\) is the padding parameter; in this transposed-convolution formula, increasing it reduces the output size."
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(k\\) is the kernel size."
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(p_{\\text{out}}\\) chooses between possible output sizes. It does not add a literal border of zeros."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: kernel size \\(k\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The kernel is the filter. Kernel size \\(k = 4\\) means a \\(4 \\times 4\\) filter."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: stride \\(s\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Stride is the step size of the filter. Stride 1 moves one pixel at a time. Stride 2 jumps two pixels. In a transposed convolution, stride 2 leaves gaps that the layer fills, so the output gets bigger."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: padding \\(p\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "For ordinary convolution, zero padding puts a border around the input. The diagram below shows this ordinary-convolution meaning. For transposed convolution, use the output-size formula: the padding parameter subtracts \\(2p\\) from the size."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img11-stride-padding.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "Same 4×4 filter on a 7×7 grid with stride 1 and stride 2, and with a border of zeros",
+          "caption": "Stride sets how far the filter jumps. Padding adds a ring of zeros at the edge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Worked example (from the tutorial): a \\(7 \\times 7\\) input with kernel \\(k = 4\\) and stride \\(s = 2\\). The lecture gives the result 15 but does not state the padding values. The values \\(p = 1\\) and \\(p_{\\text{out}} = 1\\) are our inference, because they reproduce 15:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}H_{\\text{out}}&=(7 - 1)\\cdot 2 - 2\\cdot 1 + 4 + 1\\\\&=12 - 2 + 4 + 1\\\\&=15\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "So the picture grows from \\(7 \\times 7\\) to \\(15 \\times 15\\). The tutorial uses the same rule for both rows and columns."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img04-transposed-conv.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "A 4×4 kernel sliding over a 7×7 grid to give a 15×15 grid",
+          "caption": "The 7×7 picture grows to 15×15 with the formula above."
+        },
+        {
+          "type": "subheading",
+          "text": "Why it grows: a 1D picture"
+        },
+        {
+          "type": "paragraph",
+          "text": "Take the input \\(A, B, C\\). With stride 2, we put a zero between each element: \\(A, 0, B, 0, C\\). The kernel spreads each value over neighbouring output positions and overlapping contributions add. The final size also depends on kernel size and padding."
+        },
+        {
+          "type": "heading",
+          "text": "The tutorial's DC-GAN generator"
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial uses MNIST digits (\\(28 \\times 28\\), one channel)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: MNIST"
+        },
+        {
+          "type": "paragraph",
+          "text": "MNIST is a famous set of handwritten digits (0 to 9). Each image is \\(28 \\times 28\\) and grey. It is the \"hello world\" dataset for image models."
+        },
+        {
+          "type": "paragraph",
+          "text": "The settings are:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Setting",
+              "Value"
+            ],
+            [
+              "Batch size",
+              "128"
+            ],
+            [
+              "Noise size \\(K\\)",
+              "100"
+            ],
+            [
+              "Image size",
+              "28 × 28"
+            ],
+            [
+              "Channels",
+              "1"
+            ],
+            [
+              "Epochs",
+              "50"
+            ],
+            [
+              "Learning rate",
+              "\\(2 \\times 10^{-4}\\)"
+            ],
+            [
+              "Optimizer",
+              "Adam, \\(\\beta_1 = 0.5\\)"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: batch, epoch, learning rate, optimizer"
+        },
+        {
+          "type": "paragraph",
+          "text": "A batch is a small group of samples (128 here) used for one update. An epoch is one full pass through all the training data. The learning rate (\\(2 \\times 10^{-4}\\)) is the size of each step the weights take. Small steps mean slow but steady learning. Adam is the optimizer, a method that decides how each weight moves. \\(\\beta_1 = 0.5\\) is one of its settings."
+        },
+        {
+          "type": "paragraph",
+          "text": "Generator layers, in order:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Step",
+              "What happens",
+              "Activation"
+            ],
+            [
+              "1",
+              "noise \\(100 \\to 256\\) channels, batch norm",
+              "ReLU"
+            ],
+            [
+              "2",
+              "\\(256 \\to 128\\) channels, kernel 4, stride 2, padding 1, no bias, batch norm",
+              "ReLU"
+            ],
+            [
+              "3",
+              "\\(128 \\to 1\\) channel (the picture)",
+              "tanh"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: batch norm"
+        },
+        {
+          "type": "paragraph",
+          "text": "Batch norm rescales the numbers in each layer so they have a steady average and spread. This can help training; it does not guarantee stability."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: activation (ReLU and tanh)"
+        },
+        {
+          "type": "paragraph",
+          "text": "An activation is a simple bend applied to each number. ReLU keeps positive numbers and turns negative numbers into 0. tanh squashes any number into the range \\(-1\\) to \\(1\\)."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img10-activation-shapes.webp",
+          "width": 2560,
+          "height": 1280,
+          "alt": "ReLU, LeakyReLU, tanh and sigmoid shapes side by side",
+          "caption": "Four simple bends, each with its own range of outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "tanh keeps every pixel between \\(-1\\) and \\(1\\), which matches the normalized data."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img05-dcgan-generator.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "Generator stack from noise 100 to 256 channels, 128 channels, then 1 channel picture",
+          "caption": "These numbers count channels, not image width or height. Spatial dimensions grow while channel counts can shrink."
+        },
+        {
+          "type": "heading",
+          "text": "The DC-GAN discriminator"
+        },
+        {
+          "type": "paragraph",
+          "text": "The discriminator sees the whole picture, so it uses normal convolutions:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Convolution: 1 channel \\(\\to\\) 64 channels, kernel 4, stride 2, padding 1, LeakyReLU."
+        },
+        {
+          "type": "paragraph",
+          "text": "One more convolution layer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Flatten, then one fully connected layer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sigmoid: gives the chance that the picture is real."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: LeakyReLU"
+        },
+        {
+          "type": "paragraph",
+          "text": "LeakyReLU is ReLU with a small slope for negative numbers. Negative numbers shrink but do not become 0, so negative inputs can still receive a nonzero gradient."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: flatten and fully connected layer"
+        },
+        {
+          "type": "paragraph",
+          "text": "Flatten turns the grid of numbers back into one list. A fully connected layer then connects every input number to every output number, like an MLP."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: sigmoid"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sigmoid squashes any number into the range 0 to 1. So the output can be read as a chance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Training uses BCE loss, the same as the vanilla GAN."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: BCE loss"
+        },
+        {
+          "type": "paragraph",
+          "text": "BCE (binary cross-entropy) is a loss. A loss is a score of how wrong the model is, and training tries to make it smaller. BCE is the usual loss for a yes-or-no answer like \"real or fake\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial trains the generator three times for each discriminator update."
+        },
+        {
+          "type": "heading",
+          "text": "In one line"
+        },
+        {
+          "type": "paragraph",
+          "text": "DC-GAN grows a small random vector into an image using transposed convolutions. The discriminator reads the image using normal convolutions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: latent \\(z\\) · transposed convolution · stride · padding · channels"
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why do designers often choose \\(K\\) much smaller than \\(D\\) in a GAN? Answer: The generator starts from a small random input and grows it to the full data size. A small input is enough to make many different outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What does a transposed convolution do to the size of its input? Answer: It is used to grow feature maps here. Check the output-size formula: neither layer is guaranteed to grow or shrink for every setting."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does the DC-GAN generator not need a reshape step? Answer: The final layer produces an image-shaped tensor. An earlier step may still reshape projected noise into a small feature map."
+        }
+      ]
+    },
+    {
+      "slug": "conditional-gan",
+      "title": "Conditional GAN: choose what to generate",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Start here"
+        },
+        {
+          "type": "paragraph",
+          "text": "A normal GAN makes random pictures. You cannot ask for a particular one. A conditional GAN lets you say \"make a 7\", and it makes a 7."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see"
+        },
+        {
+          "type": "paragraph",
+          "text": "Conditional distribution \\(P_{x \\mid y}\\): the pattern of \\(x\\) when we already know the label \\(y\\). For example, the pattern of digit images when the label is 7."
+        },
+        {
+          "type": "paragraph",
+          "text": "Label \\(y\\): the class of a sample, such as \"dog\" or \"7\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "One-hot encoding: a way to write a class as a list of 0s and 1s with one 1. For 10 classes, class 3 is \\([0,0,0,1,0,0,0,0,0,0]\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Embedding: a learned vector that represents a class. The tutorial uses a 10-number embedding."
+        },
+        {
+          "type": "paragraph",
+          "text": "Concatenate: join two lists into one longer list."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: conditional probability (\\(\\mid\\))"
+        },
+        {
+          "type": "paragraph",
+          "text": "The bar \\(\\mid\\) means \"given that\". \\(P_{x \\mid y}\\) reads \"the pattern of \\(x\\) given the label \\(y\\)\". Example: among all digit images, the 7s form their own group. \\(P_{x \\mid 7}\\) describes only those 7s."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/conditional-objective.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Both real and generated image-label pairs must give the discriminator the same associated label. The generated branch also needs y, even though its arrow is omitted in this infographic.",
+          "caption": "Both real and generated image-label pairs must give the discriminator the same associated label. The generated branch also needs y, even though its arrow is omitted in this infographic."
+        },
+        {
+          "type": "heading",
+          "text": "The data"
+        },
+        {
+          "type": "paragraph",
+          "text": "A conditional GAN needs pairs:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}D&=\\{(x_1, y_1), (x_2, y_2), \\dots, (x_n, y_n)\\}, \\qquad (x_i, y_i) \\sim P_{xy} \\text{ (i.i.d.)}\\end{aligned}"
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: i.i.d."
+        },
+        {
+          "type": "paragraph",
+          "text": "i.i.d. means \"independent and identically distributed\". Each pair is drawn separately (independent of the others) and from the same source (identically distributed)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: joint distribution \\(P_{xy}\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(P_{xy}\\) describes how often each pair \\((x, y)\\) shows up together. It includes both the image and its label."
+        },
+        {
+          "type": "paragraph",
+          "text": "For example, \\(x\\) is a digit image and \\(y\\) is its label (0 to 9). The labels must be known for every image. This is the same kind of data a classifier needs."
+        },
+        {
+          "type": "heading",
+          "text": "The goal"
+        },
+        {
+          "type": "paragraph",
+          "text": "A normal GAN learns \\(P_x\\). A conditional GAN learns the conditional pattern \\(P_{x \\mid y}\\) for each label. The generator then gives:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\hat{x} \\mid y \\sim P^{\\theta}_{\\hat{x} \\mid y}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The aim: make \\(P^{\\theta}_{\\hat{x} \\mid y}\\) close to \\(P_{x \\mid y}\\) for every label \\(y\\)."
+        },
+        {
+          "type": "heading",
+          "text": "How the label goes in"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nothing changes in the game. We only add the label as an extra input."
+        },
+        {
+          "type": "paragraph",
+          "text": "Generator: input is noise \\(z\\) and the label \\(y\\). Output is a fake sample for that label."
+        },
+        {
+          "type": "paragraph",
+          "text": "Discriminator: input is a sample (\\(x\\) or \\(\\hat{x}\\)) and the same label \\(y\\). The training targets are 1 for real and 0 for fake; the actual output is a score between 0 and 1."
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: to make a 7, give the generator a noise vector and the label 7. Give the discriminator the same label 7 along with the picture."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img06-conditional-inputs.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Noise and label into the generator; image and label into the discriminator",
+          "caption": "The label joins the input of both networks."
+        },
+        {
+          "type": "heading",
+          "text": "How the label is written"
+        },
+        {
+          "type": "paragraph",
+          "text": "A label can be represented by a one-hot vector or by a learned embedding. An embedding layer usually looks up the vector using the integer class index. In the tutorial’s MLP conditional GAN, the embedding has 10 numbers:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Generator input size: \\(100 + 10 = 110\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Discriminator input size: \\(784 + 10 = 794\\) (a flat \\(28 \\times 28\\) image plus 10 label numbers)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: why the sizes add up"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator gets 100 noise numbers and 10 label numbers, joined into one list of \\(100 + 10 = 110\\). The discriminator gets 784 pixel numbers and 10 label numbers, so it gets \\(784 + 10 = 794\\)."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: one-hot and embedding"
+        },
+        {
+          "type": "paragraph",
+          "text": "One-hot writes the label as a list of 10 numbers, with a 1 at the label's place and 0 everywhere else. An embedding is a short learned list that stands for the label. The network learns the best numbers for it during training."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img12-one-hot-embedding.webp",
+          "width": 1920,
+          "height": 1280,
+          "alt": "Ten-cell one-hot strip with a 1 in cell 3, next to a 10-number embedding for the same label",
+          "caption": "Same label, two ways to write it."
+        },
+        {
+          "type": "heading",
+          "text": "The score"
+        },
+        {
+          "type": "paragraph",
+          "text": "The score is the same as before, with the label in every term:"
+        },
+        {
+          "type": "equation",
+          "tex": "\\begin{aligned}J_c(\\theta,w)&=\\mathbb{E}_{(x,y)\\sim P_{xy}}[\\log D_w(x,y)]\\\\&\\quad+\\mathbb{E}_{y\\sim P_y,\\,z\\sim P_z}[\\log(1-D_w(g_\\theta(z,y),y))].\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Read the first average over real image-label pairs. Equivalently, draw the label from its data frequency \\(P_y\\), then draw an image given that label. For the fake average, draw a label and noise, generate the image, and give that same label to the discriminator."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: why the two ways of averaging match"
+        },
+        {
+          "type": "paragraph",
+          "text": "Picture 1000 labelled digits. Averaging by \"pick a label, then pick an image of that label\" gives the same answer as averaging over all 1000 pairs one by one. This matches only when labels are picked in their data proportions. If 800 images are 7s and 200 are 3s, pick label 7 with chance 0.8, not 0.5."
+        },
+        {
+          "type": "heading",
+          "text": "Training in the tutorial"
+        },
+        {
+          "type": "paragraph",
+          "text": "The generator is updated three times for each discriminator update."
+        },
+        {
+          "type": "paragraph",
+          "text": "For real images, the labels come from the data."
+        },
+        {
+          "type": "paragraph",
+          "text": "For fake images, the generator is given the label we want it to draw."
+        },
+        {
+          "type": "paragraph",
+          "text": "The tutorial shows the generated digit after each epoch, using a chosen label (for example, 7)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Result: the tutorial's conditional GAN uses only MLP layers. Its images are still blurry, and the lecturer asks students to try transposed convolution layers as an exercise."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: blurry images"
+        },
+        {
+          "type": "paragraph",
+          "text": "A plain MLP does not look at neighbouring pixels in a special way. Convolutions can use local image structure, but blurry outputs also depend on training and model capacity. Changing layers alone does not guarantee sharper images."
+        },
+        {
+          "type": "heading",
+          "text": "In one line"
+        },
+        {
+          "type": "paragraph",
+          "text": "A conditional GAN gives the label to both the generator and the discriminator. This lets you choose what the generator draws."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: conditional distribution · label · one-hot · embedding · concatenate"
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What extra input does the generator get in a conditional GAN? Answer: The label \\(y\\) (as a one-hot code or an embedding), in addition to the noise \\(z\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What is the input size of the tutorial's generator? Answer: \\(100 + 10 = 110\\): the 100 noise numbers plus the 10 label numbers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: How do you average over real image-label pairs? Answer: Take a label \\(y\\) with its data frequency \\(P_y\\), then take \\(x\\) from \\(P_{x \\mid y}\\) for that label. Averaging this way is the same as averaging over the training pairs \\((x, y)\\)."
+        },
+        {
+          "type": "heading",
+          "text": "Practice: follow one label through the whole game"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: You request label 7. The generator draws a convincing 3. Should the discriminator accept the pair as a good match? Answer: No. The discriminator receives the image together with label 7. Looking realistic is not enough: the image must match the label too."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: A dataset has 800 sevens and 200 threes. To reproduce its label frequencies, how often should you choose label 7? Answer: 800 ÷ 1000 = 0.8, or 80% of the time. Choosing each label 50% of the time would create a different label mixture."
+        }
+      ]
+    },
+    {
+      "slug": "inference",
+      "title": "Inference: making new samples from a trained GAN",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Start here"
+        },
+        {
+          "type": "paragraph",
+          "text": "Training is done. Now we use the generator to make new data. This is called inference, or data generation."
+        },
+        {
+          "type": "heading",
+          "text": "Words you will see"
+        },
+        {
+          "type": "paragraph",
+          "text": "Trained generator \\(g_{\\theta^*}\\): the generator after training. Its weights are fixed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Test noise \\(z_{\\text{test}}\\): a new random vector drawn from \\(\\mathcal{N}(0, I)\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Inference: using a trained model to make new outputs."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: fixed weights"
+        },
+        {
+          "type": "paragraph",
+          "text": "\"Fixed\" means we no longer change the weights. Training is over, so the generator's numbers stay the same for every new sample."
+        },
+        {
+          "type": "heading",
+          "text": "The idea"
+        },
+        {
+          "type": "paragraph",
+          "text": "We are given the trained generator \\(g_{\\theta^*}\\). We want a sample that looks like it came from the real data \\(P_x\\), but is not one of the training examples."
+        },
+        {
+          "type": "paragraph",
+          "text": "If training went well, \\(P_\\theta\\) is now close to \\(P_x\\). So a fresh random input should give a realistic output."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: training example vs new sample"
+        },
+        {
+          "type": "paragraph",
+          "text": "A training example is one of the images the model learned from. A new sample is a fresh output that the model makes. The aim is realistic, varied outputs. A fresh output is not proof that the network has avoided copying a training example."
+        },
+        {
+          "type": "heading",
+          "text": "Steps"
+        },
+        {
+          "type": "paragraph",
+          "text": "Draw a random vector from the normal distribution: \\(z_{\\text{test}} \\sim \\mathcal{N}(0, I)\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pass it through the trained generator: \\(x_{\\text{test}} = g_{\\theta^*}(z_{\\text{test}})\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The output \\(x_{\\text{test}}\\) is your new sample."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: normal distribution \\(\\mathcal{N}(0, I)\\)"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the bell-shaped random distribution. Mean 0 means values gather around 0. \\(I\\) (the identity) means each number in the vector has the same spread and no link to the others."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fresh noise can produce different samples. Different inputs are not guaranteed to give distinct outputs; mode collapse or memorization can still occur."
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img07-inference.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "New random z goes into the trained generator, which outputs a new sample x",
+          "caption": "Change the noise to request another output. The weights stay fixed; uniqueness is not guaranteed."
+        },
+        {
+          "type": "heading",
+          "text": "For a conditional GAN"
+        },
+        {
+          "type": "paragraph",
+          "text": "Give the label as well:"
+        },
+        {
+          "type": "equation",
+          "tex": "x_{\\text{test}} = g_{\\theta^*}(z_{\\text{test}}, y)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The output is a new sample of the class \\(y\\). For example, with \\(y = \\) \"7\", you get a new 7."
+        },
+        {
+          "type": "subheading",
+          "text": "Lecture example: faces"
+        },
+        {
+          "type": "paragraph",
+          "text": "The lecturer shows a website that makes a new face each time you refresh it. A fresh random input is passed through a trained face generator. This illustrates inference; a generated face is not evidence of uniqueness or absence of training-data memorization."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the training data had labels such as \"boy\" or \"girl\", a conditional version could take the label as a second input. Then you could choose the kind of face you want."
+        },
+        {
+          "type": "heading",
+          "text": "In one line"
+        },
+        {
+          "type": "paragraph",
+          "text": "Inference is simple: give the trained generator a new random vector (and a label, if conditional), and it outputs a new sample."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: trained generator · test noise · inference · conditional inference"
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Why does a new random vector give a new sample? Answer: The generator turns each input into an output. Changing the input can change the output. It does not guarantee a distinct image: a collapsed generator may repeat outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What extra input do you give for a conditional GAN at inference time? Answer: The label \\(y\\), so the generator makes a sample of that class."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: You want five different styles of the digit 7. Which inputs should change and which should stay fixed? Answer: Keep the trained weights and label 7 fixed. Draw fresh noise for each request. This encourages variation, although five distinct outputs are not guaranteed."
+        }
+      ]
+    },
+    {
+      "slug": "quick-revision",
+      "title": "Quick revision: week 3",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Start here"
+        },
+        {
+          "type": "paragraph",
+          "text": "One page to check week 3. Say each answer in your own words before you look at it."
+        },
+        {
+          "type": "heading",
+          "text": "The big picture"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Question",
+              "Simple answer"
+            ],
+            [
+              "What is the classifier for?",
+              "It learns to tell real samples from fake ones"
+            ],
+            [
+              "Does a failing classifier prove a match?",
+              "No. The classifier can fail even when the two distributions differ"
+            ],
+            [
+              "What is the training score?",
+              "\\(J(\\theta, w)\\), built from log-likelihoods of real and fake samples"
+            ],
+            [
+              "Who maximizes \\(J\\)?",
+              "The classifier \\(D_w\\)"
+            ],
+            [
+              "Who minimizes \\(J\\)?",
+              "The generator \\(g_\\theta\\)"
+            ],
+            [
+              "What is the full game?",
+              "\\(\\min_\\theta \\max_w J(\\theta, w)\\), called adversarial optimization"
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/generative-ai/week-3/lessons/img13-week3-map.webp",
+          "width": 1536,
+          "height": 1024,
+          "alt": "The week 3 chain: classifier, score J, minimax game, DC-GAN, conditional GAN",
+          "caption": "The whole week in one chain."
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: minimax"
+        },
+        {
+          "type": "paragraph",
+          "text": "Minimax means one player maximizes and the other minimizes the same score. The game is solved at a saddle point, where neither player gains by moving alone."
+        },
+        {
+          "type": "heading",
+          "text": "Architectures"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Model",
+              "Generator",
+              "Discriminator"
+            ],
+            [
+              "Vanilla GAN",
+              "MLP (plain layers)",
+              "MLP"
+            ],
+            [
+              "DC-GAN",
+              "Transposed convolutions (grow the picture)",
+              "Convolutions"
+            ],
+            [
+              "Conditional GAN",
+              "MLP or convolutions, plus the label",
+              "MLP or convolutions, plus the label"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Detour: MLP vs convolution"
+        },
+        {
+          "type": "paragraph",
+          "text": "An MLP connects every number to every number in the next layer. A convolution uses a small filter that slides over the picture and looks at local patches. Convolutions suit images better."
+        },
+        {
+          "type": "heading",
+          "text": "Numbers to remember"
+        },
+        {
+          "type": "paragraph",
+          "text": "Typical noise size: \\(K = 16\\), \\(32\\), \\(64\\), or \\(100\\) in the tutorial. Often \\(K \\ll D\\); it is a design choice."
+        },
+        {
+          "type": "paragraph",
+          "text": "Transposed convolution output: \\(H_{\\text{out}} = (H_{\\text{in}} - 1)\\cdot s - 2p + k + p_{\\text{out}}\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutorial: batch size 128, noise size 100, 50 epochs, learning rate \\(2 \\times 10^{-4}\\), Adam with \\(\\beta_1 = 0.5\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutorial: generator updated 3 times for each discriminator update."
+        },
+        {
+          "type": "paragraph",
+          "text": "Conditional GAN input sizes: generator \\(100 + 10 = 110\\); discriminator \\(784 + 10 = 794\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Batch example: real scores 0.8, 0.6 and fake scores 0.2, 0.3 give Add the two averages: \\(-0.3670\\) plus \\(-0.2899\\). The result is \\(J=-0.6569\\).."
+        },
+        {
+          "type": "paragraph",
+          "text": "Perfect generator: classifier says 0.5 everywhere, so \\(J = -\\log 4 = -1.3863\\)."
+        },
+        {
+          "type": "heading",
+          "text": "Lecture points that are easy to miss"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mode collapse: the generator covers too few types of real data. Oscillation means updates keep moving back and forth; it is a separate instability."
+        },
+        {
+          "type": "paragraph",
+          "text": "Real-data term drops out on the generator's turn, because it has no \\(\\theta\\) in it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Frozen is not removed: on the generator's turn, the classifier's weights do not change, but the classifier is still used to score the fakes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Only for this divergence: the classifier reading works only for the GAN's choice of divergence."
+        },
+        {
+          "type": "paragraph",
+          "text": "Lower-bound link: training the classifier is the same as building a lower bound on the divergence. A better classifier gives a tighter bound."
+        },
+        {
+          "type": "paragraph",
+          "text": "\\(K \\ll D\\): the noise vector is much smaller than the image."
+        },
+        {
+          "type": "heading",
+          "text": "Common mix-ups"
+        },
+        {
+          "type": "paragraph",
+          "text": "Classifier fails vs distributions match: a classifier failure does not prove the two distributions are the same."
+        },
+        {
+          "type": "paragraph",
+          "text": "Which way each player moves: the classifier maximizes \\(J\\); the generator minimizes it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Transposed convolution vs convolution: these layers grow or shrink feature maps depending on stride, kernel, padding, and other settings."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fake term: for a fake sample with score 0.2, take \\(\\log(1 - 0.2) = \\log 0.8\\), not \\(\\log 0.2\\)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Conditional distribution vs joint: average real pairs from \\(P_{xy}\\); equivalently pick labels with their data frequencies, then images given the labels."
+        },
+        {
+          "type": "paragraph",
+          "text": "Inference: you need only the trained generator and new noise, not the discriminator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Words to remember: classifier · \\(J(\\theta,w)\\) · minimax · transposed convolution · label · inference"
+        },
+        {
+          "type": "heading",
+          "text": "Quick check"
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: Write the training game in one line. Answer: \\(\\min_\\theta \\max_w J(\\theta, w)\\): the classifier maximizes \\(J\\) and the generator minimizes it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What changes in a conditional GAN? Answer: The label goes into both the generator and the discriminator, so the model can be asked for a specific class."
+        },
+        {
+          "type": "paragraph",
+          "text": "Question: What do you need to make a new sample after training? Answer: The trained generator and a new random vector (plus a label for a conditional GAN)."
+        }
+      ],
+      "resource": true
+    }
+  ]
+}

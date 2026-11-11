@@ -2069,5 +2069,36 @@
   "/mathematical-foundation-of-generative-ai/week-2/vanilla-gan-tutorial/": [
     "/images/generative-ai/week-2/lessons/img09-generator-layers.webp",
     "/images/generative-ai/week-2/lessons/img08-mnist-pipeline.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-3/": [],
+  "/mathematical-foundation-of-generative-ai/week-3/classifier-guided-view/": [
+    "/images/generative-ai/week-3/lessons/classifier-boundary.webp",
+    "/images/generative-ai/week-3/lessons/classifier-overview.webp",
+    "/images/generative-ai/week-3/lessons/img01-counter-example.webp",
+    "/images/generative-ai/week-3/lessons/img02-classifier-generator-cycle.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-3/minimax-objective/": [
+    "/images/generative-ai/week-3/lessons/discriminator-objective.webp",
+    "/images/generative-ai/week-3/lessons/img08-log-curve.webp",
+    "/images/generative-ai/week-3/lessons/img03-minimax-game.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-3/dc-gan/": [
+    "/images/generative-ai/week-3/lessons/transpose-example.webp",
+    "/images/generative-ai/week-3/lessons/dcgan-overview.webp",
+    "/images/generative-ai/week-3/lessons/img11-stride-padding.webp",
+    "/images/generative-ai/week-3/lessons/img04-transposed-conv.webp",
+    "/images/generative-ai/week-3/lessons/img10-activation-shapes.webp",
+    "/images/generative-ai/week-3/lessons/img05-dcgan-generator.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-3/conditional-gan/": [
+    "/images/generative-ai/week-3/lessons/conditional-objective.webp",
+    "/images/generative-ai/week-3/lessons/img06-conditional-inputs.webp",
+    "/images/generative-ai/week-3/lessons/img12-one-hot-embedding.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-3/inference/": [
+    "/images/generative-ai/week-3/lessons/img07-inference.webp"
+  ],
+  "/mathematical-foundation-of-generative-ai/week-3/quick-revision/": [
+    "/images/generative-ai/week-3/lessons/img13-week3-map.webp"
   ]
 }

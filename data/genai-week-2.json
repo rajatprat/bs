@@ -6,7 +6,8 @@
   "previousOverview": "/mathematical-foundation-of-generative-ai/archive/week-1/",
   "courseWeeks": [
     1,
-    2
+    2,
+    3
   ],
   "base": "/mathematical-foundation-of-generative-ai/week-2/",
   "title": "From variational divergence minimization to GANs",
@@ -2212,5 +2213,6 @@
       ],
       "resource": true
     }
-  ]
+  ],
+  "nextOverview": "/mathematical-foundation-of-generative-ai/week-3/"
 }

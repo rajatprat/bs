@@ -2402,5 +2402,33 @@
   "/mathematical-foundation-of-generative-ai/week-2/quick-revision/": {
     "title": "Week 2 quick revision — GenAI Week 2",
     "description": "One page to check week 2. Read each row. Try to say the answer in your own words before you look at the next row."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/": {
+    "title": "GANs, DC-GANs and conditional generation",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/classifier-guided-view/": {
+    "title": "A GAN as a classifier-guided sampler",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/minimax-objective/": {
+    "title": "The training objective and the minimax game",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/dc-gan/": {
+    "title": "DC-GAN: a GAN for images",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/conditional-gan/": {
+    "title": "Conditional GAN: choose what to generate",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/inference/": {
+    "title": "Inference: making new samples from a trained GAN",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
+  },
+  "/mathematical-foundation-of-generative-ai/week-3/quick-revision/": {
+    "title": "Quick revision: week 3",
+    "description": "See how a classifier guides a generator, calculate the training score, grow images with convolutions, and choose outputs with labels."
   }
 }
