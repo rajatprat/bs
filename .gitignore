@@ -6,7 +6,8 @@ out/
 !.env.example
 assets/
 work/
-scripts/
+scripts/*
+!scripts/watermark-export.mjs
 data/*image-conversion.json
 *.docx
 *.pdf

@@ -394,20 +394,5 @@ img[src="/images/week-11/image6.png"],img[src^="/images/week-11/image6.png?"]{cl
   height: auto;
   margin: 0 !important;
 }
-.watermarked-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  user-select: none;
-  background: url('/images/brand/study-watermark.svg?v=2') center / 340px 160px repeat;
-  opacity: .14;
-}
-.watermarked-media .watermarked-media::after { display: none; }
-@media print {
-  .watermarked-media::after {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-}
+/* Watermarks are embedded in exported image files by watermark-export.mjs.
+   Keep the wrapper for layout; a CSS overlay would double the published mark. */
